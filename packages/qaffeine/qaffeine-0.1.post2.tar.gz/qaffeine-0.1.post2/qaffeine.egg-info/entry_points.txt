@@ -1,0 +1,6 @@
+[console_scripts]
+qaffeine-cli = src.qaffeine:cli
+
+[gui_scripts]
+qaffeine = src.qaffeine:gui
+
