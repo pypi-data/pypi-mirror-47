@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+kiggle/__init__.py
+kiggle/_version.py
+kiggle.egg-info/PKG-INFO
+kiggle.egg-info/SOURCES.txt
+kiggle.egg-info/dependency_links.txt
+kiggle.egg-info/top_level.txt
