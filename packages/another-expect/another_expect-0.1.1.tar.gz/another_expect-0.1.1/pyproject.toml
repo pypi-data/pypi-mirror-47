@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "another_expect"
+version = "0.1.1"
+description = "An expect function with an api and documentation to my liking"
+authors = ["Philip Olson <philip.olson@pm.me>"]
+repository = "https://github.com/olsonpm/py_simple-test"
+license = "WTFNMFPL-1.0"
+readme = "README.md"
+include = [
+  "another_expect/license.txt",
+  "another_expect/top_level.txt",
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+black = {version = "^18.3-alpha.0",allows-prereleases = true}
+simple_chalk = "^0.1.0"
+is_git_repo_clean = "^0.3.6"
+
+[tool.vendorize]
+target = "another_expect/_vendor"
+packages = [
+  "ordered_set >=3.1,<4",
+  "simple_chalk >=0.1,<0.2",
+  "tedent >=0.1.5,<0.2",
+  "wrapt >=1.10,<2",
+]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
