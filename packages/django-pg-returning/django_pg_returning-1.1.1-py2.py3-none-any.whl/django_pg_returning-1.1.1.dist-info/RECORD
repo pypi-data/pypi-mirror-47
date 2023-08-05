@@ -1,0 +1,10 @@
+django_pg_returning/__init__.py,sha256=BKgce4BjU53bMbVMWnO9CyapikgrMjc_9PnLQIEOgo8,72
+django_pg_returning/compatibility.py,sha256=Tm1b8NHPElbidNjF3daIcTRW4lHawDV5nKTUrGIr1SU,1269
+django_pg_returning/manager.py,sha256=5kcIAwGv7XW0hDu4dZlK7vzHoe_BrhClKNJ6zXDFeFk,5293
+django_pg_returning/models.py,sha256=3kYidBN2saZ5Rebq8gpj9JGu15JWIGV6Uwm35ReIrKQ,3950
+django_pg_returning/queryset.py,sha256=I6RhWBgCyPJrzoITQpZ6aTOZT_Z22KOeBu1nXawYdGk,5506
+django_pg_returning-1.1.1.dist-info/LICENSE,sha256=rxlvU1P3rKnSuFsfKX5sYvauVwsLXl5HvU3a2B4iOHg,1538
+django_pg_returning-1.1.1.dist-info/METADATA,sha256=c9zkOQTl-QP07pHt2FurqjI2W-oETJhQKBjEh-BokoQ,6179
+django_pg_returning-1.1.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+django_pg_returning-1.1.1.dist-info/top_level.txt,sha256=I2QX6WbghiuONwwiazpNg4iM4oeCoEajbQcCq6AkBPU,20
+django_pg_returning-1.1.1.dist-info/RECORD,,
