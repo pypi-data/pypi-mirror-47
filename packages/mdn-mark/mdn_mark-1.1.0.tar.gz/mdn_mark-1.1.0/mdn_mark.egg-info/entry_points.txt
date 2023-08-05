@@ -1,0 +1,3 @@
+[console_scripts]
+mdn-mark = get_mdn_mark.get_mdn_mark:main
+
