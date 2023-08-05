@@ -1,0 +1,10 @@
+hellofresh_data/__init__.py,sha256=3KwPXDT6eEOSHbpYP3R8_5NoTrhxnB7PiUYrl_qJWZE,28
+hellofresh_data/bodega_connect.py,sha256=0l2SHcUCo4L369zQwKLe_C7Cbav9VhXWLRhQ2H4k0kM,2118
+hellofresh_data/google_drive_tools.py,sha256=NJPiQVkTgD4HtnNbjxGNMCZWf50mltrHVuaHa1J04xU,4704
+hellofresh_data/logging_setup.py,sha256=XQpwwoi-wIq_gw4Rwdrlij1YY9bnuuNxxdbD-y8TgGc,680
+hellofresh_data/parameter_store.py,sha256=mcxpklMwwuoSrlBNg-MBh56aQL46NNUC7K9Cj7fIpFk,634
+hellofresh_oa_data-0.1.9.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+hellofresh_oa_data-0.1.9.dist-info/METADATA,sha256=-iVH1R2n6aJeWm98PnLCgwNdbQ1zfC5rdCkaIAZw_3Y,342
+hellofresh_oa_data-0.1.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+hellofresh_oa_data-0.1.9.dist-info/top_level.txt,sha256=MPCOYJyxdl1MoI8peQKVdfQ8QuU7LBZ_NgE6TxQ4h7g,16
+hellofresh_oa_data-0.1.9.dist-info/RECORD,,
