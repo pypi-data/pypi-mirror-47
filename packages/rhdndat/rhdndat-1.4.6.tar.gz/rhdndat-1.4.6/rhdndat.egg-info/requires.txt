@@ -1,0 +1,13 @@
+beautifulsoup4
+lxml
+pyparsing
+colorama
+
+[:"linux" in sys_platform or "freebsd" in sys_platform or "darwin" in sys_platform]
+xattr
+
+[dev]
+check-manifest
+
+[test]
+coverage
