@@ -1,0 +1,4 @@
+[console_scripts]
+ebc-assemble = eight_bit_computer.cli:assemble
+ebc-gen-roms = eight_bit_computer.cli:gen_roms
+
