@@ -1,0 +1,20 @@
+{
+  "domain": "frontend",
+  "name": "Home Assistant Frontend",
+  "documentation": "https://www.home-assistant.io/components/frontend",
+  "requirements": [
+    "funki-io-ui==1.0"
+  ],
+  "dependencies": [
+    "api",
+    "auth",
+    "http",
+    "lovelace",
+    "onboarding",
+    "system_log",
+    "websocket_api"
+  ],
+  "codeowners": [
+    "@home-assistant/core"
+  ]
+}
