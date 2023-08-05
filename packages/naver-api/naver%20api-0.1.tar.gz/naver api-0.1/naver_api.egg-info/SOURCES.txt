@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+naver_api/__init__.py
+naver_api/naver_search.py
+naver_api.egg-info/PKG-INFO
+naver_api.egg-info/SOURCES.txt
+naver_api.egg-info/dependency_links.txt
+naver_api.egg-info/not-zip-safe
+naver_api.egg-info/requires.txt
+naver_api.egg-info/top_level.txt
