@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: praytimes
+Version: 2.3.2
+Summary: Packaging of praytimes.org python library
+Home-page: https://gitlab.com/apaan/praytimes-py
+Author: Ali Akbar
+Author-email: the.apaan@gmail.com
+License: LGPLv3
+Download-URL: https://gitlab.com/apaan/praytimes-py/-/archive/v2.3.2/praytimes-py-v2.3.2.tar.gz
+Description: # praytime-py
+        
+        Packaging of praytime.org python library
+        
+        See http://praytime.org for documentation.
+        
+Keywords: prayer times
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Religion
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
