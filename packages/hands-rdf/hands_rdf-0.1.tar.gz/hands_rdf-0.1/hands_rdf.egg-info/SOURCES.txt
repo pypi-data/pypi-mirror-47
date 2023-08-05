@@ -1,0 +1,16 @@
+README.md
+setup.py
+hands_rdf/RDF.py
+hands_rdf/__init__.py
+hands_rdf/features.py
+hands_rdf/helpers.py
+hands_rdf.egg-info/PKG-INFO
+hands_rdf.egg-info/SOURCES.txt
+hands_rdf.egg-info/dependency_links.txt
+hands_rdf.egg-info/not-zip-safe
+hands_rdf.egg-info/requires.txt
+hands_rdf.egg-info/top_level.txt
+hands_rdf/Model/BaseModel.py
+hands_rdf/Model/Config.py
+hands_rdf/Model/MultiModels.py
+hands_rdf/Model/__init__.py
