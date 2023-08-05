@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: plot-keras-history
+Version: 1.1.10
+Summary: A simple python package to print a keras NN training history.
+Home-page: https://github.com/LucaCappelletti94/plot_keras_history
+Author: Luca Cappelletti
+Author-email: cappelletti.luca94@gmail.com
+License: MIT
+Description: plot_keras_history
+        =========================================================================================
+        |travis| |sonar_quality| |sonar_maintainability| |codacy| |code_climate_maintainability| |pip|
+        
+        A simple python package to print a keras NN training history.
+        
+        How do I install this package?
+        ----------------------------------------------
+        As usual, just download it using pip:
+        
+        .. code:: shell
+        
+            pip install plot_keras_history
+        
+        Tests Coverage
+        ----------------------------------------------
+        Since some software handling coverages sometime get slightly different results, here's three of them:
+        
+        |coveralls| |sonar_coverage| |code_climate_coverage|
+        
+        Examples
+        ------------------------------------------------
+        Here's how two histories can be visualized:
+        
+        .. code:: python
+        
+            from plot_keras_history import plot_history
+            import matplolib.pyplot as plt
+        
+            history = model.fit(...).history
+            plot_history(history)
+            plt.show()
+        
+        .. image:: https://github.com/LucaCappelletti94/plot_keras_history/blob/master/test_plot_big_history.png?raw=true
+        .. image:: https://github.com/LucaCappelletti94/plot_keras_history/blob/master/test_plot_history.png?raw=true
+        
+        
+        .. |travis| image:: https://travis-ci.org/LucaCappelletti94/plot_keras_history.png
+           :target: https://travis-ci.org/LucaCappelletti94/plot_keras_history
+           :alt: Travis CI build
+        
+        .. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_plot_keras_history&metric=alert_status
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_plot_keras_history
+            :alt: SonarCloud Quality
+        
+        .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_plot_keras_history&metric=sqale_rating
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_plot_keras_history
+            :alt: SonarCloud Maintainability
+        
+        .. |sonar_coverage| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_plot_keras_history&metric=coverage
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_plot_keras_history
+            :alt: SonarCloud Coverage
+        
+        .. |coveralls| image:: https://coveralls.io/repos/github/LucaCappelletti94/plot_keras_history/badge.svg?branch=master
+            :target: https://coveralls.io/github/LucaCappelletti94/plot_keras_history?branch=master
+            :alt: Coveralls Coverage
+        
+        .. |pip| image:: https://badge.fury.io/py/plot_keras_history.svg
+            :target: https://badge.fury.io/py/plot_keras_history
+            :alt: Pypi project
+        
+        .. |downloads| image:: https://pepy.tech/badge/plot_keras_history
+            :target: https://pepy.tech/badge/plot_keras_history
+            :alt: Pypi total project downloads 
+        
+        .. |codacy|  image:: https://api.codacy.com/project/badge/Grade/4f09666f140a4fc785fecc94b0ed9a6a
+            :target: https://www.codacy.com/app/LucaCappelletti94/plot_keras_history?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LucaCappelletti94/plot_keras_history&amp;utm_campaign=Badge_Grade
+            :alt: Codacy Maintainability
+        
+        .. |code_climate_maintainability| image:: https://api.codeclimate.com/v1/badges/5540f8112de448ac3298/maintainability
+            :target: https://codeclimate.com/github/LucaCappelletti94/plot_keras_history/maintainability
+            :alt: Maintainability
+        
+        .. |code_climate_coverage| image:: https://api.codeclimate.com/v1/badges/5540f8112de448ac3298/test_coverage
+            :target: https://codeclimate.com/github/LucaCappelletti94/plot_keras_history/test_coverage
+            :alt: Code Climate Coverate
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
