@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: webviewhooks
+Version: 0.0.4
+Summary: get webView html DOM tree
+Home-page: UNKNOWN
+Author: looper
+Author-email: looperchu2018@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
