@@ -1,0 +1,5 @@
+setup.py
+rfc7230.egg-info/PKG-INFO
+rfc7230.egg-info/SOURCES.txt
+rfc7230.egg-info/dependency_links.txt
+rfc7230.egg-info/top_level.txt
