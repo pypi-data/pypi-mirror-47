@@ -1,0 +1,12 @@
+azureml/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/contrib/__init__.py,sha256=n0xtZ3iWcoVg5Qognsb7InYAUVAK8s3iaVeHB5GOaNA,251
+azureml/contrib/server/__init__.py,sha256=6j3uxH8BF6H_18qsLSKkW-zE0i4Q49XLJS-vwjB1Pas,232
+azureml/contrib/server/sdk.py,sha256=Z4l-PGMY-RdKvm_4V5S7xx5Dzro35uixwCMNfJ7s-ao,19413
+azureml/contrib/server/server.py,sha256=hiF0us2Kdr7N_fd1Xu-VgFdQrwx7zNF8ve7tt5LTjxU,23044
+azureml_contrib_server-1.0.41.dist-info/DESCRIPTION.rst,sha256=RLu9zQPgoOGfL6oVK727QxvI_QF0ssWxx3rJ91tiiiM,26
+azureml_contrib_server-1.0.41.dist-info/LICENSE.txt,sha256=FOfkEEz4uS7g278F9Rq12rqKF3lLyBUZhVpLetuZrTg,1021
+azureml_contrib_server-1.0.41.dist-info/METADATA,sha256=B0cKo2McC6YJ5tVdR8LT8NvF073_Tqr_stjJtU_2dtM,944
+azureml_contrib_server-1.0.41.dist-info/RECORD,,
+azureml_contrib_server-1.0.41.dist-info/WHEEL,sha256=Vlaj2XNMTTJ893zWX-JvKeZUIs7q5E7d7Gise2Vouzc,97
+azureml_contrib_server-1.0.41.dist-info/metadata.json,sha256=z8AXwgA32BiozVGOIPb7xVTAbcVKdT77yHtjS7ExKsA,1020
+azureml_contrib_server-1.0.41.dist-info/top_level.txt,sha256=ZOeEa0TAXo6i5wOjwBoqfIGEuxOcKuscGgNSpizqREY,8
