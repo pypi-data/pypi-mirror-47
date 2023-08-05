@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+docs/source/description.rst
+domus.egg-info/PKG-INFO
+domus.egg-info/SOURCES.txt
+domus.egg-info/dependency_links.txt
+domus.egg-info/requires.txt
+domus.egg-info/top_level.txt
+src/miniscule/__init__.py
+src/miniscule/aws.py
+src/miniscule/base.py
