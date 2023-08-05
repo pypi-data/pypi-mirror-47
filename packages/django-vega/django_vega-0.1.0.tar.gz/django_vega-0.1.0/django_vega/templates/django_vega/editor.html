@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#325">
+  <title>Vega Editor</title>
+</head>
+<body>
+<div id="root"></div>
+<script type="text/javascript" src="{% static 'django_vega/vega_editor/vega.js' %}"></script>
+<script type="text/javascript" src="{% static 'django_vega/vega_editor/vega-lite.js' %}"></script>
+<script type="text/javascript" src="{% static 'django_vega/vega_editor/main.js' %}"></script>
+
+<script>
+  document.querySelector('script[async]').remove() // remove Google Analytics
+  document.querySelector('.idl-logo').remove() // remove logo
+</script>
+
+</body>
+</html>
