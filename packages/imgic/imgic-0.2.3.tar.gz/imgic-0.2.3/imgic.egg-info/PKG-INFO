@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: imgic
+Version: 0.2.3
+Summary: A basic numpy-based image manipulation package. Contains tools for resizing, cropping, blurring, and others.
+Home-page: https://github.com/LukasNorbutas/imgic
+Author: Lukas Norbutas
+Author-email: lukas.norbutas@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5, <4
