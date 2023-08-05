@@ -1,0 +1,7 @@
+srec_nlp/__init__.py,sha256=DCPhWQjEm435TEY0FKjdSmSPX9hvJyBsxddJ918B160,139
+srec_nlp/common.py,sha256=3AyzKLBnbGYltK6VBJ6KpOdi7dPNQ4OlDgWqnjDK23k,2233
+srec_nlp/gnlp.py,sha256=jBJ-dOro7cbxTBANQSTayMEoQqM6vUVkOIHPevhtKjk,1579
+srec_nlp/srec_nlp.py,sha256=i7c4qBCDULXQ6jdOU_8G34S06dly7qHCdZREqjY1z_8,6824
+srec_nlp-0.1.7.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+srec_nlp-0.1.7.dist-info/METADATA,sha256=GPeru8d4kcoEV2I7lNIjE7WSP8xg8_XKrSjkSp-LVzY,752
+srec_nlp-0.1.7.dist-info/RECORD,,
