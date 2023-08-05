@@ -1,0 +1,7 @@
+setup.py
+profanity_filter_awesome/__init__.py
+profanity_filter_awesome/profanity_filter.py
+profanity_filter_awesome.egg-info/PKG-INFO
+profanity_filter_awesome.egg-info/SOURCES.txt
+profanity_filter_awesome.egg-info/dependency_links.txt
+profanity_filter_awesome.egg-info/top_level.txt
