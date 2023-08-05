@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: LINQ-cython
+Version: 0.2
+Summary: ('和c#一样使用方式的linq,并经使用cython进行加速', 'the linq like c#,and will speed up  by cython')
+Home-page: https://github.com/beincy/PYLINQ
+Author: 卞辉（beincy）
+Author-email: bianhui0524@sina.com
+Maintainer: 卞辉(beincy)
+Maintainer-email: bianhui0524@sina.com
+License: MIT
+Description: UNKNOWN
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
