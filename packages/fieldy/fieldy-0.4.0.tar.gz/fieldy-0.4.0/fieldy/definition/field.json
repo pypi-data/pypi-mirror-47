@@ -1,0 +1,29 @@
+{
+  "typename": "field",
+  "fields": {
+    "type": {
+      "type": "string",
+      "required": true,
+      "field_info": {},
+      "default": null
+    },
+    "required": {
+      "type": "boolean",
+      "required": true,
+      "field_info": {},
+      "default": null
+    },
+    "default": {
+      "type": "any",
+      "required": false,
+      "field_info": {},
+      "default": null
+    },
+    "field_info": {
+      "type": "any",
+      "required": false,
+      "field_info": {},
+      "default": null
+    }
+  }
+}
