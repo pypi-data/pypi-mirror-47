@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/fanolabsaccobot/__init__.py
+src/fanolabsaccobot.egg-info/PKG-INFO
+src/fanolabsaccobot.egg-info/SOURCES.txt
+src/fanolabsaccobot.egg-info/dependency_links.txt
+src/fanolabsaccobot.egg-info/requires.txt
+src/fanolabsaccobot.egg-info/top_level.txt
