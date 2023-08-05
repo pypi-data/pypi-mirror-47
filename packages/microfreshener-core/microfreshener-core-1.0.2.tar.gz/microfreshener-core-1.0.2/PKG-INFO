@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: microfreshener-core
+Version: 1.0.2
+Summary: Read a MicroTOSCA model of a microservice-based architecture and discover architectural smells
+Home-page: UNKNOWN
+Author: Davide neri
+Author-email: davide.neri@di.unipi.it
+License: MIT
+Description: 
+        
+        =======
+        History
+        =======
+        
+        1.0.0 (2019-05-29)
+        ----------------------------
+        
+        First release on pypi
+Keywords: microservice TOSCA smells refactorings
+Platform: UNKNOWN
