@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: cabbage
+Version: 0.9.0
+Summary: asyncio-based AMQP client and server for RPC.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # cabbage: RPC over AMQP
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
