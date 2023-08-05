@@ -1,0 +1,10 @@
+#!/Library/Frameworks/Python.framework/Versions/3.7/bin/python
+# PBR Generated from 'console_scripts'
+
+import sys
+
+from biolinkml.generators.csvgen import cli
+
+
+if __name__ == "__main__":
+    sys.exit(cli())
