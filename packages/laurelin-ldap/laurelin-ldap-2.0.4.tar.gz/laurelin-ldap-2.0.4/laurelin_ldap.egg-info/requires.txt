@@ -1,0 +1,5 @@
+pure-sasl>=0.5.1
+six
+py2casefold
+pyyaml
+parsimonious==0.8.0
