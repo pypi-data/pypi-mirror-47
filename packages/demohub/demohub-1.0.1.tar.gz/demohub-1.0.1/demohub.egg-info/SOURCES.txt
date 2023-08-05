@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+demohub/__init__.py
+demohub/utils.py
+demohub.egg-info/PKG-INFO
+demohub.egg-info/SOURCES.txt
+demohub.egg-info/dependency_links.txt
+demohub.egg-info/requires.txt
+demohub.egg-info/top_level.txt
