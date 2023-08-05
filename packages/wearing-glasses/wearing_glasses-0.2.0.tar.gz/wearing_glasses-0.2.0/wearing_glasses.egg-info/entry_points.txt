@@ -1,0 +1,5 @@
+[console_scripts]
+cp_fl_model = wearing_glasses.cp_fl_model:main
+help_wearing_glasses = wearing_glasses.helper:main
+plot_glasses = wearing_glasses.plot_glasses:main
+
