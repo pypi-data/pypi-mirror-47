@@ -1,0 +1,14 @@
+psautohint/__init__.py,sha256=wAt7Gu6PFD4jfPQrQ4i2JqmpHOq1SFod-T2OOZzcgzA,4758
+psautohint/__main__.py,sha256=xUpSINZ1rPH3_NGJCIpbU2IOgrZSqcFgC-rZlen59CE,31965
+psautohint/_psautohint.cpython-37m-darwin.so,sha256=1l5bZAQacscc3FPgGZZ9y_1pzWmgVIcgHt3fKTcemHk,392936
+psautohint/autohint.py,sha256=xxAezsaUa75i1EzlAHFuKZbB_vYPuhWEcXabaM3Upnw,28531
+psautohint/autohintexe,sha256=S42ow59NKyvm2OyqliC0nTZC69_cFrkIvF6wFX2tFkE,400032
+psautohint/fdTools.py,sha256=iGIFaUCcSAcmlit2dSyXIWxOT_0j9LPZtYn9cQ6q65I,19984
+psautohint/otfFont.py,sha256=JSd61B3_cR5m3651qTd_v8GRcK8yhTofLgMxJpwVmSE,45443
+psautohint/ufoFont.py,sha256=YkQxuglNT-HPy4kA0pXOeHZuLKEL2Yn-mMkxQd8-poE,47579
+psautohint-1.9.3b3.dist-info/entry_points.txt,sha256=eHFM6Yzs2vtXKnF-KVr9pkleIKZ7EqNF6Xdn1r4vfJk,99
+psautohint-1.9.3b3.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+psautohint-1.9.3b3.dist-info/METADATA,sha256=uZvvuOmvpUPt84z8z3R4pzCwOa98cU0hQ_5e7NK7LGc,2751
+psautohint-1.9.3b3.dist-info/RECORD,,
+psautohint-1.9.3b3.dist-info/top_level.txt,sha256=qjPoTzjcI1WsEohIiqKa3vHqb8rxM296e_uTh-fzE00,11
+psautohint-1.9.3b3.dist-info/WHEEL,sha256=lzLSP8LQNrOglXOIpuQOEvoaoMcsCDhtfg39RiZGHxU,249
