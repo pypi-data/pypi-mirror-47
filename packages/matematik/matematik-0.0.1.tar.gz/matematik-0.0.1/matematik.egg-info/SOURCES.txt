@@ -1,0 +1,15 @@
+README.md
+setup.py
+matematik/__init__.py
+matematik.egg-info/PKG-INFO
+matematik.egg-info/SOURCES.txt
+matematik.egg-info/dependency_links.txt
+matematik.egg-info/top_level.txt
+matematik/arithmetic/__init__.py
+matematik/arithmetic/add.py
+matematik/arithmetic/decimals.py
+matematik/arithmetic/divide.py
+matematik/arithmetic/fractions.py
+matematik/arithmetic/multiply.py
+matematik/arithmetic/negative_nums.py
+matematik/arithmetic/subtract.py

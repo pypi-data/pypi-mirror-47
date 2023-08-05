@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: matematik
+Version: 0.0.1
+Summary: An package for solving math equations
+Home-page: https://github.com/demirantay/matematik
+Author: Demir Antay
+Author-email: demir99antay@gmail.com
+License: UNKNOWN
+Description: # matematik
+        An package for solving math equations
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
