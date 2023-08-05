@@ -1,0 +1,3 @@
+[console_scripts]
+curseradio-improved = curseradio_improved.__main__:main
+
