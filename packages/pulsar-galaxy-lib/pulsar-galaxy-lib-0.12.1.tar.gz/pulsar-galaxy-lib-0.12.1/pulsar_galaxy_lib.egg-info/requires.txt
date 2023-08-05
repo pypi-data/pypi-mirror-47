@@ -1,0 +1,12 @@
+webob
+psutil
+PasteDeploy
+six
+pyyaml
+paramiko
+PasteScript
+paste
+
+[:python_version=="2.7"]
+paste
+PasteScript
