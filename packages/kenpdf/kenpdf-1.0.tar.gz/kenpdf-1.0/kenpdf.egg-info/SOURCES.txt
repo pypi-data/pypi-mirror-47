@@ -1,0 +1,6 @@
+README.md
+setup.py
+kenpdf.egg-info/PKG-INFO
+kenpdf.egg-info/SOURCES.txt
+kenpdf.egg-info/dependency_links.txt
+kenpdf.egg-info/top_level.txt
