@@ -1,0 +1,2 @@
+django>=2.0
+qiwi-payments==0.1
