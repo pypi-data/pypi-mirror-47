@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: TPool
+Version: 1.2
+Summary: Thread Pool for Python 2
+Home-page: https://github.com/oeg-upm/PPool
+Author: Ahmad Alobaid
+Author-email: aalobaid@fi.upm.es
+License: UNKNOWN
+Description: 
+        Thread Pool for python 2 with multiple parameters. 
+        Python2 include an undocumented thread pool which 
+        only accept functions with single arguments. TPool 
+        implements a pool for threads supporting multiple arguments 
+        
+        # Install
+        `pip install TPool`
+        
+        ### Why not PPool
+        If you want to have access to shared variables. But also
+        note that in Python (at least the cPython version)
+        include a global lock that it does not run multiple 
+        threads at the same time, but it is good enough if the 
+        bottle neck is disk IO or network. 
+        
+        ## Example
+        ```
+        from TPool.TPool import Pool
+        from threading import Lock
+        
+        pairs = []
+        
+        
+        def foo_merge(name, num, lock):
+            global pairs
+            lock.acquire()
+            pairs.append((name, num))
+            lock.release()
+        
+        
+        def example():
+            global pairs
+            pairs = []
+            lock = Lock()
+            local_pairs = [('A', 2), ('B', 3), ('C', 4), ('D', 5)]
+            params = []
+            for p in local_pairs:
+                param = p + (lock,)
+                params.append(param)
+            pool = Pool(max_num_of_threads=3, func=foo_merge, params_list=params)
+            pool.run()
+            print pairs
+        
+        
+        if __name__ == "__main__":
+            example()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Operating System
+Description-Content-Type: text/markdown
