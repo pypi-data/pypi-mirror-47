@@ -1,0 +1,101 @@
+Metadata-Version: 1.1
+Name: datadog-http-handler
+Version: 1.0.7
+Summary: Python logging module allowing you to log directly to Datadog via https
+Home-page: https://github.com/nrccua/datadog-http-handler
+Author: NRCCUA Architects
+Author-email: architecture@nrccua.org
+License: MIT
+Description: 
+        datadog-http-handler
+        ====================
+        
+        Python logging module allowing you to log directly to Datadog via https.
+        Currently support only for python 3.6+.
+        
+        Installation
+        ------------
+        
+        Install `python <https://www.python.org/downloads/>`_
+        
+        Install `pip <https://pip.pypa.io/en/stable/installing/>`_
+        
+        .. code-block:: bash
+        
+           curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+           python get-pip.py
+        
+        Install datadog-http-handler
+        
+        .. code-block:: bash
+        
+           pip install datadog-http-handler
+        
+        Usage
+        -----
+        
+        The typical usage of this library to output to datadog
+        
+        .. code-block:: bash
+        
+           from datadog_http_handler import DatadogHttpHandler
+        
+           logger = DatadogHttpHandler(
+               api_key=os.getenv('DATADOG_API_KEY', ''),
+               service='test',
+               host='your_hostname',
+               logger_name='example',
+               tags={'env': 'test', 'user': 'Tim the Enchanter'}
+           ).logger
+        
+           logger.info('Hello World')
+        
+        Since sending logs to datadog via http can issue in a request failure for a myriad of reasons, it would be
+        good to know if the failure accord.  By setting raise_failure=True when creating the DatadogHttpHandler
+        object, an exception will now be thrown if the status code of the response is not 200.  See below:
+        
+        .. code-block:: bash
+        
+           import traceback
+        
+           from datadog_http_handler import DatadogHttpHandler
+        
+           logger = DatadogHttpHandler(
+               api_key=os.getenv('DATADOG_API_KEY', ''),
+               raise_exception=True,
+               service='test',
+               host='your_hostname',
+               logger_name='example',
+               tags={'env': 'test', 'user': 'Tim the Enchanter'}
+           ).logger
+        
+           try:
+               logger.info('Hello World')
+           exceptException as e:
+               print(traceback.format_exc())
+        
+        LICENSE
+        -------
+        
+        `MIT <https://github.com/nrccua/datadog-http-handler/blob/master/LICENSE>`_
+        
+        AUTHORS
+        -------
+        
+        
+        * **NRCCUA Software Engineers**
+        
+        See also the list of `contributors <https://github.com/nrccua/datadog-http-handler/contributors>`_ who participated in this project.
+        
+        ACKNOWLEDGEMENTS
+        ----------------
+        
+        
+        * **Bryan Cusatis** - NRCCUA Architecture Team Lead
+        * **Tim Reichard** - NRCCUA Architecture Team Member
+        * **Grant Evans** - NRCCUA DevOps Engineering Lead
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
