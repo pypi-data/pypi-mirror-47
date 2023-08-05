@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/fanolabsasr/__init__.py
+src/fanolabsasr.egg-info/PKG-INFO
+src/fanolabsasr.egg-info/SOURCES.txt
+src/fanolabsasr.egg-info/dependency_links.txt
+src/fanolabsasr.egg-info/requires.txt
+src/fanolabsasr.egg-info/top_level.txt

@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: fanolabsasr
+Version: 0.0.1
+Summary: FanoLabs Asr module for Python3
+Home-page: https://git.fanoai.cn/SDKs/asr-python
+Author: Henry Zheng
+Author-email: henry.zheng@fano.ai
+License: MIT
+Description: fanolabsasr
+        ==========
+        
+        FanoLabs Asr module for Python3
+        
+        <!-- TOC -->
+        
+        - [Installation](#installation)
+        - [License](#license)
+        - [API](#api)
+            - [stt(senderId, filepath, language)](#stt(senderId,filepath,language))
+        
+        
+        <!-- /TOC -->
+        
+        ## Installation
+        
+        Current stable release (`0.0.1`)
+        
+        ```sh
+        $ pip install fanolabsasr
+        ```
+        
+        ## Common Usage
+        We suggest you load the module via `import`, pending the stabalizing of es modules in node:
+        ```python
+        from fanolabsasr import Asr
+        import os
+        curPath = os.path.abspath(os.path.dirname(__file__))
+        
+        class Speech:
+        
+            def __init__(self):
+                self.client = Asr(`url`, `corpId`, `authKey`)
+        
+            def __call__(self, senderId, filepath, language):
+                return self.client.stt(senderId, filepath, language)
+         
+        def main():
+            returnObj = Speech()(`senderId`, os.path.abspath(curPath + '/test.wav'), `Cantonese`)
+            print(returnObj)
+         
+        if __name__ == '__main__':
+            main()
+        ```
+        
+        `Note`: `url`(e.g. https://xxx.fanoai.cn/asr)、`corpId`、`authKey` should set to the specific correct configuration.
+        
+        ## API
+        
+        ### stt(senderId,filepath,language)
+        
+        - `senderId` A string representing the user for chatting with asr
+        - `filepath` A string representing the local wav file path 
+        - `language` A string representing the language for the user input content, allowed languages to 'Cantonese, English, Mandarin'
+        - Returns: 
+        
+            `Note`: successful response
+            ```js
+            {
+                'status': 200,
+                'content': [{
+                    'recording_id': 'speech',
+                    'start_time': 0.83,
+                    'end_time': 1.62,
+                    'n_bests': [{
+                        'text': '明白街',
+                        'confidence': 0.121796916
+                    }],
+                    'text': '明白街',
+                    'confidence': 0.121796916,
+                    'success': True
+                }]
+            }
+            ```
+        
+            `Note`: Error handling
+            ```js
+            {
+                'status': 500,
+                'statusText': 'Internal Server Error',
+                'error_msg': "'input_language'"
+            }
+            ```
+        
+        ## License
+        
+        MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
