@@ -1,0 +1,12 @@
+README.rst
+setup.py
+clubwarrior/__init__.py
+clubwarrior/clubhouse.py
+clubwarrior/clubwarrior.py
+clubwarrior/config.py
+clubwarrior.egg-info/PKG-INFO
+clubwarrior.egg-info/SOURCES.txt
+clubwarrior.egg-info/dependency_links.txt
+clubwarrior.egg-info/entry_points.txt
+clubwarrior.egg-info/requires.txt
+clubwarrior.egg-info/top_level.txt
