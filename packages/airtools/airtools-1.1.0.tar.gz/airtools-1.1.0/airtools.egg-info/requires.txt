@@ -1,0 +1,11 @@
+numpy
+scipy
+
+[cov]
+pytest-cov
+coveralls
+flake8
+mypy
+
+[tests]
+pytest
