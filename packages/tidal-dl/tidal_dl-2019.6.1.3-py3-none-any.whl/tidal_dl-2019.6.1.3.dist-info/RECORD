@@ -1,0 +1,13 @@
+tidal_dl/__init__.py,sha256=CphyKN6QELT5pJFdiHY7N4ZREOMM6cVn3hZco8QZfQU,4645
+tidal_dl/__main__.py,sha256=xf10xiAtYO1dK6ud7qDNP9vbL3w4OqtdxAwoxcrNDFY,170
+tidal_dl/check.py,sha256=hTyfX57a4I3Q2eRrQFeCF-RccFEVTPq-ujMGK0UCnUw,698
+tidal_dl/decryption.py,sha256=JvOWbGUzBKj74_--d7nPOZ-NX8m-GS8S_CFIEMuxFMc,1730
+tidal_dl/download.py,sha256=WKqjBiWfsQI6leOLGYg8g1kLYdBSZAVHKJveOV6E7uA,20146
+tidal_dl/printhelper.py,sha256=LAF5n8R8HD6KnjZLZBXl4rbnebN545Grh5JVsuUYWFc,2651
+tidal_dl/tidal.py,sha256=SPDtzfcB4hjzmitLJr6dX1dnr3E8V71FRQUPIYE3D98,14381
+tidal_dl/youtrack.py,sha256=lH8w_D6-bdW3GVt8nWG5LxsI2_haD2XM5ykSVWsCS-Q,3030
+tidal_dl-2019.6.1.3.dist-info/METADATA,sha256=piy4Wk-1CVNSpOy2chcUWR7VE1o0jN4cUDotxbFOhRA,354
+tidal_dl-2019.6.1.3.dist-info/WHEEL,sha256=NvLheO0f8_uAcwoMijaCN7IVIIaldpzEnN1plXS6P6E,97
+tidal_dl-2019.6.1.3.dist-info/entry_points.txt,sha256=1_Ou5qzOx_fVvsKbTIMTY8vABvDDwib7OODuBun7mLs,44
+tidal_dl-2019.6.1.3.dist-info/top_level.txt,sha256=EN7RuT_MYl3YKu51XNey1oaJC04c_phtRQKSn3eynAM,9
+tidal_dl-2019.6.1.3.dist-info/RECORD,,
