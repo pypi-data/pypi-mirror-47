@@ -1,0 +1,9 @@
+README.md
+setup.py
+singularitytechnologies.singularitytechnologiesapi.egg-info/PKG-INFO
+singularitytechnologies.singularitytechnologiesapi.egg-info/SOURCES.txt
+singularitytechnologies.singularitytechnologiesapi.egg-info/dependency_links.txt
+singularitytechnologies.singularitytechnologiesapi.egg-info/requires.txt
+singularitytechnologies.singularitytechnologiesapi.egg-info/top_level.txt
+singularitytechnologiesapi/__init__.py
+singularitytechnologiesapi/exceptions.py
