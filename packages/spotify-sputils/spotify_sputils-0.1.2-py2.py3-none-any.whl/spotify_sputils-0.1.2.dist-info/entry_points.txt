@@ -1,0 +1,3 @@
+[console_scripts]
+sputils = sputils.sputils:main
+
