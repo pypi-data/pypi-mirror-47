@@ -1,0 +1,17 @@
+{
+  "typename": "type",
+  "fields": {
+    "fields": {
+      "type": "{field}",
+      "required": true,
+      "field_info": {},
+      "default": null
+    },
+    "typename": {
+      "type": "string",
+      "required": true,
+      "field_info": {},
+      "default": null
+    }
+  }
+}

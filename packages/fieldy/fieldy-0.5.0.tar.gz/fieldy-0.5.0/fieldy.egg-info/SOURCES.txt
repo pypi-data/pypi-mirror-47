@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+bin/fieldy
+fieldy/Encoder.py
+fieldy/Ent.py
+fieldy/SchemaManager.py
+fieldy/Util.py
+fieldy/__init__.py
+fieldy.egg-info/PKG-INFO
+fieldy.egg-info/SOURCES.txt
+fieldy.egg-info/dependency_links.txt
+fieldy.egg-info/top_level.txt
+fieldy/Generators/PyGenerator.py
+fieldy/Generators/__init__.py
+fieldy/definition/field.json
+fieldy/definition/type.json
