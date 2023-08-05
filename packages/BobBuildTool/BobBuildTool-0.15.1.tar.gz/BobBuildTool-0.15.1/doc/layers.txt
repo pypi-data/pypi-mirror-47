@@ -1,0 +1,255 @@
+Existing problems
+=================
+
+A) need different/changed sources
+    UBOOT_BRANCH/KERNEL_BRANCH -> depending on target needs different u-boot/kernel
+    apply patches on package
+    add/modify files to/of package
+        special config files
+
+B) replace packages
+    provide our own u-boot/kernel/whatever
+
+C) build package differently
+    need to use a different kernel config depending on board
+        be flexible where the config is coming from?
+    kernel DTB
+    build package with special features
+    override some CFLAGS depending on machine
+
+Requirements
+============
+
+* Must be able to separate Base, BSP and application layers
+    - Separate architecural layers into different repositories
+    - externalize variant management
+* More than one BSP must be supported at the same time
+    - a bsp supports a particular soc
+    - if your board has more than one soc then you're screwed with yocto
+* BSP should be able to override sources
+    - take another kernel or u-boot for particular SOC
+    - apply patches to support particular SOC
+* Virtualize packages
+    - depending on BSP a package may have to be built differently
+    - BSP provides its own version, others keep old version
+
+Solution
+========
+
+A) Generalized SCM overrides
+----------------------------
+
+* Add scmOverrides at any recipe -> inherited by downstream recipes
+    - maybe match recipe instead of url
+    - but what if multiple repos are checked out? -> match by "dir"?
+* Allow to add/remove SCMs by an override
+    - no usecase yet
+    - only in case of "patch" SCM
+
+* Explicitly does not allow to patch checkoutAssert or metaEnvironment
+    - if these change you have to supply your own recipe
+
+BUT: almost not debugable!!!
+    sources are not the same as described in the recipe
+
+A) Native patch support
+-----------------------
+
+* how can this be integrated with scmOverrides?
+* plain patch(es)
+* series file
+* what about a "patch" SCM?
+    - clashes with "SCM-owns-directory" policy
+* must run after all regular SCMs are checked out
+* must analyze what SCMs are affected to handle re-apply?
+
+=> should be considered nonetheless to replace brittle patch class
+
+B) Layers
+---------
+
+* Do not allow duplicates by default
+    each recipe/class must be defined in only one layer ever
+    but still allow sharing between layers
+    anonymous base classes are not an issue
+
+* A layer must not define root recipes
+    this is responisbility of the upper recipes
+    a layer may provide some sample root recipe class
+
+* Add a layer.yaml to define
+    - bobMininmumVersion
+    - policies
+        must match upper recipes definition
+    => why not just config.yaml / default.yaml?
+
+=> easy and obvious?
+
+B) Default/Override disposition
+-------------------------------
+
+* For each recipe name the following conditions must hold
+    - There must be at most one "default" recipe
+    - There can be any number of "override" recipes
+    - At most one "override" recipe may be enabled at any given time
+
+* Name resolving rules
+    1. If a "override" recipe is enabled then take it
+    2. If a "default" recipe exists then take it
+    3. Fail lookup
+
+* A layer has a default disposition for its recipe
+* Each recipe can set its disposition independently too
+
+* Does not apply to classes
+
+C) Regular environment
+----------------------
+
+May be combined with shadow recipes and/or overrides.
+
+
+Thoughts
+========
+
+
+Bitbake
+    machine -> defines SOC/HW related stuff
+    distro -> defines packages
+    image -> selects pacakges from distro
+
+what about metaEnvironment when the sources are changed?
+
+BSP layer must be able to amend/patch base layer
+    in what way?
+    Use different source
+        but this could also be a regular use case of different variatns in the project
+        think of UBOOT_BRANCH
+
+define overrides in recipes
+    much like scmOverrides but only local to dependency tree
+
+virtual packages
+----------------
+
+PREFERRED_PROVIDER_u-boot = "u-boot-imx"
+
+bsp::linux-headers:
+    depends:
+        - name: bsp::fsl::linux-imx-headers
+          if: ""
+    provideDeps: [ "*-headers" ]
+
+    switch:
+        value: "${}"
+        case: 
+        default:
+
+problems:
+    does not yet work for tools -> solvable
+    may provide more than one dependency -> needs some kind of switch/case?
+    not really amendable
+
+shadow packages
+---------------
+
+recipe shadows original one completely
+    how to write it for multiPackages?
+can still depend itself on original and/or provideDeps it
+may make a virtual package out of it
+
+bsp::linux
+    multiPackage:
+        image:
+            depends:
+                - name: bsp::fsl::linux-image
+                  if: "$(is-fsl-soc)"
+                - name: bsp::linux-image
+                  if: "$(not,$(is-fsl-soc))"
+        headers:
+            switch:
+                value: "$(is-fsl-soc)"
+                case:
+                    "true":
+                    "false":
+            
+    provideDeps: [ "*" ]
+
+bsp::linux
+    multiPackage:
+        image:
+            packageScript:
+        headers:
+            packageScript:
+
+templates
+---------
+
+like classes but may define multiPackages
+data in recipe overwrites the one from template
+    but what if i want to amend one inherit?
+    what if if i want to amend the build script?
+maybe solve by extending classe?
+
+A) Extended classes like templates
+----------------------------------
+
+what if classes could also provide the multiPackages?
+
+
+
+
+
+Discarded ideas
+===============
+
+Sub-projects
+------------
+
+C++-like name lookup?
+    can be confusing and ambigous
+    still requires some layers -> think of libraries that expose symbols in name spaces
+
+Can be done with git-submodules too -> no need to implement in Bob
+
+Layers that inherit lower layers
+--------------------------------
+
+What to do with the anonymous multiPackage classes
+
+Approaches
+    a) implicitly insert sub-layer recipe into inherit list at beginning
+    b) merge layers before classes are resolved
+
+This basically is Monkey-patching
+
+Explicitly define "overrides" recipes
+-------------------------------------
+
+how exactly?
+how to patch anonymous base classes?
+    this is important to patch the actual definition
+    otherwise the override may patch only a subset of the multiPackages
+
+use cases
+    set environment
+        why? could just set upstream
+    scm override + patch
+    amend build script, basically what classes do
+        this is really the monkey patching that should be avoided
+
+a) do it the "classes" way + "overrides" keyword
+b) monkey patch with some new syntax
+c) provide extension points
+
+Shadow recipes
+--------------
+
+Shadow packages but can still access them
+can amend result
+    re-package result of orignal package
+change environment transparently
+    just provideDeps
+
+=> almost monkey patching; at least hard to see what's going on
+

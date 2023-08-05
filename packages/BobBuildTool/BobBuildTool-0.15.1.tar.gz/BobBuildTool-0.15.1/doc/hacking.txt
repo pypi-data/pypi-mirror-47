@@ -1,0 +1,12 @@
+Profiling
+=========
+
+python3 -m cProfile -o bob-ls.stats ~/src/bob/bob/bob ls
+gprof2dot.py -f pstats bob-ls.stats | dot -Tpng -o bob-ls.png
+
+Building and uploading packages
+===============================
+
+python3 setup.py sdist
+python3 setup.py bdist_wheel --plat-name manylinux1_x86_64
+twine upload dist/*

@@ -1,0 +1,270 @@
+                    Recipe
+                      ^
+                      |
+                      |
+    Package  ---> CorePackage
+       ^              ^
+       |              |
+       v              v
+     Step    --->  CoreStep
+
+
+         /--> PackageStep (unknown)
+         |
+         |             /--> PackageStep (descendent)
+         |             |
+         |             |             /--> PackageStep (unknown)
+         |             |             |
+       Tool         Indirect      Sandbox
+         |             |             |
+--> PackageStep -> BuildStep -> CheckoutStep
+                       |
+                     Direct
+                       |
+                       \--> PackageStep (direct descendent)
+
+
+
+
+CoreRef -> CoreRef | CorePackage | CoreStep
+
+            Foo
+          /  |  \
+         3   4   5
+        /    |    \
+      Bar   Baz   /
+           /   \ /
+          1     2
+         /       \
+      Alice      Bob
+
+CoreRef(1):
+    stack       = "Alice"
+    dest        = Alice
+	toolDiff    = { }
+CoreRef(2):
+    stack       = "Bob"
+    dest        = Bob
+	toolDiff    = { t : CoreRef(1) }
+CoreRef(3):
+    stack       = "Bar"
+    dest        = Bar
+    toolDiff    = { }
+CoreRef(4):
+    stack       = "Baz"
+    dest        = Baz
+    toolDiff    = { t : CoreRef(3) }
+CoreRef(5):
+    stack       = "Baz"
+    dest        = CoreRef(2)
+    toolDiff    = { t : CoreRef(3) }
+
+
+
+            Foo ---------+---------+--------+
+          /  |  \      Checkout    |        |
+         1   2   3               Build      |
+        /    |    \                      Package
+      Bar   Baz   Bob
+
+CoreRef(1):
+    stack = [ "Bar" ]
+    dest = <Bar>
+    toolDiff = { }
+CoreRef(2):
+    stack = [ "Baz" ]
+    dest = <Baz>
+    toolDiff = { t : CoreRef(1) }
+CoreRef(3):
+    stack = [ "Bob" ]
+    dest = <Bob>
+    toolDiff = { t : CoreRef(2) }
+
+CoreRef(a):
+    stack = []
+    dest = CoreCheckoutStep(Foo)
+    toolDiff = { t : CoreRef(2), t2 : CoreRef(3) }
+
+CoreRef(b):
+    stack = []
+    dest = CoreBuildStep(Foo)
+    toolDiff = { t : CoreRef(2), t2 : CoreRef(3) }
+
+CoreRef(c):
+    stack = []
+    dest = CorePackageStep(Foo)
+    toolDiff = { t : CoreRef(2), t2 : CoreRef(3) }
+
+CoreCheckoutStep(Foo):
+    corePackage = CorePackage(Foo)
+    args = []
+
+CoreBuildStep(Foo):
+    corePackage = CorePackage(Foo)
+    args = [ CoreRef(a), CoreRef(1), CoreRef(2), CoreRef(3) ]
+
+CorePackageStep(Foo):
+    corePackage = CorePackage(Foo)
+    args = [ CoreRef(b) ]
+
+CorePackage(Foo):
+    recipe = Foo
+    directDepSteps = [ CoreRef(1), CoreRef(2), CoreRef(3) ]
+    indirectDepSteps = []
+    checkoutStep = CoreRef(a)
+    buildStep = CoreRef(b)
+    packageStep = CoreRef(c)
+
+CoreRef:
+    def deref(self, stack, inputTools, inputSandbox):
+        if self.toolDiff:
+            tools = inputTools.copy()
+            for (name, tool) in patch.items():
+                if tool is None:
+                    del tools[name]
+                else:
+                    tools[name] = tool.deref(stack, inputTools, inputSandbox)
+        else:
+            tools = inputTools
+
+        if self.diffSandbox is ...:
+            sandbox = inputSandbox
+        elif self.diffSandbox is None:
+            sandbox = None
+        else:
+            sandbox = self.diffSandbox.deref(stack, inputTools, inputSandbox)
+
+        return dest.deref(stack + self.stack, tools, sandbox)
+
+class Package:
+
+    tools = { str : Tool() }
+    sandbox = None | Sandbox()
+
+    def __init__(self, corePackage, tools, sandbox):
+
+    def getCheckoutStep(self):
+        return CheckoutStep(self, self.checkoutStep, self.tools, self.sandbox)
+
+TODO
+====
+
+update copyright year and name
+
+add option to silence certain/all warnings
+add tutorials for proper CMake packages
+	how to make them location independent
+	how to use them from other packages
+
+remove asHexStr()
+	Python 3.5 has .hex() method on bytes
+	keep for compatibility
+
+internalize schema and make error message more readable
+	track location, barf on first instance
+
+- what shoud happend if
+	- a fingerprinted tool is used in a different enviroment
+		- other sandbox
+		- other host
+		=> tool.sandbox != user.sandbox
+	- a non-relocatable tool is used on different exec path than it was built
+		- if tool is built in sandbox and used outside
+		- if tool is used inside sandbox but built outside
+		- if actual sandbox differ it doesn't make a difference
+			- as long as tool is not fingerprinted
+			- but if it is the rule above applies
+			- otherwise paths are same
+		=> bool(tool.sandbox) != bool(user.sandbox)
+		=> bool(
+
+	=> different fingerprint between usage and build time
+
+remove hard coded color codes from rest of code
+
+bob ls
+======
+
+Von: Martin Dödtmann
+Gesendet: Donnerstag, 31. August 2017 09:21
+An: Jan Klötzke
+Betreff: bob ls
+
+Hallo Jan,
+
+da sich bei der aktuellen Bob-Version im GitHub die Funktionalität von „bob ls“ verändert hat habe ich eine Frage.
+Ich finde leider nicht mehr heraus, wie ich mir den kompletten Pfad zu einem Paket anzeigen lassen kann.
+
+Bei jeder Ausgabe die ich erreiche gibt Bob mir entweder nur das Paket an (bspw. „radio::tsd-radio-middleware-target“) oder der Pfad wird gekürzt ausgegeben:
+„zr3/zr3-variant-VW_EU/images::rootfs/radio::tsd-radio-middleware-target” -> in Wirklichkeit ist dieser Pfad aber
++“zr3/zr3-variant-VW_EU/images::rootfs/radio::tsd-radio-target/radio::tsd-radio-middleware-target.”
+
+Gibt es einen Weg den ganzen Pfad auszugeben?
+
+Danke & Gruß
+Martin
+
+Better generator support
+========================
+
+- two modes
+	- whole tree mode
+		- scan "src" of package and all dependencies
+		- legacy mode
+		- compile flags evaluated for each package, depends on generator if used
+	- single package mode
+		- only "src" of single package is imported for editing
+		- "dist" directories dependencies are visible 
+		- only top-level compile defintions are of interest
+	- or just add a "--depth" parameter?
+
+- add some special integrations
+	- probed one after the other
+	- provide actual source and include directories
+		- list source files
+		- include paths
+		- compile definitions
+		- other options
+
+	- cmake plugin to parse cmake options
+		- https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html
+		- requires 3.14!
+		- compile definitions and options
+		- single package mode -> optimal code completion
+		- tree mode will still benifit
+	- meson
+		- http://mesonbuild.com/IDE-integration.html
+		- parse meson-info/intro-targets.json
+		- only look for
+			- "installed" : true
+			- "type" : "shared library"/"static library"/"executable"
+	- last resort is "generic" that does basically nothing
+		- find all sources
+		- find all directories with headers
+		- no compile definitions/options
+
+- add "generators:" to recipes
+	language: c++
+	headers:
+		foo-${PKG_VERSION}/src/include
+
+
+- improved generators
+	- qtcreator
+		- https://doc.qt.io/qtcreator/creator-project-generic.html
+		- fill .config file with "#define NAME value"
+		- fill .cxxflags and .cflags with other flags
+	- visual studio
+		- each package is a project
+		- 
+
+pipify
+------
+
+
+- fix version comparison?
+
+* use bdist_wheel to distribute binary packages
+* to try sdist/bdist/wheel:
+	pip3 install --no-index --find-links=dist/ --user BobBuildTool
+
