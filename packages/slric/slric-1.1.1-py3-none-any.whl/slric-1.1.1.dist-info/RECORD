@@ -1,0 +1,14 @@
+SLRIC/__init__.py,sha256=ta6I5vO0KnL-6Jq8dfzJ529b-Y7Jx7pTPxZEzA2vnsc,23
+SLRIC/slric.py,sha256=8_4EErZXQlhyZnfpOTyFv1yRWCRiLzzzaEaTCznZq-g,3574
+SLRIC/classes/GraphQW.py,sha256=zCL6sbe6dUDZRS2wUYjh4FMW3Zv8nYPncl7il2w8qvE,5361
+SLRIC/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SLRIC/methods/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+SLRIC/methods/direct_influence.py,sha256=9i55Y34ktTHTDLSVtL_T7_5aQTMLZ2TnJgU2fbGzSH8,4434
+SLRIC/methods/indirect_influence.py,sha256=apQ2StWv-SnSWsoErqbW9z3yGlVUgjxMP8xU6EaGGyg,3344
+SLRIC/methods/lric.py,sha256=mX8OpR3nfC_Fy-RoErowXQRwkA7TC6qfUjoIVHit96c,4941
+SLRIC/methods/sric.py,sha256=4uj97yqV3wxpTfm28-S8rMx0dbq2JguRQ1T8hfyO9sg,3983
+slric-1.1.1.dist-info/LICENSE.txt,sha256=THAUgorog3MtyRFAKateYUvXgfghqDtjUBSMf13Lu2o,1583
+slric-1.1.1.dist-info/METADATA,sha256=3itXKA72S5llQVoWTvmrZAS5PCNs4WrNcMBxEw6ECZU,4714
+slric-1.1.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+slric-1.1.1.dist-info/top_level.txt,sha256=gZHdP-OZE8QW4hYCugPf8u8aWwLRWaYS_fLj6gueesI,6
+slric-1.1.1.dist-info/RECORD,,
