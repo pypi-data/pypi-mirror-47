@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+pae/redis/__init__.py
+pae/redis/checks.py
+pae/redis/default_settings.py
+pae/redis/factory.py
+pyApp_Redis.egg-info/PKG-INFO
+pyApp_Redis.egg-info/SOURCES.txt
+pyApp_Redis.egg-info/dependency_links.txt
+pyApp_Redis.egg-info/requires.txt
+pyApp_Redis.egg-info/top_level.txt
