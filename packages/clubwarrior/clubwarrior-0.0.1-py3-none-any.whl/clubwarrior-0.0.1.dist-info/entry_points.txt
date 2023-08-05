@@ -1,0 +1,3 @@
+[console_scripts]
+clubwarrior = clubwarrior.clubwarrior:run
+
