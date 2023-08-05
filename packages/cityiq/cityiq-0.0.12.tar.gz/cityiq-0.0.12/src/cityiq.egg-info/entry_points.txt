@@ -1,0 +1,6 @@
+[console_scripts]
+ciq_assets = cityiq.cli.assets:run
+ciq_config = cityiq.cli.config:run
+ciq_events = cityiq.cli.events:run
+ciq_locations = cityiq.cli.locations:run
+
