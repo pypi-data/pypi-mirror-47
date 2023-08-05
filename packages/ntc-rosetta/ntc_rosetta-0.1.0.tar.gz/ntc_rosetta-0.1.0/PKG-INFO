@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: ntc-rosetta
+Version: 0.1.0
+Summary: The missing bridge between industry standard CLIs and YANG
+License: Apache-2.0
+Author: David Barroso
+Author-email: dbarrosop@dravetech.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: jmespath (>=0.9.3,<0.10.0)
+Requires-Dist: lxml (>=4.3,<5.0)
+Requires-Dist: yangify (>=0.1.1,<0.2.0)
