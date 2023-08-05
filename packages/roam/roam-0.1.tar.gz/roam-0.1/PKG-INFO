@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: roam
+Version: 0.1
+Summary: Easily traverse nested Python data structures 
+Home-page: https://github.com/jmurty/roam/
+Author: James Murty
+Author-email: james@murty.co
