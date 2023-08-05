@@ -1,0 +1,4 @@
+[console_scripts]
+help_wearing_glasses = wearing_glasses.helper:main
+plot_glasses = face_api.ex_gen_imgs:main
+
