@@ -1,0 +1,8 @@
+setup.py
+thirukuzhal/__init__.py
+thirukuzhal/hi.py
+thirukuzhal.egg-info/PKG-INFO
+thirukuzhal.egg-info/SOURCES.txt
+thirukuzhal.egg-info/dependency_links.txt
+thirukuzhal.egg-info/not-zip-safe
+thirukuzhal.egg-info/top_level.txt
