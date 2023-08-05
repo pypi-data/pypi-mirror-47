@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pyveda
+Version: 0.0.7
+Summary: Python API for interfacing with veda
+Home-page: https://github.com/DigitalGlobe/pyveda
+Author: DigitalGlobe
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: gbdx-auth (>=0.2.6)
+Requires-Dist: numpy
+Requires-Dist: numexpr
+Requires-Dist: h5py
+Requires-Dist: tables
+Requires-Dist: requests
+Requires-Dist: requests-toolbelt
+Requires-Dist: ujson
+Requires-Dist: shapely
+Requires-Dist: scikit-image
+Requires-Dist: affine
+Requires-Dist: pytest
+Requires-Dist: vcrpy
+Requires-Dist: aiohttp
+
+UNKNOWN
+
+
