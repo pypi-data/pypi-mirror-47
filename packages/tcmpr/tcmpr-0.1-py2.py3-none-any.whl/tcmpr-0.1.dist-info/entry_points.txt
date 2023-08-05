@@ -1,0 +1,3 @@
+[console_scripts]
+tcmpr = tcmpr.application:run
+

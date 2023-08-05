@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: tcmpr
+Version: 0.1
+Summary: 'Simple program to compressing text files using 4 most popular lossless algorithms'
+Home-page: https://tcmpr.readthedocs.io/en/latest/
+Author: Konrad Poreba
+Author-email: konrad@porebasoftware.pl
+License: mit
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+=====
+tcmpr
+=====
+
+Program to text compression and decompression which has
+implemented a few of the most popular lossless algorithms.
+
+
+Description
+===========
+
+Program compress and decompress text files, using chosen
+algorithm. It can run on files as well as
+in recursive way on directory with text files. Solid compression
+mode can be set with proper flag, default if directory is given
+it runs with non-solid mode and compress each file in that directory
+creating new compressed file. Implemented algorithms are:
+
+- Huffmann (`Huffman coding`__)
+- LZSS ( `Lempel–Ziv–Storer–Szymanski`__)
+- LZW (`Lempel–Ziv–Welch`__)
+- Shannon (`Shannon coding`__)
+
+
+__ HUFFMAN_
+__ LZSS_
+__ LZW_
+__ SHANNON_
+.. _HUFFMAN: https://en.wikipedia.org/wiki/Huffman_coding
+.. _LZSS: https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Storer%E2%80%93Szymanski
+.. _LZW: https://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch
+.. _SHANNON: https://en.wikipedia.org/wiki/Shannon_coding
+
+
+Usage
+=====
+To install `tcmpr` use following command (assuming that you have `pip` installed):
+
+.. code-block:: bash
+
+    $ pip install tcmpr
+
+Compress file `filename.txt` with default algorithm (huffman coding):
+
+.. code-block:: bash
+
+    $ tcmpr filename.txt
+
+Decompress file `filename.txt.huffman` with appropriate algorithm based on extension (here `.huffman`):
+
+.. code-block:: bash
+
+    $ tcmpr -d filename.txt.huffman
+
+Other commands are described in official documentation
+
+Docs
+====
+Documentation to project is hosted on `readthedocs.org`__ under following `link here`__
+
+
+
+__ RTD_
+
+__ DOCS_
+.. _DOCS: https://tcmpr.readthedocs.io/en/latest/
+.. _RTD: https://readthedocs.org/
+.. _pip: https://pypi.org/project/pip/
+
+
+Authors
+=======
+* Konrad Poreba konrad@porebasoftware.pl
+
+
