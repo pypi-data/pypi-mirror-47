@@ -1,0 +1,9 @@
+noodle_logging/__init__.py,sha256=uhwUgGSobxEwiVYzBPmNppojnImWa5mYdcWffrbdrvQ,24
+noodle_logging/decorators.py,sha256=xptnzWvXMXYH5Hb7B3UVIz6jhaC4JAXYq3RIYdHbz_A,1560
+noodle_logging/logger.py,sha256=eq4tz-8rFqlasJVDqftkD8-w0VaE5AeHMDGF1Q63h8c,1121
+noodle_logging/utils.py,sha256=qhMDb4cmCB1dCldpm9ltf-4DEQgFnf2c-f7LvmJ4AfY,68
+noodle_logging-0.1.dist-info/LICENSE,sha256=pGD3SPlSTGlsi94nw-FsWjK-4iWRn-wb_kYMziEWScE,1087
+noodle_logging-0.1.dist-info/METADATA,sha256=vvZCWI-37PAzgHGmGtiivCbpqqycjSVnEfGM0pSEGO4,701
+noodle_logging-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+noodle_logging-0.1.dist-info/top_level.txt,sha256=KI3zHPAoRAdnyxpUcjCW5I2JF_CypCdHnaD6-M0qnpk,15
+noodle_logging-0.1.dist-info/RECORD,,
