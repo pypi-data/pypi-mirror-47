@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+galvandi_sorting_magic2/__init__.py
+galvandi_sorting_magic2/bubble_sort.py
+galvandi_sorting_magic2/insertion_sort.py
+galvandi_sorting_magic2/quick_sort.py
+galvandi_sorting_magic2/selection_sort.py
+galvandi_sorting_magic2.egg-info/PKG-INFO
+galvandi_sorting_magic2.egg-info/SOURCES.txt
+galvandi_sorting_magic2.egg-info/dependency_links.txt
+galvandi_sorting_magic2.egg-info/not-zip-safe
+galvandi_sorting_magic2.egg-info/top_level.txt
