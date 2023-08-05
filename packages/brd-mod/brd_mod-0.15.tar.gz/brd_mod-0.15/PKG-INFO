@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: brd_mod
+Version: 0.15
+Summary: A small library containing various statistic, econometric, financial, and geospatial functions
+Home-page: https://github.com/benrdavison/brd_mod
+Author: Ben Davison
+Author-email: benjabee10@gmail.com
+License: MIT
+Download-URL: https://github.com/benrdavison/brd_mod/archive/v_015.tar.gz
+Description: UNKNOWN
+Keywords: statistics,economics,geospatial,probability,econometrics,finance
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
