@@ -1,0 +1,4 @@
+thrift==0.9.3
+sasl>=0.2.1
+thrift_sasl==0.2.1
+impyla
