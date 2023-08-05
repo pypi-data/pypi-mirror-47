@@ -1,0 +1,8 @@
+README.md
+setup.py
+geophysics_analysis/__init__.py
+geophysics_analysis/geophysics_analysis.py
+geophysics_analysis.egg-info/PKG-INFO
+geophysics_analysis.egg-info/SOURCES.txt
+geophysics_analysis.egg-info/dependency_links.txt
+geophysics_analysis.egg-info/top_level.txt

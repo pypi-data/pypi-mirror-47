@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: geophysics-analysis
+Version: 0.0.1
+Summary: A collection of the functions for analysis of geophysical fields
+Home-page: UNKNOWN
+Author: Michael Needham
+Author-email: m.needham@colostate.edu
+License: UNKNOWN
+Description: # Geophysics Analysis
+        
+        A package that contains various functions to aid with the analysis of geophysical fields, especially those in netcdf format. Included are functions that address:
+        
+        1. Calculations
+        2. Data Importing
+        3. netCDF
+        4. Discrete Grid Considerations
+        5. Field Manipulations
+        6. Plotting
+        7. Synthetic Data
+        8. Trends
+        9. Statistics
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
