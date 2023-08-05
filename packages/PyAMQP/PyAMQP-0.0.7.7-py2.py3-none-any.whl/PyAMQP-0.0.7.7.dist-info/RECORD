@@ -1,0 +1,10 @@
+pyamqp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/dispatcher.py,sha256=iptebyTIsF0HGOVD3lz-63m5RE-Yu8M9lz1p6Ll6CxA,3510
+pyamqp/rabbit/receiver.py,sha256=oHIFeyGNPUWEW8v-IoLvf6b5JLxYCZ2rgsMZ66fVx08,6150
+pyamqp/rabbit/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyamqp/rabbit/core/base_connector.py,sha256=-5n8vd1F08WYc3-ocxZ0RSLATTVcE9x1Bg6IUzlNKCg,1484
+PyAMQP-0.0.7.7.dist-info/METADATA,sha256=Ly0fkahAHSLuoSlHvtEy5jLmtfR3WlrHhiHqBEw6AaA,3996
+PyAMQP-0.0.7.7.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+PyAMQP-0.0.7.7.dist-info/top_level.txt,sha256=caeNPvHcIak8-8fTzYW4nQMZE-PMDmu5vgNUcJmOc18,7
+PyAMQP-0.0.7.7.dist-info/RECORD,,
