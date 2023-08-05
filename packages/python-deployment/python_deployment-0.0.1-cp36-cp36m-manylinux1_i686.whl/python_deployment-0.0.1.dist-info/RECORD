@@ -1,0 +1,9 @@
+deployment/matmul.c,sha256=obTondEAMSHJs--ODP6bkAvUABZ_tAXX6sBIatf8-y4,907550
+deployment/__init__.py,sha256=pVoBjWk2ORQTOrsr4PSdD2PmAfnXcUA0RuEiPY-hRZQ,454
+deployment/_version.py,sha256=ZIIpzbUy7-XqjCNYt7iE7Xj0KNhyLr5YuN8j8wIiDIQ,54
+deployment/deploy.py,sha256=pfM_3cSWwlgk5ds9bwrbiYQSwY956Hit4tSd8KrB3VY,516
+deployment/matmul.cpython-36m-i386-linux-gnu.so,sha256=rAZe1Pas3ted3RucrlUCw3yJkiy3FkEaecqTtRHhIFI,652075
+python_deployment-0.0.1.dist-info/WHEEL,sha256=4RUeCnPOaAmHKINNrvtBwd3oNgi5_IueObVoFx2ZrXo,107
+python_deployment-0.0.1.dist-info/top_level.txt,sha256=8K7jX6v8Ol1Bg1B1XZaGv9Ezr01OjL1jGxubgFL1YaI,11
+python_deployment-0.0.1.dist-info/METADATA,sha256=-AdIQNKMYmL-mZJKbpy2S-b1HCwVAlmE1Rha-Zw1i18,4525
+python_deployment-0.0.1.dist-info/RECORD,,
