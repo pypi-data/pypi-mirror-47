@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+gif_me_loader/__init__.py
+gif_me_loader.egg-info/PKG-INFO
+gif_me_loader.egg-info/SOURCES.txt
+gif_me_loader.egg-info/dependency_links.txt
+gif_me_loader.egg-info/requires.txt
+gif_me_loader.egg-info/top_level.txt
