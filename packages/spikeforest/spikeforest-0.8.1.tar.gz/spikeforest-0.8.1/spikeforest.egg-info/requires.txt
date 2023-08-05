@@ -1,0 +1,13 @@
+numpy
+scipy
+matplotlib
+requests
+pillow
+pandas
+ipython
+h5py
+setuptools-git
+scikit-learn
+python-frontmatter
+spikeextractors==0.4.2
+spiketoolkit==0.3.0
