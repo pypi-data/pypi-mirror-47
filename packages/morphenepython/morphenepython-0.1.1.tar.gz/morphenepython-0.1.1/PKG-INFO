@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: morphenepython
+Version: 0.1.1
+Summary: Official Python library for the Morphene Blockchain
+Home-page: http://www.github.com/morphene/morphene-python
+Author: Andrew Chaney
+Author-email: andrew@boonedevelopment.com
+Maintainer: Andrew Chaney
+Maintainer-email: andrew@boonedevelopment.com
+License: UNKNOWN
+Download-URL: https://github.com/morphene/morphene-python/tarball/0.1.1
+Description: UNKNOWN
+Keywords: morphene,blockchain,library,api,rpc
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial
