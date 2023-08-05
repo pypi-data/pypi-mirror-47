@@ -1,0 +1,4 @@
+pdfminer.six
+numpy
+python-dateutil
+chardet==3.0.4
