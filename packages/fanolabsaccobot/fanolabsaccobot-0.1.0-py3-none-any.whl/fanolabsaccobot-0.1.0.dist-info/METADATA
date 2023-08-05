@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: fanolabsaccobot
+Version: 0.1.0
+Summary: FanoLabs Accobot module for Python3
+Home-page: https://git.fanoai.cn/SDKs/accobot-python
+Author: Henry Zheng
+Author-email: henry.zheng@fano.ai
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+accobot
+==========
+
+FanoLabs Accobot module for Python3
+
+<!-- TOC -->
+
+- [Installation](#installation)
+- [License](#license)
+- [API](#api)
+    - [chat(senderId, text, language)](#chat(senderId,text,language))
+
+
+<!-- /TOC -->
+
+## Installation
+
+Current stable release (`0.1.0`)
+
+```sh
+$ pip install fanolabsaccobot
+```
+
+## Common Usage
+We suggest you load the module via `require`, pending the stabalizing of es modules in node:
+```python
+from fanolabsaccobot import Accobot
+
+class Chatbot:
+
+    def __init__(self):
+        self.client = Accobot(`url`, `userName`, `password`, `scope`)
+
+    def __call__(self, senderId, text, language):
+        return self.client.chat(senderId, text, language)
+
+def main():
+    returnObj = Chatbot()(`senderId`, `text`, `language`)
+    print(returnObj)
+
+if __name__ == '__main__':
+    main()
+```
+
+`Note`: `url`、`userName`、`password`、`scope` should set to the specific correct configuration.
+
+## API
+
+### chat(senderId,text,language)
+
+- `senderId` A string representing the user for chatting with accobot
+- `text` A string representing the user input content 
+- `language` A string representing the language for the user input content, allowed languages to 'cantonese, mandarin, english-usa'
+- Returns: 
+
+    `Note`: successful response
+    ```js
+    {
+        "content": [{
+            "text": "你好，請您使用語音描述一下您想要報告的事故。您可以報告以下事故類型：水管爆裂，車輛故障，山泥傾瀉，洪水泛濫，塌樹，氣體洩漏，緊急維修以及交通事故。(例如: xxx路口因為交通意外，道路嚴重阻塞。）"
+        }],
+        "status": 200
+    }
+    ```
+
+    `Note`: Error handling
+    ```js
+    {
+        "status": 500,
+        "error_msg": {
+            "to": "https://fano_ms_bre:8080/bre?user_id=test_henry",
+            "status": "error",
+            "error_msg": "BRE Error: 'NoneType' object is not subscriptable"
+        },
+        "statusText": "Internal Server Error"
+    }
+    ```
+
+## License
+
+MIT
+
