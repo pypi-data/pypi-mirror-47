@@ -1,0 +1,3 @@
+[geometa.types]
+vector = geometa_vector.schema:handler
+
