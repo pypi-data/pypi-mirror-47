@@ -1,0 +1,16 @@
+# airflow-arcgis [![PyPI version](https://badge.fury.io/py/airflow-arcgis-plugin.svg)](https://pypi.org/project/airflow-arcgis-plugin/)
+Simple hooks and operators for exporting data from ArcGIS.
+
+Import PostgreSQL table data into ArcGIS feature layer or perform incremental updates.<sup>WIP</sup>
+# Features
+- `PostgresToArcGISOperator` - exporting/syncing a PostgreSQL table to ArcGIS
+# Install
+Using pip:
+```bash
+pip3 install airflow-arcgis-plugin
+```
+
+# Usage
+Create a connection of type `HTTP` in Airflow named `http_ago` to store your ArcGIS base url (e.g. `https://detroitmi.maps.arcgis.com/`), username and password. *You can also pass in an override connection name in your DAG definition.*
+
+This plugin is published as a pip package. Refer to the example DAG for available parameters.

@@ -1,0 +1,13 @@
+README.md
+setup.py
+airflow_arcgis/__init__.py
+airflow_arcgis/arcgis_plugin.py
+airflow_arcgis/hooks/__init__.py
+airflow_arcgis/hooks/arcgis_hook.py
+airflow_arcgis/operators/__init__.py
+airflow_arcgis/operators/arcgis_operator.py
+airflow_arcgis_plugin.egg-info/PKG-INFO
+airflow_arcgis_plugin.egg-info/SOURCES.txt
+airflow_arcgis_plugin.egg-info/dependency_links.txt
+airflow_arcgis_plugin.egg-info/entry_points.txt
+airflow_arcgis_plugin.egg-info/top_level.txt
