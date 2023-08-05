@@ -1,0 +1,4 @@
+numpy
+sty
+mock
+pytest
