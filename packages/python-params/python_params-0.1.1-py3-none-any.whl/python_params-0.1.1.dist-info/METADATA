@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: python-params
+Version: 0.1.1
+Summary: Python files parametrization library
+Home-page: https://github.com/fornaxai/pyparams
+Author: shelfwise.ai
+Author-email: krzysztof.kolasinski@shelfwise.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytest (>=3.3.0)
+Requires-Dist: astor (==0.6.2)
+Requires-Dist: natsort (==5.3.3)
+Requires-Dist: pyyaml (==5.1)
+Requires-Dist: dataclasses (==0.6)
+
+UNKNOWN
+
+
