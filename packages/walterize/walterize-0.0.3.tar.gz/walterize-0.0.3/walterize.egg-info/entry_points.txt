@@ -1,0 +1,3 @@
+    [console_scripts]
+    walterize = walterize.cli:walterize_cli
+    
