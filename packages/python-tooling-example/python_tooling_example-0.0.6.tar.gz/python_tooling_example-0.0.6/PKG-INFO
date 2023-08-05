@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: python_tooling_example
+Version: 0.0.6
+Summary: Example Python package using Pytest, Sphinx, Travis, Versioneer and Github.
+Home-page: https://github.com/brunobeltran/python_tooling_example
+Author: Bruno Beltran
+Author-email: brunobeltran0@gmail.com
+License: MIT
+Description: ======================
+        Python Tooling Example
+        ======================
+        
+        An example package demonstrating the usage of Pytest/Travis, Sphinx/ReadTheDocs,
+        Versioneer and Github.
+        
+        
+        
+Keywords: python tooling meta example
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Utilities

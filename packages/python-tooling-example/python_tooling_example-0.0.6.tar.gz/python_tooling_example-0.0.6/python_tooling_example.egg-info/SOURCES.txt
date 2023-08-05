@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+versioneer.py
+python_tooling_example/__init__.py
+python_tooling_example/_version.py
+python_tooling_example/example_module.py
+python_tooling_example.egg-info/PKG-INFO
+python_tooling_example.egg-info/SOURCES.txt
+python_tooling_example.egg-info/dependency_links.txt
+python_tooling_example.egg-info/requires.txt
+python_tooling_example.egg-info/top_level.txt
+python_tooling_example/example_subpackage/__init__.py
+python_tooling_example/example_subpackage/daughter_module.py
