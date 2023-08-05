@@ -1,0 +1,9 @@
+README.md
+setup.py
+pymagcore/__init__.py
+pymagcore/api.py
+pymagcore.egg-info/PKG-INFO
+pymagcore.egg-info/SOURCES.txt
+pymagcore.egg-info/dependency_links.txt
+pymagcore.egg-info/requires.txt
+pymagcore.egg-info/top_level.txt
