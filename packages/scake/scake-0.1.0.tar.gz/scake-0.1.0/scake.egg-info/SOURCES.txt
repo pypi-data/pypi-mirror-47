@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+scake/__init__.py
+scake/auto.py
+scake/cli.py
+scake/scake.py
+scake/structure.py
+scake.egg-info/PKG-INFO
+scake.egg-info/SOURCES.txt
+scake.egg-info/dependency_links.txt
+scake.egg-info/entry_points.txt
+scake.egg-info/requires.txt
+scake.egg-info/top_level.txt
