@@ -1,0 +1,9 @@
+README.md
+setup.py
+pytorch_swats.egg-info/PKG-INFO
+pytorch_swats.egg-info/SOURCES.txt
+pytorch_swats.egg-info/dependency_links.txt
+pytorch_swats.egg-info/requires.txt
+pytorch_swats.egg-info/top_level.txt
+swats/__init__.py
+swats/optim.py
