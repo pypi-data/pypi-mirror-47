@@ -1,0 +1,7 @@
+README.md
+setup.py
+TraceManager/__init__.py
+TraceManager.egg-info/PKG-INFO
+TraceManager.egg-info/SOURCES.txt
+TraceManager.egg-info/dependency_links.txt
+TraceManager.egg-info/top_level.txt
