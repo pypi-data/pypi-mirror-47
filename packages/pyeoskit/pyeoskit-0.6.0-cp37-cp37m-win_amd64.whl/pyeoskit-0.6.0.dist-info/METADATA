@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyeoskit
+Version: 0.6.0
+Summary: toolkit for pyeos
+Home-page: UNKNOWN
+Author: The pyeos team
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.21.1)
+Requires-Dist: certifi
+Requires-Dist: toolz
+Requires-Dist: funcy
+Requires-Dist: prettytable
+Requires-Dist: requests-unixsocket
+
+UNKNOWN
+
+
