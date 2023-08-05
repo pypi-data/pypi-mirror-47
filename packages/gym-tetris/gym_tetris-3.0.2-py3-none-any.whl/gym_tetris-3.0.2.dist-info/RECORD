@@ -1,0 +1,13 @@
+gym_tetris/__init__.py,sha256=-AW4zKm4LFWeTdUgFA-0BPxSbixB6WbPkdopEIdqXTs,234
+gym_tetris/_registration.py,sha256=ZYfzDZK0unlr71TDC9vyRX3TqH-uz1io-ZQk4fWJOM4,1728
+gym_tetris/actions.py,sha256=Fe7D6mwukr-3A3z53XGGIZPgK1sophC0J2vn272Oojg,376
+gym_tetris/tetris_env.py,sha256=A3-JvwfZKxOvpIdTh9tbWLxa1-47qYuzFi-9nMAEWzE,7207
+gym_tetris/_app/__init__.py,sha256=LqRhOjF92hhHNfmipVX5LTjQn6sqUgizC_LwKWs41yI,75
+gym_tetris/_app/cli.py,sha256=x01e_c5iB1Z6hXHzUo90aDFYzBHqB49Xi8mJmW1II0I,2092
+gym_tetris/_roms/Tetris.nes,sha256=rKsQ8tutTU711WsxzUzqIIu24uLF26XrM51xHsBONTU,49168
+gym_tetris-3.0.2.dist-info/LICENSE,sha256=YMVez2fFebrexqzU4UR9QqHdjybwd8g7L3aD3d_UINQ,621
+gym_tetris-3.0.2.dist-info/METADATA,sha256=qV2rDPVA9dzbYdUoIhQ1Z2bNwUUWD9kvH3VOeMprm0U,6227
+gym_tetris-3.0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gym_tetris-3.0.2.dist-info/entry_points.txt,sha256=ZhZ2tTJFeeNWUfKBtGcrfsrnlo0gYxeSdkkRho5K6hk,57
+gym_tetris-3.0.2.dist-info/top_level.txt,sha256=N_pUWWX9fHURF34-diBraS_Z1Th6Y9o4RTEaad_lMc0,11
+gym_tetris-3.0.2.dist-info/RECORD,,
