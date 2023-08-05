@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mulpy
+Version: 0.0.2
+Summary: A user-friendly Python concurrency control package.
+Home-page: https://github.com/
+Author: Asakawa Rikka
+Author-email: AsakawaRikka@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: any
