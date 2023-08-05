@@ -1,0 +1,4 @@
+[console_scripts]
+mdn-mark = get_mdn_mark.get_mdn_mark:threading_main
+mdn-mark-single = get_mdn_mark.get_mdn_mark:main
+
