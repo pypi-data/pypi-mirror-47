@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: metron-tagger
+Version: 0.1.0
+Summary: A program to write metadata from metron.cloud to a comic archive
+Home-page: https://github.com/bpepple/metron-tagger
+Author: Brian Pepple
+Author-email: bdpepple@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: comics,comic,metadata,tagging,tagger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Other/Nonlisted Topic
+Requires-Python: >=3.7
