@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: spychronous
+Version: 1.0
+Summary: A simple synchronous job runner for parallel processing tasks in Python.
+Home-page: https://github.com/scparedes/spychronous
+Author: Santiago C Paredes
+Author-email: santiago.paredes2012@gmail.com
+License: MIT
+Download-URL: https://github.com/scparedes/spychronous/archive/v1.0.tar.gz
+Description: UNKNOWN
+Keywords: multiprocessing,multiprocess,multi,process,synchronous,job,runner
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
