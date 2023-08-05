@@ -1,0 +1,17 @@
+sklearn
+auto_tqdm
+pandas
+scikit-optimize
+deflate_dict
+dict_hash
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
+keras
+silence_tensorflow
+extra_keras_utils
+numpy
+holdouts_generator
