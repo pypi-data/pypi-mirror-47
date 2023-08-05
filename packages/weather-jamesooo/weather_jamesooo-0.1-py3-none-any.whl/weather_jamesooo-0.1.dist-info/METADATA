@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: weather-jamesooo
+Version: 0.1
+Summary: A simple api which will return the current weather at supplied coordinates
+Home-page: https://github.com/jamesooo/weather-jamesooo
+Author: James O'Neal
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: Flask-RESTful (==0.3.7)
+Requires-Dist: Click (==7.0)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: requests (==2.22.0)
+
+UNKNOWN
+
+
