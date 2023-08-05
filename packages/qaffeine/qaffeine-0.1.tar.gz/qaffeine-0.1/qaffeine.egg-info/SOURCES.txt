@@ -1,0 +1,6 @@
+README.md
+setup.py
+qaffeine.egg-info/PKG-INFO
+qaffeine.egg-info/SOURCES.txt
+qaffeine.egg-info/dependency_links.txt
+qaffeine.egg-info/top_level.txt
