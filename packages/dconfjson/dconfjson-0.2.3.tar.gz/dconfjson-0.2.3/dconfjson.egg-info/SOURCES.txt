@@ -1,0 +1,10 @@
+README.md
+setup.py
+dconfjson/__init__.py
+dconfjson/to_dconf.py
+dconfjson/to_json.py
+dconfjson.egg-info/PKG-INFO
+dconfjson.egg-info/SOURCES.txt
+dconfjson.egg-info/dependency_links.txt
+dconfjson.egg-info/entry_points.txt
+dconfjson.egg-info/top_level.txt
