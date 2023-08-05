@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pyzmq
+plotly
+torchstat
+receptivefield
+ipywidgets
+sklearn
+nbformat
