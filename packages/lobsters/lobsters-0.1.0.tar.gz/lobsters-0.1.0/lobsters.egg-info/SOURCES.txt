@@ -1,0 +1,7 @@
+README.md
+setup.py
+lobsters.egg-info/PKG-INFO
+lobsters.egg-info/SOURCES.txt
+lobsters.egg-info/dependency_links.txt
+lobsters.egg-info/requires.txt
+lobsters.egg-info/top_level.txt
