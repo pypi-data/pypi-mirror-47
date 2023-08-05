@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Aihub-demo
+Version: 1.0.1
+Summary: A Python Package for Deep Learning Developers.
+Home-page: https://github.com/suvhradipghosh07/Aihub
+Author: Suvhradip Ghosh
+Author-email: suvhradip@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tensorflow
+Requires-Dist: keras
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# Aihub
+
+A Python package for all Deep learning Developers.
+
+## Usage
+
+Following query on terminal will provide you details.
+
+```
+import demohub
+```
+
+
