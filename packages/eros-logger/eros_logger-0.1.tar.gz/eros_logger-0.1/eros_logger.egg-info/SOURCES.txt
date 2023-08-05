@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+eros_logger.egg-info/PKG-INFO
+eros_logger.egg-info/SOURCES.txt
+eros_logger.egg-info/dependency_links.txt
+eros_logger.egg-info/not-zip-safe
+eros_logger.egg-info/top_level.txt
+logger/__init__.py
