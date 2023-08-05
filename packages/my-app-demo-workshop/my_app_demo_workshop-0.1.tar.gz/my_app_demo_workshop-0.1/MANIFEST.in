@@ -1,0 +1,3 @@
+include my_app_demo_workshop/quote_generator/quotes.json
+include my_app_demo_workshop/static/img/img-bg.jpg
+include my_app_demo_workshop/templates/home.html
