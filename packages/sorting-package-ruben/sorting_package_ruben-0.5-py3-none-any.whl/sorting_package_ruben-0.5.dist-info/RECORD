@@ -1,0 +1,9 @@
+sorting_package_ruben/__init__.py,sha256=2KrvHz06hdxxUyuBs5btARfBc5vxjfM9ba-Xvf20gcg,160
+sorting_package_ruben/bubble_sort.py,sha256=oiX9bIXsYtCoZwMHFCJ1XMRBQAte0PO6TYtSfZB-ZzM,279
+sorting_package_ruben/insertion_sort.py,sha256=z78Pjyv-QgIwawr7cPMrcJXt6-hpgzoUkrHrubH5qW0,338
+sorting_package_ruben/quick_sort.py,sha256=xetLR21P4p6eUyOQUKg8rkKBda4ik_Wg0bSMROPOugo,1009
+sorting_package_ruben/selection_sort.py,sha256=43BA9gLoo5YKTDYKYRBYi8hbvrZnSs8FrrhwKCMACCM,389
+sorting_package_ruben-0.5.dist-info/METADATA,sha256=tK9JlutdTtmhXBT0FFMvaOf31kHusa6RnoszN43vDDQ,262
+sorting_package_ruben-0.5.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+sorting_package_ruben-0.5.dist-info/top_level.txt,sha256=4s8jGt7NfMAM30WDDKTks688JLeWlufBAjZaXMiTy6w,22
+sorting_package_ruben-0.5.dist-info/RECORD,,
