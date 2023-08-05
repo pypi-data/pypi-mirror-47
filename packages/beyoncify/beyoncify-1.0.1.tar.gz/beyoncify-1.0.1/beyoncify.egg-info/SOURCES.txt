@@ -1,0 +1,7 @@
+README.md
+setup.py
+beyoncify.egg-info/PKG-INFO
+beyoncify.egg-info/SOURCES.txt
+beyoncify.egg-info/dependency_links.txt
+beyoncify.egg-info/not-zip-safe
+beyoncify.egg-info/top_level.txt
