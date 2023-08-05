@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+idea_sms_sdk/__init__.py
+idea_sms_sdk/messaging.py
+idea_sms_sdk/utils.py
+idea_sms_skd.egg-info/PKG-INFO
+idea_sms_skd.egg-info/SOURCES.txt
+idea_sms_skd.egg-info/dependency_links.txt
+idea_sms_skd.egg-info/requires.txt
+idea_sms_skd.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: idea-sms-skd
+Version: 0.1.1
+Summary: Python package for sending sms with idea sms
+Home-page: https://github.com/njerucyrus/idea_sms_python_sdk
+Author: Njeru Cyrus
+Author-email: njerucyrus5@gmail.com
+License: LICENSE.txt
+Description: # idea_sms_python_sdk
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
