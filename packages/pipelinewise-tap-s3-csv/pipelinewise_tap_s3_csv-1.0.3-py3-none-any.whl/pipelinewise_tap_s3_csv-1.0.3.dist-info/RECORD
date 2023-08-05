@@ -1,0 +1,12 @@
+tap_s3_csv/__init__.py,sha256=G-4_o5GZAvNGQ9oV-1FbIxorFx_Fhp2BUh-kfiGTmqA,2248
+tap_s3_csv/config.py,sha256=ruuJRNqtknoyYVMVrOVY_Ankooe3MxLBzVIwTfb2DZ0,298
+tap_s3_csv/conversion.py,sha256=i6u0ZPb3vNE51OiirdUkexWBKhMQuQmuUTtSt3mmB9E,2344
+tap_s3_csv/discover.py,sha256=_DsN2urGa7erf6GwvOEzp3BtFUwPcLaD4RVIbOZ6VwU,1428
+tap_s3_csv/s3.py,sha256=mhdpA7oiepaJo0DzzbxWJm7v7SnXjuqyyr9EkLEJoOI,7617
+tap_s3_csv/sync.py,sha256=Y-3FAzZzn_1P1nsaw8rl56WC9LBXCpX4gaAM-XXGwX0,2951
+pipelinewise_tap_s3_csv-1.0.3.dist-info/LICENSE,sha256=xNuDgLmykYhajKZueHKWS9ZgnCFZ47hzbPCyI5-hs9c,32393
+pipelinewise_tap_s3_csv-1.0.3.dist-info/METADATA,sha256=3kspVuDhMn8vhoWjm5KEJIKbaK8X3xsd9XB6Wp3VsQw,588
+pipelinewise_tap_s3_csv-1.0.3.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+pipelinewise_tap_s3_csv-1.0.3.dist-info/entry_points.txt,sha256=iFJFEFghWg7lqUfI446PsAFhOiZPqvnakbGCD5LCFfI,72
+pipelinewise_tap_s3_csv-1.0.3.dist-info/top_level.txt,sha256=-TRKwKXjCSuYXNjACz9fFNXDLF91Qf-6B2Lx1h9xhqw,11
+pipelinewise_tap_s3_csv-1.0.3.dist-info/RECORD,,
