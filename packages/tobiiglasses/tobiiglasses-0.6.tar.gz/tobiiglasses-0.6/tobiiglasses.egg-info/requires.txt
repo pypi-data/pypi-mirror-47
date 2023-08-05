@@ -1,0 +1,4 @@
+tobiiglassesctrl>=2.2.1
+pandas
+opencv-python
+sortedcontainers==1.5.10
