@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: poseidonctrip
+Version: 0.9.1
+Summary: distributed crawler
+Home-page: http://pypi.python.org/pypi/poseidonctrip/
+Author: hantmac
+Author-email: hantmac@outlook.com
+License: MIT
+Description: UNKNOWN
+Keywords: poseidonctrip,scrapy,distributed
+Platform: UNKNOWN
