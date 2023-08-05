@@ -1,0 +1,9 @@
+setup.py
+get_mdn_mark/__init__.py
+get_mdn_mark/get_mdn_mark.py
+mdn_mark.egg-info/PKG-INFO
+mdn_mark.egg-info/SOURCES.txt
+mdn_mark.egg-info/dependency_links.txt
+mdn_mark.egg-info/entry_points.txt
+mdn_mark.egg-info/requires.txt
+mdn_mark.egg-info/top_level.txt
