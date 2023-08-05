@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+reader/__init__.py
+reader/api.py
+turkce.egg-info/PKG-INFO
+turkce.egg-info/SOURCES.txt
+turkce.egg-info/dependency_links.txt
+turkce.egg-info/entry_points.txt
+turkce.egg-info/top_level.txt
