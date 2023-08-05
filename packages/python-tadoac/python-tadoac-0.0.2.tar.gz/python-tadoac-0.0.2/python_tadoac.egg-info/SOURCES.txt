@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+PyTado/__init__.py
+PyTado/__main__.py
+PyTado/interface.py
+python_tadoac.egg-info/PKG-INFO
+python_tadoac.egg-info/SOURCES.txt
+python_tadoac.egg-info/dependency_links.txt
+python_tadoac.egg-info/entry_points.txt
+python_tadoac.egg-info/not-zip-safe
+python_tadoac.egg-info/top_level.txt
