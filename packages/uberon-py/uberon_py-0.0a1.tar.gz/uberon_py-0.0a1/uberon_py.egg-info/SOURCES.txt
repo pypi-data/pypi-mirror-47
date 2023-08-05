@@ -1,0 +1,8 @@
+README.md
+setup.py
+uberon_py/__init__.py
+uberon_py/obo.py
+uberon_py.egg-info/PKG-INFO
+uberon_py.egg-info/SOURCES.txt
+uberon_py.egg-info/dependency_links.txt
+uberon_py.egg-info/top_level.txt
