@@ -1,0 +1,14 @@
+jam/__init__.py,sha256=xryqaSfk5253HwciuqcV5CDj2lGrBtWVFV3dBNJqyNg,109
+jam/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+jam/apps.py,sha256=ntV2hhkwFUoNWPq5D084xPnUf7LurHwadLjLAJPQkjM,81
+jam/exporter.py,sha256=7v7QTdeHkktQ6sffPRZIR_his58SiEc6-0dcOQqjXgU,850
+jam/generator.py,sha256=JccGNEOYMHYkJIuo77mgXKq0JSw4gtvx1F9VX1zrrS4,8596
+jam/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+jam/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+jam/utils.py,sha256=yFvLIuvQz08VAJ3iHRjlTYdCzs7xrFAJJ23ZYPuzmWE,650
+jam/views.py,sha256=u277kDNb7Mk9jhh5Lc82WIYQqaBXe23wadjWLcfSv9w,501
+jam/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_json_api_model-0.0.5.dist-info/METADATA,sha256=lHesW9elg-qK59yh0KuGDF7ffMQj6PDdDLpODURVm4c,815
+django_json_api_model-0.0.5.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+django_json_api_model-0.0.5.dist-info/top_level.txt,sha256=ET7bxB9mRgK2fgr7mYKofVsci21Naad3xrK_EP9eWWk,4
+django_json_api_model-0.0.5.dist-info/RECORD,,
