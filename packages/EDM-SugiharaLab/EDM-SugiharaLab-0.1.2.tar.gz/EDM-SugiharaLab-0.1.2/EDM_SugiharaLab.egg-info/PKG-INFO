@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: EDM-SugiharaLab
+Version: 0.1.2
+Summary: Python wrapper for cppEDM using pybind11
+Home-page: https://github.com/SugiharaLab/pyEDM
+Author: Cameron Smith & Joseph Park
+Author-email: Sugihara.Lab@gmail.com
+License: Copyright 2019 The Regents of the University of California.
+Description: Python wrapper for cppEDM using pybind11
+Platform: UNKNOWN
+Requires-Python: >=3
