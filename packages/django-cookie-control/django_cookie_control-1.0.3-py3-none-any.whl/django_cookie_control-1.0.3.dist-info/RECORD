@@ -1,0 +1,17 @@
+django_cookie_control/__init__.py,sha256=UiHEYUkhX9y_szA9Zlc7iKDY3-MXKMjaolws_aSImSQ,69
+django_cookie_control/admin.py,sha256=Rr_XCasi604zIps2ATISHrHHk5tBXanTrADY8u3gGb4,3215
+django_cookie_control/apps.py,sha256=xPZOTgpV1RGNF7wX_x5mrFKHm1BJ4ehQpJP72olqCBg,154
+django_cookie_control/models.py,sha256=6m_oOt7hDGosio3FpaJemL7lKpmulC2A0L1YcHq3zc8,22562
+django_cookie_control/settings.py,sha256=-NF90IOx9PRC7soDfbwWg2v_0bJcvNh4R0qCyg4dTnM,1691
+django_cookie_control/migrations/0001_initial.py,sha256=eS-m8nTRwTzmTp5nlYXa9qkJymxpzyLly6D6agPmJpk,16844
+django_cookie_control/migrations/0002_add_default_cookies.py,sha256=EAoXMzDV5uL8sQnLBK55pPEFqj_inZyLzGr8Zp1hVfU,838
+django_cookie_control/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cookie_control/static/django_cookie_control/cookie-control/cookieControl-8.x.min.js,sha256=ymJTpr8kW2QXVqq7tUIIoTVdGYEPqXh-TKwC9hKQcCA,34348
+django_cookie_control/templates/django_cookie_control/cookie-control.html,sha256=GFIwTTs4HgLHwQgl3IW4nVaqcQl_pqBLWrxCPbeZDfE,2623
+django_cookie_control/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_cookie_control/templatetags/cookie_control.py,sha256=gH790K8cMKiBUHNMWpUMXnrZ2qNq2PBarxaBYFvGCQM,1174
+django_cookie_control-1.0.3.dist-info/LICENSE,sha256=WUi5oSoNjZFNm8z0REclIK2lAFOacxZ0HZBSNSP3xo8,1096
+django_cookie_control-1.0.3.dist-info/METADATA,sha256=hhhKUNDHVUkBSPpt8Lt3YPk-RxZ4mz3lWzWQCcojaFg,3589
+django_cookie_control-1.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+django_cookie_control-1.0.3.dist-info/top_level.txt,sha256=tWtu8PoBeawxsU0IW_rafK7UZnAzosYyVz8IPanVzW0,22
+django_cookie_control-1.0.3.dist-info/RECORD,,
