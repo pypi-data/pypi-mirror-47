@@ -1,0 +1,63 @@
+\documentclass[letterpaper]{article}
+
+\usepackage[hmargin=1.5in,tmargin=1in,bmargin=1.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[babel=true,protrusion=true,expansion=true]{microtype}
+\usepackage[american]{babel}
+\usepackage{cfr-lm}
+\usepackage[no-math]{fontspec}
+\usepackage{nowidow}
+\usepackage{parskip}
+\usepackage[unicode=true,hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{dblfloatfix}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{footnote}
+\usepackage{acronym}
+\usepackage{relsize}
+\usepackage{upquote}
+\usepackage{fancyvrb}
+
+% Pandoc tightlist
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Fix tables
+\makesavenoteenv{longtable}
+
+% Place floats at the top of float-only pages
+\makeatletter
+\setlength{\@fptop}{0pt}
+\setlength{\@fpbot}{0pt plus 1fil}
+\makeatother
+
+% Set defaults for figure, table placement
+\makeatletter
+\def\fps@figure{!tb}
+\def\fps@table{!tb}
+\makeatother
+
+% Disable page numbers
+\pagenumbering{gobble}
+
+% Configure acronyms
+\renewcommand*{\acsfont}[1]{\textsc{\textsmaller{#1}}}
+
+$for(include-before)$$include-before$$endfor$
+
+\title{$title$}
+\author{$for(author)$$author.name$$sep$\quad $endfor$}
+\date{}
+
+\begin{document}
+\maketitle
+
+$body$
+
+\end{document}
