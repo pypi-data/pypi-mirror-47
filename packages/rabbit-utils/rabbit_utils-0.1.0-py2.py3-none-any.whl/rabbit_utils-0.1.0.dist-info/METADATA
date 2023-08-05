@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rabbit-utils
+Version: 0.1.0
+Summary: Backup/Restore/Remove Job from RabbitMQ queues
+Home-page: https://github.com/aukris/rabbit_droppings
+Author: aukris
+Author-email: abhijith@tapchief.com
+License: UNKNOWN
+Keywords: rabbit rabbitmq backup restore remove job
+Platform: UNKNOWN
+Requires-Dist: pika (==0.9.14)
+
+UNKNOWN
+
+
