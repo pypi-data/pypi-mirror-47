@@ -1,0 +1,8 @@
+tox_DEBIAN/__init__.py,sha256=QpZzD1jTIyZzTO5FRB9uDGt3BIpTXkCK7QDP-5Jsldg,1283
+tox_DEBIAN/install.py,sha256=AxoeIhaY7Ce2g1uXKAGkf4nuYlG4SrPZae5EtMli0yA,1572
+tox_DEBIAN-0.3.dist-info/LICENSE,sha256=b-3H6mOmoXEnsdkcDvGZoL5OGa5fkZgCV7OOzBMhUZw,1073
+tox_DEBIAN-0.3.dist-info/METADATA,sha256=5WwVFGZA_qflixX0SKk1c6mWuMwFASsUtLuz2JHYWM4,2350
+tox_DEBIAN-0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+tox_DEBIAN-0.3.dist-info/entry_points.txt,sha256=xvSpEs0ymFNtXy4F2-AIohVC7sJt114NesxA3kCMLVc,27
+tox_DEBIAN-0.3.dist-info/top_level.txt,sha256=0xv-jCgNuE2lKLn4LRz2FfsSmf1J9vjNL9dvnCfBOCg,11
+tox_DEBIAN-0.3.dist-info/RECORD,,
