@@ -1,0 +1,10 @@
+setup.py
+ataleek/__init__.py
+ataleek/ataleek.py
+ataleek/github_hub.py
+ataleek.egg-info/PKG-INFO
+ataleek.egg-info/SOURCES.txt
+ataleek.egg-info/dependency_links.txt
+ataleek.egg-info/not-zip-safe
+ataleek.egg-info/top_level.txt
+bin/ataleek-cli
