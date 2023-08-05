@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+genetic_optimizer.egg-info/PKG-INFO
+genetic_optimizer.egg-info/SOURCES.txt
+genetic_optimizer.egg-info/dependency_links.txt
+genetic_optimizer.egg-info/requires.txt
+genetic_optimizer.egg-info/top_level.txt
