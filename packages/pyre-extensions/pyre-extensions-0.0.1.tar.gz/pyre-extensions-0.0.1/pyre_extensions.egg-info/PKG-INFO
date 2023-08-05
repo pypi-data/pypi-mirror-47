@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pyre-extensions
+Version: 0.0.1
+Summary: Type system extensions for use with the pyre type checker
+Home-page: https://github.com/pypa/sampleproject
+Author: Facebook
+Author-email: pyre@fb.com
+License: UNKNOWN
+Description: # pyre extensions
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
