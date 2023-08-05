@@ -1,0 +1,13 @@
+dash==0.41
+
+[dependencies]
+dash==0.41
+
+[tests]
+chromedriver-binary>=74.0.3729.6.0
+ipdb
+percy
+selenium
+flake8
+pylint
+pytest-dash>=2.1.1
