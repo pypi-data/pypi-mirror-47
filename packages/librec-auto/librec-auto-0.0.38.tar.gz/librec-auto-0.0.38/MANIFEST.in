@@ -1,0 +1,7 @@
+include lib/*
+include lib/auto/*
+include lib/auto/out/*
+include lib/auto/out/artifacts/*
+include lib/auto/out/artifacts/auto_jar/*
+include lib/auto/src/main/java/net/that_recsys_lab/auto/*
+include lib/auto/src/main/java/net/that_recsys_lab/auto/cmd/*
