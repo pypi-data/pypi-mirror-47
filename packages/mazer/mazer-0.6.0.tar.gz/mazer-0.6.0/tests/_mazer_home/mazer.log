@@ -1,0 +1,41 @@
+[2019-05-30 20:59:54,550 00363 E] ansible_galaxy_cli.main main:31  - Missing required action
+[2019-05-30 20:59:54,579 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=list
+[2019-05-30 20:59:54,596 00363 I] ansible_galaxy_cli.main main:62  - exit code: 0
+[2019-05-30 20:59:54,624 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=build
+[2019-05-30 20:59:54,634 00363 I] ansible_galaxy.build run:236 - Building collection: /tmp/pytest-of-root/pytest-0/test_build_run_tmp_collection_0/collection
+[2019-05-30 20:59:54,634 00363 I] ansible_galaxy.build run:236 - Created  artifact: /tmp/pytest-of-root/pytest-0/test_build_run_tmp_collection_0/output/some_namespace-some_namespace-3.1.4.tar.gz
+[2019-05-30 20:59:54,653 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=info
+[2019-05-30 20:59:54,664 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=list
+[2019-05-30 20:59:54,691 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=publish
+[2019-05-30 20:59:54,705 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=remove
+[2019-05-30 20:59:54,795 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=None action=install
+[2019-05-30 20:59:54,810 00363 E] ansible_galaxy.rest_api.RestClient mkrequest:138 - "GET None/api/" 8a5e8149e3ca4d458d10120a93291674: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+Traceback (most recent call last):
+  File "/home/jenkins/workspace/Build_Test_Mazer/ansible_galaxy/rest_api.py", line 125, in mkrequest
+    verify=self.validate_certs)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+[2019-05-30 20:59:54,811 00363 W] ansible_galaxy.actions.install install_repository:389 - Unable to find metadata for testing.fake_role_name,*: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+[2019-05-30 20:59:54,822 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=None action=install
+[2019-05-30 20:59:54,836 00363 E] ansible_galaxy.rest_api.RestClient mkrequest:138 - "GET None/api/" a3c43ac8c6bd49c8b4dcd2fc573fecc6: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+Traceback (most recent call last):
+  File "/home/jenkins/workspace/Build_Test_Mazer/ansible_galaxy/rest_api.py", line 125, in mkrequest
+    verify=self.validate_certs)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/sessions.py", line 519, in request
+    prep = self.prepare_request(req)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/sessions.py", line 462, in prepare_request
+    hooks=merge_hooks(request.hooks, self.hooks),
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/models.py", line 313, in prepare
+    self.prepare_url(url, params)
+  File "/home/jenkins/workspace/Build_Test_Mazer/venvs/mazer-build/lib/python2.7/site-packages/requests/models.py", line 387, in prepare_url
+    raise MissingSchema(error)
+MissingSchema: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+[2019-05-30 20:59:54,837 00363 W] ansible_galaxy.actions.install install_repository:389 - Unable to find metadata for testing.fake_role_name,*: Invalid URL 'None/api/': No schema supplied. Perhaps you meant http://None/api/?
+[2019-05-30 20:59:54,848 00363 I] ansible_galaxy_cli.cli.galaxy run:238 - exe="setup.py" version=0.6.0 config_file="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_home/mazer.yml" collections_path="/home/jenkins/workspace/Build_Test_Mazer/tests/_mazer_work_dir/user_collections" server=http://localhost:8000 action=install
