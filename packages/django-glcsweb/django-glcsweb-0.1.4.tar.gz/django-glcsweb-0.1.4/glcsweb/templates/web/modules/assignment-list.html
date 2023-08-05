@@ -1,0 +1,68 @@
+<article class="module-wrapper col-12 col-xl-{{ m_size }}">
+  <div class="module">
+    <header class="row justify-content-between">
+      <div class="col-auto header-text">
+        Assignments
+      </div>
+      <div class="col-auto">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-action" data-toggle="modal" data-target="#add-assignment-modal">
+          Add assignment
+        </button>
+      </div>
+    </header>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">name</th>
+            <th scope="col">due date</th>
+            <th scope="col">mimir project UUID</th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if username %}
+            {% for assignment in assignments %}
+              <tr>
+                <td>{{ assignment.tag }}</td>
+                <td>{{ assignment.due_date }}</td>
+                <td>{{ assignment.mimir_project_id }}</td>
+                <td class="text-right"><a class="btn btn-action" href="#">edit</a></td>
+              </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <a href="#">More...</a>
+    </footer>
+  </div>
+</article>
+
+<!-- Modal -->
+<div class="modal fade" id="add-assignment-modal" tabindex="-1" role="dialog" aria-labelledby="add-assignment-modal-title" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="add-assignment-modal-titel">Add assignment</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form action="{% url 'glcsweb:assignments' course.pk %}" method="post">
+          {% csrf_token %}
+          {{ form.as_p }}
+          <div class="text-right" style="width: 100%;">
+            <input type="submit" class="btn btn-action" value="Submit">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
