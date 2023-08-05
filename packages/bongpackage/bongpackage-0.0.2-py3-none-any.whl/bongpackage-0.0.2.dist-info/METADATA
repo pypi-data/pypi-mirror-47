@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: bongpackage
+Version: 0.0.2
+Summary: supportive modules for acceptance test with DE
+Home-page: UNKNOWN
+Author: bonghoa15
+Author-email: nguyendieuhoa15@gmail.com
+License: UNKNOWN
+Keywords: example project sentifi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: elasticsearch
+Requires-Dist: pandas
+Requires-Dist: psycopg2
+Requires-Dist: datetime
+Requires-Dist: numpy
+
+UNKNOWN
+
+
