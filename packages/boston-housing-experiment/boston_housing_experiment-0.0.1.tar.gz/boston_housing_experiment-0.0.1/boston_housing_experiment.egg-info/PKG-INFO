@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: boston-housing-experiment
+Version: 0.0.1
+Summary: MLP experiment.
+Home-page: https://github.com/LucaCappelletti94/boston_housing_experiment
+Author: Luca Cappelletti
+Author-email: cappelletti.luca94@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test

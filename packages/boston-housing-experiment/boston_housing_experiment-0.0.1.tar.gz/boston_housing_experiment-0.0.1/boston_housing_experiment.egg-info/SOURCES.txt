@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+boston_housing_experiment/__init__.py
+boston_housing_experiment/__version__.py
+boston_housing_experiment/mlp.py
+boston_housing_experiment.egg-info/PKG-INFO
+boston_housing_experiment.egg-info/SOURCES.txt
+boston_housing_experiment.egg-info/dependency_links.txt
+boston_housing_experiment.egg-info/requires.txt
+boston_housing_experiment.egg-info/top_level.txt

@@ -1,0 +1,13 @@
+keras
+silence_tensorflow
+matplotlib
+extra_keras_metrics
+plot_keras_history
+extra_keras_utils
+pandas
+numpy
+
+[test]
+pytest
+pytest-cov
+coveralls
