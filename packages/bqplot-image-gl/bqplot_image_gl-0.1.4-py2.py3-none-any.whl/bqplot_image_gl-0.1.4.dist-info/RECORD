@@ -1,0 +1,16 @@
+bqplot_image_gl/__init__.py,sha256=s03a5TyI5N1JGCUUaYGj719GZ4liF7dQYaqnRPBm2Qc,266
+bqplot_image_gl/_version.py,sha256=QJ3zw8OsYhNeo_e7wcESXx0-Bm_oNMLbOzh-w6JY4vs,281
+bqplot_image_gl/imagegl.py,sha256=1MkOARKRDFPCBIxs4x7glclWojpHLNq2j2yp2wZxqCM,1855
+bqplot_image_gl/test_astroimage.py,sha256=HMiGtOHuSwLkIfzco4zaeez_HR2Ztr41e43n49gNqs8,312
+bqplot_image_gl/static/extension.js,sha256=A20QMj63EMa4iG2lFLxanWcF_zpu0ch_sPBSIKQSPMM,1216
+bqplot_image_gl/static/index.js,sha256=WDRquUlduIPDAH3AuEn-0soo7-M2hl1KvSL9BPNZWUk,1542246
+bqplot_image_gl/static/index.js.map,sha256=09u4RzsHQs37advdxqSLbt_VNBte0-1y6xJqQ_Vhuj0,6799025
+bqplot_image_gl-0.1.4.data/data/etc/jupyter/nbconfig/notebook.d/bqplot-image-gl.json,sha256=CO1uVCNI9yQXLmcfWJCQT8CluI9DLLgC7Oyn1izE6_k,69
+bqplot_image_gl-0.1.4.data/data/share/jupyter/nbextensions/bqplot-image-gl/extension.js,sha256=A20QMj63EMa4iG2lFLxanWcF_zpu0ch_sPBSIKQSPMM,1216
+bqplot_image_gl-0.1.4.data/data/share/jupyter/nbextensions/bqplot-image-gl/index.js,sha256=WDRquUlduIPDAH3AuEn-0soo7-M2hl1KvSL9BPNZWUk,1542246
+bqplot_image_gl-0.1.4.data/data/share/jupyter/nbextensions/bqplot-image-gl/index.js.map,sha256=09u4RzsHQs37advdxqSLbt_VNBte0-1y6xJqQ_Vhuj0,6799025
+bqplot_image_gl-0.1.4.dist-info/LICENSE,sha256=ZTF7tpRaBFEEfLkSZRtNd0vLpxfLYoPBh5LSaCCpkdw,1073
+bqplot_image_gl-0.1.4.dist-info/METADATA,sha256=OBVwQxyxsZ7wmRHCVNrrT8lnxGBrWMUf-Jlqhyt0mSI,913
+bqplot_image_gl-0.1.4.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+bqplot_image_gl-0.1.4.dist-info/top_level.txt,sha256=_4AQ3pis7xh3SUyac_GjOCF8hzlBNQ-3KgLgHBaje8Q,16
+bqplot_image_gl-0.1.4.dist-info/RECORD,,
