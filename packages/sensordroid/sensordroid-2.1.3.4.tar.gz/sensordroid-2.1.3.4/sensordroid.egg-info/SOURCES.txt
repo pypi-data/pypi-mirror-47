@@ -1,0 +1,7 @@
+README.md
+setup.py
+sensordroid/__init__.py
+sensordroid.egg-info/PKG-INFO
+sensordroid.egg-info/SOURCES.txt
+sensordroid.egg-info/dependency_links.txt
+sensordroid.egg-info/top_level.txt
