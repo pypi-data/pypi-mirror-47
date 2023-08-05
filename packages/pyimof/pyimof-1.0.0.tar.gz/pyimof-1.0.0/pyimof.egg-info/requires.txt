@@ -1,0 +1,6 @@
+scikit-image>=0.15
+imageio>=2.5
+
+[docs]
+sphinx>=2.0
+sphinx-gallery>=0.3
