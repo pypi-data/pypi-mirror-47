@@ -1,0 +1,13 @@
+library_simulator/__init__.py,sha256=Wkot7-t3L6bJ5fL-LYu9soQNJpGFPx2cRZViCXvYB7o,42
+library_simulator/data.py,sha256=uKSdX-c9igTeiKYkQnimveJj_hZCqYdNMDU8U2GZQmc,2482
+library_simulator/generator.py,sha256=Ww0pDRJIUDLpcSOJn9eik7kfaY5iz2H1j0Jap_pQeD0,12927
+library_simulator/simulator.py,sha256=0P1MuF9LmMxRkNMVFU3BX93oKMXJ1Iuj8Ca-kI3EXuU,2515
+library_simulator/util.py,sha256=3RFB8Yo3kEAzUFcmm7Rcw_myPPonu56iFceoBS8XgTo,2456
+library_simulator/mutation_spectra/empirical.csv,sha256=FVutd46kpX5e24urYpr_nJZJAzBR0BX7mDQ2Yukffpk,308
+library_simulator/mutation_spectra/flat.csv,sha256=gRdyRsndHUcqXDdZTg2C3YPOJrEzP0urQK1NTtQzV0s,282
+library_simulator/mutation_spectra/published.csv,sha256=Kd5wqXZO8AnF73Nrtcv0uHpwU0bRx1XvWC6MuzREzW0,299
+library_simulator-0.1.dist-info/LICENSE,sha256=iNm062BXnBkew5HKBMFhMFctfu3EqG2qWL8oxuFMm80,1210
+library_simulator-0.1.dist-info/METADATA,sha256=wEJuaENJF3FnTwJ7N2cBvFLEvtyY8eMap_FgyBqVmrg,2317
+library_simulator-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+library_simulator-0.1.dist-info/top_level.txt,sha256=GrE7FSO1-R8bQflbmx-1RhfvJWxlgKy7UbDGUcIev2o,18
+library_simulator-0.1.dist-info/RECORD,,
