@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: vndb-thigh-highs
+Version: 0.1.0
+Summary: VNDB api implementation
+Home-page: https://code.blicky.net/FoieGras/vndb-thigh-highs
+Author: foiegras
+Author-email: le.tortue@tutanota.com
+License: UNKNOWN
+Description: # VNDB Thigh-highs
+        This module provide one VNDB api implementation. It aims to provide some high level features to easily use VNDB api.
+        
+        ## Quick start
+        
+        ```
+        from vndb_thigh_highs import VNDB
+        from vndb_thigh_highs.models import VN
+        
+        vndb = VNDB()
+        vns = vndb.get_vn(VN.id == 17)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
