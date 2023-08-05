@@ -1,0 +1,151 @@
+Metadata-Version: 2.1
+Name: serverchecks
+Version: 0.5.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pawel Krawczyk
+Author-email: pawel.krawczyk@hush.com
+License: MIT
+Keywords: network ping check test dns url availability imap pop3 smtp http dnssec
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Environment :: Web Environment
+Classifier: Topic :: Internet
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+Provides-Extra: dns
+Requires-Dist: dnspython ; extra == 'dns'
+Provides-Extra: dnssec
+Requires-Dist: pycryptodomex ; extra == 'dnssec'
+Requires-Dist: ecdsa ; extra == 'dnssec'
+Requires-Dist: dnspython ; extra == 'dnssec'
+Provides-Extra: matrix
+Requires-Dist: matrix-client ; extra == 'matrix'
+Provides-Extra: telegram
+Requires-Dist: telethon ; extra == 'telegram'
+Provides-Extra: xmpp
+Requires-Dist: aioxmpp ; extra == 'xmpp'
+
+# serverchecks
+
+Python 3 module for fast, parallel execution of health checks on a broad range
+of popular Internet infrastructure protocols with multi-protocol alerting capabilities.
+Implemented in pure Python (no shell commands called) using `asyncio` library.
+
+
+## Install
+The module comes in a number of flavours that provide additional features using
+third-party Python libraries.
+<table>
+<tr><th>Flavour</th><th>Features</th><th>Install</th>
+
+<tr><td>Core
+<td>
+Checks:
+<ul>
+<li>TCP
+<li>DNS (basic)
+<li>TLS
+<li>URL
+<li>POP3
+<li>SMTP
+<li>IMAP
+</ul>
+Alerts:
+<ul>
+<li>Console
+<li>SMTP
+</td>
+<td>
+<code>pip3 install serverchecks</code>
+</td>
+
+<tr><td>DNS
+<td>Checks:
+<ul>
+<li>DNS (full)
+</ul>
+<td>
+<code>pip3 install serverchecks[dns]</code>
+</td>
+
+<tr><td>DNSSEC
+<td>Checks:
+<ul>
+<li>DNSSEC
+<li>DNS (full)
+</ul>
+<td>
+<code>pip3 install serverchecks[dnssec]</code>
+</td>
+
+<tr><td>XMPP
+<td>Alerts:
+<ul>
+<li>XMPP
+</ul>
+<td>
+<code>pip3 install serverchecks[xmpp]</code>
+</td>
+
+<tr><td>Telegram
+<td>Alerts:
+<ul>
+<li>Telegram
+</ul>
+<td>
+<code>pip3 install serverchecks[telegram]</code>
+</td>
+
+<tr><td>Matrix
+<td>Alerts:
+<ul>
+<li>Matrix
+</ul>
+<td>
+<code>pip3 install serverchecks[matrix]</code>
+</td>
+
+</table>
+
+
+## Usage
+Create a basic configuration file `checks.yaml`:
+
+```yaml
+verbose: yes
+alert_mode: always
+
+alerts:
+  console:
+  - dummy:
+
+checks:
+  basicdns:
+  - fqdn: webcookies.org
+  - fqdn: ipsec.pl
+```
+
+Run:
+```
+python -m serverchecks.main test.yaml
+
+```
+
+Sample output:
+```
+$ python -m serverchecks.main test.yaml
+
+Initialized alert class <Console>
+2 tests completed in 0.03 seconds, 2 successful, 0 failed
+✓ webcookies.org 94.130.162.156
+✓ ipsec.pl 98.143.148.71
+```
+
