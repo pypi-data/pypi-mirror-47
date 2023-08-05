@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: rtv2
+Version: 1.27.1
+Summary: A simple terminal viewer for Reddit (Reddit Terminal Viewer)
+Home-page: https://github.com/Aareon/rtv
+Author: Aareon
+Author-email: aareon@died-in.space
+License: MIT
+Requires-Dist: beautifulsoup4
+Requires-Dist: decorator
+Requires-Dist: kitchen
+Requires-Dist: requests (>=2.4.0)
+Requires-Dist: six
+Requires-Dist: mailcap-fix ; python_version<'3.6'
+Provides-Extra: test
+Requires-Dist: coveralls ; extra == 'test'
+Requires-Dist: pytest (>=3.1.0) ; extra == 'test'
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: mock ; extra == 'test'
+Requires-Dist: pylint ; extra == 'test'
+Requires-Dist: vcrpy ; extra == 'test'
+
+<h1 align="center">Reddit Terminal Viewer (RTV) 2</h1>
+
+
