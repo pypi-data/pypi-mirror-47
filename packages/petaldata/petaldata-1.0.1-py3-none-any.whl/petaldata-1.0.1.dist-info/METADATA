@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: petaldata
+Version: 1.0.1
+Summary: A uniform API for downloading, saving, and updating analysis-ready data across cloud apps like Stripe, Hubspot, and Metabase.
+Home-page: https://github.com/petaldata/petaldata-python
+Author: Derek Haynes
+Author-email: derek@petaldata.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pandas
+Requires-Dist: numpy
+Requires-Dist: requests
+Requires-Dist: smart-open
+Requires-Dist: boto3
+Requires-Dist: pygsheets
+
+# PetalData Python Library
+
+[PetalData](https://petaldata.app) is a uniform API for exporting data science-ready datasets from cloud apps like Stripe, Hubspot, and Metabase.
+
+## Installation
+
+```
+pip install --upgrade petaldata
+```
+
+## Requirements
+
+Python 3.4+
+
+## Usage
+
+```python
+import petaldata
+```
+
+## Example Usage
+
+See the [examples directory](https://github.com/petaldata/petaldata-python/tree/master/examples) in the [GitHub repo](https://github.com/petaldata/petaldata-python).
+
+## Documentation
+
+Interactive documentation is at https://petaldata.app/.
+
+## Releasing
+
+Bump the version number in `setup.py`. Then generate the distribution archive and upload the archive:
+
+```
+rm dist/*
+python setup.py sdist bdist_wheel
+python -m twine upload --repository-url https://upload.pypi.org/legacy/ dist/*
+```
+
+## Adding a Dataset
+
+* Create a `petaldata/datasets/[CLOUD_APP]` directory
+* Create a `petaldata/datasets/[CLOUD_APP]/[DATASET_NAME (PLURAL)].py` file.
+  * Create a class that inherits from `petaldata.datasets.abstract.Dataset`. See `petaldata.datasets.stripe.Invoices` for an example.
+* Create a `petaldata/datasets/[CLOUD_APP]/__init__.py` file. 
+  * Import the dataset created above. 
+  * Add config variables needed to use the `[CLOUD_APP] API (like an `API KEY`).
+* Add `from petaldata.datasets import [CLOUD_APP]` to `petaldata/__init__.py`
+
+## Questions
+
+Email support@petaldata.app.
+
