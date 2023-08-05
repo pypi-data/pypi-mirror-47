@@ -1,0 +1,12 @@
+pybpodgui_plugin_waveplayer/__init__.py,sha256=g_nHtSGx3a-0owLAEamUaL8XREy8tQEGc_wIqtXF0ZA,530
+pybpodgui_plugin_waveplayer/module.py,sha256=1ayWMxscmMROaRl9T8Y7_DextgbmmP695iPhCZm7KC0,280
+pybpodgui_plugin_waveplayer/module_api.py,sha256=zwp2OUuyKVjwIleGU-0CcLSxhSIF5uePXx1FdoZHZio,11770
+pybpodgui_plugin_waveplayer/module_gui.py,sha256=NRowoqHc26vA1EgfLYqOaGhmsNmWxXglYTwPnfp4OL8,12060
+pybpodgui_plugin_waveplayer/settings.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybpodgui_plugin_waveplayer/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybpodgui_plugin_waveplayer/models/projects/__init__.py,sha256=x1P628xnVg7OLVNYoIfkKE_T6V7E-uZvM4aaAE0yf9U,63
+pybpodgui_plugin_waveplayer/models/projects/projects_waveplayer.py,sha256=GSM_fDRhCknlZ5Jeyq25_b4mM9o9WW5V1ZQS1Vh1wDk,946
+pybpod_gui_plugin_waveplayer-1.0.dist-info/METADATA,sha256=w0-446DTA7b1U2uaXX3OyZXR90OhH4QJ1ZK4m8-BVdo,385
+pybpod_gui_plugin_waveplayer-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pybpod_gui_plugin_waveplayer-1.0.dist-info/top_level.txt,sha256=E1RgJchFDNAedFM_C3Ybsazd-i8a0NeUWvAobygrlPY,28
+pybpod_gui_plugin_waveplayer-1.0.dist-info/RECORD,,
