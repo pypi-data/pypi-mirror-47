@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: s2t2-game-utils
+Version: 0.8
+Summary: Gameplay logic for Rock-Paper-Scissors
+Home-page: https://github.com/s2t2/game-utils-py
+Author: MJ Rossetti
+Author-email: datacreativellc@gmail.com
+License: MIT
+Keywords: rock paper scissors game
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+
+# Rock Paper Scissors Gameplay Logic (Python)
+
+
+## Installation
+
+Install from PyPI:
+
+```sh
+pip install s2t2-game-utils
+```
+
+## Usage
+
+```py
+from game_utils.rock_paper_scissors import *
+
+print(WELCOME_MESSAGE) #> Hi. Welcome to my Rock-Paper-Scissors game!
+```
+
+
