@@ -1,0 +1,61 @@
+# ToolSet
+工具集合
+
+## 安装
+```
+pip install toolset --upgrade
+```
+
+## 工具列表
+- [Combiner](#combiner) : 列举所有元素组合.
+- [get_localhost](#get_localhost) : 获取本地 `host`.
+- [get_md5](#get_md5) : 获取文件 `MD5` 值.
+- [text_encryptor](#text_encryptor) : 对文本加密/解密.
+
+### Combiner
+#####列举所有元素组合
+```
+from toolset.combiner import Combiner
+
+combiner = Combiner(ele_set=[1, 2, 3], min_eles=1, max_eles=2)
+for item in combiner:
+    print(item)
+    
+# print: [1], [2], [3], [1, 1], [1, 2], [1, 3], [2, 1], [2, 2], [2, 3], [3, 1], [3, 2], [3, 3]
+```
+- ele_set: 元素集合.
+- min_eles: 最小元素个数.
+- max_eles: 最大元素个数.
+
+##### 随机获取元素组合
+```
+print(combiner.random())
+
+# print: [2, 1]
+```
+
+### get_localhost
+获取本地 host.
+```
+>>> from toolset import get_localhost
+>>> localhost = get_localhost()
+localhost: 192.168.0.112
+```
+
+### get_md5
+获取文件 MD5 值.
+```
+>>> from toolset import get_md5
+>>> file_md5 = get_md5('demo.txt')
+file_md5: 2e37db575bdab271fbd8d36e29afd737
+```
+
+### text_encryptor
+对文本加密/解密.
+```
+>>> from toolset import TextEncryptor
+>>> ciphertext = TextEncryptor.encrypt(token='123456', text='hello world!')
+ciphertext: b'gAAAAABc4qW9v-0UH0nuVkv9749QDm_8NCJmvWMHcnqSWx8WX1nOiO8Zi-kRmKmVjGQdsn1buoQV8wTCcI-7uHGutQ6tAVQQ4A=='
+>>> text = TextEncryptor.decrypt(token='123456', ciphertext=ciphertext)
+text: 'hello world!'
+```
