@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+burdock/__init__.py
+burdock/__main__.py
+burdock.egg-info/PKG-INFO
+burdock.egg-info/SOURCES.txt
+burdock.egg-info/dependency_links.txt
+burdock.egg-info/entry_points.txt
+burdock.egg-info/requires.txt
+burdock.egg-info/top_level.txt
+burdock/templates/decls.jinja2
+burdock/templates/dtrace.jinja2
