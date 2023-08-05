@@ -1,0 +1,95 @@
+# Code
+
+\.py$:           [yellow,  "\ue606"]
+\.c$:            [yellow,  "\ue61e"]
+\.clj$:          [yellow,  "\ue768"]
+\.coffee$:       [yellow,  "\uf0f4"]
+\.cpp$:          [yellow,  "\ue61d"]
+\.css$:          [yellow,  "\ue749"]
+\.d$:            [yellow,  "\ue7af"]
+\.dart$:         [yellow,  "\ue798"]
+\.erl$:          [yellow,  "\ue7b1"]
+\.go$:           [yellow,  "\ue626"]
+\.hs$:           [yellow,  "\ue777"]
+\.html$:         [yellow,  "\uf13b"]
+\.java$:         [yellow,  "\ue204"]
+\.js$:           [yellow,  "\ue74e"]
+\.jsx$:          [yellow,  "\ue7ba"]
+\.less$:         [yellow,  "\ue758"]
+\.lua$:          [yellow,  "\ue620"]
+\.php$:          [yellow,  "\ue73d"]
+\.pl$:           [yellow,  "\ue769"]
+\.r$:            [yellow,  "\uf25d"]
+\.rb$:           [yellow,  "\ue21e"]
+\.sass$:         [yellow,  "\ue603"]
+\.scala$:        [yellow,  "\ue737"]
+\.styl$:         [yellow,  "\ue600"]
+\.ts$:           [yellow,  "\ue628"]
+\.twig$:         [yellow,  "\ue61c"]
+
+# Conf / Data
+
+\.(yml|yaml)$:   [magenta, "\uf481"]
+\.conf$:         [magenta, "\ue615"]
+\.json$:         [magenta, "\ue60b"]
+\.xml$:          [magenta, "\ue619"]
+
+# Database
+
+\.db$:           [red, "\uf1c0"]
+\.rdb$:          [red, "\ue76d"]
+
+# Documents
+
+\.epub$:         [blue, "\ue28a"]
+\.md$:           [blue, "\uf48a"]
+\.pdf$:          [blue, "\uf1c1"]
+\.tex$:          [blue, "\ue600"]
+\.txt$:          [blue, "\uf15c"]
+\.ppt$:          [blue, "\uf1c4"]
+\.xls$:          [blue, "\uf1c3"]
+
+# Package managers
+
+^\.npmignore$:   [cyan, "\ue71e"]
+\.yarn.lock$:    [cyan, "\ue718"]
+
+# Text editors
+
+\.iml$:          [yellow, "\ue7b5"]
+
+# Git
+
+\.git$:          [green, "\uf1d3"]
+
+# Programming (Other)
+
+\.diff$:         [red, "\uf440"]
+^gruntfile.js$:  [red, "\ue74c"]
+
+# Graphics
+
+\.psd$:          [green, "\ue7b8"]
+\.ai$:           [green, "\ue7b4"]
+
+# Logging
+
+\.log$:          [cyan, "\uf18d"]
+
+# Archives
+
+\.zip$:          [red, "\uf410"]
+
+# Documentation
+
+^doc$:           [cyan, "\uf1c2"]
+
+# Current / Parent directories
+
+^\.\.$:          [blue, "\uf115"]
+^\.$:            [blue, "\uf115"]
+
+# Specials
+
+$file:           [blue, "\uf15b"]
+$dir:            [blue, "\uf115"]
