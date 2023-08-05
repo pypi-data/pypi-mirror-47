@@ -1,0 +1,8 @@
+hapipdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hapipdf/pdf2text.py,sha256=aQo0G8tE1lPcALqHYh7e7lbxC4jcO_4zCflKiUZz384,50
+hapipdf/pdftoimage.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hapipdf-1.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+hapipdf-1.0.dist-info/METADATA,sha256=Wl7oyzTLhgfrTls7hSW9no-bXO1M9Tm1X-HFO5daaKw,197
+hapipdf-1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+hapipdf-1.0.dist-info/top_level.txt,sha256=7LXKMGdRZndLMXrBmnaHvAHMkl2FI5G5XAmgn8nkDf8,8
+hapipdf-1.0.dist-info/RECORD,,
