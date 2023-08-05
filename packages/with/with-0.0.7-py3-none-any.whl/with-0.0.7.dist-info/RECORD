@@ -1,0 +1,11 @@
+with-0.0.7.data/scripts/with,sha256=EspgBcZel0ytgOZLGt-m4fbs2hOvQPuX83qLEbxi8fk,134
+withtool/__init__.py,sha256=7EgDv-timUu06OY6bkABnaoin_WSpRfqEKwS3w4SJZ4,22
+withtool/config.py,sha256=BuARJbLFbMpEJgGVBQN5mn68DLa4fOpigyeXSJJ_1vA,328
+withtool/main.py,sha256=3K-JndnAxF3DIncvJ5n7uYxA53g9nXDYlKafm8j79BU,704
+withtool/prompt.py,sha256=v2qrMvQG0V86WWFy6QrYtdwodqbW_O5DFtqxgzNvcgo,1134
+withtool/subprocess.py,sha256=rfdioPT58V3yrR8js4JT8o91u1w2KLE-PmobmczbmDI,133
+with-0.0.7.dist-info/LICENSE,sha256=tcPkDL2-557MNSmwle5S4wVRt8eVPfuu1jGbGpp-1Ns,1114
+with-0.0.7.dist-info/METADATA,sha256=4UoJkDOo4s7FQ_8i55O96vJ9lSeqFvbTmXk-nAhlOiM,1561
+with-0.0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+with-0.0.7.dist-info/top_level.txt,sha256=WBJQfG0UXP0QvcdOtN8C986Y2ypiCg_jqP9cyhenOVk,9
+with-0.0.7.dist-info/RECORD,,
