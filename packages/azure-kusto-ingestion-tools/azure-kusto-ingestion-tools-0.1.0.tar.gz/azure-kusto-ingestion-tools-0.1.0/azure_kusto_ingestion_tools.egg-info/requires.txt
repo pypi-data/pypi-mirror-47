@@ -1,0 +1,7 @@
+azure-kusto-ingest>=0.0.30
+azure-kusto-data>=0.0.30
+click
+maya
+pyarrow
+pytest
+sqlparse

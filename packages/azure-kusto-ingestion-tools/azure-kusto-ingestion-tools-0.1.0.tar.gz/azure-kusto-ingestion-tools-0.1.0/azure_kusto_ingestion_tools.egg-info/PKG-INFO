@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: azure-kusto-ingestion-tools
+Version: 0.1.0
+Summary: Kusto Ingestion Tools (Kit)
+Home-page: https://github.com/Azure/azure-kusto-ingestion-tools
+Author: Microsoft Corporation
+Author-email: kustalk@microsoft.com
+License: MIT
+Description: UNKNOWN
+Keywords: kusto wrapper client library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
