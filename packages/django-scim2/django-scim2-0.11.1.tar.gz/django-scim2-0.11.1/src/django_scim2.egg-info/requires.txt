@@ -1,0 +1,2 @@
+python-dateutil>=2.6.0
+scim2-filter-parser==0.1.0
