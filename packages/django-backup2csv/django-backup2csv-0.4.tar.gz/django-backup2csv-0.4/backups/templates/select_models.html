@@ -1,0 +1,19 @@
+{% extends 'b2csv_base.html' %}
+{% load backup_tags %}
+
+{% block content %}
+    <h1>Sistema de Backups General</h1>
+    <h2><b>APP:</b> {{ apps.0 }}</h2>
+    <hr>
+    <div style="width: 50%; margin: 0 auto;">
+        <p>Seleccione los modelos que desea guardar:</p>
+        {% get_modelos apps.0 as models %}
+        <form action="/backup/dw/{{apps.0}}" method="POST">
+            {% csrf_token %}
+            {% for model in models %}
+                <label><input type="checkbox" name="models" value="{{model}}" checked>{{model}}</label><br>            
+            {% endfor %}
+            <input type="submit" value="Descargar" style="margin:20px;">
+        </form>
+    </div>
+{% endblock %}
