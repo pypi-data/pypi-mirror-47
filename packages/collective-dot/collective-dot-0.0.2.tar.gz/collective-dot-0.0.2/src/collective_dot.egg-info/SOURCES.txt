@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+src/collective/dot/__init__.py
+src/collective/dot/dot.py
+src/collective_dot.egg-info/PKG-INFO
+src/collective_dot.egg-info/SOURCES.txt
+src/collective_dot.egg-info/dependency_links.txt
+src/collective_dot.egg-info/top_level.txt
