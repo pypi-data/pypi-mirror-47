@@ -1,0 +1,11 @@
+tensorio_bundler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tensorio_bundler/bundlebot.py,sha256=YwXLV7vk7al4QIBrLcilPIiUVeOKKNGln3AdSZncs6o,2883
+tensorio_bundler/bundler.py,sha256=OBbu2GXDJJ9OEPZD_uJNhCnl33zqqUJXNIitOUEi2Sk,7673
+tensorio_bundler/rest.py,sha256=-STdyheNfSy83n0l7NID8t8Gs7HoE2o5q8Wn9sOJyuw,5296
+tensorio_bundler/test_bundler.py,sha256=SnQwAkkXP_kuZ2BbEUO026aHhVLCbu6o5oMZVqsQ_8g,6648
+tensorio_bundler/test_rest.py,sha256=8kpGG-d_Rqu-7le62zq7FAR1w840j1uj5tyjk6pxqqg,5633
+tensorio_bundler-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tensorio_bundler-0.1.0.dist-info/METADATA,sha256=U5S4DACp7yxWoAGJon9qnzSlP6wy4Ok2qDIgF-Y2Xac,4519
+tensorio_bundler-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tensorio_bundler-0.1.0.dist-info/top_level.txt,sha256=FXO-8u-X1Tz9jH6Zz9pr4UcJzrXFy5jmNNBKng0bmFY,17
+tensorio_bundler-0.1.0.dist-info/RECORD,,
