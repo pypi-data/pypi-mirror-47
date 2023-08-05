@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: podman
+Version: 0.11.1.1
+Summary: A library for communicating with a Podman server
+Home-page: http://github.com/containers/libpod
+Author: Jhon Honce
+Author-email: jhonce@redhat.com
+License: Apache Software License
+Keywords: varlink libpod podman
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: psutil
+Requires-Dist: python-dateutil
+Requires-Dist: setuptools (>=39)
+Requires-Dist: varlink
+
+# podman - pythonic library for working with varlink interface to Podman
+
+## Status: Active Development
+
+See [libpod](https://github.com/containers/python-podman)
+
+## Overview
+
+Python podman library.
+
+Provide a stable API to call into.
+
+## Releases
+
+To build the podman egg and install as user:
+
+```sh
+cd ~/python-podman
+python3 setup.py clean -a && python3 setup.py sdist bdist
+python3 setup.py install --user
+```
+
+## Code snippets/examples:
+
+### Show images in storage
+
+```python
+import podman
+
+with podman.Client() as client:
+  list(map(print, client.images.list()))
+```
+
+### Show containers created since midnight
+
+```python
+from datetime import datetime, time, timezone
+
+import podman
+
+midnight = datetime.combine(datetime.today(), time.min, tzinfo=timezone.utc)
+
+with podman.Client() as client:
+    for c in client.containers.list():
+        created_at = podman.datetime_parse(c.createdat)
+
+        if created_at > midnight:
+            print('Container {}: image: {} created at: {}'.format(
+                c.id[:12], c.image[:32], podman.datetime_format(created_at)))
+```
+
+
