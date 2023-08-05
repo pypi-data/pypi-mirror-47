@@ -1,0 +1,8 @@
+pyrecordio-0.0.7.dist-info/METADATA,sha256=1_KRrm0ztP9isnBaEMq7UAmVt3JBO1GGF_tF7mLOlgg,228
+pyrecordio-0.0.7.dist-info/RECORD,,
+pyrecordio-0.0.7.dist-info/WHEEL,sha256=Wb7Hz5f1ZPX9lyp7AsMYi4emWBp_M3B2HGQFW5I027E,110
+pyrecordio-0.0.7.dist-info/top_level.txt,sha256=WRNJgbFMJAvxBCBb6mle3J9t8GlPowNg12CA5tQIXCo,9
+recordio/__init__.py,sha256=M5KmjM_ZdV_v2W_7Cok9emdKqzC0trgXA79pOBzPrBg,66
+recordio/librecordio.cpython-35m-darwin.h,sha256=kou7ceHh-kf4MYzWTFmVZq1loyB8yFUugsWcS20jdHM,1996
+recordio/librecordio.cpython-35m-darwin.so,sha256=Fk14CNUZ_HjXa-9jKCae2d_DwMuCAS0Xn1NviRaODE0,2790408
+recordio/recordio.py,sha256=Eh4UMeIptetBoEe83otdSO-AQpSjq1T4rR7ovss9Tb8,2597
