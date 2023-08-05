@@ -1,0 +1,4 @@
+python-lambda-4dn==0.12.0b6
+dcicutils==0.6.0
+Benchmark-4dn==0.5.2
+invoke==0.18.1
