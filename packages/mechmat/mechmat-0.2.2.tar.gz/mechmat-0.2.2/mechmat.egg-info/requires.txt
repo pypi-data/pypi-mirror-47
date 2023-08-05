@@ -1,0 +1,7 @@
+pint
+numpy
+dill
+pytablewriter
+dominate
+mechcite
+scipy
