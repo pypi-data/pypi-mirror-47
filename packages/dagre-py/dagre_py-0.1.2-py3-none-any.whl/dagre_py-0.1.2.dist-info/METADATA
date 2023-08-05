@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: dagre-py
+Version: 0.1.2
+Summary: Thin python wrapper around dagre-d3
+Home-page: UNKNOWN
+License: UNKNOWN
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
