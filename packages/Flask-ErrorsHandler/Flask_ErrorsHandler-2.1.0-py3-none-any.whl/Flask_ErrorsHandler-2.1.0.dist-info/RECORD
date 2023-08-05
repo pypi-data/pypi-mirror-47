@@ -1,0 +1,11 @@
+flask_errors_handler/__init__.py,sha256=eVxo4Ea3ANqqO-ULDq-l-A6w3rLirTpC2W0gHe1cOMY,242
+flask_errors_handler/dispatchers.py,sha256=P7DmRfDdZ1tg9n1Xob_ijY2S1HNRvqbs39MSDk1YesA,2084
+flask_errors_handler/handlers.py,sha256=gtGvOzso1AykTk7SMyZRunX37s0z4m_2UNq9Y4AYcyQ,4984
+flask_errors_handler/version.py,sha256=S8ejIsVvFeBOzleSd4-CT7NJWOJ1M8k2lbKoE_vqtx8,205
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_all.py,sha256=5YZ77nSlTXKNqyFDwYzzQW6O25Vj-Rb-RNtpzgWHa2g,4335
+Flask_ErrorsHandler-2.1.0.dist-info/LICENSE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+Flask_ErrorsHandler-2.1.0.dist-info/METADATA,sha256=kNPUlbvuipQkeU0jvcUGMv1LC2p-YfGUqaSAHDqME8A,3940
+Flask_ErrorsHandler-2.1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+Flask_ErrorsHandler-2.1.0.dist-info/top_level.txt,sha256=5gxy5ZlcVY46RoprqIM-Kkq0nbzb6LMSiKICfOJRc14,27
+Flask_ErrorsHandler-2.1.0.dist-info/RECORD,,
