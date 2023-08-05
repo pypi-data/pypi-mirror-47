@@ -1,0 +1,9 @@
+pysilverpop-0.2.1.dist-info/METADATA,sha256=zQOC0FXb4naW8zulVQNXioBSbDfCsoaCMl_Khmloxfk,924
+pysilverpop-0.2.1.dist-info/RECORD,,
+pysilverpop-0.2.1.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+pysilverpop-0.2.1.dist-info/top_level.txt,sha256=GDR7Garkj0zu_DgGVZoco0bljSsRqOi6zI_WgTJiCAo,10
+silverpop/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silverpop/api.py,sha256=pAJ3DXhFASP7b023L4ZrYJUsujB9pb9b7a63CpxhDmc,19715
+silverpop/utils.py,sha256=MAoodu1q8HQyx9rNwxMMZOx_hGShUPfXO_7o0UPLmAs,3290
+silverpop/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+silverpop/tests/test_utils.py,sha256=nZ7-vLLnu69J_fLZsFbioyHW2mk3zY4c1z1nj7oP1Io,2440
