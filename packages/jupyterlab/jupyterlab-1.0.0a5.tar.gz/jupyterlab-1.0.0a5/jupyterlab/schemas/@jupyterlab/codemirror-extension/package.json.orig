@@ -1,0 +1,58 @@
+{
+  "name": "@jupyterlab/codemirror-extension",
+  "version": "1.0.0-alpha.8",
+  "description": "JupyterLab - CodeMirror Provider Extension",
+  "homepage": "https://github.com/jupyterlab/jupyterlab",
+  "bugs": {
+    "url": "https://github.com/jupyterlab/jupyterlab/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jupyterlab/jupyterlab.git"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Project Jupyter",
+  "files": [
+    "lib/*.d.ts",
+    "lib/*.js.map",
+    "lib/*.js",
+    "schema/*.json"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "directories": {
+    "lib": "lib/"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "clean": "rimraf lib",
+    "docs": "typedoc --options tdoptions.json --theme ../../typedoc-theme src",
+    "prepublishOnly": "npm run build",
+    "watch": "tsc -b --watch"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^1.0.0-alpha.8",
+    "@jupyterlab/codeeditor": "^1.0.0-alpha.8",
+    "@jupyterlab/codemirror": "^1.0.0-alpha.8",
+    "@jupyterlab/coreutils": "^3.0.0-alpha.8",
+    "@jupyterlab/docregistry": "^1.0.0-alpha.8",
+    "@jupyterlab/fileeditor": "^1.0.0-alpha.8",
+    "@jupyterlab/mainmenu": "^1.0.0-alpha.8",
+    "@jupyterlab/statusbar": "^1.0.0-alpha.8",
+    "@phosphor/widgets": "^1.6.0",
+    "codemirror": "~5.47.0"
+  },
+  "devDependencies": {
+    "rimraf": "~2.6.2",
+    "typedoc": "^0.14.2",
+    "typescript": "~3.4.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "jupyterlab": {
+    "extension": true,
+    "schemaDir": "schema"
+  },
+  "gitHead": "ac27c477b689240fe0e3e11ff2e3b4984687a899"
+}
