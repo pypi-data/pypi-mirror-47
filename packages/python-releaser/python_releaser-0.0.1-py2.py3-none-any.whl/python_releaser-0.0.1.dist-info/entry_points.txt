@@ -1,0 +1,3 @@
+[console_scripts]
+pyreleaser = python_releaser.__main__:main
+
