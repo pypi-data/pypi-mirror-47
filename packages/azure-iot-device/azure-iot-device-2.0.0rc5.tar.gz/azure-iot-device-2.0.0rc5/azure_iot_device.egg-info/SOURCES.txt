@@ -1,0 +1,7 @@
+README.md
+azure_iot_device.egg-info/PKG-INFO
+azure_iot_device.egg-info/SOURCES.txt
+azure_iot_device.egg-info/dependency_links.txt
+azure_iot_device.egg-info/not-zip-safe
+azure_iot_device.egg-info/requires.txt
+azure_iot_device.egg-info/top_level.txt
