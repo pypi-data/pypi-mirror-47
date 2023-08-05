@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: spaghettini
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: oyaml
+
+# spaghetti
+A config manager that encourage people *not* to write spaghetti code
+
+
