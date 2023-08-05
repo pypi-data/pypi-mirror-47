@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: nginx-error-log
+Version: 0.1.0
+Summary: Nginx error log parser.
+Home-page: https://github.com/madsmtm/nginx-error-log/
+Author: Mads Marquart
+Author-email: madsmtm@gmail.com
