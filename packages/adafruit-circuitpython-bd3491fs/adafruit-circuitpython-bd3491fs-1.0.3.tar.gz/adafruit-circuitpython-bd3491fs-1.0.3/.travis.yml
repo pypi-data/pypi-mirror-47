@@ -1,0 +1,43 @@
+# This is a common .travis.yml for generating library release zip files for
+# CircuitPython library releases using circuitpython-build-tools.
+# See https://github.com/adafruit/circuitpython-build-tools for detailed setup
+# instructions.
+
+dist: xenial
+language: python
+python:
+  - "3.6"
+
+cache:
+  pip: true
+
+env:
+  - DEPLOY_PYPI="true"
+
+deploy:
+  - provider: releases
+    api_key: "$GITHUB_TOKEN"
+    file_glob: true
+    file: "$TRAVIS_BUILD_DIR/bundles/*"
+    skip_cleanup: true
+    overwrite: true
+    on:
+      tags: true
+  - provider: pypi
+    user: adafruit-travis
+    password:
+      secure: ockrzqHVLGYjYrCzjjn9wDa/X2MYxDe59X92QvbNc5Qi2c/ofA06dF8PE1hroGIp1rbcQOXwKrrYc+hjP57Qvw6DnRRWQDn4Fx+LzNEK9o/EldaHXvx2O9EjEFm+MtJcHNMBe7/0IibA9CtOY+sqBs5B1oQElDazWY2Si/bvROsQYx9IsAUMHyQl4sKyxilAds2nGbl9B/nQb6Y9b4fAqrFN6Yrq584wzLpywv5qau7uOc22/b33DgxcB/y8ksKb/YaU3kEg5zTUnRurqtV2Sf/sJWpA41GMg5HGmt6aGzzCiNmo4zD6axJaPZoZx2okL6b69kGI7OZIk9UXyedC9J3wW8Sc8z991jpyzTuhlX9EF+HHnBVLBKRpk6IvQJCCw7d1cqvfK1jz2gfT1VfkTRbi4+myJQ6GeM/HxLPUO9ZsRpgTbS6MGm1wHzuGs6l0rmnM1aSYX4I4MT1oS+8aHMmx9borEJOrN22NaJOzebYAXa5un8x7ej5p3ERx8dsuq2tOqBaxSMzPeI0dLOS5dgx/+X+IMaEWUGkfMYZhFvdevoni3bdOBmZY1v4pVm2+DcCm4gkyPgQvvhotMVgdzesHP26qZRP/O4P1ksrkLaZ39cLNTPVF0HdGEpsACfFzwUP9/t1mnfnt5uQEY6yXRfztB3u7564Lf6+oH5+HnDs=
+    on:
+      tags: true
+      condition: $DEPLOY_PYPI = "true"
+
+install:
+  - pip install -r requirements.txt
+  - pip install circuitpython-build-tools Sphinx sphinx-rtd-theme
+  - pip install --force-reinstall pylint==1.9.2
+
+script:
+  - pylint adafruit_bd3491fs.py
+  - ([[ ! -d "examples" ]] || pylint --disable=missing-docstring,invalid-name,bad-whitespace examples/*.py)
+  - circuitpython-build-bundles --filename_prefix adafruit-circuitpython-bd3491fs --library_location .
+  - cd docs && sphinx-build -E -W -b html . _build/html && cd ..
