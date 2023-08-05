@@ -1,0 +1,10 @@
+cryptography
+tornado
+traitlets
+sqlalchemy
+
+[kerberos]
+pykerberos
+
+[yarn]
+skein>=0.7.3
