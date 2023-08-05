@@ -1,0 +1,3 @@
+[console_scripts]
+projectpy = projectpy.cli:run_as_command
+

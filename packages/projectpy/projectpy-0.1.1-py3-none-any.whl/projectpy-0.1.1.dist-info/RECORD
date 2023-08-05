@@ -1,0 +1,11 @@
+projectpy/__init__.py,sha256=-JeqFqloXjIp24hQZVI8Bu5d58qL6cwM0cJX3dP8xV8,154
+projectpy/cli.py,sha256=OvihsaoPBERHY_Tk1cRVrgc0RSIebAxukgCQ8j_CsuU,3211
+projectpy/config.py,sha256=Rccbo_T90BHvu94PixVfbjrkLl6SoWaukIm8jKrss9I,665
+projectpy/utils.py,sha256=6xyobIFZUZlgFmQPQzgUT7fFSXwp0COOlmttlFzH4MY,1876
+projectpy/version.py,sha256=-KgKtiFmMydNAjZRf5kApzziya6OioDNUui2sYRVUPM,116
+projectpy-0.1.1.dist-info/LICENSE,sha256=fVrjFrmnNCmXBz1JRdaVw2wwi4RXhgKv6cN89eqL5gI,1321
+projectpy-0.1.1.dist-info/METADATA,sha256=zNj6thvQC4LKiWExqCKe8OtPTis95h1qP06WjCNFxKE,1243
+projectpy-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+projectpy-0.1.1.dist-info/entry_points.txt,sha256=HlwWq_n3FlvtRkQ_lpirnyI5QplgjBEB9le1wM-FlUo,60
+projectpy-0.1.1.dist-info/top_level.txt,sha256=-PWqbrOAsar7LjNYLGrH70zz5r8t8XiUhdi-YU66p0c,10
+projectpy-0.1.1.dist-info/RECORD,,
