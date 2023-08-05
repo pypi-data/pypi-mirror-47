@@ -1,0 +1,3 @@
+[console_scripts]
+plot_glasses = wearing_glasses.plot_glasses:main
+
