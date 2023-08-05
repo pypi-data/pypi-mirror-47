@@ -1,0 +1,6 @@
+[console_scripts]
+feb = bootstrap:main
+
+[gui_scripts]
+
+
