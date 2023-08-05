@@ -1,0 +1,6 @@
+pandas
+numpy
+Wand
+subprocess.run
+PyPDF2
+tabula
