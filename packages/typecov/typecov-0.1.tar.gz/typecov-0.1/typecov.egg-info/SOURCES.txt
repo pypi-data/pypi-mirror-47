@@ -1,0 +1,9 @@
+README.md
+setup.py
+typecov.py
+typecov.egg-info/PKG-INFO
+typecov.egg-info/SOURCES.txt
+typecov.egg-info/dependency_links.txt
+typecov.egg-info/entry_points.txt
+typecov.egg-info/requires.txt
+typecov.egg-info/top_level.txt
