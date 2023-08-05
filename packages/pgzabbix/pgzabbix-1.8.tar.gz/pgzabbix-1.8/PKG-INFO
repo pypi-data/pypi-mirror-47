@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pgzabbix
+Version: 1.8
+Summary: Send stats about postgres to Zabbix
+Home-page: https://github.com/Spindel/PgZabbix
+Author: D.S. Ljungmark
+Author-email: ljungmark@modio.se
+License: GPL3
+Description: UNKNOWN
+Platform: UNKNOWN
