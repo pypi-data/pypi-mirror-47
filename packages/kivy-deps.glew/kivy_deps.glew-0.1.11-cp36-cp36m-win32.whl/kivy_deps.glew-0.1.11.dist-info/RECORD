@@ -1,0 +1,6 @@
+kivy_deps.glew-0.1.11.data/data/share/glew/bin/glew32.dll,sha256=Wq8RupLKH3qwvyKgvHkwMyPvoR1daB48ohsgz8uynjo,390144
+kivy_deps.glew-0.1.11.data/purelib/kivy_deps/glew/__init__.py,sha256=r24Ak_AMDrmAUHuOyWiJuBkllgu6uJu0eNH7V1qBSP0,581
+kivy_deps.glew-0.1.11.dist-info/METADATA,sha256=mtqHwQlVpXltOe9YWPOz5d00T7XhPfUFdbEoMtw4yo0,234
+kivy_deps.glew-0.1.11.dist-info/WHEEL,sha256=wmPDZ4YlYYeN7oO3FufAnVVnuyeW39IdWpCEXybTMGY,102
+kivy_deps.glew-0.1.11.dist-info/top_level.txt,sha256=YMwhIe4C46UWpn5ggwslPdp7LkNw5RbCnvMcqI6e78Q,10
+kivy_deps.glew-0.1.11.dist-info/RECORD,,
