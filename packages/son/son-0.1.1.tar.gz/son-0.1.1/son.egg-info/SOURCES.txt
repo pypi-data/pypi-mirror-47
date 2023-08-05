@@ -1,0 +1,9 @@
+README.md
+setup.py
+son/__about__.py
+son/__init__.py
+son/misc.py
+son.egg-info/PKG-INFO
+son.egg-info/SOURCES.txt
+son.egg-info/dependency_links.txt
+son.egg-info/top_level.txt
