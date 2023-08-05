@@ -1,0 +1,11 @@
+README.md
+setup.py
+source/Xnat.py
+source/__init__.py
+source/conf.py
+source/util.py
+xnatum.egg-info/PKG-INFO
+xnatum.egg-info/SOURCES.txt
+xnatum.egg-info/dependency_links.txt
+xnatum.egg-info/requires.txt
+xnatum.egg-info/top_level.txt
