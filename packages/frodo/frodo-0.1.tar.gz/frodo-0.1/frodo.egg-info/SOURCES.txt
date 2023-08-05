@@ -1,0 +1,8 @@
+setup.py
+frodo/__init__.py
+frodo/frodo.py
+frodo.egg-info/PKG-INFO
+frodo.egg-info/SOURCES.txt
+frodo.egg-info/dependency_links.txt
+frodo.egg-info/not-zip-safe
+frodo.egg-info/top_level.txt
