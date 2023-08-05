@@ -1,0 +1,16 @@
+calligraphy/__init__.py,sha256=09hol5ovL6ArILJIJZ-MiscnOjKa6RjaETmtdgJpW2c,22
+calligraphy/__main__.py,sha256=z3OQolCKD8rUd3pKYp_FISq2VctFhFl1mV-DVnaoNOM,29
+calligraphy/cli.py,sha256=aC9SxXUr5-wJ4NoJaIvKOzYW7uVjbv-JA0Z4E8IsgN0,1326
+calligraphy/export.py,sha256=j1smNeEvvVFhe_xQ0Y4EtiELEgkwQVXRzUkRt4ayMIc,1826
+calligraphy/utils.py,sha256=gDb60kcKvD4t5wOgptv5HmQfTUU3wOnA7hgBcMeOd7c,441
+calligraphy/verify.py,sha256=6IAgYDMfl3DqgCg1BR5yN0oto3dwGIDidm4ym17aQs4,2764
+calligraphy/commands/__init__.py,sha256=hhFmepdm3lK-0qQRF06ykPcTbTsIOH8n20g6A-lJs7Y,5278
+calligraphy/commands/export.py,sha256=_6lxZchnzb25YrXS6P-Vn7S2XiT6PYEZiWcthqPmMPI,162
+calligraphy/commands/static.py,sha256=hFdGnZScS7KpdJma73BCVoJlFQR2vO5XWD85kgCsgVg,804
+calligraphy/commands/verify.py,sha256=IcJ0-kxB0pkoKmYdr3ryl5M5X-ru3VEbsp5eqLvVEsg,265
+calligraphy-0.7.0.dist-info/COPYING,sha256=fFDNm4Xit-666itWGLQChisB1aZr7_-OQUAe8_FORxo,34500
+calligraphy-0.7.0.dist-info/METADATA,sha256=0x61CSnF5MFn9IcVa-I2URJJ5plhpgn9laVC894HMEQ,1441
+calligraphy-0.7.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+calligraphy-0.7.0.dist-info/entry_points.txt,sha256=tOGVoZ4Dotr7XZsjVr-8u5thFy0WSLnhbjD0819CX6g,54
+calligraphy-0.7.0.dist-info/top_level.txt,sha256=6uHyZgseex9UaTwmpN4bPue8WqRaUgkJsLWTAXpRKfU,12
+calligraphy-0.7.0.dist-info/RECORD,,
