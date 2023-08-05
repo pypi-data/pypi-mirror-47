@@ -1,0 +1,22 @@
+{%- if feed is defined and 'links' in feed %}
+<div class="text-center mb-4">
+  <p>Лента сообщений в удобном формате:</p>
+  <div class="btn-group" role="group" aria-label="Feed links">
+  {%- if 'index' in feed['links'] %}
+  <a href="{{feed['links']['index']}}" class="btn btn-secondary" role="button"><i class="fas fa-newspaper"></i></a>
+  {%- endif %}
+  {%- if 'atom' in feed['links'] %}
+  <a href="{{feed['links']['atom']}}" class="btn btn-secondary" role="button"><i class="fas fa-rss"></i></a>
+  {%- endif %}
+  {%- if 'twitter' in feed['links'] %}
+  <a href="https://twitter.com/{{feed['links']['twitter']}}" class="btn btn-secondary" role="button"><i class="fab fa-twitter"></i></a>
+  {%- endif %}
+  {%- if 'telegram' in feed['links'] %}
+  <a href="https://t.me/{{feed['links']['telegram']}}" class="btn btn-secondary" role="button"><i class="fab fa-telegram"></i></a>
+  {%- endif %}
+  {%- if 'facebook' in feed['links'] %}
+  <a href="https://fb.me/{{feed['links']['facebook']}}" class="btn btn-secondary" role="button"><i class="fab fa-facebook"></i></a>
+  {%- endif %}
+  </div>
+</div>
+{%- endif %}

@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: flatfilecms
+Version: 0.3
+Summary: flat-file CMS suitable for static site
+Home-page: https://trac.radium.group/flatfilecms/
+Author: Anton Kasimov
+Author-email: kasimov@radium-it.ru
+License: UNKNOWN
+Description: Radium Flat-file CMS
+        ====================
+        
+        Getting Started
+        ---------------
+        
+        - Install flatfilecms
+        
+            pip install flatfilecms
+        
+        - Use flatfilecms:main as a WSGI application
+        
+        
+        
+        0.3
+        ---
+        
+        - Page items can specify view to render
+        - Templates and views for blog posts and blog index
+        - Atom feed generation for blog index
+        - Page item can contain published and updated timestamps
+        - Facebook and twitter meta tags
+        - Added Babel library for l10n and i18n
+        - Replaced watchdog with hupper for reload on change feature
+        - Loading global data (e.g. base_url)
+        - sitemap will include lastfreq on items with published or updated timestamp
+        - sitemap ignore rules are regexes now
+        
+        0.2
+        ---
+        
+        - Bugfixes
+        
+        0.1
+        ---
+        
+        - Initial version.
+        
+Keywords: web pyramid pylons flat-file CMS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Description-Content-Type: text/x-rst
+Provides-Extra: testing

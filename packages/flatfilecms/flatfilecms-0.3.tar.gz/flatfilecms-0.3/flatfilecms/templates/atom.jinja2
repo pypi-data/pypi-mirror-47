@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text">{{title}}</title>
+  {%- if subtitle %}
+  <subtitle type="html">{{subtitle}}</subtitle>
+  {%- endif %}
+  <link rel="self" href="{{data.base_url|join_url(request.path_qs)}}"/>
+  {%- if 'links' in feed and feed['index'] %}
+  <link rel="alternate" type="text/html" hreflang="{{request.locale_name}}" href="{{data.base_url|join_url(feed['links']['index'])}}"/>
+  {%- endif %}
+  <updated>{{(pages[0][1].page['updated'] or pages[0][1].page['published']).isoformat()}}+00:00</updated>
+  <id>urn:uuid:{{feed['id']}}</id>
+  <author>
+    <name>{{feed['author']['name']}}</name>
+  </author>
+  {%- if feed['category'] %}
+  <category term="{{feed['category']}}"/>
+  {%- endif %}
+  <generator uri="https://trac.radium.group/flatfilecms/" version="1.0">flatfilecms</generator>
+  {%- for item in pages %}
+  <entry>
+    <title>{{item[1].page['title']}}</title>
+    <link href="{{data.base_url|join_url(item[0])}}"/>
+    <id>urn:uuid:{{item[1].page['id']}}</id>
+    <updated>{{(item[1].page['updated'] or item[1].page['published']).isoformat()}}+00:00</updated>
+    <published>{{item[1].page['published'].isoformat()}}+00:00</published>
+    <summary>{{item[1].page['summary'] or item[1].page['description']}}</summary>
+    {%- if item[1].page['author'] %}
+    <author>
+      <name>{{item[1].page['author']['name']}}</name>
+    </author>
+    {%- endif %}
+    {%- if item[1].page['category'] %}
+    <category term="{{item[1].page['category']}}"/>
+    {%- endif %}
+  </entry>
+  {%- endfor %}
+</feed>

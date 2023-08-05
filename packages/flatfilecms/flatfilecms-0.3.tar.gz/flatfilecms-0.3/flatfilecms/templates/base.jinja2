@@ -1,0 +1,61 @@
+{%- import 'macros.jinja2' as macros -%}
+<!DOCTYPE html>
+<html lang="{{request.locale_name.replace('_', '-')}}">
+  <head>
+    {%- block head %}
+    <title>{{title}}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}">
+    <meta name="generator" content="flatfilecms">
+    <link rel="icon" type="image/png" href="/static/img/favicon.png">
+    {%- if amphtml is defined %}
+    <link rel="amphtml" href="{{amphtml}}">
+    {%- endif %}
+    {%- if feed is defined %}
+    <link rel="alternate" type="application/atom+xml" title="Atom feed" href="{{feed['links']['atom']}}">
+    {%- endif %}
+    {%- block links %}
+    {%- endblock %}
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+    <meta name="twitter:title" content="{{title}}">
+    <meta property="og:title" content="{{title}}" />
+    <meta property="og:url" content="{{data['base_url']|join_url(request.path_qs)}}" />
+    <meta property="og:type" content="article" />
+    <meta name="twitter:description" content="{{description}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:locale" content="{{request.locale_name}}" />
+    {%- if feed and 'twitter' in feed['links'] %}
+    <meta name="twitter:site" content="@{{feed['links']['twitter']}}">
+    {%- endif %}
+    {%- if author and 'twitter' in author %}
+    <meta name="twitter:creator" content="@{{author['twitter']}}">
+    {%- endif %}
+    {%- if image %}
+    <meta name="twitter:image" content="{{image}}">
+    <meta property="og:image" content="{{image}}" />
+    <meta name="twitter:card" content="summary_large_image">
+    {%- else %}
+    <meta name="twitter:card" content="summary">
+    {%- endif %}
+    {%- if published %}
+    <meta property="article:published_time" content="{{published.isoformat()}}Z" />
+    {%- endif %}
+    {%- if updated %}
+    <meta property="article:modified_time" content="{{updated.isoformat()}}Z" />
+    {%- endif %}
+    {%- if json_ld %}
+    <script type="application/ld+json">
+    {{ json_ld | merge_dict({"@context": "http://schema.org"}) | tojson }}
+    </script>
+    {%- endif -%}
+    {% endblock %}
+  </head>
+  <body>
+    {% include 'counter.jinja2' %}
+    {% block body %}
+    {% endblock %}
+  </body>
+</html>

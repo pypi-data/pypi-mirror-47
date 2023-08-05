@@ -1,0 +1,6 @@
+<blockquote class="text-secondary border-left border-secondary mx-0 mx-md-2 mx-lg-4 mx-xl-5 pl-3">
+  <div{%if blockquote_collapse%} class="collapse" id="{{blockquote_id}}"{%endif%}>
+    {{blockquote_content}}
+  </div>
+  <footer class="blockquote-footer">{%if blockquote_collapse%}<a href="#{{blockquote_id}}" title="Раскрыть текст" data-toggle="collapse" data-target="#{{blockquote_id}}" aria-expanded="false" aria-controls="{{blockquote_id}}"><i class="fas fa-expand-arrows-alt"></i> {{blockquote_name}}</a>{%else%}{{blockquote_name}}{%endif%}</footer>
+</blockquote>
