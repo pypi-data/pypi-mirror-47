@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: xfin
+Version: 1.0.2
+Summary: The most important libraries for financial engineering
+Home-page: UNKNOWN
+Author: Xianba Xia
+Author-email: scuxia@gmail.com
+License: Apache-2
+Description: xFin
+        ===============
+        Target Users
+        --------------
+        * financial market analyst of China
+        * learners of financial data analysis with pandas/NumPy
+        * people who are interested in China financial data
+        Installation
+        --------------
+            pip install xfin
+        Upgrade
+        ---------------
+            pip install xfin --upgrade
+        
+        
+Keywords: setup,distutils
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
