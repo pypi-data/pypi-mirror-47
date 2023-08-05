@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: pybotlib
+Version: 0.1.5
+Summary: Object oriented python RPA library
+Home-page: https://github.com/dkatz23238/pybotlib/tree/ubuntu-client-37
+Author: David Katz
+Author-email: davidemmanuelkatz@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX
+Requires-Python: >3.7
+Requires-Dist: numpy
+Requires-Dist: selenium
+Requires-Dist: pandas
+Requires-Dist: requests
+Requires-Dist: lxml
+Requires-Dist: html5lib
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+Requires-Dist: mail-parser
+Requires-Dist: pygsheets
+Requires-Dist: minio
+Requires-Dist: BeautifulSoup4
+Requires-Dist: python3-xlib
+Requires-Dist: Xlib
+Requires-Dist: PyAutoGUI (==0.9.39)
+
+
+
+For more info check out our documentation hosted on readthedocs: https://pybotlib.readthedocs.io
+
+
+
