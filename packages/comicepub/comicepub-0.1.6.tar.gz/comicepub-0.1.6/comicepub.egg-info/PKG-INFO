@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: comicepub
+Version: 0.1.6
+Summary: Japanese comic EPUB3 generate tool
+Home-page: https://github.com/moeoverflow/comicepub
+Author: ShinCurry
+Author-email: shincurryyang@gmail.com
+License: UNKNOWN
+Description: # comicepub
+        digital comic epub3 generator
+        
+        
+        
+        ### Install
+        
+        ```Shell
+        pip3 install comicepub
+        ```
+        
+        
+        
+        ### Usage
+        
+        ```python
+        from comicepub import ComicEpub
+        
+        comicepub = ComicEpub("path/to/output.epub")
+        
+        comicepub.add_comic_page(cover_data, cover_ext, cover=True)
+        for image_data, image_ext in images:
+        	comicepub.add_comic_page(image_data, image_ext, cover=False)
+          
+        comicepub.title = ("Title", "Title")
+        comicepub.authors = [("Author 1", "Author 1")]
+        comicepub.publisher = ('Comicbook', 'Comicbook')
+        comicepub.language = "ja"
+        
+        comicepub.save()
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
