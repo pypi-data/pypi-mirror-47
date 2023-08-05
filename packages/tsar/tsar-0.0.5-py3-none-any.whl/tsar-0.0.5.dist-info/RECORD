@@ -1,0 +1,10 @@
+tsar/__init__.py,sha256=SLruA_zw_RQ3pwtLIat7mXAkgK_FxmL273gCQqQBcyc,735
+tsar/autoregressive.py,sha256=vX2r7m-MMkHKarDyYSwGTEgNRm4iune_7ub8XNz92co,9126
+tsar/autotune.py,sha256=UbsS69-hJnQ7Grak7vjixWroxoqOPwFY60wQzAJTlNM,6442
+tsar/baseline.py,sha256=06TUSJnA-5sItAmGoDlqdje2obSBE0p80NzKX-B22Fc,4456
+tsar/tsar.py,sha256=aHjRrIXtbVwk1Rcc4vsDP2d5dU95zTjvLUJ_BELsJnY,9420
+tsar-0.0.5.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+tsar-0.0.5.dist-info/METADATA,sha256=glkIhm19HXxBh8MIncjbMC37an7ctu1FDSUru03ESjU,256
+tsar-0.0.5.dist-info/WHEEL,sha256=t_MpApv386-8PVts2R6wsTifdIn0vbUDTVv61IbqFC8,92
+tsar-0.0.5.dist-info/top_level.txt,sha256=t8KNjALfMMXl1g7bM7Yg_qp2EvNSjGqNEmuqAp8Tri8,5
+tsar-0.0.5.dist-info/RECORD,,
