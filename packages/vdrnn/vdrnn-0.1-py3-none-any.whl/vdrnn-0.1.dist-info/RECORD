@@ -1,0 +1,7 @@
+vdrnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vdrnn/model_lstm.py,sha256=l4vvSBZ_fKrTGDR_IMTj-kkJ2h4WQ_LFWTY35NFUd_Q,9256
+vdrnn/vrnn.py,sha256=FROiKEPFLBww7yLvv8UdqP8_OQbFmd21Bia6ds5NmOA,25814
+vdrnn-0.1.dist-info/METADATA,sha256=hV5oywxpqONEbljm1OP9FT5GnQNCPqXwTRUoK8AcvjU,342
+vdrnn-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+vdrnn-0.1.dist-info/top_level.txt,sha256=U_FYIXDZBheva_QAO20nQ9BAPiG2SjAr948CLGgYWSM,6
+vdrnn-0.1.dist-info/RECORD,,
