@@ -1,0 +1,7 @@
+README.md
+madmac.py
+setup.py
+madmac.egg-info/PKG-INFO
+madmac.egg-info/SOURCES.txt
+madmac.egg-info/dependency_links.txt
+madmac.egg-info/top_level.txt
