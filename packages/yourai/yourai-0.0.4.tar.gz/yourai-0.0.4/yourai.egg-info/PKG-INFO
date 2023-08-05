@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: yourai
+Version: 0.0.4
+Summary: The CLI for the annotation tool for yourai
+Home-page: UNKNOWN
+Author: Kevin Lu
+Author-email: kevin@yourai.io
+License: Apache License Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

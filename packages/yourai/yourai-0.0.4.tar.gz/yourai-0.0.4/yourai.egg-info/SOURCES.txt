@@ -1,0 +1,11 @@
+README.md
+setup.py
+yourai/__init__.py
+yourai/cli.py
+yourai.egg-info/PKG-INFO
+yourai.egg-info/SOURCES.txt
+yourai.egg-info/dependency_links.txt
+yourai.egg-info/entry_points.txt
+yourai.egg-info/not-zip-safe
+yourai.egg-info/requires.txt
+yourai.egg-info/top_level.txt
