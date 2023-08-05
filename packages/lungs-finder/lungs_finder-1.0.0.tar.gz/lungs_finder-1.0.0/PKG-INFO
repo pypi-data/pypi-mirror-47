@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: lungs_finder
+Version: 1.0.0
+Summary: Library that helps you to find lungs on chest X-ray (CXR) images for further processing
+Home-page: https://github.com/dirtmaxim/lungs-finder
+Author: Maksym Kholiavchenko
+Author-email: dirtmaxim@gmail.com
+License: Apache-2.0
+Download-URL: https://github.com/dirtmaxim/lungs-finder/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN

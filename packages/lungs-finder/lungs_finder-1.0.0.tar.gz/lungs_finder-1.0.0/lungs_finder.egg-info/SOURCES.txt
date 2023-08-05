@@ -1,0 +1,17 @@
+README.md
+setup.py
+lungs_finder/__init__.py
+lungs_finder/find_tools.py
+lungs_finder/haar_finder.py
+lungs_finder/hog_finder.py
+lungs_finder/lbp_finder.py
+lungs_finder/left_lung_haar.xml
+lungs_finder/left_lung_hog.np
+lungs_finder/left_lung_lbp.xml
+lungs_finder/right_lung_haar.xml
+lungs_finder/right_lung_hog.np
+lungs_finder/right_lung_lbp.xml
+lungs_finder.egg-info/PKG-INFO
+lungs_finder.egg-info/SOURCES.txt
+lungs_finder.egg-info/dependency_links.txt
+lungs_finder.egg-info/top_level.txt
