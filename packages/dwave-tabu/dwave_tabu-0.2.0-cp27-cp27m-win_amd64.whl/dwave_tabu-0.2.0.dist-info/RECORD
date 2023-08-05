@@ -1,0 +1,10 @@
+tabu/__init__.py,sha256=lSAbcvJenHLVwxZGIQHW6zxWqh2NaeKtZqUotjXl0XE,700
+tabu/_tabu_search.pyd,sha256=_Ho3aIqyEb9dp5nWAEJZmiLS028K33DE9LEOZF4-x7Y,363008
+tabu/package_info.py,sha256=u2bgwIvX_pMdLPninY1kIfnGspyL9hsc6ksNSZof_fA,913
+tabu/sampler.py,sha256=OY5QgO7J_j1PVk3DUUnn8CBz-NAN11RrZGv0LjKwuM0,10090
+tabu/tabu_search.py,sha256=556igGSfWnL3PK7VaJPhq5Aa_sws4eyuHcbjkzGB-gg,21899
+dwave_tabu-0.2.0.dist-info/LICENSE,sha256=ugD6k8I3qTmFx8G1G7c-FbumRgWm0F5b4h0B9Njy6do,10257
+dwave_tabu-0.2.0.dist-info/METADATA,sha256=YYDsjcgV5Qc0kqtxx88dwr3yY0BikK7a3j-1wzTiJl4,2246
+dwave_tabu-0.2.0.dist-info/WHEEL,sha256=OFYDHMVfPWcgJskn3wppxWZj-UqSVY1Y7C_XiQa8slw,106
+dwave_tabu-0.2.0.dist-info/top_level.txt,sha256=HcbuXRWdJhCUpVBzVEsivhdw5FhlJljSTrSEjJy2Gqs,5
+dwave_tabu-0.2.0.dist-info/RECORD,,
