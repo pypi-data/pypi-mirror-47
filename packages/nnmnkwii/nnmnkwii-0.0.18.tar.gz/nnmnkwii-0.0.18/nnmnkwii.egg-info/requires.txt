@@ -1,0 +1,16 @@
+scipy
+cython>=0.28.0
+bandmat>=0.7
+fastdtw
+sklearn
+pysptk>=0.1.17
+tqdm
+
+[docs]
+numpydoc
+sphinx_rtd_theme
+
+[test]
+nose
+pyworld
+librosa
