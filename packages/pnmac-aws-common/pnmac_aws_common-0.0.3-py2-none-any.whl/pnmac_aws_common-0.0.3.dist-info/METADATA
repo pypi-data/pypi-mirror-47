@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: pnmac-aws-common
+Version: 0.0.3
+Summary: A set of utilities to use with AWS
+Home-page: https://gitlab.pnmac.com/martech/pnmac-aws-secrets
+Author: Example Author
+Author-email: none@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# PNMAC Secrets Manager Utility
+
+Used to fetch AWS secrets per the company's pattern for secrets management.
+
+## To Install
+
+`pip install pnmac-aws-common`
+
+## To Use...
+
+This code expects that a "secrets_path" is either provided to the function or established as an environment variable called "secrets_path".
+
+It will try to get your secrets from manager.
+
+Should you not have access to the secrets manager (for example, while during local development) environment variables are returned in that case. So simply add your secrets as environment variables to accomodate this case.
+
