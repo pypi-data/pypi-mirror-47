@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: edrpou
+Version: 1.2
+Summary: Ukrainian EDRPOU-IIN validation
+Home-page: https://github.com/pablissimo77/edrpou-iin-validation/
+Author: Pavlo Yaremchuk (pablissimo77)
+Author-email: pablissimo77@gmail.com
+License: UNKNOWN
+Description: # Ukrainian EDRPOU-IIN validation
+        
+        Пакет для валидации 8-ми значного кода EDRPOU и 10-и значного кода IIN путём расчета и проверки контрольного числа.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown

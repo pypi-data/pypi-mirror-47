@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+edrpou/__init__.py
+edrpou.egg-info/PKG-INFO
+edrpou.egg-info/SOURCES.txt
+edrpou.egg-info/dependency_links.txt
+edrpou.egg-info/top_level.txt
