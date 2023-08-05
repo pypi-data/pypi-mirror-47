@@ -1,0 +1,1606 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Migrating from PyTables 2.x to 3.x &mdash; PyTables 3.5.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Downloads" href="downloads.html" />
+    <link rel="prev" title="Other Material" href="other_material.html" />
+ 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111342564-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-111342564-1');
+</script>
+
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/logo-pytables-small.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                3.5.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="usersguide/index.html">User’s Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cookbook/index.html">Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="FAQ.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="other_material.html">Other Material</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Migrating from 2.x to 3.x</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#python-3-at-last">Python 3 at Last!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#numeric-numarray-netcdf3-hdf5-1-6-no-more">Numeric, Numarray, NetCDF3, &amp; HDF5 1.6 No More!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#unicode-all-the-strings">Unicode all the strings!</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#major-api-changes">Major API Changes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pep-8-compliance">PEP 8 Compliance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#consistent-create-xxx-signatures">Consistent <code class="docutils literal notranslate"><span class="pre">create_xxx()</span></code> Signatures</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#api-name-changes">API Name Changes</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="downloads.html">Downloads</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="release_notes.html">Release Notes</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="release_notes.html#migration">Migration</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Migrating from 2.x to 3.x</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#python-3-at-last">Python 3 at Last!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#numeric-numarray-netcdf3-hdf5-1-6-no-more">Numeric, Numarray, NetCDF3, &amp; HDF5 1.6 No More!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unicode-all-the-strings">Unicode all the strings!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#major-api-changes">Major API Changes</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="MIGRATING_TO_2.x.html">Migrating from 1.x to 2.x</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="release_notes.html#pytables">PyTables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_notes.html#pytables-pro">PyTables Pro</a></li>
+<li class="toctree-l2"><a class="reference internal" href="release_notes.html#release-timeline">Release timeline</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_pointers.html">Project pointers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="development.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dev_team.html">Development Team</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyTables</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Migrating from PyTables 2.x to 3.x</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/MIGRATING_TO_3.x.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="migrating-from-pytables-2-x-to-3-x">
+<h1>Migrating from PyTables 2.x to 3.x<a class="headerlink" href="#migrating-from-pytables-2-x-to-3-x" title="Permalink to this headline">¶</a></h1>
+<dl class="field-list simple">
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Antonio Valentino</p>
+</dd>
+<dt class="field-even">Author</dt>
+<dd class="field-even"><p>Anthony Scopatz</p>
+</dd>
+<dt class="field-odd">Author</dt>
+<dd class="field-odd"><p>Thomas Provoost</p>
+</dd>
+</dl>
+<p>This document describes the major changes in PyTables in going from the
+2.x to 3.x series and what you need to know when migrating downstream
+code bases.</p>
+<div class="section" id="python-3-at-last">
+<h2>Python 3 at Last!<a class="headerlink" href="#python-3-at-last" title="Permalink to this headline">¶</a></h2>
+<p>The PyTables 3.x series now ships with full compatibility for Python 3.1+.
+Additionally, we plan on maintaining compatibility with Python 2.7 for the
+foreseeable future.  Python 2.6 is no longer supported but
+may work in most cases.  Note that the entire 3.x series now relies on
+numexpr v2.1+, which itself is the first version of numexpr support both
+Python 2 &amp; 3.</p>
+</div>
+<div class="section" id="numeric-numarray-netcdf3-hdf5-1-6-no-more">
+<h2>Numeric, Numarray, NetCDF3, &amp; HDF5 1.6 No More!<a class="headerlink" href="#numeric-numarray-netcdf3-hdf5-1-6-no-more" title="Permalink to this headline">¶</a></h2>
+<p>PyTables no longer supports numeric and numarray. Please use numpy instead.
+Additionally, the <code class="docutils literal notranslate"><span class="pre">tables.netcdf3</span></code> module has been removed. Please refer
+to the <a class="reference external" href="http://code.google.com/p/netcdf4-python/">netcdf4-python</a> project for further support. Lastly, the older
+HDF5 1.6 API is no longer supported.  Please upgrade to HDF5 1.8+.</p>
+</div>
+<div class="section" id="unicode-all-the-strings">
+<h2>Unicode all the strings!<a class="headerlink" href="#unicode-all-the-strings" title="Permalink to this headline">¶</a></h2>
+<p>In Python 3, all strings are natively in Unicode. This introduces some
+difficulties, as the native HDF5 string format is not Unicode-compatible.
+To minimize explicit conversion troubles when writing, especially <a class="reference internal" href="#create-signatures"><span class="std std-ref">when
+creating data sets from existing Python objects</span></a>, string
+objects are implicitly cast to non-Unicode for HDF5 storage. To make you
+aware of this, a warning is raised when this happens.</p>
+<p>This is certainly no true Unicode compatibility, but mainly for convenience
+with the pure-Unicode Python 3 string type. Any string that is not castable
+as ascii upon creation of your data set, will hence still raise an error.
+For true Unicode support, look into the <code class="docutils literal notranslate"><span class="pre">VLUnicodeAtom</span></code> class.</p>
+</div>
+<div class="section" id="major-api-changes">
+<h2>Major API Changes<a class="headerlink" href="#major-api-changes" title="Permalink to this headline">¶</a></h2>
+<p>The PyTables developers, <a class="reference external" href="http://sourceforge.net/mailarchive/message.php?msg_id=29584752">by popular demand</a>, have taken this opportunity
+that a major version number upgrade affords to implement significant API
+changes.  We have tried to do this in such a way that will not immediately
+break most existing code, though in some breakages may still occur.</p>
+<div class="section" id="pep-8-compliance">
+<h3>PEP 8 Compliance<a class="headerlink" href="#pep-8-compliance" title="Permalink to this headline">¶</a></h3>
+<p>The PyTables 3.x series now follows <a class="reference external" href="http://www.python.org/dev/peps/pep-0008/">PEP 8</a> coding standard.  This makes
+using PyTables more idiomatic with surrounding Python code that also adheres
+to this standard.  The primary way that the 2.x series was <em>not</em> PEP 8
+compliant was with respect to variable naming conventions.  Approximately
+<a class="reference internal" href="#api-name-changes"><span class="std std-ref">450 API variables</span></a> were identified and updated for
+PyTables 3.x.</p>
+<p>To ease migration, PyTables ships with a new <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> command line tool.
+This tool will run over a file and replace any instances of the old variable
+names with the 3.x version of the name.  This tool covers the overwhelming
+majority of cases was used to transition the PyTables code base itself!  However,
+it may also accidentally also pick up variable names in 3rd party codes that
+have <em>exactly</em> the same name as a PyTables’ variable.  This is because <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code>
+was implemented using regular expressions rather than a fancier AST-based
+method. By using regexes, <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> works on Python and Cython code.</p>
+<p><code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> <strong>help:</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>usage: pt2to3 <span class="o">[</span>-h<span class="o">]</span> <span class="o">[</span>-r<span class="o">]</span> <span class="o">[</span>-p<span class="o">]</span> <span class="o">[</span>-o OUTPUT<span class="o">]</span> <span class="o">[</span>-i<span class="o">]</span> filename
+
+PyTables <span class="m">2</span>.x -&gt; <span class="m">3</span>.x API transition tool This tool displays to standard out, so
+it is common to pipe this to another file: $ pt2to3 oldfile.py &gt; newfile.py
+
+positional arguments:
+  filename              path to input file.
+
+optional arguments:
+  -h, --help            show this <span class="nb">help</span> message and <span class="nb">exit</span>
+  -r, --reverse         reverts changes, going from <span class="m">3</span>.x -&gt; <span class="m">2</span>.x.
+  -p, --no-ignore-previous
+                        ignores previous_api<span class="o">()</span> calls.
+  -o OUTPUT             output file to write to.
+  -i, --inplace         overwrites the file in-place.
+</pre></div>
+</div>
+<p>Note that <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> only works on a single file, not a a directory.  However,
+a simple BASH script may be written to run <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> over an entire directory
+and all sub-directories:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
+<span class="k">for</span> f in <span class="k">$(</span>find .<span class="k">)</span>
+<span class="k">do</span>
+    <span class="nb">echo</span> <span class="nv">$f</span>
+    pt2to3 <span class="nv">$f</span> &gt; temp.txt
+    mv temp.txt <span class="nv">$f</span>
+<span class="k">done</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong class="program">pt2to3</strong> uses the <code class="xref py py-mod docutils literal notranslate"><span class="pre">argparse</span></code> module that is part of the
+Python standard library since Python 2.7.
+Users of Python 2.6 should install <code class="xref py py-mod docutils literal notranslate"><span class="pre">argparse</span></code> separately
+(e.g. via <strong class="program">pip</strong>).</p>
+</div>
+<p>The old APIs and variable names will continue to be supported for the short term,
+where possible.  (The major backwards incompatible changes come from the renaming
+of some function and method arguments and keyword arguments.)  Using the 2.x APIs
+in the 3.x series, however, will issue warnings.  The following is the release
+plan for the warning types:</p>
+<ul class="simple">
+<li><p>3.0 - PendingDeprecationWarning</p></li>
+<li><p>3.1 - DeprecationWarning</p></li>
+<li><p>&gt;=3.2 - Remove warnings, previous_api(), and _past.py; keep pt2to3,</p></li>
+</ul>
+<p>The current plan is to maintain the old APIs for at least 2 years, though this
+is subject to change.</p>
+</div>
+<div class="section" id="consistent-create-xxx-signatures">
+<span id="create-signatures"></span><h3>Consistent <code class="docutils literal notranslate"><span class="pre">create_xxx()</span></code> Signatures<a class="headerlink" href="#consistent-create-xxx-signatures" title="Permalink to this headline">¶</a></h3>
+<p>Also by popular demand, it is now possible to create all data sets (<code class="docutils literal notranslate"><span class="pre">Array</span></code>,
+<code class="docutils literal notranslate"><span class="pre">CArray</span></code>, <code class="docutils literal notranslate"><span class="pre">EArray</span></code>, <code class="docutils literal notranslate"><span class="pre">VLArray</span></code>, and <code class="docutils literal notranslate"><span class="pre">Table</span></code>) from existing Python objects.
+Constructors for these classes now accept either of the following keyword arguments:</p>
+<ul class="simple">
+<li><p>an <code class="docutils literal notranslate"><span class="pre">obj</span></code> to initialize with data</p></li>
+<li><p>or both <code class="docutils literal notranslate"><span class="pre">atom</span></code> and <code class="docutils literal notranslate"><span class="pre">shape</span></code> to initialize an empty structure, if possible.</p></li>
+</ul>
+<p>These keyword arguments are also now part of the function signature for the
+corresponding <code class="docutils literal notranslate"><span class="pre">create_xxx()</span></code> methods on the <code class="docutils literal notranslate"><span class="pre">File</span></code> class.  These would be called
+as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># All create methods will support the following</span>
+<span class="n">create_xxx</span><span class="p">(</span><span class="n">where</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">obj</span><span class="o">=</span><span class="n">obj</span><span class="p">)</span>
+
+<span class="c1"># All non-variable length arrays support the following:</span>
+<span class="n">create_xxx</span><span class="p">(</span><span class="n">where</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">atom</span><span class="o">=</span><span class="n">atom</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">shape</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Using <code class="docutils literal notranslate"><span class="pre">obj</span></code> or <code class="docutils literal notranslate"><span class="pre">atom</span></code> and <code class="docutils literal notranslate"><span class="pre">shape</span></code> are mutually exclusive. Previously only
+<code class="docutils literal notranslate"><span class="pre">Array</span></code> could be created with an existing Python object using the <code class="docutils literal notranslate"><span class="pre">object</span></code>
+keyword argument.</p>
+</div>
+<div class="section" id="api-name-changes">
+<span id="id1"></span><h3>API Name Changes<a class="headerlink" href="#api-name-changes" title="Permalink to this headline">¶</a></h3>
+<p>The following tables shows the old 2.x names that have been update to their
+new values in the new 3.x series.  Please use the <code class="docutils literal notranslate"><span class="pre">pt2to3</span></code> tool to convert
+between these.</p>
+<table class="docutils align-center">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>2.x Name</strong></p></th>
+<th class="head"><p><strong>3.x Name</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>AtomFromHDF5Type</p></td>
+<td><p>atom_from_hdf5_type</p></td>
+</tr>
+<tr class="row-odd"><td><p>AtomToHDF5Type</p></td>
+<td><p>atom_to_hdf5_type</p></td>
+</tr>
+<tr class="row-even"><td><p>BoolTypeNextAfter</p></td>
+<td><p>bool_type_next_after</p></td>
+</tr>
+<tr class="row-odd"><td><p>HDF5ClassToString</p></td>
+<td><p>hdf5_class_to_string</p></td>
+</tr>
+<tr class="row-even"><td><p>HDF5ToNPExtType</p></td>
+<td><p>hdf5_to_np_ext_type</p></td>
+</tr>
+<tr class="row-odd"><td><p>HDF5ToNPNestedType</p></td>
+<td><p>hdf5_to_np_nested_type</p></td>
+</tr>
+<tr class="row-even"><td><p>IObuf</p></td>
+<td><p>iobuf</p></td>
+</tr>
+<tr class="row-odd"><td><p>IObufcpy</p></td>
+<td><p>iobufcpy</p></td>
+</tr>
+<tr class="row-even"><td><p>IntTypeNextAfter</p></td>
+<td><p>int_type_next_after</p></td>
+</tr>
+<tr class="row-odd"><td><p>NPExtPrefixesToPTKinds</p></td>
+<td><p>npext_prefixes_to_ptkinds</p></td>
+</tr>
+<tr class="row-even"><td><p>PTSpecialKinds</p></td>
+<td><p>pt_special_kinds</p></td>
+</tr>
+<tr class="row-odd"><td><p>PTTypeToHDF5</p></td>
+<td><p>pttype_to_hdf5</p></td>
+</tr>
+<tr class="row-even"><td><p>StringNextAfter</p></td>
+<td><p>string_next_after</p></td>
+</tr>
+<tr class="row-odd"><td><p>__allowedInitKwArgs</p></td>
+<td><p>__allowed_init_kwargs</p></td>
+</tr>
+<tr class="row-even"><td><p>__getRootGroup</p></td>
+<td><p>__get_root_group</p></td>
+</tr>
+<tr class="row-odd"><td><p>__next__inKernel</p></td>
+<td><p>__next__inkernel</p></td>
+</tr>
+<tr class="row-even"><td><p>_actionLogName</p></td>
+<td><p>_action_log_name</p></td>
+</tr>
+<tr class="row-odd"><td><p>_actionLogParent</p></td>
+<td><p>_action_log_parent</p></td>
+</tr>
+<tr class="row-even"><td><p>_actionLogPath</p></td>
+<td><p>_action_log_path</p></td>
+</tr>
+<tr class="row-odd"><td><p>_addRowsToIndex</p></td>
+<td><p>_add_rows_to_index</p></td>
+</tr>
+<tr class="row-even"><td><p>_appendZeros</p></td>
+<td><p>_append_zeros</p></td>
+</tr>
+<tr class="row-odd"><td><p>_autoIndex</p></td>
+<td><p>_autoindex</p></td>
+</tr>
+<tr class="row-even"><td><p>_byteShape</p></td>
+<td><p>_byte_shape</p></td>
+</tr>
+<tr class="row-odd"><td><p>_c_classId</p></td>
+<td><p>_c_classid</p></td>
+</tr>
+<tr class="row-even"><td><p>_c_shadowNameRE</p></td>
+<td><p>_c_shadow_name_re</p></td>
+</tr>
+<tr class="row-odd"><td><p>_cacheDescriptionData</p></td>
+<td><p>_cache_description_data</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkAndSetPair</p></td>
+<td><p>_check_and_set_pair</p></td>
+</tr>
+<tr class="row-odd"><td><p>_checkAttributes</p></td>
+<td><p>_check_attributes</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkBase</p></td>
+<td><p>_checkbase</p></td>
+</tr>
+<tr class="row-odd"><td><p>_checkColumn</p></td>
+<td><p>_check_column</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkGroup</p></td>
+<td><p>_check_group</p></td>
+</tr>
+<tr class="row-odd"><td><p>_checkNotClosed</p></td>
+<td><p>_check_not_closed</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkOpen</p></td>
+<td><p>_check_open</p></td>
+</tr>
+<tr class="row-odd"><td><p>_checkShape</p></td>
+<td><p>_check_shape</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkShapeAppend</p></td>
+<td><p>_check_shape_append</p></td>
+</tr>
+<tr class="row-odd"><td><p>_checkUndoEnabled</p></td>
+<td><p>_check_undo_enabled</p></td>
+</tr>
+<tr class="row-even"><td><p>_checkWritable</p></td>
+<td><p>_check_writable</p></td>
+</tr>
+<tr class="row-odd"><td><p>_check_sortby_CSI</p></td>
+<td><p>_check_sortby_csi</p></td>
+</tr>
+<tr class="row-even"><td><p>_closeFile</p></td>
+<td><p>_close_file</p></td>
+</tr>
+<tr class="row-odd"><td><p>_codeToOp</p></td>
+<td><p>_code_to_op</p></td>
+</tr>
+<tr class="row-even"><td><p>_column__createIndex</p></td>
+<td><p>_column__create_index</p></td>
+</tr>
+<tr class="row-odd"><td><p>_compileCondition</p></td>
+<td><p>_compile_condition</p></td>
+</tr>
+<tr class="row-even"><td><p>_conditionCache</p></td>
+<td><p>_condition_cache</p></td>
+</tr>
+<tr class="row-odd"><td><p>_convertTime64</p></td>
+<td><p>_convert_time64</p></td>
+</tr>
+<tr class="row-even"><td><p>_convertTime64_</p></td>
+<td><p>_convert_time64_</p></td>
+</tr>
+<tr class="row-odd"><td><p>_convertTypes</p></td>
+<td><p>_convert_types</p></td>
+</tr>
+<tr class="row-even"><td><p>_createArray</p></td>
+<td><p>_create_array</p></td>
+</tr>
+<tr class="row-odd"><td><p>_createCArray</p></td>
+<td><p>_create_carray</p></td>
+</tr>
+<tr class="row-even"><td><p>_createMark</p></td>
+<td><p>_create_mark</p></td>
+</tr>
+<tr class="row-odd"><td><p>_createPath</p></td>
+<td><p>_create_path</p></td>
+</tr>
+<tr class="row-even"><td><p>_createTable</p></td>
+<td><p>_create_table</p></td>
+</tr>
+<tr class="row-odd"><td><p>_createTransaction</p></td>
+<td><p>_create_transaction</p></td>
+</tr>
+<tr class="row-even"><td><p>_createTransactionGroup</p></td>
+<td><p>_create_transaction_group</p></td>
+</tr>
+<tr class="row-odd"><td><p>_disableIndexingInQueries</p></td>
+<td><p>_disable_indexing_in_queries</p></td>
+</tr>
+<tr class="row-even"><td><p>_doReIndex</p></td>
+<td><p>_do_reindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>_emptyArrayCache</p></td>
+<td><p>_empty_array_cache</p></td>
+</tr>
+<tr class="row-even"><td><p>_enableIndexingInQueries</p></td>
+<td><p>_enable_indexing_in_queries</p></td>
+</tr>
+<tr class="row-odd"><td><p>_enabledIndexingInQueries</p></td>
+<td><p>_enabled_indexing_in_queries</p></td>
+</tr>
+<tr class="row-even"><td><p>_exprvarsCache</p></td>
+<td><p>_exprvars_cache</p></td>
+</tr>
+<tr class="row-odd"><td><p>_f_copyChildren</p></td>
+<td><p>_f_copy_children</p></td>
+</tr>
+<tr class="row-even"><td><p>_f_delAttr</p></td>
+<td><p>_f_delattr</p></td>
+</tr>
+<tr class="row-odd"><td><p>_f_getAttr</p></td>
+<td><p>_f_getattr</p></td>
+</tr>
+<tr class="row-even"><td><p>_f_getChild</p></td>
+<td><p>_f_get_child</p></td>
+</tr>
+<tr class="row-odd"><td><p>_f_isVisible</p></td>
+<td><p>_f_isvisible</p></td>
+</tr>
+<tr class="row-even"><td><p>_f_iterNodes</p></td>
+<td><p>_f_iter_nodes</p></td>
+</tr>
+<tr class="row-odd"><td><p>_f_listNodes</p></td>
+<td><p>_f_list_nodes</p></td>
+</tr>
+<tr class="row-even"><td><p>_f_setAttr</p></td>
+<td><p>_f_setattr</p></td>
+</tr>
+<tr class="row-odd"><td><p>_f_walkGroups</p></td>
+<td><p>_f_walk_groups</p></td>
+</tr>
+<tr class="row-even"><td><p>_f_walkNodes</p></td>
+<td><p>_f_walknodes</p></td>
+</tr>
+<tr class="row-odd"><td><p>_fancySelection</p></td>
+<td><p>_fancy_selection</p></td>
+</tr>
+<tr class="row-even"><td><p>_fillCol</p></td>
+<td><p>_fill_col</p></td>
+</tr>
+<tr class="row-odd"><td><p>_flushBufferedRows</p></td>
+<td><p>_flush_buffered_rows</p></td>
+</tr>
+<tr class="row-even"><td><p>_flushFile</p></td>
+<td><p>_flush_file</p></td>
+</tr>
+<tr class="row-odd"><td><p>_flushModRows</p></td>
+<td><p>_flush_mod_rows</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_addChildrenNames</p></td>
+<td><p>_g_add_children_names</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_checkGroup</p></td>
+<td><p>_g_check_group</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_checkHasChild</p></td>
+<td><p>_g_check_has_child</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_checkName</p></td>
+<td><p>_g_check_name</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_checkNotContains</p></td>
+<td><p>_g_check_not_contains</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_checkOpen</p></td>
+<td><p>_g_check_open</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_closeDescendents</p></td>
+<td><p>_g_close_descendents</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_closeGroup</p></td>
+<td><p>_g_close_group</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_copyAsChild</p></td>
+<td><p>_g_copy_as_child</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_copyChildren</p></td>
+<td><p>_g_copy_children</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_copyRows</p></td>
+<td><p>_g_copy_rows</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_copyRows_optim</p></td>
+<td><p>_g_copy_rows_optim</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_copyWithStats</p></td>
+<td><p>_g_copy_with_stats</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_createHardLink</p></td>
+<td><p>_g_create_hard_link</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_delAndLog</p></td>
+<td><p>_g_del_and_log</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_delLocation</p></td>
+<td><p>_g_del_location</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_flushGroup</p></td>
+<td><p>_g_flush_group</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_getAttr</p></td>
+<td><p>_g_getattr</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_getChildGroupClass</p></td>
+<td><p>_g_get_child_group_class</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_getChildLeafClass</p></td>
+<td><p>_g_get_child_leaf_class</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_getGChildAttr</p></td>
+<td><p>_g_get_gchild_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_getLChildAttr</p></td>
+<td><p>_g_get_lchild_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_getLinkClass</p></td>
+<td><p>_g_get_link_class</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_listAttr</p></td>
+<td><p>_g_list_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_listGroup</p></td>
+<td><p>_g_list_group</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_loadChild</p></td>
+<td><p>_g_load_child</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_logAdd</p></td>
+<td><p>_g_log_add</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_logCreate</p></td>
+<td><p>_g_log_create</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_logMove</p></td>
+<td><p>_g_log_move</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_maybeRemove</p></td>
+<td><p>_g_maybe_remove</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_moveNode</p></td>
+<td><p>_g_move_node</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_postInitHook</p></td>
+<td><p>_g_post_init_hook</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_postReviveHook</p></td>
+<td><p>_g_post_revive_hook</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_preKillHook</p></td>
+<td><p>_g_pre_kill_hook</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_propIndexes</p></td>
+<td><p>_g_prop_indexes</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_readCoords</p></td>
+<td><p>_g_read_coords</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_readSelection</p></td>
+<td><p>_g_read_selection</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_readSlice</p></td>
+<td><p>_g_read_slice</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_readSortedSlice</p></td>
+<td><p>_g_read_sorted_slice</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_refNode</p></td>
+<td><p>_g_refnode</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_removeAndLog</p></td>
+<td><p>_g_remove_and_log</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_setAttr</p></td>
+<td><p>_g_setattr</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_setLocation</p></td>
+<td><p>_g_set_location</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_setNestedNamesDescr</p></td>
+<td><p>_g_set_nested_names_descr</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_setPathNames</p></td>
+<td><p>_g_set_path_names</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_unrefNode</p></td>
+<td><p>_g_unrefnode</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_updateDependent</p></td>
+<td><p>_g_update_dependent</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_updateLocation</p></td>
+<td><p>_g_update_location</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_updateNodeLocation</p></td>
+<td><p>_g_update_node_location</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_updateTableLocation</p></td>
+<td><p>_g_update_table_location</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_widthWarning</p></td>
+<td><p>_g_width_warning</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_writeCoords</p></td>
+<td><p>_g_write_coords</p></td>
+</tr>
+<tr class="row-even"><td><p>_g_writeSelection</p></td>
+<td><p>_g_write_selection</p></td>
+</tr>
+<tr class="row-odd"><td><p>_g_writeSlice</p></td>
+<td><p>_g_write_slice</p></td>
+</tr>
+<tr class="row-even"><td><p>_getColumnInstance</p></td>
+<td><p>_get_column_instance</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getConditionKey</p></td>
+<td><p>_get_condition_key</p></td>
+</tr>
+<tr class="row-even"><td><p>_getContainer</p></td>
+<td><p>_get_container</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getEnumMap</p></td>
+<td><p>_get_enum_map</p></td>
+</tr>
+<tr class="row-even"><td><p>_getFileId</p></td>
+<td><p>_get_file_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getFinalAction</p></td>
+<td><p>_get_final_action</p></td>
+</tr>
+<tr class="row-even"><td><p>_getInfo</p></td>
+<td><p>_get_info</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getLinkClass</p></td>
+<td><p>_get_link_class</p></td>
+</tr>
+<tr class="row-even"><td><p>_getMarkID</p></td>
+<td><p>_get_mark_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getNode</p></td>
+<td><p>_get_node</p></td>
+</tr>
+<tr class="row-even"><td><p>_getOrCreatePath</p></td>
+<td><p>_get_or_create_path</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getTypeColNames</p></td>
+<td><p>_get_type_col_names</p></td>
+</tr>
+<tr class="row-even"><td><p>_getUnsavedNrows</p></td>
+<td><p>_get_unsaved_nrows</p></td>
+</tr>
+<tr class="row-odd"><td><p>_getValueFromContainer</p></td>
+<td><p>_get_value_from_container</p></td>
+</tr>
+<tr class="row-even"><td><p>_hiddenNameRE</p></td>
+<td><p>_hidden_name_re</p></td>
+</tr>
+<tr class="row-odd"><td><p>_hiddenPathRE</p></td>
+<td><p>_hidden_path_re</p></td>
+</tr>
+<tr class="row-even"><td><p>_indexNameOf</p></td>
+<td><p>_index_name_of</p></td>
+</tr>
+<tr class="row-odd"><td><p>_indexNameOf_</p></td>
+<td><p>_index_name_of_</p></td>
+</tr>
+<tr class="row-even"><td><p>_indexPathnameOf</p></td>
+<td><p>_index_pathname_of</p></td>
+</tr>
+<tr class="row-odd"><td><p>_indexPathnameOfColumn</p></td>
+<td><p>_index_pathname_of_column</p></td>
+</tr>
+<tr class="row-even"><td><p>_indexPathnameOfColumn_</p></td>
+<td><p>_index_pathname_of_column_</p></td>
+</tr>
+<tr class="row-odd"><td><p>_indexPathnameOf_</p></td>
+<td><p>_index_pathname_of_</p></td>
+</tr>
+<tr class="row-even"><td><p>_initLoop</p></td>
+<td><p>_init_loop</p></td>
+</tr>
+<tr class="row-odd"><td><p>_initSortedSlice</p></td>
+<td><p>_init_sorted_slice</p></td>
+</tr>
+<tr class="row-even"><td><p>_isWritable</p></td>
+<td><p>_iswritable</p></td>
+</tr>
+<tr class="row-odd"><td><p>_is_CSI</p></td>
+<td><p>_is_csi</p></td>
+</tr>
+<tr class="row-even"><td><p>_killNode</p></td>
+<td><p>_killnode</p></td>
+</tr>
+<tr class="row-odd"><td><p>_lineChunkSize</p></td>
+<td><p>_line_chunksize</p></td>
+</tr>
+<tr class="row-even"><td><p>_lineSeparator</p></td>
+<td><p>_line_separator</p></td>
+</tr>
+<tr class="row-odd"><td><p>_markColumnsAsDirty</p></td>
+<td><p>_mark_columns_as_dirty</p></td>
+</tr>
+<tr class="row-even"><td><p>_newBuffer</p></td>
+<td><p>_new_buffer</p></td>
+</tr>
+<tr class="row-odd"><td><p>_notReadableError</p></td>
+<td><p>_not_readable_error</p></td>
+</tr>
+<tr class="row-even"><td><p>_npSizeType</p></td>
+<td><p>_npsizetype</p></td>
+</tr>
+<tr class="row-odd"><td><p>_nxTypeFromNPType</p></td>
+<td><p>_nxtype_from_nptype</p></td>
+</tr>
+<tr class="row-even"><td><p>_opToCode</p></td>
+<td><p>_op_to_code</p></td>
+</tr>
+<tr class="row-odd"><td><p>_openArray</p></td>
+<td><p>_open_array</p></td>
+</tr>
+<tr class="row-even"><td><p>_openUnImplemented</p></td>
+<td><p>_open_unimplemented</p></td>
+</tr>
+<tr class="row-odd"><td><p>_pointSelection</p></td>
+<td><p>_point_selection</p></td>
+</tr>
+<tr class="row-even"><td><p>_processRange</p></td>
+<td><p>_process_range</p></td>
+</tr>
+<tr class="row-odd"><td><p>_processRangeRead</p></td>
+<td><p>_process_range_read</p></td>
+</tr>
+<tr class="row-even"><td><p>_pythonIdRE</p></td>
+<td><p>_python_id_re</p></td>
+</tr>
+<tr class="row-odd"><td><p>_reIndex</p></td>
+<td><p>_reindex</p></td>
+</tr>
+<tr class="row-even"><td><p>_readArray</p></td>
+<td><p>_read_array</p></td>
+</tr>
+<tr class="row-odd"><td><p>_readCoordinates</p></td>
+<td><p>_read_coordinates</p></td>
+</tr>
+<tr class="row-even"><td><p>_readCoords</p></td>
+<td><p>_read_coords</p></td>
+</tr>
+<tr class="row-odd"><td><p>_readIndexSlice</p></td>
+<td><p>_read_index_slice</p></td>
+</tr>
+<tr class="row-even"><td><p>_readSelection</p></td>
+<td><p>_read_selection</p></td>
+</tr>
+<tr class="row-odd"><td><p>_readSlice</p></td>
+<td><p>_read_slice</p></td>
+</tr>
+<tr class="row-even"><td><p>_readSortedSlice</p></td>
+<td><p>_read_sorted_slice</p></td>
+</tr>
+<tr class="row-odd"><td><p>_refNode</p></td>
+<td><p>_refnode</p></td>
+</tr>
+<tr class="row-even"><td><p>_requiredExprVars</p></td>
+<td><p>_required_expr_vars</p></td>
+</tr>
+<tr class="row-odd"><td><p>_reservedIdRE</p></td>
+<td><p>_reserved_id_re</p></td>
+</tr>
+<tr class="row-even"><td><p>_reviveNode</p></td>
+<td><p>_revivenode</p></td>
+</tr>
+<tr class="row-odd"><td><p>_saveBufferedRows</p></td>
+<td><p>_save_buffered_rows</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBin</p></td>
+<td><p>_search_bin</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_b</p></td>
+<td><p>_search_bin_na_b</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_d</p></td>
+<td><p>_search_bin_na_d</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_e</p></td>
+<td><p>_search_bin_na_e</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_f</p></td>
+<td><p>_search_bin_na_f</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_g</p></td>
+<td><p>_search_bin_na_g</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_i</p></td>
+<td><p>_search_bin_na_i</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_ll</p></td>
+<td><p>_search_bin_na_ll</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_s</p></td>
+<td><p>_search_bin_na_s</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_ub</p></td>
+<td><p>_search_bin_na_ub</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_ui</p></td>
+<td><p>_search_bin_na_ui</p></td>
+</tr>
+<tr class="row-odd"><td><p>_searchBinNA_ull</p></td>
+<td><p>_search_bin_na_ull</p></td>
+</tr>
+<tr class="row-even"><td><p>_searchBinNA_us</p></td>
+<td><p>_search_bin_na_us</p></td>
+</tr>
+<tr class="row-odd"><td><p>_setAttributes</p></td>
+<td><p>_set_attributes</p></td>
+</tr>
+<tr class="row-even"><td><p>_setColumnIndexing</p></td>
+<td><p>_set_column_indexing</p></td>
+</tr>
+<tr class="row-odd"><td><p>_shadowName</p></td>
+<td><p>_shadow_name</p></td>
+</tr>
+<tr class="row-even"><td><p>_shadowParent</p></td>
+<td><p>_shadow_parent</p></td>
+</tr>
+<tr class="row-odd"><td><p>_shadowPath</p></td>
+<td><p>_shadow_path</p></td>
+</tr>
+<tr class="row-even"><td><p>_sizeToShape</p></td>
+<td><p>_size_to_shape</p></td>
+</tr>
+<tr class="row-odd"><td><p>_tableColumnPathnameOfIndex</p></td>
+<td><p>_table_column_pathname_of_index</p></td>
+</tr>
+<tr class="row-even"><td><p>_tableFile</p></td>
+<td><p>_table_file</p></td>
+</tr>
+<tr class="row-odd"><td><p>_tablePath</p></td>
+<td><p>_table_path</p></td>
+</tr>
+<tr class="row-even"><td><p>_table__autoIndex</p></td>
+<td><p>_table__autoindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>_table__getautoIndex</p></td>
+<td><p>_table__getautoindex</p></td>
+</tr>
+<tr class="row-even"><td><p>_table__setautoIndex</p></td>
+<td><p>_table__setautoindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>_table__whereIndexed</p></td>
+<td><p>_table__where_indexed</p></td>
+</tr>
+<tr class="row-even"><td><p>_transGroupName</p></td>
+<td><p>_trans_group_name</p></td>
+</tr>
+<tr class="row-odd"><td><p>_transGroupParent</p></td>
+<td><p>_trans_group_parent</p></td>
+</tr>
+<tr class="row-even"><td><p>_transGroupPath</p></td>
+<td><p>_trans_group_path</p></td>
+</tr>
+<tr class="row-odd"><td><p>_transName</p></td>
+<td><p>_trans_name</p></td>
+</tr>
+<tr class="row-even"><td><p>_transParent</p></td>
+<td><p>_trans_parent</p></td>
+</tr>
+<tr class="row-odd"><td><p>_transPath</p></td>
+<td><p>_trans_path</p></td>
+</tr>
+<tr class="row-even"><td><p>_transVersion</p></td>
+<td><p>_trans_version</p></td>
+</tr>
+<tr class="row-odd"><td><p>_unrefNode</p></td>
+<td><p>_unrefnode</p></td>
+</tr>
+<tr class="row-even"><td><p>_updateNodeLocations</p></td>
+<td><p>_update_node_locations</p></td>
+</tr>
+<tr class="row-odd"><td><p>_useIndex</p></td>
+<td><p>_use_index</p></td>
+</tr>
+<tr class="row-even"><td><p>_vShape</p></td>
+<td><p>_vshape</p></td>
+</tr>
+<tr class="row-odd"><td><p>_vType</p></td>
+<td><p>_vtype</p></td>
+</tr>
+<tr class="row-even"><td><p>_v__nodeFile</p></td>
+<td><p>_v__nodefile</p></td>
+</tr>
+<tr class="row-odd"><td><p>_v__nodePath</p></td>
+<td><p>_v__nodepath</p></td>
+</tr>
+<tr class="row-even"><td><p>_v_colObjects</p></td>
+<td><p>_v_colobjects</p></td>
+</tr>
+<tr class="row-odd"><td><p>_v_maxGroupWidth</p></td>
+<td><p>_v_max_group_width</p></td>
+</tr>
+<tr class="row-even"><td><p>_v_maxTreeDepth</p></td>
+<td><p>_v_maxtreedepth</p></td>
+</tr>
+<tr class="row-odd"><td><p>_v_nestedDescr</p></td>
+<td><p>_v_nested_descr</p></td>
+</tr>
+<tr class="row-even"><td><p>_v_nestedFormats</p></td>
+<td><p>_v_nested_formats</p></td>
+</tr>
+<tr class="row-odd"><td><p>_v_nestedNames</p></td>
+<td><p>_v_nested_names</p></td>
+</tr>
+<tr class="row-even"><td><p>_v_objectID</p></td>
+<td><p>_v_objectid</p></td>
+</tr>
+<tr class="row-odd"><td><p>_whereCondition</p></td>
+<td><p>_where_condition</p></td>
+</tr>
+<tr class="row-even"><td><p>_writeCoords</p></td>
+<td><p>_write_coords</p></td>
+</tr>
+<tr class="row-odd"><td><p>_writeSelection</p></td>
+<td><p>_write_selection</p></td>
+</tr>
+<tr class="row-even"><td><p>_writeSlice</p></td>
+<td><p>_write_slice</p></td>
+</tr>
+<tr class="row-odd"><td><p>appendLastRow</p></td>
+<td><p>append_last_row</p></td>
+</tr>
+<tr class="row-even"><td><p>attrFromShadow</p></td>
+<td><p>attr_from_shadow</p></td>
+</tr>
+<tr class="row-odd"><td><p>attrToShadow</p></td>
+<td><p>attr_to_shadow</p></td>
+</tr>
+<tr class="row-even"><td><p>autoIndex</p></td>
+<td><p>autoindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>bufcoordsData</p></td>
+<td><p>bufcoords_data</p></td>
+</tr>
+<tr class="row-even"><td><p>calcChunksize</p></td>
+<td><p>calc_chunksize</p></td>
+</tr>
+<tr class="row-odd"><td><p>checkFileAccess</p></td>
+<td><p>check_file_access</p></td>
+</tr>
+<tr class="row-even"><td><p>checkNameValidity</p></td>
+<td><p>check_name_validity</p></td>
+</tr>
+<tr class="row-odd"><td><p>childName</p></td>
+<td><p>childname</p></td>
+</tr>
+<tr class="row-even"><td><p>chunkmapData</p></td>
+<td><p>chunkmap_data</p></td>
+</tr>
+<tr class="row-odd"><td><p>classIdDict</p></td>
+<td><p>class_id_dict</p></td>
+</tr>
+<tr class="row-even"><td><p>className</p></td>
+<td><p>classname</p></td>
+</tr>
+<tr class="row-odd"><td><p>classNameDict</p></td>
+<td><p>class_name_dict</p></td>
+</tr>
+<tr class="row-even"><td><p>containerRef</p></td>
+<td><p>containerref</p></td>
+</tr>
+<tr class="row-odd"><td><p>convertToNPAtom</p></td>
+<td><p>convert_to_np_atom</p></td>
+</tr>
+<tr class="row-even"><td><p>convertToNPAtom2</p></td>
+<td><p>convert_to_np_atom2</p></td>
+</tr>
+<tr class="row-odd"><td><p>copyChildren</p></td>
+<td><p>copy_children</p></td>
+</tr>
+<tr class="row-even"><td><p>copyClass</p></td>
+<td><p>copyclass</p></td>
+</tr>
+<tr class="row-odd"><td><p>copyFile</p></td>
+<td><p>copy_file</p></td>
+</tr>
+<tr class="row-even"><td><p>copyLeaf</p></td>
+<td><p>copy_leaf</p></td>
+</tr>
+<tr class="row-odd"><td><p>copyNode</p></td>
+<td><p>copy_node</p></td>
+</tr>
+<tr class="row-even"><td><p>copyNodeAttrs</p></td>
+<td><p>copy_node_attrs</p></td>
+</tr>
+<tr class="row-odd"><td><p>countLoggedInstances</p></td>
+<td><p>count_logged_instances</p></td>
+</tr>
+<tr class="row-even"><td><p>createArray</p></td>
+<td><p>create_array</p></td>
+</tr>
+<tr class="row-odd"><td><p>createCArray</p></td>
+<td><p>create_carray</p></td>
+</tr>
+<tr class="row-even"><td><p>createCSIndex</p></td>
+<td><p>create_csindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>createEArray</p></td>
+<td><p>create_earray</p></td>
+</tr>
+<tr class="row-even"><td><p>createExternalLink</p></td>
+<td><p>create_external_link</p></td>
+</tr>
+<tr class="row-odd"><td><p>createGroup</p></td>
+<td><p>create_group</p></td>
+</tr>
+<tr class="row-even"><td><p>createHardLink</p></td>
+<td><p>create_hard_link</p></td>
+</tr>
+<tr class="row-odd"><td><p>createIndex</p></td>
+<td><p>create_index</p></td>
+</tr>
+<tr class="row-even"><td><p>createIndexesDescr</p></td>
+<td><p>create_indexes_descr</p></td>
+</tr>
+<tr class="row-odd"><td><p>createIndexesTable</p></td>
+<td><p>create_indexes_table</p></td>
+</tr>
+<tr class="row-even"><td><p>createNestedType</p></td>
+<td><p>create_nested_type</p></td>
+</tr>
+<tr class="row-odd"><td><p>createSoftLink</p></td>
+<td><p>create_soft_link</p></td>
+</tr>
+<tr class="row-even"><td><p>createTable</p></td>
+<td><p>create_table</p></td>
+</tr>
+<tr class="row-odd"><td><p>createVLArray</p></td>
+<td><p>create_vlarray</p></td>
+</tr>
+<tr class="row-even"><td><p>defaultAutoIndex</p></td>
+<td><p>default_auto_index</p></td>
+</tr>
+<tr class="row-odd"><td><p>defaultIndexFilters</p></td>
+<td><p>default_index_filters</p></td>
+</tr>
+<tr class="row-even"><td><p>delAttr</p></td>
+<td><p>del_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>delAttrs</p></td>
+<td><p>_del_attrs</p></td>
+</tr>
+<tr class="row-even"><td><p>delNodeAttr</p></td>
+<td><p>del_node_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>detectNumberOfCores</p></td>
+<td><p>detect_number_of_cores</p></td>
+</tr>
+<tr class="row-even"><td><p>disableUndo</p></td>
+<td><p>disable_undo</p></td>
+</tr>
+<tr class="row-odd"><td><p>dumpGroup</p></td>
+<td><p>dump_group</p></td>
+</tr>
+<tr class="row-even"><td><p>dumpLeaf</p></td>
+<td><p>dump_leaf</p></td>
+</tr>
+<tr class="row-odd"><td><p>dumpLoggedInstances</p></td>
+<td><p>dump_logged_instances</p></td>
+</tr>
+<tr class="row-even"><td><p>enableUndo</p></td>
+<td><p>enable_undo</p></td>
+</tr>
+<tr class="row-odd"><td><p>enumFromHDF5</p></td>
+<td><p>enum_from_hdf5</p></td>
+</tr>
+<tr class="row-even"><td><p>enumToHDF5</p></td>
+<td><p>enum_to_hdf5</p></td>
+</tr>
+<tr class="row-odd"><td><p>fetchLoggedInstances</p></td>
+<td><p>fetch_logged_instances</p></td>
+</tr>
+<tr class="row-even"><td><p>flushRowsToIndex</p></td>
+<td><p>flush_rows_to_index</p></td>
+</tr>
+<tr class="row-odd"><td><p>getAttr</p></td>
+<td><p>get_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>getAttrs</p></td>
+<td><p>_get_attrs</p></td>
+</tr>
+<tr class="row-odd"><td><p>getClassByName</p></td>
+<td><p>get_class_by_name</p></td>
+</tr>
+<tr class="row-even"><td><p>getColsInOrder</p></td>
+<td><p>get_cols_in_order</p></td>
+</tr>
+<tr class="row-odd"><td><p>getCurrentMark</p></td>
+<td><p>get_current_mark</p></td>
+</tr>
+<tr class="row-even"><td><p>getEnum</p></td>
+<td><p>get_enum</p></td>
+</tr>
+<tr class="row-odd"><td><p>getFilters</p></td>
+<td><p>get_filters</p></td>
+</tr>
+<tr class="row-even"><td><p>getHDF5Version</p></td>
+<td><p>get_hdf5_version</p></td>
+</tr>
+<tr class="row-odd"><td><p>getIndices</p></td>
+<td><p>get_indices</p></td>
+</tr>
+<tr class="row-even"><td><p>getLRUbounds</p></td>
+<td><p>get_lru_bounds</p></td>
+</tr>
+<tr class="row-odd"><td><p>getLRUsorted</p></td>
+<td><p>get_lru_sorted</p></td>
+</tr>
+<tr class="row-even"><td><p>getLookupRange</p></td>
+<td><p>get_lookup_range</p></td>
+</tr>
+<tr class="row-odd"><td><p>getNestedField</p></td>
+<td><p>get_nested_field</p></td>
+</tr>
+<tr class="row-even"><td><p>getNestedFieldCache</p></td>
+<td><p>get_nested_field_cache</p></td>
+</tr>
+<tr class="row-odd"><td><p>getNestedType</p></td>
+<td><p>get_nested_type</p></td>
+</tr>
+<tr class="row-even"><td><p>getNode</p></td>
+<td><p>get_node</p></td>
+</tr>
+<tr class="row-odd"><td><p>getNodeAttr</p></td>
+<td><p>get_node_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>getPyTablesVersion</p></td>
+<td><p>get_pytables_version</p></td>
+</tr>
+<tr class="row-odd"><td><p>getTypeEnum</p></td>
+<td><p>get_type_enum</p></td>
+</tr>
+<tr class="row-even"><td><p>getWhereList</p></td>
+<td><p>get_where_list</p></td>
+</tr>
+<tr class="row-odd"><td><p>hdf5Extension</p></td>
+<td><p>hdf5extension</p></td>
+</tr>
+<tr class="row-even"><td><p>hdf5Version</p></td>
+<td><p>hdf5_version</p></td>
+</tr>
+<tr class="row-odd"><td><p>indexChunk</p></td>
+<td><p>indexchunk</p></td>
+</tr>
+<tr class="row-even"><td><p>indexValid</p></td>
+<td><p>indexvalid</p></td>
+</tr>
+<tr class="row-odd"><td><p>indexValidData</p></td>
+<td><p>index_valid_data</p></td>
+</tr>
+<tr class="row-even"><td><p>indexValues</p></td>
+<td><p>indexvalues</p></td>
+</tr>
+<tr class="row-odd"><td><p>indexValuesData</p></td>
+<td><p>index_values_data</p></td>
+</tr>
+<tr class="row-even"><td><p>indexesExtension</p></td>
+<td><p>indexesextension</p></td>
+</tr>
+<tr class="row-odd"><td><p>infType</p></td>
+<td><p>inftype</p></td>
+</tr>
+<tr class="row-even"><td><p>infinityF</p></td>
+<td><p>infinityf</p></td>
+</tr>
+<tr class="row-odd"><td><p>infinityMap</p></td>
+<td><p>infinitymap</p></td>
+</tr>
+<tr class="row-even"><td><p>initRead</p></td>
+<td><p>initread</p></td>
+</tr>
+<tr class="row-odd"><td><p>isHDF5File</p></td>
+<td><p>is_hdf5_file</p></td>
+</tr>
+<tr class="row-even"><td><p>isPyTablesFile</p></td>
+<td><p>is_pytables_file</p></td>
+</tr>
+<tr class="row-odd"><td><p>isUndoEnabled</p></td>
+<td><p>is_undo_enabled</p></td>
+</tr>
+<tr class="row-even"><td><p>isVisible</p></td>
+<td><p>isvisible</p></td>
+</tr>
+<tr class="row-odd"><td><p>isVisibleName</p></td>
+<td><p>isvisiblename</p></td>
+</tr>
+<tr class="row-even"><td><p>isVisibleNode</p></td>
+<td><p>is_visible_node</p></td>
+</tr>
+<tr class="row-odd"><td><p>isVisiblePath</p></td>
+<td><p>isvisiblepath</p></td>
+</tr>
+<tr class="row-even"><td><p>is_CSI</p></td>
+<td><p>is_csi</p></td>
+</tr>
+<tr class="row-odd"><td><p>iterNodes</p></td>
+<td><p>iter_nodes</p></td>
+</tr>
+<tr class="row-even"><td><p>iterseqMaxElements</p></td>
+<td><p>iterseq_max_elements</p></td>
+</tr>
+<tr class="row-odd"><td><p>joinPath</p></td>
+<td><p>join_path</p></td>
+</tr>
+<tr class="row-even"><td><p>joinPaths</p></td>
+<td><p>join_paths</p></td>
+</tr>
+<tr class="row-odd"><td><p>linkExtension</p></td>
+<td><p>linkextension</p></td>
+</tr>
+<tr class="row-even"><td><p>listLoggedInstances</p></td>
+<td><p>list_logged_instances</p></td>
+</tr>
+<tr class="row-odd"><td><p>listNodes</p></td>
+<td><p>list_nodes</p></td>
+</tr>
+<tr class="row-even"><td><p>loadEnum</p></td>
+<td><p>load_enum</p></td>
+</tr>
+<tr class="row-odd"><td><p>logInstanceCreation</p></td>
+<td><p>log_instance_creation</p></td>
+</tr>
+<tr class="row-even"><td><p>lrucacheExtension</p></td>
+<td><p>lrucacheextension</p></td>
+</tr>
+<tr class="row-odd"><td><p>metaIsDescription</p></td>
+<td><p>MetaIsDescription</p></td>
+</tr>
+<tr class="row-even"><td><p>modifyColumn</p></td>
+<td><p>modify_column</p></td>
+</tr>
+<tr class="row-odd"><td><p>modifyColumns</p></td>
+<td><p>modify_columns</p></td>
+</tr>
+<tr class="row-even"><td><p>modifyCoordinates</p></td>
+<td><p>modify_coordinates</p></td>
+</tr>
+<tr class="row-odd"><td><p>modifyRows</p></td>
+<td><p>modify_rows</p></td>
+</tr>
+<tr class="row-even"><td><p>moveFromShadow</p></td>
+<td><p>move_from_shadow</p></td>
+</tr>
+<tr class="row-odd"><td><p>moveNode</p></td>
+<td><p>move_node</p></td>
+</tr>
+<tr class="row-even"><td><p>moveToShadow</p></td>
+<td><p>move_to_shadow</p></td>
+</tr>
+<tr class="row-odd"><td><p>newNode</p></td>
+<td><p>new_node</p></td>
+</tr>
+<tr class="row-even"><td><p>newSet</p></td>
+<td><p>newset</p></td>
+</tr>
+<tr class="row-odd"><td><p>newdstGroup</p></td>
+<td><p>newdst_group</p></td>
+</tr>
+<tr class="row-even"><td><p>objectID</p></td>
+<td><p>object_id</p></td>
+</tr>
+<tr class="row-odd"><td><p>oldPathname</p></td>
+<td><p>oldpathname</p></td>
+</tr>
+<tr class="row-even"><td><p>openFile</p></td>
+<td><p>open_file</p></td>
+</tr>
+<tr class="row-odd"><td><p>openNode</p></td>
+<td><p>open_node</p></td>
+</tr>
+<tr class="row-even"><td><p>parentNode</p></td>
+<td><p>parentnode</p></td>
+</tr>
+<tr class="row-odd"><td><p>parentPath</p></td>
+<td><p>parentpath</p></td>
+</tr>
+<tr class="row-even"><td><p>reIndex</p></td>
+<td><p>reindex</p></td>
+</tr>
+<tr class="row-odd"><td><p>reIndexDirty</p></td>
+<td><p>reindex_dirty</p></td>
+</tr>
+<tr class="row-even"><td><p>readCoordinates</p></td>
+<td><p>read_coordinates</p></td>
+</tr>
+<tr class="row-odd"><td><p>readIndices</p></td>
+<td><p>read_indices</p></td>
+</tr>
+<tr class="row-even"><td><p>readSlice</p></td>
+<td><p>read_slice</p></td>
+</tr>
+<tr class="row-odd"><td><p>readSorted</p></td>
+<td><p>read_sorted</p></td>
+</tr>
+<tr class="row-even"><td><p>readWhere</p></td>
+<td><p>read_where</p></td>
+</tr>
+<tr class="row-odd"><td><p>read_sliceLR</p></td>
+<td><p>read_slice_lr</p></td>
+</tr>
+<tr class="row-even"><td><p>recreateIndexes</p></td>
+<td><p>recreate_indexes</p></td>
+</tr>
+<tr class="row-odd"><td><p>redoAddAttr</p></td>
+<td><p>redo_add_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>redoCreate</p></td>
+<td><p>redo_create</p></td>
+</tr>
+<tr class="row-odd"><td><p>redoDelAttr</p></td>
+<td><p>redo_del_attr</p></td>
+</tr>
+<tr class="row-even"><td><p>redoMove</p></td>
+<td><p>redo_move</p></td>
+</tr>
+<tr class="row-odd"><td><p>redoRemove</p></td>
+<td><p>redo_remove</p></td>
+</tr>
+<tr class="row-even"><td><p>removeIndex</p></td>
+<td><p>remove_index</p></td>
+</tr>
+<tr class="row-odd"><td><p>removeNode</p></td>
+<td><p>remove_node</p></td>
+</tr>
+<tr class="row-even"><td><p>removeRows</p></td>
+<td><p>remove_rows</p></td>
+</tr>
+<tr class="row-odd"><td><p>renameNode</p></td>
+<td><p>rename_node</p></td>
+</tr>
+<tr class="row-even"><td><p>rootUEP</p></td>
+<td><p>root_uep</p></td>
+</tr>
+<tr class="row-odd"><td><p>searchLastRow</p></td>
+<td><p>search_last_row</p></td>
+</tr>
+<tr class="row-even"><td><p>setAttr</p></td>
+<td><p>set_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>setAttrs</p></td>
+<td><p>_set_attrs</p></td>
+</tr>
+<tr class="row-even"><td><p>setBloscMaxThreads</p></td>
+<td><p>set_blosc_max_threads</p></td>
+</tr>
+<tr class="row-odd"><td><p>setInputsRange</p></td>
+<td><p>set_inputs_range</p></td>
+</tr>
+<tr class="row-even"><td><p>setNodeAttr</p></td>
+<td><p>set_node_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>setOutput</p></td>
+<td><p>set_output</p></td>
+</tr>
+<tr class="row-even"><td><p>setOutputRange</p></td>
+<td><p>set_output_range</p></td>
+</tr>
+<tr class="row-odd"><td><p>silenceHDF5Messages</p></td>
+<td><p>silence_hdf5_messages</p></td>
+</tr>
+<tr class="row-even"><td><p>splitPath</p></td>
+<td><p>split_path</p></td>
+</tr>
+<tr class="row-odd"><td><p>tableExtension</p></td>
+<td><p>tableextension</p></td>
+</tr>
+<tr class="row-even"><td><p>undoAddAttr</p></td>
+<td><p>undo_add_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>undoCreate</p></td>
+<td><p>undo_create</p></td>
+</tr>
+<tr class="row-even"><td><p>undoDelAttr</p></td>
+<td><p>undo_del_attr</p></td>
+</tr>
+<tr class="row-odd"><td><p>undoMove</p></td>
+<td><p>undo_move</p></td>
+</tr>
+<tr class="row-even"><td><p>undoRemove</p></td>
+<td><p>undo_remove</p></td>
+</tr>
+<tr class="row-odd"><td><p>utilsExtension</p></td>
+<td><p>utilsextension</p></td>
+</tr>
+<tr class="row-even"><td><p>walkGroups</p></td>
+<td><p>walk_groups</p></td>
+</tr>
+<tr class="row-odd"><td><p>walkNodes</p></td>
+<td><p>walk_nodes</p></td>
+</tr>
+<tr class="row-even"><td><p>whereAppend</p></td>
+<td><p>append_where</p></td>
+</tr>
+<tr class="row-odd"><td><p>whereCond</p></td>
+<td><p>wherecond</p></td>
+</tr>
+<tr class="row-even"><td><p>whichClass</p></td>
+<td><p>which_class</p></td>
+</tr>
+<tr class="row-odd"><td><p>whichLibVersion</p></td>
+<td><p>which_lib_version</p></td>
+</tr>
+<tr class="row-even"><td><p>willQueryUseIndexing</p></td>
+<td><p>will_query_use_indexing</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<blockquote>
+<div><p><strong>Enjoy data!</strong></p>
+<p class="attribution">—The PyTables Developers</p>
+</div></blockquote>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="downloads.html" class="btn btn-neutral float-right" title="Downloads" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="other_material.html" class="btn btn-neutral float-left" title="Other Material" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2011-2019, PyTables maintainers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
