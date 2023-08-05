@@ -1,0 +1,6 @@
+unidecode
+
+[dev]
+pytest
+pytest-cov
+ipdb
