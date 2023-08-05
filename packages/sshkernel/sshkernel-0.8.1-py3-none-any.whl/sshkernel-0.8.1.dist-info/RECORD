@@ -1,0 +1,12 @@
+sshkernel/__init__.py,sha256=ZnBA68E_X4VMqJWfVkgez6lJCARD4zORMSLVwptgn1A,126
+sshkernel/__main__.py,sha256=H8SRv7U1NuPQ0c1teyFcwxjdfx21V97S7IJ0VtD-hjw,86
+sshkernel/exception.py,sha256=vURgSuft9clrZDUoNTokQtJ2WXDfxJDZ47oqUju1YEo,140
+sshkernel/kernel.py,sha256=tvafo6XARsbaw6--X8g46TnsXNLg33JXqA90xkcaLKA,6250
+sshkernel/magics.py,sha256=R8fAXRgeY-R_xHIe8vSu-cNp7jf9bQbKPNYE4XfVYYk,3428
+sshkernel/ssh_wrapper.py,sha256=IQ5ILZrVtOWFRN_2bPptTMTJLkMvbx3VrwGlcIpFMRU,951
+sshkernel/ssh_wrapper_plumbum.py,sha256=q1e2HZhf9J7artYIbm7G7ifsKsWRqHpsXFu90IPd8ig,5878
+sshkernel-0.8.1.dist-info/LICENSE,sha256=mOaQ_AkNrgpaGZTn7N6M7Eq4y1MBfjsW_UvVQY5h4y8,1516
+sshkernel-0.8.1.dist-info/METADATA,sha256=fPYGnqELu402Tex88Oa_0uuqaOqPERAZ9kd4cXMDb7s,3535
+sshkernel-0.8.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sshkernel-0.8.1.dist-info/top_level.txt,sha256=BYu8ZUNFXvpxV5i23aSziDpo0G14EUQ12D5-BRNQ8nA,10
+sshkernel-0.8.1.dist-info/RECORD,,
