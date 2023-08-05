@@ -1,0 +1,10 @@
+redquill/__init__.py,sha256=qBNyLGPITMVrB3FN6oRxkeqHxJEb8YBH7joSFHXuH34,741
+redquill/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redquill/core/redquill.py,sha256=ftwiYQVJgh2ojT5E2U_HXI1K-JORLSMaVH_1Qdyupgo,8546
+redquill/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+redquill/test/test_redquill.py,sha256=k6pp8Wj3BMqrdQU-Ovg4v4zxtTUwK9iGVccNJTFQdNE,2996
+redquill-0.0.1.dist-info/LICENSE,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+redquill-0.0.1.dist-info/METADATA,sha256=mBT1y8aGCS8qPVimcshiVLtS9GioBRdim6JQr0mnW3w,2398
+redquill-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+redquill-0.0.1.dist-info/top_level.txt,sha256=BSqn6gMIu9s0W1t9Dk8aSre1TQC_8aoaO9TDAuAG66w,9
+redquill-0.0.1.dist-info/RECORD,,
