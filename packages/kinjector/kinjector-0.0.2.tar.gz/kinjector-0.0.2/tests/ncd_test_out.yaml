@@ -1,0 +1,21 @@
+netclasses:
+  Default:
+    clearance: 200001
+    description: default net class def
+    diff pair gap: 250001
+    diff pair width: 200001
+    track width: 250001
+    uvia diameter: 300001
+    uvia drill: 100001
+    via diameter: 800001
+    via drill: 400001
+  new_new_class:
+    clearance: 200002
+    description: new net class def
+    diff pair gap: 250002
+    diff pair width: 200002
+    track width: 250002
+    uvia diameter: 300002
+    uvia drill: 100002
+    via diameter: 800002
+    via drill: 400002

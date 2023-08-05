@@ -1,0 +1,82 @@
+board:
+  modules:
+    D1:
+      position:
+        angle: 304.0
+        side: top
+        x: 161417004
+        y: 99187004
+    R1:
+      position:
+        angle: 122.0
+        side: top
+        x: 161417002
+        y: 102137002
+    R2:
+      position:
+        angle: 147.0
+        side: bottom
+        x: 166187003
+        y: 99187003
+    R3:
+      position:
+        angle: 329.0
+        side: bottom
+        x: 166187001
+        y: 102137001
+  settings:
+    '# copper layers': 4
+    blind/buried via allowed: true
+    board thickness: 1600001
+    diff pair dimensions list: []
+    hole to hole spacing: 0
+    netclass assignments:
+      ? ''
+      : Default
+      Net-(D1-Pad1): new_new_class
+      Net-(D1-Pad2): Default
+      Net-(R1-Pad2): Default
+      Net-(R2-Pad1): new_new_class
+    netclasses:
+      Default:
+        clearance: 200001
+        description: ''
+        diff pair gap: 250001
+        diff pair width: 200001
+        track width: 250001
+        uvia diameter: 300001
+        uvia drill: 100001
+        via diameter: 800001
+        via drill: 400001
+      new_new_class:
+        clearance: 400001
+        description: ''
+        diff pair gap: 500001
+        diff pair width: 400001
+        track width: 500001
+        uvia diameter: 600001
+        uvia drill: 200001
+        via diameter: 1600001
+        via drill: 800001
+    prohibit courtyard overlap: false
+    require courtyards: false
+    solder mask margin: 51001
+    solder mask min width: 500001
+    solder paste margin: 1
+    solder paste margin ratio: 0.1
+    track min width: 200001
+    track width list:
+    - 250000
+    - 250001
+    - 1000001
+    - 650001
+    uvia allowed: true
+    uvia min diameter: 200001
+    uvia min drill size: 100001
+    via dimensions list:
+    - diameter: 800000
+      drill: 400000
+    - diameter: 800001
+      drill: 400001
+    via min diameter: 200001
+    via min drill size: 300001
