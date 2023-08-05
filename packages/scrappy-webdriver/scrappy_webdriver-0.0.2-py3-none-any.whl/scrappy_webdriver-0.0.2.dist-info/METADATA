@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: scrappy-webdriver
+Version: 0.0.2
+Summary: Lightweight distributed scrapper for dynamic content
+Home-page: https://github.com/V-in/scrappy
+Author: V-in
+Author-email: viniciusmoura@cc.ci.ufpb.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: atomicwrites
+Requires-Dist: attrs
+Requires-Dist: autopep8
+Requires-Dist: Click
+Requires-Dist: Flask
+Requires-Dist: itsdangerous
+Requires-Dist: Jinja2
+Requires-Dist: MarkupSafe
+Requires-Dist: more-itertools
+Requires-Dist: pep8
+Requires-Dist: pluggy
+Requires-Dist: py
+Requires-Dist: pycodestyle
+Requires-Dist: pydebug
+Requires-Dist: pytest
+Requires-Dist: selenium
+Requires-Dist: six
+Requires-Dist: urllib3
+Requires-Dist: Werkzeug
+
+# Scrappy
+
+## Architecture 
+![](docs/assets/Architecture.jpg)
+
