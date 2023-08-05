@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pyApp-SMTP
+Version: 1.0b1
+Summary: SMTP Extension for pyApp
+Home-page: https://github.com/pyapp-org
+Author: Tim Savage
+Author-email: tim@savage.company
+License: BSD
+Description: ############
+        pyApp - SMTP
+        ############
+        
+        *Let us handle the boring stuff!*
+        
+        .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+           :target: http://github.com/ambv/black
+           :alt: Once you go Black...
+        
+        This extension provides an `SMTP` client object configured via pyApp settings.
+        
+        
+        Installation
+        ============
+        
+        Install using *pip*::
+        
+            pip install pyApp-SMTP
+        
+        Install using *pipenv*::
+        
+            pip install pyApp-SMTP
+        
+        
+        Add `pae.smtp` into the `EXT` list in your applications `default_settings.py`.
+        
+        Add the `SMTP` block into your runtime settings file::
+        
+            SMTP = {
+                "default": {
+                    "host": "localhost",
+                }
+            }
+        
+        
+        .. note::
+        
+            In addition to the *host* any argument that can be provided to `smtplib.SMTP` can be
+            provided.
+        
+        
+        Usage
+        =====
+        
+        The following example creates an SMTP client instance::
+        
+            from pae.smtp import get_client
+        
+            smtp = get_client()
+        
+        
+        API
+        ===
+        
+        `pae.smtp.get_client() -> SMTP`
+        
+            Get named `SMTP` instance.
+        
+        
+Keywords: application,framework,pyApp,smtp
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >= 3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: dev
