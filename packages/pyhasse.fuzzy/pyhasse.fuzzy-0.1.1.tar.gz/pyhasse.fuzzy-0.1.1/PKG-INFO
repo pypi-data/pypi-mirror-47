@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: pyhasse.fuzzy
+Version: 0.1.1
+Summary: pyhasse-fuzzy: Concept of De Walle et al […], where the relations between two objects are evaluated by fuzzy techniques.
+Home-page: https://bitbucket.com/brg/fuzzy
+Author: Rainer Bruggemann
+Author-email: rainer.bruggemann@pyhasse.org
+License: MIT license
+Description: Module: pyhasse.fuzzy
+        =====================
+        
+        * Free software: MIT license
+        * Documentation: https://pyhasse.org
+        
+        
+        Features
+        --------
+        
+        Calculate:
+        
+        * Free software: MIT license
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_.
+        
+        Documentation
+        -------------
+        
+        Dokumentation can be found at pyhasse.org_.
+        
+        Sourcecode
+        ----------
+        Is available at Bitbucket_.
+        
+        ::
+        
+          hg clone ssh://hg@bitbucket.org/pyhasse/fuzzy
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _pyhasse.org: https://pyhasse.org
+        .. _Bitbucket: https://bitbucket.org/pyhasse/fuzzy/src
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-06-01)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: fuzzy
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
