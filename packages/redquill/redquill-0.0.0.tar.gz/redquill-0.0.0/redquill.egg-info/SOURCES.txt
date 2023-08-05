@@ -1,0 +1,8 @@
+README.md
+setup.py
+redquill/__init__.py
+redquill.egg-info/PKG-INFO
+redquill.egg-info/SOURCES.txt
+redquill.egg-info/dependency_links.txt
+redquill.egg-info/requires.txt
+redquill.egg-info/top_level.txt
