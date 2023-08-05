@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+transfer_nlp/__init__.py
+transfer_nlp.egg-info/PKG-INFO
+transfer_nlp.egg-info/SOURCES.txt
+transfer_nlp.egg-info/dependency_links.txt
+transfer_nlp.egg-info/requires.txt
+transfer_nlp.egg-info/top_level.txt
