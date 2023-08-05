@@ -1,0 +1,10 @@
+flatten_dict/__init__.py,sha256=eccudEK_EWc6MPA5bEaGMkOE-vvKJtTOTbpZRuB--M0,201
+flatten_dict/flatten_dict.py,sha256=GAd2FuUDhw3y4WRGus1BHtyeBxf7O0A2jvw-jJTfFsU,3539
+flatten_dict/reducer.py,sha256=3wCHkSn0DsiCzvQUgFR0eDBLb1I5hgPYi18mM1_Y2QE,233
+flatten_dict/splitter.py,sha256=7Kkw4Upghe0PP9qyWX4SiznOAfMU_RIqg1SvjJg_st4,165
+flatten_dict/tests.py,sha256=-qE7P-dU91Z_H0XL5viV97B9Uad9NxJ0iurCHljh-jI,4113
+flatten_dict-0.1.0.dist-info/LICENSE,sha256=eYP5La4uFnEvmyXqkJOIg_8ibeexRcYDx9YWLS5svzE,1312
+flatten_dict-0.1.0.dist-info/METADATA,sha256=vWwvp0kWbKUdA0RhIduTpaunUFeXAu-l6uKXh7gCqvw,6953
+flatten_dict-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+flatten_dict-0.1.0.dist-info/top_level.txt,sha256=vrr8TZhUHdC6q5iBkmwl_bqEKIRxn8yIeMz0iK5FRu4,13
+flatten_dict-0.1.0.dist-info/RECORD,,
