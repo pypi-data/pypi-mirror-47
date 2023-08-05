@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: micro_kit
+Version: 1.1.1
+Summary: A helper kit to power the APIs
+Home-page: https://github.com/innovaccer/microkit
+Author: Ayush Aggarwal
+Author-email: ayushaggarwal.97@gmail.com
+License: GNU General Public License
+Download-URL: https://github.com/innovaccer/microkit/archive/V1.0.tar.gz
+Description: UNKNOWN
+Keywords: python,flask,response,logger
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 2.7
