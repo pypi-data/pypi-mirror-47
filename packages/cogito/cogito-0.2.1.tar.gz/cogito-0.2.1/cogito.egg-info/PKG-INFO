@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cogito
+Version: 0.2.1
+Summary: A tiny python library that links against libcogito
+Home-page: https://github.com/cogito-lang/cogito-py
+Author: Kevin Deisz
+Author-email: kevin.deisz@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
