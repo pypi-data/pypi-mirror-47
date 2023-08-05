@@ -1,0 +1,16 @@
+deletefb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deletefb/__main__.py,sha256=jl3fd3jOZxfvZ5hx9KXLsZng7quzonJ5IowOU7-7A28,92
+deletefb/deletefb.py,sha256=-bnzsqzay75aQzygEfcjMbvexmMe6STz8Ko3tEBU8Ew,2810
+deletefb/logging_conf.json,sha256=M2u5Hi1MhUNBk89FYC2l9sSFo2Q8G-9iSJm3r0AIcu8,1509
+deletefb/tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deletefb/tools/common.py,sha256=5UAvGnp2h16zqpJG7ZQFIdt5ncBtVYFxXN1or2poD9o,2353
+deletefb/tools/config.py,sha256=x0Q5Sib6acbNgpnqbBZw168T9lmWUCCa4JMg1Mt0JLU,60
+deletefb/tools/likes.py,sha256=ERvQDZ9B4Jzzb71j3HwEF923Sd0RLOUHGQNhjjXOFaA,2987
+deletefb/tools/login.py,sha256=CMpzfcaWjy1ElM_HBCvauHFufrqWbkrWNpsTY89wS9g,3180
+deletefb/tools/wall.py,sha256=tNVmBwjd5dvb9CE_EO_5GPOHrhJaapbX5CNO6XgOAx0,2566
+delete_facebook_posts-1.1.3.dist-info/LICENSE,sha256=LDfflj8ld2LDdBBuWWBmbHafBh-oRHe0sGcHCu6FYF0,1071
+delete_facebook_posts-1.1.3.dist-info/METADATA,sha256=KhkH6L6tf7znok4__YWf49Pt-B3QlabxveL04Eh-Ya8,4579
+delete_facebook_posts-1.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+delete_facebook_posts-1.1.3.dist-info/entry_points.txt,sha256=YT-aGExFRUDt4zLm7a9oxn9ibq9qUWgnJeHg-5vJ-Q0,59
+delete_facebook_posts-1.1.3.dist-info/top_level.txt,sha256=HTlacX0rRjtBKc1E2J6af00MLHW0lAhgOgLSopOtefk,9
+delete_facebook_posts-1.1.3.dist-info/RECORD,,
