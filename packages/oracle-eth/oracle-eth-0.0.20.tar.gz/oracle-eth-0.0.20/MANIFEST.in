@@ -1,0 +1,23 @@
+include LICENSE
+include VERSION
+include README.md
+include README.rst
+include MANIFAST.in
+include requirements.txt
+include oracle.cfg
+include oracle_army.cfg
+include oracle_org.cfg
+include Makefile
+include Dockerfile
+include docs docs/*
+
+# 针对的是目录
+graft contracts
+graft golang
+
+# 排除的目录
+prune tests/log
+prune tests
+
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]

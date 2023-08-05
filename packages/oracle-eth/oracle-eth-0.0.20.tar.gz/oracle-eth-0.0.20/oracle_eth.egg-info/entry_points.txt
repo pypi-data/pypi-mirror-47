@@ -1,0 +1,5 @@
+[console_scripts]
+army = oracle.main:army
+impevent = oracle.main:impevent
+organization = oracle.main:organization
+
