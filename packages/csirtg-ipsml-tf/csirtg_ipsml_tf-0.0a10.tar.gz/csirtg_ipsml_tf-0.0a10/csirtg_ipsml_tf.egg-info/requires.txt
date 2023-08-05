@@ -1,0 +1,10 @@
+tensorflow
+pandas
+keras
+ipaddress
+scipy
+scikit-learn
+numpy
+geoip2
+arrow
+maxminddb
