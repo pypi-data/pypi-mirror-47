@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/__init__.py
+src/spychronous.py
+src/non_daemonic_process/__init__.py
+src/non_daemonic_process/non_daemonic_processing.py
+src/spychronous.egg-info/PKG-INFO
+src/spychronous.egg-info/SOURCES.txt
+src/spychronous.egg-info/dependency_links.txt
+src/spychronous.egg-info/top_level.txt
+tests/run_forever.py
+tests/test_spychronous.py
