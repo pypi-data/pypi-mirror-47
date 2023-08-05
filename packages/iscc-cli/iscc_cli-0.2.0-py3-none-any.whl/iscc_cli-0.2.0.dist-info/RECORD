@@ -1,0 +1,9 @@
+iscc_cli/__init__.py,sha256=7s2ce0q4XU5mYHo3y57jx8GlvFCr87MeVdYOCyOM6yE,73
+iscc_cli/cli.py,sha256=wFutmcK_UlJxSyQQxKO01-nLmqY9AVfUszNPzl1XydU,3720
+iscc_cli/const.py,sha256=1tvX-ewG48zl77Pa82R_Jdhb2BZZMVSumCV4-4fPIjY,716
+iscc_cli/utils.py,sha256=w7KJavzKTGaZLeLIPlnrfgfLRwSimheeoRVRHN9TzpQ,1980
+iscc_cli-0.2.0.dist-info/entry_points.txt,sha256=HnEwrwaGj0KA7dIAp7sVbl0aARTIlP1XkIumbvymeJc,41
+iscc_cli-0.2.0.dist-info/LICENSE,sha256=OMBN9aacPMHTSG2sY4jwQnl7nql16xEZxOtoLZsuROY,1093
+iscc_cli-0.2.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+iscc_cli-0.2.0.dist-info/METADATA,sha256=gzIR7nP4Iv6JBeC-3f4iP_QNbPCGundAopcjl3xRwUw,5139
+iscc_cli-0.2.0.dist-info/RECORD,,
