@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: yaar
+Version: 0.1.1
+Summary: Yet Another Asyncio Requets
+Home-page: https://pypi.python.org/pypi/yaar
+Author: Juca Crispim
+Author-email: juca@poraodojuca.net
+License: GPL
+Description: Yet Another Asyncio Requets
+Platform: UNKNOWN
+Provides: yaar
