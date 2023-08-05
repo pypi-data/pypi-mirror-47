@@ -1,0 +1,6 @@
+<{{jumbotron_tag|default('div')}} style="{%if jumbotron_image%}background: url({{jumbotron_image}}) no-repeat center center; background-size: cover; {%endif%}min-height: 100vh" class="d-flex align-items-center"{%if jumbotron_id%} id="{{jumbotron_id}}"{%endif%}>
+  <div class="jumbotron container my-auto {{jumbotron_class|default('text-light bg-darken')}}">
+    {% if jumbotron_header %}<h2>{{jumbotron_header}}</h2>{%endif%}
+    {{jumbotron_content}}
+  </div>
+</{{jumbotron_tag|default('div')}}>

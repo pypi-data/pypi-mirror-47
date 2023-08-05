@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   {%- for item, lastmod in pages %}
+   <url>
+     <loc>{{data['base_url']|join_url(item)}}</loc>
+     {%- if lastmod %}
+     <lastmod>{{lastmod}}</lastmod>
+     {%- endif %}
+   </url>
+   {%- endfor %}
+</urlset>

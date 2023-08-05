@@ -1,0 +1,20 @@
+{% extends "layout.jinja2" %}
+{%- if header_class is not defined %}{% set header_class="light" %}{%endif%}
+{% block content %}
+<div class="card-columns">
+{% for item in pages %}
+<div class="card">
+{%- if item[1].page['image'] %}<img src="{{item[1].page['image']}}" class="card-img-top">{% endif %}
+<div class="card-body">
+<h2 class="card-title">{{item[1].page['title']}}</h2>
+{%- if item[1].page['description'] %}<p class="card-text">{{item[1].page['description']}}</p>{% endif %}
+<a href="{{item[0]}}" class="btn btn-primary">Читать</a>
+</div>
+<div class="card-footer"><small class=text-muted">
+Опубликовано {{globals.format_date(item[1].page['published'], format='long')}}
+{%- if item[1].page['updated'] %}, обновлено {{globals.format_date(item[1].page['updated'], format='long')}}{% endif %}
+</small></div>
+</div>
+{% endfor %}
+</div>
+{% endblock %}
