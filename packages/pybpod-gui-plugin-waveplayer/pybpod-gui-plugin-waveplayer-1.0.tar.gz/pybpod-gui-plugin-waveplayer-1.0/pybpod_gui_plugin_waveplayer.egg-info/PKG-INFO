@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pybpod-gui-plugin-waveplayer
+Version: 1.0
+Summary: PyBpod wave player module controller
+Home-page: UNKNOWN
+Author: ['Ricardo Ribeiro', 'Sergio Copeto']
+Author-email: ricardo.ribeiro@research.fchampalimaud.org, sergio.copeto@research.fchampalimaud.org
+License: Copyright (C) 2007 Free Software Foundation, Inc. <http://fsf.org/>
+Description: UNKNOWN
+Platform: UNKNOWN
