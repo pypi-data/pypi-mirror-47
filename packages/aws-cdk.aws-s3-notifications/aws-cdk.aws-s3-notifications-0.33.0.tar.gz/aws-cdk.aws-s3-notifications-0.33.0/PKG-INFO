@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aws-cdk.aws-s3-notifications
+Version: 0.33.0
+Summary: Bucket Notifications API for AWS S3
+Home-page: https://github.com/awslabs/aws-cdk
+Author: Amazon Web Services
+License: UNKNOWN
+Project-URL: Source, https://github.com/awslabs/aws-cdk.git
+Description: ## S3 Bucket Notifications Destinations
+        
+        This module includes integration classes for using Topics, Queues or Lambdas
+        as S3 Notification Destinations.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
