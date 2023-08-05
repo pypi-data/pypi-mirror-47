@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+VideoToSMIServer/Server.py
+VideoToSMIServer/__init__.py
+VideoToSMI_Server.egg-info/PKG-INFO
+VideoToSMI_Server.egg-info/SOURCES.txt
+VideoToSMI_Server.egg-info/dependency_links.txt
+VideoToSMI_Server.egg-info/not-zip-safe
+VideoToSMI_Server.egg-info/top_level.txt
