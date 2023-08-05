@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: oll-sc
+Version: 0.1.0
+Summary: Wrapper around PyKCS11 and openSC used to create smart card signatures
+Home-page: https://github.com/platform/oll-sc/tree/master
+Author: Open Law Library
+Author-email: info@openlawlib.org
+License: UNKNOWN
+Description: # Smart Card support
+        
+        This library is a wrapper around [PyKCS11](https://github.com/LudovicRousseau/PyKCS11) with included prebuild `openSC` libraries which allows signing data with smart cards without any additional pre-installed software.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: Security
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Provides-Extra: ci
+Provides-Extra: dev
+Provides-Extra: test
