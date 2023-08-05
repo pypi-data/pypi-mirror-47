@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: wearing_glasses
+Version: 0.0.2
+Summary: Package for 'wearing glasses'
+Home-page: http://www.ai.game.tw
+Author: BIG CHENG
+Author-email: big_cheng.asus@gmail.com
+License: UNKNOWN
+Description: # Wearing Glasses
+        
+        Add glasses to the faces on photos
+        
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
