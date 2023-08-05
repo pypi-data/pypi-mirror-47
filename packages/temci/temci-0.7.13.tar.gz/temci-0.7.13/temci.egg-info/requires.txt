@@ -1,0 +1,10 @@
+Pygments
+cairocffi
+docopt
+glob2
+globster
+matplotlib
+prompt_toolkit
+ptpython
+seaborn
+typing
