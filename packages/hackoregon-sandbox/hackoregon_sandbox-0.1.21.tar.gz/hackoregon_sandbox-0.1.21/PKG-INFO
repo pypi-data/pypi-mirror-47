@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: hackoregon_sandbox
+Version: 0.1.21
+Summary: 2019 Sandbox backend API
+Home-page: https://github.com/hackoregon/2019-sandbox-backend
+Author: Nathan Miller
+Author-email: nathan.miller@hackoregon.org
+License: MIT
+Description: long description
+Keywords: 2019-sandbox-backend
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
