@@ -1,0 +1,6 @@
+django
+numpy
+pandas
+urllib3
+requests
+pycryptodome
