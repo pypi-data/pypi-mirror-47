@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zhujunhua-common
+Version: 0.0.2
+Summary: Common model for other project
+Home-page: https://test.pypi.org/user/pythonslave/
+Author: ZhuJunhua
+Author-email: a61231005@gmail.com
+License: MIT License
+Description: 公共模块
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
