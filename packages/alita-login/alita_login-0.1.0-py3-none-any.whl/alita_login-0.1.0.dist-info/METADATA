@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: alita-login
+Version: 0.1.0
+Summary: alita-login is login extension for Alita。 
+Home-page: https://github.com/dwpy/alita-login
+Author: Dongwei
+License: BSD
+Project-URL: Documentation, https://github.com/dwpy/alita-login
+Project-URL: Code, https://github.com/dwpy/alita-login
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+## alita-login
+
+alita-login is login management extension for Alita。
+
+## Installing
+```
+pip install alita-login
+```
+
+## Quick Start
+
+
+## Links
+
+- Code: https://github.com/dwpy/alita-login
+

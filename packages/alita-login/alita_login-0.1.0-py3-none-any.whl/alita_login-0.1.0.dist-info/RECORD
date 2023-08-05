@@ -1,0 +1,11 @@
+alita_login/__init__.py,sha256=YwsDN9UXL_jSk74vTB5dFOdV9A80FMFMb0Knwt2BXPM,1538
+alita_login/config.py,sha256=foL0LXfwvXZpeFZs3iJW8SZa37N8SfVUnYS1CQA-bE8,1893
+alita_login/manager.py,sha256=K2VovivgU9tfdija1JRSWgHChCsuZpfmoWF8-4VyRXA,16350
+alita_login/mixins.py,sha256=XiZlopVseHR6_SLvfVLEuvqpTYIjcjlo_8fEdnddheo,1460
+alita_login/security.py,sha256=3m7lMrFXx-CAU7zoIm10QjfH186VXvF-oShOf6k0lJo,9030
+alita_login/signals.py,sha256=PMqHOOIORMMoYkrJ3yuoxBnlXXCxr2QntzBCtTutlcM,2070
+alita_login/utils.py,sha256=Kj5ccuLYbNSfnMv_8q9Dx3sgdQ-nIQwU8n-qNC0ZXsI,13245
+alita_login-0.1.0.dist-info/METADATA,sha256=KogsHXShpE5nyl0b263unBjWqkagXvsUjxT1rbWfZRQ,955
+alita_login-0.1.0.dist-info/RECORD,,
+alita_login-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+alita_login-0.1.0.dist-info/top_level.txt,sha256=YhWsEGiA9FvY0sui1PCjBbdbt9Xl0mBaN_k8DjlBKBY,12
