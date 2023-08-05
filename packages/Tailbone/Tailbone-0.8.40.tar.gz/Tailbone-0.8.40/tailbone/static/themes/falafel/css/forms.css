@@ -1,0 +1,15 @@
+
+/******************************
+ * forms
+ ******************************/
+
+/* TODO: replace this with bulma equivalent */
+.form {
+    padding-left: 5em;
+}
+
+.field.is-horizontal .field-label .label {
+    text-align: left;
+    white-space: nowrap;
+    width: 18em;
+}
