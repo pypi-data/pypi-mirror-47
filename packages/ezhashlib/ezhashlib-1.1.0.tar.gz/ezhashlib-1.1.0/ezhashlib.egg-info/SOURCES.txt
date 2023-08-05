@@ -1,0 +1,8 @@
+README.md
+setup.py
+ezhashlib/__init__.py
+ezhashlib.egg-info/PKG-INFO
+ezhashlib.egg-info/SOURCES.txt
+ezhashlib.egg-info/dependency_links.txt
+ezhashlib.egg-info/not-zip-safe
+ezhashlib.egg-info/top_level.txt
