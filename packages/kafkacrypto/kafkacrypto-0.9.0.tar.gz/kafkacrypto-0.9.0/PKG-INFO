@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: kafkacrypto
+Version: 0.9.0
+Summary: Message layer security/crypto for Kafka
+Home-page: https://github.com/tmcqueen-materials/kafkacrypto
+Author: Tyrel M. McQueen
+Author-email: tmcqueen-pypi@demoivre.com
+License: GNU GPLv2
+Description: # kafkacrypto
+        Message Layer Encryption for Kafka
+        
+Keywords: kafka kafka-crypto kafka-security security crypo
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
