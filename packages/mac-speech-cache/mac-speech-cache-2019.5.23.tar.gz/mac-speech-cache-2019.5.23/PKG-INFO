@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: mac-speech-cache
+Version: 2019.5.23
+Summary: macOS speech cache
+Home-page: https://github.com/looking-for-a-job/mac-speech-cache
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-macOS-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install mac-speech-cache
+        ```
+        
+        #### How it works
+        ```
+        ~/Library/Caches/speech-cache/<hash>.aiff
+        ```
+        
+        #### Scripts usage
+        command|`usage`
+        -|-
+        `speech-cache` |`usage: speech-cache [-v voice] [-f in | message]`
+        
+        #### Examples
+        ```bash
+        # say "$@"
+        $ afplay "$(speech-cache "$@")"
+        ```
+        
+        make cache for multiple files and voices:
+        ```bash
+        $ find . -name "*.txt" | xargs -I{} speech-cache -f {} -v Milena
+        $ find . -name "*.txt" | xargs -I{} speech-cache -f {} -v Yuri
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: speech tts
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: System :: Archiving :: Backup
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
