@@ -1,0 +1,8 @@
+README.md
+setup.py
+DeepRad/__init__.py
+DeepRad/main.py
+DeepRad.egg-info/PKG-INFO
+DeepRad.egg-info/SOURCES.txt
+DeepRad.egg-info/dependency_links.txt
+DeepRad.egg-info/top_level.txt
