@@ -1,0 +1,10 @@
+README.rst
+setup.py
+gnn/GNN.py
+gnn/Library.py
+gnn/__init__.py
+gnn/load.py
+gnn.egg-info/PKG-INFO
+gnn.egg-info/SOURCES.txt
+gnn.egg-info/dependency_links.txt
+gnn.egg-info/top_level.txt
