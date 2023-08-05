@@ -1,0 +1,9 @@
+README.md
+setup.py
+slotmachine/__init__.py
+slotmachine.egg-info/PKG-INFO
+slotmachine.egg-info/SOURCES.txt
+slotmachine.egg-info/dependency_links.txt
+slotmachine.egg-info/not-zip-safe
+slotmachine.egg-info/requires.txt
+slotmachine.egg-info/top_level.txt

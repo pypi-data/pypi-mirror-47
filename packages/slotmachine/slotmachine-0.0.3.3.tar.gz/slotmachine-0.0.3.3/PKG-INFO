@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: slotmachine
+Version: 0.0.3.3
+Summary: Simple, expandable, customizable slot machine
+Home-page: https://github.com/s4w3d0ff/python-slots
+Author: s4w3d0ff
+Author-email: info@s4w3d0ff.host
+License: GPL v3
+Description: UNKNOWN
+Keywords: slots,slotmachine,slot-machine
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: numpy
