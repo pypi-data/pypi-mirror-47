@@ -1,0 +1,12 @@
+quandoo/Customer.py,sha256=_Y48yyTVxNoqi6pGYzgtQaH1rkE5ND2wik_uGZ-yuS0,641
+quandoo/Error.py,sha256=G7Buxf1WU7WJJGLL7SfkrFjTIwH03FIhNzaQHI5tc58,946
+quandoo/Merchant.py,sha256=zT6U8ht1KAZyp8LaNDUzpXGR3ehUqfeOU99rSZFid1U,3448
+quandoo/QuandooModel.py,sha256=Fdw7t85uvjXTnTdxCZXzRpYY3n6S9_wJKyf1fJDNx6U,3210
+quandoo/Reservation.py,sha256=Izh-aBvFtYrr3PrMqOaq_P45_Hp6-i1Xb4ZX3Vn4Xqo,2484
+quandoo/__init__.py,sha256=dBfDMLzT1KZUxglRJp7AGTql0rUUhxKTqqlGyINMcEg,2119
+quandoo/config.py,sha256=hKdmR66D_KGgTfXUCp-VLYUsNvHYRQ28lW4UoBTNcnw,197
+Quandoo-1.3.0.dist-info/LICENSE.txt,sha256=DjH9T7iR4GRls2BJrWp_9PJrUlmf0o8vta4TngecU50,1102
+Quandoo-1.3.0.dist-info/METADATA,sha256=ryrBSzUqTRF-l5JNUV8FtNHBfbsAR5K2v5IRxW9E_t8,12567
+Quandoo-1.3.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+Quandoo-1.3.0.dist-info/top_level.txt,sha256=Hwf90tBLMktC5ngmOTk2v9JCz8nTrBc9wY1mHTrxfzs,8
+Quandoo-1.3.0.dist-info/RECORD,,
