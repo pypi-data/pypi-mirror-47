@@ -1,0 +1,11 @@
+README.md
+setup.py
+octoparse/__init__.py
+octoparse/client.py
+octoparse/exceptions.py
+octoparse_python.egg-info/PKG-INFO
+octoparse_python.egg-info/SOURCES.txt
+octoparse_python.egg-info/dependency_links.txt
+octoparse_python.egg-info/not-zip-safe
+octoparse_python.egg-info/requires.txt
+octoparse_python.egg-info/top_level.txt
