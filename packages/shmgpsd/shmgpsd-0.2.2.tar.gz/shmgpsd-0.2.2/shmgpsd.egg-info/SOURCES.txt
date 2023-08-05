@@ -1,0 +1,7 @@
+README.md
+setup.py
+shmgpsd.py
+shmgpsd.egg-info/PKG-INFO
+shmgpsd.egg-info/SOURCES.txt
+shmgpsd.egg-info/dependency_links.txt
+shmgpsd.egg-info/top_level.txt
