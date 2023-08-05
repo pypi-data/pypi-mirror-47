@@ -1,0 +1,10 @@
+iacs/__init__.py,sha256=mVStKyy7OvKHYTjywhG6BMe5vPtnUu5Y4fi86xi0hYY,41
+iacs/csv2md.py,sha256=DERZ8dL9ZGZymDKPo8O4zA2xhWiLcDt6GhWYCgIEqv8,1378
+iacs/default_config.py,sha256=3i2xI5VCJFOifvs4Ewgc8X0REfa4HsPEvw7JBev1MF4,1249
+iacs/find_docs.py,sha256=MruwejLpra8FPlWTqe1kIyKkD1NbqL6i1t1BdQxaCYw,540
+iacs/iacs_cli.py,sha256=opWclxPE6YN9z-UzMhw-Nf2RUM1UOAD_AP7pT0GDAzA,3745
+iacs_cli-0.10.2.dist-info/METADATA,sha256=-8XPH8KAka67iiCY6I0Z8Yw-oEU2YkpyUfILQ-PYAcU,8444
+iacs_cli-0.10.2.dist-info/RECORD,,
+iacs_cli-0.10.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+iacs_cli-0.10.2.dist-info/entry_points.txt,sha256=ZyjoAl7rc7oH7spAqgIEWx4uhtnOfVwMyycko7NeHCk,45
+iacs_cli-0.10.2.dist-info/top_level.txt,sha256=-MK6_HsodNTyC2SvpSlD7Qfe_1ceiURUjsMU1X7QyrM,5
