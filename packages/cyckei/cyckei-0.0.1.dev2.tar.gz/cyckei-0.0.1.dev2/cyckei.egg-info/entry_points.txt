@@ -1,0 +1,3 @@
+[console_scripts]
+cyckei = cyckei.__main__:main
+
