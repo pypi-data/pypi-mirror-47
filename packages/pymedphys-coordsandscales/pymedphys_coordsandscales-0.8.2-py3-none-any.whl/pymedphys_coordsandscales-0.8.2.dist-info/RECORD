@@ -1,0 +1,11 @@
+pymedphys_coordsandscales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymedphys_coordsandscales/_install_requires.py,sha256=N4bVYVpQ2VKzA28CZjd3zRk9jA2Xe6d2_OfCnmD9lrQ,43
+pymedphys_coordsandscales/_version.py,sha256=akUO4OIR_wADyCtT-eeYcL4ArjzAitMODh8VsSJAULQ,51
+pymedphys_coordsandscales/coordinates/__init__.py,sha256=Ca0cCIpLu_d3uiOwjRk8s9T6teh2LBGglwP2Ib0RgwI,1462
+pymedphys_coordsandscales/coordinates/transforms.py,sha256=NkLanVuNuAQFJpVsZZtDPgcfVEkFXnfi3MqMa7V6cps,4506
+pymedphys_coordsandscales-0.8.2.dist-info/LICENSE-AGPL-3.0-or-later,sha256=dql8h4yceoMhuzlcK0TT_i-NgTFNIZsgE47Q4t3dUYI,34520
+pymedphys_coordsandscales-0.8.2.dist-info/LICENSE-Apache-2.0,sha256=QwcOLU5TJoTeUhuIXzhdCEEDDvorGiC6-3YTOl4TecE,11356
+pymedphys_coordsandscales-0.8.2.dist-info/METADATA,sha256=NG92bxjIwY3UFH8Mgth9ktIPTe-xuB74JkLjegWXBFE,787
+pymedphys_coordsandscales-0.8.2.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pymedphys_coordsandscales-0.8.2.dist-info/top_level.txt,sha256=ykLyuf6-X-HISybrcSSqcKkskwz3xuY2htkDDVezDTs,26
+pymedphys_coordsandscales-0.8.2.dist-info/RECORD,,
