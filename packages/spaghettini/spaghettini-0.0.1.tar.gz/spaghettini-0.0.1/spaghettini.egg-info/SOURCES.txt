@@ -1,0 +1,7 @@
+README.md
+setup.py
+spaghettini.egg-info/PKG-INFO
+spaghettini.egg-info/SOURCES.txt
+spaghettini.egg-info/dependency_links.txt
+spaghettini.egg-info/requires.txt
+spaghettini.egg-info/top_level.txt
