@@ -1,0 +1,7 @@
+bs4
+mutagen
+argparse
+spotipy
+ydl-binaries
+pyyaml
+youtube-dl
