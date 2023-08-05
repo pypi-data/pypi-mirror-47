@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: shoobx.immutable
+Version: 1.0.1
+Summary: Immutable Types
+Home-page: http://pypi.python.org/pypi/shoobx.immutable
+Author: Shoobx, Inc.
+Author-email: dev@shoobx.com
+License: ZPL 2.1
+Description: =======================================
+        ``shoobx.immutable`` -- Immutable Types
+        =======================================
+        
+        .. image:: https://travis-ci.org/Shoobx/shoobx.immutable.png?branch=master
+           :target: https://travis-ci.org/Shoobx/shoobx.immutable
+        
+        .. image:: https://coveralls.io/repos/github/Shoobx/shoobx.immutable/badge.svg?branch=master
+           :target: https://coveralls.io/github/Shoobx/shoobx.immutable?branch=master
+        
+        .. image:: https://img.shields.io/pypi/v/shoobx.immutable.svg
+            :target: https://pypi.python.org/pypi/shoobx.immutable
+        
+        .. image:: https://img.shields.io/pypi/pyversions/shoobx.immutable.svg
+            :target: https://pypi.python.org/pypi/shoobx.immutable/
+        
+        
+        This library provides a state-based implementation of immutable types,
+        including lists, sets and dicts. It handles an arbitrarily deep structure of
+        nested objects.
+        
+        In addition, support for revisioed immutables is provided, which allows for
+        full revision histories of an immutable. A sample implementation of a
+        revisioned immutable maanger is also provided.
+        
+        Optional: A pjpersist-based storage mechanism for revisioned immutables is
+        provided, which allows for easy storage of versioned immutables.
+        
+        
+        =======
+        CHANGES
+        =======
+        
+        
+        1.0.1 (2019-05-30)
+        ------------------
+        
+        - Fix package description.
+        
+        
+        1.0.0 (2019-05-30)
+        ------------------
+        
+        - Immutable Types, Immutable Dict, Immutable Set, Immutable List
+        
+        - Revisioned Immutable with Revision Manager sample implementation
+        
+        - Optional: pjpersist support for immutables. Requires pjpersist>=1.7.0.
+        
+        - Initial Release
+        
+Keywords: immutable revisioned pjpersist
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Zope Public License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Provides-Extra: test
+Provides-Extra: pjpersist
