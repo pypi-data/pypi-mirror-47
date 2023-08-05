@@ -1,0 +1,13 @@
+Metadata-Version: 1.0
+Name: lobsters
+Version: 0.2.1
+Summary: API Client for lobste.rs
+Home-page: https://github.com/gkbrk/lobsters-py
+Author: Gokberk Yaltirakli
+Author-email: opensource@gkbrk.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/gkbrk/lobsters-py/issues
+Project-URL: Source Code, https://github.com/gkbrk/lobsters-py
+Description: UNKNOWN
+Keywords: api client lobsters lobste
+Platform: UNKNOWN
