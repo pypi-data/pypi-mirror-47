@@ -1,0 +1,2 @@
+recursive-include lemity/templates *.html
+recursive-include lemity/static *.js *.css
