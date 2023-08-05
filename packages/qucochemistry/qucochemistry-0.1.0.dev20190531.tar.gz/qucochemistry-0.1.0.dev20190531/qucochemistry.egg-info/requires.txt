@@ -1,0 +1,4 @@
+numpy
+scipy
+openfermion==0.9.0
+pyquil==2.7.2
