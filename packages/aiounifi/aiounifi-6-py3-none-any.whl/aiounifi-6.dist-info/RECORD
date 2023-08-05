@@ -1,0 +1,11 @@
+aiounifi/__init__.py,sha256=BiKG2zR_-5Pi8AUM83PKPQ9E7QPjrlXVa7Netf0Ll2M,57
+aiounifi/api.py,sha256=eLB84ZAi3WcTMdXrDVsRleCXB1FzHSKgccBjRihPK1g,1086
+aiounifi/clients.py,sha256=6S_PtV9LAkU6d7ApD-84tAjkixvl-FWH93yMS2Wo3XU,2400
+aiounifi/controller.py,sha256=zWwUXx4uXDRnkU1W3G8qwjZxjJiJxsrbxGzKIp78gEg,2343
+aiounifi/devices.py,sha256=cDwTL8baiZB-Y-U06l_S584GO7E0se4d61hcS0qYsA0,4407
+aiounifi/errors.py,sha256=Gs5ieLgj0IGYZImo07yCE6PGkJN9OUWqMKa9I_tkLj4,790
+aiounifi-6.dist-info/LICENSE,sha256=9p13ysxFd_py6eHGa2iQD9WfOHZQILG04lWDymWShp4,1072
+aiounifi-6.dist-info/METADATA,sha256=9Sayd0y7IS4O8Ge4PPYQ7gXlekYxmnypWD3R_Risyvs,501
+aiounifi-6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+aiounifi-6.dist-info/top_level.txt,sha256=pOCGywFV2aAcagif27JloNIv71xkP5lUeqydygvTuK8,9
+aiounifi-6.dist-info/RECORD,,
