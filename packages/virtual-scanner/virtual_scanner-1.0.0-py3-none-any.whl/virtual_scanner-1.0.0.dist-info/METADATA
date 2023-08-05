@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: virtual-scanner
+Version: 1.0.0
+Summary: Virtual Scanner educational tool for MRI
+Home-page: https://github.com/imr-framework/Virtual-Scanner
+Author: imr-framework
+Author-email: imr.framework2018@gmail.com
+License: License :: OSI Approved :: GNU Affero General Public License v3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# ISMRM 2019
+
+Standard user features:
+- T1/T2 mapping (ISMRM/NIST phantom)
+
+Advanced user features:
+- Sequence and phantom specific SAR modelling
+- MR Rx chain simulations
+
+
