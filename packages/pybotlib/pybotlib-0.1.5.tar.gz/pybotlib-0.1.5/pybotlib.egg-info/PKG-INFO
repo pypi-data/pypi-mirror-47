@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pybotlib
+Version: 0.1.5
+Summary: Object oriented python RPA library
+Home-page: https://github.com/dkatz23238/pybotlib/tree/ubuntu-client-37
+Author: David Katz
+Author-email: davidemmanuelkatz@gmail.com
+License: Apache 2.0
+Description: 
+        
+        For more info check out our documentation hosted on readthedocs: https://pybotlib.readthedocs.io
+        
+        
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX
+Requires-Python: >3.7
