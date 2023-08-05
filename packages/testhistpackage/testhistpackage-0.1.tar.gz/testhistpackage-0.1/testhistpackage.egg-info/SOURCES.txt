@@ -1,0 +1,10 @@
+README.txt
+setup.py
+testPackage/__init__.py
+testPackage/data_analysis_functions.py
+testPackage/mainFile.py
+testhistpackage.egg-info/PKG-INFO
+testhistpackage.egg-info/SOURCES.txt
+testhistpackage.egg-info/dependency_links.txt
+testhistpackage.egg-info/requires.txt
+testhistpackage.egg-info/top_level.txt
