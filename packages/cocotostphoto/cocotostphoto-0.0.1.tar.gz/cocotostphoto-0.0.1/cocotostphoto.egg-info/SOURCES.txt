@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+CocoToSTPhoto/CocoToSTPhoto.py
+CocoToSTPhoto/__init__.py
+cocotostphoto.egg-info/PKG-INFO
+cocotostphoto.egg-info/SOURCES.txt
+cocotostphoto.egg-info/dependency_links.txt
+cocotostphoto.egg-info/not-zip-safe
+cocotostphoto.egg-info/top_level.txt
