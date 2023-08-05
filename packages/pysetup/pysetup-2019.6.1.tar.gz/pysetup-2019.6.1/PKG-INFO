@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pysetup
+Version: 2019.6.1
+Summary: Pypi upload tool.
+Home-page: https://github.com/Czw96/PySetup
+Author: Czw_96
+Author-email: 459749926@qq.com
+License: UNKNOWN
+Description: # PySetup
+        Pypi 上传工具
+        
+        ## 安装
+        ```
+        pip install pysetup --upgrade
+        ```
+        
+        ## 使用流程
+        1. 进入项目目录, 打开命令行界面
+        2. 输入 `pysetup init` 创建 `setup.py` 文件
+        3. 修改 `setup.py` 文件信息
+        4. 输入 `pysetup upload t` 打包并上传
+        
+        ## 命令
+        - `pysetup help`: 查看命令列表
+        - `pysetup init`: 创建 setup.py 文件
+        - `pysetup upload <is_clear=False>`: 打包项目上传到 pypi(https://upload.pypi.org/legacy). \[is_clear: 清除上传前后的打包文件]
+        - `pysetup upload_test <is_clear=False>`: 打包项目上传到 testpypi(https://test.pypi.org/legacy). \[is_clear: 清除上传前后的打包文件]
+        - `pysetup package`: 打包项目.
+        - `pysetup clear`: 清除打包文件 (build/dist/*.egg-info).
+        - `pysetup install_test <package_name>`: 从 testpypi 安装测试包.
+        
+        ## 下次更新内容
+        - 保存 pypi/testpypi 登陆信息
+        - 查看 pypi 包名是否被占用
+        - 注册 pypi 包名
+        - 直接将包安装在 python 模块中, 而非从 testpypi 下载安装测试包
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
