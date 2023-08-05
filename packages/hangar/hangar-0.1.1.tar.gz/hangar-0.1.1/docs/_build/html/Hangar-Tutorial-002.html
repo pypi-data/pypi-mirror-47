@@ -1,0 +1,1053 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Part 2: Checkouts, Branching, &amp; Merging &mdash; Hangar 0.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Hangar Under The Hood" href="design.html" />
+    <link rel="prev" title="Creating A Repository And Working With Data" href="Hangar-Tutorial-001.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Hangar
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="concepts.html">Hangar Core Concepts</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="tutorial.html">Hangar Tutorial</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Hangar-Tutorial-001.html">Creating A Repository And Working With Data</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Part 2: Checkouts, Branching, &amp; Merging</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-a-branch">Creating A Branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#all-about-checkouts">All about Checkouts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Creating a branch</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#making-changes-on-a-branch">Making changes on a branch</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#how-do-changes-appear-when-made-on-a-branch">How do changes appear when made on a branch?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#merging-part-1-fast-forward-merges">Merging (Part 1) Fast-Forward Merges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#performing-the-merge">Performing the Merge</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#lets-check-the-log">Let’s check the log!</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#as-you-can-see-everything-is-as-it-should-be">As you can see, everything is as it should be!</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#making-a-changes-to-introduce-diverged-histories">Making a changes to introduce diverged histories</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#merging-part-2-three-way-merge">Merging (Part 2) Three Way Merge</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#manually-inspecting-the-merge-result-to-verify-it-matches-our-expectations">Manually inspecting the merge result to verify it matches our expectations</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#the-merge-was-a-success">The Merge was a success!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conflicts">Conflicts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-are-conflicts-detected">How Are Conflicts Detected?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#lets-make-a-merge-conflict">Let’s make a merge conflict</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#when-we-attempt-the-merge-an-exception-is-thrown-telling-us-there-is-a-conflict">When we attempt the merge, an exception is thrown telling us there is a conflict</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#alternatively-use-the-diff-methods-on-a-checkout-to-test-for-conflicts">Alternatively, use the diff methods on a checkout to test for conflicts</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#to-resolve-remove-the-conflict">To resolve, remove the conflict</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Hangar Under The Hood</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codeofconduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hangar</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="tutorial.html">Hangar Tutorial</a> &raquo;</li>
+        
+      <li>Part 2: Checkouts, Branching, &amp; Merging</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Hangar-Tutorial-002.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="part-2-checkouts-branching-merging">
+<h1>Part 2: Checkouts, Branching, &amp; Merging<a class="headerlink" href="#part-2-checkouts-branching-merging" title="Permalink to this headline">¶</a></h1>
+<p>This section deals with navigating repository history, creating &amp;
+merging branches, and understanding conflicts</p>
+<div class="section" id="creating-a-branch">
+<h2>Creating A Branch<a class="headerlink" href="#creating-a-branch" title="Permalink to this headline">¶</a></h2>
+<p>The hangar workflow is intended to mimic common <code class="docutils literal notranslate"><span class="pre">git</span></code> workflows in
+which small incremental changes are made and committed on dedicated
+<code class="docutils literal notranslate"><span class="pre">topic</span></code> branches. After the <code class="docutils literal notranslate"><span class="pre">topic</span></code> has been adequatly set,
+<code class="docutils literal notranslate"><span class="pre">topic</span></code> branch is <code class="docutils literal notranslate"><span class="pre">merged</span></code> into a seperate branch (commonly refered
+to as <code class="docutils literal notranslate"><span class="pre">master</span></code>, though it need not be the actual branch named
+<code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code>), where well vetted and more permenant changes are kept.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Create</span> <span class="n">Branch</span> <span class="o">-&gt;</span> <span class="n">Checkout</span> <span class="n">Branch</span> <span class="o">-&gt;</span> <span class="n">Make</span> <span class="n">Changes</span> <span class="o">-&gt;</span> <span class="n">Commit</span>
+</pre></div>
+</div>
+<p>Let’s initialize a new repository and see how branching works in Hangar</p>
+<!-- However, unlike GIT, remember that it is not possible to make changes in a DETACHED HEAD state. Hangar enforces the requirement that all work is performed at the tip of a branch. --><div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">hangar</span> <span class="k">import</span> <span class="n">Repository</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span> <span class="o">=</span> <span class="n">Repository</span><span class="p">(</span><span class="n">path</span><span class="o">=</span><span class="s1">&#39;/Users/rick/projects/tensorwerk/hangar/dev/mnist/&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">init</span><span class="p">(</span><span class="n">user_name</span><span class="o">=</span><span class="s1">&#39;Rick Izzo&#39;</span><span class="p">,</span> <span class="n">user_email</span><span class="o">=</span><span class="s1">&#39;rick@tensorwerk.com&#39;</span><span class="p">,</span> <span class="n">remove_old</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hangar</span> <span class="n">Repo</span> <span class="n">initialized</span> <span class="n">at</span><span class="p">:</span> <span class="o">/</span><span class="n">Users</span><span class="o">/</span><span class="n">rick</span><span class="o">/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">dev</span><span class="o">/</span><span class="n">mnist</span><span class="o">/</span><span class="n">__hangar</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;/Users/rick/projects/tensorwerk/hangar/dev/mnist/__hangar&#39;</span>
+</pre></div>
+</div>
+<p>When a repository is first initialized, it has no history, no commits.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span> <span class="c1"># -&gt; returns None</span>
+</pre></div>
+</div>
+<p>Though the repository is essentially empty at this point in time, there
+is one thing which is present: A branch with the name: <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code>.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">list_branch_names</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="s1">&#39;master&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> branch is the branch we make our first commit on;
+until we do, the repository is in a semi-unstable state, and will
+generally flat out refuse to perform otherwise standard
+operations/behaviors.</p>
+<p>Since the only option available at this point in time is to create a
+write-enabled checkout of this <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> branch so we can add data
+and make a commit, let’s do that now.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>As expected, there are no datasets or metadata samples recorded in the
+checkout</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;number of metadata keys: {len(co.metadata)}&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;number of datasets: {len(co.datasets)}&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="n">of</span> <span class="n">metadata</span> <span class="n">keys</span><span class="p">:</span> <span class="mi">0</span>
+<span class="n">number</span> <span class="n">of</span> <span class="n">datasets</span><span class="p">:</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Let’s add a dummy array just to put something in the repository, and we
+will commit &amp; close the checkout.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dummy</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint16</span><span class="p">)</span>
+<span class="n">dset</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">init_dataset</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">,</span> <span class="n">prototype</span><span class="o">=</span><span class="n">dummy</span><span class="p">)</span>
+<span class="n">dset</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">dummy</span>
+<span class="n">initialCommitHash</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">commit</span><span class="p">(</span><span class="s1">&#39;first commit with a single sample added to a dummy dataset&#39;</span><span class="p">)</span>
+<span class="n">co</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">Dataset Specification:: Name: <cite>dummy_dataset</cite>, Initialization style: <cite>prototype</cite>, Shape: <cite>(10,)</cite>, DType: <cite>uint16</cite>, Samples Named: <cite>True</cite>, Variable Shape: <cite>False</cite>, Max Shape: <cite>(10,)</cite>
+Dataset Initialized: <cite>dummy_dataset</cite>
+Commit operation requested with message: first commit with a single sample added to a dummy dataset
+(288, 222, 288)
+removing all stage hash records
+Commit completed. Commit hash: b21ebbeeece723bf7aa2157eb2e8742a043df7d0
+writer checkout of master closed</pre>
+<p>If we check the history now, we can see our first commit hash, and that
+it is labeled with the branch name <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 ([1;31mmaster[m) : first commit with a single sample added to a dummy dataset
+</pre></div>
+</div>
+<p>So now our repository contains: - A commit: a fully independent
+description of the entire repository state as it existed at some point
+in time. A commit is identified by a <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code> - A branch: a label
+pointing to a particular <code class="docutils literal notranslate"><span class="pre">commit</span></code> / <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code></p>
+<p>Once committed, it is not possible to remove, modify, or otherwise
+tamper with the contents of a commit in any way. It is a permenant
+record, which Hangar has no method to change once written to disk.</p>
+<p>In addition, as a <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code> is not only calculated from the
+<code class="docutils literal notranslate"><span class="pre">commit</span></code>’s contents, but from the <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code> of its parents
+(more on this to follow), knowing a single top-level <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code>
+allows us to verify the integrity of the entire repository history. This
+fundumental behavior holds even in cases of disk-corruption or malicious
+use.</p>
+</div>
+<div class="section" id="all-about-checkouts">
+<h2>All about Checkouts<a class="headerlink" href="#all-about-checkouts" title="Permalink to this headline">¶</a></h2>
+<p><strong>Checking out a branch/commit for reading:</strong> is the process of
+retriving records describing repository state at some point in time, and
+setting up access to the referenced data.</p>
+<ul class="simple">
+<li><p>Any number of read checkout processes can operate on a repository (on
+any number of commits) at the same time.</p></li>
+</ul>
+<p><strong>Checking out a branch for writing:</strong> is the process of setting up a
+(mutable) <code class="docutils literal notranslate"><span class="pre">staging</span> <span class="pre">area</span></code> to temporarily gather record references /
+data before all changes have been made and the content’s of the staging
+area are <code class="docutils literal notranslate"><span class="pre">committed</span></code> in a new <code class="docutils literal notranslate"><span class="pre">commit</span></code></p>
+<ul class="simple">
+<li><p>Only one write-enabled checkout can ever be operating in a repository
+at a time</p></li>
+<li><p>When initially creating the checkout, the <code class="docutils literal notranslate"><span class="pre">staging</span> <span class="pre">area</span></code> is not
+actually “empty”. Instead, it has the full contents of the last
+<code class="docutils literal notranslate"><span class="pre">commit</span></code> referenced by a branch’s <code class="docutils literal notranslate"><span class="pre">HEAD</span></code>. These records can be
+removed/mutated/added to in any way to form the next <code class="docutils literal notranslate"><span class="pre">commit</span></code>. The
+new <code class="docutils literal notranslate"><span class="pre">commit</span></code> retains a permenant reference identifying the previous
+<code class="docutils literal notranslate"><span class="pre">HEAD</span></code> <code class="docutils literal notranslate"><span class="pre">commit</span></code> was used as it’s base <code class="docutils literal notranslate"><span class="pre">staging</span> <span class="pre">area</span></code></p></li>
+<li><p>On commit, the branch which was checked out has it’s <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> pointer
+value updated to the new <code class="docutils literal notranslate"><span class="pre">commit</span></code>’s <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code>. A
+write-enabled checkout starting from the same branch will now use
+that <code class="docutils literal notranslate"><span class="pre">commit</span></code>’s record content as the base for it’s
+<code class="docutils literal notranslate"><span class="pre">staging</span> <span class="pre">area</span></code>.</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h2>Creating a branch<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>A branch must always have a <code class="docutils literal notranslate"><span class="pre">name</span></code> and a <code class="docutils literal notranslate"><span class="pre">base_commit</span></code>.</p>
+<p>However, If no <code class="docutils literal notranslate"><span class="pre">base_commit</span></code> is specified, the current writer branch
+<code class="docutils literal notranslate"><span class="pre">HEAD</span></code> <code class="docutils literal notranslate"><span class="pre">commit</span></code> is used as the <code class="docutils literal notranslate"><span class="pre">base_commit</span></code> hash for the branch</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">branch_1</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">create_branch</span><span class="p">(</span><span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">branch_1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;testbranch&#39;</span>
+</pre></div>
+</div>
+<p>viewing the log, we see that a new branch named: <code class="docutils literal notranslate"><span class="pre">testbranch</span></code> is
+pointing to our initial commit</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="s1">&#39;branch names: {repo.list_branch_names()} </span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+<span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>branch names: [&#39;master&#39;, &#39;testbranch&#39;]
+
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 ([1;31mmaster[m) ([1;31mtestbranch[m) : first commit with a single sample added to a dummy dataset
+</pre></div>
+</div>
+<p>If instead, we do actually specify the base commit (with a different
+branch name) we see we do actually get a third branch. pointing to the
+same commit as <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">branch_2</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">create_branch</span><span class="p">(</span><span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;new&#39;</span><span class="p">,</span> <span class="n">base_commit</span><span class="o">=</span><span class="n">initialCommitHash</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">branch_2</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;new&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 ([1;31mmaster[m) ([1;31mnew[m) ([1;31mtestbranch[m) : first commit with a single sample added to a dummy dataset
+</pre></div>
+</div>
+</div>
+<div class="section" id="making-changes-on-a-branch">
+<h2>Making changes on a branch<a class="headerlink" href="#making-changes-on-a-branch" title="Permalink to this headline">¶</a></h2>
+<p>Let’s make some changes on the <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code> branch to see how things might
+change</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;new&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can see that the data we added previously is still here (<code class="docutils literal notranslate"><span class="pre">dummy</span></code>
+dataset containing one sample labeled <code class="docutils literal notranslate"><span class="pre">0</span></code>)</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hangar</span> <span class="n">Datasets</span>
+    <span class="n">Writeable</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="n">Dataset</span> <span class="n">Names</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">dummy_dataset</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hangar DatasetDataWriter
+   Dataset Name     : dummy_dataset
+   Schema UUID      : d82cddc07e0211e9a08a8c859047adef
+   Schema Hash      : 43edf7aa314c
+   Variable Shape   : False
+   (max) Shape      : (10,)
+   Datatype         : &lt;class &#39;numpy.uint16&#39;&gt;
+   Named Samples    : True
+   Access Mode      : a
+   Num Samples      : 1
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">][</span><span class="s1">&#39;0&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">uint16</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Let’s add another sample to the <code class="docutils literal notranslate"><span class="pre">dummy_dataset</span></code> called <code class="docutils literal notranslate"><span class="pre">1</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">uint16</span><span class="p">)</span>
+<span class="c1"># let&#39;s increment values so that `0` and `1` aren&#39;t set to the same thing</span>
+<span class="n">arr</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">][</span><span class="s1">&#39;1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">arr</span>
+</pre></div>
+</div>
+<p>We can see that in this checkout, there are indeed, two samples in the
+<code class="docutils literal notranslate"><span class="pre">dummy_dataset</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="mi">2</span>
+</pre></div>
+</div>
+<p>That’s all, let’s commit this and be done with this branch</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">commit</span><span class="p">(</span><span class="s1">&#39;commit on `new` branch adding a sample to dummy_dataset&#39;</span><span class="p">)</span>
+<span class="n">co</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">Commit operation requested with message: commit on <cite>new</cite> branch adding a sample to dummy_dataset
+(350, 255, 350)
+removing all stage hash records
+Commit completed. Commit hash: 0cdd8c833f654d18ddc2b089fabee93c32c9c155
+writer checkout of new closed</pre>
+<div class="section" id="how-do-changes-appear-when-made-on-a-branch">
+<h3>How do changes appear when made on a branch?<a class="headerlink" href="#how-do-changes-appear-when-made-on-a-branch" title="Permalink to this headline">¶</a></h3>
+<p>If we look at the log, we see that the branch we were on (<code class="docutils literal notranslate"><span class="pre">new</span></code>) is a
+commit ahead of <code class="docutils literal notranslate"><span class="pre">master</span></code> and <code class="docutils literal notranslate"><span class="pre">testbranch</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">* 0cdd8c833f654d18ddc2b089fabee93c32c9c155 ([1;31mnew[m) : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 ([1;31mmaster[m) ([1;31mtestbranch[m) : first commit with a single sample added to a dummy dataset</pre>
+<p>The meaning is exactally what one would intuit. we made some changes,
+they were reflected on the <code class="docutils literal notranslate"><span class="pre">new</span></code> branch, but the <code class="docutils literal notranslate"><span class="pre">master</span></code> and
+<code class="docutils literal notranslate"><span class="pre">testbranch</span></code> branches were not impacted at all, nor were any of the
+commits!</p>
+</div>
+</div>
+<div class="section" id="merging-part-1-fast-forward-merges">
+<h2>Merging (Part 1) Fast-Forward Merges<a class="headerlink" href="#merging-part-1-fast-forward-merges" title="Permalink to this headline">¶</a></h2>
+<p>Say we like the changes we made on the <code class="docutils literal notranslate"><span class="pre">new</span></code> branch so much that we
+want them to be included into our <code class="docutils literal notranslate"><span class="pre">master</span></code> branch! How do we make this
+happen for this scenario??</p>
+<p>Well, the history between the <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> of the <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code> and the <code class="docutils literal notranslate"><span class="pre">HEAD</span></code>
+of the <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> branch is perfectly linear. In fact, when we began
+making changes on <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code>, our staging area was <em>identical</em> to what
+the <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> commit references are right now!</p>
+<p>If you’ll remember that a branch is just a pointer which assigns some
+<code class="docutils literal notranslate"><span class="pre">name</span></code> to a <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code>, it becomes apparent that a merge in this
+case really doesn’t involve any work at all. With a linear history
+between <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code>, any <code class="docutils literal notranslate"><span class="pre">commits</span></code> exsting along the
+path between the <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> of <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> are the only
+changes which are introduced, and we can be sure that this is the only
+view of the data records which can exist!</p>
+<p>What this means in practice is that for this type of merge, we can just
+update the <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> of <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> to point to the <code class="docutils literal notranslate"><span class="pre">&quot;HEAD&quot;</span></code> of
+<code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code>, and the merge is complete.</p>
+<p>This situation is reffered to as a <strong>Fast Forward (FF) Merge</strong>. A FF
+merge is safe to perform any time a linear history lies between the
+<code class="docutils literal notranslate"><span class="pre">&quot;HEAD&quot;</span></code> of some <code class="docutils literal notranslate"><span class="pre">topic</span></code> and <code class="docutils literal notranslate"><span class="pre">base</span></code> branch, regardless of how many
+commits or changes which were introduced.</p>
+<p>For other situations, a more complicated <strong>Three Way Merge</strong> is
+required. This merge method will be explained a bit more later in this
+tutorail</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;master&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="section" id="performing-the-merge">
+<h3>Performing the Merge<a class="headerlink" href="#performing-the-merge" title="Permalink to this headline">¶</a></h3>
+<p>In practice, you’ll never need to know the details of the merge theory
+explained above (or even remember it exists). Hangar automatically
+figures out which merge algorithms should be used and then performes
+whatever calculations are needed to compute the results.</p>
+<p>As a user, merging in Hangar is a one-liner!</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;message for commit (not used for FF merge)&#39;</span><span class="p">,</span> <span class="n">dev_branch</span><span class="o">=</span><span class="s1">&#39;new&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Selected</span> <span class="n">Fast</span><span class="o">-</span><span class="n">Forward</span> <span class="n">Merge</span> <span class="n">Stratagy</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;0cdd8c833f654d18ddc2b089fabee93c32c9c155&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="lets-check-the-log">
+<h3>Let’s check the log!<a class="headerlink" href="#lets-check-the-log" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">* 0cdd8c833f654d18ddc2b089fabee93c32c9c155 ([1;31mmaster[m) ([1;31mnew[m) : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 ([1;31mtestbranch[m) : first commit with a single sample added to a dummy dataset</pre>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">branch_name</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;master&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">commit_hash</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;0cdd8c833f654d18ddc2b089fabee93c32c9c155&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hangar DatasetDataWriter
+   Dataset Name     : dummy_dataset
+   Schema UUID      : d82cddc07e0211e9a08a8c859047adef
+   Schema Hash      : 43edf7aa314c
+   Variable Shape   : False
+   (max) Shape      : (10,)
+   Datatype         : &lt;class &#39;numpy.uint16&#39;&gt;
+   Named Samples    : True
+   Access Mode      : a
+   Num Samples      : 2
+</pre></div>
+</div>
+</div>
+<div class="section" id="as-you-can-see-everything-is-as-it-should-be">
+<h3>As you can see, everything is as it should be!<a class="headerlink" href="#as-you-can-see-everything-is-as-it-should-be" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">writer</span> <span class="n">checkout</span> <span class="n">of</span> <span class="n">master</span> <span class="n">closed</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="making-a-changes-to-introduce-diverged-histories">
+<h2>Making a changes to introduce diverged histories<a class="headerlink" href="#making-a-changes-to-introduce-diverged-histories" title="Permalink to this headline">¶</a></h2>
+<p>Let’s now go back to our <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> branch and make some changes
+there so we can see what happens when changes don’t follow a linear
+history.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hangar</span> <span class="n">Datasets</span>
+    <span class="n">Writeable</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="n">Dataset</span> <span class="n">Names</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">dummy_dataset</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hangar DatasetDataWriter
+   Dataset Name     : dummy_dataset
+   Schema UUID      : d82cddc07e0211e9a08a8c859047adef
+   Schema Hash      : 43edf7aa314c
+   Variable Shape   : False
+   (max) Shape      : (10,)
+   Datatype         : &lt;class &#39;numpy.uint16&#39;&gt;
+   Named Samples    : True
+   Access Mode      : a
+   Num Samples      : 1
+</pre></div>
+</div>
+<p>We will start by mutating sample <code class="docutils literal notranslate"><span class="pre">0</span></code> in <code class="docutils literal notranslate"><span class="pre">dummy_dataset</span></code> to a
+different value</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dummy_dset</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">old_arr</span> <span class="o">=</span> <span class="n">dummy_dset</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span>
+<span class="n">new_arr</span> <span class="o">=</span> <span class="n">old_arr</span> <span class="o">+</span> <span class="mi">50</span>
+<span class="n">new_arr</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">50</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">59</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">uint16</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dummy_dset</span><span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">new_arr</span>
+</pre></div>
+</div>
+<p>let’s make a commit here, then add some metadata and make a new commit
+(all on the <code class="docutils literal notranslate"><span class="pre">testbranch</span></code> branch)</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">commit</span><span class="p">(</span><span class="s1">&#39;mutated sample `0` of `dummy_dataset` to new value&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block">Commit operation requested with message: mutated sample <cite>0</cite> of <cite>dummy_dataset</cite> to new value
+(288, 222, 288)
+removing all stage hash records
+Commit completed. Commit hash: 4fdb96afed4ec62e9fc80328abccae6bf6774fea</pre>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;4fdb96afed4ec62e9fc80328abccae6bf6774fea&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">* 4fdb96afed4ec62e9fc80328abccae6bf6774fea ([1;31mtestbranch[m) : mutated sample <cite>0</cite> of <cite>dummy_dataset</cite> to new value
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;world&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">commit</span><span class="p">(</span><span class="s1">&#39;added hellow world metadata&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Commit</span> <span class="n">operation</span> <span class="n">requested</span> <span class="k">with</span> <span class="n">message</span><span class="p">:</span> <span class="n">added</span> <span class="n">hellow</span> <span class="n">world</span> <span class="n">metadata</span>
+<span class="p">(</span><span class="mi">348</span><span class="p">,</span> <span class="mi">260</span><span class="p">,</span> <span class="mi">348</span><span class="p">)</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+<span class="n">Commit</span> <span class="n">completed</span><span class="o">.</span> <span class="n">Commit</span> <span class="nb">hash</span><span class="p">:</span> <span class="n">ce8a9198d638b8fd89a175486d21d2bb2efabc91</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;ce8a9198d638b8fd89a175486d21d2bb2efabc91&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">writer</span> <span class="n">checkout</span> <span class="n">of</span> <span class="n">testbranch</span> <span class="n">closed</span>
+</pre></div>
+</div>
+<p>Looking at our history how, we see that none of the original branches
+reference our first commit anymore</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">* ce8a9198d638b8fd89a175486d21d2bb2efabc91 ([1;31mtestbranch[m) : added hellow world metadata
+* 4fdb96afed4ec62e9fc80328abccae6bf6774fea : mutated sample <cite>0</cite> of <cite>dummy_dataset</cite> to new value
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+<p>We can check the history of the <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> branch by specifying it as
+an argument to the <code class="docutils literal notranslate"><span class="pre">log()</span></code> method</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s1">&#39;master&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<pre class="literal-block">* 0cdd8c833f654d18ddc2b089fabee93c32c9c155 ([1;31mmaster[m) ([1;31mnew[m) : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+</div>
+</div>
+<div class="section" id="merging-part-2-three-way-merge">
+<h1>Merging (Part 2) Three Way Merge<a class="headerlink" href="#merging-part-2-three-way-merge" title="Permalink to this headline">¶</a></h1>
+<p>If we now want to merge the changes on <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> into
+<code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code>, we can’t just follow a simple linear history; <strong>the
+branches have diverged</strong>.</p>
+<p>For this case, Hangar implements a <strong>Three Way Merge</strong> algorithm which
+does the following: - Find the most recent common ancestor <code class="docutils literal notranslate"><span class="pre">commit</span></code>
+present in both the <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> and <code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code> branches - Compute
+what changed between the common ancestor and each branch’s <code class="docutils literal notranslate"><span class="pre">HEAD</span></code>
+commit - Check if any of the changes conflict with eachother (more on
+this in a later tutorial) - If no conflicts are present, compute the
+results of the merge between the two sets of changes - Create a new
+<code class="docutils literal notranslate"><span class="pre">commit</span></code> containing the merge results reference both branch
+<code class="docutils literal notranslate"><span class="pre">HEAD</span></code>s as parents of the new <code class="docutils literal notranslate"><span class="pre">commit</span></code>, and update the <code class="docutils literal notranslate"><span class="pre">base</span></code>
+branch <code class="docutils literal notranslate"><span class="pre">HEAD</span></code> to that new <code class="docutils literal notranslate"><span class="pre">commit</span></code>’s <code class="docutils literal notranslate"><span class="pre">commit_hash</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;master&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Once again, as a user, the details are completly irrelevent, and the
+operation occurs from the same one-liner call we used before for the FF
+Merge.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;merge of testbranch into master&#39;</span><span class="p">,</span> <span class="n">dev_branch</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Selected</span> <span class="mi">3</span><span class="o">-</span><span class="n">Way</span> <span class="n">Merge</span> <span class="n">Strategy</span>
+<span class="p">(</span><span class="mi">410</span><span class="p">,</span> <span class="mi">293</span><span class="p">,</span> <span class="mi">410</span><span class="p">)</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;dea1aa627933b3efffa03c743c201ee1b41142c8&#39;</span>
+</pre></div>
+</div>
+<p>If we now look at the log, we see that this has a much different look
+then before. The three way merge results in a history which references
+changes made in both diverged branches, and unifies them in a single
+<code class="docutils literal notranslate"><span class="pre">commit</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">*   dea1aa627933b3efffa03c743c201ee1b41142c8 ([1;31mmaster[m) : merge of testbranch into master
+[1;31m|[m[1;32m[m
+[1;31m|[m * ce8a9198d638b8fd89a175486d21d2bb2efabc91 ([1;31mtestbranch[m) : added hellow world metadata
+[1;31m|[m * 4fdb96afed4ec62e9fc80328abccae6bf6774fea : mutated sample <cite>0</cite> of <cite>dummy_dataset</cite> to new value
+* [1;32m|[m 0cdd8c833f654d18ddc2b089fabee93c32c9c155 ([1;31mnew[m) : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+[1;32m|[m[1;32m/[m
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+<div class="section" id="manually-inspecting-the-merge-result-to-verify-it-matches-our-expectations">
+<h2>Manually inspecting the merge result to verify it matches our expectations<a class="headerlink" href="#manually-inspecting-the-merge-result-to-verify-it-matches-our-expectations" title="Permalink to this headline">¶</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">dummy_dataset</span></code> should contain two arrays, key <code class="docutils literal notranslate"><span class="pre">1</span></code> was set in the
+previous commit originally made in <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code> and merged into
+<code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code>. Key <code class="docutils literal notranslate"><span class="pre">0</span></code> was mutated in <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> and unchanged in
+<code class="docutils literal notranslate"><span class="pre">&quot;master&quot;</span></code>, so the update from <code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> is kept.</p>
+<p>There should be one metadata sample with they key <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> and the
+value <code class="docutils literal notranslate"><span class="pre">&quot;world&quot;</span></code></p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hangar</span> <span class="n">Datasets</span>
+    <span class="n">Writeable</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="n">Dataset</span> <span class="n">Names</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">dummy_dataset</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Hangar DatasetDataWriter
+   Dataset Name     : dummy_dataset
+   Schema UUID      : d82cddc07e0211e9a08a8c859047adef
+   Schema Hash      : 43edf7aa314c
+   Variable Shape   : False
+   (max) Shape      : (10,)
+   Datatype         : &lt;class &#39;numpy.uint16&#39;&gt;
+   Named Samples    : True
+   Access Mode      : a
+   Num Samples      : 2
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">][</span><span class="s1">&#39;0&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span><span class="mi">50</span><span class="p">,</span> <span class="mi">51</span><span class="p">,</span> <span class="mi">52</span><span class="p">,</span> <span class="mi">53</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">57</span><span class="p">,</span> <span class="mi">58</span><span class="p">,</span> <span class="mi">59</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">uint16</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">datasets</span><span class="p">[</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">][</span><span class="s1">&#39;1&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">array</span><span class="p">([</span> <span class="mi">1</span><span class="p">,</span>  <span class="mi">2</span><span class="p">,</span>  <span class="mi">3</span><span class="p">,</span>  <span class="mi">4</span><span class="p">,</span>  <span class="mi">5</span><span class="p">,</span>  <span class="mi">6</span><span class="p">,</span>  <span class="mi">7</span><span class="p">,</span>  <span class="mi">8</span><span class="p">,</span>  <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">uint16</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">metadata</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Hangar</span> <span class="n">Metadata</span>
+    <span class="n">Writeable</span><span class="p">:</span> <span class="kc">True</span>
+    <span class="n">Number</span> <span class="n">of</span> <span class="n">Keys</span><span class="p">:</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;world&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="the-merge-was-a-success">
+<h2>The Merge was a success!<a class="headerlink" href="#the-merge-was-a-success" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">writer</span> <span class="n">checkout</span> <span class="n">of</span> <span class="n">master</span> <span class="n">closed</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="conflicts">
+<h1>Conflicts<a class="headerlink" href="#conflicts" title="Permalink to this headline">¶</a></h1>
+<p>Now that we’ve seen merging in action, the next step is to talk about
+conflicts.</p>
+<div class="section" id="how-are-conflicts-detected">
+<h2>How Are Conflicts Detected?<a class="headerlink" href="#how-are-conflicts-detected" title="Permalink to this headline">¶</a></h2>
+<p>Any merge conflicts can be identified and addressed ahead of running a
+<code class="docutils literal notranslate"><span class="pre">merge</span></code> command by using the built in <code class="docutils literal notranslate"><span class="pre">diff</span></code> tools. When diffing
+commits, Hangar will provide a list of conflicts which it identifies. In
+general these fall into 4 catagories:</p>
+<ol class="arabic simple">
+<li><p><strong>Additions</strong> in both branches which created new keys (samples /
+datasets / metadata) with non-compatible values. For samples &amp;
+metadata, the hash of the data is compared, for datasets, the schema
+specification is checked for compatibility in a method custom to the
+internal workings of Hangar.</p></li>
+<li><p><strong>Removal</strong> in <code class="docutils literal notranslate"><span class="pre">Master</span> <span class="pre">Commit/Branch</span></code> <strong>&amp; Mutation</strong> in
+<code class="docutils literal notranslate"><span class="pre">Dev</span> <span class="pre">Commit/Branch</span></code>. Applies for samples, datasets, and metadata
+identically.</p></li>
+<li><p><strong>Mutation</strong> in <code class="docutils literal notranslate"><span class="pre">Dev</span> <span class="pre">Commit/Branch</span></code> <strong>&amp; Removal</strong> in
+<code class="docutils literal notranslate"><span class="pre">Master</span> <span class="pre">Commit/Branch</span></code>. Applies for samples, datasets, and metadata
+identically.</p></li>
+<li><p><strong>Mutations</strong> on keys both branches to non-compatible values. For
+samples &amp; metadata, the hash of the data is compared, for datasets,
+the schema specification is checked for compatibility in a method
+custom to the internal workings of Hangar.</p></li>
+</ol>
+</div>
+<div class="section" id="lets-make-a-merge-conflict">
+<h2>Let’s make a merge conflict<a class="headerlink" href="#lets-make-a-merge-conflict" title="Permalink to this headline">¶</a></h2>
+<p>To force a conflict, we are going to checkout the <code class="docutils literal notranslate"><span class="pre">&quot;new&quot;</span></code> branch and
+set the metadata key <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> to the value
+<code class="docutils literal notranslate"><span class="pre">&quot;foo</span> <span class="pre">conflict...</span> <span class="pre">BOO!&quot;</span></code>. If we then try to merge this into the
+<code class="docutils literal notranslate"><span class="pre">&quot;testbranch&quot;</span></code> branch (which set <code class="docutils literal notranslate"><span class="pre">&quot;hello&quot;</span></code> to a value of
+<code class="docutils literal notranslate"><span class="pre">&quot;world&quot;</span></code>) we see how hangar will identify the conflict and halt
+without making any changes.</p>
+<p>Automated conflict resolution will be introduced in a future version of
+Hangar, for now it is up to the user to manually resolve conflicts by
+making any necessary changes in each branch before reattempting a merge
+operation.</p>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span> <span class="o">=</span> <span class="n">repo</span><span class="o">.</span><span class="n">checkout</span><span class="p">(</span><span class="n">write</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">branch_name</span><span class="o">=</span><span class="s1">&#39;new&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;foo conflict... BOO!&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">commit</span> <span class="p">(</span><span class="s1">&#39;commit on new branch to hello metadata key so we can demonstrate a conflict&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Commit</span> <span class="n">operation</span> <span class="n">requested</span> <span class="k">with</span> <span class="n">message</span><span class="p">:</span> <span class="n">commit</span> <span class="n">on</span> <span class="n">new</span> <span class="n">branch</span> <span class="n">to</span> <span class="n">hello</span> <span class="n">metadata</span> <span class="n">key</span> <span class="n">so</span> <span class="n">we</span> <span class="n">can</span> <span class="n">demonstrate</span> <span class="n">a</span> <span class="n">conflict</span>
+<span class="p">(</span><span class="mi">410</span><span class="p">,</span> <span class="mi">294</span><span class="p">,</span> <span class="mi">410</span><span class="p">)</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+<span class="n">Commit</span> <span class="n">completed</span><span class="o">.</span> <span class="n">Commit</span> <span class="nb">hash</span><span class="p">:</span> <span class="mf">5e76</span><span class="n">faba059c156bc9ed181446e104765cb471c3</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;5e76faba059c156bc9ed181446e104765cb471c3&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">* 5e76faba059c156bc9ed181446e104765cb471c3 ([1;31mnew[m) : commit on new branch to hello metadata key so we can demonstrate a conflict
+* 0cdd8c833f654d18ddc2b089fabee93c32c9c155 : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+<div class="section" id="when-we-attempt-the-merge-an-exception-is-thrown-telling-us-there-is-a-conflict">
+<h3>When we attempt the merge, an exception is thrown telling us there is a conflict<a class="headerlink" href="#when-we-attempt-the-merge-an-exception-is-thrown-telling-us-there-is-a-conflict" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;this merge should not happen&#39;</span><span class="p">,</span> <span class="n">dev_branch</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Selected</span> <span class="mi">3</span><span class="o">-</span><span class="n">Way</span> <span class="n">Merge</span> <span class="n">Strategy</span>
+<span class="n">HANGAR</span> <span class="n">VALUE</span> <span class="n">ERROR</span><span class="p">::</span> <span class="n">Merge</span> <span class="n">ABORTED</span> <span class="k">with</span> <span class="n">conflict</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="s1">&#39;meta&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="s1">&#39;sample&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">)},</span> <span class="s1">&#39;conflict_found&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">---------------------------------------------------------------------------</span>
+
+<span class="ne">ValueError</span>                                <span class="n">Traceback</span> <span class="p">(</span><span class="n">most</span> <span class="n">recent</span> <span class="n">call</span> <span class="n">last</span><span class="p">)</span>
+
+<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">59</span><span class="o">-</span><span class="mi">1</span><span class="n">a98dce1852b</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
+<span class="o">----&gt;</span> <span class="mi">1</span> <span class="n">co</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;this merge should not happen&#39;</span><span class="p">,</span> <span class="n">dev_branch</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">checkout</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">merge</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">,</span> <span class="n">dev_branch</span><span class="p">)</span>
+    <span class="mi">392</span>             <span class="n">dev_branch_name</span><span class="o">=</span><span class="n">dev_branch</span><span class="p">,</span>
+    <span class="mi">393</span>             <span class="n">repo_path</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_repo_path</span><span class="p">,</span>
+<span class="o">--&gt;</span> <span class="mi">394</span>             <span class="n">writer_uuid</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_writer_lock</span><span class="p">)</span>
+    <span class="mi">395</span>
+    <span class="mi">396</span>         <span class="k">for</span> <span class="n">dsetHandle</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">_datasets</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">merger</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">select_merge_algorithm</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">branchenv</span><span class="p">,</span> <span class="n">stageenv</span><span class="p">,</span> <span class="n">refenv</span><span class="p">,</span> <span class="n">stagehashenv</span><span class="p">,</span> <span class="n">master_branch_name</span><span class="p">,</span> <span class="n">dev_branch_name</span><span class="p">,</span> <span class="n">repo_path</span><span class="p">,</span> <span class="n">writer_uuid</span><span class="p">)</span>
+    <span class="mi">125</span>
+    <span class="mi">126</span>     <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+<span class="o">--&gt;</span> <span class="mi">127</span>         <span class="k">raise</span> <span class="n">e</span> <span class="kn">from</span> <span class="nn">None</span>
+    <span class="mi">128</span>
+    <span class="mi">129</span>     <span class="k">finally</span><span class="p">:</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">merger</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">select_merge_algorithm</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">branchenv</span><span class="p">,</span> <span class="n">stageenv</span><span class="p">,</span> <span class="n">refenv</span><span class="p">,</span> <span class="n">stagehashenv</span><span class="p">,</span> <span class="n">master_branch_name</span><span class="p">,</span> <span class="n">dev_branch_name</span><span class="p">,</span> <span class="n">repo_path</span><span class="p">,</span> <span class="n">writer_uuid</span><span class="p">)</span>
+    <span class="mi">122</span>                 <span class="n">refenv</span><span class="o">=</span><span class="n">refenv</span><span class="p">,</span>
+    <span class="mi">123</span>                 <span class="n">stagehashenv</span><span class="o">=</span><span class="n">stagehashenv</span><span class="p">,</span>
+<span class="o">--&gt;</span> <span class="mi">124</span>                 <span class="n">repo_path</span><span class="o">=</span><span class="n">repo_path</span><span class="p">)</span>
+    <span class="mi">125</span>
+    <span class="mi">126</span>     <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">merger</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">_three_way_merge</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">master_branch_name</span><span class="p">,</span> <span class="n">masterHEAD</span><span class="p">,</span> <span class="n">dev_branch_name</span><span class="p">,</span> <span class="n">devHEAD</span><span class="p">,</span> <span class="n">ancestorHEAD</span><span class="p">,</span> <span class="n">branchenv</span><span class="p">,</span> <span class="n">stageenv</span><span class="p">,</span> <span class="n">refenv</span><span class="p">,</span> <span class="n">stagehashenv</span><span class="p">,</span> <span class="n">repo_path</span><span class="p">)</span>
+    <span class="mi">239</span>     <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="mi">240</span>         <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">exc_info</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="o">--&gt;</span> <span class="mi">241</span>         <span class="k">raise</span> <span class="n">e</span> <span class="kn">from</span> <span class="nn">None</span>
+    <span class="mi">242</span>
+    <span class="mi">243</span>     <span class="n">fmtCont</span> <span class="o">=</span> <span class="n">_merge_dict_to_lmdb_tuples</span><span class="p">(</span><span class="n">patchedRecs</span><span class="o">=</span><span class="n">mergeContents</span><span class="p">)</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">merger</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">_three_way_merge</span><span class="p">(</span><span class="n">message</span><span class="p">,</span> <span class="n">master_branch_name</span><span class="p">,</span> <span class="n">masterHEAD</span><span class="p">,</span> <span class="n">dev_branch_name</span><span class="p">,</span> <span class="n">devHEAD</span><span class="p">,</span> <span class="n">ancestorHEAD</span><span class="p">,</span> <span class="n">branchenv</span><span class="p">,</span> <span class="n">stageenv</span><span class="p">,</span> <span class="n">refenv</span><span class="p">,</span> <span class="n">stagehashenv</span><span class="p">,</span> <span class="n">repo_path</span><span class="p">)</span>
+    <span class="mi">236</span>
+    <span class="mi">237</span>     <span class="k">try</span><span class="p">:</span>
+<span class="o">--&gt;</span> <span class="mi">238</span>         <span class="n">mergeContents</span> <span class="o">=</span> <span class="n">_compute_merge_results</span><span class="p">(</span><span class="n">a_cont</span><span class="o">=</span><span class="n">aCont</span><span class="p">,</span> <span class="n">m_cont</span><span class="o">=</span><span class="n">mCont</span><span class="p">,</span> <span class="n">d_cont</span><span class="o">=</span><span class="n">dCont</span><span class="p">)</span>
+    <span class="mi">239</span>     <span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">e</span><span class="p">:</span>
+    <span class="mi">240</span>         <span class="n">logger</span><span class="o">.</span><span class="n">error</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">exc_info</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+
+<span class="o">~/</span><span class="n">projects</span><span class="o">/</span><span class="n">tensorwerk</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">hangar</span><span class="o">-</span><span class="n">py</span><span class="o">/</span><span class="n">src</span><span class="o">/</span><span class="n">hangar</span><span class="o">/</span><span class="n">merger</span><span class="o">.</span><span class="n">py</span> <span class="ow">in</span> <span class="n">_compute_merge_results</span><span class="p">(</span><span class="n">a_cont</span><span class="p">,</span> <span class="n">m_cont</span><span class="p">,</span> <span class="n">d_cont</span><span class="p">)</span>
+    <span class="mi">333</span>     <span class="k">if</span> <span class="n">confs</span><span class="p">[</span><span class="s1">&#39;conflict_found&#39;</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="mi">334</span>         <span class="n">msg</span> <span class="o">=</span> <span class="n">f</span><span class="s1">&#39;HANGAR VALUE ERROR:: Merge ABORTED with conflict: </span><span class="si">{confs}</span><span class="s1">&#39;</span>
+<span class="o">--&gt;</span> <span class="mi">335</span>         <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span> <span class="kn">from</span> <span class="nn">None</span>
+    <span class="mi">336</span>
+    <span class="mi">337</span>     <span class="c1"># merging: dataset schemas</span>
+
+
+<span class="ne">ValueError</span><span class="p">:</span> <span class="n">HANGAR</span> <span class="n">VALUE</span> <span class="n">ERROR</span><span class="p">::</span> <span class="n">Merge</span> <span class="n">ABORTED</span> <span class="k">with</span> <span class="n">conflict</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span> <span class="s1">&#39;meta&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span> <span class="s1">&#39;sample&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">)},</span> <span class="s1">&#39;conflict_found&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="alternatively-use-the-diff-methods-on-a-checkout-to-test-for-conflicts">
+<h2>Alternatively, use the diff methods on a checkout to test for conflicts<a class="headerlink" href="#alternatively-use-the-diff-methods-on-a-checkout-to-test-for-conflicts" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">merge_results</span><span class="p">,</span> <span class="n">conflicts_found</span> <span class="o">=</span> <span class="n">co</span><span class="o">.</span><span class="n">diff</span><span class="o">.</span><span class="n">branch</span><span class="p">(</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conflicts_found</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="s1">&#39;dset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">),</span>
+ <span class="s1">&#39;meta&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">True</span><span class="p">),</span>
+ <span class="s1">&#39;sample&#39;</span><span class="p">:</span> <span class="p">{</span><span class="s1">&#39;dummy_dataset&#39;</span><span class="p">:</span> <span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">False</span><span class="p">)},</span>
+ <span class="s1">&#39;conflict_found&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">}</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">conflicts_found</span><span class="p">[</span><span class="s1">&#39;meta&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The type codes for a <code class="docutils literal notranslate"><span class="pre">ConflictRecords</span></code> <code class="docutils literal notranslate"><span class="pre">namedtuple</span></code> such as the one
+we saw:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ConflictRecords</span><span class="p">(</span><span class="n">t1</span><span class="o">=</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,),</span> <span class="n">t21</span><span class="o">=</span><span class="p">(),</span> <span class="n">t22</span><span class="o">=</span><span class="p">(),</span> <span class="n">t3</span><span class="o">=</span><span class="p">(),</span> <span class="n">conflict</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>are as follow:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">t1</span></code>: Addition of key in master AND dev with different values.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t21</span></code>: Removed key in master, mutated value in dev.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t22</span></code>: Removed key in dev, mutated value in master.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">t3</span></code>: Mutated key in both master AND dev to different values.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conflict</span></code>: Bool indicating if any type of conflict is present.</p></li>
+</ul>
+<div class="section" id="to-resolve-remove-the-conflict">
+<h3>To resolve, remove the conflict<a class="headerlink" href="#to-resolve-remove-the-conflict" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">del</span> <span class="n">co</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;hello&#39;</span><span class="p">]</span>
+<span class="n">co</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">&#39;resolved&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;conflict by removing hello key&#39;</span>
+<span class="n">co</span><span class="o">.</span><span class="n">commit</span><span class="p">(</span><span class="s1">&#39;commit which removes conflicting metadata key&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Commit</span> <span class="n">operation</span> <span class="n">requested</span> <span class="k">with</span> <span class="n">message</span><span class="p">:</span> <span class="n">commit</span> <span class="n">which</span> <span class="n">removes</span> <span class="n">conflicting</span> <span class="n">metadata</span> <span class="n">key</span>
+<span class="p">(</span><span class="mi">413</span><span class="p">,</span> <span class="mi">296</span><span class="p">,</span> <span class="mi">413</span><span class="p">)</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+<span class="n">Commit</span> <span class="n">completed</span><span class="o">.</span> <span class="n">Commit</span> <span class="nb">hash</span><span class="p">:</span> <span class="mi">4</span><span class="n">f312b10775c2b0ac51b5f284d2f94e9a8548868</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;4f312b10775c2b0ac51b5f284d2f94e9a8548868&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">co</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="s1">&#39;this merge succeeds as it no longer has a conflict&#39;</span><span class="p">,</span> <span class="n">dev_branch</span><span class="o">=</span><span class="s1">&#39;testbranch&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Selected</span> <span class="mi">3</span><span class="o">-</span><span class="n">Way</span> <span class="n">Merge</span> <span class="n">Strategy</span>
+<span class="p">(</span><span class="mi">465</span><span class="p">,</span> <span class="mi">331</span><span class="p">,</span> <span class="mi">465</span><span class="p">)</span>
+<span class="n">removing</span> <span class="nb">all</span> <span class="n">stage</span> <span class="nb">hash</span> <span class="n">records</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="s1">&#39;3550984bd91afe39d9462f7299c2542e7d45444d&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">repo</span><span class="o">.</span><span class="n">log</span><span class="p">()</span>
+</pre></div>
+</div>
+<pre class="literal-block">*   3550984bd91afe39d9462f7299c2542e7d45444d ([1;31mnew[m) : this merge succeeds as it no longer has a conflict
+[1;31m|[m[1;32m[m
+* [1;32m|[m 4f312b10775c2b0ac51b5f284d2f94e9a8548868 : commit which removes conflicting metadata key
+* [1;32m|[m 5e76faba059c156bc9ed181446e104765cb471c3 : commit on new branch to hello metadata key so we can demonstrate a conflict
+[1;32m|[m * ce8a9198d638b8fd89a175486d21d2bb2efabc91 ([1;31mtestbranch[m) : added hellow world metadata
+[1;32m|[m * 4fdb96afed4ec62e9fc80328abccae6bf6774fea : mutated sample <cite>0</cite> of <cite>dummy_dataset</cite> to new value
+* [1;32m|[m 0cdd8c833f654d18ddc2b089fabee93c32c9c155 : commit on <cite>new</cite> branch adding a sample to dummy_dataset
+[1;32m|[m[1;32m/[m
+* b21ebbeeece723bf7aa2157eb2e8742a043df7d0 : first commit with a single sample added to a dummy dataset</pre>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="design.html" class="btn btn-neutral float-right" title="Hangar Under The Hood" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Hangar-Tutorial-001.html" class="btn btn-neutral float-left" title="Creating A Repository And Working With Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, Richard Izzo
+      <span class="lastupdated">
+        Last updated on May 24, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

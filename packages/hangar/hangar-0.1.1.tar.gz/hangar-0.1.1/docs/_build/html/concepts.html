@@ -1,0 +1,714 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Hangar Core Concepts &mdash; Hangar 0.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Hangar Tutorial" href="tutorial.html" />
+    <link rel="prev" title="Installation" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Hangar
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quickstart.html">Usage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Hangar Core Concepts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-hangar">What Is Hangar?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inspiration">Inspiration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-hangar-thinks-about-data">How Hangar Thinks About Data</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#abstraction-0-what-is-data">Abstraction 0: What is Data?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abstraction-1-what-is-a-dataset">Abstraction 1: What is a Dataset?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abstraction-2-what-makes-up-a-dataset">Abstraction 2: What Makes up a Dataset?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#abstraction-3-what-is-a-repository">Abstraction 3: What is a Repository?</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#implications-of-the-hangar-data-philosophy">Implications of the Hangar Data Philosophy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-domain-specific-file-format-problem">The Domain-Specific File Format Problem</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#human-computational-cost">Human &amp; Computational Cost</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#high-performance-from-simplicity">High Performance From Simplicity</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#open-source-software-style-collaboration-in-dataset-curation">Open Source Software Style Collaboration in Dataset Curation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#specialized-domain-knowledge-is-a-scarce-resource">Specialized Domain Knowledge is A Scarce Resource</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-to-overcome-the-size-problem">How To Overcome The “Size” Problem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-does-it-mean-to-merge-data">What Does it Mean to “Merge” Data?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-s-next">What’s Next?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Hangar Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="design.html">Hangar Under The Hood</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="codeofconduct.html">Contributor Code of Conduct</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Hangar</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Hangar Core Concepts</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/concepts.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast,
+.nboutput.nblast {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast + .nbinput {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="hangar-core-concepts">
+<span id="ref-concepts"></span><h1>Hangar Core Concepts<a class="headerlink" href="#hangar-core-concepts" title="Permalink to this headline">¶</a></h1>
+<p>This document provides a high level overview of the problems hangar is designed
+to solve and introduces the core concepts for beginning to use Hangar.</p>
+<div class="section" id="what-is-hangar">
+<h2>What Is Hangar?<a class="headerlink" href="#what-is-hangar" title="Permalink to this headline">¶</a></h2>
+<p>At it’s core hangar is designed to solve many of the same problems faced by
+traditional code version control system (ie. <code class="docutils literal notranslate"><span class="pre">Git</span></code>), just adapted for
+numerical data:</p>
+<ul class="simple">
+<li><p>Time travel through the historical evolution of a dataset</p></li>
+<li><p>Zero-cost Branching to enable exploratory analysis and collaboration</p></li>
+<li><p>Cheap Merging to build datasets over time (with multiple collaborators)</p></li>
+<li><p>Completely abstracted organization and management of data files on disk</p></li>
+<li><p>Ability to only retrieve a small portion of the data (as needed) while still
+maintaining complete historical record</p></li>
+<li><p>Ability to push and pull changes directly to collaborators or a central server
+(ie a truly distributed version control system)</p></li>
+</ul>
+<p>The ability of version control systems to perform these tasks for codebases is
+largely taken for granted by almost every developer today; However, we are
+in-fact standing on the shoulders of giants, with decades of engineering which
+has resulted in these phenomenally useful tools. Now that a new era of
+“Data-Defined software” is taking hold, we find there is a strong need for
+analogous version control systems which are designed to handle numerical data at
+large scale… Welcome to Hangar!</p>
+</div>
+<div class="section" id="inspiration">
+<h2>Inspiration<a class="headerlink" href="#inspiration" title="Permalink to this headline">¶</a></h2>
+<p>The design of hangar was heavily influenced by the <a class="reference external" href="https://git-scm.org">Git</a>
+source-code version control system. As a Hangar user, many of the fundamental
+building blocks and commands can be thought of as interchangeable:</p>
+<ul class="simple">
+<li><p>checkout</p></li>
+<li><p>commit</p></li>
+<li><p>branch</p></li>
+<li><p>merge</p></li>
+<li><p>diff</p></li>
+<li><p>push</p></li>
+<li><p>pull/fetch</p></li>
+<li><p>log</p></li>
+</ul>
+<p>Emulating the high level the git syntax has allowed us to create a user
+experience which should be familiar in many ways to Hangar users; a goal of the
+project is to enable many of the same VCS workflows developers use for code
+while working with their data!</p>
+<p>There are, however, many fundamental differences in how humans/programs
+interpret and use text in source files vs. numerical data which raise many
+questions Hangar needs to uniquely solve:</p>
+<ul class="simple">
+<li><p>How do we connect some piece of “Data” with a meaning in the real world?</p></li>
+<li><p>How do we diff and merge large collections of data samples?</p></li>
+<li><p>How can we resolve conflicts?</p></li>
+<li><p>How do we make data access (reading and writing) convenient for both
+user-driven exploratory analyses and high performance production systems
+operating without supervision?</p></li>
+<li><p>How can we enable people to work on huge datasets in a local (laptop grade)
+development environment?</p></li>
+</ul>
+<p>We will show how hangar solves these questions in a high-level guide below.
+For a deep dive into the Hangar internals, we invite you to check out the
+<a class="reference internal" href="design.html#ref-hangar-under-the-hood"><span class="std std-ref">Hangar Under The Hood</span></a> page.</p>
+</div>
+<div class="section" id="how-hangar-thinks-about-data">
+<h2>How Hangar Thinks About Data<a class="headerlink" href="#how-hangar-thinks-about-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="abstraction-0-what-is-data">
+<h3>Abstraction 0: What is Data?<a class="headerlink" href="#abstraction-0-what-is-data" title="Permalink to this headline">¶</a></h3>
+<p>From this point forward, <strong>when we talk about “Data” we are actually talking
+about n-dimensional arrays of numeric information. To Hangar, “Data” is just a
+collection of numbers being passed into and out of it.</strong> Data does not have a
+file type, it does not have a file-extension, it does not mean anything to
+Hangar itself - it is just numbers. This theory of “Data” is nearly as simple as
+it gets, and this simplicity is what enables us to be unconstrained as we build
+abstractions and utilities to operate on it.</p>
+</div>
+<div class="section" id="abstraction-1-what-is-a-dataset">
+<h3>Abstraction 1: What is a Dataset?<a class="headerlink" href="#abstraction-1-what-is-a-dataset" title="Permalink to this headline">¶</a></h3>
+<p>Let’s get philosophical and talk about what a “Dataset” is. The word “Dataset”
+invokes some some meaning to humans; A dataset may a canonical name (like
+“MNIST” or “CoCo”), it will have a source where it comes from, (ideally) it has a
+purpose for some real-world task, it will have people who build, aggregate, and
+nurture it, and most importantly a Dataset always contains pieces of some type
+of information type which describes “something”.</p>
+<p>It’s an abstract definition, but it is only us, the humans behind the machine, which
+associate “Data” with some meaning in the real world; it is in the same vein
+which we associate a group of Data in a “Dataset” with some real world meaning.</p>
+<p>Our first abstraction is therefore the “Dataset”: a grouping of some similar Data
+pieces. To define a “Dataset” in Hangar, we need only provide:</p>
+<ul class="simple">
+<li><p>a name</p></li>
+<li><p>a type</p></li>
+<li><p>a shape</p></li>
+</ul>
+</div>
+<div class="section" id="abstraction-2-what-makes-up-a-dataset">
+<h3>Abstraction 2: What Makes up a Dataset?<a class="headerlink" href="#abstraction-2-what-makes-up-a-dataset" title="Permalink to this headline">¶</a></h3>
+<p>The individual pieces of information (“Data”) which are grouped together in a
+“Dataset” are called “Samples” in the Hangar vernacular. According to the
+specification set by our definition of a Dataset, all samples must be numeric
+arrays with each having:</p>
+<ol class="arabic simple">
+<li><p>Same data type (standard <code class="docutils literal notranslate"><span class="pre">Numpy</span></code> data types are supported).</p></li>
+<li><p>A shape with each dimension size &lt;= the shape (<code class="docutils literal notranslate"><span class="pre">max</span> <span class="pre">shape</span></code>) set in the
+dataset specification (more on this later).</p></li>
+</ol>
+<p>Additionally, samples in a dataset can either be named, or unnamed (depending on
+how you interpret what the information contained in the Dataset actually
+represents).</p>
+<p>Effective use of Hangar relies on having an understanding of what exactly a
+“Sample” is in a particular Dataset. The most effective way to find out is to
+ask: “What is the smallest piece of data which has a useful meaning to ‘me’ (or
+‘my’ downstream processes”. In the MNIST dataset, this would be a single digit
+image (a 28x28 array); for a medical dataset it might be an entire (512x320x320)
+MRI volume scan for a particular patient; while for the NASDAQ Stock Ticker it
+might be an hours worth of price data points (or less, or more!) The point is
+that when you think about what a sample is, it should typically be the smallest
+atomic unit of useful information.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The technical crowd among the readers should note:</p>
+<ul class="simple">
+<li><p>Hangar preserves all sample data bit-exactally.</p></li>
+<li><p>Dense arrays are fully supported, Sparse array support is currently
+under development and will be released soon.</p></li>
+<li><p>Integrity checks are built in by default (explained in more detail in
+<a class="reference internal" href="design.html#ref-hangar-under-the-hood"><span class="std std-ref">Hangar Under The Hood</span></a>.) using cryptographically secure
+algorithms.</p></li>
+<li><p>Hangar is very much a young project, until pennetration tests and
+security reviews are performed, we will refrain from stating that hangar
+is fully “cryptographically secure”. Security experts are welcome to
+contact us privately at <a class="reference external" href="mailto:hangar&#46;info&#37;&#52;&#48;tensorwerk&#46;com">hangar<span>&#46;</span>info<span>&#64;</span>tensorwerk<span>&#46;</span>com</a> to disclose any security issues.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="abstraction-3-what-is-a-repository">
+<h3>Abstraction 3: What is a Repository?<a class="headerlink" href="#abstraction-3-what-is-a-repository" title="Permalink to this headline">¶</a></h3>
+<p>A “Repository” consists of an historically ordered mapping of “Commits” over
+time by various “Committers” across any number of “Branches”. Though there are
+many conceptual similarities in what a Git repo and a Hangar Repository achieve,
+Hangar is designed with the express purpose of dealing with numeric data. As
+such, when you read/write to/from a Repository, the main way of interaction with
+information will be through (an arbitrary number of) Datasets in each Commit. A
+simple key/value store is also included to store metadata, but as it is a minor
+point is will largely be ignored for the rest of this post.</p>
+<p>History exists at the Repository level, Information exists at the Commit level.</p>
+</div>
+</div>
+<div class="section" id="implications-of-the-hangar-data-philosophy">
+<h2>Implications of the Hangar Data Philosophy<a class="headerlink" href="#implications-of-the-hangar-data-philosophy" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-domain-specific-file-format-problem">
+<h3>The Domain-Specific File Format Problem<a class="headerlink" href="#the-domain-specific-file-format-problem" title="Permalink to this headline">¶</a></h3>
+<p>Though it may first seem counterintuitive at first, there is an incredible
+amount of freedom (and power) that is gained when “you” (the user) start to
+decouple some information container from the data which it actually holds. At
+the end of the day, the algorithms and systems you use to produce insight from
+data are just mathematical operations; math does not operate on a specific file
+type, math operates on numbers.</p>
+<div class="section" id="human-computational-cost">
+<h4>Human &amp; Computational Cost<a class="headerlink" href="#human-computational-cost" title="Permalink to this headline">¶</a></h4>
+<p>It seems strange that organizations &amp; projects commonly rely on storing data on
+disk in some domain-specific - or custom built - binary format (ie. a <code class="docutils literal notranslate"><span class="pre">.jpg</span></code>
+image, <code class="docutils literal notranslate"><span class="pre">.nii</span></code> neuroimaging informatics study, <code class="docutils literal notranslate"><span class="pre">.cvs</span></code> tabular data, etc.), and
+just deal with the hassle of maintaining all the infrastructure around reading,
+writing, transforming, and preprocessing these files into useable numerical data
+every time they want to interact with their Datasets. Even disregarding the
+computational cost/overhead of preprocessing &amp; transforming the data on every
+read/write, these schemes require significant amounts of human capital
+(developer time) to be spent on building, testing, and upkeep/maintenance; all
+while adding significant complexity for users. Oh, and they also have a strangely
+high inclination to degenerate into horrible complexity which essentially becomes
+“magic” after the original creators move on.</p>
+<p>The Hangar system is quite different in this regards. First, <strong>we trust that you
+know what your data is and what it should be best represented as</strong>. When writing
+to a Hangar repository, you process the data into n-dimensional arrays once.
+Then when you retrieve it you are provided with the same array, in the same
+shape and datatype (unless you ask for a particular subarray-slice), already
+initialized in memory and ready to compute on instantly.</p>
+</div>
+<div class="section" id="high-performance-from-simplicity">
+<h4>High Performance From Simplicity<a class="headerlink" href="#high-performance-from-simplicity" title="Permalink to this headline">¶</a></h4>
+<p>Because Hangar is designed to deal (almost exclusively) with numerical arrays,
+we are able to “stand on the shoulders of giants” once again by utilizing many
+of the well validated, highly optimized, and community validated numerical array
+data management utilities developed by the High Performance Computing community
+over the past few decades.</p>
+<p>In a sense, the backend of Hangar serves two functions:</p>
+<ol class="arabic simple">
+<li><p>Bookkeeping: recording information about about datasets, samples, commits, etc.</p></li>
+<li><p>Data Storage: highly optimized interfaces which store and retrieve data from
+from disk through its backend utility.</p></li>
+</ol>
+<p>The details are explained much more thoroughly in <a class="reference internal" href="design.html#ref-hangar-under-the-hood"><span class="std std-ref">Hangar Under The Hood</span></a>.</p>
+<p>Because Hangar only considers data to be numbers, the choice of backend to store
+data is (in a sense) completely arbitrary so long as <code class="docutils literal notranslate"><span class="pre">Data</span> <span class="pre">In</span> <span class="pre">==</span> <span class="pre">Data</span> <span class="pre">Out</span></code>.
+<strong>This fact has massive implications for the system</strong>; instead of being tied to
+a single backend (each of which will have significant performance tradeoffs for
+arrays of particular datatypes, shapes, and access patterns), we simultaneously
+store different data pieces in the backend which is most suited to it. A great
+deal of care has been taken to optimize parameters in the backend interface
+which affects performance and compression of data samples.</p>
+<p>The choice of backend to store a piece of data is selected automatically from
+heuristics based on the dataset specification, system details, and context of
+the storage service internal to Hangar. <strong>As a user, this is completely
+transparent to you</strong> in all steps of interacting with the repository. It does
+not require (or even accept) user specified configuration.</p>
+<p>At the time of writing, Hangar has the following backends implemented (with
+plans to potentially support more as needs arise):</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.hdfgroup.org/solutions/hdf5/">HDF5</a></p></li>
+<li><p><a class="reference external" href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.memmap.html">Memmapped Arrays</a></p></li>
+<li><p><a class="reference external" href="https://tiledb.io/">TileDb</a> (in development)</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="open-source-software-style-collaboration-in-dataset-curation">
+<h3>Open Source Software Style Collaboration in Dataset Curation<a class="headerlink" href="#open-source-software-style-collaboration-in-dataset-curation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="specialized-domain-knowledge-is-a-scarce-resource">
+<h4>Specialized Domain Knowledge is A Scarce Resource<a class="headerlink" href="#specialized-domain-knowledge-is-a-scarce-resource" title="Permalink to this headline">¶</a></h4>
+<p>A common side effect of the <a class="reference internal" href="#the-domain-specific-file-format-problem">The Domain-Specific File Format Problem</a> is that
+anyone who wants to work with an organization’s/project’s data needs to not only
+have some domain expertise (so they can do useful things with the data), but
+they also need to have a non-trivial understanding of the projects dataset, file
+format, and access conventions / transformation pipelines. <em>In a world where
+highly specialized talent is already scarce, this phenomenon shrinks the pool of
+available collaborators dramatically.</em></p>
+<p>Given this situation, it’s understandable why when most organizations spend
+massive amounts of money and time to build a team, collect &amp; annotate data, and
+build an infrastructure around that information, they hold it for their private
+use with little regards for how the world could use it together. Businesses
+rely on proprietary information to stay ahead of their competitors, and because
+this information is so difficult (and expensive) to generate, it’s completely
+reasonable that they should be the ones to benefit from all that work.</p>
+<blockquote>
+<div><p><strong>A Thought Experiment</strong></p>
+<p>Imagine that <code class="docutils literal notranslate"><span class="pre">Git</span></code> and <code class="docutils literal notranslate"><span class="pre">GitHub</span></code> didn’t take over the world. Imagine that the
+<code class="docutils literal notranslate"><span class="pre">Diff</span></code> and <code class="docutils literal notranslate"><span class="pre">Patch</span></code> Unix tools never existed. Instead, imagine we were to live in
+a world where every software project had very different version control systems
+(largely homeade by non VCS experts, &amp; not validated by a community over many
+years of use). Even worse, most of these tools don’t allow users to easily
+branch, make changes, and automatically merge them back. It shouldn’t be
+difficult to imagine how dramatically such a world would contrast to ours today.
+Open source software as we know it would hardly exist, and any efforts would
+probably be massively fragmented across the web (if there would even be a ‘web’
+that we would recognize in this strange world).</p>
+<p>Without a way to collaborate in the open, open source software would largely not
+exist, and we would all be worse off for it.</p>
+<p>Doesn’t this hypothetical sound quite a bit like the state of open source data
+collaboration in todays world?</p>
+</div></blockquote>
+<p>The impetus for developing a tool like Hangar is the belief that if it is
+simple for anyone with domain knowledge to collaboratively curate datasets
+containing information they care about, then they will.* Open source software
+development benefits everyone, we believe open source dataset curation can do
+the same.</p>
+</div>
+<div class="section" id="how-to-overcome-the-size-problem">
+<h4>How To Overcome The “Size” Problem<a class="headerlink" href="#how-to-overcome-the-size-problem" title="Permalink to this headline">¶</a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The features described in this section are in active development for a
+future release. This is an exciting feature which we hope to do much more
+with; Time is our main constraint right now. Hangar is a young project, and
+is rapidly evolving. Current progress can be tracked in the <a class="reference external" href="https://github.com/tensorwerk/hangar-py">GitHub
+Repository</a></p>
+</div>
+<p>Even if the greatest tool imaginable existed to version, branch, and merge
+datasets, it would face one massive problem which if it didn’t solve would kill
+the project: <em>The size of data can very easily exceeds what can fit on (most)
+contributors laptops or personal workstations</em>. This section explains how Hangar
+can handle working with datasets which are prohibitively large to download or
+store on a single machine.</p>
+<p>As mentioned in <a class="reference internal" href="#high-performance-from-simplicity">High Performance From Simplicity</a>, under the hood Hangar deals
+with “Data” and “Bookkeeping” completely separately. We’ve previously covered what
+exactly we mean by Data in <a class="reference internal" href="#how-hangar-thinks-about-data">How Hangar Thinks About Data</a>, so we’ll briefly
+cover the second major component of Hangar here. In short “Bookkeeping” describes
+everything about the repository. By everything, we do mean that the Bookkeeping
+records describe everything: all commits, parents, branches, datasets, samples,
+data descriptors, schemas, commit message, etc. Though complete, these records
+are fairly small (tens of MB in size for decently sized repositories with decent
+history), and are highly compressed for fast transfer between a Hangar
+client/server.</p>
+<blockquote>
+<div><p><strong>A brief technical interlude</strong></p>
+<p>There is one very important (and rather complex) property which gives Hangar
+Bookeeping massive power: <strong>Existence of some data piece is always known to
+Hangar and stored immutably once committed. However, the access patern, backend,
+and locating information for this data piece may (and over time, will) be unique
+in every hangar repository instance</strong>.</p>
+<p>Though the details of how this works is well beyond the scope of this document,
+the following example may provide some insight into the implications of this
+property:</p>
+<blockquote>
+<div><p>If you <code class="docutils literal notranslate"><span class="pre">clone</span></code> some hangar repository, Bookeeping says that “some
+number of data pieces exist” and they should retrieved from the server.
+However, the bookeeping records transfered in a <code class="docutils literal notranslate"><span class="pre">fetch</span></code> / <code class="docutils literal notranslate"><span class="pre">push</span></code> /
+<code class="docutils literal notranslate"><span class="pre">clone</span></code> operation do not include information about where that piece of
+data existed on the client (or server) computer. Two synced repositories
+can use completly different backends to store the data, in completly
+different locations, and it does not matter - Hangar only guarrentees
+that when collaborators ask for a data sample in some checkout, that
+they will be provided with identical arrays, not that they will come
+from the same place or be stored in the same way. Only when data is
+actually retrieved is the “locating information” set for that repository
+instance.</p>
+</div></blockquote>
+</div></blockquote>
+<p>Because Hangar makes no assumptions about how/where it should retrieve some
+piece of data, or even an assumption that it exists on the local machine, and
+because records are small and completely describe history, once a machine has the
+Bookkeeping, it can decide what data it actually wants to materialize on it’s
+local disk! These <code class="docutils literal notranslate"><span class="pre">partial</span> <span class="pre">fetch</span></code> / <code class="docutils literal notranslate"><span class="pre">partial</span> <span class="pre">clone</span></code> operations can
+materialize any desired data, whether it be for a few records at the head
+branch, for all data in a commit, or for the entire historical data. A future
+release will even include the ability to stream data directly to a hangar
+checkout and materialize the data in memory without having to save it to disk at
+all!</p>
+<p>More importantly: <strong>Since Bookkeeping describes all history, merging can be
+performed between branches which may contain partial (or even no) actual data</strong>.
+Aka. You don’t need data on disk to merge changes into it. It’s an odd concept
+which will be explained more in depth in the future.</p>
+</div>
+<div class="section" id="what-does-it-mean-to-merge-data">
+<h4>What Does it Mean to “Merge” Data?<a class="headerlink" href="#what-does-it-mean-to-merge-data" title="Permalink to this headline">¶</a></h4>
+<p>We’ll start this section, once again, with a comparison to source code version
+control systems. When dealing with source code text, merging is performed in
+order to take a set of changes made to a document, and logically insert the
+changes into some other version of the document. The goal is to generate a new
+version of the document with all changes made to it in a fashion which conforms
+to the “change author’s” intentions. Simply put: the new version is valid and
+what is expected by the authors.</p>
+<p>This concept of what it means to merge text does not generally map well to
+changes made in a dataset we’ll explore why through this section, but look back
+to the philosophy of Data outlined in <a class="reference internal" href="#how-hangar-thinks-about-data">How Hangar Thinks About Data</a> for
+inspiration as we begin. Remember, in the Hangar design a Sample is the smallest
+array which contains useful information. As any smaller selection of the sample
+array is meaningless, Hangar does not support subarray-slicing or per-index
+updates <em>when writing</em> data. (subarray-slice queries are permitted for read
+operations, though regular use is discouraged and may indicate that your samples
+are larger than they should be).</p>
+<div class="section" id="diffing-hangar-checkouts">
+<h5>Diffing Hangar Checkouts<a class="headerlink" href="#diffing-hangar-checkouts" title="Permalink to this headline">¶</a></h5>
+<p>To understand merge logic, we first need to understand diffing, and the actors
+operations which can occur.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Addition</dt>
+<dd class="field-odd"><p>An operation which creates a dataset, sample, or some metadata which
+did not previously exist in the relevant branch history.</p>
+</dd>
+<dt class="field-even">Removal</dt>
+<dd class="field-even"><p>An operation which removes some dataset, a sample, or some metadata which
+existed in the parent of the commit under consideration. (Note: removing a
+dataset also removes all samples contained in it)</p>
+</dd>
+<dt class="field-odd">Mutation</dt>
+<dd class="field-odd"><p>An operation which sets: data to a sample, the value of some metadata key,
+or a dataset schema, to a different value than what it had previously been
+created with (Note: a dataset schema mutation is observed when a dataset is
+removed, and a new dataset with the same name is created with a different
+dtype/shape, all in the same commit)</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="merging-changes">
+<h5>Merging Changes<a class="headerlink" href="#merging-changes" title="Permalink to this headline">¶</a></h5>
+<p>Merging diffs solely consisting of additions and removals between branches is
+trivial, and performs exactly as one would expect from a text diff. Where
+things diverge from text is when we consider how we will merge diffs containing
+mutations.</p>
+<p>Say we have some sample in commit A, a branch is created, the sample is updated,
+and commit C is created. At the same time, someone else checks out branch whose
+HEAD is at commit A, and commits a change to the sample as well. If these
+changes are identical, they are compatible, but what if they are not? In the
+following example, we diff and merge each element of the sample array like we
+would text:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>                                               Merge ??
+  commit A          commit B            Does combining mean anything?
+
+[[0, 1, 2],        [[0, 1, 2],               [[1, 1, 1],
+ [0, 1, 2], -----&gt;  [2, 2, 2], ------------&gt;  [2, 2, 2],
+ [0, 1, 2]]         [3, 3, 3]]      /         [3, 3, 3]]
+      \                            /
+       \            commit C      /
+        \                        /
+         \          [[1, 1, 1], /
+          -------&gt;   [0, 1, 2],
+                     [0, 1, 2]]
+</pre></div>
+</div>
+<p>We see that a result can be generated, and can agree if this was a piece of
+text, the result would be correct. Don’t be fooled, this is an abomination and
+utterly wrong/meaningless. Remember we said earlier <code class="docutils literal notranslate"><span class="pre">&quot;the</span> <span class="pre">result</span> <span class="pre">of</span> <span class="pre">a</span> <span class="pre">merge</span>
+<span class="pre">should</span> <span class="pre">conform</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">intentions</span> <span class="pre">of</span> <span class="pre">each</span> <span class="pre">author&quot;</span></code>. This merge result conforms to
+neither author’s intention. The value of an array element is not isolated, every
+value affects how the entire sample is understood. The values at Commit B or
+commit C may be fine on their own, but if two samples are mutated independently
+with non-identical updates, it is a conflict that needs to be handled by the
+authors.</p>
+<p>This is the actual behavior of Hangar.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">commit</span> <span class="n">A</span>          <span class="n">commit</span> <span class="n">B</span>
+
+<span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>        <span class="p">[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+ <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="o">-----&gt;</span>  <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="o">-----</span> <span class="n">MERGE</span> <span class="n">CONFLICT</span>
+ <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>         <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]]</span>      <span class="o">/</span>
+      \                            <span class="o">/</span>
+       \            <span class="n">commit</span> <span class="n">C</span>      <span class="o">/</span>
+        \                        <span class="o">/</span>
+         \          <span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="o">/</span>
+          <span class="o">-------&gt;</span>   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+                     <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]]</span>
+</pre></div>
+</div>
+<p>When a conflict is detected, the merge author must either pick a sample from one
+of the commits or make changes in one of the branches such that the conflicting
+sample values are resolved.</p>
+</div>
+<div class="section" id="how-are-conflicts-detected">
+<h5>How Are Conflicts Detected?<a class="headerlink" href="#how-are-conflicts-detected" title="Permalink to this headline">¶</a></h5>
+<p>Any merge conflicts can be identified and addressed ahead of running a <code class="docutils literal notranslate"><span class="pre">merge</span></code>
+command by using the built in <code class="docutils literal notranslate"><span class="pre">diff</span></code> tools. When diffing commits, Hangar will
+provide a list of conflicts which it identifies. In general these fall into 4
+catagories:</p>
+<ol class="arabic simple">
+<li><p><strong>Additions</strong> in both branches which created new keys (samples / datasets /
+metadata) with non-compatible values. For samples &amp; metadata, the hash of the
+data is compared, for datasets, the schema specification is checked for
+compatibility in a method custom to the internal workings of Hangar.</p></li>
+<li><p><strong>Removal</strong> in <code class="docutils literal notranslate"><span class="pre">Master</span> <span class="pre">Commit/Branch</span></code> <strong>&amp; Mutation</strong> in <code class="docutils literal notranslate"><span class="pre">Dev</span> <span class="pre">Commit/Branch</span></code>.
+Applies for samples, datasets, and metadata identically.</p></li>
+<li><p><strong>Mutation</strong> in <code class="docutils literal notranslate"><span class="pre">Dev</span> <span class="pre">Commit/Branch</span></code> <strong>&amp; Removal</strong> in <code class="docutils literal notranslate"><span class="pre">Master</span> <span class="pre">Commit/Branch</span></code>.
+Applies for samples, datasets, and metadata identically.</p></li>
+<li><p><strong>Mutations</strong> on keys both branches to non-compatible values. For samples &amp;
+metadata, the hash of the data is compared, for datasets, the schema
+specification is checked for compatibility in a method custom to the internal
+workings of Hangar.</p></li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="what-s-next">
+<h2>What’s Next?<a class="headerlink" href="#what-s-next" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Get started using Hangar today: <a class="reference internal" href="installation.html#ref-installation"><span class="std std-ref">Installation</span></a>.</p></li>
+<li><p>Read the tutorials: <a class="reference internal" href="tutorial.html#ref-tutorial"><span class="std std-ref">Hangar Tutorial</span></a>.</p></li>
+<li><p>Dive into the details: <a class="reference internal" href="design.html#ref-hangar-under-the-hood"><span class="std std-ref">Hangar Under The Hood</span></a>.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="tutorial.html" class="btn btn-neutral float-right" title="Hangar Tutorial" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019-2020, Richard Izzo
+      <span class="lastupdated">
+        Last updated on May 24, 2019.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
