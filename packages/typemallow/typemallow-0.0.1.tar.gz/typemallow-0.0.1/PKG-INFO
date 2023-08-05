@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: typemallow
+Version: 0.0.1
+Summary: An elegant and automatic solution for generating/outputting Typescript interfaces from your Marshmallow Schemas.
+Home-page: https://github.com/aher93/typemallow
+Author: Aden Herold
+Author-email: aden.herold1@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Marshmallow,Typescript,Python,Flask,Django
+Platform: any
