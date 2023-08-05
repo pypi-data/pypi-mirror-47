@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: tone
+Version: 0.0.1
+Summary: Deal with tone
+Home-page: https://github.com/StevenKangWei/tone
+Author: StevenKang
+Author-email: kangweibaby@163.com
+License: MIT
+Description: tone project
+        ``````````````
+        
+        Deal with tone
+        
+        Links
+        `````
+        Github https://github.com/StevenKangWei/tone
+Platform: any
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
