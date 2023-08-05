@@ -1,0 +1,3 @@
+[console_scripts]
+dask-gateway-server = dask_gateway_server.app:main
+
