@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: rpi-automator
+Version: 0.0.4
+Summary: Raspberry Pi automation tool
+Home-page: https://github.com/raviles/rpi_automator
+Author: Ryan Aviles
+Author-email: ryan.aviles@gmail.com
+License: UNKNOWN
+Description: rpi_automator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Other OS
