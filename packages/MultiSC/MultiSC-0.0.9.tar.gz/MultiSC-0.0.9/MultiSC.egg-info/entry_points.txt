@@ -1,0 +1,3 @@
+[console_scripts]
+get_config = MultiSC.get_config:main
+
