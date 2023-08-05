@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: cubeinspect
+Version: 0.1.0
+Summary: View slices of FITS cubes.
+Home-page: https://github.com/alecthomson/cubeinspect
+Author: Alec Thomson
+Author-email: alec.thomson@anu.edu.au
+License: BSD 3-clause "New" or "Revised License"
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: astropy
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+
+
+# cubeinspect
+
+
