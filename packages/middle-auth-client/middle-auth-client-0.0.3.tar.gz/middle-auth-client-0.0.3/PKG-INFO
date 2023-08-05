@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: middle-auth-client
+Version: 0.0.3
+Summary: tools for helping web services and users interact with the middle-auth-service via flask and python
+Home-page: https://github.com/seung-lab/middle-auth-client
+Author: Chris Jordan
+Author-email: chris@eyewire.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
