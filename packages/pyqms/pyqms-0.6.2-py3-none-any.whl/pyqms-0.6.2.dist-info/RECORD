@@ -1,0 +1,15 @@
+pyqms/__init__.py,sha256=QeTa2PH7jC0Mq7Itd7b_Iu2qwGxGZ_XjlfwEGKY0KRQ,1101
+pyqms/adaptors.py,sha256=QCUTu5tLiqvyuLJ_RZ2GlUx_0KSXAI5wDKhCEvuj7Yw,21406
+pyqms/chemical_composition.py,sha256=ZNIgsiDhMuRDc33SUGmRaLDCrfcnj-EvkrLX-dXTbkg,18854
+pyqms/isotopologue_library.py,sha256=ZViEfCMH4YMUKyZyELVmnDrDodp6pi0ZoW61rXbUBWI,111052
+pyqms/knowledge_base.py,sha256=Y9XfkMldcJxkhZCEBpBAKES775kA03xjGUucdv9YLfI,10788
+pyqms/params.py,sha256=7sF74S9r8-gHGM4muboO5YLAQZlrIOaTbRpf7A4rDuc,9757
+pyqms/results.py,sha256=nsgLcrznMqaOuk07WkJPSPI4QPk797osUWfA3bniq_I,81775
+pyqms/unimod_mapper.py,sha256=RLZ0leG5QBPKA-PZF9HKOBhz3wFHZzh-ybKPpfK9EyY,15721
+pyqms/version.txt,sha256=pGbvIJ9cOu5f8McC4unVzO1Hg9KmVeirZjMPIaVVez8,6
+pyqms/kb/ext/unimod.xml,sha256=owCtc_jFTckj45HsLGRbaD0MzUJ5Ug7vaZ3mrU30oIM,1281190
+pyqms-0.6.2.dist-info/LICENSE,sha256=dGCN7ocSbcQg7Z_A5b88oW21b8uYCu_rqiBeOvdbTng,1073
+pyqms-0.6.2.dist-info/METADATA,sha256=w6xf-JzTuJkfssSFcwKr4qIq3ZqgAfsZ8OICYYQOAEw,1514
+pyqms-0.6.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyqms-0.6.2.dist-info/top_level.txt,sha256=JmApZKOz4mYXFZcYXQmK1olLuhiDbirFEpo-EZK3mqE,6
+pyqms-0.6.2.dist-info/RECORD,,
