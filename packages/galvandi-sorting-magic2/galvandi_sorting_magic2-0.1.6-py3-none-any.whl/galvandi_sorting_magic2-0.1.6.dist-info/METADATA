@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: galvandi-sorting-magic2
+Version: 0.1.6
+Summary: Just some magic
+Home-page: http://github.com/galvandi
+Author: galvandi
+Author-email: galvandi@derp.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+galvandi_sorting_magic
+-----------------------
+
+Choose from 4 different sorts:
+>> galvandi_sorting_magic.bubble_sort(list)
+>> galvandi_sorting_magic.selection_sort(list)
+>> galvandi_sorting_magic.insertion_sort(list)
+>> galvandi_sorting_magic.quick_sort(list)
+
