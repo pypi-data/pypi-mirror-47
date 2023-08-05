@@ -1,0 +1,14 @@
+{
+    "model_subject":"[NOTIPY ME] {task_name} completed!",
+    "model_title":"Task completed!",
+    "model_subtitle":"Your task {task_name} has completed!",
+    "the_wheres":[
+        "The task was on {hostname}.",
+        "The user was {username}.",
+        "The path was {pwd}."
+    ],
+    "the_whens":[
+        "The task completed on {now}.",
+        "It started {elapsed} ago."
+    ]
+}
