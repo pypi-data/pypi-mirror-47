@@ -1,0 +1,8 @@
+setup.py
+sqlalchemy-model/__init__.py
+sqlalchemy-model/sqlalchemy_model.py
+sqlalchemy_model.egg-info/PKG-INFO
+sqlalchemy_model.egg-info/SOURCES.txt
+sqlalchemy_model.egg-info/dependency_links.txt
+sqlalchemy_model.egg-info/requires.txt
+sqlalchemy_model.egg-info/top_level.txt

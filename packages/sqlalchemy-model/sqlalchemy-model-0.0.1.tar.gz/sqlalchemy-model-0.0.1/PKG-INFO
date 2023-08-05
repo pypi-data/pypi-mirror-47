@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: sqlalchemy-model
+Version: 0.0.1
+Summary: sqlalchemy data to dict model
+Home-page: https://github.com/yuebanwanwan/sqlalchemy-model
+Author: zhouzhaoping
+Author-email: zzp19940812@sina.com
+License: MIT Licence
+Description: sqlalchemy data to dict model
+Keywords: pip,sqlalchemy-model,featureextraction
+Platform: any
