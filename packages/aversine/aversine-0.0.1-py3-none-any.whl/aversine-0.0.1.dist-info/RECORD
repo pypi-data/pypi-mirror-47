@@ -1,0 +1,9 @@
+haversine/__init__.py,sha256=P9oQ_b11Ti9-WdLE9h7eW4pV6M7ZNBsq79OEWYhBeWI,24
+haversine/haversine.py,sha256=s7wT_4OkRkcYEIS82CmmycW_pA8ogd23j-yR70vDmOs,1717
+tests/__init__.py,sha256=LthkgsU6n3pq8UqNYQ-AeX_h1YV6bu1nEhHZ97rNtyc,29
+tests/test_haversine.py,sha256=rNmE9MF8zkbpdWP3VR6SDFNtr5GlvCGovAl6IrUchko,910
+aversine-0.0.1.dist-info/LICENSE,sha256=UEpX8ZtvIw63au-QKMdJNQdgLmPSyVhbHovLFSrP-hk,1072
+aversine-0.0.1.dist-info/METADATA,sha256=dRUvQVYokRxDjVmfXEz2-FDWIHvzeLV33UccIbk55Bs,1121
+aversine-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aversine-0.0.1.dist-info/top_level.txt,sha256=JX_pUU8KqHzK9d4hR4jNxiuMFHA-Ve1GLF33H8o9gvI,16
+aversine-0.0.1.dist-info/RECORD,,
