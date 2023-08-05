@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Test</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/main.css' %}" />
+</head>
+
+<body>
+  <section id="main-container" class="container-fluid">
+    <section id="main-row" class="row">
+      <nav id="left-nav" class="col-4 col-md-3 col-lg-2">
+        <h3 id="nav-header">Sign-in / My Account</h3>
+        <ul class="nav flex-column" style="margin-top: 20px;">
+          <li class="nav-item mb-0">
+            <a class="nav-link"><h4>Courses</h4></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#cs415-dropdown" role="button" aria-expanded="false" aria-controls="cs415-dropdown">
+              CS415
+            </a>
+            <div id="cs415-dropdown" class="course-menu collapse">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">TAs</a>
+              <a class="dropdown-item" href="#">Students</a>
+              <a class="dropdown-item" href="#">Assignments</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#cs416-dropdown" role="button" aria-expanded="false" aria-controls="cs416-dropdown">
+              CS416
+            </a>
+            <div id="cs416-dropdown" class="course-menu collapse">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">TAs</a>
+              <a class="dropdown-item" href="#">Students</a>
+              <a class="dropdown-item" href="#">Assignments</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#cs417-dropdown" role="button" aria-expanded="false" aria-controls="cs417-dropdown">
+              CS416
+            </a>
+            <div id="cs417-dropdown" class="course-menu collapse">
+              <a class="dropdown-item" href="#">Overview</a>
+              <a class="dropdown-item" href="#">TAs</a>
+              <a class="dropdown-item" href="#">Students</a>
+              <a class="dropdown-item" href="#">Assignments</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <main id="content" class="col-8 col-md-9 col-lg-10">
+        <section id="content-header" class="row align-items-end">
+          <header class="col-12">
+            Content header
+          </header>
+        </section>
+        <section class="module-container container-fluid p-5">
+          <section class="module-row row justify-content-around">
+            <article class="module-wrapper mb-4 col-12 col-xl-6">
+              <div class="module">
+                <header>
+                  Courses
+                </header>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">group id</th>
+                        <th scope="col">project id</th>
+                        <th scope="col">semester</th>
+                        <th scope="col">project settings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>cs416</td>
+                        <td class="text-center">5</td>
+                        <td class="text-center">3</td>
+                        <td>S2019</td>
+                        <td><a href="#">30 40 private</a></td>
+                      </tr>
+                      <tr>
+                        <td>cs415</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">9</td>
+                        <td>S2019</td>
+                        <td><a href="#">30 40 private</a></td>
+                      </tr>
+                      <tr>
+                        <td>cs417</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">4</td>
+                        <td>S2019</td>
+                        <td><a href="#">40 40 private</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer>
+                  <a href="#">More...</a>
+                </footer>
+              </div>
+            </article>
+            <article class="module-wrapper mb-4 col-12 col-xl-6">
+              <div class="module">
+                <header>
+                  Students
+                </header>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer>
+                  <a href="#">More...</a>
+                </footer>
+              </div>
+            </article>
+            <article class="module-wrapper mb-4 col-12 col-xl-6">
+              <div class="module">
+                <header>
+                  Assignments
+                </header>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">name</th>
+                        <th scope="col">group id</th>
+                        <th scope="col">project id</th>
+                        <th scope="col">semester</th>
+                        <th scope="col">project settings</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>cs416</td>
+                        <td class="text-center">5</td>
+                        <td class="text-center">3</td>
+                        <td>S2019</td>
+                        <td><a href="#">30 40 private</a></td>
+                      </tr>
+                      <tr>
+                        <td>cs415</td>
+                        <td class="text-center">7</td>
+                        <td class="text-center">9</td>
+                        <td>S2019</td>
+                        <td><a href="#">30 40 private</a></td>
+                      </tr>
+                      <tr>
+                        <td>cs417</td>
+                        <td class="text-center">6</td>
+                        <td class="text-center">4</td>
+                        <td>S2019</td>
+                        <td><a href="#">40 40 private</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer>
+                  <a href="#">More...</a>
+                </footer>
+              </div>
+            </article>
+            <article class="module-wrapper mb-4 col-12 col-xl-6">
+              <div class="module">
+                <header>
+                  TAs
+                </header>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <footer>
+                  <a href="#">More...</a>
+                </footer>
+              </div>
+            </article>
+          </section>
+        </section>
+      </main>
+    </section>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+</body>
+
+</html>
