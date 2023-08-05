@@ -1,0 +1,22 @@
+%load_ext autoreload
+
+import os
+import sys
+import importlib
+here = os.path.dirname(__file__)
+
+
+sys.path.insert(1,os.path.abspath(
+        os.path.join(os.path.expanduser('~'),'.venv','{{ cookiecutter.name }}')
+        ))
+
+sys.path.insert(1,os.path.abspath(
+        os.path.join(here,'..','..','..','project')
+        ))
+
+
+
+import {{ cookiecutter.name }}
+
+
+%autoreload 2
