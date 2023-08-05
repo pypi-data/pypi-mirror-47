@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: walterize
+Version: 0.0.3
+Summary: Pure Python implementation of the walterize algorithm for string manipulation
+Home-page: https://github.com/devilicecream/walterize
+Author: Walter Galante
+Author-email: walter.galante@ovalmoney.com
+License: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
+Requires-Dist: coverage (>=3.7.1) ; extra == 'test'
+Requires-Dist: mock (>=1.0.1) ; extra == 'test'
+Requires-Dist: PyHamcrest (>=1.8.5) ; extra == 'test'
+
+UNKNOWN
+
+
