@@ -1,0 +1,4 @@
+cdiserrors~=0.1
+cdislogging~=1.0
+PyYAML~=5.1
+six~=1.0
