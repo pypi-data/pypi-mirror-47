@@ -1,0 +1,9 @@
+pandas
+loguru
+scipy
+matplotlib
+graphviz
+pygraphviz
+seaborn
+numpy
+xlrd
