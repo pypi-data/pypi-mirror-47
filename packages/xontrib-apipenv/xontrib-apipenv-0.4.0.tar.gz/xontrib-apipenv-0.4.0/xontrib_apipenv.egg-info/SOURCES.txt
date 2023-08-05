@@ -1,0 +1,8 @@
+README.md
+setup.py
+xontrib/xonsh-apipenv.xsh
+xontrib_apipenv.egg-info/PKG-INFO
+xontrib_apipenv.egg-info/SOURCES.txt
+xontrib_apipenv.egg-info/dependency_links.txt
+xontrib_apipenv.egg-info/requires.txt
+xontrib_apipenv.egg-info/top_level.txt
