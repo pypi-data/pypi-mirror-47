@@ -1,0 +1,223 @@
+body {
+    background-color: #ecf0f5;;
+}
+
+.content-header-wrapper {
+    min-height: 65px;
+}
+.content-header-affix {
+    z-index: 999;
+    background-color: #ecf0f5;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    right: 0;
+    left: 230px;
+    transition: left .3s ease-in-out;
+}
+
+.detail-tab-view-tabs ul.nav {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    background-color: #eee;
+}
+
+/*****************************************************************************/
+[v-cloak] { display: none; }
+
+dl {
+    margin-bottom: 0px;
+}
+
+
+#app-model-list thead tr {
+    border-top: 2px solid #f4f4f4;
+}
+
+#app-model-list tr {
+    cursor: pointer;
+}
+
+#app-model-list tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+th i.fa {
+    margin-top: 3px;
+}
+
+#fields-popover {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+
+#app-model-list .box-tools {
+    right: 54px;
+}
+
+ul.pagination a {
+    cursor: pointer;
+}
+
+.box-tools .fa {
+    font-size: 16px;
+}
+
+#app-model-list .active-filters {
+    padding-top: 10px;
+}
+
+#app-model-list .filter {
+    padding: 5px 10px;
+    border: 1px solid #999;
+    border-radius: 4px;
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+    margin: 4px;
+}
+
+#app-model-list .filter span {
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+    color: #bbb;
+    line-height: 20px;
+    vertical-align: middle;
+}
+
+/* Global search */
+
+#trionyx-global-search-app {
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    margin-left: 15px;
+}
+
+.header-global-search {
+    color: rgba(225,225,225,.95);
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.global-search-container {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(225,225,225,.95);
+    z-index: 99999;
+    height: 100%;
+    line-height: 1.42857143;
+}
+
+.global-search-results-wrapper {
+    overflow-x: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    padding: 0 25px;
+}
+
+.global-search-container .box {
+    background: rgba(255,255,255,.95);
+}
+
+.close-button {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.overlay-search {
+    font-weight: 700;
+    font-size: 77px;
+    height: 110px;
+    letter-spacing: -1.925px;
+    line-height: 100px;
+    width: 100%;
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-right: 25px;
+    background-color: transparent !important;
+}
+
+.global-search-results {
+    padding: 15px 25px;
+}
+
+.global-search-list {
+    list-style: none;
+    padding: 0;
+}
+
+.global-search-list li {
+    border-bottom: 1px solid #f4f4f4;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.global-search-list li:first-child {
+    padding-top: 0;
+}
+
+.global-search-list li:hover a {
+    color: #72afd2;
+}
+
+.global-search-list li p {
+    margin: 0;
+}
+
+/* DragTable */
+/*****************************************************************************/
+/* https://github.com/jebaird/dragtable/blob/master/src/css/dragtable-default.css */
+
+.dragtable-drag-wrapper{
+	position: absolute;
+    z-index: 1000;
+}
+ /*
+  * this gets applied to the table copy of the col that we are dragging
+  */
+.dragtable-drag-wrapper .dragtable-drag-col{
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    cursor:move;
+}
+
+/*
+	placeholder is just a name for the real table col
+*/
+.dragtable-col-placeholder {
+    border-left: 1px dotted black;
+    border-right: 1px dotted black;
+    color:#EFEFEF;
+    background: #EFEFEF !important;
+    visibility: visible !important;
+}
+table .dragtable-col-placeholder:first {
+	border-top:1px dotted black;
+}
+
+
+.dragtable-col-placeholder * {
+    opacity: 0.0;
+    visibility: hidden;
+}
+
+.dragtable-drag-handle {
+    display: none;
+    position: absolute;
+    padding: 10px;
+    margin-top: -10px;
+}
+
+th:hover .dragtable-drag-handle {
+    display: inline;
+}
