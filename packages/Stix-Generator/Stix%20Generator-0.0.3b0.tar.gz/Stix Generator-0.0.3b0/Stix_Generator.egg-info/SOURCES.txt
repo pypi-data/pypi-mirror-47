@@ -1,0 +1,8 @@
+README.md
+setup.py
+Stix/indicator_hash_creator.py
+Stix_Generator.egg-info/PKG-INFO
+Stix_Generator.egg-info/SOURCES.txt
+Stix_Generator.egg-info/dependency_links.txt
+Stix_Generator.egg-info/requires.txt
+Stix_Generator.egg-info/top_level.txt

@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Stix-Generator
+Version: 0.0.3b0
+Summary: Build a STIX Indicator document containing a File and relevant hash
+Home-page: https://github.com/darryllane/stix
+Author: Darryl lane
+Author-email: DarrylLane101@gmail.com
+License: LICENSE.txt
+Description-Content-Type: text/markdown
+Description: **Description**
+Platform: UNKNOWN
