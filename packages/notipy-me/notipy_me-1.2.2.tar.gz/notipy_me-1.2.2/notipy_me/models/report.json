@@ -1,0 +1,12 @@
+{
+    "model_title":"Here's your task report!",
+    "model_subtitle":"We would like you to know how your task called {task_name} is doing!",
+    "the_wheres":[
+        "The task is on {hostname}.",
+        "The user logged is {username}.",
+        "The working path is {pwd}."
+    ],
+    "the_whens":[
+        "The task started {elapsed} ago."
+    ]
+}
