@@ -1,0 +1,84 @@
+[tool.poetry]
+name = "sshh"
+version = "0.10.0"
+description = "sshh is an ssh helper tool for batch registration of ssh private keys in ssh-agent"
+authors = ["Takayuki Shimizukawa <shimizukawa@gmail.com>"]
+license = "Apache-2.0"
+readme = "README.rst"
+include = ["CHANGELOG.rst"]
+homepage = "https://github.com/shimizukawa/sshh"
+repository = "https://github.com/shimizukawa/sshh"
+documentation = "https://github.com/shimizukawa/sshh/blob/master/README.rst"
+keywords = ["ssh", "utility"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Intended Audience :: Developers",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: BSD",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Unix",
+    "Topic :: Utilities",
+]
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+cryptography = ">=2.6"
+
+[tool.poetry.dev-dependencies]
+towncrier = ">=19.2"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry.scripts]
+sshh = "sshh.sshh:main"
+sshh-agent = "sshh.sshh_agent:main"
+sshh-add = "sshh.sshh_add:main"
+sshh-config = "sshh.sshh_config:main"
+sshh-askpass = "sshh.sshh_askpass:main"
+
+[tool.towncrier]
+package = "sshh"
+package_dir = "."
+filename = "CHANGELOG.rst"
+directory = "changelog/"
+title_format = "{version} ({project_date})"
+template = "changelog/_template.rst"
+
+  [[tool.towncrier.type]]
+  directory = "removal"
+  name = "Feature Removed"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "deprecation"
+  name = "Deprecation"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "feature"
+  name = "New Feature"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "bugfix"
+  name = "Bug Fix"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "vendor"
+  name = "Dependencies Update"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "doc"
+  name = "Documentation"
+  showcontent = true
+
+  [[tool.towncrier.type]]
+  directory = "trivial"
+  name = "Trivial"
+  showcontent = true
