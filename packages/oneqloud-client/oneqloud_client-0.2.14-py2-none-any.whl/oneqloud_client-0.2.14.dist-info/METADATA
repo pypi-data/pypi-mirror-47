@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: oneqloud-client
+Version: 0.2.14
+Summary: Client Library for 1QBit Quantum Cloud
+Home-page: http://1qbit.com
+Author: 1 QB Information Technologies
+Author-email: info@1qbit.com
+License: APLv2
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: grpcio-tools
+Requires-Dist: future
+Requires-Dist: googleapis-common-protos
+Requires-Dist: oneqloud-polynomials
+
+UNKNOWN
+
+
