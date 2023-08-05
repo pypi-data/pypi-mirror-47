@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: django-s3-file-upload
+Version: 0.0.1
+Summary: Upload files from the browser to S3 - server side implementation
+Home-page: https://www.dabapps.com
+Author: DabApps
+Author-email: engineering@dabapps.com
+License: BSD
+Platform: UNKNOWN
+Requires-Dist: boto3 (==1.9.129)
+Requires-Dist: Django (>=1.11)
+Requires-Dist: django-fsm (==2.6.0)
+
+
+Endpoints for
+    - getting a signed url to upload files from the browser straight to S3
+    - marking an upload as complete
+    - getting an S3 endpoint to download files from
+
+
