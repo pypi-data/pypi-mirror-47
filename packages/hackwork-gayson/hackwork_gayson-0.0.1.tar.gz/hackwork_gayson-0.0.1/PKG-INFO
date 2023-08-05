@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: hackwork_gayson
+Version: 0.0.1
+Summary: A software package to help with persisting to and reading from DB for more Python objects
+Home-page: https://serioese.gmbh/
+Author: Simon Welker
+Author-email: simon@serioese.gmbh
+License: MIT License
+Description: =====================
+        Hackwork: Gayson
+        =====================
+        
+        https://github.com/serioeseGmbH/hackwork-gayson
+        
+        hackwork_gayson is a library to help with persisting data to and reading data from the database (i.e. a JSONField)
+        by defining JSON conversion for additional Python types.
+        
+        Quick start
+        -----------
+        
+        1. Install the package with pip::
+        
+            pip install hackwork-gayson
+        
+        2. Import ``gayson.Convert``. It provides class methods ``value_to_json`` and ``json_to_value``.
+        
+        3. Convert away.
+        
+        4. Optionally, derive your own subclasses of Converter to add to the conversion capabilities.
+           Keep in mind that the conversion will only be available when your additional subclasses are imported.
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
