@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pyramid-oauthlib-lowlevel
+Version: 0.2.0
+Summary: lowlevel pyramid implementation of oauthlib
+Home-page: https://github.com/jvanasco/pyramid_oauthlib_lowlevel
+Author: Jonathan Vanasco
+Author-email: jonathan@findmeon.com
+License: BSD
+Description: This is a package designed to create oAuth servers with Pyramid through a lowlevel interface that allows for more customization.
+        
+Keywords: web pyramid
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Framework :: Pyramid
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
