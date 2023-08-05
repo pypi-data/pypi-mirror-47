@@ -1,0 +1,15 @@
+django_mysql_geventpool_27/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_geventpool_27/utils.py,sha256=CT6RTh4I4iBgIt_xK86hzUgBjD3hLI-g0kaAHnJhEW4,293
+django_mysql_geventpool_27/backends/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_geventpool_27/backends/connection_pool.py,sha256=q-FEyyxg7nsTmpON4tAAbJg69aUu6JGenuDZIe_VTBo,1528
+django_mysql_geventpool_27/backends/mysql/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_geventpool_27/backends/mysql/base.py,sha256=HyoG3zyLIdVOfZbLvYuBbiaYjjgdWFOhCfDoXtMe2wc,2214
+django_mysql_geventpool_27/backends/mysql/connection_pool.py,sha256=AO5YekOLZ0Mp1ULR0xx2mJzxvFBEYYVmu2RCDZRmCvI,723
+django_mysql_geventpool_27/backends/mysql/creation.py,sha256=0DJjTOEbpy9XtnbrgUKYDYprs3xpmd5_Re1gqQIKXi0,532
+django_mysql_geventpool_27/backends/mysql_gis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_mysql_geventpool_27/backends/mysql_gis/base.py,sha256=U-mOYOHRGZFGUBHp56wkqR9bboVRyw4mfuSO66oRPfg,213
+django_mysql_geventpool_27-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+django_mysql_geventpool_27-0.2.4.dist-info/METADATA,sha256=iNwAWKd1GcyRRET3PlMJQzlhLg4RS5OM_cSA0YSxGq8,1850
+django_mysql_geventpool_27-0.2.4.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+django_mysql_geventpool_27-0.2.4.dist-info/top_level.txt,sha256=R1MMC8FzN_NtSbZ_yQDnvKFhQbkD9tfDFx_ixRHi8tI,27
+django_mysql_geventpool_27-0.2.4.dist-info/RECORD,,
