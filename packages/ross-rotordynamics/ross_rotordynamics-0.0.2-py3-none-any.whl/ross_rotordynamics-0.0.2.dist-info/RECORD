@@ -1,0 +1,14 @@
+ross/__init__.py,sha256=JvCTeW5-bFdyjq0ggjMxj27suB0wCsfruNWDkAix0wA,171
+ross/bearing_seal_element.py,sha256=qtRxmSBVOqNLauMB8rmVe3FR2GzbIDTnENA-XZ_1gh8,18530
+ross/disk_element.py,sha256=lXKuu_tK7sKV80j6_ZKteeTgjEZ2x04VqxFbQMeDfJo,8632
+ross/element.py,sha256=ORlVT1jiBZoaBCGNRmgZwav8-cHumSIv-20XXC1Kg6w,1293
+ross/materials.py,sha256=dGggh8cgcUlVPcN6yi-A39kqWx1a_gZW2qpKwhFaZaY,4669
+ross/results.py,sha256=0O9G6sThFqPL-KVDIXIlCMBt3jhQqfbghDFd-BzyjOk,24876
+ross/rotor_assembly.py,sha256=QW2AK2VqmmAMrUUhK-iDQlwBDw_Rl1jczT9LKWt2u0o,75821
+ross/shaft_element.py,sha256=OTM9bLCl-XuJ66JB8SFOyaLhSsTNW94Notww5j3J_xY,18808
+ross/fluid_flow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ross/fluid_flow/fluid_flow.py,sha256=cW-m342lHPjFFwxXarN2vXzhQZyuDQDREyopbGJhd0U,32438
+ross_rotordynamics-0.0.2.dist-info/METADATA,sha256=1nkMqZ73ARbjyk78iCa2zXF5DBVpRcXfm43VjngEGCY,1469
+ross_rotordynamics-0.0.2.dist-info/RECORD,,
+ross_rotordynamics-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+ross_rotordynamics-0.0.2.dist-info/top_level.txt,sha256=i1cIqglhwoz9E8yEpZdFAp0EtFvriBQUUtPQ224cmrU,5
