@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: call-recorder-api
+Version: 1.0.1
+Summary: Call Recorder API
+Home-page: https://bitbucket.org/novokrest/python-call-recorder-api.git
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Keywords: Call Recorder API
+Platform: UNKNOWN
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+Call Recorder API   # noqa: E501
+
+
