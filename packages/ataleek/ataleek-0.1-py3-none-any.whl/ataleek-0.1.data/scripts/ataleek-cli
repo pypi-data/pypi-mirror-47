@@ -1,0 +1,23 @@
+#!python
+import argparse
+
+from ataleek.ataleek import (default_pr_message, ARG_PARSER_CONFIG,
+                      get_project, submit_solution)
+
+parser = argparse.ArgumentParser(**ARG_PARSER_CONFIG)
+
+project_parser = parser.add_subparsers(help="Commands")
+
+get_parser = project_parser.add_parser("get")
+submit_parser = project_parser.add_parser("submit")
+
+get_parser.add_argument("repo_name", type=str)
+submit_parser.add_argument('--pr_message', default=default_pr_message)
+
+args = parser.parse_args()
+
+if hasattr(args, "repo_name") and args.repo_name:
+    get_project(args.repo_name)
+
+if hasattr(args, "pr_message") and args.pr_message:
+    submit_solution(args.pr_message)
