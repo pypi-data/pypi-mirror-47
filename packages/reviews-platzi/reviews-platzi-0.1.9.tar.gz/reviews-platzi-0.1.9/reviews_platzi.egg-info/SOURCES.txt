@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+reviews_platzi/__init__.py
+reviews_platzi/rplatzi.py
+reviews_platzi.egg-info/PKG-INFO
+reviews_platzi.egg-info/SOURCES.txt
+reviews_platzi.egg-info/dependency_links.txt
+reviews_platzi.egg-info/entry_points.txt
+reviews_platzi.egg-info/requires.txt
+reviews_platzi.egg-info/top_level.txt
