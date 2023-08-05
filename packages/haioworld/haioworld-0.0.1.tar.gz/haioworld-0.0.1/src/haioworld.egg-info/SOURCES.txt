@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/haiworld.py
+src/haioworld.egg-info/PKG-INFO
+src/haioworld.egg-info/SOURCES.txt
+src/haioworld.egg-info/dependency_links.txt
+src/haioworld.egg-info/top_level.txt
