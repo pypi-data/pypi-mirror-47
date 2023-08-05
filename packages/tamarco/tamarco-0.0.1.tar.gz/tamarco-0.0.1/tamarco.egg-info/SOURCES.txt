@@ -1,0 +1,5 @@
+setup.py
+tamarco.egg-info/PKG-INFO
+tamarco.egg-info/SOURCES.txt
+tamarco.egg-info/dependency_links.txt
+tamarco.egg-info/top_level.txt
