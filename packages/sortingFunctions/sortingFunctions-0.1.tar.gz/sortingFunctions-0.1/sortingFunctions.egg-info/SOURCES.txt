@@ -1,0 +1,14 @@
+README.md
+setup.py
+sortingFunctions/__init__.py
+sortingFunctions/app.py
+sortingFunctions/bubble.py
+sortingFunctions/insertion.py
+sortingFunctions/quick.py
+sortingFunctions/selection.py
+sortingFunctions/text.py
+sortingFunctions.egg-info/PKG-INFO
+sortingFunctions.egg-info/SOURCES.txt
+sortingFunctions.egg-info/dependency_links.txt
+sortingFunctions.egg-info/not-zip-safe
+sortingFunctions.egg-info/top_level.txt
