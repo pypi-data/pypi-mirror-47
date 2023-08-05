@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: cheminventory
+Version: 0.2.3
+Summary: A CLI and SDK for ChemInventory
+Home-page: https://github.com/marcosfelt/cheminventory_python
+Author: Kobi Felton
+Author-email: kobi.c.f@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: requests
+
+See Github
+
+
