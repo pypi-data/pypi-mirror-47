@@ -1,0 +1,6 @@
+six>=1.11
+protobuf<=4.0.0,>=3.7.1
+pyparsing>=2.3.1
+backports-socketpair>=3.5.0.4
+websocket-client>=0.56.0
+grpcio>=1.14.1
