@@ -1,0 +1,23 @@
+# pyTDD
+
+Small tool to help developing in python using Test Driven Dev
+method. Triggers changes on source or test files and exec a specific
+command like pytest.
+
+## installation
+```pip install pytdd```
+
+## usage
+```pytdd [dir]```
+start the watcher in current dir or the specified one, all the subdirectories will also be watched.
+
+## configuration
+
+in the file `pytdd.conf` 
+```
+[pytdd]
+ patterns = ["*py"]
+ ignore_patterns = ["*#*", "*~"]
+ cmd = ["pytest", "-x", "--ff", "tests/test*py"]
+ force_delay = 300
+```
