@@ -1,0 +1,94 @@
+{
+  "src/lib/components/DashReactResizeable.react.js": {
+    "description": "ExampleComponent is an example component.\r\nIt takes a property, `label`, and\r\ndisplays it.\r\nIt renders an input with the property `value`\r\nwhich is editable by the user.",
+    "displayName": "DashReactResizeable",
+    "methods": [
+      {
+        "name": "onResize",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "e",
+            "type": {
+              "name": "SyntheticEvent",
+              "elements": [],
+              "raw": "SyntheticEvent<>",
+              "alias": "SyntheticEvent"
+            }
+          },
+          {
+            "name": "data",
+            "type": {
+              "name": "ResizeCallbackData",
+              "alias": "ResizeCallbackData"
+            }
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\r\nproperties change"
+      },
+      "width": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The width of the resizable box"
+      },
+      "height": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "The height of the resizable box"
+      },
+      "resizeHandles": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "string"
+          }
+        },
+        "required": false,
+        "description": "The array of resize handles that is activated\r\nThe full list is ['sw', 'se', 'nw', 'ne', 'w', 'e', 'n', 's']",
+        "defaultValue": {
+          "value": "['se']",
+          "computed": false
+        }
+      },
+      "children": {
+        "type": {
+          "name": "node"
+        },
+        "required": false,
+        "description": "The children of this component"
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The class of the input element",
+        "defaultValue": {
+          "value": "'react-resizable-box'",
+          "computed": false
+        }
+      }
+    }
+  }
+}

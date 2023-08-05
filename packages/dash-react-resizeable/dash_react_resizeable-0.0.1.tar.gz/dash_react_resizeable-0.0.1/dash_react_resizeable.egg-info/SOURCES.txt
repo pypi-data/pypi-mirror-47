@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+dash_react_resizeable/DashReactResizeable.py
+dash_react_resizeable/__init__.py
+dash_react_resizeable/_imports_.py
+dash_react_resizeable/dash_react_resizeable.dev.js
+dash_react_resizeable/dash_react_resizeable.min.js
+dash_react_resizeable/metadata.json
+dash_react_resizeable/package.json
+dash_react_resizeable.egg-info/PKG-INFO
+dash_react_resizeable.egg-info/SOURCES.txt
+dash_react_resizeable.egg-info/dependency_links.txt
+dash_react_resizeable.egg-info/top_level.txt

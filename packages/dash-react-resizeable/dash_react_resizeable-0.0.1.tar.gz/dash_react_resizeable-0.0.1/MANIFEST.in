@@ -1,0 +1,5 @@
+include dash_react_resizeable/dash_react_resizeable.min.js
+include dash_react_resizeable/dash_react_resizeable.dev.js
+include dash_react_resizeable/metadata.json
+include dash_react_resizeable/package.json
+include README.md
