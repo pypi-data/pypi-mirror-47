@@ -1,0 +1,13 @@
+queryable_properties/__init__.py,sha256=NKzAz-4Leb4qX5KdE2BEy09oLFeBtPYqcVby6N893G0,365
+queryable_properties/compat.py,sha256=3emdos-EZa-U5gwpCJQVSuy-q-2ocOcXVdfUOv9F3E0,5552
+queryable_properties/exceptions.py,sha256=DahuNWFgmSN_Xam-6CO6UTYWhCA_x3qP6eaPrCi3PJg,505
+queryable_properties/managers.py,sha256=VfQ1COD0qs7J4yldp25zOi_emxHYYwsrPeGsCu2CaPM,15835
+queryable_properties/properties.py,sha256=Qkrhi7woFBsaeXScIGUECPLdwPp-TMzTtD4GiPGhqlw,19769
+queryable_properties/query.py,sha256=2NwRyhBvsTpMpU9TnIUpotbqPnwwKqKGulsrAO_AsOQ,14637
+queryable_properties/utils.py,sha256=uhUa5PBUMg2tDnB_eGYGyD6s3GX-9GD2aViEDGWh2Bw,6729
+django_queryable_properties-1.0.2.dist-info/AUTHORS.rst,sha256=u8FDKI7c2BM1s0zdNh1RZPC5fZy2cXXGYIEbHti5t5I,46
+django_queryable_properties-1.0.2.dist-info/LICENSE,sha256=Xo4pY-WXHTFfamSrIOAZJj0H3QipTn7xpOKcipRow5w,1536
+django_queryable_properties-1.0.2.dist-info/METADATA,sha256=Sy0RRDBFEhuVxnXzEl-ICkvXX4aMapevC6kGhtUo2pA,4022
+django_queryable_properties-1.0.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_queryable_properties-1.0.2.dist-info/top_level.txt,sha256=YcaYcvVUpgx3i-LHasY6NNw_E2yJgMZpFaEhZzTzC0Y,21
+django_queryable_properties-1.0.2.dist-info/RECORD,,
