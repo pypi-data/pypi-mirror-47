@@ -1,0 +1,12 @@
+coopstarter_data/__init__.py,sha256=u_2iqm-jPy1Qa4jQrgJTk_zJiJdTt1oniEdynkMlcGs,48
+coopstarter_data/admin.py,sha256=gwOkCU6ytw1SNDJsO25W9AvIaGNzzKLQN3HDCLS93bM,664
+coopstarter_data/apps.py,sha256=CshiSif7Sisn7cx_A3N-Hv_8kigHjK4e7ITBkDmTaTQ,97
+coopstarter_data/models.py,sha256=tqqZdYkQXMW2PkXKL63ZkvH_-eKMXg3KBbYxvgK3szU,5277
+coopstarter_data/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+coopstarter_data/migrations/0001_initial.py,sha256=a9y5Iq6oLavfXB1bUsIbJRsPwlfsbTvDTmEvMxZuQQI,2968
+coopstarter_data/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+coopstarter_data-0.1.4.dist-info/LICENSE,sha256=_O6uFc76nEtSeM6r3C1ZPfJvdRbGr7NByeCaXKXmmWQ,1069
+coopstarter_data-0.1.4.dist-info/METADATA,sha256=oS_zLmK_iHsiwMRv1znNUonkF5yYk1HwcYUXwZtna-0,842
+coopstarter_data-0.1.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+coopstarter_data-0.1.4.dist-info/top_level.txt,sha256=6PSx6PU-q3vflJogRmpqxvwKu3OHqKlnpm3R2T-Mk-Q,17
+coopstarter_data-0.1.4.dist-info/RECORD,,
