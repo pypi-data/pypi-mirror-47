@@ -1,0 +1,10 @@
+README.md
+setup.py
+futsu/__init__.py
+futsu/csv.py
+futsu/fs.py
+futsu/io.py
+futsu.egg-info/PKG-INFO
+futsu.egg-info/SOURCES.txt
+futsu.egg-info/dependency_links.txt
+futsu.egg-info/top_level.txt
