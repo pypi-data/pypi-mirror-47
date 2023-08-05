@@ -1,0 +1,16 @@
+README.md
+setup.py
+imgic/__init__.py
+imgic/imgic.py
+imgic/imgic_blur.py
+imgic/imgic_color_trans.py
+imgic/imgic_combine.py
+imgic/imgic_crop.py
+imgic/imgic_dropout.py
+imgic/imgic_flip.py
+imgic/imgic_resize.py
+imgic.egg-info/PKG-INFO
+imgic.egg-info/SOURCES.txt
+imgic.egg-info/dependency_links.txt
+imgic.egg-info/requires.txt
+imgic.egg-info/top_level.txt
