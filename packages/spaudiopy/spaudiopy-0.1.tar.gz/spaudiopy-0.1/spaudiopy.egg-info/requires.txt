@@ -1,0 +1,10 @@
+numpy
+scipy
+pandas
+joblib
+matplotlib
+soundfile
+sounddevice
+resampy
+h5py
+quadpy

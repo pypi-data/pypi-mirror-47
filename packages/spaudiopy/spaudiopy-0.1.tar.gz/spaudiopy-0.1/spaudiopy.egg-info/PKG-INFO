@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: spaudiopy
+Version: 0.1
+Summary: Spatial Audio Python Package
+Home-page: https://github.com/chris-hld/spaudiopy
+Author: Chris Hold
+Author-email: Chris.Hold@mailbox.tu-berlin.de
+License: MIT
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
