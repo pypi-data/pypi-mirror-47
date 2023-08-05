@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: bareasgi-compression
+Version: 2.0.0
+Summary: Compression middleware for bareASGI
+Home-page: https://github.com/rob-blackbourn/bareasgi-compression
+Author: Rob Blackbourn
+Author-email: rob.blackbourn@googlemail.com
+License: Apache 2
+Keywords: bareASGI compression middleware
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+Requires-Dist: baretypes (>=2.0<3)
+Requires-Dist: bareutils (>=2.0<3)
+
+# bareasgi-compression
+
+Compression middleware for bareASGI
+
+
