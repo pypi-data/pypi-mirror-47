@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: beyoncify
+Version: 1.0.0
+Summary: beyoncify
+Home-page: https://github.com/ebsaral/beyoncify
+Author: Emin Bugra Saral
+Author-email: eminbugrasaral@me.com
+License: BSD
+Project-URL: Documentation, https://github.com/ebsaral/beyoncify
+Project-URL: Funding, https://github.com/ebsaral/beyoncify
+Project-URL: Source, https://github.com/ebsaral/beyoncify
+Description: # beyoncify #1.0.0 
+        
+        beyoncify yourself
+        
+        ![beyoncify](https://github.com/ebsaral/beyoncify/blob/master/beyoncify.png?raw=true)
+        
+        # install
+        
+        ```
+        pip install beyoncify
+        ```
+        
+        # usage
+        
+        ```python
+        import beyoncify
+        
+        beyonce_to_be = beyoncify.beyoncify('emin')
+        >>> 'émin'
+        beyoncify.go_back_to_being_normal(beyonce_to_be)
+        >>> 'emin'
+        ```
+        
+        # contributors
+        
+        - @ebsaral - author
+        
+Keywords: beyonce beyoncify
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
