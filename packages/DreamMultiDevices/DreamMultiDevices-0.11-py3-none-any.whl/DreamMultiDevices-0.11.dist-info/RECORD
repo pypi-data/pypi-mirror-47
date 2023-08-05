@@ -1,0 +1,16 @@
+DreamMultiDevices/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+DreamMultiDevices/start.py,sha256=syakaHCtOrimupSCS-vjWhXlvR3TRpXZGMXKYexk-tQ,185
+DreamMultiDevices/TestCase/TC_101.py,sha256=zM801avnAfAgYtFbH_gnBVY78DWRV4qD7fIiKacREfI,1940
+DreamMultiDevices/TestCase/TC_102.py,sha256=dEizScbcQEK7ATsvymiZHqtytaSGTMGAROgcnSM-iBo,1865
+DreamMultiDevices/TestCase/TC_103.py,sha256=Ov4Yg63gQDhb5vCw5aRjjlKDWajiuoPkcuujIrbP8SM,1865
+DreamMultiDevices/TestCase/TC_104.py,sha256=XN40BXQqiZHdjTe4W1sOVgcSCG2vwMy9__YaW7SKSFg,1865
+DreamMultiDevices/TestCase/__init__.py,sha256=kO4PoEVEgty6Z-pxhB5JOdOSHjp2AwGTwpFT8RnCuL0,340
+DreamMultiDevices/tools/Config.py,sha256=CDK1pLDfJEdgoRGBnFLl9SpJ4G5Y4a7yVGy-paD1c1w,731
+DreamMultiDevices/tools/File.py,sha256=V39oTJoFubuA_RZVR70fwyt6TyBlu_aRhR6WhXJMxVw,400
+DreamMultiDevices/tools/Screencap.py,sha256=uSpIFiS11oQVhs6Kp5Yge9Iuur8O-EuOn8NmV5cLAE8,1579
+DreamMultiDevices/tools/__init__.py,sha256=FY5uQeh8M-nPouAkf343gCeIMuU01Lfz325q9Tb6NSQ,38
+DreamMultiDevices-0.11.dist-info/LICENSE.txt,sha256=X1tqs0AdOcGLBbIjAmKHDDgDE6V1aNa9stTIe4Lvk8A,1072
+DreamMultiDevices-0.11.dist-info/METADATA,sha256=aQ6eisZMExMO32ohw9h84ACAnqLxBvYp3qQzVF0qW04,4042
+DreamMultiDevices-0.11.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+DreamMultiDevices-0.11.dist-info/top_level.txt,sha256=TVwD8oK96VYGgf0MZGvGBNDpaGXxs46E5zeYIZ2bTfg,18
+DreamMultiDevices-0.11.dist-info/RECORD,,
