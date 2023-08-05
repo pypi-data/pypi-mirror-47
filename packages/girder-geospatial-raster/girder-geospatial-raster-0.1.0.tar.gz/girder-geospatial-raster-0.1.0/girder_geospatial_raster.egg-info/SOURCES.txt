@@ -1,0 +1,9 @@
+setup.py
+geometa_raster/__init__.py
+geometa_raster/schema.py
+girder_geospatial_raster.egg-info/PKG-INFO
+girder_geospatial_raster.egg-info/SOURCES.txt
+girder_geospatial_raster.egg-info/dependency_links.txt
+girder_geospatial_raster.egg-info/entry_points.txt
+girder_geospatial_raster.egg-info/requires.txt
+girder_geospatial_raster.egg-info/top_level.txt
