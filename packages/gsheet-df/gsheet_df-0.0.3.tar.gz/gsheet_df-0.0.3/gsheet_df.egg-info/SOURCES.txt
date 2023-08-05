@@ -1,0 +1,10 @@
+README.md
+setup.py
+gsheet_df/__init__.py
+gsheet_df/gdrive_API.py
+gsheet_df/gsheet_API.py
+gsheet_df.egg-info/PKG-INFO
+gsheet_df.egg-info/SOURCES.txt
+gsheet_df.egg-info/dependency_links.txt
+gsheet_df.egg-info/requires.txt
+gsheet_df.egg-info/top_level.txt
