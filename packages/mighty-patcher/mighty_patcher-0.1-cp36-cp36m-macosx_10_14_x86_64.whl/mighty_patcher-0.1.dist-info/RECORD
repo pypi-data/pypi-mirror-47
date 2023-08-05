@@ -1,0 +1,14 @@
+mighty_patcher/__init__.py,sha256=SK8hXf2ixdW4Cxk-l64XgVsqJLP9EMlueEn0ppDAOW8,807
+mighty_patcher/_better_mocking.c,sha256=MvS_knZ-kEpZ2Fsbti-Yc68aOAdWhA-eWty45Q2C3ao,7978
+mighty_patcher/_better_mocking.cpython-36m-darwin.so,sha256=j-uxAofvjF62ZNnzvhQaxEYoW23iBv_RPS6D3cBMSAc,9892
+mighty_patcher/pytest.py,sha256=767vBCQMuTAv62_B9zo9mkkEcwKzOrY5FOES2oELNRU,2396
+mighty_patcher/reload.py,sha256=Ek8y0y2AJtqLP57FaYhQ25qxukwQeKSE60urZgU9xfM,2031
+mighty_patcher/replacement.py,sha256=JKegN7E-MTODshOQGtLSUiKaPrYjfjc8H41s9ucQSWc,2033
+mighty_patcher/watch.py,sha256=hXNmToj4qK9PoCwGOEkywXXpgH0HKwxJCO_NTaatXlo,3505
+mighty_patcher-0.1.dist-info/AUTHORS.rst,sha256=Tp1bGyrIFLOwmQspgCCdf4aGyEllhNPKgnr1MaPnUK0,71
+mighty_patcher-0.1.dist-info/LICENSE,sha256=mPdhbqWbKvP5a3-1ghvtMZpzCQp6D5iG-_M84CGSXAQ,1513
+mighty_patcher-0.1.dist-info/METADATA,sha256=9PP0p4GI6q02wODnKChvx6ckf4TZAdN420GmhS0FSn8,10417
+mighty_patcher-0.1.dist-info/WHEEL,sha256=L8Omt58t2ne3XnZOFuc8fs_MOKHZd0zMhogNVH4H4F0,111
+mighty_patcher-0.1.dist-info/entry_points.txt,sha256=2gb4tjCb_IPfdTsIBLS5kkKpLg-ooSh54nIpNP7RHD8,58
+mighty_patcher-0.1.dist-info/top_level.txt,sha256=Vs0zs1f4srnkksQ_pTbgZ2U9ADOxuzZfTL2I8kyyom0,15
+mighty_patcher-0.1.dist-info/RECORD,,
