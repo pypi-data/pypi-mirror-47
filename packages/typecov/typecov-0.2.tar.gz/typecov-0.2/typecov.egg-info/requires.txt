@@ -1,0 +1,11 @@
+
+[dev]
+tox
+pytest
+pytest-cov
+mypy
+
+[testing]
+pytest
+pytest-cov
+mypy

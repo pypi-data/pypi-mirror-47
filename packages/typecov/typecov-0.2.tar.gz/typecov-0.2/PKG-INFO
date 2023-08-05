@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: typecov
+Version: 0.2
+Summary: Run type coverage checks.
+Home-page: https://github.com/sayanarijit/typecov
+Author: Arijit Basu
+Author-email: sayanarijit@gmail.com
+License: MIT
+Description: expandvars
+        ==========
+        Run type coverage checks.
+        
+        [![PyPI version](https://img.shields.io/pypi/v/typecov.svg)](https://pypi.org/project/typecov)
+        [![Build Status](https://travis-ci.org/sayanarijit/typecov.svg?branch=master)](https://travis-ci.org/sayanarijit/typecov)
+        [![codecov](https://codecov.io/gh/sayanarijit/typecov/branch/master/graph/badge.svg)](https://codecov.io/gh/sayanarijit/typecov)
+        
+        Usage
+        -----
+        ```
+        typecov --help
+        ```
+        
+        ```
+        usage: typecov [-h] [-V] coverage reportfile
+        
+        Run type coverage checks.
+        
+        positional arguments:
+          coverage       Minimum coverage required.
+          reportfile     Path to the type coverage report with line counts.
+        
+        optional arguments:
+          -h, --help     show this help message and exit
+          -V, --version  show program's version number and exit
+        ```
+        
+        Example
+        -------
+        ```
+        typecov 99 .typecov/report/linecount.txt
+        ```
+        
+        Contributing
+        ------------
+        Install with
+        ```
+        pip install -r dev-requirements.txt
+        ```
+        
+        Run tests
+        ```
+        pytest
+        ```
+        
+        Or if you have [tox](https://github.com/tox-dev/tox) setup
+        ```
+        tox
+        ```
+        
+Keywords: type coverage
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: testing
