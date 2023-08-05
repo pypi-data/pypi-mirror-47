@@ -1,0 +1,6 @@
+Django>=1.8
+celery>=4.0
+django-appconf
+flake8
+twine
+wheel
