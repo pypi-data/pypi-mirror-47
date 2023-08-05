@@ -1,0 +1,13 @@
+{
+  "domain": "deconz",
+  "name": "Deconz",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/components/deconz",
+  "requirements": [
+    "pydeconz==59"
+  ],
+  "dependencies": [],
+  "codeowners": [
+    "@kane610"
+  ]
+}
