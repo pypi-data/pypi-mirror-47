@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: torch_stft
+Version: 0.1.1
+Summary: An STFT/iSTFT for PyTorch
+Home-page: https://github.com/pseeth/torch-stft
+Author: Prem Seetharaman
+Author-email: prem@u.northwestern.edu
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.com/pseeth/pytorch-stft.svg?branch=master)](https://travis-ci.com/pseeth/pytorch-stft)
+        
+        # STFT/iSTFT in PyTorch
+        
+        An STFT/iSTFT written up in PyTorch using 1D Convolutions. Requirements are a recent version PyTorch, numpy, and librosa (for loading audio in test_stft.py). Thanks to Shrikant Venkataramani for sharing code this was based off of and Rafael Valle for catching bugs and adding the proper windowing logic. Uses Python 3.
+        
+        ## Installation
+        Install easily with pip:
+        ```
+        pip install torch_stft
+        ```
+        
+        ## Tests
+        Test it by just cloning this repo and running
+            
+        ```
+        pip install -r requirements.txt
+        python -m pytest .
+        ```
+        
+        Unfortunately, since it's implemented with 1D Convolutions, some filter_length/hop_length 
+        combinations can result in out of memory errors on your GPU when run on sufficiently large input.
+        
+        
+        ## Contributing
+        Pull requests welcome.
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
