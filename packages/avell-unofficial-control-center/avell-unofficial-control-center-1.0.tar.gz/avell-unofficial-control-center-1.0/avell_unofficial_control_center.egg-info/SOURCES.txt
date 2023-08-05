@@ -1,0 +1,13 @@
+README.md
+setup.py
+aucc/__init__.py
+aucc/main.py
+aucc/core/__init__.py
+aucc/core/colors.py
+aucc/core/handler.py
+avell_unofficial_control_center.egg-info/PKG-INFO
+avell_unofficial_control_center.egg-info/SOURCES.txt
+avell_unofficial_control_center.egg-info/dependency_links.txt
+avell_unofficial_control_center.egg-info/entry_points.txt
+avell_unofficial_control_center.egg-info/requires.txt
+avell_unofficial_control_center.egg-info/top_level.txt
