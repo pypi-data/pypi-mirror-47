@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: wizardpy
+Version: 0.1
+Summary: python to pythonic code converter, get the most out of your code for an effecient performance
+Home-page: https://github.com/DiaaAj/wizardpy
+Author: Diaa Abujaber
+Author-email: diaa1999abujaber@gmail.com
+License: MIT
+Download-URL: https://github.com/DiaaAj/wizardpy/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: pythonic code,effecient python code,python code optimizer,fast python code,optimized code,cmd application
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
