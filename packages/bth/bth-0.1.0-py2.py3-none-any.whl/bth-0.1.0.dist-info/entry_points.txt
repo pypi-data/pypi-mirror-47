@@ -1,0 +1,3 @@
+[console_scripts]
+bth = bth.cli:cli
+
