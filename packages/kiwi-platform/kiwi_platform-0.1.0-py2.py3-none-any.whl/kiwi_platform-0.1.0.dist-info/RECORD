@@ -1,0 +1,9 @@
+kw/__init__.py,sha256=q3JNmHn0CMPtEqkMR40lkjKQzuWUtT39xIFUYJ-MKIE,56
+kw/platform/__init__.py,sha256=UXJRG-Az9ol-loz6Yp4GdltJJPWlSHIgM6BXKTzl1xg,321
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_nothing.py,sha256=rgYPhgSiYgFShH0Ky2Va-X3y4EIN63AmYFKqmElEYCc,107
+kiwi_platform-0.1.0.dist-info/LICENSE.md,sha256=ihrxQP379a_T3yf35mL5icW5Y6MAAg36_OQgM8rp4AQ,1552
+kiwi_platform-0.1.0.dist-info/METADATA,sha256=CzENHgQVF-KahcGdjn7FAGXXkZG1u0bD8jlolCytVi0,3671
+kiwi_platform-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+kiwi_platform-0.1.0.dist-info/top_level.txt,sha256=Vzai4G9XqZEAGJXRs6fjeY8HrhlnORmUOTchEQPYaxM,8
+kiwi_platform-0.1.0.dist-info/RECORD,,
