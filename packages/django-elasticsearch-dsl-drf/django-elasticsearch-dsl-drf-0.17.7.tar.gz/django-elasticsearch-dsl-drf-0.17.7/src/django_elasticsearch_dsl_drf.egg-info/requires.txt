@@ -1,0 +1,6 @@
+django-elasticsearch-dsl>=0.3
+django-nine>=0.1.10
+djangorestframework
+elasticsearch
+elasticsearch-dsl
+six>=1.9
