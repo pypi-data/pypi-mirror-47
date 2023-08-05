@@ -1,0 +1,10 @@
+qucochemistry/__init__.py,sha256=LAs44VLJjl4uWuvYKg2xKxvTo-whAQ7K05FOXNHBCW4,102
+qucochemistry/_version.py,sha256=_qT99XwPC65P5VOWmqbUHuJGvoGsPLcHQYyVQztj7_8,33
+qucochemistry/circuits.py,sha256=uD0X-R6GYSJCbjilPDyIf6LDF42P3ofH1MljxMmke5Q,7458
+qucochemistry/utils.py,sha256=I5V96mY4_L3UQxFXRHd5yOvWWy285YLPZPWCOhGfExY,7754
+qucochemistry/vqe.py,sha256=4Os4Bjj4Ieg0wWDEieY5kbZPfVXY5matNddSBDRAtRM,36379
+qucochemistry-0.1.0.dev20190601.dist-info/LICENSE,sha256=V3Iep_8ciqm_IVijc2T9JnfLhYZ06ORaTrj8kr-8crI,11345
+qucochemistry-0.1.0.dev20190601.dist-info/METADATA,sha256=HS6DJM7ZM4ZJq58wHWYTqQY_s3IuAssYsgHFeUHPhkE,3345
+qucochemistry-0.1.0.dev20190601.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+qucochemistry-0.1.0.dev20190601.dist-info/top_level.txt,sha256=ZnVSVWdeIkYYrcKfSTvlDpnVhqfj3jgkkeCjsqu5HrE,14
+qucochemistry-0.1.0.dev20190601.dist-info/RECORD,,
