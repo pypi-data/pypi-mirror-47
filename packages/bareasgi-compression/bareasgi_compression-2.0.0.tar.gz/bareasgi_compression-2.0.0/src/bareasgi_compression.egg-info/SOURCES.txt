@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+src/bareasgi_compression/__init__.py
+src/bareasgi_compression/__version__.py
+src/bareasgi_compression/middleware.py
+src/bareasgi_compression.egg-info/PKG-INFO
+src/bareasgi_compression.egg-info/SOURCES.txt
+src/bareasgi_compression.egg-info/dependency_links.txt
+src/bareasgi_compression.egg-info/requires.txt
+src/bareasgi_compression.egg-info/top_level.txt
