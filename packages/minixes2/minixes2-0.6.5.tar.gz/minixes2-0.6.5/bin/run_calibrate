@@ -1,0 +1,4 @@
+#$HOME\anaconda3\Scripts\activate
+conda activate minixes
+
+python -m minixs.gui.qtcalibrator
