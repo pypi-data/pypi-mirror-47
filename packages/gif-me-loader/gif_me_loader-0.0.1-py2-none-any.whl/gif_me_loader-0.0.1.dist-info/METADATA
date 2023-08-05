@@ -1,0 +1,21 @@
+Metadata-Version: 2.0
+Name: gif-me-loader
+Version: 0.0.1
+Summary: A simple package for adding loading bars to GIFS
+Home-page: https://github.com/aareman/gif-me-loader
+Author: aareman
+Author-email: aareman000@citymail.cuny.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: setuptools
+Requires-Dist: sys
+Requires-Dist: argparse
+Requires-Dist: PIL
+
+UNKNOWN
+
+
