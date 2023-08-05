@@ -1,0 +1,16 @@
+djpub/__init__.py,sha256=Chc-AWmpSnBcyx2EZGfDmEcu2Uht9gU85li9q0wGFYM,19
+djpub/urls.py,sha256=afLf4atWXvEruHeSyYFG5BQgTnB9s3cMCsia4-BOVWs,5553
+djpub/version.py,sha256=goc-J0zTmTwmp7KW4FragNq9cZyvr4f79Moa18SBRqc,24
+djpub/views/__init__.py,sha256=MHRpp8QVDn-Kndf1QStbbdAyGK6JMWQplVVaVVQkzHc,29
+djpub/views/common.py,sha256=sna38fFHkIWXN7lG7qd2iiBhmRGXT-bu0fnt7t8bUs4,524
+djpub/views/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djpub/views/examples/SomeCoolBlogTheme/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djpub/views/examples/SomeCoolBlogTheme/djpub_view/__init__.py,sha256=AAnqoFfu6D2djrZjG45C_m1wBmwIkRBytGlLMDVzjOM,116
+djpub/views/examples/SomeCoolBlogTheme/djpub_view/common_views.py,sha256=9qXA0yWCVMQ9TlFEql1cElHm2Ww2BexjWRrOfoU83K0,269
+djpub/views/examples/SomeCoolBlogTheme/djpub_view/url_patterns.py,sha256=4QwfucNuxWikK0VUbpi6HPYCpW16zqzTXQUHkvIbQfE,809
+djpub-0.0.3.dist-info/DESCRIPTION.rst,sha256=CXLMBoShavUd4Tz1dI9FN8AcQY6j9Y_s68_Bk3lgrSg,15
+djpub-0.0.3.dist-info/METADATA,sha256=gGyJs5oS8O8--Dpdjqclv5oTVgpVGLjZ0LcOHhZEUBU,682
+djpub-0.0.3.dist-info/RECORD,,
+djpub-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+djpub-0.0.3.dist-info/metadata.json,sha256=wheyAA5RJBsqsKUWjsw5O8cdFwVS__DbKiuJ5Y8z1EQ,867
+djpub-0.0.3.dist-info/top_level.txt,sha256=1DMJtMklRTN6bQ7Gv08DRtrSR4rtaPjr5FAq2C-Aoo4,6
