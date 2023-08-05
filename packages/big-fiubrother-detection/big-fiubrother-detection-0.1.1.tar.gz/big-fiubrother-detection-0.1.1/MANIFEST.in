@@ -1,0 +1,2 @@
+include big_fiubrother_detection/config/*
+include big_fiubrother_detection/model/*
