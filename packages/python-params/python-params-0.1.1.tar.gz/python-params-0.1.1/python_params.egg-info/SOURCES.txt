@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+pyparams/__init__.py
+pyparams/module.py
+pyparams/modules_parser.py
+pyparams/pyparam.py
+pyparams/pyparam_fn.py
+pyparams/pyparam_parser.py
+pyparams/utils.py
+python_params.egg-info/PKG-INFO
+python_params.egg-info/SOURCES.txt
+python_params.egg-info/dependency_links.txt
+python_params.egg-info/requires.txt
+python_params.egg-info/top_level.txt
+scripts/pyparams
