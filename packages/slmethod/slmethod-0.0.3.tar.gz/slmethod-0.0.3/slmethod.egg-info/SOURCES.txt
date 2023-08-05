@@ -1,0 +1,7 @@
+README.md
+setup.py
+slmethod/__init__.py
+slmethod.egg-info/PKG-INFO
+slmethod.egg-info/SOURCES.txt
+slmethod.egg-info/dependency_links.txt
+slmethod.egg-info/top_level.txt
