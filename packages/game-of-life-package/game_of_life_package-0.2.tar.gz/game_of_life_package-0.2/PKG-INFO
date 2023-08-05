@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: game_of_life_package
+Version: 0.2
+Summary: Game of Life implementation with many options. 
+Home-page: https://github.com/FabCarbonia/GameOfLifePython/blob/master/game_of_life_code.py
+Author: Fabio
+Author-email: famelis12@gmail.com
+License: MIT
+Download-URL: https://github.com/FabCarbonia/GameOfLifePython/archive/v_01.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
