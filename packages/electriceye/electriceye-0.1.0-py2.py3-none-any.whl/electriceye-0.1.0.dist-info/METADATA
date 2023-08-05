@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: electriceye
+Version: 0.1.0
+Summary: Web test framework with image recogniction and cucumber like syntax
+Home-page: https://github.com/victorcabello/electriceye
+Author: Victor Cabello
+Author-email: vmeca87@gmail.com
+License: MIT license
+Keywords: electriceye
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+Requires-Dist: opencv-contrib-python
+Requires-Dist: scikit-image
+Requires-Dist: imutils
+Requires-Dist: scipy
+
+===========
+electriceye
+===========
+
+
+.. image:: https://img.shields.io/pypi/v/electriceye.svg
+        :target: https://pypi.python.org/pypi/electriceye
+
+.. image:: https://img.shields.io/travis/victorcabello/electriceye.svg
+        :target: https://travis-ci.org/victorcabello/electriceye
+
+.. image:: https://readthedocs.org/projects/electriceye/badge/?version=latest
+        :target: https://electriceye.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Web test framework with image recogniction and cucumber like syntax
+
+
+* Free software: MIT license
+* Documentation: https://electriceye.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-03-03)
+------------------
+
+* First release on PyPI.
+
+
