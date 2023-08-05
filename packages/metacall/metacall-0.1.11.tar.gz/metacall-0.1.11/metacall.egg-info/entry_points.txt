@@ -1,0 +1,5 @@
+[console_scripts]
+metacall-install = metacall.__helper__:install
+metacall-uninstall = metacall.__helper__:uninstall_prompt
+metacall-update = metacall.__helper__:update
+
