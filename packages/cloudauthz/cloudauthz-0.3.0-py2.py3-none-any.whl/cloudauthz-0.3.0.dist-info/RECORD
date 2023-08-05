@@ -1,0 +1,14 @@
+cloudauthz/__init__.py,sha256=SQ5szCMcciwx5Xckw8z2kDC7cgNvoVfxYth2zQyow1U,701
+cloudauthz/exceptions.py,sha256=LBwSsy2U7mKDBNfgYBLTYBstNnk1nRUiBdsUZoBub2Q,1708
+cloudauthz/interfaces/__init__.py,sha256=vrWQin4xWsvNM_U1DjwBXr7EgiVGWyCFpI1Ez4DPwMg,53
+cloudauthz/interfaces/providers.py,sha256=lbvVRUFdOT5c9S4TwtWrUkjVp3qggxLpeuzFxDw5WEk,1643
+cloudauthz/providers/__init__.py,sha256=j7B8l2kFVlPOMWc_GbnJ_ZHh0a-vs5np5FwAK0xSTFU,68
+cloudauthz/providers/aws.py,sha256=TDq9jbNQcCeDODtqM2bheKJSp-ZC14eoh2-nPsMOQyg,4365
+cloudauthz/providers/azure.py,sha256=L06-7xsQf-jg3AWeeX8_bV3_KGyfRUWnEGczpTQirVk,1684
+cloudauthz/providers/gcp.py,sha256=WZJwAU-4k1PC-KB0pjzlwYMIT0Kl0BDr7QaNy2RsoSg,2335
+cloudauthz_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudauthz-0.3.0.dist-info/LICENSE,sha256=QVbGv7IibV2r_NP-BwTM6QwIK8adP6wTWylpy13Xd2g,1071
+cloudauthz-0.3.0.dist-info/METADATA,sha256=n-LKu8KmjRUrotMrgzZrtgCzaMAKzgTMF4FrU-dPdZw,2415
+cloudauthz-0.3.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+cloudauthz-0.3.0.dist-info/top_level.txt,sha256=TERjOeKAYH-FCkiEGUgBQBzd627h5T2-Q12DfZ49OM8,28
+cloudauthz-0.3.0.dist-info/RECORD,,
