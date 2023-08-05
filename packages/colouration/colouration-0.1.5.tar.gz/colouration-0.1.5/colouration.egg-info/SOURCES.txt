@@ -1,0 +1,9 @@
+README.md
+setup.py
+colouration/__init__.py
+colouration.egg-info/PKG-INFO
+colouration.egg-info/SOURCES.txt
+colouration.egg-info/dependency_links.txt
+colouration.egg-info/requires.txt
+colouration.egg-info/top_level.txt
+colouration.egg-info/zip-safe
