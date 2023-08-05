@@ -1,0 +1,8 @@
+README.md
+setup.py
+parallel/__init__.py
+parallel/exceptions.py
+python_parallel.egg-info/PKG-INFO
+python_parallel.egg-info/SOURCES.txt
+python_parallel.egg-info/dependency_links.txt
+python_parallel.egg-info/top_level.txt
