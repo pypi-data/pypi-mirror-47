@@ -1,0 +1,9 @@
+README.md
+setup.py
+CLI/App.py
+CLI/CLI.py
+CLI/__init__.py
+CLI_csdummi.egg-info/PKG-INFO
+CLI_csdummi.egg-info/SOURCES.txt
+CLI_csdummi.egg-info/dependency_links.txt
+CLI_csdummi.egg-info/top_level.txt
