@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hands-rdf
+Version: 0.1
+Summary: Hand detector in depth images
+Home-page: UNKNOWN
+Author: Bernat Galmés Rubert, Dr. Gabriel Moyà Alcover
+Author-email: bernat_galmes@hotmail.com
+License: GPL
+Platform: UNKNOWN
+Requires-Dist: scikit-learn
+Requires-Dist: numpy
+
+UNKNOWN
+
+

@@ -1,0 +1,13 @@
+hands_rdf/RDF.py,sha256=LDpjoAvcHMp4JPXbK_ZV_xIEvoqM9rfLRnsSIMlBg4A,5763
+hands_rdf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hands_rdf/features.py,sha256=Q8OFA9PlRmgoKFZINQC6aan1bxU3tmqFsJUcD66ZIiE,8573
+hands_rdf/helpers.py,sha256=JUqqfvgzr8RmPtGthoLWkXuM_pPUL0qRlRJXLuVQJUE,855
+hands_rdf/Model/BaseModel.py,sha256=-RQ9QI99r31VeAVdlqimjZQF-FAQoVJEL5foszqu71M,1918
+hands_rdf/Model/Config.py,sha256=Uijm6gOVcCCcStFoH3cUxz80BdEoQuucy2D684E31B4,4911
+hands_rdf/Model/MultiModels.py,sha256=plNBk8DLQZARZa3YsoYdiyQsX_ei3oPZrNKlHZfgroA,2623
+hands_rdf/Model/__init__.py,sha256=z5-y8Iz7uUTtziBGGVaveOcDXBlS843syN96AI9pp6Y,49
+hands_rdf-0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hands_rdf-0.1.dist-info/METADATA,sha256=XzCen_nM3XsU7Yf6mdDIUCeq3I44QsgTCj70mhyrxBI,297
+hands_rdf-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+hands_rdf-0.1.dist-info/top_level.txt,sha256=9AQl3sjTC7sYCT9JbOe7sCMhZJMUSNB7UuImiA2toYE,10
+hands_rdf-0.1.dist-info/RECORD,,
