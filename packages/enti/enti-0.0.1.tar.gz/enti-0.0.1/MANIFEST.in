@@ -1,0 +1,6 @@
+exclude enti/ext/*.py
+exclude enti/pipelines/*.py
+exclude enti/lexicons/*.py
+exclude enti/test/*.py
+exclude venv/**
+
