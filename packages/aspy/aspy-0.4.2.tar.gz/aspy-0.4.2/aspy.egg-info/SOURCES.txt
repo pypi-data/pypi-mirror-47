@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+aspy/__init__.py
+aspy.egg-info/PKG-INFO
+aspy.egg-info/SOURCES.txt
+aspy.egg-info/dependency_links.txt
+aspy.egg-info/requires.txt
+aspy.egg-info/top_level.txt
