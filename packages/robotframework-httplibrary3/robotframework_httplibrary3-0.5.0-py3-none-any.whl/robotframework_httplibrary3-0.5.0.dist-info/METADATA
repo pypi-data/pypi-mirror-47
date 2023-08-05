@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: robotframework-httplibrary3
+Version: 0.5.0
+Summary: Robot Framework keywords for HTTP requests
+Home-page: https://github.com/peritus/robotframework-httplibrary
+Author: Filip Noetzel
+Author-email: filip+rfhttplibrary@j03.de
+License: Beerware
+Keywords: robotframework testing testautomation web http webtest
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: robotframework
+Requires-Dist: webtest (>=2.0)
+Requires-Dist: jsonpatch
+Requires-Dist: jsonpointer
+
+not working right now
+
+
