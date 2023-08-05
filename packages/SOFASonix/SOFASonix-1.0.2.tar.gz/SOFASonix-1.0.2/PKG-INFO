@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: SOFASonix
+Version: 1.0.2
+Summary: A Lightweight Python API for the AES69-2015 Spatially Oriented Format for Acoustics (SOFA) File Format
+Home-page: https://github.com/OneBadNinja/SOFASonix/
+Author: Ioseb Laghidze
+Author-email: developer@artisan-one.com
+License: BSD 3-Clause
+Download-URL: https://github.com/OneBadNinja/SOFASonix/archive/1.0.2.tar.gz
+Description: UNKNOWN
+Keywords: SOFA,Spatially Oriented Format For Acoustics,Audio,3D Audio,Binaural,Transaural,Acoustics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
