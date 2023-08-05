@@ -1,0 +1,10 @@
+yara-python
+pefile
+cmd2
+unicorn-unipacker
+
+[:platform_system == "Darwin"]
+gnureadline
+
+[:platform_system == "Windows"]
+pyreadline
