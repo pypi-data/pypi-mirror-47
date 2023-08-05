@@ -1,0 +1,59 @@
+language: python
+dist: xenial
+services:
+  - docker
+env:
+  global:
+    - LD_PRELOAD=/lib/x86_64-linux-gnu/libSegFault.so
+    - SEGFAULT_SIGNALS=all
+stages:
+  - lint
+  - unit
+  - func
+jobs:
+  include:
+    - stage: lint
+      env: TOXENV=check
+    - env: TOXENV=docs
+    - stage: unit
+{% for env in tox_environments %}
+    {%+ if not loop.first %}- {% else %}  {% endif -%}
+{% if env.startswith("pypy3") -%}
+      python: 'pypy3.5-6.0'
+{% elif env.startswith("pypy") -%}
+      python: 'pypy2.7-6.0'
+{% else -%}
+      python: '{{ "{0[2]}.{0[3]}".format(env) }}'
+{% endif %}
+      env:
+        - TOXENV={{ env }},coveralls
+{% if env.startswith("pypy") %}
+        - TOXPYTHON={{ env.split("-")[0] }}
+{% endif %}
+{% endfor %}
+    - stage: func
+      python: '3.6'
+      env:
+        - TOXENV=func
+  allow_failures:
+    - stage: func
+
+before_install:
+  - python --version
+  - uname -a
+  - lsb_release -a
+install:
+  - pip install tox
+  - virtualenv --version
+  - easy_install --version
+  - pip --version
+  - tox --version
+script:
+  - tox -v
+after_failure:
+  - more .tox/log/* | cat
+  - more .tox/*/log/* | cat
+notifications:
+  email:
+    on_success: never
+    on_failure: always
