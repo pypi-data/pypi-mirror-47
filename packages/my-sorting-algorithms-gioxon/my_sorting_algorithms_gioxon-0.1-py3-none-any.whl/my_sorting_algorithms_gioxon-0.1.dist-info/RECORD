@@ -1,0 +1,9 @@
+my_sorting_algorithms/__init__.py,sha256=ndVEPkeyEETTnT8ICaDIRmR8v9PO1CQHbCvUrR1B_5Q,157
+my_sorting_algorithms/bubble_sort.py,sha256=q2cmd3BY1iYU0FsaKJlOBEbNyylPCUjhCvK9e-3Iuco,297
+my_sorting_algorithms/insertion_sort.py,sha256=Zld30kdrL3Eu-2QR7dbEuw4gYvE6kDI_wn8A9Onh_9M,356
+my_sorting_algorithms/quick_sort.py,sha256=TqAholLQGrq581-Uww4x2gRfioca4-SMQsd_lsE60sY,996
+my_sorting_algorithms/selection_sort.py,sha256=eXONZHIoq77OWZGb3LWuIphALhaCkQ-WO2GGkXlRPZw,408
+my_sorting_algorithms_gioxon-0.1.dist-info/METADATA,sha256=a9ut7Y8X7q5dbUKoeDrxNH-vfCSo5ilk3ddx166Pp34,310
+my_sorting_algorithms_gioxon-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+my_sorting_algorithms_gioxon-0.1.dist-info/top_level.txt,sha256=tOkyIXBPMMLl9QU3Y7snSGqKMdeYsPBmGBH3M8GYyjc,22
+my_sorting_algorithms_gioxon-0.1.dist-info/RECORD,,
