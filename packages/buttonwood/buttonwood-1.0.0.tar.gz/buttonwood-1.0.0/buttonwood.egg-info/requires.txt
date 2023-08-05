@@ -1,0 +1,2 @@
+nose
+m3-cdecimal
