@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: ftr-classifier
+Version: 1.0.1
+Summary: classifies english, dutch and german sentence  in terms of how they refer to the future.
+Home-page: https://github.com/cbjrobertson/ftr_classifier.git
+Author: cole robertson
+Author-email: cbjrobertson@gmail.com
+License: MIT
+Download-URL: https://github.com/cbjrobertson/future_modality/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: ==3.6.*
