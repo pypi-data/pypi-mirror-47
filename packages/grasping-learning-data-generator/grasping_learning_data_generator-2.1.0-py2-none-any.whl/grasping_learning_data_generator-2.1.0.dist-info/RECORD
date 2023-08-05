@@ -1,0 +1,10 @@
+grasping_learning_data_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grasping_learning_data_generator/cram2wordnet.py,sha256=t2riFdjVD1W_OX86dJ13dciYGvbqVXjstJoVzEZwGiE,572
+grasping_learning_data_generator/orientation.py,sha256=BMHP7EF_QijxI8Cc-mS4wA-4RgZ8iHNe8LHOdjpIGBY,5250
+grasping_learning_data_generator/position.py,sha256=20LDUTZNnJdEdGqYGV3yNRsOVLi2qJQzc5axDMXbBMk,7021
+grasping_learning_data_generator/transformations.py,sha256=X5lzqYgxVXxmc0JbxmgMsQMzYajrvAEpbOPebPPgMFM,5033
+grasping_learning_data_generator-2.1.0.dist-info/LICENSE,sha256=z0YQZ4x1JHvc2HDjBMjStryRsanKGogu3E8-c3Ywm9c,1117
+grasping_learning_data_generator-2.1.0.dist-info/METADATA,sha256=4H49XtZPB6ZOtxlenQ-BfOAliCgQ-Y5pw1tUE6V_rGM,597
+grasping_learning_data_generator-2.1.0.dist-info/WHEEL,sha256=quTwCBwEhCqvWQayaLINV6u_GggLcWROgOHAbyu7a04,92
+grasping_learning_data_generator-2.1.0.dist-info/top_level.txt,sha256=OOJ6DwZfZonIXNcyZe9vWKHzen_OUoCFlcjg7OTuoRo,33
+grasping_learning_data_generator-2.1.0.dist-info/RECORD,,
