@@ -1,0 +1,13 @@
+README.md
+setup.py
+otto/__init__.py
+otto/cli.py
+otto/resources.py
+otto/utilities.py
+otto/validate.py
+otto_bot.egg-info/PKG-INFO
+otto_bot.egg-info/SOURCES.txt
+otto_bot.egg-info/dependency_links.txt
+otto_bot.egg-info/entry_points.txt
+otto_bot.egg-info/requires.txt
+otto_bot.egg-info/top_level.txt
