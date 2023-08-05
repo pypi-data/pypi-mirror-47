@@ -1,0 +1,14 @@
+QApedia/__init__.py,sha256=S8sGmtj4VKMgEa260T-9l8L31H3x2UfbBbxz15aGlKE,217
+QApedia/generator.py,sha256=IuYJKE5PqA3nnBRwIGbpVIe0Yb9KC26WFyQPh7pMkjQ,11639
+QApedia/io.py,sha256=6f1ACRA4Nlnr634BBu_Ia84Geh3w0ejfmp7IUtIUbNU,2066
+QApedia/utils.py,sha256=stvT5aGqCWAeR0Yh9VNnkvPE12chIn30BoVQDLZVJG0,8654
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=uaYNK5iqTpaa91A_TQH7oLiGRGNkxTiqqTJpDy8GF3g,595
+tests/test_generator.py,sha256=XykOV-BsJbFGJsNx8le1ADFa2Vcnq32X8n3q4y1a8rk,6853
+tests/test_io.py,sha256=ytUjU07bZttY_HxgPOqdAE6xHCos-rdb5NKmExmDvFs,301
+tests/test_utils.py,sha256=pOVEe-7DLBGV2d6rcPReQ66Chor1SY90NCT9VImuL0c,2286
+QApedia-0.0.dist-info/LICENSE,sha256=HKkRcmhYRSAvOnXrZnetDujseSyjB9u_opdYH6GlFHw,1070
+QApedia-0.0.dist-info/METADATA,sha256=YO_9bWhnhMWgEndjM8Qm846d0TmGa4MfyCqlklUfIC4,1349
+QApedia-0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+QApedia-0.0.dist-info/top_level.txt,sha256=d3-2L1KF0Zr7rFiUJOe8KlbI8Jqw4MJIxn0VpMFxrkc,14
+QApedia-0.0.dist-info/RECORD,,
