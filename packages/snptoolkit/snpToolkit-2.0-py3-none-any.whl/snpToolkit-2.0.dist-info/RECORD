@@ -1,0 +1,11 @@
+modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modules/annotate_snpToolkit.py,sha256=wdqQ-BllWV7MSn-hoS4MNJirTVbfjXlAItNnQTMS_fI,47745
+modules/argsLogger_snpToolkit.py,sha256=iRAhrYDxTmfsg0H-TJkpnh5i1OedhacUdon1jqdUMJU,5522
+modules/calls_snpToolkit.py,sha256=4R9RI50GXV04y--nNnQkPESTpQq3tfxxOIDAA5jBol8,19361
+modules/combine_snpToolkit.py,sha256=J24944nETttw1-p9Fj2r2A7LQDzV_I3_Hxgqjy8RYlQ,12603
+snpToolkit-2.0.data/scripts/snpToolkit,sha256=BSXK65o-YX6xvV6O1N1oS4-YGttIq8QXkUuNCgvdIJI,1731
+snpToolkit-2.0.dist-info/LICENSE,sha256=N0FD-fp8JkjOYb_q8Q3DsKOkcQkkVnijnGwLx-iC-Qk,654
+snpToolkit-2.0.dist-info/METADATA,sha256=9a8j_C7mzsRXpb2F35rMVhYepQf7Xs231XKgdxLqE3k,706
+snpToolkit-2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+snpToolkit-2.0.dist-info/top_level.txt,sha256=F7U4jdIxH3MVMmyX9rbajWuG0bj5tcZN4L1DZSxW72E,8
+snpToolkit-2.0.dist-info/RECORD,,
