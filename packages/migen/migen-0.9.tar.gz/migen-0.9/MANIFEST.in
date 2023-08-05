@@ -1,0 +1,4 @@
+include doc/migen_logo.svg
+include doc/migen_logo.png
+include tools/strace_tailor.sh
+include LICENSE
