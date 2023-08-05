@@ -1,0 +1,3 @@
+[console_scripts]
+pulm = pulm.pulm:main
+
