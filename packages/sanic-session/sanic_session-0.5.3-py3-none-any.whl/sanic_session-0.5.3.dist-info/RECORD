@@ -1,0 +1,13 @@
+sanic_session/__init__.py,sha256=_i3u_8tpLUDSniOGaBjYxHzr8zRmvIXRnI9cDS1r9zo,1451
+sanic_session/aioredis.py,sha256=znJsJwf-wu9n2wipNrW0XVxSVuNRqw3dk6JNGa_se1A,3071
+sanic_session/base.py,sha256=Qrz-wiDkCpAxtaiuqpNLusr7pYP-0FKjeyXcRGRP--s,4880
+sanic_session/memcache.py,sha256=V8z2m8itNcrrOF61ESRPN_rlZ66IxktmzTBwuRKZGRs,3666
+sanic_session/memory.py,sha256=u-vqJKR3_sxTI-LbVOI-hogLVkFUKUNiVGYoZvctNeM,1181
+sanic_session/mongodb.py,sha256=oE9oo0lrnZliWe7Nv8xWN3Fmxiei0ySY6IGAto1liGw,4992
+sanic_session/redis.py,sha256=bMDWGtfxHPgE0Qh4nedozDLs8qfmEvlCzvWHwQLoGk0,3481
+sanic_session/utils.py,sha256=7LXNdHG9X_DWNA0QpSmsFO3Y25XsVEGn64HDEHnmh6A,2948
+sanic_session-0.5.3.dist-info/LICENSE,sha256=kCvMzaabK0GgjYMQTpZi8IW1oNxyBVaDMITVul4XWog,1067
+sanic_session-0.5.3.dist-info/METADATA,sha256=1wfd_wUtMVq6d6TuiAV751OWXhKJjOSfn-NKZDxaaQ8,3143
+sanic_session-0.5.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sanic_session-0.5.3.dist-info/top_level.txt,sha256=CO5FOGrYIekxfl9kCAK1pyOGnMeU8rX_jECvjZlaT3c,14
+sanic_session-0.5.3.dist-info/RECORD,,
