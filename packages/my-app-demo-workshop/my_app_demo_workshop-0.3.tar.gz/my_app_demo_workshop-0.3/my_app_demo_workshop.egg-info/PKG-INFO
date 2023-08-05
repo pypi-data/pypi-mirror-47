@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: my-app-demo-workshop
+Version: 0.3
+Summary: Demo app for Python workshop
+Home-page: https://github.com/rusugheorghe/my_app_demo_workshop
+Author: Gheorghe Rusu
+Author-email: gheorghe.rusu@endava.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
