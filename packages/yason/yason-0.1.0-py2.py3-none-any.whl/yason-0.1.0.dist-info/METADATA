@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: yason
+Version: 0.1.0
+Summary: CLI to schedule Jupyter Notebook execution with Papermill and Argo
+Home-page: https://github.com/ktaletsk/yason
+Author: Konstantin Taletskiy
+Author-email: konstantin@taletskiy.com
+License: MIT license
+Keywords: yason
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+Requires-Dist: boto3 (>=1.9.0)
+Requires-Dist: pandas (>=0.24.0)
+Requires-Dist: kubernetes (>=9.0.0)
+
+.. image:: https://img.shields.io/pypi/v/yason.svg
+        :target: https://pypi.python.org/pypi/yason
+
+.. image:: https://img.shields.io/travis/com/ktaletsk/yason.svg
+        :target: https://travis-ci.com/ktaletsk/yason
+
+.. image:: https://readthedocs.org/projects/yason/badge/?version=latest
+        :target: https://yason.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/ktaletsk/yason/shield.svg
+     :target: https://pyup.io/repos/github/ktaletsk/yason/
+     :alt: Updates
+
+==========================================
+yason: Jupyter Notebook Scheduler for Argo
+==========================================
+
+.. image:: logo.png
+    :height: 50px
+    :align: center
+    :alt: logo
+
+
+
+Python package and CLI to schedule Jupyter Notebook execution with Papermill on Argo cluster
+
+
+* Free software: MIT license
+* Documentation: https://yason.readthedocs.io.
+
+
+Features
+--------
+
+* Check the status of all scheduled notebook jobs
+* Schedule a notebook for execution
+* Get resulting notebook after execution
+* Delete scheduled notebook job
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-05-22)
+------------------
+
+* First release on PyPI.
+
+
