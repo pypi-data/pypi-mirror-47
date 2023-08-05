@@ -1,0 +1,10 @@
+README.rst
+setup.py
+tupload/__init__.py
+tupload/tupload.py
+tupload.egg-info/PKG-INFO
+tupload.egg-info/SOURCES.txt
+tupload.egg-info/dependency_links.txt
+tupload.egg-info/entry_points.txt
+tupload.egg-info/requires.txt
+tupload.egg-info/top_level.txt
