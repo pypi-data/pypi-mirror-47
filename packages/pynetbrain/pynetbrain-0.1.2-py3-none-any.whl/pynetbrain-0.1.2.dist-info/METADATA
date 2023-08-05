@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pynetbrain
+Version: 0.1.2
+Summary: A client library for interacting with NetBrain7 API
+Home-page: UNKNOWN
+Author: Brady Lamprecht
+Author-email: bdlamprecht@gmail.com
+License: MIT
+Keywords: netbrain
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: requests (>=2.20.0)
+
+# pynetbox
+A client library for interacting with NetBrain7 API
+
+
