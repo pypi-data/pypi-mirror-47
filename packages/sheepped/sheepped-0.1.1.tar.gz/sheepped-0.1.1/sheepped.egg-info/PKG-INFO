@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: sheepped
+Version: 0.1.1
+Summary: A Python wrapper for tracking delivery!
+Home-page: https://github.com/g4brielvs/sheepped
+Author: Gabriel Stefanini
+Author-email: g4brielvs@gbrielvs.me
+License: UNKNOWN
+Description: # Sheepped
+        
+         🚚 A Python wrapper for tracking delivery (e.g. USPS).
+        
+        ## Getting Started
+        
+        First, install the package from [pip](https://pypi.org/project/pip/).
+        
+            $ pip install sheepeed
+        
+        Now, register at [USPS](https://registration.shippingapis.com) to get your ```USPS_USER_ID```.
+        
+        ## Usage
+        
+            $ from sheppeed import USPS
+            $ usps = USPS('${USPS_USER_ID}')
+            $ usps.track('${USPS_TRACKING_NUMBER}')
+Keywords: shipping,usps
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
