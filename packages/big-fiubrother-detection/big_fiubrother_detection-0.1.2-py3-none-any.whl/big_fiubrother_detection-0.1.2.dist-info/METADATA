@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: big-fiubrother-detection
+Version: 0.1.2
+Summary: Big Fiubrother Face Detection application
+Home-page: https://github.com/BigFiuBrother/big-fiubrother-detection
+Author: Eduardo Neira, Gabriel Gayoso
+Author-email: gabriel.gayoso@fi.uba.ar
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+UNKNOWN
+
+
