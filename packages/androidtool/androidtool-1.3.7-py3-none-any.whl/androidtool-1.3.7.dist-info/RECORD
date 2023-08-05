@@ -1,0 +1,13 @@
+androide/__init__.py,sha256=FWbY9JJ0BWE0Gz3GVcpnfmCDqT2C3CKsiovhlKhedgc,26
+androide/android_enhanced.py,sha256=ijfwix455zkxw3RClSAqXyc0fD4T-_PmsvrYVvHq_7k,21412
+androide/android_sdk_helper.py,sha256=5L-k6cBS7_ki-_JW-7dCbVOzrgLYmltE9R3vtTS5x6M,2699
+androide/main.py,sha256=aH1PgngsDJD7VDIrv6PjzE5uJAz-enRy2VQIWvRv2c4,5499
+androide/output_helper.py,sha256=AYl3TqE4288F0Krcvva7Z8G2HZ1bLz3_AWUauaiO0ek,1000
+androide/platform_helper.py,sha256=KIncyf3LJSeR5OqBhF5ssjjYzohkJ9m6oHSDQHHRKDs,2226
+androide/version.txt,sha256=Li-09QbzaF-SCjkck8ICk8mrt0LPx0RWg0v0qvDdHCs,6
+androidtool-1.3.7.dist-info/METADATA,sha256=AXiM_N_Mam7SX2GhhTATKu886uOiLQzLk2OCZyjj8VE,4984
+androidtool-1.3.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+androidtool-1.3.7.dist-info/entry_points.txt,sha256=0F8p9N-c5slmrpFjo-je8DYCOrI6XsvnRj-ndBlZkYw,52
+androidtool-1.3.7.dist-info/top_level.txt,sha256=fHECy-pYdH_n26VPPZ1rAaRs4o7g44jhy0nBvG4uY2w,9
+androidtool-1.3.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+androidtool-1.3.7.dist-info/RECORD,,
