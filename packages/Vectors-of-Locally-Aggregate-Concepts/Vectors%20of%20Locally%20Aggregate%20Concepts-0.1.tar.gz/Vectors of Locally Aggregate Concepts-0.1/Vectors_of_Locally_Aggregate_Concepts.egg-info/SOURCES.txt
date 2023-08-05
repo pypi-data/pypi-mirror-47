@@ -1,0 +1,9 @@
+README.md
+setup.py
+Vectors_of_Locally_Aggregate_Concepts.egg-info/PKG-INFO
+Vectors_of_Locally_Aggregate_Concepts.egg-info/SOURCES.txt
+Vectors_of_Locally_Aggregate_Concepts.egg-info/dependency_links.txt
+Vectors_of_Locally_Aggregate_Concepts.egg-info/requires.txt
+Vectors_of_Locally_Aggregate_Concepts.egg-info/top_level.txt
+vlac/__init__.py
+vlac/vlac.py
