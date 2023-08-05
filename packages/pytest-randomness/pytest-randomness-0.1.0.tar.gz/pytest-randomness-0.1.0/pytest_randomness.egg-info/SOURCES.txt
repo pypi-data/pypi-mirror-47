@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+pytest_randomness.py
+setup.py
+pytest_randomness.egg-info/PKG-INFO
+pytest_randomness.egg-info/SOURCES.txt
+pytest_randomness.egg-info/dependency_links.txt
+pytest_randomness.egg-info/entry_points.txt
+pytest_randomness.egg-info/requires.txt
+pytest_randomness.egg-info/top_level.txt
