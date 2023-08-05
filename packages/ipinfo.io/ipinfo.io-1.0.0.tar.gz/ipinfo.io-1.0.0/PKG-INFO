@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ipinfo.io
+Version: 1.0.0
+Summary: ipinfo.io API wrapper
+Home-page: https://github.com/sl4vkek/ipinfo.io
+Author: sl4v
+Author-email: iamsl4v@protonmail.com
+License: WTFPL
+Description: A Simple wrapper for ipinfo.io
+Platform: UNKNOWN
