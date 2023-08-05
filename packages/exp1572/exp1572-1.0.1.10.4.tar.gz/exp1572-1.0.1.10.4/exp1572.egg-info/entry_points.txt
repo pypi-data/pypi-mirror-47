@@ -1,0 +1,3 @@
+[console_scripts]
+exp1572 = exp1572.game:mainMenu
+
