@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>map</title>
+    <link href="/static/bootstrap/dist/css/bootstrap.css" rel="stylesheet"></link>
+    {% block head_css %}
+         <link href="/static/css/map.css" rel="stylesheet"></link>
+    {% end %}
+
+    {% block extends_css %}
+         <link href="/static/css/sao.css" rel="stylesheet"></link>
+    {% end %}
+</head>
+<body>
+    <button class="btn btn-defaut" id="add-info" style="position:absolute; left: 50%;top:2%;background:white; z-index: 10000" data-target="#proxy-setting" data-toggle="modal" >Proxy</button>
+    <div class="main" class='main'>
+        <div class="body">
+            {% block left_d %}
+            <div class="left col-md-3 col-sm-6 col-xs-12" style="position: fixed; z-index: 10000">
+
+            <div id="map-id-head">
+            </div>
+            {% end %}
+
+            
+            <!-- <button class="btn btn-defaut" id="search-info" style="background:white"><a href='/static/files/export_all.json'>export json</a></button> -->
+
+            </div>
+
+            {% block content_d %}
+            <div class="content " style="width: 100%">
+            {% block content %}
+
+            <div id="map-id-leaf"></div>
+            {% module LMap("map-id-leaf", "", 1000) %}
+            {% end %}
+            </div>
+            {% end %}
+        </div>
+
+        <div class="tail">
+        {% block tail %}
+        {% end %}
+            <div class="dropup" style="position: fixed;z-index: 10000;bottom: 17%;left: 10%;max-width: 250px">
+              <div class="input-group">
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Action <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a data-target="#add-hosts-modal" data-toggle="modal" href="#">add host</a></li>
+                      <li><a onclick="show_in('#mul-ss-module', relX+20, relY -100)" href="#">Build Hidden Routes</a></li>
+                    </ul>
+                </div>
+                <!-- <div class="input-group-addon">Search</div> -->
+                <!-- <button style="min-height: 34px" class="btn-default input-group-addon"  id="add-hosts">+</button> -->
+                <input type="text" onkeydown=''  value="" class="form-control" id="cmd_mode" style="max-width:170px;" placeholder="ip/time">
+              <!-- <div class="input-group-addon">.json</div> -->
+              </div>
+              
+              
+              <ul class="dropdown-menu" id='dropdowns' aria-labelledby="dLabel">
+                
+              </ul>
+            </div>
+        </div>
+        {% module TModal("Hello world!!",Id="register-server") %}
+        {% module TModal('<div class="form-group"><label for="toport" class="sr-only">Proxy</label><input type="text" class="form-control" id="proxy-setting-proxy" placeholder="10" value="socks5://127.0.0.1:1080"></div>',Id="proxy-setting") %}
+
+
+        {% module TModal('<div class="form-group"><label class="control-label">Port:</label><input type="number" name="port" class="form-control" id="add-hosts-port" placeholder="22" value="22"></div><div class="form-group"><label class="control-label">Host:</label><input type="text" name="ip" class="form-control" id="add-hosts-ip" placeholder="host" ></div><div class="form-group"><label class="control-label">Pass(must root user):</label><input type="password" name="pwd" class="form-control" id="add-hosts-pwd"placeholder="pass" value=""></div>',Id="add-hosts-modal") %}
+
+        {% module SaoMenuList(
+            {
+                "name":"获取该点所有线路配置", "id":"get-status"
+            },  
+            {
+                "name":"中继","id":"link-setting"
+            },
+            {
+                "name":"线路额外安装ss","id":"base-setting"
+            },
+            {
+                "name":"设置模式","id":"set-mode"
+            },
+            {
+                "name":"重置线路配置","id":"reset-route"
+            },
+            {
+                "name":"显示线路二维码", "id": "gen-qr"
+            },
+            {
+                "name":"Destroy","id":"destroy-server"
+            }, Id="handle-menu") %}
+
+        {% module SaoPanel('hello world' ,Class="fade", Id="panel-input") %}
+        {% module SaoPanel('scan from ss' ,Class="fade", Id="qr-panel") %}
+        {% module SaoPanel('mul ss model', Class="fade", Id="mul-ss-module") %}
+        {% module SaoPanel('set ss model', Class="fade", Id="sao-ss-module") %}
+        
+    </div>
+
+    <script src="/static/jquery/dist/jquery.min.js"></script>
+    
+    <script src="/static/js/qrcode.min.js"></script>
+    <script src="/static/bootstrap/dist/js/bootstrap.js"></script>
+    {% block body_js %}
+    
+        <script type="text/javascript" src="/static/js/arc.js"></script>
+        <script src="/static/js/map.js"></script>
+        <script src="/static/js/sao.js" > </script>
+        <script type="text/javascript">
+            // $("input.form-control").focus()
+            // console.log(val);
+            load_sao();
+            
+            // setInterval('update_ip()', 10000)
+            // update_ip();
+            var updater =  null;
+            $(document).ready(function(){
+               updater = new update_ip()
+            })
+
+            $("#panel-input>.panel-body").html('<form class="form-inline"><div class="form-group"><label for="toport" class="sr-only">use minute</label><input type="text" class="form-control" id="use-minute" placeholder="10" value="600"></div><button onclick="return false" id="link-start" class="btn btn-default" >Confirm identity</button></form>')
+
+            $("#mul-ss-module>.panel-body").html('<form class="form-inline"><div class="form-group"><label for="toport" class="sr-only">jump number:</label><input type="number" class="form-control" id="jump-num" placeholder="10" value="3"><select multiple class="form-control" id="entry" >{% for i in cities %}<option>{{ i }}</option>{% end %}</select><select multiple class="form-control" id="out" >{% for i in cities %}<option>{{ i }}</option>{% end %}</select></div><button onclick="return false" id="route-build" class="btn btn-default" >Confirm identity</button></form>')
+            $("#sao-ss-module>.panel-body").html('<div class="input-group"><label class="control-label">mode</label><select multiple class="form-control" id="set-mode-select" >{% for i2,i in enumerate(["single", "flow", "random","auto"]) %}<option value="{{ i2 }}"" >{{ i }}</option>{% end %}</select><button onclick="return false" id="set-mode-confirm" class="btn btn-default" >Confirm identity</button></div>')
+            $("#panel-input").find("input").css("margin","3px")
+
+
+
+            // $("form").attr("onsubmit","do_form(); return false;");
+            $("form").removeAttr("method");
+
+            var qrcode = new QRCode("qr-panel-body")
+            // $("form").removeAttr("method");
+            $("#panel-input").css("display", "none")
+            $("#qr-panel").css("display", "none")
+            $("#mul-ss-module").css("display", "none")
+            $("#sao-ss-module").css("display", "none")
+            // var TOKEN = null
+            // function settoken(){
+            //     TOKEN = $("#token").val();
+                
+            //     if (TOKEN != null){
+                    
+                    JsonPost("/asyncremoteapi", {
+                        'req':{
+                            'op':'update',
+                            // 'token': TOKEN
+                        }
+                    },function(data){
+                        wait_ok()
+                        // $(".token-dialog").modal("hide")
+                    })
+                    wait()
+                    // setInterval(function(){
+                    //     JsonPost("/asyncremoteapi", {
+                    //         'req':{
+                    //             'op':'update',
+                    //             'token': TOKEN
+                    //         }
+                    //     },function(data){
+                            
+                    //     })
+                    // },10000)    
+                // }else{
+                    // wait()
+                // }
+                
+            // }
+
+            function destroy_server(){
+                
+                JsonPost("/asyncremoteapi", {
+                  'req':{
+                    'op':'destroy',
+                    'ip':cursor_fearture.properties.name,
+                    // 'token':TOKEN,
+                  }
+                }, function(data){
+                  window.location.reload()
+                })
+                wait()
+                
+            }
+
+
+            
+
+            
+        </script>
+        <!--
+        <script type="text/javascript">
+            websocket = new web_client("ws://localhost:8080/[url]")
+            websocket.on_msg(function(json){
+                console.log(json);
+            }
+        </script>
+        -->
+            <!-- <div class="modal fade token-dialog" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+                <div class="modal-dialog modal-sm" role="document">
+                    <div class="modal-content">
+                        <div class="input-group">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" onclick="settoken();" type="button">Go!</button>
+                            </span>
+                            <input type="text" id='token' class="form-control" placeholder="token" value="">
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+    {% end %}
+
+    {% block extends_js %}
+
+    {% end %}
+</body>
+</html>

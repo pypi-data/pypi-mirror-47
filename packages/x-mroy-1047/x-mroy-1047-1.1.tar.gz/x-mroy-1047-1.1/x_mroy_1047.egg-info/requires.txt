@@ -1,0 +1,12 @@
+mroylib-min
+tornado>=6.0.2
+aiohttp_socks
+geoip2
+fabric3
+qrcode
+pillow
+image
+xlwt
+xlrd
+enuma-elish
+x-mroy-202
