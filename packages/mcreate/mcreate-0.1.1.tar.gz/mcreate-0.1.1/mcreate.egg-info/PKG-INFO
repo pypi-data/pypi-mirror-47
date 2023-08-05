@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: mcreate
+Version: 0.1.1
+Summary: Tool to create projects
+Home-page: https://github.com/matyifkbt/create
+Author: Matyi
+Author-email: mmatyi@caesar.elte.hu
+License: MIT license
+Description: ======
+        create
+        ======
+        
+        
+        .. image:: https://img.shields.io/pypi/v/create.svg
+                :target: https://pypi.python.org/pypi/create
+        
+        .. image:: https://img.shields.io/travis/matyifkbt/create.svg
+                :target: https://travis-ci.org/matyifkbt/create
+        
+        .. image:: https://readthedocs.org/projects/create/badge/?version=latest
+                :target: https://create.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        Tool to create projects
+        
+        
+        * Free software: MIT license
+        * Documentation: https://create.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-06-02)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: create
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
