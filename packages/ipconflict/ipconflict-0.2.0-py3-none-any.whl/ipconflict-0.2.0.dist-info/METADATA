@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ipconflict
+Version: 0.2.0
+Summary: Check for conflicts between network subnets
+Home-page: https://github.com/fgiuba/ipconflict
+Author: Federico Giuba
+Author-email: federico.giuba@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: netaddr (==0.7.19)
+
+UNKNOWN
+
+
