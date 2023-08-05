@@ -1,0 +1,11 @@
+.gitignore
+Pipfile
+Pipfile.lock
+__init__.py
+setup.py
+urlifyhelper/__init__.py
+urlifyhelper/urlifyhelper.py
+urlifyhelper.egg-info/PKG-INFO
+urlifyhelper.egg-info/SOURCES.txt
+urlifyhelper.egg-info/dependency_links.txt
+urlifyhelper.egg-info/top_level.txt
