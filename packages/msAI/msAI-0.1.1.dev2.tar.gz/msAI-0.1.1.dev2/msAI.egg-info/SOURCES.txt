@@ -1,0 +1,11 @@
+README.md
+setup.py
+msAI/__init__.py
+msAI/msdf.py
+msAI.egg-info/PKG-INFO
+msAI.egg-info/SOURCES.txt
+msAI.egg-info/dependency_links.txt
+msAI.egg-info/requires.txt
+msAI.egg-info/top_level.txt
+tests/__init__.py
+tests/test_msdf.py
