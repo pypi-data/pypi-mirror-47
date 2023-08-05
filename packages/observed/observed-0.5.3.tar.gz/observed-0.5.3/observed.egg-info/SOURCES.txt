@@ -1,0 +1,7 @@
+README.md
+observed.py
+setup.py
+observed.egg-info/PKG-INFO
+observed.egg-info/SOURCES.txt
+observed.egg-info/dependency_links.txt
+observed.egg-info/top_level.txt
