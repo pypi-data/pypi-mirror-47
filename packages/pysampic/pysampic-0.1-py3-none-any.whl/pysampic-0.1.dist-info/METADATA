@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: pysampic
+Version: 0.1
+Summary: Python decoder for the binary SAMPIC files
+Home-page: https://gitlab.cern.ch/landerli/sampic_decoder
+Author: Lucio Anderlini, Nicola Minafra
+Author-email: lucio.anderlini@fi.infn.it
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# SAMPIC DECODER 
+The package `sampic_decoder` is a simple python packaged used to read 
+the binary files produced with the SAMPIC board from LAL in python/numpy. 
+
+It depends on numpy and runs with both Python2.7 and Python3.x. 
+
+Example: 
+	from pysampic import Dataset 
+
+	ds = Dataset ( "sample.bin" ) 
+
+	print (ds.keys()) #Prints the available keys 
+	print (ds['HitNumber']) # Reads the hit numbers of all entries as a ndarray 
+
+
