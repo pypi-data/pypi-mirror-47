@@ -1,0 +1,8 @@
+README.txt
+flask_waitress.py
+setup.py
+Flask_Waitress.egg-info/PKG-INFO
+Flask_Waitress.egg-info/SOURCES.txt
+Flask_Waitress.egg-info/dependency_links.txt
+Flask_Waitress.egg-info/requires.txt
+Flask_Waitress.egg-info/top_level.txt

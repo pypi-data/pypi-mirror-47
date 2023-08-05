@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: Flask-Waitress
+Version: 0.0.1
+Summary: Flask Waitress
+Home-page: UNKNOWN
+Author: Charlie Wolf
+Author-email: charlie@wolf.is
+License: Tequilaware
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Utilities
