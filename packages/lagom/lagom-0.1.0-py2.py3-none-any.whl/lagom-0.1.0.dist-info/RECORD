@@ -1,0 +1,10 @@
+lagom/__init__.py,sha256=LIcI8P3B7QV84HGzOas9jpiZdlsLO3AaPT9tfNJ6Jyw,212
+lagom/container.py,sha256=p6v22-Gl6swfMxM54e1FCHgWk-DRyzrlYbHb74iE4Zw,2994
+lagom/decorators.py,sha256=aJ9LUbsNttbl1g-3kRF_foedLB74hzasAZsHGtutTU0,298
+lagom/definitions.py,sha256=jXFNmq-drv-gLEvYV6zqbvE3Rzscz1V1B8AiD1otz6o,967
+lagom/exceptions.py,sha256=zyfTg6W8EA4Ye4UYGKJ8l39khOcDiw1QDN9-Aovpvmk,45
+lagom/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lagom-0.1.0.dist-info/LICENSE,sha256=Ufo1Yex1ziK89vMXXCpXWHK8Xh_fObXj3oe6N_bAuMM,1080
+lagom-0.1.0.dist-info/WHEEL,sha256=RFGpeSWy2MhnOH7MbIZmX9ZR0evWl2eJvsMO-yF-tDc,97
+lagom-0.1.0.dist-info/METADATA,sha256=HP-7t2a7HYnSHoh2DuSmgIlVMvZep4fAUAkw7TsWLBc,248
+lagom-0.1.0.dist-info/RECORD,,

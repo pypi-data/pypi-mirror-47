@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: lagom
+Version: 0.1.0
+Summary: Lagom, a type based dependency injection container
+Home-page: UNKNOWN
+License: UNKNOWN
+Author: meadsteve
+Author-email: meadsteve@gmail.com
+Classifier: License :: OSI Approved :: MIT License
