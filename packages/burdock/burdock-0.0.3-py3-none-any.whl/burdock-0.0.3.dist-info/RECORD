@@ -1,0 +1,13 @@
+burdock/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+burdock/__main__.py,sha256=dUDrAMdq_PGbfJblu4Qx7SIYswLjYNh9cm7F1RWyJ50,3544
+burdock/main.py,sha256=qGO60bMA9RD4zjOfHZPufl4qV3cyoS_I3VFvdYQ26jQ,103
+burdock/templates/decls.jinja2,sha256=Up3nzoryyNo0SLsBxmdVtf7fDC5ugxqc5jZz4SHuiZM,240
+burdock/templates/decls.mustache,sha256=HMUnrrQGstOA9cK46Pzl9BJwqvOx4_PkA76O1cqwbYg,40
+burdock/templates/dtrace.jinja2,sha256=VuRZo_rAjy17qg9Wu1UbEMMwnBQffqUkSbXve_yNO94,321
+burdock/templates/dtrace.mustache,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+burdock-0.0.3.dist-info/LICENSE,sha256=cEK2U5ZowLlGq-FI2bQ7DA952nGlS17QrhFZftKeyvk,1477
+burdock-0.0.3.dist-info/METADATA,sha256=r3VTHWHvF9XChg-mxt9BNU6BA99s71e2aol0EFOw1ng,818
+burdock-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+burdock-0.0.3.dist-info/entry_points.txt,sha256=p4g1BngOF69UYPnHg6CGF7bYVxinNxBX30WbqJJ8VU8,51
+burdock-0.0.3.dist-info/top_level.txt,sha256=Cv7oHM2fhm4QTFe51XuaM37sdU62z9KUrc9rvWxGFtA,8
+burdock-0.0.3.dist-info/RECORD,,
