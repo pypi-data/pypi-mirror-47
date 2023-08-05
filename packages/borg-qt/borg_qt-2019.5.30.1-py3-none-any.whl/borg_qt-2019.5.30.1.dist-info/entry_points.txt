@@ -1,0 +1,3 @@
+[gui_scripts]
+borg_qt = borg_qt.__main__:main
+
