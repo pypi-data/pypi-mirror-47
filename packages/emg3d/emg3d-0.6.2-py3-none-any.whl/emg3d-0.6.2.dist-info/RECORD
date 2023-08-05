@@ -1,0 +1,9 @@
+emg3d/__init__.py,sha256=gZpo_0cTyB58lR4dLgi5OiCHa8-_q26urQBmuAE6X5I,1279
+emg3d/njitted.py,sha256=XMZmZGDkG0nhEgFJaeOuzFkFu0zqP_V3t-smXRee5ig,81139
+emg3d/solver.py,sha256=oiI9ZJ963qivUqm1pIWe11KrfmubYQkYFqrmvAifHlc,58880
+emg3d/utils.py,sha256=FeqP8m9_k0XpbCqd6r0l1YXuMyniu_FX6vZCeyMrZVM,43535
+emg3d-0.6.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+emg3d-0.6.2.dist-info/METADATA,sha256=vNix05LSzZ4_I6UKKU-LdNZcYO1jUdMT7CItHmaxUy0,3535
+emg3d-0.6.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+emg3d-0.6.2.dist-info/top_level.txt,sha256=qUBRj2ee7ngdsY1L-JQ8M5rydupW5R9zX50P9REk0X4,6
+emg3d-0.6.2.dist-info/RECORD,,
