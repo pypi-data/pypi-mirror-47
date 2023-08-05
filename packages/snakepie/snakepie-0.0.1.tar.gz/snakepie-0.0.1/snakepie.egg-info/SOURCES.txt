@@ -1,0 +1,7 @@
+setup.py
+snakepie/__init__.py
+snakepie.egg-info/PKG-INFO
+snakepie.egg-info/SOURCES.txt
+snakepie.egg-info/dependency_links.txt
+snakepie.egg-info/not-zip-safe
+snakepie.egg-info/top_level.txt
