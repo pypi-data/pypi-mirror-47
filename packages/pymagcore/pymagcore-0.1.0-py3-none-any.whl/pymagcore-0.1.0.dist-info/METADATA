@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pymagcore
+Version: 0.1.0
+Summary: 程序员的战争
+Home-page: https://github.com/MiracleYoung/You-are-Pythonista
+Author: Miracle
+Author-email: miracleyoung0723@gmail.com
+License: MIT
+Description: 
+Platform: UNKNOWN
+Classifier: Topic :: Games/Entertainment 
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
