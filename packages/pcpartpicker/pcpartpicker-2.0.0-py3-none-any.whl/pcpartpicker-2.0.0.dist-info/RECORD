@@ -1,0 +1,14 @@
+pcpartpicker/__init__.py,sha256=VTWbHY1pMq1cdoEt7MfffmqrOK1mnya4qATPAWQ-VHw,148
+pcpartpicker/api.py,sha256=PVe1nubvh-yjA3MuUNqbqK8yat1r0ZFeT3NhVPod2F8,2985
+pcpartpicker/errors.py,sha256=GuLAsN9Z4Fa_nOjqFG3vGecocIJstZsuVC8GHQSrXU0,144
+pcpartpicker/handler.py,sha256=KPEnq3rUqZHlQw-Gf81YI_xUZOehKESlPy9S4gWR5mw,4939
+pcpartpicker/mappings.py,sha256=XpiX6AV4P7UN2D1yxUoK7EYHGHjzrK0_axfT46UNxQ8,983
+pcpartpicker/parse_utils.py,sha256=cbeAQhXs3bthjlzIk8yWMN3e2muJe9ISnmEx9vpF3Qk,1553
+pcpartpicker/parts.py,sha256=qvkau6kDoRXYT6IxVesJ2MX5RuQ-SCBLalagTA2K_tk,20068
+pcpartpicker/scraper.py,sha256=nVUUpUgPpY-9y2RU_zHo9H66L7JkJyJgGRelx2vvnaE,1819
+pcpartpicker/utils.py,sha256=BT4Su7ODedMOHGUhYkwB863JFIbT7U-DMRi9jULlR80,992
+pcpartpicker-2.0.0.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pcpartpicker-2.0.0.dist-info/METADATA,sha256=gSrivI81KtGkGZLOQT8qYNyaji5gvA5j2xzMD_NeRRI,3496
+pcpartpicker-2.0.0.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pcpartpicker-2.0.0.dist-info/top_level.txt,sha256=nuyv_9k-2czB4lEtKJEgeFtUFkK6POQe5EePwv3UIcI,13
+pcpartpicker-2.0.0.dist-info/RECORD,,
