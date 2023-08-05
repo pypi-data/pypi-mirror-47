@@ -1,0 +1,9 @@
+README.md
+setup.py
+sciunivariate/__init__.py
+sciunivariate/sciunivariate.py
+sciunivariate.egg-info/PKG-INFO
+sciunivariate.egg-info/SOURCES.txt
+sciunivariate.egg-info/dependency_links.txt
+sciunivariate.egg-info/requires.txt
+sciunivariate.egg-info/top_level.txt
