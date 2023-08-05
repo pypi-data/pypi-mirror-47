@@ -1,0 +1,9 @@
+README.md
+setup.py
+test_pip_install/__init__.py
+test_pip_install/__main__.py
+test_pip_install.egg-info/PKG-INFO
+test_pip_install.egg-info/SOURCES.txt
+test_pip_install.egg-info/dependency_links.txt
+test_pip_install.egg-info/entry_points.txt
+test_pip_install.egg-info/top_level.txt
