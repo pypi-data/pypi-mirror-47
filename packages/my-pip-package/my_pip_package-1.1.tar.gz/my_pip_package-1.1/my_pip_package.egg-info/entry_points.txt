@@ -1,0 +1,3 @@
+[console_scripts]
+add = my_pip_package.math:cmd_add
+

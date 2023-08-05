@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: my_pip_package
+Version: 1.1
+Summary: A tutorial for creating pip packages.
+Home-page: https://github.com/MichaelKim0407/tutorial-pip-package
+Author: Michael Kim
+Author-email: mkim0407@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: bin
+Provides-Extra: ci
+Provides-Extra: math
+Provides-Extra: dev
+Provides-Extra: test

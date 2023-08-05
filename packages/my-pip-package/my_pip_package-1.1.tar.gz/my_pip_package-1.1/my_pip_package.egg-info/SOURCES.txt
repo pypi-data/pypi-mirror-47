@@ -1,0 +1,13 @@
+README.md
+setup.py
+my_pip_package/__init__.py
+my_pip_package/math.py
+my_pip_package.egg-info/PKG-INFO
+my_pip_package.egg-info/SOURCES.txt
+my_pip_package.egg-info/dependency_links.txt
+my_pip_package.egg-info/entry_points.txt
+my_pip_package.egg-info/requires.txt
+my_pip_package.egg-info/top_level.txt
+tests/__init__.py
+tests/test_init.py
+tests/test_math.py
