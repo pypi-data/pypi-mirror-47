@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pipix-clear
+Version: 0.3
+Summary: Remove watermark from pipix video
+Home-page: https://github.com/zhengxiangyue/pipix
+Author: Drink7up
+Author-email: zhengxiangyue@yahoo.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Remove watermark from pipix video
+
+
