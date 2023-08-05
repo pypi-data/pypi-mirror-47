@@ -1,0 +1,17 @@
+feeds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+feeds/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+feeds/apps.py,sha256=TEKo6z0MGEHjl5M6_6mHYVTQoNzC5q25TTGcPzJvHuo,85
+feeds/models.py,sha256=mDrGABzF6T5Mh8qSfDo-w_3Icmg78uSS5QMVPwGnWAE,4681
+feeds/tests.py,sha256=5fqrWr4VTw4KJYOn7whz0SWgGbluxcMPM-Yg2rhOmPQ,10175
+feeds/utils.py,sha256=Z_cWbkTQ_RBSDMyw6gIQzMmC97u4q5Qy_73gx1C2A_U,18616
+feeds/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+feeds/management/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+feeds/management/commands/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+feeds/management/commands/refreshfeeds.py,sha256=-icDN1-S9-W29D2Ech8rBI30VenKuPErj4RRlzb2Hd4,332
+feeds/migrations/0001_initial.py,sha256=MyYvaw3WOuuIz3kwORuq3jlSLJBNHaR3QSJjRBYrPao,3384
+feeds/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_feed_reader-0.0.2.dist-info/LICENSE,sha256=B2o5L1n2K0Vn_gqN2N759aAKvEBp_Y9TsyutrTtjvSw,1071
+django_feed_reader-0.0.2.dist-info/METADATA,sha256=pNaN7YwiP0MsuTiecppVYAGT-_FpHrxPphPlePqPb4A,771
+django_feed_reader-0.0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_feed_reader-0.0.2.dist-info/top_level.txt,sha256=lwhXQt0I-cIJ1UMCZCjdBXxaVYzgaCxk75hZSMIbpFE,6
+django_feed_reader-0.0.2.dist-info/RECORD,,
