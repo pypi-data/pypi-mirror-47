@@ -1,0 +1,10 @@
+setup.py
+hook/__init__.py
+hook/_hook.py
+hook/prepare.py
+webviewhooks.egg-info/PKG-INFO
+webviewhooks.egg-info/SOURCES.txt
+webviewhooks.egg-info/dependency_links.txt
+webviewhooks.egg-info/not-zip-safe
+webviewhooks.egg-info/requires.txt
+webviewhooks.egg-info/top_level.txt
