@@ -1,0 +1,4 @@
+psycopg2-binary>=2.5
+
+[dev]
+pytest>=3
