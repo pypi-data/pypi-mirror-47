@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: xud-wizard
+Version: 0.1.8
+Summary: A wrapper program for xud-docker
+Home-page: UNKNOWN
+Author: Yang Yang
+Author-email: reliveyy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pexpect (==4.7.0)
+Requires-Dist: web3 (==4.9.2)
+Requires-Dist: python-bitcoinrpc (==1.0)
+Requires-Dist: grpcio (==1.20.1)
+Requires-Dist: googleapis-common-protos (==1.6.0)
+Requires-Dist: paramiko (==2.4.2)
+
+xud-wizard
+==========
+
+A wrapper program for xud-docker.
+
