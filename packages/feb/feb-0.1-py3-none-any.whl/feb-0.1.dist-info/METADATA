@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: feb
+Version: 0.1
+Summary: fast env builder
+Home-page: UNKNOWN
+Author: freeaquar
+Author-email: freeaquar@163.com
+License: MIT Licence
+Keywords: fast env
+Platform: UNKNOWN
+Requires-Dist: Click (>6)
+Requires-Dist: requests
+
+UNKNOWN
+
+
