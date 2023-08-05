@@ -1,0 +1,9 @@
+requests
+python-dateutil
+
+[dev]
+sphinx
+sphinx-autobuild
+
+[test]
+python-dotenv
