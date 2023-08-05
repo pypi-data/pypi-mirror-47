@@ -1,0 +1,11 @@
+mdc/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+mdc/mdc.py,sha256=Diq5o6cfrm0aOgejwP7AULgmBGGjjlcnMK299RKtlMM,7079
+mdc/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdc/templates/note.tex,sha256=ebRR6zsutXRAYyoosIqZ4yBWm5AsgrA8N4RgnSiOR4I,1359
+mdc/templates/simple.tex,sha256=u0BKyeTXaFMn_NqFHz8Q3t4qRxtixVPjJckWFp4ZnB4,4020
+mdc/templates/standalone.tex,sha256=ZVx8O7qSk9rbFw2K0eZCux42sdmlP99Y4l4A68KCQhw,1257
+mdc/templates/stylish.tex,sha256=vojKJu6-O3um6XZTNwmpMSmxy6XyYQ9C-WKiQD78l8g,4894
+shinymdc-0.0.1.dist-info/entry_points.txt,sha256=8qD3fJxrF0eC21yZ0drIRcGUEbaDrFNev65zOycsjOM,36
+shinymdc-0.0.1.dist-info/WHEEL,sha256=qtAdCj-IU6QldWlMjaadKoVfLWgvJaW3ljh8ILtCNHs,85
+shinymdc-0.0.1.dist-info/METADATA,sha256=E9hVqZWwmJy6kzbUfGPtRr9M-LGXW-_alZPUCmx3LVk,780
+shinymdc-0.0.1.dist-info/RECORD,,
