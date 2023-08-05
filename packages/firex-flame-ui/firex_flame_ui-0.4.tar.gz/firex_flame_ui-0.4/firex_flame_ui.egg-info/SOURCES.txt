@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+dist/__init__.py
+dist/index.html
+dist/css/app.e2e84099.css
+dist/css/chunk-vendors.a2cbee8a.css
+dist/img/firex_logo.675380cb.png
+dist/js/app.19fe9253.js
+dist/js/chunk-vendors.009e933e.js
+firex_flame_ui.egg-info/PKG-INFO
+firex_flame_ui.egg-info/SOURCES.txt
+firex_flame_ui.egg-info/dependency_links.txt
+firex_flame_ui.egg-info/top_level.txt
+firex_flame_ui.egg-info/zip-safe
