@@ -1,0 +1,7 @@
+scrapy
+
+[pep8]
+flake8
+
+[s3]
+botocore

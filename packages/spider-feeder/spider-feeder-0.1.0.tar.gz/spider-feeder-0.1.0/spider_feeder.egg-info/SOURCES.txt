@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+spider_feeder/__init__.py
+spider_feeder/loaders.py
+spider_feeder.egg-info/PKG-INFO
+spider_feeder.egg-info/SOURCES.txt
+spider_feeder.egg-info/dependency_links.txt
+spider_feeder.egg-info/not-zip-safe
+spider_feeder.egg-info/requires.txt
+spider_feeder.egg-info/top_level.txt
+spider_feeder/file_handler/__init__.py
+spider_feeder/file_handler/local.py
+spider_feeder/file_handler/s3.py
