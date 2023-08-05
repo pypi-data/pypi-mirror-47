@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: typecov
+Version: 0.2.1
+Summary: Run type coverage checks.
+Home-page: https://github.com/sayanarijit/typecov
+Author: Arijit Basu
+Author-email: sayanarijit@gmail.com
+License: MIT
+Keywords: type coverage
+Platform: Any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: mypy ; extra == 'testing'
+
+typecov
+==========
+Run type coverage checks.
+
+[![PyPI version](https://img.shields.io/pypi/v/typecov.svg)](https://pypi.org/project/typecov)
+[![PyPI pyversions](https://img.shields.io/pypi/pyversions/typecov.svg)](https://pypi.org/project/typecov)
+[![Build Status](https://travis-ci.org/sayanarijit/typecov.svg?branch=master)](https://travis-ci.org/sayanarijit/typecov)
+[![codecov](https://codecov.io/gh/sayanarijit/typecov/branch/master/graph/badge.svg)](https://codecov.io/gh/sayanarijit/typecov)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/python/black)
+
+Usage
+-----
+```
+typecov --help
+```
+
+```
+usage: typecov [-h] [-V] coverage reportfile
+
+Run type coverage checks.
+
+positional arguments:
+  coverage       Minimum coverage required.
+  reportfile     Path to the type coverage report with line counts.
+
+optional arguments:
+  -h, --help     show this help message and exit
+  -V, --version  show program's version number and exit
+```
+
+Example
+-------
+```
+typecov 99 .typecov/report/linecount.txt
+```
+
+Contributing
+------------
+Install with
+```
+pip install -r dev-requirements.txt
+```
+
+Run tests
+```
+pytest
+```
+
+Or if you have [tox](https://github.com/tox-dev/tox) setup
+```
+tox
+```
+
+
