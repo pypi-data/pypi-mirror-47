@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+requirements/dev
+requirements/run
+requirements/setup
+requirements/test
+tempenv/__init__.py
+tempenv/tempenv.py
+tempenv/version.py
+tempenv.egg-info/PKG-INFO
+tempenv.egg-info/SOURCES.txt
+tempenv.egg-info/dependency_links.txt
+tempenv.egg-info/top_level.txt
