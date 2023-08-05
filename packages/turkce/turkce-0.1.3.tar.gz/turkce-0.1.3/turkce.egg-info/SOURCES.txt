@@ -1,0 +1,7 @@
+setup.py
+pack/__init__.py
+pack/api.py
+turkce.egg-info/PKG-INFO
+turkce.egg-info/SOURCES.txt
+turkce.egg-info/dependency_links.txt
+turkce.egg-info/top_level.txt
