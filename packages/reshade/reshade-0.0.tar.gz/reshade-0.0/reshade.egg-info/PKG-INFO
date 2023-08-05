@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: reshade
+Version: 0.0
+Summary: Reshade is a library to create low-level convolutional neural networks
+Home-page: https://github.com/jamesjiang52/Reshade
+Author: James Jiang
+Author-email: jamesjiang52@gmail.com
+License: MIT
+Description: *******
+        Reshade
+        *******
+        
+        Reshade is a work in progress.
+        
+Keywords: reshade artificial intelligence
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
