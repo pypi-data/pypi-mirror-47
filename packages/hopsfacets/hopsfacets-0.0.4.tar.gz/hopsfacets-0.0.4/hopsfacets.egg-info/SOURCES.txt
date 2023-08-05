@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+hopsfacets/version.py
+hopsfacets.egg-info/PKG-INFO
+hopsfacets.egg-info/SOURCES.txt
+hopsfacets.egg-info/dependency_links.txt
+hopsfacets.egg-info/requires.txt
+hopsfacets.egg-info/top_level.txt
