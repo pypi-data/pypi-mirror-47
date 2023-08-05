@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: rxnpath
+Version: 0.1
+Summary: rxnpath: a simple python package for generating reaction diagrams.
+Home-page: http://github.com/ldgibson/rxnpath
+Author: Luke D Gibson
+Author-email: ldgibson@uw.edu
+Maintainer: Luke D Gibson
+Maintainer-email: ldgibson@uw.edu
+License: MIT
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: adjustText (>=0.7.3)
+Requires-Dist: matplotlib (>=3.1.0)
+Requires-Dist: networkx (>=2.3)
+Requires-Dist: numpy (>=1.16.3)
+
+
+
+rxnpath
+========
+rxnpath is a python package for generating custom reaction diagrams.
+
+License
+=======
+``rxnpath`` is licensed under the terms of the MIT license. See the file
+"LICENSE" for information on the history of this software, terms & conditions
+for usage, and a DISCLAIMER OF ALL WARRANTIES.
+
+All trademarks referenced herein are property of their respective holders.
+
+Copyright (c) 2019--, Luke D Gibson, The University of Washington
+Department of Chemical Engineering.
+
+
