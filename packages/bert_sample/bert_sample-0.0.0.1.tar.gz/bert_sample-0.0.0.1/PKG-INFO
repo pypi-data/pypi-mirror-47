@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: bert_sample
+Version: 0.0.0.1
+Summary: bert
+Home-page: https://www.terrychan.org
+Author: Terry Chan
+Author-email: napoler2008@gmail.com
+License: UNKNOWN
+Description: #bert_sample
+        bert操作简单化
+        
+        ## 安装
+        ```
+        pip install -U bert_sample
+        ```
+        
+        ## 使用
+        批量处理文件
+        
+        
+        pip install -r requirements.txt
+        
+        
+Platform: UNKNOWN
