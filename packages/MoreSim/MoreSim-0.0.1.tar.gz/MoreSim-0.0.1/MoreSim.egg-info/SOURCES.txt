@@ -1,0 +1,7 @@
+README.md
+setup.py
+MoreSim.egg-info/PKG-INFO
+MoreSim.egg-info/SOURCES.txt
+MoreSim.egg-info/dependency_links.txt
+MoreSim.egg-info/top_level.txt
+moresim/__init__.py
