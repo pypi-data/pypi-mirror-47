@@ -1,0 +1,9 @@
+matplotlib
+numpy
+pyzmq
+plotly
+torchstat
+ipywidgets
+sklearn
+nbformat
+scikit-image
