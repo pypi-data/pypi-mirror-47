@@ -1,0 +1,10 @@
+README.md
+setup.py
+SimpleImageTransport/__init__.py
+SimpleImageTransport/local.py
+SimpleImageTransport/remote.py
+SimpleImageTransport.egg-info/PKG-INFO
+SimpleImageTransport.egg-info/SOURCES.txt
+SimpleImageTransport.egg-info/dependency_links.txt
+SimpleImageTransport.egg-info/requires.txt
+SimpleImageTransport.egg-info/top_level.txt
