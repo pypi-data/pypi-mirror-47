@@ -1,0 +1,24 @@
+{
+  "wind": {
+    "ecmwf": {
+      "prefix": "satori/ECMWF/wind",
+      "range": {
+        "date": {
+          "min": "2017-01-01",
+          "max": "2018-12-31"
+        }
+      }
+    }
+  },
+  "wave": {
+    "ecmwf": {
+      "prefix": "satori/ECMWF/wave",
+      "range": {
+        "date": {
+          "min": "2017-01-01",
+          "max": "2018-12-31"
+        }
+      }
+    }
+  }
+}

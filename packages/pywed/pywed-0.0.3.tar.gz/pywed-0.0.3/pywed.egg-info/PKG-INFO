@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pywed
+Version: 0.0.3
+Summary: PYthon client to d-ice WEthear Database
+Home-page: https://d-ice.gitlab.host/common/python/pywed
+Author: Guillaume Vincke
+Author-email: guillaume.vincke@dice-engineering.com
+License: UNKNOWN
+Description: If you don't have a valid access key to the database, you won't be able to use this
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent

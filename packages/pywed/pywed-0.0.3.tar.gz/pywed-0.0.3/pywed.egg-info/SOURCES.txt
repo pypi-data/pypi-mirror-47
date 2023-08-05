@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+pywed.egg-info/PKG-INFO
+pywed.egg-info/SOURCES.txt
+pywed.egg-info/dependency_links.txt
+pywed.egg-info/requires.txt
+pywed.egg-info/top_level.txt
+test/test_database.py
+wed/__init__.py
+wed/database.py
+wed/network.py
+wed/path.py
+wed/settings.json
+wed/settings.py
+wed/utils.py
