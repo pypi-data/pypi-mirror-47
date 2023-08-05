@@ -1,0 +1,9 @@
+test_pip_install/__init__.py,sha256=Xw7v5BvQuFkhRFlSIY3UkTGTeVh2J0RixXwvFiZcwAw,388
+test_pip_install/__main__.py,sha256=A8ojePAivVzJG2WdJrimK-VNS0TIdZDzHZWbKFhdTek,59
+test_pip_install-0.0.2.dist-info/DESCRIPTION.rst,sha256=S1s4bbGnu429HNb6-HWAy9qw-9IulwKrYMt_p_7EjCM,907
+test_pip_install-0.0.2.dist-info/METADATA,sha256=dXD3gRXNbYvY9F4TabBJxtcQUelKfkkgyvBmKHN5pk0,1511
+test_pip_install-0.0.2.dist-info/RECORD,,
+test_pip_install-0.0.2.dist-info/WHEEL,sha256=bee59qcPjkyXfMaxNWjl2CGotqfumWx9pC1hlVLr2mM,92
+test_pip_install-0.0.2.dist-info/entry_points.txt,sha256=ff9UmVci0_lLF--rvqP_xhMLeCTgVxRAZoPBxLmA-6A,60
+test_pip_install-0.0.2.dist-info/metadata.json,sha256=DjaAisOg1BXI5wKPuBIgJcAc68ZVFWRMYGN0Z2GVe94,906
+test_pip_install-0.0.2.dist-info/top_level.txt,sha256=FHl2dPy3AgZH4So5irfgL2zUvFBDx3-Zt7w7gcBf0Fc,17

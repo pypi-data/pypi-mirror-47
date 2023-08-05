@@ -1,0 +1,3 @@
+[console_scripts]
+test-pip-install = test_pip_install:info
+

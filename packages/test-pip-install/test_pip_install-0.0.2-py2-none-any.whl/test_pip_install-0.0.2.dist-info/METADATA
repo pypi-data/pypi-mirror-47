@@ -1,0 +1,58 @@
+Metadata-Version: 2.0
+Name: test-pip-install
+Version: 0.0.2
+Summary: Test if `pip install` is working
+Home-page: https://github.com/niess/test-pip-install
+Author: Valentin Niess
+Author-email: valentin.niess@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Description-Content-Type: text/markdown
+
+# Test if `pip install` is working
+
+_This is a basic package that can be used in order to test if `pip install` is
+properly working._
+
+
+## Description
+
+This package has no external dependencies. It should be compatible down to
+`Python 2.7`.
+
+Once installed with `pip`, this package should export the `test-pip-install`
+script. The installation can then be tested from a terminal by running:
+
+```
+>> test-pip-install
+```
+
+or
+
+```
+>> python -m test_pip_install
+```
+
+If the package has been properly installed, you should see something like:
+
+```
+running Python {version} from {path/to/current/python}
+```
+
+
+## License
+
+This package is distributed under the LGPL-3.0 license. See the provided
+[`LICENSE`][LICENSE] and [`COPYING.LESSER`][COPYING] files.
+
+
+[COPYING]: https://github.com/niess/test-pip-install/blob/master/COPYING.LESSER
+[LICENSE]: https://github.com/niess/test-pip-install/blob/master/LICENSE
+
+
