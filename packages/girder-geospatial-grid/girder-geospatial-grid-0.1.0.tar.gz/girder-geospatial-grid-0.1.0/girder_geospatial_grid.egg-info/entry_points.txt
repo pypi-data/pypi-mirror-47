@@ -1,0 +1,3 @@
+[geometa.types]
+grid = geometa_grid.schema:handler
+
