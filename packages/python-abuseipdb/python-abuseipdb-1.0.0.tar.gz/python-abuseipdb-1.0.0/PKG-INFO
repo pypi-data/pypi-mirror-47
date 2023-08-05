@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: python-abuseipdb
+Version: 1.0.0
+Summary: Object oriented AbuseIPDB v2 API Wrapper.
+Home-page: https://github.com/sl4vkek/python-ynet
+Author: sl4v
+Author-email: iamsl4v@protonmail.com
+License: WTFPL
+Description: An Object oriented AbuseIPDB v2 API Wrapper.
+Platform: UNKNOWN
