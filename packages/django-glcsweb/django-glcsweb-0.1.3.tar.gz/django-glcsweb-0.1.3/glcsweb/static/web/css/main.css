@@ -1,0 +1,145 @@
+#main-row {
+  min-height: 100vh;
+}
+
+#left-nav {
+  background-color: #292F36;
+  color: #F7FFF7;
+  min-height: inherit;
+}
+
+#left-nav #nav-header {
+  height: 125px;
+  transition: ease all 0.15s;
+  background-color: inherit;
+  border-radius: 3px;
+}
+
+.btn-signup {
+  color: #EFEFEF;
+  background: #4ECDC4;
+  text-decoration: none;
+  border-color: #4ECDC4;
+}
+
+.btn-signup:hover {
+  color: #EFEFEF;
+  background: #00CCBE;
+  border-color: #00CCBE;
+}
+
+.btn-action {
+  color: #EFEFEF;
+  background: #FF6B6B;
+  text-decoration: none;
+  border-color: #FF6B6B;
+}
+
+.btn-action:hover {
+  color: #EFEFEF;
+  background: #FF4242;
+  border-color: #FF4242;
+}
+
+#left-nav .nav .nav-item .nav-link {
+  color: #F7FFF7;
+}
+
+#left-nav .nav .nav-item {
+  background-color: inherit;
+  border-radius: 3px;
+  transition: ease all 0.15s;
+  margin-bottom: 5px;
+}
+
+#left-nav .nav .nav-item:hover {
+  background-color: #384049;
+}
+
+#content {
+  background-color: #F7FFF7;
+  color: #292F36;
+  min-height: inherit;
+}
+
+#content #content-header {
+  height: 125px;
+  background-color: #4ECDC4;
+  border-bottom: 4px solid #CFD6CF;
+  padding-bottom: 10px;
+}
+
+#content #content-header header {
+  font-size: 2rem;
+  color: #F7FFF7;
+}
+
+
+.module {
+  padding: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  min-height: 10vh;
+  border-radius: 5px;
+  border: 2px solid #CFD6CF;
+  box-shadow: 0px 2px 5px #BEC4BE;
+  background-color: #FEFEFE;
+}
+
+.module-wrapper {
+  padding: 0 10px;
+  min-height: 10vh;
+}
+
+.module header {
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px;
+  border-bottom: 1px solid #CFD6CF;
+}
+
+.module .header-text {
+  font-size: 1.5rem;
+}
+
+.module footer {
+  border-top: 1px solid #CFD6CF;
+  padding: 10px;
+}
+
+.dropdown-toggle[aria-expanded="true"] {
+  background-color: #384049;
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.course-menu {
+  background-color: #EEE;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.course-menu .dropdown-item {
+  background-color: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+@media (max-width: 576px) {
+  .course-menu .dropdown-item {
+    background-color: inherit;
+    padding: 8px;
+  }
+}
+
+.dropdown-item:last-child {
+  background-color: inherit;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.course-menu .dropdown-item:hover {
+  background-color: #FFF;
+}
