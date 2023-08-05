@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pid-killall
+Version: 2019.5.15
+Summary: kill process and child processes
+Home-page: https://github.com/looking-for-a-job/pid-killall
+License: UNKNOWN
+Description: <!--
+        https://pypi.org/project/readme-generator/
+        https://pypi.org/project/python-readme-generator/
+        -->
+        
+        [![](https://img.shields.io/badge/OS-Unix-blue.svg?longCache=True)]()
+        
+        #### Installation
+        ```bash
+        $ [sudo] pip install pid-killall
+        ```
+        
+        #### Scripts usage
+        command|`usage`
+        -|-
+        `pid-killall` |`usage: pid-killall [-signal] pid`
+        
+        #### Examples
+        ```bash
+        pid-killall <pid>
+        ```
+        
+        signal:
+        ```
+        pid-killall -9 <pid>
+        ```
+        
+        <p align="center">
+            <a href="https://pypi.org/project/python-readme-generator/">python-readme-generator</a>
+        </p>
+Keywords: kill
+Platform: UNKNOWN
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Unix Shell
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
