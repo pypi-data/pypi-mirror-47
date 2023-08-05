@@ -1,0 +1,2 @@
+docopt
+singularitytechnologies.singularitytechnologiesapi==0.1.5dev
