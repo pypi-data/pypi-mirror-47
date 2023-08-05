@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: keywordtree
+Version: 0.1.5
+Summary: UNKNOWN
+Home-page: https://github.com/tdiam/keywordtree
+Author: Theodoros Diamantidis
+Author-email: diamaltho@gmail.com
+License: MIT
+Description: ![PyPI](https://img.shields.io/pypi/v/keywordtree.svg)
+        
+        # KeywordTree
+        
+        A Python data structure that maps arbitrary text to values by using a decision-tree-like algorithm based on counting keyword occurrences.
+        
+        ![KeywordTree](https://i.postimg.cc/ZY8ypgcP/keywordtree.png)
+        
+        
+        ### How it works
+        
+        * Each node contains a list of keywords and a value if it's a leaf.
+        * A query is given as a string and is broken into tokens by a tokenizer.
+        * Starting from the root, the query follows the child with the most keywords present in the query token list.
+        * When a leaf is reached, its value is returned.
+        * If there are multiple nodes with the most keywords in the token list, the query follows all of them and the results are merged at the end into a list.
+        
+        
+        ### Example
+        
+        Suppose we have the above tree and the query "My pug is so young it can barely woof".
+        
+        The default tokenizer converts the query to lowercase and splits at whitespaces, so the tokens will be `['my', 'pug', 'is', 'so', 'young', 'it', 'can', 'barely','woof']`.
+        
+        The query will follow the left child of the root, since it has one match for `'woof'` and will then match the child with `'pug'` in its keywords. Since it's a leaf, its value will be in the final result: `['Pug']`.
+        
+        
+        ### Usage
+        
+        `KeywordTree` instances are constructed from tuples of the form (list of keywords, list of children described as tuples, value).
+        
+        Non-leaf nodes must have value equal to `None`.
+        
+        ```python
+        from keywordtree import KeywordTree
+        
+        kt = KeywordTree([], [
+            (['dog', 'woof'], [
+                (['bulldog'], [], 'Bulldog'),
+                (['pug'], [], 'Pug'),
+                (['boxer'], [], 'Boxer'),
+            ], None),
+            (['cat', 'meow'], [
+                (['persian'], [], 'Persian'),
+                (['bengal'], [], 'Bengal'),
+                (['siamese'], [], 'Siamese'),
+            ], None),
+        ], None)
+        
+        kt.query('My pug is so young it can barely woof')
+        # ['Pug']
+        ```
+        
+        Other tokenizers can be used as well:
+        
+        ```python
+        from keywordtree import KeywordTree
+        from nltk.tokenize.stanford import StanfordTokenizer
+        
+        stftk = StanfordTokenizer()
+        
+        def tokenizer(s):
+            return stftk.tokenize(s)
+        
+        kt = KeywordTree([], [
+            # list of children
+        ], None, tokenizer=tokenizer)
+        ```
+        
+        ### License
+        
+        ```
+        Copyright 2019 Theodoros Diamantidis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Requires-Python: >=3
+Description-Content-Type: text/markdown
