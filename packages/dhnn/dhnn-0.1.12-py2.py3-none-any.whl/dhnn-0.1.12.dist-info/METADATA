@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: dhnn
+Version: 0.1.12
+Summary: A Discrete Hopfield Neural Network Framework in python.
+Home-page: https://github.com/Zeroto521/DHNN
+Author: yosukekatada,Zeroto521
+Author-email: Zeroto521@gmail.com
+Maintainer: Zero
+Maintainer-email: Zeroto521@gmail.com
+License: MIT
+Download-URL: https://github.com/Zeroto521/DHNN/archive/master.zip
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires: numpy
+Description-Content-Type: text/markdown
+
+# DHNN
+
+A **D**iscrete **H**opfield **N**eural **N**etwork Framework in python.
+
+[![Build Status](https://travis-ci.com/Zeroto521/DHNN.svg?branch=master)](https://travis-ci.com/Zeroto521/DHNN) [![codecov](https://codecov.io/gh/Zeroto521/dhnn/branch/master/graph/badge.svg)](https://codecov.io/gh/Zeroto521/dhnn) [![](https://img.shields.io/pypi/v/dhnn.svg)](https://pypi.org/project/dhnn/) [![PyPI pyversions](https://img.shields.io/pypi/pyversions/ansicolortags.svg)](https://pypi.org/project/dhnn/)
+
+## Introduction
+
+DHNN is a minimalistic and Numpy based implementation of the [Discrete Hopfield Network](http://en.wikipedia.org/wiki/Hopfield_network). DHNN can learn (memorize) patterns and remember (recover) the patterns when the network feeds those with noises.
+
+## Installation
+
+Just use pip:
+
+```bash
+pip install dhnn
+```
+
+Or download `dhnn` to a directory which your choice and use `setup` to install script:
+
+```bash
+>>> git clone https://github.com/Zeroto521/DHNN.git
+>>> python setup.py install
+```
+
+## Authors
+
+| <img src="https://avatars3.githubusercontent.com/u/4463558?v=4" alt="yosukekatada" width="100px" height="100px"/> | <img src="https://avatars1.githubusercontent.com/u/25895405?v=4" alt="Zeroto521" width="100px" height="100px"/> |
+| :---------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+|                                  [yosukekatada](https://github.com/yosukekatada)                                  |                                    [Zeroto521](https://github.com/Zeroto521)                                    |
+
+## TODO
+
+-   [x] more flag, add 0/1 flag or other flag.
+-   [ ] optimize loop, try numba, Cpython or any other ways.
+-   [ ] optimize memory.
+
+## License
+
+MIT License. [@yosukekatada](https://github.com/yosukekatada), [@Zeroto521](https://github.com/Zeroto521)
+
+## References
+
+-   http://rishida.hatenablog.com/entry/2014/03/03/174331
+
+
