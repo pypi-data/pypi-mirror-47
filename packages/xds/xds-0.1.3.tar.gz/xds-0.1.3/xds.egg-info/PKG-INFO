@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: xds
+Version: 0.1.3
+Summary: Loading xds structure
+Home-page: https://github.com/xuanma/xds
+Author: Xuan Ma
+Author-email: xuan.ma1@northwestern.edu
+License: MIT Licence
+Description: Python codes for loading xds data structure
+Keywords: xds,NOMAD,data loading
+Platform: any
