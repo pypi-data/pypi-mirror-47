@@ -1,0 +1,11 @@
+HISTORY.rst,sha256=WWdAKsdTBhcrySUDGD1wlBU1pxbLlkH5J12S53DmIlM,269
+pathstring.py,sha256=WJqLYMmZNfdAlhh5CtER1koYhyRXfMb8tkEcXVc4ZH4,3925
+pathstring.pyi,sha256=TOBxSBnIU-ikvevPeZQS79H4bX3q3sndfmKALb9-MbA,2985
+tests/conftest.py,sha256=A4M_C9xTXnR3K9iLTepezMuiS6ipKYaZyPs2ePUtrzI,1078
+tests/test_common.py,sha256=6tprEM4J0raXDuNvYqH4iPoaoVy2vcJUE2Kxy0lkvLk,15253
+tests/test_posix.py,sha256=42DE748bZsQVR_ymh1eki3csHpLTPkvz-Vj4M4CcON0,3239
+tests/test_windows.py,sha256=pWJfwwTjVF0bPIkhZEWfEawZmnUALJFU2ZwIbJTL09o,3430
+pathstring-1.0.0.dist-info/LICENSE.txt,sha256=ApfkIrbDh2d8pgK4-oyeJfIbXsTFeiTpugWgblyxwHo,1491
+pathstring-1.0.0.dist-info/WHEEL,sha256=qqH4VFAGHuXzke2tXb1YpuzJyjZRAueWBHbC3m2yit8,85
+pathstring-1.0.0.dist-info/METADATA,sha256=Yt7w5ylqiQojxsmtHN8LXcRijtwdVd57cMJHDoq5o4U,3189
+pathstring-1.0.0.dist-info/RECORD,,
