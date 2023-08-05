@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: staticgen
+Version: 0.0.1
+Summary: A simple static site generation tool
+Home-page: https://gitlab.com/ens.rolim/staticgen.py
+Author: Eduardo Rolim
+Author-email: ens.rolim@gmail.com
+License: MPLv2
+Description: # staticgen.py
+        
+        Simple and light static website / blog generator, written for Python programmers, using Futures, asyncio and coroutines
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Code Generators
+Description-Content-Type: text/markdown

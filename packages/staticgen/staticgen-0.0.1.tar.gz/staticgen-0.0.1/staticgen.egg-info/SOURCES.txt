@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+staticgen/__init__.py
+staticgen.egg-info/PKG-INFO
+staticgen.egg-info/SOURCES.txt
+staticgen.egg-info/dependency_links.txt
+staticgen.egg-info/top_level.txt
