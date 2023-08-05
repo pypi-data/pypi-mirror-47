@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: moncrief
+Version: 2.2.3
+Summary: This library contains the basic units of functionality and infrastructure needed to effectively run operations and applications in a distributed and severless fashion.
+Home-page: https://github.com/AlgernonSolutions/algernon
+Author: algernon_solutions/jcubeta
+Author-email: jcubeta@algernon.solutions
+License: GNU Affero General Public License v3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
