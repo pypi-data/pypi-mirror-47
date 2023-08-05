@@ -1,0 +1,16 @@
+cptac/__init__.py,sha256=47zL3QR7HPTsOEde1MGufJvoe5_7GwfIrnu5OIjGYnU,1874
+cptac/colon.py,sha256=QjE9rDrt423G6htXMan2WZU8ZbTYmRRIeciVc3qk2mY,11549
+cptac/dataset.py,sha256=3tnPe1bKz7LfC0nnBpzR7JOLLBjKjdsaQG39cbBTjhk,29597
+cptac/endometrial.py,sha256=P-9m9G2ikKzLLLl0fM1oolSgPb9A2-d8nlYhs_TKv4I,13784
+cptac/fileloader.py,sha256=b_27tKz2D4P3pv743gmq2G1HXU9JwvDWbGfdGvBJcSU,5971
+cptac/ovarian.py,sha256=XcqxVcLhO8wsxTrNqD0XSerD29hgxxoulOPmULXZeOI,11322
+cptac/tests.py,sha256=ZirktI_4NDqGv6P6JZGYV_AxYfAOoQtNlqaDALWP5-0,97226
+cptac/version.py,sha256=LHFUavV7Y99A-kKkHFv_mfCPFBihywzHsYRHNSa6xBs,21
+cptac/data_colon/urls/urls.tsv,sha256=hfaho9VryeWRFH1Zr1l3AuBIwIekHVQY6m2I43ORiB8,913
+cptac/data_endometrial/urls/urls.tsv,sha256=ps-zwPv3liPg398JtXIcwR04IB1J0TCtApglc46RsHo,1188
+cptac/data_ovarian/urls/urls.tsv,sha256=W2bTNhm6DVGPNUfYxubuT-qcqZlOkA4MsjCaP0S9PHs,797
+cptac-0.4.5.dist-info/LICENSE.md,sha256=cqzrX1f4BzGFMB68Giu66AwrCN3-oPWhfvwAUmJFoTA,10722
+cptac-0.4.5.dist-info/METADATA,sha256=pCQsuMZmNRz-r33z8clEpXO5WhshbZdOOmYPNIoClgU,2631
+cptac-0.4.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cptac-0.4.5.dist-info/top_level.txt,sha256=vPv5H92yMOcawzoiD0WAy_KdQ8g0YecyDVGKwudfgTw,6
+cptac-0.4.5.dist-info/RECORD,,
