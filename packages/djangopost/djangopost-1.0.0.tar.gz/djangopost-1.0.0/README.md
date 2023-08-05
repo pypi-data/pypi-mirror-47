@@ -1,0 +1,74 @@
+## Djangopost : Django Reusable app to Publish Posts.
+
+**Djangopost** is a **Reusable Django app** which provides a full featured Post Model. The Djangopost's Post Model is rich features and powerful enough to start a **Blog** and **News website**, without installation of any 3rd party packages.
+___
+
+## Installation :
+You can install **Djangopost** from PyPI using **pip**.
+
+``` pip install djangopost ```
+___
+
+## Configuration :
+***1. Open the ```settings.py``` module of your project folder, And put djangopost into ```INSTALLED_APPS```.***
+```python
+INSTALLED_APPS = (
+    ...
+    'tinymce',
+    'taggit',
+    'djangopost',
+)
+```
+
+***2. Open the ```urls.py``` module of your project folder, And include djangopost URLs.***
+```python
+urlpatterns = [
+    ...
+    re_path(r'^post/', include('djangopost.urls')),
+    ...
+]
+```
+
+***3. Setup the Templates for djangopost.***
+>> ***Important Note***: Djangopost App is a part of Djangoengine project. And if you want to access UI part of Djangopost App, You need to configure some Reusable templates to your django project or you can create your own templates, It's very easy.
+```python
+TEMPLATES = [
+    ...
+    ...
+    'DIRS': [os.path.join(BASE_DIR, 'templates'),],
+    ...
+    ...
+]
+```
+
+>For security reasons we separate djangoadmin and djangotheme templates.
+
+Create the ```templates``` folder inside ```BASE_DIR``` and Then create both ```djangotheme``` and ```djangoadmin``` folders inside the templates folder.
+Then download the djangotheme templates and put them inside ```djangotheme``` folder.
+then download the djangoadmin templates and put them inside the ```djangoadmin``` folder.
+
+***4. Static files configuration.***
+>>For security reasons we separate djangoadmin and djangotheme static files.
+
+Open your ```settings.py``` module and Configure Static files and media files as well or you can can use your own configuration.
+```python
+STATIC_URL = '/static/'
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static-local'),)
+STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static-root', 'stat')
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static-root', 'media')
+```
+
+Create the ```static-local``` folder inside ```BASE_DIR```, Then create both ```djangotheme``` and ```djangoadmin``` folders inside that ```static-local``` folder.
+Then download the djangotheme static files and put them inside ```djangotheme``` folder. And also download the djangoadmin static files and put them inside the ```djangoadmin``` folder.
+
+___
+## Complete the Djangopost setup by running the following command in sequence.
+```python
+python manage.py makemigrations
+python manage.py migrate
+python manage.py collectstatic
+python manage.py runserver
+```
+___
