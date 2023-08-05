@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: xfin
+Version: 1.0.1
+Summary: The most important libraries for financial engineering
+Home-page: UNKNOWN
+Author: Xianba Xia
+Author-email: scuxia@gmail.com
+License: Apache-2
+Description: UNKNOWN
+Keywords: setup,distutils
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
