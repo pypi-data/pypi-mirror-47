@@ -1,0 +1,3 @@
+[console_scripts]
+zissou=zissou.cli:zissou_cli
+
