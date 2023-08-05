@@ -1,0 +1,8 @@
+numpy
+scipy
+ipython
+matplotlib
+jupyter
+astropy
+colour-science
+tqdm
