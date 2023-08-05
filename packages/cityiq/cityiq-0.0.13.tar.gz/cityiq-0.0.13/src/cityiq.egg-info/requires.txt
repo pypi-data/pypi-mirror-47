@@ -1,0 +1,9 @@
+requests
+websocket-client
+pytz
+pyyaml
+python-dateutil
+
+[testing]
+pytest
+pytest-cov
