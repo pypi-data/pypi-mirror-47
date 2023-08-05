@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/softshell
+softshell/__init__.py
+softshell/exceptions.py
+softshell/softshell.py
+softshell.egg-info/PKG-INFO
+softshell.egg-info/SOURCES.txt
+softshell.egg-info/dependency_links.txt
+softshell.egg-info/not-zip-safe
+softshell.egg-info/requires.txt
+softshell.egg-info/top_level.txt
