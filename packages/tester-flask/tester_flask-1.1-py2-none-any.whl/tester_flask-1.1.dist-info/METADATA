@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tester-flask
+Version: 1.1
+Summary: Class for autotests flask python apps
+Home-page: https://github.com/vb64/test.helper.flask
+Author: Vitaly Bogomolov
+Author-email: mail@vitaly-bogomolov.ru
+License: UNKNOWN
+Download-URL: https://github.com/vb64/test.helper.flask/archive/v1.1.tar.gz
+Keywords: python,Python27,flask,unittest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# test.helper.flask
+
+Class for autotests flask python apps
+
+
+
