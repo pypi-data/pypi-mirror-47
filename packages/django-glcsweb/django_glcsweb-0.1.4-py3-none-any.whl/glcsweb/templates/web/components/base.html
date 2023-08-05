@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{% block title %}Instructor tools for GitLab{% endblock %}</title>
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'bootstrap/css/bootstrap.min.css' %}" />
+  <link rel="stylesheet" type="text/css" href="{% static 'web/css/main.css' %}" />
+  {% block extra_styling %}{% endblock %}
+</head>
+
+<body>
+  <section id="main-container" class="container-fluid">
+    <section id="main-row" class="row">
+      {% block left_nav %}{% include "web/components/left-nav.html" %}{% endblock %}
+      <main id="content" class="col-8 col-md-9 col-lg-10">
+        {% block content_header %}{% include "web/components/content-header.html" with content_header="Instructor Dashboard" %}{% endblock %}
+        <section class="module-container container-fluid p-3">
+          <section class="module-row row justify-content-around">
+            {% block modules %}
+            {% include "web/modules/course-overview.html" %}
+            {% include "web/modules/assignment-overview.html" %}
+            {% endblock %}
+          </section>
+        </section>
+      </main>
+    </section>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="{% static 'bootstrap/js/bootstrap.bundle.js' %}"></script>
+  {% block extra_scripts %}{% endblock %}
+</body>
+
+</html>
