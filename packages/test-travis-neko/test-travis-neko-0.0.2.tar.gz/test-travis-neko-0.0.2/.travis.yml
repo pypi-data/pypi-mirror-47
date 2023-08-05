@@ -1,0 +1,11 @@
+language: python
+python:
+- '3.6'
+script: true
+deploy:
+  provider: pypi
+  user: Hironsan
+  on:
+    tags: true
+  password:
+    secure: JOQys1ZOReorMr9Cvv/Hs7kuy/vRVT1yYz1t/ezx5yOPBrHvVcSF/wlR0RXxwF4fG+JFNKmMMsktwJ/op8wH9UfgDzEvXk2uOodbrDuB9dzJ3limo2EIfzZGAZ+ckCJDycBdoTgFwdzhXPdyLxEkp0H6P8pWJcya/47dGtbT507SeYlhakzOtr3hOJnGoXjIghEl9APWpLZ5NGUFhpRe3iOimn/SBt8QBEIaYGpB6lIQYolyQ7AuGhOjuFwakCzakivw9R8R5KZJZjr38d6dRdbH89a740MeqdZfQ6j41A9YGRpSFwnA+YfWR5NKy/vSzm2k3/lVc41MRp7E0ZK2nszgHKGymsausGhhaMJF+eEz9xNWVle5ZkHnsCYMedeyA6yzsGCRzZNzHsgoHQE0mRfYTqNCoMjBa1dWjNbbBJnpZKB9k598IWNH6VJtPB+2U61HuVTb+rMB3+1BcfRY6pUKH/ojXROij9Kr5ru6BBNmqQikkfdMLnJlmrAHbJjE1DBCbWE+IV7r1M/WHbxPbBo6CWUTZMYz2dfbn3KvhAr+/RfkrXKrGnoMVgxlfUoFre/4BRJJ6M1W7OzQvyyZSPO/uvO7c8AQ2SgSMzTZlavBGSgp6F+df6m+EkR8u5f8NE3uutHgcBHsojJulSZORPkye+tigroFDQ7P5aZuCX4=
