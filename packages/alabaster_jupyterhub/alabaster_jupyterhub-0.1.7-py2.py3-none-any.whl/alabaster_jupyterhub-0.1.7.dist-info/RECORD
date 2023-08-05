@@ -1,0 +1,15 @@
+alabaster_jupyterhub/__init__.py,sha256=WQFAk1on3Q2sfOOfar2s7flZvvMtutNZhUCuqKG4zqY,832
+alabaster_jupyterhub/_version.py,sha256=TOUK-WCkF5aknvIUIL3YERrQk7zGlZ6QiO-U1a16g_Q,80
+alabaster_jupyterhub/edit_on_github.html,sha256=BTHeONOeRZVlf42FtCG0TPXLTFu6X9IIjOCiWHJ408I,540
+alabaster_jupyterhub/layout.html,sha256=BLGzI7mG8coQN8AjIQHDTbouBkx290j_PWQ1-GVewmU,1709
+alabaster_jupyterhub/rightsidebar.html,sha256=yAiz92qDB_janiNEsv4DX8IZIeqfpnTq85GPkyRgXaM,73
+alabaster_jupyterhub/searchbox.html,sha256=tBUrxdLt7VkDz2uM_g3PdkCEDcZHO3ED1IOe_AVZ65w,496
+alabaster_jupyterhub/theme.conf,sha256=YumJ6XZqscxgXCUkTD4qQ5hA7tKJ1LRwE5WaOIUg0HM,91
+alabaster_jupyterhub/static/favicon.ico,sha256=x6U07KfL8SynczjLnpjvNRHMaU_CQTTTZNYOzUObn_M,15086
+alabaster_jupyterhub/static/github_logo.png,sha256=JJUSG2hXeL0lHiuc7qQSTPmEeeyG59FZZY5H-nkPLA4,1714
+alabaster_jupyterhub/static/jupyter.css,sha256=j6m7pBlF_hqik1WtshZke9K4Svw11JelfAb-a7YG_zQ,3514
+alabaster_jupyterhub/static/jupyter_logo.png,sha256=b1TAogGe3OQAlUhmqL1JIVVQv7hvM1bEQh5xX53Wkdw,13846
+alabaster_jupyterhub-0.1.7.dist-info/LICENSE,sha256=1kbBMJ9CpygJLIRddUgviTzcHk2Un_Dn6D-b-fhq1OU,177
+alabaster_jupyterhub-0.1.7.dist-info/WHEEL,sha256=Pnb1-aANNEDpiI6zZkifNVAxs3Mjlbjz3HYhduOZleI,97
+alabaster_jupyterhub-0.1.7.dist-info/METADATA,sha256=_Ow8bLv-oHDE95snY8kZgTcQMOcUe4c-cAFnLOU-z-4,299
+alabaster_jupyterhub-0.1.7.dist-info/RECORD,,
