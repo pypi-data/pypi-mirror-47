@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: graphtransliterator
+Version: 0.1.0
+Summary: A graph-based transliteration tool
+Home-page: https://github.com/seanpue/graphtransliterator
+Author: A. Sean Pue
+Author-email: pue@msu.edu
+License: MIT license
+Keywords: graphtransliterator
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+==========================
+Graph-based Transliterator
+==========================
+
+
+.. image:: https://img.shields.io/pypi/v/graphtransliterator.svg
+        :target: https://pypi.python.org/pypi/graphtransliterator
+
+.. image:: https://img.shields.io/travis/seanpue/graphtransliterator.svg
+        :target: https://travis-ci.org/seanpue/graphtransliterator
+
+.. image:: https://readthedocs.org/projects/graphtransliterator/badge/?version=latest
+        :target: https://graphtransliterator.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/seanpue/graphtransliterator/shield.svg
+     :target: https://pyup.io/repos/github/seanpue/graphtransliterator/
+     :alt: Updates
+
+
+
+A graph-based transliteration tool
+
+
+* Free software: MIT license
+* Documentation: https://graphtransliterator.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-05-30)
+------------------
+
+* First release on PyPI.
+
+
