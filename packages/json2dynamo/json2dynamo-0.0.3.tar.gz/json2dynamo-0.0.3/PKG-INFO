@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: json2dynamo
+Version: 0.0.3
+Summary: UNKNOWN
+Home-page: https://github.com/allankp/json2dynamo
+Author: Allan Kilpatrick
+Author-email: allanklp@gmail.com
+License: UNKNOWN
+Description: # Json to Dynamo Transformer
+        This tool transforms standard json files into dynamo mapping format. 
+        Allowing the insertion of the outputed files via the aws cli.
+        
+        
+        ## Install
+        `pip install json2dynamo`
+        
+        ## Usage
+        `json2dynamo --inputpath <path/to/json> --outputpath <path/to/output/folder>`
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
