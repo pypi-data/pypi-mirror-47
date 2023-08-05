@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: pyBioTools
+Version: 0.0.0.2a0
+Summary: pyBioTools is a collection of tools to manipulate biological sequences
+Home-page: https://github.com/a-slide/pyBioTools
+Author: Adrien Leger
+Author-email: aleg@ebi.ac.uk
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
