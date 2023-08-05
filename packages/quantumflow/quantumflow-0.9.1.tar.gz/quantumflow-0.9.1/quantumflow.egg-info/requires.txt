@@ -1,0 +1,8 @@
+numpy
+scipy
+tensorflow
+networkx
+pyquil>=2.0.0b1
+pillow
+cvxpy
+sympy

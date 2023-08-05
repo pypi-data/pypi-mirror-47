@@ -1,0 +1,12 @@
+# A slimmed down requirements file for readthedocs
+numpy
+scipy               >= 1.0.0
+networkx            >= 2.1
+sphinx              >= 1.6.6
+pillow
+pyquil	            >= 2.0.0b1
+cvxpy
+sympy
+guzzle_sphinx_theme
+
+
