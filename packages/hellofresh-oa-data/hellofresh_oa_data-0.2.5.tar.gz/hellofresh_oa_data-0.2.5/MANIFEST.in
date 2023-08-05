@@ -1,0 +1,2 @@
+exclude credentials.json
+exclude token.pickle
