@@ -1,0 +1,9 @@
+pymedphys_coordsandscales/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pymedphys_coordsandscales/_install_requires.py,sha256=n_z3b-hE9lMc9AM5xQMp9v3aTJvKi48SEgdKDisXWDg,51
+pymedphys_coordsandscales/_version.py,sha256=ryosTs5r7fcRoxciCL6h_Er6Y7v25yhLvk--bW_w-II,51
+pymedphys_coordsandscales/coordinates/__init__.py,sha256=Ca0cCIpLu_d3uiOwjRk8s9T6teh2LBGglwP2Ib0RgwI,1462
+pymedphys_coordsandscales/coordinates/transforms.py,sha256=NkLanVuNuAQFJpVsZZtDPgcfVEkFXnfi3MqMa7V6cps,4506
+pymedphys_coordsandscales-0.8.0.dist-info/METADATA,sha256=YMhZypEIl7OOIBwUiLI4NNDENzJ4dPSdIK6lNtlTDMs,793
+pymedphys_coordsandscales-0.8.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pymedphys_coordsandscales-0.8.0.dist-info/top_level.txt,sha256=ykLyuf6-X-HISybrcSSqcKkskwz3xuY2htkDDVezDTs,26
+pymedphys_coordsandscales-0.8.0.dist-info/RECORD,,
