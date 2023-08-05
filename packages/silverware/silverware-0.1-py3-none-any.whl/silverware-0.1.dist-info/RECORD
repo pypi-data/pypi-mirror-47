@@ -1,0 +1,15 @@
+silverware/Spoon.py,sha256=kzXqWhqAPOXX4966NH-F2MiomDlre7JigSb9ZCjRHc0,6249
+silverware/__init__.py,sha256=MMno5Q4J_mEIi-W8-sDCottDXApMKQYWlIBmLBpu_wU,434
+silverware/clean_html_text.py,sha256=GAnFPiu5WUlE9_tAkAoxPocxv8OMrP_-a1FbehBqKj4,546
+silverware/clone_beautiful_soup_tag.py,sha256=MEmXt6Uc7wlAW3UXmHdwh0Mb4GOEQXTKikG2RYWwtlA,814
+silverware/find_all.py,sha256=yjoyf5JsG5UEM_Qkq2DI8UA4_Xv043cEhTHrcMRS_T0,1591
+silverware/find_between.py,sha256=72nfllu7KVJt_lhtMQc-uZn3RIiiL5czQq0vtHyn3Mc,3018
+silverware/find_links.py,sha256=buuUUHXmwoHVjDEEG-eiCdScumjDNEFeTXV9V4Ep-2Y,1665
+silverware/get_lists.py,sha256=N9hMHN9uRnNh7JJr3bEgZpdIFW7jJHA7_SsMa9kJ0wM,1638
+silverware/get_url_and_get_anchor.py,sha256=n041l5GIghHfsgxHWT9Splc9z5l2U8KH0ZTXAvowx14,827
+silverware/read_table.py,sha256=D8mskdPyJO7AMxeljSCTIjLrqnkr9vjmOAIMuSObG20,4653
+silverware/separate_row_header.py,sha256=W4VymJxZz_JpAZ7KGLuIwKNkX499o4Ex546OSLk1-yc,456
+silverware-0.1.dist-info/METADATA,sha256=ty2251NpXzE-PBARNbFl9qJ9FmAgmz4ddli-5BQSRbg,655
+silverware-0.1.dist-info/WHEEL,sha256=UpB-bp5SQQdekLv3_zfFAhrQBtaQjJZABvUiavkhjZ0,97
+silverware-0.1.dist-info/top_level.txt,sha256=SxC4JgH8ZktOZb_ngmzuoVh2psvVI5dx2gnT6awvNeA,11
+silverware-0.1.dist-info/RECORD,,
