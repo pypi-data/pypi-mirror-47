@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Play</title>
+    <link href="{{ url_for('static', filename='video-js.css') }}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='video.min.js') }}"></script>
+</head>
+<body style="background: #222">
+<div style="margin-top: 100px">
+    <video id="videoElement" class="video-js vjs-big-play-centered" controls style="margin: 0 auto"></video>
+</div>
+<script>
+    videojs("videoElement", {
+        controls: true,
+        height: 520,
+        width: 960,
+        preload: "auto",
+        sources: [{
+            src: "{{ file }}",
+            type: "video/mp4",
+        }],
+    });
+</script>
+</body>
+</html>
