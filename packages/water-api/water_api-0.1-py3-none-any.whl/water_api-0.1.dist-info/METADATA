@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: water-api
+Version: 0.1
+Summary: A general container of apis
+Home-page: https://github.com/harry81/naver_api
+Author: Hyunmin Choi
+Author-email: pointer81@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: bs4
+
+UNKNOWN
+
+
