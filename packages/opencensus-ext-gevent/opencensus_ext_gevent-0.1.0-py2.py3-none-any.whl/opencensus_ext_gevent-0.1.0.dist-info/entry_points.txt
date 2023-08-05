@@ -1,0 +1,3 @@
+[gevent.plugins.monkey.did_patch_builtins]
+opencensus = opencensus.ext.gevent.geventcompatibility:patch_opencensus
+
