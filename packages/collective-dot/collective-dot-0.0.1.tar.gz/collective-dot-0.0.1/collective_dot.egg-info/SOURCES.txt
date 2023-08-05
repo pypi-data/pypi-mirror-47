@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+collective_dot.egg-info/PKG-INFO
+collective_dot.egg-info/SOURCES.txt
+collective_dot.egg-info/dependency_links.txt
+collective_dot.egg-info/top_level.txt
