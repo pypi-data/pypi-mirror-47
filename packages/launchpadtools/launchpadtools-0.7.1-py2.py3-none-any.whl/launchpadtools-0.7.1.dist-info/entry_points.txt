@@ -1,0 +1,3 @@
+[console_scripts]
+launchpad-submit = launchpadtools.cli:main
+
