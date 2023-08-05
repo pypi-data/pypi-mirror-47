@@ -1,0 +1,2 @@
+include geoviz/data/*.csv
+include geoviz/data/*.txt

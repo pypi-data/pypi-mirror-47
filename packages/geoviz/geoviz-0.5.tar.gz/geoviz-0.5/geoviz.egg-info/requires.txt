@@ -1,0 +1,10 @@
+pandas
+matplotlib
+bokeh
+geopandas
+descartes
+pysal
+us
+
+[:python_version < "3.7"]
+importlib_resources
