@@ -1,0 +1,2 @@
+monsoon-cli>=0.1.7
+ibm-cos-sdk>=2.4.4
