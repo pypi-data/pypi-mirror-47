@@ -1,0 +1,9 @@
+aws_utils/__init__.py,sha256=yL2HHp1zx9q1u4VhC2OB29lZWldFjxIfRucMlvRcKp0,58
+aws_utils/dynamodb.py,sha256=VL4ld5Oa59HLI6WqMm-6B8cwltKxNVItYBr5VPI7xUM,1530
+aws_utils/response.py,sha256=DHYPz5oNliuHYIzTcEhAQJxNjmWehNd1D4EBR9AzGSI,1140
+aws_utils/s3.py,sha256=D0Hyz-cve5qBDLApIznfBvlM5dySWA84LcorTS3dYqc,1267
+aws_utils_for_lambda-0.7.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+aws_utils_for_lambda-0.7.0.dist-info/METADATA,sha256=Xf_oWpTYyGDHEesKxzzAgH0wDyNBmpBbCj73AfTmRBA,5292
+aws_utils_for_lambda-0.7.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aws_utils_for_lambda-0.7.0.dist-info/top_level.txt,sha256=qqyxAZlbuJb3-4aQYzx1rty8qRCS2euxuZ-9H65OrvY,10
+aws_utils_for_lambda-0.7.0.dist-info/RECORD,,
