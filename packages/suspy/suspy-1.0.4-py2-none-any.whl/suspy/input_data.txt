@@ -1,0 +1,16 @@
+mc = 2                               # Number of cluster sites
+n_max = 1                           # Numner of bosons
+num_iw = 512                         # Number of matsubara frequencies for Green Function
+num_iw_xi = 20                       # Number of matsubara frequencies for susceptibility computation
+n_tau = 32                           # Number of points for beta
+nloops = 3                           # Number of dmft loops 
+Ud = 0.0                             # Coulomb's repulsion
+mu = 0.13                            # Chemical potentional 
+t1 = -0.45                           # Values of hopping 1 2 and 4 neigboors
+t2 = -0.09
+t4 =  0.10      
+beta = 10.0                          # Inverse temperature
+gamma_bd = 0.43                      # Electron-phonon coupling
+eb = 0.07                            # Bosons frequency w0
+tot = 0.01                           # Precision of fitting bath hopping
+delta = 1.0                          # Component in Hamiltonian gamma_bd(n - delta)*(b+ + b) 
