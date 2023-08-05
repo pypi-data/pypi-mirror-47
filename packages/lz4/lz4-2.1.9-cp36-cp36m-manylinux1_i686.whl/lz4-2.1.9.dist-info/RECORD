@@ -1,0 +1,12 @@
+lz4/_version.cpython-36m-i386-linux-gnu.so,sha256=I1GdZAsSvCXfIDoxGwEf_bocqUI5TZFxhR4qZ_bP_aw,174395
+lz4/__init__.py,sha256=hIvOuoGzQpA7LdzgyfP6-byehTRVA_vFXImPS90uB40,628
+lz4/version.py,sha256=ZXmSMnJOfq1J1kC17Ogdb27nxoCT6iGEor93bG1vGGg,116
+lz4/frame/__init__.py,sha256=6VnfprVaLn36amVtC0EdUB6b5s26JIRky2yR-9uO6-0,29444
+lz4/frame/_frame.cpython-36m-i386-linux-gnu.so,sha256=2WxwiZpkAJgeIcUURcoLf8s3UTeakGps89w7ICD_d9U,465071
+lz4/frame/_compression.py,sha256=M9oO74zf0Prsy2YItT742gEU_xg7-wevlEgmKc77tR0,5864
+lz4/block/_block.cpython-36m-i386-linux-gnu.so,sha256=4iRjLnxXwNck8pMkNm6s6T2exm0AmtS2efGeNYOuXco,304113
+lz4/block/__init__.py,sha256=KsSQGgaPpJtVPJ5QfMadVGFduMy0hSetJHWGNmOvpso,70
+lz4-2.1.9.dist-info/WHEEL,sha256=4RUeCnPOaAmHKINNrvtBwd3oNgi5_IueObVoFx2ZrXo,107
+lz4-2.1.9.dist-info/top_level.txt,sha256=cX6_gxFUdNSo40TfxrGpTCgu7epGm3yW3m2k7irTDzI,4
+lz4-2.1.9.dist-info/METADATA,sha256=5den5BpWnanhHLarlazcahjuveLN97ADL-rZFmhKRuk,3697
+lz4-2.1.9.dist-info/RECORD,,
