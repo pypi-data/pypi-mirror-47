@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: drf-jwt-wechat
+Version: 1.11.0
+Summary: JSON Web Token based authentication for Django REST framework,this use to WeChat applet (小程序使用jwt）
+Home-page: https://github.com/liayzlee/drf-jwt-wechat
+Author: liazylee
+Author-email: li233111@gmail.com
+License: Type license() to see the full license text
+Description: **drf-jwt-wechat 是在jwt，跟rest_framework_jwt基础上进行修改过的，用于微信小程序登录，
+        前端只需post传code即可进行jwt登录验证**
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
