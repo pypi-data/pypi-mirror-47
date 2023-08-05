@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: permafrost
+Version: 0.1.1
+Summary: Email Permutation and Verification Tool
+Home-page: UNKNOWN
+Author: Kevin Hill
+Author-email: kah.kevin.hill@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: crayons
+Requires-Dist: spaceman
+Requires-Dist: coolname
+Requires-Dist: toolz
+Requires-Dist: email-validator
+
+# Permafrost
+
+`Permafrost` is a library that gets emails by the company name, verifies if the email exist, then creates a csv file in the current location.
+
