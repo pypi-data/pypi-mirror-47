@@ -1,0 +1,16 @@
+[package]
+name = "schnorrpy"
+version = "0.0.2"
+authors = ["Mischa MacLeod <Mischa@MySingleSource.io>"]
+edition = "2018"
+
+[lib]
+name = "schnorrpy"
+crate-type = ["cdylib"]
+
+[dependencies]
+schnorrkel = "0.1.1"
+
+[dependencies.pyo3]
+version = "0.6.0"
+features = ["extension-module"]

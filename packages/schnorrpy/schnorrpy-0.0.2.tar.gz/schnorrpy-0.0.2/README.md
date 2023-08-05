@@ -1,0 +1,79 @@
+SchnorrPy for SR25519 Signatures
+================================
+
+A Python wrapper to the Rust
+[schnorrkel](https://github.com/w3f/schnorrkel/) SR25519 signature
+library. Schnorrkel/SR25519 signatures are the Schnorr signature on
+[Ristretto](https://ristretto.group) compressed Ed25519 points.
+
+
+Installation
+------------
+
+To install the binary Wheel from PyPI use `pip`:
+
+    $ pip install schnorrpy
+
+
+### Install from Source
+
+To develop, clone the repo and do the following:
+
+    $ git clone https://gitlab.com/kauriid/schnorrpy.git
+    $ python setup.py build
+    $ python setup.py install
+
+Set up and activate for Python 3:
+
+    virtualenv ${HOME}/.virtualenvs/schnorrpy \
+               --system-site-packages --python=/usr/bin/python3
+    source ${HOME}/.virtualenvs/schnorrpy/bin/activate
+
+Install required packages for development:
+
+    pip install -r requirements-dev.txt
+
+
+### Building a (Distributable) Wheel
+
+To publish a binary Python Wheel on PyPI, one needs to use the
+`manylinux` docker container.
+
+Build a source distribution:
+
+    $ python setup.py sdist
+
+Pull the `manylinux2010` (or older `manylinux1`) Docker image:
+
+    $ sudo docker pull quay.io/pypa/manylinux2010_x86_64
+
+Then use the following command to build wheels for supported Python
+versions:
+
+    $ sudo docker run --rm -v $(pwd):/io quay.io/pypa/manylinux2010_x86_64 \
+                  /io/build-wheels.sh
+
+The built wheels can now be published to PyPI (e.g. using `twine`)
+from the `dist/` directory:
+
+    $ twine upload dist/schnorrpy*.tar.gz dist/schnorrpy*manylinux*.whl
+
+
+Contributing
+------------
+
+TBD
+
+
+Example
+-------
+
+TBD
+
+
+## Licence
+
+Copyright 2018 by SingleSource Limited, Auckland, New Zealand
+
+This work is licensed under the Apache 2.0 open source licence.
+Terms and conditions apply.
