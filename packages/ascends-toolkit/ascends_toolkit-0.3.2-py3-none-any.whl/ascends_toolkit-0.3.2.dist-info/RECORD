@@ -1,0 +1,10 @@
+ascends.py,sha256=AWaUE0kvAEc_7MUyVymiD9pR3t1_T3O7AedjFROhEPU,55213
+ascends_toolkit-0.3.2.data/scripts/classify_with_model.py,sha256=8KhCqghv5RF6xhYj88JESAW1t9srCDfXJaWwo5MQ8QU,3565
+ascends_toolkit-0.3.2.data/scripts/predict_with_model.py,sha256=v03aEfWdj-X9Nq5VrRw-Ge9iGbyn-JPQnlWMfasnriQ,3405
+ascends_toolkit-0.3.2.data/scripts/train_classifier.py,sha256=EoFwPTdVUjnckAili4Bs80gn06p7F-voYBiUD7-kQeY,17936
+ascends_toolkit-0.3.2.data/scripts/train_regression.py,sha256=RV3V6UOEtkGimOdMHlYLkgF1Lb6UhTCOnT7sOwMSdxY,18133
+ascends_toolkit-0.3.2.dist-info/LICENSE,sha256=1N3galmqvI4gvHx_mdWa-A5yrTm-e_IC1zg-k6zQnHs,1074
+ascends_toolkit-0.3.2.dist-info/METADATA,sha256=suoBDDA25Qz_346B-c34SYKvEo5BpfhvSUZ2J58c1RY,698
+ascends_toolkit-0.3.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+ascends_toolkit-0.3.2.dist-info/top_level.txt,sha256=8i657L21SLus6Sr41YrUVkjxeshr7XEeDvzmWCIyf_A,8
+ascends_toolkit-0.3.2.dist-info/RECORD,,
