@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+water/__init__.py
+water/naver.py
+water/naver_search.py
+water_api.egg-info/PKG-INFO
+water_api.egg-info/SOURCES.txt
+water_api.egg-info/dependency_links.txt
+water_api.egg-info/not-zip-safe
+water_api.egg-info/requires.txt
+water_api.egg-info/top_level.txt
