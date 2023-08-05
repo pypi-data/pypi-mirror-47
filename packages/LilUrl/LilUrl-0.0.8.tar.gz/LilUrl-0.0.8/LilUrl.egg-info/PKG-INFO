@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: LilUrl
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: https://github.com/omprakash1989/LilUrl
+Author: Om Prakash
+Author-email: oppradhan2011@gmail.com
+License: MIT License
+Description: Url Shortener for flask.
+Keywords: Url Shortner.
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.5
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
+Provides-Extra: test

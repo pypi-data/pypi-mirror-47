@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: LilUrl
+Version: 0.0.8
+Summary: UNKNOWN
+Home-page: https://github.com/omprakash1989/LilUrl
+Author: Om Prakash
+Author-email: oppradhan2011@gmail.com
+License: MIT License
+Description: Url Shortener for flask.
+Keywords: Url Shortner.
+Platform: any
+Provides-Extra: dev
+Provides-Extra: test
