@@ -1,0 +1,3 @@
+[console_scripts]
+schemasync-h = schemasync.schemasync:main
+

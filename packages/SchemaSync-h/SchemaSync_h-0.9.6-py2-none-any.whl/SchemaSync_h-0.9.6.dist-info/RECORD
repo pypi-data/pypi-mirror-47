@@ -1,0 +1,10 @@
+schemasync/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+schemasync/schemasync.py,sha256=m1C5WGIwZZmIqzW7F07HXh7Jf3Jh8L_wz-ToiX5AAss,13497
+schemasync/syncdb.py,sha256=0XpP968ScFUohSZxHiDy68lmYqHh4BkCEYwUDt0jR3U,16606
+schemasync/utils.py,sha256=1VUlvO9vlsPTuzsvCVaJaGLS8zMVAG4pMnYKMCQ6D40,4762
+SchemaSync_h-0.9.6.dist-info/LICENSE,sha256=M-6_aUba3RG83IYuGrJttf_9FVFmz6kNbbQzmJ_VoT0,589
+SchemaSync_h-0.9.6.dist-info/METADATA,sha256=bpUHwFHqbuDgxX-jZz7Gncry6_MMY8vAQoIDR3voWVY,1036
+SchemaSync_h-0.9.6.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+SchemaSync_h-0.9.6.dist-info/entry_points.txt,sha256=sdSAT2_rJKC9kCqWU-3sbCbgq9Sl63tA_pL8HfmrzFw,61
+SchemaSync_h-0.9.6.dist-info/top_level.txt,sha256=_Dl_6u6Clh-A_TWQL2yrpl9tGUT0TCKyhHAa_XzhIFs,11
+SchemaSync_h-0.9.6.dist-info/RECORD,,
