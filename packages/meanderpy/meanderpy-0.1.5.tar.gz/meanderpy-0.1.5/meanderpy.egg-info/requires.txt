@@ -1,0 +1,9 @@
+numpy
+matplotlib
+seaborn
+scipy
+ipywidgets
+numba
+ipython
+pillow
+scikit-image
