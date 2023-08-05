@@ -1,0 +1,20 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+praw = "==6.2.0"
+prawcore = "==1.0.1"
+selenium = "==3.141.0"
+click = "==7.0"
+
+[dev-packages]
+twine = "*"
+setuptools = "*"
+wheel = "*"
+pytest = "*"
+black = "==19.3b0"
+
+[requires]
+python_version = "3.7.3"
