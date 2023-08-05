@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+config.json
+setup.py
+top-pypi-packages-30-days.min.json
+mystery/__init__.py
+mystery.egg-info/PKG-INFO
+mystery.egg-info/SOURCES.txt
+mystery.egg-info/dependency_links.txt
+mystery.egg-info/requires.txt
+mystery.egg-info/top_level.txt
