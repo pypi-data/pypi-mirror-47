@@ -1,0 +1,9 @@
+setup.py
+geometa_grid/__init__.py
+geometa_grid/schema.py
+girder_geospatial_grid.egg-info/PKG-INFO
+girder_geospatial_grid.egg-info/SOURCES.txt
+girder_geospatial_grid.egg-info/dependency_links.txt
+girder_geospatial_grid.egg-info/entry_points.txt
+girder_geospatial_grid.egg-info/requires.txt
+girder_geospatial_grid.egg-info/top_level.txt
