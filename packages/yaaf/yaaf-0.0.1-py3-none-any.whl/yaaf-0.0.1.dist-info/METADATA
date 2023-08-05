@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: yaaf
+Version: 0.0.1
+Summary: YAAF: Yet Another Agents Framework
+Home-page: http://github.com/jmribeiro/yaaf
+Author: João Ribeiro
+Author-email: jmribeiro77209@gmail.com
+License: Apache 2.0
+Keywords: Autonomous Agents,Reinforcement Learning
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: gym
+Requires-Dist: keras
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pyyaml
+Requires-Dist: tensorflow
+
+# YAAF: Yet Another Agents Framework
+
+_A minimalistic reinforcement learning framework._
+
+## Installation 
+
+      $ pip install yaaf                               # Install YAAF
+      $ pip install gym[atari]                         # Install OpenAI Gym's Atari environments
+      $ git clone https://github.com/jmribeiro/yaaf    # Clone the repo for the examples and tutorials
+      $ cd yaaf/examples                               
+      $ python 0_space_invaders_random_agent.py        # Run example
+
+- **Rapid Prototyping**: Setting up an agent on an environment can easily be done with a few lines of code:
+
+      # Setup the Environment
+      environment = OpenAIGymEnvironment(name="SpaceInvaders-v0", render=True)
+
+      # Setup the Agent
+      agent = RandomAgent(environment.action_space)
+
+      # Run the agent on the environment for 5 episodes
+      runner = EpisodeRunners(agent, environment, episodes=5)
+      runner.run()
+      environment.close()
+
+- **Simplicity**
+
+    **States**: Tensors/Numpy arrays with a given shape;
+
+    **Actions**: Integers if a discrete action space, Floats if a continuous action space;
+
+    **Timesteps**: Named tuples in shape of (state, action, reward, next_, is_terminal, info)
+
+    **Agents**: Objects capable of execution actions when given a state. If trainable, capable of learning when given a timestep 
+
+    **Environments**: Objects which evolve over time, where agents can execute actions;
+
+    **Runners**: Objects that interact an actor (agent or policy) on an environment, notifying a list of observers at every timestep;
+
+    **Metrics**: Objects that evaluate an agent's or policy's performance on a given run. Passed as observables to the Runners.
+
+    **Presenters** (TODO): Objects that display an agent's performance on a given run. Used to make plots and compare agents.
+
+- **Result Reproducibility**:
+
+    After creating and evaluating an agent on a given environment, it is possible to persistently save the agent to disk, allowing programmers to load up pre-trained agents and compare them in different scenarios.
+
+    **Implemented Agents**:
+
+    - DQN (https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf)
+    - QNetwork (http://ml.informatik.uni-freiburg.de/former/_media/publications/rieecml05.pdf)
+    - QLearning (https://link.springer.com/content/pdf/10.1007%2FBF00992698.pdf)
+    - SARSA
+
+    **Planned Agents**:
+
+    - [TODO] DDQN (https://arxiv.org/abs/1509.06461)
+    - [TODO] A3C (https://arxiv.org/pdf/1602.01783.pdf)
+    - [TODO] GA3C (https://arxiv.org/pdf/1611.06256.pdf)
+    - [TODO] DDPG (https://arxiv.org/pdf/1509.02971.pdf)
+    - [TODO] PPO (https://arxiv.org/abs/1707.06347)
+
+
+
