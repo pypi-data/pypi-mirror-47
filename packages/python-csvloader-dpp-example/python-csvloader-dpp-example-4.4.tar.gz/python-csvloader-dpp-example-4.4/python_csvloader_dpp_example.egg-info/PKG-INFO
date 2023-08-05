@@ -1,0 +1,16 @@
+Metadata-Version: 1.0
+Name: python-csvloader-dpp-example
+Version: 4.4
+Summary: An example python package
+Home-page: https://git.e-science.pl/rbaszak230509/81a_RBaszak_Package
+Author: Rafal Baszak
+Author-email: rbaszak230509@e-science.pl
+License: MIT
+Description: Python lib.
+        
+        Created based on https://github.com/BillMills/pythonPackageLesson
+        
+        `pip install --index-url https://test.pypi.org/simple/ --no-deps python-csvloader-dpp-example`
+        
+        `pip install --index-url https://test.pypi.org/simple/ --no-deps python-csvloader-dpp-example==2.0`
+Platform: UNKNOWN
