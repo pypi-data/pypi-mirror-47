@@ -1,0 +1,15 @@
+LMIPy/__init__.py,sha256=7cR3e5uL17t-UqOuiTHcpquakcdzob3QRRD09cN0z9c,284
+LMIPy/collection.py,sha256=p3l7YvvZJ5UNguZonbhl5PjGSM3Frdli6iOjBx8rK18,8008
+LMIPy/dataset.py,sha256=IiJyfRPbD4BSKpO2qvfLiiZnVpZJnHxQJK_4_o9HJkg,19893
+LMIPy/geometry.py,sha256=OmB2CaGp5ylyt6ly5TOIgpIVS39kW0fOTinVCc6pMtI,13419
+LMIPy/layer.py,sha256=0eo09LZSKYUlVqiugaM6zYIVBKj2BDKxUnusppNzJsI,21198
+LMIPy/lmipy.py,sha256=Ms4yzhDvtamcYxIpckMfB_w0sSSfBHS57E7XxEPO_nk,9327
+LMIPy/table.py,sha256=5AhyjegtgsuNUrI4UL4uwTLtxFnWyFSZ5Wu50RN_Ogk,2955
+LMIPy/utils.py,sha256=WAeqTsaiKsA38iPBKTyaYdET5k7-Xv0lycx8gNmYSjA,8085
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_collections.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+LMIPy-0.1.20.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+LMIPy-0.1.20.dist-info/METADATA,sha256=hyPypKcNUNp1uwCIsnvIokjI91mhNUfXAEqWIBpSRtk,2916
+LMIPy-0.1.20.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+LMIPy-0.1.20.dist-info/top_level.txt,sha256=gil-5EO4zonKOVByEEuqRUuMZblmIM_3E38AmIru9Hg,6
+LMIPy-0.1.20.dist-info/RECORD,,
