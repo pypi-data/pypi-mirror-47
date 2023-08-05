@@ -1,0 +1,8 @@
+msAI/__init__.py,sha256=-7YU9NRAOeObHUf7AVZgmrzzOm0m21WRN1fClh8OFMM,14
+msAI/msdf.py,sha256=cYrRedSjip1oI8lq6Z2O2y7lv0ZT0YXEVsqQejUvZpw,7813
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_msdf.py,sha256=wO40mp1tApE3muul-0PBau-2dIj9cokV6o4OrxaOsxs,34
+msAI-0.1.1.dev1.dist-info/METADATA,sha256=ciDB0XRbsejZy_1AacYPtKmLjjIEWDC2oXOy5uut9Jo,1870
+msAI-0.1.1.dev1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+msAI-0.1.1.dev1.dist-info/top_level.txt,sha256=Qt1vQ1UKv-LtWCGMPwMCtqV4b-keKyljNZRGuG7GG6s,11
+msAI-0.1.1.dev1.dist-info/RECORD,,
