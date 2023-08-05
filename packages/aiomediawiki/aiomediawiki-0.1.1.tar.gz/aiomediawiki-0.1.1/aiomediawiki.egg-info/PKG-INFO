@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: aiomediawiki
+Version: 0.1.1
+Summary: A simple asyncio mediawiki client.
+Home-page: https://github.com/jucacrispim/aiomediawiki
+Author: Juca Crispim
+Author-email: juca@poraodojuca.net
+License: GPL
+Description: A simple asyncio mediawiki client.
+Platform: UNKNOWN
+Provides: aiomediawiki

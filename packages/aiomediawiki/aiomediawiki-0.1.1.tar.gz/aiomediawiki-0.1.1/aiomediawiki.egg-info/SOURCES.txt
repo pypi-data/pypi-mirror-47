@@ -1,0 +1,11 @@
+README.md
+setup.py
+aiomediawiki/__init__.py
+aiomediawiki/exceptions.py
+aiomediawiki/page.py
+aiomediawiki/wiki.py
+aiomediawiki.egg-info/PKG-INFO
+aiomediawiki.egg-info/SOURCES.txt
+aiomediawiki.egg-info/dependency_links.txt
+aiomediawiki.egg-info/requires.txt
+aiomediawiki.egg-info/top_level.txt
