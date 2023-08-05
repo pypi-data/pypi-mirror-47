@@ -1,0 +1,17 @@
+mezzanine_sync_pages/__init__.py,sha256=0vRx-DM-WsX4p3vewQtpIRKAGSq0Uk_0JNQsVecLD9M,170
+mezzanine_sync_pages/admin.py,sha256=m01B6CtXzIeskiM6HYLntHveGyyeP4IU-9zo5doI-8U,2981
+mezzanine_sync_pages/apps.py,sha256=dAyChYsTMB0Hgb09z0XT7QIWDMqESGsxpD-1yc_Ztkc,296
+mezzanine_sync_pages/base.py,sha256=JP0uaWpbP5XkDJI32aIBJ_SCENN9qAAVLWisw4oFt8M,2123
+mezzanine_sync_pages/dump_pages.py,sha256=iNQR-Qtf_utKTkmX-E62f-hj2pZ1oeZ8KpMcoU3GmkI,2951
+mezzanine_sync_pages/models.py,sha256=AEwMdc2j2zT2jWVKDDPTYs0WF93tRnMzXOo60FqSJJo,482
+mezzanine_sync_pages/sync_pages.py,sha256=AA11cKNIw9euJn-wt56z-AXrPR9LJ3yBZFOCJUMy3OQ,3803
+mezzanine_sync_pages/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mezzanine_sync_pages/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mezzanine_sync_pages/management/commands/dump_pages.py,sha256=vfXC9K7zChN9yIR5wNunPPSXxJ3-sqbpsQFyzEHb5fY,699
+mezzanine_sync_pages/management/commands/sync_pages.py,sha256=z7gJxaHwmG3JSMKWUlLt0auf-4EJsySzxKbPaiYlqBE,932
+mezzanine_sync_pages/templates/admin/mezzanine_sync_pages.html,sha256=K0m5sF4RJ1OcIRkXDhNlaSTzfxFkveiEr8mfU_3Ard4,1867
+mezzanine_sync_pages-1.0.0.dist-info/LICENSE,sha256=WBvToDoiGEoo_57fZZ76aVfRNIkgtFfILtnfv09sgTg,1082
+mezzanine_sync_pages-1.0.0.dist-info/METADATA,sha256=tVnSNCLmrBqLWWwDSsUHzHPTakPd6ValTbOu1Y9XI-I,3655
+mezzanine_sync_pages-1.0.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+mezzanine_sync_pages-1.0.0.dist-info/top_level.txt,sha256=abefAaygqhk5INgdfMyo4saQvndOCOehzuwWEnDKNpg,21
+mezzanine_sync_pages-1.0.0.dist-info/RECORD,,
