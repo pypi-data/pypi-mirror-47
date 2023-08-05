@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: muller
+Version: 0.4.6
+Summary: A set of scripts to cluster mutational trajectories into genotypes and cluster genotypes by background
+Home-page: https://github.com/cdeitrick/muller_diagrams
+Author: chris deitrick
+Author-email: chrisdeitrick1@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
