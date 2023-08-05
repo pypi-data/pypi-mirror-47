@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dotabase
+Version: 4.7.5
+Summary: Dota 2 game data extracted as an sqlite database, with an sqlalchemy wrapper
+Home-page: https://github.com/mdiller/dotabase
+Author: Malcolm Diller
+Author-email: malcolm@dillerm.io
+License: MIT
+Description: UNKNOWN
+Keywords: dota dota2 data sqlite
+Platform: UNKNOWN
