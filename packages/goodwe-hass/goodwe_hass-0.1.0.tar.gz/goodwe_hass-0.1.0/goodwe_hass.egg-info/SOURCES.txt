@@ -1,0 +1,8 @@
+README.md
+setup.py
+goodwe_hass/__init__.py
+goodwe_hass.egg-info/PKG-INFO
+goodwe_hass.egg-info/SOURCES.txt
+goodwe_hass.egg-info/dependency_links.txt
+goodwe_hass.egg-info/requires.txt
+goodwe_hass.egg-info/top_level.txt
