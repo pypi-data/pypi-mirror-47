@@ -1,0 +1,8 @@
+README.md
+setup.py
+FritzHome/__init__.py
+robotframework_fritzhomelibrary.egg-info/PKG-INFO
+robotframework_fritzhomelibrary.egg-info/SOURCES.txt
+robotframework_fritzhomelibrary.egg-info/dependency_links.txt
+robotframework_fritzhomelibrary.egg-info/requires.txt
+robotframework_fritzhomelibrary.egg-info/top_level.txt
