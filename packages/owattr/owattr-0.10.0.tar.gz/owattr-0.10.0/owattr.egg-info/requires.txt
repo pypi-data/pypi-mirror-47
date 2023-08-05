@@ -1,0 +1,8 @@
+
+[test]
+Pygments
+docutils
+flake8
+mypy
+pytest
+pytest-cov

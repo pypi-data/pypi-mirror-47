@@ -1,0 +1,8 @@
+README.rst
+owattr.py
+setup.py
+owattr.egg-info/PKG-INFO
+owattr.egg-info/SOURCES.txt
+owattr.egg-info/dependency_links.txt
+owattr.egg-info/requires.txt
+owattr.egg-info/top_level.txt
