@@ -1,0 +1,7 @@
+README.md
+setup.py
+code/__init__.py
+guri.egg-info/PKG-INFO
+guri.egg-info/SOURCES.txt
+guri.egg-info/dependency_links.txt
+guri.egg-info/top_level.txt
