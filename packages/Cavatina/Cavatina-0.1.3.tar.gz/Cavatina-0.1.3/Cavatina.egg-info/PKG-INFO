@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: Cavatina
+Version: 0.1.3
+Summary: Musical Notation Parser for Cavatina Synthax.
+Home-page: http://cavatinafont.com
+Author: Alexis Luengas Zimmer
+Author-email: lex@cavatinafont.com
+License: LGPL
+Description: # Cavatina converter
+        
+        This package contains a collection of scripts for parsing and translating music notation written in [Cavatina](https://github.com/LexLuengas/cavatina). It contains readers for rich text (.rtf) and plain text (.txt) and can translate to the MusicXML and MIDI formats.
+        
+        The syntax of the Cavatina language is described on the [documentation page](http://www.cavatinafont.com/docs.html).
+        
+        ## Example usages
+        
+        **Convert a RTF file to MusicXML.**
+        
+            $ python rtf2xml.py [path] [format]
+        
+        **Convert a Cavatina string to MusicXML.**
+        
+            $ python translator.py [string] [format]
+        
+        ## Support
+        
+        Currently supported keyboard layouts are:
+        
+        -   English (International)
+        
+        -   English (US)
+        
+        -   English (UK, Apple)
+        
+        -   English (UK, Windows)
+        
+        -   French
+        
+        -   German
+        
+        -   Italian
+        
+        -   Spanish
+        
+        -   Spanish (ISO)
+        
+        -   Portuguese (Brazil, Windows)
+        
+        -   Portuguese (Portugal, Windows)
+        
+        ### Installation
+        
+        Either install the library with pip via the usual `pip install cavatina`, or clone the repo and run `python setup.py install` on its root directory.
+        
+        ### Dependencies
+        
+        -   [music21](https://github.com/cuthbertLab/music21)
+        
+        ### Services
+        
+        The _services_ folder contains context menu shortcuts for the translator.
+        
+        -   *MacOS:* run `./setup.sh` on the same folder as the workflow folders.
+        
+        -   *Windows:* open and import the registry files.
+        
+        ### License
+        
+        [LGPL](LICENSE) © 2019 Alexis Luengas
+        
+Keywords: music notation parser converter musicxml midi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Multimedia :: Sound/Audio :: Conversion
+Classifier: Topic :: Multimedia :: Sound/Audio :: MIDI
+Classifier: Topic :: Text Processing
+Description-Content-Type: text/markdown
