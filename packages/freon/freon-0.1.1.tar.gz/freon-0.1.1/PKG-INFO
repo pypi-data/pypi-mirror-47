@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: freon
+Version: 0.1.1
+Summary: Keep your data fresh
+Home-page: http://github.com/linkyndy/freon
+Author: Andrei Horak
+Author-email: linkyndy@gmail.com
+License: MIT
+Description: 
+        freon
+        ----------------
+        
+        Keeps your data fresh just as freon keeps your food fresh in the fridge.
+        
+        
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: dev
