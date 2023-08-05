@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bitcoin-keygen
+Version: 0.1.0
+Summary: Bitcoin Associative Functions
+Home-page: https://github.com/cheran-senthil/bitcoin-keygen
+Author: Cheran
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/cheran-senthil/bitcoin-keygen/issues
+Project-URL: Source, https://github.com/cheran-senthil/bitcoin-keygen/
+Keywords: bitcoin keygen python script blockchain cryptography cryptocurrency
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Bitcoin Keygen
+
+Bitcoin Keygen is a minimalistic Python script with no dependendencies to generate the Wallet Import Format (WIF), public key and address associated with a private key on the Bitcoin Blockchain.
+
+## Features
+
+Bitcoin Keygen can generate compressed versions or generate for the testnet, by passing optional parameters.
+
+## License
+
+[GNU General Public License v3.0](LICENSE) © Cheran Senthilkumar
+
+
