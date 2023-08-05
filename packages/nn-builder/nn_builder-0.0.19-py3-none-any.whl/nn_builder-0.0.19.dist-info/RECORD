@@ -1,0 +1,17 @@
+nn_builder/Overall_Base_Network.py,sha256=ZXEaKUjpU0AayEA1RFWBaoJzYeB3zguCt8jstHqXbIs,7467
+nn_builder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nn_builder/pytorch/Base_Network.py,sha256=nu_fApVBLLDVjzLgFO099ZUt8a2YDtjHKGT3YSutgzQ,5022
+nn_builder/pytorch/CNN.py,sha256=s9vbFNjPwtbYt4sQlYYgVNUjV3NZdlzLP6wul1LEYIM,15762
+nn_builder/pytorch/NN.py,sha256=aX4CXjhLB8s7oDAdmn5wm-rk2qyBDNOZkyNtbH40alc,8307
+nn_builder/pytorch/RNN.py,sha256=T2PYWjggPGQR-7HxjDfpjW5Owo64MUmlIPiD931hMn0,13982
+nn_builder/pytorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nn_builder/tensorflow/Base_Network.py,sha256=vC_T_IPmUfs0vwX_Sc9Nt7DJltk5JfQMIS6uJ7usVGE,5321
+nn_builder/tensorflow/CNN.py,sha256=RXWwcrEG4PDOQBUkvX5LMdiNC93k9PizgliNc3bEn8U,10924
+nn_builder/tensorflow/NN.py,sha256=ggQauvLrRCWKATgj-xkVsRWAtcJ7M_eXYQ5_ZlD6GrU,5745
+nn_builder/tensorflow/RNN.py,sha256=Srq345ZMQVJAFOHeTIXzJm_NKQczEQau8ZMwhAmDvQA,10063
+nn_builder/tensorflow/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nn_builder-0.0.19.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+nn_builder-0.0.19.dist-info/METADATA,sha256=uPijOCogFfVCtAbEhc6SVWVCpLk49WklRon2Y3bozBI,4308
+nn_builder-0.0.19.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nn_builder-0.0.19.dist-info/top_level.txt,sha256=4hX124IKMPg8K1ymNX50xM3B5jz0ZZ5NMeZyR78zvbI,11
+nn_builder-0.0.19.dist-info/RECORD,,
