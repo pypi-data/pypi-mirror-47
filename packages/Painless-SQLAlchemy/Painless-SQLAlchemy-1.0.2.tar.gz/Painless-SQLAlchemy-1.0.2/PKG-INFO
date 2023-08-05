@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: Painless-SQLAlchemy
+Version: 1.0.2
+Summary: Simplified filtering and serialization for SQLAlchemy
+Home-page: https://github.com/GetintheLoop/painless-sqlalchemy
+Author: Lukas Siemon
+Author-email: painless@blackflux.com
+Maintainer: Lukas Siemon
+Maintainer-email: painless@blackflux.com
+License: MIT
+Description: 
+        Painless-SQLAlchemy
+        ----------------
+        Easy serialization and filtering for SQLAlchemy.
+        
+        Links:
+        * [github](https://github.com/GetintheLoop/painless-sqlalchemy)
+        
+Keywords: SQLAlchemy,Serialization,Query,Simple,Abstraction,PostGis,Columns
+Platform: any
+Description-Content-Type: text/markdown
+Provides-Extra: postgis
