@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pybarkapi
+Version: 0.2
+Summary: A simple python API for bark, a useful tool for notifying you through your smart phone.
+Home-page: https://github.com/wanderersean/pybarkapi
+Author: Sean
+Author-email: 652964528@qq.com
+License: MIT
+Description: UNKNOWN
+Keywords: BARK,Python,Notification
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
