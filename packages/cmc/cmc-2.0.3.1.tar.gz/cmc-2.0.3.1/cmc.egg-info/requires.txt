@@ -1,0 +1,8 @@
+aiohttp
+aiodns
+pandas
+tqdm
+requests
+
+[:python_version < "3.4"]
+asyncio

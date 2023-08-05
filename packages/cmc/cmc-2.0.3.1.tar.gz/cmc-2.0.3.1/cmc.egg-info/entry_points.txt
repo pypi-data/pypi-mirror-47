@@ -1,0 +1,3 @@
+[console_scripts]
+coinmarketcap = cmc.coinmarketcap:main
+
