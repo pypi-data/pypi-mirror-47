@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fxq-geoffrey
+Version: 1.0.4
+Summary: The Provisioning Assistant for Devops, configure snippets as YML and call them from the fxqgeoffrey CLI
+Home-page: https://bitbucket.org/fxquants/geoffrey
+Author: Jonathan Turnock
+Author-email: Jonathan.Turnock@fxquants.net
+License: MIT
+Description: TBC
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
