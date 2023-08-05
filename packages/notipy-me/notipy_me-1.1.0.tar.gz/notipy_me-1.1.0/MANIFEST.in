@@ -1,0 +1,2 @@
+include notipy_me/models/*.txt
+include notipy_me/models/*.html

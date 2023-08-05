@@ -1,0 +1,13 @@
+We would like you to know that your task called "TASK_NAME" has started!
+
+The wheres
+The task is on SERVER_HOSTNAME.
+The user logged is USERNAME.
+The working path is WORKING_PATH.	
+
+The whens 
+The task has started on COMPLETION_DATE.
+
+You are receiving this email because SENDER has listed you within the recepients: you will receive another email like this when the the task is completed.
+
+- The notipy me team.
