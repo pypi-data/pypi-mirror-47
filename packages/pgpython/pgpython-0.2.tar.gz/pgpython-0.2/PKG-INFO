@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: pgpython
+Version: 0.2
+Summary: Package that helps you to work with postgresql
+Home-page: https://github.com/c0nder/pgpython
+Author: Sokolov Artem
+Author-email: sokolovartem6@gmail.com
+License: UNKNOWN
+Description: # README
+        
+        What is pgpython? Pgpython helps you to work with postgresql database by the easiest way. Let me show you.
+        
+        ## How to work with tables?
+        
+        Imagine that you have a table called test
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
