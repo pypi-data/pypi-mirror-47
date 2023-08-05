@@ -1,0 +1,3 @@
+[console_scripts]
+rplatzi = reviews_platzi.rplatzi:main
+

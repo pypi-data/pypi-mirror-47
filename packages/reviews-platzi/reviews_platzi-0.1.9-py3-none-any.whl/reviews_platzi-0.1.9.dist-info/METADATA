@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: reviews-platzi
+Version: 0.1.9
+Summary: A script to get all the reviews from one Platzi course
+Home-page: UNKNOWN
+Author: Kevin Morales
+Author-email: kenshumorales@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
