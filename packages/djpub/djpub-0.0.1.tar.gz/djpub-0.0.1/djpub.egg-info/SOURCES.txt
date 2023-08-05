@@ -1,0 +1,9 @@
+README.md
+setup.py
+djpub/__init__.py
+djpub/version.py
+djpub.egg-info/PKG-INFO
+djpub.egg-info/SOURCES.txt
+djpub.egg-info/dependency_links.txt
+djpub.egg-info/requires.txt
+djpub.egg-info/top_level.txt
