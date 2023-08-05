@@ -1,0 +1,8 @@
+bareasgi_compression/__init__.py,sha256=uaqpu2sZUtDu4HLLBChtiH6_bDFO-oKttNyy_iT5I4A,125
+bareasgi_compression/__version__.py,sha256=HVx0XJJ9OYFWBBPBCUFYb8Nm43ChPg9GZLh_dkxh9qI,22
+bareasgi_compression/middleware.py,sha256=YryZ9Ro80IxNPOo1ZachAqtHgAXQwzNqG3Nr_zmq1DU,7089
+bareasgi_compression-2.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bareasgi_compression-2.0.1.dist-info/METADATA,sha256=gjPbU4zsfKIeo2ig5kBOwv43SAxNCsOW1Imw3dZDLPY,976
+bareasgi_compression-2.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bareasgi_compression-2.0.1.dist-info/top_level.txt,sha256=eysR32k6Pe6rpN_C1tGTqndPqGkhTHg7S04nvBNDE-k,21
+bareasgi_compression-2.0.1.dist-info/RECORD,,
