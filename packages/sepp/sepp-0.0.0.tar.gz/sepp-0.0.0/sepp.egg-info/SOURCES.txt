@@ -1,0 +1,7 @@
+README.md
+setup.py
+sepp/__init__.py
+sepp.egg-info/PKG-INFO
+sepp.egg-info/SOURCES.txt
+sepp.egg-info/dependency_links.txt
+sepp.egg-info/top_level.txt

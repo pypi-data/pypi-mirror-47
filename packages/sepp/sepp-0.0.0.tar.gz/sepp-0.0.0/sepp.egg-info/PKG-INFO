@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: sepp
+Version: 0.0.0
+Summary: Science Exploitation and Preservation Platform
+Home-page: https://repos.cosmos.esa.int/socci/projects/SEPP/repos/sepp
+Author: SEPP Development Consortium
+Author-email: dmb@uninova.pt
+License: Proprietary
+Description: # Science Exploitation and Preservation Platform
+        
+        This is just a placeholder, the actual code will be uploaded in a
+        couple of months, under an open-source license.
+        
+        SEPP is an ESAC/ESA project.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
