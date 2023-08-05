@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: zipapi.us
+Version: 1.0.0
+Summary: Unoffical zipapi.us wrapper.
+Home-page: https://github.com/sl4vkek/zipapi.us
+Author: sl4v
+Author-email: iamsl4v@protonmail.com
+License: WTFPL
+Description: An unoffical zipapi.us object oriented wrapper.
+Platform: UNKNOWN
