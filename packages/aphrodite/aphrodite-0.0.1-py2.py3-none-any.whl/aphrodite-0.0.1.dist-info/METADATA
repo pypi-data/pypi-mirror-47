@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aphrodite
+Version: 0.0.1
+Summary: ENOS API
+Home-page: UNKNOWN
+Author: Kid QU
+License: GPLv3
+Platform: all
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pycryptodome (>=3.8.2)
+Requires-Dist: simplejson (>=3.16.0)
+
+UNKNOWN
+
+
