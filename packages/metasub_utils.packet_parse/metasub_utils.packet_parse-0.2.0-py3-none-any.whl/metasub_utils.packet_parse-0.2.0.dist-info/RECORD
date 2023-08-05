@@ -1,0 +1,10 @@
+metasub_utils.packet_parse-0.2.0-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/packet_parse/__init__.py,sha256=XEXZanfPvW8EOo4Sq9tFIYt2Zkq9Aau0tjmdHVZjLZ4,45
+metasub_utils/packet_parse/metadata_ontology.py,sha256=72xN44_ALVDjZFwu7OMU7GmYEuRn39gK50vl5ka1Ctw,2296
+metasub_utils/packet_parse/packet_parse.py,sha256=WXytW0LPR8649Y5t9qL7f2Ml2-kaw4msQ117sRP0cWU,1976
+metasub_utils.packet_parse-0.2.0.dist-info/METADATA,sha256=mfFId6Bvl16Kj9i6RqMbhLWofXBMB3adkaNJiYVjkYA,396
+metasub_utils.packet_parse-0.2.0.dist-info/RECORD,,
+metasub_utils.packet_parse-0.2.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.packet_parse-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+metasub_utils.packet_parse-0.2.0.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.packet_parse-0.2.0.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
