@@ -1,0 +1,12 @@
+README.md
+setup.py
+calligraphy/__init__.py
+calligraphy/export.py
+calligraphy/utils.py
+calligraphy/verify.py
+calligraphy.egg-info/PKG-INFO
+calligraphy.egg-info/SOURCES.txt
+calligraphy.egg-info/dependency_links.txt
+calligraphy.egg-info/entry_points.txt
+calligraphy.egg-info/requires.txt
+calligraphy.egg-info/top_level.txt
