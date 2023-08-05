@@ -1,0 +1,10 @@
+README.rst
+setup.py
+sqlLinter/__init__.py
+sqlLinter/sqlLinter.py
+sqlLinter.egg-info/PKG-INFO
+sqlLinter.egg-info/SOURCES.txt
+sqlLinter.egg-info/dependency_links.txt
+sqlLinter.egg-info/top_level.txt
+tests/__init__.py
+tests/test_sqlLinter.py
