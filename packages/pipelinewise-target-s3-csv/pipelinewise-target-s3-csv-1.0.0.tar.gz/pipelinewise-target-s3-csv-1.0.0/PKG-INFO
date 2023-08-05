@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pipelinewise-target-s3-csv
+Version: 1.0.0
+Summary: Singer.io target for writing CSV files and upload to S3 - PipelineWise compatible
+Home-page: https://github.com/transferwise/pipelinewise-target-s3-csv
+Author: TransferWise
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
