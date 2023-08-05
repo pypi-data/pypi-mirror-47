@@ -1,0 +1,4 @@
+[console_scripts]
+mdn-mark = get_mdn_mark.get_mdn_mark:threading_main
+screen-ips = get_mdn_mark.proxies:screen_alive_proxies
+

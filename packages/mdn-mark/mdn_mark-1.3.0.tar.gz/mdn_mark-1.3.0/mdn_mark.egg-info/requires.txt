@@ -1,0 +1,2 @@
+zoran_tools>=0.2.1
+requests_html
