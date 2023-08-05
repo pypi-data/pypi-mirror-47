@@ -1,0 +1,13 @@
+arabicnlp/__init__.py,sha256=6kDwdl0S1gSAbzeFdLHDimAtB9dHeIjM3SL_QUToHG8,95
+arabicnlp/core.py,sha256=f7JpFYI5Cvzr3hnN6RdCliuJWmJo762_EHyxW1cbICk,525
+arabicnlp/porter.py,sha256=8NCiL9ccxo6KhR0ErkkH8UdpQX1wwECSfn0jMLvr5as,22813
+arabicnlp/pos_tagger.py,sha256=5sfVRxZnjPnHCuYGOC8Ay8dbfCiLBfrITn3XVnJrg-E,2775
+arabicnlp/stemmer.py,sha256=33fGhIyyMQzRGXyZMQoLylLOIQdybpUvtpa6MkmCpNQ,28750
+arabicnlp/data/post_lstm_march_2019_.h5,sha256=u9JhpwUkw5LrGC_lLlKVsz1LTemD4dYv_IzNd_36DV0,15275088
+arabicnlp/data/post_ngram_march_2019.h5,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arabicnlp/data/tag2index.bin,sha256=7TYn7u6NF04zsPIXtK7rsKcopjuFjeYUTXlWHD_IdmM,223
+arabicnlp/data/word2index.bin,sha256=K74KE29LZwtaoYvLULqhajjSul1Qu7m0xZWxAG6dCi0,569571
+arabicnlp-0.1.6.dist-info/METADATA,sha256=RE13PoETRnkxxIHynIeWB-PqnphvsTW1_vm5k_53F6E,728
+arabicnlp-0.1.6.dist-info/RECORD,,
+arabicnlp-0.1.6.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+arabicnlp-0.1.6.dist-info/top_level.txt,sha256=E44nZTr0f5dYq6bESFVWHgzStvNPRkBS6TaLmcLDHrc,10
