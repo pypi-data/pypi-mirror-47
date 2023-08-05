@@ -1,0 +1,10 @@
+setup.py
+distributions_mmbader/Binomialdistribution.py
+distributions_mmbader/Gaussiandistribution.py
+distributions_mmbader/Generaldistribution.py
+distributions_mmbader/__init__.py
+distributions_mmbader.egg-info/PKG-INFO
+distributions_mmbader.egg-info/SOURCES.txt
+distributions_mmbader.egg-info/dependency_links.txt
+distributions_mmbader.egg-info/not-zip-safe
+distributions_mmbader.egg-info/top_level.txt
