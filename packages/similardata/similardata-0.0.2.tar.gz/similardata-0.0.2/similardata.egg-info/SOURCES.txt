@@ -1,0 +1,10 @@
+README.md
+setup.py
+similardata/__init__.py
+similardata/parser.py
+similardata.egg-info/PKG-INFO
+similardata.egg-info/SOURCES.txt
+similardata.egg-info/dependency_links.txt
+similardata.egg-info/entry_points.txt
+similardata.egg-info/requires.txt
+similardata.egg-info/top_level.txt
