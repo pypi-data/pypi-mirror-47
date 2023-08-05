@@ -1,0 +1,877 @@
+#!/usr/bin/env python
+
+# imports
+
+import sys
+import os
+from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QVBoxLayout, QPushButton, QFileDialog, QLineEdit, QSizePolicy, QGridLayout, QSlider, QGraphicsTextItem, QHBoxLayout, QRadioButton, QCheckBox, QButtonGroup
+from PyQt5 import QtGui, QtCore
+from PIL import Image, ImageQt
+import math
+import spam.DIC.deformationFunction as transf
+import spam.helpers.tsvio as save
+import numpy
+import matplotlib
+import matplotlib.pyplot as plt
+import tifffile
+import qimage2ndarray
+import spam.DIC.correlateGM as cGM
+import spam.helpers.QtImageViewer as QtImageViewer
+
+
+class ereg(QWidget):
+    def __init__(self, _images, enterPhi):
+        #init every graphical widget and create all the variables that will be used
+        QWidget.__init__(self)
+        self.Phis = [enterPhi, enterPhi]
+        self.parameters = transf.decomposePhi(enterPhi)
+        self.images = [_images[1], _images[0], _images[0]]
+        self.winGrid = QGridLayout(self)
+        self.Im1 = QtImageViewer.QtImageViewer()
+        self.Im2 = QtImageViewer.QtImageViewer()
+        self.comparison = QtImageViewer.QtImageViewer()
+        self.winGrid.addWidget(self.Im1, 1, 1)
+        self.winGrid.addWidget(self.Im2, 1, 2)
+        self.winGrid.addWidget(self.comparison, 1, 3)
+        self.axe = 'z'
+        self.nbCB = 5
+        self.changeColor = False
+        self.comparisonMode = 0
+        self.slice = []
+        sliceIm1 = [int(_images[0].shape[0] / 2),
+                    int(_images[0].shape[1] / 2), int(_images[0].shape[2] / 2)]
+        sliceIm2 = [int(_images[1].shape[0] / 2),
+                    int(_images[1].shape[1] / 2), int(_images[1].shape[2] / 2)]
+        self.slice.append(sliceIm1)
+        self.slice.append(sliceIm2)
+        self.tArray = [round(self.parameters['t'][0], 3), round(
+            self.parameters['t'][1], 3), round(self.parameters['t'][2], 3)]
+        self.rArray = [round(self.parameters['r'][0], 3), round(
+            self.parameters['r'][1], 3), round(self.parameters['r'][2], 3)]
+        self.zArray = [round(self.parameters['U'][0, 0], 3), round(
+            self.parameters['U'][1, 1], 3), round(self.parameters['U'][2, 2], 3), 1]
+        self.iterations = 0
+        self.images[1] = transf.applyPhi(
+            self.images[2], Phi=self.Phis[1])
+
+        self.viewGrid = QGridLayout()
+        self.winGrid.addLayout(self.viewGrid, 2, 2)
+        self.modifierGrid = QGridLayout()
+        self.winGrid.addLayout(self.modifierGrid, 2, 1)
+        labelTranslation = QLabel("translation:")
+        self.modifierGrid.addWidget(labelTranslation, 4, 1)
+        labelTx = QLabel("x")
+        self.modifierGrid.addWidget(labelTx, 1, 2)
+
+        self.tXPlus5Button = QPushButton("+5")
+        self.tXPlus5Button.clicked.connect(lambda: self.modifyPhi("tX", 5))
+        self.modifierGrid.addWidget(self.tXPlus5Button, 2, 2)
+
+        self.tXPlus1Button = QPushButton("+1")
+        self.tXPlus1Button.clicked.connect(lambda: self.modifyPhi("tX", 1))
+        self.modifierGrid.addWidget(self.tXPlus1Button, 3, 2)
+
+        self.tXLabel = QLineEdit(str(self.tArray[2]))
+        self.modifierGrid.addWidget(self.tXLabel, 4, 2)
+
+        self.tXMinus1Button = QPushButton("-1")
+        self.tXMinus1Button.clicked.connect(lambda: self.modifyPhi("tX", -1))
+        self.modifierGrid.addWidget(self.tXMinus1Button, 5, 2)
+
+        self.tXMinus5Button = QPushButton("-5")
+        self.tXMinus5Button.clicked.connect(lambda: self.modifyPhi("tX", -5))
+        self.modifierGrid.addWidget(self.tXMinus5Button, 6, 2)
+
+        labelTy = QLabel("y")
+        self.modifierGrid.addWidget(labelTy, 1, 3)
+
+        self.tYPlus5Button = QPushButton("+5")
+        self.tYPlus5Button.clicked.connect(lambda: self.modifyPhi("tY", 5))
+        self.modifierGrid.addWidget(self.tYPlus5Button, 2, 3)
+
+        self.tYPlus1Button = QPushButton("+1")
+        self.tYPlus1Button.clicked.connect(lambda: self.modifyPhi("tY", 1))
+        self.modifierGrid.addWidget(self.tYPlus1Button, 3, 3)
+
+        self.tYLabel = QLineEdit(str(self.tArray[1]))
+        self.modifierGrid.addWidget(self.tYLabel, 4, 3)
+
+        self.tYMinus1Button = QPushButton("-1")
+        self.tYMinus1Button.clicked.connect(lambda: self.modifyPhi("tY", -1))
+        self.modifierGrid.addWidget(self.tYMinus1Button, 5, 3)
+
+        self.tYMinus5Button = QPushButton("-5")
+        self.tYMinus5Button.clicked.connect(lambda: self.modifyPhi("tY", -5))
+        self.modifierGrid.addWidget(self.tYMinus5Button, 6, 3)
+
+        labelTz = QLabel("z")
+        self.modifierGrid.addWidget(labelTz, 1, 4)
+
+        self.tZPlus5Button = QPushButton("+5")
+        self.tZPlus5Button.clicked.connect(lambda: self.modifyPhi("tZ", 5))
+        self.modifierGrid.addWidget(self.tZPlus5Button, 2, 4)
+
+        self.tZPlus1Button = QPushButton("+1")
+        self.tZPlus1Button.clicked.connect(lambda: self.modifyPhi("tZ", 1))
+        self.modifierGrid.addWidget(self.tZPlus1Button, 3, 4)
+
+        self.tZLabel = QLineEdit(str(self.tArray[0]))
+        self.modifierGrid.addWidget(self.tZLabel, 4, 4)
+
+        self.tZMinus1Button = QPushButton("-1")
+        self.tZMinus1Button.clicked.connect(lambda: self.modifyPhi("tZ", -1))
+        self.modifierGrid.addWidget(self.tZMinus1Button, 5, 4)
+
+        self.tZMinus5Button = QPushButton("-5")
+        self.tZMinus5Button.clicked.connect(lambda: self.modifyPhi("tZ", -5))
+        self.modifierGrid.addWidget(self.tZMinus5Button, 6, 4)
+
+        labelRotation = QLabel("rotation:")
+        self.modifierGrid.addWidget(labelRotation, 4, 5)
+        labelRx = QLabel("x")
+        self.modifierGrid.addWidget(labelRx, 1, 6)
+
+        self.rXPlus5Button = QPushButton("+5")
+        self.rXPlus5Button.clicked.connect(lambda: self.modifyPhi("rX", 5))
+        self.modifierGrid.addWidget(self.rXPlus5Button, 2, 6)
+
+        self.rXPlus1Button = QPushButton("+1")
+        self.rXPlus1Button.clicked.connect(lambda: self.modifyPhi("rX", 1))
+        self.modifierGrid.addWidget(self.rXPlus1Button, 3, 6)
+
+        self.rXLabel = QLineEdit(str(self.rArray[2]))
+        self.modifierGrid.addWidget(self.rXLabel, 4, 6)
+
+        self.rXMinus1Button = QPushButton("-1")
+        self.rXMinus1Button.clicked.connect(lambda: self.modifyPhi("rX", -1))
+        self.modifierGrid.addWidget(self.rXMinus1Button, 5, 6)
+
+        self.rXMinus5Button = QPushButton("-5")
+        self.rXMinus5Button.clicked.connect(lambda: self.modifyPhi("rX", -5))
+        self.modifierGrid.addWidget(self.rXMinus5Button, 6, 6)
+
+        labelRy = QLabel("y")
+        self.modifierGrid.addWidget(labelRy, 1, 7)
+
+        self.rYPlus5Button = QPushButton("+5")
+        self.rYPlus5Button.clicked.connect(lambda: self.modifyPhi("rY", 5))
+        self.modifierGrid.addWidget(self.rYPlus5Button, 2, 7)
+
+        self.rYPlus1Button = QPushButton("+1")
+        self.rYPlus1Button.clicked.connect(lambda: self.modifyPhi("rY", 1))
+        self.modifierGrid.addWidget(self.rYPlus1Button, 3, 7)
+
+        self.rYLabel = QLineEdit(str(self.rArray[1]))
+        self.modifierGrid.addWidget(self.rYLabel, 4, 7)
+
+        self.rYMinus1Button = QPushButton("-1")
+        self.rYMinus1Button.clicked.connect(lambda: self.modifyPhi("rY", -1))
+        self.modifierGrid.addWidget(self.rYMinus1Button, 5, 7)
+
+        self.rYMinus5Button = QPushButton("-5")
+        self.rYMinus5Button.clicked.connect(lambda: self.modifyPhi("rY", -5))
+        self.modifierGrid.addWidget(self.rYMinus5Button, 6, 7)
+
+        labelRz = QLabel("z")
+        self.modifierGrid.addWidget(labelRz, 1, 8)
+
+        self.rZPlus5Button = QPushButton("+5")
+        self.rZPlus5Button.clicked.connect(lambda: self.modifyPhi("rZ", 5))
+        self.modifierGrid.addWidget(self.rZPlus5Button, 2, 8)
+
+        self.rZPlus1Button = QPushButton("+1")
+        self.rZPlus1Button.clicked.connect(lambda: self.modifyPhi("rZ", 1))
+        self.modifierGrid.addWidget(self.rZPlus1Button, 3, 8)
+
+        self.rZLabel = QLineEdit(str(self.rArray[0]))
+        self.modifierGrid.addWidget(self.rZLabel, 4, 8)
+
+        self.rZMinus1Button = QPushButton("-1")
+        self.rZMinus1Button.clicked.connect(lambda: self.modifyPhi("rZ", -1))
+        self.modifierGrid.addWidget(self.rZMinus1Button, 5, 8)
+
+        self.rZMinus5Button = QPushButton("-5")
+        self.rZMinus5Button.clicked.connect(lambda: self.modifyPhi("rZ", -5))
+        self.modifierGrid.addWidget(self.rZMinus5Button, 6, 8)
+
+        labelRotation = QLabel("zoom:")
+        self.modifierGrid.addWidget(labelRotation, 10, 1)
+        labelZx = QLabel("x")
+        self.modifierGrid.addWidget(labelZx, 7, 2)
+
+        self.zXPlus5Button = QPushButton("+0.05")
+        self.zXPlus5Button.clicked.connect(lambda: self.modifyPhi("zX", 0.05))
+        self.modifierGrid.addWidget(self.zXPlus5Button, 8, 2)
+
+        self.zXPlus1Button = QPushButton("+0.01")
+        self.zXPlus1Button.clicked.connect(lambda: self.modifyPhi("zX", 0.01))
+        self.modifierGrid.addWidget(self.zXPlus1Button, 9, 2)
+
+        self.zXLabel = QLineEdit(str(self.zArray[2]))
+        self.modifierGrid.addWidget(self.zXLabel, 10, 2)
+
+        self.zXMinus1Button = QPushButton("-0.01")
+        self.zXMinus1Button.clicked.connect(
+            lambda: self.modifyPhi("zX", -0.01))
+        self.modifierGrid.addWidget(self.zXMinus1Button, 11, 2)
+
+        self.zXMinus5Button = QPushButton("-0.05")
+        self.zXMinus5Button.clicked.connect(
+            lambda: self.modifyPhi("zX", -0.05))
+        self.modifierGrid.addWidget(self.zXMinus5Button, 12, 2)
+
+        labelZy = QLabel("y")
+        self.modifierGrid.addWidget(labelZy, 7, 3)
+
+        self.zYPlus5Button = QPushButton("+0.05")
+        self.zYPlus5Button.clicked.connect(lambda: self.modifyPhi("zY", 0.05))
+        self.modifierGrid.addWidget(self.zYPlus5Button, 8, 3)
+
+        self.zYPlus1Button = QPushButton("+0.01")
+        self.zYPlus1Button.clicked.connect(lambda: self.modifyPhi("zY", 0.01))
+        self.modifierGrid.addWidget(self.zYPlus1Button, 9, 3)
+
+        self.zYLabel = QLineEdit(str(self.zArray[1]))
+        self.modifierGrid.addWidget(self.zYLabel, 10, 3)
+
+        self.zYMinus1Button = QPushButton("-0.01")
+        self.zYMinus1Button.clicked.connect(
+            lambda: self.modifyPhi("zY", -0.01))
+        self.modifierGrid.addWidget(self.zYMinus1Button, 11, 3)
+
+        self.zYMinus5Button = QPushButton("-0.05")
+        self.zYMinus5Button.clicked.connect(
+            lambda: self.modifyPhi("zY", -0.05))
+        self.modifierGrid.addWidget(self.zYMinus5Button, 12, 3)
+
+        labelZz = QLabel("z")
+        self.modifierGrid.addWidget(labelZz, 7, 4)
+
+        self.zZPlus5Button = QPushButton("+0.05")
+        self.zZPlus5Button.clicked.connect(lambda: self.modifyPhi("zZ", 0.05))
+        self.modifierGrid.addWidget(self.zZPlus5Button, 8, 4)
+
+        self.zZPlus1Button = QPushButton("+0.01")
+        self.zZPlus1Button.clicked.connect(lambda: self.modifyPhi("zZ", 0.01))
+        self.modifierGrid.addWidget(self.zZPlus1Button, 9, 4)
+
+        self.zZLabel = QLineEdit(str(self.zArray[0]))
+        self.modifierGrid.addWidget(self.zZLabel, 10, 4)
+
+        self.zZMinus1Button = QPushButton("-0.01")
+        self.zZMinus1Button.clicked.connect(
+            lambda: self.modifyPhi("zZ", -0.01))
+        self.modifierGrid.addWidget(self.zZMinus1Button, 11, 4)
+
+        self.zZMinus5Button = QPushButton("-0.05")
+        self.zZMinus5Button.clicked.connect(
+            lambda: self.modifyPhi("zZ", -0.05))
+        self.modifierGrid.addWidget(self.zZMinus5Button, 12, 4)
+
+        labelZz = QLabel("all")
+        self.modifierGrid.addWidget(labelZz, 7, 5)
+
+        self.zAPlus5Button = QPushButton("+0.05")
+        self.zAPlus5Button.clicked.connect(lambda: self.modifyPhi("zA", 0.05))
+        self.modifierGrid.addWidget(self.zAPlus5Button, 8, 5)
+
+        self.zAPlus1Button = QPushButton("+0.01")
+        self.zAPlus1Button.clicked.connect(lambda: self.modifyPhi("zA", 0.01))
+        self.modifierGrid.addWidget(self.zAPlus1Button, 9, 5)
+
+        self.zALabel = QLineEdit(str(self.zArray[0]))
+        self.modifierGrid.addWidget(self.zALabel, 10, 5)
+
+        self.zAMinus1Button = QPushButton("-0.01")
+        self.zAMinus1Button.clicked.connect(
+            lambda: self.modifyPhi("zA", -0.01))
+        self.modifierGrid.addWidget(self.zAMinus1Button, 11, 5)
+
+        self.zAMinus5Button = QPushButton("-0.05")
+        self.zAMinus5Button.clicked.connect(
+            lambda: self.modifyPhi("zA", -0.05))
+        self.modifierGrid.addWidget(self.zAMinus5Button, 12, 5)
+
+        self.resetButton = QPushButton("reset")
+        self.resetButton.clicked.connect(self.reset)
+        self.modifierGrid.addWidget(self.resetButton, 12, 6)
+        self.validateButton = QPushButton("validate")
+        self.validateButton.clicked.connect(self.validate)
+        self.modifierGrid.addWidget(self.validateButton, 12, 7)
+
+        axeGrid = QGridLayout()
+        blankLabel = QLabel()
+        axeGrid.addWidget(blankLabel, 1, 1)
+        self.currentAxeLabel = QLabel(self.axe)
+        axeGrid.addWidget(self.currentAxeLabel, 2, 2)
+        rightArrow = QLabel("-->")
+        axeGrid.addWidget(rightArrow, 2, 3)
+        self.rightAxe = QLabel("x")
+        axeGrid.addWidget(self.rightAxe, 2, 4)
+        bottomArrow = QLabel("|\nV")
+        axeGrid.addWidget(bottomArrow, 3, 2)
+        self.bottomAxe = QLabel("y")
+        axeGrid.addWidget(self.bottomAxe, 4, 2)
+        self.modifierGrid.addLayout(axeGrid, 7, 6, 5, 2)
+
+        labelWhichAxe = QLabel("Which axe ?")
+        self.viewGrid.addWidget(labelWhichAxe, 1, 1)
+        axesBox = QHBoxLayout()
+        self.axeGroup = QButtonGroup()
+        self.zRadioButton = QRadioButton("Z")
+        self.zRadioButton.setChecked(True)
+        self.zRadioButton.toggled.connect(lambda: self.changeAxe("z"))
+        axesBox.addWidget(self.zRadioButton)
+        self.axeGroup.addButton(self.zRadioButton)
+        self.yRadioButton = QRadioButton("Y")
+        self.yRadioButton.setChecked(False)
+        self.yRadioButton.toggled.connect(lambda: self.changeAxe("y"))
+        axesBox.addWidget(self.yRadioButton)
+        self.axeGroup.addButton(self.yRadioButton)
+        self.xRadioButton = QRadioButton("X")
+        self.xRadioButton.setChecked(False)
+        self.xRadioButton.toggled.connect(lambda: self.changeAxe("x"))
+        axesBox.addWidget(self.xRadioButton)
+        self.axeGroup.addButton(self.xRadioButton)
+        self.viewGrid.addLayout(axesBox, 1, 2)
+
+        flipZButton = QPushButton("flip Z")
+        self.viewGrid.addWidget(flipZButton, 1, 5)
+        flipZButton.clicked.connect(lambda : self.flip("z"))
+        flipYButton = QPushButton("flip Y")
+        self.viewGrid.addWidget(flipYButton, 1, 6)
+        flipYButton.clicked.connect(lambda : self.flip("y"))
+        flipXButton = QPushButton("flip X")
+        self.viewGrid.addWidget(flipXButton, 1, 7)
+        flipXButton.clicked.connect(lambda : self.flip("x"))
+
+        self.im1Slider = QSlider(QtCore.Qt.Horizontal)
+        self.im1Slider.setMinimum(1)
+        self.im1Slider.setMaximum(self.images[1].shape[0] - 1)
+        self.im1Slider.setValue(self.slice[1][0])
+        self.im1Slider.valueChanged.connect(self.slideIm1)
+        labelSliderIm1 = QLabel("slice image 1 :")
+        self.labelSlice1 = QLabel(str(self.im1Slider.value()))
+        self.buttonMinusIm1 = QPushButton("-")
+        self.buttonMinusIm1.clicked.connect(
+            lambda: self.slideIm1(self.im1Slider.value() - 1))
+        self.buttonPlusIm1 = QPushButton("+")
+        self.buttonPlusIm1.clicked.connect(
+            lambda: self.slideIm1(self.im1Slider.value() + 1))
+        self.viewGrid.addWidget(labelSliderIm1, 2, 1)
+        self.viewGrid.addWidget(self.buttonMinusIm1, 2, 3)
+        self.viewGrid.addWidget(self.labelSlice1, 2, 4)
+        self.viewGrid.addWidget(self.buttonPlusIm1, 2, 5)
+        self.viewGrid.addWidget(self.im1Slider, 3, 1, 1, 8)
+
+        self.slaveBox = QCheckBox("slave")
+        self.slaveBox.toggled.connect(self.checkSlave)
+        self.viewGrid.addWidget(self.slaveBox, 4, 1)
+
+        self.im2Slider = QSlider(QtCore.Qt.Horizontal)
+        self.im2Slider.setMinimum(1)
+        self.im2Slider.setMaximum(self.images[0].shape[0] - 1)
+        self.im2Slider.setValue(self.slice[0][0])
+        self.im2Slider.valueChanged.connect(self.slideIm2)
+        labelSliderIm2 = QLabel("slice image 2 :")
+        self.labelSlice2 = QLabel(str(self.im2Slider.value()))
+        self.buttonMinusIm2 = QPushButton("-")
+        self.buttonMinusIm2.clicked.connect(
+            lambda: self.slideIm2(self.im2Slider.value() - 1))
+        self.buttonPlusIm2 = QPushButton("+")
+        self.buttonPlusIm2.clicked.connect(
+            lambda: self.slideIm2(self.im2Slider.value() + 1))
+        self.viewGrid.addWidget(labelSliderIm2, 5, 1)
+        self.viewGrid.addWidget(self.buttonMinusIm2, 5, 3)
+        self.viewGrid.addWidget(self.labelSlice2, 5, 4)
+        self.viewGrid.addWidget(self.buttonPlusIm2, 5, 5)
+        self.viewGrid.addWidget(self.im2Slider, 6, 1, 1, 8)
+        self.delta = QLabel("delta " + self.axe + ": " +
+                            str(self.im2Slider.value() - self.im1Slider.value()))
+        self.viewGrid.addWidget(self.delta, 4, 2)
+        self.equalizerButton = QPushButton("equalize")
+        self.equalizerButton.clicked.connect(self.equalize )
+        self.viewGrid.addWidget(self.equalizerButton, 4, 3)
+
+        self.comparisonGrid = QGridLayout()
+        self.winGrid.addLayout(self.comparisonGrid, 2, 3)
+        labelWhichComp = QLabel("Which comparison ?")
+        self.comparisonGrid.addWidget(labelWhichComp, 1, 1)
+        compareBoxe = QHBoxLayout()
+        self.modeGroup = QButtonGroup()
+        self.minusRadioButton = QRadioButton("im2-im1")
+        self.minusRadioButton.setChecked(True)
+        self.minusRadioButton.toggled.connect(lambda: self.changeComp(0))
+        compareBoxe.addWidget(self.minusRadioButton)
+        self.modeGroup.addButton(self.minusRadioButton)
+        self.minusAbsRadioButton = QRadioButton("|im2-im1|")
+        self.minusAbsRadioButton.setChecked(False)
+        self.minusAbsRadioButton.toggled.connect(lambda: self.changeComp(1))
+        compareBoxe.addWidget(self.minusAbsRadioButton)
+        self.modeGroup.addButton(self.minusAbsRadioButton)
+        self.CBRadioButton = QRadioButton("checkerBoard")
+        self.CBRadioButton.setChecked(False)
+        self.CBRadioButton.toggled.connect(lambda: self.changeComp(2))
+        compareBoxe.addWidget(self.CBRadioButton)
+        self.modeGroup.addButton(self.CBRadioButton)
+        self.comparisonGrid.addLayout(compareBoxe, 2, 1)
+
+        self.changeColorCheck = QCheckBox("change color ?")
+        self.changeColorCheck.toggled.connect(self.showImages)
+        self.comparisonGrid.addWidget(self.changeColorCheck, 1, 2, 1, 3)
+
+        self.minusCBButton = QPushButton("-")
+        self.minusCBButton.clicked.connect(lambda: self.changeCB('-'))
+        self.comparisonGrid.addWidget(self.minusCBButton, 2, 2)
+        self.nbCBLabel = QLabel(str(self.nbCB))
+        self.comparisonGrid.addWidget(self.nbCBLabel, 2, 3)
+        self.plusCBButton = QPushButton("+")
+        self.plusCBButton.clicked.connect(lambda: self.changeCB('+'))
+        self.comparisonGrid.addWidget(self.plusCBButton, 2, 4)
+        labelSave = QLabel("enter a name for your phi .tsv")
+        self.nameEntry = QLineEdit()
+        self.saveButton = QPushButton("save")
+        self.saveButton.clicked.connect(self.saveTSV)
+        self.resultLabel = QLabel()
+        self.comparisonGrid.addWidget(labelSave, 4, 2, 1, 3)
+        self.comparisonGrid.addWidget(self.nameEntry, 5, 2, 1, 3)
+        self.comparisonGrid.addWidget(self.saveButton, 6, 2, 1, 3)
+        self.comparisonGrid.addWidget(self.resultLabel, 7, 2, 1, 3)
+        gridPhi = QGridLayout()
+        self.vPhi1 = QLabel(str(round(self.Phis[1][0][0], 3)))
+        gridPhi.addWidget(self.vPhi1, 1, 1)
+        self.vPhi2 = QLabel(str(round(self.Phis[1][0][1], 3)))
+        gridPhi.addWidget(self.vPhi2, 1, 2)
+        self.vPhi3 = QLabel(str(round(self.Phis[1][0][2], 3)))
+        gridPhi.addWidget(self.vPhi3, 1, 3)
+        self.vPhi4 = QLabel(str(round(self.Phis[1][0][3], 3)))
+        gridPhi.addWidget(self.vPhi4, 1, 4)
+        self.vPhi5 = QLabel(str(round(self.Phis[1][1][0], 3)))
+        gridPhi.addWidget(self.vPhi5, 2, 1)
+        self.vPhi6 = QLabel(str(round(self.Phis[1][1][1], 3)))
+        gridPhi.addWidget(self.vPhi6, 2, 2)
+        self.vPhi7 = QLabel(str(round(self.Phis[1][1][2], 3)))
+        gridPhi.addWidget(self.vPhi7, 2, 3)
+        self.vPhi8 = QLabel(str(round(self.Phis[1][1][3], 3)))
+        gridPhi.addWidget(self.vPhi8, 2, 4)
+        self.vPhi9 = QLabel(str(round(self.Phis[1][2][0], 3)))
+        gridPhi.addWidget(self.vPhi9, 3, 1)
+        self.vPhi10 = QLabel(str(round(self.Phis[1][2][1], 3)))
+        gridPhi.addWidget(self.vPhi10, 3, 2)
+        self.vPhi11 = QLabel(str(round(self.Phis[1][2][2], 3)))
+        gridPhi.addWidget(self.vPhi11, 3, 3)
+        self.vPhi12 = QLabel(str(round(self.Phis[1][2][3], 3)))
+        gridPhi.addWidget(self.vPhi12, 3, 4)
+        self.vPhi13 = QLabel(str(round(self.Phis[1][3][0], 3)))
+        gridPhi.addWidget(self.vPhi13, 4, 1)
+        self.vPhi14 = QLabel(str(round(self.Phis[1][3][1], 3)))
+        gridPhi.addWidget(self.vPhi14, 4, 2)
+        self.vPhi15 = QLabel(str(round(self.Phis[1][3][2], 3)))
+        gridPhi.addWidget(self.vPhi15, 4, 3)
+        self.vPhi16 = QLabel(str(round(self.Phis[1][3][3], 3)))
+        gridPhi.addWidget(self.vPhi16, 4, 4)
+        labelPhi = QLabel("Phi: ")
+        self.comparisonGrid.addWidget(labelPhi, 3, 1)
+        self.comparisonGrid.addLayout(gridPhi, 4, 1, 3, 1)
+        self.nbIteration = QLabel("iterations: " + str(self.iterations))
+        self.comparisonGrid.addWidget(self.nbIteration, 7, 1)
+        self.showImages()
+
+    def slideIm1(self, value):
+        self.im1Slider.setValue(value)
+        # check the selected axe
+        if self.axe == "z":
+            self.slice[1][0] = value
+        elif self.axe == "y":
+            self.slice[1][1] = value
+        elif self.axe == "x":
+            self.slice[1][2] = value
+        # change the label with the new value
+        self.labelSlice1.setText(str(self.im1Slider.value()))
+        # check if the 2slidebars are linked together
+        if self.slaveBox.isChecked():
+            self.im2Slider.setValue(value)
+            if self.axe == "z":
+                self.slice[0][0] = value
+            elif self.axe == "y":
+                self.slice[0][1] = value
+            elif self.axe == "x":
+                self.slice[0][2] = value
+            self.labelSlice2.setText(str(self.im2Slider.value()))
+        self.showImages()  # call the function to display images
+        # change the delta string
+        self.delta.setText("delta " + self.axe + ": " +
+                           str(self.im2Slider.value() - self.im1Slider.value()))
+
+    def slideIm2(self, value):
+        # same as the slideIm1() but for other parameters
+        self.im2Slider.setValue(value)
+        if self.axe == "z":
+            self.slice[0][0] = value
+        elif self.axe == "y":
+            self.slice[0][1] = value
+        elif self.axe == "x":
+            self.slice[0][2] = value
+        self.labelSlice2.setText(str(self.im2Slider.value()))
+        if self.slaveBox.isChecked():
+            self.im1Slider.setValue(value)
+            if self.axe == "z":
+                self.slice[1][0] = value
+            elif self.axe == "y":
+                self.slice[1][1] = value
+            elif self.axe == "x":
+                self.slice[1][2] = value
+            self.labelSlice1.setText(str(self.im1Slider.value()))
+        self.showImages()
+        self.delta.setText("delta " + self.axe + ": " +
+                           str(self.im2Slider.value() - self.im1Slider.value()))
+
+    def showImages(self):
+        # check the selected axe and set the new slice to display
+        if self.axe == 'z':
+            self.Im1.setImage(qimage2ndarray.array2qimage(
+                self.images[1][self.slice[1][0], :, :], normalize=True))
+            self.Im2.setImage(qimage2ndarray.array2qimage(
+                self.images[0][self.slice[0][0], :, :], normalize=True))
+        elif self.axe == 'y':
+            self.Im1.setImage(qimage2ndarray.array2qimage(
+                self.images[1][:, self.slice[1][1], :], normalize=True))
+            self.Im2.setImage(qimage2ndarray.array2qimage(
+                self.images[0][:, self.slice[0][1]], normalize=True))
+        elif self.axe == 'x':
+            self.Im1.setImage(qimage2ndarray.array2qimage(
+                self.images[1][:, :, self.slice[1][2]], normalize=True))
+            self.Im2.setImage(qimage2ndarray.array2qimage(
+                self.images[0][:, :, self.slice[0][2]], normalize=True))
+        if self.comparisonMode == 0:  # check the comparison mode and then display the computed comparison
+            if self.axe == 'z':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.subtract(
+                    self.images[1][self.slice[1][0], :, :], self.images[0][self.slice[0][0], :, :]), normalize=True))
+            elif self.axe == 'y':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.subtract(
+                    self.images[1][:, self.slice[1][1], :], self.images[0][:, self.slice[0][1], :]), normalize=True))
+            elif self.axe == 'x':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.subtract(
+                    self.images[1][:, :, self.slice[1][2]], self.images[0][:, :, self.slice[0][2]]), normalize=True))
+        elif self.comparisonMode == 1:
+            if self.axe == 'z':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.absolute(numpy.subtract(
+                    self.images[1][self.slice[1][0], :, :], self.images[0][self.slice[0][0], :, :])), normalize=True))
+            elif self.axe == 'y':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.absolute(numpy.subtract(
+                    self.images[1][:, self.slice[1][1], :], self.images[0][:, self.slice[0][1], :])), normalize=True))
+            elif self.axe == 'x':
+                self.comparison.setImage(qimage2ndarray.array2qimage(numpy.absolute(numpy.subtract(
+                    self.images[1][:, :, self.slice[1][2]], self.images[0][:, :, self.slice[0][2]])), normalize=True))
+        elif self.comparisonMode == 2:
+            if self.axe == 'z':
+                if self.changeColorCheck.isChecked():
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][self.slice[1][0], :, :] + self.images[1].max() * (1 / 6), self.images[0][self.slice[0][0], :, :], self.nbCB, False, False), normalize=True))
+                else:
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][self.slice[1][0], :, :], self.images[0][self.slice[0][0], :, :], self.nbCB, False, False), normalize=True))
+            elif self.axe == 'y':
+                if self.changeColorCheck.isChecked():
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][:, self.slice[1][1], :] + self.images[1].max() * (1 / 6), self.images[0][:, self.slice[0][1], :], self.nbCB, False, False), normalize=True))
+                else:
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][:, self.slice[1][1], :], self.images[0][:, self.slice[0][1], :], self.nbCB, False, False), normalize=True))
+            elif self.axe == 'x':
+                if self.changeColorCheck.isChecked():
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][:, :, self.slice[1][2]] + self.images[1].max() * (1 / 6), self.images[0][:, :, self.slice[0][2]], self.nbCB, False, False), normalize=True))
+                else:
+                    self.comparison.setImage(qimage2ndarray.array2qimage(cGM.checkerBoard(
+                        self.images[1][:, :, self.slice[1][2]], self.images[0][:, :, self.slice[0][2]], self.nbCB, False, False), normalize=True))
+        # update the diplayed phi
+        self.vPhi1.setText(str(round(self.Phis[1][0][0], 3)))
+        self.vPhi2.setText(str(round(self.Phis[1][0][1], 3)))
+        self.vPhi3.setText(str(round(self.Phis[1][0][2], 3)))
+        self.vPhi4.setText(str(round(self.Phis[1][0][3], 3)))
+        self.vPhi5.setText(str(round(self.Phis[1][1][0], 3)))
+        self.vPhi6.setText(str(round(self.Phis[1][1][1], 3)))
+        self.vPhi7.setText(str(round(self.Phis[1][1][2], 3)))
+        self.vPhi8.setText(str(round(self.Phis[1][1][3], 3)))
+        self.vPhi9.setText(str(round(self.Phis[1][2][0], 3)))
+        self.vPhi10.setText(str(round(self.Phis[1][2][1], 3)))
+        self.vPhi11.setText(str(round(self.Phis[1][2][2], 3)))
+        self.vPhi12.setText(str(round(self.Phis[1][2][3], 3)))
+        self.vPhi13.setText(str(round(self.Phis[1][3][0], 3)))
+        self.vPhi14.setText(str(round(self.Phis[1][3][1], 3)))
+        self.vPhi15.setText(str(round(self.Phis[1][3][2], 3)))
+        self.vPhi16.setText(str(round(self.Phis[1][3][3], 3)))
+
+    def changeAxe(self, axe):
+        # change the axe value
+        self.axe = axe
+        self.currentAxeLabel.setText(self.axe)
+        # check the selected axe and then update the slidebars limits to the new axe and change the displayed hint about axes
+        if axe == "z":
+            self.im1Slider.setMaximum(self.images[1].shape[0] - 1)
+            self.im1Slider.setValue(self.slice[1][0])
+            self.im2Slider.setMaximum(self.images[0].shape[0] - 1)
+            self.im2Slider.setValue(self.slice[0][0])
+            self.bottomAxe.setText("y")
+            self.rightAxe.setText("x")
+        elif axe == "y":
+            self.im1Slider.setMaximum(self.images[1].shape[1] - 1)
+            self.im1Slider.setValue(self.slice[1][1])
+            self.im2Slider.setMaximum(self.images[0].shape[1] - 1)
+            self.im2Slider.setValue(self.slice[0][1])
+            self.bottomAxe.setText("z")
+            self.rightAxe.setText("x")
+        elif axe == "x":
+            self.im1Slider.setMaximum(self.images[1].shape[2] - 1)
+            self.im1Slider.setValue(self.slice[1][2])
+            self.im2Slider.setMaximum(self.images[0].shape[2] - 1)
+            self.im2Slider.setValue(self.slice[0][2])
+            self.bottomAxe.setText("z")
+            self.rightAxe.setText("y")
+        self.showImages()
+        self.delta.setText("delta " + self.axe + ": " +
+                           str(self.im2Slider.value() - self.im1Slider.value()))
+
+    def checkSlave(self):
+        # check if the toggle checked or unchecked and then replace the slidebars at the same place
+        if self.slaveBox.isChecked():
+            self.slideIm1(self.im1Slider.value())
+        self.delta.setText("delta " + self.axe + ": " +
+                           str(self.im2Slider.value() - self.im1Slider.value()))
+
+    def changeComp(self, value):
+        # change the comparison variable to the selected one and display the new one
+        self.comparisonMode = value
+        self.showImages()
+
+    def changeCB(self, value):
+        # check if + or - was clicked and then increase or decrease the number of tiles
+        if value == "+":
+            self.nbCB = self.nbCB + 2
+        elif value == "-" and self.nbCB > 1:
+            self.nbCB = self.nbCB - 2
+        self.nbCBLabel.setText(str(self.nbCB))
+        self.showImages()
+
+    def modifyPhi(self, mod, value):
+        if mod == "tZ":  # check which value to increase and then increase the good one to load the new image
+            self.tArray[0] = (self.tArray[0] + value)
+            self.tZLabel.setText(str(self.tArray[0]))
+        elif mod == "tY":
+            self.tArray[1] = (self.tArray[1] + value)
+            self.tYLabel.setText(str(self.tArray[1]))
+        elif mod == "tX":
+            self.tArray[2] = (self.tArray[2] + value)
+            self.tXLabel.setText(str(self.tArray[2]))
+        elif mod == "rZ":
+            self.rArray[0] = (self.rArray[0] + value)
+            self.rZLabel.setText(str(self.rArray[0]))
+        elif mod == "rY":
+            self.rArray[1] = (self.rArray[1] + value)
+            self.rYLabel.setText(str(self.rArray[1]))
+        elif mod == "rX":
+            self.rArray[2] = (self.rArray[2] + value)
+            self.rXLabel.setText(str(self.rArray[2]))
+        elif mod == "zZ":
+            self.zArray[0] = (round(self.zArray[0] + value, 3))
+            self.zZLabel.setText(str(self.zArray[0]))
+        elif mod == "zY":
+            self.zArray[1] = (round(self.zArray[1] + value, 3))
+            self.zYLabel.setText(str(self.zArray[1]))
+        elif mod == "zX":
+            self.zArray[2] = (round(self.zArray[2] + value, 3))
+            self.zXLabel.setText(str(self.zArray[2]))
+        elif mod == "zA":
+            self.zArray[0] = (round(self.zArray[0] + value, 3))
+            self.zZLabel.setText(str(self.zArray[0]))
+            self.zArray[1] = (round(self.zArray[1] + value, 3))
+            self.zYLabel.setText(str(self.zArray[1]))
+            self.zArray[2] = (round(self.zArray[2] + value, 3))
+            self.zXLabel.setText(str(self.zArray[2]))
+            self.zArray[3] = (round(self.zArray[3] + value, 3))
+            self.zALabel.setText(str(self.zArray[3]))
+        # create a transformation dictionary
+        transformation = {'t': [self.tArray[0], self.tArray[1], self.tArray[2]], 'r': [
+            self.rArray[0], self.rArray[1], self.rArray[2]], 'z': [self.zArray[0], self.zArray[1], self.zArray[2]]}
+        # modify phi that has to be applied then apply it
+        self.Phis[1] = transf.computePhi(transformation)
+        self.images[1] = transf.applyPhi(
+            self.images[2], Phi=self.Phis[1])
+        # call showimages() to see graphicaly the change
+        self.showImages()
+        self.iterations = (self.iterations + 1)
+        self.nbIteration.setText("iterations: " + str(self.iterations))
+
+    def saveTSV(self):  # save a tifffile using a spam function
+        if self.nameEntry.text() != "":
+            fileName = self.nameEntry.text() + ".tsv"
+            save.writeRegistrationTSV(fileName, (numpy.array(self.images[1].shape) - 1) / 2.0, {
+                                      'PhiCentre': self.Phis[1], "returnStatus": 2, "iterationNumber": self.iterations, "error": 100, "deltaPhiNorm": 0.1})
+            self.resultLabel.setText("success")
+        else:
+            self.resultLabel.setText("please enter a name")
+
+    def validate(self):
+        # try for each entry if the value is numerical, if they are they are used to change phy
+        # else the ones which aren't numerical are replace by the last valide value
+        try:
+            self.tArray[0] = float(self.tZLabel.text())
+        except:
+            self.tZLabel.setText(str(self.tArray[0]))
+
+        try:
+            self.tArray[1] = float(self.tYLabel.text())
+        except:
+            self.tYLabel.setText(str(self.tArray[1]))
+
+        try:
+            self.tArray[2] = float(self.tXLabel.text())
+        except:
+            self.tXLabel.setText(str(self.tArray[2]))
+
+        try:
+            self.rArray[0] = float(self.rZLabel.text())
+        except:
+            self.rZLabel.setText(str(self.rArray[0]))
+
+        try:
+            self.rArray[1] = float(self.rYLabel.text())
+        except:
+            self.rYLabel.setText(str(self.rArray[1]))
+
+        try:
+            self.rArray[2] = float(self.rXLabel.text())
+        except:
+            self.rXLabel.setText(str(self.rArray[2]))
+
+        try:
+            float(self.zALabel.text())
+            if float(self.zALabel.text()) != 1.0:
+                self.zArray[0] = float(self.zALabel.text())
+                self.zArray[1] = float(self.zALabel.text())
+                self.zArray[2] = float(self.zALabel.text())
+                self.zArray[3] = float(self.zALabel.text())
+            else:
+                try:
+                    self.zArray[0] = float(self.zZLabel.text())
+                except:
+                    self.zZLabel.setText(str(self.zArray[0]))
+
+                try:
+                    self.zArray[1] = float(self.zYLabel.text())
+                except:
+                    self.zYLabel.setText(str(self.zArray[1]))
+
+                try:
+                    self.zArray[2] = float(self.zXLabel.text())
+                except:
+                    self.zXLabel.setText(str(self.zArray[2]))
+        except:
+            try:
+                self.zArray[0] = float(self.zZLabel.text())
+            except:
+                self.zZLabel.setText(str(self.zArray[0]))
+
+            try:
+                self.zArray[1] = float(self.zYLabel.text())
+            except:
+                self.zYLabel.setText(str(self.zArray[1]))
+
+            try:
+                self.zArray[2] = float(self.zXLabel.text())
+            except:
+                self.zXLabel.setText(str(self.zArray[2]))
+            self.zALabel.setText(str(self.zArray[3]))
+
+        transformation = {'t': [self.tArray[0], self.tArray[1], self.tArray[2]], 'r': [
+            self.rArray[0], self.rArray[1], self.rArray[2]], 'z': [self.zArray[0], self.zArray[1], self.zArray[2]]}
+        self.Phis[1] = transf.computePhi(transformation)
+        self.images[1] = transf.applyPhi(
+            self.images[2], Phi=self.Phis[1])
+        # call load image to see graphicaly the change
+        self.showImages()
+        self.iterations = (self.iterations + 1)
+        self.nbIteration.setText("iterations: " + str(self.iterations))
+
+    def reset(self):
+        # remplace each value in the entry by the one of the entered Phi eye(4,4) if there wasn't a tsv file load
+        self.tArray = [round(self.parameters['t'][0], 3), round(
+            self.parameters['t'][1], 3), round(self.parameters['t'][2], 3)]
+
+        self.rArray = round(self.parameters['r'][0], 3), round(
+            self.parameters['r'][1], 3), round(self.parameters['r'][2], 3)
+
+        self.zArray = [round(self.parameters['U'][0, 0], 3), round(
+            self.parameters['U'][1, 1], 3), round(self.parameters['U'][2, 2], 3), 1]
+        self.images[1] = transf.applyPhi(
+            self.images[2], Phi=self.Phis[0])
+        self.tZLabel.setText(str(self.tArray[0]))
+        self.tYLabel.setText(str(self.tArray[1]))
+        self.tXLabel.setText(str(self.tArray[2]))
+        self.rZLabel.setText(str(self.rArray[0]))
+        self.rYLabel.setText(str(self.rArray[1]))
+        self.rXLabel.setText(str(self.rArray[2]))
+        self.zZLabel.setText(str(self.zArray[0]))
+        self.zYLabel.setText(str(self.zArray[1]))
+        self.zXLabel.setText(str(self.zArray[2]))
+        self.zALabel.setText(str(self.zArray[3]))
+        self.iterations = 0
+        self.showImages()
+        self.nbIteration.setText("iterations: " + str(self.iterations))
+
+    def output(self):
+        # just return the modifyed phy
+        out = self.Phis[1]
+        return out
+
+    def flip(self, axe):
+        # just flip the selected axe
+        if axe == 'z':
+            self.images[1] = numpy.flip(self.images[1], 0)
+        elif axe == 'y':
+            self.images[1] = numpy.flip(self.images[1], 1)
+        elif axe == 'x':
+            self.images[1] = numpy.flip(self.images[1], 2)
+        self.showImages()
+
+    def equalize(self):
+        self.modifyPhi("t" + self.axe.upper(), self.im2Slider.value() - self.im1Slider.value())
+        self.slideIm2(self.im1Slider.value())
+
+def main():
+    app = QApplication(sys.argv)
+    # load parameters from sys.argv and if none have been called open a file manager to select them
+    try:
+        images = [tifffile.imread(sys.argv[1]), tifffile.imread(sys.argv[2])]
+    except:
+        images = []
+        fileName = QFileDialog.getOpenFileName(
+            None, 'Open Image 1', os.getcwd())[0]
+        images.append(tifffile.imread(
+            fileName))
+        images.append(tifffile.imread(
+            QFileDialog.getOpenFileName(None, 'Open Image 2', os.path.dirname(os.path.realpath(fileName)))[0]))
+    try:
+        f = numpy.genfromtxt(sys.argv[3], delimiter="\t", names=True)
+        Phi = numpy.array([[float(f["F11"]), float(f["F12"]), float(f["F13"]), float(f['Zdisp'])], [float(f["F21"]), float(
+            f["F22"]), float(f["F23"]), float(f['Ydisp'])], [float(f["F31"]), float(f["F32"]), float(f["F33"]), float(f['Xdisp'])], [0, 0, 0, 1]])
+    except:
+        try:
+            f = numpy.genfromtxt(QFileDialog.getOpenFileName(
+                None, '(optional) Open Phi TSV',  os.path.dirname(os.path.realpath(fileName)))[0], delimiter="\t", names=True)
+            Phi = numpy.array([[float(f["F11"]), float(f["F12"]), float(f["F13"]), float(f['Zdisp'])], [float(f["F21"]), float(
+                f["F22"]), float(f["F23"]), float(f['Ydisp'])], [float(f["F31"]), float(f["F32"]), float(f["F33"]), float(f['Xdisp'])], [0, 0, 0, 1]])
+        except:
+            Phi = numpy.eye(4, 4)
+    window = QWidget()
+    mainWindowGrid = QGridLayout(window)
+    eregWidget = ereg(images, Phi)
+    mainWindowGrid.addWidget(eregWidget, 1, 1)
+    window.show()
+    eregWidget.show()
+    sys.exit(app.exec_())
+
+
+if __name__ == '__main__':
+    main()
