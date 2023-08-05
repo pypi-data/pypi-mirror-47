@@ -1,0 +1,17 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+version.py
+pickle_blosc/__init__.py
+pickle_blosc/_core.py
+pickle_blosc/_testit.py
+pickle_blosc.egg-info/PKG-INFO
+pickle_blosc.egg-info/SOURCES.txt
+pickle_blosc.egg-info/dependency_links.txt
+pickle_blosc.egg-info/requires.txt
+pickle_blosc.egg-info/top_level.txt
+pickle_blosc.egg-info/zip-safe
+pickle_blosc/test/__init__.py
+pickle_blosc/test/test_pickle_blosc.py
