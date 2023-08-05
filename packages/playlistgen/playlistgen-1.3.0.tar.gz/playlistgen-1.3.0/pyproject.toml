@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "playlistgen"
+version = "1.3.0"
+description = "Hobby project to generate vlc playlists"
+authors = ["Arslan <rslnkrmt2552@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+lxml = "^4.3"
+moviepy = "^1.0"
+Click = "^7.0"
+
+
+[tool.poetry.scripts]
+genlist = "playlistgen.playlist:generate"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
