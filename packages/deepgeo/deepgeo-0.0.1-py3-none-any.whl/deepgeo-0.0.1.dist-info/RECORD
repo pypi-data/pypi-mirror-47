@@ -1,0 +1,16 @@
+deepgeo/Engine.py,sha256=O8wHlu6jji652PD8TaQNkVGRpzNRt1i67RcUdwMLkFI,3205
+deepgeo/Image.py,sha256=8QpVzJTOQf55kS1iQrNbMxjM_tNI6ROZQeVotDFA8Mg,28065
+deepgeo/Log.py,sha256=_t22Me_9RqUiHypovMrYaVD5IxMsqArhTNMYhyqusJ4,2227
+deepgeo/Model.py,sha256=urc7iHmkJo-3oH5WupJzvJctULyzxKJ7-dpVPIEQzBs,19351
+deepgeo/Utils.py,sha256=XcTfDjtoyEJv6gyRT4-5S4ZQU6sdjKtapD4-JaTOJF0,11902
+deepgeo/__init__.py,sha256=_fblVEGM0Ik0ReKqohOucSY9taeDLI1T22ukK2Gd79g,714
+deepgeo/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deepgeo/lib/maskrcnn/__init__.py,sha256=WO-NaZK0E3aa9p9SVUoTmTYMtDJhhDvuocSqIFlJXTA,431
+deepgeo/lib/maskrcnn/config.py,sha256=QyXCm0EQHh8LL3gp-MlspG6fILsyZ3JnWtXOkgtjP60,9632
+deepgeo/lib/maskrcnn/model.py,sha256=27arP-zlRwAXG_bX7Xe4AbWh6cZd3ryVyD3GISDL6AU,129815
+deepgeo/lib/maskrcnn/utils.py,sha256=_H1kHpOVwkV_kcXpdR-53Oa9k14ZhaWFopeo_XFbAXk,35153
+deepgeo-0.0.1.dist-info/LICENSE,sha256=FHHQYb2Fjfb7GuSOaGUai-T9Em5FVps0tZTeVqW38Zo,1090
+deepgeo-0.0.1.dist-info/METADATA,sha256=Gr3pRrKsivuNn3ifCPdAt5OEZyARMyqLI2aBbgscg-Y,2958
+deepgeo-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+deepgeo-0.0.1.dist-info/top_level.txt,sha256=N5FHbtlDWZH0Wddxvws6zqJmzkHbbvwlvnfDo6XZbnY,8
+deepgeo-0.0.1.dist-info/RECORD,,
