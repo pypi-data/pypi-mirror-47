@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+DNAv3_IntParser/__init__.py
+DNAv3_IntParser.egg-info/PKG-INFO
+DNAv3_IntParser.egg-info/SOURCES.txt
+DNAv3_IntParser.egg-info/dependency_links.txt
+DNAv3_IntParser.egg-info/requires.txt
+DNAv3_IntParser.egg-info/top_level.txt
