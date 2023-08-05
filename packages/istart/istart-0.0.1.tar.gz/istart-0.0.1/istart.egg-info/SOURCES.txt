@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+istart/__init__.py
+istart.egg-info/PKG-INFO
+istart.egg-info/SOURCES.txt
+istart.egg-info/dependency_links.txt
+istart.egg-info/top_level.txt
