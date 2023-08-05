@@ -1,0 +1,9 @@
+README.md
+setup.py
+sci_univariate_testing/__init__.py
+sci_univariate_testing/sci_univariate_testing.py
+sci_univariate_testing.egg-info/PKG-INFO
+sci_univariate_testing.egg-info/SOURCES.txt
+sci_univariate_testing.egg-info/dependency_links.txt
+sci_univariate_testing.egg-info/requires.txt
+sci_univariate_testing.egg-info/top_level.txt
