@@ -1,0 +1,9 @@
+numpy
+cvxopt>=1.2.2
+scipy
+matplotlib
+pandas
+sympy
+texttable
+flask
+requests
