@@ -1,0 +1,3 @@
+[console_scripts]
+nanome-ligand-focus = nanome_ligand_focus.LigandFocus:main
+
