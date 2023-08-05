@@ -1,0 +1,34 @@
+{
+    "master-inst-type": "{inst-type}",
+    "slave-inst-type": "{inst-type}",
+    "ec2keyname" : "acoe-analytics-nonprod",
+      "ServiceAccessSecurityGroup" :  "sg-046d73d60dcc8ffb4",
+      "Ec2SubnetId" : "subnet-07e87b96c9fc13202",
+      "EmrManagedMasterSecurityGroup" : "sg-03600173a28bcf632",
+    "servicerole" : "arn:aws:iam::953056723967:role/cci-svc-emrrole",
+    "jobflowrole": "arn:aws:iam::953056723967:instance-profile/cci-svc-emr-ec2",
+    "autoscalingrole" : "arn:aws:iam::953056723967:role/cci-svc-emr-autoscaling",
+      "EmrManagedSlaveSecurityGroup" : "sg-027bdc3fe3cd458f8",
+    "instance-count": "{inst-count}",
+    "release-label": "emr-5.21.0",
+    "loguri": "s3n://aws-logs-953056723967-us-east-1/",
+    "tags": [
+        {
+          "Key": "teamName",
+          "Value": "dataengineering"
+        },
+        {
+          "Key": "project",
+          "Value": "acoe"
+        },
+        {
+          "Key": "component",
+          "Value": "sagemaker-endpoint"
+        },
+        {
+          "Key": "ownerEmail",
+          "Value": "adams.aliu@cox.com"
+        }
+    ]
+    
+  }

@@ -1,0 +1,3 @@
+recursive-include acoewidgets/static *.*
+include acoewidgets.json
+include event.json
