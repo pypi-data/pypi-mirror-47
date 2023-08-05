@@ -1,0 +1,13 @@
+simages/__init__.py,sha256=zt0dTXJGGnSwo_KpS1dMbCOJs6K0GWlcTiFIHtk0TJ8,496
+simages/dataset.py,sha256=Qmi7D0IIojHZwi40VhxJEePywV5PqJwsSjqGd40WGqQ,3545
+simages/embeddings.py,sha256=Z69bLiSiixzcIqTiIbDdBUYKStZV3jZt_xPaQtOEJ44,2591
+simages/extractor.py,sha256=5ulsqdNZpoOh8PfrqzKHvJ6T-vpvwEOmrKPOnUnGEXs,11872
+simages/main.py,sha256=GejONEQcQBegAzoCsXeePhNHmukW9KeIisRsfDYbJc0,4141
+simages/models.py,sha256=Zrsoz4hMgAc1ci0VoRTB4vODS-yV4qOUl08AgHO2-b8,2634
+simages-19.0.0.dev2.dist-info/AUTHORS.rst,sha256=LvwpnbneprONs2arJjSsivMONA1DxwTsjCZSnuMVCN0,308
+simages-19.0.0.dev2.dist-info/LICENSE,sha256=A4daKJgQ62Io0--lYRXo_eZr6L9aOzTfwQFfvyjb-co,1051
+simages-19.0.0.dev2.dist-info/METADATA,sha256=kHV_w5mZwDjZ3BwQxNGCxMlPmwh3uDFa4JQ2uFLl5Ao,6645
+simages-19.0.0.dev2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+simages-19.0.0.dev2.dist-info/entry_points.txt,sha256=2OxLbhxWv7ISWIzcKASVrtNSNSLkAMyEPSlr0iDa6dE,52
+simages-19.0.0.dev2.dist-info/top_level.txt,sha256=bOMWu6WKs2B1KO82UzIExBIUV-82P8kgj-gHE9qdIKs,8
+simages-19.0.0.dev2.dist-info/RECORD,,
