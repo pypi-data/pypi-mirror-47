@@ -1,0 +1,9 @@
+nudb/__init__.py,sha256=UuBRQXvwTO2fXDpiDk0CZ_BvmpQJnpem6l3TVHhBdS8,27
+nudb/customErrorMessage.py,sha256=ZQrBIAW9F-f_7dbYdsO51ozaQEpHdqEbwES3rQKd0Ko,698
+nudb/error.py,sha256=LoZtlA8tZczibBqYBSIJHdZRurmXpA36Jw6W7xPS5dA,252
+nudb/nudb.py,sha256=TkqB_lWBzFlnpVXcMtamoSMD7U2fkDrfLKuYGpfGu-c,7348
+nudb/tools.py,sha256=bjfDtseMcKfiWAVyVJbirZMr3gXERcrFzFF5D3I1HNg,460
+nudb-1.1.3.dist-info/METADATA,sha256=X3QIMOgUd_Coh6OUvUVMCgSHKIn8Giyp-LLqD0tzIcA,6951
+nudb-1.1.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+nudb-1.1.3.dist-info/top_level.txt,sha256=Rzzy4iVnE2WPTnnfwogCDb8IWcgTcwVwYoclwy4Y40w,5
+nudb-1.1.3.dist-info/RECORD,,
