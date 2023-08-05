@@ -1,0 +1,15 @@
+sruns_monitor/__init__.py,sha256=ZA9TPVZcG7_OzTQHJoXy2t9pciKdE4whOkuKL9N8mAU,2095
+sruns_monitor/monitor.py,sha256=kMU5JgvOByo_CdDIp_JtXHOzvgzbE4noTgX_way48zY,21225
+sruns_monitor/sqlite_utils.py,sha256=xKsjv_kCWMXyVXeODtY8yHoOwh8uNrrumQ48Wuz6ff0,5899
+sruns_monitor/utils.py,sha256=bD_nA0tMcE8WXv4xp-gEWQm2ZITWRA_Kt1O2rZ_JmD8,3237
+sruns_monitor/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sruns_monitor/scripts/launch_monitor.py,sha256=b-sDzGISb_F_k57hMB5c2JhWs5h5eV_8hN-rZdVnUOg,472
+sruns_monitor/tests/__init__.py,sha256=rfqwhMIfI0Z6ilmGKon90R5hsWYMZKUjV5vEopoHnFI,364
+sruns_monitor/tests/test_monitor.py,sha256=bQ-4rR0JyIYE1YiH4s6tQVvQ-q5VkhaRNzgQO4nMPNY,15996
+sruns_monitor/tests/test_sqlite_utils.py,sha256=Wu5OndUK3De1OwWk0PcIODzMLJxckdcanyl1FBCnCl8,4118
+sruns_monitor/tests/test_utils.py,sha256=2A4yt25CjxGf5IocB8h6R8ODEozMd--fav6Nz0em7lE,1491
+sruns_monitor-0.1.10.data/scripts/launch_monitor.py,sha256=b-sDzGISb_F_k57hMB5c2JhWs5h5eV_8hN-rZdVnUOg,472
+sruns_monitor-0.1.10.dist-info/METADATA,sha256=rU-gdzqD6ylhY_T9kgrA83Zlm5IRlcnyZMVOzWtseJs,6825
+sruns_monitor-0.1.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sruns_monitor-0.1.10.dist-info/top_level.txt,sha256=LoLP0oHym3Qh4fCa0DxQYnmbjY-bduSMNGWyB-QiJ9w,14
+sruns_monitor-0.1.10.dist-info/RECORD,,
