@@ -1,0 +1,17 @@
+bleach
+boltons
+docutils
+markupsafe
+packaging
+pyyaml
+six>=1.9.0
+
+[:python_version < "3.3"]
+bz2file
+
+[jstree]
+dictobj
+
+[template]
+future
+Cheetah3
