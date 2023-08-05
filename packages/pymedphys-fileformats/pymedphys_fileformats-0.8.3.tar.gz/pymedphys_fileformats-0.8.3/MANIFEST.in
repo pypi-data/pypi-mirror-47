@@ -1,0 +1,3 @@
+include LICENSE*
+graft src/pymedphys_fileformats
+global-exclude *.py[co]
