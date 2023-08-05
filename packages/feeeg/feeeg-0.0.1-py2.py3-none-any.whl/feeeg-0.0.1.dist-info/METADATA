@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: feeeg
+Version: 0.0.1
+Summary: FEEEG a.k.a Feature Extraction for EEG - a data analysis package for EEG data
+Home-page: https://github.com/huyhoang17/feeeg
+Author: Phan Hoang
+Author-email: hoangphan0710@gmail.com
+License: MIT license
+Keywords: feeeg
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+text/markdown
+
+
