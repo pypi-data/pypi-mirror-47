@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: keras-unet
+Version: 0.0.5
+Summary: U-Net model for semantic segmentation implementation in Keras + useful utility functions for semantic segmentation tasks
+Home-page: http://github.com/karolzak/keras-unet
+Author: Karol Zak
+Author-email: karol.zak@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: keras
+
+UNKNOWN
+
+
