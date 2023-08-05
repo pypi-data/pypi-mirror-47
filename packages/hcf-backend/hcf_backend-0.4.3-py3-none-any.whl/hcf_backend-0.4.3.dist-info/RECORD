@@ -1,0 +1,11 @@
+hcf_backend/__init__.py,sha256=PLHhQQEi4C07UYTNKWsBAa05wmZsme6eSqz3bOfzVVs,47
+hcf_backend/backend.py,sha256=bw80f-5T1UjBR3hnqIj77ZF16iXMK1OO4bYHsu49U3U,14083
+hcf_backend/manager.py,sha256=3L--BVFMdbwABG_ncgAZ1kpxP1sZqR2cG3zmn88jnNA,4050
+hcf_backend/utils/__init__.py,sha256=q6wrLzGvy8CbmyA0rhTYELoubhTrbkdD2sfjfHbXxsI,1464
+hcf_backend/utils/crawlmanager.py,sha256=pkXniUbIRvyLd5nNuyIleqHvwY5gpJgCc4ZbUw3HzJY,2864
+hcf_backend/utils/hcfpal.py,sha256=zvymorH2i2yHJoVDmYtOkIXWbHZeXBwX1y0uDKxHMf4,12555
+hcf_backend-0.4.3.dist-info/LICENSE,sha256=C0mo1T2-5y1JsaO-CtC0j3cQaAYNA7YH1yS76COGqq0,1478
+hcf_backend-0.4.3.dist-info/METADATA,sha256=F_DAnvH6KXu1yiz-vIiEf8aNJIxHu9BPGXXnmZ_4aJY,2615
+hcf_backend-0.4.3.dist-info/WHEEL,sha256=YO0P_oFqt6DWX0LhbH7jsyzb3BUtoq2kERtqGsXDJHs,92
+hcf_backend-0.4.3.dist-info/top_level.txt,sha256=INM-hj5d8zuh-ExpsbBdmdg1vz8xZkXC1OC8hrroK1Q,12
+hcf_backend-0.4.3.dist-info/RECORD,,
