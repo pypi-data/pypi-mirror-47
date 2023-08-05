@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+descriptive.egg-info/PKG-INFO
+descriptive.egg-info/SOURCES.txt
+descriptive.egg-info/dependency_links.txt
+descriptive.egg-info/requires.txt
+descriptive.egg-info/top_level.txt
+docs/source/description.rst
+src/miniscule/__init__.py
+src/miniscule/aws.py
+src/miniscule/base.py
