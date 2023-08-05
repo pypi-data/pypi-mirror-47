@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+sorting_for_web.egg-info/PKG-INFO
+sorting_for_web.egg-info/SOURCES.txt
+sorting_for_web.egg-info/dependency_links.txt
+sorting_for_web.egg-info/not-zip-safe
+sorting_for_web.egg-info/top_level.txt
+sorting_package/__init__.py
+sorting_package/bubble_sort.py
+sorting_package/insertion_sort.py
+sorting_package/quick_sort.py
+sorting_package/selection_sort.py
