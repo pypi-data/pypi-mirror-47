@@ -1,0 +1,14 @@
+scikit-image
+shapely
+pypubsub
+wxpython
+read_roi
+numpy-stl
+pydicom
+pystackreg
+pandas
+xlrd
+xlwt
+openpyxl
+markdown
+numba
