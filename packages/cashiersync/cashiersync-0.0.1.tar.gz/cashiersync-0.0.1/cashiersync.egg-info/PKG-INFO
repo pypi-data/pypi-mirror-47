@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: cashiersync
+Version: 0.0.1
+Summary: Server-side synchronization component for Cashier
+Home-page: https://gitlab.com/alensiljak/cashier-sync
+Author: Alen Siljak
+Author-email: alen.siljak@gmx.com
+License: UNKNOWN
+Description: # cashier-sync
+        
+        Cashier Sync is a server-side component that allows syncing Cashier to a local instance of ledger.
+        
+        ## Use
+        
+        Run `cashiersync` from the folder which is setup for use with ledger. Having a configured .ledgerrc is useful, to point to the ledger files (book, prices, etc.) you want to use.
+        Ledger-cli must be in the path as it will be executed to sync the data.
+        
+        The synchronization will create the journal file at the current path in the form 
+        `cashiersync-date.ledger`
+        
+        ## Run
+        
+        `flask run` from cashiersync folder.
+        
+Keywords: cashier,finance,portfolio,ledger
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Other Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
