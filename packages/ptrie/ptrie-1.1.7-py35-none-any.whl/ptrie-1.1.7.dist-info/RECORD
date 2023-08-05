@@ -1,0 +1,11 @@
+ptrie/__init__.py,sha256=tlBCjDucCOYxeKnZFNzf4BGW5RMc3V2pXB_eytW5e94,197
+ptrie/compat2.py,sha256=UOEoG0wV3pbVWzZ5uK8HASom3HjJX9sIeR36R-_qwE8,290
+ptrie/compat3.py,sha256=gDrv4OWVdgvWsib3s-hutlPhG1o-tAMPKMviGDSgfmk,598
+ptrie/pkgdata.py,sha256=wvBXesclF0qJK_Ayr7hqSKoEO-41bFF-bgZOYvoXMUg,1040
+ptrie/ptrie.py,sha256=hvbfxBkbStC7jGuN5gJ844bqRo5jr2Lowgfu7XNr1IM,45172
+ptrie-1.1.7.dist-info/DESCRIPTION.rst,sha256=HkQIaC5283UetpqIH9SGZUVsVAXsHYVpDVXUcpGcQ20,13139
+ptrie-1.1.7.dist-info/METADATA,sha256=MsL1JlJwvjNHzrAQf67YZYFYWVPaWG3KwHecKVQPxA8,13983
+ptrie-1.1.7.dist-info/RECORD,,
+ptrie-1.1.7.dist-info/WHEEL,sha256=dO8Dru6W3FufNSyPeLgAHsfKJ4WuJMCfEBj8PH3fKdU,93
+ptrie-1.1.7.dist-info/metadata.json,sha256=2j1MGdL2Zi12a8OMi7_AbyLIu3cfUcH0jjzi0HVIRiQ,1434
+ptrie-1.1.7.dist-info/top_level.txt,sha256=GYcYQOzryJ6gndj48d1YOs5qYn3IWHkzPsemGfN2GW4,6
