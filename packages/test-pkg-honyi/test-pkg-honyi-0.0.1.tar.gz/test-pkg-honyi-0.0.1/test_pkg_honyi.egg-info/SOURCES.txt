@@ -1,0 +1,6 @@
+README.md
+setup.py
+test_pkg_honyi.egg-info/PKG-INFO
+test_pkg_honyi.egg-info/SOURCES.txt
+test_pkg_honyi.egg-info/dependency_links.txt
+test_pkg_honyi.egg-info/top_level.txt
