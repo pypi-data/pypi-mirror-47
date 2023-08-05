@@ -1,0 +1,4 @@
+nose
+coverage
+pypi-publisher
+pandas
