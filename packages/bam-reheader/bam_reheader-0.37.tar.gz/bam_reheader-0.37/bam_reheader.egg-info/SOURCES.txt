@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bam_reheader/__init__.py
+bam_reheader/__main__.py
+bam_reheader/main.py
+bam_reheader.egg-info/PKG-INFO
+bam_reheader.egg-info/SOURCES.txt
+bam_reheader.egg-info/dependency_links.txt
+bam_reheader.egg-info/entry_points.txt
+bam_reheader.egg-info/top_level.txt

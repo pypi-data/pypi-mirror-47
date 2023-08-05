@@ -1,0 +1,3 @@
+[console_scripts]
+bam_reheader = bam_reheader.__main__:main
+
