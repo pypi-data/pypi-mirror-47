@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+q2_omxware/__init__.py
+q2_omxware/_omxware.py
+q2_omxware/_util.py
+q2_omxware/_version.py
+q2_omxware/plugin_setup.py
+q2_omxware.egg-info/PKG-INFO
+q2_omxware.egg-info/SOURCES.txt
+q2_omxware.egg-info/dependency_links.txt
+q2_omxware.egg-info/entry_points.txt
+q2_omxware.egg-info/not-zip-safe
+q2_omxware.egg-info/requires.txt
+q2_omxware.egg-info/top_level.txt
