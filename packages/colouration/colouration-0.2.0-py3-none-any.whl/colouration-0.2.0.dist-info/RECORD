@@ -1,0 +1,14 @@
+colouration/Colour.py,sha256=lRrGXMt3JqKjN2ITAd3obN1LhWKg8lSXoNFThH5eED4,7111
+colouration/Scheme.py,sha256=EaP_XwzqgQQ6tkRu4sqI3RGfKkqCmLF0CipSq4l-SzE,1454
+colouration/__init__.py,sha256=OPmkZKYMxYzvI4hCug2UT9fNrqnGIRgUmo_hPq1x1D4,93
+colouration/colour_names.py,sha256=w7rmkYLdWUCFB1C7uzJeosGek8Pyub5W4el_OCQ1B-Q,1121
+colouration/colourize.py,sha256=JxF_9Ibn__-1BKeijPSx1Nl6rXCu7fhzQXNL7LEbjzk,827
+colouration/convert_rgb_to_hsl.py,sha256=NDsjTxZTqWmT4Lm1Yp0-P2CWSVtXyPV4n-3Jh0Nxfgs,699
+colouration/data_files/colour_schemes.pickle,sha256=Jb_gC_nel1HG4M6qjdYhIzRK6asJaP-8znfFS6InySA,20341
+colouration/data_files/svg_colours.pickle,sha256=ZJtC2nYuAV6QV1O3JgzlLEz7k-2CANnaZpV-H85oTjA,3044
+colouration/data_files/x11_colours.pickle,sha256=5Tkty_nJLBQ4xL0TX7Y0HPlfSXadd_0TTmt2TSLk7yQ,11016
+colouration-0.2.0.dist-info/METADATA,sha256=JyAYqkXvkaEZezSjeWF0VuDi23hlWKtgGINjDjSw3eY,684
+colouration-0.2.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+colouration-0.2.0.dist-info/top_level.txt,sha256=N_Jdnod2M6RnqIG7yOJbhyC67rOFJyXCy-68Kv-BET8,12
+colouration-0.2.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+colouration-0.2.0.dist-info/RECORD,,
