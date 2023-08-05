@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: int_py
+Version: 0.0.7
+Summary: UNKNOWN
+Home-page: https://github.com/dew-uff/intPy-eScience
+Author: UFF
+Author-email: alyssongomes@id.uff.br
+License: UNKNOWN
+Description: # Intpy
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
