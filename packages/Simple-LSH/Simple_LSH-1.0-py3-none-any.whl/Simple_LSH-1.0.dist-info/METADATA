@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Simple-LSH
+Version: 1.0
+Summary: Python Distribution Utilities
+Home-page: https://github.com/akdel/local-sensitivity-hashing
+Author: Mehmet Akdel
+Author-email: akdel.mehmet@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: numba
+
+UNKNOWN
+
+
