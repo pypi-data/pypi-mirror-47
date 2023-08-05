@@ -1,0 +1,12 @@
+bareclient/__init__.py,sha256=MIAzeJ4TcYbB2-oYyAKyP4wkcTtciHOpwUhoH6vrwcU,356
+bareclient/__version__.py,sha256=_7OlQdbVkK4jad0CLdpI0grT-zEAb-qgFmH5mFzDXiA,22
+bareclient/client.py,sha256=oehNocHrOCR-Bgh6S8qK9LaK7u308aVmpvy7W42Qon0,3813
+bareclient/helpers.py,sha256=Ba2tJebIuCTppLevypILGvTaJf2HBZrxNLECARkGENM,8232
+bareclient/requester.py,sha256=ESAOHBLnKGNuHwlIc6VbqsJCHoHLBevv8lVvfwDsWIg,4017
+bareclient/session.py,sha256=K_ApZVNTuqPoBT5J3WI143eeK0hkad9536mop9m40ac,2639
+bareclient/utils.py,sha256=4pmlUYDsxmK1Cti38qvaS2hO5W1QxdKkNa335ffY_uo,539
+bareclient-2.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bareclient-2.0.0.dist-info/METADATA,sha256=gPU95bZAOO0-l4ge5xnBPZRqz9sfHaUsXElwA-WG99g,2992
+bareclient-2.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bareclient-2.0.0.dist-info/top_level.txt,sha256=mehDMNE64r1EfEkPlCzqDv6PJZMWiiJwlUCHsPExo5A,11
+bareclient-2.0.0.dist-info/RECORD,,
