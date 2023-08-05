@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: virtual-scanner
+Version: 1.0.1
+Summary: Virtual Scanner educational tool for MRI
+Home-page: https://github.com/imr-framework/Virtual-Scanner
+Author: imr-framework
+Author-email: imr.framework2018@gmail.com
+License: License :: OSI Approved :: GNU Affero General Public License v3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: absl-py (==0.7.1)
+Requires-Dist: astor (==0.7.1)
+Requires-Dist: Click (==7.0)
+Requires-Dist: cycler (==0.10.0)
+Requires-Dist: Flask (==1.0.2)
+Requires-Dist: gast (==0.2.2)
+Requires-Dist: grpcio (==1.20.0)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: itsdangerous (==1.1.0)
+Requires-Dist: Jinja2 (==2.10.1)
+Requires-Dist: Keras (==2.2.4)
+Requires-Dist: Keras-Applications (==1.0.7)
+Requires-Dist: Keras-Preprocessing (==1.0.9)
+Requires-Dist: kiwisolver (==1.0.1)
+Requires-Dist: Markdown (==3.1)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: matplotlib (==3.0.3)
+Requires-Dist: mock (==2.0.0)
+Requires-Dist: nibabel (==2.4.0)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: opencv-python (==4.0.0.21)
+Requires-Dist: pbr (==5.1.3)
+Requires-Dist: Pillow (==6.0.0)
+Requires-Dist: protobuf (==3.7.1)
+Requires-Dist: pydicom (==1.2.2)
+Requires-Dist: pyparsing (==2.3.1)
+Requires-Dist: pypulseq (==0.0.3)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: PyYAML (==5.1)
+Requires-Dist: scipy (==1.2.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: tensorboard (==1.13.1)
+Requires-Dist: tensorflow (==1.13.1)
+Requires-Dist: tensorflow-estimator (==1.13.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: Werkzeug (==0.15.2)
+
+# ISMRM 2019
+
+Standard user features:
+- T1/T2 mapping (ISMRM/NIST phantom)
+
+Advanced user features:
+- Sequence and phantom specific SAR modelling
+- MR Rx chain simulations
+
+
