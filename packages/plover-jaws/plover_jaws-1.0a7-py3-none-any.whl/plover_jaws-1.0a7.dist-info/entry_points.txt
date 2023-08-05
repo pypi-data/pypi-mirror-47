@@ -1,0 +1,8 @@
+[plover.command]
+JAWS_function = plover_jaws:runFunction
+JAWS_script = plover_jaws:runScript
+JAWS_toggleSpeakInsert = plover_jaws:toggleInsertionAnnouncement
+
+[plover.extension]
+jaws = plover_jaws:PloverJAWS
+
