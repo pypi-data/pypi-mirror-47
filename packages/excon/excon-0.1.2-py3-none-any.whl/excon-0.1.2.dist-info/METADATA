@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: excon
+Version: 0.1.2
+Summary: Extract and convert data from PDFs
+Home-page: https://github.com/rbutus/excon.git
+Author: Ryan Trigg
+Author-email: rbutustree@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+
+this is a long description of the module
+
+

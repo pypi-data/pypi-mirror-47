@@ -1,0 +1,16 @@
+excon/__init__.py,sha256=0jGrRD2cDT1VMMpuR5xE47dhNIw9KBOYeFtn-TcAlAk,212
+excon/convert.py,sha256=s3PnsZbjW1_f5ZlI2JjkXU5dhyTrJMFXiTDIalX08oU,7277
+excon/core.py,sha256=6hlIyWGU4x-psfgzuDT_IKHg0G5Y09U9L5DU4d82hNk,202
+excon/datin.py,sha256=8rfUw1xqlKUJTzNSVsNaaPMtpdc3_V3IFVs_rx4Ekxw,5674
+excon/helpers.py,sha256=mqOZRGnOl9QuWUl07BDBWYxCypATJxO8xn0MDXVJLEg,59
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/context.py,sha256=3gxPVGYc7S5h8T_axKaU8EJ6hSBdp2E5-sXa4oZkF0c,91
+tests/test_advanced.py,sha256=TtzeFt8PN9kuG-0W6RvCjJ-i65A_JbacsGqF27chwPo,266
+tests/test_basic.py,sha256=UvBtHoLbfW9a9ifRIS5ZFGrwFbXdR7nu0aLIZzTJsTA,257
+tests/test_convert_pdf.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_pdf2csv_inputs.py,sha256=RXH3CSlKJQ-NltMxyyHZCfpM3i2rvaKjUxNcMMA_o4A,498
+excon-0.1.2.dist-info/LICENSE,sha256=lQh-ZaOb9ySCtl61ZjamVgepX2-OCq2II8_hCWC8QiY,1064
+excon-0.1.2.dist-info/METADATA,sha256=_ayDpnCGhFBL0_51eo51E90jtjWHqDwYV5a7du831Mk,460
+excon-0.1.2.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+excon-0.1.2.dist-info/top_level.txt,sha256=xMqkO3cwm2n7Pm7zu3RLH3NOLzKfWSVL5YPQilkCzoE,12
+excon-0.1.2.dist-info/RECORD,,
