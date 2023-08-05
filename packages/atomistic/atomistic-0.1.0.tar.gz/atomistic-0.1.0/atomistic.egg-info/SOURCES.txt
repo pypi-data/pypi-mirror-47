@@ -1,0 +1,17 @@
+README.md
+setup.py
+atomistic/__init__.py
+atomistic/_version.py
+atomistic/atomistic.py
+atomistic/bicrystal.py
+atomistic/crystal.py
+atomistic/mathsutils.py
+atomistic/utils.py
+atomistic/visualise.py
+atomistic.egg-info/PKG-INFO
+atomistic.egg-info/SOURCES.txt
+atomistic.egg-info/dependency_links.txt
+atomistic.egg-info/requires.txt
+atomistic.egg-info/top_level.txt
+atomistic/data/jmol_colours.pickle
+atomistic/data/jmol_colours.txt
