@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: BlingbyImageScraper
+Version: 0.1.0
+Summary: Useful image-scraper-related stuff.
+Home-page: https://github.com/alexanderpenn/scraper
+Author: Alexander Lenz
+Author-email: lenz@wharton.upenn.edu
+License: ISC License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.0
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+
+=====================
+BlingbyImageScraper
+=====================
+
+BlingbyImageScraper provides a command line interface to download a
+specified number of images related to a search query from google.
+
+
