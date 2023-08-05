@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: aisimplekit
+Version: 0.0.11
+Summary: Simple lib for various machine learning and AI tasks.
+Home-page: https://github.com/greyzor/aisimplekit
+Author: Said Aitmbarek
+Author-email: said.aitmbarek@gmail.com
+License: MIT license
+Keywords: aisimplekit
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: pandas
+Requires-Dist: sklearn
+Requires-Dist: lightgbm
+Requires-Dist: xgboost
+Requires-Dist: catboost
+Requires-Dist: matplotlib
+Requires-Dist: kaggle
+Requires-Dist: nltk
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: seaborn
+Requires-Dist: keras
+Requires-Dist: tensorflow
+
+# aisimplekit
+Simple lib for various machine learning and AI tasks.
+
+# Installation:
+```
+python3.7 -m pip install aisimplekit
+```
+
+# Contributions
+Feel free to fork, add new features to this lib. Hope it helps ;) !
+

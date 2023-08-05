@@ -1,0 +1,15 @@
+aisimplekit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisimplekit/dnn/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisimplekit/dnn/embeddings.py,sha256=29Gn55bluobOxaYNyg--GdaDojEwRPxBgwNhflLLO4o,1376
+aisimplekit/dnn/rnn.py,sha256=PaK88Adr3jniNyVloOAJSwxTpHvTI0WazHTMA1bO6N0,13382
+aisimplekit/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisimplekit/features/stats.py,sha256=1c0ZkwJOH7rjysaI6Z4NfhDHfBZU8EiApOQa4QaGQA8,6549
+aisimplekit/features/tfidf.py,sha256=VA-fL1VPRm2DooU3A1Akx9f0Jy0RM8OuYQtoQlPJUUc,2662
+aisimplekit/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aisimplekit/models/lgb.py,sha256=mObD3LyJl61pXSvt8chp8luo1X3-wbfnt71qrf4nYrU,3761
+aisimplekit/models/xgb.py,sha256=QLbMsXFWCSlicQKMgzFieqTgSDMnwNVuvv4QXXxLulE,2177
+aisimplekit-0.0.11.dist-info/LICENSE,sha256=Dq7o-XyzasxivHOlG-S3cHcI6fa41Vy0w6UswHAYzVc,1071
+aisimplekit-0.0.11.dist-info/METADATA,sha256=KtV4KIKXTd-jMaveVuzB9IhuOhyaaWmNhNVrUhJ3d-0,1336
+aisimplekit-0.0.11.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+aisimplekit-0.0.11.dist-info/top_level.txt,sha256=k7NAJEPxKF2JA5Cw6lJcgNFNQ4c8e-R0pK54diNyVww,12
+aisimplekit-0.0.11.dist-info/RECORD,,
