@@ -1,0 +1,12 @@
+__pycache__
+.eggs
+*.egg-info
+.vscode
+.pytest_cache
+build
+dist
+doc/_build
+doc/_static
+doc/_templates
+
+.ipynb_checkpoints

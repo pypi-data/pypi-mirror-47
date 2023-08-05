@@ -1,0 +1,5 @@
+sphinx
+sphinx-autodoc-typehints
+sphinx_bootstrap_theme
+pytest
+setuptools_scm
