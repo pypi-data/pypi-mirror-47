@@ -1,0 +1,13 @@
+python-socketio[client]==4.1.0
+numpy
+
+[:python_version > "3.0"]
+janus
+
+[engine]
+aiohttp
+aiohttp_cors
+gputil
+pyyaml
+
+[worker]
