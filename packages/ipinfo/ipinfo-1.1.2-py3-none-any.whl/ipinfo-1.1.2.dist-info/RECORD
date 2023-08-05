@@ -1,0 +1,14 @@
+ipinfo/__init__.py,sha256=bfOiNoJ5P3aE_8pZXewpffXEU4f4DXUeQXJFPEBwxO8,163
+ipinfo/countries.json,sha256=bPUBkpbzg3zGcbwk5gBOOpMo22zgMuCYSVq-9YcHFLc,4966
+ipinfo/details.py,sha256=6RKf55LeMSZEnuwiuT1qpsEN9n_Zv7odtpsJ6qaJl20,631
+ipinfo/exceptions.py,sha256=-EhF7r5SHDAAF5_xAQ7yW9BttzrbWM0CWMekT4g5OcY,182
+ipinfo/handler.py,sha256=3GC2e8nTZweMgL9EiERgK4XVa-s1yuxoINtZZc5G-eg,3572
+ipinfo/cache/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ipinfo/cache/default.py,sha256=lrcRobRNeEQzaV1Q2ZYrX-PQSLge-QYR-Bbr8yVInRM,594
+ipinfo/cache/interface.py,sha256=Q7S2S9b0ZdDGDxpn-Q5mBdU5CUHjYp4feErCUjdT-_U,395
+ipinfo-1.1.2.dist-info/DESCRIPTION.rst,sha256=pbS61u61oWDKFn9wtiN8fCDz_MLvDiwbg1oq3HvXmSM,335
+ipinfo-1.1.2.dist-info/METADATA,sha256=F-jDdNYbaTrRbU_XHxgEPVQE1BaDWrDzN29uIlEzZvs,649
+ipinfo-1.1.2.dist-info/RECORD,,
+ipinfo-1.1.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ipinfo-1.1.2.dist-info/metadata.json,sha256=HcBusFK4H9m9MIVm0W1gIMAnMx-0DOgy28mRPiqHK2c,512
+ipinfo-1.1.2.dist-info/top_level.txt,sha256=Ko1ancZNuW4GHhbDttrzEuHFJW7Y0wtTuEY0NJRrSak,7
