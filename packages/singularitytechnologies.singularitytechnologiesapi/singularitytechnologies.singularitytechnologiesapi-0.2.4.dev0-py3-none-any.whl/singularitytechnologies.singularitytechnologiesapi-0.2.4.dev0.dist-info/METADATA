@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: singularitytechnologies.singularitytechnologiesapi
+Version: 0.2.4.dev0
+Summary: Python implementation of the Singularity Technologies API
+Home-page: https://github.com/singularitydigitaltechnologies/singularitytechnologiesapi
+Author: Sam Lacey
+Author-email: sam.lacey@singularity-technologies.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Python Implementation of the Singularity Technologies API
+
+Currently a WIP, likely to change.
+
+
