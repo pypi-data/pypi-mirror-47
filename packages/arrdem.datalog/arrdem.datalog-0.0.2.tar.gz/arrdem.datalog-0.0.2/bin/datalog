@@ -1,0 +1,149 @@
+#!/usr/bin/env python3
+
+import argparse
+import sys
+from pprint import pprint
+
+from datalog.core import Dataset, Rule, evaluate, pr_str, read
+
+
+def print_db(db):
+  for e in db.tuples:
+    print(f"⇒ {pr_str(e)}")
+  for r in db.rules:
+    print(f"⇒ {pr_str(r)}")
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("--db", dest="dbs", action="append")
+
+if __name__ == "__main__":
+  args = parser.parse_args(sys.argv[1:])
+
+  db = Dataset([], [])
+
+  if args.dbs:
+    for db_file in args.dbs:
+      try:
+        with open(db_file, "r") as f:
+          db = db.merge(read(f.read()))
+        print(f"Loaded {db_file} ...")
+      except Exception as e:
+        print("Internal error - {e}")
+        print(f"Unable to load db {db_file}, skipping")
+
+  while True:
+    sys.stdout.write(">>> ")
+    sys.stdout.flush()
+    line = sys.stdin.readline().strip()
+    if not line:
+      break
+
+    if line == ".all":
+      op = ".all"
+    elif line == ".quit":
+      break
+
+    elif line in {".help", "help", "?", "??", "???"}:
+      print("""
+Datalog (py)
+============
+
+An interactive datalog interpreter with persistence
+
+Commands
+~~~~~~~~
+  .help   (this message)
+  .all    display all tuples
+  .quit   to exit the REPL
+
+To exit, use control-c or control-d
+
+The interpreter
+~~~~~~~~~~~~~~~
+
+The interpreter reads one line at a time from stdin.
+Lines are either
+ - definitions (ending in .),
+ - queries (ending in ?)
+ - retractions (ending in !)
+
+A definition may contain arbitrarily many datalog tuples and rules.
+
+   edge(a, b). edge(b, c).  % A pair of definitions
+   ⇒ edge(a, b). % The REPL's response that it has been committed
+   ⇒ edge(b, c).
+
+A query may contain definitions, but they exist only for the duration of the query.
+
+   edge(X, Y)? % A query which will enumerate all 2-edges
+   ⇒ edge(a, b).
+   ⇒ edge(b, c).
+
+   edge(c, d). edge(X, Y)? % A query with a local tuple
+   ⇒ edge(a, b).
+   ⇒ edge(b, c).
+   ⇒ edge(c, d).
+
+A retraction may contain only one tuple or clause, which will be expunged.
+
+   edge(a, b)!   % This tuple is in our dataset
+   ⇒ edge(a, b)  % So deletion succeeds
+
+   edge(a, b)!   % This tuple is no longer in our dataset
+   ⇒ Ø           % So deletion fails
+
+""")
+      continue
+
+    else:
+      op = line[-1]
+      if op not in {".", "?", "!"}:
+        print("Syntax error - no command found!")
+        print("Commands are lines ending with . or ? or !")
+        print(" . - defines all the tuple(s) in the input into the dataset")
+        print(" ? - executes the input as a query over the dataset")
+        print(" ! - retracts the FIRST tuple or rule in the input")
+        continue
+
+      try:
+        _db = read(line)
+      except Exception as e:
+        print(f"An internal error occurred - {e}")
+        continue
+
+    # Definition merges on the DB
+    if op == ".":
+      db = db.merge(_db)
+      print_db(_db)
+
+    if op == ".all":
+      print_db(db)
+
+    # Queries execute - note that rules as queries have to be temporarily merged.
+    elif op == "?":
+      qdb = db
+      if not _db.tuples:
+        qdb = db.merge(_db)  # Install the rule for now
+        _db = Dataset([_db.rules[0].pattern], [])
+
+      # Use a flag to track whether we got any results
+      flag = False
+      for result, bindings in evaluate(qdb, _db.tuples[0]):
+        print(f"⇒ {pr_str(result)}")
+        flag |= True
+
+      # So we can report empty sets explicitly.
+      if not flag:
+        print("⇒ Ø")
+
+    # Retractions try to delete, but may fail.
+    elif op == "!":
+      assert(len(_db.tuples) + len(_db.rules)) == 1, "Too many inputs on one line!"
+      t = _db.tuples[0]
+      if t in db.tuples or t in [r.pattern for r in db.rules]:
+        db = Dataset([u for u in db.tuples if t != u],
+                     [r for r in db.rules if r.pattern != t])
+        print(f"⇒ {pr_str(t)}")
+      else:
+        print("⇒ Ø")
