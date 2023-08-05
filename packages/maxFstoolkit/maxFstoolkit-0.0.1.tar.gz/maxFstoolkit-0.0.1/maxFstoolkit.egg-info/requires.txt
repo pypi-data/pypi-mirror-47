@@ -1,0 +1,7 @@
+numpy==1.16.4
+pandas==0.24.2
+discord-webhook==0.4.1
+idna==2.8
+peewee==3.9.5
+requests==2.22.0
+urllib3==1.25.2
