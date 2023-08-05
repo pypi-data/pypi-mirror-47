@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: py-fsm
+Version: 0.0.1
+Summary: Python FSM - finite state machine library for python.
+Home-page: https://github.com/toruza/pyfsm
+Author: Dmitry Kotov
+Author-email: dmalexkotov@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
+
+# Python FSM
+
+Python FSM is a finite state machine library for python
+
+
