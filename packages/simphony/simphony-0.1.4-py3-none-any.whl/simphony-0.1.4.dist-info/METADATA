@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: simphony
+Version: 0.1.4
+Summary: Simphony: A Simulator for Photonic circuits
+Home-page: https://github.com/sequoiap/simphony
+Author: Sequoia Ploeg
+Author-email: sequoia.ploeg@ieee.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: scipy (>=1.2.1)
+Requires-Dist: scikit-rf (==0.14.9)
+Requires-Dist: h5py (==2.9.0)
+Requires-Dist: matplotlib (==3.0.3)
+Requires-Dist: TensorFlow (>=1.12.0)
+Requires-Dist: Keras (>=2.2.4)
+Requires-Dist: jsons (==0.8.9)
+Requires-Dist: numpy
+
+# Simphony
+Simulator for Photonic circuits
+
+This package is still under development. It began as an extension to SiEPIC-Tools, but became large enough to become its own stand-alone project. The first minor version is considered what was under develop during its time with SiEPIC-Tools.
+
+Simphony can be installed via pip:
+
+pip install simphony
+
