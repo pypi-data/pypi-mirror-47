@@ -1,0 +1,10 @@
+README.md
+setup.py
+universion/__init__.py
+universion/cli.py
+universion.egg-info/PKG-INFO
+universion.egg-info/SOURCES.txt
+universion.egg-info/dependency_links.txt
+universion.egg-info/entry_points.txt
+universion.egg-info/requires.txt
+universion.egg-info/top_level.txt
