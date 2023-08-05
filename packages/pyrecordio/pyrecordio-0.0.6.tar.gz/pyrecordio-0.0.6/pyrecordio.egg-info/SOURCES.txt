@@ -1,0 +1,10 @@
+README.md
+crecordio.go
+setup.cfg
+setup.py
+pyrecordio.egg-info/PKG-INFO
+pyrecordio.egg-info/SOURCES.txt
+pyrecordio.egg-info/dependency_links.txt
+pyrecordio.egg-info/top_level.txt
+recordio/__init__.py
+recordio/recordio.py
