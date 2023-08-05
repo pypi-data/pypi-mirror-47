@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pdl
+Version: 0.8.17
+Summary: Public Download Library
+Home-page: https://github.com/zerotosingularity/pdl
+Author: Zero to singularity
+Author-email: jan@zerotosingularity.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (>=2.18.4)
+
+Easily download and explore public datasets.
+
+
