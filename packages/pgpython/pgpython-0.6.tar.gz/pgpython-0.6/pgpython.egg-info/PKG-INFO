@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pgpython
+Version: 0.6
+Summary: Package that helps you to work with postgresql
+Home-page: https://github.com/c0nder/pgpython
+Author: Sokolov Artem
+Author-email: sokolovartem6@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: postgresql,python,database
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
