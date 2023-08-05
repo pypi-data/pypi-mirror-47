@@ -1,0 +1,9 @@
+{% extends "web/components/base.html" %}
+
+{% block content_header %}
+  {% include "web/components/content-header.html" with content_header="New Instructor Signup" %}
+{% endblock %}
+
+{% block modules %}
+  {% include "web/modules/add-credentials.html" %}
+{% endblock %}
