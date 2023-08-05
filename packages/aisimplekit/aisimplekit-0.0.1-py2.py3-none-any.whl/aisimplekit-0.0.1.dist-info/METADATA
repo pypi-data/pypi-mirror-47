@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aisimplekit
+Version: 0.0.1
+Summary: Simple lib for various machine learning and AI tasks.
+Home-page: https://github.com/greyzor/aisimplekit
+Author: Said Aitmbarek
+Author-email: said.aitmbarek@gmail.com
+License: MIT license
+Keywords: aisimplekit
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+
+# kaggle-codebase
+Kaggle and data challenges bootstrap personal codebase.
+
+
+Notebooks + aisimplekit
+
