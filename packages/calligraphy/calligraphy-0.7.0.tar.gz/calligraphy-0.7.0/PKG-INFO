@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: calligraphy
+Version: 0.7.0
+Summary: A static blog generator.
+Home-page: https://github.com/terrillo/calligraphy
+Author: Terrillo Walls
+Author-email: terrillo@terrillo.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/terrillo/calligraphy/issues
+Project-URL: Documentation, https://github.com/terrillo/calligraphy
+Project-URL: Source Code, https://github.com/terrillo/calligraphy
+Description: # Calligraphy CMS
+        A static blog generator
+        
+        ## Install
+        ```bash
+        $ pip3 install calligraphy -U
+        ```
+        
+        ## Development
+        ```shell
+        $ python3 -m venv .
+        $ . bin/activate
+        $ pip3 install --editable .
+        $ calligraphy
+        ```
+        
+        ## Methods
+        
+        ### Verify
+        
+        Validate all themes and blog posts.
+        
+        ```shell
+        $ calligraphy verify
+        ```
+        
+        ---
+        
+        ### Export to html
+        Builds the landing and each blog post into a static `html` directory
+        
+        Export to html (default)
+        
+        ```shell
+        $ calligraphy export
+        ```
+        
+        ---
+        
+        ### Static
+        Run a static version of website
+        
+        ```shell
+        $ calligraphy static
+        $ calligraphy static --port=8088
+        ```
+        
+        ## Todo
+        - [ ] Markdown parser
+        - [ ] Theme documentation
+        - [ ] 404 template
+        - [ ] Tags
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0.*
+Description-Content-Type: text/markdown

@@ -1,0 +1,3 @@
+[console_scripts]
+calligraphy = calligraphy.cli:main
+
