@@ -1,0 +1,7 @@
+
+[dev]
+tox
+
+[testing]
+pytest
+pytest-cov
