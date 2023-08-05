@@ -1,0 +1,13 @@
+requests==2.21.0
+future==0.16.0
+futures==3.1.1
+click==6.7
+tenacity==5.0.3
+pyjwt==1.6.1
+intezer-sdk==0.1
+
+[:python_version < "3.4"]
+enum34==1.1.6
+
+[:python_version == "2.7"]
+backports.shutil_which==3.5.1
