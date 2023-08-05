@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bam-reheader
+Version: 0.39
+Summary: reheader a BAM to include GDC @SQ info
+Home-page: https://github.com/jeremiahsavage/bam_reheader/
+Author: Jeremiah H. Savage
+Author-email: jeremiahsavage@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
