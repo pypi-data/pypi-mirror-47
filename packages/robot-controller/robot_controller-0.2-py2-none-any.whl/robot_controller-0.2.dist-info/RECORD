@@ -1,0 +1,12 @@
+robot_controller/__init__.py,sha256=11c-MQuBTQdcuj0ZoGZQ_3T0NbkIucrkeSyzsBTt_PE,66
+robot_controller/manipulators/__init__.py,sha256=VhFb9kiEpyN3w9nA6LOx-NMC0asjzifdHyoM2L3K6sI,52
+robot_controller/manipulators/manipulator.py,sha256=jZzrWOtUvi2D3prW8CkD2jaJJU2xKwep2-bW3lhmhzk,2841
+robot_controller/manipulators/utils.py,sha256=tqgfI52GtB2ctV03BaMJu4bar2mRooB2rYbtWf3Y5YY,9934
+robot_controller/manipulators/instances/__init__.py,sha256=Xe0SEpCo34JIv6ksBO3LO-4zYHiAer15Jcqwh-a_4Ok,21
+robot_controller/manipulators/instances/ur3.py,sha256=bwWOZQ_B_GXhDjsmGJ2G496y4_zADxKZYbHX80ZPqxk,8935
+robot_controller-0.2.dist-info/DESCRIPTION.rst,sha256=0KUkeaB4CpbSkghrLmx3VpKRFCwc3Wsmt1OiUsA6uOM,2826
+robot_controller-0.2.dist-info/METADATA,sha256=29Nxgo8doCaw4-VqmEuYKMG0cgQi_cr2IT8cFx8Sk9Y,3263
+robot_controller-0.2.dist-info/RECORD,,
+robot_controller-0.2.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+robot_controller-0.2.dist-info/metadata.json,sha256=Y1WkCzXRZVEDmSSEto3iglM5MkGpDAHZSgMKsQWpolQ,640
+robot_controller-0.2.dist-info/top_level.txt,sha256=oaOsk7foq6Ftie-z0XhMh4aJW0frhkv8Lv44Ztb6q6s,17
