@@ -1,0 +1,43 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.vocabularies">
+
+  <i18n:registerTranslations directory="locales" />
+
+  <includeDependencies package="." />
+
+  <include package=".browser" />
+  <include package=".organisation" />
+  <include file="meta.zcml"/>
+
+
+  <genericsetup:registerProfile
+      name="default"
+      title="collective.vocabularies"
+      directory="profiles/default"
+      description="Installs the collective.vocabularies add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.post_install"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="collective.vocabularies (uninstall)"
+      directory="profiles/uninstall"
+      description="Uninstalls the collective.vocabularies add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      post_handler=".setuphandlers.uninstall"
+      />
+
+  <utility
+      factory=".setuphandlers.HiddenProfiles"
+      name="collective.vocabularies-hiddenprofiles" />
+
+  <utility
+      component=".vocab.country_factory"
+      name="collective.vocabularies.countries"
+      />
+
+</configure>

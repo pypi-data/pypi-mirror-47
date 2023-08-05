@@ -1,0 +1,5 @@
+====================
+collective.vocabularies
+====================
+
+User documentation
