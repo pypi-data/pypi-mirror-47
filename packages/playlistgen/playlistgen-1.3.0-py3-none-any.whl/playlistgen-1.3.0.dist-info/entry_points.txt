@@ -1,0 +1,3 @@
+[console_scripts]
+genlist=playlistgen.playlist:generate
+
