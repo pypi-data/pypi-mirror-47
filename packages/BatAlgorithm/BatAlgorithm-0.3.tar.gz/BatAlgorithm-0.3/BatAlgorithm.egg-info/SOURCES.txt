@@ -1,0 +1,7 @@
+BatAlgorithm.py
+README.rst
+setup.py
+BatAlgorithm.egg-info/PKG-INFO
+BatAlgorithm.egg-info/SOURCES.txt
+BatAlgorithm.egg-info/dependency_links.txt
+BatAlgorithm.egg-info/top_level.txt
