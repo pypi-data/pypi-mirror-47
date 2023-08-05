@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: yapo
+Version: 0.1.1
+Summary: Flexible and easy-to-use Python library for analysis & manipulation with financial & economic data
+Home-page: https://github.com/okama-io/yapo
+Author: Alexander Myltsev
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyContracts (>=1.8,<2.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: pandas (>=0.24,<0.25)
+Requires-Dist: quandl (>=3.4,<4.0)
+Requires-Dist: serum (>=5.1,<6.0)
+Project-URL: Repository, https://github.com/okama-io/yapo
