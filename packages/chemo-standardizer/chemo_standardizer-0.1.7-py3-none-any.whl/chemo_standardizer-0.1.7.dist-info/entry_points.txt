@@ -1,0 +1,3 @@
+[console_scripts]
+standardiser = standardiser.bin.standardise_mols:main
+
