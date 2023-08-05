@@ -1,0 +1,9 @@
+test_pip_install/__init__.py,sha256=Xw7v5BvQuFkhRFlSIY3UkTGTeVh2J0RixXwvFiZcwAw,388
+test_pip_install/__main__.py,sha256=A8ojePAivVzJG2WdJrimK-VNS0TIdZDzHZWbKFhdTek,59
+test_pip_install-0.0.3.dist-info/COPYING.LESSER,sha256=-XvEu5t66KZTlBBzZ4tcd3Xo3kSgHDvMIefNwUi5DmE,7632
+test_pip_install-0.0.3.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+test_pip_install-0.0.3.dist-info/METADATA,sha256=AnnZN7vs_-x2NShCGHkyaOZ8cyWSyWG3GSfy67KSvW0,1505
+test_pip_install-0.0.3.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+test_pip_install-0.0.3.dist-info/entry_points.txt,sha256=ff9UmVci0_lLF--rvqP_xhMLeCTgVxRAZoPBxLmA-6A,60
+test_pip_install-0.0.3.dist-info/top_level.txt,sha256=FHl2dPy3AgZH4So5irfgL2zUvFBDx3-Zt7w7gcBf0Fc,17
+test_pip_install-0.0.3.dist-info/RECORD,,
