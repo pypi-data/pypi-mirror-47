@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Pyppetheater
+Version: 0.2.19
+Summary: Functional testing using python and puppeteer
+Home-page: https://github.com/gpenverne/pyppettheater
+Author: Gregoire Penverne
+Author-email: gpenverne@gmail.com
+License: MIT
+Download-URL: https://github.com/gpenverne/pyppettheater/archive/master.zip
+Description: UNKNOWN
+Keywords: puppeteer,gherkin,test
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Testing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
