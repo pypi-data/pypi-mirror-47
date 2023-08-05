@@ -1,0 +1,11 @@
+pysetup/__init__.py,sha256=vf-Lg4CAejsipgg2kbS3q9TmUSDdjDr56DDfzk8VS5E,30
+pysetup/command.py,sha256=TRDomyZRUXcKdWtchpN3YCau-mUoGKiy1QQQUOWj724,3009
+pysetup/help_text.py,sha256=wRY6b4q3oQhm6P3tK_ScMjgqq2lVlvDigbl-sdZd1bk,600
+pysetup/main.py,sha256=ZJo8nl69bx2U4BkB-AdysmnQ6c4q132JaBvnHXUcWOE,102
+pysetup/setup_text.py,sha256=pEG6_bY56NFuI5AZ-m_3JfDh9OevYtrpdei5e_6ItjM,947
+pysetup-2019.6.1.dist-info/LICENSE,sha256=jGLUpo88g5lVCKapMByzROLG6-gGgmzUcs2UvzERaYU,1081
+pysetup-2019.6.1.dist-info/METADATA,sha256=3xeO4LMBiNLEDlblSLBgBV2Ohd0_Va_cRwXHDcLToYU,1502
+pysetup-2019.6.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pysetup-2019.6.1.dist-info/entry_points.txt,sha256=0pHtXs4QCAqnYqwG2_vrpzyFNebI4GAqgMnv6ul1u3M,47
+pysetup-2019.6.1.dist-info/top_level.txt,sha256=5FVXETPvfFmCBgshC-sd3w-krJKpmOtIc9f1pGLtQtQ,8
+pysetup-2019.6.1.dist-info/RECORD,,
