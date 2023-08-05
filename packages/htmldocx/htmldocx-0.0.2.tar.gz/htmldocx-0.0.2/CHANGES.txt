@@ -1,0 +1,2 @@
+v0.0.1 2019 May 31 -- Initial release
+v0.0.2 2019 Jun 2 -- Fix run method, add handling basic tables, options to skip elements, basic input validation
