@@ -1,0 +1,5 @@
+pysnooper
+
+[tests]
+pytest
+python-toolbox

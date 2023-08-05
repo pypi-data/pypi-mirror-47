@@ -1,0 +1,12 @@
+.gitignore
+README.md
+setup.py
+TorchSnooper.egg-info/PKG-INFO
+TorchSnooper.egg-info/SOURCES.txt
+TorchSnooper.egg-info/dependency_links.txt
+TorchSnooper.egg-info/requires.txt
+TorchSnooper.egg-info/top_level.txt
+tests/__init__.py
+tests/test_torchsnooper.py
+tests/utils.py
+torchsnooper/__init__.py
