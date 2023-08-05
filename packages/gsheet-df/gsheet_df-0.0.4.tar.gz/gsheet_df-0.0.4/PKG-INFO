@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: gsheet_df
+Version: 0.0.4
+Summary: A personal package for downloading gsheet.
+Home-page: https://github.com
+Author: d_mok
+Author-email: unknown@gmail.com
+License: MIT
+Description: A personal package for downloading gsheet.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
