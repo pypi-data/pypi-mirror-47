@@ -1,0 +1,9 @@
+MANIFEST.in
+README.txt
+setup.py
+myPackage/__init__.py
+myPackage/api.py
+turkce.egg-info/PKG-INFO
+turkce.egg-info/SOURCES.txt
+turkce.egg-info/dependency_links.txt
+turkce.egg-info/top_level.txt
