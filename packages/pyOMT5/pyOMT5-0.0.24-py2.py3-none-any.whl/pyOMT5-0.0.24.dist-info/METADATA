@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pyOMT5
+Version: 0.0.24
+Summary: pyOMT5 - Python Open Metatrader 5 module
+Home-page: https://github.com/paulorodriguesxv/pyomt5
+Author: Paulo Rodrigues
+Author-email: paulorodriguesxv@gmail.com
+License: MIT
+Requires-Dist: pyzmq
+Requires-Dist: pandas
+Provides-Extra: pandas
+Requires-Dist: pandas ; extra == 'pandas'
+
+pyOMT5 - Python Open MetaTrader 5
+
+
