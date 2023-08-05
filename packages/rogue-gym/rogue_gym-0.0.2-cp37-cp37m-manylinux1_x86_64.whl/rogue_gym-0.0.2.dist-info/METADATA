@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: rogue-gym
+Version: 0.0.2
+Summary: OpenAI gym environment for rogue-gym
+Home-page: https://github.com/kngwyu/rogue-gym
+Author: Yuji Kanagawa
+Author-email: yuji.kngw.80s.revive@gmail.com
+License: MIT
+Project-URL: Code, https://github.com/kngwyu/rogue-gym
+Project-URL: Issue tracker, https://github.com/kngwyu/rogue-gym/issues
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: rainy
+Requires-Dist: numpy
+Requires-Dist: gym
+Provides-Extra: rainy
+Requires-Dist: rainy; extra == 'rainy'
+
+
+# rogue-gym python API
+
+Python interface of [Rogue-Gym](https://github.com/kngwyu/rogue-gym) compatible with
+[Open AI Gym](https://github.com/openai/gym) environments.
+
+# API documents
+COMING SOON
+
+# Example
+
+```bash
+>>> from rogue_gym.envs import RogueEnv
+>>> CONFIG = {
+...     'width': 32, 'height': 16,
+...     'dungeon': {
+...         'style': 'rogue',
+...         'room_num_x': 2, 'room_num_y': 2
+...      }
+... }
+>>> env = RogueEnv(max_steps=100, config_dict=CONFIG)
+>>> rewards = 0
+>>> state = env.reset()
+>>> for i in range(10): 
+...     # move right
+...     state, reward, done, _ = env.step('l')
+...     rewards += reward
+... 
+>>> env
+
+
+                       ---      
+                       .@|      
+                       ..|      
+
+
+
+
+
+
+
+
+
+
+
+Level:  1 Gold:     0 Hp: 12(12) Str: 16(16) Arm:  0 Exp:  1/ 0 
+```
+
+
