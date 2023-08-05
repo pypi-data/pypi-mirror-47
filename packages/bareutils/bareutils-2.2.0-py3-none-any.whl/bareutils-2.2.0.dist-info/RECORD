@@ -1,0 +1,13 @@
+bareutils/__init__.py,sha256=ZyB54w6b_zYYs5c-6vf5PkwXpKVRaohmnVGsP4a_w9A,1065
+bareutils/__version__.py,sha256=Vyf6P6UCZKFeQtRzYujPmFfdlqSfnc01VEMWE3O0ZrA,22
+bareutils/compression.py,sha256=gLSkUJ1qS1Lp0XHfZw-Q2bvB0Ta_bzuIKugNUkhVWvQ,3505
+bareutils/cookies.py,sha256=vDl1tuOe3eaRTveLymFWZ4WAE6_djSQT1gJYKd6z2Kk,4480
+bareutils/header.py,sha256=XLumATWMumx4f5LXu7KaGFLfE0qF2Fu1JOMMyOCAomk,6346
+bareutils/response_code.py,sha256=YfKpP_sROFJKFE0xnRGbV68ynCqlQSOqhP2o9IxM3Oc,12949
+bareutils/responses.py,sha256=naZWBK7brQuOzQLVzhcZ7mTU9ir3htiufNtk9Ophpio,2489
+bareutils/streaming.py,sha256=pasbiPaWDkvtRAd-Ium54Fdgrr4hsexyzmDln-1Ezxw,2162
+bareutils-2.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+bareutils-2.2.0.dist-info/METADATA,sha256=Vfii4tixk3JWmwsiuj201p7wxnkEfA8pTmsOzQ_1C_8,906
+bareutils-2.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bareutils-2.2.0.dist-info/top_level.txt,sha256=s1Y3hEGYlRyvZoZQQkSBA7QNsck-LKKLVnWx14m8dM0,10
+bareutils-2.2.0.dist-info/RECORD,,
