@@ -1,0 +1,10 @@
+auto_tqdm
+sklearn
+pandas
+
+[test]
+codacy-coverage
+pytest-cov
+validate_version_code
+pytest
+coveralls
