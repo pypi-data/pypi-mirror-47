@@ -1,0 +1,112 @@
+Metadata-Version: 2.1
+Name: notipy-me
+Version: 1.2.13
+Summary: A simple python package to send you and any other receiver an email when a portion of code is done running.
+Home-page: https://github.com/LucaCappelletti94/notipy_me
+Author: Luca Cappelletti
+Author-email: cappelletti.luca94@gmail.com
+License: MIT
+Description: Notipy Me
+        =========
+        |sonar_quality| |sonar_maintainability| |sonar_coverage| |pip|
+        
+        A simple python package to send you and any other receiver an email when a portion of code is done running.
+        
+        Setup
+        -----
+        
+        Just run:
+        
+        .. code:: bash
+        
+           pip install notipy_me
+        
+        Usage example
+        -------------
+        A basic usage example can be the following:
+        
+        Usage as decorator
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+            from notipy_me import Notipy
+        
+            @Notipy
+            def my_long_running_script():
+                ...
+        
+        Usage as context
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        
+        .. code:: python
+        
+            from notipy_me import Notipy
+        
+            with Notipy() as NP:
+                my_long_running_script()
+        
+        Form example
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        When you run the script notipy will ask you to enter your email, password etc... it will store into a cache file called `.notipy.json` every setting except for the password.
+        
+        The following example is from after having run the test once, so it loads everything except for the password from the cache:
+        
+        .. code:: bash
+        
+            Let's setup your notipy!
+            Hit enter to use the default values.
+            Please insert email [luca.cappelletti@my.email.it]: 
+            Password: 
+            Please insert task_name [Testing Notipy]: 
+            Please insert recipients, separated by a comma [luca.cappelletti@my.email.it]: 
+            Please insert report_timeout_unit, ('h', 'm', 's') [s]: 
+            Please insert report_timeout, in seconds [120]: 
+            Please insert port [465]: 
+            Please insert smtp_server [smtp.email.it]:     
+        
+        
+        Integration with travis
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        By default, when used on a system with no stdout to ask for input, notipy turns itself off.
+        
+        Preview
+        -------------------------------
+        You will receive mails such as the following (in both images the server name and email server has been deleted):
+        
+        |started| |completed|
+        
+        .. |started| image:: https://github.com/LucaCappelletti94/notipy_me/blob/master/started.png?raw=true
+           :width: 45%
+        
+        .. |completed| image:: https://github.com/LucaCappelletti94/notipy_me/blob/master/completed.png?raw=true
+           :width: 45%
+        
+        Known issues
+        ------------
+        
+        Gmail
+        ~~~~~
+        I cannot manage to get gmail to work, but it keeps rising an error
+        logging in with the credentials, even though they are correct. With the
+        other mail providers it works fine.
+        
+        .. |sonar_quality| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_notipy_me&metric=alert_status
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_notipy_me
+        
+        .. |sonar_maintainability| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_notipy_me&metric=sqale_rating
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_notipy_me
+        
+        .. |sonar_coverage| image:: https://sonarcloud.io/api/project_badges/measure?project=LucaCappelletti94_notipy_me&metric=coverage
+            :target: https://sonarcloud.io/dashboard/index/LucaCappelletti94_notipy_me
+        
+        .. |pip| image:: https://badge.fury.io/py/notipy_me.svg
+            :target: https://badge.fury.io/py/notipy_me
+            
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: test
