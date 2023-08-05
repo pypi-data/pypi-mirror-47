@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: GGLogger
+Version: 1.0.0
+Summary: A simple function logger for Python
+Home-page: https://github.com/Dmunch04/GGLogger
+Author: Munchii
+Author-email: contact@munchii.me
+License: MIT
+Description: # GGLogger
+        A function logger for Python
+        
+        See examples under `Examples/Example.py`
+        
+        Supported return types:
+        - Int
+        - Float
+        - String
+        - List
+        - Dict
+        - Tuple
+        - Or use combine to combine 2 or more types
+        
+        <br><br>
+        
+        # Functions
+        ## Print Function
+        *RIGHT NOW PRINT ONLY WORKS ON COMBINED FUNCTIONS!*
+        Use:
+        ```py
+        @GG.Print
+        @GG.Combine (int, str, list)
+        def Test ():
+          if 0:
+            return [0]
+        
+          elif 1:
+            return str (0)
+        
+          else:
+            return int (0)
+        
+        # Output result:
+        # [0]
+        ```
+        
+        ## Log Function
+        Use:
+        ```py
+        @GG.Int
+        @GG.Log ()
+        def Test ():
+            return 1
+        
+        # Output result:
+        # ----- Log Result -----
+        # Executed:           Test
+        # Result:             1
+        # Result Type:        str
+        # Execution Time:     0.0 seconds
+        # Arg Count:          0
+        # File Path:          C:\Path\To\File.py
+        # Start Line:         1
+        # ----------------------
+        ```
+        
+Keywords: simple function logger for python
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

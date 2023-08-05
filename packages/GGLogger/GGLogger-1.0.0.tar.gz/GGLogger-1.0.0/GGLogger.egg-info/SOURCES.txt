@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+GG/GG.py
+GG/__init__.py
+GGLogger.egg-info/PKG-INFO
+GGLogger.egg-info/SOURCES.txt
+GGLogger.egg-info/dependency_links.txt
+GGLogger.egg-info/requires.txt
+GGLogger.egg-info/top_level.txt
