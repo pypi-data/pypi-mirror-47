@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+podcasts/__init__.py
+podcasts/log.py
+podcasts.egg-info/PKG-INFO
+podcasts.egg-info/SOURCES.txt
+podcasts.egg-info/dependency_links.txt
+podcasts.egg-info/requires.txt
+podcasts.egg-info/top_level.txt
+test/test_feedburner.py
+test/test_libsyn.py
+test/test_shoutengine.py
