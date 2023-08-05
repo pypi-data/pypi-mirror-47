@@ -1,0 +1,11 @@
+.gitignore
+COPYING
+README.md
+setup.py
+gamest_plugins/diablo_iii/__init__.py
+gamest_plugins/diablo_iii/module.py
+gamest_plugins_diablo_iii.egg-info/PKG-INFO
+gamest_plugins_diablo_iii.egg-info/SOURCES.txt
+gamest_plugins_diablo_iii.egg-info/dependency_links.txt
+gamest_plugins_diablo_iii.egg-info/requires.txt
+gamest_plugins_diablo_iii.egg-info/top_level.txt
