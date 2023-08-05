@@ -1,0 +1,17 @@
+OrzMC/BMCLAPI.py,sha256=4TLDck4Hc5bsdiiT__vVLCP-rkqgsVIuK2yoBRidh14,101
+OrzMC/CleanUp.py,sha256=-bhysrX_AN3KmvRbUs06m01QTjoKW3bqoGl932uKjgM,574
+OrzMC/Config.py,sha256=CBdkwjhwE20QVZvKBGwfObFdQ7mjRUqWNCYAUX4T-WE,6804
+OrzMC/Constants.py,sha256=j3s2Vf-GeZRBXtrH4w0v4LT8S-lgdv2LLGYoACbfN1I,2273
+OrzMC/Forge.py,sha256=8pbw_iywOdOFnqkocUtSagJB0Vd0xlDUyyZiAuwSg3U,1135
+OrzMC/Game.py,sha256=Opq76pgDHpCF53xcJgxC1MBDrLuQuZeE_llwwXJKFlQ,31355
+OrzMC/Mojang.py,sha256=BMLA13-o_TPeDcwl06b5KmQZtgXq-Cgon1xjN8p5PI4,2135
+OrzMC/OrzMC.py,sha256=u_VS_b8Vp_ZAgQJKKWOLZ53fO1QAtchjYoic65WhsvI,4141
+OrzMC/Spigot.py,sha256=6CXLgdVJ7y8DiDClpCIZKjZT6MrQoyQSWF3OfqmNjTw,237
+OrzMC/__init__.py,sha256=JXkqj6HILV_rwJ0Tq1EVlROj-daX8nYY72CyoK6H5Xg,47
+OrzMC/utils.py,sha256=ZeAPYdS5VGp7LcityUgeBdWkJBaDGSJ1qb9rOprTA20,3327
+OrzMC-1.0.27.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+OrzMC-1.0.27.dist-info/METADATA,sha256=4C80lLPOa48Y75YaxKI_M1qtPF1BE6ll9F124C72OXk,7536
+OrzMC-1.0.27.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+OrzMC-1.0.27.dist-info/entry_points.txt,sha256=27aXLLKA_eY_ZpHzGLwTBwNiYfu65gARyAFKDis_WZg,39
+OrzMC-1.0.27.dist-info/top_level.txt,sha256=8tw0FhYasGSvoP68df58P1MfsLgTO7enKkzCHHeEC3s,6
+OrzMC-1.0.27.dist-info/RECORD,,
