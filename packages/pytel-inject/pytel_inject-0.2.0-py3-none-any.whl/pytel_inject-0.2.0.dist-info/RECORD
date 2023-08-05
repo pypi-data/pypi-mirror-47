@@ -1,0 +1,7 @@
+pytel/__init__.py,sha256=WgZFP-RzApIy7vAY1zpgQAn7aGiYQTU8w8zm_Q8sDus,81
+pytel/proxy.py,sha256=9DCysBY0zpZZscR54NwZDeZOLw-VHkyEzu1j8ZaKhCI,3754
+pytel/pytel.py,sha256=7RaPzA5qGstkZvC3BKnHW8BNHJ6Y3bgH4eH753TQXg0,7376
+pytel_inject-0.2.0.dist-info/LICENSE.txt,sha256=WNHhf_5RCaeuKWyq_K39vmp9F28LxKsB4SpomwSZ2L0,11357
+pytel_inject-0.2.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+pytel_inject-0.2.0.dist-info/METADATA,sha256=36AviLBxc40LDWtkZ_lxn0uAqXejMaqB_xfEuUq944E,1604
+pytel_inject-0.2.0.dist-info/RECORD,,
