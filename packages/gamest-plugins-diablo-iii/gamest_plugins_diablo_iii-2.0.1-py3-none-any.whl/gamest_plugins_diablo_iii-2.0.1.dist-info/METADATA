@@ -1,0 +1,45 @@
+Metadata-Version: 2.0
+Name: gamest-plugins-diablo-iii
+Version: 2.0.1
+Summary: Report on Diablo III games.
+Home-page: https://github.com/sopoforic/gamest_plugins_diablo_iii
+Author: Tracy Poff
+Author-email: tracy.poff@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Plugins
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
+Requires-Dist: gamest (<3.0,>=2.0)
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# Gamest Reporter Plugin: Diablo III
+
+This plugin enables [gamest](https://github.com/sopoforic/gamest) to report on
+a running game of *Diablo III*.
+
+## Installation
+
+Install with pip:
+
+```
+pip install gamest-plugins-diablo-iii
+```
+
+## License
+
+Copyright (C) 2018  Tracy Poff
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+
