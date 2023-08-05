@@ -1,0 +1,3 @@
+[console_scripts]
+polycracker = polycracker.polycracker:polycracker
+
