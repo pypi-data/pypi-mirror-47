@@ -1,0 +1,356 @@
+{% extends "trionyx/base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block page_title %}
+    {{ title }}
+{% endblock %}
+
+{% block header_buttons %}
+    <a href="{{ create_url }}" class="btn btn-default">Create</a>
+{% endblock %}
+
+
+{% block content %}
+    <div class="box" id="app-model-list" v-cloak>
+        <div class="box-header">
+            <div class="input-group input-group-sm" style="width: 150px;">
+                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search" v-model="search" v-on:keyup="searchLoad()">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default btn-flat" v-on:click="searchLoad()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="box-tools">
+                <form method="post" v-bind:action="downloadUrl">
+                    <input type="hidden" name="csrfmiddlewaretoken" v-model="csrfmiddlewaretoken">
+                    <input type="hidden" name="page" v-model="page">
+                    <input type="hidden" name="page_size" v-model="page_size">
+                    <input type="hidden" name="selected_fields" v-model="selected_fields">
+                    <input type="hidden" name="sort" v-model="sort">
+                    <input type="hidden" name="search" v-model="search">
+                    <button type="submit" class="btn btn-default hidden-xs" v-if="downloadUrl != ''">
+                        <i class="fa fa-download"></i>
+                    </button>
+                </form>
+            </div>
+            <button id="fields-popover" type="button" class="btn btn-default pull-right hidden-xs" data-placement="bottom" data-toggle="popover" title="Fields" >
+                <i class="fa fa-columns" style="font-size: 16px"></i>
+            </button>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding table-responsive">
+            <div class="alert alert-info" v-if="items.length == 0" style="margin-bottom: 0px">
+                There are no {{ title }}
+            </div>
+            <table class="table table-striped" v-if="items.length > 0">
+                <thead>
+                    <tr>
+                        <th style="width: 10px" data-header="NR">#<span class="dragtable-drag-handle"></span></th>
+                        <th v-for="header in headers" v-on:click="clickSort(header.field)" v-bind:data-header="header.field">
+                            [[ header.label ]]
+                            <span class="dragtable-drag-handle">
+                                <i class="fa fa-arrows"></i>
+                            </span>
+
+                            <i class="fa fa-sort pull-right" v-if="header.sort == 'sort'"></i>
+                            <i class="fa fa-sort-amount-asc pull-right" v-if="header.sort == 'asc'"></i>
+                            <i class="fa fa-sort-amount-desc pull-right" v-if="header.sort == 'desc'"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in items" v-on:click="clickItem(item)">
+                        <td v-for="column in item.row_data" v-html="column" />
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box-footer clearfix" v-if="items.length > 0">
+            <ul class="pagination pagination-sm no-margin pull-right">
+                <li v-if="previousPage > 0"><a v-on:click="toPage(previousPage)">«</a></li>
+                <li v-for="page in pages" v-bind:class="{ active: page == current_page }">
+                    <a v-on:click="toPage(page)">[[page]]</a>
+                </li>
+
+                <li v-if="nextPage > 0"><a v-on:click="toPage(nextPage)">»</a></li>
+              </ul>
+        </div>
+
+        <div id="fields-popover-content" class="hidden">
+            <div style="max-height: 250px; overflow-y: scroll">
+                <div v-for="field in fields" class="col-md-6">
+                    <label v-on:click="clickTest()">
+                        <input v-bind:checked="field.checked" v-model="field.checked" v-bind:name="field.name" type="checkbox">
+                        [[field.label]]
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static "js/jquery-ui.min.js" %}"></script>
+    <script src="{% static "js/jquery.dragtable.js" %}"></script>
+
+    <script type="text/javascript">
+    function TrionyxList(ajaxUrl, downloadUrl){
+        var self = this;
+        self.ajaxUrl = ajaxUrl;
+        self.downloadUrl = downloadUrl;
+        self.app = new Vue({
+            el: '#app-model-list',
+            delimiters: ['[[', ']]'],
+            data: {
+                loading: true,
+                headers: [],
+                items: [],
+                fields: [],
+
+                // Download Form data
+                downloadUrl: self.downloadUrl,
+                csrfmiddlewaretoken: getCookie('csrftoken'),
+                page: 1,
+                page_size: 10,
+                sort: '',
+                selected_fields: '',
+                search: '',
+
+                current_page: 1,
+                pages: [],
+                nextPage: 0,
+                previousPage: 0,
+            },
+            methods: {
+                clickSort: function (field) {
+                    if (self.sort == field){
+                        self.sort = '-' + field;
+                    } else {
+                        self.sort = field;
+                    };
+
+                    self.load();
+                },
+                toPage: function (page) {
+                    self.page = page;
+                    self.load();
+                },
+                clickItem: function(item) {
+                    window.location.href = item.url;
+                },
+                searchLoad: function() {
+                    self.load();
+                },
+                clickDownload: function() {
+                    console.log("download");
+                }
+            },
+            mounted(){
+                $('#fields-popover').popover({
+                    html: true,
+                    content(){
+                        // TODO render this with vuejs?
+                        var content = $($('#fields-popover-content').html());
+                        content.find('input').each(function () {
+                            var input = $(this);
+                            var field = input.attr('name');
+                            if (self.current_fields.indexOf(field) >= 0) {
+                                input.attr('checked', true);
+                            }
+
+                            input.click(function(){
+                                if (this.checked) {
+                                    self.current_fields.push(field);
+                                    self.current_fields = $.arrayUnique(self.current_fields);
+                                    self.load();
+                                } else {
+                                    var index = self.current_fields.indexOf(field);
+                                    if (index >= 0) {
+                                        self.current_fields.splice(index, 1);
+                                        self.load();
+                                    }
+                                }
+                            });
+                        });
+                        return content;
+                    },
+                }).on("show.bs.popover", function(){
+                    $(this).data("bs.popover").tip().css("max-width", "100%").css("min-width", "400px");
+                });
+            },
+            updated: function () {
+                $('#app-model-list table').dragtable({
+                    start(e){
+                        e.preventDefault();
+                    },
+                    stop(){
+                        var current_fields = ['NR'];
+                        $.each(self.current_fields, function(index, value){
+                           current_fields.push(value);
+                        });
+                        var changed_fields = $(this).dragtable('order');
+
+                        if (!$.arrayCompare(current_fields, changed_fields)) {
+                            changed_fields.shift();
+                            self.current_fields = changed_fields;
+                            self.load();
+                        }
+                    }
+                });
+
+                // Update DragTable
+                var current_fields = ['NR'];
+                $.each(self.current_fields, function(index, value){
+                   current_fields.push(value);
+                });
+                $('#app-model-list table').dragtable('order', current_fields);
+            }
+        });
+
+        self.page = 1;
+        self.page_size = 10;
+        self.num_pages = 1;
+        self.sort = '-pk';
+        self.current_fields = [];
+
+        self.ajax = null;
+        self.load = function(initial) {
+            initial = typeof initial !== 'undefined' ? initial : false;
+            var data = {
+                page: self.page,
+                page_size: self.pageSize,
+                sort: self.sort,
+                selected_fields: self.current_fields.join(','),
+                search: self.app.search,
+            };
+
+            if (self.ajax) {
+                self.ajax.abort();
+            }
+
+            self.ajax = $.ajax({
+                type: 'POST',
+                url: self.ajaxUrl,
+                data: initial ? {} : data,
+            }).done(function(response){
+                if(response.status != 'success') {
+                    return;
+                }
+
+                self.page = response.data.page;
+                self.pageSize = response.data.page_size;
+                self.numPages = response.data.num_pages;
+                self.sort = response.data.sort;
+
+                if (initial) {
+                   self.app.search = response.data.search;
+                }
+                self.setFormData(response.data);
+                self.setHeaders(response.data);
+                self.setItems(response.data);
+                self.updatePagination();
+                self.setFields(response.data);
+
+            }).fail(function () {
+                console.log('error');
+            }).always(function () {
+                self.ajax = null;
+            });
+        };
+
+        self.setFormData = function(data) {
+            self.app.page = data.page;
+            self.app.page_size = data.page_size;
+            self.app.sort = data.sort;
+            self.app.selected_fields = data.current_fields.join(',');
+        };
+
+        self.setHeaders = function(data) {
+            var headers = [];
+            self.current_fields = data.current_fields;
+
+            $.each(data.current_fields, function (index, field) {
+                var sort = 'sort';
+                if (self.sort == field) {
+                    sort = 'asc';
+                } else if(self.sort == '-' + field){
+                    sort = 'desc';
+                }
+
+                headers.push({
+                    field: field,
+                    label: data.fields[field].label,
+                    sort: sort,
+                });
+            });
+
+            self.app.headers = headers;
+        };
+
+        self.setItems = function(data){
+            var items = [];
+            var counter = (data.page - 1) * data.page_size + 1;
+
+            $.each(data.items, function (index, item) {
+                item.row_data.splice(0, 0, counter);
+                counter++;
+                items.push(item);
+            });
+
+            self.app.items = items;
+        };
+
+        self.updatePagination = function () {
+            var paginatePages = 3;
+
+            var startPage = self.page - paginatePages;
+            if (startPage < 1) {
+                startPage = 1;
+            }
+
+            var endPage = self.page + paginatePages;
+            if (endPage > self.numPages) {
+                endPage = self.numPages;
+            }
+
+            var pages = [];
+            for (var i = startPage; i <= endPage; i++) {
+                pages.push(i);
+            }
+
+            self.app.current_page = self.page;
+            self.app.pages = pages;
+            self.app.nextPage = self.page < self.numPages ? self.page + 1 : 0;
+            self.app.previousPage = self.page > 1 ? self.page -1 : 0;
+        };
+
+        self.setFields = function(data){
+            var fields = [];
+            for (var key in data.fields) {
+                var field = data.fields[key];
+                field.checked = data.current_fields.indexOf(key) >= 0;
+                fields.push(field);
+            }
+
+            fields.sort(function (a, b) {
+                return a.label.localeCompare(b.label);
+            });
+            self.app.fields = fields;
+        };
+
+        self.load(true);
+    }
+    </script>
+{% endblock %}
+
+{% block extra_foot %}
+    <script type="text/javascript">
+        $(function(){
+           $(function () {
+                var trionyxList = new TrionyxList("{{ ajax_url }}", "{{ download_url }}");
+            });
+        });
+    </script>
+{% endblock %}
