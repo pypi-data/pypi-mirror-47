@@ -1,0 +1,13 @@
+git+https://github.com/stdweird/prospector#egg=prospector-1.1.6.3b
+git+ssh://git@github.ugent.be/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+ssh://git@github.com/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+https://github.com/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+ssh://git@github.ugent.be/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+ssh://git@github.com/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+https://github.com/hpcugent/vsc-base.git#egg=vsc-base-2.4.16
+git+ssh://git@github.ugent.be/hpcugent/vsc-install.git#egg=vsc-install
+git+ssh://git@github.com/hpcugent/vsc-install.git#egg=vsc-install
+git+https://github.com/hpcugent/vsc-install.git#egg=vsc-install
+git+ssh://git@github.ugent.be/hpcugent/vsc-install.git#egg=vsc-install
+git+ssh://git@github.com/hpcugent/vsc-install.git#egg=vsc-install
+git+https://github.com/hpcugent/vsc-install.git#egg=vsc-install
