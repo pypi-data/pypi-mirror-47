@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: curseradio-improved
+Version: 0.3.1
+Summary: An improved Curses interface for listening to internet radio.
+Home-page: https://github.com/DanielSchuette/curseradio-improved
+Author: Gordon Ball, Daniel Schuette
+Author-email: gordon@chronitis.net, d.schuette@online.de
+License: MIT
+Platform: UNKNOWN
+Requires: lxml
+Requires: requests
+Requires: pyxdg
+
+UNKNOWN
+
+
