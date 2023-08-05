@@ -1,0 +1,16 @@
+jxctl/__init__.py,sha256=TVpXqu7BKkACcu8J7IeqjVk7NAXEqQAISU4j4iTtH3Y,46
+jxctl/clicore.py,sha256=jPFtXUVoGeOQId8uM219MeYnCi3gtGcoWJ8iXtlAP5U,9524
+jxctl/ctxcore.py,sha256=0Dq1BC6Dj-hRJGk_ImMERPZVWhNlJTZNwQxsLv783SA,8092
+jxctl/jxcore.py,sha256=FRQUizImkujnU6hU-r97zhXh7i4ibnUUbXvARPnJT48,12196
+jxctl/jxsupport.py,sha256=EoJrkwDG-ye25qxsdHRhsrqP0fmKYrshfD5ik9Pnuqk,1983
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/support_json.py,sha256=u5vT3pzXY9_t66O1EF7J4fN6dRABGgdGEAbdahm5GO0,34417
+tests/test_ctxcore.py,sha256=W0cCvk3ymC8P9krBZGS4uj5yWLT6Tc9Tt4Y8O9FTpX0,8159
+tests/test_jxcore.py,sha256=rKauTLZQa49KHOduIEHtQ9Fs4Ma1xT-LenfNXg1FNBE,15565
+tests/test_jxsupport.py,sha256=76jlO9QQWTdnlaHggf3TbYwT-JuxsnrkcNZfsgIuoR0,3483
+jxctl-0.0.8b0.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+jxctl-0.0.8b0.dist-info/METADATA,sha256=kcCsYh-U4c8GHvSrBf0nnnwNbXcntVNKffYBXjqSn74,4232
+jxctl-0.0.8b0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+jxctl-0.0.8b0.dist-info/entry_points.txt,sha256=_o4l8AtkCY2Tx9KwuE0wH0QphPBhZmvGK9Y1nOkUmGA,47
+jxctl-0.0.8b0.dist-info/top_level.txt,sha256=hhUwkIL3VCX9JZmyKBfJtRg_xRVVatz66_obVa38zCg,12
+jxctl-0.0.8b0.dist-info/RECORD,,
