@@ -1,0 +1,7 @@
+setup.py
+my_joke_not_good/__init__.py
+my_joke_not_good.egg-info/PKG-INFO
+my_joke_not_good.egg-info/SOURCES.txt
+my_joke_not_good.egg-info/dependency_links.txt
+my_joke_not_good.egg-info/not-zip-safe
+my_joke_not_good.egg-info/top_level.txt
