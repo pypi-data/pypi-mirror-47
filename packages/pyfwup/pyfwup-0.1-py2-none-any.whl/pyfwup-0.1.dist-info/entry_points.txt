@@ -1,0 +1,3 @@
+[console_scripts]
+microprog = fwup_utils.microprog:main
+
