@@ -1,0 +1,17 @@
+djangocontact/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djangocontact/admin.py,sha256=nRbOwiTaUXrBrdvfYYte326y_I3FupVTKePoqaeJpTs,126
+djangocontact/apps.py,sha256=YwPPN6A7FaEQ2f6EonH6lxzF9NhY-G5EYGcEkOZVU94,106
+djangocontact/forms.py,sha256=Jqif0a3LS1dwmKVJR_rj8hfgNtnYL2H9iSf46Ac6aPw,1672
+djangocontact/modeladmin.py,sha256=PBVk-eopQYT4eAWDNLpp2iGDdK_jEV9D_lWdOaQSJfo,742
+djangocontact/models.py,sha256=s7drAS5UwOCVq2olqfC3GnaPTsD3PwfDubJXGhUAKAA,1002
+djangocontact/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+djangocontact/urls.py,sha256=bJ7fbeuYclWTfdTE0nWaHqoi7SsCfhr7XCyDbpy-C2g,1908
+djangocontact/validators.py,sha256=jWpCLt16xKJ0ujAcuUyf_xLmz9l1ttBRf0tPLlNg-Mo,270
+djangocontact/views.py,sha256=F2TUqueT5P6653oz1-VieRKNx_k1x03VoiZSOYhOXLs,1916
+djangocontact/templates/djangoadmin/confirmation_email_form.html,sha256=A8pBU1S9UneuHavWKVfmLSdux_gN1Oj0u7yWVMboPsk,261
+djangocontact/templates/djangoadmin/contact_us.html,sha256=GbwJIdHNn-efTmx1R09RHdxJEJdqxRdaa30f14RdQgo,118
+djangocontact-1.0.0.dist-info/License,sha256=dYHjBiv9OJ4Lao2opkH3bvliwnNQDmX9j9Pl8QV_Xmo,1092
+djangocontact-1.0.0.dist-info/METADATA,sha256=CNAJFLqWGbEusvFAQGlV8gd7MJi4wJXueCj8xkQxRy8,4037
+djangocontact-1.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+djangocontact-1.0.0.dist-info/top_level.txt,sha256=-MHOpOW2niQ7EeBtDt9SH8D6-TYRpAjzAqRCm2PXZvU,14
+djangocontact-1.0.0.dist-info/RECORD,,
