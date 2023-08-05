@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+0.0.4
+-----
+
+* allowing composite key refs
+* clarified flask interaction
+* fixed some spelling and grammar mistakes, added some clarifications to the readme
+
+0.0.3
+-----
+
+* marking readme format as markdown
+
+0.0.2
+-----
+
+* linter
+* linting
+* CI and setup files
+* added exporter, fleshed out readme
+* adapted to work with SQLA as well
+* only creating the models that are created in load\_models, added context option, allowing to drop models
+* update readme
+* basic test and requirements
+* first functionality draft
+* Initial commit
