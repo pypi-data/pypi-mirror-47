@@ -1,0 +1,10 @@
+becoder/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+becoder/dynamo.py,sha256=hYddMlH6l2myM2jo8ncwmprm3OdXM_p_kH1THldL87c,1297
+becoder_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+becoder_pkg/dynamo.py,sha256=sWnXvAVMNtBt0nHlhKtXp9d5pqgAkJyuCV6hEo5QpLg,1263
+db_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+db_pkg/dynamo.py,sha256=oMAIuDaUfP06wpUll3nodrpaaKVvuBZF7qd4xzONx48,824
+becoder_pkg-0.1.1.dist-info/METADATA,sha256=hvuWZdqIqPpqw7xLks38ew2YTVEeSlWVsqIF9R3lUFs,652
+becoder_pkg-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+becoder_pkg-0.1.1.dist-info/top_level.txt,sha256=wI40hLwgOklmb5JC8vA1MQGcXOIq6jDGvoCHa9oTb54,12
+becoder_pkg-0.1.1.dist-info/RECORD,,
