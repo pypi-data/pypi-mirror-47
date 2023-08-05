@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: pytest-reportportal
+Version: 1.0.7
+Summary: Agent for Reporting results of tests to the Report Portal
+Home-page: https://github.com/reportportal/agent-python-pytest
+Author: Pavel Papou
+Author-email: SupportEPMC-TSTReportPortal@epam.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: testing,reporting,reportportal,pytest
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
