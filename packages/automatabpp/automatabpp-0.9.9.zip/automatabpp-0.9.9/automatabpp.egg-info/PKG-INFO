@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: automatabpp
+Version: 0.9.9
+Summary: This is my long description
+Home-page: https://github.com/GrgoMariani/Python-Automata-Based-Programming-Paradigm
+Author: Grgo Mariani
+Author-email: grgo.mariani@protonmail.com
+License: GPL 3
+Download-URL: https://github.com/GrgoMariani/Python-Automata-Based-Programming-Paradigm/archive/v_099.tar.gz
+Description: UNKNOWN
+Keywords: Automata,Paradigm,Finite,State,Machine,yEd,Graph,Graphs,Behaviour
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Operating System :: OS Independent
