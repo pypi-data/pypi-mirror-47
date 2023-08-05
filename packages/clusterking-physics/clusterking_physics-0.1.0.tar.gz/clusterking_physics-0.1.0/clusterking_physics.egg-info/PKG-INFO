@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: clusterking-physics
+Version: 0.1.0
+Summary: Physics distributions to be clustered by the ClusterKinG package.
+Home-page: https://github.com/clusterking/clusterking_physics
+License: MIT
+Project-URL: Source Code, https://github.com/clusterking/clusterking_physics/
+Project-URL: Bug Tracker, https://github.com/clusterking/clusterking_physics/issues
+Description: Physics distributions for the ClusterKinG package
+        =================================================
+        
+        Description
+        -----------
+        
+        This package contains kinematic distributions that can be 
+        clustered by the `ClusterKinG package <https://github.com/clusterking/clusterking/>`_.
+        
+        Installation
+        ------------
+        
+        ``clusterking`` can be installed/upgraded with the `python package installer <https://pip.pypa.io/en/stable/>`_:
+        
+        .. code:: sh
+        
+            pip3 install --user --upgrade clusterking_physics
+        
+        For the latest development version type:
+        
+        .. code:: sh
+        
+            git clone https://github.com/clusterking/clusterking_physics/
+            cd clusterking_physics
+            pip3 install --user --editable .
+        
+        Development
+        -----------
+        
+        Similar to that of the ClusterKinG package, see 
+        `the ClusterKinG documentation <https://clusterking.readthedocs.io/en/latest/development.html>`_.
+        
+Keywords: clustering,cluster,kinematics,cluster-analysis,machine-learning,ml,hep,hep-ml,hep-ex,hep-ph,wilson,clusterking
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/x-rst
