@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: blihtz
+Version: 0.0.2
+Summary: A wrapper for the Bocal Lightweight Interface for Humans.
+Home-page: https://github.com/adrienbrignon/blihtz
+Author: Adrien Brignon
+Author-email: contact@abrignon.dev
+License: Apache 2.0
+Description: UNKNOWN
+Keywords: blih epitech api bocal
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.3
