@@ -1,0 +1,7 @@
+setup.py
+libgff/__init__.py
+libgff/libgff.py
+libgff.egg-info/PKG-INFO
+libgff.egg-info/SOURCES.txt
+libgff.egg-info/dependency_links.txt
+libgff.egg-info/top_level.txt
