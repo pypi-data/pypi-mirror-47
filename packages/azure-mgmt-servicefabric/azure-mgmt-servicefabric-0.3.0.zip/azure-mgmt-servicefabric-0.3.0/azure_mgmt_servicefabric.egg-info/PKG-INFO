@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: azure-mgmt-servicefabric
+Version: 0.3.0
+Summary: Microsoft Azure Service Fabric Management Client Library for Python
+Home-page: https://github.com/Azure/azure-sdk-for-python
+Author: Microsoft Corporation
+Author-email: azpysdkhelp@microsoft.com
+License: MIT License
+Description: Microsoft Azure SDK for Python
+        ==============================
+        
+        This is the Microsoft Azure Service Fabric Management Client Library.
+        
+        Azure Resource Manager (ARM) is the next generation of management APIs that
+        replace the old Azure Service Management (ASM).
+        
+        This package has been tested with Python 2.7, 3.4, 3.5, 3.6 and 3.7.
+        
+        For the older Azure Service Management (ASM) libraries, see
+        `azure-servicemanagement-legacy <https://pypi.python.org/pypi/azure-servicemanagement-legacy>`__ library.
+        
+        For a more complete set of Azure libraries, see the `azure <https://pypi.python.org/pypi/azure>`__ bundle package.
+        
+        
+        Usage
+        =====
+        
+        For code examples, see `Service Fabric Management
+        <https://docs.microsoft.com/python/api/overview/azure/servicefabric>`__
+        on docs.microsoft.com.
+        
+        
+        Provide Feedback
+        ================
+        
+        If you encounter any bugs or have suggestions, please file an issue in the
+        `Issues <https://github.com/Azure/azure-sdk-for-python/issues>`__
+        section of the project.
+        
+        
+        .. image::  https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-python%2Fazure-mgmt-servicefabric%2FREADME.png
+        
+        
+        .. :changelog:
+        
+        Release History
+        ===============
+        
+        0.3.0 (2019-05-30)
+        ++++++++++++++++++
+        
+        **Breaking changes**
+        
+        - Model ServiceTypeHealthPolicy has a new signature
+        - Model ApplicationHealthPolicy has a new signature
+        - Model ErrorModel has a new signature
+        - Renamed operation group "application_type" to "application_types"
+        - Renamed operation group "service" to "services"
+        - Renamed operation group "application" to "applications"
+        - Removed operation group "version"
+        
+        **Features**
+        
+        - Add tags and etag attributes where supported
+        - Model ClusterHealthPolicy has a new parameter application_health_policies
+        - Model ClusterUpgradeDeltaHealthPolicy has a new parameter application_delta_health_policies
+        - Model StatelessServiceProperties has a new parameter service_package_activation_mode
+        - Model ServiceResource has a new parameter service_package_activation_mode
+        - Model Cluster has a new parameter reverse_proxy_certificate_common_names
+        - Model Cluster has a new parameter certificate_common_names
+        - Model Cluster has a new parameter event_store_service_enabled
+        - Model StatefulServiceProperties has a new parameter service_package_activation_mode
+        - Model ClusterUpdateParameters has a new parameter certificate_common_names
+        - Model ClusterUpdateParameters has a new parameter event_store_service_enabled
+        
+        0.2.0 (2018-08-01)
+        ++++++++++++++++++
+        
+        * New preview release, based on 2017-07-01-preview
+        * Expect many breaking changes
+        
+        0.1.0 (2017-08-24)
+        ++++++++++++++++++
+        
+        * Initial preview release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst
