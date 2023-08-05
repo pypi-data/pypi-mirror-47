@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: gitbuilding
+Version: 0.1.1
+Summary: For documenting and open source hardware project with minimal effort, so you can stop writing and git building.
+Home-page: https://gitlab.com/bath_open_instrumentation_group/git-building
+Author: Julian Stirling
+Author-email: julian@julianstirling.co.uk
+License: UNKNOWN
+Keywords: Documentation,Hardware
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Requires-Dist: argparse
+Requires-Dist: regex
+Requires-Dist: pyyaml
+Requires-Dist: flask
+Requires-Dist: markdown
+
+For documenting and open source hardware project with minimal effort, so you can stop writing and git building.
+
+
