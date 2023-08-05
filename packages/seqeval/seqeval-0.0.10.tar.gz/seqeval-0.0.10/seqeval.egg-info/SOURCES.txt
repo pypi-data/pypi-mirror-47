@@ -1,0 +1,11 @@
+README.md
+setup.py
+seqeval/__init__.py
+seqeval/callbacks.py
+seqeval.egg-info/PKG-INFO
+seqeval.egg-info/SOURCES.txt
+seqeval.egg-info/dependency_links.txt
+seqeval.egg-info/requires.txt
+seqeval.egg-info/top_level.txt
+seqeval/metrics/__init__.py
+seqeval/metrics/sequence_labeling.py
