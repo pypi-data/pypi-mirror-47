@@ -1,0 +1,13 @@
+README.md
+setup.py
+vkpore/__init__.py
+vkpore/events.py
+vkpore/objects.py
+vkpore/utils.py
+vkpore/vkclient.py
+vkpore/vkpore.py
+vkpore.egg-info/PKG-INFO
+vkpore.egg-info/SOURCES.txt
+vkpore.egg-info/dependency_links.txt
+vkpore.egg-info/requires.txt
+vkpore.egg-info/top_level.txt
