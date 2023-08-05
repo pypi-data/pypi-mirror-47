@@ -1,0 +1,6 @@
+numpy
+nose
+pylint
+parameterized
+sphinx
+sphinx-rtd-theme
