@@ -1,0 +1,5 @@
+setup.py
+quic.egg-info/PKG-INFO
+quic.egg-info/SOURCES.txt
+quic.egg-info/dependency_links.txt
+quic.egg-info/top_level.txt
