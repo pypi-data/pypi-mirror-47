@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: polycracker
+Version: 1.0.0
+Summary: unsupervised classification of polyploid subgenomes
+Home-page: https://bitbucket.org/berkeleylab/jgi-polycracker
+Author: polycracker team
+Author-email: sgordon@lbl.gov
+License: MIT
+Description-Content-Type: text/markdown
+Description: README.md
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
