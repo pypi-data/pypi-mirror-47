@@ -1,0 +1,13 @@
+PyQt5
+opencv-python
+paramiko
+scp
+pynput
+numpy
+tqdm
+torch
+pillow
+matplotlib
+
+[test]
+pytest
