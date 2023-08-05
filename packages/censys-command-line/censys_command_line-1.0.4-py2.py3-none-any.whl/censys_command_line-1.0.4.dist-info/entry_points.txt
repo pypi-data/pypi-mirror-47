@@ -1,0 +1,3 @@
+[console_scripts]
+censys = censys_command_line:main
+
