@@ -1,0 +1,11 @@
+README.rst
+setup.py
+hsettings/__init__.py
+hsettings/hsettings.py
+hsettings/loaders.py
+hsettings.egg-info/PKG-INFO
+hsettings.egg-info/SOURCES.txt
+hsettings.egg-info/dependency_links.txt
+hsettings.egg-info/not-zip-safe
+hsettings.egg-info/requires.txt
+hsettings.egg-info/top_level.txt
