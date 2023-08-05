@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: girder-geospatial-vector
+Version: 0.1.0a1
+Summary: Grid data types for the girder-geospatial package
+Home-page: https://github.com/OpenGeoscience/girder_geospatial
+Maintainer: Kitware, Inc.
+Maintainer-email: kitware@kitware.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
