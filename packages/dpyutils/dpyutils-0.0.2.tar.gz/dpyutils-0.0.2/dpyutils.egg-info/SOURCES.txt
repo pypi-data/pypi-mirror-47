@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+dpyutils/__init__.py
+dpyutils/abc.py
+dpyutils/confirmation.py
+dpyutils/paginator.py
+dpyutils.egg-info/PKG-INFO
+dpyutils.egg-info/SOURCES.txt
+dpyutils.egg-info/dependency_links.txt
+dpyutils.egg-info/top_level.txt
