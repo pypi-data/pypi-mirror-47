@@ -1,0 +1,12 @@
+README.rst
+setup.py
+AutoTest/FormCommon.py
+AutoTest/Zhuru.py
+AutoTest/__init__.py
+AutoTest/business.py
+AutoTest/runtest.py
+Auto_Test.egg-info/PKG-INFO
+Auto_Test.egg-info/SOURCES.txt
+Auto_Test.egg-info/dependency_links.txt
+Auto_Test.egg-info/requires.txt
+Auto_Test.egg-info/top_level.txt
