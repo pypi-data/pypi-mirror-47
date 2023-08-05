@@ -1,0 +1,9 @@
+sorting_package/__init__.py,sha256=tKvK5yHYcvhX26Lyfh0vU71bBAmNxojtD0zEwJAKq5o,233
+sorting_package/bubble_sort.py,sha256=dNINxhbcILwB_w9jCr_K6vDiMWv_25gOt9T9OOIP01Q,270
+sorting_package/insertion_sort.py,sha256=jVNMoaXjwGNWlSXqL1xQY0o4geVFm2herMhMrMuxSeE,326
+sorting_package/quick_sort.py,sha256=qfbgzpORMBChz7eCo1cgQ5y1u-8xtmxhBM42WpEI_xc,970
+sorting_package/selection_sort.py,sha256=SjbZbgaBA5P2mTCGM29idKFfEXZtQb0V2gF0y3TVO38,378
+sorting_for_web-0.1.dist-info/METADATA,sha256=XD39eCqgP6Dtn-HT0sVJd5a269xprCViHCWPLLqCKZc,186
+sorting_for_web-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sorting_for_web-0.1.dist-info/top_level.txt,sha256=KuQWR1bZrymO4_PKNCp95oG2TVHm2Lzr5WmiDSQglsU,16
+sorting_for_web-0.1.dist-info/RECORD,,
