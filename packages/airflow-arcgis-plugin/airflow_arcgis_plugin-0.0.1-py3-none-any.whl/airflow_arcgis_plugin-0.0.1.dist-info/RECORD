@@ -1,0 +1,12 @@
+airflow_arcgis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_arcgis/arcgis_plugin.py,sha256=NiPm70c2mSucboY_jKfh-A5oHMti8tkk-dooRHsRs3E,872
+airflow_arcgis/hooks/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_arcgis/hooks/arcgis_hook.py,sha256=mZOBN3RAinD9ztPbZiaCjilFciRLnKtjBPZZ2T3gAjM,1419
+airflow_arcgis/operators/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+airflow_arcgis/operators/arcgis_operator.py,sha256=qnR9D6jTu7HmEk2yUQWoVNGZO5o7tsr1WzvuTvr4TS4,6894
+airflow_arcgis_plugin-0.0.1.dist-info/LICENSE,sha256=crykLHK_pxKlPuZ_htQj747QSvdEENZiNizt7KOXp0M,1085
+airflow_arcgis_plugin-0.0.1.dist-info/METADATA,sha256=eD8dLahCqzm6D4iwfNEqrPm9adxOTbrIR0HOszIM-1I,1308
+airflow_arcgis_plugin-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+airflow_arcgis_plugin-0.0.1.dist-info/entry_points.txt,sha256=xXrwun3cAVGySjAq8L0pbNXqI-NfaodgNggqpJxXoM8,78
+airflow_arcgis_plugin-0.0.1.dist-info/top_level.txt,sha256=PhRyektAhMVXuWovzKYgZTOnccKzHREl9qjLSm9E2mg,15
+airflow_arcgis_plugin-0.0.1.dist-info/RECORD,,

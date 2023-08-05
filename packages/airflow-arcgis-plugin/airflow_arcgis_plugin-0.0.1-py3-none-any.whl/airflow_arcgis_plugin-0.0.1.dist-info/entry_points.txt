@@ -1,0 +1,3 @@
+[airflow.plugins]
+airflow_arcgis = airflow_arcgis.arcgis_plugin:ArcGISPlugin
+
