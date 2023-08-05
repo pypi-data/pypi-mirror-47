@@ -1,0 +1,8 @@
+README.md
+setup.py
+hinzkunz/__init__.py
+hinzkunz.egg-info/PKG-INFO
+hinzkunz.egg-info/SOURCES.txt
+hinzkunz.egg-info/dependency_links.txt
+hinzkunz.egg-info/requires.txt
+hinzkunz.egg-info/top_level.txt
