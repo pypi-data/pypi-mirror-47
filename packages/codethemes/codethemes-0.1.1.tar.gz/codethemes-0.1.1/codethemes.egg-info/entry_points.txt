@@ -1,0 +1,3 @@
+[console_scripts]
+codethemes = codethemes.main:importer
+
