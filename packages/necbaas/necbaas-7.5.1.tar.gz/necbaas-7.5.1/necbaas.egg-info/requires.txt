@@ -1,0 +1,12 @@
+requests>=2.18.0
+
+[doc]
+sphinx
+sphinx-rtd-theme
+
+[test]
+pytest
+mock
+pyyaml
+tox
+coverage

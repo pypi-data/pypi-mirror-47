@@ -1,0 +1,23 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+requests = ">=2.18.0"
+
+[dev-packages]
+pytest = ">=3.5.1"
+mock = ">=2.0.0"
+tox = ">=3.0.0"
+sphinx = ">=1.7.4"
+sphinx-rtd-theme = ">=0.3.1"
+pyyaml = "*"
+coverage = "*"
+
+[requires]
+python_version = "3.6"
+
+[scripts]
+ut = "pytest -v tests/unit"
+ft = "pytest -v tests/func"

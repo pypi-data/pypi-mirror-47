@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: necbaas
+Version: 7.5.1
+Summary: NEC Mobile Backend platform Python SDK
+Home-page: https://github.com/nec-baas/baas-sdk-python
+Author: NEC Corporation
+License: UNKNOWN
+Description: NECモバイルバックエンド基盤 Python SDK
+        ======================================
+        
+        NECモバイルバックエンド基盤の Python SDK です。
+        Python 2/3 両方に対応しています。
+        
+        インストール
+        ------------
+        
+            $ pip install necbaas
+        
+        使用方法
+        --------
+        
+        詳細なマニュアルは https://nec-baas.github.io/ にあります。
+        
+        サンプルは sample/sample.py にあります。
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Provides-Extra: doc
+Provides-Extra: test
