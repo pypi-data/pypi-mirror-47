@@ -1,0 +1,6 @@
+README.md
+setup.py
+FiberPI.egg-info/PKG-INFO
+FiberPI.egg-info/SOURCES.txt
+FiberPI.egg-info/dependency_links.txt
+FiberPI.egg-info/top_level.txt
