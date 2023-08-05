@@ -1,0 +1,3 @@
+[console_scripts]
+Circle-Map = src.circle_map:main
+
