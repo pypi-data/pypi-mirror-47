@@ -1,0 +1,7 @@
+forestview
+sfdata
+spikeforest
+spikeforest_analysis
+spikeforest_common
+spikeforestwidgets
+spikesorters
