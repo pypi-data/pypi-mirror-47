@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+instabotai.egg-info/PKG-INFO
+instabotai.egg-info/SOURCES.txt
+instabotai.egg-info/dependency_links.txt
+instabotai.egg-info/requires.txt
+instabotai.egg-info/top_level.txt
