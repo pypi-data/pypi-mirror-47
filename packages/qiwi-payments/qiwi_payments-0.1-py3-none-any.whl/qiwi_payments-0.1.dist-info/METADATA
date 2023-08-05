@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qiwi-payments
+Version: 0.1
+Summary: Qiwi API client
+Home-page: https://github.com/adilkhash/qiwi
+Author: Adylzhan Khashtamov
+Author-email: adil.khashtamov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests (==2.22)
+Requires-Dist: pytz (==2019.1)
+Requires-Dist: python-dateutil (==2.8.0)
+
+UNKNOWN
+
+

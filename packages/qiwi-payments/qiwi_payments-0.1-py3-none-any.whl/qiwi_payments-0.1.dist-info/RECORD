@@ -1,0 +1,11 @@
+qiwi_payments/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qiwi_payments/constants.py,sha256=W5-P05qQdVaauEsGcdpmr5V5L4JYaimkJXTaSm5PPvU,422
+qiwi_payments/kassa.py,sha256=FnxhNowvatRikwEoYwSRlBC_h939DVT9wEq1BRKiLgM,3153
+qiwi_payments/models.py,sha256=6mmwu2s4sN1Rn1uqFWhxx3YDNZnGQ-THxZXNv4nRs44,2827
+qiwi_payments/utils.py,sha256=_N9XriTmIb_LznZgo6Oh0CjX2en9rgVF2ToidwHXxaY,2988
+qiwi_payments/wallet.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qiwi_payments-0.1.dist-info/LICENSE,sha256=pYFNxNpqRZz6em9r3DKS__Ie16vBeq1DUbw1TKAwPgs,1097
+qiwi_payments-0.1.dist-info/METADATA,sha256=01hyCdavUdAse00Hqmi8pOyRbt5IOGd-GrK5A54ogss,340
+qiwi_payments-0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+qiwi_payments-0.1.dist-info/top_level.txt,sha256=jRy4aGqOAXv608E5YyRjVvjTzxMx2-s0QPRGUDOEuh4,14
+qiwi_payments-0.1.dist-info/RECORD,,
