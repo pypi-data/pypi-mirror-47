@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: dials
+Version: 0.0.1
+Summary: Diffraction Integration for Advanced Light Sources
+Home-page: https://github.com/dials/dials
+Author: Diamond Light Source
+Author-email: scientificsoftware@diamond.ac.uk
+License: BSD license
+Description: UNKNOWN
+Keywords: dials
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
