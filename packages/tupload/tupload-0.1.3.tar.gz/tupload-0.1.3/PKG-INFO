@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: tupload
+Version: 0.1.3
+Summary: Telegram bot to fetch files from the client
+Home-page: https://www.github.com/ritiek/tupload
+Author: Ritiek Malhotra
+Author-email: ritiekmalhotra123@gmail.com
+License: MIT
+Download-URL: https://github.com/ritiek/tupload/archive/v0.1.3.tar.gz
+Description: tupload
+        =======
+        
+        |Build Status|
+        
+        .. |Build Status| image:: https://travis-ci.org/ritiek/tupload.svg?branch=master
+           :target: https://travis-ci.org/ritiek/tupload
+        
+Keywords: telegram,bot,upload,download,files
+Platform: UNKNOWN
