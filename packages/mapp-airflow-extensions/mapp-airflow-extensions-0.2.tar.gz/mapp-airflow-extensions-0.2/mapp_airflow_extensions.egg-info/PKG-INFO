@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: mapp-airflow-extensions
+Version: 0.2
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Caio Belfort
+Author-email: caiobelfort90@gmail.com
+License: GPL
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Software Development
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
