@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: moncrief
+Version: 2.2.3
+Summary: This library contains the basic units of functionality and infrastructure needed to effectively run operations and applications in a distributed and severless fashion.
+Home-page: https://github.com/AlgernonSolutions/algernon
+Author: algernon_solutions/jcubeta
+Author-email: jcubeta@algernon.solutions
+License: GNU Affero General Public License v3.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: aws-xray-sdk
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: certifi
+Requires-Dist: chardet
+Requires-Dist: docutils
+Requires-Dist: future
+Requires-Dist: idna
+Requires-Dist: jmespath
+Requires-Dist: jsonpickle
+Requires-Dist: jsonref
+Requires-Dist: python-dateutil
+Requires-Dist: python-rapidjson
+Requires-Dist: pytz
+Requires-Dist: requests
+Requires-Dist: s3transfer
+Requires-Dist: six
+Requires-Dist: urllib3
+Requires-Dist: wrapt
+
+UNKNOWN
+
+
