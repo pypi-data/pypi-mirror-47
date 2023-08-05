@@ -1,0 +1,10 @@
+md2reveal/__init__.py,sha256=tonEllIEg-lQdY7P1BXAzujZ9mLhoyuMksrQFyUeZNo,81
+md2reveal/cmdline.py,sha256=4r4ABaxX1tLABqCxIgWowdIg1aQ6UAz0RbFH2tPw46s,1721
+md2reveal/md.py,sha256=ECZcrNhPy3sDipTur844GjWA06bQYeSkrHlJmgqod7E,2549
+md2reveal/reveal.py,sha256=ZXos4F3Yo_p5GepH5x_bG-JaMooIbM9puvDOvIQi1MQ,561
+md2reveal/template.html,sha256=KbbnDXMwnNxrIaQu4HUt2CfxiSgCwcz9uCzEaNYY69w,2112
+md2reveal-1.2.0.dist-info/METADATA,sha256=Ijceb1KNja59c9NOTTJ1mr_Zo_qi13dAvcsicflMYSM,808
+md2reveal-1.2.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+md2reveal-1.2.0.dist-info/entry_points.txt,sha256=yosFEpzrFDaGJnFqKAs69uNNrNBavVZHxmOykAG8ex8,57
+md2reveal-1.2.0.dist-info/top_level.txt,sha256=Lfr01xdoJn_MFEEAnMxg36s28Pt077JZxfRZYuBdmjs,10
+md2reveal-1.2.0.dist-info/RECORD,,
