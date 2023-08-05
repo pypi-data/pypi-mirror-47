@@ -1,0 +1,10 @@
+angreal_template-0.0.3.data/data/angreal_template/angreal.json,sha256=nFY07ZQNDjwqApipCTx0foIuCG6R6GwXt5RV5BEada8,230
+angreal_template-0.0.3.data/data/angreal_template/{{ angreal.name }}/README.md,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+angreal_template-0.0.3.data/data/angreal_template/{{ angreal.name }}/VERSION,sha256=8LjHfZeNe0rr6x31osCmqnA5NomBndQGCCarbTa16pA,5
+angreal_template-0.0.3.data/data/angreal_template/{{ angreal.name }}/angreal.json,sha256=-KWibjBW62-wbe6z28z9iK50kAIAyYxwtZZru37J1N4,4
+angreal_template-0.0.3.data/data/angreal_template/{{ angreal.name }}/setup.py,sha256=nbBgcKNDvPrcxDVQM5t7_fq5PYXev5n6IQc0Qs4DYG4,2030
+angreal_template-0.0.3.data/data/angreal_template/{{ angreal.name }}/.angreal/init.py,sha256=Gmtc7Q7Gu_HPzIZmsDHKxYFgRmEnuTvs-Y8dSgvjfOw,140
+angreal_template-0.0.3.dist-info/METADATA,sha256=26zBo7sILqCM3RIe_tImKDoo6xhZuSlwUxXnOagVXEw,281
+angreal_template-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+angreal_template-0.0.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+angreal_template-0.0.3.dist-info/RECORD,,
