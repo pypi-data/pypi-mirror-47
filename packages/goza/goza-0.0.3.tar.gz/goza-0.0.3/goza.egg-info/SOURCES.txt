@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+gonzo/__init__.py
+gonzo/chart.py
+gonzo/scatter.py
+goza.egg-info/PKG-INFO
+goza.egg-info/SOURCES.txt
+goza.egg-info/dependency_links.txt
+goza.egg-info/not-zip-safe
+goza.egg-info/requires.txt
+goza.egg-info/top_level.txt
