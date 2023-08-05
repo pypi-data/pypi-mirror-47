@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: haip-confluence
+Version: 0.1.1
+Summary: A Confluence API client.
+Home-page: https://github.com/haipdev/confluence
+Author: Reinhard Hainz
+Author-email: reinhard.hainz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: haip-config
+Requires-Dist: haip-template
+
+# haip.config
+
+[![License](https://img.shields.io/github/license/haipdev/confluence.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/haipdev/confluence.svg?branch=master)](https://travis-ci.org/haipdev/confluence)
+
+haip.confluence is a simple module to communicate with confluence REST API.
+
+## Features
+
+-   **getBody**: get confluence page by id
+-   **setBody**: set confluence page content by id
+-   **getChildren**: get children of a page --> (version, title, body)
+
+## Getting Started
+
+### Installing
+
+```sh
+pip install haip-confluence
+```
+
+or from source:
+
+```sh
+git clone https://github.com/haipdev/confluence.git
+```
+
+### Example
+
+#### config-files
+
+/path-to-my-config-dir/confluence.yml
+
+```yaml
+confluence:
+    url: https://myconfluence.domain.com/rest/api/latest
+    username: user
+    password: pass
+    timeout: 10
+```
+
+#### python implementation
+
+```python
+import haip.config as config
+import haip.confluence as confluence
+
+config.load('/path-to-my-config-dir', 'dev')
+content = await confluence.getBody(12345)
+page = await confluence.setBody(12345, 'hello world')
+children = await confluence.getChildren(12344)
+```
+
+## Running the tests
+
+Tests are written using pytest and located in the "tests" directory.
+
+```sh
+pytest tests
+```
+
+## Contributing
+
+Feel free to use and enhance this project. Pull requests are welcome.
+
+## Authors
+
+-   **Reinhard Hainz** - _Initial work_ - [haipdev](https://github.com/haipdev)
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+
+## Dependencies
+
+-   [haip-config](https://github.com/haipdev/config)
+
+
