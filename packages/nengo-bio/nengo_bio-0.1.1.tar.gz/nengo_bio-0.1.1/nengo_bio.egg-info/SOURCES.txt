@@ -1,0 +1,17 @@
+README.md
+setup.py
+nengo_bio/__init__.py
+nengo_bio/common.py
+nengo_bio/connection.py
+nengo_bio/ensemble.py
+nengo_bio/solvers.py
+nengo_bio.egg-info/PKG-INFO
+nengo_bio.egg-info/SOURCES.txt
+nengo_bio.egg-info/dependency_links.txt
+nengo_bio.egg-info/requires.txt
+nengo_bio.egg-info/top_level.txt
+nengo_bio/builder/__init__.py
+nengo_bio/builder/connection.py
+nengo_bio/builder/ensemble.py
+nengo_bio/internal/__init__.py
+nengo_bio/internal/qp_solver.py
