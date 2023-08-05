@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: hstk
+Version: 4.1.0.0
+Summary: Hammerspace CLI tool and python toolkit (hstk)
+Home-page: https://github.com/hammer-space/hstk
+Author: Hammerspace Inc
+Author-email: support@hammerspace.com
+License: UNKNOWN
+Description: Hammerspace CLI tool and python toolkit (hstk)
+        
+        Supports Hammerspace release 4.1.0 and later.
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
