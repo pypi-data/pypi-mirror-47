@@ -1,0 +1,9 @@
+arabicnlp/__init__.py,sha256=6kDwdl0S1gSAbzeFdLHDimAtB9dHeIjM3SL_QUToHG8,95
+arabicnlp/core.py,sha256=f7JpFYI5Cvzr3hnN6RdCliuJWmJo762_EHyxW1cbICk,525
+arabicnlp/porter.py,sha256=8NCiL9ccxo6KhR0ErkkH8UdpQX1wwECSfn0jMLvr5as,22813
+arabicnlp/pos_tagger.py,sha256=5sfVRxZnjPnHCuYGOC8Ay8dbfCiLBfrITn3XVnJrg-E,2775
+arabicnlp/stemmer.py,sha256=33fGhIyyMQzRGXyZMQoLylLOIQdybpUvtpa6MkmCpNQ,28750
+arabicnlp-0.1.5.dist-info/METADATA,sha256=M5M0-ABjzAMjSHJY36PQ7IC_543-kkWEOcopDBrezLU,728
+arabicnlp-0.1.5.dist-info/RECORD,,
+arabicnlp-0.1.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+arabicnlp-0.1.5.dist-info/top_level.txt,sha256=E44nZTr0f5dYq6bESFVWHgzStvNPRkBS6TaLmcLDHrc,10
