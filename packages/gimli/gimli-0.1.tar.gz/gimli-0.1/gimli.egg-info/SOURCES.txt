@@ -1,0 +1,8 @@
+setup.py
+gimli/__init__.py
+gimli/gimli.py
+gimli.egg-info/PKG-INFO
+gimli.egg-info/SOURCES.txt
+gimli.egg-info/dependency_links.txt
+gimli.egg-info/not-zip-safe
+gimli.egg-info/top_level.txt
