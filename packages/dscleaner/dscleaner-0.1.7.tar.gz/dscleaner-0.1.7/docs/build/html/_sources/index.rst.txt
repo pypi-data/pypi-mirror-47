@@ -1,0 +1,36 @@
+Welcome to DSCleaner's documentation!
+=====================================
+
+.. automodule:: dscleaner.ifileinfo
+    :members:
+
+.. automodule:: dscleaner.fileinfo
+    :members:
+
+.. automodule:: dscleaner.csvfileinfo
+    :members:
+
+.. automodule:: dscleaner.merger
+    :members:
+
+.. automodule:: dscleaner.utils
+    :members:
+
+.. automodule:: dscleaner.filewriter
+    :members:
+
+.. automodule:: dscleaner.fileutil
+    :members:
+    
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
