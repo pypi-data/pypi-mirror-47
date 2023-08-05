@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: gamma-spectroscopy
+Version: 0.9.0
+Summary: A GUI for gamma spectroscopy using a PicoScope
+Home-page: https://github.com/davidfokkema/gamma-spectroscopy
+Author: David Fokkema
+Author-email: davidfokkema@icloud.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+
+# A GUI for gamma spectroscopy using a PicoScope
+
+This is a first iteration of a data acquisition app for gamma spectroscopy. The Qt app requires a 5000-series PicoScope (e.g. the 5242D) for data acquisition.
+
+Work will continue.
+
+
