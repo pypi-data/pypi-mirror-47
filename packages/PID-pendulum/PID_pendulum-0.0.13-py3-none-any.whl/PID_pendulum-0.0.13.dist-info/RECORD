@@ -1,0 +1,10 @@
+PID_pendulum/PID_control.py,sha256=twuXQ-DxPLVS42ZIK-v_opVkG69U_ZMvFx-nT2bQBy4,33517
+PID_pendulum/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+PID_pendulum/conf.py,sha256=Xw7U_RT_AWH49oyPOu3U4Z3_Pnegs_ZnjH9m3_OE1Dw,5110
+PID_pendulum/debug.py,sha256=GWbiIVg58kyWj-DMqXXHFqWWhDW5pGogZJm9S6whQig,2289
+PID_pendulum-0.0.13.dist-info/DESCRIPTION.rst,sha256=mcq-11LkbhP7DZAiNA2BV9l6VVQaf9iNeqI7FxRrr1E,84
+PID_pendulum-0.0.13.dist-info/METADATA,sha256=vO3biovRRT76YmFCEWDEVvjs2KifqHJUdBhIFQkFKEM,642
+PID_pendulum-0.0.13.dist-info/RECORD,,
+PID_pendulum-0.0.13.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+PID_pendulum-0.0.13.dist-info/metadata.json,sha256=qOfIM2pkD-lvRJsFUjd-LFrsOZr1_eQptmFNlRRwacM,768
+PID_pendulum-0.0.13.dist-info/top_level.txt,sha256=tYCdtFSAMAwffp26aQ2xVENFPhyAitO0RslB7zaR7DY,13
