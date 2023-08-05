@@ -1,0 +1,3 @@
+[console_scripts]
+universion = universion.cli:cli
+
