@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: jamos-toolkit
+Version: 1.7
+Summary: Jamos separator
+Home-page: https://github.com/jybaek/jamos-toolkit
+Author: Jaeyeon Baek
+Author-email: oops.jybaek@gmail.com
+License: UNKNOWN
+Keywords: jamos,toolkit,separator
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+
