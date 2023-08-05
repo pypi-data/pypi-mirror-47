@@ -1,0 +1,43 @@
+Metadata-Version: 1.1
+Name: clubwarrior
+Version: 0.0.1
+Summary: Track and sync your Clubhouse.io stories in TaskWarrior
+Home-page: https://github.com/huntrar/clubwarrior
+Author: Hunter Hammond
+Author-email: clubwarrior.dev@gmail.com
+License: MIT
+Description: 
+        clubwarrior
+        ===============================================================
+        
+        Track and sync your Clubhouse.io stories in TaskWarrior
+        -------------------------------------------------------
+        
+        
+        News
+        ====
+        
+        0.0.1
+        ------
+        
+         - "it ain't pretty but it works"
+         - Imports stories from Clubhouse that you are labeled `Owner` into TaskWarrior
+         - Synchronizes changes between stories and tasks, made either through Clubhouse or TaskWarrior
+         - Changes tracked include
+            story name (task description)
+            project
+            labels (priority and tags) (configurable)
+            deadline (due)
+            dependencies
+            state management (configurable)
+        
+         - State management works to
+            1) move tasks and stories to started
+            2) complete tasks and stories
+        
+        
+        
+Keywords: clubhouse.io taskwarrior task tracking management sync
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
