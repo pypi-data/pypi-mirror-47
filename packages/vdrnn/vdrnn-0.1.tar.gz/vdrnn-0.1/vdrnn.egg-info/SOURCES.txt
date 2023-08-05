@@ -1,0 +1,10 @@
+setup.py
+vdrnn/__init__.py
+vdrnn/model_lstm.py
+vdrnn/vrnn.py
+vdrnn.egg-info/PKG-INFO
+vdrnn.egg-info/SOURCES.txt
+vdrnn.egg-info/dependency_links.txt
+vdrnn.egg-info/not-zip-safe
+vdrnn.egg-info/requires.txt
+vdrnn.egg-info/top_level.txt

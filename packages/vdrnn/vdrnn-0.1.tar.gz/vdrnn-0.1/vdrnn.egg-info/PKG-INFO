@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vdrnn
+Version: 0.1
+Summary: implementation of variational recurrent neural networks for learning curve prediction
+Home-page: UNKNOWN
+Author: Matilde Gargiani
+Author-email: matildegargiani@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
