@@ -1,0 +1,3 @@
+iotile-core<6,>=5.0.0
+iotile_cloud<2,>=0.9.9
+msgpack<1,>=0.6.1
