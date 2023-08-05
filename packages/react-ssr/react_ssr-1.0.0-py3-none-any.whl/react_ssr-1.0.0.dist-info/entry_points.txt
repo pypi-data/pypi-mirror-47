@@ -1,0 +1,3 @@
+[console_scripts]
+ssr = react_ssr.cli:main
+
