@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+gayson/__init__.py
+gayson/convert.py
+gayson/tests.py
+hackwork_gayson.egg-info/PKG-INFO
+hackwork_gayson.egg-info/SOURCES.txt
+hackwork_gayson.egg-info/dependency_links.txt
+hackwork_gayson.egg-info/requires.txt
+hackwork_gayson.egg-info/top_level.txt
