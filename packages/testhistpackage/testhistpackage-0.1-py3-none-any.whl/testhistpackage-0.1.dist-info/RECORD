@@ -1,0 +1,7 @@
+testPackage/__init__.py,sha256=zqY6uSCTsbt1rTz1qftsfoLa_B47LrhzWhv48alYKD4,70
+testPackage/data_analysis_functions.py,sha256=YRvIMUmfK2X4NIDfXRFCRgAnAN9YM1mP1-VOTMugWf8,8621
+testPackage/mainFile.py,sha256=24yHJyzs1W1B1ORuibfpYLg2jIk6Le8fjAd6UJb219E,988
+testhistpackage-0.1.dist-info/METADATA,sha256=cGVpKWRAVJtAgXS1zLuDiFsYxb8--h_kH-TQK1u3Ad0,396
+testhistpackage-0.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+testhistpackage-0.1.dist-info/top_level.txt,sha256=sU151-b7JQoYvbdEIfviWPAt1Qi07BV-K1tpNvWFfUs,12
+testhistpackage-0.1.dist-info/RECORD,,
