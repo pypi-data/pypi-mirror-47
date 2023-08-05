@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-qiwi-kassa
+Version: 0.2
+Summary: Django App for Qiwi Kassa
+Home-page: https://github.com/adilkhash/django-qiwi-kassa
+Author: Adylzhan Khashtamov
+Author-email: adil.khashtamov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: django (>=2.0)
+Requires-Dist: qiwi-payments (==0.1)
+
+UNKNOWN
+
+
