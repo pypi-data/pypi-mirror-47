@@ -1,0 +1,9 @@
+README.md
+setup.py
+mistermendiolapdf/__init__.py
+mistermendiolapdf/pdf2image.py
+mistermendiolapdf/pdf2text.py
+mistermendiolapdf.egg-info/PKG-INFO
+mistermendiolapdf.egg-info/SOURCES.txt
+mistermendiolapdf.egg-info/dependency_links.txt
+mistermendiolapdf.egg-info/top_level.txt
