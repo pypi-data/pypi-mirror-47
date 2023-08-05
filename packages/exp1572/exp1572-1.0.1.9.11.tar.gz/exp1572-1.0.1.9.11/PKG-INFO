@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: exp1572
+Version: 1.0.1.9.11
+Summary: Game "1572: The Lost Expedition"
+Home-page: https://github.com/witdba/exp1572
+Author: Vitaliy Serdakovskiy
+Author-email: witdba@gmail.com
+License: UNKNOWN
+Description-Content-Type: text/markdown
+Description: # exp1572
+        Game "1572: The Lost Expedition" (designed by Mike Heim).
+        
+        Console game manager written in python. See full description at: https://boardgamegeek.com/boardgame/199269/1572-lost-expedition
+        
+        Make file exp1572.py executeable and run it for starting the game. All you need for playing: one page with a map (located in the rules/ folder). This program emulate dice rolling and drives a player thru gameplay enforcing rules and context circumstances.
+        
+        Available localizations: ru, en
+        
+Keywords: python console game manager
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Games/Entertainment
+Classifier: Topic :: Games/Entertainment :: Board Games
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.0.*
