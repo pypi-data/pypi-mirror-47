@@ -1,0 +1,5 @@
+recursive-include lib *.properties
+recursive-include lib *.jar
+recursive-include lib *.MF
+recursive-include lib *.java
+recursive-include lib *.xml
