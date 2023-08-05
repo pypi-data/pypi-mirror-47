@@ -1,0 +1,3 @@
+[console_scripts]
+EddyUpdate = py_eddy_tracker.update.__init__:eddy_update
+
