@@ -1,0 +1,11 @@
+marshmallow>=3.0.0rc6
+marshmallow-enum>=1.4.1
+
+[:python_version == "3.6"]
+dataclasses
+
+[dev]
+pytest
+ipython
+mypy
+hypothesis
