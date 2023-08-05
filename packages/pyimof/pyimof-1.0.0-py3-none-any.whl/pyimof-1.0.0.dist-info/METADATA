@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: pyimof
+Version: 1.0.0
+Summary: Python package for optical flow estimation
+Home-page: https://pyimof.rtfd.io/en/latest/
+Maintainer: Riadh Fezzani
+Maintainer-email: rfezzani@gmail.com
+License: GPL-3.0
+Download-URL: https://github.com/rfezzani/pyimof/archive/master.zip
+Project-URL: Bug Tracker, https://github.com/rfezzani/pyimof/issues
+Project-URL: Documentation, https://pyimof.rtfd.io/en/latest/
+Project-URL: Source Code, https://github.com/rfezzani/pyimof
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.5
+Requires-Dist: scikit-image (>=0.15)
+Requires-Dist: imageio (>=2.5)
+Provides-Extra: docs
+Requires-Dist: sphinx (>=2.0) ; extra == 'docs'
+Requires-Dist: sphinx-gallery (>=0.3) ; extra == 'docs'
+
+Pyimof
+
+Implementation of the popular TV-L1 algorithm and the robust iLK
+method for optical flow estimation. Pyimof is provided battery
+included: test data, IO and visualization tools are provided.
+
+Please refer to the online documentation at
+https://pyimof.rtfd.io/en/latest/
+
+
