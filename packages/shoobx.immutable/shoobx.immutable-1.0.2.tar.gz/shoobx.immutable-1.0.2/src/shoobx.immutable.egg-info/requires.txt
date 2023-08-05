@@ -1,0 +1,14 @@
+setuptools
+zope.component
+zope.interface
+zope.lifecycleevent
+zope.schema
+
+[pjpersist]
+pjpersist
+
+[test]
+coverage
+mock
+pjpersist[test]
+zope.testrunner
