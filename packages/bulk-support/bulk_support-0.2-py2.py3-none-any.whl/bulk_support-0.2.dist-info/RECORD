@@ -1,0 +1,11 @@
+bulk_support/__init__.py,sha256=nXedsSHJv6dSoapAOH8-SMENhXOzZjZpzZUpyMTPnU8,189
+bulk_support/__version__.py,sha256=-cHO5oOHPuBCll4Noe1fIVjbMIhK_d1gaJJcPlbSlt4,20
+bulk_support/bulk_states.py,sha256=h8sAaT1tOq3m9IyUr9ZLcDtKl3XtWZPq4pnUbNCazKY,157
+bulk_support/bulk_support.py,sha256=Oc_mYVDps_K7OKNZ-5TcQ8-zTZ8K-SdqNdP0qj7PGWc,19336
+bulk_support/csv_adapter.py,sha256=J39aKIBGyMnhQ_yYlcgiLayVedGrWYzHW0S_ozd-BgM,1240
+bulk_support/util.py,sha256=ynj_v6Vity5j3urnbfYwYJw5PPU9whg1vl_fjlQlC8g,323
+bulk_support-0.2.dist-info/LICENSE,sha256=I7YNJLyLSZGKsKl9ATSNZ9h-mdtpk7XTffnSUbt1OV0,1071
+bulk_support-0.2.dist-info/METADATA,sha256=xRtjmn52Wr_F1f8LutAmcHZ2Z3Zm7U6UO-djNQp7n44,5569
+bulk_support-0.2.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+bulk_support-0.2.dist-info/top_level.txt,sha256=gozS9MgTJBroytpjziJNKQznWvA4McMkbVDNWbPS-8Y,13
+bulk_support-0.2.dist-info/RECORD,,
