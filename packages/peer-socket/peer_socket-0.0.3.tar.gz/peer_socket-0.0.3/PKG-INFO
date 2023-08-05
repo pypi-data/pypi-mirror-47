@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: peer_socket
+Version: 0.0.3
+Summary: Peer Socket
+Home-page: https://github.com/Taegos/peer_socket
+Author: Benjamin Fischer
+Author-email: benjamin.fischr@gmail.com
+License: MIT
+Download-URL: https://github.com/Taegos/peer_socket/releases/tag/0.0.3
+Description: UNKNOWN
+Keywords: Socket,Peer,P2P
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
