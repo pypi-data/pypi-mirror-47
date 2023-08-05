@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: tank-polkadot
+Version: 0.0.5
+Summary: Bench toolkit for blockchain
+Home-page: https://github.com/mixbytes/tank/
+Author: Andrey Levkin
+Author-email: alevkin@gmail.com
+License: Apache-2.0
+Keywords: bench blockchain
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: System :: Benchmark
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: System :: Clustering
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: cement (==3.0.4)
+Requires-Dist: ansible (==2.8.0)
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Requires-Dist: colorlog
+Requires-Dist: tinydb
+Requires-Dist: sh (==1.12.13)
+
+Long Description
+
+
