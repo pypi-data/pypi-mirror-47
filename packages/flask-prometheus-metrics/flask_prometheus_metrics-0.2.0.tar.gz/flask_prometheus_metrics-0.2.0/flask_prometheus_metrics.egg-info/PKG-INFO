@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: flask-prometheus-metrics
+Version: 0.2.0
+Summary: Prometheus Metrics for Flask Web App
+Home-page: https://github.com/pilosus/flask_prometheus_metrics/
+Author: Vitaly R. Samigullin
+Author-email: vrs@pilosus.org
+License: MIT
+Description: Prometheus Metrics for Flask Web Application using official Prometheus Python client
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Flask
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Environment :: MacOS X
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Provides-Extra: flask
