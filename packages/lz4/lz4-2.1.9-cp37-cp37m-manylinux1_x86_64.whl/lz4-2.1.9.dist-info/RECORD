@@ -1,0 +1,12 @@
+lz4/version.py,sha256=ZXmSMnJOfq1J1kC17Ogdb27nxoCT6iGEor93bG1vGGg,116
+lz4/_version.cpython-37m-x86_64-linux-gnu.so,sha256=2h8a29head_Z9BWBSk5plLC6EQUrxdXSM_oPliKtHwY,219148
+lz4/__init__.py,sha256=hIvOuoGzQpA7LdzgyfP6-byehTRVA_vFXImPS90uB40,628
+lz4/frame/_compression.py,sha256=M9oO74zf0Prsy2YItT742gEU_xg7-wevlEgmKc77tR0,5864
+lz4/frame/__init__.py,sha256=6VnfprVaLn36amVtC0EdUB6b5s26JIRky2yR-9uO6-0,29444
+lz4/frame/_frame.cpython-37m-x86_64-linux-gnu.so,sha256=yAK0H0_Uca1lysnJpIi8ZuZ071VfFXj97-sPxeGIF4Y,591200
+lz4/block/_block.cpython-37m-x86_64-linux-gnu.so,sha256=6nQt9oyphFhxp_6OnINP0YAscjx12UZzM28dHy4Zw8Q,389018
+lz4/block/__init__.py,sha256=KsSQGgaPpJtVPJ5QfMadVGFduMy0hSetJHWGNmOvpso,70
+lz4-2.1.9.dist-info/top_level.txt,sha256=cX6_gxFUdNSo40TfxrGpTCgu7epGm3yW3m2k7irTDzI,4
+lz4-2.1.9.dist-info/RECORD,,
+lz4-2.1.9.dist-info/METADATA,sha256=1ZOU5lggXObInAd2HYnuDTiTcd02zXA6tqg01-tBn-8,3697
+lz4-2.1.9.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
