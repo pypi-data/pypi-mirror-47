@@ -1,0 +1,295 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Locally / Setting up your development machine &mdash; Django Cast 0.1.27 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Useful third party services for production" href="production_services.html" />
+    <link rel="prev" title="Deployment" href="deployment.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Django Cast
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.27
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Django Cast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="deployment.html">Deployment</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Locally / Setting up your development machine</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#running-the-app-locally">Running the App locally</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installation-using-docker">Installation using Docker</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="production_services.html">Useful third party services for production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heroku.html">Heroku</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ec2_install.html">Setting up your production machine on EC2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cdn.html">Using a CDN (AWS S3 + Cloudfront)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Django Cast</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="deployment.html">Deployment</a> &raquo;</li>
+        
+      <li>Locally / Setting up your development machine</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/local_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="locally-setting-up-your-development-machine">
+<h1>Locally / Setting up your development machine<a class="headerlink" href="#locally-setting-up-your-development-machine" title="Permalink to this headline">¶</a></h1>
+<p>Install <a class="reference external" href="https://virtualenvwrapper.readthedocs.io/en/latest/">virtualenvwrapper</a> and create a virtual environment for your project:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>mkvirtualenv -p /usr/local/bin/python3 foobar
+</pre></div>
+</div>
+<p>Install <a class="reference external" href="https://cookiecutter.readthedocs.io/en/latest/">cookiecutter</a> into your newly create virtual environment:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>pip install cookiecutter
+</pre></div>
+</div>
+<p>Use the <a class="reference external" href="https://github.com/pydanny/cookiecutter-django">cookiecutter-django</a> template to bootstrap your project:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>cookiecutter https://github.com/pydanny/cookiecutter-django
+</pre></div>
+</div>
+<p>Don’t forget to activate the options for Docker or Heroku if you plan to use them. And
+set the “use whitenoise” configutation option to “yes” because this will get your static
+file serving on <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a> work without any additional config. Saying “no” to this, will
+try to use aws S3, which I couldn’t get to work (see below).</p>
+<p>Enter your new project directory and checkin your first commit:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> foobar
+git init
+git add .
+git commit -m <span class="s2">&quot;first commit&quot;</span>
+</pre></div>
+</div>
+<p>Optionally you can associate your project dir with a github repository (change
+url to match your username/reponame):</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git remote add origin git@github.com:your_username/foobar.git
+git push -u origin master
+</pre></div>
+</div>
+<div class="section" id="running-the-app-locally">
+<h2>Running the App locally<a class="headerlink" href="#running-the-app-locally" title="Permalink to this headline">¶</a></h2>
+<p>You could also use docker for this, but for now let’s run the development
+server locally. At first, add the “django-cast” requirement to your base.txt
+requirements file and then install all the required packages into your virtualenv:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">echo</span> <span class="s2">&quot;django-cast&quot;</span> &gt;&gt; requirements/base.txt
+pip install -r requirements/local.txt
+</pre></div>
+</div>
+<p>You should already have a locally installed postgres server up and running.
+Ok, now let’s create the required database user, the database and all its tables.
+It’s also very useful to create a django superuser right away:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>createdb foobar<span class="p">;</span>createuser foobar<span class="p">;</span> psql -d foobar -c <span class="s2">&quot;GRANT ALL PRIVILEGES ON DATABASE foobar to foobar;&quot;</span>
+./manage.py migrate
+./manage.py createsuperuser
+</pre></div>
+</div>
+<p>Now you should be able to start your development server locally and see an empty page:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>./manage.py runserver_plus <span class="m">0</span>:8000
+open http://localhost:8000/
+</pre></div>
+</div>
+<p>Your development server should now be reachable at <a class="reference external" href="http://localhost:8000">http://localhost:8000</a></p>
+<p>Open only works on mac OS, but you can just point your browser to this url. You should be able
+to sign in with your superuser account in the django admin. If you want to sign in regularily,
+you have to paste the confirmation url shown on the dev-server console when you try to sign in.</p>
+</div>
+<div class="section" id="installation-using-docker">
+<h2>Installation using Docker<a class="headerlink" href="#installation-using-docker" title="Permalink to this headline">¶</a></h2>
+<p>Install:</p>
+<ul class="simple">
+<li><p>Docker for your OS</p></li>
+<li><p>docker-compose</p></li>
+</ul>
+<p>You need to have set the docker option to “yes” when you created the project diretory.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>docker-compose -f local.yml build
+docker-compose -f local.yml run django ./manage.py migrate
+docker-compose -f local.yml up
+</pre></div>
+</div>
+<p>Your development server should now also be reachable at <a class="reference external" href="http://localhost:8000">http://localhost:8000</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="production_services.html" class="btn btn-neutral float-right" title="Useful third party services for production" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="deployment.html" class="btn btn-neutral float-left" title="Deployment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jochen Wersdörfer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

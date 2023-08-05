@@ -1,0 +1,382 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Heroku &mdash; Django Cast 0.1.27 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Setting up your production machine on EC2" href="ec2_install.html" />
+    <link rel="prev" title="Useful third party services for production" href="production_services.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Django Cast
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.27
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Django Cast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="deployment.html">Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="local_install.html">Locally / Setting up your development machine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production_services.html">Useful third party services for production</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Heroku</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-the-heroku-command-line-app">Install the heroku command line app</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-s3-for-storing-media-files">Use S3 for storing media files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#using-s3-in-a-non-default-region">Using S3 in a non-default region</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-cloudfront-as-cdn">Using cloudfront as CDN</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-configuration-variables-for-heroku">Set the configuration variables for heroku</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#deploy-your-project-to-heroku">Deploy your project to heroku</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-your-own-domain-name-with-heroku">Use your own domain name with heroku</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#caveats">Caveats</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#static-files">Static Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ssl">SSL</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ec2_install.html">Setting up your production machine on EC2</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cdn.html">Using a CDN (AWS S3 + Cloudfront)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Django Cast</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="deployment.html">Deployment</a> &raquo;</li>
+        
+      <li>Heroku</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/heroku.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="heroku">
+<h1>Heroku<a class="headerlink" href="#heroku" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="install-the-heroku-command-line-app">
+<h2>Install the <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a> command line app<a class="headerlink" href="#install-the-heroku-command-line-app" title="Permalink to this headline">¶</a></h2>
+<p>At first you have to create an heroku account and install the <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a> command line app.</p>
+<p>Then create your app with the heroku client and make your newly created app the default app,
+to avoid having to specify it for every heroku toolbelt call with “-a”:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>heroku create --buildpack https://github.com/heroku/heroku-buildpack-python --region eu
+heroku git:remote -a &lt;name-of-the-app&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-s3-for-storing-media-files">
+<h2>Use S3 for storing media files<a class="headerlink" href="#use-s3-for-storing-media-files" title="Permalink to this headline">¶</a></h2>
+<p>You probably want to use S3 to store your media files (user uploaded content, images for blog
+posts etc). We use <a class="reference external" href="https://github.com/matthewwithanm/django-imagekit">django-imagekit</a> for responsive images and there is some incompatibility
+between <a class="reference external" href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">boto</a> and <a class="reference external" href="https://github.com/matthewwithanm/django-imagekit">django-imagekit</a> keeping it from working out of the box. Luckily there’s a
+workaround. At this custom storage class to your “config/settings/production.py” file and use
+it:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>import os
+from tempfile import SpooledTemporaryFile
+...
+
+class CustomS3Boto3Storage<span class="o">(</span>S3Boto3Storage<span class="o">)</span>:
+        <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">        This is our custom version of S3Boto3Storage that fixes a bug in</span>
+<span class="s2">        boto3 where the passed in file is closed upon upload.</span>
+
+<span class="s2">        https://github.com/boto/boto3/issues/929</span>
+<span class="s2">        https://github.com/matthewwithanm/django-imagekit/issues/391</span>
+<span class="s2">        &quot;&quot;&quot;</span>
+
+        <span class="nv">location</span> <span class="o">=</span> <span class="s2">&quot;media&quot;</span>
+        <span class="nv">file_overwrite</span> <span class="o">=</span> False
+        <span class="nv">default_acl</span> <span class="o">=</span> <span class="s2">&quot;public-read&quot;</span>
+
+        def _save_content<span class="o">(</span>self, obj, content, parameters<span class="o">)</span>:
+                <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">                We create a clone of the content file as when this is passed to boto3</span>
+<span class="s2">                it wrongly closes the file upon upload where as the storage backend</span>
+<span class="s2">                expects it to still be open</span>
+<span class="s2">                &quot;&quot;&quot;</span>
+                <span class="c1"># Seek our content back to the start</span>
+                content.seek<span class="o">(</span><span class="m">0</span>, os.SEEK_SET<span class="o">)</span>
+
+                <span class="c1"># Create a temporary file that will write to disk after a specified size</span>
+                <span class="nv">content_autoclose</span> <span class="o">=</span> SpooledTemporaryFile<span class="o">()</span>
+
+                <span class="c1"># Write our original content into our copy that will be closed by boto3</span>
+                content_autoclose.write<span class="o">(</span>content.read<span class="o">())</span>
+
+                <span class="c1"># Upload the object which will auto close the content_autoclose instance</span>
+                super<span class="o">(</span>CustomS3Boto3Storage, self<span class="o">)</span>._save_content<span class="o">(</span>
+                        obj, content_autoclose, parameters
+                <span class="o">)</span>
+
+                <span class="c1"># Cleanup if this is fixed upstream our duplicate should always close</span>
+                <span class="k">if</span> not content_autoclose.closed:
+                        content_autoclose.close<span class="o">()</span>
+
+...
+<span class="nv">DEFAULT_FILE_STORAGE</span> <span class="o">=</span> <span class="s2">&quot;config.settings.production.CustomS3Boto3Storage&quot;</span>
+</pre></div>
+</div>
+<div class="section" id="using-s3-in-a-non-default-region">
+<h3>Using S3 in a non-default region<a class="headerlink" href="#using-s3-in-a-non-default-region" title="Permalink to this headline">¶</a></h3>
+<p>If you want to use S3 in the region “eu-central-1” you have to set some additional parameters
+in your “config/settings/production.py”:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nv">AWS_AUTO_CREATE_BUCKET</span> <span class="o">=</span> True
+<span class="nv">AWS_S3_REGION_NAME</span> <span class="o">=</span> <span class="s1">&#39;eu-central-1&#39;</span>  <span class="c1"># if your region differs from default</span>
+<span class="nv">AWS_S3_SIGNATURE_VERSION</span> <span class="o">=</span> <span class="s1">&#39;s3v4&#39;</span>
+<span class="nv">AWS_S3_FILE_OVERWRITE</span> <span class="o">=</span> True
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-cloudfront-as-cdn">
+<h3>Using cloudfront as CDN<a class="headerlink" href="#using-cloudfront-as-cdn" title="Permalink to this headline">¶</a></h3>
+<p>If you want to deliver your media files via cloudfront there’s an additional option you’ll
+have to set:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nv">AWS_S3_CUSTOM_DOMAIN</span> <span class="o">=</span> env<span class="o">(</span><span class="s1">&#39;CLOUDFRONT_DOMAIN&#39;</span><span class="o">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="set-the-configuration-variables-for-heroku">
+<h2>Set the configuration variables for <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a><a class="headerlink" href="#set-the-configuration-variables-for-heroku" title="Permalink to this headline">¶</a></h2>
+<p>Now we have to setup some heroku specific stuff. For some of the addons you might have to
+add credit card information to your heroku account:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>heroku addons:create heroku-postgresql:hobby-dev
+heroku pg:backups schedule --at <span class="s1">&#39;02:00 Europe/Berlin&#39;</span> DATABASE_URL
+heroku addons:create heroku-redis:hobby-dev
+heroku addons:create mailgun:starter
+heroku config:set <span class="nv">PYTHONHASHSEED</span><span class="o">=</span>random
+heroku config:set <span class="nv">WEB_CONCURRENCY</span><span class="o">=</span><span class="m">4</span>
+heroku config:set <span class="nv">DJANGO_DEBUG</span><span class="o">=</span>False
+heroku config:set <span class="nv">DJANGO_SETTINGS_MODULE</span><span class="o">=</span>config.settings.production
+heroku config:set <span class="nv">DJANGO_SECRET_KEY</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>openssl rand -base64 <span class="m">64</span><span class="k">)</span><span class="s2">&quot;</span>
+heroku config:set <span class="nv">DJANGO_ADMIN_URL</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>openssl rand -base64 <span class="m">4096</span> <span class="p">|</span> tr -dc <span class="s1">&#39;A-HJ-NP-Za-km-z2-9&#39;</span> <span class="p">|</span> head -c <span class="m">32</span><span class="k">)</span><span class="s2">/&quot;</span>
+<span class="c1"># use your own app name here..</span>
+heroku config:set <span class="nv">DJANGO_ALLOWED_HOSTS</span><span class="o">=</span>&lt;your_app_name&gt;.herokuapp.com
+heroku config:set <span class="nv">DJANGO_AWS_ACCESS_KEY_ID</span><span class="o">=</span>&lt;your_aws_key_id&gt;
+heroku config:set <span class="nv">DJANGO_AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>&lt;your_aws_access_key&gt;
+heroku config:set <span class="nv">DJANGO_AWS_STORAGE_BUCKET_NAME</span><span class="o">=</span>s3.foobar.com
+heroku config:set <span class="nv">MAILGUN_DOMAIN</span><span class="o">=</span>mg.foobar.com
+heroku config:set <span class="nv">MAILGUN_API_KEY</span><span class="o">=</span>key-&lt;your_mailgun_key&gt;
+heroku config:set <span class="nv">MAILGUN_SENDER_DOMAIN</span><span class="o">=</span>mg.foobar.com
+heroku config:set <span class="nv">SENTRY_DSN</span><span class="o">=</span>&lt;your_sentry_dsn&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="deploy-your-project-to-heroku">
+<h2>Deploy your project to <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a><a class="headerlink" href="#deploy-your-project-to-heroku" title="Permalink to this headline">¶</a></h2>
+<p>After setting all those configuration variables, you should be able to deploy your project
+to heroku:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git push heroku master
+</pre></div>
+</div>
+<p>And create a superuser for your production system:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>heroku run python manage.py createsuperuser
+</pre></div>
+</div>
+<p>Finally you should be able to check your deployment and open the website:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>heroku run python manage.py check --deploy
+heroku open
+</pre></div>
+</div>
+</div>
+<div class="section" id="use-your-own-domain-name-with-heroku">
+<h2>Use your own domain name with heroku<a class="headerlink" href="#use-your-own-domain-name-with-heroku" title="Permalink to this headline">¶</a></h2>
+<p>Just follow the instructions on the <a class="reference external" href="https://devcenter.heroku.com/articles/custom-domains">custom-domains</a> help site at <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a>.</p>
+</div>
+<div class="section" id="caveats">
+<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="static-files">
+<h3>Static Files<a class="headerlink" href="#static-files" title="Permalink to this headline">¶</a></h3>
+<p>I couldn’t get serving static files to work with amazon S3. One problem was that
+DJANGO_AWS_STORAGE_BUCKET_NAME in the STATIC_URL setting seems to get ignored by the
+static templatetag resulting in a permanent redirect error page from S3. And the
+other problem is that S3 didn’t support https (broken certificate). But all static
+urls are https by default, so this didn’t work either. Maybe you can fix that by using
+a cloudfront distribution etc. but using whitebox to serve static files worked out of
+the box.</p>
+</div>
+<div class="section" id="ssl">
+<h3>SSL<a class="headerlink" href="#ssl" title="Permalink to this headline">¶</a></h3>
+<p>You need to upload certificates to <a class="reference external" href="https://devcenter.heroku.com/articles/getting-started-with-python">heroku</a>. Quite cumbersome.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="ec2_install.html" class="btn btn-neutral float-right" title="Setting up your production machine on EC2" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="production_services.html" class="btn btn-neutral float-left" title="Useful third party services for production" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jochen Wersdörfer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

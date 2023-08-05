@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Setting up your production machine on EC2 &mdash; Django Cast 0.1.27 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using a CDN (AWS S3 + Cloudfront)" href="cdn.html" />
+    <link rel="prev" title="Heroku" href="heroku.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Django Cast
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.1.27
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="readme.html">Django Cast</a></li>
+<li class="toctree-l1"><a class="reference internal" href="features.html">Features</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="deployment.html">Deployment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="local_install.html">Locally / Setting up your development machine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="production_services.html">Useful third party services for production</a></li>
+<li class="toctree-l2"><a class="reference internal" href="heroku.html">Heroku</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Setting up your production machine on EC2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#creating-your-machine-on-ec2">Creating your machine on EC2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-required-software-to-run-your-docker-deployment">Install required software to run your docker deployment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-supervisorctl-accessible-for-normal-users">Make supervisorctl accessible for normal users</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-docker-compose-runable-as-normal-user">Make docker-compose runable as normal user</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reboot">Reboot</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#check-out-source">Check out source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#convenience">Convenience</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#keeping-the-service-running-with-supervisor">Keeping the service running with supervisor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-the-environment-variables">Set the environment variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#starting-the-docker-containers-manually">Starting the docker containers manually</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#using-supervisorctl">Using supervisorctl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cdn.html">Using a CDN (AWS S3 + Cloudfront)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing</a></li>
+<li class="toctree-l1"><a class="reference internal" href="authors.html">Credits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="history.html">History</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Django Cast</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="deployment.html">Deployment</a> &raquo;</li>
+        
+      <li>Setting up your production machine on EC2</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ec2_install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="setting-up-your-production-machine-on-ec2">
+<h1>Setting up your production machine on EC2<a class="headerlink" href="#setting-up-your-production-machine-on-ec2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="creating-your-machine-on-ec2">
+<h2>Creating your machine on EC2<a class="headerlink" href="#creating-your-machine-on-ec2" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Generate keypair for your machine</p></li>
+<li><p>Use the Ubuntu 16.04 image</p></li>
+<li><p>Add rules to security policy to allow ssh/http/https for inbound traffic</p></li>
+<li><p>Assign an elastic ip to your instance</p></li>
+</ul>
+</div>
+<div class="section" id="install-required-software-to-run-your-docker-deployment">
+<h2>Install required software to run your docker deployment<a class="headerlink" href="#install-required-software-to-run-your-docker-deployment" title="Permalink to this headline">¶</a></h2>
+<p>Switch to root user:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo su -
+</pre></div>
+</div>
+<p>Update software on the image:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>apt update <span class="o">&amp;&amp;</span> apt dist-upgrade
+</pre></div>
+</div>
+<p>Install <a class="reference external" href="https://www.docker.com/">Docker</a>, <a class="reference external" href="http://supervisord.org/">Supervisor</a> and docker-compose to be able to run your production deployment automatically:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>apt install python3 python3-pip docker.io supervisor docker-compose
+</pre></div>
+</div>
+</div>
+<div class="section" id="make-supervisorctl-accessible-for-normal-users">
+<h2>Make supervisorctl accessible for normal users<a class="headerlink" href="#make-supervisorctl-accessible-for-normal-users" title="Permalink to this headline">¶</a></h2>
+<p>Change the line chmod=0700 to chmod=0766 in /etc/supervisor/supervisord.conf</p>
+</div>
+<div class="section" id="make-docker-compose-runable-as-normal-user">
+<h2>Make docker-compose runable as normal user<a class="headerlink" href="#make-docker-compose-runable-as-normal-user" title="Permalink to this headline">¶</a></h2>
+<p>Add the default ubuntu EC2 user to /etc/group to make docker-compose executable by ubuntu.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>usermod -a -G docker ubuntu
+</pre></div>
+</div>
+</div>
+<div class="section" id="reboot">
+<h2>Reboot<a class="headerlink" href="#reboot" title="Permalink to this headline">¶</a></h2>
+<p>Reboot the machine:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>shutdown -r now
+</pre></div>
+</div>
+</div>
+<div class="section" id="check-out-source">
+<h2>Check out source<a class="headerlink" href="#check-out-source" title="Permalink to this headline">¶</a></h2>
+<p>Clone <a class="reference external" href="https://github.com/your_github_username/foobar.git">foobar</a> repository into site directory:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git clone git@github.com:your_github_username/foobar.git site
+</pre></div>
+</div>
+</div>
+<div class="section" id="convenience">
+<h2>Convenience<a class="headerlink" href="#convenience" title="Permalink to this headline">¶</a></h2>
+<p>Add ‘cd site’ at the and of ~/.bashrc to automatically switch into the project directory on login.</p>
+</div>
+<div class="section" id="keeping-the-service-running-with-supervisor">
+<h2>Keeping the service running with supervisor<a class="headerlink" href="#keeping-the-service-running-with-supervisor" title="Permalink to this headline">¶</a></h2>
+<p>Create a link to supervisor.conf:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo su -
+<span class="nb">cd</span> /etc/supervisor/conf.d/
+ln -s /home/ubuntu/site/foobar.conf foobar.conf
+/etc/init.d/supervisor restart
+</pre></div>
+</div>
+</div>
+<div class="section" id="set-the-environment-variables">
+<h2>Set the environment variables<a class="headerlink" href="#set-the-environment-variables" title="Permalink to this headline">¶</a></h2>
+<p>Use the env.example template to set the production environment variables in
+.env.</p>
+</div>
+<div class="section" id="starting-the-docker-containers-manually">
+<h2>Starting the docker containers manually<a class="headerlink" href="#starting-the-docker-containers-manually" title="Permalink to this headline">¶</a></h2>
+<p>Make sure the containers are build and the the database relations are
+created.</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> site
+docker-compose -f production.yml build
+docker-compose -f production.yml run django ./manage.py migrate
+docker-compose -f production.yml up
+</pre></div>
+</div>
+</div>
+<div class="section" id="using-supervisorctl">
+<h2>Using supervisorctl<a class="headerlink" href="#using-supervisorctl" title="Permalink to this headline">¶</a></h2>
+<p>Check the service is now running via supervisorctl:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>supervisorctl start foobar
+supervisorctl status foobar
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cdn.html" class="btn btn-neutral float-right" title="Using a CDN (AWS S3 + Cloudfront)" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="heroku.html" class="btn btn-neutral float-left" title="Heroku" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Jochen Wersdörfer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
