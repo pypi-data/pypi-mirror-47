@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+BuildScour/__init__.py
+BuildScour/__main__.py
+BuildScour.egg-info/PKG-INFO
+BuildScour.egg-info/SOURCES.txt
+BuildScour.egg-info/dependency_links.txt
+BuildScour.egg-info/requires.txt
+BuildScour.egg-info/top_level.txt
