@@ -1,0 +1,12 @@
+quicklinks.py
+setup.py
+api/__init__.py
+api/actions.py
+api/service.py
+quicklinks.egg-info/PKG-INFO
+quicklinks.egg-info/SOURCES.txt
+quicklinks.egg-info/dependency_links.txt
+quicklinks.egg-info/entry_points.txt
+quicklinks.egg-info/not-zip-safe
+quicklinks.egg-info/requires.txt
+quicklinks.egg-info/top_level.txt
