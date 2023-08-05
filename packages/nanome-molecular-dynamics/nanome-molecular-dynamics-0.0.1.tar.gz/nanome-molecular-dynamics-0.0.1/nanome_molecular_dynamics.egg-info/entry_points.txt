@@ -1,0 +1,3 @@
+[console_scripts]
+nanome-molecular-dynamics = nanome_molecular_dynamics.MDSimulation:main
+
