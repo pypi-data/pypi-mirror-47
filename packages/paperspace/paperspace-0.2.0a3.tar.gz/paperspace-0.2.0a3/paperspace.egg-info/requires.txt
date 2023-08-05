@@ -1,0 +1,16 @@
+click
+click-completion
+click-didyoumean
+click-help-colors
+colorama
+gradient-statsd
+progressbar2
+requests-toolbelt
+requests[security]
+six
+terminaltables
+
+[dev]
+mock
+pytest
+tox
