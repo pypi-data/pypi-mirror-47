@@ -1,0 +1,17 @@
+wormbase_parasite/__init__.py,sha256=4mr2PBkRuORMdSkMcdl1UvnCNTVXd7i35XLBKjF0n3I,43
+wormbase_parasite/wormbase_client.py,sha256=IpYnUHTIWulQOoUEPlQEO2I2FborhJ9-HHdMIp6jSX0,2301
+wormbase_parasite/endpoint_groups/__init__.py,sha256=JudBhPyuShoMPN8nrxa2Hs_OATyECbM8cXjJa4wvtb4,436
+wormbase_parasite/endpoint_groups/comparative_genomics.py,sha256=0aDvWn6mtnJ3Hys6sDDtZZ0bAbjczDIu3siGU1gVelg,12075
+wormbase_parasite/endpoint_groups/cross_references.py,sha256=mrOYRurE7u6ifopy1t0NX9aQlwYBDPtMk6bpQvUF7sQ,3579
+wormbase_parasite/endpoint_groups/information.py,sha256=1Sza2GIlu3l_FptBD695ORn4t7ILLkmlO6PwyJfDv6o,7395
+wormbase_parasite/endpoint_groups/lookup.py,sha256=PFn9DvyBs8wsQSM6oq7bRHH63ozDlFcHuVWm4C2zmuA,6841
+wormbase_parasite/endpoint_groups/mapping.py,sha256=B-g3GyF45Hq-Uc9WqhKQisXVcjrxR3x0fET1OExDjLU,3129
+wormbase_parasite/endpoint_groups/ontology.py,sha256=m-vkLlOHTW-ifFo95SbvI-IRbGSGTiiB4VTrmr097xw,4984
+wormbase_parasite/endpoint_groups/overlap.py,sha256=jkjyczQIMa7af5rieZozOdLuguweLbZk59lbF6iFH1s,6230
+wormbase_parasite/endpoint_groups/sequence.py,sha256=Rhos5axYYa8AUx8XFGSqvOtTSyBWrY-2hfc-WlneDU8,11273
+wormbase_parasite/endpoint_groups/util.py,sha256=_dSjNJf5xr-yxJtMjBomB94X-Q-Hb0j_Nwn-32kB5JM,2969
+wormbase_parasite-0.4.0.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+wormbase_parasite-0.4.0.dist-info/METADATA,sha256=TbcO-_aF9e38DakYJG_grWcJRNO7H1iJdmuUsD0jqU4,3505
+wormbase_parasite-0.4.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+wormbase_parasite-0.4.0.dist-info/top_level.txt,sha256=5Sa1DCVUZ5bcFoMBpW3tg1v6MOeETAWsFAkfxEuJI_s,18
+wormbase_parasite-0.4.0.dist-info/RECORD,,
