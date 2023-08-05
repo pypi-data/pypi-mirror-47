@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import os
+from argparse import ArgumentParser
+
+import yaml
+
+from netboot_config.model import HostConfig, ConfigFile
+from netboot_config.network import HostGroup
+
+if __name__ == '__main__':
+    parser = ArgumentParser(description="Generator for KIWI based netboot config files")
+
+    parser.add_argument('config_file', type=str, nargs=1)
+
+    args = parser.parse_args()
+
+    for config_file in args.config_file:
+        with open(args.config_file, 'r') as stream:
+            data_loaded = yaml.safe_load(stream)
+
+            for data in data_loaded['hostgroups']:
+                host_group = HostGroup(data['prefix'], data['cidr'])
+                for image in data['images']:
+                    host_group.add_hosts(image['image_type'], image['offset'], image['count'])
+
+                hosts = host_group.hosts()
+                for host in hosts:
+                    host_config = HostConfig()
+                    path = host.host_name()
+
+                    os.makedirs(path, exist_ok=True)
+                    host_name_file_path = os.path.join(path, 'hostname')
+                    with open(host_name_file_path, 'w') as host_name_file:
+                        host_name_file.write("{}\n".format(host.host_name()))
+                    host_name = host.host_name()
+                    host_config.add(host_name_file_path, '/etc/hostname')
+
+                    ConfigFile(host, host_config).write()
