@@ -1,0 +1,4 @@
+deepgeo==0.0.2
+scipy
+opencv-python
+matplotlib

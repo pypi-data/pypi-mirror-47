@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+videotosmi/SMI.py
+videotosmi/Video.py
+videotosmi/__init__.py
+videotosmi.egg-info/PKG-INFO
+videotosmi.egg-info/SOURCES.txt
+videotosmi.egg-info/dependency_links.txt
+videotosmi.egg-info/not-zip-safe
+videotosmi.egg-info/top_level.txt
