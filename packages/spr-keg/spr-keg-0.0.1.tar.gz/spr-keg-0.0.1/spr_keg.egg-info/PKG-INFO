@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: spr-keg
+Version: 0.0.1
+Summary: Keg of utilitites to be installed in worker nodes.
+Home-page: https://github.com/spraoi/keg
+Author: Ravi N
+Author-email: ravi@spraoi.ai
+License: MIT
+Description: 
+        # Keg
+        
+        This package contains set of utilities that will be used by boogie-service and dask workers. 
+        
+        # How to upload to Anaconda cloud
+        
+        - Follow directions here: http://docs.anaconda.com/anaconda-cloud/user-guide/tasks/work-with-packages/#uploading-conda-packages
+        - `conda config --set anaconda_upload no`
+        - `conda build .`
+        - `conda build . --output`
+        - `anaconda login` Ask scr for username and password
+        - `anaconda upload /path/to/spraoi-keg.tar.bz2`
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

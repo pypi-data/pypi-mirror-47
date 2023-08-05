@@ -1,0 +1,10 @@
+README.md
+setup.py
+keg/Dataset.py
+keg/Schema.py
+keg/__init__.py
+spr_keg.egg-info/PKG-INFO
+spr_keg.egg-info/SOURCES.txt
+spr_keg.egg-info/dependency_links.txt
+spr_keg.egg-info/requires.txt
+spr_keg.egg-info/top_level.txt
