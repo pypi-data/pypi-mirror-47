@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: liko
+Version: 0.0.3
+Summary: learning today make you better tomorrow
+Home-page: https://altoshift.com
+Author: eko
+Author-email: eko@altoshift.com
+License: MIT
+Description: # Altoshift Module Python
+        
+        ## Installing
+        
+        ```
+        pip install altoshift
+        ```
+        
+        ## Upgrade
+        
+        ```
+        pip install altoshift --upgrade
+        ```
+Platform: UNKNOWN

@@ -1,0 +1,8 @@
+README.md
+setup.py
+liko/__init__.py
+liko.egg-info/PKG-INFO
+liko.egg-info/SOURCES.txt
+liko.egg-info/dependency_links.txt
+liko.egg-info/requires.txt
+liko.egg-info/top_level.txt
