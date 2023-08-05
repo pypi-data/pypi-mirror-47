@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ybc_utils
+Version: 1.0.0
+Summary: ybc utils package
+Home-page: http://pip.zhenguanyu.com/
+Author: lanbo
+Author-email: lanbo@fenbi.com
+License: MIT
+Description: include common utils, eg. image utils, font utils
+Keywords: pip3,python3,python
+Platform: UNKNOWN
