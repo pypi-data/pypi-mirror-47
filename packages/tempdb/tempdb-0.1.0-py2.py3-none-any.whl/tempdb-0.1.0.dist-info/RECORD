@@ -1,0 +1,10 @@
+tempdb/__init__.py,sha256=8K1Zl05j65bLZat5CbZkaTLc7YXA9QdmyesH6mEQRA4,48
+tempdb/_compat.py,sha256=7OQuzweMZztL7Z8bAtAnAf-Y8-91aa73Km3Tgf9aKX8,609
+tempdb/discover.py,sha256=xyb5PExN1H3nXwO3ptb7vrWIUNixesyJRxOSkhXrae0,3205
+tempdb/postgres.py,sha256=VZ9qnLnUziPITEOQEF4Z_-7o7w3PPkti5TIJrSAIO_c,6303
+tempdb/utils.py,sha256=Uee_BA3H3fySh2LG1DrsA8xXQBwPblqhEmqB9AYra-E,7956
+tempdb-0.1.0.dist-info/LICENSE,sha256=Wf4scumiaPCRTEfSkmLsqmxbOEqbdxxaUtcAGMvslSA,1082
+tempdb-0.1.0.dist-info/METADATA,sha256=ffWBE0BFDoSy14ESoQjqrnHK_dvD5rWdvBYPgGIEw1U,3119
+tempdb-0.1.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+tempdb-0.1.0.dist-info/top_level.txt,sha256=a21ET7vJT7PjEhPLqR-2nJAceJQhS_Beu2llJbYXGbg,7
+tempdb-0.1.0.dist-info/RECORD,,
