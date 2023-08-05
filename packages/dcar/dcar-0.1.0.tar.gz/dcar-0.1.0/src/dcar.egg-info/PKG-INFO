@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: dcar
+Version: 0.1.0
+Summary: Low level, pure Python D-Bus implementation for message bus clients.
+Home-page: https://andreas19.github.io/dcar/
+Author: Andreas Suhre
+Author-email: andreas19@posteo.eu
+License: BSD-3-Clause
+Project-URL: Source code, https://github.com/andreas19/dcar/
+Description: # D-Car
+        
+        Low level, pure Python D-Bus implementation for message bus clients.
+        
+        For more information see the [documentation](https://andreas19.github.io/dcar/overview.html).
+        
+        History
+        -------
+        
+        **2019-06-03 (0.1.0)**
+         - First public release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
