@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+utuby.egg-info/PKG-INFO
+utuby.egg-info/SOURCES.txt
+utuby.egg-info/dependency_links.txt
+utuby.egg-info/requires.txt
+utuby.egg-info/top_level.txt
