@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        permafrost=perm.command:cli
+    
