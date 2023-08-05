@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+praytimes/__init__.py
+praytimes/praytimes.py
+praytimes.egg-info/PKG-INFO
+praytimes.egg-info/SOURCES.txt
+praytimes.egg-info/dependency_links.txt
+praytimes.egg-info/top_level.txt
