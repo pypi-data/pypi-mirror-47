@@ -1,0 +1,6 @@
+appdirs
+geopy
+numpy
+nvector
+scipy
+unidecode
