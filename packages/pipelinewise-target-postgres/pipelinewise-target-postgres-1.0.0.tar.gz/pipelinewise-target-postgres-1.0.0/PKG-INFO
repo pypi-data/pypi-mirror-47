@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pipelinewise-target-postgres
+Version: 1.0.0
+Summary: Singer.io target for loading data to PostgreSQL - PipelineWise compatible
+Home-page: https://github.com/transferwise/pipelinewise-target-postgres
+Author: TransferWise
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
