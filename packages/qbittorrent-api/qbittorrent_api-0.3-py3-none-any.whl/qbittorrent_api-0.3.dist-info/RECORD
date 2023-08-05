@@ -1,0 +1,9 @@
+qbittorrentapi/__init__.py,sha256=pQ5IC_wEEj79VVdaMoJ2wN3oCsmqW0Xv7cJv5VUgEDA,70
+qbittorrentapi/client.py,sha256=v0ESRTHIXtdiPdtRUClhkoqUjt79zu2w1SUtFGIb3w4,78666
+qbittorrentapi/exceptions.py,sha256=L6OKTXS9zZ5zBFzZFeY9XHo-fQs7I4S2Q2bVJONw3RU,898
+qbittorrentapi/objects.py,sha256=Qphb0U2vDu1dRdDqsgpDBLSeU3iMJ_Ns9zYXcBf4RWE,38430
+qbittorrent_api-0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+qbittorrent_api-0.3.dist-info/METADATA,sha256=h10BOOPSExjJgWiPXoU766da6whrVsvQGnoCYfCyayA,10802
+qbittorrent_api-0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+qbittorrent_api-0.3.dist-info/top_level.txt,sha256=7jNruWFyhc-I7LgfeaEcQzFOLmNxvLqPoRAzQXPaIKQ,15
+qbittorrent_api-0.3.dist-info/RECORD,,
