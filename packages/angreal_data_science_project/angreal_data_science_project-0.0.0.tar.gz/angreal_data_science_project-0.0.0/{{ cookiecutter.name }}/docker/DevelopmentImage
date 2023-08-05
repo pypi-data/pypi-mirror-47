@@ -1,0 +1,24 @@
+ARG BASE_CONTAINER='dockerrepay/vilya:ubuntu-16.04-py3.7-tf1.13.1'
+FROM ${BASE_CONTAINER}
+
+
+
+LABEL maintainer={{ cookiecutter.author }}
+
+
+COPY ./requirements/* /tmp/requirements/
+RUN pip install --user -r /tmp/requirements/dev.txt
+
+
+ENV PATH="/home/${NB_USER}/.local/bin:${PATH}"
+RUN mkdir /home/${NB_USER}//project
+COPY . /home/${NB_USER}/project
+
+
+
+
+WORKDIR /home/${NB_USER}/project
+
+ENTRYPOINT ["angreal"]
+
+

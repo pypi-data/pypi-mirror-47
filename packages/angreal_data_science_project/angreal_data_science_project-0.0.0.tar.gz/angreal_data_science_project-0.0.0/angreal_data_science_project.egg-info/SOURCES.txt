@@ -1,0 +1,40 @@
+README.rst
+cookiecutter.json
+setup.py
+angreal_data_science_project.egg-info/PKG-INFO
+angreal_data_science_project.egg-info/SOURCES.txt
+angreal_data_science_project.egg-info/dependency_links.txt
+angreal_data_science_project.egg-info/not-zip-safe
+angreal_data_science_project.egg-info/top_level.txt
+{{ cookiecutter.name }}/.gitattributes
+{{ cookiecutter.name }}/.gitignore
+{{ cookiecutter.name }}/MANIFEST.in
+{{ cookiecutter.name }}/README.rst
+{{ cookiecutter.name }}/VERSION
+{{ cookiecutter.name }}/__init__.py
+{{ cookiecutter.name }}/conftest.py
+{{ cookiecutter.name }}/setup.py
+{{ cookiecutter.name }}/.angreal/__init__.py
+{{ cookiecutter.name }}/.angreal/init.py
+{{ cookiecutter.name }}/.angreal/task_docs.py
+{{ cookiecutter.name }}/.angreal/task_integration.py
+{{ cookiecutter.name }}/.angreal/task_nb.py
+{{ cookiecutter.name }}/.angreal/task_setup.py
+{{ cookiecutter.name }}/.angreal/task_static.py
+{{ cookiecutter.name }}/.angreal/task_tests.py
+{{ cookiecutter.name }}/.angreal/helpers/__init__.py
+{{ cookiecutter.name }}/data/.empty
+{{ cookiecutter.name }}/docker/DevelopmentImage
+{{ cookiecutter.name }}/docker/JupyterServer
+{{ cookiecutter.name }}/docker/files/00_default_imports.py
+{{ cookiecutter.name }}/docs/Makefile
+{{ cookiecutter.name }}/docs/source/conf.py
+{{ cookiecutter.name }}/docs/source/index.rst
+{{ cookiecutter.name }}/docs/source/_static/logo.png
+{{ cookiecutter.name }}/notebooks/.empty
+{{ cookiecutter.name }}/requirements/dev.txt
+{{ cookiecutter.name }}/requirements/requirements.txt
+{{ cookiecutter.name }}/tests/__init__.py
+{{ cookiecutter.name }}/tests/integration/.empty
+{{ cookiecutter.name }}/tests/unit/.empty
+{{ cookiecutter.name }}/{{ cookiecutter.name }}/__init__.py
