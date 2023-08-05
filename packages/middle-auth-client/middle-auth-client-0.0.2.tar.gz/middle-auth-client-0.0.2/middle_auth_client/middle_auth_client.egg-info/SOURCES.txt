@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+middle_auth_client/middle_auth_client.egg-info/PKG-INFO
+middle_auth_client/middle_auth_client.egg-info/SOURCES.txt
+middle_auth_client/middle_auth_client.egg-info/dependency_links.txt
+middle_auth_client/middle_auth_client.egg-info/requires.txt
+middle_auth_client/middle_auth_client.egg-info/top_level.txt
