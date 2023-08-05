@@ -1,0 +1,23 @@
+1.0.0 (2019-05-28)
+------------------
+
+- We now support only Python 3.
+- Upon reaching beginning of file, readline() now returns empty string
+  instead of raising StopIteration.
+
+0.1.2 (2014-06-18)
+------------------
+
+- Added method readline()
+
+0.1.1 (2014-05-05)
+------------------
+
+- Removed six (things are too simple to warrant the dependency)
+- Fixed some pypi configuration
+
+
+0.1.0 (2014-05-05)
+------------------
+
+- Initial release
