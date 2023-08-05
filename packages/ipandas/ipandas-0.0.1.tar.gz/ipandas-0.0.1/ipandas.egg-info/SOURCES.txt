@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+ipandas/__init__.py
+ipandas.egg-info/PKG-INFO
+ipandas.egg-info/SOURCES.txt
+ipandas.egg-info/dependency_links.txt
+ipandas.egg-info/top_level.txt
