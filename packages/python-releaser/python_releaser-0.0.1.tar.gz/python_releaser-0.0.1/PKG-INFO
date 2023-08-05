@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: python_releaser
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/edaniszewski/python_releaser
+Author: Erick Daniszewski
+Author-email: edaniszewski@gmail.com
+License: MIT
+Description: # python releaser
+Platform: UNKNOWN
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

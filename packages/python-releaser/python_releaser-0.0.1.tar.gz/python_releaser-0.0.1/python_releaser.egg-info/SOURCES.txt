@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+python_releaser/__init__.py
+python_releaser/__main__.py
+python_releaser.egg-info/PKG-INFO
+python_releaser.egg-info/SOURCES.txt
+python_releaser.egg-info/dependency_links.txt
+python_releaser.egg-info/entry_points.txt
+python_releaser.egg-info/not-zip-safe
+python_releaser.egg-info/requires.txt
+python_releaser.egg-info/top_level.txt
+tests/__init__.py
