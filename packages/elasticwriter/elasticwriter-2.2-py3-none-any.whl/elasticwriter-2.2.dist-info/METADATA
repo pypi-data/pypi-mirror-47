@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: elasticwriter
+Version: 2.2
+Summary: Connect to ES and write documents with two modes: append and overwrite!
+Home-page: https://git.teko.vn/data/libs/elastic-writer/
+Author: Tuandv
+Author-email: tuan.dv@teko.vn
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: elastictools
+
+### Using to insert/update ES document
+
+### To build and upload to pypi, run two commands
+
+python setup.py bdist_wheel
+
+python -m twine upload dist/
+
+### How to use
+##### create es connection
+``` 
+import elasticwriter
+from elasticwriter.elasticwriter import *
+
+es = get_es([
+    "http://username:password@es-host"
+])
+```
+####  create index if not exsited with mapping and setting
+```
+	mapping = {
+           "_doc": { 
+               "properties": {
+                   "name": {
+                        "type": "text",
+                   },
+               }
+            }
+        }
+
+    index_name = 'tuan-test'
+    create_index_if_not_existed(es, index_name, mapping)
+```
+
+#### handle with dataframe
+```
+test_df = spark.createDataFrame([(1, 'tuan', 30), (2, 'tank', 27)], ['es_id', 'name', 'age'])
+
+push_df_to_index(es, index_name, test_df, 'overwrite')
+
+```
+
+#### handle with list dictionary
+```
+test_list = [
+    {'es_id': 3, 'name': 'tuyet', 'age': 25}
+]
+push_list_dict_to_index(es, index_name, test_list, 'overwrite')
+```
+
+
+
