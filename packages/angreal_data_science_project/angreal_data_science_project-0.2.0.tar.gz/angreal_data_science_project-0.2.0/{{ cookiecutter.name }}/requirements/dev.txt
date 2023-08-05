@@ -1,0 +1,12 @@
+# Development libraries are just that, ones that are explicitly required for development/exploration
+-r requirements.txt
+angreal==0.4.1
+jupyter==1.00
+pytest==4.5.0
+pytest-cov==2.7.1
+docker==3.7.2
+mypy==0.701
+lxml==4.3.3
+sphinx==1.8.0
+sphinx-rtd-theme==0.4.1
+
