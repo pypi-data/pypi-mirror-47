@@ -1,0 +1,10 @@
+big_fiubrother_detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+big_fiubrother_detection/face_detector_caffe_mtcnn.py,sha256=Z-sbv1ajDFL9MQIcRM-hdNkcwTNnVI5asptaaQwa_Fs,14816
+big_fiubrother_detection/face_detector_factory.py,sha256=f2J6Ad-yFgAItG8AZ3XfD1KNxu61UOXbRsY2YvIrSDo,812
+big_fiubrother_detection/face_detector_movidius_mtcnn.py,sha256=9n9so1B4L7CBRLC4igfeEt-lH1X88gzT0G8oGO5if-Y,10527
+big_fiubrother_detection/face_detector_movidius_ssd.py,sha256=2QDoxMatVixzuE6R2r7x10qQuu7xLvgNaCr7HeVIF90,2347
+big_fiubrother_detection/face_detector_thread.py,sha256=4z2RP_8w8lONUD4FiARPmPfm548eK7etodtlY3MIkbI,1413
+big_fiubrother_detection-0.1.0.dist-info/METADATA,sha256=jkQKixXeSPv7jR-u3vemnFZeffd457qRD6hhGAWHWvY,399
+big_fiubrother_detection-0.1.0.dist-info/RECORD,,
+big_fiubrother_detection-0.1.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+big_fiubrother_detection-0.1.0.dist-info/top_level.txt,sha256=70gr0L2Hpy72bscDBlsR-mM7Su4aUq4YdQTP1kXBiP8,25
