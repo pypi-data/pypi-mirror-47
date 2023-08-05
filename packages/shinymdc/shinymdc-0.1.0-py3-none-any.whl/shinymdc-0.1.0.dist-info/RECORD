@@ -1,0 +1,16 @@
+mdc/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+mdc/mdc.py,sha256=zNhf3VyAS6-iFi35TScZsmB5WQdF-dy5vpUjz20zO3M,7747
+mdc/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdc/resources/futura-book-italic.ttf,sha256=ixvyoEAm9VaMmq_99JgtDcZy9pVDYZPboLEe8jIv4Ls,38672
+mdc/resources/futura-book.ttf,sha256=v0JQn1Ifx_0TIheA38dutBIeAQqPJEOMEVUhEIqDgJc,37688
+mdc/resources/futura-light.ttf,sha256=Omu8GgLMFa3rSIwyRNPOrAXu8s3SgPaiTWSCC1GjkOg,37432
+mdc/resources/futura-medium.ttf,sha256=-n-NB7vU-yzz0Oa41Cvu8pBvy0Z2BdRu1rcT76iA1Ok,37516
+mdc/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdc/templates/note.tex,sha256=ebRR6zsutXRAYyoosIqZ4yBWm5AsgrA8N4RgnSiOR4I,1359
+mdc/templates/simple.tex,sha256=u0BKyeTXaFMn_NqFHz8Q3t4qRxtixVPjJckWFp4ZnB4,4020
+mdc/templates/standalone.tex,sha256=ZVx8O7qSk9rbFw2K0eZCux42sdmlP99Y4l4A68KCQhw,1257
+mdc/templates/stylish.tex,sha256=AU6Pjj40cUZmSteiqZHp3ttrc5VEmZMaRUY4bzHt9mE,4798
+shinymdc-0.1.0.dist-info/entry_points.txt,sha256=8qD3fJxrF0eC21yZ0drIRcGUEbaDrFNev65zOycsjOM,36
+shinymdc-0.1.0.dist-info/WHEEL,sha256=qtAdCj-IU6QldWlMjaadKoVfLWgvJaW3ljh8ILtCNHs,85
+shinymdc-0.1.0.dist-info/METADATA,sha256=zAwokE_9LAUMbPq7bqD7r1L-2iCn26sZX8wfO8PeHdc,780
+shinymdc-0.1.0.dist-info/RECORD,,
