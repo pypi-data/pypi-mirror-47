@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: gifmeloader
+Version: 0.0.1
+Summary: A simple package for adding loading bars to GIFS
+Home-page: https://github.com/aareman/gif-me-loader
+Author: aareman
+Author-email: aareman000@citymail.cuny.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

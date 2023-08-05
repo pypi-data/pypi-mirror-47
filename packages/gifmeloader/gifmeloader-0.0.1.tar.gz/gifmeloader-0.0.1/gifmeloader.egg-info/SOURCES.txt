@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gifmeloader/__init__.py
+gifmeloader/__main__.py
+gifmeloader.egg-info/PKG-INFO
+gifmeloader.egg-info/SOURCES.txt
+gifmeloader.egg-info/dependency_links.txt
+gifmeloader.egg-info/entry_points.txt
+gifmeloader.egg-info/requires.txt
+gifmeloader.egg-info/top_level.txt

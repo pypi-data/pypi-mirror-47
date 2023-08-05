@@ -1,0 +1,3 @@
+[console_scripts]
+gifmeloader = gifmeloader.__main__:main
+
