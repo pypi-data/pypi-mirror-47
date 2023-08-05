@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: bigenalg
+Version: 0.1
+Summary: Binary Genetic Algorithm
+Home-page: https://github.com/ttozatto/BiGenAlg
+Author: Thales Tozatto
+Author-email: ttozatto@gmail.com
+License: UNKNOWN
+Description: 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
