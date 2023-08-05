@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: Dero
+Version: 0.15.0
+Summary: Nick DeRobertis Personal Library
+Home-page: UNKNOWN
+Author: Nick DeRobertis
+Author-email: whoopnip@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pandas
+Requires-Dist: pandasql
+Requires-Dist: numpy
+Requires-Dist: wrds
+Requires-Dist: pdfrw
+Requires-Dist: selenium
+Requires-Dist: unidecode
+Requires-Dist: IPython
+Requires-Dist: sas7bdat
+Requires-Dist: statsmodels
+Requires-Dist: linearmodels
+Requires-Dist: matplotlib
+Requires-Dist: sympy
+Requires-Dist: pandastable
+Requires-Dist: astor
+Requires-Dist: PyPDF2
+Requires-Dist: sklearn
+Requires-Dist: latex
+Requires-Dist: bibtexparser
+
+
+Nick DeRobertis' personal library of functions. This is hosted on PyPi mostly for my own 
+convenience, though others may use it so long as I'm given credit. 
+
+
