@@ -1,0 +1,12 @@
+echo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+echo/server.py,sha256=Aae9vOpuqEK1jDTmuw6dkPPbyPIkfnwpkAa-YZM-mrc,1181
+grpcWSGI/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grpcWSGI/__version__.py,sha256=JTw57DrAAYZRvFr_waio7wBoa4iLCrojKWKHkB9yab4,66
+grpcWSGI/client.py,sha256=j_qiBv7fFQtsFE4bUyHBLfT8dBB6rTqw5Et1UxL0rIc,4231
+grpcWSGI/protocol.py,sha256=criqPoCBIA46ukUa3zHCXoUTaEXlLqT5lfe0ql1knV4,1663
+grpcWSGI/server.py,sha256=bDFrQwfF7yIPVgZ3k0_WOdzYFJcGO50ItoLYLLoPPFQ,7983
+grpcWSGI-0.0.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+grpcWSGI-0.0.4.dist-info/METADATA,sha256=3YAerQNLlNLS5L26V04CIaNn0YR5crWCdBX0T1xz05s,3745
+grpcWSGI-0.0.4.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+grpcWSGI-0.0.4.dist-info/top_level.txt,sha256=9RwlfT1ntNpOlGb925MG2qjL9MAbdYBI-X1YJ3xV2eE,14
+grpcWSGI-0.0.4.dist-info/RECORD,,
