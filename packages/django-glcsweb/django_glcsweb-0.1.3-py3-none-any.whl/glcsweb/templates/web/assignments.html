@@ -1,0 +1,9 @@
+{% extends "web/components/base.html" %}
+
+{% block content_header %}
+  {% include "web/components/content-header.html" with content_header="Assignments for "|add:course.name %}
+{% endblock %}
+
+{% block modules %}
+  {% include "web/modules/assignment-list.html" with m_size="12" %}
+{% endblock %}

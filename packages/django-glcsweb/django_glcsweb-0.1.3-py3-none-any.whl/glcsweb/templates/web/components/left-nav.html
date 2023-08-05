@@ -1,0 +1,52 @@
+<nav id="left-nav" class="col-4 col-md-3 col-lg-2">
+  <div class="row justify-content-between align-items-center" id="nav-header">
+    <div class="col-auto">
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          {% if username %}
+            {{ username }}
+          {% else %}
+            Login
+          {% endif %}
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          {% for name in cred_list %}
+            <a class="dropdown-item" href="{% url 'glcsweb:login' name %}">{{ name }}</a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+    <div class="col-auto">
+      <a href="{% url 'glcsweb:signup' %}">Signup</a>
+    </div>
+  </div>
+  <div class="row justify-content-between">
+    <h4 class="col-auto">Courses</h4>
+    {% if username %}
+    <div class="col-auto">
+      <a href="{% url 'glcsweb:newcourse' %}" class="btn btn-action">Add course</a>
+    </div>
+    {% endif %}
+  </div>
+  <ul class="nav flex-column" style="margin-top: 20px;">
+    {% if username %}
+      {% for course in courses %}
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-toggle="collapse" href="#{{ course.name }}-dropdown" role="button" aria-expanded="false" aria-controls="{{ course.name }}-dropdown">
+          {{ course.name|upper }}
+        </a>
+        <div id="{{course.name}}-dropdown" class="course-menu collapse">
+          <a class="dropdown-item" href="#">Overview</a>
+          <a class="dropdown-item" href="#">TAs</a>
+          <a class="dropdown-item" href="#">Students</a>
+          <a class="dropdown-item" href="{% url 'glcsweb:assignments' course.pk %}">Assignments</a>
+        </div>
+      </li>
+      {% endfor %}
+    {% else %}
+    <li class="nav-item mb-0">
+      <a class="nav-link"><h5>No courses available</h5></a>
+    </li>
+    {% endif %}
+  </ul>
+</nav>

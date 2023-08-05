@@ -1,0 +1,32 @@
+<article class="module-wrapper mb-4 col-12 col-xl-6">
+  <div class="module">
+    <header>
+      Upcoming Assignments
+    </header>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">name</th>
+            <th scope="col">due date</th>
+            <th scope="col">course</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% if username %}
+            {% for assignment in assignments %}
+            <tr>
+              <td>{{ assignment.tag }}</td>
+              <td>{{ assignment.due_date }}</td>
+              <td><a href="#">{{ assignment.course_instance }}</a></td>
+            </tr>
+            {% endfor %}
+          {% endif %}
+        </tbody>
+      </table>
+    </div>
+    <footer>
+      <a href="#">More...</a>
+    </footer>
+  </div>
+</article>
