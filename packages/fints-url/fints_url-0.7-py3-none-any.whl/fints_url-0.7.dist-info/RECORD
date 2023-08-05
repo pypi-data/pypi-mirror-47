@@ -1,0 +1,10 @@
+fints_url/__init__.py,sha256=0Qw2kxxAZwA5gjO_ZIgtG1do4WgW29GJUwPtep0eKgA,1152
+fints_url/bank_info.pickle,sha256=OdZ6nyZmnAIGDEHkxA-gOz2UT-HSdNoTzDH433aHVpU,174193
+fints_url/cli.py,sha256=_-Z4hAzk7D30mj9c4z2Nn0mzGD6PhteiAAeV9keNJf0,401
+fints_url/update_bank_info.py,sha256=dCot2QQaVGrpJvry20nVL9p0_tU_Lp9G3OJe4MWFQSc,3652
+fints_url-0.7.dist-info/LICENSE,sha256=oxG8L-tzCDVoy-7214TkbXaHIx1bnmfTYGoBINWpeDA,1077
+fints_url-0.7.dist-info/METADATA,sha256=mMD5Wq6-P9zkPwRdgQY5ATZ1kgvhpcgYM52VzJ8sZ5M,643
+fints_url-0.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fints_url-0.7.dist-info/entry_points.txt,sha256=2jNv4TcLoYORS6B79H50QkaIIzIrs1YQ8MI3LXkPEFE,50
+fints_url-0.7.dist-info/top_level.txt,sha256=LDgIN3voG13G1axIFJerqdOw5jkel8gRagwfrTeIBVI,10
+fints_url-0.7.dist-info/RECORD,,
