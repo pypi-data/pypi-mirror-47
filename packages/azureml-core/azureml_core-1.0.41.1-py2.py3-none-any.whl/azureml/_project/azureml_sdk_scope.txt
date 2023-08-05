@@ -1,0 +1,4 @@
+azureml-core
+azureml-contrib-notebook
+azureml-pipeline-core
+azureml-train-core
