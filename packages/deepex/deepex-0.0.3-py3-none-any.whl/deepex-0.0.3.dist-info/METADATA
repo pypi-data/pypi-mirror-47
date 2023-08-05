@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: deepex
+Version: 0.0.3
+Summary: DeepEX is a universal convenient frame with keras and Tensorflow. You can get well-known Wide&Deep model such as DeepFM here. Or, you can define you custom model use this frame.
+Home-page: https://github.com/FlashSnail/DeepEX
+Author: zhangzehua
+Author-email: zzh_0729@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy (>=1.16.2)
+Requires-Dist: keras (>=2.2.4)
+
+UNKNOWN
+
+
