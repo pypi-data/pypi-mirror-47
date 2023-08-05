@@ -1,0 +1,8 @@
+numpy
+pandas
+pytest
+SQLAlchemy
+chaospy
+sqlalchemy-utils
+matplotlib
+jsonpickle
