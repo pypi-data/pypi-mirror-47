@@ -1,0 +1,5 @@
+Click
+fxqioccore
+pyfiglet
+PyInquirer
+PyYAML
