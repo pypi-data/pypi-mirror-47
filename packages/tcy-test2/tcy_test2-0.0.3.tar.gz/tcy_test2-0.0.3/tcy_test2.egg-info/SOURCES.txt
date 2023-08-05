@@ -1,0 +1,7 @@
+README.md
+setup.py
+example_pkg/__init__.py
+tcy_test2.egg-info/PKG-INFO
+tcy_test2.egg-info/SOURCES.txt
+tcy_test2.egg-info/dependency_links.txt
+tcy_test2.egg-info/top_level.txt
