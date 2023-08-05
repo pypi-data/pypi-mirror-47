@@ -1,0 +1,6 @@
+Click
+fxq-core
+pyfiglet
+PyInquirer
+PyYAML
+appdirs
