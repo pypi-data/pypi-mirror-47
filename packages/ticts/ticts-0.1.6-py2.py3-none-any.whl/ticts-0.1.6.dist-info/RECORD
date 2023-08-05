@@ -1,0 +1,11 @@
+ticts/__init__.py,sha256=TfcPLbw5Zsb8x-oNyidTko0t2yehK9vc-NvV-uYWVQk,698
+ticts/extension.py,sha256=Z8zjRe3_B7HJnFsiL4XqrzDFROyB09o-oTqzWzPg0Do,120
+ticts/timeseries.py,sha256=zgIaexP_lUD7tBFfeFVL3Jto2NrLtiU7N61P3PtiDic,13805
+ticts/utils.py,sha256=Y39NTJ1sVV66CiYbIkJmaazpqCroTZPsVejnJMaEKvk,589
+ticts-0.1.6.dist-info/AUTHORS,sha256=0YMgWw3isjV2TLNmovwSdCbr3vP4DomsXG0iMt_2DqI,66
+ticts-0.1.6.dist-info/LICENSE,sha256=caFeFTFZWDo5TfQ-rcDpEs9BmtAHRYH6nyA4D6l7uSI,1067
+ticts-0.1.6.dist-info/METADATA,sha256=7p9pbmJZFP79V8iwgygGft3tp4h3EAeL8sZf-D1uM4E,2453
+ticts-0.1.6.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+ticts-0.1.6.dist-info/pbr.json,sha256=GaoiajrIxwriMlOODd2TSlYz72JWn7Qu6qb-oheSfb8,47
+ticts-0.1.6.dist-info/top_level.txt,sha256=1KFPibepRLLz7P3E5w7Num4L3X1ZuDbE7OJ0giXwvCQ,6
+ticts-0.1.6.dist-info/RECORD,,
