@@ -1,0 +1,3 @@
+[console_scripts]
+pyautodoc = pyautodoc.scripts.main:main
+
