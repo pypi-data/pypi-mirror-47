@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: minixes2
+Version: 0.6.1
+Summary: Python program to process MiniXES data from sector 20
+Home-page: UNKNOWN
+Author: Brian Mattern, John Hammonds
+Author-email: JPHammonds@anl.gov
+Maintainer: John Hammonds
+Maintainer-email: JPHammonds@anl.gov
+License: UNKNOWN
+Description: UNKNOWN
+Platform: any
+Description-Content-Type: text/markdown
