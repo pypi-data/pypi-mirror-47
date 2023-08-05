@@ -1,0 +1,8 @@
+setup.py
+beowulf/__init__.py
+beowulf/beowulf.py
+beowulf.egg-info/PKG-INFO
+beowulf.egg-info/SOURCES.txt
+beowulf.egg-info/dependency_links.txt
+beowulf.egg-info/not-zip-safe
+beowulf.egg-info/top_level.txt
