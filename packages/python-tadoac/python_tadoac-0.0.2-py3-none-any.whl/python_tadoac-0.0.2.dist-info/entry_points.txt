@@ -1,0 +1,3 @@
+[console_scripts]
+PytadoAC = pytado.__main__:main
+

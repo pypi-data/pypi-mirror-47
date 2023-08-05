@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: python-tadoac
+Version: 0.0.2
+Summary: PyTado modified by dgaust for AC
+Home-page: https://github.com/dgaust/PyTado
+Author: dgaust
+Author-email: dgaust@outlook.com
+License: GPL3
+Keywords: tado
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Home Automation
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.5
+
+PyTadoAC -- Pythonize your Air Conditioning
+===========================================
+
+Author: Chris Jewell <chrism0dwk@gmail.com>  
+Modified: Wolfgang Malgadey <wolfgang@malgadey.de>
+Modified: David Gordon <dgaust@outlook.com>
+
+Licence: GPL v3
+
+
+
