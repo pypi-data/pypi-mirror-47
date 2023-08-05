@@ -1,0 +1,11 @@
+.hgtags
+LICENSE.txt
+README.rst
+requirements.txt
+setup.py
+hashandrename.egg-info/PKG-INFO
+hashandrename.egg-info/SOURCES.txt
+hashandrename.egg-info/dependency_links.txt
+hashandrename.egg-info/top_level.txt
+src/hashandrename/__init__.py
+src/hashandrename/__main__.py

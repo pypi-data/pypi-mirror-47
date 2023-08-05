@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: hashandrename
+Version: 0.0.1
+Summary: utility to quickly hash index files
+Home-page: https://bitbucket.org/richsharp/hashandrename
+Maintainer: Rich Sharp
+Maintainer-email: richpsharp@gmail.com
+License: BSD
+Description: This module is used to hash a set of files and rename them such that the
+        hashes are embedded in their filenames.
+        
+        Usage:
+        
+        ``python -m hashandrename filea.txt fileb.txt --rename --hashalg md5``
+        
+        will generate the files
+        
+        ``filea_md5_[md5hash].txt`` and ``filea_md5_[md5hash].txt``.
+        
+Keywords: computing reproduction
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
