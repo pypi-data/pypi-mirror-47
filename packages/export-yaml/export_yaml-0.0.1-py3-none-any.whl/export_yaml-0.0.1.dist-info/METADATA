@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: export-yaml
+Version: 0.0.1
+Summary: Export environment variable from YAML file
+Home-page: https://github.com/danggrianto/export_yaml/
+Author: Example Author
+Author-email: d.anggrianto@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyyaml
+
+# export_yaml
+
+`export_yaml` is a python scripts to read yaml file and convert it to bash file
+to be sourced later
+
+## Installation
+
+`pip install export-yaml`
+
+## How to use
+
+```
+export YAML_FILE=path_to_yaml
+source $(export_yaml)
+```
+
+## YAML File configuration
+```
+---
+env:
+  HELLO: "world"
+```
+Note: `export_yaml` is going only to read everything under `env`
+
+
+
