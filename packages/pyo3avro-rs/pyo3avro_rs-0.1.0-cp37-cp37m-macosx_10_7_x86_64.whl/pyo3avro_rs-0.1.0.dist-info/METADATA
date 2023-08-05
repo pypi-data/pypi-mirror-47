@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: pyo3avro-rs
+Version: 0.1.0
+Author: Flavien Raynaud <flavr@yelp.com>, Antonio Verardi <antonio@yelp.com>
+Author-Email: Flavien Raynaud <flavr@yelp.com>, Antonio Verardi <antonio@yelp.com>
