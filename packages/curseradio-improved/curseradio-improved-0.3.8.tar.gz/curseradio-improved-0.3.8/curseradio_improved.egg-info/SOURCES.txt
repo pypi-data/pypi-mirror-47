@@ -1,0 +1,11 @@
+README.md
+setup.py
+curseradio_improved/__init__.py
+curseradio_improved/__main__.py
+curseradio_improved/configs.json
+curseradio_improved/curseradio_improved.py
+curseradio_improved.egg-info/PKG-INFO
+curseradio_improved.egg-info/SOURCES.txt
+curseradio_improved.egg-info/dependency_links.txt
+curseradio_improved.egg-info/entry_points.txt
+curseradio_improved.egg-info/top_level.txt
