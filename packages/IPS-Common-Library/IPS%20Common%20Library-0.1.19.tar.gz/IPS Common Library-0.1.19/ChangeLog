@@ -1,0 +1,10 @@
+CHANGES
+=======
+
+v0.1.19
+-------
+
+* Added DB and loggind
+* Use PBR for PyPi build
+* WIP
+* Initial commit
