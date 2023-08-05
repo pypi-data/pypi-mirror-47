@@ -1,0 +1,6 @@
+README
+setup.py
+python_shout.egg-info/PKG-INFO
+python_shout.egg-info/SOURCES.txt
+python_shout.egg-info/dependency_links.txt
+python_shout.egg-info/top_level.txt
