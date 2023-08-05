@@ -1,0 +1,14 @@
+matematik/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/add.py,sha256=2xW3OlVPz5CUGrAr6Uni_oWI1DUpzKXN5A_DYigM6Sg,1117
+matematik/arithmetic/decimals.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/divide.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/fractions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/multiply.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/negative_nums.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+matematik/arithmetic/subtract.py,sha256=Et7bk6aitX9uctv92o3iKWwVso7vqHP7ebaVMYDjDYE,1314
+matematik-0.0.1.dist-info/LICENSE,sha256=kU8YtsYTZ5aawidcLwKK937YvcIIhJVUHXk8K8TdMfg,1068
+matematik-0.0.1.dist-info/METADATA,sha256=87UTWul74rof29wipPwmiZOJkk22zhHGgFoXMYfBshA,336
+matematik-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+matematik-0.0.1.dist-info/top_level.txt,sha256=Lxf91fNk0_wZsAKgcSgyowUwMEQA9voTB2wjrTpbztI,10
+matematik-0.0.1.dist-info/RECORD,,
