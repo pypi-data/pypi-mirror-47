@@ -1,0 +1,10 @@
+bip39gen/__init__.py,sha256=d0cFSH9BlnL8o58SS6_Bhff_S96SNundRvXMNXNNoWk,77
+bip39gen/__main__.py,sha256=zjUAW7Is1j_iMi1AozHyj-pQdOXnedIPYlyTtwJ2UuA,672
+bip39gen/bip39-words.en.txt,sha256=L17tU6Rye0v4iA2PPxme_JDlhQNkbZ_47_Oi7Tsk29o,13116
+bip39gen/bip39gen.py,sha256=i88Qx70vM3xRjTyv8Gmkhc6YKFpJx3eTr6r1zbyFAWY,2262
+bip39gen-1.0.0.dist-info/LICENSE,sha256=0aylHAkSH8sXOUrYJz3gptWc_bJnHgefgORd8oIsr6s,1068
+bip39gen-1.0.0.dist-info/METADATA,sha256=QuDQ8lG4dbJ4aZPEilm0rEU-ed7plJjV7kE53hFkXKI,1235
+bip39gen-1.0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bip39gen-1.0.0.dist-info/entry_points.txt,sha256=rxx2MXlpjJuw6s_TgDmebHuPoF9KnzZEIYyaxFAu7cI,53
+bip39gen-1.0.0.dist-info/top_level.txt,sha256=k759jkiuEBQkh1RsmBD-CKsTVeCtPavlURp2-Rk5pI0,9
+bip39gen-1.0.0.dist-info/RECORD,,
