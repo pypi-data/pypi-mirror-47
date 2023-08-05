@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: PyDBOD
+Version: 0.2.dev0
+Summary: A Distances Based Outlier Detector package
+Home-page: https://github.com/miki97/TFG-OutlierDetection
+Author: Miguel Ángel López Robles
+Author-email: UNKNOWN
+License: Licencia pública general de GNU Versión 3
+Platform: UNKNOWN
+
+# TFG-OutlierDetection
+Implementación de algoritmos para detección de anomalías, basados en proximidad
+
+
