@@ -1,0 +1,15 @@
+gsheets/__init__.py,sha256=s7t2U4L_O9P8QZG4Z37qDtuLSHDbTwgLzBjy1rYMzM0,495
+gsheets/_compat.py,sha256=J7Ar2Sa4PV0ztu86bMKv81alaosvS4s0LCEeyyXDPHE,1747
+gsheets/api.py,sha256=LuIz2RjNiw_UXF18M6IYa3wLhmXglPDkoDNcw1QeADA,5553
+gsheets/backend.py,sha256=avR7FfhGewTPFH-QFCYoaOZcNtI-Ei0Yu7ARLUXbZ0I,2298
+gsheets/coordinates.py,sha256=MQd18s65-5PCKHc1hH01qeeDfYrJXiESx7RWMH4UYXU,14110
+gsheets/export.py,sha256=DtCvmUlamzpT5aB3ZqXiLR67KsCzID9CjvmPgQXqYyU,1110
+gsheets/models.py,sha256=sodAhCv9y8hLvSuqwYaSUDHUdsPDZDLOKoIOOxPyH9c,13779
+gsheets/oauth2.py,sha256=DyKbTT0YtdQ7NIJNX_lAsXIEuXK9wFakFW8D6aPFsXo,2934
+gsheets/tools.py,sha256=gVGNlCtldPjtvXMQj5e0xe4n0oBJe_X7nTQWEGflERI,3346
+gsheets/urls.py,sha256=8xTnGr7T_cmHPs2gRobTBw8Il9aqFb-nB1Bt75QMCf0,1910
+gsheets-0.3.2.dist-info/LICENSE.txt,sha256=h1i5wIZoerfqdhWWpjHpoUP1QexiVG0MpNilkyY2bM0,1107
+gsheets-0.3.2.dist-info/METADATA,sha256=hn1FpW8BhbmqYW9rabiG4oZvi443Cla4rizIG-Q7Sxc,9288
+gsheets-0.3.2.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+gsheets-0.3.2.dist-info/top_level.txt,sha256=YSGEStBEDv9QzTsQ3UavK0MfNEHuFSs9osnm2Q9_sjA,8
+gsheets-0.3.2.dist-info/RECORD,,
