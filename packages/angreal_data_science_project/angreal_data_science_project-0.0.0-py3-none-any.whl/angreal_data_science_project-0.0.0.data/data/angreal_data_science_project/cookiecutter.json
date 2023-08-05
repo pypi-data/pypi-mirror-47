@@ -1,0 +1,9 @@
+{
+  "name"         : "project_name",
+  "author"       : "joesmith",
+  "author_email" : "joesmit@email.com",
+  "ubuntu_version" : ["16.04", "18.04"],
+  "python_version" : ["3.7","3.6"],
+  "tensorflow_version" : ["1.13.1","2.0.0a", "None" ],
+  "tensorflow_string"  : "{{ '-tf'~cookiecutter.tensorflow_version if cookiecutter.tensorflow_version != 'None' else '' }}"
+}

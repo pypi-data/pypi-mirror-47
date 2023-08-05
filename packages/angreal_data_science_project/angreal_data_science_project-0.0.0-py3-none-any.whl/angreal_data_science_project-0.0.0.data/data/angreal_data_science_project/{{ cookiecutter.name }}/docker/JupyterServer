@@ -1,0 +1,27 @@
+ARG BASE_CONTAINER='dockerrepay/vilya:ubuntu-16.04-py3.7-tf1.13.1-lab'
+FROM ${BASE_CONTAINER}
+
+
+
+LABEL maintainer='{{cookiecutter.author}}'
+
+
+
+
+
+ENV PATH="/home/${NB_USER}/.local/bin:${PATH}"
+COPY ./requirements/* /tmp/requirements/
+
+RUN mkdir ${HOME}/project
+RUN pip install --user -r /tmp/requirements/dev.txt
+
+
+COPY ./docker/files/00_default_imports.py /home/${NB_USER}/.ipython/profile_default/startup/
+
+WORKDIR project
+
+USER root
+RUN chown -R ${NB_USER}:users /home/${NB_USER}/.ipython
+USER ${NB_UID}
+
+
