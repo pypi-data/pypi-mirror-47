@@ -1,0 +1,32 @@
+Metadata-Version: 1.2
+Name: stellar-observatory
+Version: 1.0a2
+Summary: Python package for analyzing the Stellar network
+Home-page: https://github.com/andrenarchy/stellar-observatory
+Author: André Gaul
+Author-email: andre@gaul.io
+License: UNKNOWN
+Description: # Stellar Observatory
+        
+        [![Build Status](https://travis-ci.org/andrenarchy/stellar-observatory.svg?branch=master)](https://travis-ci.org/andrenarchy/stellar-observatory)
+        
+        Stellar Observatory is a Python package for analyzing the Stellar network. It contains experimental and non-optimized code that is used for conduction research on quorums, quorum slices, and other aspects of the Stellar network.
+        
+        ## Installation
+        
+        ```
+        pip install stellar-observatory
+        ```
+        
+        Note: Stellar Observatory requires Python 3.5 or above.
+        
+        ## Example
+        
+        See https://colab.research.google.com/drive/1-dOgu35CWWw4J-mQnhrmjnRFkLlEXDzL
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Requires-Python: ~=3.5
