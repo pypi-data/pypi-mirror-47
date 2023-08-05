@@ -1,0 +1,7 @@
+README.md
+setup.py
+gdtw/__init__.py
+gdtw.egg-info/PKG-INFO
+gdtw.egg-info/SOURCES.txt
+gdtw.egg-info/dependency_links.txt
+gdtw.egg-info/top_level.txt

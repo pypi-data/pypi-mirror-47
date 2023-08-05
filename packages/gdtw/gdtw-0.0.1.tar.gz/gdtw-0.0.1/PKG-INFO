@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: gdtw
+Version: 0.0.1
+Summary: Package for General Dynamic Time Warping
+Home-page: https://github.com/dderiso/gdtw
+Author: Dave Deriso
+Author-email: dderiso@stanford.edu
+License: UNKNOWN
+Description: # gdtw
+        
+        Package for General Dynamic Time Warping
+        
+        This package is under development and will be live soon.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
