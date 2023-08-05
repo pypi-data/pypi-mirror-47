@@ -1,0 +1,90 @@
+Metadata-Version: 2.1
+Name: timetime
+Version: 0.1
+Summary: timetime est un micromodule de comparaison de temps d'exécution de 2 ou 3 fonctions sans argument.
+Home-page: https://framagit.org/zenjo/timetime/wikis/home
+Author: Robert Sebille
+Author-email: robert@sebille.name
+Maintainer: Robert Sebille
+Maintainer-email: robert@sebille.name
+License: GNU GPL
+Download-URL: https://framagit.org/zenjo/timetime/tree/master
+Description: # timetime
+        
+        ## Résumé
+        
+        timetime est un micromodule de comparaison de temps d'exécution de 2 ou 3 fonctions. Très simple à utiliser, il est basé sur les modules built-in time et re. 
+        
+        Il fait un nombre de passes (3 par défaut) et un nombre de boucles (10000 par défaut) sur chaque fonction. Il affiche ensuite, par passe, les temps total et moyen d'exécution.
+        
+        ## Usage
+        *Les fonctions à comparer doivent être sans arguments.*
+        Il est fortement recommandé, pour la lisibilité des résultats de l'analyse, qu'elle ne comporte pas d'impressions écran de résultats de la fonction elle-même *(si ça doit être le cas, voyez une alternative pour éviter un "print" dans l'exemple)*. 
+        ```
+        import timetime as tt
+        tt.compare2(f1, f2, cpass=3, loop=10000)
+        # compare2(fonction1, fonction2, [cpass, loop])
+        tt.compare3(f1, f2, f3, cpass=3, loop=10000)
+        # compare3(fonction1, fonction2, fonction3, [cpass, loop])
+        tt.version()
+        
+        import timetime_demo as dtt
+        dtt.demo()
+        dtt.code_demo()
+        ```
+        
+        ### exemple
+        ```
+        import os
+        import timetime as tt
+        
+        def f1():
+            with open(os.devnull, 'w') as f:
+                 f.write('b'+'c')
+        
+        a = 'b'+'c'
+        def f2():
+            with open(os.devnull, 'w') as f:
+                f.write(a)
+        
+        # quel est le plus rapide ?
+        tt.compare2(f1, f2)
+        ```
+        ### commentaires à propos de l'exemple
+        Les résultats:
+        ```
+        +-----------------------+
+        | Compare f1() and f2() |
+        +-----------------------+
+        3 passes, 10000 loops.
+        
+        -- Pass 1 -----------------------------------
+        FUNCTION f1(). Total runtime = 0.22496986389160156
+        for 10000 loops. Mean loop = 2.2496986389160157e-05 
+        
+        FUNCTION f2(). Total runtime = 0.23083710670471191
+        for 10000 loops. Mean loop = 2.308371067047119e-05 
+        
+        -- Pass 2 -----------------------------------
+        FUNCTION f1(). Total runtime = 0.22321414947509766
+        for 10000 loops. Mean loop = 2.2321414947509765e-05 
+        
+        FUNCTION f2(). Total runtime = 0.2218799591064453
+        for 10000 loops. Mean loop = 2.218799591064453e-05 
+        
+        -- Pass 3 -----------------------------------
+        FUNCTION f1(). Total runtime = 0.22172784805297852
+        for 10000 loops. Mean loop = 2.217278480529785e-05 
+        
+        FUNCTION f2(). Total runtime = 0.2204301357269287
+        for 10000 loops. Mean loop = 2.204301357269287e-05 
+        ```
+        ### que constate-ton ?
+        Que l'avantage de concatener préalablement une seule fois n'est pas du tout évident sur le fait de concaténer l'équivalent de la chaine`a` à chaque tour de boucle. 
+        
+        Ces comparaisons entre diverses implémentations ou diverses fonctions ne sont pas toujours aussi proches; voyez `timetime_demo.py`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
