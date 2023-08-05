@@ -1,0 +1,10 @@
+pgpython/__init__.py,sha256=nPwIMohYHG09nqIyWZWjZ7T3vqE7DJZ4AY97UP0Qarc,189
+pgpython/base.py,sha256=LY5sUR-02dw8FjgUXV7g0KRzXVOCAiJTWwgEPMBXADk,1746
+pgpython/fields.py,sha256=yZEQIYNqziOQBXw9JoH_2W-KKR0xVb8XlSw0y0eEqqw,1351
+pgpython/pgdb.py,sha256=RpStw8lZ2WX-ihn18eVvwcPPYXPRtRRrx84Z_QwNBVc,1605
+pgpython/schema.py,sha256=Ex6w4sdgBK3ehJimRBpVIxov52qRlJE0kKPpcwqoMbc,362
+pgpython-0.6.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+pgpython-0.6.dist-info/METADATA,sha256=o776a3DpcOQFh9iyDR3NKIP8Uj1w70NRzYlnQLNx5xc,714
+pgpython-0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pgpython-0.6.dist-info/top_level.txt,sha256=QSxpVWbaYUej0OZtyG4bmUwClgApkWLvCniKr8yG_dY,9
+pgpython-0.6.dist-info/RECORD,,
