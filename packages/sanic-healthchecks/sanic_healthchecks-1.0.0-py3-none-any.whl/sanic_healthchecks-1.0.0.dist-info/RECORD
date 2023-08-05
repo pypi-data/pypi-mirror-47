@@ -1,0 +1,6 @@
+sanic_healthchecks/__init__.py,sha256=WDf0YwQYwmWo_q1QxVPcKrftZfImmegKIm_BkwWu4kk,278
+sanic_healthchecks/core.py,sha256=IZuzB2dl0U7SuoSuQcoSCF8xyoKw_JKdRk892afofkI,2415
+sanic_healthchecks-1.0.0.dist-info/LICENSE,sha256=fIeHMpHyiXE6xd9IsfIBDraWN1K71rUwQWq5n8N5FKg,10765
+sanic_healthchecks-1.0.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+sanic_healthchecks-1.0.0.dist-info/METADATA,sha256=HqqCybM-F_6mGBqhkD1GblmwGO2Nj1nBmQ3Z58vXEiw,5150
+sanic_healthchecks-1.0.0.dist-info/RECORD,,
