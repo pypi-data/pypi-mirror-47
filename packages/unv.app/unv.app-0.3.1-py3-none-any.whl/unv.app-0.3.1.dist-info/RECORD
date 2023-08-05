@@ -1,0 +1,12 @@
+unv/__init__.py,sha256=tqnq_Q0F-tOSCBS_h8hYwEaedyxMG-LFgjOC_97LWxs,64
+unv/app/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+unv/app/base.py,sha256=GMxUHBKR3CCb6fjF4f1k9rIFXSTUKAsBx-oaSGvlGH0,2013
+unv/app/bin.py,sha256=rtd94jYrRd2ACkC2wgabpP6hubG5zSOvXfL6BzGqBmg,81
+unv/app/settings.py,sha256=QpgpxMLgLcUK6GExHAKHCldvWhe1M95UADPjQBJgrBw,2952
+unv.app-0.3.1.dist-info/LICENSE,sha256=iijs5KhzKhcQQFFE4NASdO3aNW77muzCykmBVf2NMTk,1113
+unv.app-0.3.1.dist-info/METADATA,sha256=JuOQi1HKV4SiiGON_rY2FLtUzlGCJYndRU9Yln7FXVg,892
+unv.app-0.3.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+unv.app-0.3.1.dist-info/entry_points.txt,sha256=55aaqt7DZxdMqnRQoxCD-8VqVOq9zF4eG68bIw1Guv8,41
+unv.app-0.3.1.dist-info/top_level.txt,sha256=zpZYkrC2GtfZ4NGMGPyb4mTQKR8et7gz1WrWIMjPIHI,4
+unv.app-0.3.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+unv.app-0.3.1.dist-info/RECORD,,
