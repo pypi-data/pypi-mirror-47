@@ -1,0 +1,10 @@
+qigeometry/__init__.py,sha256=GSY3wKFA3WRD3kAUDmfg-8bhvXWG8fP33_yBtWaj8k4,948
+qigeometry/mac/lib/libalmath.dylib,sha256=9F7lTpcFrGllWl8_8BBtCT1JzHNQj_ROpPbgxLxRkNA,710988
+qigeometry/mac/lib/libgeometry_module.dylib,sha256=NKnkkiuw9bpYCMwZ0qMvJi_RFxBRRSok3OfTcsk5gHQ,195208
+qigeometry/mac/lib/libqigeometry.dylib,sha256=9XRLJVfhIWNxm4-PgOuPC1iZ3cCvc45oqBVw83BDODc,46600
+qigeometry/mac/share/qi/module/geometry_module.mod,sha256=st3_n7dR9Y75QOgD4nJcJed-luRnmOMrSoGkUl0VO1I,4
+qigeometry-1.6.9.dist-info/LICENSE.txt,sha256=JzQA36qe9hGYgJxwt2LysExpjUZe8xvERreMYqVJjVo,36
+qigeometry-1.6.9.dist-info/METADATA,sha256=Nc6F3Vdo6DbAjhNIFK1twyhQOX8WUrkoBmpj-A2oWfo,686
+qigeometry-1.6.9.dist-info/WHEEL,sha256=ewTwFNGYpu-209YHC1l29lD6331NsMGRTB84B-abO3g,108
+qigeometry-1.6.9.dist-info/top_level.txt,sha256=GwWYuszGXAFFoqDfOWyHjXioGvQN9TH5d_-2g610HuY,11
+qigeometry-1.6.9.dist-info/RECORD,,
