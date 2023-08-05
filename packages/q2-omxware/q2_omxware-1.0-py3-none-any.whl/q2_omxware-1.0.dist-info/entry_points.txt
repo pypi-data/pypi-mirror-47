@@ -1,0 +1,3 @@
+[qiime2.plugins]
+q2_omxware = q2_omxware.plugin_setup:plugin
+

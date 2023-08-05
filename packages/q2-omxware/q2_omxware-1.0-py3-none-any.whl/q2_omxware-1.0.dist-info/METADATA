@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: q2-omxware
+Version: 1.0
+Summary: Export -omics data from omxware
+Home-page: https://qiime2.org
+Author: Sarath Swaminathan
+Author-email: Sarath.Swaminathan@ibm.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Requires-Dist: omxware
+
+UNKNOWN
+
+
