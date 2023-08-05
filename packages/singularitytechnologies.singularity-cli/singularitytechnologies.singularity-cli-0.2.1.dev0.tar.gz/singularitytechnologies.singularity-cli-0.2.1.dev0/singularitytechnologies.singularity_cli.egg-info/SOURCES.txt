@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+singularity/__init__.py
+singularity/data.py
+singularity/singularity.py
+singularitytechnologies.singularity_cli.egg-info/PKG-INFO
+singularitytechnologies.singularity_cli.egg-info/SOURCES.txt
+singularitytechnologies.singularity_cli.egg-info/dependency_links.txt
+singularitytechnologies.singularity_cli.egg-info/entry_points.txt
+singularitytechnologies.singularity_cli.egg-info/requires.txt
+singularitytechnologies.singularity_cli.egg-info/top_level.txt
