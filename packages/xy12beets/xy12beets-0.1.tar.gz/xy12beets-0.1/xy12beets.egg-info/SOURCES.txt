@@ -1,0 +1,10 @@
+setup.py
+distributions/Binomialdistribution.py
+distributions/Gaussiandistribution.py
+distributions/Generaldistribution.py
+distributions/__init__.py
+xy12beets.egg-info/PKG-INFO
+xy12beets.egg-info/SOURCES.txt
+xy12beets.egg-info/dependency_links.txt
+xy12beets.egg-info/not-zip-safe
+xy12beets.egg-info/top_level.txt
