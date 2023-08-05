@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+smurf/__init__.py
+smurf/docopt_cli.py
+smurf/metadata.py
+smurf.egg-info/PKG-INFO
+smurf.egg-info/SOURCES.txt
+smurf.egg-info/dependency_links.txt
+smurf.egg-info/entry_points.txt
+smurf.egg-info/not-zip-safe
+smurf.egg-info/requires.txt
+smurf.egg-info/top_level.txt

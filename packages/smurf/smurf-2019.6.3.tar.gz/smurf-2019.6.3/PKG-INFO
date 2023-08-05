@@ -1,0 +1,45 @@
+Metadata-Version: 1.2
+Name: smurf
+Version: 2019.6.3
+Summary: string morping, for smurfing from a string to another
+Home-page: https://github.com/e7dal/smurf
+Author: Erdal Yildiz
+Author-email: erdalyildiz1974@gmail.com
+Maintainer: Erdal Yildiz
+Maintainer-email: erdalyildiz1974@gmail.com
+License: GPL-3.0
+Description: Usage:
+          smurf from <from> to <to> [delay <delay>] 
+          smurf -h | --help
+          smurf --version
+        Options:
+          -h --help     Show this screen.
+          --version     Show version.
+        
+        
+        
+        #this is the api
+        
+        #install
+        #git clone https://....
+        #cd ...
+        #pipenv shell
+        #pip install -e .
+        
+        
+        
+        for example try:
+        $ ./smurf  from "merhaba dünya:)" to "(:hello world" delay 0.1
+         
+        
+        
+        
+        zo  2 jun 2019 14:06:28 CEST  first publish on github
+        
+Keywords: string morphing,cli,smurfing
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.6
