@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: NuRadioReco
+Version: 0.1.0
+Summary: NuRadioReco: A reconstruction framework for radio neutrino detectors
+Home-page: https://github.com/nu-radio/NuRadioReco
+License: UNKNOWN
+Author: Christian Glaser, Daniel Garcia, Anna Nelles, et al.
+Author-email: work@c-glaser.de
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Requires-Dist: tinydb
+Requires-Dist: tinydb-serialization
+Requires-Dist: aenum
+Requires-Dist: astropy
+Requires-Dist: radiotools >=0.1.0
+Requires-Dist: h5py
+Requires-Dist: peakutils
+Requires-Dist: sphinx; extra == "doc"
+Provides-Extra: doc
