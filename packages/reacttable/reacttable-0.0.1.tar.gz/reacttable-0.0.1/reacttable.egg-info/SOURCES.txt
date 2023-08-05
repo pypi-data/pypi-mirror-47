@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+reacttable/Dash_react_table.py
+reacttable/__init__.py
+reacttable/_imports_.py
+reacttable/metadata.json
+reacttable/package.json
+reacttable/reacttable.dev.js
+reacttable/reacttable.min.js
+reacttable.egg-info/PKG-INFO
+reacttable.egg-info/SOURCES.txt
+reacttable.egg-info/dependency_links.txt
+reacttable.egg-info/top_level.txt

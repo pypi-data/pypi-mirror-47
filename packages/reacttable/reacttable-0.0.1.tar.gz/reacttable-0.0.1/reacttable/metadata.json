@@ -1,0 +1,225 @@
+{
+  "src/lib/components/Dash_react_table.react.js": {
+    "description": "DashReactTable is a decalaritive version of react-table, built for dash.\n\nAt a minimum, it must have `data` and `column` properties.\n`data` must be a uniform list of dicts with the arbitrary amount of keys representing the \ncolumns and values representing that row's data. This can be done very easily \nin pandas using df.to_json(orient='records'). As for `columns`, this is also a list\nof dictionaries, but it has a defined set of properties. At the very least, it must contain \n`Header` and `accessor` properties, referring to the column's title and identifying key in \nthe data property, respectively. Columns also have many other properties that are referenced \nboth in the docstring as well as in the react-table docs.",
+    "displayName": "Dash_react_table",
+    "methods": [],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "data": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "object"
+          }
+        },
+        "required": false,
+        "description": "An array of dictionaries with each dictionary corresponding \nto a row. The keys will refere to columns while the values refer\nto the data that will be placed in that row's cell.",
+        "defaultValue": {
+          "value": "[{\n    \"\": 1,\n    \"Class\": \"1st\",\n    \"Sex\": \"Male\",\n    \"Age\": \"Child\",\n    \"Survived\": \"No\",\n    \"Freq\": 0\n  },\n  {\n    \"\": 2,\n    \"Class\": \"2nd\",\n    \"Sex\": \"Male\",\n    \"Age\": \"Child\",\n    \"Survived\": \"No\",\n    \"Freq\": 0\n  },\n  {\n    \"\": 3,\n    \"Class\": \"3rd\",\n    \"Sex\": \"Male\",\n    \"Age\": \"Child\",\n    \"Survived\": \"No\",\n    \n    }\n]",
+          "computed": false
+        }
+      },
+      "columns": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "shape",
+            "value": {
+              "Header": {
+                "name": "string",
+                "description": "The column's label",
+                "required": false
+              },
+              "accessor": {
+                "name": "string",
+                "description": "The corresponding key that links \nthe column to the data array.",
+                "required": false
+              },
+              "sortable": {
+                "name": "bool",
+                "description": "Overrides the table option",
+                "required": false
+              },
+              "resizable": {
+                "name": "bool",
+                "description": "Overides the table option",
+                "required": false
+              },
+              "filterable": {
+                "name": "bool",
+                "description": "Overides the table option",
+                "required": false
+              },
+              "show": {
+                "name": "bool",
+                "description": "Used to hide a column",
+                "required": false
+              },
+              "width": {
+                "name": "number",
+                "description": "A hardcoded width for the column. This overides both min and max width options",
+                "required": false
+              },
+              "minWidth": {
+                "name": "number",
+                "description": "A minimum width for the column (default: 100)",
+                "required": false
+              },
+              "maxWidth": {
+                "name": "number",
+                "description": "A maximum width for the column",
+                "required": false
+              },
+              "className": {
+                "name": "string",
+                "description": "Class name for the cells of this column.",
+                "required": false
+              },
+              "style": {
+                "name": "object",
+                "description": "Inline style for the cells of this column.",
+                "required": false
+              },
+              "headerClassName": {
+                "name": "string",
+                "description": "Class name for the header of this column.",
+                "required": false
+              },
+              "headerStyle": {
+                "name": "object",
+                "description": "Inline style for the header of this column.",
+                "required": false
+              }
+            }
+          }
+        },
+        "required": false,
+        "description": "An aray of dictionaries containing properties to each column. \nAt the very least, every column must have a \"Header\" and \"accessor\" \nproperty. The \"Header\" will be the title of the column and the \"accessor\"\nwill link that column to the data array of dictionaries.",
+        "defaultValue": {
+          "value": "[\n    {\n        Header: 'Class',\n        accessor: 'Class',\n        minWidth: 90,\n\n    },\n    {\n        Header: 'Sex',\n        accessor: 'Sex',\n        minWidth: 90,\n    },\n    {\n        Header: 'Age',\n        accessor: 'Age',\n        minWidth: 90,\n    },\n    {\n        Header: 'Survived',\n        accessor: 'Survived',\n        minWidth: 90,\n    },\n    {\n        Header: 'Freq',\n        accessor: 'Freq',\n        minWidth: 90,\n    },\n\n]",
+          "computed": false
+        }
+      },
+      "showPagination": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Turn on pagination. Seting this to true will improve performance\non larger tables.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "showPaginationTop": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show pagination controls on top of table (default: false)"
+      },
+      "showPaginationBottom": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show pagination controls on bottom of table (default: true)"
+      },
+      "showPageSizeOptions": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Show options dropdown to edit results per page when pagination is enabled."
+      },
+      "pageSizeOptions": {
+        "type": {
+          "name": "arrayOf",
+          "value": {
+            "name": "number"
+          }
+        },
+        "required": false,
+        "description": "Options for show page size when pageination is enabled. (default: [5, 10, 20, 25, 50, 100])",
+        "defaultValue": {
+          "value": "[20, 5000, 10000, 50000]",
+          "computed": false
+        }
+      },
+      "defaultPageSize": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Default page size. (default: 20)"
+      },
+      "minRows": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "controls the minimum number of rows to display - default will be \"pageSize\"\nNOTE: if you set minRows to 0 then you get rid of empty padding rows BUT your table formatting will also \nlook strange when there are ZERO rows in the table."
+      },
+      "sortable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Table level sorting (default: true). This can be overided for specific columns.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "resizable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Table level resizing (default: true). This can be overided for specific columns.",
+        "defaultValue": {
+          "value": "true",
+          "computed": false
+        }
+      },
+      "filterable": {
+        "type": {
+          "name": "bool"
+        },
+        "required": false,
+        "description": "Table level filtering (default: false). This can be overided for specific columns.",
+        "defaultValue": {
+          "value": "false",
+          "computed": false
+        }
+      },
+      "className": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Add classname \"-striped\" and/or \"-highlight\" to enable these features."
+      },
+      "style": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Inline table styles"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change"
+      }
+    }
+  }
+}

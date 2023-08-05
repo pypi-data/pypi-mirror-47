@@ -1,0 +1,5 @@
+include reacttable/reacttable.min.js
+include reacttable/reacttable.dev.js
+include reacttable/metadata.json
+include reacttable/package.json
+include README.md
