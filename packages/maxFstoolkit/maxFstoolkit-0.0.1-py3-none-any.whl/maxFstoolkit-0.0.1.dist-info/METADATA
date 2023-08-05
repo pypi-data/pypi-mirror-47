@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: maxFstoolkit
+Version: 0.0.1
+Summary: Basic package that wraps dataframes and lists
+Home-page: https://github.com/maxwellflitton/maxFstoolkit
+Author: Maxwell Flitton
+Author-email: maxwellflitton@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: discord-webhook (==0.4.1)
+Requires-Dist: idna (==2.8)
+Requires-Dist: peewee (==3.9.5)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: urllib3 (==1.25.2)
+
+# maxFs_toolkit
+basic toolkit for pandas 
+
+
