@@ -1,0 +1,7 @@
+[console_scripts]
+sshh=sshh.sshh:main
+sshh-add=sshh.sshh_add:main
+sshh-agent=sshh.sshh_agent:main
+sshh-askpass=sshh.sshh_askpass:main
+sshh-config=sshh.sshh_config:main
+
