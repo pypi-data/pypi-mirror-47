@@ -1,0 +1,13 @@
+{
+    "model_subject":"[NOTIPY ME] {task_name} interrupted!",
+    "model_title":"Task interrupted!",
+    "model_subtitle":"Your task {task_name} was stopped!",
+    "the_wheres":[
+        "The task was on {hostname}.",
+        "The user was {username}.",
+        "The path was {pwd}."
+    ],
+    "the_whens":[
+        "The task started {elapsed} ago."
+    ]
+}
