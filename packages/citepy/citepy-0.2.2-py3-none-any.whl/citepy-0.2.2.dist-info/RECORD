@@ -1,0 +1,16 @@
+citepy/__init__.py,sha256=9ptFym_TjLl6k_dsCcvMPOTKFjpyQRFQDyUkZdt8mR0,87
+citepy/classes.py,sha256=dYL_VBIiRZ9OQBhEyhN9kUVG-RPy_cLYZgia_1ReiOg,19094
+citepy/cli.py,sha256=6hRwXfV9qOm9NdcTuJwukOmZpaE_ZHRN-sZTaVdK0Mo,4905
+citepy/csl-data.json,sha256=1LlL7_NzijKAHhm34UGQ4nB2_eKxUMmyvq74IeLmDSg,13016
+citepy/validate.py,sha256=S0Z556xF7Ej6w1CNrBMQfc8AMX1VqevSKlPyjgYRa2o,1274
+citepy/repos/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+citepy/repos/common.py,sha256=6qKWu1_zK29OToyjfSppx3CqvqgBXQqNtGuKHbWq39I,617
+citepy/repos/crates.py,sha256=XaXAI5weAw4ouqdUSP-X8f4xoI8YqZfo5DZAuRen7KY,2365
+citepy/repos/crates_io.py,sha256=c9Iqeu302UIQkWCywY1kQWoN6C0rWFe8jqc5INdCYyo,2585
+citepy/repos/pypi.py,sha256=5C1JNn2GaJjTTz6vq7_Dmw44iszAgW1BEjrMKocvLpE,1977
+citepy-0.2.2.dist-info/LICENSE,sha256=LOpE07oD4VOSdudaWFWpkXO7jbX-x45FqHTcXWBE8S0,1069
+citepy-0.2.2.dist-info/METADATA,sha256=Kry0rVGCdPHEw8wA_FK1r8qjMZg3tKp7eT6naWUePSU,2087
+citepy-0.2.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+citepy-0.2.2.dist-info/entry_points.txt,sha256=smmF7DL_z9lfA6SAZBBPE0b1-5jCk60Q-RZTg8e0MVQ,67
+citepy-0.2.2.dist-info/top_level.txt,sha256=vQrAw5CSnL780wCiDExYsZ5BFuNR92B6gZNoRTuHpI8,7
+citepy-0.2.2.dist-info/RECORD,,
