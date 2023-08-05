@@ -1,0 +1,5 @@
+setup.py
+PyShow.egg-info/PKG-INFO
+PyShow.egg-info/SOURCES.txt
+PyShow.egg-info/dependency_links.txt
+PyShow.egg-info/top_level.txt
