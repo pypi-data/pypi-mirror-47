@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: puzzle-solvers
+Version: 0.0.1a1
+Summary: Program for creating MS Word reports from data and content templates
+Home-page: https://github.com/madphysicist/puzzle-solvers
+Author: Joseph R. Fox-Rabinovitz
+Author-email: jfoxrabinovitz@gmail.com
+Maintainer: Joseph R. Fox-Rabinovitz
+Maintainer-email: jfoxrabinovitz@gmail.com
+License: MIT
+Project-URL: Bugs, https://github.com/madphysicist/puzzle-solvers/issues
+Project-URL: Documentation, https://puzzle-solvers.readthedocs.io/en/latest/
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Provides: puzzle_solvers
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.10.0)
+Provides-Extra: mpl
+Requires-Dist: matplotlib (>=2.0) ; extra == 'mpl'
+
+Puzzle Solvers is a small library containing tools for solving all kinds of
+puzzles. Currently "all kinds" == "one kind", but who's counting?
+
+
+0.0.1 - 2019, May 30
+    - Initial release
+    - Elimination puzzles
+
+
+
