@@ -1,0 +1,13 @@
+README.rst
+setup.py
+sc_tim/CellRedMatrix.py
+sc_tim/ExtractGene.py
+sc_tim/GeneRedMatrix.py
+sc_tim/GeneSpecificity.py
+sc_tim/PreProcess.py
+sc_tim/__init__.py
+sc_tim.egg-info/PKG-INFO
+sc_tim.egg-info/SOURCES.txt
+sc_tim.egg-info/dependency_links.txt
+sc_tim.egg-info/requires.txt
+sc_tim.egg-info/top_level.txt
