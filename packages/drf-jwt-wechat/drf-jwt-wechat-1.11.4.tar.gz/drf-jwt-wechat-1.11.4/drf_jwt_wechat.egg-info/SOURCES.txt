@@ -1,0 +1,9 @@
+README.rst
+setup.py
+drf-jwt-wechat/__init__.py
+drf-jwt-wechat/views.py
+drf_jwt_wechat.egg-info/PKG-INFO
+drf_jwt_wechat.egg-info/SOURCES.txt
+drf_jwt_wechat.egg-info/dependency_links.txt
+drf_jwt_wechat.egg-info/requires.txt
+drf_jwt_wechat.egg-info/top_level.txt
