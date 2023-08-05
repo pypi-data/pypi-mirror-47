@@ -1,0 +1,12 @@
+composeml/__init__.py,sha256=3298uWFPYen0u-IZ-0bmaIqeLQ6ddq89T1_lGunPMFE,118
+composeml/label_maker.py,sha256=2zarelu8PzUlADzlcN719abg0r5BHDJYridK8R90hiA,4172
+composeml/label_times.py,sha256=khjTbJfW9kV43orvcEGkZyehjIU43J_SWzp8kaZq8nQ,3784
+composeml/version.py,sha256=ls1camlIoMxEZz9gSkZ1OJo-MXqHWwKPtdPbZJmwp7E,22
+composeml/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+composeml/tests/test_label_maker.py,sha256=ugplH5Su06n2P1Van8ajfecfwQSzcz7qrx54cdOp_YE,3209
+composeml/tests/test_label_times.py,sha256=IzIs5GSjPHvRZj_pX-hxjfrzcZ0DI9XSEEiXMsiruDU,1752
+composeml-0.1.1.dist-info/LICENSE,sha256=uu5OU2LC4d6lPWVUL6NcMilD2eYu4ntCoiSdyCdbGGA,1517
+composeml-0.1.1.dist-info/METADATA,sha256=5_2By9JRZfM_E4g4xHIPvxwiJfbEYr-ZmBUUfW3U2x0,311
+composeml-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+composeml-0.1.1.dist-info/top_level.txt,sha256=swarcuKeklwLKBEiRR9sXWzuXky-2AbgEBgnOqPGuEY,10
+composeml-0.1.1.dist-info/RECORD,,
