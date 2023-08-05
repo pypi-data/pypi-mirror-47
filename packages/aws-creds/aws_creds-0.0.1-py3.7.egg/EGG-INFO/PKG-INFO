@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: aws-creds
+Version: 0.0.1
+Summary: Switch between AWS Credential profiles.
+Home-page: https://github.com/HammoTime/aws-creds
+Author: Adam Hammond
+Author-email: adam@hammo.io
+License: UNKNOWN
+Description: # aws-creds
+        Makes it easier to use multiple AWS accounts when you don't have SSO available.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
