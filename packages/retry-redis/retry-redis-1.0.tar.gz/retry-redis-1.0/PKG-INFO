@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: retry-redis
+Version: 1.0
+Summary: Redis Client with retry decoration.
+Home-page: https://github.com/Gatsby-Lee/retry-redis
+Author: Gatsby Lee
+License: UNKNOWN
+Description: retry-redis
+        ===========
+        
+        redis-py with retry decoration
+        
+        
+        How to Install
+        --------------
+        
+        .. code-block:: bash
+        
+            pip install retry-redis
+        
+        
+        How To Use
+        ----------
+        
+        Simply import retry decorated Redis and Use it.
+        
+        .. code-block:: python
+        
+            >>> from retry_redis import Redis
+            >>> r = Redis()
+            >>> r.lpush('test', 1)
+        
+Keywords: redis retry gatsby
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Provides-Extra: testing
