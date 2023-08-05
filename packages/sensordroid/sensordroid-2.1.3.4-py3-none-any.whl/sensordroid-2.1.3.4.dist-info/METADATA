@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: sensordroid
+Version: 2.1.3.4
+Summary: Sensor Droid - Streams, in real-time, sensors and camera data directly to a client device over wireless network.
+Home-page: https://sites.google.com/view/sensordroid/
+Author: Tarek Moghrabi
+Author-email: moghrabi.tarek@outlook.com
+License: Proprietary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Sensor Droid - Streams, in real-time, sensors and camera data directly to a client device over wireless network.
+
+https://sites.google.com/view/sensordroid/
+
+Turns an Android mobile device into a sensor module. Therefore, enabling you to perform further complicated tasks on your mobile application.
+Sensor Droid main aim is to feed phone's sensor remotely to any client device e.g.  IoT, mobile robotics. 
+It provides better features and flexibility for amateurs and professionals to implement more complex ideas in their IoT or robotics application by minimizing project budget and using just phone's embedded sensors and camera.
+
+Sensor Droid supports multiple Android devices and multiple client devices.
+
+Sensor Droid device client can be implemented using .NET Library, Windows, Python and MATLAB . 
+
+Supported Sensors:
+Camera
+Accelerometer
+Orientation
+Proximity
+Magnetic
+Light
+Pressure
+Steps
+Temperature
+Humidity
+Location
+
+IoT, Android, Python, MATLAB, Desktop, Windows, Sensors, Camera.
+
