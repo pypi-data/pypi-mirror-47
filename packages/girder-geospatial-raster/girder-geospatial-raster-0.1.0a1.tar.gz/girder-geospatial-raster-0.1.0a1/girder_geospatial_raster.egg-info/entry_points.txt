@@ -1,0 +1,3 @@
+[geometa.types]
+raster = geometa_raster.schema:handler
+
