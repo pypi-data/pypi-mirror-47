@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.py
+notipy_me/__init__.py
+notipy_me/__version__.py
+notipy_me/notipy_me.py
+notipy_me.egg-info/PKG-INFO
+notipy_me.egg-info/SOURCES.txt
+notipy_me.egg-info/dependency_links.txt
+notipy_me.egg-info/requires.txt
+notipy_me.egg-info/top_level.txt
+notipy_me/models/completion.html
+notipy_me/models/completion.txt
+notipy_me/models/start.html
+notipy_me/models/start.txt
