@@ -1,0 +1,12 @@
+ipython
+numpy
+matplotlib
+scipy
+sphinx
+sphinx-gallery
+Pillow
+sphinx_rtd_theme
+pytest
+pytest-cov
+codecov
+sphinx-argparse
