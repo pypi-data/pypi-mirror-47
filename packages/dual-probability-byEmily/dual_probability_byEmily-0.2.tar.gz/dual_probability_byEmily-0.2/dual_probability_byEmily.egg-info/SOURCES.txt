@@ -1,0 +1,10 @@
+setup.py
+dual_probability_byEmily/Binomialdistribution.py
+dual_probability_byEmily/Gaussiandistribution.py
+dual_probability_byEmily/Generaldistribution.py
+dual_probability_byEmily/__init__.py
+dual_probability_byEmily.egg-info/PKG-INFO
+dual_probability_byEmily.egg-info/SOURCES.txt
+dual_probability_byEmily.egg-info/dependency_links.txt
+dual_probability_byEmily.egg-info/not-zip-safe
+dual_probability_byEmily.egg-info/top_level.txt
