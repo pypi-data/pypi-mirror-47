@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: xud-wizard
+Version: 0.1.10
+Summary: A wrapper program for xud-docker
+Home-page: UNKNOWN
+Author: Yang Yang
+Author-email: reliveyy@gmail.com
+License: UNKNOWN
+Description: xud-wizard
+        ==========
+        
+        A wrapper program for xud-docker.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
