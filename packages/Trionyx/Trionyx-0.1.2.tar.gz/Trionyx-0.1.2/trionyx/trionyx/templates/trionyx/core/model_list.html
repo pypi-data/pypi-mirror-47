@@ -1,0 +1,590 @@
+{% extends "trionyx/base.html" %}
+{% load static %}
+
+{% block title %}
+    {{ title }}
+{% endblock %}
+{% block page_title %}
+    {{ title }}
+{% endblock %}
+
+{% block header_buttons %}
+    <a href="{{ create_url }}" class="btn btn-default">Create</a>
+{% endblock %}
+
+
+{% block content %}
+    <div class="box" id="app-model-list" v-cloak>
+        <div class="box-header">
+            <div class="input-group input-group-sm" style="width: 150px;">
+                <input type="text" name="table_search" class="form-control pull-right" placeholder="Search" v-model="search" v-on:keyup="searchLoad()">
+                <div class="input-group-btn">
+                    <button type="submit" class="btn btn-default btn-flat" v-on:click="searchLoad()"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+
+            <div class="active-filters">
+                <div v-for="filter in renderedActiveFilters" class="filter filter-block">
+                    [[filter.field]] [[filter.operator]] [[filter.renderedValue]]
+                    <span v-on:click="clickRemoveFilter(filter)">×</span>
+                </div>
+            </div>
+
+            <div class="box-tools">
+                <form method="post" v-bind:action="downloadUrl">
+                    <input type="hidden" name="csrfmiddlewaretoken" v-model="csrfmiddlewaretoken">
+                    <input type="hidden" name="page" v-model="page">
+                    <input type="hidden" name="page_size" v-model="pageSize">
+                    <input type="hidden" name="selected_fields" v-model="selected_fields">
+                    <input type="hidden" name="sort" v-model="sort">
+                    <input type="hidden" name="search" v-model="search">
+                    <button type="button" class="btn btn-default hidden-xs" onclick="$('#listfiltersmodal').modal({backdrop: 'static', keyboard: false}, 'show');">
+                        <i class="fa fa-filter"></i>
+                    </button>
+                    <button type="submit" class="btn btn-default hidden-xs" v-if="downloadUrl != ''">
+                        <i class="fa fa-download"></i>
+                    </button>
+                </form>
+            </div>
+            <button id="fields-popover" type="button" class="btn btn-default pull-right hidden-xs" data-placement="bottom" data-toggle="popover" title="Fields" >
+                <i class="fa fa-columns" style="font-size: 16px"></i>
+            </button>
+        </div>
+        <!-- /.box-header -->
+        <div class="box-body no-padding table-responsive">
+            <div class="alert alert-info" v-if="items.length == 0" style="margin-bottom: 0px">
+                There are no {{ title }}
+            </div>
+            <table class="table table-striped" v-if="items.length > 0">
+                <thead>
+                    <tr>
+                        <th style="width: 10px" data-header="NR">#<span class="dragtable-drag-handle"></span></th>
+                        <th v-for="header in headers" v-on:click="clickSort(header.field)" v-bind:data-header="header.field">
+                            [[ header.label ]]
+                            <span class="dragtable-drag-handle">
+                                <i class="fa fa-arrows"></i>
+                            </span>
+
+                            <i class="fa fa-sort pull-right" v-if="header.sort == 'sort'"></i>
+                            <i class="fa fa-sort-amount-asc pull-right" v-if="header.sort == 'asc'"></i>
+                            <i class="fa fa-sort-amount-desc pull-right" v-if="header.sort == 'desc'"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr v-for="item in enumeratedItems" v-on:click="clickItem(item)">
+                        <td v-for="column in item.row_data" v-html="column" />
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="box-footer clearfix" v-if="items.length > 0">
+            Showing [[fromItemCount]] to [[toItemCount]] of [[count]] items
+            <select v-model="pageSize" id="select-pageSize">
+                <option>10</option>
+                <option>25</option>
+                <option>50</option>
+            </select>
+            per page
+
+            <ul class="pagination pagination-sm no-margin pull-right">
+                <li v-if="previousPage > 0"><a v-on:click="toPage(previousPage)">«</a></li>
+                <li v-for="pageNumber in pages" v-bind:class="{ active: pageNumber == page }">
+                    <a v-on:click="toPage(pageNumber)">[[pageNumber]]</a>
+                </li>
+
+                <li v-if="nextPage > 0"><a v-on:click="toPage(nextPage)">»</a></li>
+              </ul>
+        </div>
+
+        <div id="fields-popover-content" class="hidden">
+            <div style="max-height: 250px; overflow-y: scroll">
+                <div v-for="field in fields" class="col-md-6">
+                    <label v-on:click="clickTest()">
+                        <input v-bind:checked="field.checked" v-model="field.checked" v-bind:name="field.name" type="checkbox">
+                        [[field.label]]
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Filter Modal -->
+        <div class="modal fade" id="listfiltersmodal" role="dialog">
+            <div class="modal-dialog " role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Filters
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>Field</label>
+                                    <select v-model="filterField" class="form-control" id="select-filter-field">
+                                        <option v-for="field in fields" v-bind:value="field.name">
+                                            [[field.label]]
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>Operator</label>
+                                    <select v-model="filterOperator" class="form-control" id="select-filter-operator" autocomplete="off">
+                                        <option value="==">Equal</option>
+                                        <option value="!=">Not Equal</option>
+                                        <option value="<">Less than</option>
+                                        <option value="<=">Less than or equal</option>
+                                        <option value=">">Greater than</option>
+                                        <option value=">=">Greater than or equal</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-4">
+                                <div class="form-group">
+                                    <label>Filter by</label>
+                                    <input type="text" v-model="filterValue" v-if="filterValueInputType == 'text'" class="form-control" id="filter-value-text" autocomplete="off" />
+                                    <div v-if="filterValueInputType == 'select'" >
+                                        <select v-model="filterSelectValue" class="form-control" id="select-filter-value">
+                                            <option v-for="choice in filterChoices" v-bind:value="choice.value">
+                                                [[choice.label]]
+                                            </option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-success btn-block" v-on:click="clickAddFilter()">Add filter</button>
+                        <div class="active-filters">
+                            <div v-for="filter in renderedActiveFilters" class="filter filter-block">
+                                [[filter.field]] [[filter.operator]] [[filter.renderedValue]]
+                                <span v-on:click="clickRemoveFilter(filter)">×</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+    <script src="{% static "js/jquery-ui.min.js" %}"></script>
+    <script src="{% static "js/jquery.dragtable.js" %}"></script>
+
+    <script type="text/javascript">
+    function TrionyxList(config){
+        return new Vue({
+            el: '#app-model-list',
+            delimiters: ['[[', ']]'],
+            data: {
+                ajaxUrl: config.ajaxUrl,
+                downloadUrl: config.downloadUrl,
+                choicesUrl: config.choicesUrl,
+                ajaxCall: null,
+
+                datetimeInputFormat: config.datetimeInputFormat,
+                dateInputFormat: config.dateInputFormat,
+                currentLocale: config.currentLocale,
+                inputFormat: '',
+
+                loading: true,
+                items: [],
+
+                csrfmiddlewaretoken: getCookie('csrftoken'),
+                page: 1,
+                pageSize: 10,
+                initialPageSize: 0,
+                numPages: 0,
+                count: 0,
+                sort: '',
+                allFields: {},
+                selected_fields: '',
+                currentFields: [],
+                search: '',
+
+                activeFilters: [],
+                filterField: null,
+                filterOperator: '==',
+                filterValue: '',
+                filterSelectValue: '',
+                filterChoices: [],
+                filterValueInputType: 'text',
+                cachedRelatedChoices: {},
+            },
+
+            computed: {
+                headers: function(){
+                    var self = this;
+                    return this.currentFields.map(function(field){
+                        return {
+                            field: field,
+                            label: field in self.allFields ? self.allFields[field].label : '',
+                            sort: self.sort == field ? 'asc' : self.sort == '-' + field ? 'desc' : 'sort',
+                        }
+                    });
+                },
+                enumeratedItems: function(){
+                    var counter = (this.page - 1) * this.pageSize + 1;
+                    return this.items.map(function(item){
+                        item.row_data.splice(0, 0, counter++);
+                        return item;
+                    });
+                },
+                fields: function(){
+                    var self = this;
+                    return Object.keys(this.allFields).map(function(key){
+                        var field = self.allFields[key];
+                        field.checked = self.currentFields.indexOf(key) >= 0;
+                        return field;
+                    }).sort(function (a, b) {
+                        return a.label.localeCompare(b.label);
+                    });
+                },
+                renderedActiveFilters: function(){
+                    var self = this;
+                    return this.activeFilters.map(function(filter){
+                        var field = self.allFields[filter.field];
+                        if (['related', 'bool'].indexOf(field.type) !== -1 || field.choices.length > 0){
+                            var choices = field.choices;
+                            if (field.type === 'bool') {
+                                choices = [
+                                    [0, 'False'],
+                                    [1, 'True']
+                                ];
+                            } else if (field.type === 'related') {
+                                choices = self.getRelatedChoices(filter.field)
+                            }
+
+                            $.each(choices, function(index, choice){
+                                if (choice[0] == filter.value) {
+                                    filter.renderedValue = choice[1];
+                                    return false;
+                                }
+                            });
+                        } else {
+                            filter.renderedValue = filter.value;
+                        }
+                        return filter;
+                    });
+                },
+                pages: function() {
+                    var paginatePages = 3;
+
+                    var startPage = this.page - paginatePages;
+                    startPage = startPage > 0 ? startPage : 1;
+
+                    var endPage = this.page + paginatePages;
+                    endPage = endPage <= this.numPages ? endPage : this.numPages;
+
+                    return Array.apply(null, Array(endPage - startPage + 1)).map((item, index) => startPage + index);
+                },
+                nextPage: function() {
+                    return self.page < this.numPages ? this.page + 1 : 0;
+                },
+                previousPage: function() {
+                    return this.page > 1 ? this.page -1 : 0;
+                },
+                fromItemCount: function (){
+                    return this.page * this.pageSize - this.pageSize + 1;
+                },
+                toItemCount: function() {
+                    return this.page * this.pageSize;
+                },
+            },
+            
+            watch: {
+                pageSize: function (pageSize) {
+                    // Prevent a double load on initial load
+                    if (this.initialPageSize === pageSize) {
+                        this.initialPageSize = false;
+                        return
+                    }
+                    this.page = 1;
+                    this.load();
+                },
+                filterField: function (value) {
+                    if (!(value in this.allFields)) {
+                        return;
+                    }
+
+                    var field = this.allFields[value];
+                    if (['related', 'bool'].indexOf(field.type) !== -1 || field.choices.length > 0){
+                        this.filterValueInputType = 'select';
+                        var choices = field.choices;
+                        if (field.type === 'bool') {
+                            choices = [
+                                [0, 'False'],
+                                [1, 'True']
+                            ]
+                        } else if (field.type === 'related') {
+                            choices = this.getRelatedChoices(value)
+                        }
+
+                        this.filterSelectValue = choices.length > 0 ? choices[0][0] : '';
+                        this.filterChoices = choices.map(function(choice){
+                            return {
+                                value: choice[0],
+                                label: choice[1],
+                            }
+                        })
+                    } else {
+                        if (['datetime', 'date'].indexOf(field.type) !== -1) {
+                            var self = this;
+                            $('#filter-value-text').datetimepicker({
+                                format: field.type === 'date' ? this.dateInputFormat : this.datetimeInputFormat,
+                                locale: this.currentLocale,
+                                dayViewHeaderFormat: 'MMMM YYYY'
+                            }).on('dp.change',function(event){
+                                var dp = $('#filter-value-text').data("DateTimePicker");
+                                self.filterValue = event.date ? event.date.format(dp.format()) : null;
+                            });
+                        } else if ($('#filter-value-text').data("DateTimePicker")) {
+                            $('#filter-value-text').data("DateTimePicker").destroy()
+                        }
+                        this.filterValueInputType = 'text';
+                    }
+                },
+            },
+            methods: {
+                clickSort: function (field) {
+                    if (this.sort == field){
+                        this.sort = '-' + field;
+                    } else {
+                        this.sort = field;
+                    };
+
+                    this.load();
+                },
+                toPage: function (page) {
+                    this.page = page;
+                    this.load();
+                },
+                clickItem: function(item) {
+                    window.location.href = item.url;
+                },
+                clickAddFilter: function(){
+                    if (!(this.filterField in this.allFields)) {
+                        return;
+                    }
+                    var field = this.allFields[this.filterField];
+                    var value = ['related', 'bool'].indexOf(field.type) !== -1 || field.choices.length > 0 ?
+                        this.filterSelectValue : this.filterValue;
+
+                    if (this.filterField && this.filterOperator) {
+                        this.activeFilters.push({
+                            field: this.filterField,
+                            operator: this.filterOperator,
+                            value: value,
+                        });
+
+                        this.filterField = '';
+                        this.filterOperator = '==';
+                        this.filterValue = '';
+                        this.filterSelectValue = '';
+                        this.load();
+                    } else {
+                        console.log('some inputs are empty')
+                    }
+                },
+                clickRemoveFilter: function(filter){
+                    if (this.activeFilters.indexOf(filter) !== -1) {
+                        this.activeFilters.splice(this.activeFilters.indexOf(filter), 1);
+                        this.load();
+                    }
+                },
+                getRelatedChoices: function(field) {
+                    if (field in this.cachedRelatedChoices) {
+                        return this.cachedRelatedChoices[field];
+                    }
+
+                    var choices = [];
+                    this.ajaxCall = $.ajax({
+                        type: 'GET',
+                        url: this.choicesUrl + '?field=' + field,
+                        async: false,
+                    }).done(function(response){
+                        if (response.status == 'success') {
+                            choices = response.data;
+                        }
+                    });
+
+                    this.cachedRelatedChoices[field] = choices;
+
+                    return choices;
+                },
+                searchLoad: function() {
+                    this.load();
+                },
+                load: function(initial){
+                    var self = this;
+                    initial = typeof initial !== 'undefined' ? initial : false;
+                    var data = {
+                        page: this.page,
+                        page_size: this.pageSize,
+                        sort: this.sort,
+                        selected_fields: this.currentFields.join(','),
+                        filters: JSON.stringify(this.activeFilters),
+                        search: this.search,
+                    };
+
+                    if (this.ajaxCall) {
+                        this.ajaxCall.abort();
+                    }
+
+                    this.ajaxCall = $.ajax({
+                        type: 'POST',
+                        url: this.ajaxUrl,
+                        data: initial ? {} : data,
+                    }).done(function(response){
+                        if(response.status != 'success') {
+                            return;
+                        }
+                        var data = response.data;
+
+                        if (initial) {
+                           self.search = data.search;
+                           self.initialPageSize = data.page_size;
+                        }
+
+                        self.items = data.items;
+                        self.page = data.page;
+                        self.pageSize = data.page_size;
+                        self.numPages = data.num_pages;
+                        self.sort = data.sort;
+                        self.count = data.count;
+                        self.selected_fields = data.current_fields.join(',');
+                        self.allFields = data.fields;
+                        self.currentFields = data.current_fields;
+                        self.disableLoad = false;
+                        self.activeFilters = data.filters;
+                    }).fail(function () {
+                        console.log('error');
+                    }).always(function () {
+                        self.ajaxCall = null;
+                    });
+                },
+            },
+
+            created() {
+                this.load(true);
+            },
+
+            mounted(){
+                var self = this;
+                $('#fields-popover').popover({
+                    html: true,
+                    content(){
+                        // TODO render this with vuejs?
+                        var content = $($('#fields-popover-content').html());
+                        content.find('input').each(function () {
+                            var input = $(this);
+                            var field = input.attr('name');
+                            if (self.currentFields.indexOf(field) >= 0) {
+                                input.attr('checked', true);
+                            }
+
+                            input.click(function(){
+                                if (this.checked) {
+                                    self.currentFields.push(field);
+                                    self.currentFields = $.arrayUnique(self.currentFields);
+                                    self.load();
+                                } else {
+                                    var index = self.currentFields.indexOf(field);
+                                    if (index >= 0) {
+                                        self.currentFields.splice(index, 1);
+                                        self.load();
+                                    }
+                                }
+                            });
+                        });
+                        return content;
+                    },
+                }).on("show.bs.popover", function(){
+                    $(this).data("bs.popover").tip().css("max-width", "100%").css("min-width", "400px");
+                });
+            },
+
+            updated: function () {
+                var self = this;
+                $('#select-pageSize').select2({
+                    minimumResultsForSearch: -1
+                }).change(function ($event) {
+                    self.pageSize = $($event.target).val();
+                });
+
+
+                $('#select-filter-field').select2({
+                    width: "100%"
+                }).change(function ($event) {
+                    self.filterField = $($event.target).val();
+                });
+
+                $('#select-filter-operator').select2({
+                    minimumResultsForSearch: -1,
+                    width: "100%"
+                }).change(function ($event) {
+                    self.filterOperator = $($event.target).val();
+                });
+
+                $('#select-filter-value').select2({
+                    width: "100%"
+                }).change(function($event){
+                    self.filterSelectValue = $($event.target).val();
+                });
+
+                $('#app-model-list table').dragtable({
+                    start(e){
+                        e.preventDefault();
+                    },
+                    stop(){
+                        var currentFields = ['NR'];
+                        $.each(self.currentFields, function(index, value){
+                           currentFields.push(value);
+                        });
+                        var changed_fields = $(this).dragtable('order');
+
+                        if (!$.arrayCompare(currentFields, changed_fields)) {
+                            changed_fields.shift();
+                            self.currentFields = changed_fields;
+                            self.load();
+                        }
+                    }
+                });
+
+                // Update DragTable
+                var currentFields = ['NR'];
+                $.each(self.currentFields, function(index, value){
+                   currentFields.push(value);
+                });
+                $('#app-model-list table').dragtable('order', currentFields);
+            }
+        });
+    }
+    </script>
+{% endblock %}
+
+{% block extra_foot %}
+    <script type="text/javascript">
+        $(function(){
+           $(function () {
+                var trionyxList = new TrionyxList({
+                    ajaxUrl: "{{ ajax_url }}",
+                    downloadUrl: "{{ download_url }}",
+                    choicesUrl: "{{ choices_url }}",
+                    datetimeInputFormat: "{{ datetime_input_format }}",
+                    dateInputFormat: "{{ date_input_format }}",
+                    currentLocale: "{{ current_locale }}"
+                });
+            });
+        });
+    </script>
+{% endblock %}
