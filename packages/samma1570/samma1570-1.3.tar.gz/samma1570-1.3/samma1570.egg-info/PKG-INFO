@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: samma1570
+Version: 1.3
+Summary: the private tool of samma
+Home-page: UNKNOWN
+Author: samma
+Author-email: 1570858572@qq.com
+License: UNKNOWN
+Description: # the frist pakage of samma
+        I will update and perfect it as soon as possible 
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Description-Content-Type: text/markdown
