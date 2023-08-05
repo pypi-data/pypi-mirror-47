@@ -1,0 +1,10 @@
+humanize
+validate_email
+tabulate
+environments_utils
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
