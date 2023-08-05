@@ -1,0 +1,4 @@
+include requirements.txt
+include vitex/init.vim.template
+include vitex/buttondown.css
+include README.md
