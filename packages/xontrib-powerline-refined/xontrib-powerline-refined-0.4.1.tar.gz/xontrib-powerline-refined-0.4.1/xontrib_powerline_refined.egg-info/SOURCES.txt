@@ -1,0 +1,7 @@
+README.rst
+setup.py
+xontrib/powerline.xsh
+xontrib_powerline_refined.egg-info/PKG-INFO
+xontrib_powerline_refined.egg-info/SOURCES.txt
+xontrib_powerline_refined.egg-info/dependency_links.txt
+xontrib_powerline_refined.egg-info/top_level.txt
