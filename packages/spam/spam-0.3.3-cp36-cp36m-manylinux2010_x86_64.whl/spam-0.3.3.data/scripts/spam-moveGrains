@@ -1,0 +1,168 @@
+#!/usr/bin/env python
+
+from __future__ import print_function
+
+import spam.helpers
+import spam.label as ltk
+import spam.DIC as transf
+import numpy
+import sys, os
+import tifffile
+#import matplotlib.pyplot as plt
+# Added from rotation_correlation-style parallelisation
+import multiprocessing
+import argparse
+import progressbar
+
+
+# Define argument parser object
+parser = argparse.ArgumentParser()
+
+# Parse arguments with external helper function
+args = spam.helpers.optionsParser.moveGrainsParser(parser)
+
+
+print("------------------------------")
+print("|    Labelled grain mover    |")
+print("------------------------------\n")
+
+print("\nCurrent Settings:")
+argsDict = vars(args)
+for key in sorted(argsDict):
+    print("\t{}: {}".format(key, argsDict[key]))
+
+def work_on_one_job( worker_number, q_jobs, q_results ):
+    #print "Worker Number {}".format( worker_number )
+    while True:
+        job = q_jobs.get()
+
+        if job == "STOP":
+            q_results.put("STOP")
+            break
+
+        else:
+            label = job
+            #print "\n\tWorking on Job #", job
+            getLabelReturn = ltk.getLabel(  lab,
+                                            label,
+                                            labelDilate=0,
+                                            margin=args.DISPLACEMENT_MARGIN,
+                                            boundingBoxes=boundingBoxes,
+                                            centresOfMass=centresOfMass)
+
+            subVolSize = numpy.array(getLabelReturn['subvol'].shape)
+
+            Phi = DVC['PhiField'][label].copy()
+            Phi[0:3,-1] *= float(args.MULTIPLY_DISPLACEMENTS)
+
+            # Phi will be split into a local part and a part of floored displacements
+            disp = numpy.floor(Phi[0:3,-1])
+            Phi = Phi[0:3,-1] - disp
+
+            # Update grainSlice with disp
+            grainSlice = (slice(getLabelReturn['slice'][0].start+int(disp[0]), getLabelReturn['slice'][0].stop+int(disp[0])),
+                          slice(getLabelReturn['slice'][1].start+int(disp[1]), getLabelReturn['slice'][1].stop+int(disp[1])),
+                          slice(getLabelReturn['slice'][2].start+int(disp[2]), getLabelReturn['slice'][2].stop+int(disp[2])))
+
+            # Need to do backtracking here to avoid holes in the NN interpolation
+            #   Here we will cheat and do order 1 and re-threshold full pixels
+            labSubvolDefInterp = transf.applyPhi(   getLabelReturn['subvol'],
+                                                    Phi=Phi,
+                                                    interpolationOrder=1,
+                                                    PhiPoint=getLabelReturn['centreOfMassREL'] )
+            # "death mask"
+            #labSubvolDefMask = labSubvolDefInterp == 1
+            labSubvolDefMask = numpy.where( labSubvolDefInterp  > 0.75 )
+
+            #labSubvolDef = numpy.zeros_like( labSubvolDefInterp )
+            del labSubvolDefInterp
+            #labSubvolDef[ labSubvolDefMask ] = label
+
+            #labOut[ getLabelReturn['slice'] ][ labSubvolDefMask ] = label
+            q_results.put( [ worker_number, grainSlice, labSubvolDefMask, label ] )
+
+# Make sure prints come out straight away
+#sys.stdout = os.fdopen(sy  s.stdout.fileno(), 'w', 0)
+
+#print " errorThresh  = ", errorThresh 
+#greyFile1 = sys.argv[3]
+#greyFile2 = sys.argv[4]
+
+#print( "Loading stuff..." ),
+#DVC = numpy.genfromtxt( args.TSVFile.name, names=True, delimiter="\t" )
+#DVC = spam.helpers.readTSV(args.TSVFile.name, readConvergence=False, readFs=False, readDisplacements=True)
+DVC = spam.helpers.readTSV(args.TSVFile.name, readConvergence=False, readEverything=False)
+
+#print DVC
+#exit()
+
+### Pad lab by args.DISPLACEMENT_MARGIN on all sides
+labTemp = tifffile.imread( args.LabFile.name )
+labShapeOrig = labTemp.shape
+lab = numpy.zeros( ( labShapeOrig[0]+2*args.DISPLACEMENT_MARGIN,
+                     labShapeOrig[1]+2*args.DISPLACEMENT_MARGIN,
+                     labShapeOrig[2]+2*args.DISPLACEMENT_MARGIN ), dtype='<u2' )
+
+slicePadToNonPad = ( slice(args.DISPLACEMENT_MARGIN,labShapeOrig[0]+args.DISPLACEMENT_MARGIN),
+                     slice(args.DISPLACEMENT_MARGIN,labShapeOrig[1]+args.DISPLACEMENT_MARGIN),
+                     slice(args.DISPLACEMENT_MARGIN,labShapeOrig[2]+args.DISPLACEMENT_MARGIN) )
+
+lab[slicePadToNonPad] = labTemp
+del labTemp
+
+labOut = numpy.zeros_like( lab, dtype='<f4' )
+
+#grey1 = tifffile.imread( greyFile1 )
+#grey2 = tifffile.imread( greyFile2 )
+#grey1def = numpy.zeros_like( grey1, dtype="<f4" )
+#print( "done." )
+
+#print( "Calculating generic lab stuff..." ),
+boundingBoxes = ltk.boundingBoxes( lab )
+centresOfMass = ltk.centresOfMass( lab, boundingBoxes=boundingBoxes  )
+#print( "done." )
+
+numberOfLabels = lab.max()
+
+
+
+#print("Master: Setting up queues")
+q_jobs    = multiprocessing.Queue()
+q_results = multiprocessing.Queue()
+
+#print("Master: Adding jobs to queues")
+for label in range( 1, numberOfLabels ): q_jobs.put( label )
+for i in range( args.NUMBER_OF_PROCESSES ):  q_jobs.put( "STOP" )
+
+#print("Master: Launching workers")
+for i in range(args.NUMBER_OF_PROCESSES):
+    p = multiprocessing.Process( target=work_on_one_job, args=( i, q_jobs, q_results, ) )
+    p.start()
+
+finished_threads  = 0
+nodes_processed   = 0
+#print("Master: Waiting for results")
+
+widgets = [progressbar.FormatLabel(''), ' ', progressbar.Bar(), ' ', progressbar.AdaptiveETA()]
+pbar = progressbar.ProgressBar(widgets=widgets, maxval=numberOfLabels)
+pbar.start()
+
+while finished_threads < args.NUMBER_OF_PROCESSES:
+    result = q_results.get()
+
+    if result == "STOP":
+        finished_threads += 1
+        #print("\nNumber of finished threads = ", finished_threads)
+
+    else:
+        #print "Master: got {}".format( result )
+        #print( "\r\t\tLabel {:04d} of {:04d}".format( nodes_processed+1 , numberOfLabels ) ),
+        grainSlice = result[1]
+        labOut[grainSlice][ result[2] ] = result[3]
+        nodes_processed += 1
+        widgets[0] = progressbar.FormatLabel("{}/{} ".format(nodes_processed, numberOfLabels))
+        pbar.update(nodes_processed)
+
+print("\nSaving labelled image with displaced grains...", end='')
+tifffile.imsave( args.OUT_DIR+"/"+args.PREFIX+"-displaced.tif", labOut[slicePadToNonPad].astype('<u2') )
+print("done.")
