@@ -1,0 +1,70 @@
+Metadata-Version: 2.1
+Name: jsm_user_services
+Version: 0.0.1
+Summary: Middleware to intercept JWT auth token and more utils functions
+Home-page: https://github.com/juntossomosmais/jsm-user-services
+Author: Ricardo Baltazar Chaves
+Author-email: ricardobchaves6@gmail.com
+License: MIT
+Description: # JSM User JWT Service
+        
+        Middleware to intercept JWT auth token and more utils functions
+        
+        ## Install
+        
+        `pip install jsm_user_service`
+        
+        Add `jsm_user_service` to your `INSTALLED_APPS`:
+        
+        ```python
+        INSTALLED_APPS = [
+            "django.contrib.admin",
+            "django.contrib.auth",
+            "django.contrib.contenttypes",
+            "django.contrib.sessions",
+            "django.contrib.messages",
+            "django.contrib.staticfiles",
+            "jsm_user_services",
+            "app_test",
+        ]
+        ```
+        
+        Add the Middleware:
+        
+        ```python
+        MIDDLEWARE = [
+            ...
+            "jsm_user_services.middleware.JsmJwtService",
+        ]
+        ```
+        
+        ## Use
+        
+        ```python
+        from jsm_user_services.services.user import current_jwt_token
+        from jsm_user_services.services.user import get_jsm_token
+        from jsm_user_services.services.user import get_jsm_user_data_from_jwt
+        from jsm_user_services.services.user import get_ltm_token
+        from jsm_user_services.services.user import get_ltm_user_data_from_jwt
+        from jsm_user_services.services.user import get_user_email_from_jwt
+        
+        current_jwt_token()
+        get_jsm_token()
+        get_ltm_token()
+        get_jsm_user_data_from_jwt()
+        get_ltm_user_data_from_jwt()
+        get_user_email_from_jwt()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django :: 2.1
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: Portuguese (Brazilian)
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
