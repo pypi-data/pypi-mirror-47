@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: aws-cdk.aws-logs-destinations
+Version: 0.33.0
+Summary: Log Destinations for AWS CloudWatch Logs
+Home-page: https://github.com/awslabs/aws-cdk
+Author: Amazon Web Services
+License: UNKNOWN
+Project-URL: Source, https://github.com/awslabs/aws-cdk.git
+Description: # CDK Construct Libray for AWS XXX
+        
+        A short description here.
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
