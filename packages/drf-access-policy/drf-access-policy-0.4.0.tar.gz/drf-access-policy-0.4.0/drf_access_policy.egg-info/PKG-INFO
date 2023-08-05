@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: drf-access-policy
+Version: 0.4.0
+Summary: Declarative access policies/permissions modeled after AWS IAM policies.
+Home-page: https://github.com/rsinger86/drf-access-policy
+Author: Robert Singer
+Author-email: robertgsinger@gmail.com
+License: MIT
+Description: file:README.md
+Keywords: django restframework drf access policy authorization declaritive
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
