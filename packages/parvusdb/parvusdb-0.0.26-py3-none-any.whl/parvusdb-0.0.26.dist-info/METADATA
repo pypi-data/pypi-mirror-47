@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: parvusdb
+Version: 0.0.26
+Summary: A lightweight in-memory graph database
+Home-page: http://github.com/fractalego/parvusdb
+Author: Alberto Cetoli
+Author-email: alberto@nlulite.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: python-igraph (==0.7.1.post6)
+Requires-Dist: hy (==0.13.0)
+
+UNKNOWN
+
+
