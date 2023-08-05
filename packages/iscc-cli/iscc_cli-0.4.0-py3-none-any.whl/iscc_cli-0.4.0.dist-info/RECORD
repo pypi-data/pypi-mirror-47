@@ -1,0 +1,14 @@
+iscc_cli/__init__.py,sha256=Erc0E43Vcfb9xkHO-_PoS76K5-BW88_gVAGBcEBHeso,73
+iscc_cli/batch.py,sha256=V09zozvgiuPI6jtX7oZ9zor8rFsDc_tacmATxA3Izxw,1697
+iscc_cli/cli.py,sha256=XFohfjPtORM-kMxtkKxWvjq-j9t0_o6HkB36pzy9H-E,510
+iscc_cli/const.py,sha256=NmRcfBbajNHHSUCfHJVO9Udd5VADultqR1L1aAYeDJM,2069
+iscc_cli/gen.py,sha256=60_HW4A6eD5OvNvxSTE7G7Nk_MB2RN2YspgROChrXdo,2084
+iscc_cli/info.py,sha256=VxxBZOCBLJ9EUcvnxvRTgFk5q02pAuvVyQYLo5cB7k8,582
+iscc_cli/init.py,sha256=FnBr66wLL9kJCR2ZPIHB_dB5gQncZVAtEmxUQoSuBo0,407
+iscc_cli/sim.py,sha256=ga_cYTwb14iooZKbsdVOHjY1NX0ut6_ds7ozSpj2h8s,2187
+iscc_cli/utils.py,sha256=OguTr1KMHuc6rczQHO45zMdK5sEbOs5tJSMB-J1vcmM,3544
+iscc_cli-0.4.0.dist-info/entry_points.txt,sha256=HnEwrwaGj0KA7dIAp7sVbl0aARTIlP1XkIumbvymeJc,41
+iscc_cli-0.4.0.dist-info/LICENSE,sha256=OMBN9aacPMHTSG2sY4jwQnl7nql16xEZxOtoLZsuROY,1093
+iscc_cli-0.4.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+iscc_cli-0.4.0.dist-info/METADATA,sha256=3o34p4jBqMWxzLMCRwyUoxFG4w_5Jq2uctVDEag9Z7E,6365
+iscc_cli-0.4.0.dist-info/RECORD,,
