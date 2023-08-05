@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: quantumflow
+Version: 0.9.1
+Summary: QuantumFlow: A Quantum Algorithms Development Toolkit
+Home-page: https://github.com/gecrooks/quantumflow/
+Maintainer: Gavin Crooks
+Maintainer-email: gec@threeplusone.com
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tensorflow
+Requires-Dist: networkx
+Requires-Dist: pyquil (>=2.0.0b1)
+Requires-Dist: pillow
+Requires-Dist: cvxpy
+Requires-Dist: sympy
+
+
+# QuantumFlow: A Quantum Algorithms Development Toolkit
+
+[![Build Status](https://travis-ci.org/gecrooks/quantumflow.svg?branch=master)](https://travis-ci.org/gecrooks/quantumflow) [![Documentation Status](https://readthedocs.org/projects/quantumflow/badge/?version=latest)](https://quantumflow.readthedocs.io/en/latest/?badge=latest)
+
+
+QuantumFlow active development fork.
+
+## Installation for development
+
+It is easiest to install QuantumFlow's requirements using conda.
+```
+git clone https://github.com/gecrooks/quantumflow.git
+cd quantumflow
+conda install -c conda-forge --file requirements.txt
+pip install -e .
+```
+
+You can also install with pip. However some of the requirements are tricky to install (notably tensorflow & cvxpy), and (probably) not everything in QuantumFlow will work correctly.
+```
+git clone https://github.com/gecrooks/quantumflow.git
+cd quantumflow
+pip install -r requirements.txt
+pip install -e .
+```
+
+
