@@ -1,0 +1,11 @@
+aucc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aucc/main.py,sha256=yEqNjuncDaLfKDBMPNd7jpEO7ZbycalhouEUPYwowEU,4068
+aucc/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aucc/core/colors.py,sha256=4O_fKg-bTUaGI6i2V7LGjOCDCQrHtB07gYad_Km6kZc,771
+aucc/core/handler.py,sha256=-6aEypSnU0tLxvWv_aCpr1QYYGncsMMNDLW5dFNjg0M,1897
+avell_unofficial_control_center-1.0.dist-info/LICENSE,sha256=64ry0CKxXsQJNMNeukFwxPqwNdsSCcbgqqwAbjkLIkE,1070
+avell_unofficial_control_center-1.0.dist-info/METADATA,sha256=zQgxcM62F797lp3EwWxeV8CjqBOpRuJTWZHqfPn9LFk,2575
+avell_unofficial_control_center-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+avell_unofficial_control_center-1.0.dist-info/entry_points.txt,sha256=gsY70FZj836U-C8_m0e-CXsRgydyCMoT0gKRbZKFy94,41
+avell_unofficial_control_center-1.0.dist-info/top_level.txt,sha256=ziWXi9OMnyji-ApZyrjivyZmyQdcdo81I_r-m9iOFLs,15
+avell_unofficial_control_center-1.0.dist-info/RECORD,,
