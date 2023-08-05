@@ -1,0 +1,9 @@
+superhooks/__init__.py,sha256=IK8TKJBfLZNtVgc3gm86tYbyci7bliC6ntW9uuuQ86Q,21
+superhooks/superhooks.py,sha256=3nMkJxwG10r05ZfeBenVWw_DZqYyEQSuj7C9JcNFGiQ,5048
+superhooks/tests/__init__.py,sha256=IK8TKJBfLZNtVgc3gm86tYbyci7bliC6ntW9uuuQ86Q,21
+superhooks/tests/superhooks_test.py,sha256=fsZRNw5nXQ_faukDsg0dkXzyC3sXsCJYgbXttinwDRI,1336
+superhooks-0.5.dist-info/METADATA,sha256=tIevwho07ItEAHxKQjz7RzSo4V0DWKwZKrh5XoP-wH8,3978
+superhooks-0.5.dist-info/RECORD,,
+superhooks-0.5.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+superhooks-0.5.dist-info/entry_points.txt,sha256=p-UsxQG2QaCVtoNkfKCDTaBR116llRTDhv3AbEfbxOI,76
+superhooks-0.5.dist-info/top_level.txt,sha256=VCWNGmFF-Nhi7ND8hFwXpSwPL2VZ-9opnJbd_SeBHso,11
