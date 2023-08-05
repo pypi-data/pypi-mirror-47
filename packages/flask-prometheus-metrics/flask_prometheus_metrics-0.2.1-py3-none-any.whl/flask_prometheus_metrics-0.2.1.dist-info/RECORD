@@ -1,0 +1,9 @@
+flask_prometheus_metrics-0.2.1-py3.7-nspkg.pth,sha256=sVJZtWv6nmJnufStHG4GfXn1XFzkxuJ1DI60u3vRRDM,629
+flask_prometheus_metrics/example.py,sha256=iyq_k2sLERxoDADSnfjmKkbcW4ifhddx9ba4OfGm0ww,1241
+flask_prometheus_metrics/metrics.py,sha256=UzgVkq8uStPcxbzW6djzWEdp_SFtwiVsgyufkZzqtKs,1684
+flask_prometheus_metrics-0.2.1.dist-info/LICENSE,sha256=gTa9cmmHcXnoOV99XAyVoqo5OppKagmRU1K32v5eRO8,1087
+flask_prometheus_metrics-0.2.1.dist-info/METADATA,sha256=55UygexpG0n3aon-lJ1s6Vgi8ecBXcfJPqa1BQuUj7M,1365
+flask_prometheus_metrics-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+flask_prometheus_metrics-0.2.1.dist-info/namespace_packages.txt,sha256=b6hSUcjkh7rUiIoPNRU1trCCemIE-LVlOuAvOKhVx20,25
+flask_prometheus_metrics-0.2.1.dist-info/top_level.txt,sha256=b6hSUcjkh7rUiIoPNRU1trCCemIE-LVlOuAvOKhVx20,25
+flask_prometheus_metrics-0.2.1.dist-info/RECORD,,
