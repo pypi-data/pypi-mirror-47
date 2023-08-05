@@ -1,0 +1,9 @@
+salesforce_reporting_chunked/__init__.py,sha256=oV4WJQv3_6SVatokHepMY7R3z9cnrklT5c24b5IWz14,330
+salesforce_reporting_chunked/chunky.py,sha256=VlnSGARGslbe4ML69LmetoKKdBWcqk0QfCdyCO0g0i4,8169
+salesforce_reporting_chunked/report_chunker.py,sha256=GKEiBd8sqerbTl0CJTMyKJ_qRogSO2wX_0_0tagI8ms,1893
+salesforce_reporting_chunked-0.1.3.dist-info/LICENSE.txt,sha256=7Hbhjwu-SZdugP46mVQoKzf_80KKObNOh_unUbNgycg,1061
+salesforce_reporting_chunked-0.1.3.dist-info/METADATA,sha256=g4bw-QlmZUTiQgHJ0hCZmCRQIXZaMG8PWy9uBjbZJbg,1992
+salesforce_reporting_chunked-0.1.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+salesforce_reporting_chunked-0.1.3.dist-info/top_level.txt,sha256=oKFq2xTjcU0pB-I3ofeoo42S4NvjdfIxnJAVPdPqyeg,29
+salesforce_reporting_chunked-0.1.3.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+salesforce_reporting_chunked-0.1.3.dist-info/RECORD,,
