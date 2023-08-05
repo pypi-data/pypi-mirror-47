@@ -1,0 +1,15 @@
+voxsql/__init__.py,sha256=EWNLn-FzdbpUpbcDLw3ErK22pAqFm-LB1e4Qz074hU8,75
+voxsql/_version.py,sha256=AJpkq6GMEmAOrZgLAHJkU-e7gfswcj9NApS2q_bPmvQ,81
+voxsql/binders.py,sha256=rcubR1A9K1MQ2IxCh4JaJ4XxXCcUWRX0-bfGdWNZBX8,913
+voxsql/cli.py,sha256=9HUCbhFsOnUjBEaIOV4gcoBrhYNPisilYb_0gKVsPlE,1188
+voxsql/framer.py,sha256=jxj4i10DEdHk8OlxscCmzheTDD1eDe4vYx095ICerPs,1011
+voxsql/parser.py,sha256=wqlnLRZoiCZSmup5hwnSxaVlTkdVk9Q0qSlfGo088Fg,4350
+voxsql/regexes.py,sha256=RLOhMFkkFuBzN85QhsHwWoAHJIE7J0TngUpCrSNtZNY,945
+voxsql/translators.py,sha256=C8pLhehpCqQcgSkN41QWEtPEBmOpYLcDpZd8nyYKYeg,2394
+voxsql/utils.py,sha256=UDVy0USaJivtiW50mP0Ru8OP3j0ggF7aGaCuCXfQtQA,341
+voxsql-0.1.1.dist-info/LICENSE,sha256=DNIH8XsvQ9wdx4Jvq0Tiah636lLLSlrU1QkkDzy4UvU,1075
+voxsql-0.1.1.dist-info/METADATA,sha256=3YKA1MryoeIo45f-4gPMDj967We7_Y6ntZmuVfDxjzI,4458
+voxsql-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+voxsql-0.1.1.dist-info/entry_points.txt,sha256=Mw_EVlbIWNJhb58DgAJMC_j6oeu04nb0HBfbVS56DE8,68
+voxsql-0.1.1.dist-info/top_level.txt,sha256=XHn1lpf_j-JO6FVBgaVFLldarQ-PTiy29FOO5G6QLkc,7
+voxsql-0.1.1.dist-info/RECORD,,
