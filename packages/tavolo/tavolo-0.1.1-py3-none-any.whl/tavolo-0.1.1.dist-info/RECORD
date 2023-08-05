@@ -1,0 +1,10 @@
+tavolo/__init__.py,sha256=t-yWYleZkWKl3YC92IqOV2GcUffBfRVLiToXwnqC9v0,140
+tavolo/embeddings.py,sha256=BKVd8HZIoywSqIGEXSx4wHP0XChh5eF5n1LqpNVz-lE,4409
+tavolo/normalization.py,sha256=Q4snlkOtrUDX0mtV76mauyFmRuZf00XtSCGlbcwRhG8,2648
+tavolo/seq2seq.py,sha256=w-50alz6xZw5YRVxIh1IwPg-n3pHjOjN1lg55-7c6rs,8659
+tavolo/seq2vec.py,sha256=gu28be7IJsSQA_Q8n0TcUOT6VZ2MYtSg0XeD0puYKjE,3633
+tavolo-0.1.1.dist-info/LICENSE,sha256=_rh6LgwwXeNGTMRAd9pTk8UtjKY2LTdCcVfQTsb0UQ0,1057
+tavolo-0.1.1.dist-info/METADATA,sha256=ae76_OMkJ8WDQGlogib3Xqcpsm2338wu5ShayxH0yTw,383
+tavolo-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+tavolo-0.1.1.dist-info/top_level.txt,sha256=JgmUtPAe9gHWWP6Je3-OBmv5d_Lo0DqHL2h1B-MoaO4,7
+tavolo-0.1.1.dist-info/RECORD,,
