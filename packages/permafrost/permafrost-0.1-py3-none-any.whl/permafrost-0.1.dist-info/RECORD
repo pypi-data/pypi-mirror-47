@@ -1,0 +1,8 @@
+perm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+perm/command.py,sha256=8E4ouzbdeMrz8R_6Zsq4J5K306tc-YNqZQS4UEJVGJ0,939
+perm/validator.py,sha256=QcTnnlEo1kzQ7OZC8I0WDid3rXU0tNA3QWx2GdIAFBI,3393
+permafrost-0.1.dist-info/METADATA,sha256=cC0gFHnLZpxa3aigjlLyLc-2MbASwUUNGrYmd7Cy7o0,680
+permafrost-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+permafrost-0.1.dist-info/entry_points.txt,sha256=Tir145julYHC0uR-eeXeMKFJ_bban_Jeh1SGBu0cyS4,67
+permafrost-0.1.dist-info/top_level.txt,sha256=kCJQSUDwJV3D2VpAmKZbuuk0TF494wAd_Gio8B7SGo0,5
+permafrost-0.1.dist-info/RECORD,,
