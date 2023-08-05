@@ -1,0 +1,16 @@
+hermes_audio_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hermes_audio_server/about.py,sha256=xQ1p1w6Gcn5n-Tmlr2DYiOOq0Drqh_c1_qJeBLFo3fs,704
+hermes_audio_server/cli.py,sha256=GOIoxV9Pwa3eJB1flMKm4rhdaM4xBeudliFjm8nh0mE,1255
+hermes_audio_server/mqtt.py,sha256=gLGmZH-dzYzmYLLkV0snsXwtHzabNlrVw3TGR3lSLfo,2511
+hermes_audio_server/player.py,sha256=SbI5ndyK45kri4twULv-p3QyXB7HnSETdakmlw01HqM,3542
+hermes_audio_server/recorder.py,sha256=37UIRHAr7npCZ8F-hoG6i3nWrssi4wuT-L25T7trlBU,3772
+hermes_audio_server/config/__init__.py,sha256=854zvCAa5cem-IsI3aaApI7O3I7uLYGNkk6WcIECwc8,4022
+hermes_audio_server/config/mqtt.py,sha256=SiYIxqo_YoeoLrVQHXpm82i4vNOXaOwycM82Y297w-A,7389
+hermes_audio_server/config/vad.py,sha256=BxZ1f3-DIemcnB3v0VesUmGdyrCg3Vx_oVwHuMLJc0o,2834
+hermes_audio_server-0.1.1.data/scripts/hermes-audio-player,sha256=YAPinL1wEStnRjYuqVdx7aV-GpnHMyJXFnmNuXJ0onk,601
+hermes_audio_server-0.1.1.data/scripts/hermes-audio-recorder,sha256=OLH2uBkw-YxzlYap-YdAmHkahSG0beAqp-MfxwWS_gU,608
+hermes_audio_server-0.1.1.dist-info/LICENSE,sha256=bvqso2bvUnPhKTJxANPxidSI5jjPeWShIr-adrGj_PE,1072
+hermes_audio_server-0.1.1.dist-info/METADATA,sha256=J95KfcstC3mH8N31mPpLaIbg9usZzKEevZgOYU2dOpI,9444
+hermes_audio_server-0.1.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+hermes_audio_server-0.1.1.dist-info/top_level.txt,sha256=phW-25qC_nQwEhne7ohnVmzTPvP4J74vFnDGQHeIcwg,20
+hermes_audio_server-0.1.1.dist-info/RECORD,,
