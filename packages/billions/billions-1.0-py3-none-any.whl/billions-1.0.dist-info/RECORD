@@ -1,0 +1,15 @@
+billions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+billions/admin.py,sha256=suMo4x8I3JBxAFBVIdE-5qnqZ6JAZV0FESABHOSc-vg,63
+billions/apps.py,sha256=5KzeXRoAtualX4BAa1sPswX36ToNQytdTRV-z4IFj90,91
+billions/fields.py,sha256=yQxsq9ikloCB2R-XyJQLKBmLnemE7USLbReDy3KTUM4,1037
+billions/models.py,sha256=Vjc0p2XbAPgE6HyTF6vll98A4eDhA5AvaQqsc4kQ9AQ,57
+billions/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+billions/utils.py,sha256=aWnEAgGfmPppNrYe1RmMCtLZw39wdUXMXQa5fai7Fus,1892
+billions/views.py,sha256=AvxehXVZqpy5xmPYIoP0Hx1llAfgN4DfYOioZSi_NHI,1909
+billions/widgets.py,sha256=imu9X_rrz9NywsRV6oJnmVHenpb7hOafL8G9aiSz7J0,2096
+billions/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+billions-1.0.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+billions-1.0.dist-info/METADATA,sha256=7bTJG8t_yJQs4ZbWK0RgXKW5uo2IUHJkW8Gd6r4cH2g,606
+billions-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+billions-1.0.dist-info/top_level.txt,sha256=u8CCXHAjnpat_sNJvTFQPVHugpEUx9-Mg_l4MdYCPBQ,9
+billions-1.0.dist-info/RECORD,,
