@@ -1,0 +1,13 @@
+chunk_nordic/client.py,sha256=YU5sR7OoO3moyLR8xQF4wV_zDB5KX-0483_WSeqFMgk,5241
+chunk_nordic/combiner.py,sha256=zxsrYtUt5D7NdKeyu9gwflC3Xuca0ibafBidA_rQvFw,5107
+chunk_nordic/constants.py,sha256=uW46QGrv7n2ueAf7IyHdcGtTGVQxIf5X2Nr1KDNoono,430
+chunk_nordic/server.py,sha256=RVmETSH64kR30yxCFW9TZhs7butXn8jfZx_mPLiK-LM,4975
+chunk_nordic/splitter.py,sha256=OHO7ie0ok9fB5N9_qAzDIxfe3grLoRYgxT6ucMyx5vw,4594
+chunk_nordic/utils.py,sha256=_teXqlUQ6pOWRFA3Mkz9XN7C7WJ1m543yB-YRkubLCQ,1087
+chunk_nordic-0.1.0.dist-info/LICENSE,sha256=b4K_GkYCtx_onP3-3d84FMzzdhYQdzrY3US6LHXhOqs,1073
+chunk_nordic-0.1.0.dist-info/METADATA,sha256=JLulyhf9DdjOqh9nM7FoZEsfaxKNof74d34dBilEKmw,4747
+chunk_nordic-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+chunk_nordic-0.1.0.dist-info/entry_points.txt,sha256=ChCUtJ7rl03DsjCa4pLAlHo-XsJySwFpGoQ53U-7x_g,99
+chunk_nordic-0.1.0.dist-info/top_level.txt,sha256=TEy8qgsWUnyPIuJREtPQLKFneAsqVe5ByDVm7KoX7J8,13
+chunk_nordic-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+chunk_nordic-0.1.0.dist-info/RECORD,,
