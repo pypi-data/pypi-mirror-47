@@ -1,0 +1,14 @@
+odoo/addons/account_partner_reconcile/README.rst,sha256=IJIxsHkp4Pi3hmVHkN2ayRvyrIpxgoSYitT7rfSQ7BM,1545
+odoo/addons/account_partner_reconcile/__init__.py,sha256=X9EJGOE2GtZbS0G82PtSXmWSZ_R8jEM0rlJTDliQjp4,21
+odoo/addons/account_partner_reconcile/__manifest__.py,sha256=LNDfGsBYIHvOADFqP8lixDHY4x7GUVA3va-EZG0Pd8Q,553
+odoo/addons/account_partner_reconcile/i18n/account_partner_reconcile.pot,sha256=HHDR_gff_ZMINK0WKhKJYsbr9mRg259pEXuj55hsJtA,808
+odoo/addons/account_partner_reconcile/models/__init__.py,sha256=g-Dp2ZwN6oB4CqdQfgRInNSzdMWAVQg1vjWL7S-ZODM,26
+odoo/addons/account_partner_reconcile/models/res_partner.py,sha256=XuiGwcQowIJbJzUkb7OPLYA-MX0ecENrtmRs4dl5zPA,966
+odoo/addons/account_partner_reconcile/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/account_partner_reconcile/tests/__init__.py,sha256=1r7Sn36KcmxqEwwSqej9fFoyHEWTGIItUyO9nFJDcVg,211
+odoo/addons/account_partner_reconcile/tests/test_account_partner_reconcile.py,sha256=bdmXTjFRCGvuPktSTuWt3aLs9hIGcprsbryIyxUOv2M,1280
+odoo/addons/account_partner_reconcile/views/res_partner_view.xml,sha256=9gsHavi1fjS2xHigwia2hiTftNE1s2b2QfD03m5huqQ,1095
+odoo11_addon_account_partner_reconcile-11.0.1.0.1.99.dev1.dist-info/METADATA,sha256=RQMdVYjznsDtX9gw35GlcEq8WUMRRIu3Xe4Z9JEKAHM,2110
+odoo11_addon_account_partner_reconcile-11.0.1.0.1.99.dev1.dist-info/RECORD,,
+odoo11_addon_account_partner_reconcile-11.0.1.0.1.99.dev1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_account_partner_reconcile-11.0.1.0.1.99.dev1.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
