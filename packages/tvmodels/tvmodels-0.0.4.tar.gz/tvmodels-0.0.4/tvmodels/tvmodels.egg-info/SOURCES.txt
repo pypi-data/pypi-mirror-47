@@ -1,0 +1,7 @@
+README.md
+setup.py
+tvmodels/tvmodels.egg-info/PKG-INFO
+tvmodels/tvmodels.egg-info/SOURCES.txt
+tvmodels/tvmodels.egg-info/dependency_links.txt
+tvmodels/tvmodels.egg-info/requires.txt
+tvmodels/tvmodels.egg-info/top_level.txt
