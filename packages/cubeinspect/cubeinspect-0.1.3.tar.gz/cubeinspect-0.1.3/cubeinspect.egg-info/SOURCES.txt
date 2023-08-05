@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+makepics.py
+setup.py
+cubeinspect.egg-info/PKG-INFO
+cubeinspect.egg-info/SOURCES.txt
+cubeinspect.egg-info/dependency_links.txt
+cubeinspect.egg-info/entry_points.txt
+cubeinspect.egg-info/requires.txt
+cubeinspect.egg-info/top_level.txt
