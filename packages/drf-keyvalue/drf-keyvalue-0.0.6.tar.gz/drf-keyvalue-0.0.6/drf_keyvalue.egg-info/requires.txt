@@ -1,0 +1,6 @@
+redis
+requests
+Django>=2.0
+django-filter==2.1.0
+djangorestframework==3.9.3
+psycopg2==2.8.2

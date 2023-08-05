@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: drf-keyvalue
+Version: 0.0.6
+Summary: Store and retrieve data in a consistent way in a key-value store using Django Rest Framework serializers
+Home-page: https://gitlab.com/SchoolOrchestration/libs/drf-keyvalue
+Author: Christo Crampton
+Author-email: christo@appointmentguru.co
+License: UNKNOWN
+Description: Please see README for details.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
