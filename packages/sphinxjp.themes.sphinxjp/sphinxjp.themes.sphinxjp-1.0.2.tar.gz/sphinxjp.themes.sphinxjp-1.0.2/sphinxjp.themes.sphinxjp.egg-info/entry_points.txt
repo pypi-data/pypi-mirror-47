@@ -1,0 +1,4 @@
+
+        [sphinx.html_themes]
+        sphinxjp = sphinxjp.themes.sphinxjp
+     
