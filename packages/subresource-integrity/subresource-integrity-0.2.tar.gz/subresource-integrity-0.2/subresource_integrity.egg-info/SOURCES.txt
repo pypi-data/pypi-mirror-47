@@ -1,0 +1,11 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+subresource_integrity.py
+subresource_integrity.egg-info/PKG-INFO
+subresource_integrity.egg-info/SOURCES.txt
+subresource_integrity.egg-info/dependency_links.txt
+subresource_integrity.egg-info/top_level.txt
