@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: datastore-viewer
+Version: 0.0.3
+Summary: Datastore Viewer for emulator
+Home-page: https://github.com/gumo-py/datastore-viewer
+Author: Gumo Project Team
+Author-email: gumo-py@googlegroups.com
+License: UNKNOWN
+Description: # datastore-viewer
+        
+        datastore-viewer is a simple viewer of Google Cloud Datastore Emulator.
+        
+        ## Installing
+        
+        ```bash
+        $ pip install --upgrade datastore-viewer
+        ```
+        
+        ## Running
+        
+        ```bash
+        datastore-viewer
+        ```
+        
+        or
+        
+        ```bash
+        export DATASTORE_VIEWER_HOST=127.0.0.1
+        export DATASTORE_VIEWER_PORT=8082
+        datastore-viewer
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
