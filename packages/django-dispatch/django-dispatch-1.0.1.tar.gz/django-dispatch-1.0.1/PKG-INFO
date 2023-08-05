@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: django-dispatch
+Version: 1.0.1
+Summary: A simple fork of django.dispatch for use as a standalone PubSub library.
+Home-page: http://github.com/edgeflip/dispatch
+Maintainer: Jesse London
+Maintainer-email: jesse@edgeflip.com
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
