@@ -1,0 +1,10 @@
+include *.rst
+include *.txt
+include .coveragerc
+include tox.ini
+include .pylintrc
+recursive-include doc *.py
+recursive-include doc *.rst
+recursive-include doc Makefile
+recursive-include samples *.conf
+recursive-include .travis *.py *.sh *.conf
