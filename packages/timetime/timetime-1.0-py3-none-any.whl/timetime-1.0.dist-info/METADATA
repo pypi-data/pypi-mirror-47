@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: timetime
+Version: 1.0
+Summary: TimeTime est une classe qui permet d'afficher le temps d'exécution de fonctions, également de les comparer entre eux
+Home-page: https://framagit.org/zenjo/timetime/wikis/home
+Author: Robert Sebille
+Author-email: robert@sebille.name
+Maintainer: Robert Sebille
+Maintainer-email: robert@sebille.name
+License: GNU GPL
+Download-URL: https://framagit.org/zenjo/timetime/tree/master
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# TimeTime
+
+## Résumé
+
+TimeTime est une classe qui permet d’afficher le temps d’exécution de fonctions, également de les comparer entre eux. TimTime retourne le temps d’exécution total pour &lt;loops> boucles (par défaut 10000) et le temps moyen par boucle.
+
+TimeTime est simple à utiliser. Il est basé sur les modules built-in time et re.
+
+## Usage
+*Les fonctions à comparer doivent être sans arguments.*
+Il est fortement recommandé, pour la lisibilité des résultats de l'analyse, qu'elle ne comporte pas d'impressions écran de résultats de la fonction elle-même *(si ça doit être le cas, voyez une alternative pour éviter un "print" dans l'exemple)*. 
+```python
+from timetime import TimeTime
+
+def fonction1():
+	...
+
+def fonction2():
+	...
+
+f1 = TimeTime(fonction1)
+f2 = TimeTime(fonction2)
+
+print(f1)
+print(f2)
+print(f1 == f2)
+etc.
+
+TimeTime.loops = 1000
+TimeTime.version()
+TimeTime.demo()
+etc.
+```
+
+### Exemple
+cet exemple vous montre également comment contourner le cas où vos fonctions de test doivent envoyer des impressions. On les renvoie dans un fichier /dev/null (nul - je crois, sous windows)
+```python
+import os
+from timetime import TimeTime as tt
+
+def fonc1():
+    with open(os.devnull, 'w') as f:
+         f.write('b'+'c')
+
+a = 'b'+'c'
+def fonc2():
+    with open(os.devnull, 'w') as f:
+        f.write(a)
+
+f1 = tt(fonc1)
+f2 = tt(fonc2)
+# quelle est la fonction la plus rapide ?
+for i in range(3):
+    print("--- phase", i, "---")
+    print(f1 == f2)
+```
+### Commentaires à propos de l'exemple
+Les résultats:
+```python
+--- phase 0 ---
+
+fonc1() == fonc2()
+------------------------------------------
+fonc1(), 10000 loops.
+Total runtime = 0.2219841480255127
+Mean loop = 2.219841480255127e-05
+------------------------------------------
+------------------------------------------
+fonc2(), 10000 loops.
+Total runtime = 0.21685266494750977
+Mean loop = 2.1685266494750976e-05
+------------------------------------------
+--- phase 1 ---
+
+fonc1() == fonc2()
+------------------------------------------
+fonc1(), 10000 loops.
+Total runtime = 0.21837949752807617
+Mean loop = 2.1837949752807617e-05
+------------------------------------------
+------------------------------------------
+fonc2(), 10000 loops.
+Total runtime = 0.216231107711792
+Mean loop = 2.16231107711792e-05
+------------------------------------------
+--- phase 2 ---
+
+fonc1() == fonc2()
+------------------------------------------
+fonc1(), 10000 loops.
+Total runtime = 0.21810102462768555
+Mean loop = 2.1810102462768555e-05
+------------------------------------------
+------------------------------------------
+fonc2(), 10000 loops.
+Total runtime = 0.21857643127441406
+Mean loop = 2.1857643127441406e-05
+------------------------------------------
+
+```
+### que constate-ton ?
+Que l'avantage de concatener préalablement une seule fois n'est pas du tout évident sur le fait de concaténer l'équivalent de la chaine`a` à chaque tour de boucle. 
+
+Ces comparaisons entre diverses implémentations ou diverses fonctions ne sont pas toujours aussi proches; voyez `timetime_demo.py`
+
