@@ -1,0 +1,16 @@
+SudsLibrary/__init__.py,sha256=vA04VhkLEKxvPpazJzYZU3jWZ99GoHCzFUGhp-cIbrg,8488
+SudsLibrary/clientmanagement.py,sha256=eyKUQS8utl1LObbTqWt_xYJhFArAeDXfiiKNAdUHdE0,4743
+SudsLibrary/factory.py,sha256=Ak_eLZuVgS-bvtO7SmryvjaBt0Dk9IJ7-tENF7P5Pxg,3045
+SudsLibrary/monkeypatches.py,sha256=vbvxvGlABJ_pvd4OuxUDBI_kPTsrk_KvuPVwLhpBE7g,2422
+SudsLibrary/options.py,sha256=bbCYG4ye-hZQwSd7XrhM9mvJcVFmRaU6MfYUGH49128,9575
+SudsLibrary/proxy.py,sha256=amiEE794ZVmT4ZnDN5c7v7Z1amuz_qPHBhrw-bBkSC4,5007
+SudsLibrary/soaplogging.py,sha256=DkcGrO7wtU3LK__gJwpWsEODVb8GQGAvcYsJibrl_So,4682
+SudsLibrary/utils.py,sha256=lNnMbASE58nImpmH8ER6yBNeNbT9jOU8DaNve1Kg7Rw,1132
+SudsLibrary/version.py,sha256=wzIehIAl0BT8tGgd7DdkEIQTAuMacEb7-jHezy8uSNo,17
+SudsLibrary/wsse.py,sha256=R-RqFurS_T6bMAhDVvbNLfAPmGwOoqaaoB2ImsypJ-I,15357
+robotframework_sudslibrary3-0.8.dist-info/LICENSE.txt,sha256=Pd-b5cKP4n2tFDpdx27qJSIq0d1ok0oEcGTlbtL6QMU,11560
+robotframework_sudslibrary3-0.8.dist-info/METADATA,sha256=x2EPtOCetoQPFAT8XDI3nXis3okIwsr8_LneRnFw0x4,816
+robotframework_sudslibrary3-0.8.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+robotframework_sudslibrary3-0.8.dist-info/top_level.txt,sha256=DOuCT39K6Zz2rIfpnp2ed1J_bxG8v6be4LKoY91gcEg,12
+robotframework_sudslibrary3-0.8.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+robotframework_sudslibrary3-0.8.dist-info/RECORD,,
