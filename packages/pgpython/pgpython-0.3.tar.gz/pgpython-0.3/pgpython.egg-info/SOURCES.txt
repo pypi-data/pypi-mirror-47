@@ -1,0 +1,12 @@
+README.md
+setup.py
+pgpython/__init__.py
+pgpython/base.py
+pgpython/fields.py
+pgpython/pgdb.py
+pgpython/schema.py
+pgpython.egg-info/PKG-INFO
+pgpython.egg-info/SOURCES.txt
+pgpython.egg-info/dependency_links.txt
+pgpython.egg-info/requires.txt
+pgpython.egg-info/top_level.txt
