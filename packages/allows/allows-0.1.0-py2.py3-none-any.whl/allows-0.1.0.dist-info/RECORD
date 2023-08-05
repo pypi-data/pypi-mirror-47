@@ -1,0 +1,11 @@
+allows/__init__.py,sha256=u_Tk4Y1ifErIojxv1oPL7MqJ3mZh_TqHTStLjHxJSoQ,657
+allows/exception.py,sha256=TQDkQyQvOAbsjJFf4KidmnCrX-zLkNJg7zRrM7By9CY,160
+allows/factory.py,sha256=VwLNusRFdPux06U-l6tWBtrhyCOERgyPhGChkAALsxQ,3258
+allows/grammar.py,sha256=WeV_AV7I3Fg_fmlV15KpVucr-FPEICGubpiX8Mo3GU4,3883
+allows/side_effect.py,sha256=lE3pPSybxJ2uVaVpxbJzSxHs6hYAoTL7_Df8a2YNO1A,3443
+allows-0.1.0.dist-info/AUTHORS.rst,sha256=5SQcldD04VPR2Ze6j3kjkQZtEV0fgOb77lYhUFb_644,155
+allows-0.1.0.dist-info/LICENSE,sha256=EyX59tP7g-OoYRg1i6r6y0mxpyWd2qO32vduisuGki4,1072
+allows-0.1.0.dist-info/METADATA,sha256=8zkwx83MPdh-nebTKW9c0T-yTLRchTRLIqJ-29EaP7I,2646
+allows-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+allows-0.1.0.dist-info/top_level.txt,sha256=NJfwnQh3XboXgz44u3ywAX5Mmsyjs6cblOkcOAnOKWs,7
+allows-0.1.0.dist-info/RECORD,,
