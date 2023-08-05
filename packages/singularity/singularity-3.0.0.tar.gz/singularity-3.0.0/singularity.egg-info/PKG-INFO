@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: singularity
+Version: 3.0.0
+Summary: command line tools for visualization and analysis of singularity containers.
+Home-page: http://www.github.com/singularityhub/singularity-python
+Author: Vanessa Sochat
+Author-email: vsochat@stanford.edu
+Maintainer: Vanessa Sochat
+Maintainer-email: vsochat@stanford.edu
+License: LICENSE
+Description: UNKNOWN
+Keywords: singularity containers hub reproducibility package science visualization
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: C
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Provides-Extra: google
+Provides-Extra: all
+Provides-Extra: metrics
