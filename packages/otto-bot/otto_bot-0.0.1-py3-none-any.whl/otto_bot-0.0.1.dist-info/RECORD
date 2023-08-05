@@ -1,0 +1,15 @@
+narwhal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+narwhal/cli.py,sha256=yAG7P7Ho6Z2Y-uTh0gmM08PJNyI7PNSI-jwU93n2cJg,1492
+narwhal/resources.py,sha256=zapXjIyzaJqNBcsWWsrwS2_ermLVXPhAhH00OphiXCQ,2443
+narwhal/utilities.py,sha256=TEhXWY7RA6GC8ixu-Im8FVxa0AylUtMq9faZfNEeYPE,977
+otto/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+otto/cli.py,sha256=Kn7OlDCV9HYHnNvcLAu1RZAFBIXyc601O6TJ9uxza0Q,6028
+otto/resources.py,sha256=qklcWje9YmKOnOQywDQPPtDA2BUqBAD6A53fCi1RTDw,12641
+otto/utilities.py,sha256=9TSCI1Kw8bvxcpJRz5IWGHLvworCP2jubXZO_vwZDNY,1731
+otto/validate.py,sha256=BvnTKjTDxNmn7h5y5oGsXv5CePu-DvvDMdfNd8t1HaA,7759
+otto_bot-0.0.1.dist-info/LICENSE,sha256=g1dB1y8eqap5-ZiQHDmqEH-25zp-r5TKmdx4trzP0h8,1072
+otto_bot-0.0.1.dist-info/METADATA,sha256=V2vSf-iClqEYAc-eD2PWyRW-F1AhXiFsZ-4zRVE1L9M,9110
+otto_bot-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+otto_bot-0.0.1.dist-info/entry_points.txt,sha256=v3QdKc1Tg75WtW5cCcV9gJlxcGCOFrVVeZXC3fsXIoc,47
+otto_bot-0.0.1.dist-info/top_level.txt,sha256=oIonku-c-WW_YyH7RKeFy_POAWF8QZsEV4YM7lHpBx4,5
+otto_bot-0.0.1.dist-info/RECORD,,
