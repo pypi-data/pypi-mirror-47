@@ -1,0 +1,16 @@
+django_stomp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_stomp/apps.py,sha256=ydcz2mdBATQcip7iDAN7HzHSJTay0b8wcTo357GiSM8,93
+django_stomp/execution.py,sha256=lhCd5IdbJC-U8h6dcesft_AT9oLO9kYbK-dkjRQcGpI,2653
+django_stomp/helpers.py,sha256=mf-Q1dTvQf9h91R8CITOiD23OeEhAF5GPaz54qcWK5g,607
+django_stomp/publisher.py,sha256=tfaUUuj_JMB0eMa4RqztB4emJmg4sktrrvw4-c9tA-A,706
+django_stomp/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_stomp/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_stomp/management/commands/pubsub.py,sha256=U_q98x9gwJMv_7q1q6JQ9nozc9TqBY4nfR9BYYK-LHc,459
+django_stomp/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_stomp/services/consumer.py,sha256=fy7OW8Ial5fap8tGogI6hVg_0YhWHOpj8ChWlqfwmOs,4345
+django_stomp/services/producer.py,sha256=PBASVuoepTA0NGKc03g0o7dANKGM7sn6IM7VWQIPTBc,4627
+django_stomp-0.0.10.dist-info/LICENSE,sha256=WCuu8M1aHJxkGezNDoZ1VNCBY-pER6u5Y9EUDjOkstg,1070
+django_stomp-0.0.10.dist-info/METADATA,sha256=JEn4bOErGLbwbDREh4z0GAHAUn9yJaaVKAFxL-SjTYQ,1376
+django_stomp-0.0.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_stomp-0.0.10.dist-info/top_level.txt,sha256=emV2JVvWrwUSYEof2XRod2NWlSwS7T03S914ig4i8Bk,13
+django_stomp-0.0.10.dist-info/RECORD,,
