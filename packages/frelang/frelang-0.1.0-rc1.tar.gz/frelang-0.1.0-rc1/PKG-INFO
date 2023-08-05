@@ -1,0 +1,27 @@
+Metadata-Version: 1.0
+Name: frelang
+Version: 0.1.0-rc1
+Summary: Interpreted, statically typed, simple, flexible, embeddable language.
+Home-page: UNKNOWN
+Author: Gustavo Ramos Rehermann (Gustavo6046)
+Author-email: rehermann6046@gmail.com
+License: The MIT License
+Description: Fre
+        =========
+        
+        
+        Short for
+        
+        * **F** lexible
+        * **Re** adability,
+        
+        Fre is a simple, easily parseable and readable, but at the same time
+        flexible, strong-typed, and interpreted programming language.
+        
+        Its original intent was to provide ZDoom (a game engine based on Doom)
+        a language that could be parsed by its existing ZScript language. However,
+        a Python VM/interpreter is also in the plans.
+        
+        See the `docs/` folder for more. =)
+        
+Platform: UNKNOWN
