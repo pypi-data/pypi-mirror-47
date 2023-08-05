@@ -1,0 +1,3 @@
+[console_scripts]
+electriceye = electriceye.cli:main
+
