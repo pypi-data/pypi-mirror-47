@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+django_usd2currency/__init__.py
+django_usd2currency/utils.py
+django_usd2currency.egg-info/PKG-INFO
+django_usd2currency.egg-info/SOURCES.txt
+django_usd2currency.egg-info/dependency_links.txt
+django_usd2currency.egg-info/top_level.txt
