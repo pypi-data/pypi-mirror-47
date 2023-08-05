@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: datadog-http-handler
+Version: 1.0.0
+Summary: Python logging module allowing you to log to directly to Datadog via https
+Home-page: https://github.com/nrccua/datadog-http-handler
+Author: Tim Reichard
+Author-email: tim.reichard@nrccua.org
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
