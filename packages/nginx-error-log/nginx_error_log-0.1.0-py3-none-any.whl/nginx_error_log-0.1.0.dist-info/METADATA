@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: nginx-error-log
+Version: 0.1.0
+Summary: Nginx error log parser.
+Home-page: https://github.com/madsmtm/nginx-error-log/
+License: MIT
+Keywords: Nginx Error Log Parser error_log
+Author: Mads Marquart
+Author-email: madsmtm@gmail.com
+Requires-Python: ~=3.6
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Requires-Dist: dataclasses
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-raises; extra == "test"
+Requires-Dist: black; extra == "dev"
+Project-URL: Repository, https://github.com/madsmtm/nginx-error-log/
+Provides-Extra: .none
+Provides-Extra: dev
+Provides-Extra: test
+
+# nginx-error-log
+Nginx error log parser.
+
+[![License](https://img.shields.io/pypi/l/nginx-error-log.svg)](https://github.com/madsmtm/nginx-error-log/blob/master/LICENSE.txt)
+![Supported Python Versions](https://img.shields.io/pypi/pyversions/nginx-error-log.svg)
+![Implementations](https://img.shields.io/pypi/implementation/nginx-error-log.svg)
+![Project Status](https://img.shields.io/pypi/status/nginx-error-log.svg)
+[![Version](https://img.shields.io/pypi/v/nginx-error-log.svg)](https://pypi.org/project/nginx-error-log/)
+[![Build Status](https://travis-ci.com/madsmtm/nginx-error-log.svg)](https://travis-ci.com/madsmtm/nginx-error-log)
+[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+
+This project provides a clean parsing of nginx error logs, produced by the
+[`error_log`](https://nginx.org/en/docs/ngx_core_module.html#error_log) directive (not
+access logs). The implementation is based on
+[this](https://stackoverflow.com/a/26125951) stackoverflow answer.
+
+
+## Installation
+```sh
+pip install nginx-error-log
+```
+
+
+## License
+BSD 3-Clause, see `LICENSE.txt`.
+
