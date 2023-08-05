@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+csvloader/__init__.py
+csvloader/csvloader.py
+csvloader/csvloaderData/data.csv
+python_csvloader_dpp_example.egg-info/PKG-INFO
+python_csvloader_dpp_example.egg-info/SOURCES.txt
+python_csvloader_dpp_example.egg-info/dependency_links.txt
+python_csvloader_dpp_example.egg-info/requires.txt
+python_csvloader_dpp_example.egg-info/top_level.txt
