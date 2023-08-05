@@ -1,0 +1,9 @@
+README.md
+setup.py
+sci_univariate_pkg/__init__.py
+sci_univariate_pkg/sci_univariate_pkg.py
+sci_univariate_pkg.egg-info/PKG-INFO
+sci_univariate_pkg.egg-info/SOURCES.txt
+sci_univariate_pkg.egg-info/dependency_links.txt
+sci_univariate_pkg.egg-info/requires.txt
+sci_univariate_pkg.egg-info/top_level.txt
