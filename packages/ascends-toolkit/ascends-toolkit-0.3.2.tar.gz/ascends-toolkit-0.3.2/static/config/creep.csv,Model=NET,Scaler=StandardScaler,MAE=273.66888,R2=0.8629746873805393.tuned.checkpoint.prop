@@ -1,0 +1,10 @@
+[HYPERPARAMETERS]
+
+net_layer_n = 4
+net_structure = 8 158 207 50
+net_epochs = 300
+net_dropout = 0.19909555465279494
+net_l_2 = 0.0013344401278841042
+net_batch_size = 2
+net_learning_rate = 0.0001708501149047263
+scaler_option = StandardScaler

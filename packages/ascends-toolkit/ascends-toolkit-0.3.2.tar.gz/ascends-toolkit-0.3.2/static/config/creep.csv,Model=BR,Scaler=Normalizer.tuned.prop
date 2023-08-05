@@ -1,0 +1,12 @@
+[HYPERPARAMETERS]
+
+br_tol = 0.01
+br_normalize = False
+br_n_iter = 194
+br_lambda_2 = 8.957894736842106e-06
+br_lambda_1 = 1e-05
+br_fit_intercept = False
+br_compute_score = False
+br_alpha_2 = 8.436842105263158e-06
+br_alpha_1 = 6.210526315789484e-07
+scaler_option = Normalizer

@@ -1,0 +1,10 @@
+[HYPERPARAMETERS]
+
+svm_tol = 0.01
+svm_kernel = poly
+svm_gamma = 1
+svm_epsilon = 0.2
+svm_degree = 3
+svm_coef0 = 2
+svm_c = 3000.0
+scaler_option = Normalizer

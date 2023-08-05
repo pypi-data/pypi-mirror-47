@@ -1,0 +1,8 @@
+[HYPERPARAMETERS]
+
+kr_kernel = linear
+kr_gamma = laplacian
+kr_degree = 1
+kr_coef0 = 5
+kr_alpha = 0.0
+scaler_option = Normalizer
