@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: aiodnsbrute
+Version: 0.2.1
+Summary: Brute force DNS domain names asynchronously
+Home-page: https://github.com/blark/aiodnsbrute
+Author: Mark Baseggio
+Author-email: mark@basegg.io
+License: BSD
+Download-URL: https://github.com/blark/aiodnsbrute/archive/v0.2.1.tar.gz
+Description: 
+        Brute force DNS domain names asynchronously
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
