@@ -1,0 +1,12 @@
+aiohttp
+cchardet
+aiodns
+matplotlib
+pandas
+
+[test]
+pytest
+pytest-cov
+pytest-asyncio
+coveralls
+pytest-flake8
