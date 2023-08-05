@@ -1,0 +1,3 @@
+[console_scripts]
+mac_vendor_lookup = lookup:main
+
