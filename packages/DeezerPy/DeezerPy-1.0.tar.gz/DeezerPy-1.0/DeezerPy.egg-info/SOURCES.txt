@@ -1,0 +1,9 @@
+README.md
+setup.py
+DeezerPy.egg-info/PKG-INFO
+DeezerPy.egg-info/SOURCES.txt
+DeezerPy.egg-info/dependency_links.txt
+DeezerPy.egg-info/top_level.txt
+deezerpy/__init__.py
+deezerpy/auth.py
+deezerpy/deezerpy.py
