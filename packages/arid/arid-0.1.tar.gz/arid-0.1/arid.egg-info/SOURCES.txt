@@ -1,0 +1,10 @@
+setup.py
+arid/__init__.py
+arid/segment.py
+arid.egg-info/PKG-INFO
+arid.egg-info/SOURCES.txt
+arid.egg-info/dependency_links.txt
+arid.egg-info/top_level.txt
+arid/impl/__init__.py
+arid/impl/connected_components.cpp
+arid/impl/wrappers.cpp
