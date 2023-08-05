@@ -1,0 +1,15 @@
+docs/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/genome_comparison_scripts/__init__.py,SHA256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+docs/genome_comparison_scripts/karyogram_plotting_utility.py,SHA256=D7gC4TArQMKvieqNiwvYCVvQnovDnCMnyQoJ5JnF5Fo,4619
+docs/genome_comparison_scripts/plot_genetic_hdbscan.py,SHA256=0-8Qwv_wbNfLNhXm_oiK5vAzVSdrxPxjm7QE6VEZeHc,7917
+docs/genome_comparison_scripts/plot_rules.py,SHA256=TDA9csAeGX8Tj_tV49ALPt8l0cZYMY7RG6JG2i_HIxo,17374
+docs/genome_comparison_scripts/plot_rules_repeats.py,SHA256=PpmC326X3r3kRc54Qw0PvI0Xzla_qBhwbM3ltD2nlWU,6462
+polycracker/__init__.py,SHA256=-x6LAVzw6I9z0aPxhM9KpugVlkevk_ctsaWHUkU4CpE,76
+polycracker/polycracker.py,SHA256=QJXxgZ_yuF6WeuqtHf0EOjVbRbHfZVdo7U8KUA59y5o,342981
+polycracker/venn.py,SHA256=_9uqBjKsEW5meO1TYFc9UzakETv_Ccoa8Xj074aAYYQ,18482
+polycracker-1.0.1.dist-info/LICENSE,SHA256=vAJknJwOOpUt-NjDEQSUsRUYXfYGTwH25IvCvbOyE8c,2430
+polycracker-1.0.1.dist-info/METADATA,SHA256=MTZDmERGVBt8rXWI8bHqFNUJVXfdQ5GP9SDiDtLSVs8,28784
+polycracker-1.0.1.dist-info/WHEEL,SHA256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+polycracker-1.0.1.dist-info/entry_points.txt,SHA256=r9g2EWaVJ6Rkx6fW0eQkVkOL854svfSr-sHiEDJN4a8,69
+polycracker-1.0.1.dist-info/top_level.txt,SHA256=TEfmLfzXekpn0IXID969WB1K-Jdum5ir8SymkgYuNZQ,17
+polycracker-1.0.1.dist-info/RECORD,,
