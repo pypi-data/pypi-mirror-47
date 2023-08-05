@@ -1,0 +1,8 @@
+*.egg-info/
+__pycache__/
+.eggs/
+build/
+dist/
+Pipfile
+Pipfile.lock
+test_cache.sqlite
