@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+aihub_deep/utils.py
+aihub_deep.egg-info/PKG-INFO
+aihub_deep.egg-info/SOURCES.txt
+aihub_deep.egg-info/dependency_links.txt
+aihub_deep.egg-info/requires.txt
+aihub_deep.egg-info/top_level.txt

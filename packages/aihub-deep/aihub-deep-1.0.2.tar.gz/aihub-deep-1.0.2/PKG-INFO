@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: aihub-deep
+Version: 1.0.2
+Summary: A Python library for Deep Learning Developers.
+Home-page: https://github.com/suvhradipghosh07/Aihub
+Author: Suvhradip Ghosh
+Author-email: suvhradip@gmail.com
+License: MIT
+Description: # Aihub
+        
+        A Python package for all Deep learning Developers.
+        
+        ## Usage
+        
+        Following query on terminal will provide you details.
+        
+        ```
+        import aihub
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
