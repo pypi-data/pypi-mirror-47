@@ -1,0 +1,8 @@
+README.md
+setup.py
+cli_configparser/__init__.py
+cli_configparser/read_setting.py
+cli_configparser.egg-info/PKG-INFO
+cli_configparser.egg-info/SOURCES.txt
+cli_configparser.egg-info/dependency_links.txt
+cli_configparser.egg-info/top_level.txt
