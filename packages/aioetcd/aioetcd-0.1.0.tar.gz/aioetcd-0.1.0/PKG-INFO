@@ -1,0 +1,25 @@
+Metadata-Version: 1.2
+Name: aioetcd
+Version: 0.1.0
+Summary: etcd v2 client for AsyncIO
+Home-page: https://github.com/SergeyTsaplin/aioetcd
+Author: Sergey Tsaplin
+Author-email: me@sergeytsaplin.com
+License: MIT
+Description: # Async etcd client
+        
+        [![Build Status](https://cloud.drone.io/api/badges/SergeyTsaplin/aioetcd/status.svg)](https://cloud.drone.io/SergeyTsaplin/aioetcd)
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5.3
