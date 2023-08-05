@@ -1,0 +1,13 @@
+README.md
+setup.py
+projectpy/__init__.py
+projectpy/cli.py
+projectpy/config.py
+projectpy/utils.py
+projectpy/version.py
+projectpy.egg-info/PKG-INFO
+projectpy.egg-info/SOURCES.txt
+projectpy.egg-info/dependency_links.txt
+projectpy.egg-info/entry_points.txt
+projectpy.egg-info/requires.txt
+projectpy.egg-info/top_level.txt
