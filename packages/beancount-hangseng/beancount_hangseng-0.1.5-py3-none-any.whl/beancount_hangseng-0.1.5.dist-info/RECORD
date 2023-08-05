@@ -1,0 +1,10 @@
+beancount_hangseng/Savings.py,sha256=bVWDiBItumLZmx3jx-x4FuJNBoxgMzv_uS-DVHPa3Bw,4934
+beancount_hangseng/__init__.py,sha256=LUiBcXdoREXmI06JYSpmGIbqIBHikCXIrLzCcJIkSus,102
+beancount_hangseng/utils.py,sha256=s5gebcPa8D5BCJNvYA1jc9NbhHClovXycWwIQfwOw6k,930
+beancount_hangseng/scripts/csv.py,sha256=snKHJC8rA1kVwbU5Eg7ega70vWvQDDQg2kjYhzeFfqE,2100
+beancount_hangseng-0.1.5.data/scripts/beancount-hangseng-csv,sha256=5BEd1zONTLCNdVdN8H4eEvErjfcmDP0Km9t5mGHMJvE,144
+beancount_hangseng-0.1.5.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+beancount_hangseng-0.1.5.dist-info/METADATA,sha256=KWwMp9WOZqhT_WN-KlaiMKp8M3r8pkgbDZ9KJLqVDwA,1969
+beancount_hangseng-0.1.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+beancount_hangseng-0.1.5.dist-info/top_level.txt,sha256=9Ov8ipvdBKWc1f39suROr8TK7WLrvLc1Lv7kxksWsC4,19
+beancount_hangseng-0.1.5.dist-info/RECORD,,
