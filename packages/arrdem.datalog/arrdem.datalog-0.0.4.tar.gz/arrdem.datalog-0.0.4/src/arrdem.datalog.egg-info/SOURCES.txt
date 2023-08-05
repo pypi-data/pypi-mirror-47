@@ -1,0 +1,12 @@
+README.md
+setup.py
+bin/datalog
+src/arrdem.datalog.egg-info/PKG-INFO
+src/arrdem.datalog.egg-info/SOURCES.txt
+src/arrdem.datalog.egg-info/dependency_links.txt
+src/arrdem.datalog.egg-info/top_level.txt
+src/datalog/__init__.py
+src/datalog/core.py
+src/datalog/parser.py
+test/test_datalog_evaluator.py
+test/test_datalog_parser.py
