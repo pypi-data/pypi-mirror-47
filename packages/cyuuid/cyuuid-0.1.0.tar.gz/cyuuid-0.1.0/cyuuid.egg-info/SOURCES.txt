@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+cyuuid/cyuuid.pyx
+cyuuid/header_int128.h
+cyuuid.egg-info/PKG-INFO
+cyuuid.egg-info/SOURCES.txt
+cyuuid.egg-info/dependency_links.txt
+cyuuid.egg-info/not-zip-safe
+cyuuid.egg-info/requires.txt
+cyuuid.egg-info/top_level.txt
+test/test_compat.py
+test/test_compat_init.py
+test/test_uuid.py
