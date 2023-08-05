@@ -1,0 +1,14 @@
+pypi_project-0.0.1.11.data/scripts/pypr,sha256=lbkHF8BeUPpHnBIjSsR0O-JbqIoiIeLP4tuZ9kgF7Xw,512
+pypi_project-0.0.1.11.data/scripts/pypr.bat,sha256=r7v6ETJWHh9c4mQyp-UpGyM8AO8N62ksBWyH9TFtTPg,86
+pypi_project-0.0.1.11.data/scripts/pypr.completion.sh,sha256=NQ3UM5RPfH_p-cmVVbkw1ES9Sq1uXOy8t9AwR7UNneQ,190
+pypiproject/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pypiproject/__main__.py,sha256=PByNXnaFFzzQ9vYaHS38QLKacqrlZnF1jxzDSYAZBKk,1160
+pypiproject/version.py,sha256=1_UxPgFm37WASOERaXESenFZUJC1eZhuFZmxahKW-EY,24
+pypiproject/core/__init__.py,sha256=iZEjL7d7q1xfbC-g73vVgBDCUXUDCSPmftcDTp-FcaM,165
+pypiproject/core/pypiproject_core.py,sha256=8Oq5XVW3FlKvcH4K0w4d6eZmFRa6DBUN97JWbee9SDU,147
+pypiproject/core/pypiproject_core_unittest.py,sha256=M-Ox8pIhSWCSIwp7jEn-nDDpMXEP4gaxtiw4d4dA2Qk,1822
+pypi_project-0.0.1.11.dist-info/METADATA,sha256=6MSEqWzWnu9Ai3NVxh7LowG4LuN6D-8LJwrP372iUJc,6276
+pypi_project-0.0.1.11.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+pypi_project-0.0.1.11.dist-info/top_level.txt,sha256=2ZxIysDKNsy2mWp8MSAGYcNjOUT7IZZGtvwihWKi7BQ,12
+pypi_project-0.0.1.11.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+pypi_project-0.0.1.11.dist-info/RECORD,,
