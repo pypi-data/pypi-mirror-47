@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: pyfunctions
+Version: 2019.5.30.8.10.32
+Summary: This project contains many functions that can be used in daily development.
+Home-page: https://github.com/broholens/pyfunctions
+Author: zz
+Author-email: zzwcng@126.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/text
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: html2text (==2018.1.9)
+Requires-Dist: w3lib (==1.20.0)
+Requires-Dist: lxml (==4.3.3)
+Requires-Dist: fake-useragent (==0.1.11)
+Requires-Dist: selenium (==3.141.0)
+
+https://github.com/broholens/pyfunctions
+
+
