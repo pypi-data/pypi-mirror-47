@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: kiwi-platform
+Version: 0.1.0
+Summary: Company standards as code for Kiwi.com
+Home-page: https://github.com/kiwicom/kiwi-platform-py/
+Author: Bence Nagy
+Author-email: bence@kiwi.com
+Maintainer: Bence Nagy
+Maintainer-email: bence@kiwi.com
+License: UNKNOWN
+Download-URL: https://github.com/kiwicom/kiwi-platform-py/releases
+Description: # kiwi-platform-py
+        
+        [![CircleCI](https://circleci.com/gh/kiwicom/kiwi-platform-py.svg?style=svg)](https://circleci.com/gh/kiwicom/kiwi-platform-py)
+        [![codecov](https://codecov.io/gh/kiwicom/kiwi-platform-py/branch/master/graph/badge.svg)](https://codecov.io/gh/kiwicom/kiwi-platform-py)
+        [![Codacy Badge](https://api.codacy.com/project/badge/Grade/7594931404704cdc88d214f6b8898735)](https://www.codacy.com/app/bence/kiwi-platform-py?utm_source=github.com&utm_medium=referral&utm_content=kiwicom/kiwi-platform-py&utm_campaign=Badge_Grade)
+        [![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/kiwicom/kiwi-platform-py.svg)](https://github.com/kiwicom/kiwi-platform-py/tags)
+        
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/kiwi-platform.svg)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-black.svg)](https://github.com/ambv/black)
+        
+        Company standards as code for Kiwi.com
+        
+        ## Installation
+        
+        Install with `pip install kiwi-platform`.
+        
+        ## Contributing
+        
+        1. Check for open issues or open a fresh issue to start a discussion
+        2. Fork [the repository](https://github.com/kiwicom/kiwi-platform-py) on GitHub.
+        3. Send a pull request with your code!
+        
+        Merging will require a test which shows that the bug was fixed,
+        or that the feature works as expected.
+        Feel free to open a draft pull request though without such a test
+        and ask for help with writing it if you're not sure how to.
+        
+        
+        ## Changelog
+        
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
+        and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
+        
+        ## 0.1.0 (2019-05-29)
+        
+        - Initial release, with a completely empty package.
+        
+        
+        ## Credits
+        
+        The `kiwi-platform-py` project is owned by the Software Platform Squad at Kiwi.com.
+        The interim maintainer, until the project reaches maturity, is [Bence Nagy (underyx)](https://underyx.me).
+        
+        A full list of contributors can be found on [GitHub's Contributors page](https://github.com/kiwicom/kiwi-platform-py/graphs/contributors)
+        or you can obtain it on your own by running `git shortlog -sn`.
+        
+Keywords: kiwicom
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+Provides-Extra: tests
+Provides-Extra: dev
