@@ -1,0 +1,7 @@
+setup.py
+snakepython/__init__.py
+snakepython.egg-info/PKG-INFO
+snakepython.egg-info/SOURCES.txt
+snakepython.egg-info/dependency_links.txt
+snakepython.egg-info/not-zip-safe
+snakepython.egg-info/top_level.txt
