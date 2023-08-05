@@ -1,0 +1,5 @@
+aiohttp>=3.4.4
+sdnotify>=0.3.2
+
+[uvloop]
+uvloop>=0.11.0
