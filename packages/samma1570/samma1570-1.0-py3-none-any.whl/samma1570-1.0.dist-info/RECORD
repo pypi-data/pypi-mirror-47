@@ -1,0 +1,15 @@
+samma1570/__init__.py,sha256=Gmbn2d_4AYhxgKv9OVsNQiqb74tHd2eoTGdNTLos7WM,121
+samma1570/api/__init__.py,sha256=6Bnp1MPge9_twS65Wq3Q9h8UH2WfHbUvb-caGXVUdRw,160
+samma1570/api/googleTran.py,sha256=cMcOYK0RGb9i4sf9pfZAH5RFeMdLBeY7iIfACmN1CWM,2234
+samma1570/fileSystem/__init__.py,sha256=-pJIB2PKpI082ZH7Gsbq-YA5hC_ifWvs27NHGRL-KFU,160
+samma1570/fileSystem/writeJsontoExcel.py,sha256=JmFfJGE93AsGxBB0-c5Tl4cnh08MkjHFJjEID87Rf4Q,1495
+samma1570/mydecorate/__init__.py,sha256=gA4z0tA0a2IcDqgAD0BNMFqo84FuZPz4iaxXWUjxdq4,113
+samma1570/mydecorate/clockdeco.py,sha256=W19y0QYDfpRK9fbNDqRym-B_KPuD7-8pNaPIXHdXzUU,515
+samma1570/mydecorate/debugdeco.py,sha256=KFHvQMyGBG7UNMfgzAwNfblRjIU_LHXdie6_pj0qF1c,350
+samma1570/mydecorate/fileiterdeco.py,sha256=EzKLi76BFD2iTV5_xxD1lB-mQbKqIOJQB2dJStqHcj8,581
+samma1570/spiderTool/__init__.py,sha256=n4e8XKarG7LdSLW1EMNHR2kPMq4lEe1-JdfByAf1Jc4,159
+samma1570/spiderTool/output.py,sha256=7gdS4IdwOXew_i1OGG_5-wotqGxvSFr2u2hEFL3TN-o,656
+samma1570-1.0.dist-info/METADATA,sha256=izFw1SIfhalFGsWicZuaQJVtXiu8iJvRiuht9jbMNyc,846
+samma1570-1.0.dist-info/RECORD,,
+samma1570-1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+samma1570-1.0.dist-info/top_level.txt,sha256=eZOhxPIqUEJW5A9aTf1MHv5WaW-_F9VvcxVAmuAPZC8,10
