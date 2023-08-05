@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crossref_commons
+Version: 0.0.2
+Summary: Crossref Commons
+Home-page: https://gitlab.com/crossref/crossref_commons_py
+Author: Crossref
+Author-email: labs@crossref.org
+License: UNKNOWN
+Description: # Crossref Commons
+        
+        High-level library for getting data from Crossref APIs (REST, XML, ...). Work in progress.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
