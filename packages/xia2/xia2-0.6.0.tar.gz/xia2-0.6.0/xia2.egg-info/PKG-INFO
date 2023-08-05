@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: xia2
+Version: 0.6.0
+Summary: An expert system for automated reduction of X-Ray diffraction data from macromolecular crystals
+Home-page: https://github.com/xia2/xia2
+Author: Diamond Light Source
+Author-email: scientificsoftware@diamond.ac.uk
+License: BSD license
+Description: UNKNOWN
+Keywords: xia2
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
