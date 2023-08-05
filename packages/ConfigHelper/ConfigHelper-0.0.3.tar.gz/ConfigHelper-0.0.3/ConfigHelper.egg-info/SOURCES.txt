@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+ConfigHelper/ConfigHelper.py
+ConfigHelper/__init__.py
+ConfigHelper.egg-info/PKG-INFO
+ConfigHelper.egg-info/SOURCES.txt
+ConfigHelper.egg-info/dependency_links.txt
+ConfigHelper.egg-info/not-zip-safe
+ConfigHelper.egg-info/top_level.txt
