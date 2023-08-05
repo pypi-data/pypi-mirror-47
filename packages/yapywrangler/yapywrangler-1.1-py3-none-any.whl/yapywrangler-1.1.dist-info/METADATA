@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: yapywrangler
+Version: 1.1
+Summary: Tool for reqesting stock data from the Yahoo Finance API
+Home-page: https://github.com/ltskinner/yapywrangler
+Author: ltskinner
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: datetime
+
+UNKNOWN
+
+
