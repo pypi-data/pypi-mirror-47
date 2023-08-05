@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nerdvision
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
+Requires-Dist: netifaces
+Requires-Dist: grpcio-tools
+Requires-Dist: nerdvision-grpc-api (==0.0.14)
+Requires-Dist: requests
+
+UNKNOWN
+
+
