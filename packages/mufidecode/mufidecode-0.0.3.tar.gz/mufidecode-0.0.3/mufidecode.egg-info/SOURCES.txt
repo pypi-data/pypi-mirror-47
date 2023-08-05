@@ -1,0 +1,8 @@
+README.md
+mufidecode.py
+setup.py
+mufidecode.egg-info/PKG-INFO
+mufidecode.egg-info/SOURCES.txt
+mufidecode.egg-info/dependency_links.txt
+mufidecode.egg-info/requires.txt
+mufidecode.egg-info/top_level.txt
