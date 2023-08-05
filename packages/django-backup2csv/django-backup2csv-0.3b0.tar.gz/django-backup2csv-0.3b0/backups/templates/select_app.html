@@ -1,0 +1,27 @@
+{% extends 'b2csv_base.html' %}
+{% load backup_tags %}
+
+{% block content %}
+    <h1>Sistema de Backups General</h1>
+    <hr>
+    <p>Seleccione la aplicacion que desea administrar:</p>
+    <ul>
+        {% for app in apps %}
+         <li>
+            <b>{{app}}</b>
+            <a href="select_models/{{app}}">(BackUp)</a>
+            <a href="up/{{app}}">(Restore)</a>
+            <ul>
+                <p>Se realizara backup de los siguientes modelos:</p>
+                {% get_modelos app as models %}
+                {% for model in models %}
+                    <li>
+                        {{model}}
+                    </li>
+                {% endfor %}
+            </ul>
+        {% endfor %}
+        </li>
+    </ul>
+    <hr>
+{% endblock %}
