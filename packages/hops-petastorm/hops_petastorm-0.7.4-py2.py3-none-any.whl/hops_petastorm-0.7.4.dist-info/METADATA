@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: hops-petastorm
+Version: 0.7.4
+Summary: Petastorm is a library enabling the use of Parquet storage from Tensorflow, Pytorch, and other Python-based ML training frameworks. This is a fork of Petastorm that is compatible with Hops installations
+Home-page: https://github.com/logicalclocks/petastorm
+Author: Uber Technologies, Inc., Kim Hammar
+Author-email: kim@logicalclocks.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: dill (>=0.2.1)
+Requires-Dist: diskcache (>=3.0.0)
+Requires-Dist: future (>=0.10.2)
+Requires-Dist: numpy (>=1.13.3)
+Requires-Dist: pandas (>=0.19.0)
+Requires-Dist: psutil (>=4.0.0)
+Requires-Dist: pyzmq (>=14.0.0)
+Requires-Dist: pyarrow (>=0.10)
+Requires-Dist: six (>=1.5.0)
+Requires-Dist: futures (>=2.0) ; python_version == "2.7"
+Provides-Extra: docs
+Requires-Dist: sphinx (==1.2.2) ; extra == 'docs'
+Requires-Dist: alabaster (==0.7.11) ; extra == 'docs'
+Provides-Extra: opencv
+Requires-Dist: opencv-python (>=3.2.0.6) ; extra == 'opencv'
+Provides-Extra: pyspark
+Requires-Dist: pyspark (>=2.1.0) ; extra == 'pyspark'
+Provides-Extra: test
+Requires-Dist: Pillow (>=3.0) ; extra == 'test'
+Requires-Dist: codecov (>=2.0.15) ; extra == 'test'
+Requires-Dist: mock (>=2.0.0) ; extra == 'test'
+Requires-Dist: opencv-python (>=3.2.0.6) ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pylint (>=1.9) ; extra == 'test'
+Requires-Dist: pytest (>=3.0.0) ; extra == 'test'
+Requires-Dist: pytest-cov (>=2.5.1) ; extra == 'test'
+Requires-Dist: pytest-forked (>=0.2) ; extra == 'test'
+Requires-Dist: pytest-logger (>=0.4.0) ; extra == 'test'
+Requires-Dist: pytest-timeout (>=1.3.3) ; extra == 'test'
+Requires-Dist: pytest-xdist ; extra == 'test'
+Requires-Dist: s3fs (>=0.0.1) ; extra == 'test'
+Provides-Extra: tf
+Requires-Dist: tensorflow (>=1.4.0) ; extra == 'tf'
+Provides-Extra: tf_gpu
+Requires-Dist: tensorflow-gpu (>=1.4.0) ; extra == 'tf_gpu'
+Provides-Extra: torch
+Requires-Dist: torchvision (>=0.2.1) ; extra == 'torch'
+
+Petastorm is a library enabling the use of Parquet storage from Tensorflow, Pytorch, and other Python-based ML training frameworks. This is a fork of Petastorm that is compatible with Hops installations
+
+
