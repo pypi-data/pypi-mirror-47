@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: exrates
+Version: 1.0
+Summary: Simple exchange rates
+Home-page: http://github
+Author: Ömer GÖK
+Author-email: omergok@outlook.com
+License: MIT
+Description: # Exrates
+        
+        Exrates is a simple Python application to get exchange rates from https://exchangeratesapi.io/
+        
+        ## Usage
+        
+        ```
+        usage: Exrates [-h] [-b BASE] [--version] symbols
+        
+        positional arguments:
+          symbols               Currencies seperated by comma
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -b BASE, --base BASE  Base currency (default: EUR)
+          --version             show program's version number and exit
+        ```
+        ## Examples
+        
+        Base currency is EUR
+        
+        ```
+        # exrates try
+        Base currency is: EUR
+        TRY 6.5815
+        ```
+        
+        You can change base currency with -b option
+        
+        ```
+        # exrates try -b usd
+        Base currency is: USD
+        TRY 5.8842199374
+        ```
+        
+        You can use multiple currencies by seperating them with a comma
+        
+        ```
+        # exrates try,cad
+        Base currency is: EUR
+        CAD 1.5098
+        TRY 6.5815
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown

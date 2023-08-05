@@ -1,0 +1,10 @@
+README.md
+setup.py
+exrates/__init__.py
+exrates/__version__.py
+exrates/exrates
+exrates.egg-info/PKG-INFO
+exrates.egg-info/SOURCES.txt
+exrates.egg-info/dependency_links.txt
+exrates.egg-info/requires.txt
+exrates.egg-info/top_level.txt
