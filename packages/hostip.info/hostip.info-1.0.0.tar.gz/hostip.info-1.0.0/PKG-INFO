@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: hostip.info
+Version: 1.0.0
+Summary: Object oriented wrapper for hostip.info
+Home-page: https://github.com/sl4vkek/hostip.info
+Author: sl4v
+Author-email: iamsl4v@protonmail.com
+License: WTFPL
+Description: An object oriented wrapper for hostip.info's API
+Platform: UNKNOWN
