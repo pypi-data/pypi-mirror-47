@@ -1,0 +1,8 @@
+setup.py
+haip/__init__.py
+haip/confluence.py
+haip_confluence.egg-info/PKG-INFO
+haip_confluence.egg-info/SOURCES.txt
+haip_confluence.egg-info/dependency_links.txt
+haip_confluence.egg-info/requires.txt
+haip_confluence.egg-info/top_level.txt
