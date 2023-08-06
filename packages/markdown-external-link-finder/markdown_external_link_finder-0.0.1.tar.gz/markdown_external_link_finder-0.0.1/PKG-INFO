@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: markdown_external_link_finder
+Version: 0.0.1
+Summary: Finds external links in markdown files
+Home-page: http://github.com/matmoore/markdown-external-link-finder
+Author: Mat Moore
+Author-email: MatMoore@users.noreply.github.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
