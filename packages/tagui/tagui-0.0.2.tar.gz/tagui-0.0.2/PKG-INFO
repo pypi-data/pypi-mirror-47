@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tagui
+Version: 0.0.2
+Summary: Placeholder for TagUI Python package
+Home-page: https://github.com/tebelorg/TagUI-Python
+Author: Tebel.Automation
+Author-email: ken@tebel.org
+License: LICENSE.txt
+Description: Placeholder for TagUI Python package - a wrapper for https://github.com/kelaberetiv/TagUI
+        
+Platform: UNKNOWN
