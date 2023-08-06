@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: ironic-prometheus-exporter
+Version: 1.0.0
+Summary: Prometheus Exporter for Ironic Hardware Sensor data
+Home-page: UNKNOWN
+Author: Iury Gregory Melo Ferreira
+Author-email: imelofer@redhat.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: stevedore (>=1.20.0)
+Requires-Dist: oslo.messaging (>=9.4.0)
+Requires-Dist: uWSGI
+Requires-Dist: Flask (>=0.12.3)
+Requires-Dist: prometheus-client
+
+UNKNOWN
+
+
