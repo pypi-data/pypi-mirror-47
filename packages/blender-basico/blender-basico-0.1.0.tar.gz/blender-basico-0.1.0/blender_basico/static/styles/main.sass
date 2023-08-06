@@ -1,0 +1,29 @@
+$navbar-padding-y: 0
+$nav-link-padding-x: 3rem
+$nav-link-padding-y: 1rem
+
+// TODO(Pablo): Use bootstrap from BWA once
+// we drop npm, we don't want that bloat here.
+@import "vendor/bootstrap/scss/bootstrap"
+
+// import variables
+@import "../assets_shared/styles/config"
+// import functions and helpers
+@import "../assets_shared/styles/utils"
+// Read inside for instructions.
+@import "../assets_shared/styles/fonts"
+
+// override certain bootstrap properties
+@import "../assets_shared/styles/bootstrap_overrides"
+
+@import "../assets_shared/styles/base"
+@import "../assets_shared/styles/input"
+@import "../assets_shared/styles/navigation"
+@import "../assets_shared/styles/button"
+@import "../assets_shared/styles/table"
+@import "../assets_shared/styles/cards"
+@import "../assets_shared/styles/featured"
+@import "../assets_shared/styles/footer"
+@import "../assets_shared/styles/special"
+@import "../assets_shared/styles/box"
+@import "../assets_shared/styles/sidebar"
