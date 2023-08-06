@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+bin/omnik-logger
+omnik/__init__.py
+omnik/client.py
+omnik/datalogger.py
+omnik/plugins/__init__.py
+omnik/plugins/influxdb.py
+omnik/plugins/pvoutput.py
+omnik_data_logger.egg-info/PKG-INFO
+omnik_data_logger.egg-info/SOURCES.txt
+omnik_data_logger.egg-info/dependency_links.txt
+omnik_data_logger.egg-info/requires.txt
+omnik_data_logger.egg-info/top_level.txt
