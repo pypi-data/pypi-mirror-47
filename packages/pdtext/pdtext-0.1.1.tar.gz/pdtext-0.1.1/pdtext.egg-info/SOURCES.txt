@@ -1,0 +1,11 @@
+setup.cfg
+setup.py
+pdtext/__init__.py
+pdtext/helpers.py
+pdtext/tools.py
+pdtext/topic_models.py
+pdtext.egg-info/PKG-INFO
+pdtext.egg-info/SOURCES.txt
+pdtext.egg-info/dependency_links.txt
+pdtext.egg-info/requires.txt
+pdtext.egg-info/top_level.txt
