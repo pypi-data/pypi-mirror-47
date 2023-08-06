@@ -1,0 +1,16 @@
+tensorflow
+numpy
+scipy
+matplotlib
+dask
+joblib
+tqdm
+attrs
+crowsetta>=1.1.1
+
+[dev]
+twine
+
+[tests]
+vak_test_net
+tweetynet>=0.1.1a4
