@@ -1,0 +1,12 @@
+neres/__init__.py,sha256=r7ctoEm39SjTQMcyluH3HOC12GvzQ8y8jTljywW_jQE,121
+neres/cli.py,sha256=6gDOOK2OzVIURnJNY0xNQeqkdHGGN7VKOTl7ZS3pex4,17530
+neres/newrelic.py,sha256=InlEh-Iedn_AAB4zzjaUIQt2_q--e-z9b3aF8-JbT7c,10457
+neres/session.py,sha256=MDSpKJEZjm8wL4PvwW_DFmegzx7IQVodEo8xX4zTjTc,1404
+neres/spinner.py,sha256=d6yUQijo8zGq-xspXUNGm2KW8s2N5eAzi7rA99MUoBk,1191
+neres/urls.py,sha256=gOTZhng-098G2XX3fRh2pogiJN63m6Oq22OcOJQFxrs,904
+neres-0.4.7.dist-info/LICENSE,sha256=EUUilUoxBPoJaQR-2LNAPwF2da_epzW7ArskISvJ2Wo,1561
+neres-0.4.7.dist-info/METADATA,sha256=k35XLr1htgfn59C1kIPeVdaiXCIac0vsLrqWPEQL5Ks,5942
+neres-0.4.7.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+neres-0.4.7.dist-info/entry_points.txt,sha256=7Abdalz1fD6dLlbsYXa9m34k4xrar58PXhPLlqknSCY,41
+neres-0.4.7.dist-info/top_level.txt,sha256=00HqNqQBECpIB8GBxZqzX2OL41Zh61Yf8sxS4IHH67A,6
+neres-0.4.7.dist-info/RECORD,,
