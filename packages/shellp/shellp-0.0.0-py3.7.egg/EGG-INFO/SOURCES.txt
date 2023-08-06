@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+shellp/__init__.py
+shellp/run.py
+shellp.egg-info/PKG-INFO
+shellp.egg-info/SOURCES.txt
+shellp.egg-info/dependency_links.txt
+shellp.egg-info/entry_points.txt
+shellp.egg-info/top_level.txt

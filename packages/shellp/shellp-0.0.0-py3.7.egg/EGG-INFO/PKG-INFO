@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: shellp
+Version: 0.0.0
+Summary: An advanced shell
+Home-page: https://github.com/dullbananas/shellp
+Author: Dull Bananas
+Author-email: dull.bananas0@gmail.com
+License: GPLv2
+Description: # ShellP
+        ![GitHub](https://img.shields.io/github/license/dullbananas/shellp.svg?color=blue&cacheSeconds=3600)
+        
+        ShellP is a shell implemented in Python and currently in pre-alpla development.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Natural Language :: English
+Classifier: Topic :: System :: Shells
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
