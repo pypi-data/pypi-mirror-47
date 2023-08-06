@@ -1,0 +1,711 @@
+CHANGES
+=======
+
+1.0.0
+-----
+
+* Change the dist name to 'storyboard-api'
+* Add RESTful endpoints for Story permissions
+* Add a security flag to Stories
+* Allow Teams to be filtered by project\_id
+* Add an endpoint for getting Projects related to a Team
+* Add a table mapping Teams to Projects
+* Add a 'security' flag to Teams
+* Install compatible version of python-openid when using Python 2
+* Clarify the rationale for StoryBoard's unique design
+* Fix missing tox env in dev install doc
+* Use version 2 in docker-compose.yml
+* OpenDev Migration Patch
+* Search bars handle queries as if they have a \* at the end
+* Replace openstack.org git:// URLs with https://
+* Project Group UI should permit removing project group even if it is not empty
+* Rewrite/clarify non-docker dev env instructions
+* Add docker-compose based dev setup instructions
+* update StoriesController so  users subsribe to stories they create
+* Whitelist \`rm\` for docs target in tox.ini
+* Add some tests for checking private story behaviour
+* Use one database per test class rather than per test
+* Remove simple priority support from the API
+* Clean up private story filtering code
+* Allow permissions to be set for teams in worklists and boards
+* Rationalise code for filtering private Boards and Worklists
+* Pin tox-py35 jobs to ubuntu-xenial
+* Updated\_at content modified
+* Creates the tag with project name and priority
+* Use ColumnElements instead of strings in migration
+* Add documentation for private stories
+* Fixes the Python 3 dependencies and iterator
+* Update docs on how to run the tests locally
+* Imported Translations from Zanata
+* Fixed hyperlinks to worklist and boards documents
+* Stop passing new lanes' "worklist" key to add\_lane
+* Add an interface specifying the API for storage backends
+* Update development installation documentation
+* Make the first user a superuser
+* Remove upper limit on PyMySQL version
+* Use python3 for basepython in tox.ini
+* Pin oauthlib<3 for now
+* Change openstack-dev to openstack-discuss
+* Rationalise worklist ordering code
+* Add a popularity measurement to tags
+* Fix the stories relation in StoryTag
+* Revert "skip some alembic migrations for sqlite"
+* Switch to using stestr for tests
+* Fix up a few requirements
+* accept tag values in the body as well as URL
+* skip some alembic migrations for sqlite
+* Update coverage environment
+* Support getting project groups by name
+* Make email public field
+* Validating task status in the API
+* Replace broken links and http links in the doc
+* Add to & Reorganize StoryBoard GUI Docs
+* add an index for the story\_storytags table
+* Support quoted project names in GET requests by name
+* change default python 3 env in tox to 3.5
+* Revert "Make notification driver configurable"
+* Revert "Add MQTT notification publisher"
+* Revert "Add configurable notification subscriber and mqtt driver"
+* fix tox python3 overrides
+* mark FilterCriterion title as a mandatory field
+* mark worklist filter\_criteria as a required field
+* use required enums to validate 'type' args
+* Add articles to email template
+* Gate fix: Cap hacking to avoid gate failure
+* Reorganize Docs
+* Fix PEP8 failures for H236, remove unneeded ignores, use newer hacking
+* Increase unit test job timeout to an hour
+* Use charset=utf8mb4 in pymysql DBURIs
+* Document some usage instructions for a freshly deployed dev instance
+* For utf8mb4 shorten teams.name and users.email
+* Use utf8mb4 for MySQL database charset
+* Finish fixing account duplication on import
+* Duplicating Users at Migration Time
+* Migration Error with Suspended User
+* Migration script: optional parameters to filter by tags
+* Add configurable notification subscriber and mqtt driver
+* Add MQTT notification publisher
+* Make notification driver configurable
+* Revert "Properly populate Worklist.items in automatic worklists"
+* Make it impossible to create a userless private story
+* Fix login when using python 3
+* handle missing filters arg when creating a worklist
+* handle missing lanes arg when creating a board
+* Update Development & Migration Docs
+* remove unused variable in test-cleanup.sh
+* set up tests to run with sqlite
+* do not allow story id to change via payload
+* convert list of auth\_codes to single value
+* Create a StoryBoard gui manual
+* log database management actions in tests
+* add a script to clean up test databases
+* only try to reset the db user password if it needs to be
+* do not set OS\_TEST\_TIMEOUT in tox.ini
+* treat doc build warnings as errors
+* suppress warnings from wsmeext.sphinxext
+* highlight notes about permissions on API endpoints
+* fix field list markup syntax
+* escape an example URL as literal text to avoid build warning
+* fix literal block markup for blocks within bullet lists
+* fix syntax for toctree
+* fix document cross-link syntax
+* separate worklist instructions from theory
+* import blog post "Things that StoryBoard does differently"
+* fix rst heading styles
+* Fallback to Natural Language search if syntax is bad
+* fix rst formatting
+* update documentation build for new PTI
+* Remove vagrant setup
+* Pin version of webob to 1.7.4
+* Remove Update tox Step
+* Migrate incomplete as todo
+* Cleanup Migration Docs
+* Bump minimum os-testr requirement to 1.0.0
+* Add documentation on manually upgrading a StoryBoard instance
+* Properly populate Worklist.items in automatic worklists
+* Consolidate old database migrations
+* Check story permissions when populating automatic worklists
+* Add Test Migration Directions
+* Pin os-testr to version 0.8.2
+* Handle Branches from Launchpad in Migration
+* Minimise database queries when populating automatic worklists
+* Minimise database queries when resolving cards
+* Adds Migration Documentation
+* Better handle pika connection errors
+* Set wsme decorator return type to None for some delete calls
+* Add a configurable fallback URL for emails
+* Allow stories and tasks to be filtered by boards/worklists containing them
+* Decrease projects and project\_groups name MIN length limitation
+* Increase project and project group name length limitation
+* Add a UUID to the temporary email address
+* Add imported tasks to master branch of relevant project
+* Use ostestr instead of the custom pretty\_tox.sh
+* Prepare for using standard python tests
+* Support MariaDB in the migration scripts
+* Remove contentless operator manual
+* Improve webclient install instructions
+* Fix install guide MySQL admin instructions
+* Remove link to modindex
+* Replace assertEquals with assertEqual
+* H803 hacking have been deprecated
+* Ignore bad requests in notification hook
+* Fix the slightly incomplete logic for changing private story permissions
+* Increase rabbitmq connections attempt
+* Add filters to the /v1/tasks/search endpoint
+* Add filters to the /v1/stories/search endpoint
+* Add a test openid server
+* Specify python2 for tox venv
+* Support tags in task filter
+* Fix install instructions for MySQL
+* bindep: Require libffi-devel
+* remove final vestiges of incubated oslo code
+* use processutils from oslo.concurrency
+* add instructions for running the tests
+* configure tox to allow OS\_TEST\_TIMEOUT env var to pass through
+* switch from incubated gettextutils to oslo.i18n
+* Cascade story deletes to tasks and events
+* Remove unused oslo incubated fixtures, and deps
+* Remove o/c/local.py and o/c/log.py
+* Fix modification of private stories
+* Fix interaction with boards and worklists
+* Update story.updated\_at when comments added
+* Update story.updated\_at when tags are updated
+* Update story.updated\_at when tasks are updated
+* Add updated\_since to stories api
+* Add users/self API
+* Update suggested version of MySQL from 5.6 to 5.7
+* Allow permissions to be set for teams on stories
+* Stop allowing user's data to be found via private stories
+* Send notifications to subscribers for worklists
+* Make it possible to get worklist/board timeline events via the API
+* Don't allow users to subscribe to private worklists they can't see
+* Limit PyMySQL to < 0.7.7
+* Hide timeline events and comments of private stories
+* Put the logic for hiding private things in storyboard/db/api/base.py
+* Move other-requirements.txt to bindep.txt
+* Create timeline events for boards and worklists
+* Fix filtering by Board title
+* Fix docs so it is easy to understand
+* Describe Storyboard in more detail
+* Fix /v1/worklists/:id/items endpoint
+* Position archived items at the bottom of worklists
+* Add example commands for the Teams api
+* Remove discover from test-requirements
+* Filter non-public fields when returning users in a Team
+* Allow timeline events to be related to worklists and boards
+* Add example commands for the Users api
+* Add example commands for the User Tokens api
+* Add example commands for the Worklists api
+* Limit oslo.db to < 4.8.0
+* Update .gitignore to ignore all .egg things
+* Add example commands for the Tags api
+* Use a common requirements file
+* Add a py35 textenv to tox.ini
+* Add example commands for the Project api
+* Add a paragraph instructing api users how to get a token
+* Add example commands for the User Preferences api
+* Add example commands for the Subscriptions api
+* Add example commands for the Branches api
+* Add example commands for the Tasks api
+* Allow editing and deletion of comments to be disabled
+* Add example commands for the Timeline api
+* Allow superusers to delete comments
+* Add example commands for the Systeminfo api
+* Add example commands for the Story api
+* Update other-requirements.txt
+* Add a way to retrieve the history of edited comments
+* Allow worklists to be filtered by subscriber\_id
+* List system dependencies for running common tests
+* Add support for email threading by story\_id
+* Allow users to be filtered by openid and email
+* Store history of a comment when editing
+* Make \`/v1/worklists/:id/filters\` resolve criteria
+* Fix GET /v1/worklists/:id/filters/:id
+* Remove duplicated line
+* Add TAGS\_ADDED and TAGS\_DELETED to event\_types.ALL
+* Allow tags to be filtered by name
+* Support subscription to worklists in the API
+* Filter non-public fields in users when updating
+* Filter non-public fields when searching for users
+* Make is\_superuser a public field for users
+* Updated documentation to make code snippet clearer
+* Avoid false positives when filtering projects by subscriber
+* Add offset/limit pagination for teams
+* Fix and extend the object model documentation
+* Improve the board filtering functionality
+* Improve the worklist filtering functionality
+* Allow lists of boards and worklists to be paged
+* Fix error in search due to multiple \`title\` columns in query
+* Allow the creation of private stories
+* Add a table for story permissions
+* Stop overriding the signal module in terminate()
+* Don't try to cancel the timer thread if it isn't alive
+* Add offset/limit pagination to subscription events
+* Update API docs to include worklists, boards, and due dates
+* Add docstring for due dates DELETE endpoint
+* Fix updating automatic worklists with no filters
+* Allow filtering of worklists and boards by story or task
+* Resolve worklist filters in boards
+* Fix filtering of automatic worklist contents
+* requirements: Set upper version limit for 'apscheduler'
+* Add API functionality for automatic worklist filters
+* Add task notes to task email
+* Replace deprecated LOG.warn with LOG.warning
+* Fix removing due dates from boards
+* Add an "in\_reply\_to" column to comments
+* Archive cards instead of deleting them
+* Updated documentation for installing Storyboard
+* Update \`PUT /v1/worklists/:id/items/:id\` to allow assigning a due date
+* Add Due Dates to relevant WSME models
+* Add Due Dates to the API
+* Fix permissions being able to be set by any authenticated user
+* Move permissions checks into storyboard.db.api
+* Amend docstring of migration 051
+* Update User Docs
+* Change MySQL search mode to 'boolean'
+* Fix Bugs in Timeline Events
+* Adjust API Endpoints for Task Links
+* Add column for task links
+* Don't add non-existent items when resolving lists
+* Amended documentation naming of installations
+* Update all affected items in a worklist when an item moves
+* Allow worklist "users" to add, move, and delete items
+* Resolve Board and Worklist contents on the server-side
+* Move summarize\_task\_statuses into wmodels.Story
+* Remove argparse from requirements
+* Fix typo
+* Rudimentary Templates for Tasks
+* Add templates for task deletion emails
+* Improve email templates
+* Add email templates for tags
+* POST Templates for Stories
+* Work around task deletion making it impossible to get subscribers
+* Add more detail to event messages
+* Add email templates for comments
+* Notifications: Don't change the resource\_id on POST unnecessarily
+* Speed up story GET requests
+* Workaround 500 error when moving items in worklists
+* Single event email worker
+* Add a subscriber\_id parameter to various GET API endpoints
+* Deprecated tox -downloadcache option removed
+* Parse path correctly when it begins with /api
+* Don't delete subscription if sub\_resource is set
+* Add story\_title to tag events
+* Document manually setting up notifications
+* Implement complex permissions for worklists and boards
+* Work around "duplicate preferences" issue
+* Limit WSME to <0.8
+* Fix SubscriptionEvents not making it into the database
+* Factory subject is now a template file
+* Allow boolean preferences
+* Add an API endpoint for boards
+* Fix tags causing 500 error when editing stories
+* Fix indentation docs
+* Mention upgrading in heading
+* Add docs for event worker plugins
+* Revert "Email Outbox"
+* Add an offset parameter to search endpoints
+* Mention that MySQL must be >= 5.6
+* Check that the preference being updated is the right one
+* Add an API endpoint for Worklists
+* Add tables for Worklists and Boards
+* Allow browsing stories by creator\_id
+* Change ignore-errors to ignore\_errors
+* Set correct default credentials in the test\_backend.sh scripts
+* Fix the example configuration for Vagrant deployment
+* Do not import using oslo namespace
+* Fix entry point for storyboard-worker-daemon
+* Support offset/limit pagination in the API
+* Replace ci.o.o links with docs.o.o/infra
+* Revert "Email Send Cron Worker"
+* Revert "Redirect Browsers from API to Client"
+* Updated oslo.config to 1.11.0
+* Added worker resource resolution helper
+* Added email preferences
+* Redirect Browsers from API to Client
+* Email Send Cron Worker
+* Email base plugin
+* Email Outbox
+* Pre-resolve author record for events
+* Every worker now gets its own session
+* Refactored event worker plugin structure into plugin directory
+* Consolidated subscription logic, switched to managed session
+* Added session parameter to various db\_api methods
+* Token Cleaner plugin now uses proper session
+* Fixed scheduler management conflict
+* One-To-One relationship for Access and Refresh Tokens
+* Updated all oslo versions
+* Updated oslo\_log
+* Removed hack
+* Updated oslo\_db
+* Filtering by project group now works
+* Project Loader creates default branches
+* Fix teams docs
+* Remove page\_size\_default
+* Remove page\_size\_maximum
+* Fixed import
+* Added story types
+* Branches, milestones and projects ids validation in tasks
+* Add tools to run integration tests
+* Removed Nickname
+* Delete all user tokens method
+* Session per request
+* Fix docs
+* Remove search from branches, milestones and tags
+* Refactor Tasks to work as a Subcontroller
+* Added events for tags
+* Story events may now be filtered by event\_type
+* Change Story to StorySummary in search
+* Split auth in api and change user\_tokens
+* Removed Process Pool execution
+* Fix db Branch and Milestone models
+* Added python-dateutil
+* Add an index on accesstokens table for access\_token column
+* Email Working Directory Utility Method
+* Email SMTP Client
+* Removed PostgreSQL from tests
+* Added milestones
+* Remove is\_active from task model
+* Replaced python-crontab with apscheduler
+* User abort call instead of returning response
+* Reduce the number of timezones under test
+* Exclude pyMySQL v0.6.4
+* Added branches to storyboard
+* Removed rfc3987 library
+* Fix bytes vs string python 3 issues
+* Use TempDir fixture for working dir
+* Use Python 3 compatible configparser
+* Use python3 compatible urllib
+* Use python3 compatible unicode types
+* Use python3 compatible httpclient
+* Reorder py27 test to happen after py3 tests
+* Switch from mysql-python to PyMySQL
+* Authorization codes validate on TTL
+* Datetime instances from SQLAlchemy now all contain timezone
+* Separate out py3 requirements and remove email
+* Fixed typo in author check
+* Notification hook checks for old entity
+* Fix comments put method
+* Fix owner\_id rejection
+* Added new paginate query
+* Fix tests to use correct base classes
+* Reject false creator\_id from requests
+* Removed py33 and pypy
+* Add test\_after\_publishes\_payload to test\_notification\_hook
+* Removed unsupported python versions from setup.cfg
+* Fix notifications tests docstrings referencing map\_resource method
+* Jsonify the result from get\_original\_resource
+* Temporarily bypass expiration date check
+* Rename map\_resource call to get\_original\_resource
+* Fix exception in stories db api
+* Email configuration
+* Email Templating Engine
+* API events now include resource before/after state
+* Pass the old entity values in the NotificationHook
+* Fix method checks.superuser
+* Fix method is\_valid in access\_token api
+* Explicit Hook Priorities
+* OAuth now validates client ID against a configured list
+* OAuth delete refresh tokens when access tokens deleted
+* OAuth tests for invalid authorization codes
+* OAuth Validate Token Grant Types
+* OAuth checks for remote data access permissions
+* OAuth Exception on invalid oauth return data
+* OAuth tests for authorize\_return
+* OAuth Authorize Scope Validation
+* OAuth validates redirect\_uri
+* OAuth check for no client\_id
+* OAuth check for no response\_type
+* OAuth check for response\_type 'code'
+* Added new way to filter stories by tags
+* OAuth Functional Tests
+* OAuth Storage Abstraction Removed
+* Prevent duplicate register\_options call
+* Revert "Delete created\_at and updated\_at fields from requests"
+* Fix NotFound errors
+* Fix status code on delete
+* Delete created\_at and updated\_at fields from requests
+* Fix stories put method
+* Whitelisted bash in the tox configuration
+* Added underscores as permitted in a nametype
+* Created test class for temporary working directories
+* subscription\_helper now supports timeline\_events
+* Singularized resource names
+* Recast exceptions in get\_plugin\_directory()
+* Corrected usage of subscription helper
+* Fixed working directory log message
+* Added an API test for malicious user updates
+* Revert "Controlling fields in requests with jsonschema"
+* Added tags controllers
+* Working Directory fails consistenly
+* Adding pretty-tox
+* Fix access\_token validation
+* Refactor db api tests
+* Controlling fields in requests with jsonschema
+* Added oslo.utils to requirements
+* Added python storyboard client to docs
+* Repo url validation with jsonschema
+* Added oslo.log to requirements
+* New versions of SQLAlchemy in requirements
+* Added oslotest to requirements
+* Added oslo.context to requirements
+* Modified users put method
+* Convert db exceptions to api exceptions
+* Task status endpoint now matches api
+* Explicit Event API
+* Created Subscriber Utility
+* Grunt invocation now allows passing of --hostname
+* Modified method user\_create
+* Team and project groups delete methods
+* Text fields validation with json schema
+* Added story\_id to comment event
+* Git repo links in project table
+* Consolidated OAuth Configuration, added enable flag to oauth cleaner
+* Added cron plugin to clean old access tokens
+* Allow overriding test database from an environment variable
+* Corrected type casting in OAuth Response
+* Fix i18n in exception module
+* Extended titles
+* All aborts now have message
+* Changes for calls iteritems and str to six
+* Fix i18n
+* Plugins may now register cron workers
+* Return task count by status for a story dynamically
+* Converted application to use utcnow()
+* Workflow documentation is now in infra-manual
+* Fixed bug in working directories
+* Add API call to return task statuses
+* Add details to event subscription
+* User token API
+* Switch to "serve" verb, and a minor clean up
+* Split Token DB API into separate file
+* Working Directory Management
+* Launchpad Import now imports multi-project bugs
+* Updated size of comment content
+* Clean recovery for import
+* Permit name conflicts in users table
+* Fixed launchpad import bugs
+* Added project group title to loader
+* Project Group Import
+* Removed launchpad loader from db migration script
+* setup for running as a stand alone application
+* Added Vagrant VM for development purposes
+* Updated & Expanded Subscription API
+* add test for system\_info.py
+* DB Migration config read
+* Add documentation for getting openid URL to setup super users
+* Add a rest endpoint to retreive system information
+* Paginate after filtering query
+* Plugins may now register their own user preferences
+* Add User Preferences endpoint
+* Filter stories by project\_id, status, project\_group\_id, more
+* Filter tasks by project, project\_group, and various other fields
+* Consolidated functional test data bootstrap
+* Removed py26 environment from tox
+* Search Project by Project Group
+* Added functional tests for Project api
+* Added functional tests for Project Groups api
+* Disable login for users
+* Added functional test tooling
+* Stevedore worker plugins
+* Added Content-Type header to CORS
+* CORS support for StoryBoard API
+* Maintain launchpad id's in migration and manage autoincrement
+* Expanded length of storytag name
+* Sanitize title during launchpad import
+* Added catch for OpenID Failures in Launchpad Import
+* Python based daemon management
+* Event actor now added to message payload
+* Migration CLI framework
+* Added robust message publisher and subscriber
+* Work toward Python 3.4 support and testing
+* Added a subscription\_events table & subscription hander
+* Refactor WSME models
+* Tags db api
+* Add loader subcommand to sync from launchpad
+* Rest controllers fix
+* Added subscriber and publisher modules
+* Revert "Added subscriber and publisher modules"
+* Changed return status code from 404 to 403
+* Assocate StoryTag with Story via mapping
+* Added subscriber and publisher modules
+* Added subscription API
+* Add task\_id to Timeline Event info
+* Adding Search endpoints and sqlalchemy impl
+* Adding subsription model and DB API
+* Project Group member DELETE and PUT method have better results
+* Team REST API added
+* Test database using migrations
+* Updated storyboard documentation
+* Added LIKE search to project groups
+* Project Group Delete
+* Migrate to oslo.db
+* Update \_route method usage
+* DB api for teams
+* Fix logging usage
+* Update the global require
+* 403 status code added
+* Added tests for Project Groups API
+* Validate Project and Project Groups names
+* Docs for User class fixed
+* Fix for delete stories method
+* Allow GET for Projects by name
+* Removed PostGres from code and documentation
+* Update method improved in db api
+* Revert "Name fields checked with regex"
+* Updated WSME version
+* Name fields checked with regex
+* Added sort parameters to API
+* Added new priority changed event for tasks
+* Remove unnecessary files
+* Project Groups API
+* Small fix to a method name
+* Fix for Unknown Event in timeline
+* Removed tabs, changed to four spaces
+* Refresh token support
+* Updated documentation to include instructions for prod-proxy mode
+* Added priorities to tasks
+* Minor fixes to docs page
+* Fix a migration file name
+* Stories can now be filtered by assignee\_id
+* Tasks can now be filtered by assignee
+* Hotfix: Story search project filter bug
+* Introducing the event timeline
+* Stories can be filtered with LIKE clauses
+* Added test for migrations
+* Projects can be filtered with LIKE clauses
+* Users can be filtered with LIKE clauses
+* Update a sample projects file
+* Creator field added to a Task model
+* Expose assignee\_id to API
+* Added status filter to story API
+* Collate story metadata for status
+* Filter non public fields for user list
+* Delete endpoint removed for Projects
+* Remove whitespace causing mysql commands to fail
+* Hard delte for tasks
+* Only create projects we ask for
+* Logging configuration improvement
+* Hard delete for auth stuff
+* Changed task states
+* Missing docstrings added
+* Fix for not loading middleware
+* Minor grammar correction
+* Use older than newest tox. Newest tox has a bug
+* Fixes to parameters and layout in documentation
+* Fix token validation
+* Making a token expiration time configurable
+* Added pagination to comments API
+* Fix the deployment sequencing
+* Added missing requirements back to storyboard
+* Add data load instructions to dev install doc
+* Fix 009 migration
+* DB api refactoring
+* Added paging to list endpoints
+* DataBase Token Storage added
+* Remove legacy priority column from stories table
+* Coverage fix
+* Remove Branch and Milestone legacy tables
+* Comments controller
+* Added db\_api for comments
+* Fix DB migrations in unit tests
+* Replaced first\_name and last\_name with full\_name
+* Adding creator\_id field assignment
+* Fix load\_superuser to work with new oslo
+* Fix migration tests
+* Logging in with a pre-existing user saves details
+* Fill the last\_login field
+* Missing security decorators added
+* Rename migration revisions
+* Only public user fields in unauthorized requests
+* Set the correct default for is\_active
+* Make project description longer
+* Added DELETE method for projects, stories, and tasks
+* Updated oslo
+* Add superuser check
+* Fixed name resolution in OAuth token
+* Make token storage configurable
+* Auth hotfix
+* Remove empty CONF import and useage
+* Auth Token Middleware
+* Handle yaml files updates
+* Load superusers from a yaml file
+* Auth controller
+* Update developer documentation
+* Fix session usage in db\_api
+* Decoupled API story and task creation
+* migrate 0.8.4 is bad, block it
+* Clean up doc, private func, removed unused file
+* Migration to add the openid field
+* Fix misspellings in storyboard
+* Load projects from yaml file
+* Added REST API for tasks
+* Use six.moves.urllib.parse instead of urlparse
+* Refactor REST API to work on top of DB API
+* Remove extraneous vim configuration comments
+* Extracted DB API layer
+* Added base for functional tests
+* Add oslo fixture module and update everything else
+* Get rid of Django
+* Add info about how to run to README
+* Added documentation for REST API layer
+* Don't try to install file that doesn't exist
+* Update documentation
+* Orginized test requirements
+* API tests for rest
+* Add a sample config file
+* Update ProjectGroups API to consume ID's rather than names
+* Introducing basic REST API
+* Add tests for Alembic migrations
+* Fix the intial db migration
+* Fixed doc build
+* Added .gitignore for IntelliJ specific configuration files
+* Add SQLalchemy database model
+* Adding six dependency
+* Fix for adding comments to tasks
+* Added task ordering
+* Pagination added to task lists
+* Update tox config to use 1.6
+* Update setup code past d2to1
+* Introducing project groups
+* Edit README to include amended initial data instructions
+* projects view now accepts projects with spaces
+* gitignore /\*.egg
+* set encoding UTF-8 for settings sample
+* Add support for features tracking
+* Tasks are attached to milestones, not series
+* Add .gitreview file
+* Adding 3 more tests to get the gate to pass
+* Added .gitreview file
+* Fixed the import errors hacking warning
+* Make testr tests run properly
+* Enabled more of HACKING
+* Fixed F403
+* Fixed a bunch of pep8/pyflakes errors
+* Added OpenStack dev things
+* Add link to github README
+* Fix bugs affecting multiple projects
+* Beautify names and dates
+* Add gerrit integration to future feature set
+* Add doc, ability to set local settings
+* Fix empty task list table
+* Add basic Stories dashboard
+* Triage bugs view
+* Project bug list
+* Base project landing page
+* Enable projects default list
+* Fix modals and empty submits
+* Enable 'add bug'
+* Do not submit empty comments
+* Separate template files for modals
+* Enable 'delete task'
+* Enable 'add task', series model fixes
+* Fix "Set priority" action
+* Enable Modify story
+* Disable links for not-yet-implemented stuff
+* Enable task edition
+* Populate welcome page with exciting info
+* Enable priority change
+* Enable the "Add comment" action
+* Introduce priorities
+* Initial import

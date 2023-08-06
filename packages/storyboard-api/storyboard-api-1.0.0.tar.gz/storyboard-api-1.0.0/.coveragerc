@@ -1,0 +1,12 @@
+[run]
+branch = True
+source = storyboard
+omit =
+ .tox/*
+ storyboard/tests/*
+
+[paths]
+source = storyboard
+
+[report]
+ignore_errors = True

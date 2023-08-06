@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: storyboard-api
+Version: 1.0.0
+Summary: StoryBoard Task Tracker API Service
+Home-page: https://docs.openstack.org/infra/storyboard
+Author: OpenDev
+Author-email: openstack-discuss@lists.openstack.org
+License: UNKNOWN
+Project-URL: Browse Source, https://opendev.org/opendev/storyboard
+Project-URL: Bug Reporting, https://storyboard.openstack.org/#!/project/opendev/storyboard
+Project-URL: Documentation, https://docs.openstack.org/infra/storyboard
+Project-URL: Git Clone URL, https://opendev.org/opendev/storyboard
+Description: Storyboard
+        ==========
+        
+        Storyboard is a task tracker created to serve the needs of highly-distributed
+        systems that span multiple projects, to enable cross-project work on a massive
+        scale.  Concepts were adapted from existing tools, and as many potential points
+        of contention were removed as possible, to better facilitate coordination of
+        project work by stakeholders with widely varied interests and needs.
+        
+        
+        -----------------
+        Project Resources
+        -----------------
+        
+        Project status, bugs, and blueprints are tracked at:
+        
+          https://storyboard.openstack.org
+        
+        Source code can be found at:
+        
+          https://git.openstack.org/cgit/openstack-infra/storyboard/
+        
+        Documentation can be found here:
+        
+          https://docs.openstack.org/infra/storyboard/
+        
+        Additional resources are linked from the project wiki page:
+        
+          https://wiki.openstack.org/wiki/StoryBoard
+        
+        Anyone wishing to contribute to an OpenStack project should
+        find plenty of helpful resources here:
+        
+          https://docs.openstack.org/infra/manual/developers.html
+        
+        All OpenStack projects use Gerrit for code reviews.
+        A good reference for that is here:
+        
+          https://docs.openstack.org/infra/manual/developers.html#development-workflow
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Software Development :: Bug Tracking
+Description-Content-Type: text/x-rst; charset=UTF-8
