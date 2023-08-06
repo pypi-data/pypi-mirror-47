@@ -1,0 +1,16 @@
+nifconverter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nifconverter/cli.py,sha256=uz3qRa1N9FNWPqreeR2f0IZX-yd7tAtrS7J66W_JR1s,1798
+nifconverter/dbpedia.py,sha256=HV86XT2Z-otdOg5EE2dIgup7cQbikUoBBLn2ZCu1Q5k,4564
+nifconverter/translator.py,sha256=RywVFtH4pxM3XG0vveJpZQTLIwFiGTSlBuUNiE8GKlk,1754
+nifconverter/uriconverter.py,sha256=8wGtCs-pyrwkw3HXnhKeLXb4_It3a4LJMawzpniMhjY,751
+nifconverter/utils.py,sha256=NmP-KjMZEXrJD6hDliBaDBsOEinv395GZcp7CM76gRI,791
+nifconverter/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nifconverter/tests/test_cli.py,sha256=L-bE8TuM7imkfqTnZ3MyDbs_ywP0q5LNeWwpxH1OyZE,656
+nifconverter/tests/test_dbpedia.py,sha256=y_V7i3V993yVhd4cqCDZZ6WNq2UhDstHtAgK7K-G1e8,2855
+nifconverter/tests/test_translator.py,sha256=v2Ox3hxEkLTE1gT5Q373xemWkGavNIjlN9L7qlARNCk,1154
+nifconverter/tests/test_utils.py,sha256=ZV_z7eu_5cXpALo3ab_AVBsJXkkuiId2Vhg1OTcWFYE,616
+nifconverter-0.1.1.dist-info/METADATA,sha256=kGa7iOS2C46IOUXVoVNZfLDWbYJq3vIdpU-fA1wNxqo,1636
+nifconverter-0.1.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+nifconverter-0.1.1.dist-info/entry_points.txt,sha256=_5drw5Gudl_6A_pKEiGD5SQOe9l1n6lmYzoH2qWNxi4,56
+nifconverter-0.1.1.dist-info/top_level.txt,sha256=G-kxMZ-S7uL0Fo6t7qBQLGXMHFUuvN3fPJ0hmEw5uc4,13
+nifconverter-0.1.1.dist-info/RECORD,,
