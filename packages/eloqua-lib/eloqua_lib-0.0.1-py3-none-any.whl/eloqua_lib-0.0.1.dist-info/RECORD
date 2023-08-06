@@ -1,0 +1,14 @@
+eloqua/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+eloqua/eloqua.py,sha256=nNvWXJbVySaqSCgpVaD50tS2K7esCt1bzespjoJUSEU,21357
+eloqua/errors.py,sha256=8pavjqBqgAS_i25-1v9iujEGDzxM3jhLuScWURmcrCo,1137
+eloqua/paths.py,sha256=4nfsSFFdesesJXPkejaO8v6vQP4a70kD-9CoHMeum8I,1761
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/creds.py,sha256=yq49pGwvGN1NrPeRp_aNCmNjtA1SW94JI1kZR3SzbBc,87
+test/example_creds.py,sha256=nbEw6E_DZcP5T-1Kbq5exS7O074brdYHBoMbwV2s7ss,63
+test/test.py,sha256=EJZYzOdy_fvEufIjjqiFw_tA7brLXoxd6_UZKWEedOA,5235
+test/test_data.py,sha256=XZKgHjZOvNJT4bdCAyTMMCw3oXdPONB6MzN-lnFa6Zg,1948
+eloqua_lib-0.0.1.dist-info/LICENSE,sha256=9nKwhaaiNyY99ZVtcRT8u2en-k918vaWS4_ypEorKTU,1069
+eloqua_lib-0.0.1.dist-info/METADATA,sha256=y78jwoyK3ZJXNiKKYk_jrEqfypUwOMokAe5kvx7vmic,3747
+eloqua_lib-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+eloqua_lib-0.0.1.dist-info/top_level.txt,sha256=ErotO01hCuQ6JngL8JgHMASf5BRH4kz4G4pLFcI29e0,12
+eloqua_lib-0.0.1.dist-info/RECORD,,
