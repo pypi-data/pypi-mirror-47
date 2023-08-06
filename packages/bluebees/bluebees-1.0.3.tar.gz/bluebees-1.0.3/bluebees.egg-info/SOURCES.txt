@@ -1,0 +1,10 @@
+README.md
+setup.py
+bluebees/__init__.py
+bluebees/__main__.py
+bluebees.egg-info/PKG-INFO
+bluebees.egg-info/SOURCES.txt
+bluebees.egg-info/dependency_links.txt
+bluebees.egg-info/entry_points.txt
+bluebees.egg-info/requires.txt
+bluebees.egg-info/top_level.txt
