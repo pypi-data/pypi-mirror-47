@@ -1,0 +1,3 @@
+[console_scripts]
+faxocr-daemon = bwscan.daemons.server.fax_ocr_unattended:main
+

@@ -1,0 +1,15 @@
+README.rst
+setup.py
+bwscan/__init__.py
+bwscan.egg-info/PKG-INFO
+bwscan.egg-info/SOURCES.txt
+bwscan.egg-info/dependency_links.txt
+bwscan.egg-info/entry_points.txt
+bwscan.egg-info/requires.txt
+bwscan.egg-info/top_level.txt
+bwscan/client/__init__.py
+bwscan/common/__init__.py
+bwscan/common/lime.py
+bwscan/common/sql.py
+bwscan/server/__init__.py
+bwscan/server/fax_ocr_unattended.py

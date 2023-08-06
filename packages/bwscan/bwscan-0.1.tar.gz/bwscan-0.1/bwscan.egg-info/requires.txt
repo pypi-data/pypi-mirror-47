@@ -1,0 +1,8 @@
+requests
+pyyaml
+o365
+pytesseract
+pdf2image
+tqdm
+sqlalchemy
+pymysql

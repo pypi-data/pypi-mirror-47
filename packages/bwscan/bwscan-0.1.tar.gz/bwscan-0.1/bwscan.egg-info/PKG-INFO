@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: bwscan
+Version: 0.1
+Summary: # bwscan
+
+main repository for bwscan.
+
+In order to work, run setup-bwscan after installing package. Contact package maintainer for details.
+Home-page: https://github.com/zimmerst/bwscan.git
+Author: Stephan Zimmer on behalf of BestWestern Scandinavia
+Author-email: stephan.zimmer@bestwestern.se
+License: Proprietary
+Description: UNKNOWN
+Keywords: bwscan
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Environment :: Other Environment
