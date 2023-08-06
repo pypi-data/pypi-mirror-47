@@ -1,0 +1,3 @@
+[console_scripts]
+sloth = sloth_cli:run
+
