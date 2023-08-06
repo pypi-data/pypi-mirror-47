@@ -1,0 +1,9 @@
+migrationmaker/__init__.py,sha256=C6T-k_FXt7xJn5BWJUgqoRkSK4jxsKNGgnKhfAAs8Mc,256
+migrationmaker/migration.py,sha256=To33jAygK5VPD4nNmDwsKI_B7Z1RA1-GZw4bp9MdyYM,9380
+sqlalchemy_migration_maker-0.1.dist-info/METADATA,sha256=3GjDpHYpWp31OOnPdKLD_vLO8Jo4UpHX69cbhkb2TSg,1242
+sqlalchemy_migration_maker-0.1.dist-info/RECORD,,
+sqlalchemy_migration_maker-0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sqlalchemy_migration_maker-0.1.dist-info/top_level.txt,sha256=4fEkRNmK6Ni97myz5DAfjJrP6ITWkjpfpGcEa86-fAM,21
+tests/__init__.py,sha256=YbvOvR7IYorurFk_WbtYVgyNKVQcmTtflRSRllO4U4w,78
+tests/model.py,sha256=KAWwXQfmIVWxhlIsznsVdpDs-2DXk9hxnyu4AP1MucQ,1090
+tests/test_basic.py,sha256=S6e0zuYhMISJmiyUkgvbTrYTyW8PVtVAoW9P3Sjx2Xk,3961
