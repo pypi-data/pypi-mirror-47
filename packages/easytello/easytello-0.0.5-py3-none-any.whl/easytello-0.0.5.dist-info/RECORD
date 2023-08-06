@@ -1,0 +1,10 @@
+easytello/__init__.py,sha256=tkw9NRBQLl0X9w0wXyYQ6Dxt7o6Rndukdsa34802f28,251
+easytello/stats.py,sha256=g30Y3lTSUUCWG25QOzUzIBcGB6J1UAJg4QzBYtkodng,2277
+easytello/tello.py,sha256=KBGIVEIpRkOhqKuzCua4CWYaO8T7vAhneHChHs2Nezk,6473
+easytello/tello_video.py,sha256=MbQpMjlZCOTloojSTXSXho4gdLSdDJLO6CCPicWGbVs,469
+easytello/test.py,sha256=fa19DrFimb-HAKgchVV_g9kFrVfvnhYEea5J2YXkwm0,71
+easytello-0.0.5.dist-info/LICENSE,sha256=ikM8PimaqzHmXZUOBESeMq0xxnTOdSe96mF0zNEbnsY,1070
+easytello-0.0.5.dist-info/METADATA,sha256=7rcIPX-ijfOioc92uewlP_WNl9ws1LWQEXHAULZTge0,2002
+easytello-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+easytello-0.0.5.dist-info/top_level.txt,sha256=pEun5OxM2j95h3-WsijfsYXgAUUM30k5qviGTdWbqVM,10
+easytello-0.0.5.dist-info/RECORD,,
