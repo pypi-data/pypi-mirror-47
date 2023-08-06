@@ -1,0 +1,29 @@
+{% raw -%}
+<div id="app" style="display: none">
+    <b-container>
+        <b-row>
+            <b-col>
+                <jupyter-widget-mount-point mount-id="content">
+                    A widget with mount-id="content" should go here
+                </jupyter-widget-mount-point>
+            </b-col>
+        </b-row>
+    </b-container>
+</div>
+
+<script>
+
+var app = new Vue({
+    el: '#app',
+    mounted() {
+        document.querySelector('#app').removeAttribute("style");
+    },
+    data() {
+        return {
+            loading: true
+        }
+    }
+});
+
+</script>
+{% endraw -%}

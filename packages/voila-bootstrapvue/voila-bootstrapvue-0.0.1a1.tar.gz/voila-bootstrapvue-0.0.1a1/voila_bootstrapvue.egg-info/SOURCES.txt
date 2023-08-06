@@ -1,0 +1,11 @@
+README.md
+setup.py
+share/jupyter/voila/templates/bootstrapvue-base/nbconvert_templates/app.html
+share/jupyter/voila/templates/bootstrapvue-base/nbconvert_templates/util.js
+share/jupyter/voila/templates/bootstrapvue-base/nbconvert_templates/voila.tpl
+share/jupyter/voila/templates/sample-table-graph/conf.json
+share/jupyter/voila/templates/sample-table-graph/nbconvert_templates/app.html
+voila_bootstrapvue.egg-info/PKG-INFO
+voila_bootstrapvue.egg-info/SOURCES.txt
+voila_bootstrapvue.egg-info/dependency_links.txt
+voila_bootstrapvue.egg-info/top_level.txt

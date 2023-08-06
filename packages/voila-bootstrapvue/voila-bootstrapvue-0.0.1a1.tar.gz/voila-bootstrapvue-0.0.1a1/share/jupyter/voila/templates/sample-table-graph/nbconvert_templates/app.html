@@ -1,0 +1,60 @@
+{% raw -%}
+<div id="app" style="display: none">
+    <div class="bootstrap-styles">
+        <b-navbar id="my-navbar" type="dark" variant="dark">
+            <b-navbar-brand href="http://www.github.com/gfournier/voila-bootstrapvue">
+                Voila
+            </b-navbar-brand>
+            <b-nav-text> Stock price demo</b-nav-text>
+            <b-navbar-nav class="ml-auto"></b-navbar-nav>
+            <b-navbar-brand>
+                Demo template for Bootstrap Vue components
+            </b-navbar-brand>
+        </b-navbar>
+    </div>
+    <b-container fluid>
+        <b-row class="m-4">
+            <b-col class="col-sm-3 bootstrap-styles">
+                <jupyter-widget-mount-point mount-id="form">
+                    A widget with mount-id="content" should go here
+                </jupyter-widget-mount-point>
+            </b-col>
+            <b-col class="col-sm-9">
+                <b-container fluid>
+                    <b-row class="m-4 bootstrap-styles">
+                        <b-col>
+                            <jupyter-widget-mount-point mount-id="graph">
+                                A widget with mount-id="content" should go here
+                            </jupyter-widget-mount-point>
+                        </b-col>
+                    </b-row>
+                    <b-row class="m-4 bootstrap-styles">
+                        <b-col>
+                            <jupyter-widget-mount-point mount-id="table">
+                                A widget with mount-id="content" should go here
+                            </jupyter-widget-mount-point>
+                        </b-col>
+                    </b-row>
+                </b-container>
+            </b-col>
+        </b-row>
+    </b-container>
+</div>
+
+<script>
+
+var app = new Vue({
+    el: '#app',
+    mounted() {
+        document.querySelector('#app').removeAttribute("style");
+    },
+    watch: {
+    },
+    data() {
+        return {
+        }
+    }
+});
+
+</script>
+{% endraw -%}
