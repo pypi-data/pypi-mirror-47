@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pic2ascii
+Version: 0.0.2
+Summary: A simple tool to draw yout image to ascii code
+Home-page: https://github.com/aisk/pic2ascii
+Author: asaka
+Author-email: aisk1988@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: image to ascii
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Provides-Extra: test
