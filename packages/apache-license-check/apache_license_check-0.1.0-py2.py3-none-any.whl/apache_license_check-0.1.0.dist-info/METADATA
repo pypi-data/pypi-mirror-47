@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: apache-license-check
+Version: 0.1.0
+Summary: CLI tool to check source files for Apache License headers.
+Home-page: https://faculty.ai/
+Author: Faculty
+Author-email: opensource@faculty.ai
+License: Apache Software License
+Platform: UNKNOWN
+Requires-Dist: termcolor
+
+UNKNOWN
+
+
