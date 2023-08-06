@@ -1,0 +1,12 @@
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+scopus/__init__.py
+scopus.egg-info/PKG-INFO
+scopus.egg-info/SOURCES.txt
+scopus.egg-info/dependency_links.txt
+scopus.egg-info/not-zip-safe
+scopus.egg-info/pbr.json
+scopus.egg-info/requires.txt
+scopus.egg-info/top_level.txt

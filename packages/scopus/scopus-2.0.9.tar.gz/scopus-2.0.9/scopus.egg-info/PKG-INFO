@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: scopus
+Version: 2.0.9
+Summary: Outdated package
+Home-page: https://scopus.readthedocs.io/en/stable/
+Author: 'John Kitchin and Michael E. Rose
+Author-email: Michael.Ernst.Rose@gmail.com
+License: UNKNOWN
+Description: The package has been renamed to "`pybliometrics <https://github.com/pybliometrics-dev/pybliometrics>`_" in June 2019.  Please install pybliometrics instead:
+        
+        .. code:: bash
+        
+            pip install pybliometrics
+        
+        
+        The last working version of scopus is 2.0.1:
+        
+        .. code:: bash
+        
+            pip install scopus==2.0.1
+        
+        
+        See "`the migration guide <https://pybliometrics.readthedocs.io/en/stable/tips.html#migration-guide-from-scopus-to-pybliometrics>`_" for details.
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
