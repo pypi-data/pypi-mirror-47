@@ -1,0 +1,9 @@
+README.rst
+setup.py
+datin/__init__.py
+datin/main.py
+datin.egg-info/PKG-INFO
+datin.egg-info/SOURCES.txt
+datin.egg-info/dependency_links.txt
+datin.egg-info/requires.txt
+datin.egg-info/top_level.txt
