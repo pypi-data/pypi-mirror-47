@@ -1,0 +1,17 @@
+iscc_cli/__init__.py,sha256=1Yj693TtG18xVMmMRAgmbXXTYezIuNqM2n7wnQjcmh0,151
+iscc_cli/audio_id.py,sha256=HdEYTfy7PyKumnaraFwpbEM5oMcsvFBxypiqn4B7buA,1042
+iscc_cli/batch.py,sha256=Op8yPqeLmHz-AptbcRdpK64ZQjwapdgWfiLo5SA9onU,2442
+iscc_cli/cli.py,sha256=N5HFl0Q64Z0fvQBEcJ4cUf_h5Zw4VQhPCbpYafvWxy0,541
+iscc_cli/const.py,sha256=bwFOF6M3E3xVjbdSLiyZn53qa65mJ6oJ2NRooWm8TQs,2310
+iscc_cli/fpcalc.py,sha256=jTzUKBD0XAJAe73eTNoLKUmR02gzl7NWdPjcDQFEyys,3516
+iscc_cli/gen.py,sha256=a3LF1mFdqjSRg0NTBd8QwKQGq1o1oHjMkJ8jQUy7B8c,2329
+iscc_cli/info.py,sha256=VxxBZOCBLJ9EUcvnxvRTgFk5q02pAuvVyQYLo5cB7k8,582
+iscc_cli/init.py,sha256=bUx11I4wkr-UdnTt8uuu6sirDYngTWCjg8NMgpuUuto,661
+iscc_cli/sim.py,sha256=ga_cYTwb14iooZKbsdVOHjY1NX0ut6_ds7ozSpj2h8s,2187
+iscc_cli/utils.py,sha256=gt5PoiaS8ACteInPx3sC1yjHb_JJOfKZw-BtaCLiw6A,3542
+iscc_cli/web.py,sha256=wlKLhvCECI9WDfF7ZyD_D5bASN9wAp009tRWx6aaKRw,2666
+iscc_cli-0.6.0.dist-info/entry_points.txt,sha256=HnEwrwaGj0KA7dIAp7sVbl0aARTIlP1XkIumbvymeJc,41
+iscc_cli-0.6.0.dist-info/LICENSE,sha256=OMBN9aacPMHTSG2sY4jwQnl7nql16xEZxOtoLZsuROY,1093
+iscc_cli-0.6.0.dist-info/WHEEL,sha256=m7_EWfYWVp7uNOTdFEhPb5K49PyhIPAZSRl16cJVmb0,85
+iscc_cli-0.6.0.dist-info/METADATA,sha256=IzhLmy7i_FyUcpRFIrdK6FAVTBwwZWwGWui3TOiy_Qw,6862
+iscc_cli-0.6.0.dist-info/RECORD,,
