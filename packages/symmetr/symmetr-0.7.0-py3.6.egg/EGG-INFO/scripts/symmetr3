@@ -1,0 +1,13 @@
+#!/home/kuba/virtualenvs/symmetr_test_py3/bin/python
+
+import sys
+import os
+from runpy import run_module
+
+dirname, filename = os.path.split(os.path.abspath(__file__))
+
+sys.path.append(dirname+'/..')
+import symmetr
+run_module('symmetr')
+
+
