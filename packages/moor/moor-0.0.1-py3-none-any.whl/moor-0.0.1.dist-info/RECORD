@@ -1,0 +1,9 @@
+moor/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moor/cli.py,sha256=df2pNNyDAh3OKo0lC1M_AqirT6YCyO4kUPm-YGadW9Y,4916
+moor/config.py,sha256=y4XXZp7WnQVr9A_dj-QgJiFxsm6VAYWdFj0_GTAlYZg,2348
+moor-0.0.1.dist-info/LICENSE,sha256=WwZnpi_ROIj3-5NiOfMEQ8Z_892iWoEq_wfhN3IZz2U,1070
+moor-0.0.1.dist-info/METADATA,sha256=5F9JC-Zrhj7v0EqE9zxtunlnse8_QnEJxe7j0ZdCCj4,669
+moor-0.0.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+moor-0.0.1.dist-info/entry_points.txt,sha256=rtjseynZ329YEPK-JBYLcBWZ_NlAG21ZIdtCnKMw8CA,40
+moor-0.0.1.dist-info/top_level.txt,sha256=CIFmJh8hL7Zx4KSCyMyty13Zkypy6tkWisvcpxqeTTw,5
+moor-0.0.1.dist-info/RECORD,,
