@@ -1,0 +1,7 @@
+README.md
+setup.py
+pascman.egg-info/PKG-INFO
+pascman.egg-info/SOURCES.txt
+pascman.egg-info/dependency_links.txt
+pascman.egg-info/entry_points.txt
+pascman.egg-info/top_level.txt
