@@ -1,0 +1,13 @@
+covertable/__init__.py,sha256=KHjhlAS9RR0Gc2b5eoHf36ueCmcEX-nYt2N-2BDjgaI,32
+covertable/exceptions.py,sha256=jl-9NPCAfkfiJ6rpHmQvLzwUxBw3TCjO_iJ4rAserwc,88
+covertable/main.py,sha256=wapNPg0Mn16rI1WKlbSBrq5ckQ1wXm10R7FWVpO7ZbA,3939
+covertable/utils.py,sha256=gEeR9snZiS-dA0BHog6hZrkKGjxCFhRDVGsPd6TtK6w,236
+covertable/sorters/__init__.py,sha256=NFkcCqRicsDAxObTDCBBOVVkMWkI4y56QmbL8jfHrzI,55
+covertable/sorters/greedy.py,sha256=xYz-y4BLW8IMpk4PjV-KZ6HXlTj2G2SR1VQFqxzDAJU,1164
+covertable/sorters/hash.py,sha256=aOVu-dW_vK2w3-Pr0RzlE7jRW9GGuSSF_CeMn29GthU,298
+covertable/sorters/random.py,sha256=vcjG5ZTGH3ouoBEmNvx0myaiXqD7pwfM99FyGFFMDyM,208
+covertable/sorters/sequential.py,sha256=T23jZ2YeuqDQuyohoO9c-J5sLVZSSs8UOmkAkPHXYFY,126
+covertable-1.0.0.dist-info/METADATA,sha256=SGIs06ja38K4kWHerT3L9EIADO-Ec7ftnZQEUbFYWk4,4894
+covertable-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+covertable-1.0.0.dist-info/top_level.txt,sha256=WrlgngyRnPjp_4VZef9lACyP02zZlIFQsWFOxv4eBpU,11
+covertable-1.0.0.dist-info/RECORD,,
