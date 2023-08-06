@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: juraNelito
+Version: 1.4
+Summary: Framework for Automating Configuration Auditing
+Home-page: https://johnnes-smarts.ch
+Author: David Johnnes
+Author-email: david.johnnes@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: <!DOCTYPE html>
+        
+        
+        <h2>Automating Configuration Auditing</h2>
+        
+        <h1></h1>
+        
+        <h4>Framework for Automating Configuration Auditing projects.</h4>
+        
+        <p></p>
+        
+        <p></p>
+        
+        <!-- How to make paragraph lines-->
+        <p>How to use the framework.</p>
+        
+        <h3>Example 1</h3>
+        <ol>
+            <li>"pip install juraNelito" in your machine</li>
+        </ol>
+        
+        
+        
+        
+        <p></p>
+        
+        <h1></h1>
+        
+        
+        <p>You can contact: david.johnnes@gmail.com  'for support'.</p>
+        
+        <h1></h1>
+        
+        
+        
+Keywords: DevOps,Audit Automation,Audit Orchestration,Vendor-Neutral configurations Audit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

@@ -1,0 +1,9 @@
+README.md
+setup.py
+juraNelito/__init__.py
+juraNelito/compare.py
+juraNelito/loader.py
+juraNelito.egg-info/PKG-INFO
+juraNelito.egg-info/SOURCES.txt
+juraNelito.egg-info/dependency_links.txt
+juraNelito.egg-info/top_level.txt
