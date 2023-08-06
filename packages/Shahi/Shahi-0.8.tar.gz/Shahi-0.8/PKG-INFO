@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: Shahi
+Version: 0.8
+Summary: Persian Date & Time library (aka: Shahi Calendar) with timezone, DST(daylight-saving), full formatting & parsing support for python 2 & 3 including c extention
+Home-page: https://gitlab.com/shahroozD/shahi_calendar
+Author: shahrooz
+Author-email: shahrooz.sanei@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: Shahi persian date time datetime conversion
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Persian
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Localization
