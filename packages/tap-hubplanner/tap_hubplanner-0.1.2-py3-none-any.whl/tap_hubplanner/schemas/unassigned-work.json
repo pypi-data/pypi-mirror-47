@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "_id": {
+      "type": [
+        "null",
+        "string"
+      ]
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}
