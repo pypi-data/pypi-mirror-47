@@ -1,0 +1,51 @@
+Lightnovel Crawler
+-----------------------
+
+Download lightnovels from various online sources and generate output in different formats, e.g. epub, mobi, json, html, text, docx and pdf.
+
+List of supported sites are given below.
+
+- http://gravitytales.com       
+- http://novelfull.com
+- http://www.machinenoveltranslation.com
+- http://zenithnovels.com
+- https://anythingnovel.com
+- https://babelnovel.com/
+- https://bestlightnovel.com
+- https://boxnovel.com
+- https://comrademao.com
+- https://creativenovels.com
+- https://crescentmoon.blog
+- https://litnet.com
+- https://lnmtl.com
+- https://m.chinesefantasynovels.com
+- https://m.novelspread.com
+- https://m.romanticlovebooks.com
+- https://m.wuxiaworld.co
+- https://meionovel.com
+- https://mtled-novels.com
+- https://myoniyonitranslations.com
+- https://novelplanet.com
+- https://novelraw.blogspot.com
+- https://volarenovels.com
+- https://webnovel.online
+- https://wuxiaworld.online
+- https://www.idqidian.us
+- https://www.novelall.com
+- https://www.novelspread.com
+- https://www.readlightnovel.org
+- https://www.readnovelfull.com
+- https://www.romanticlovebooks.com
+- https://www.royalroad.com
+- https://www.scribblehub.com
+- https://www.tapread.com
+- https://www.webnovel.com
+- https://www.worldnovel.online
+- https://www.wuxiaworld.co
+- https://www.wuxiaworld.com
+- https://yukinovel.me
+
+
+Visit https://github.com/dipu-bd/lightnovel-crawler for more details.
+
+
