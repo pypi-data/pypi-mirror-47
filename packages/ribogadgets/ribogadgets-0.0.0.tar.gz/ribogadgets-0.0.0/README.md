@@ -1,0 +1,26 @@
+## ribogadgets_alpha
+
+This repository is a predecessor of ribogadgets.
+Once we have the basic functionalities, we will move this project to beta phase.
+
+
+# ribogadgets
+
+ribogadgets is a set of tools to create, process, dump, analyze and visualize .ribo files. It provides a CLI (Command L:ine Interface) and Application Programming Interface (API).
+
+# Installation
+
+### NOTE
+
+This is a temporary way of installing ribogadgets. Soon, we plan to have pip and / or conda repositories for ribogadgets.
+
+For now, you can install using.
+Although pip resolves dependencies and install required packages, it is highly recommended that you install the dependencies using conda prior to issuing the pip installation command.
+
+`pip install git+https://github.com/hakanozadam/ribogadgets_alpha.git`
+
+To create a conda environment "ribogadgets" and install dependencies using oconda: 
+
+`conda env create -f environment environment.yml`
+
+After the above command you can install ribogadgets via pip, as described above.
