@@ -1,0 +1,10 @@
+include pyign/README.md
+include pyign/requirements.txt
+include pyign/raw/press_data.txt
+include pyign/raw/press_data_2.txt
+include pyign/raw/therm_data.txt
+include pyign/raw/therm_data_2.txt
+include pyign/raw/load_data.txt
+include pyign/raw/load_data_2.txt
+include pyign/raw/limit_data.txt
+include pyign/raw/limit_data_2.txt
