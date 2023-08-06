@@ -1,0 +1,3 @@
+[console_scripts]
+examine_files = examine_files.examine_files:main
+

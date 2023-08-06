@@ -1,0 +1,2 @@
+prettytable==0.7.2
+python-magic==0.4.15
