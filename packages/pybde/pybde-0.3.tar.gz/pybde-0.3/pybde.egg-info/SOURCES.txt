@@ -1,0 +1,10 @@
+README.md
+setup.py
+pybde/__init__.py
+pybde/bde_solver.py
+pybde.egg-info/PKG-INFO
+pybde.egg-info/SOURCES.txt
+pybde.egg-info/dependency_links.txt
+pybde.egg-info/not-zip-safe
+pybde.egg-info/requires.txt
+pybde.egg-info/top_level.txt
