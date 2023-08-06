@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tf-assist
+Version: 0.1.3
+Summary: Deep Learning library on top of Tensorflow for fast prototyping
+Home-page: http://github.com/aniketmaurya/tf_assist
+Author: Aniket Maurya
+Author-email: aniketmaurya.ai@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
