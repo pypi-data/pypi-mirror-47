@@ -1,0 +1,97 @@
+[
+  {
+    "type": "system",
+    "conditions": [
+      {
+        "id": 1,
+        "type": "log",
+        "condition": ".*Error: Permission denied.*notifyTTS.*"
+      }
+    ],
+    "relation": "1",
+    "result": {
+      "type": "system",
+      "module": "tts",
+      "desc": "tts未播放，权限问题"
+    },
+    "weights": 1
+  },
+  {
+    "type": "system",
+    "conditions": [
+      {
+        "id": 1,
+        "type": "log",
+        "condition": ".*ERROR.*"
+      }
+    ],
+    "relation": "1",
+    "result": {
+      "type": "system",
+      "module": "system",
+      "desc": "系统报错"
+    },
+    "weights": 1
+  },
+  {
+    "type": "system",
+    "conditions": [
+      {
+        "id": 1,
+        "type": "log",
+        "condition": ".*The content of the action is wrong.*"
+      },
+      {
+        "id": 2,
+        "type": "log",
+        "condition": ".*action\\({}\\).*"
+      }
+    ],
+    "relation": "1&2",
+    "result": {
+      "type": "cloud",
+      "module": "skill",
+      "desc": "技能返回action为空"
+    },
+    "weights": 1
+  },
+  {
+    "type": "test",
+    "conditions": [
+      {
+        "id": 1,
+        "type": "assert",
+        "condition": ".*assert_nlp_intent.*"
+      },
+      {
+        "id": 2,
+        "type": "log",
+        "condition": ".*Unexpected error on get nlp for asr.*"
+      }
+    ],
+    "relation": "(not 2)&1",
+    "result": {
+      "type": "cloud",
+      "module": "skill",
+      "desc": "nlp intent错误"
+    },
+    "weights": 1
+  },
+  {
+    "type": "test",
+    "conditions": [
+      {
+        "id": 1,
+        "type": "log",
+        "condition": ".*Unexpected error on get nlp for asr.*"
+      }
+    ],
+    "relation": "1",
+    "result": {
+      "type": "system",
+      "module": "network",
+      "desc": "设备网络存在问题"
+    },
+    "weights": 1
+  }
+]
