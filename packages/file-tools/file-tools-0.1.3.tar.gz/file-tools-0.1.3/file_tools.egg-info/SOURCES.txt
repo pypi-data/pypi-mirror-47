@@ -1,0 +1,11 @@
+README.md
+setup.py
+file_tools/__init__.py
+file_tools/file.py
+file_tools/json_file.py
+file_tools.egg-info/PKG-INFO
+file_tools.egg-info/SOURCES.txt
+file_tools.egg-info/dependency_links.txt
+file_tools.egg-info/top_level.txt
+file_tools/utils/__init__.py
+file_tools/utils/functions.py
