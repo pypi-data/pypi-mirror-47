@@ -1,0 +1,37 @@
+# Snakefile for checking that required programs can be run.
+# Will exit if samtools, bowtie2 or BUSCO can't be run.
+# Will warn but not exit if Trinity can't be run
+
+import time
+import shutil
+
+rule check_programs:
+    output:
+        touch("programs.checked")
+    priority: 2
+    run:       
+        print("Checking for bowtie2, upon error make sure it's installed properly")
+        if not shutil.which("bowtie2"):
+            print("bowtie2 is missing.")
+            exit(1)
+        print("Bowtie2 works, continuing...\n")
+        
+        print("Checking for BUSCO, upon error make sure it's installed properly")
+        print("Let's try run_busco")
+        if not shutil.which("run_busco"):
+            print("Let's try run_BUSCO.py")
+            if not shutil.which("run_BUSCO.py"):
+                print("BUSCO is missing.")
+                exit(1)
+        print ("BUSCO works, continuing...\n")
+
+        print("Checking for samtools, upon error make sure it's installed properly")
+        if not shutil.which("samtools"):
+            print("Samtools is missing.")
+            exit(1)
+        print("Samtools works, continuing...\n")
+
+        print("Checking for Trinity")
+        if not shutil.which("Trinity"):
+            print("Trinity not found, please install if you plan or running without a reference.\n")
+        print("Trinity works, continuing...\n")
