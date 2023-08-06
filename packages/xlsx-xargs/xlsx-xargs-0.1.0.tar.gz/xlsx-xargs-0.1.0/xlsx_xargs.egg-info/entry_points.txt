@@ -1,0 +1,3 @@
+[console_scripts]
+xlsx-xargs = xlsx_xargs:main
+

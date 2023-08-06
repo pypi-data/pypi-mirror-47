@@ -1,0 +1,9 @@
+README.md
+setup.py
+xlsx_xargs.py
+xlsx_xargs.egg-info/PKG-INFO
+xlsx_xargs.egg-info/SOURCES.txt
+xlsx_xargs.egg-info/dependency_links.txt
+xlsx_xargs.egg-info/entry_points.txt
+xlsx_xargs.egg-info/requires.txt
+xlsx_xargs.egg-info/top_level.txt

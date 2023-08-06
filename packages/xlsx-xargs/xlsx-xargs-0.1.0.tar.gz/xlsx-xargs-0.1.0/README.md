@@ -1,0 +1,43 @@
+# xlsx-xargs
+
+类似xargs命令，遍历依据是excel表单中的每一行。命令参数，允许被string.format替换，替换内容为指定单元格值。
+
+# 命令说明
+
+```
+    E:\xlsx-xargs>python xlsx_xargs.py --help
+    Usage: xlsx_xargs.py [OPTIONS] [COMMANDS]...
+
+    类似xargs命令，遍历依据是excel表单中的每一行。命令参数，允许被string.format替换，替换内容为指定单元格值。
+
+    注意：
+
+    COMMANDS前加两个减号，可表示减号后均为COMMANDS参数。 xlsx-xargs [OPTIONS] -- [COMMANDS]...
+
+    Options:
+    -f, --file TEXT   Excel文件路径。  [required]
+    -s, --sheet TEXT  表单页名称。默认为当前页。
+    -r, --rows TEXT   指定需要处理的行。默认为所有行。
+    -t, --test TEXT   使用正则对行进行过滤，只处理匹配的行。允许使用多个表达式，多个表达式之间求与。
+    --help            Show this message and exit.
+```
+
+## 注意事项
+
+- rows 要遵从rows规则。
+- tests 要遵从test规则。
+- COMMANDS 前加--，可以防止参数冲突问题。
+
+### rows规则
+
+- 1 == [1]
+- 1,2,3 == [1,2,3]
+- 1-3 == [1,2,3]
+- 1-3,5 == [1,2,3,5]
+- 3- == [3,4,5,6....] # 从第3行开始，直到最后一行。
+
+### test规则
+
+- 每个test都是由（列名+":"+正则）组成，如（A:\d+）。
+- 可以由多个test组成。
+- 多个test求“与”为最后结果。
