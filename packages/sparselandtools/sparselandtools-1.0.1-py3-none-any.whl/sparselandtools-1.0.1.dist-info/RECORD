@@ -1,0 +1,13 @@
+sparselandtools/__init__.py,sha256=SkN-TwffVqeIzJelkGbHDinJBFwHDjjUVaXv6tW0wF4,25
+sparselandtools/learning.py,sha256=eTwhmQ8fuMVlk7Hmdz0VMDrhrQndDWxOqTITIn19Svg,3327
+sparselandtools/pursuits.py,sha256=gSV6FbVQW0-FqP-yBDf1OyfajzSxncjGoCN74FSt_H4,3134
+sparselandtools/applications/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sparselandtools/applications/denoising.py,sha256=kUv_0TAiLdz-qsr2UkghkSHKQodrgaNvkQlgwYXSQg8,2622
+sparselandtools/applications/utils.py,sha256=68hiVkQRLUjkO3cVrfcq-6jRHXY_B6s-CVclul9dWg8,607
+sparselandtools/dictionaries/__init__.py,sha256=b0ud1rY9MUVgmYNnqaUwRcvS6RNOc7qF0GhMVHoo1NA,4204
+sparselandtools/dictionaries/utils.py,sha256=STG1-mqvNEd3r6jRdXhdQHBz_FO_djsvwCzkHS_x6Kg,4188
+sparselandtools-1.0.1.dist-info/LICENSE,sha256=Qt4PHrcYFW5Da5JHndKsStmbGSv8RivyHk1JVpwqUUo,1069
+sparselandtools-1.0.1.dist-info/METADATA,sha256=V0mBonormEHR0URMHJ93SxPTPM22d1ur8smu91ew7m0,4959
+sparselandtools-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sparselandtools-1.0.1.dist-info/top_level.txt,sha256=EWaKGH4t7RldcmpSTzT_7h8eoabi9OcNPtpXdkQoGVk,16
+sparselandtools-1.0.1.dist-info/RECORD,,
