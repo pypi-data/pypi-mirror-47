@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: emacs_porthole
+Version: 0.2.0
+Summary: Python client for Emacs RPC servers started with Porthole
+Home-page: https://github.com/jcaw/porthole-python-client/
+Author: Jcaw
+Author-email: toastedjcaw@gmail.com
+License: MIT
+Project-URL: Bug Tracker, https://github.com/jcaw/porthole-python-client/issues
+Project-URL: Documentation, https://github.com/jcaw/porthole-python-client/README.md
+Project-URL: Source Code, https://github.com/jcaw/porthole-python-client/
+Description: UNKNOWN
+Keywords: porthole,client,emacs,rpc,http,json-rpc,elisp,emacs-lisp
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Editors :: Emacs
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Emacs-Lisp
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
