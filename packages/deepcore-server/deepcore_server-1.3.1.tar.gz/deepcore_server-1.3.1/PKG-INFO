@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: deepcore_server
+Version: 1.3.1
+Summary: DeepCore Server
+Home-page: http://deepcore.io
+Author: UNKNOWN
+Author-email: deepcore-support@digitalglobe.com
+License: Apache License, Version 2.0
+Description:     A server that runs object detection models
+            
+Keywords: Swagger,DeepCore Server
+Platform: UNKNOWN
