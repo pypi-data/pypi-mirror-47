@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: aws-cdk.runtime-values
+Version: 0.34.0
+Summary: Runtime values support for the AWS CDK
+Home-page: https://github.com/awslabs/aws-cdk
+Author: Amazon Web Services
+License: UNKNOWN
+Project-URL: Source, https://github.com/awslabs/aws-cdk.git
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: jsii (~=0.11.2)
+Requires-Dist: publication (>=0.0.3)
+
+## Runtime Values
+<!--BEGIN STABILITY BANNER-->
+
+---
+
+![Stability: Deprecated](https://img.shields.io/badge/stability-Deprecated-critical.svg?style=for-the-badge)
+
+> This API may emit warnings. Backward compatibility is not guaranteed.
+
+---
+<!--END STABILITY BANNER-->
+
+This module has been deprecated. Use environment variables or SSM parameters to publish values to runtime code.
+
+
+
+
