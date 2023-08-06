@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: tztab
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: laixintao
+Author-email: laixintaoo@gmail.com
+License: UNKNOWN
+Description: tztab
+        =====
+        
+        Crontab tinezome converter.
+        
+        
+        
+Keywords: crontab,timezone,croniter
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
