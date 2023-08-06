@@ -1,0 +1,11 @@
+metasub_utils.data_packet-0.3.0-py3.6-nspkg.pth,sha256=7S4yU8K33I518h63RpME9OxHc4ZF8eWeDAEGqrA4bYg,574
+metasub_utils/data_packet/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+metasub_utils/data_packet/clean_metadata.py,sha256=3YQIDKd2ncgMzotghjNu30VkefUrICA75_TjGF-uWO0,9044
+metasub_utils/data_packet/cli.py,sha256=21F7nCqT4SZkhoJpWuinpJ8FFr_sjKf0hvotfVj8R_k,2757
+metasub_utils/data_packet/filter_data_packet.py,sha256=bQuZF44soUdoFngjedqZISEB3Y-XSDUaCyWwra-OBmU,2375
+metasub_utils.data_packet-0.3.0.dist-info/METADATA,sha256=stnKXuWAHzeb_UQRQj12XpOv0n323U9XQ2MVWAykZDc,407
+metasub_utils.data_packet-0.3.0.dist-info/RECORD,,
+metasub_utils.data_packet-0.3.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+metasub_utils.data_packet-0.3.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+metasub_utils.data_packet-0.3.0.dist-info/namespace_packages.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
+metasub_utils.data_packet-0.3.0.dist-info/top_level.txt,sha256=qtcLMMIizIZ0LcoBfm7fMmaolb6zmpgcRnnOGgEwmX0,14
