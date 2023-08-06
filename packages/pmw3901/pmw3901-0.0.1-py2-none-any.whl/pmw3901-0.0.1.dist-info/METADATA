@@ -1,0 +1,55 @@
+Metadata-Version: 2.0
+Name: pmw3901
+Version: 0.0.1
+Summary: Python library for the PMW3901 optical flow sensor
+Home-page: http://www.pimoroni.com
+Author: Philip Howard
+Author-email: phil@pimoroni.com
+License: MIT
+Project-URL: GitHub, https://www.github.com/pimoroni/pmw3901-python
+Keywords: Raspberry Pi
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: System :: Hardware
+Requires-Dist: spidev
+
+PMW3901 2-Dimensional Optical Flow Sensor
+=========================================
+
+|Build Status| |Coverage Status| |PyPi Package| |Python Versions|
+
+Installing
+==========
+
+Stable library from PyPi:
+
+-  Just run ``sudo pip install pmw3901``
+
+Latest/development library from GitHub:
+
+-  ``git clone https://github.com/pimoroni/pmw3901-python``
+-  ``cd pmw3901-python``
+-  ``sudo ./install.sh``
+
+.. |Build Status| image:: https://travis-ci.com/pimoroni/pmw3901-python.svg?branch=master
+   :target: https://travis-ci.com/pimoroni/pmw3901-python
+.. |Coverage Status| image:: https://coveralls.io/repos/github/pimoroni/pmw3901-python/badge.svg?branch=master
+   :target: https://coveralls.io/github/pimoroni/pmw3901-python?branch=master
+.. |PyPi Package| image:: https://img.shields.io/pypi/v/pmw3901.svg
+   :target: https://pypi.python.org/pypi/pmw3901
+.. |Python Versions| image:: https://img.shields.io/pypi/pyversions/pmw3901.svg
+   :target: https://pypi.python.org/pypi/pmw3901
+
+0.0.1
+-----
+
+* Initial Release
+
+
