@@ -1,0 +1,8 @@
+#!/bin/bash
+
+chmod +x ccypher/ccypher.py
+chmod +x ccypher/ccfunctions.py
+
+ccypher/ccypher.py &
+exit
+

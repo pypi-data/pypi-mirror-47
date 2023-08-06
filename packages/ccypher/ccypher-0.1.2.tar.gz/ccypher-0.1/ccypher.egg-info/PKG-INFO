@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ccypher
+Version: 0.1
+Summary: Graphic user interface to encrypt or decrypt text.
+Home-page: https://github.com/iwkerr/ccypher.git
+Author: IK
+Author-email: iwkerr48@gmail.com
+License: MIT
+Download-URL: https://github.com/iwkerr/ccypher/blob/master/dist/ccypher-0.1.tar.gz
+Description: # CCYPHER README
+        
+        # CCypher is used to encrypt or decrypt entered text into an output text box.
+Keywords: ccypher cypher encrypt decrypt text casear caesarcypher
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Text Processing :: Filters

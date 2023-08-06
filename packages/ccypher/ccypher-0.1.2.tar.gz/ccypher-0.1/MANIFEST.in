@@ -1,0 +1,3 @@
+include README.rst
+include cc_launch
+include docs/*.txt
