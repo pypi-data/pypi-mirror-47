@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ps-minifier
+Version: 0.1.0
+Summary: A minifier for PowerShell scripts.
+Home-page: https://github.com/Willumz/ps-minifier
+Author: Willumz
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: # ps-minifier
+        A very basic minifier for PowerShell scripts.
+        
+        Currently, a semicolon (`;`) is required at the end of each line in the script it is given.
+        
+        NOTE: This minifier is currently not very complex, and (while it works with programs I have tested it on) may not output functioning code for all programs it is given.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
