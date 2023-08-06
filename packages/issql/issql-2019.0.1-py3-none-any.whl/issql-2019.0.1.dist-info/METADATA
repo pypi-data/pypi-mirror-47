@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: issql
+Version: 2019.0.1
+Summary: a simple package to check if a value is a reserved keyword in sql
+Home-page: https://github.com/cdknorow/issql
+Author: Chris Knorowski
+Author-email: cknorow@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+
+UNKNOWN
+
+
