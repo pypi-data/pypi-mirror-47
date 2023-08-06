@@ -1,0 +1,16 @@
+README.md
+setup.py
+workstreams/__init__.py
+workstreams/__version__.py
+workstreams/client.py
+workstreams/exceptions.py
+workstreams/utils.py
+workstreams.egg-info/PKG-INFO
+workstreams.egg-info/SOURCES.txt
+workstreams.egg-info/dependency_links.txt
+workstreams.egg-info/not-zip-safe
+workstreams.egg-info/requires.txt
+workstreams.egg-info/top_level.txt
+workstreams/resources/__init__.py
+workstreams/resources/base.py
+workstreams/resources/tasks.py
