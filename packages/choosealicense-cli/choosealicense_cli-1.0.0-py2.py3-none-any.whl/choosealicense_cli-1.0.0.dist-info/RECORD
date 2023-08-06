@@ -1,0 +1,10 @@
+choosealicense/__init__.py,sha256=YkDUWceBXEDQiwDzj5ujW2rYi4uMRruUS7ruGlPI6_U,368
+choosealicense/cli.py,sha256=eCOXec6HIKyhfnEe3pBTN5SS7fpmTINaIvtX_i8Yfdo,3344
+choosealicense/ui.py,sha256=i8c3egP3xCbLJRjX239m81-iR0Y1Y6UXB0aXhBQ7Eso,2162
+choosealicense/utils.py,sha256=UOvu6uDQuo6M_VyXXPODYW2YxfqD00O_t6fPsQ-HoCs,1028
+choosealicense_cli-1.0.0.dist-info/LICENSE,sha256=CBAAmRD8P-KunaoibG8bi1hPYiq4F0IckV9qFp9XeJw,1073
+choosealicense_cli-1.0.0.dist-info/METADATA,sha256=3GHCVEH9LK20LIY7Lg5kLUs8hUU0JwiBL2PdiQAbDbc,2334
+choosealicense_cli-1.0.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+choosealicense_cli-1.0.0.dist-info/entry_points.txt,sha256=q91wSE4F5vOPoIvILJ9WxVsdI2IkqZadEcqj-IIPv9c,52
+choosealicense_cli-1.0.0.dist-info/top_level.txt,sha256=pmDYWu7yrNBnYNgbmYhROJCJx_m0gvVV7BFr99bmuvk,15
+choosealicense_cli-1.0.0.dist-info/RECORD,,
