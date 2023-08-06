@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pdfmerger/__init__.py
+pdfmerger.egg-info/PKG-INFO
+pdfmerger.egg-info/SOURCES.txt
+pdfmerger.egg-info/dependency_links.txt
+pdfmerger.egg-info/requires.txt
+pdfmerger.egg-info/top_level.txt
