@@ -1,0 +1,8 @@
+DoHexDigit {
+  s.Digit e.Samples s.Val s.Digit = s.Val;
+
+  s.OtherDigit e.Samples s.Val s.Digit
+    = <DoHexDigit e.Samples <Add s.Val 1> s.Digit>;
+
+  /* нет образцов */ s.BadVal s.Digit = /* пусто */;
+}
