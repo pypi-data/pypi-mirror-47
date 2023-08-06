@@ -1,0 +1,47 @@
+heat_template_version: 2014-10-16
+
+parameters:
+
+  baremetal_flavor:
+    type: string
+
+  baremetal_image:
+    type: string
+
+  baremetal_name:
+    type: string
+
+  key_name:
+    type: string
+
+  baremetal_prefix:
+    type: string
+
+  networks:
+    type: json
+
+  suffix:
+    type: string
+
+resources:
+
+  baremetal_ports:
+    type: OS::OVB::BaremetalPorts
+    properties:
+      suffix: {get_param: suffix}
+      baremetal_prefix: {get_param: baremetal_prefix}
+      networks: {get_param: networks}
+
+  baremetal_server:
+    type: OS::Nova::Server
+    properties:
+      flavor: {get_param: baremetal_flavor}
+      image: {get_param: baremetal_image}
+      config_drive: false
+      key_name: {get_param: key_name}
+      networks: {get_attr: [baremetal_ports, ports]}
+      name: {get_param: baremetal_name}
+
+outputs:
+  bmc_nic:
+    value: {port: {get_resource: bmc_port}}
