@@ -1,0 +1,3 @@
+[console_scripts]
+elsi-test-two = elsi_test:main
+
