@@ -1,0 +1,14 @@
+slag/__init__.py,sha256=umN9nsJet_71uxt5-qBJGT2cB5M9BLJ8F47tNPawxdw,9178
+slag/__main__.py,sha256=0OEJumc_kopbrumdRQgpXLUo5tZBb2401Hx_ttsE-HE,38
+slag/css/github.css,sha256=F0frAR1170Dw9ki_yCa1GCV_kMwgxCtPkFsqlzeLHmw,13167
+slag/css/main.css,sha256=WDkhAWhQilAucsdU7LYvwfV1JsD2_Rm2B21RdTGDCKo,2753
+slag/css/normalize.css,sha256=9NfoJQ-PEk-LfQh-XiYHZqNLB5_dxD57INjBjKHpLlE,7797
+slag/css/pygments.css,sha256=p_BnhFq1_P5iQM5HkE1kX1WDPm24CytpZCsOZB3upik,3410
+slag/css/skeleton.css,sha256=ECB9bbROLGm8wOoEbHcHRxlHgzGqYpDtNTgDTyDz0wg,11452
+slag/html/base.html,sha256=7fLZUIp9YclXnM7NMPq0TdIWXghgYNgK6EESq7f0nOE,1323
+slag/html/list.html,sha256=O8ks1hHWREY5DO8ZBrTbt-slza8aZOLeBg0IP9AdsMw,1113
+slag-0.4.0.dist-info/entry_points.txt,sha256=bbkvAWzXA-1EaBmWbGtDOdh5kqLEsDBiibYNN06xllc,40
+slag-0.4.0.dist-info/LICENSE,sha256=Vro3cTPtr3GLRFj-YBXc02TxhWhZHZ3Q0RpRJiYkWW8,1070
+slag-0.4.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+slag-0.4.0.dist-info/METADATA,sha256=cczgPqT0prjomigoEL_z09b_XY_jVU0iazcaDapYB10,4347
+slag-0.4.0.dist-info/RECORD,,
