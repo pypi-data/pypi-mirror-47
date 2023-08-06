@@ -1,0 +1,8 @@
+metabot/__init__.py,sha256=RjuJWJdD6ToIM3gKzOuwzqhker4pBvk2a3-bgVGM4js,102
+metabot/calendars/__init__.py,sha256=RjuJWJdD6ToIM3gKzOuwzqhker4pBvk2a3-bgVGM4js,102
+metabot/calendars/google.py,sha256=AK7TXIeYcUHGpWSPUTcrS0KeNAzLBgK7IzwBrd7Xmbs,4195
+metabot/calendars/test_google.py,sha256=7aksP14zlq3K0Hf2GBduTwiHBHQpYNTcgbbx_plke4s,235
+metabot.calendars.google-0.1.dist-info/METADATA,sha256=ysYVK2bMmLRtLDjWbkwHbAM9_rk9sOkhBlm7VpIL_jc,369
+metabot.calendars.google-0.1.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+metabot.calendars.google-0.1.dist-info/top_level.txt,sha256=5u6PO_HFyqlSYHG38s1pgjQlYsSMeHPQhryQQjQ6sfo,8
+metabot.calendars.google-0.1.dist-info/RECORD,,
