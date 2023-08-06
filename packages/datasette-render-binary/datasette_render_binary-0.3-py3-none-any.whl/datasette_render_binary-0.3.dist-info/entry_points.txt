@@ -1,0 +1,3 @@
+[datasette]
+render_binary = datasette_render_binary
+
