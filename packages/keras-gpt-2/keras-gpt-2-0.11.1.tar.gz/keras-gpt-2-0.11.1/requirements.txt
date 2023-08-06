@@ -1,0 +1,5 @@
+numpy
+Keras
+regex
+keras-pos-embd
+keras-transformer
