@@ -1,0 +1,11 @@
+README.md
+setup.py
+img_term/__init__.py
+img_term/img_term.py
+img_term/plasma.py
+img_term.egg-info/PKG-INFO
+img_term.egg-info/SOURCES.txt
+img_term.egg-info/dependency_links.txt
+img_term.egg-info/entry_points.txt
+img_term.egg-info/requires.txt
+img_term.egg-info/top_level.txt
