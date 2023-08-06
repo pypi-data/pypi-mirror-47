@@ -1,0 +1,3 @@
+[console_scripts]
+cfn2ddb = cloudformation_dynamodb_export.cfn2ddb:export
+
