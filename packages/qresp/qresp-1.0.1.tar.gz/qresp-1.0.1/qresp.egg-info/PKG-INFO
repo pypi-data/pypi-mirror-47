@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: qresp
+Version: 1.0.1
+Summary: Qresp "Curation and Exploration of Reproducible Scientific Papers" is a Python application that facilitates the organization, annotation and exploration of data presented in scientific papers. 
+Home-page: http://qresp.org/
+Author: Aditya Tanikanti, Marco Govoni
+Author-email: datadev@lists.uchicago.edu
+License: GNU
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0
