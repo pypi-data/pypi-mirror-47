@@ -1,0 +1,76 @@
+{
+    "GeneralInformation": {
+        "planArea": 100.0,
+        "stories": 2,
+        "units": {
+            "force": "N",
+            "length": "m",
+            "temperature": "C",
+            "time": "sec"
+        }
+    },
+    "LossModel": {
+        "BuildingDamage": {
+            "CollapseLimits": {
+                "PID": "0.10"
+            },
+            "IrrepairableResidualDrift": {
+                "Median": "10.",
+                "Sig": "0.0001"
+            },
+            "ReplacementCost": "300000",
+            "ReplacementTime": "300"
+        },  
+        "BuildingResponse": {            
+            "EDP_Distribution": "lognormal",
+            "BasisOfEDP_Distribution": "all results",
+            "CollapseProbability": "estimated",
+            "BasisOfCPEstimate": "sampled EDP"
+        }, 
+        "CollapseModes": [
+            {
+                "affected_area": "1.0",
+                "injuries": "0.1, 0.9",
+                "name": "complete",
+                "w": "1.0"
+            }
+        ],
+        "Components": [
+            {
+                "ID": "T0002.001",
+                "cov": "0.0001",
+                "directions": "1, 2",
+                "distribution": "normal",
+                "name": "drift sensitive test comp",
+                "quantity": "5.3821, 5.3821",
+                "structural": true,
+                "unit_size": "100",
+                "unit_type": "SF",
+                "weights": "0.5, 0.5"
+            },
+            {
+                "ID": "T0002.002",
+                "cov": "0.0001",
+                "directions": "1, 2",
+                "distribution": "normal",
+                "name": "acceleration sensitive test comp",
+                "quantity": "5.3821, 5.3821",
+                "structural": false,
+                "unit_size": "100",
+                "unit_type": "SF",
+                "weights": "0.5, 0.5"
+            }
+        ],
+        "DataSources": {
+            "ComponentDataFolder": "resources/DL data/json/",
+            "PopulationDataFile": "resources/population data/population_test.json"
+        },         
+        "Inhabitants": {
+            "OccupancyType": "Hospitality",
+            "PeakPopulation": "10"
+        },
+        "UncertaintyQuantification": {            
+            "Realizations": "10000"
+        }
+    }
+}
