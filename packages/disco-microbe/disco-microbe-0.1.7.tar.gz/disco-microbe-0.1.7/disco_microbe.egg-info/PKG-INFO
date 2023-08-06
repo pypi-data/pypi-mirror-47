@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: disco-microbe
+Version: 0.1.7
+Summary: Design of identifiable synthetic communities
+Home-page: https://github.com/dlcarper/DISCo-Design-of-an-identifiable-synthetic-community
+Author: Dana L. Carper, Travis J. Lawrence, Alyssa A. Carrell, Dale A. Pelletier, and David J. Weston
+Author-email: carperdl@ornl.gov
+License: LGPLv3
+Description: # DISCO-Design-of-an-identifiable-synthetic-community
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: ~=3.5

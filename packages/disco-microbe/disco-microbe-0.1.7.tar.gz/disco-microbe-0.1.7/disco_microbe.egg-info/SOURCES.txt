@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+disco_microbe/__init__.py
+disco_microbe/_version.py
+disco_microbe/disco_microbe.py
+disco_microbe.egg-info/PKG-INFO
+disco_microbe.egg-info/SOURCES.txt
+disco_microbe.egg-info/dependency_links.txt
+disco_microbe.egg-info/entry_points.txt
+disco_microbe.egg-info/requires.txt
+disco_microbe.egg-info/top_level.txt
