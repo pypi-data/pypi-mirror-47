@@ -1,0 +1,9 @@
+setup.py
+better_packaging/__init__.py
+better_packaging/__main__.py
+better_packaging/lib.py
+better_packaging.egg-info/PKG-INFO
+better_packaging.egg-info/SOURCES.txt
+better_packaging.egg-info/dependency_links.txt
+better_packaging.egg-info/requires.txt
+better_packaging.egg-info/top_level.txt
