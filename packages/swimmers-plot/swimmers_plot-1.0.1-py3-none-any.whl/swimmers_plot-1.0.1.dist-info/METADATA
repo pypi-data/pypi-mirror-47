@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: swimmers-plot
+Version: 1.0.1
+Summary: Create a swimmer's plot of treatments for a cohort
+Home-page: https://github.com/broadinstitute/swimmers_plot
+Author: Justin Cha
+Author-email: jcha@broadinstitute.org
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: intervaltree
+
+UNKNOWN
+
+
