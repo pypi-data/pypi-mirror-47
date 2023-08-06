@@ -1,0 +1,13 @@
+copier/__init__.py,sha256=69jpaurAixZ3fHP21lhRVNdt7P3-qgllGFOfhHrgLXY,143
+copier/cli.py,sha256=0PgO1vUUQx_tyXyNJZx0p8pGxWWzJDAgeTZ-kmPPm_A,2358
+copier/main.py,sha256=szu9BXYc6_LPJQqUFG3x01_k1KrgoCh0iw1r7bJ54v8,10350
+copier/tools.py,sha256=8aKIVOnuFKsb33999__JHe9O--LTefdjpnl73i1_LS8,6506
+copier/user_data.py,sha256=Y0hWhphUlOkRlX14mLaQ_IQ-W1mJj6E148NAH1ZMinU,2962
+copier/vcs.py,sha256=QL0jJ4btZ31iuLl8BP3bQS666SLrDwlO1jdxnL2D2xY,849
+copier/version.py,sha256=MbNaQCT6TkMGNS9IP6_wn08F1ty3tFlVc6bqt29KT_c,205
+copier-2.5.0.dist-info/LICENSE.txt,sha256=kGSSEkV_bCVvVF2NprDF_RYL9pRiknBVHgb-eILnCnA,1076
+copier-2.5.0.dist-info/METADATA,sha256=FmsyaYhVngf6KFunhRbCyjjwW0lqslCyqX447aSiczM,7799
+copier-2.5.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+copier-2.5.0.dist-info/entry_points.txt,sha256=RvZvpW9lQ1wJ4y_FmzDf_GfIdUkbI3duCHsUxjLrXjc,43
+copier-2.5.0.dist-info/top_level.txt,sha256=Js3EhbZM0sP1mlj6yOPCrbZIrmBM3tUgGyied_65310,7
+copier-2.5.0.dist-info/RECORD,,
