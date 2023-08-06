@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: sqllineage
+Version: 0.0.1
+Summary: SQL Lineage Analysis Tool powered by Python
+Home-page: https://github.com/reata/sqllineage
+Author: Reata
+Author-email: reddevil.hjw@gmail.com
+License: UNKNOWN
+Description: # sqllineage
+        SQL Lineage Analysis Tool powered by Python
+        
+        [![Build Status](https://travis-ci.org/reata/sqllineage.svg?branch=master)](https://travis-ci.org/reata/sqllineage)
+        [![codecov](https://codecov.io/gh/reata/sqllineage/branch/master/graph/badge.svg)](https://codecov.io/gh/reata/sqllineage)
+        [![Documentation Status](https://readthedocs.org/projects/sqllineage/badge/?version=latest)](https://sqllineage.readthedocs.io/en/latest/?badge=latest)
+        
+        This project is still in Alpha stage. Interfaces are supposed to change in upcoming development cycles.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
