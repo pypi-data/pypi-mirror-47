@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Python-MS-SDK
+Version: 0.9
+Summary: Repo: https://github.com/SphereMall/Python-MS-SDK
+Home-page: https://github.com/SphereMall/Python-MS-SDK/wiki
+Author: Kravets Roman
+Author-email: r.kravets@spheremall.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests (==2.18.4)
+
+UNKNOWN
+
+
