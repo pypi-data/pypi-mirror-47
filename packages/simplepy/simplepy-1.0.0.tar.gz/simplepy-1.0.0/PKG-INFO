@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: simplepy
+Version: 1.0.0
+Summary: Python工具包
+Home-page: https://github.com/fovegage/python-common-utils
+Author: fovegage
+Author-email: fovegage@gmail.com
+License: UNKNOWN
+Description: README.md
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
