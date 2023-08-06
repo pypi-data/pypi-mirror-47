@@ -1,0 +1,11 @@
+README.md
+setup.py
+educalingoDictionary/EducalingoDictionary.py
+educalingoDictionary/__init__.py
+educalingoDictionary.egg-info/PKG-INFO
+educalingoDictionary.egg-info/SOURCES.txt
+educalingoDictionary.egg-info/dependency_links.txt
+educalingoDictionary.egg-info/requires.txt
+educalingoDictionary.egg-info/top_level.txt
+tests/__init__.py
+tests/test_educalingo_dictionary.py
