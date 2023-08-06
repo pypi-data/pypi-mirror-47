@@ -1,0 +1,5 @@
+aiohttp-asynctools>=0.1.2
+fastapi[all]>=0.29.0
+gunicorn
+async-stripe>=0.1.2
+Babel>=2.7.0
