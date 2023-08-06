@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: xoinvader
+Version: 0.1.1
+Summary: (not so) small python curses space game
+License: MIT
+Author: Pavel Kulyov
+Author-email: kulyov.pavel@gmail.com
+Requires-Python: >=3,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pygame
+Requires-Dist: tornado (>=4,<5)
