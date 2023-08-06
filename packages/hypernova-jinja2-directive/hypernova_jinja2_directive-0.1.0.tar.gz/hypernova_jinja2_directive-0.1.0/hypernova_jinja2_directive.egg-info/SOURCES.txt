@@ -1,0 +1,6 @@
+setup.py
+hypernova_jinja2_directive/__init__.py
+hypernova_jinja2_directive.egg-info/PKG-INFO
+hypernova_jinja2_directive.egg-info/SOURCES.txt
+hypernova_jinja2_directive.egg-info/dependency_links.txt
+hypernova_jinja2_directive.egg-info/top_level.txt

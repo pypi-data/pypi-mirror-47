@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: hypernova-jinja2-directive
+Version: 0.1.0
+Summary: Hypernova Directive jinja2
+Home-page: https://github.com/ara-framework/hypernova-jinja2-directive
+Author: marconi1992
+Author-email: felipegaiacharly@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
