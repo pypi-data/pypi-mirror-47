@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: telemetry
+Version: v0.2.0
+Summary: UNKNOWN
+Home-page: http://github.com/trevorgrayson/telemetry
+Author: trevor grayson
+Author-email: trevor@retentionscience.com
+License: MIT
+Description: # telemetry
+        
+        remote measuring of app and library statistics
+        
+        This library is the interface layer to communicate to your external telemetry services.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Monitoring
+Classifier: Topic :: System :: Logging
