@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pylibpcap3
+Version: 0.0.1
+Summary: ctypes libPCAP bindings for python3
+Home-page: https://github.com/skelsec/pylibpcap3
+Author: Tamas Jos
+Author-email: info@skelsec.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+
+UNKNOWN
+
+
