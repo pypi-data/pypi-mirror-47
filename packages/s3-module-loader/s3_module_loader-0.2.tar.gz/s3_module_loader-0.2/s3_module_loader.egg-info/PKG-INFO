@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: s3-module-loader
+Version: 0.2
+Summary: A module loader to load python packages from s3 buckets
+Home-page: https://github.com/ablerman/S3ModuleLoader
+Author: Sandy Lerman
+Author-email: alex@ablerman.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
