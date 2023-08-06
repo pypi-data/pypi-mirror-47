@@ -1,0 +1,15 @@
+mpi4py
+numpy
+cython
+scipy==1.2
+matplotlib
+h5py
+colorama
+psutil
+tqdm
+blosc
+statsmodels
+scikit-learn
+
+[beer]
+scikit-learn
