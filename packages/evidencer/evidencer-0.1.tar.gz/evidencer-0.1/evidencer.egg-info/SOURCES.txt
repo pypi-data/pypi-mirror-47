@@ -1,0 +1,8 @@
+README.md
+setup.py
+evidencer/__init__.py
+evidencer/plugin.py
+evidencer.egg-info/PKG-INFO
+evidencer.egg-info/SOURCES.txt
+evidencer.egg-info/dependency_links.txt
+evidencer.egg-info/top_level.txt

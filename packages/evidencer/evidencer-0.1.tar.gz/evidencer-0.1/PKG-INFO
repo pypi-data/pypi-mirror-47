@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: evidencer
+Version: 0.1
+Summary: UNKNOWN
+Home-page: https://github.com/Honzin/evidencer
+Author: Jan Seda
+Author-email: xsedaj00@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: testing,logs,extraction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
