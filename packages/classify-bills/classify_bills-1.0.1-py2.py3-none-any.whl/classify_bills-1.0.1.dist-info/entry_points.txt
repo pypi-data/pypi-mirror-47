@@ -1,0 +1,3 @@
+[console_scripts]
+classify_bills = classify_bills:main
+

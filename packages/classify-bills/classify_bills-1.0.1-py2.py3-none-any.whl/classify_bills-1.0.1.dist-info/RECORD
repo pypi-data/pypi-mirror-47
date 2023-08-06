@@ -1,0 +1,13 @@
+classify_bills/__init__.py,sha256=CufGE-NGdHpd8KNdUOpf6-kTigKqV_OviauiVmwbtCE,13868
+classify_bills/colorlogger.py,sha256=cqCRgh9tUo2xWJZXU4odhJNFIzdQuD2K2kNx8kLY5js,3918
+classify_bills-1.0.1.data/data/classify_bills.config.examples/0-Example.xml,sha256=-i_nAGIRGfHGF9gawV4r2jHPJJEEtVgbD6akNZvDcCk,625
+classify_bills-1.0.1.data/data/classify_bills.config.examples/Amex Blue Cash Preferred.xml,sha256=Eax7jY8K1becda0tUsSFkDk1JfCLyHsTSD4dlz25Xt0,285
+classify_bills-1.0.1.data/data/classify_bills.config.examples/Citi Mastercard.xml,sha256=mLDO__wz2q9zmtPctw-JCDWz1E1wl1t6aiKrMn0HnN4,274
+classify_bills-1.0.1.data/data/classify_bills.config.examples/Con Edison.xml,sha256=Mep_jyJ4Q1KK9IFWMroLfxVwKS6tto4CGmK9cbCDCFU,281
+classify_bills-1.0.1.data/data/classify_bills.config.examples/Time Warner Cable.xml,sha256=WufJ4D6KQmpnZOMNfZ5rEO6XGXp27ju-fbhlLdPrO2Q,273
+classify_bills-1.0.1.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+classify_bills-1.0.1.dist-info/METADATA,sha256=TBjzjMaVkmqYRgLijNimmcND7M7o8HZgfmjk8Ep4H4k,6262
+classify_bills-1.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+classify_bills-1.0.1.dist-info/entry_points.txt,sha256=keALgvIZpBvxgAoy0iHr26sV2QwsmJ3ErzUq_aNH_7A,56
+classify_bills-1.0.1.dist-info/top_level.txt,sha256=YjjyzjybMBXG9ER9jhJJTglu-GrZMq15O37f3fLWq1w,15
+classify_bills-1.0.1.dist-info/RECORD,,
