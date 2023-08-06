@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nao
+Version: 0.2.5
+Summary: Intelligent data manipulation tools
+Home-page: https://github.com/blagasz/nao
+Author: Szabolcs Blága
+Author-email: szabolcs.blaga@gmail.com
+License: GPL
+Download-URL: https://github.com/blagasz/nao/archive/v0.2.zip
+Keywords: data,yaml,multilingual,multivalue,config,flask,sqlalchemy
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyYAML
+
+UNKNOWN
+
+
