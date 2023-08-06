@@ -1,0 +1,17 @@
+sget/__init__.py,sha256=4RZj3Jn5XP4dAleXFb0eS1v_q7_rFsd3A6MiRtx5oKM,42
+sget/api.py,sha256=LDeZflMPHnnE_CfI-qrqyWOoQTTZP1125TgpLfFKmDc,1985
+sget/config.py,sha256=EzEhrD8tIG4t_RDy8Sd1Tv620PlcSKNxVM47WMnU9RU,1497
+sget/main.py,sha256=tQXHuXuYe8jNyXKuoeblkYqjJBEnM2e2t1T4SN7nFcQ,3450
+sget/snippet.py,sha256=VCXgUjVLcRZmut8Bj0XZ72nMaabeurGzMX8oCzQ5dWU,3280
+sget/storage.py,sha256=cTOhot1gPxDWKflaLWtmzL7HEjM1GX3pVMCeRinBUk8,3244
+sget/tty.py,sha256=uTqpuycedD2PCTUaUb-AU2NYwPbtpVS3MvD1MZmVzOw,1374
+sget/prompt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sget/prompt/prompt.py,sha256=9BuvjCuNfH_QaZmLSs6RfsSkaqXCfDM_b0ZF7IflCDc,5145
+sget/prompt/search.py,sha256=Cn22h75yJhYQ5o_f2OVz6_ik-tBprnn2jOJ-LswAwV0,5432
+sget/prompt/template.py,sha256=VS-dEHgOcNrK1ay-zZNuvdyKrTI46cbEcIq7d256IOY,2159
+sget-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+sget-0.1.0.dist-info/METADATA,sha256=aLhHpiDbWGQPId7oq8O4v0jG-vOaB-1dAwGw3i7i3Gw,1770
+sget-0.1.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+sget-0.1.0.dist-info/entry_points.txt,sha256=C-EHmb6ulpK8iPZiAIQzMLi6BWhYMfYprMjYRkQeuio,35
+sget-0.1.0.dist-info/top_level.txt,sha256=Bf7nxTLo6pZ42Jyb2aMe_aIeCr3BU41h8JByWRHw1lI,5
+sget-0.1.0.dist-info/RECORD,,
