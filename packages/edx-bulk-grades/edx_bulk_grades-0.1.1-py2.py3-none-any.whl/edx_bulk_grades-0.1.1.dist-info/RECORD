@@ -1,0 +1,15 @@
+bulk_grades/__init__.py,sha256=0iG7SPk5eu7_1JMcwzL0hCuZS8VBEvmukK243htXtcA,217
+bulk_grades/api.py,sha256=y7qK6Qr9X1CLdtAicHNr8ZuDeuOEb-MSLdwspk23pRs,12000
+bulk_grades/apps.py,sha256=ag1P7LLR2x1SwoJw0dZL4NxdGIJo7DQUCs6oG4RCDMA,537
+bulk_grades/models.py,sha256=AYSperoCxSdup0rLUD_cpnKJZyWw1SP8PatS0Z5UJPY,972
+bulk_grades/urls.py,sha256=0DkijEAHnqdWeqfX_78Utm_IZSfjQn_FNfwdhrbfRcs,373
+bulk_grades/views.py,sha256=xtJ7Dq6OM6A_ycY2W6Z76IOWTC-6ZCCAJbbWZTEZ1mo,3318
+bulk_grades/migrations/0001_initial.py,sha256=cBGYoJ0-z3R8RBSuEaK86qrRwMtEgQCo5Pf5saqFnv0,1200
+bulk_grades/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bulk_grades/templates/bulk_grades/base.html,sha256=wtjBYqfHmOnyEY5tN3VGOmzYLsOD24MXdEUhTZ7OmwI,662
+edx_bulk_grades-0.1.1.dist-info/LICENSE.txt,sha256=oo7U8J5ol7nYAbcDsvx3uWytl-gnOHwQykwubuQHFLE,35119
+edx_bulk_grades-0.1.1.dist-info/METADATA,sha256=USr83I0frbMcWVDj9uPOe9MNVnwsA1mOxe0Pn9lRU9s,4462
+edx_bulk_grades-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+edx_bulk_grades-0.1.1.dist-info/entry_points.txt,sha256=J5qDC69jP-hEeoQt3Es26cfeklcyzEwlGRye5V4kkWA,65
+edx_bulk_grades-0.1.1.dist-info/top_level.txt,sha256=DjcE3nKGeiLBQkUevHXyA5EL4Q_D5IsOv0GvEoBQArY,12
+edx_bulk_grades-0.1.1.dist-info/RECORD,,
