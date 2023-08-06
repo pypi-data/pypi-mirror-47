@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: pytest_mproc
+Version: 1.0.13
+Summary: distributed pytest using multiprocessing
+Home-page: https://github.com/jrusnakli/pytest_mpdist
+Author: John Rusnak
+Author-email: jrusnak@linkedin.com
+License: BSD License
+Download-URL: https://github.com/jrusnakli/pytest_mpdist/dist/1.0.13
+Description: pytest plugin for running tests in parallel using multiprocessor pkg
+Platform: UNKNOWN
+Classifier: Framework :: Pytest
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: BSD License
