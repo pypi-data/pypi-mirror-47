@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: lolwrapper
+Version: 1.1
+Summary: Riot API Wrapper
+Home-page: https://github.com/brianjp93/lolapi
+Author: Brian Perrett
+Author-email: perrettbrian@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# League of Legends API Wrapper
+
+```python
+>>> from riot import Riot
+>>> 
+>>> api = Riot('your-api-key')
+```
+
+## Available Resources
+
+```python
+>>> api.champion
+>>> api.championmastery
+>>> api.league
+>>> api.lolstaticdata
+>>> api.lolstatus
+>>> api.masteries
+>>> api.match
+>>> api.runes
+>>> api.spectator
+>>> api.summoner
+>>> api.thirdpartycode
+```
+
+### Get a summoner
+
+* Get by name, encrypted account ID, encrypted summoner ID, or encrypted PUUID
+```python
+>>> r = api.summoner.get(name='tenmo player', region='na')
+>>> r = api.summoner.get(encrypted_account_id='account-id', region='na')
+>>> r = api.summoner.get(encrypted_summoner_id='summoner-id', region='na')
+>>> r = api.summoner.get(encrypted_puuid='puuid', region='na')
+>>> r.json()
+```
+
+
+
