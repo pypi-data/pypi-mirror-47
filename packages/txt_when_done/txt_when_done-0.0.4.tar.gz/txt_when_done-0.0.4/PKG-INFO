@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: txt_when_done
+Version: 0.0.4
+Summary: Magic command to send a text when a jupyter cell completes.
+Home-page: https://github.com/willhk/txt-when-done
+Author: willhk
+Author-email: will.haeck@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
