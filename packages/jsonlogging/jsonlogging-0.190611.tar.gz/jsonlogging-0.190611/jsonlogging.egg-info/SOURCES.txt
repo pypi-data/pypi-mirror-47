@@ -1,0 +1,9 @@
+README.md
+setup.py
+jsonlogging/__init__.py
+jsonlogging/config.py
+jsonlogging/handlers.py
+jsonlogging.egg-info/PKG-INFO
+jsonlogging.egg-info/SOURCES.txt
+jsonlogging.egg-info/dependency_links.txt
+jsonlogging.egg-info/top_level.txt
