@@ -1,0 +1,4 @@
+pytest
+pytest-pep8
+pytest-cov==2.6.0
+httpretty
