@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: eloh
+Version: 0.0.1
+Summary: Send files via hole-punching
+Home-page: UNKNOWN
+Author: Louis Abraham
+Author-email: louis.abraham@yahoo.fr
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
