@@ -1,0 +1,13 @@
+thunder_remote/ControllerMapping.py,sha256=H8jtV0tbkm5m_jTHE6dgh2kwnlSxXvBK8Eigjaj_RdE,509
+thunder_remote/DebugLevel.py,sha256=LtuzU7QEhH-ANBA2N4LSrb2m1f8wDwx8Iwid2KcBtno,113
+thunder_remote/RemoteControl.py,sha256=V8qXWlHOi4AVM1T7kgRa2AdblZdUWVJtkQSqpDv03zc,22424
+thunder_remote/RemoteControlEvents.py,sha256=kPYDU5Rjvk_XM06ceI4lO-hvc1eDJZvH8Oa9JIja-Ew,950
+thunder_remote/__init__.py,sha256=pzIGUpCEDZZRk-HaCY65S_UFrt9Gh2XBWhj6E7KukL4,164
+thunder_remote/__main__.py,sha256=bWegpL2KuzLt0taERyhhRwa2qE1J1bNcubnLPyfF-Ew,1679
+thunder_remote/profiles/default.csv,sha256=ZYPHFShFOd87Sm8wyGVl_T6Whk99UgRvWypVxoqJEic,427
+thunder_remote/profiles/madness.csv,sha256=REbzKYb20C5juEZXyU0UHYClLqOPH9yNrflwcN9jITo,427
+thunder_remote-0.5.2.dist-info/LICENSE,sha256=3yOaYLimreTVmQOwvLjVGjrnxqaT9aJX4sROW9e4Sas,1057
+thunder_remote-0.5.2.dist-info/METADATA,sha256=NYakk9AffIY_-G_4GxVvfoKok9gqO_w8RW8kegFdKO8,1017
+thunder_remote-0.5.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+thunder_remote-0.5.2.dist-info/top_level.txt,sha256=V0ZQ9PsblB_BAcEsY7n5k9h5SGtTjEAsoF8hOz1_ghs,15
+thunder_remote-0.5.2.dist-info/RECORD,,
