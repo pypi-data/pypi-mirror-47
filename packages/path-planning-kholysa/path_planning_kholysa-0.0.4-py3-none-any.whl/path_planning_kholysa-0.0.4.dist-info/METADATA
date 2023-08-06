@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: path-planning-kholysa
+Version: 0.0.4
+Summary: A package using the A* algorithm to plan a path for a quadcopter
+Home-page: UNKNOWN
+Author: Saif Elkholy
+Author-email: saif.elkholy@mail.mcgill.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# A* Path Planning Package
+
+This is a simple package to plan a path for a quadcopter. It exposes 3 methods
+
+1) Set barriers
+2) Set goal
+3) Get next step
+
