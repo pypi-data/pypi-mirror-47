@@ -1,0 +1,10 @@
+boto3
+psycopg2
+numpy
+pandas
+sqlparse
+awscli
+snowflake-connector-python
+mysql-connector-python
+pyodbc
+jinja2
