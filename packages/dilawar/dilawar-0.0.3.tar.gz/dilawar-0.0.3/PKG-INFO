@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: dilawar
+Version: 0.0.3
+Summary: My personal utilities. See the README.md file.
+Home-page: http://github.com/dilawar/
+Author: Dilawar Singh
+Author-email: dilawars@ncbs.res.in
+License: GPL
+Description: # ajgar
+        
+        Some helper utilities in Python
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
