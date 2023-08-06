@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: beetrack-uploader-nkipreos
+Version: 0.0.1
+Summary: A simple and small wrapper for uploading files to Beetrack using Python scripts
+Home-page: https://github.com/nkipreos/BeetackUploader
+Author: Nicolas Kipreos
+Author-email: nicolas.kipreos@beetrack.com
+License: UNKNOWN
+Description: # BeetackUploader
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
