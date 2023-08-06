@@ -1,0 +1,6 @@
+setup.py
+snpToolkit.egg-info/PKG-INFO
+snpToolkit.egg-info/SOURCES.txt
+snpToolkit.egg-info/dependency_links.txt
+snpToolkit.egg-info/requires.txt
+snpToolkit.egg-info/top_level.txt
