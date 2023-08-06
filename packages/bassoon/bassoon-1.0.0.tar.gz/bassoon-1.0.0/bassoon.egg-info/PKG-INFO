@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: bassoon
+Version: 1.0.0
+Summary: A simple get-config-from-env class
+Home-page: https://github.com/Vesuvium/bassoon
+Author: Jacopo Cascioli
+Author-email: noreply@jacopocascioli.com
+License: MPL 2.0
+Description: # bassoon
+Platform: UNKNOWN

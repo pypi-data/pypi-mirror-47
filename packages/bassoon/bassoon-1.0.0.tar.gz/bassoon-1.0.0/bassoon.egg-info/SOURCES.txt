@@ -1,0 +1,9 @@
+README.md
+setup.py
+bassoon/Bassoon.py
+bassoon/Version.py
+bassoon/__init__.py
+bassoon.egg-info/PKG-INFO
+bassoon.egg-info/SOURCES.txt
+bassoon.egg-info/dependency_links.txt
+bassoon.egg-info/top_level.txt
