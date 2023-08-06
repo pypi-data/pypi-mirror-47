@@ -1,0 +1,18 @@
+1) Start all tests from command line
+
+To start all the test use the following command from the root project folder :
+
+python -m unittest discover -s ./tests
+
+2) Start all tests in eclipse :
+
+a) Open Run -> Run Configurations
+b) Create new configuration under Python unittest
+c) Specify the project
+d) As the main module specify the folder where the unit tests reside
+e) Run the new configuration to test the configuration
+
+3) Start all test in PyCharm
+
+a) Right click on test folder
+b) Choose and click "Run Unittests in test"
