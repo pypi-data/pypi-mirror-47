@@ -1,0 +1,6 @@
+README.md
+setup.py
+lipo2pol_fdas.egg-info/PKG-INFO
+lipo2pol_fdas.egg-info/SOURCES.txt
+lipo2pol_fdas.egg-info/dependency_links.txt
+lipo2pol_fdas.egg-info/top_level.txt
