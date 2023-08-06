@@ -1,0 +1,17 @@
+pynoptes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/dataloaders/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/dataloaders/vision.py,sha256=nVCTXBi0SvPqidb2P82IL5PK933so6mytbI88_hEFC4,5806
+pynoptes/detection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/detection/boxes.py,sha256=cBFmMtV9EMeijJDnE5hLWQEKW1KmF7tANDHrwpPOD74,865
+pynoptes/postprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/preprocessing/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/pretrained/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/reidentification/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes/segmentation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_detection.py,sha256=EHFEZqu1t9QIoaY1KqXOtfDdkS7FNBrj6DWpnF5ydYI,818
+pynoptes-0.0.7a0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pynoptes-0.0.7a0.dist-info/METADATA,sha256=UzdZ-hiCIlBxvbPFEdo23-UExh7WLA8YXKRdsFYtrGg,618
+pynoptes-0.0.7a0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pynoptes-0.0.7a0.dist-info/top_level.txt,sha256=jUuowzjbqt_EKUWSNx0wzZwvMqALh9k1ZAq8siiOOUM,15
+pynoptes-0.0.7a0.dist-info/RECORD,,
