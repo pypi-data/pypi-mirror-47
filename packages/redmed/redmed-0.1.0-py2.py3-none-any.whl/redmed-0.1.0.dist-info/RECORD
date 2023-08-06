@@ -1,0 +1,10 @@
+redmed/__init__.py,sha256=W29BwFETZQxdwts2IeNuOAWJxqRZTXHGewrW5YuLuTc,39
+redmed/redmedTagger.py,sha256=ajfn_NG6RcJMmxyGy9ja9dG9zgUB09pXwN_p6IjrrfE,5793
+redmed/textHandler.py,sha256=81-958fvFuNYvzLwlse11-bSFxqiamgIuqUMCzqWB_w,3277
+redmed/data/redmed_drug_lexicon.tsv,sha256=skGbfcqyeaGbDIBdXTkTpiLSOHdZfKL0y1LqVC6Bh5c,2481953
+redmed/data/redmed_phrases.txt,sha256=7Mbk-HBsByGRQW7X3ryzHr9FYhGW7YTK-yaRjudnNGI,17911071
+redmed-0.1.0.dist-info/LICENSE,sha256=wrzf8Nb4mnjNdAlQgrhp_BQux30eepx13VCzR5YZsgA,1069
+redmed-0.1.0.dist-info/METADATA,sha256=v4aAUu04z0CRHhihPJYCmmyMjA8QfkXLsiBUayinurc,415
+redmed-0.1.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+redmed-0.1.0.dist-info/top_level.txt,sha256=A1d2gFeHgOYmi7L3Ztgrdq0769PkpP2a7d19kXaqFNA,7
+redmed-0.1.0.dist-info/RECORD,,
