@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: asgi2gulp
+Version: 0.1.6
+Summary: Amorphous Structure Generator Interface to GULP
+Home-page: https://github.com/ws-qcnssp/asgi2gulp
+Author: Wojciech Szczypka
+License: MIT License
+Description: 
+        
+        ================================================
+        Amorphous Structure Generator Interface to GULP
+        ================================================
+        
+        v0.1.6
+        
+        -------------
+        Introduction
+        -------------
+        
+        This module allows to generate models of amorphous materials in a form
+        of a cluster by bottom-up approach. It is an interface to General Utility
+        Lattice Program (GULP), which is used in MM calculations.
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
