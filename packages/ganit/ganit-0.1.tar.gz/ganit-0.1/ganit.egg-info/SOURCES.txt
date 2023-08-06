@@ -1,0 +1,15 @@
+README.md
+setup.py
+ganit/__init__.py
+ganit/all_operators.py
+ganit/converter.py
+ganit/evaluator.py
+ganit/handle_invalid_scenarios.py
+ganit/parser.py
+ganit/prescan.py
+ganit/utils.py
+ganit/variables_operations.py
+ganit.egg-info/PKG-INFO
+ganit.egg-info/SOURCES.txt
+ganit.egg-info/dependency_links.txt
+ganit.egg-info/top_level.txt
