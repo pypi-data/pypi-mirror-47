@@ -1,0 +1,12 @@
+README.md
+setup.py
+aidevlog/__init__.py
+aidevlog.egg-info/PKG-INFO
+aidevlog.egg-info/SOURCES.txt
+aidevlog.egg-info/dependency_links.txt
+aidevlog.egg-info/requires.txt
+aidevlog.egg-info/top_level.txt
+aidevlog/test/__init__.py
+aidevlog/test/test_aidevlog.py
+aidevlog/utils/__init__.py
+aidevlog/utils/_show_versions.py
