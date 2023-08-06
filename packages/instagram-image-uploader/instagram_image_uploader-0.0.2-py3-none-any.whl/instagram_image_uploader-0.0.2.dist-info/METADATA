@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: instagram-image-uploader
+Version: 0.0.2
+Summary: TODO
+Home-page: https://github.com/remorses/instagram-photo-uploader
+Author: Tommaso De Rossi
+Author-email: daer.tommy@gmail.com
+License: Apache Software License 2.0
+Keywords: TODO
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: instabotnet
+
+# python-lib-template
+
+
