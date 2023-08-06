@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<epp xmlns="urn:ietf:params:xml:ns:epp-1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="urn:ietf:params:xml:ns:epp-1.0
+    epp-1.0.xsd">
+    <command>
+        <update>
+            <contact:update
+            xmlns:contact="urn:ietf:params:xml:ns:contact-1.0"
+            xsi:schemaLocation="urn:ietf:params:xml:ns:contact-1.0
+            contact-1.0.xsd">
+                <contact:id>{USER}</contact:id>
+                <contact:chg>
+                    <contact:postalInfo type="loc">
+                        <contact:name>{NAME}</contact:name>
+                        <contact:addr>
+                            <contact:street>{STREET1} {STREET2}</contact:street>
+                            <contact:city>{CITY}</contact:city>
+                            <contact:sp>{COUNTRY}</contact:sp>
+                            <contact:pc>{POST_CODE}</contact:pc>
+                            <contact:cc>{COUNTRY_CODE}</contact:cc>
+                        </contact:addr>
+                    </contact:postalInfo>
+                </contact:chg>
+            </contact:update>
+        </update>
+        <clTRID>{USER}</clTRID>
+    </command>
+</epp>
