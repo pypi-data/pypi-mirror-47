@@ -1,0 +1,10 @@
+README.md
+setup.py
+parsehub/__init__.py
+parsehub/client.py
+parsehub_python.egg-info/PKG-INFO
+parsehub_python.egg-info/SOURCES.txt
+parsehub_python.egg-info/dependency_links.txt
+parsehub_python.egg-info/not-zip-safe
+parsehub_python.egg-info/requires.txt
+parsehub_python.egg-info/top_level.txt

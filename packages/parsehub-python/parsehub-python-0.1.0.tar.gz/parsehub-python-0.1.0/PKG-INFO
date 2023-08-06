@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: parsehub-python
+Version: 0.1.0
+Summary: API wrapper for Parsehub written in Python
+Home-page: https://github.com/GearPlug/parsehub-python
+Author: Miguel Ferrer
+Author-email: ingferrermiguel@gmail.com
+License: MIT
+Description: # parsehub-python
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
