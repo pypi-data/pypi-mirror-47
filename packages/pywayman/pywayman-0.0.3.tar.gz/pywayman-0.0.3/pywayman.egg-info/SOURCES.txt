@@ -1,0 +1,6 @@
+README.md
+setup.py
+pywayman.egg-info/PKG-INFO
+pywayman.egg-info/SOURCES.txt
+pywayman.egg-info/dependency_links.txt
+pywayman.egg-info/top_level.txt

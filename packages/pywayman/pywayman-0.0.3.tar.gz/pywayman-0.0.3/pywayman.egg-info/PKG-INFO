@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pywayman
+Version: 0.0.3
+Summary: Move Windows lock-screen photos
+Home-page: https://github.com/monshap/pywayman
+Author: Monica Shapiro
+Author-email: monshapiro@gmail.com
+License: UNKNOWN
+Description: # pywayman
+        Relocate lock-screen photos on Windows
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown
