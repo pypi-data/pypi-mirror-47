@@ -1,0 +1,9 @@
+pep272_encryption/__init__.py,sha256=s5goT91aZLzeitCIE9o_lmcLfOpRU5ekxtzx7I39Fzg,12378
+pep272_encryption/_fast_xor.pyd,sha256=SfsdfpfqoFlSbLu-klhA3WeAFaUWU19snoq33vxkZUo,19456
+pep272_encryption/util.py,sha256=NaWkEUYbVQgJE7UEnWNsT37yIQ2rsqCGDh0QA04n5Es,7552
+pep272_encryption/version.py,sha256=wlJVsE9GMq_oeyZ7rMDrRC7SFMLJ7ckvWWIcO2QF5Rs,741
+pep272_encryption-0.3.dist-info/LICENSE,sha256=XDfkETUJGjmCHPswathRZiWwu0lRDOVq2Fw0e7xG3yk,6383
+pep272_encryption-0.3.dist-info/METADATA,sha256=9BUeofe3KCZ3ylcng2kf9-h9fjS06eyv_RcMFL-TYW8,2394
+pep272_encryption-0.3.dist-info/WHEEL,sha256=OFYDHMVfPWcgJskn3wppxWZj-UqSVY1Y7C_XiQa8slw,106
+pep272_encryption-0.3.dist-info/top_level.txt,sha256=6XCY09QrdUzoHfjkeAQRFGyASOQS5hrujIKs5FnhMg4,18
+pep272_encryption-0.3.dist-info/RECORD,,
