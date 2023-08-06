@@ -1,0 +1,8 @@
+README.md
+setup.py
+tan.py
+tan_up.egg-info/PKG-INFO
+tan_up.egg-info/SOURCES.txt
+tan_up.egg-info/dependency_links.txt
+tan_up.egg-info/entry_points.txt
+tan_up.egg-info/top_level.txt
