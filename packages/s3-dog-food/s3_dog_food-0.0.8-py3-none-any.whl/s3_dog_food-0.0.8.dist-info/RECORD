@@ -1,0 +1,7 @@
+services/__init__.py,sha256=3N5zMpogPWWCcaEoER7-4zDNN8iK4MKqdAFBGGv2ZCo,18
+services/s3_service.py,sha256=3RfiYrYci2rvlODJKCnfXsnfo_BQAUIn9ncEv2G4ttA,2398
+s3_dog_food-0.0.8.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+s3_dog_food-0.0.8.dist-info/METADATA,sha256=OQf-FKstgyi-EdZQkrvsN3AFGH-uJvZ9Pd6330e5VmY,641
+s3_dog_food-0.0.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+s3_dog_food-0.0.8.dist-info/top_level.txt,sha256=Xau8qVy0H_tHbGDNnS7i0vFz4WqB9lBwZHg0pGziYuM,9
+s3_dog_food-0.0.8.dist-info/RECORD,,
