@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ebd
+Version: 0.0.34
+Summary: Wrapper for LFSM-enabled systems.
+Home-page: https://github.com/
+Author: Fiely Teach
+Author-email: admin@admin.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# EBD
+
+This is a thin wrapped for LFSM-enabled systems.
+
+
