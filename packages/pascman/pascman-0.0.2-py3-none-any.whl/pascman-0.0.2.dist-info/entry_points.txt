@@ -1,0 +1,3 @@
+[console_scripts]
+pascman = pascman.command_line:main
+
