@@ -1,0 +1,2 @@
+recursive-include ipybootstrapvue/static *.*
+include jupyter-bootstrapvue.json
