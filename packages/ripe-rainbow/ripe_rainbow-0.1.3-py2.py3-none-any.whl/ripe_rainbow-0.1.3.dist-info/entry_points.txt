@@ -1,0 +1,3 @@
+[console_scripts]
+rainbow = ripe_rainbow.main:main
+
