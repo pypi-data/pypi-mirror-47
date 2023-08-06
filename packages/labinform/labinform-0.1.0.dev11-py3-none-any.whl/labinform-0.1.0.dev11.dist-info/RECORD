@@ -1,0 +1,14 @@
+labinform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labinform/datasafe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labinform/datasafe/datasafe.py,sha256=R199zioLu-4u6PAmoUpNcVPJl8hYZkEEQ0xMABtjhf8,10509
+labinform/eln/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labinform/loi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/datasafe/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/datasafe/test_datasafe.py,sha256=WLPBsD4bQXcIhkCzZf7XUkhpsxffA9Ru5mcd1Zhapko,12466
+tests/eln/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/loi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+labinform-0.1.0.dev11.dist-info/LICENSE,sha256=iRd0KzXYaNckimgaywLWoyQOW1lZrY7iQ6cB-udJrH8,1264
+labinform-0.1.0.dev11.dist-info/METADATA,sha256=B4RMxr3UXXnMrrEK9cdrJdg814-hBvmLj7EykLQD8MI,2020
+labinform-0.1.0.dev11.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+labinform-0.1.0.dev11.dist-info/top_level.txt,sha256=5_78A1alFX_L3ODj7LuB_QSZlKEuIOC30DS65z-Lf58,16
+labinform-0.1.0.dev11.dist-info/RECORD,,
