@@ -1,0 +1,7 @@
+include LICENSE
+recursive-include data *.jpg
+recursive-include data *.pgm
+recursive-include data *.ppm
+recursive-include docs *.md
+recursive-include docs *.pdf
+recursive-include examples *.ipynb
