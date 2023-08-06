@@ -1,0 +1,28 @@
+Metadata-Version: 1.0
+Name: clipboard formatter
+Version: 1.0
+Summary: Takes copied text and formats to be used in SQL list
+Home-page: https://github.com/usolek/simple-utils
+Author: Ulysses Olek
+Author-email: uskovolek@gmail.com
+License: MIT
+Description: cd here, then run
+        pip install .
+        
+        Then you can open your command line and run
+        clipform
+        
+        Follow the prompts.
+        Currently, it assumes your input to be a '/r/n' separated list and will return it quoted and ',/r/n' separated.
+        As in
+        
+        A
+        B
+        C
+        
+        returns 
+        
+        'A',
+        'B',
+        'C'
+Platform: UNKNOWN

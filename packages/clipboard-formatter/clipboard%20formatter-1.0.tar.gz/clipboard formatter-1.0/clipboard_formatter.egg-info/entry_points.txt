@@ -1,0 +1,3 @@
+[console_scripts]
+clipform = clipform.command_line:main
+

@@ -1,0 +1,11 @@
+README.rst
+setup.py
+clipboard_formatter.egg-info/PKG-INFO
+clipboard_formatter.egg-info/SOURCES.txt
+clipboard_formatter.egg-info/dependency_links.txt
+clipboard_formatter.egg-info/entry_points.txt
+clipboard_formatter.egg-info/requires.txt
+clipboard_formatter.egg-info/top_level.txt
+clipform/__init__.py
+clipform/clipform.py
+clipform/command_line.py
