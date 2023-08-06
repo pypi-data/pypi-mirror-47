@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: interpret-segmentation
+Version: 0.0.3
+Summary: Interpreing image segmentation models
+Home-page: https://github.com/pypa/sampleproject
+Author: Fabio Anderegg
+Author-email: andef4@bfh.ch
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+
+# Interpret Segmentation
+
+A one-stop shop for the interpretability of image segmentation models.
+This code was extracted from my bachelors thesis: https://github.com/andef4/thesis-code
+
+Available algorithms:
+
+- Hausdorff Distance Masks
+- RISE
+
+## Documentation
+The documentation is available on Read the Docs: https://interpret-segmentation.readthedocs.io/en/latest/.
+
+# Development
+
+To hack on interpret-segmentation, do the following:
+
+- Clone the git repository
+- Create a new virtualenv and activate it, e.g. `python3 -m venv venv/; source venv/bin/activate`
+- Inside the git repository, install the library in development mode including development dependencies: `pip install -e .[dev]`
+- Install the flake8 pre-commit hook with `pre-commit`
+
+
