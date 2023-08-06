@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: semver-git-hook
+Version: 0.0.1
+Summary: Enforce semver management in git repositories
+Home-page: http://github.com/eregnier/semver-git-hook
+Author: Eric Régnier
+Author-email: utopman@gmail.com
+License: MIT
+Keywords: utility,productivity,tool,versionning,git,semver
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: Jython
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: pick
+Requires-Dist: termcolor
+
+# Semver Git Hook
+
+## Install
+
+pip install --user  semver-git-hook
+
+then edit the `.git/hooks/pre-commit file`
+
+```bash
+exec < /dev/tty # Enable keyboard input to work in pre-commit hook command context
+semver-git-hook
+```
+
+Make it executable
+
+```bash
+chmod +x .git/hooks/pre-commit
+```
+
+
