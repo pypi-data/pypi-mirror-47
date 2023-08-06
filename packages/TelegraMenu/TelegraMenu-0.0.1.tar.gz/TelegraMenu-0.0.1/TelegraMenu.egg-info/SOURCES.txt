@@ -1,0 +1,12 @@
+README.md
+setup.py
+TelegraMenu.egg-info/PKG-INFO
+TelegraMenu.egg-info/SOURCES.txt
+TelegraMenu.egg-info/dependency_links.txt
+TelegraMenu.egg-info/not-zip-safe
+TelegraMenu.egg-info/top_level.txt
+telegramenu/__init__.py
+telegramenu/callback_actions.py
+telegramenu/callback_encoder.py
+telegramenu/callback_handler.py
+telegramenu/client.py
