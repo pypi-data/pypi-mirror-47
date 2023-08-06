@@ -1,0 +1,14 @@
+caper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caper/caper.py,sha256=R4kUj231E50hiryB8zdQWaif0ueaShTF4qXD2MY9kt0,43961
+caper/caper_args.py,sha256=s7HrsAbXCXxivWXzRv39SLRshtbjg0Pi60odkHVREBk,22495
+caper/caper_backend.py,sha256=e6Q6FRRLT4y0kXAOw1_B-hw1jBcn3h64-gB5JXl7K04,18350
+caper/caper_uri.py,sha256=J6ygU3cK1JmIgkSSymqhI2-DJ025lVQlBNsY83jHyHg,28111
+caper/cromwell_rest_api.py,sha256=y8dOFuEfhUQkbxDgf6YE5ecn7f5-AHTr8Z79s68xQ4c,10804
+caper-0.2.6.data/scripts/caper,sha256=Af2MCmZiJMxXEDJzvDFBodu4D-f9McY_FX_Lvi1im_w,231
+caper-0.2.6.data/scripts/run_mysql_server_docker.sh,sha256=NGhXm6tIF6zQXOECC6S0eAVqzLfjWJiev3TzUnZ1Xiw,1987
+caper-0.2.6.data/scripts/run_mysql_server_singularity.sh,sha256=w4W6a_hQ94ZEvGbLJmrVSgF-9KJURq0npOBg2MLghiw,2344
+caper-0.2.6.dist-info/LICENSE,sha256=3ajhvmiBrjBhqYcpaP24W5WUJhPKpab3GL8YMVzDuFM,1067
+caper-0.2.6.dist-info/METADATA,sha256=O4Y0PKR7GDtxYBWCF_I95OXQRwwQyxmZxUVgoYft2IM,520
+caper-0.2.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+caper-0.2.6.dist-info/top_level.txt,sha256=5VPPOFrFCCJ6JhROaL7HMKrjJP1u8E0yz4wa8q2VuVM,6
+caper-0.2.6.dist-info/RECORD,,
