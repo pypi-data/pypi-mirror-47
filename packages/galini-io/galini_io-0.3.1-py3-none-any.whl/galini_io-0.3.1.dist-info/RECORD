@@ -1,0 +1,16 @@
+galini_io/__init__.py,sha256=K8VV8uvVn1WKSbKlOkZmWaWh0HZJrEdPDCUoV18-lTA,783
+galini_io/__version__.py,sha256=mw9DHwhPEzwakl2QYKdh2Hv-VNFGheA3un3npjTZEVc,790
+galini_io/logging.py,sha256=eqpDtAHVmJuqzSZoNwskvfzSW8e4S-SudSy7VLE2flk,8888
+galini_io/message.py,sha256=psKVe7d__qIUHGnVKPZn0e80MWENC6Ds8Bvc4POBQ2A,3126
+galini_io/message_pb2.py,sha256=CFghkYuJ66x12zZM0VoMGxD8z9fLqGFE2huwUQk1J9w,21387
+galini_io/reader.py,sha256=ST9y-89exGfFab3IMBEoClXLbBGvYcq38PxfEaLmrCY,2452
+galini_io/writer.py,sha256=--QiaW-6b7fPmQCz2sXrp1eGoQNrZxaIAPoREVM6BVA,994
+galini_io/scripts/__init__.py,sha256=ciexSTWhJXhPIDp9oTSCjWqfAw95gVUxpiRJKIWs_3s,640
+galini_io/scripts/fake_solver.py,sha256=ByAr9qdoNh32UPLYDqEw56_5vLzglgKGvmdoUvDvLog,2471
+galini_io/scripts/reader.py,sha256=9sTZ3QjA1BLocBneTQF_S5Jt-bbGm3OxJaYwbhgIIgY,953
+galini_io/scripts/writer.py,sha256=6I-3JWQca_QK7JgiH-HELOVxXPU65au_qAwEc92hJsU,1136
+galini_io-0.3.1.dist-info/METADATA,sha256=-flM2Chju8_4Flzwq-K0e04DvD8Tglc40efMb3wb8gM,1071
+galini_io-0.3.1.dist-info/RECORD,,
+galini_io-0.3.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+galini_io-0.3.1.dist-info/entry_points.txt,sha256=4C2H6Fnp0XEp9rVgtXf776cD2wbCPNImfmJsw6kPm1s,176
+galini_io-0.3.1.dist-info/top_level.txt,sha256=z2Z-SeBnak2RfFD3Le0bMI2aMq7MfN1xs7ODLAXC9Y0,10
