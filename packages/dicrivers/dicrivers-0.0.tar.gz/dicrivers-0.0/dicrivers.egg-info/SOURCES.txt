@@ -1,0 +1,9 @@
+README.md
+setup.py
+dicrivers/__init__.py
+dicrivers/dicrivers.py
+dicrivers/geo_utils.py
+dicrivers.egg-info/PKG-INFO
+dicrivers.egg-info/SOURCES.txt
+dicrivers.egg-info/dependency_links.txt
+dicrivers.egg-info/top_level.txt

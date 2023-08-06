@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dicrivers
+Version: 0.0
+Summary: A package to create bgc river inputs for ocean models
+Home-page: https://github.com/raphaeldussin/DICRIVERS
+Author: Raphael Dussin
+Author-email: raphael.dussin@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Keywords: ocean forcing
+Platform: UNKNOWN
