@@ -1,0 +1,64 @@
+Metadata-Version: 2.0
+Name: rewardify
+Version: 0.1.0
+Summary: Base frame reward system
+Home-page: https://github.com/the16thpythonist/rewardify-base.git
+Author: Jonas Teufel
+Author-email: jonseb1998@gmail.com
+License: BSD license
+Keywords: rewardify
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+Requires-Dist: peewee (>=3.9)
+Requires-Dist: cffi (>=1.12argon2>=0.1.0)
+Requires-Dist: argon2-cffi (>=19.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+==============
+rewardify-base
+==============
+
+Base frame reward system
+
+
+* Free software: BSD license
+* Documentation: https://rewardify-base.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+
+=======
+History
+=======
+
+0.0.0.0 (2019-06-08)
+--------------------
+
+* First release on PyPI.
+
+
