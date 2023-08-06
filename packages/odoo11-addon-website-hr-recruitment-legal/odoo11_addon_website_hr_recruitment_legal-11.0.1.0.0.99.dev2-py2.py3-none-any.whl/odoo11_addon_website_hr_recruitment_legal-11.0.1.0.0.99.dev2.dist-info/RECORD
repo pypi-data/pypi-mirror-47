@@ -1,0 +1,14 @@
+odoo/addons/website_hr_recruitment_legal/README.rst,sha256=Kbq-1xgiW5wP15J1gntaZE9gy7GFmgDw7YvEp9rQTuI,2879
+odoo/addons/website_hr_recruitment_legal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/website_hr_recruitment_legal/__manifest__.py,sha256=3mx60ObRO9za7ZFnBbBNll05LHHooF0dVrvrkOjL0b0,666
+odoo/addons/website_hr_recruitment_legal/i18n/website_hr_recruitment_legal.pot,sha256=N54JHX-XC2BQOfdHJah2y4SvlTwG7A9vY8R52uQgoMU,344
+odoo/addons/website_hr_recruitment_legal/readme/CONTRIBUTORS.rst,sha256=UQcnP2tHbvp7I2GRMlqHFuEoo_g1s85TYC1Hg9WFhjs,72
+odoo/addons/website_hr_recruitment_legal/readme/DESCRIPTION.rst,sha256=T4VpzvVQCIan7hJhEJifpzMpIesVCXn7sYsYaxxc094,72
+odoo/addons/website_hr_recruitment_legal/readme/USAGE.rst,sha256=ULfkNOcBVMCmQAs_QFZwgwY4-LQ7kp738fQimkk7KeM,74
+odoo/addons/website_hr_recruitment_legal/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/website_hr_recruitment_legal/static/description/index.html,sha256=YgUO8zgo54R04HXPP2X9Z0l83zxWTv67ykvVxvjp5EE,12221
+odoo/addons/website_hr_recruitment_legal/templates/apply.xml,sha256=wEhwPNnge5rHrnMEStDge1Cgtg5fqNI7q1Uyz9r76hE,1179
+odoo11_addon_website_hr_recruitment_legal-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=IGaC0tWL20yn4pVoiIHjoDdEJIMSvaiO8sBu70ZGaYw,3555
+odoo11_addon_website_hr_recruitment_legal-11.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo11_addon_website_hr_recruitment_legal-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+odoo11_addon_website_hr_recruitment_legal-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
