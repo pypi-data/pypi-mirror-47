@@ -1,0 +1,3 @@
+[console_scripts]
+transencoding = transencoding:main
+
