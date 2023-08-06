@@ -1,0 +1,229 @@
+---
+- name: source
+  type: t_trim
+- name: name
+- name: id_number
+- name: family_drawn_by
+- name: number_of_members
+  type: s_short
+- name: # last_internal_id
+  size: 2
+- name: disease_loci
+  for: 7
+  structure:
+    - name: name
+    - name: colour
+      type: t_colour
+    - name:
+    - name: pattern
+      type: t_pattern
+- name: comments
+  type: t_comment
+- name: creation_date
+  type: t_date
+- name: last_updated
+  type: t_date
+- name:
+  size: 5
+- name: quantitative_value_loci
+  for: 7
+  structure:
+    - name: name
+- name: selected_id
+  type: s_short
+- name:
+  size: 7
+- name: markers
+  while:
+    operands:
+      - marker_delimiter
+      - separator
+    operator: ne
+    term: marker_term
+  structure:
+    - name: separator
+      type: u_char
+    - name:
+      size: 439
+- name:
+  size: 9
+- name: members
+  for: number_of_members
+  structure:
+    - name: surname
+    - name: other_surnames
+    - name: forenames
+    - name: known_as
+    - name: maiden_name
+    - name: origins # Ethnicity, origins.
+      for: 2
+      structure:
+        - name: self
+        - name: m_g_mother
+        - name: m_g_father
+        - name: p_g_mother
+        - name: p_g_father
+    - name: address
+      type: t_comment
+    - name: additional_information
+      type: t_comment
+    - name: date_of_birth
+      type: t_date
+    - name: date_of_death
+      type: t_date
+    - name: sex
+      type: t_sex
+    - name: id
+      type: s_short
+    - name: pedigree_number
+      type: s_short
+    - name: mother_id
+      type: s_short
+    - name: father_id
+      type: s_short
+    - name: internal_id # Remove?
+      type: s_short
+    - name: number_of_individuals
+      type: s_short
+    - name: age_gestation
+    - name: individual_id
+    - name: number_of_spouses
+      type: s_short
+    - name: spouses
+      for: number_of_spouses
+      structure:
+        - name: id
+          type: s_short
+        - name: flags
+          type: t_relationship
+        - name: name
+    - name: twin_id
+      type: s_short
+    - name: comment
+      type: t_comment
+    - name: adoption_type
+      type: t_adoption_type
+    - name: genetic_symbols
+      type: t_genetic_symbol
+    - name:
+    - name: flags
+      type: t_individual
+    - name: proband
+      type: t_proband
+    - name: x_coordinate
+      type: s_short
+    - name: y_coordinate
+      type: s_short
+    - name: annotation_1
+      type: t_annotation_1
+    - name: multiple_pregnancies
+      type: t_multiple_pregnancies
+    - name:
+    - name: crossover
+      for: 2
+      structure:
+        - name:
+          size: 2
+        - name: allele
+          while:
+            operands:
+              - crossover_delimiter
+              - separator
+            operator: ne
+            term: crossover_term
+          structure:
+            - name: separator
+              type: u_char
+            - name:
+              size: 11
+        - name:
+          size: 9
+    - name:
+      size: 12
+    - name: unknown_list
+      for: 7
+      structure:
+        - name:
+          size: 24
+    - name: annotation_2
+      type: t_annotation_2
+    - name: additional_symbols
+      type: u_char
+    # NOTE: DNA and BLOOD fields are switched in Cyrillic. i.e., if DNA is
+    # selected, the BLOOD_LOCATION field is stored and if BLOOD is
+    # selected, the DNA_LOCATION field is stored. This is probably a bug.
+    - name: dna_location
+      if:
+        operands:
+          - dna
+    - name: blood_location
+      if:
+        operands:
+          - blood
+    - name: cells_location
+      if:
+        operands:
+          - cells
+    - name: sample
+      type: t_sample
+    - name: sample_number
+    - name: # colour
+      size: 3
+    - name:
+      size: 17
+    - name: # pattern
+      size: 2
+- name: number_of_unknown_data
+  type: s_short
+- name:
+- name: unknown_data
+  for: number_of_unknown_data
+  structure:
+    - name:
+      size: 12
+- name: number_of_custom_descriptions
+  type: s_short
+- name: genetic_symbols
+  for: 19
+  structure:
+    - name: value
+- name: additional_symbols
+  for: 4
+  structure:
+    - name: value
+- name: custom_symbols
+  for: number_of_custom_descriptions
+  structure:
+    - name: name
+    - name: value
+- name:
+  size: 14
+- name: zoom
+  type: s_short
+- name: unknown_1 # Zoom.
+  type: raw
+  size: 4
+- name: unknown_2 # Zoom.
+  type: raw
+  size: 4
+- name:
+  size: 20
+- name: number_of_text_fields
+  type: s_short
+# TODO: x and y coordinates have more digits.
+- name: text
+  for: number_of_text_fields
+  structure:
+    - name: comment
+    - name:
+      size: 54
+    - name: x_coordinate
+      type: u_char
+    - name:
+      size: 3
+    - name: y_coordinate
+      type: u_char
+    - name:
+      size: 7
+- name: eof_marker
+  type: t_trim
