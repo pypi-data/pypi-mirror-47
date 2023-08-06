@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+
+from ponstar import ind as i
+from ponstar import device_info as d
+import click
+
+
+@click.group()
+def main():
+    """ponctl - Command-line utility for managing PON whiteboxes"""
+    pass
+
+
+@main.command()
+@click.argument('olt')
+@click.option('--broker', '-b', help='Kafka broker in the form of HOST:PORT')
+def ind(olt, broker):
+    """Get streaming indications from OLT and, optionally,
+        send it to Kafka BROKER. OLT and BROKER are in the
+        form of HOST:PORT."""
+    print "olt ip: ", olt
+    i.Indications(olt, broker).start()
+
+
+@main.command()
+@click.argument('olt')
+@click.option('--broker', '-b', help='Kafka broker in the form of HOST:PORT')
+def devinfo(olt, broker):
+    """Get device info from OLT and, optionally,
+        send them to Kafka BROKER. OLT and BROKER are in the
+        form of HOST:PORT."""
+    d.DeviceInfo(olt).start()
+
+
+if __name__ == "__main__":
+    main()
