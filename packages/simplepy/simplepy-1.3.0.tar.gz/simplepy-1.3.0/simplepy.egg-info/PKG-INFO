@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: simplepy
+Version: 1.3.0
+Summary: Python General Toolkit Collection
+Home-page: https://github.com/fovegage/python-common-utils
+Author: fovegage
+Author-email: fovegage@gmail.com
+License: UNKNOWN
+Description: ## simplepy
+        
+        **Python Common tools collection**
+        
+        
+        ### String generation
+        `from simplepy import string`
+        
+        - Signature generation
+        
+        - Random string generation
+        ```
+        String(8) ---> 0xZ2U}`2
+        ```
+        
+        ### File formatting
+        
+        - Csv pretreatment
+        
+        ### Format conversion
+        
+        - yaml
+        - xml to dict
+        - dict to xml
+        
+        ### Date processing
+        
+        - date
+        - datetime
+        
+        ### History
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
