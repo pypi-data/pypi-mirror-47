@@ -1,0 +1,7 @@
+README.md
+setup.py
+aniScrape/__init__.py
+aniscrape.egg-info/PKG-INFO
+aniscrape.egg-info/SOURCES.txt
+aniscrape.egg-info/dependency_links.txt
+aniscrape.egg-info/top_level.txt
