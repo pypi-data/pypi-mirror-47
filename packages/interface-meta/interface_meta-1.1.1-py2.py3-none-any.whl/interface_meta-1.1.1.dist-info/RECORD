@@ -1,0 +1,15 @@
+interface_meta/__init__.py,sha256=di0bHCdqWVDQBRMw0O2xLQxWf9FyBBomwrWuYFPP5VQ,189
+interface_meta/_version.py,sha256=7bT6sW06XqOCTf7l6b0QNZyik43gSBWlZ8JckimQygM,161
+interface_meta/decorators.py,sha256=E8Ry3IGPNmwkTTAB61jHFXmF5vTIrhBALq_ZNfSjqd8,3101
+interface_meta/interface.py,sha256=RLI8R-hjb9pEYIR6p2Ft3Tr_j2qArLKieuULSqf4NXg,3092
+interface_meta/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+interface_meta/utils/conformance.py,sha256=7AKyvuC_OLSO6FPxTxeAvejwrND0yn0Flle7S7_G28g,6572
+interface_meta/utils/docs.py,sha256=coJqO8Dc2b3k7cX0loViqye1pejYks4ugkguoZi6g74,5223
+interface_meta/utils/errors.py,sha256=Kvd4swY8BFXacQgZyEbB8uVFuIB-lyCGVBbRbABXn74,56
+interface_meta/utils/inspection.py,sha256=0GJpo8EGeTaAdZRUmP68rsvZPR0T3ohLSz2sINcKH-8,5366
+interface_meta/utils/reporting.py,sha256=CiT2Susg7tYGXZEL0GdSOkkBgTtJp8KmQxPGVtoDY4Y,503
+interface_meta-1.1.1.dist-info/LICENSE,sha256=hIl_ogmhhZEoJ8LPx7Zs-dFUhe8EHe_yIIIKpeR134k,1072
+interface_meta-1.1.1.dist-info/METADATA,sha256=FHy8hlFQG9FNLVNgCbCRJzXKCnyji2PsAbHh4gBqje0,6007
+interface_meta-1.1.1.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+interface_meta-1.1.1.dist-info/top_level.txt,sha256=l-B-6hU1CBjBm0BXRs3V_HaYZr9FilowqiQJ7X2c5q8,15
+interface_meta-1.1.1.dist-info/RECORD,,
