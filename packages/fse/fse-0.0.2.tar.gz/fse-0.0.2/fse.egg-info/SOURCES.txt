@@ -1,0 +1,17 @@
+README.md
+setup.py
+./fse/exp/sif_variants_cy.pyx
+./fse/models/sentence2vec_inner.pyx
+fse/__init__.py
+fse/benchmark_speed.py
+fse/compute_sif.py
+fse.egg-info/PKG-INFO
+fse.egg-info/SOURCES.txt
+fse.egg-info/dependency_links.txt
+fse.egg-info/not-zip-safe
+fse.egg-info/requires.txt
+fse.egg-info/top_level.txt
+fse/exp/__init__.py
+fse/exp/sif_variants.py
+fse/models/__init__.py
+fse/models/sentence2vec.py
