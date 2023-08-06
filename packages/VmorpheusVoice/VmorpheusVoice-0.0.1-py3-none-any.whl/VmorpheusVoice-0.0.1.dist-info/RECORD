@@ -1,0 +1,15 @@
+VmorpheusVoice/__init__.py,sha256=llvqHdnpAoRc0Fxq-iKvtpc_NazdcNfYkueCnBf5rAs,71
+VmorpheusVoice/__main__.py,sha256=VCG39RFSLUe8khnSFYlyGZtO1U0VMnVf6PPQiTUN6J0,60
+VmorpheusVoice/main.py,sha256=y3x20B1KDxcsc7JahDnSJZnw3oJpDGBzrdTGDZ1dWM4,139
+VmorpheusVoice/core/audio/Microphone.py,sha256=ImH2Zifwyh-eu1WJR-gFeiVqsPf_j6hn_FFAKVtFYvk,2717
+VmorpheusVoice/core/audio/__init__.py,sha256=LmOXRNmSGlnBNQ_p00Lp33ps45DJuriMwRDEOTIaXOU,34
+VmorpheusVoice/tools/Console.py,sha256=aeL3SJs1t5qHLs8HcgSDs0sa9P34R2G_aNIPAnYTtHE,1734
+VmorpheusVoice/tools/Listener_keys.py,sha256=bZ_HH_ew1JaPGcOLpKE5bOjYaktNtb5gdDwJNQVeUU4,557
+VmorpheusVoice/tools/Name_files.py,sha256=QPy5XBGhtkJh5yM_9jR8GdRNoKWFfu4R-h__j6s2gFs,271
+VmorpheusVoice/tools/Profile.py,sha256=C2sgMt6JTbZcMfdEQ3pUoO2yqV8tFjAewEAHm1Alnws,638
+VmorpheusVoice/tools/__init__.py,sha256=Hk_EQPGoZ4_wwwMkAFdhMk-2fdvTQaRywBCrTmF79uw,133
+VmorpheusVoice-0.0.1.dist-info/METADATA,sha256=C4ylbb1h2imv3HC3FovT7DmxunNdhiJ1xrp_gH7TpdE,504
+VmorpheusVoice-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+VmorpheusVoice-0.0.1.dist-info/entry_points.txt,sha256=vsbfSvGLbcM9mQnMRazlwoan17haEwMdpK2Wl70_Yig,56
+VmorpheusVoice-0.0.1.dist-info/top_level.txt,sha256=002qSSmlc1aYGxU1rOmcPQ179Cfi4D2GHVa6kzG8Oac,15
+VmorpheusVoice-0.0.1.dist-info/RECORD,,

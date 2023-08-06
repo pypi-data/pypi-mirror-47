@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: VmorpheusVoice
+Version: 0.0.1
+Summary: Convertidor de voz con basado en machine learning
+Home-page: https://github.com/ValdrST/VMorpheus_voice
+Author: Valdr Stiglitz
+Author-email: valdr.stiglitz@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: setuptools (==41.0.1)
+Requires-Dist: pynput (==1.4.2)
+Requires-Dist: pyaudio (==0.2.11)
+Requires-Dist: typing (==3.6.6)
+
+Convierto la voz si tu metes muestras pregrabadas
+
+
