@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: py2annotate
+Version: 1.0.0
+Summary: An extension to Sphinx `autodoc` to augment sphinx documentation with type annotations, when using Python 2 style type annotations.
+Home-page: https://github.com/patrick-kidger/py2annotate
+Author: Patrick Kidger
+Author-email: contact@kidger.site
+Maintainer: Patrick Kidger
+Maintainer-email: contact@kidger.site
+License: Apache-2.0
+Keywords: signature
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Sphinx
+Classifier: Framework :: Sphinx :: Extension
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Documentation
+Classifier: Topic :: Documentation :: Sphinx
+Classifier: Topic :: Internet :: WWW/HTTP :: Site Management
+Classifier: Topic :: Software Development :: Documentation
+Requires-Python: >=3.0
+Requires-Dist: sphinx
+Requires-Dist: mypy
+
+***********
+py2annotate
+***********
+An extension to Sphinx `autodoc` to augment sphinx documentation with type annotations, when using Python 2 style type annotations.
+
+The Problem
+===========
+Python 2 doesn't support type annotations. Thus writing Python 2 / Python 3 agnostic code with type annotations requires `putting the type annotations in comments <https://mypy.readthedocs.io/en/latest/python2.html>`__:
+
+.. code-block:: python
+
+    def add(x, y):
+        # type: (int, int) -> int
+        """Adds two numbers."""
+        return x + y
+
+But now when documentation is generated with `sphinx <http://www.sphinx-doc.org/en/master/>`__, the documentation doesn't include type annotations:
+
+.. image:: https://github.com/patrick-kidger/py2annotate/blob/master/imgs/without-annotations.png
+
+
+*Example from the* |signatory|_ *project.*
+
+.. _signatory: https://github.com/patrick-kidger/signatory
+.. |signatory| replace:: *Signatory*
+
+The Solution
+============
+
+This extension remedies things so that the Sphinx documentation now looks like:
+
+.. image:: https://github.com/patrick-kidger/py2annotate/blob/master/imgs/with-annotations.png
+
+.. role:: python(code)
+    :language: python
+
+(which is the same as what you'd get using Python 3 style type annotations e.g. :python:`def add(x: int, y: int) -> int`)
+
+Installation
+============
+Via pip:
+
+.. code-block:: bash
+
+    pip install py2annotate
+
+It's also just a single file, so copy-paste the code if you want.
+
+Usage
+=====
+Just add py2annotate to the list of extensions in `conf.py`:
+
+.. code-block:: python
+
+    # conf.py
+    ...
+    extensions = ['sphinx.ext.autodoc', 'py2annotate']
+    ...
+
+(It shouldn't actually matter whether it comes before or after `autodoc`.)
+
+Note that Sphinx itself must be run using Python 3, not Python 2. This is because `py2annotate` uses the Python 3 style
+type annotations internally in order to determine the correct annotations.
+
+Known Issues
+============
+None so far! File a report if you run into anything.
+
