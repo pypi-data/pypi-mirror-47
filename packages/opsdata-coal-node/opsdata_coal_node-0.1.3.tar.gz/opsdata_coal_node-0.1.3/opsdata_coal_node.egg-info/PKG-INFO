@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: opsdata-coal-node
+Version: 0.1.3
+Summary: A dataset collected over an operating longwall coalmine using a dense network of geophones
+Home-page: https://github.com/d-chambers/coal_node
+Author: Derrick Chambers
+Author-email: djachambeador@gmail.com
+License: BSD
+Description: # Obsplus Dataset: coal_node
+        
+        A dataset collected over an operating longwall coalmine using a dense network of geophones.
+        Only 5 events are provided for testing purposes.
+        
+        # Installation
+        
+        If you want to use this dataset it requires the [obsplus package](https://github.com/niosh-mining/obsplus).
+        It can be installed from pypi using the following commands:
+        
+        ```bash
+        pip install opsdata_coal_node
+        ```
+        
+        Then the dataset can be loaded using the obsplus.DataSet object like so:
+        ```python
+        import obsplus
+        
+        ds = obsplus.DataSet('coal_node')
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
