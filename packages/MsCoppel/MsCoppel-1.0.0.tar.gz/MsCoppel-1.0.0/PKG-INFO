@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: MsCoppel
+Version: 1.0.0
+Summary: Libreria para microservicios basados en mensajes desde kafka
+Home-page: UNKNOWN
+Author: Enoi Barrera Guzman
+Author-email: zafiro3000x@gmail.com
+License: UNKNOWN
+Description: # MsCoppel
+        
+        Paquete para implmentar microservicios basados en mensajes, utilizando la cola de mensaje de kafka
+        
+        ```python
+        
+        from MsCoppel import microservices, Manager, Options
+        
+        @Manager.Define(Options(
+            App: ,
+            Debug: ,
+            Kafka: ,
+            Name: ,
+            Public: ,
+            Type: ,
+            Version: 
+        ))
+        class Demo(microservices):
+        
+            @MsManager.Errors
+            def misErrores(self):
+                return {'-12', 'Mensaje'}
+        
+            @MsManager.List
+            def listar():
+                pass
+        
+            @MsManager.Get
+            def info():
+                pass
+            
+            @MsManager.Create
+            def nuevo():
+                pass
+            
+            @MsManager.Update
+            def actualizar():
+                pass
+        
+            @MsManager.Delete
+            def eliminar():
+                pass
+            
+            @MsManager.Listener
+            def general():
+                pass
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
