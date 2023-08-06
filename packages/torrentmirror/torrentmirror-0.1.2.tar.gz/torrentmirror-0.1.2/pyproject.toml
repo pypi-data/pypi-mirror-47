@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "torrentmirror"
+version = "0.1.2"
+description = ""
+authors = ["David Francos <opensource@davidfrancos.net>"]
+license = "GPL-3.0+"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+robobrowser = "^0.5.3"
+docopt = "^0.6.2"
+tabulate = "^0.8.3"
+delver = "^0.1.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+pytest-cov = "^2.7"
+pylint = "^2.3"
+flake8 = "^3.7"
+flake8_docstrings = "^1.3"
+
+[tool.poetry.scripts]
+torrentmirror = "torrentmirror:main"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
