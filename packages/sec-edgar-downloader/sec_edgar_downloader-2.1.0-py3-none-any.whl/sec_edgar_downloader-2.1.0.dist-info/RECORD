@@ -1,0 +1,9 @@
+sec_edgar_downloader/Downloader.py,sha256=V0UnROIkdm9-P3EKSBAa_gZeh6-0g4X1V_pEKC2pLzo,7589
+sec_edgar_downloader/__init__.py,sha256=cecM91YI-ne8Y_gKBDJ0g6Sgfx1_8cbnelPkLkKtAoU,95
+sec_edgar_downloader/_utils.py,sha256=uoepe79sFB0Gw-0ETcdeSqr-fHXJUPocMRWyY2aMjB0,2339
+sec_edgar_downloader/_version.py,sha256=Xybt2skBZamGMNlLuOX1IG-h4uIxqUDGAO8MIGWrJac,22
+sec_edgar_downloader-2.1.0.dist-info/LICENSE,sha256=B-vyUdKqpN0T2ENIAZUac_WcEUphefv9fvV53fYRgWQ,1070
+sec_edgar_downloader-2.1.0.dist-info/METADATA,sha256=wmDvySquuylbH72Tle6AmYMdcEgO-_gIQt3kP28YVrQ,4847
+sec_edgar_downloader-2.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sec_edgar_downloader-2.1.0.dist-info/top_level.txt,sha256=2mhpWwxqejig4MPayWbnLQYOoSk5Gbk5b2nXUR2QijQ,21
+sec_edgar_downloader-2.1.0.dist-info/RECORD,,
