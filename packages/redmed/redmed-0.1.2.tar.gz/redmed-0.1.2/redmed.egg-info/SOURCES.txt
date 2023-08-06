@@ -1,0 +1,11 @@
+README.md
+setup.py
+redmed/__init__.py
+redmed/redmedTagger.py
+redmed/textHandler.py
+redmed.egg-info/PKG-INFO
+redmed.egg-info/SOURCES.txt
+redmed.egg-info/dependency_links.txt
+redmed.egg-info/top_level.txt
+redmed/data/redmed_drug_lexicon.tsv
+redmed/data/redmed_phrases.txt
