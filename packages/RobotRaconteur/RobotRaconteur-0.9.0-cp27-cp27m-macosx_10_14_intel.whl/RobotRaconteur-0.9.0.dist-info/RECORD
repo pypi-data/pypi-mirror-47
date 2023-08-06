@@ -1,0 +1,13 @@
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/Client.py,sha256=XJtCVZrWzn8eKYCKji7lUSjwZTKxe_yGuvqZDyps5NY,921
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/NamedClient.py,sha256=qBb8O0JHDo24fLqNf4PG1cSbGpkVWl6ZuufhPsgAM2I,1034
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/RobotRaconteurPython.py,sha256=hpsmFPPKTL1zCTZPpseEOkR6BcqcTa6_YIUdDB-MC-M,329050
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/RobotRaconteurPythonDataTypes.py,sha256=Ip7i6hPHJKBMgnEFlcaAJ0_8bMr9fga9DkG8_Jg-UcM,3385
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/RobotRaconteurPythonError.py,sha256=BLwn3G_r6iTfxYj2JgA42BTiT6gijTDb2Yht6MDNStc,18459
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/RobotRaconteurPythonUtil.py,sha256=gAvJZvTFDOWIEeWkJTfEfSqdQbsenDS5ejp3U4PFpPs,106575
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/_RobotRaconteurPython.so,sha256=GjH2BY7saPcPEXXtDY8VDGwII1AkoqMPwuWDufXY3wI,19503544
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/__init__.py,sha256=PM8lY_hSP5zV7Mu8DoUwnLaF-qsThbyIZm9c9EkoVjo,383
+RobotRaconteur-0.9.0.data/purelib/RobotRaconteur/classproperty.py,sha256=tWOiwgS9tffr9Pq6TQOm7QlEdZj8g3RU2l91heZUHhk,780
+RobotRaconteur-0.9.0.dist-info/METADATA,sha256=5WvlMomTYpSe4CmPHnqJ0L-WUb-_hoVgaodkAXthu3M,404
+RobotRaconteur-0.9.0.dist-info/WHEEL,sha256=uDD0lOIb49-8a1JmgDIYPk0fe3hYgdLH-_6C8Sem2o0,110
+RobotRaconteur-0.9.0.dist-info/top_level.txt,sha256=yM8iiWGm2vRxDNYmyfdWTPVGIegIkrqXKkc-XzppezA,15
+RobotRaconteur-0.9.0.dist-info/RECORD,,
