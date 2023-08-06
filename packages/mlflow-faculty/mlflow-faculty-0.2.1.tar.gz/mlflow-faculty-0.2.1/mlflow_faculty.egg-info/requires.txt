@@ -1,0 +1,4 @@
+mlflow>=1.0.0
+faculty>=0.23.2
+six
+pytz
