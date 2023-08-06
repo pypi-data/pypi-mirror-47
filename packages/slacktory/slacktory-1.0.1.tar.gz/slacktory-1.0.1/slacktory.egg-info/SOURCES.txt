@@ -1,0 +1,8 @@
+README.md
+setup.py
+slacktory/__init__.py
+slacktory.egg-info/PKG-INFO
+slacktory.egg-info/SOURCES.txt
+slacktory.egg-info/dependency_links.txt
+slacktory.egg-info/requires.txt
+slacktory.egg-info/top_level.txt
