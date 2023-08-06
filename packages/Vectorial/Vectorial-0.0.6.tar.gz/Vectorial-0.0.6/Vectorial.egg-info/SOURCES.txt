@@ -1,0 +1,7 @@
+README.md
+Vectorial.py
+setup.py
+Vectorial.egg-info/PKG-INFO
+Vectorial.egg-info/SOURCES.txt
+Vectorial.egg-info/dependency_links.txt
+Vectorial.egg-info/top_level.txt
