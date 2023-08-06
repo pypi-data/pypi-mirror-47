@@ -1,0 +1,14 @@
+fse/__init__.py,sha256=PM60RUlYdbct3wQezAZjPubmVhX4IDigdbMb-fMO6wo,291
+fse/benchmark_speed.py,sha256=u_0OEop646AE-jVSk5FjRCBAyL_SP4zPBmJh9NF_-iU,4930
+fse/compute_sif.py,sha256=bbRq0tPH-0hnVIpEMO0hkY65OXUCCP_LufoJzbbKvOo,3112
+fse/exp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fse/exp/sif_variants.py,sha256=X0NWsix5SRCt1diTXRMkXPwaTFplEh4P4SiX1IL8p74,4024
+fse/exp/sif_variants_cy.cpython-36m-darwin.so,sha256=Bgd-UU0xwHDAKxpYnX3aWGJg_TUEDMiwUL7aziaTYyY,200992
+fse/models/__init__.py,sha256=FfoMXrC5wyjt2B3-6wS9xA2hc_HsWm4twkjEeU4a3nQ,38
+fse/models/sentence2vec.py,sha256=hA8L7HuZgUC_rmMubPSckeczBuE-GpJaanUDgodcQJY,13266
+fse/models/sentence2vec_inner.cpython-36m-darwin.so,sha256=_tR3MpG_vvWw-SBV41ICYty_xtBJPBCczzGViX5tv2c,52928
+fse-0.0.1.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+fse-0.0.1.dist-info/METADATA,sha256=WeDADejBw67Luwe1pxh9Fbr6ipFrGKd2CFQN4uNBW-s,504
+fse-0.0.1.dist-info/WHEEL,sha256=09Y_SZ9JdvNE6ud4_JD4dEHcYGjZ1D6z-OOOrK32dFw,110
+fse-0.0.1.dist-info/top_level.txt,sha256=NGGGelVfzcpLFkHI9ew8qcnrxNEHrja0L5TKiFxlwE4,4
+fse-0.0.1.dist-info/RECORD,,
