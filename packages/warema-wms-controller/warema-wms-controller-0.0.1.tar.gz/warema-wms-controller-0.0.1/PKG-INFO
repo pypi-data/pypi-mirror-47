@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: warema-wms-controller
+Version: 0.0.1
+Summary: A library to control a Warema WMS WebControl web server.
+Home-page: https://github.com/cornim/wms_webcontrol.git
+Author: Dr. Cornelius Mund
+Author-email: cornelius.mund@gmail.com
+License: UNKNOWN
+Description: #Warema WMS Webcontrol Controller
+        
+        This library can connect to a Warema WMS WebControl web server to send control commands.
+        
+        Currently only vertical blinds are supported. Feel free to extend support to other devices.  
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
