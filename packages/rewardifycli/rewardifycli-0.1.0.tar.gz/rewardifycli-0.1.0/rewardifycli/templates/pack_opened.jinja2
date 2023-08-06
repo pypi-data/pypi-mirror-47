@@ -1,0 +1,35 @@
+
+{{ '\033[1m' }}PACK OPENING!{{ '\033[0m' }}
+{{ '\033[1m' }}============={{ '\033[0m' }}
+
+You have opened a total of {{ '\033[1m' }}{{ count }}{{ '\033[0m' }} packs of the type {{ pack }}!
+
+The following rewards have been added to your inventory:
+{% if legendary %}
+Legendary Rewards:
+{%- for reward in legendary %}
+{{ '\033[33m' }}{{ reward.name }}{{ '\033[0m' }}
+{%- endfor %}
+{% endif -%}
+
+{% if rare %}
+Rare Rewards:
+{%- for reward in rare %}
+{{ '\033[32m' }}{{ reward.name }}{{ '\033[0m' }}
+{%- endfor %}
+{% endif -%}
+
+{% if uncommon %}
+Uncommon Rewards:
+{%- for reward in uncommon %}
+{{ '\033[36m' }}{{ reward.name }}{{ '\033[0m' }}
+{%- endfor %}
+{% endif -%}
+
+{% if common %}
+Common Reward:
+{%- for reward in common %}
+{{ '\033[37m' }}{{ reward.name }}{{ '\033[0m' }}
+{%- endfor %}
+{% endif -%}
+

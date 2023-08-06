@@ -1,0 +1,32 @@
+
+{{ '\033[1m' }}YOUR INVENTORY{{ '\033[0m' }}
+{{ '\033[1m' }}=============={{ '\033[0m' }}
+
+Hello, {{ name }}!
+
+Here is a listing of your inventory, as you requested:
+
+GOLD:   {{ '\033[1m' }}{{ gold }}{{ '\033[0m' }}
+DUST:   {{ '\033[1m' }}{{ dust }}{{ '\033[0m' }}
+
+PACKS:
+{%- for name, pack_list in packs.items() %}
+{{ name }} ({{ pack_list|length }})
+{%- endfor %}
+
+REWARDS:
+{%- for name, reward_list in rewards.items() %}
+{%- if reward_list[0].rarity == 'legendary' %}
+{{ '\033[33m' }}{{ name }}{{ '\033[0m' }} ({{ reward_list|length }})
+{% endif -%}
+{%- if reward_list[0].rarity == 'rare' %}
+{{ '\033[32m' }}{{ name }}{{ '\033[0m' }} ({{ reward_list|length }})
+{% endif -%}
+{%- if reward_list[0].rarity == 'uncommon' %}
+{{ '\033[36m' }}{{ name }}{{ '\033[0m' }} ({{ reward_list|length }})
+{% endif -%}
+{%- if reward_list[0].rarity == 'common' %}
+{{ '\033[37m' }}{{ name }}{{ '\033[0m' }} ({{ reward_list|length }})
+{% endif -%}
+{%- endfor %}
+
