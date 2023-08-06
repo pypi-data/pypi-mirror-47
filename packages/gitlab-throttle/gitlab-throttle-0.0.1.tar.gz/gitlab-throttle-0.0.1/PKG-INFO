@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: gitlab-throttle
+Version: 0.0.1
+Summary: Enforce a max number of pipelines per branch
+Home-page: https://gitlab.com/cunity/gitlab-throttle
+Author: Ian Norton
+Author-email: inorton@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: Abort old gitlab pipelines if you have too many
+Platform: any
