@@ -1,0 +1,15 @@
+README.md
+setup.py
+sparselandtools/__init__.py
+sparselandtools/learning.py
+sparselandtools/pursuits.py
+sparselandtools.egg-info/PKG-INFO
+sparselandtools.egg-info/SOURCES.txt
+sparselandtools.egg-info/dependency_links.txt
+sparselandtools.egg-info/requires.txt
+sparselandtools.egg-info/top_level.txt
+sparselandtools/applications/__init__.py
+sparselandtools/applications/denoising.py
+sparselandtools/applications/utils.py
+sparselandtools/dictionaries/__init__.py
+sparselandtools/dictionaries/utils.py
