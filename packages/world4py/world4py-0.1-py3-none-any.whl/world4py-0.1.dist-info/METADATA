@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: world4py
+Version: 0.1
+Summary: Python wrapper for WORLD
+Home-page: https://github.com/yamachu/WORLD4py
+Author: yamachu
+Author-email: UNKNOWN
+License: MIT
+Keywords: world,world4py
+Platform: UNKNOWN
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Sound/Audio :: Analysis
+Classifier: Topic :: Multimedia :: Sound/Audio :: Sound Synthesis
+Classifier: Topic :: Multimedia :: Sound/Audio :: Speech
+
+UNKNOWN
+
+
