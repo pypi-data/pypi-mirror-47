@@ -1,0 +1,10 @@
+README.md
+setup.py
+deeptinbergen/__init__.py
+deeptinbergen/version.py
+deeptinbergen.egg-info/PKG-INFO
+deeptinbergen.egg-info/SOURCES.txt
+deeptinbergen.egg-info/dependency_links.txt
+deeptinbergen.egg-info/entry_points.txt
+deeptinbergen.egg-info/requires.txt
+deeptinbergen.egg-info/top_level.txt
