@@ -1,0 +1,9 @@
+skdda/__init__.py,sha256=wRj7IZCcqZ0uDHsAjSbrLs2w5YxgviD64Zfi076A5tg,136
+skdda/base.py,sha256=ulIBiqzDBdpR7UrNGgjey6oydUn8D-Z_TBHQGxYy-5I,1615
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base.py,sha256=RPWOB-ClD4D02NRzzXscK2kCWDrB1nSs27WVrMpJ7Zk,4099
+scikit_dda-0.1.1.dist-info/LICENSE,sha256=LLH5vXV4ZSH8XPsj_vDAa9PakHWtoIzelhFOGaPMoX8,1073
+scikit_dda-0.1.1.dist-info/METADATA,sha256=xWMT-l9wL8xfrhPWttXmUMJPzjKhKq-RpadFkEYqlcg,651
+scikit_dda-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+scikit_dda-0.1.1.dist-info/top_level.txt,sha256=vFo53gsGEMH4PxFXw4cTtEzSITD56jy76oNE9cXTHbE,12
+scikit_dda-0.1.1.dist-info/RECORD,,
