@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: qcpy
+Version: 0.1.0.dev1
+Summary: Framework for handling quantum-chemical calculations.
+Home-page: https://www.qcpy.de/
+Author: Till Biskup
+Author-email: till@till-biskup.de
+License: UNKNOWN
+Project-URL: Documentation, https://docs.qcpy.de/
+Project-URL: Source, https://github.com/tillbiskup/qcpy
+Description: qcPy
+        ====
+        
+        qcPy is a Python framework for conveniently handling quantum-chemical calculations and the post-processing of the acquired data.
+        
+        For more general information on qcPy see its `homepage <https://www.qcpy.de/>`_.
+        
+        
+        Installation
+        ------------
+        
+        Install the package by running::
+        
+            pip install qcpy
+        
+        
+        Contribute
+        ----------
+        
+        - Source Code: https://github.com/tillbiskup/qcpy
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please contact the package authors via GitHub and/or file a bug report there.
+        
+        
+        License
+        -------
+        
+        The project licensed under the BSD license.
+        
+        
+Keywords: Reproducible research,quantum-chemical calculations
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst

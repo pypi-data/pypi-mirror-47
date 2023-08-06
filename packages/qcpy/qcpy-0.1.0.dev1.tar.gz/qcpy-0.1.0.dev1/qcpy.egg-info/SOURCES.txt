@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.rst
+VERSION
+setup.py
+qcpy/__init__.py
+qcpy.egg-info/PKG-INFO
+qcpy.egg-info/SOURCES.txt
+qcpy.egg-info/dependency_links.txt
+qcpy.egg-info/top_level.txt
