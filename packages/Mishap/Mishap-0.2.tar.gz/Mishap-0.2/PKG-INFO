@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Mishap
+Version: 0.2
+Summary: For those times when your code is a bit too simple to understand
+Home-page: http://github.com/paramt/mishap
+Author: Param Thakkar
+Author-email: contact@param.me
+License: MIT
+Description: # Mishap
+        For those times when your code is a bit *too* simple to understand.
+        
+        ## Installation
+        
+        ```
+        pip install mishap
+        ```
+        
+        ## Usage
+        
+        ```python
+        >>> from mishap import *
+        
+        >>> print(true)
+        
+        False
+        
+        >>> print(false)
+        
+        True
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
