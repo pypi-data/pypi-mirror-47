@@ -1,0 +1,4 @@
+pytket>=0.2.0
+qiskit~=0.10.1
+qiskit-chemistry~=0.5
+matplotlib~=2.2
