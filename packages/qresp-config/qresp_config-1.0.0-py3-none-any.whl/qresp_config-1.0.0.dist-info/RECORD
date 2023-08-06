@@ -1,0 +1,10 @@
+qresp_config/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qresp_config/__main__.py,sha256=NrUKhqEj7_tJIUBa5npFD_frmZToqyNiPiQ-VEY2uyk,163
+qresp_config/qresp_config.py,sha256=VyTkc82tvGojU-6ONZIrTyNs3eczzxpaFQGNO6MOP2U,7347
+qresp_config/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qresp_config/scripts/docopt.py,sha256=aQMEaKFvWHckap1DerU9ECz2fs0MbJVSKBA744ireA8,20363
+qresp_config-1.0.0.dist-info/METADATA,sha256=Nt4aK5IsUbgQRi3Fidq7apfLUk4LRtGMzmefPwRIRb0,343
+qresp_config-1.0.0.dist-info/RECORD,,
+qresp_config-1.0.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+qresp_config-1.0.0.dist-info/entry_points.txt,sha256=qAPQawpWWuTSwoWmGtHcT7Sj5h2jnyoMwGx-zG32QzU,65
+qresp_config-1.0.0.dist-info/top_level.txt,sha256=77RO4rOBNnFmgIE5Eriih_49lIjv8Gr-IYDQqzL5dKo,13
