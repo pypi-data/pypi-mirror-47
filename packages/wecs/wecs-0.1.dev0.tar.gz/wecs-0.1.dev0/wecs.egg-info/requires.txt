@@ -1,0 +1,6 @@
+
+[graphviz]
+graphviz
+
+[panda3d]
+panda3d

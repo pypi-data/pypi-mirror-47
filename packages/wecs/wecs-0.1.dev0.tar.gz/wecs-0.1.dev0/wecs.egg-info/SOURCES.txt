@@ -1,0 +1,11 @@
+README.md
+setup.py
+wecs/__init__.py
+wecs/core.py
+wecs/graphviz.py
+wecs/panda3d.py
+wecs.egg-info/PKG-INFO
+wecs.egg-info/SOURCES.txt
+wecs.egg-info/dependency_links.txt
+wecs.egg-info/requires.txt
+wecs.egg-info/top_level.txt
