@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: django_ilmoitin
+Version: 0.1.0
+Summary: Django app for sending notifications.
+Home-page: https://github.com/City-of-Helsinki/django-ilmoitin
+Author: City of Helsinki
+Author-email: dev@hel.fi
+License: MIT License
+Description: # django-ilmoitin
+        Django app for sending notifications
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
