@@ -1,0 +1,15 @@
+README.txt
+setup.cfg
+setup.py
+botovh/__init__.py
+botovh/account.py
+botovh/cli.py
+botovh/dispatch.py
+botovh/email_client.py
+botovh/utils.py
+botovh.egg-info/PKG-INFO
+botovh.egg-info/SOURCES.txt
+botovh.egg-info/dependency_links.txt
+botovh.egg-info/entry_points.txt
+botovh.egg-info/requires.txt
+botovh.egg-info/top_level.txt
