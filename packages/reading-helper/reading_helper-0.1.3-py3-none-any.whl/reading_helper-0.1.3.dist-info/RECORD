@@ -1,0 +1,10 @@
+pyproject.toml,sha256=GQmNL51LUrAoQy6KLQSNZkpP7dSAT2PrD4oqcJyazyo,677
+reading_helper/__init__.py,sha256=NrcjYCcmyvJEtDV4NNUM9pDy55TiN3OD_5Bwc39LPIo,178
+reading_helper/make_paper_page.py,sha256=O8Ahpgx_XB9S86oMO5jHUjZfsnNWkLp1W-9wXj_hRaU,3566
+reading_helper/scripts_api.py,sha256=mSIvhG1dA5NBodxD0d3zLCKouPdHjJClV_ImluBnSHY,102
+template.md,sha256=u_bbdCj28h0oSlgkVfPUmPsL46hS5KZg5aV6t0hkpas,379
+reading_helper-0.1.3.dist-info/entry_points.txt,sha256=J0i_nUzB7uy03YuW-doaXiXbtimW3AkTQJX9WM41bYE,78
+reading_helper-0.1.3.dist-info/LICENSE,sha256=gKBMDLJ8PdxWAvSy0WZu-sqHv4-AL9-iDASPh-eLzRA,1072
+reading_helper-0.1.3.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+reading_helper-0.1.3.dist-info/METADATA,sha256=NDI0ueGCRy-4yAOxqGjGKIvdcE6U8YlF-UVo7Y30VBQ,539
+reading_helper-0.1.3.dist-info/RECORD,,
