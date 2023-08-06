@@ -1,0 +1,13 @@
+example/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+example/perceptron.py,sha256=MjFJxDqz68XU0jvJAs-rE-olibHX7Su5zYhj-VeXg6o,1265
+slmethod/__init__.py,sha256=qeWJt83zbFprpWw6_PwCXBT4Q4nb3aRV49RfO3rkBD0,1016
+slmethod/perceptron.py,sha256=1VGSHsvpxReUwsvyY8m-uhoNRXQxRjrr_JYF4uHqzk0,1825
+slmethod/base/__init__.py,sha256=w_6QK3ha49q4BwyNYrk4OlH9syGRLav3Jl9RtUJDZlM,32
+slmethod/base/base.py,sha256=BSik-EGuXi_Nc7MSPLvDSO0wb_GEJTtjlUlZofPYJJY,1327
+slmethod/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slmethod/utils/_show_versions.py,sha256=5IFMcdfGeJR42warG8cdtSgHh0xm2SxlXwUml8LlQ-Q,1662
+slmethod-0.1.dist-info/LICENSE,sha256=fyNnH_HnQYUKt4FLxGeh0WCOusHNVOjZ-YQnD8gQHcI,1068
+slmethod-0.1.dist-info/METADATA,sha256=7yw954ija9-jKqW8HCgqX6RKWn9gkrOEK4C9uelQL7c,1668
+slmethod-0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+slmethod-0.1.dist-info/top_level.txt,sha256=XOFvZOC-Ogv6M5Yoc1CD0G6byzz9No47VpTN98AeEis,17
+slmethod-0.1.dist-info/RECORD,,
