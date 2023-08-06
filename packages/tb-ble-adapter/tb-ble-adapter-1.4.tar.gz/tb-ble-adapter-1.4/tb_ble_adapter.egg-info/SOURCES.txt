@@ -1,0 +1,7 @@
+README.md
+setup.py
+tb_ble_adapter.egg-info/PKG-INFO
+tb_ble_adapter.egg-info/SOURCES.txt
+tb_ble_adapter.egg-info/dependency_links.txt
+tb_ble_adapter.egg-info/requires.txt
+tb_ble_adapter.egg-info/top_level.txt
