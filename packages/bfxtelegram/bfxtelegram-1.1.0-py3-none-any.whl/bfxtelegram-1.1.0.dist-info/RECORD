@@ -1,0 +1,17 @@
+bfxtelegram/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bfxtelegram/__main__.py,sha256=SO32YNS0skZga2MRBJqHvVwOAHLdxwRB85NsJufoHWA,1453
+bfxtelegram/bfxwss.py,sha256=TzEAFbu2uHpNe0OnKq0f9-kOp13bGa8RdtPPY-y8-dg,19779
+bfxtelegram/btfxbot.py,sha256=uX2n-6NgfYjNCj49hHprGG2P2UjeBT8fhgbOGCNzUHs,27882
+bfxtelegram/tgraph.py,sha256=2QXXaE9jJYTuYkvfNP4cOAhUX6Z4C2KPmzn1btEuL00,10562
+bfxtelegram/utils.py,sha256=MLcwRJ8SRv-wvNyb0s_JuO3tsutnqbFp3UTqBo-8xT8,8190
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=O1oM4vECgVPfDX-zalOBvYkV9DIFUxC5tB923JT3i34,54114
+tests/test_tgraph.py,sha256=uo_SatXP-Ui1BbzDFgqrepkD71YVedKVPsr19gEzmB0,1684
+tests/test_utils.py,sha256=G_TeqMl6O_49ZaFqIV6CfRKCFh9H61zVLHZ1cwIKxcY,1556
+bfxtelegram-1.1.0.dist-info/LICENSE,sha256=y6sywFiuTy3m3Vr82GKI8ywTxBk4rlakqgJEg_gQ_A4,1068
+bfxtelegram-1.1.0.dist-info/METADATA,sha256=Am0S0vHWvBAbvRU9bx_m6MRlDaGBl08P7P1s1m1DJLw,482
+bfxtelegram-1.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bfxtelegram-1.1.0.dist-info/entry_points.txt,sha256=8i7CZtCLXh4yVm5ier53srspTNCawnzS4iQbDuboITM,59
+bfxtelegram-1.1.0.dist-info/top_level.txt,sha256=EGaaLy4FKWLIaGhw2vjcTxUX1DE8cO4spdNJDI7Rs9I,18
+bfxtelegram-1.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+bfxtelegram-1.1.0.dist-info/RECORD,,
