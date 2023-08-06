@@ -1,0 +1,3 @@
+[console_scripts]
+lson = lson.command_line:main
+
