@@ -1,0 +1,9 @@
+lxml
+
+[dev]
+flake8
+coverage
+sphinx
+sphinx_rtd_theme
+sphinx-autobuild
+future
