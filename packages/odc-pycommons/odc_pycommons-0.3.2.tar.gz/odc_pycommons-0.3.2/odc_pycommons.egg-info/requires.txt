@@ -1,0 +1,8 @@
+pyyaml
+email-validator
+
+[dev]
+check-manifest
+
+[test]
+coverage

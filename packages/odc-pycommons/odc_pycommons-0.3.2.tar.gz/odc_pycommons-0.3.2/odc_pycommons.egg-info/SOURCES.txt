@@ -1,0 +1,15 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+odc_pycommons/__init__.py
+odc_pycommons/comms.py
+odc_pycommons/models.py
+odc_pycommons/persistence.py
+odc_pycommons/security.py
+odc_pycommons.egg-info/PKG-INFO
+odc_pycommons.egg-info/SOURCES.txt
+odc_pycommons.egg-info/dependency_links.txt
+odc_pycommons.egg-info/requires.txt
+odc_pycommons.egg-info/top_level.txt
