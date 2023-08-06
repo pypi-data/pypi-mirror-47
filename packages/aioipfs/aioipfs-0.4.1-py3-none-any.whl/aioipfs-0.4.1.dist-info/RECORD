@@ -1,0 +1,7 @@
+aioipfs/__init__.py,sha256=a1ETmQJ3hCA5qn2jdptH4AhFnJQalNoKlmHH8L3oNes,5327
+aioipfs/api.py,sha256=WEmAXwPf-QNPDcwZK5i5wIIVsH13iQvaXs01QrfxyGM,56171
+aioipfs/multi.py,sha256=b1NN1VLmMJ523CyZObLYMXmNpDtbHuDUuWg-Lucutzc,8350
+aioipfs-0.4.1.dist-info/METADATA,sha256=-6f6ikYAmpL918e-qVIGknK7doiIDFq2ssH5haeSynY,3279
+aioipfs-0.4.1.dist-info/RECORD,,
+aioipfs-0.4.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+aioipfs-0.4.1.dist-info/top_level.txt,sha256=rQ6TSZJwiC_ZuCC_BASj-mqFZj08Y0nE7b3WI6mt4mc,8
