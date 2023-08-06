@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: vhdeps
+Version: 0.0.1
+Summary: VHDL dependency analyzer and simulation driver.
+Home-page: https://github.com/abs-tudelft/vhdeps
+Author: Jeroen van Straten
+Author-email: j.vanstraten-1@tudelft.nl
+License: Apache
+Project-URL: Source, https://github.com/abs-tudelft/vhdeps
+Description-Content-Type: text/markdown
+Keywords: vhdl dependency analyzer simulation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Requires-Dist: plumbum
+
+
+vhdeps: a VHDL file dependency analyzer
+=======================================
+
+`vhdeps` is a simple dependency analyzer for VHDL, to be used with tools that
+either awkwardly or downright *don't* support automatic compile order
+generation. It's quite simplistic in its VHDL parsing -- it just uses regular
+expressions to match entity, component, and package declarations, uses, and
+definitions and works from there -- but it should be enough for most use cases.
+
+`vhdeps` provides a generic output format so you can easily do whatever you
+want with the compile order, but it also allows "targets" to be defined to do
+this within `vhdeps`. At the time of writing, there are two such targets; one
+that outputs a TCL script for Modelsim-compatible simulators (with a bunch of
+convenience stuff like incremental compilation and batch-mode regression
+testing) and one that drives a simulation with GHDL. Both of these targets do
+pose the requirement that toplevel entities end in `_tc` (test case) and
+terminate through event exhaustion upon success or through a
+`report ... severity failure` statement or a timeout upon failure. The timeout
+defaults to 1 ms, but can be overridden using a pragma statement.
+
+Finally, `vhdeps` can do some basic style checking if you like. The rules it
+can enforce for you are:
+
+ - Each VHDL file must define exactly one entity or exactly one package.
+ - VHDL package names must use the `_pkg` suffix.
+ - The filename must match the name of the VHDL entity/package.
+
+The version and simulation/synthesis "modifiers" in the VHDL filenames are used
+by `vhdeps` to filter out files based on a maximum VHDL version and whether
+it's targeting simulation or synthesis.
+
+
