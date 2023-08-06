@@ -1,0 +1,5 @@
+[console_scripts]
+cannycam = cannycam.cannycam:main
+cannyhaarcam = cannycam.cannyhaarcam:main
+haarcam = cannycam.haarcam:main
+

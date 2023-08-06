@@ -1,0 +1,12 @@
+cannycam/__init__.py,sha256=f0bYWxFHFPN40JjqwG8F_ovzImI-3Vq6zKfE5AuwatY,99
+cannycam/basecam.py,sha256=FbBqA_HjQLFvPD9GFNtBlDh7Sim9H65l9nFu5fCDO5k,579
+cannycam/cannycam.py,sha256=nPWI9feVCVAAQmt3s2MeFBBOalNKNphnK-wq69-f5hE,1903
+cannycam/cannyhaarcam.py,sha256=h_biScsb6N1NlUwtFYeTmBtQaeYA8q0x9R8IUFFAVvs,909
+cannycam/haarcam.py,sha256=7MOezDDy-R_tjXI8sWA59RMKOdqh6rIegPUQVXHbRxo,1426
+cannycam/util.py,sha256=cH6sVF0W347SeswL_PeJBJtUu3Cu9V2ZrTKiB01KF9c,275
+cannycam-0.0.1.dist-info/LICENSE,sha256=7D2NQMpn-64kfAc45hpxiNJjgLO7wQ4_tI_lJTx1sz0,1069
+cannycam-0.0.1.dist-info/METADATA,sha256=Jp3fsXOSabEa3lRvy1Gyz9iZwvtAAa-DR3snjXfJdKw,1871
+cannycam-0.0.1.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+cannycam-0.0.1.dist-info/entry_points.txt,sha256=9ZrNFQMTeFemNe8MVs2eT9r8n9ECL9PHC0nR7vsWSPM,127
+cannycam-0.0.1.dist-info/top_level.txt,sha256=OWRiPlZNMyapxZneDAT3QmLkTlL7I_SrVODH08QkEUQ,9
+cannycam-0.0.1.dist-info/RECORD,,
