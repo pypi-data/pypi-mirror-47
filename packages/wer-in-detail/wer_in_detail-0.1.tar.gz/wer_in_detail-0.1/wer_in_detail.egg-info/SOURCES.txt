@@ -1,0 +1,8 @@
+README.md
+setup.py
+wer_in_detail/__init__.py
+wer_in_detail/core.py
+wer_in_detail.egg-info/PKG-INFO
+wer_in_detail.egg-info/SOURCES.txt
+wer_in_detail.egg-info/dependency_links.txt
+wer_in_detail.egg-info/top_level.txt
