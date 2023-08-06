@@ -1,0 +1,12 @@
+
+{{ '\033[1m' }}AVAILABLE PACKS{{ '\033[0m' }}
+{{ '\033[1m' }}==============={{ '\033[0m' }}
+
+{% for pack in packs %}
+{{ pack.name }}
+{{ pack.description }}
+{{ pack.cost }}
+{{ pack['1'] }}
+
+{% endfor %}
+
