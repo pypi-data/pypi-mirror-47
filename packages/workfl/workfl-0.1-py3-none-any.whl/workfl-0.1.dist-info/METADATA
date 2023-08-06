@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: workfl
+Version: 0.1
+Summary: A simple flow-diagram markup language.
+Home-page: https://github.com/Dullage/workfl
+Author: Adam Dullage
+Author-email: adam@dullage.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# workfl
+
+A simple flow-diagram markup language.
+
+
