@@ -1,0 +1,24 @@
+Metadata-Version: 2.0
+Name: spaceman
+Version: 0.2.3
+Summary: Abstracted storage library. Allows for looking backwards dynamically and allows for quick custom storage to Amazaon S3
+Home-page: UNKNOWN
+Author: Kevin Hill
+Author-email: kevin@funguana.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: arctic-latest
+Requires-Dist: boto3
+Requires-Dist: cloudpickle
+Requires-Dist: coolname
+Requires-Dist: funtime
+Requires-Dist: loguru
+Requires-Dist: s3fs
+
+UNKNOWN
+
+
