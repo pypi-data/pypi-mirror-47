@@ -1,0 +1,7 @@
+README.md
+setup.py
+workfl/__init__.py
+workfl.egg-info/PKG-INFO
+workfl.egg-info/SOURCES.txt
+workfl.egg-info/dependency_links.txt
+workfl.egg-info/top_level.txt
