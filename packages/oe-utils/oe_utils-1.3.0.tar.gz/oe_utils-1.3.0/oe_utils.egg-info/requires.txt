@@ -1,0 +1,6 @@
+PyYAML
+colander
+feedgen
+requests
+simplejson
+sqlalchemy
