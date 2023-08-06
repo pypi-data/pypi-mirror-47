@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+argument/__init__.py
+argument/__version__.py
+argument_clinic.egg-info/PKG-INFO
+argument_clinic.egg-info/SOURCES.txt
+argument_clinic.egg-info/dependency_links.txt
+argument_clinic.egg-info/not-zip-safe
+argument_clinic.egg-info/requires.txt
+argument_clinic.egg-info/top_level.txt
