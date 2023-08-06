@@ -1,0 +1,8 @@
+README.md
+setup.py
+chitti/__init__.py
+chitti/print.py
+chitti.egg-info/PKG-INFO
+chitti.egg-info/SOURCES.txt
+chitti.egg-info/dependency_links.txt
+chitti.egg-info/top_level.txt
