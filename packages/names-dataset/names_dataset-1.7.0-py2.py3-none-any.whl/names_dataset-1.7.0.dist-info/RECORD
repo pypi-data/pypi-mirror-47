@@ -1,0 +1,10 @@
+names_dataset/__init__.py,sha256=6_OpBzjDXH9fP6mKs7Q_F0X4WtRyG_-kQzzjv4Ff6R0,67
+names_dataset/first_names.all.txt,sha256=pU7MiLucQYW00YyXMTdu-7maoBxnKoxz6eOy12pVaYo,1287997
+names_dataset/last_names.all.txt,sha256=qM7QRQVyv_hTG0Q_TxFmOwEd50iJF-bVV9yQGdSlEtQ,784889
+names_dataset/query.py,sha256=VveqR5Mhh--FD4jUIZN3GIJ3Kt-yvq7DnqCcLClmVSA,1816
+names_dataset-1.7.0.data/data/names_dataset/first_names.all.txt,sha256=pU7MiLucQYW00YyXMTdu-7maoBxnKoxz6eOy12pVaYo,1287997
+names_dataset-1.7.0.data/data/names_dataset/last_names.all.txt,sha256=qM7QRQVyv_hTG0Q_TxFmOwEd50iJF-bVV9yQGdSlEtQ,784889
+names_dataset-1.7.0.dist-info/METADATA,sha256=hX2T0e6o8DD_21T1WhAJP4B843GnSBx9chweO5Y_CjY,220
+names_dataset-1.7.0.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+names_dataset-1.7.0.dist-info/top_level.txt,sha256=6KNbw9hEE4FViT9wpWCFPk0LGNrAw-KcByoNbf08CPE,14
+names_dataset-1.7.0.dist-info/RECORD,,
