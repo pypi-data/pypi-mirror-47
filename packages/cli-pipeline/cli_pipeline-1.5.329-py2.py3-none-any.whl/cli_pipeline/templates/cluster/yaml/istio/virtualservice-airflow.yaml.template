@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: airflow 
+  namespace: {{ PIPELINE_NAMESPACE }}
+  app.kubernetes.io/name: airflow
+spec:
+  hosts:
+  - "*" 
+  gateways:
+  - {{ PIPELINE_UI_GATEWAY }}
+  http:
+  - match:
+    - uri:
+        prefix: /airflow
+    route:
+    - destination:
+        host: airflow
+        port:
+          number: 80 
+      weight: 100
