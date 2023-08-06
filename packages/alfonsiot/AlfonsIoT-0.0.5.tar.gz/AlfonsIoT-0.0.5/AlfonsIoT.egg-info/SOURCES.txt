@@ -1,0 +1,9 @@
+README.md
+setup.py
+AlfonsIoT/__init__.py
+AlfonsIoT/main.py
+AlfonsIoT.egg-info/PKG-INFO
+AlfonsIoT.egg-info/SOURCES.txt
+AlfonsIoT.egg-info/dependency_links.txt
+AlfonsIoT.egg-info/requires.txt
+AlfonsIoT.egg-info/top_level.txt
