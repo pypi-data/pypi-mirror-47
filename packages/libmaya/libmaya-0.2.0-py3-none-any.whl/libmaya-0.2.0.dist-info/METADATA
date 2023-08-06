@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: libmaya
+Version: 0.2.0
+Summary: maya system
+Home-page: https://github.com/HudsonHuang/Maya/
+Author: hudson_huang
+Author-email: l_a@live.cn
+License: MIT
+Keywords: command,maya
+Platform: Independant
+
+Maya, the command running system.
+
+
