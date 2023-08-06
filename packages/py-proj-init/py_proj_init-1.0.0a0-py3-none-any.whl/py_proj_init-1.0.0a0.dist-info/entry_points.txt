@@ -1,0 +1,3 @@
+[console_scripts]
+py-proj-init = py_proj_init.__main__:main
+
