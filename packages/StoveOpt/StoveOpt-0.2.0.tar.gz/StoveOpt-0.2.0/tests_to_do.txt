@@ -1,0 +1,21 @@
+TESTS: There is a lot going on here
+
+
+import_geometry to do:
+	tst_locate_geometry --> This is for looking at various file entries to the input yaml file
+
+	test_extract_geometry --> written but need to fix the path differences between the linux and windows OS
+		This is a nightmare, still need to do this
+
+	test_create_fuel_blocks is PASSING
+
+	test_create_additional_front_points is PASSING
+
+	test_points_to_strings is trivial I think.... If deemed necessary make sure that max length is 5, and all types are strings
+
+	test_vertice_concatenate is pretty much the same logic as the previous
+	
+	test_create_back_points --> leaving alone for now...
+		-put in a positive shift, and assert that shift remains negative
+		-
+

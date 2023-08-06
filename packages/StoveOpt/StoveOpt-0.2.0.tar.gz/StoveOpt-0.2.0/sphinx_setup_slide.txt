@@ -1,0 +1,67 @@
+--setting up sphinx -- automated documentation
+
+code api is what sphuicn will automatically do
+	-will read the docstrings
+
+Users guide:
+	-I think I write all of this in markdown or 
+
+
+Us getting somethin strarted:
+
+
+--need to manually commit to the documentation branch in github
+doctr
+
+
+--I am definitely going to need to go edit my docstring formats....
+
+
+--create a docs BRANCH, and do the quickstart stuff while in that dir
+
+in docs, make a file called installation.rst
+
+--might have to install the make command
+
+--after making, need to add to the index page html.
+
+--in the conf.py that sphinx created--> extensions list-->this is where you would add the autodoc, napolean
+
+----have to choose the false/true for the numpy or google style docstrings
+
+looking at the actual html is in the docs>build> folder (click index)
+
+
+--need "make"
+process: commit current changes, mkdir docs, do the quickstart,
+
+-for each of the modules, manually, need to create an rst in docs for each of the modules with the automodule command listed-->
+
+like this:
+
+===============
+import_geometry
+===============
+
+.. automodule:: StoveOpt.import_geometry
+
+
+need to manually add the rst files to the index in Contents:
+
+
+intersphinx links to python/numpy documentation --> really helpful cool thing to add
+
+Other sphinx:
+-can make it generate a pdf in latex format
+
+
+creating a branch:
+
+
+
+
+
+
+
+
+

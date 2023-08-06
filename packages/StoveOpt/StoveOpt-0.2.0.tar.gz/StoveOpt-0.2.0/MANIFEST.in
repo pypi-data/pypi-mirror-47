@@ -1,0 +1,47 @@
+include case_25_zerofiles
+case_25_constantfiles
+
+recursive-include docs/_build/ *
+recursive-include docs/_modules/ *
+recursive-include docs/_sources/ *
+recursive-include docs/_static/ *
+recursive-include foamfiles/counterFlowFlame2D/0_template/
+recursive-include foamfiles/counterFlowFlame2D/case_25/constant/
+recursive-include foamfiles/counterFlowFlame2D/case_25/0/
+recursive-include foamfiles/counterFlowFlame2D/case_25/system/
+recursive-include foamfiles/counterFlowFlame2D/case_50/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/case_50/0/ *
+recursive-include foamfiles/counterFlowFlame2D/case_50/system/ *
+recursive-include foamfiles/counterFlowFlame2D/case_100/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/case_100/0/ *
+recursive-include foamfiles/counterFlowFlame2D/case_100/system/ *
+recursive-include foamfiles/counterFlowFlame2D/case_125/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/case_125/0/ *
+recursive-include foamfiles/counterFlowFlame2D/case_125/system/ *
+recursive-include foamfiles/counterFlowFlame2D/case_150/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/case_150/0/ *
+recursive-include foamfiles/counterFlowFlame2D/case_150/system/ *
+recursive-include foamfiles/counterFlowFlame2D/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/constant/polyMesh/ *
+recursive-include foamfiles/counterFlowFlame2D/file_templates/blank/ *
+recursive-include foamfiles/counterFlowFlame2D/file_templates/replacement/ *
+recursive-include foamfiles/counterFlowFlame2D/reset_templates/ *
+recursive-include foamfiles/counterFlowFlame2D/reset_templates/blanks *
+recursive-include foamfiles/counterFlowFlame2D/system/ *
+recursive-include foamfiles/counterFlowFlame2D/system/backup/ *
+recursive-include foamfiles/counterFlowFlame2D/system/example/ *
+recursive-include foamfiles/counterFlowFlame2D/system/Obselete/ *
+recursive-include foamfiles/counterFlowFlame2D/system/run/ *
+recursive-include foamfiles/counterFlowFlame2D/template_case/0/ *
+recursive-include foamfiles/counterFlowFlame2D/template_case/constant/ *
+recursive-include foamfiles/counterFlowFlame2D/template_case/constant/polyMesh/ *
+recursive-include foamfiles/counterFlowFlame2D/template_case/system/ *
+recursive-include reactingFoam/ *
+recursive-include reactingFoam/Make/ *
+recursive-include reactingFoam/rhoReactingBouyantFoam *
+recursive-include reactingFoam/rhoReactingBouyantFoam/Make/ *
+recursive-include reactingFoam/rhoReactingFoam/ *
+recursive-include reactingFoam/rhoReactingFoam/Make/ *
+recursive-include inputFiles/ *
+recursive-include stovegeom/ *
+recursive-include tests/ *
