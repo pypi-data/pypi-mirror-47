@@ -1,0 +1,4 @@
+pyyaml
+pandas
+pyDOE2
+statsmodels
