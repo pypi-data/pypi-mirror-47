@@ -1,0 +1,17 @@
+pachelm/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pachelm/cli.py,sha256=CUtC86tSdw9NROuewucptQX85VsRg2SjqNOR8pFpA-w,3644
+pachelm/core.py,sha256=Jkrb99QjXy_i6rLII96Cm0RxFXI3NapaVETv9yvATO8,4023
+pachelm/migration.py,sha256=01mzGHw3gEogCBJl6z9FyIR5UDeHsz8SVSpbdgX6Hwg,5097
+pachelm/utils.py,sha256=G_149kCAx2J-KjhCLUZsq2hO3ISl1J2FGKJ33_AcUHM,2145
+pachelm-0.0.14.data/scripts/pachelm,sha256=yRVdsBGyxjPteb3Do9KxfadsG2b1dZzNki5zA4f4BxE,76
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=y912lSlPu1XMX0391yh94vDcgF5dHAzS24h4Oj-u6r0,1316
+tests/integration_test.py,sha256=auh0AcRytg7nl-9TAsr271TXARsmywRP4kyWf9HoRig,929
+tests/test_core.py,sha256=Q0CqMQE2YlBmfsy_KyavsPHeCpoI4AvCUXYk27mBjQg,1040
+tests/test_migrate.py,sha256=5YPOXln71GZyJNCH8HAADvJLO91L3nRhWMaX7-de_kg,1791
+tests/test_utils.py,sha256=aD5R9sOOT5Vm1UXrBXLtctxqnJCnGBDrOkkd7ItyowA,294
+pachelm-0.0.14.dist-info/LICENSE,sha256=taLqC8klsLVgPll_FfojCbQPZUgiHbDU1tqiN1EK7cM,1085
+pachelm-0.0.14.dist-info/METADATA,sha256=PhCDyNhRVI4LYqJXAqiWFxz3EBzO7dpySuXpW0-8I8Y,3108
+pachelm-0.0.14.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pachelm-0.0.14.dist-info/top_level.txt,sha256=sN8dFfgtRkbeT7a9K0RX7oHdNax9tEpT060Znsdfuv0,14
+pachelm-0.0.14.dist-info/RECORD,,
