@@ -1,0 +1,11 @@
+spoks/__init__.py,sha256=FRM0Fze880cC8T-8-sIJkpkBzVFe-5m40cTgkquE4xw,5235
+spoks/spoks.py,sha256=FRM0Fze880cC8T-8-sIJkpkBzVFe-5m40cTgkquE4xw,5235
+spoks/data/adjective.json,sha256=X5EZ_FmYfrk1mrFX__4AcggMvC4dxtIiuVdNfLck0RQ,378908
+spoks/data/aspek.json,sha256=-kdW_Xw-8WNjiQapXspar-2G-BNnY1N15G9Do9yz1MU,1010
+spoks/data/aspek2.json,sha256=eYX7balDZdzETbWUm8PXLmTRSVnfPihXJU48gwAhhDw,743
+spoks/data/kategori.json,sha256=UmWriuczuthQm2D2ckxydh8lLC4cq19wUbYmYxXE0ZA,1003
+PySpoks-0.0.1.dist-info/LICENCE,sha256=GSAKapQH5ZIGWlpQTA7v5YrfECyaxaohUb1vJX-qepw,1090
+PySpoks-0.0.1.dist-info/METADATA,sha256=0jdBHRBLAosFPoNfK_yy-fnLYXfOIKwQ2NXC8z6QWGQ,615
+PySpoks-0.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+PySpoks-0.0.1.dist-info/top_level.txt,sha256=s1nQ-2GPSRzlW3MZFJ7ngAfeYeh1zBec-R1zUkpd5x4,6
+PySpoks-0.0.1.dist-info/RECORD,,
