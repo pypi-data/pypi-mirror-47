@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: VisualGraphDebugger-zacharyh211
+Version: 0.2
+Summary: GUI debugger and graph library for writing and debugging graph algorithms
+Home-page: UNKNOWN
+Author: Zachary Hancock
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: PyQt5
+
+UNKNOWN
+
+
