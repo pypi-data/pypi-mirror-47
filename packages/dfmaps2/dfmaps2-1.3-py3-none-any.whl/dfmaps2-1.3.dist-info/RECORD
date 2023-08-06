@@ -1,0 +1,15 @@
+helloworld.py,sha256=JA-T70g7Kq1lSWdA9SenuMrqBN-G67MmBo5aXDzI624,74
+dfmaps/__init__.py,sha256=qqkUqneW85nOvj_LaNFrzFwTXkRt0B2eAsHufz8jQ7U,17
+dfmaps/poi/__init__.py,sha256=BPhvSpT8T8fQx5eyDtVTzb_eyEiERQKA5lGjO85f9bc,40
+dfmaps/poi/points_of_interest.py,sha256=Km9ZH3Hif1BiG1xDPl-HFbnA4-cMtQrQ32o0fTDKV2Y,639
+dfmaps2-1.3.data/scripts/hello-pybuilder,sha256=UlQiQcJLT9TP3iri_bbKA039A7jKIWirhP2EqnJKXMc,65
+string_funcs/__init__.py,sha256=mxi63ZT1UldJnn-9hj88DQGlaznJaeJ-K_pMmWYmhJ0,120
+string_funcs/stringLength.py,sha256=1Tt8RmiECGYjZZCttb7yFdTk3Buz8r0OCM5UF7Bq4xg,46
+string_funcs/stringToLower.py,sha256=u_VZFdjqqXH9fS9pEyw6x_LFPxzx2dXacsQjOlYjmNs,50
+string_funcs/stringToUpper.py,sha256=DWcrllbyZP6BzfG785SNBbtERtOkievSgC8XHTRP6sA,50
+dfmaps2-1.3.dist-info/METADATA,sha256=_Hy5XNyY7969vvQTQyjruckLKrKaQ6_NPRyc5j6YQKM,406
+dfmaps2-1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+dfmaps2-1.3.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dfmaps2-1.3.dist-info/top_level.txt,sha256=pEwIkMONO_vmNyIMWu62dWuLttsEpEe9YENO7ULfnfk,31
+dfmaps2-1.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+dfmaps2-1.3.dist-info/RECORD,,
