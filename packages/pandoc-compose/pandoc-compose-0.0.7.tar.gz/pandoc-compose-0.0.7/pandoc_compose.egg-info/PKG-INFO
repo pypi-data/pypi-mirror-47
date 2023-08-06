@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pandoc-compose
+Version: 0.0.7
+Summary: Create and run a fully configured pandoc command.
+Home-page: http://github.com/gfelbing/pandoc-compose
+Author: Georg Felbinger
+Author-email: gfelbing@github.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
