@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: adr-tools-python
+Version: 0.0.11
+Summary: A package to provide adr-tools to python
+Home-page: https://bitbucket.org/tinkerer_/adr-tools-python/
+Author: Victor Sluiter
+Author-email: vsluiter@yahoo.com
+License: MIT
+Description: # README #
+        
+        This is a project to make a python equivalent of the adr-tools by npryce on [github](https://github.com/npryce/adr-tools)
+        
+        This project is very, very slow going and might not even finish. Please drop me a line if you want to contribute.
+Keywords: adr,architecture decision record
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
