@@ -1,0 +1,7 @@
+boto3>=1.9.159
+boto3_type_annotations
+cryptography==2.4.2
+paramiko
+portalocker
+portpicker
+pytz
