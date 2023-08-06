@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tencentserverless
+Version: 0.1.0
+Summary: This is callFunction for SCF.
+Home-page: https://github.com/alanoluo/tencent-serverless-python.git
+Author: Tencent Cloud
+Author-email: qcloud_middleware@qq.com
+License: Apache License 2.0
+Description: UNKNOWN
+Keywords: scf
+Platform: UNKNOWN
