@@ -1,0 +1,8 @@
+README.md
+setup.py
+lwdnxu.egg-info/PKG-INFO
+lwdnxu.egg-info/SOURCES.txt
+lwdnxu.egg-info/dependency_links.txt
+lwdnxu.egg-info/top_level.txt
+pkg/__init__.py
+pkg/mxmpy.py
