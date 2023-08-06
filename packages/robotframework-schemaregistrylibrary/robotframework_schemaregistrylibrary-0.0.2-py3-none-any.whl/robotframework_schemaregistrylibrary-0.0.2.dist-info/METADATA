@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: robotframework-schemaregistrylibrary
+Version: 0.0.2
+Summary: Schema Registry for Robot Framework
+Home-page: https://github.com/nestor-pl/robotframework-SchemaRegistryLibrary
+Author: Pawel Kowalski
+Author-email: <kowalski_pawel@hotmail.com>
+License: Apache License 2.0
+Keywords: robotframework testing schema registry
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Testing
+Requires-Dist: robotframework (>=2.6.0)
+Requires-Dist: kafka-python
+
+Schema Registry library for Robot Framework.
+
+
