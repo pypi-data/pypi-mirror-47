@@ -1,0 +1,318 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.22.0
+    method: GET
+    uri: https://api.crimsonhexagon.com/api/team/list
+  response:
+    body:
+      string: '{"teams":[{"id":2052033542,"name":"\"A Client''s View\""},{"id":602738135,"name":"100K
+        Impression Calculation"},{"id":602735745,"name":"10K Impression calculation"},{"id":602736166,"name":"25K
+        Impression Calculation"},{"id":602736549,"name":"50K Impression Calculation"},{"id":602737760,"name":"75K
+        Impression Calculation"},{"id":3616147068,"name":"[Nike] Category Dashboards
+        -- Technical Implementation"},{"id":1159606311,"name":"Accelera (PS)"},{"id":1293454316,"name":"Acronym
+        (PS)"},{"id":10453507305,"name":"AD Media Office (PS)"},{"id":4683222136,"name":"Adam''s
+        Team"},{"id":3423438668,"name":"Aditya_Monitors"},{"id":1790846610,"name":"AdMail
+        West"},{"id":1885312565,"name":"Advance Digital "},{"id":1835070852,"name":"Agency
+        Demo Monitors (PS)"},{"id":1887710576,"name":"Aimia (PS)"},{"id":443628968,"name":"Airline
+        Case Study"},{"id":1710323034,"name":"Alberta Motor Association"},{"id":6263469727,"name":"Alex
+        W Sandbox"},{"id":10806217434,"name":"Alex Zou"},{"id":3690944850,"name":"Alexandra
+        Hoag Sandbox"},{"id":7291695328,"name":"Alicia MacDonald"},{"id":3061083502,"name":"Alicia
+        Mladsi''s Dashboard"},{"id":12832649563,"name":"Alison Bitzer"},{"id":5075571010,"name":"Alysia''s
+        Coaching Team"},{"id":23989426868,"name":"Alysia''s Demo Team Page"},{"id":3749654404,"name":"Alysia''s
+        Team"},{"id":3620297833,"name":"AM Demo Resources "},{"id":7628179690,"name":"Amir
+        Yazdi"},{"id":1845185627,"name":"Andres Kaypaghian"},{"id":6675453179,"name":"Angelo
+        Stark"},{"id":5004319813,"name":"Anna Lukic''s Team"},{"id":1293079961,"name":"Anthem
+        Corporate Marketing (PS)"},{"id":1407621188,"name":"Arnaud Dupaquier"},{"id":2016948205,"name":"Assumption
+        College (PS)"},{"id":476347439,"name":"AykutVA2"},{"id":1882306063,"name":"Bahrain
+        Government (PS)"},{"id":1649665561,"name":"Barkley - Dairy Queen"},{"id":1915963644,"name":"Barnardos
+        (PS)"},{"id":1612629805,"name":"Barrow''s (PS)"},{"id":508297251,"name":"BBC
+        (PS)"},{"id":489181136,"name":"BBC - Future Media (PS)"},{"id":613783013,"name":"BBC
+        Trial"},{"id":7592718016,"name":"BDR Prospecting"},{"id":3017888960,"name":"BDR
+        Team - USA"},{"id":1835748374,"name":"Becky Horr"},{"id":23236143567,"name":"Ben
+        Conway Sandbox"},{"id":3875968137,"name":"Ben Mannhein"},{"id":502231708,"name":"Ben
+        Rey"},{"id":839123108,"name":"Ben Than Soe"},{"id":1020669416,"name":"Benchtools
+        (PS)"},{"id":11690191215,"name":"Bente Andersen"},{"id":12987453315,"name":"Bethan''s
+        Team"},{"id":7443563991,"name":"Bluprint"},{"id":8952717739,"name":"BNP Paribas
+        (PS) "},{"id":9090135843,"name":"Bobby Vieira"},{"id":1270430765,"name":"Bogazici
+        University"},{"id":11692623827,"name":"Boston Consulting Group Trial "},{"id":9236950382,"name":"Branden''s
+        Playplace"},{"id":10593623851,"name":"Brian Johnson"},{"id":1207140795,"name":"Bromley
+        (PS)"},{"id":1202793857,"name":"BT Community Management (PS)"},{"id":1202797215,"name":"BT
+        Customer Service (PS)"},{"id":1202803921,"name":"BT Market & Competitor Insights"},{"id":1202801263,"name":"BT
+        Research & Strategy"},{"id":4402518324,"name":"BV2 Sandbox"},{"id":5060345299,"name":"BV2ATEAM"},{"id":5060289936,"name":"BV2Coaching"},{"id":5060333676,"name":"BV2CSM"},{"id":5060204926,"name":"BV2SolCon"},{"id":5060355766,"name":"BV2Support"},{"id":9617858508,"name":"BVCX_testing"},{"id":8641611816,"name":"BWOB"},{"id":880830469,"name":"Cabinet
+        Office (PS)"},{"id":1044380935,"name":"Caleb Isabella"},{"id":3495631645,"name":"Camilla
+        Chavez"},{"id":1157526115,"name":"Canal Plus (PS)"},{"id":1831646326,"name":"Car
+        Insurance (PS)"},{"id":11690330243,"name":"Carlos Eduardo Ubeda"},{"id":23680620608,"name":"Carlos
+        Q Sandbox"},{"id":492392506,"name":"Carlos'' Sandbox"},{"id":3528226403,"name":"Carmen''s
+        Team"},{"id":1632541940,"name":"CEL Culture Lab"},{"id":1444235181,"name":"Celine
+        Caux Dashboard"},{"id":7936708653,"name":"CH Analytics Services Case Study"},{"id":7936865004,"name":"CH
+        Analytics Services Case Study Team 2"},{"id":414571197,"name":"CH Business
+        Development"},{"id":7983856476,"name":"CH Customer Development Dashboard"},{"id":1191443750,"name":"CH
+        Event Presentations"},{"id":2210954225,"name":"CH West Sandbox"},{"id":8213138435,"name":"Cheil
+        - Samsung (SECA) - (PS)"},{"id":5783183053,"name":"Chris Choi"},{"id":3666221451,"name":"Chris
+        White''s Team"},{"id":1846318604,"name":"Christine''s Sandbox"},{"id":1443632676,"name":"Cisco
+        (PS)"},{"id":6957282425,"name":"Coaching - *New* Foundations"},{"id":5854459655,"name":"Coaching
+        - Elizabeth Haines"},{"id":4306574124,"name":"Coaching Services"},{"id":1846575003,"name":"Coca
+        Cola (PS)"},{"id":2033880403,"name":"Code School (PS)"},{"id":480025665,"name":"Cognizant
+        (PS)"},{"id":1129716256,"name":"Cognizant India (PS)"},{"id":9176769904,"name":"Colgate
+        - PS Built by CH"},{"id":3496016419,"name":"Colin (Research)"},{"id":1934237907,"name":"Colin
+        Bianchi''s Dashboard"},{"id":17517881425,"name":"Colle & McVoy (POC)"},{"id":1134596502,"name":"Collective
+        Bias"},{"id":1784218619,"name":"Comlinkdata"},{"id":642917506,"name":"ComparetheMarket.com"},{"id":8693363014,"name":"Competitive
+        Monitoring"},{"id":1862575777,"name":"ComRes (PS)"},{"id":1814813091,"name":"Concept
+        Testing Space (APPS)"},{"id":24052398796,"name":"Connor Milligan Sandbox"},{"id":5164826069,"name":"Constellation
+        Brands Demo Account"},{"id":4455110058,"name":"Content Upload Test"},{"id":1156423628,"name":"Conversocial
+        (PS)"},{"id":1896035736,"name":"Convinced (PS)"},{"id":457540955,"name":"Cosmetics"},{"id":1079377975,"name":"Crimson
+        - Coaching"},{"id":2551252217,"name":"Crimson - Coaching (Foundations & Advanced)"},{"id":2038924324,"name":"Crimson
+        - Coaching (Industries)"},{"id":1,"name":"Crimson Hexagon"},{"id":4673813207,"name":"Crimson
+        Marketing EMEA - Edelman"},{"id":3544359747,"name":"Crimson Training - Coaching
+        (Foundations & Advanced)"},{"id":8916145080,"name":"Crossan''s Monitors"},{"id":1104618734,"name":"Cundari
+        (PS)"},{"id":4455142792,"name":"Custom Content Test"},{"id":1628151093,"name":"Customer
+        Webinar (PS)"},{"id":1541004500,"name":"Cyber Duck (PS)"},{"id":1910803311,"name":"Cygnus
+        / Mercedes (PS)"},{"id":1366048182,"name":"Dairy Management Inc. (PS)"},{"id":586719968,"name":"Dana
+        Test"},{"id":2447033192,"name":"David Clark"},{"id":9656880985,"name":"David
+        Johnson''s Monitors"},{"id":9656897640,"name":"David Stauffer''s Monitors"},{"id":3652950428,"name":"Davide''s
+        Monitors "},{"id":22489155248,"name":"Debbie Etienne"},{"id":2091377631,"name":"Debbie
+        Ward''s dashboard"},{"id":18064400527,"name":"Delete me"},{"id":1795031642,"name":"Designory"},{"id":1523724793,"name":"Diageo
+        (PS)"},{"id":8051365147,"name":"Diana''s Monitors"},{"id":1915594376,"name":"Digital
+        Bond (PS)"},{"id":1555288942,"name":"Digital Surgeons"},{"id":1779384953,"name":"Discovery
+        Build Session"},{"id":906688089,"name":"Disney - Marketing (PS)"},{"id":4365960059,"name":"Dom''z
+        Dashboard"},{"id":1835752820,"name":"Dorothy Buckley"},{"id":3784749992,"name":"Dragoon
+        Sandbox"},{"id":4693731702,"name":"Drew Bateman Sandbox"},{"id":1739916181,"name":"Eagle
+        Alpha (PS)"},{"id":1915674567,"name":"Easter Seals Midwest (PS)"},{"id":3479415837,"name":"Easy
+        Insights Beta Org"},{"id":443282510,"name":"Edelman NY - Analytics"},{"id":3135767898,"name":"Edelman
+        NY: Samsung"},{"id":1926518268,"name":"Edmunds (PS)"},{"id":1934250695,"name":"Elisha
+        Daley''s Dashboard"},{"id":5335387633,"name":"Elizabeth Haines"},{"id":1407338975,"name":"Emaar
+        (PS)"},{"id":24219913742,"name":"EMEA & APAC Solutions Consultants"},{"id":4266770364,"name":"EMEA
+        Team "},{"id":15625049827,"name":"Erika K''s Special Sandbox"},{"id":3129162286,"name":"Erika
+        Semtei "},{"id":2867133397,"name":"Estelle Caux"},{"id":4774542744,"name":"Evan
+        Navon"},{"id":12832724690,"name":"Evelyn Rubio"},{"id":4437534175,"name":"Facebook
+        Topic Data Monitors"},{"id":1564408826,"name":"FeldM"},{"id":1405366019,"name":"Felecia''s
+        Dashboard"},{"id":2329992383,"name":"Felecia''s Presentation Dashboard"},{"id":1357387454,"name":"Fenway
+        Health"},{"id":1741231296,"name":"Fidelis Care (PS)"},{"id":1692820852,"name":"Fluent
+        (PS)"},{"id":1971282771,"name":"Flybe (PS)"},{"id":3367111728,"name":"Focus
+        Brands: Easy Insights Beta Team"},{"id":1526889708,"name":"ForSight Personas
+        Dashboard"},{"id":1845169192,"name":"Fox Argentina (PS)"},{"id":3660276758,"name":"Frankie"},{"id":5388545728,"name":"Freddie''s
+        Team"},{"id":456726724,"name":"Gallup Organization"},{"id":11807200946,"name":"Gareth
+        Bray"},{"id":2002055219,"name":"Geary LSF"},{"id":3488875951,"name":"George
+        Aston"},{"id":4879508090,"name":"GM - Built by CH [internal]"},{"id":10078274166,"name":"GM
+        - Global - COE Care CX"},{"id":4178555703,"name":"GM - Global - COE Marketing"},{"id":569286799,"name":"Google
+        (PS)"},{"id":898744839,"name":"Google - YouTube (PS)"},{"id":3391313722,"name":"Google:
+        Easy Insights Beta Team"},{"id":1933990396,"name":"Got Your 6 (PS)"},{"id":3488506192,"name":"Grace
+        Wong"},{"id":3694164612,"name":"Greenwood"},{"id":1912443334,"name":"GS Design"},{"id":1517066093,"name":"Guy
+        Purchase"},{"id":2182305211,"name":"Guy Training"},{"id":23064747443,"name":"H&M
+        CH Internal"},{"id":1432202675,"name":"Haberman (PS)"},{"id":729666001,"name":"Hachette
+        Book Group (PS)"},{"id":1908122568,"name":"Hall & Partners"},{"id":11479473251,"name":"Hannah
+        Burling"},{"id":505131461,"name":"HarperCollins PS"},{"id":745627678,"name":"HarperCollins
+        US "},{"id":1898012054,"name":"Harvard Business School (PS)"},{"id":700752838,"name":"Harvard
+        University Sociology"},{"id":1106552587,"name":"Hasan Housein"},{"id":1972010358,"name":"Heimat
+        Berlin (PS)"},{"id":3705799148,"name":"Helen''s Team"},{"id":11690396333,"name":"Helmi
+        Noman"},{"id":4137314149,"name":"Hendrik Mahling''s Team"},{"id":1893900780,"name":"Higher
+        Education"},{"id":1317530392,"name":"Hispanic Whitelist (PS) - Do Not Delete"},{"id":2049218214,"name":"Hofstra
+        University (PS)"},{"id":1301516628,"name":"Holler AU (PS)"},{"id":413754239,"name":"Horizon
+        Media"},{"id":461833182,"name":"Horizon Media - Film District"},{"id":478864164,"name":"Horizon
+        Media - Geico"},{"id":1747245839,"name":"Horizon Media - Segment Example"},{"id":1965826776,"name":"Hubbard
+        (PS)"},{"id":6236348035,"name":"Hult University"},{"id":2960916074,"name":"ICRC
+        (PS) "},{"id":1923713391,"name":"ictQatar (PS)"},{"id":1771532645,"name":"iMENA"},{"id":568253584,"name":"Improved
+        Buzz Testing Buzz 1"},{"id":568254114,"name":"Improved Buzz Testing Buzz 2"},{"id":589091710,"name":"Improved
+        Buzz Testing Buzz 2.1"},{"id":1655581935,"name":"India Demo Dashboard (PS)"},{"id":7044606144,"name":"Industry
+        Research Team"},{"id":3409589638,"name":"Ingrid Jin"},{"id":3014994295,"name":"Internal
+        Testing Space for FB Topic"},{"id":11690347403,"name":"Ipek Born"},{"id":4596127980,"name":"Irwin
+        Hipsman"},{"id":2001376407,"name":"Isobar China (PS)"},{"id":2039664544,"name":"Isobar
+        Malaysia (PS)"},{"id":10681969888,"name":"Jacqueline''s team"},{"id":6188982562,"name":"Jake
+        Nervi"},{"id":1775130013,"name":"James Humphrey"},{"id":482092585,"name":"Jani
+        Virtanen"},{"id":2382860061,"name":"Jason J''s"},{"id":24603134055,"name":"Jason
+        Potteiger Dashboard CX"},{"id":3061103381,"name":"Jason Potteiger''s Dashboard"},{"id":4683213213,"name":"Jean''s
+        Team"},{"id":1977169579,"name":"Jeb 2016 (PS)"},{"id":3545375054,"name":"Jeff
+        Danziger"},{"id":9656844672,"name":"Jeff Eisenberg''s Monitors"},{"id":1090100099,"name":"Jeff
+        Morris"},{"id":9656910824,"name":"Jeff Rudberg''s Monitors"},{"id":1317396149,"name":"Jenna
+        Gopilan Dashboard"},{"id":2188083021,"name":"Jennifer Maggio"},{"id":6889948680,"name":"Jennifer
+        Wilder''s Team"},{"id":9726145566,"name":"Jenny Bambi''s Team"},{"id":1907774464,"name":"Jeremy
+        Bender"},{"id":750283500,"name":"JM Old Algorithms Tester"},{"id":975479344,"name":"JM
+        Old Old Buzz"},{"id":1874200060,"name":"JM''s Cheesespace"},{"id":950656669,"name":"JM''s
+        East Coast Smithy"},{"id":594156861,"name":"JM''s Test Workshop of Wizardry"},{"id":23260649418,"name":"Joakim
+        Nilsson"},{"id":4129042036,"name":"Joanna Vinick"},{"id":4884408848,"name":"Joanna''s
+        Presentation Dashboard"},{"id":5015446493,"name":"Joe''s team"},{"id":8927941665,"name":"Joe''s
+        Trial Sandbox"},{"id":9656860449,"name":"John Kennedy''s Monitors"},{"id":1263981870,"name":"John
+        Tanza"},{"id":1972316807,"name":"John Tanza II"},{"id":11479732081,"name":"John
+        Twomey"},{"id":4924415319,"name":"Jon''s Testing Space"},{"id":9404112360,"name":"Jonathan
+        Carney"},{"id":19424613873,"name":"Jonny Phipps"},{"id":1186170543,"name":"Jose"},{"id":447025316,"name":"Josh
+        Test"},{"id":6028243228,"name":"Joshua Berkowitz"},{"id":2920010982,"name":"JT
+        Test Team"},{"id":4440375149,"name":"Julie McCauley''s Team"},{"id":1610489155,"name":"Justin
+        G''s Sandbox"},{"id":3673860360,"name":"Justin K''s Team"},{"id":3289695294,"name":"Kalmakis"},{"id":1033563415,"name":"Kate
+        Zartarian Dashboard"},{"id":9699827403,"name":"Katie Crawford"},{"id":4227693137,"name":"Katie
+        P''s"},{"id":13596545665,"name":"Katie Specht"},{"id":7271307592,"name":"Kavleen
+        Main Dash"},{"id":2039271855,"name":"kavnonGMT"},{"id":1867862805,"name":"Kayne
+        (PS)"},{"id":3463931140,"name":"Kelly''s Dashboard"},{"id":5041304481,"name":"Kelsey
+        W."},{"id":23680698509,"name":"Kenneth B Sandbox"},{"id":10215744647,"name":"Kevin
+        Mullay"},{"id":8500430361,"name":"Kevin''s Team"},{"id":1307036971,"name":"Kim
+        Naton"},{"id":2651001808,"name":"Klein Roberts"},{"id":1894412781,"name":"Krista
+        DeNofrio"},{"id":4009223089,"name":"Kristina Bird"},{"id":1548828801,"name":"Kristina''s
+        Dashboard - DDVE"},{"id":589053030,"name":"Kunal - Buzz 2.1"},{"id":582620177,"name":"Kunal
+        - GMT+ Australia"},{"id":657691268,"name":"Kunal - Japanese Buzz"},{"id":8010276213,"name":"Kunal
+        - Kiribati Timezone"},{"id":492840522,"name":"Kunal - Language Testing"},{"id":2319209899,"name":"Kunal
+        - Nepal Timezone"},{"id":1081580945,"name":"Kunal - Twitter re-indexing"},{"id":461777351,"name":"Kunal
+        Test 1"},{"id":869570230,"name":"Kunal VA1"},{"id":1803177297,"name":"Larry
+        Lee "},{"id":1751074980,"name":"Latin3"},{"id":475599202,"name":"LBi - London"},{"id":899441825,"name":"Leo
+        Burnett"},{"id":1222360919,"name":"Leo Burnett (PS)"},{"id":1251916827,"name":"Leo
+        Burnett UK (PS)"},{"id":5077536996,"name":"Leslie - Coaching"},{"id":3529933850,"name":"Leslie
+        Sachs"},{"id":4306660486,"name":"Leslie''s P&G Presentation Team"},{"id":11898738421,"name":"Liz
+        Lattanza"},{"id":5344397699,"name":"Lizzy Haines"},{"id":7936899744,"name":"Loblaws
+        - Built by CH"},{"id":4683212097,"name":"Louisa''s Team"},{"id":2188042969,"name":"Lucas
+        Stopper"},{"id":2116502308,"name":"Lucene 5 testing"},{"id":482092614,"name":"Luke
+        Moore"},{"id":11690370178,"name":"Maanasa Kumar"},{"id":1628339651,"name":"Made
+        Movement"},{"id":4448989219,"name":"MaiTest"},{"id":8672406721,"name":"Marc
+        Salerno"},{"id":2756347798,"name":"Marco Grill"},{"id":1979311734,"name":"Maria
+        Evstafyeva"},{"id":1287140869,"name":"Marian Cramers"},{"id":3703028924,"name":"Marina
+        Jeon"},{"id":5265076670,"name":"Mark''s Team"},{"id":3670521714,"name":"Marketing
+        Blogs & Content"},{"id":7389000171,"name":"Marketing_U.S. CPG Report 2017"},{"id":2650088568,"name":"Mary
+        Wislotski Dashboard"},{"id":3317435613,"name":"Marzia''s Team"},{"id":928956924,"name":"Matt
+        Bemis'' Dashboard"},{"id":2141367883,"name":"Matt Bemis'' Presentation Dashboard"},{"id":2322181841,"name":"Matt
+        Bemis'' Presentation Dashboard II"},{"id":2442240002,"name":"Matt Bemis''
+        Presentation Dashboard III"},{"id":2091373067,"name":"Matt Shea''s dashboard"},{"id":1693312875,"name":"Mav12"},{"id":1882584776,"name":"Maynard
+        Malone (PS)"},{"id":2208568407,"name":"Maz - Global Goals"},{"id":2038861922,"name":"Maz
+        Hussien"},{"id":2028855838,"name":"McGrath/Power PS"},{"id":413819600,"name":"Media
+        Dashboard"},{"id":425061530,"name":"Media Dashboard Testing"},{"id":1585740991,"name":"Media
+        Experts (PS)"},{"id":966781242,"name":"MediaVest / W+K"},{"id":23825765692,"name":"Melissa
+        Newman Sandbox"},{"id":781417391,"name":"Merchandising (PS)"},{"id":2215014712,"name":"Mercury360
+        (PS)"},{"id":1195577139,"name":"Metis Comm (PR)"},{"id":9656868658,"name":"Michael
+        Piland''s Monitors"},{"id":7590468313,"name":"Mid Market Team"},{"id":4515159241,"name":"Mihaela
+        - Birst Mashup"},{"id":3789427850,"name":"Mihaela - Custom Data"},{"id":5348548663,"name":"Mihaela
+        - Forums Testing"},{"id":5348553393,"name":"Mihaela - GM Testing - BV2"},{"id":5344995457,"name":"Mihaela
+        - Testing - BV1"},{"id":3431659158,"name":"Mihaela Popa"},{"id":5885229412,"name":"Mike
+        D''Aloia Sandbox"},{"id":2781614991,"name":"Miles Jones"},{"id":5163055075,"name":"MillerCoors
+        Threat Monitoring (PS Mock)"},{"id":1811022473,"name":"Mindspot Research"},{"id":4837223975,"name":"Mitch"},{"id":10252397825,"name":"Mitch
+        Demo"},{"id":6253420269,"name":"Mo''s Coaching Team Page"},{"id":6108431538,"name":"Mo''s
+        Team"},{"id":7289094760,"name":"Molly Carney"},{"id":1289709276,"name":"Molly''s
+        Monitors"},{"id":7446419684,"name":"Morgan Livezey"},{"id":3735097979,"name":"Morning
+        Call"},{"id":3735087026,"name":"Morning News"},{"id":622168025,"name":"Moven
+        (PS)"},{"id":1115906389,"name":"Munazza''s Dashboard"},{"id":11690287280,"name":"Natalie
+        Kulikowski"},{"id":3538103464,"name":"Natalie Singer "},{"id":10681945503,"name":"Natasha''s
+        team"},{"id":586409533,"name":"Nelesh test Customer"},{"id":607017111,"name":"Nelesh
+        Test Customer - EST"},{"id":607957302,"name":"Nelesh Test Customer - IST"},{"id":608061472,"name":"Nelesh
+        Test Customer - Tokyo"},{"id":1485922447,"name":"Neo Ogilvy France (PS)"},{"id":17671840234,"name":"Nestle
+        Health (PS)"},{"id":1518209810,"name":"Net Natives (PS)"},{"id":3710163469,"name":"Noel
+        Baylor"},{"id":1564748594,"name":"NURV (PS)"},{"id":23460644578,"name":"NYK
+        CH Demo"},{"id":846451824,"name":"Ogilvy & Mather"},{"id":4365813882,"name":"Olivia
+        Deng"},{"id":742986447,"name":"OMD"},{"id":1608616809,"name":"Organic Agency
+        (PS)"},{"id":4858332148,"name":"Pat B''s Sandbox"},{"id":9042042262,"name":"Paul
+        Lauinger"},{"id":568622823,"name":"Paul Wainwright"},{"id":4555746592,"name":"Peter
+        Tong''s Team"},{"id":4784581258,"name":"Peter''s Presentation Instance"},{"id":483943992,"name":"PeterD"},{"id":1915709083,"name":"PETROL
+        (PS)"},{"id":14958041296,"name":"Phteven"},{"id":10254588046,"name":"PMG Advertising
+        (PS)"},{"id":711462470,"name":"Praescient Analytics"},{"id":2646265566,"name":"Prashant
+        Jeloka"},{"id":460479773,"name":"Presales Monitors"},{"id":1225130107,"name":"Professional
+        Services - Instagram "},{"id":1698265760,"name":"Prologue Strategies"},{"id":1347878105,"name":"PS
+        Turkey"},{"id":1611070241,"name":"PSB Research"},{"id":846954250,"name":"Publishing
+        (PS)"},{"id":2124335982,"name":"Pujan Lucene-5"},{"id":2124298114,"name":"Pujan
+        Lucene5 -2015"},{"id":1965292731,"name":"Pure Leaf (PS)"},{"id":4448987770,"name":"Qan-Ewby
+        EST"},{"id":5551145956,"name":"Qan-Ewby GMT"},{"id":5951941798,"name":"Quick
+        Start"},{"id":6309001657,"name":"Quick Start - Mid Market Demo Space"},{"id":6269893926,"name":"Quick
+        Start Dashboard TEST"},{"id":6269892520,"name":"Quick Start Dashboard TIME
+        TEST"},{"id":6284612258,"name":"Quick Start Walkthrough Example"},{"id":1818280179,"name":"Quiip
+        (PS)"},{"id":8114215680,"name":"R L Wilson Team"},{"id":1803177337,"name":"Rachael
+        LaMalva"},{"id":7840289773,"name":"Recommended Sales Demos"},{"id":1606985172,"name":"Red
+        Door (PS)"},{"id":3493207954,"name":"Reginald Missouri Sandbox"},{"id":2028699812,"name":"Relevant24"},{"id":2034523190,"name":"Republican
+        National Committee (PS)"},{"id":1779383623,"name":"RF Binder"},{"id":2121866179,"name":"Riot
+        Games US (PS)"},{"id":12589357796,"name":"Rob Bruce"},{"id":12701373014,"name":"Roberto
+        Sodano"},{"id":771476644,"name":"RSCG"},{"id":6042225870,"name":"Ryan Casey"},{"id":1942265933,"name":"Ryan
+        Liu"},{"id":3327834796,"name":"Safie"},{"id":1679595403,"name":"Saint Louis
+        University "},{"id":221790446,"name":"Sales by Industry"},{"id":6491836482,"name":"Sales
+        Research - Crimson"},{"id":5230105229,"name":"Sales: Automotive"},{"id":5807400648,"name":"Sales:
+        B2B"},{"id":5232589785,"name":"Sales: Consumer Technology"},{"id":5117940735,"name":"Sales:
+        CPG / FMCG"},{"id":5232766132,"name":"Sales: Financial Services"},{"id":5240708077,"name":"Sales:
+        Healthcare & Pharma"},{"id":885459621,"name":"Sales: Inbound API Examples"},{"id":5170507938,"name":"Sales:
+        Media & Entertainment"},{"id":5210246057,"name":"Sales: Retail"},{"id":5232811384,"name":"Sales:
+        Travel & Leisure"},{"id":603521427,"name":"Sam Bettencourt"},{"id":1015761135,"name":"Sam''s
+        Training Team"},{"id":6102297755,"name":"Samantha Madden"},{"id":5399280810,"name":"Samantha
+        North"},{"id":3109440547,"name":"Samantha Tunstall"},{"id":535140992,"name":"Sample
+        Inbound API"},{"id":4930682386,"name":"Samsung Dashboard Development"},{"id":3942404093,"name":"Sara
+        Silva"},{"id":1201755534,"name":"Sarah Loeb"},{"id":3296156367,"name":"Sarala
+        Kasbe"},{"id":6918693280,"name":"SCERT - Automotive Research"},{"id":6918702793,"name":"SCERT
+        - Business Development"},{"id":6918708991,"name":"SCERT - Custom Dashboards"},{"id":13841430788,"name":"Scott
+        Ellenson"},{"id":4669253952,"name":"Scott Gertner"},{"id":1758272161,"name":"Scout
+        (PS)"},{"id":19424320793,"name":"Sean Chauhan"},{"id":1548824108,"name":"Sean''s
+        Dashboard - DDVE"},{"id":2655287502,"name":"Seb McGinley"},{"id":1134353665,"name":"Service
+        Management Group (PS)"},{"id":1948172700,"name":"SG Analytics (PS)"},{"id":3257327130,"name":"Shelly
+        Kane"},{"id":1873918575,"name":"Simmons College (PS)"},{"id":1941466945,"name":"SIP
+        (EMEA)"},{"id":445291032,"name":"Sky - PS"},{"id":438821298,"name":"SocialFactor
+        Testing"},{"id":453821346,"name":"SocialFactor TV"},{"id":1275659498,"name":"Socialyse
+        (PS)"},{"id":925430824,"name":"Somo Global (PS)"},{"id":4385952124,"name":"Sophie
+        Wassermann"},{"id":413960593,"name":"Southwest Airlines"},{"id":667721716,"name":"Spectrum
+        Insights"},{"id":5715573510,"name":"Spredfast Integration (Internal)"},{"id":1980018874,"name":"SRS
+        Investments (PS Demo)"},{"id":6410821348,"name":"SSO Test 1"},{"id":18020446427,"name":"SSO
+        Test Remy"},{"id":1849705655,"name":"Staci''s Dashboard"},{"id":1988437065,"name":"Stanford
+        University (PS)"},{"id":510220049,"name":"Stephanie Newby"},{"id":7219956523,"name":"Stephen
+        Mann"},{"id":9022909809,"name":"Steve Mann"},{"id":599578082,"name":"StoryScience"},{"id":1610492906,"name":"Subway
+        (PS)"},{"id":11717261637,"name":"Sue Herrle"},{"id":2863038582,"name":"Suneel
+        Buggal"},{"id":5551210351,"name":"Support Case Study 1"},{"id":5551224480,"name":"Support
+        Case Study 2"},{"id":5551232914,"name":"Support Case Study 3"},{"id":1650609617,"name":"Swirl
+        (PS)"},{"id":1127006176,"name":"Taryn EST Dashboard"},{"id":1802286959,"name":"Tata
+        Consultancy (PS)"},{"id":13555971925,"name":"Taylor Dickson''s Team"},{"id":1717262968,"name":"TDW
+        (PS)"},{"id":8459875325,"name":"Team Ian"},{"id":8408589265,"name":"Technical
+        Services Demo"},{"id":848098076,"name":"Templars (PS)"},{"id":8806350401,"name":"Temporary
+        S-Core Team"},{"id":2869948223,"name":"TEST (PS)"},{"id":4448953169,"name":"Test
+        - qa"},{"id":2563989239,"name":"Test team - pls delete me"},{"id":17338250020,"name":"Testing
+        Realtime"},{"id":7094255264,"name":"The Bernett Group (PS)"},{"id":1771329158,"name":"The
+        Children''s Place (PS)"},{"id":8325302839,"name":"The Crimson Post"},{"id":1487421667,"name":"The
+        Motherhood (PS)"},{"id":1624537152,"name":"TheAudience (PS)"},{"id":1564105604,"name":"THINK
+        Mexico (PS)"},{"id":1845468887,"name":"Threshold (PS)"},{"id":23680193026,"name":"Tito
+        T Sandox"},{"id":9656878789,"name":"Todd Manley''s Monitors"},{"id":21075193970,"name":"Tokenization
+        Testing - Sam Bettencourt"},{"id":2550602246,"name":"Tom Quigley Sandbox"},{"id":5782508326,"name":"Tom
+        Wapshott''s Team"},{"id":3328575241,"name":"Tom Ward"},{"id":496843706,"name":"Tom
+        Whitney"},{"id":1567108268,"name":"Toth (PS)"},{"id":1874368056,"name":"Trendera
+        (PS)"},{"id":876634944,"name":"Trevor''s Monitors"},{"id":1025119320,"name":"Trieu
+        GMT"},{"id":1201785059,"name":"Twitter German monitors - Zuzana"},{"id":3734285795,"name":"Tyler
+        Mills"},{"id":1548826221,"name":"Tyler''s Dashboard - DDVE"},{"id":780654908,"name":"UK
+        Demo Account"},{"id":3421899972,"name":"UNiDAYS"},{"id":1641498897,"name":"University
+        of Illinois Springfield"},{"id":1913258976,"name":"Univision- The Flama"},{"id":7843056613,"name":"User
+        Groups - 2017 (Coaches)"},{"id":7840779475,"name":"User Groups 2017"},{"id":8817906309,"name":"UXPD"},{"id":3269626161,"name":"va2
+        va3 idc"},{"id":3261828932,"name":"va3"},{"id":446231758,"name":"Validation
+        Study"},{"id":1793109072,"name":"Valtech UK (PS)"},{"id":6955314513,"name":"Vandelay
+        Industries (Jerry''s Sandbox)"},{"id":1613549649,"name":"Vicky Vella"},{"id":6222231968,"name":"Vistaprint
+        (PS)"},{"id":4753703113,"name":"Vivian Johnson"},{"id":1693086988,"name":"VMM
+        (PS)"},{"id":1884024038,"name":"Warner Brothers (PS)"},{"id":754862860,"name":"Way
+        To Blue (PS)"},{"id":1710485767,"name":"WD Partners"},{"id":735706681,"name":"Weber
+        Shandwick - Built by CH "},{"id":1778993986,"name":"Wunderman (PS)"},{"id":1349136600,"name":"Y&R
+        Peru (PS)"},{"id":5776296447,"name":"Yugen''s Team"},{"id":3790118374,"name":"Zack
+        Miller''s Sandbox"},{"id":588078198,"name":"Zenith Demo Platform (PS)"},{"id":1227030002,"name":"Zenith
+        NYC (PS)"},{"id":1776361870,"name":"Zenith Toronto"},{"id":1953202790,"name":"ZenithOptimedia
+        AU (PS)"},{"id":2183875023,"name":"Zoe Starr"},{"id":10453660286,"name":"Zoe
+        Starr (Sandbox)"}],"status":"success"}'
+    headers:
+      Cache-Control:
+      - no-cache, no-store, max-age=0, must-revalidate
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json;charset=UTF-8
+      Date:
+      - Tue, 11 Jun 2019 18:40:25 GMT
+      Expires:
+      - '0'
+      Pragma:
+      - no-cache
+      Server:
+      - Apache-Coyote/1.1
+      Strict-Transport-Security:
+      - max-age=31536000 ; includeSubDomains
+      X-CH-Auth-User:
+      - csullivan@crimsonhexagon.com
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-XSS-Protection:
+      - 1; mode=block
+      transfer-encoding:
+      - chunked
+    status:
+      code: 200
+      message: OK
+version: 1
