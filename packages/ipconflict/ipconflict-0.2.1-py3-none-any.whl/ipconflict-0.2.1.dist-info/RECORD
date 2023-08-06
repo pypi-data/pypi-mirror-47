@@ -1,0 +1,10 @@
+ipconflict/__init__.py,sha256=AV9xMyZ50aDJwBTDKVbbmP28IWoJgdAVfe9gI_xxNJA,1812
+ipconflict/subnet.py,sha256=7V_fawosJFbqfoqqdQdnoT0ePKHbXMUT29a3f0V8MFk,1129
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_overlap.py,sha256=Eps0c5su5f__oM1MqNc3qXlg_zM-TUBpF6e3wy49Jro,3178
+ipconflict-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+ipconflict-0.2.1.dist-info/METADATA,sha256=FtelWqtTGbRZNVwSIPad6hS8U8GoGJ_bupAshJXt6E4,636
+ipconflict-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ipconflict-0.2.1.dist-info/entry_points.txt,sha256=nrWYPopbHtsgrYI5_ydw17N8-ZzbtJScs3dQ8Cnc_hg,48
+ipconflict-0.2.1.dist-info/top_level.txt,sha256=7Ht4hwE6wC5BRY_mas9LXY9b2F_HyB0SUt9AiuWz_-M,17
+ipconflict-0.2.1.dist-info/RECORD,,
