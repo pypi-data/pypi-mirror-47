@@ -1,0 +1,7 @@
+setup.py
+jactPy.egg-info/PKG-INFO
+jactPy.egg-info/SOURCES.txt
+jactPy.egg-info/dependency_links.txt
+jactPy.egg-info/not-zip-safe
+jactPy.egg-info/requires.txt
+jactPy.egg-info/top_level.txt
