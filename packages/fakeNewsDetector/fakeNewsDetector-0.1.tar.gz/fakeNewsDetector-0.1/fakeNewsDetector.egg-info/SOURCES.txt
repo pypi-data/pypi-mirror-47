@@ -1,0 +1,8 @@
+MANIFEST.in
+setup.py
+fakeNewsDetector.egg-info/PKG-INFO
+fakeNewsDetector.egg-info/SOURCES.txt
+fakeNewsDetector.egg-info/dependency_links.txt
+fakeNewsDetector.egg-info/not-zip-safe
+fakeNewsDetector.egg-info/requires.txt
+fakeNewsDetector.egg-info/top_level.txt

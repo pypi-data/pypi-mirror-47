@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: fakeNewsDetector
+Version: 0.1
+Summary: Lib for course work
+Home-page: http://github.com/storborg/funniest
+Author: Flying Circus
+Author-email: vlad007vladpedro@gmail.com
+License: MIT
+Description: Really, Lib for course work.
+Keywords: funniest joke comedy flying circus
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Text Processing :: Linguistic
