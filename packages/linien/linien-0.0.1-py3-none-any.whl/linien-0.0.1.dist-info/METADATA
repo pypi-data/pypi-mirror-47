@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: linien
+Version: 0.0.1
+Summary: Spectroscopy lock application using RedPitaya
+Home-page: https://github.com/hermitdemschoenenleben/linien
+Author: Benjamin Wiegand
+Author-email: highwaychile@posteo.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+LINIE
+=====
+
+Overview
+########
+
+Spectroscopy lock application using RedPitaya.
+Built with `Migen <https://github.com/m-labs/migen>`_, based on `RED PID <https://github.com/quartiq/redpid>`_.
+
+Features
+########
+
+
+See Also
+########
+
+
