@@ -1,0 +1,6 @@
+cobra>=0.14.1
+dill
+matplotlib
+numpy
+pandas
+scipy
