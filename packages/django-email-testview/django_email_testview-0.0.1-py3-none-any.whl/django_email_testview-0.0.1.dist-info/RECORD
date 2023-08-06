@@ -1,0 +1,9 @@
+django_email_testview-0.0.1.dist-info/METADATA,sha256=X5WcghdsoRVBulCgRKlSlH5rZsILVfdgOtoEjCNQEPw,6621
+django_email_testview-0.0.1.dist-info/RECORD,,
+django_email_testview-0.0.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+django_email_testview-0.0.1.dist-info/top_level.txt,sha256=C_RoBliHoHWaqeCjZflLDdGxOoKpudmRD3dtSoDGmSA,15
+email_testview/__init__.py,sha256=TNcFCUb6rLyJqLf56OMN4GWm2Bci8bWKt_OLZU3UyH8,46
+email_testview/registry.py,sha256=MqhryQa_mdEVpcTo8ouQK6Xe5iUc__BB8VjNaGVraS8,895
+email_testview/urls.py,sha256=XbEMRVpGBqbM9mb6Nnp7BVDV8twQcLrlijPv9d-roBM,214
+email_testview/utils.py,sha256=B0peqdGNIuus-3VRxQ18xZht5SZuXseNu4aaxXqJJDI,1119
+email_testview/views.py,sha256=_q9YhOUapLure6kSxcUZ_L0jIzDviIOOtOq1rwJNKzE,1534
