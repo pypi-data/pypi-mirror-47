@@ -1,0 +1,10 @@
+cryptography
+ecdsa
+
+[dev]
+bitcash
+ipdb
+ipython
+mnemonic
+nose
+requests
