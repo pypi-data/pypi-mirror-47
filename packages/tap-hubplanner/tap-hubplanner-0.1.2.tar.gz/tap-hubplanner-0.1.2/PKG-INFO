@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: tap-hubplanner
+Version: 0.1.2
+Summary: Singer.io tap for extracting data from the Hub Planner REST API
+Home-page: https://github.com/rangle/tap-hubplanner
+Author: Rangle.io
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: dev
