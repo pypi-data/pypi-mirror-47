@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+devops_spt/__init__.py
+devops_spt/directory.py
+devops_spt/external_version.py
+devops_spt/gradle_version.py
+devops_spt/kotlin_version.py
+devops_spt.egg-info/PKG-INFO
+devops_spt.egg-info/SOURCES.txt
+devops_spt.egg-info/dependency_links.txt
+devops_spt.egg-info/top_level.txt
