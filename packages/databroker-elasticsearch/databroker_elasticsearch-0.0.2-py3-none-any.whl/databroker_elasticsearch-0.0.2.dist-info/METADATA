@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: databroker-elasticsearch
+Version: 0.0.2
+Summary: Databroker Elasticsearch bridge
+Home-page: https://github.com/NSLS-II/databroker-elasticsearch
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+[![Build Status](https://travis-ci.org/NSLS-II/databroker-elasticsearch.svg?branch=master)](https://travis-ci.org/NSLS-II/databroker-elasticsearch)
+[![codecov](https://codecov.io/gh/NSLS-II/databroker-elasticsearch/branch/master/graph/badge.svg)](https://codecov.io/gh/NSLS-II/databroker-elasticsearch)
+
+# databroker-elasticsearch
+
+Integration of elasticsearch with databroker
+
+databroker-elasticsearch provides export bridge of databroker records to
+[Elasticsearch](https://www.elastic.co/products/elasticsearch) (ES).
+The package provides configurable mapping of databroker documents to
+ES records, filtering of permitted entries, facility to export all
+prior databroker records and a bluesky callback mechanism to export
+new measurements in real time.
+
+
