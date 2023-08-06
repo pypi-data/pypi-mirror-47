@@ -1,0 +1,102 @@
+Metadata-Version: 2.1
+Name: bert-multitask-client
+Version: 0.1.0
+Summary: A service to serve bert_multitask_learning models(Client)
+Home-page: https://github.com/JayYip/bert-multitask-service
+Author: Jay Yip
+Author-email: junpang.yip@gmail.com
+License: MIT
+Keywords: bert nlp tensorflow machine learning sentence encoding embedding serving
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: setuptools (==40.5.0)
+Requires-Dist: pyzmq (==17.1.2)
+
+
+# bert-multitask-as-service
+
+A serving service for [bert-multitask-learning](https://github.com/JayYip/bert-multitask-learning)
+
+## Install
+
+```bash
+pip install bert-multitask-server
+pip install bert-multitask-client
+```
+
+## Getting Started
+
+1. Train and export model.
+
+    A typical trained checkpoint dir looks like below.
+
+    ```text
+    bert_serving_ckpt/
+    ├── *_label_encoder.pkl
+    ├── bert_config.json
+    ├── export_model
+    ├── params.json
+    └── vocab.txt
+    ```
+
+2. Start server using CLI
+
+    ```bash
+    bert-serving-start -model_dir ~/CWS_NER_POS_ckpt/ -num_worker=4 -problem "CWS|NER|POS"
+    ```
+
+3. Use Client to Get Prediction
+
+    ```python
+    from bert_serving.client import BertClient
+    bc = BertClient()
+    bc.encode(['我爱北京天安门'])
+    ```
+
+# Bert多任务学习服务
+
+一个部署[Bert多任务学习](https://github.com/JayYip/bert-multitask-learning)的服务
+
+## 安装
+
+```bash
+pip install bert-multitask-server
+pip install bert-multitask-client
+```
+
+## 开始使用
+
+1. 训练模型并导出模型.
+
+    导出后的模型目录应该有以下文件
+
+    ```text
+    bert_serving_ckpt/
+    ├── *_label_encoder.pkl
+    ├── bert_config.json
+    ├── export_model
+    ├── params.json
+    └── vocab.txt
+    ```
+
+2. 用CLI启动服务
+
+    ```bash
+    bert-serving-start -model_dir models/ -num_worker=4 -problem "fake_problem"
+    ```
+
+3. 用客户端获取预测结果
+
+    ```python
+    from bert_serving.client import BertClient
+    bc = BertClient()
+    bc.encode(['我爱北京天安门'])
+    ```
+
+
