@@ -1,0 +1,4 @@
+dnspython
+netaddr
+requests
+systematic>=4.8.6
