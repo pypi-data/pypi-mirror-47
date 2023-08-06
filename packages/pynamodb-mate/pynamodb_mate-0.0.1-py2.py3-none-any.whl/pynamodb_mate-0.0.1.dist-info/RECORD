@@ -1,0 +1,13 @@
+pynamodb_mate/__init__.py,sha256=u7bG5VdadilUVNyxrgxYKKlmnp_KqyyX0XVYJXdZGVk,243
+pynamodb_mate/_version.py,sha256=cW-ZWkvI8hd2WB45U48UUY3NqYDy4rPf0etHg29ZU5s,93
+pynamodb_mate/s3_backed_attribute.py,sha256=613b8UopXtNORBw_0blulDvSLLGohooYu6pooniu81Q,8470
+pynamodb_mate/__pycache__/__init__.cpython-36.pyc,sha256=KMFEXzOndBS6GZRThmXshifBJ09mc-J2FTbdvppRibE,409
+pynamodb_mate/__pycache__/_version.cpython-36.pyc,sha256=iccpgDEgy7LwPtRFitz22PHc1G5mn3NmdiGwaCbHDK4,230
+pynamodb_mate/__pycache__/s3_backed_attribute.cpython-36.pyc,sha256=XT-L5H30kvso8wSvhQJG6x9T0BjKesT-fzEEofxpN4U,7870
+pynamodb_mate/docs/__init__.py,sha256=f-E2GGaAOnea7U51BKWcRtFHZ6p2iPnvGoXR6VvBtGg,43
+pynamodb_mate-0.0.1.dist-info/AUTHORS.rst,sha256=3Gm1CahEXjS16SnhbNFm1g4QS8tcRr0qRqeP8l0hN2E,600
+pynamodb_mate-0.0.1.dist-info/LICENSE.txt,sha256=v_V7AraNUh1dYCMRv-QK4XbxrLNEjl7OmgZYW5UeVfE,1123
+pynamodb_mate-0.0.1.dist-info/METADATA,sha256=8ai948PNL0SDwMI5mO-oJDGgbvv6EPxnqB-ZzKlM1ks,6791
+pynamodb_mate-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pynamodb_mate-0.0.1.dist-info/top_level.txt,sha256=qYWHK1A9t223rcktNohbfPgjIAHbKwD5adpXBFBVMAs,14
+pynamodb_mate-0.0.1.dist-info/RECORD,,
