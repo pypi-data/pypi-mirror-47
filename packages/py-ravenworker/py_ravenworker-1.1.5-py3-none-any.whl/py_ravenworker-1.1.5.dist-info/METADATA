@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: py-ravenworker
+Version: 1.1.5
+Summary: Run Python functions against streaming data
+Home-page: https://gitlab.com/dutchsec/tools/py-worker
+Author: Brandon van Houten && Bouke Hendriks
+Author-email: brandon.vanhouten@dutchsec.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+Run Python functions against streaming data. Used by Python workers in Raven
+
+
