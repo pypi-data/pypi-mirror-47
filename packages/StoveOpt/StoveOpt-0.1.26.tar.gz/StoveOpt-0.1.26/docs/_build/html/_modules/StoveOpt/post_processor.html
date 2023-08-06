@@ -1,0 +1,662 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>StoveOpt.post_processor &#8212; StoveOpt  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for StoveOpt.post_processor</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Sun May 19 18:18:31 2019</span>
+
+<span class="sd">@author: Lee</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Modules will pull all of the temperature versus time data from the original runs</span>
+
+<span class="c1"># Should put the data into HDF5 tables as discussed in class</span>
+
+<span class="c1"># Create a rank of the maximum average temperature (on full pot body)</span>
+
+<span class="c1"># This needs to be a more dynamic module with values stored for future iteration</span>
+
+<span class="c1">#Data import test: for 3 example files, pull expected first value, last value, and middle value</span>
+
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">walk</span>
+<span class="kn">from</span> <span class="nn">os</span> <span class="k">import</span> <span class="n">path</span>
+<span class="kn">from</span> <span class="nn">sys</span> <span class="k">import</span> <span class="n">path</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">hstack</span><span class="p">,</span> <span class="n">vstack</span><span class="p">,</span> <span class="n">sort</span><span class="p">,</span> <span class="n">transpose</span><span class="p">,</span> <span class="n">argsort</span><span class="p">,</span> <span class="n">append</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="c1">#import h5py</span>
+
+<div class="viewcode-block" id="data_import"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.data_import">[docs]</a><span class="k">def</span> <span class="nf">data_import</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;input a list of filenames to be pulled, put out an array of temperature data. search the foamfiles directory for fnames that start with case_ and tally the number for looping through the file. loop through each and pull data from the files (3) convert to numpy arrays (4) store.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    dir_list</span>
+<span class="sd">        Dictionary of directory titles in the &#39;foamfiles&#39; directory that begin with string &#39;case_&#39;</span>
+<span class="sd">    </span>
+<span class="sd">    case_list</span>
+<span class="sd">        Dictionary of case file paths. Appended iteratively with dir_list entries.</span>
+<span class="sd">    </span>
+<span class="sd">    length_case_list</span>
+<span class="sd">        Type: integer. Number of excecuted case files existing in foamfiles directory</span>
+<span class="sd">    </span>
+<span class="sd">    list_temps</span>
+<span class="sd">        Type: float array. Populated with results from probing the CFD simulation around entire pot geometry</span>
+<span class="sd">    </span>
+<span class="sd">    list_velocities</span>
+<span class="sd">        Type: float array. Populated with velocity values written to &quot;details&quot; file in individual case files</span>
+
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># navigate to the foamfiles directory</span>
+    <span class="n">current_directory</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="c1">#foamfile_steps = &quot;foamfiles\counterFlowFlame2D\&quot;</span>
+    <span class="c1">#foamfile_path = current_directory + foamfile_steps</span>
+    <span class="n">foamfile_path</span> <span class="o">=</span> <span class="s2">&quot;C:</span><span class="se">\\</span><span class="s2">Oregon_State</span><span class="se">\\</span><span class="s2">Spring_2019</span><span class="se">\\</span><span class="s2">Soft_dev_eng</span><span class="se">\\</span><span class="s2">StoveOpt</span><span class="se">\\</span><span class="s2">foamfiles</span><span class="se">\\</span><span class="s2">counterFlowFlame2D</span><span class="se">\\</span><span class="s2">&quot;</span>  
+    <span class="n">dir_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">directory</span> <span class="k">for</span> <span class="n">directory</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">foamfile_path</span><span class="p">)</span> <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">foamfile_path</span><span class="o">+</span><span class="n">directory</span><span class="p">)]</span>     
+    <span class="nb">print</span><span class="p">(</span><span class="n">dir_list</span><span class="p">)</span>
+    <span class="n">length_dir_list</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">dir_list</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The length of the dir list: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">length_dir_list</span><span class="p">))</span>
+    <span class="n">detect_prefix</span> <span class="o">=</span> <span class="s1">&#39;case&#39;</span> <span class="c1"># look for case prefix</span>
+    
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># for looping</span>
+    <span class="n">case_counter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">case_list</span> <span class="o">=</span> <span class="p">[</span><span class="kc">None</span><span class="p">]</span> <span class="c1"># empty vector</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_list</span><span class="p">)</span>
+    <span class="n">k</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># case list indices</span>
+    <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">length_dir_list</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">dir_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">detect_prefix</span><span class="p">):</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">dir_list</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+            <span class="c1">#case_counter = case_counter  + 1</span>
+            <span class="n">case_list_append</span> <span class="o">=</span> <span class="n">dir_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">case_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">case_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">dir_list</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is k: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">k</span><span class="p">))</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is i: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">i</span><span class="p">))</span>
+            
+            <span class="n">case_list</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="n">dir_list</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case list k&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">case_list</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+            <span class="n">k</span> <span class="o">=</span> <span class="n">k</span><span class="o">+</span><span class="mi">1</span>
+            <span class="c1">#print(case_list, sep = &quot;, &quot;)</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span>
+    
+    <span class="c1"># remove the final entry of the case_list vector</span>
+    <span class="n">case_list_length</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">case_list</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case_list_length&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_list_length</span><span class="p">)</span>
+    <span class="n">omitted_value</span><span class="o">=</span> <span class="n">case_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">case_list_length</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;omitted value&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">omitted_value</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Updated case list&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_list</span><span class="p">)</span>
+    
+    <span class="c1"># extract and go read data from each of the files</span>
+    <span class="sd">&quot;&quot;&quot;(1) Loop through the case_list produced, (2) pull the strings and </span>
+<span class="sd">    (3) add to the correct file extension. (4) open and read the data in.</span>
+<span class="sd">    (5) create tables in numpy (potentially). (6) return the arrays in the overall function&quot;&quot;&quot;</span>
+    
+    <span class="n">length_case_list</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">case_list</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case list length: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">length_case_list</span><span class="p">))</span>
+    <span class="n">j</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">Temps</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">Velocities</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># reading in the 25-150 velocities</span>
+    <span class="n">list_temps</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">list_velocities</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">while</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">length_case_list</span><span class="p">:</span>
+        <span class="n">fname</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">case_list</span><span class="p">[</span><span class="n">j</span><span class="p">])</span> <span class="c1"># pull the case file name</span>
+        <span class="n">dir_steps</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">postProcessing</span><span class="se">\\</span><span class="s2">probes</span><span class="se">\\</span><span class="s2">0</span><span class="se">\\</span><span class="s2">&quot;</span>
+        <span class="n">U_dir_steps</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">0</span><span class="se">\\</span><span class="s2">&quot;</span>
+        <span class="n">U_fname</span> <span class="o">=</span> <span class="s2">&quot;details&quot;</span>
+        <span class="n">Temp_fname</span> <span class="o">=</span> <span class="s2">&quot;T&quot;</span>
+        <span class="n">full_path</span> <span class="o">=</span> <span class="n">foamfile_path</span> <span class="o">+</span> <span class="n">fname</span> <span class="o">+</span> <span class="n">dir_steps</span> <span class="o">+</span> <span class="n">Temp_fname</span> <span class="c1"># this will need to be edited for a more advanced file loc</span>
+        <span class="n">U_full_path</span> <span class="o">=</span> <span class="n">foamfile_path</span> <span class="o">+</span> <span class="n">fname</span> <span class="o">+</span> <span class="n">U_dir_steps</span> <span class="o">+</span> <span class="n">U_fname</span> <span class="c1"># varies for the cases (fname)</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">U_full_path</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># position 10 is the beginning of line 2</span>
+            <span class="n">Velocity</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span> <span class="c1"># read line 2nd line</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is your velocity&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">Velocity</span><span class="p">)</span> <span class="c1"># seems to be working</span>
+            <span class="nb">globals</span><span class="p">()[</span><span class="s1">&#39;Velocities</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">Velocity</span> <span class="c1"># putting this into the Velocity matrix, renaming based on j to match cases</span>
+            <span class="n">list_velocities</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">globals</span><span class="p">()[</span><span class="s1">&#39;Velocities</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">j</span><span class="p">])</span>
+
+        <span class="nb">globals</span><span class="p">()[</span><span class="s1">&#39;Temps</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="n">fname</span> <span class="o">=</span> <span class="n">full_path</span><span class="p">)</span>
+        <span class="n">list_temps</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">globals</span><span class="p">()[</span><span class="s1">&#39;Temps</span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">j</span><span class="p">])</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">j</span><span class="o">+</span><span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here are the list temps: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">list_temps</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Temps1</span><span class="p">)</span>
+    <span class="n">type_Temps1</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">Temps1</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">type_Temps1</span><span class="p">)</span>
+    <span class="n">shape_Temp1</span> <span class="o">=</span> <span class="n">Temps1</span><span class="o">.</span><span class="n">shape</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temps1 size (rows by cols): &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">shape_Temp1</span><span class="p">))</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Here is the velocity matrix for case 1&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">Velocities0</span><span class="p">)</span> <span class="c1"># solid</span>
+    
+    <span class="c1"># Concatenate all the temperatures</span>
+    <span class="sd">&quot;&quot;&quot;while the index is under the length of case list (# of temp vars) </span>
+<span class="sd">            add the temperature arrays to a list  (list temps)&quot;&quot;&quot;</span>
+    
+    <span class="c1"># Create list of the arrays</span>
+    <span class="sd">&quot;&quot;&quot;Temp_array_list = []</span>
+<span class="sd">    while x &lt; length_case_list:&quot;&quot;&quot;</span>
+    
+    <span class="c1"># Validates the list_temp is a group of the arrays    </span>
+    <span class="n">first_temp_list_entry</span> <span class="o">=</span> <span class="n">list_temps</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>   
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;This is the 0-entry in the list_temps situaton&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">first_temp_list_entry</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Velocity matrix&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">list_velocities</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">dir_list</span><span class="p">,</span> <span class="n">case_list</span><span class="p">,</span> <span class="n">length_case_list</span><span class="p">,</span> <span class="n">list_temps</span><span class="p">,</span> <span class="n">list_velocities</span></div>
+
+<span class="c1">#dir_list, case_list, length_case_list, list_temps, list_velocities = data_import()</span>
+
+
+<div class="viewcode-block" id="average_pot_temperature"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.average_pot_temperature">[docs]</a><span class="k">def</span> <span class="nf">average_pot_temperature</span><span class="p">(</span><span class="n">list_temps</span><span class="p">,</span> <span class="n">length_case_list</span><span class="p">,</span> <span class="n">list_velocities</span><span class="p">,</span> <span class="n">case_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Compute average temperatures of each of the case temperature arrays previously extracted with data_import()</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    new_recarr</span>
+<span class="sd">        Numpy array where column 1 is case title (str), second column is velocites for respective case, and third column is computed average pot temperature for specific case</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#(1) loop through the Temperature probe data and pull the final row of the array. The first entry is the time step associated with the final row</span>
+    <span class="c1"># Convert the list_velocities to numpy array</span>
+    <span class="n">list_velocities_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">list_velocities</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;List velocities as array: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">list_velocities_array</span><span class="p">)</span>
+    
+    <span class="n">list_velocities_array_transpose</span> <span class="o">=</span> <span class="n">list_velocities_array</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+    
+    <span class="c1"># convert case list to array</span>
+    <span class="n">case_list_array_empty</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="s2">&quot;U10&quot;</span><span class="p">)</span>
+    <span class="n">shape_case_list_array_empty</span> <span class="o">=</span> <span class="n">case_list_array_empty</span><span class="o">.</span><span class="n">shape</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Shape case list array empty: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_list_array_empty</span><span class="p">)</span>
+    
+    <span class="n">l</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="n">length_case_list</span><span class="p">:</span>
+        <span class="n">case_list_array_empty</span><span class="p">[</span><span class="n">l</span><span class="p">]</span> <span class="o">=</span> <span class="n">case_list</span><span class="p">[</span><span class="n">l</span><span class="p">]</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="n">l</span> <span class="o">+</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case list array empty&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">case_list_array_empty</span><span class="p">)</span>
+        <span class="c1">#case_list_array = np.ndarray.transpose(case_list_array_empty)</span>
+        <span class="n">case_list_array</span> <span class="o">=</span> <span class="n">case_list_array_empty</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Case list array&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">case_list_array</span><span class="p">)</span>
+        
+    <span class="n">case_list_array_shape</span> <span class="o">=</span> <span class="n">case_list_array</span><span class="o">.</span><span class="n">shape</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Case list array shape&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_list_array_shape</span><span class="p">)</span>
+    
+    <span class="n">final_temp_row</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty vector to be filled  with the bottom row temperatures iteratively</span>
+    <span class="n">final_temp_row_matrix</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># filling the full matrix with bottom rows iteratively</span>
+    <span class="n">final_temp_row_averages</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># to be filled with the average temperatures of the final rows</span>
+    <span class="n">case_size</span> <span class="o">=</span> <span class="n">length_case_list</span> <span class="c1"># how many cases are included (-1 due to the 0 counting in python)</span>
+    <span class="n">number_properties</span> <span class="o">=</span> <span class="mi">3</span> <span class="c1"># case#, velocity, avg temps to be included in the matrix</span>
+    
+    <span class="n">final_temp_averages_empty</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+    <span class="c1"># Pulling the bottom row from the individual case    </span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># setting loop condition</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">length_case_list</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;list temps before error&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">list_temps</span><span class="p">)</span>
+        <span class="c1"># Pull the individual temperature array, pull dimensions</span>
+        <span class="n">Temp_array</span> <span class="o">=</span> <span class="n">list_temps</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temp array right before the error&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">Temp_array</span><span class="p">)</span>
+        <span class="p">[</span><span class="n">rows</span><span class="p">,</span> <span class="n">cols</span><span class="p">]</span> <span class="o">=</span> <span class="n">Temp_array</span><span class="o">.</span><span class="n">shape</span>
+        <span class="n">final_row</span> <span class="o">=</span> <span class="n">rows</span> <span class="o">-</span> <span class="mi">1</span> <span class="c1"># navigating to the final row of temperature array</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Final_row&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">final_row</span><span class="p">)</span>
+        <span class="n">final_col_entry</span> <span class="o">=</span> <span class="n">cols</span> <span class="c1"># last column of the array</span>
+        <span class="n">first_col_entry</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># skip the time stamp</span>
+        
+        <span class="c1"># pull the final row of the temperature matrix</span>
+        <span class="n">final_temp_row</span> <span class="o">=</span> <span class="n">Temp_array</span><span class="p">[</span><span class="n">final_row</span><span class="p">,</span> <span class="n">first_col_entry</span><span class="p">:</span><span class="n">final_col_entry</span><span class="p">]</span>
+        
+        <span class="c1"># Add to the final_temp_row_matrix</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="n">final_temp_row_matrix</span> <span class="o">=</span> <span class="n">final_temp_row</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">final_temp_row_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">final_temp_row_matrix</span><span class="p">,</span> <span class="n">final_temp_row</span><span class="p">)</span>
+        
+        <span class="c1"># Compute average</span>
+        <span class="n">temp_average</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">average</span><span class="p">(</span><span class="n">final_temp_row</span><span class="p">)</span>
+        
+        <span class="n">final_temp_averages_empty</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">temp_average</span>
+        <span class="n">final_temp_averages</span> <span class="o">=</span> <span class="n">final_temp_averages_empty</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;final temp row averages&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">final_temp_averages</span><span class="p">)</span>
+        
+        <span class="c1"># Checking functionality</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;here is the temp_array&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">Temp_array</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;print final_temp_row&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">final_temp_row</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;average temperature&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">temp_average</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;final_temp_row_matrix&quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">final_temp_row_matrix</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;moving on from 0&quot;</span><span class="p">)</span>
+        
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span><span class="mi">1</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x equals: &quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="c1"># Append the temperature single column matrix with the corresponding velocities</span>
+    <span class="c1"># Float results</span>
+    <span class="c1">#float_cols = 2</span>
+    <span class="c1">#results_float_matrix = np.empty(case_size, float_cols)</span>
+    
+    <span class="c1"># String column (cases)</span>
+    <span class="c1">#string_cols = 1</span>
+    <span class="c1">#results_string_matrix = np.empty(case_size, float_cols)</span>
+    
+    <span class="c1"># Data types for array</span>
+    <span class="n">dt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">([(</span><span class="s1">&#39;col0&#39;</span><span class="p">,</span> <span class="s1">&#39;U10&#39;</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;col1&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;col2&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">)])</span> <span class="c1"># first col is cases, then velocities, then temps</span>
+
+    
+    <span class="n">final_temp_row_averages_array</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">final_temp_row_averages</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;final temp row avg array&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">final_temp_row_averages_array</span><span class="p">)</span>
+    <span class="n">final_temp_row_averages_array_transpose</span> <span class="o">=</span> <span class="n">final_temp_row_averages_array</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+    
+    <span class="n">new_recarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+    <span class="n">new_recarr</span><span class="p">[</span><span class="s1">&#39;col0&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">case_list_array</span>
+    <span class="n">new_recarr</span><span class="p">[</span><span class="s1">&#39;col1&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">list_velocities_array</span>
+    <span class="n">new_recarr</span><span class="p">[</span><span class="s1">&#39;col2&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">final_temp_averages</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;new_recarr&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">new_recarr</span><span class="p">)</span>
+    
+    <span class="n">test_value</span> <span class="o">=</span> <span class="n">new_recarr</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;value (2,2) :&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_value</span><span class="p">)</span>
+    
+    <span class="c1"># This makes sense</span>
+    <span class="n">test_value_velocity</span> <span class="o">=</span> <span class="n">test_value</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># take the center value from the list</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Test velocity pulling :&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_value_velocity</span><span class="p">)</span>
+    
+    
+    <span class="n">test_first_index</span> <span class="o">=</span> <span class="n">new_recarr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;index 1:&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_first_index</span><span class="p">)</span>
+    
+    <span class="n">test_column</span> <span class="o">=</span> <span class="n">new_recarr</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;cases: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">test_column</span><span class="p">)</span>    
+    <span class="k">return</span> <span class="n">new_recarr</span></div>
+
+    
+<span class="c1">#new_recarr = average_pot_temperature(list_temps, length_case_list, list_velocities, case_list)</span>
+    
+ 
+<span class="c1">#def average_composition_outlets(list_GHG)</span>
+<span class="sd">&quot;&quot;&quot;Take in a list of GHGs from a separate data import for the outlet nodes&quot;&quot;&quot;</span>
+    
+<div class="viewcode-block" id="parse_and_sort_array"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.parse_and_sort_array">[docs]</a><span class="k">def</span> <span class="nf">parse_and_sort_array</span><span class="p">(</span><span class="n">new_recarr</span><span class="p">,</span> <span class="n">length_case_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Sort new_recarr array based on velocities, return the array with a new name</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    array_sorted</span>
+<span class="sd">        Numpy array. Same data as new_recarr, but sorted based on velocities (least to greatest along column 2)</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Algorithm:</span>
+    <span class="c1"># (1) parse the array and create a parsed version</span>
+    
+    <span class="n">case_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="s2">&quot;U10&quot;</span><span class="p">)</span>
+    <span class="n">velocity_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+    <span class="n">temperature_vector</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="n">length_case_list</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape of case vector&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_vector</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    
+    <span class="n">case_column</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">temperature_column</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">velocity_column</span> <span class="o">=</span> <span class="mi">1</span>
+    
+    <span class="c1">#dtype=&#39;S10,f4,f4,f4&#39;</span>
+    <span class="c1"># Add the cases to column 1</span>
+    <span class="c1"># Loop through the new_recarr array, extract the case names and add them to column 1</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># looping index</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">length_case_list</span><span class="p">:</span>
+        <span class="n">entry</span> <span class="o">=</span> <span class="n">new_recarr</span><span class="p">[</span><span class="n">x</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Entry&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">entry</span><span class="p">)</span>
+        <span class="n">case_name</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">entry</span><span class="p">[</span><span class="n">case_column</span><span class="p">])</span>
+        <span class="n">velocity_entry</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="n">velocity_column</span><span class="p">]</span> 
+        <span class="n">temperature_entry</span> <span class="o">=</span> <span class="n">entry</span><span class="p">[</span><span class="n">temperature_column</span><span class="p">]</span> 
+        
+        <span class="c1"># Add the values to the empty vectors.</span>
+        <span class="n">case_vector</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">case_name</span>
+        <span class="n">velocity_vector</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">velocity_entry</span>
+        <span class="n">temperature_vector</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="n">temperature_entry</span>
+    
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case vector&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_vector</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;velocity vector&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">velocity_vector</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;temperature vector&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">temperature_vector</span><span class="p">)</span>
+    
+    <span class="n">parsed_new_recarr</span> <span class="o">=</span> <span class="n">hstack</span><span class="p">((</span><span class="n">case_vector</span><span class="p">,</span> <span class="n">velocity_vector</span><span class="p">,</span> <span class="n">temperature_vector</span><span class="p">))</span>
+    <span class="n">parsed_new_recarr_no_case_transposed</span> <span class="o">=</span> <span class="n">vstack</span><span class="p">((</span><span class="n">transpose</span><span class="p">(</span><span class="n">velocity_vector</span><span class="p">),</span> <span class="n">transpose</span><span class="p">(</span><span class="n">temperature_vector</span><span class="p">)))</span>
+    <span class="n">parsed_new_recarr_no_case</span> <span class="o">=</span> <span class="n">vstack</span><span class="p">((</span><span class="n">velocity_vector</span><span class="p">,</span><span class="n">temperature_vector</span><span class="p">))</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;parsed new recarr after column assignments&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">parsed_new_recarr</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;parsed new recarr, no cases, not transposed&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">parsed_new_recarr_no_case</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape of parsed new recarr after vectors added&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">parsed_new_recarr_no_case</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    
+    
+    <span class="sd">&quot;&quot;&quot;print(&quot;shape of parsed new recarr, no cases, transpose&quot;)</span>
+<span class="sd">    print(parsed_new_recarr_no_case_transposed.shape)&quot;&quot;&quot;</span>
+    
+    <span class="c1">#arr[arr[:, 1].argsort()]</span>
+    
+    <span class="n">array_transpose</span> <span class="o">=</span> <span class="n">transpose</span><span class="p">(</span><span class="n">parsed_new_recarr_no_case</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;array transposed&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">array_transpose</span><span class="p">)</span>
+    
+    <span class="n">array_sorted</span> <span class="o">=</span> <span class="n">array_transpose</span><span class="p">[</span><span class="n">array_transpose</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">argsort</span><span class="p">()]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;array sorted&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">array_sorted</span></div>
+
+<span class="c1">#array_sorted = parse_and_sort_array(new_recarr)</span>
+
+
+    
+
+<div class="viewcode-block" id="evaluate_optimal"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.evaluate_optimal">[docs]</a><span class="k">def</span> <span class="nf">evaluate_optimal</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">,</span> <span class="n">length_case_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    The function evaluates the temperature and velocity data, and uses the information to identify where the optimals live within the range analayzed</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    array_sorted</span>
+<span class="sd">        Numpy array of sorted velocities (column 1), and average pot temperatures (column 2) </span>
+<span class="sd">    </span>
+<span class="sd">    T_max </span>
+<span class="sd">        Maximum average pot temperature of all analyzed cases within foamfiles directory</span>
+<span class="sd">        </span>
+<span class="sd">    case_max</span>
+<span class="sd">        Case title associated with maximum average pot temp</span>
+<span class="sd">        </span>
+<span class="sd">    U_optimal </span>
+<span class="sd">        Secondary air flow velocity associated with maximum average pot temperature</span>
+<span class="sd">        </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    
+    <span class="c1"># Find maximum temperature</span>
+    <span class="n">Temp_col</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1"># column with temperature data</span>
+    <span class="n">velocity_col</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># column with the velocity data</span>
+    
+    
+    <span class="c1"># Find the maximum average temperature</span>
+    <span class="n">T_max</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span> <span class="c1"># second column of the sorted array</span>
+    <span class="c1">#T_max_index = np.where(temperature_vector == T_max)</span>
+    <span class="n">T_max_index</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">argmax</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">])</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Maximum Temperature: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">T_max</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Index with maximum temperature: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">T_max_index</span><span class="p">)</span>
+    
+    <span class="c1"># finding cases and velocites associated with maximum temperatures</span>
+    <span class="n">velocity_max</span> <span class="o">=</span> <span class="n">array_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">][</span><span class="n">T_max_index</span><span class="p">]</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;velocity_max&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">velocity_max</span><span class="p">)</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;max velocity entry: &quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">velocity_max</span><span class="p">)</span>
+    
+    <span class="c1"># velocity column</span>
+    <span class="n">velocity_column</span> <span class="o">=</span> <span class="n">array_sorted</span><span class="p">[:,</span><span class="mi">0</span><span class="p">]</span>
+     
+    <span class="c1"># temperature column</span>
+    <span class="n">temperature_column</span> <span class="o">=</span> <span class="n">array_sorted</span><span class="p">[:,</span><span class="mi">1</span><span class="p">]</span>
+    
+
+    <span class="k">return</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">velocity_max</span><span class="p">,</span> <span class="n">T_max_index</span><span class="p">,</span> <span class="n">velocity_column</span><span class="p">,</span> <span class="n">temperature_column</span></div>
+    
+
+<span class="c1">#T_max, velocity_max, T_max_index, velocity_column, temperature_column = evaluate_optimal(array_sorted, length_case_list)</span>
+
+
+<div class="viewcode-block" id="plot_variables"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.plot_variables">[docs]</a><span class="k">def</span> <span class="nf">plot_variables</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">,</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">velocity_max</span><span class="p">,</span> <span class="n">T_max_index</span><span class="p">,</span> <span class="n">velocity_column</span><span class="p">,</span> <span class="n">temperature_column</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    create a matplot lib of the data extracted</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1">#fig, axs = plt.subplots(1, 3, figsize=(5,5)) # figure with multiple plots</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">scatter</span><span class="p">(</span><span class="n">velocity_column</span><span class="p">,</span> <span class="n">temperature_column</span><span class="p">)</span> <span class="c1"># Temperature versus velocity</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Temperature versus Case No.&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Seconday Air Average Flow Velocity&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s2">&quot;Average Pot Temperature (Celsius)&quot;</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span></div>
+     
+    
+<span class="c1">#plot_variables(array_sorted, T_max, velocity_max, T_max_index, velocity_column, temperature_column)</span>
+
+<div class="viewcode-block" id="compute_neighboring_velocities"><a class="viewcode-back" href="../../index.html#StoveOpt.post_processor.compute_neighboring_velocities">[docs]</a><span class="k">def</span> <span class="nf">compute_neighboring_velocities</span><span class="p">(</span><span class="n">array_sorted</span><span class="p">,</span> <span class="n">T_max</span><span class="p">,</span> <span class="n">velocity_max</span><span class="p">,</span> <span class="n">T_max_index</span><span class="p">,</span> <span class="n">length_case_list</span><span class="p">,</span> <span class="n">velocity_column</span><span class="p">,</span> <span class="n">temperature_column</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Use the maximum data solved for previously to compute 4 new neighboring velocities</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    v_cases_total_vector</span>
+<span class="sd">        Numpy array listing four velocities to be added to the case queue</span>
+<span class="sd">        </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Algorithm ==&gt;</span>
+    <span class="c1"># sort the new_recarr array</span>
+    <span class="c1"># (1) Find the location of the maximum velocity within the case list</span>
+    <span class="c1"># (2) Solve for 4 additional velocities with the following logic:</span>
+        <span class="c1"># (a) If the maximum temp is based on an interior velocity value, add two new velocities greater than and lesser than the max</span>
+        <span class="c1"># (b) If the max temp is associated with the lower limit velocity, compute three greater velocities, and one lesser</span>
+        <span class="c1"># (c) If the maximum temp is associated with the maximum velocity in the list, compute 3 lesser velocities, and one greater</span>
+    
+    <span class="c1"># empty four velocity addition</span>
+    <span class="n">v_cases_added</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">([</span><span class="mi">4</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span> <span class="n">dtype</span> <span class="o">=</span> <span class="nb">float</span><span class="p">)</span>
+    <span class="n">shape_v_cases_added</span> <span class="o">=</span> <span class="n">v_cases_added</span><span class="o">.</span><span class="n">shape</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;shape of the added velocity vector&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">shape_v_cases_added</span><span class="p">)</span>
+    
+    <span class="c1"># (a) interior logic</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">T_max_index</span> <span class="o">!=</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">T_max_index</span> <span class="o">!=</span> <span class="n">length_case_list</span><span class="p">):</span>
+        <span class="c1"># 2 new velocities on either side of interior</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAXIMUM TEMP IS WITHIN THE INTERIOR OF THE DESIGN SPACE&quot;</span><span class="p">)</span>
+        <span class="n">lower_velocity</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">upper_velocity</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">velocity_spacing</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span><span class="p">]</span> <span class="o">-</span> <span class="n">lower_velocity</span>
+        <span class="n">num_values_between</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1"># number of velocities on each side of maximum</span>
+        <span class="n">delta_V</span> <span class="o">=</span> <span class="n">velocity_spacing</span><span class="o">/</span><span class="p">(</span><span class="n">num_values_between</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># spacing</span>
+        <span class="c1"># Lesser velocities</span>
+        <span class="n">v_1</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="n">delta_V</span>
+        <span class="n">v_2</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta_V</span>
+        
+        <span class="c1"># greater velocities</span>
+        <span class="n">v_3</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="n">delta_V</span>
+        <span class="n">v_4</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta_V</span>
+        
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_1</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_2</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_3</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_4</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Interior V-cases added&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_cases_added</span><span class="p">)</span>
+        <span class="n">v_cases_total_vector</span> <span class="o">=</span> <span class="n">v_cases_added</span>
+    
+    <span class="k">if</span> <span class="n">T_max_index</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAXIMUM TEMP IS ON THE LOWER LIMIT OF THE DESIGN SPACE&quot;</span><span class="p">)</span>
+        <span class="c1"># Lower limit maximum velocity--make sure we don&#39;t approach zero on the lower side</span>
+        <span class="c1"># Greater side</span>
+        <span class="n">upper_velocity</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">num_values_greater</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="n">velocity_spacing</span> <span class="o">=</span> <span class="n">upper_velocity</span> <span class="o">-</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span><span class="p">]</span>
+        <span class="n">delta_V</span> <span class="o">=</span> <span class="n">velocity_spacing</span><span class="o">/</span><span class="p">(</span><span class="n">num_values_greater</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># spacing on the greater side</span>
+        <span class="n">v_1</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="n">delta_V</span>
+        <span class="n">v_2</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta_V</span>
+        <span class="n">v_3</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">delta_V</span>
+        
+        <span class="c1"># lesser side---halfway between zero and minimum velocity</span>
+        <span class="n">velocity_spacing_lower</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="mi">0</span>
+        <span class="n">num_values_lesser</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="n">delta_V_lower</span> <span class="o">=</span> <span class="n">velocity_spacing_lower</span><span class="o">/</span><span class="p">(</span><span class="n">num_values_lesser</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">v_4</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="n">delta_V_lower</span>
+        
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_1</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_2</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_3</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_4</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;LOWER LIMIT V-cases added&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_cases_added</span><span class="p">)</span>
+        <span class="n">v_cases_total_vector</span> <span class="o">=</span> <span class="n">v_cases_added</span>
+    
+    <span class="k">if</span> <span class="n">T_max_index</span> <span class="o">==</span> <span class="n">length_case_list</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;MAXIMUM TEMP IS ON THE UPPER LIMIT OF THE DESIGN SPACE&quot;</span><span class="p">)</span>
+        <span class="n">lower_velocity</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+        <span class="n">num_values_lesser</span> <span class="o">=</span> <span class="mi">3</span>
+        <span class="n">velocity_spacing</span> <span class="o">=</span> <span class="n">velocity_column</span><span class="p">[</span><span class="n">T_max_index</span><span class="p">]</span> <span class="o">-</span> <span class="n">lower_velocity</span>
+        <span class="n">delta_V</span> <span class="o">=</span> <span class="n">delta_V</span> <span class="o">=</span> <span class="n">velocity_spacing</span><span class="o">/</span><span class="p">(</span><span class="n">num_values_lesser</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span> <span class="c1"># spacing on the lower side</span>
+        <span class="n">v_1</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="n">delta_V</span>
+        <span class="n">v_2</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">delta_V</span>
+        <span class="n">v_3</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">delta_V</span>
+        
+        <span class="c1"># Greater side -- simply adding the delta_V</span>
+        <span class="n">v_4</span> <span class="o">=</span> <span class="n">velocity_max</span> <span class="o">+</span> <span class="n">delta_V</span>
+        
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_1</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_2</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_3</span>
+        <span class="n">v_cases_added</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">v_4</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;UPPER LIMIT V-cases added&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_cases_added</span><span class="p">)</span>
+        <span class="n">v_cases_total_vector</span> <span class="o">=</span> <span class="n">v_cases_added</span>
+        
+    <span class="k">return</span> <span class="n">v_cases_added</span><span class="p">,</span> <span class="n">v_cases_total_vector</span></div>
+
+
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">StoveOpt</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Liam Cassidy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
