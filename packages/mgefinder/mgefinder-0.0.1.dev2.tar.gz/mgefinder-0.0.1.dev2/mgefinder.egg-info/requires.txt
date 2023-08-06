@@ -1,0 +1,9 @@
+click
+pygogo
+pandas
+biopython
+pysam
+cython
+jellyfish
+scipy
+snakemake
