@@ -1,0 +1,3 @@
+[console_scripts]
+ruri = ruri.ruri:main
+

@@ -1,0 +1,13 @@
+README.md
+setup.py
+ruri/__init__.py
+ruri/__main__.py
+ruri/assistant.py
+ruri/crc32.py
+ruri/ruri.py
+ruri/vars.py
+ruri.egg-info/PKG-INFO
+ruri.egg-info/SOURCES.txt
+ruri.egg-info/dependency_links.txt
+ruri.egg-info/entry_points.txt
+ruri.egg-info/top_level.txt
