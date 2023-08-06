@@ -1,0 +1,17 @@
+README.md
+setup.py
+JT/ActivationFunctions.py
+JT/CPI.xlsx
+JT/Interactions.py
+JT/LossFunctions.py
+JT/MakeSet.py
+JT/Models.py
+JT/Optimizers.py
+JT/Timer.py
+JT/Transforms.py
+JT/__init__.py
+JT_Techfield.egg-info/PKG-INFO
+JT_Techfield.egg-info/SOURCES.txt
+JT_Techfield.egg-info/dependency_links.txt
+JT_Techfield.egg-info/requires.txt
+JT_Techfield.egg-info/top_level.txt
