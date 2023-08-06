@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+python_set_ings.egg-info/PKG-INFO
+python_set_ings.egg-info/SOURCES.txt
+python_set_ings.egg-info/dependency_links.txt
+python_set_ings.egg-info/requires.txt
+python_set_ings.egg-info/top_level.txt
+set_ings/__init__.py
+set_ings/__version__.py
+set_ings/exceptions.py
+set_ings/settings.py
