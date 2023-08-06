@@ -1,0 +1,3 @@
+[console_scripts]
+mam = mam.__main__:main
+
