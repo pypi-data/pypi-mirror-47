@@ -1,0 +1,8 @@
+setup.py
+swimmers_plot/__init__.py
+swimmers_plot/swimmers_plot.py
+swimmers_plot.egg-info/PKG-INFO
+swimmers_plot.egg-info/SOURCES.txt
+swimmers_plot.egg-info/dependency_links.txt
+swimmers_plot.egg-info/requires.txt
+swimmers_plot.egg-info/top_level.txt
