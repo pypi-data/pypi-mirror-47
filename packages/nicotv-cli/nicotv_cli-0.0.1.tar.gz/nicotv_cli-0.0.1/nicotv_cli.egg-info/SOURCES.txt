@@ -1,0 +1,13 @@
+README.md
+setup.py
+nicotv_cli/__init__.py
+nicotv_cli/__version__.py
+nicotv_cli/cli.py
+nicotv_cli/detail.py
+nicotv_cli/search.py
+nicotv_cli.egg-info/PKG-INFO
+nicotv_cli.egg-info/SOURCES.txt
+nicotv_cli.egg-info/dependency_links.txt
+nicotv_cli.egg-info/entry_points.txt
+nicotv_cli.egg-info/requires.txt
+nicotv_cli.egg-info/top_level.txt

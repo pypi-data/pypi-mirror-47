@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nicotv-cli
+Version: 0.0.1
+Summary: 搜索动漫，然后给出下载地址
+Home-page: https://github.com/hfutxqd/NicotvParser
+Author: imxqd
+Author-email: ahtlxqd@gmail.com
+License: MIT
+Description: 
+        # NicotvParser
+        
+        ## 简介
+        搜索动漫，然后给出下载地址
+        
+        ## 截图 
+        
+        ![Screenshot](art/screenshot.png?raw=true "Screenshot")
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
