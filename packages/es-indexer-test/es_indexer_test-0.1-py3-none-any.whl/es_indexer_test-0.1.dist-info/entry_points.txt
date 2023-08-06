@@ -1,0 +1,3 @@
+[console_scripts]
+es-indexer-test = es_indexer_test:main
+
