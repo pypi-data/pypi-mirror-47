@@ -1,0 +1,10 @@
+diskdict/__init__.py,sha256=2OIYWQSvrUxu9vwH2fhbPc1NYw6VjSMk2pS67xan2j4,101
+diskdict/command.py,sha256=aWuoSzsajivVnUcknTBUKvjQ0p4uU_NDDgM8AXSYwK8,932
+diskdict/diskdict.py,sha256=ZWDPuUhAr91ulLi1y9mOIvaK1t9LPhvG46F-BE6a9a8,3024
+diskdict/strtoint.py,sha256=A3w6mc3S4AIV-i6-6MrziFh870Zp6zrNuMRk0X3QJcw,2989
+diskdict-0.2.5.dist-info/LICENSE,sha256=fuT7WaLhs-m2zDvlBDk1Z4fGtjHo5O8xcktwNK88LpY,1074
+diskdict-0.2.5.dist-info/METADATA,sha256=9S2CGThOBDgzvexbmXTQRZ-3gEt-bhPZtvielCauIrI,783
+diskdict-0.2.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+diskdict-0.2.5.dist-info/entry_points.txt,sha256=ohC2N4CfTcIwykq7ePSIhZ2ETwzjOfaII4ka1CpNZ7s,44
+diskdict-0.2.5.dist-info/top_level.txt,sha256=AVRjundpOiKsnjf2iwln1Hqotpf5UHcx1dbAmU1HtDA,9
+diskdict-0.2.5.dist-info/RECORD,,
