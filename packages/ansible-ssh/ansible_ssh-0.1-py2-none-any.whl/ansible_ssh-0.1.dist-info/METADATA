@@ -1,0 +1,43 @@
+Metadata-Version: 2.0
+Name: ansible-ssh
+Version: 0.1
+Summary: Interactive SSH for Ansible
+Home-page: UNKNOWN
+Author: Dimos Alevizos
+Author-email: dimos@alevizos.gr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+===========
+ansible-ssh
+===========
+
+Adds interactive SSH capabilities to Ansible.
+Depends on Ansible.
+
+.. codeblock
+   usage: ansible-ssh [-h] [--inventory INVENTORY] [--key-file KEYFILE]
+                      [--user USER] [--verbose] [--become]
+                      host
+
+   positional arguments:
+     host                  the host to ssh into
+
+   optional arguments:
+     -h, --help            show this help message and exit
+     --inventory INVENTORY, -i INVENTORY
+                           ansible inventory file to use instead of the one
+                           defined in ansible.cfg
+     --key-file KEYFILE, -k KEYFILE
+                           ssh private key file to use instead of the default for
+                           the user
+     --user USER, -u USER, -l USER
+                           override the user defined in ansible inventory file
+     --verbose, -v         pass verbose flag to ssh command
+     --become, -b          ssh as root instead of the inventory-supplied account
+
+
+
