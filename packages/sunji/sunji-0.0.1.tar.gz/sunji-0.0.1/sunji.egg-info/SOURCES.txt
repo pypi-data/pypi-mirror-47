@@ -1,0 +1,6 @@
+setup.py
+sunji.egg-info/PKG-INFO
+sunji.egg-info/SOURCES.txt
+sunji.egg-info/dependency_links.txt
+sunji.egg-info/top_level.txt
+sunji_test/__init__.py
