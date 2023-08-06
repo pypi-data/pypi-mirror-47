@@ -1,0 +1,3 @@
+[console_scripts]
+oruline = oruline.__main__:main
+
