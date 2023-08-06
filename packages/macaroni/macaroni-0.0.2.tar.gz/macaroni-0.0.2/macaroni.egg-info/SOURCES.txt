@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+macaroni/__init__.py
+macaroni/consts.py
+macaroni/decorators.py
+macaroni/macaroni.py
+macaroni/types.py
+macaroni.egg-info/PKG-INFO
+macaroni.egg-info/SOURCES.txt
+macaroni.egg-info/dependency_links.txt
+macaroni.egg-info/top_level.txt
