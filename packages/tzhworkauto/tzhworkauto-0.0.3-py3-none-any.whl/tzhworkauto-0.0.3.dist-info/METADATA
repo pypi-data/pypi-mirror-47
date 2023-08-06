@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: tzhworkauto
+Version: 0.0.3
+Summary: A package for auto work of oa sheet 
+Home-page: https://github.com/664956016/tzhworkauto.git
+Author: tzh
+Author-email: 13060820957@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# tzhworkauto
+
+This project is used for my oa process, it can fill the oa sheet automaticly.
+
+
