@@ -1,0 +1,9 @@
+README.md
+setup.py
+well_schematics/__init__.py
+well_schematics/schematics.py
+well_schematics.egg-info/PKG-INFO
+well_schematics.egg-info/SOURCES.txt
+well_schematics.egg-info/dependency_links.txt
+well_schematics.egg-info/requires.txt
+well_schematics.egg-info/top_level.txt
