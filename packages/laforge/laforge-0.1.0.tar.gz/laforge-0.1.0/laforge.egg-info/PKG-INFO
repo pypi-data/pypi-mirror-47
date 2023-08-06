@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: laforge
+Version: 0.1.0
+Summary: A low-key build system for working with data.
+Home-page: https://git.sr.ht/~matvan/laforge
+Author: Matt VanEseltine
+Author-email: matvan@umich.edu
+License: AGPL-3.0-or-later
+Description: A low-key build system for working with data.
+        
+        
+Keywords: data build SQL database
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/x-rst
+Provides-Extra: postgresql
+Provides-Extra: mysql
+Provides-Extra: mssql
+Provides-Extra: all
