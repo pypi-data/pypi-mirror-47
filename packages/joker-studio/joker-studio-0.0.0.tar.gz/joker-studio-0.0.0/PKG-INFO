@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: joker-studio
+Version: 0.0.0
+Summary: CLI tools for media file editing, wrapping FFmpeg and others
+Home-page: https://github.com/frozflame/joker-studio
+Author: anonym
+Author-email: anonym@example.com
+License: GNU General Public License (GPL)
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
