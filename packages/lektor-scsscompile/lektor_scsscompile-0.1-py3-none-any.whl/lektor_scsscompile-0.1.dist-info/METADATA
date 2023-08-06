@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lektor-scsscompile
+Version: 0.1
+Summary: SASS compiler for Lektor, thats based on libsass.
+Home-page: UNKNOWN
+Author: maxbachmann
+Author-email: kontakt@maxbachmann.de
+License: MIT
+Keywords: Lektor plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Lektor
+Classifier: Environment :: Plugins
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+Requires-Dist: libsass
+
+# SCSScompile
+
+This is where a description of your plugin goes.
+Provide usage instructions here.
+
+
