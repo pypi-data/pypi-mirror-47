@@ -1,0 +1,6 @@
+README.md
+setup.py
+dftogsheet.egg-info/PKG-INFO
+dftogsheet.egg-info/SOURCES.txt
+dftogsheet.egg-info/dependency_links.txt
+dftogsheet.egg-info/top_level.txt
