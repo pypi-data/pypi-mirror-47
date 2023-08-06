@@ -1,0 +1,65 @@
+CHANGES
+=======
+
+* Updated package classifiers
+
+0.4.0
+-----
+
+* Update setup.cfg
+* Update setup.cfg
+* Switched to PBR for installation, versioning
+* Update issue templates
+* Create pull\_request\_template.md
+* Update CONTRIBUTING.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update README.md
+* Update paper.bib
+* Update paper.bib
+* Update bug\_report.md
+* Update bug\_report.md
+* Better demo of DIO streaming
+* Update README.md
+* Renamed scan variables, finished callback function
+* Document rephrasing
+* Update CONTRIBUTING.md
+* Typo fixes
+* Typo corrected, installation instructions updated
+* Update README.md
+* Create CONTRIBUTING.md
+* Update setup.py
+* Added NumPy referencing for docs
+* Added explanation of applicability
+* Bibliography typo correction
+* Paper affiliations revision
+* Paper header correction
+* Paper restructure
+* Stripped out tab characters in header
+* Update paper.md
+* added orcid id
+* added orcid id num
+* Update paper.md
+* Update paper.md
+* Create paper.bib
+* Updated versioning
+* Ben-approved edits :-)
+* Added comments
+* Comment to README and Edits to paper.md
+* Added a few comments to README.md
+* Update README.md
+* Update README.md
+* Removed redundant builds per deployment
+* LJM Python is on Github!
+* Update .travis.yml
+* Update .travis.yml
+* Update .travis.yml
+* Update .travis.yml
+* Update README.md
+* Property documentation update
+* Property documentation update
+* Property documentation update
+* Changed docstring style
+* Function name clarification
+* Tweaked docfiles
