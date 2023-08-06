@@ -1,0 +1,7 @@
+influx/__init__.py,sha256=Kn7ogMuJ4iVdxrWD3mUyvAoaJN-vdG2NOxMI9gSjnno,24009
+influx/line_protocol.py,sha256=oi5EYWDFTWdZkvKPLfELoM2uxxruVC0L0S9cKj7E6lg,5019
+influx_client-1.8.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+influx_client-1.8.1.dist-info/METADATA,sha256=-jF1D3HMqe3EvOuuQ9P0ipHBF15JrF8KSPFK5AjIj94,11413
+influx_client-1.8.1.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+influx_client-1.8.1.dist-info/top_level.txt,sha256=zF2x1oVWJOPrtuYtqOu-CrUVKV_dArG3XqF1OgBhW1o,7
+influx_client-1.8.1.dist-info/RECORD,,
