@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: iambic
+Version: 1.0.0rc0
+Summary: iambic: Data extraction and rendering library for Shakespearean text.
+Home-page: https://github.com/seandstewart/typical
+Author: Sean Stewart
+Author-email: sean_stewart@me.com
+License: MIT
+Description: iambic: Data extraction and rendering library for Shakespearean text. :scroll: 
+        ==============================================================================
+        [![image](https://img.shields.io/pypi/v/iambic.svg)](https://pypi.org/project/iambic/)
+        [![image](https://img.shields.io/pypi/l/iambic.svg)](https://pypi.org/project/iambic/)
+        [![image](https://img.shields.io/pypi/pyversions/iambic.svg)](https://pypi.org/project/iambic/)
+        [![image](https://img.shields.io/github/languages/code-size/seandstewart/iambic.svg?style=flat)](https://github.com/seandstewart/iambic)
+        [![image](https://img.shields.io/travis/seandstewart/iambic.svg)](https://travis-ci.org/seandstewart/iambic)
+        [![codecov](https://codecov.io/gh/seandstewart/iambic/branch/master/graph/badge.svg)](https://codecov.io/gh/seandstewart/iambic)
+        [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/ambv/black)
+        
+        Let computers do the hard work for you! `iambic` provides:
+        1. The most accurate method for counting lines automatically.
+        2. Automatically track which characters are speaking in any scene.
+        3. Deterministic, repeatable results, with the ability to store your
+           data as JSON with strictly defined schema for passing over the wire
+           or storing locally or in a NoSQL database between runtimes.
+        
+        
+        ## Installation
+        
+        In order to install the latest version, simply `pip3 install -U iambic`.
+        
+        
+        ## Documentation
+        
+        Full documentation coming soon!
+        
+        
+        ## How to Contribute
+        1.  Check for open issues or open a fresh issue to start a discussion
+            around a feature idea or a bug. 
+        2.  Create a branch on Github for your issue or fork
+            [the repository](https://github.com/seandstewart/que) on GitHub to
+            start making your changes to the **master** branch.
+        3.  Write a test which shows that the bug was fixed or that the feature
+            works as expected.
+        4.  Send a pull request and bug the maintainer until it gets merged and
+            published. :)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Utilities
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Text Processing :: Markup
+Classifier: Topic :: Text Processing :: Markup :: HTML
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
