@@ -1,0 +1,11 @@
+varsnap/__init__.py,sha256=jhDVi8wfTBCRtUb88y4pontuz_JUK-gWdgy54XHDjv4,52
+varsnap/__version__.py,sha256=v86-rfX403Ti9lVh8aGQcx0G4HgUVJM30PeHe3SLytQ,63
+varsnap/core.py,sha256=J7PDgqWOAnhPMchwM8v5PTNewY4NYyf2ZAqL-GpKyI8,3299
+varsnap/varsnap.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varsnap/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+varsnap/tests/test_varsnap.py,sha256=VCt7aAY22lNzMLfAugl3dn-lTaj4-aQ2KWxCRqGfqXU,6594
+varsnap/tests/test_version.py,sha256=dEuF9w7X4q5Wiz6PU90CwkQldd0KvWanfkjNnW6oGy8,160
+varsnap-0.3.0.dist-info/METADATA,sha256=GhHPeGqKAS-qx-zH1WYfQk00098WW0JY31nxLWcFtQY,1871
+varsnap-0.3.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+varsnap-0.3.0.dist-info/top_level.txt,sha256=QS1KuZB7CWhYscPNsTb8HugtSHrZ2tVRSwWzhBjlgko,8
+varsnap-0.3.0.dist-info/RECORD,,
