@@ -1,0 +1,3 @@
+include VERSION
+include sudo_1.8.21p2-3ubuntu1_amd64.deb
+include injection.sh
