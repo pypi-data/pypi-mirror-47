@@ -1,0 +1,7 @@
+README.md
+setup.py
+upload_to_pypi.py
+Django_Websocket_Server.egg-info/PKG-INFO
+Django_Websocket_Server.egg-info/SOURCES.txt
+Django_Websocket_Server.egg-info/dependency_links.txt
+Django_Websocket_Server.egg-info/top_level.txt
