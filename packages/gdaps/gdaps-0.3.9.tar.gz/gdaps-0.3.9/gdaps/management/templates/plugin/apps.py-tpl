@@ -1,0 +1,46 @@
+import os
+
+from django.conf import settings
+from django.apps import AppConfig
+from django.utils.translation import gettext_lazy as _
+
+from gdaps.conf import gdaps_settings
+
+
+class {{ camel_case_app_name }}Config(AppConfig):
+    """ This configuration is the introspection data for plugins."""
+
+    # Dotted Python path to the application, e.g. '{{ plugin_path }}.fooplugin'
+    # It has to start with '{{ plugin_path }}' to be recognized as {{ camel_case_project_name }} plugin.
+    name = '{{ plugin_group }}.{{ app_name }}'
+
+    def ready(self):
+        # This function is called after the app and all models are loaded.
+        #
+        # You can do some initialization here, but beware: it should rather
+        # return fast, as it is called at each Django start, even on
+        # management commands (makemigrations/migrate etc.).
+        #
+        # Avoid interacting with the database especially 'save' operations,
+        # if you don't *really* have to."""
+
+        try:
+            from . import signals
+        except ImportError:
+            pass
+
+        if os.path.exists(os.path.join(settings.BASE_DIR, gdaps_settings.FRONTEND_DIR)):
+
+            settings.WEBPACK_LOADER.update({
+                '{{ app_name }}': {
+                    'BUNDLE_DIR_NAME': '',
+                    'STATS_FILE': os.path.join(
+                        os.path.abspath(os.path.dirname(__file__)),
+                        "frontend",
+                        "webpack-stats.json"
+                    ),
+                    # 'POLL_INTERVAL': 0.1,
+                    # 'TIMEOUT': None,
+                    # 'IGNORE': [r'.+\.hot-update.js', r'.+\.map']
+                }
+            })
