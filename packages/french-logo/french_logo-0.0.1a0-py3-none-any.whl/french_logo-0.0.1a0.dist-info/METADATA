@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: french-logo
+Version: 0.0.1a0
+Summary: french-logo retourne un substitut de primitives logo     en français, basées sur le module turtle. Elle comporte également une     primitive repete récursive (absente du module turtle)
+Home-page: https://framagit.org/zenjo/timetime/wikis/home
+Author: Robert Sebille
+Author-email: robert@sebille.name
+Maintainer: Robert Sebille
+Maintainer-email: robert@sebille.name
+License: GNU GPL
+Download-URL: https://framagit.org/zenjo/timetime/tree/master
+Keywords: runtime time tracking software development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# French logo
+
+## Résumé
+
+Cette classe retourne un substitut de primitives logo en français, basées sur le module turtle
+
+Elle comporte également une primitive repete récursive (absente du module turtle)
+
+*README.md to do.*
+
+
