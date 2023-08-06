@@ -1,0 +1,9 @@
+iambic/__about__.py,sha256=SNi5jku5g82laXEovZ-R-3rulYkbfMkMMirhH3Y7uWg,354
+iambic/__init__.py,sha256=wKIMmQvpF7iIxHYBdPh6t4hvx2rD-NjA0ejlLSTuvpM,86
+iambic/ast.py,sha256=WJGt_YuO3R0DZXSQnAmpq_USrjdSI3GuWb93p9RpJpU,24719
+iambic/roman.py,sha256=bSaWvKP31jZeaoBM6t1CpA8xxWfeuoB4imtT9KfCI3M,2659
+iambic-1.0.0rc1.dist-info/LICENSE,sha256=OvvU5u4KUPM9fQtxTsaH9m7z6auci9wiizoGMGm-AgI,1080
+iambic-1.0.0rc1.dist-info/METADATA,sha256=ddO2D6ZepbiIANMroNnqsH5cw5PsAdyv6q2uGn_xokU,3381
+iambic-1.0.0rc1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+iambic-1.0.0rc1.dist-info/top_level.txt,sha256=WtgQIo_OE48cUq8cLFkWX-_ik6sUtul_tT3Ru4vMmzU,7
+iambic-1.0.0rc1.dist-info/RECORD,,
