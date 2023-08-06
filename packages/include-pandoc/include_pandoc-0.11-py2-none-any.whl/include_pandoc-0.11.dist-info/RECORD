@@ -1,0 +1,10 @@
+include_pandoc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+include_pandoc/addargs.py,sha256=TYMEtTgmLaLU18sRCuyarpqVbk5UrxshbSYNjNBWouc,7568
+include_pandoc/createaddargs.py,sha256=bWDQv0xvZfUTUdRmN0BVgyCdH-jVBHbQmKguHteYZa0,3474
+include_pandoc/process_includes.py,sha256=sImlPAVrshxNwxK9t6UbgPN_nNT1DZLMpNnWPrIS_eo,2791
+include_pandoc-0.11.data/scripts/include-pandoc,sha256=_2mhhhuVF4uWjesOxlnt4zKuJRymlDpp-JSPyjO9QPo,7065
+include_pandoc-0.11.dist-info/LICENSE,sha256=oEMKUiyK2eYOjLJRxH2ZuSuVN0DPCeSWbbXB4CPMXdM,35103
+include_pandoc-0.11.dist-info/METADATA,sha256=a75ot8MViFm5_cg2yhdybR2vd2A-rUbX55wMq6ufQNU,6689
+include_pandoc-0.11.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+include_pandoc-0.11.dist-info/top_level.txt,sha256=yo8uXLvH2vIHpO7ncBSz7NwhjGd1Awb2GeDyf46WfgM,15
+include_pandoc-0.11.dist-info/RECORD,,
