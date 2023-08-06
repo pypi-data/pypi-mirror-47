@@ -1,0 +1,14 @@
+phonetic_algorithmIPA/__init__.py,sha256=fHWt9FToDSRz64UxyUOandRZlWmgjA4tipZGNsQU9-s,77
+phonetic_algorithmIPA/ipa_distances.py,sha256=M4TAslLGoPJA84w7dpLmcL1URCRXJ5Px3YpvXAlMu6g,40438
+phonetic_algorithmIPA/data/.DS_Store,sha256=Ozi_CHxqs8VST5HdeFd2_2CycfjYDh3-N1-Uru04Dtw,6148
+phonetic_algorithmIPA/data/cons.json,sha256=zgGTZDXV8m1dqfJ-K8i0ZJioMmVeYtKS1F1BMQq7eTE,1148
+phonetic_algorithmIPA/data/diacrit.json,sha256=SLAkLSWXXXLq-idkZTahMocL51EkoDCTHxwgd6LxLUo,671
+phonetic_algorithmIPA/data/ftable.json,sha256=KC3wkyqUDemsVFkgHA8G4bM8IiBcfaMwyRM2KEejW3w,25746
+phonetic_algorithmIPA/data/index_column.json,sha256=z-aVbYqTn13qlMae8yEQ9jdI_H85NFXh1XY0ONtgiEo,545
+phonetic_algorithmIPA/data/regs.txt,sha256=AgvZot22Dcmr6_sofP2wEUhO5hqAUyUgCu_kEFKYOzg,698
+phonetic_algorithmIPA/data/rows.json,sha256=2NyY0VFsIrCh-fevtbErziGnl3_h4Nr_6GL7Qfe9yRQ,1918
+phonetic_algorithmIPA/data/vows.json,sha256=qZKVlhYy1J7jwQheR9yefPbARP4CWCFqJlPy-1Uk6sk,220
+phonetic_algorithmIPA-0.1.9.dist-info/METADATA,sha256=0vwlXzfuaKs_1Sm4JR4YIJXZz9KyDStEsuKyC6wYB9I,237
+phonetic_algorithmIPA-0.1.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+phonetic_algorithmIPA-0.1.9.dist-info/top_level.txt,sha256=Xteaut0t_T0XYKuwKNSlagHsL_354lQxokkEAl3CwPY,22
+phonetic_algorithmIPA-0.1.9.dist-info/RECORD,,
