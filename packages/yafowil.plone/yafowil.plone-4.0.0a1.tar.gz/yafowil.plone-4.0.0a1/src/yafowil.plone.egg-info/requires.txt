@@ -1,0 +1,8 @@
+setuptools>=39.1.0
+Products.CMFPlone>=5.1
+yafowil>=2.1.99
+yafowil.yaml>=1.0.4
+
+[test]
+plone.app.testing
+plone.app.robotframework
