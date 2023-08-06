@@ -1,0 +1,19 @@
+numpy>=1.12
+
+[docs]
+Sphinx>=1.6
+matplotlib>=1.3
+scipy>=0.13
+
+[export_mpl]
+matplotlib>=1.3
+pillow>2.6
+
+[matrix_mkl]
+mkl
+
+[matrix_mkl:platform_system != "Windows"]
+tbb
+
+[matrix_scipy]
+scipy>=0.13
