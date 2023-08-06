@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+fabulus.egg-info/PKG-INFO
+fabulus.egg-info/SOURCES.txt
+fabulus.egg-info/dependency_links.txt
+fabulus.egg-info/requires.txt
+fabulus.egg-info/top_level.txt
+fabulus/io/__init__.py
+fabulus/io/serial.py
+fabulus/unsup/__init__.py
+fabulus/unsup/spca.py
+fabulus/vis/__init__.py
+fabulus/vis/scree.py
