@@ -1,0 +1,9 @@
+blinker<2.0
+dill<0.3
+numpy<1.17,>=1.7.0
+pandas<0.25,>=0.18.0
+pyomo<5.7,>=4.4.0
+networkx<2.4
+
+[datapackage]
+datapackage
