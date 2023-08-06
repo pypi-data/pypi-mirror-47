@@ -1,0 +1,8 @@
+python_sa_gwdata-0.5.4.dist-info/METADATA,sha256=YuxtNoaKSbhgkGQGtbRE1BHMOPcz60-OFQBxwC0PBjM,4526
+python_sa_gwdata-0.5.4.dist-info/RECORD,,
+python_sa_gwdata-0.5.4.dist-info/WHEEL,sha256=pZyAqgNAylOf0KG_hPHMtuuY08rV3WzWwZu2OTsNnnw,97
+python_sa_gwdata-0.5.4.dist-info/top_level.txt,sha256=MXqmIRvuaK8q_biAe-JyXNnZUeehkyWiWKvQDUPP-FI,10
+sa_gwdata/__init__.py,sha256=gJxKwoGT76zwmf6OzbUxCqMgZnimk_B_zeLq0folMpk,131
+sa_gwdata/identifiers.py,sha256=rbt6FE9seIW8teR5ruV8hHn0vO1ZPThJ_vcIXY74rb8,16988
+sa_gwdata/sarig.py,sha256=9HmV3hmpABtoAqDP5Fw3Y-_M0Y_GMQMIxbd2UC1mdSM,722
+sa_gwdata/waterconnect.py,sha256=RXDZ4VKLUwmZhTHhzsQY-96RrJapVoE9d2XL8DZdyPw,8375
