@@ -1,0 +1,395 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>StoveOpt.new_case_setup &#8212; StoveOpt  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for StoveOpt.new_case_setup</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Thu May 23 11:06:19 2019</span>
+
+<span class="sd">@author: Lee</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># Following the post processing efforts, create new case files for the next round of simulations</span>
+<span class="c1"># Feed the new cases into the create block mesh, run surrounding cases, and post_processor for iteration</span>
+  
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">from</span> <span class="nn">shutil</span> <span class="k">import</span> <span class="n">copytree</span>
+
+
+<div class="viewcode-block" id="define_new_case_names"><a class="viewcode-back" href="../../index.html#StoveOpt.new_case_setup.define_new_case_names">[docs]</a><span class="k">def</span> <span class="nf">define_new_case_names</span><span class="p">(</span><span class="n">v_cases_total_vector</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create new case_ folders in the foamfiles folder. Named based on velocities computed in post_processor</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    v_cases_total_vector</span>
+<span class="sd">        Numpy array listing four velocities to be added to the case queue</span>
+<span class="sd">        </span>
+<span class="sd">    case_name_list</span>
+<span class="sd">        List of strings each corresponding to a new case file. Named based on velocity values converted to string.</span>
+<span class="sd">        </span>
+<span class="sd">    v_cases_total_vector_string</span>
+<span class="sd">        Velocities converted to string dtype</span>
+<span class="sd">        </span>
+<span class="sd">    v_boundary_strings</span>
+<span class="sd">        Velocty data converted to string compatible with boundary condition file</span>
+
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Algorithm ==&gt;</span>
+    <span class="c1"># Pull in the new velocities vector</span>
+    <span class="c1"># convert the vector to a string of length 6. </span>
+    <span class="c1"># delete the &quot;.&quot; periods from the string vector</span>
+    
+    <span class="c1"># Empty np array with datatype string</span>
+    <span class="n">v_cases_total_vector_string</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty list</span>
+    <span class="n">v_boundary_strings</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty list for strings used in editing the boundary condition files</span>
+    
+    <span class="n">y</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># Looping index</span>
+    <span class="k">while</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">v_cases_total_vector</span><span class="p">):</span>
+        <span class="n">v_string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">v_cases_total_vector</span><span class="p">[</span><span class="n">y</span><span class="p">])</span>
+        <span class="n">v_string_stripped</span> <span class="o">=</span> <span class="n">v_string</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;[&quot;</span><span class="p">)</span>
+        <span class="n">v_string_stripped_velocity_strs</span> <span class="o">=</span> <span class="n">v_string_stripped</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s2">&quot;]&quot;</span><span class="p">)</span>
+        <span class="n">v_string_stripped</span> <span class="o">=</span> <span class="n">v_string_stripped_velocity_strs</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">&quot;.&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">)</span> <span class="c1"># replace period with nothing</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;velocity value as string stripped&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_string_stripped</span><span class="p">)</span>
+        <span class="c1"># eliminate the first and last character of each string (the brackets)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;y value&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span>
+        <span class="c1"># Add string to a list</span>
+        <span class="n">v_cases_total_vector_string</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v_string_stripped</span><span class="p">)</span>
+        <span class="n">v_boundary_strings</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">v_string_stripped_velocity_strs</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;v vector string for case titles&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_cases_total_vector_string</span><span class="p">)</span>
+        
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;velocity numbers for the boundary condition files&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">v_boundary_strings</span><span class="p">)</span>
+    
+        <span class="c1">#v_cases_total_vector_string[y] = v_string </span>
+        <span class="c1">#print(&quot;v cases total vector string&quot;)</span>
+        <span class="c1">#print(v_cases_total_vector_string)</span>
+        <span class="n">y</span> <span class="o">=</span> <span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
+        
+    <span class="c1"># add &quot;case_&quot; to the front of each string</span>
+    <span class="n">prepend</span> <span class="o">=</span> <span class="s2">&quot;case_&quot;</span>
+    
+    <span class="n">case_name_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">v_cases_total_vector</span><span class="p">):</span>
+        <span class="c1"># extract the non prepended string from the v_cases_total_vector_string</span>
+        <span class="n">vel_string</span> <span class="o">=</span> <span class="n">v_cases_total_vector_string</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+        <span class="n">case_name</span> <span class="o">=</span> <span class="n">prepend</span> <span class="o">+</span> <span class="n">vel_string</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case name&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">case_name</span><span class="p">)</span>
+        <span class="n">case_name_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">case_name</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case name list&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">case_name_list</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">case_name_list</span><span class="p">,</span> <span class="n">v_cases_total_vector_string</span><span class="p">,</span> <span class="n">v_boundary_strings</span></div>
+
+<div class="viewcode-block" id="create_case_directories"><a class="viewcode-back" href="../../index.html#StoveOpt.new_case_setup.create_case_directories">[docs]</a><span class="k">def</span>  <span class="nf">create_case_directories</span><span class="p">(</span><span class="n">case_name_list</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Create the directories for next batch of simulations within the foamfiles dir</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    case_name_list</span>
+<span class="sd">        List of strings each corresponding to a new case file. Named based on velocity values converted to string.</span>
+<span class="sd">    </span>
+<span class="sd">    full_case_paths</span>
+<span class="sd">        List of full paths for new cases to be added. Compatible with windows os.</span>
+<span class="sd">    </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># (1) Get current WD</span>
+    <span class="c1"># (2) add the directory steps for the foamfile</span>
+    <span class="c1"># (3) add the case name string to the directory---loop</span>
+    <span class="c1"># (4) within loop, create the directories with mkdir, and ADD THE FULL PATHS to the case_full_path string</span>
+    
+    <span class="c1"># Current working directory</span>
+    <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;current working directory&quot;</span><span class="p">)</span>
+    
+    <span class="c1"># Directory steps for foamfiles</span>
+    <span class="n">directory_steps</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">foamfiles</span><span class="se">\\</span><span class="s2">counterFlowFlame2D</span><span class="se">\\</span><span class="s2">&quot;</span>
+    
+    <span class="c1"># Full root path</span>
+    <span class="n">full_root_path</span> <span class="o">=</span> <span class="n">current_dir</span> <span class="o">+</span> <span class="n">directory_steps</span>
+    
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;full_path&quot;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">full_root_path</span><span class="p">)</span>
+    
+    <span class="c1"># Empty full path vector</span>
+    <span class="n">full_case_paths</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">case_name_list</span><span class="p">):</span>
+        <span class="c1"># add path root the case names based on index x, use mkdir command to make directories</span>
+        <span class="c1"># if directories exist already do nothing and move to next x</span>
+        <span class="n">case_name</span> <span class="o">=</span> <span class="n">case_name_list</span><span class="p">[</span><span class="n">x</span><span class="p">]</span>
+        <span class="n">full_path_x</span> <span class="o">=</span> <span class="n">full_root_path</span> <span class="o">+</span> <span class="n">case_name</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;iterative full path&quot;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">full_path_x</span><span class="p">)</span>
+        
+        <span class="c1"># Append the full paths vector</span>
+        <span class="n">full_case_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">full_path_x</span><span class="p">)</span>
+        
+        <span class="c1"># Check directory existence</span>
+        <span class="c1"># Create new path if the directory doesn&#39;t exist, print and move on if it does</span>
+        <span class="n">exists</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isdir</span><span class="p">(</span><span class="n">full_path_x</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">exists</span> <span class="o">==</span> <span class="kc">True</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;case folder ALREADY EXISTS&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;creating path: &quot;</span><span class="p">)</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">full_path_x</span><span class="p">)</span>
+            <span class="n">os</span><span class="o">.</span><span class="n">mkdir</span><span class="p">(</span><span class="n">full_path_x</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">full_case_paths</span>        </div>
+
+<div class="viewcode-block" id="add_templates"><a class="viewcode-back" href="../../index.html#StoveOpt.new_case_setup.add_templates">[docs]</a><span class="k">def</span> <span class="nf">add_templates</span><span class="p">(</span><span class="n">full_case_paths</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Add the template files to the new case directories</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    zero_file_paths</span>
+<span class="sd">        List of paths leading to initial condition files for each newly added case</span>
+<span class="sd">    </span>
+<span class="sd">    constant_file_paths</span>
+<span class="sd">        List of paths leading to solver files for each newly added case</span>
+<span class="sd">    </span>
+<span class="sd">    system_file_paths</span>
+<span class="sd">        List of paths leading to mesh, schemes, time step and outfil writing files for each newly added case</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">current_dir</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+    <span class="n">template_dir_steps</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">foamfiles</span><span class="se">\\</span><span class="s2">counterFlowFlame2D</span><span class="se">\\</span><span class="s2">template_case</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="c1"># template case folder</span>
+    <span class="n">step_0</span> <span class="o">=</span> <span class="s2">&quot;0&quot;</span> <span class="c1"># zero folder</span>
+    <span class="n">step_system</span> <span class="o">=</span> <span class="s2">&quot;system&quot;</span>
+    <span class="n">step_constant</span> <span class="o">=</span> <span class="s2">&quot;constant&quot;</span>
+    
+    <span class="n">template_case_directory</span> <span class="o">=</span> <span class="n">current_dir</span> <span class="o">+</span> <span class="n">template_dir_steps</span>
+    
+    <span class="n">zero_folder</span> <span class="o">=</span> <span class="n">template_case_directory</span> <span class="o">+</span> <span class="n">step_0</span>
+    <span class="n">system_folder</span> <span class="o">=</span> <span class="n">template_case_directory</span> <span class="o">+</span> <span class="n">step_system</span>
+    <span class="n">constant_folder</span> <span class="o">=</span> <span class="n">template_case_directory</span> <span class="o">+</span> <span class="n">step_constant</span>
+    
+    <span class="c1"># Empty file paths within new case directories</span>
+    <span class="n">zero_file_paths</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">constant_file_paths</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">system_file_paths</span> <span class="o">=</span> <span class="p">[]</span>
+    
+    <span class="c1"># Loop through case paths, and copy/paste into the </span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># looping index</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">full_case_paths</span><span class="p">):</span>
+        <span class="c1"># Template source directories</span>
+        <span class="n">zero_source</span> <span class="o">=</span> <span class="n">zero_folder</span>
+        <span class="n">system_source</span> <span class="o">=</span> <span class="n">system_folder</span>
+        <span class="n">constant_source</span> <span class="o">=</span> <span class="n">constant_folder</span>
+        
+        <span class="c1"># destination files---copy the entire tree into the new case file folders</span>
+        <span class="n">zero_destination</span> <span class="o">=</span> <span class="n">full_case_paths</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">step_0</span>
+        <span class="n">system_destination</span> <span class="o">=</span> <span class="n">full_case_paths</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">step_system</span>
+        <span class="n">constant_destination</span> <span class="o">=</span> <span class="n">full_case_paths</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="n">step_constant</span>
+        <span class="n">copytree</span><span class="p">(</span><span class="n">zero_source</span><span class="p">,</span> <span class="n">zero_destination</span><span class="p">)</span> <span class="c1"># copying file to cases</span>
+        <span class="n">copytree</span><span class="p">(</span><span class="n">system_source</span><span class="p">,</span> <span class="n">system_destination</span><span class="p">)</span>
+        <span class="n">copytree</span><span class="p">(</span><span class="n">constant_source</span><span class="p">,</span> <span class="n">constant_destination</span><span class="p">)</span>
+        
+        <span class="c1"># Append file path lists</span>
+        <span class="n">zero_file_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">zero_destination</span><span class="p">)</span>
+        <span class="n">system_file_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">system_destination</span><span class="p">)</span>
+        <span class="n">constant_file_paths</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">constant_destination</span><span class="p">)</span>
+        
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;zero file paths&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">zero_file_paths</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;constant file paths&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">constant_file_paths</span><span class="p">)</span>
+        
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;system file paths&#39;</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">system_file_paths</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">zero_file_paths</span><span class="p">,</span> <span class="n">constant_file_paths</span><span class="p">,</span> <span class="n">system_file_paths</span></div>
+    
+
+<div class="viewcode-block" id="edit_details_files"><a class="viewcode-back" href="../../index.html#StoveOpt.new_case_setup.edit_details_files">[docs]</a><span class="k">def</span> <span class="nf">edit_details_files</span><span class="p">(</span><span class="n">zero_file_paths</span><span class="p">,</span> <span class="n">v_boundary_strings</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Open and edit the newly created 0 case files. Edit the empty details file with the velocity strings</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    zero_file_paths</span>
+<span class="sd">        List of paths leading to initial condition files for each newly added case</span>
+<span class="sd">        </span>
+<span class="sd">    v_boundary_strings</span>
+<span class="sd">        Velocity strings to be added to details files for respective case</span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    
+    <span class="n">details_step</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">details&quot;</span> <span class="c1"># step from zero folder to details file</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># looping index</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">zero_file_paths</span><span class="p">):</span>
+        <span class="c1"># loop through the details files and and write the corresponding v_boundary_strings</span>
+        <span class="n">details_file</span> <span class="o">=</span> <span class="n">zero_file_paths</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">details_step</span>
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">details_file</span><span class="p">,</span> <span class="s1">&#39;w+&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;Velocity&#39;</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">v_boundary_strings</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span></div>
+        
+
+<div class="viewcode-block" id="edit_iterative_boundary_conditions"><a class="viewcode-back" href="../../index.html#StoveOpt.new_case_setup.edit_iterative_boundary_conditions">[docs]</a><span class="k">def</span> <span class="nf">edit_iterative_boundary_conditions</span><span class="p">(</span><span class="n">zero_file_paths</span><span class="p">,</span> <span class="n">constant_file_paths</span><span class="p">,</span> <span class="n">system_file_paths</span><span class="p">,</span> <span class="n">v_boundary_strings</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Edit the boundary condition files, U, in the initial condition 0 folder with the new computed velocities</span>
+<span class="sd">    </span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># comparable to edit_boundary_conditions from the run_surrounding_cases module</span>
+    <span class="c1"># NEGATIVE data for the LHS</span>
+    <span class="c1"># The position for the beginning of the secondary air condition RHS (0 0.1 0) is 986</span>
+    <span class="n">RHS_pos</span> <span class="o">=</span> <span class="mi">893</span>
+    <span class="n">U_step</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\\</span><span class="s2">U&quot;</span> <span class="c1"># step from zero folder to details file</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="mi">0</span> <span class="c1"># looping index</span>
+    <span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">zero_file_paths</span><span class="p">):</span>
+        <span class="c1"># loop through the details files and and write the corresponding v_boundary_strings</span>
+        <span class="n">U_file</span> <span class="o">=</span> <span class="n">zero_file_paths</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="n">U_step</span>
+        <span class="n">U_RHS_str</span> <span class="o">=</span> <span class="s2">&quot;(0 &quot;</span> <span class="o">+</span> <span class="n">v_boundary_strings</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; 0);&quot;</span>
+        <span class="n">U_LHS_str</span> <span class="o">=</span> <span class="s2">&quot;(0 &quot;</span> <span class="o">+</span> <span class="s2">&quot;-&quot;</span> <span class="o">+</span> <span class="n">v_boundary_strings</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+</span> <span class="s2">&quot; 0);&quot;</span>
+        
+        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">U_file</span><span class="p">,</span> <span class="s1">&#39;+r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="n">RHS_pos</span><span class="p">)</span> 
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Secondary_air_RHS&quot;</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;type&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;fixedValue;&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;value&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;uniform&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">U_RHS_str</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;}&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;Secondary_air_LHS&quot;</span> <span class="o">+</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;{&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;type&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;fixedValue;&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;value&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="s2">&quot;uniform&quot;</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">U_LHS_str</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;    &quot;</span><span class="p">)</span>
+            <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;}&quot;</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">)</span>
+        <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span></div>
+
+
+
+    
+    
+    
+    
+    
+    
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">StoveOpt</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Liam Cassidy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
