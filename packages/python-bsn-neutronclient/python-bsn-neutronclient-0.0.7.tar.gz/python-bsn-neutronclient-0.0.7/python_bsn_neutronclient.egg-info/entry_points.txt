@@ -1,0 +1,9 @@
+[neutronclient.extension]
+bsn_extensions = python_bsn_neutronclient.neutron.bsn_plugin_client
+
+[openstack.bsn_neutronclient.v2]
+force-bcf-sync = python_bsn_neutronclient.osc.v2.topology.topology_sync:ForceBcfSync
+
+[openstack.cli.extension]
+bsn_neutronclient = python_bsn_neutronclient.osc.plugin
+
