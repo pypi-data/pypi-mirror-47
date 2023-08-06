@@ -1,0 +1,3 @@
+[console_scripts]
+make_multi = MultiSC.make_multi:main
+
