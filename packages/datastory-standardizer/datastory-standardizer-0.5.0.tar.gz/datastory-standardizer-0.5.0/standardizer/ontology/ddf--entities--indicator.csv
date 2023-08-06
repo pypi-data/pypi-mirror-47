@@ -1,0 +1,8 @@
+indicator,source,name,sid
+gdp_usd_current,wb,GPD (current USD),NY.GDP.MKTP.CD
+pop_total,wb,Total population,SP.POP.TOTL
+school_enroll,wb,Primary school enrollment,SE.PRM.ENRR
+co2_capita,wb,Tons of CO2 emissions per capita,EN.ATM.CO2E.PC
+lex_birth,wb,Life expectancy at birth,SP.DYN.LE00.IN
+trade_balance_services,oecd,Trade balance of services in USD,SVCTRADE_T1
+fertility_rate_total,oecd,Total fertility rates,FERTILITY_T1
