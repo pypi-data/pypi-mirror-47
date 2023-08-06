@@ -1,0 +1,12 @@
+from surround import Assembler
+from stages import Main, ValidateData
+from {runner_file} import {runner_class}
+
+
+def main():
+    assembler = Assembler("Default project", ValidateData(), Main())
+    {runner_class}(assembler).run()
+
+
+if __name__ == "__main__":
+    main()
