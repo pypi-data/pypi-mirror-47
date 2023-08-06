@@ -1,0 +1,10 @@
+notedata/__init__.py,sha256=jOT4vKmnPPmu75cx4goV22ZLaT1GsYfsLx3Ce2fjSsU,163
+notedata/utils.py,sha256=7thDpu3HjSfZg0_XSLxPn9f8yClkEaiVYauGKuby05k,584
+notedata/dataset/ElectronicsData.py,sha256=5lPmaSDPj7CubrJLoBmT4SMCMq5YA5Am472haPHEMjc,5920
+notedata/dataset/__init__.py,sha256=bQlqGyaiPo4zyDCowN1wfIT30GMr_WHlw5xRNk4n-HE,188
+notedata/dataset/data.py,sha256=SOqMGlLbcP2EK5ZlLjgCSv1WJvkfLujiMMGF0RF3FaY,2376
+notedata/dataset/test.py,sha256=E37uiwWu2r0z7atUaXWyiIL7Tm7QSdjtApQezHdBsx0,244
+notedata-0.0.3.dist-info/METADATA,sha256=igwepF7L-MFRMmjDJ3q60fuQkU7GkKL-EEb_sA5Et9E,203
+notedata-0.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+notedata-0.0.3.dist-info/top_level.txt,sha256=aGEWqmZH23XYm4P1L-SSH-L_P2wv2xESfm_mMRMkjtk,9
+notedata-0.0.3.dist-info/RECORD,,
