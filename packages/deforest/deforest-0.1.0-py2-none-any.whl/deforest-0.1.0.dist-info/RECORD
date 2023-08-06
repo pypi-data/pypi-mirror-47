@@ -1,0 +1,10 @@
+deforest/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+deforest/cleaner.py,sha256=WZvCOHSnB0PEOhtKkqLViF2DyCNk3C0kgFW_lqHGVNw,1694
+deforest/constant.py,sha256=8XpdiGwj2CVvZHfJzQfayky6G5zXjbGio7jivktWnLk,38
+deforest/deforest.py,sha256=VHH_h5VsV8SxbLFsRfZrJCyBL2T2_dTw5QH9MfEIvyM,999
+deforest/tags.py,sha256=CHpclAseMuUSxMSohPE5hR8GY9dDWFuDgM2_OfbgPkM,963
+deforest-0.1.0.dist-info/METADATA,sha256=fanKER6JDfI6tLy2TKAX7aAJzCBHMo8AhF_gLnqEZ1c,1687
+deforest-0.1.0.dist-info/RECORD,,
+deforest-0.1.0.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+deforest-0.1.0.dist-info/entry_points.txt,sha256=LzOLCNAo6Jgdv_f3jAI_JXWoDg6MO2TJSnaN64qQKKA,53
+deforest-0.1.0.dist-info/top_level.txt,sha256=o5yDewJtjP0F8aP9F_ePayMoH3bxi0_q-nXeojGLAlM,9
