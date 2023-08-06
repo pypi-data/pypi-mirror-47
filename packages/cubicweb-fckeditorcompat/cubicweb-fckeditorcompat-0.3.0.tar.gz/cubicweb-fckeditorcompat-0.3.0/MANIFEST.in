@@ -1,0 +1,9 @@
+include setup.py
+include README
+include tox.ini
+recursive-include cubicweb_fckeditorcompat *.py
+recursive-include cubicweb_fckeditorcompat/data *.gif *.png *.ico *.css *.js *.afp *.ascx *.asp *.aspx *.cfc *.cfm *.cgi *.htc *.html *.lasso *.php *.pl *.txt *.xml
+recursive-include cubicweb_fckeditorcompat/i18n *.po
+recursive-include cubicweb_fckeditorcompat/schema *.sql
+prune debian
+prune cubicweb-fckeditorcompat.spec
