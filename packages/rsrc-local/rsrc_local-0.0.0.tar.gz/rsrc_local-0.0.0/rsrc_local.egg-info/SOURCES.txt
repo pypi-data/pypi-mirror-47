@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+rsrc_local/__init__.py
+rsrc_local.egg-info/PKG-INFO
+rsrc_local.egg-info/SOURCES.txt
+rsrc_local.egg-info/dependency_links.txt
+rsrc_local.egg-info/top_level.txt
