@@ -1,0 +1,10 @@
+README.md
+setup.py
+funf/__func_fibbnacci.py
+funf/__func_gcd.py
+funf/__init__.py
+funf/func.py
+funf.egg-info/PKG-INFO
+funf.egg-info/SOURCES.txt
+funf.egg-info/dependency_links.txt
+funf.egg-info/top_level.txt
