@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: text-vectorizer
+Version: 0.0.1
+Summary: NLP tool
+Home-page: https://github.com/deepdialog/text_vectorizer
+Author: deepdialog
+Author-email: thebotbot@sina.com
+License: Private
+Keywords: bot
+Platform: any
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: tqdm
+
+Dialog System
+
+
