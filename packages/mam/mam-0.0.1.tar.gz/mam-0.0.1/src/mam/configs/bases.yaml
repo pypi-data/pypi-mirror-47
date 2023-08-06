@@ -1,0 +1,165 @@
+_mutations:
+  _mutations:
+    '**': '@mam.config:mutations'
+  _reduce: '@mam.config:zip_update'
+  _post_process: '@mam.config:extend'
+  base: '@mam.config:update'
+  tasks:
+    $: '@mam.config:tasks'
+    '*':
+      $: '@mam.config:defer'
+      '*': '@mam.config:child'
+      extensions: '@mam.config:extend'
+  files: '@mam.config:child'
+  mutations: '@mam.config:child'
+  output: '@mam.config:child'
+_reduce:
+  - ['base']
+  -
+_post_process:
+  - '@mam.config:expand_extensions'
+  - '@mam.config:expand_format'
+  - '@mam.config:remove_internals'
+  - '@mam.config:remove_base'
+base:
+  config_dir: './config'
+  config_path: '{config_dir}/{config_name}'
+  config_arg: '--config={config_path}'
+  config_name: '{name}.ini'
+tasks:
+  - name: 'mypy'
+    deps:
+      - 'mypy'
+    command: 'mypy'
+    converter: '@mam.converters:mypy'
+    config_arg: '--config-file={config_path}'
+  - name: 'flake8'
+    deps:
+      - 'flake8'
+    command: 'flake8'
+    converter: '@mam.converters:pycodestyle'
+    extends:
+      - 'pyflakes'
+      - 'pycodestyle'
+  - name: 'pycodestyle'
+    deps:
+      - 'pycodestyle'
+    command: 'pycodestyle'
+    converter: '@mam.converters:pycodestyle'
+  - name: 'pyflakes'
+    deps:
+      - 'pyflakes'
+    command: 'pyflakes'
+    converter: '@mam.converters:pyflakes'
+    config_path:
+    config_arg:
+  - name: 'pydocstyle'
+    deps:
+      - 'pydocstyle'
+    command: 'pydocstyle'
+    converter: '@mam.converters:pydocstyle'
+  - name: 'pylint'
+    deps:
+      - 'pylint'
+    command: 'pylint'
+    converter: '@mam.converters:pylint'
+    config_arg: '--rcfile={config_path}'
+  - name: 'vulture'
+    deps:
+      - 'vulture'
+    command: 'vulture'
+    converter: '@mam.converters:vulture'
+    config_path:
+    config_arg:
+  - name: 'frosted'
+    deps:
+      - 'frosted'
+    command: 'frosted -r'
+    converter: '@mam.converters:pyflakes'
+  - name: 'bandit'
+    deps:
+      - 'bandit'
+    command: 'r!bandit -r --format custom --msg-template "{relpath}:{line}:{test_id}:{severity}:{msg}:{confidence}:{range}"'
+    converter: '@mam.converters:bandit_mam_custom'
+    config_arg: '--configfile {config_path}'
+  - name: 'prospector'
+    deps:
+      - 'prospector'
+    command: 'prospector --strictness veryhigh --no-autodetect --output-format json'
+    converter: '@mam.converters:prospector_json'
+  - name: 'pylama'
+    deps:
+      - 'pylama'
+      - 'pylama_pylint'
+    command: 'pylama'
+    converter: '@mam.converters:pylama'
+  - name: 'jedi'
+    deps:
+      - 'jedi'
+    command: 'python -m jedi linter'
+    converter: '@mam.converters:jedi'
+  - name: 'pydiatra'
+    deps:
+      - 'pydiatra'
+    command: 'python -m pydiatra'
+    converter: '@mam.converters:pydiatra'
+  - name: 'detect-secrets'
+    deps:
+      - 'detect-secrets'
+    command: 'detect-secrets scan --all-files'
+    converter: '@mam.converters:detect_secrets'
+  - name: 'coala'
+    deps:
+      - 'coala-bears'
+    command: 'coala --json --files'
+    converter: '@mam.converters:echo'
+  - name: 'pychecker'
+    deps:
+      - 'PyChecker'
+    command: 'pychecker'
+    converter: '@mam.converters:echo'
+  - name: 'bellybutton'
+    deps:
+      - 'bellybutton'
+    command: 'bellybutton lint'
+    converter: '@mam.converters:echo'
+  - name: 'clonedigger'
+    deps:
+      - 'clonedigger'
+    command: 'clonedigger --recursive'
+    converter: '@mam.converters:echo'
+  - name: 'py-find-injection'
+    deps:
+      - 'py-find-injection'
+    command: 'py-find-injection --help'
+    converter: '@mam.converters:echo'
+  - name: 'twistedchecker'
+    deps:
+      - 'twistedchecker'
+    command: 'twistedchecker --confidence=INFERENCE --pep8=y'
+    converter: '@mam.converters:echo'
+  - name: 'python-taint'
+    deps:
+      - 'python-taint'
+    command: 'pyt'
+    converter: '@mam.converters:echo'
+  - name: 'pyre'
+    deps:
+      - 'pyre-check'
+    command: 'pyre check --source-directory'
+    converter: '@mam.converters:echo'
+  - name: 'pytype'
+    deps:
+      - 'pytype'
+    command: 'pytype'
+    converter: '@mam.converters:echo'
+  - name: 'dodgy'
+    deps:
+      - 'dodgy'
+    command: 'python .mam/{name}/Scripts/dodgy'
+    converter: '@mam.converters:echo'
+  - name: 'pyroma'
+    deps:
+      - 'pyroma'
+    command: 'pyroma -d'
+    converter: '@mam.converters:echo'
