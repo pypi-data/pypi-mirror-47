@@ -1,0 +1,14 @@
+jd_page_parser/VERSION,sha256=axN4nkPlSFY0Uz3hamXYup00xMl1hYi2ZYBUNfgOsRU,5
+jd_page_parser/__init__.py,sha256=Oy1rq4eSisIbYl0sdn5yN-S7MEaN3ZvPg75GftXowT8,130
+jd_page_parser/category_parsers.py,sha256=OOC6AU4KnEU081tQpmlagXHyvAMcGB7ppTdXGbu-Fow,1386
+jd_page_parser/detail_parsers.py,sha256=1m_-7T0EnQI0p4N_3Lum2C6yCJ_7ObwSogcWoYA3qLY,2079
+jd_page_parser/product_list_parsers.py,sha256=vQ45tTKaTCO0ZqrOnW9IT2mA-M3rE8sEf9ykbOsRLCs,1375
+tests/__init__.py,sha256=rpJWJDsA4o7kdEn6TT-dmBgRSLgMXdYvnYmzeYOtmNo,132
+tests/conftest.py,sha256=yXPyAXGsorYazxFspE_0hfbmZflMhNJjSG198jyqCd8,5559
+tests/test_book_category_parser.py,sha256=HzgdxIpaT0XKhLdlneheqiqjz5NlgDyse4r5WoFOJHo,1079
+tests/test_book_detail_parser.py,sha256=hGTdga89ioaST5zJX5k-aolcgf6JRHgRK1yEO1HdulE,653
+tests/test_book_list_parser.py,sha256=ayJ3Ulp7IC-a4MgsMKwcuHn3VbHAwyUzr5diJzcnhqM,556
+jd_page_parser-0.0.1.dist-info/METADATA,sha256=gyPY6brYI49e9e21cxbRnfuPKad0wQiGLp6JIhVmxtk,1956
+jd_page_parser-0.0.1.dist-info/WHEEL,sha256=05Ahrak1u2K61DpLp9CDNSbUImLTITCMom_cqTFk6pE,116
+jd_page_parser-0.0.1.dist-info/top_level.txt,sha256=7L1MGnBltzfgUwADkb2IBAErmBtNE2RMZJP7sxKXlyI,21
+jd_page_parser-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: jd-page-parser
+Version: 0.0.1
+Summary: A library for parsing jingdong pages.
+Home-page: https://bitbucket.org/sfds-dev/jd-page-parser
+Author: Neal Wong
+Author-email: ibprnd@gmail.com
+License: MIT
+Keywords: jingdong crawler
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Dist: parsel
+
+jd-page-parser
+=====================
+
+
+Currently only support book pages. All fields use same encoding 'utf-8'.
+
+Category fields:
+* name - Category name
+* url - Category url
+* children - Subcategories.
+
+Book list fields:
+* links - A list of links in {'title': '', 'url': ''} format
+*  next_page_uri- Next page uri
+
+Book detail fields:
+* title - Book title
+* author - Book authors, delimited by comma
+* images - Image url list
+* detail - Detail key-value pairs
+
+
+Content
+-------------
+
+* jd_page_parser.category_parsers.BookCategoryParser
+* jd_page_parser.product_list_parsers.BookListParser
+* jd_page_parser.detail_parsers.BookDetailParser
+
+
+Installation
+-------------
+
+The simplest way is to install it via `pip`:
+
+    pip install jd-page-parser
+
+
+Run Test
+-------------
+
+`pip install -r requirements-dev.txt`
+
+`tox`
+
+
