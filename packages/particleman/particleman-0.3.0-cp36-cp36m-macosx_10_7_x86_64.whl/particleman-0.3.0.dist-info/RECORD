@@ -1,0 +1,13 @@
+particleman/__init__.py,sha256=o1mWXw8STvTY4i5qouuRmxKiouHyUoFPB_WsqxPoIaA,111
+particleman/core.py,sha256=wrOujUCKvCuF5zEoeP94jiNEYsT-dQ87lsQ2ziterYc,3911
+particleman/dop.py,sha256=x3cR6dp9855uEG5I4p2qjsX7FNSylhgG_nf7HUV2hqg,884
+particleman/filter.py,sha256=ok13hfs1p7AKaV6S7N1MdrPSuAljkXv6hP1xm-arg4k,13450
+particleman/libst.cpython-36m-darwin.so,sha256=ON3G65a6M3M6Whi4iY3k3_cdWI5qfDwHQ1uzc6jWQ6U,15032
+particleman/plotting.py,sha256=bRQk7p5RY49DJSaaUNpCT-h7SEOJBNzOKeRByaPq9fw,20798
+particleman/st.py,sha256=2L43-sXqIowQpSuFikt2VH7loDK4uJ2dhNSe2LVvC9s,3004
+particleman-0.3.0.dist-info/COPYING.txt,sha256=cqI3YWJZcl7dmEIYbpmyDUljqPZvLqoz3EQagzcXsq8,1643
+particleman-0.3.0.dist-info/LICENSE.txt,sha256=8gnBrbtuLZ2bJWyL7SHeXNPomP0KY2RfIniC1sUQbIY,15219
+particleman-0.3.0.dist-info/METADATA,sha256=TiOb50k3izfLtFr9n9-GemBuEp8PfOKwdZCeNLIVwnU,2318
+particleman-0.3.0.dist-info/WHEEL,sha256=09Y_SZ9JdvNE6ud4_JD4dEHcYGjZ1D6z-OOOrK32dFw,110
+particleman-0.3.0.dist-info/top_level.txt,sha256=WoKzl5m1pvsxtA0fPmJxF9HLj94J6305cldYjsUX3ps,12
+particleman-0.3.0.dist-info/RECORD,,
