@@ -1,0 +1,3 @@
+[console_scripts]
+lndnodebackup = nodebackup.nodebackup:main
+

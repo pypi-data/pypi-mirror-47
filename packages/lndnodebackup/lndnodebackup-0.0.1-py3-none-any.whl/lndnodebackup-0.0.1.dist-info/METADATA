@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lndnodebackup
+Version: 0.0.1
+Summary: bitcoin lightning node (LND) backup tool
+Home-page: https://gitlab.com/nolim1t/nodebackup
+Author: nolim1t
+Author-email: hello@nolim1t.co
+License: Apache 2.0
+Keywords: bitcoin lightning node backup
+Platform: UNKNOWN
+Requires-Dist: toml
+Requires-Dist: dropbox
+
+UNKNOWN
+
+
