@@ -1,0 +1,13 @@
+Pillow
+gym
+imutils
+keyboard
+matplotlib
+mouse
+mss
+numpy
+opencv-python
+pandas
+pathlib
+python3_xlib
+seaborn
