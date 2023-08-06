@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: orpy
+Version: 0.1.0
+Summary: Python library and CLI for the INDIGO PaaS Orchestrator.
+Home-page: https://github.com/indigo-dc/orpy
+Author: Alvaro Lopez Garcia
+Author-email: aloga@ifca.unican.es
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown; charset=UTF-8
+Requires-Dist: pbr (!=2.1.0,>=2.0.0)
+Requires-Dist: six (>=1.10.0)
+Requires-Dist: setuptools (!=24.0.0,!=34.0.0,!=34.0.1,!=34.0.2,!=34.0.3,!=34.1.0,!=34.1.1,!=34.2.0,!=34.3.0,!=34.3.1,!=34.3.2,!=36.2.0,>=21.0.0)
+Requires-Dist: cliff (!=2.9.0,>=2.8.0)
+Requires-Dist: requests
+
+# orpy
+
+Python library and CLI for the INDIGO PaaS Orchestrator.
+
+* Free software: Apache License 2.0
+* Source: https://github.com/indigo-dc/orpy
+* Bugs: https://github.com/indigo-dc/orpy/issues
+
+## Installation.
+
+You can install it directly from PyPI
+
+```
+pip install orpy
+```
+
+## Usage
+
+Before using the orchestrator with orpy you need to export your IAM access
+token. As long as the access token is valid orchent can tell the orchestrator
+what to do.
+
+```
+export ORCHESTRATOR_TOKEN=<your access token here>
+```
+
+```
+usage: orpy [--version] [-v | -q] [--log-file LOG_FILE] [-h] [--debug]
+            [--url <orchestrator-url>]
+
+INDIGO PaaS Orchestrator Python Client
+
+optional arguments:
+  --version             show program's version number and exit
+  -v, --verbose         Increase verbosity of output. Can be repeated.
+  -q, --quiet           Suppress output except warnings and errors.
+  --log-file LOG_FILE   Specify a file to log output. Disabled by default.
+  -h, --help            Show help message and exit.
+  --debug               Show tracebacks on errors.
+  --url <orchestrator-url>
+                        The base url of the orchestrator rest interface.
+                        Alternative the environment variable ORCHESTRATOR_URL
+                        can be used.
+
+Commands:
+  complete       print bash completion command (cliff)
+  dep list       List existing deployments at orchestrator.
+  dep show       Show details about an existing deployment.
+  deployment list  List existing deployments at orchestrator.
+  deployment show  Show details about an existing deployment.
+  help           print detailed help for another command (cliff)
+  test           Test if the given URL is pointing to an orchestrator.
+```
+
+
+
