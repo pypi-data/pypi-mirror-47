@@ -1,0 +1,3 @@
+[console_scripts]
+pandoc-static-katex=pandoc_static_katex:main
+
