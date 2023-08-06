@@ -1,0 +1,5 @@
+recursive-include multi_purpose_arduino_controller/controll_server/templates *
+recursive-include multi_purpose_arduino_controller/controll_server/static *
+
+recursive-include multi_purpose_arduino_controller/controll_server/board_controller/templates *
+recursive-include multi_purpose_arduino_controller/controll_server/board_controller/static *
