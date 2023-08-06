@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+arrdem.datalog.shell.egg-info/PKG-INFO
+arrdem.datalog.shell.egg-info/SOURCES.txt
+arrdem.datalog.shell.egg-info/dependency_links.txt
+arrdem.datalog.shell.egg-info/requires.txt
+arrdem.datalog.shell.egg-info/top_level.txt
+bin/datalog
