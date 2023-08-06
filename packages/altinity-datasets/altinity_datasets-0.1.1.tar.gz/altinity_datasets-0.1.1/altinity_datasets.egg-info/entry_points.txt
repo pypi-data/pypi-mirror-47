@@ -1,0 +1,3 @@
+[console_scripts]
+ad-cli = altinity_datasets.ad_cli:ad_cli
+
