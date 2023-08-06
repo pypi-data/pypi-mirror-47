@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: cloudbreak
+Version: 0.1.1
+Summary: A material design web UI for deluge
+Home-page: https://github.com/nat212/cloudbreak
+Author: Natasha Draper
+Author-email: natasha@draper.net.za
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: deluge
+Requires-Dist: twisted
+Requires-Dist: flask
+Requires-Dist: crochet
+Requires-Dist: service-identity
+Requires-Dist: flask-cors
+
+# CloudBreak - Material UI for Deluge
+[![Build Status](https://travis-ci.org/nat212/cloudbreak.svg?branch=master)](https://travis-ci.org/nat212/cloudbreak)
+![Screenshot](https://user-images.githubusercontent.com/42024975/59104255-6573c700-8931-11e9-81e0-c67ad4163db2.png)
+## Requirements
+- Python 3 & pip
+- Libtorrent & Libtorrent python bindings
+- Deluge 2.0.0
+```bash
+pip3 install deluge==2.0.0
+```
+- NodeJS 12 or greater & NPM
+## Building from source
+- Install deluge and libtorrent
+- Install dependencies
+```bash
+pip3 install -r requirements.txt
+```
+- Install frontend dependencies
+```bash
+cd frontend
+npm install
+```
+- Build frontend
+```bash
+npm run build
+```
+
+
