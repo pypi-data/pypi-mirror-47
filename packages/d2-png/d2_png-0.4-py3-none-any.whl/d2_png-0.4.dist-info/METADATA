@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: d2-png
+Version: 0.4
+Summary: simple crontab implemented on thread executor pool
+Home-page: https://github.com/weaming/d2-png
+Author: weaming
+Author-email: garden.yuen@gmail.com
+License: UNKNOWN
+Project-URL: Source, https://github.com/weaming/d2-png
+Project-URL: Bug Reports, https://github.com/weaming/d2-png
+Keywords: tools,markdown
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: imgkit
+Requires-Dist: requests
+Requires-Dist: printable
+
+# d2 png
+
+2D data (list of pure dict, csv like) to png.
+
+`pip3 install d2_png`
+
+
