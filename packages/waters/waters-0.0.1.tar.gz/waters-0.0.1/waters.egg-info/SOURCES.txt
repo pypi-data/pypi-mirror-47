@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+waters/__init__.py
+waters/parsers.py
+waters.egg-info/PKG-INFO
+waters.egg-info/SOURCES.txt
+waters.egg-info/dependency_links.txt
+waters.egg-info/top_level.txt
