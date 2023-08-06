@@ -1,0 +1,16 @@
+LICENCE.txt
+README.md
+setup.cfg
+setup.py
+gpar/__init__.py
+gpar/model.py
+gpar/regression.py
+gpar.egg-info/PKG-INFO
+gpar.egg-info/SOURCES.txt
+gpar.egg-info/dependency_links.txt
+gpar.egg-info/requires.txt
+gpar.egg-info/top_level.txt
+tests/__init__.py
+tests/test_model.py
+tests/test_regression.py
+tests/util.py
