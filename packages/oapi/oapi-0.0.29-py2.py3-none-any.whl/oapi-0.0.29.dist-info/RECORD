@@ -1,0 +1,12 @@
+oapi/__init__.py,sha256=UnDGZsq_8no-VjRDZlInamP-uMokq3cyjrEerLf7FXc,79
+oapi/client.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oapi/errors.py,sha256=UBA_m-GTLh-KdSxOS60TH0WixAh_j0e42fE1yRz_82E,383
+oapi/model.py,sha256=F8twLE6ifaO-komGzzFhmzmcQHX6yiB-dNijOIxIuiU,25584
+oapi/oas/__init__.py,sha256=RGa9h1y6yS07Flpn3jMsJ1nuH9d0jo7klUb-9nE8z0A,44
+oapi/oas/model.py,sha256=gptCZDYjkRPANchiQ6F7MVvSJ7mADn-s4vpbDh37aB4,75400
+oapi/oas/references.py,sha256=FOT_ObO0O6TOwHrsMTJ3eLRhn_PaaDvPY4m2T6KD_eY,12654
+oapi-0.0.29.dist-info/METADATA,sha256=M_3g9uxBuarm_tNcjtKsvpOuwr-tfLWEGQs9ySIR-ew,845
+oapi-0.0.29.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+oapi-0.0.29.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+oapi-0.0.29.dist-info/top_level.txt,sha256=Qyw_yNABMI6c4-PSvjeyfcPBXt0NL0zfQ7H8HFwFTk8,5
+oapi-0.0.29.dist-info/RECORD,,
