@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+todoit.egg-info/PKG-INFO
+todoit.egg-info/SOURCES.txt
+todoit.egg-info/dependency_links.txt
+todoit.egg-info/entry_points.txt
+todoit.egg-info/requires.txt
+todoit.egg-info/top_level.txt
