@@ -1,0 +1,17 @@
+pyrepltalk-1.0.2.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+pyrepltalk-1.0.2.dist-info/METADATA,sha256=l_Ue7URNP4xTu_q1gRMwzShZqrUe57MLZmriJPc-zOU,275
+pyrepltalk-1.0.2.dist-info/RECORD,,
+pyrepltalk-1.0.2.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pyrepltalk-1.0.2.dist-info/entry_points.txt,sha256=bukmHQiSiizrQGjouvX0ksbAg-n6GJVCudaY_T4duck,189
+pyrepltalk-1.0.2.dist-info/metadata.json,sha256=Y8K7YAkqHa1kcb3gpitvv1qM7s5PzvdJJDO5uAfWIDM,927
+pyrepltalk-1.0.2.dist-info/top_level.txt,sha256=QJiyax4cxaokz-R8nu7dRpEJqavQFLFAbL5jOjUkI2U,9
+repltalk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repltalk/baseadapter.py,sha256=xpOqPzkeZwHRshghYjuxb1pcqkRpVwdZx8XUeVkC6hc,2062
+repltalk/baserepl.py,sha256=lfp7P9wADScPL6I7guq2tj7YMJWqV0FPXTLTJviLucg,2533
+repltalk/baserunner.py,sha256=_JyqylfiiiAImi2KZISJxTvoryyO562JbRi_4QSU4Os,1686
+repltalk/adapters/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repltalk/adapters/nvim.py,sha256=URVYIm7F0gMHMiM4_9Axot7PIXp_RxQaNjn5FTTC2ZI,1517
+repltalk/adapters/vim.py,sha256=oJLO6p7rdECzi7uzeuTuSFnmKZ_iOWhFrxcXtpkGzXA,3963
+repltalk/servers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+repltalk/servers/elm.py,sha256=NrOuFGaKWDnO8_DIYK1gfqQ0EvXc1rzJjJnBtWtXOww,1365
+repltalk/servers/haskell.py,sha256=2CdkSHWWaVgM21f2_MOIDSzTaumnCBdVks0Jt6HT-T4,1531
