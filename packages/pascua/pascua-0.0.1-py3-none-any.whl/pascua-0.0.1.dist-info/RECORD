@@ -1,0 +1,11 @@
+pascua/__init__.py,sha256=VEoXuBgIxnjvJRnQMBkpmtM2y1SO9GN5xCVZoO9Bqmo,229
+pascua/_version.py,sha256=yHTH8dVBgu29hNekCKmq8TkocpAxvi_a_vKUu65hrq0,63
+pascua/types.py,sha256=u5j0w1OiBOmN_IeUen3JYno540-YlaQqoY7daro9ikk,202
+pascua/environments/__init__.py,sha256=mMPZdU0SKMSd0yw2U4_REchJ_ew4LubjLi-lWZ7-OWQ,67
+pascua/environments/abc.py,sha256=90QE8bNvegj3AWKYYXmPe8McH6f-9ya9oh4xkzdWoCw,317
+pascua/environments/python.py,sha256=RLYYMQDsJoxSLnZ0_j0JqDhXQ2s2-lU1xgn3Uvz1APc,278
+pascua-0.0.1.dist-info/LICENSE,sha256=cPowQbvBScj_OnBqJAZDn595VjuMJMbcP2F27cNqZA4,1077
+pascua-0.0.1.dist-info/METADATA,sha256=R5f-1osA1cqpZUFDapGSAfDTXE-7XLpkSsZFO4ubb4M,2731
+pascua-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pascua-0.0.1.dist-info/top_level.txt,sha256=NKVLVhpTJqplmS7TsssnorxSV3MbdnU8O7IeEzA9W4E,7
+pascua-0.0.1.dist-info/RECORD,,
