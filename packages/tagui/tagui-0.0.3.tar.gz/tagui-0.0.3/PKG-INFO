@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: tagui
+Version: 0.0.3
+Summary: Placeholder for TagUI Python package
+Home-page: https://github.com/tebelorg/TagUI-Python
+Author: Tebel.Automation
+Author-email: ken@tebel.org
+License: Apache License 2.0
+Description: Placeholder for TagUI Python package - a wrapper for https://github.com/kelaberetiv/TagUI
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
