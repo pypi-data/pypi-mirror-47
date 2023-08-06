@@ -1,0 +1,15 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+WXApi/WXError.py
+WXApi/WXMenu.py
+WXApi/WXUtils.py
+WXApi/__init__.py
+WXApi/event.py
+WXApi/request.py
+pyweipi.egg-info/PKG-INFO
+pyweipi.egg-info/SOURCES.txt
+pyweipi.egg-info/dependency_links.txt
+pyweipi.egg-info/requires.txt
+pyweipi.egg-info/top_level.txt
