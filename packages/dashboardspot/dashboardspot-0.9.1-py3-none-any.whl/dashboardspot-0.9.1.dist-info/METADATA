@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: dashboardspot
+Version: 0.9.1
+Summary: DashboardSpot pyhon library.
+Home-page: https://github.com/terrillo/dashboardspot-python
+Author: Terrillo Walls
+Author-email: terrillo@terrillo.com
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/terrillo/dashboardspot-python/issues
+Project-URL: Documentation, https://github.com/terrillo/dashboardspot-python
+Project-URL: Source Code, https://github.com/terrillo/dashboardspot-python
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0.*
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# DashboardSpot Python
+
+
+# Install
+```shell
+pip3 install dashboardspot -U
+```
+
+# Example
+```python
+from dashboardspot import DashboardSpot
+
+ds = DashboardSpot('your_api_key')
+ds.hit('new sale')
+ds.hit('new sale', data="blue shirt")
+ds.hit('new sale', data="red shirt", count=2, timestamp=1559746170)
+```
+
+
