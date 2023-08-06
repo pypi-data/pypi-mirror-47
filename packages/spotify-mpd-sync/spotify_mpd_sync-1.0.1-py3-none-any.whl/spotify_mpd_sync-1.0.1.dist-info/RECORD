@@ -1,0 +1,10 @@
+spotify_mpd_sync/__init__.py,sha256=wZoN-n4TwRkA_RFkTRjAAFjdTGLtQfRDnAFaQkRRqhE,26
+spotify_mpd_sync/msplaylist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+spotify_mpd_sync/msplaylist/authenticate.py,sha256=By2Mv-anbVALbzud6HwDYVitPvBCJmt3EaoM6pCle-M,3833
+spotify_mpd_sync/msplaylist/spotify.py,sha256=0HpNXeBnm5kjMo_UJBlL-NUmSSaL8ElTdkjpm_zGhXY,3827
+spotify_mpd_sync-1.0.1.dist-info/LICENSE.md,sha256=zJbk5m4smWebvdMv_EGCrY3qYUceY9kPBPjEmztWU44,1081
+spotify_mpd_sync-1.0.1.dist-info/METADATA,sha256=Kcq-ykZMxloM8uBF8YZce90HQazKZ3fqyabmztXG3AI,2318
+spotify_mpd_sync-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+spotify_mpd_sync-1.0.1.dist-info/entry_points.txt,sha256=eE_nQW9LhUUPUWL3XyOWdmGp8lAxoOV42O4KPgPUTTw,75
+spotify_mpd_sync-1.0.1.dist-info/top_level.txt,sha256=t_GiMWJWR_ljtYvYnJ3PU7mK_p3JANAbVriRegKZtas,17
+spotify_mpd_sync-1.0.1.dist-info/RECORD,,
