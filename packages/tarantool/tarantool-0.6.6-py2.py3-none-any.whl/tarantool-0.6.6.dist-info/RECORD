@@ -1,0 +1,14 @@
+tarantool/__init__.py,sha256=DR32FzjokHQc1ZIrdwBGRVA_7hVO2hSMALmhaZCNLac,2175
+tarantool/connection.py,sha256=owMfitaFuOOcrX5ux7xqQZrlOZ9l4m8oUlwcwWPK0wE,26847
+tarantool/const.py,sha256=qwtgEP8BW4uPhR40FbNHaVuj_XXhHy7RfGywPqAcXCo,1942
+tarantool/error.py,sha256=sbu9jZ9uWbRxXsxD6FCvptuFXd2iukjjYny5m5Zbiac,14823
+tarantool/mesh_connection.py,sha256=OqYN_pxr711q0gr-wEcl9uf5WoafNeeMApOvh8DuYpQ,10788
+tarantool/request.py,sha256=mTul8y9wVFL6kbXur_w4l23hxMGYU__B186Zp3gGEyQ,9071
+tarantool/response.py,sha256=Cp6Q6OZrJoe8v7cOHmM8vRBflzvAeQ9Xl5DQcD3EAOg,7087
+tarantool/schema.py,sha256=X4Cj2Kvg3Jl8vjA-gdVUhuJfhIAUoUD6NCGwz8UcJzA,6988
+tarantool/space.py,sha256=oZMM9-2ea8pmyju7rjbRbBqiRKUbdCIJwjqH8nyrexk,2531
+tarantool/utils.py,sha256=o63-VXdMO7kgij3SntSbzPINADwMQcMdgzk6Z3L0AjE,3214
+tarantool-0.6.6.dist-info/METADATA,sha256=sq7HIQFf82xs2UiAQNJ40clUdV-btNj8GNTu0mbzQIk,4328
+tarantool-0.6.6.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+tarantool-0.6.6.dist-info/top_level.txt,sha256=UaOMg_wzimSlDKND81W4i_YNuaPeWF2Kv00b7TZDxTg,10
+tarantool-0.6.6.dist-info/RECORD,,
