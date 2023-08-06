@@ -1,0 +1,13 @@
+openfst_python/__init__.py,sha256=fbJb-PoBB_WnvpU6sI0UrJtRcwDUcW8Jw8HQ7PJTi6A,136
+openfst_python/libfst-88ce4db9.so.16,sha256=9FNc7KoLsirL6zW-WldmV4q7ofZHDIhVh2ksWduYUZc,18470384
+openfst_python/libfstfar-4af69566.so.16,sha256=lTv_E-fkN0MZNGtwPZEP48TQ3pW1UH9xu6ZvNbSfE1k,17648
+openfst_python/libfstfarscript-6e476032.so.16,sha256=FX4PrUYyZtYGgKdfs_sHkYVqd-iG7mpPMPsYw6kbWq4,15250816
+openfst_python/libfstscript-f275bdad.so.16,sha256=3GfvEhoSHPRCHDlIuJEt6p-hBV5neUrorW0JkMSxjS0,93359880
+openfst_python/pywrapfst.cpython-36m-x86_64-linux-gnu.so,sha256=A90ttJOFu9_QZDmE1fxVjwvy8xDpHSGd4F8xbQYeIaA,2628112
+openfst_python/pywrapfst.py,sha256=9rkVvGuVzYfR7PlgOlSV5_tKCA8KfbQHlhn5oSBDT0A,450
+openfst_python/test.py,sha256=nGbxhma9M1dCLv6ZX8F7i5zGnV0Fs9TNyIWLufMEWLw,1089
+openfst_python-1.7.2.dist-info/LICENSE,sha256=RzhsDh5gdmVr7svnquR-r3QumHxzhaPjKdU5rSXdEhM,11366
+openfst_python-1.7.2.dist-info/METADATA,sha256=0bet3pQUU6FFE_A3wK054CniSoKGOxCz7FwVcYCPuqY,3602
+openfst_python-1.7.2.dist-info/WHEEL,sha256=-X7_CmS0BI8ilboKdafewfwLUZy355_DUNF2SYbVwD8,104
+openfst_python-1.7.2.dist-info/top_level.txt,sha256=5HdWgwItJ7TWJ2YfZxNEeZHPw3GSArhWbSW-k20w_4A,15
+openfst_python-1.7.2.dist-info/RECORD,,
