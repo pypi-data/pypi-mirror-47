@@ -1,0 +1,88 @@
+Metadata-Version: 2.1
+Name: fasva-osmserver
+Version: 0.1.5
+Summary: Server to query the OpenStreetMap service.
+Home-page: UNKNOWN
+Author: Lars Klitzke
+Author-email: lars.klitzke@hs-emden-leer.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/x-rst
+Requires-Dist: aiohttp
+Requires-Dist: pymodconf
+
+FASva OSM-Server
+================
+
+This is a server to forward requests to the Overpass server hosted on the HRZ. Thus, this tool should also run on HRZ
+but the port of the server has to be forwarded to the MUX to access the server via the Apache server of MUX. For more
+information about port forwarding using SSH see `SSH port-forwarding`_.
+
+
+
+Installation
+-------------
+
+You can find the latest version on `PyPI`_.
+
+.. code-block:: bash
+
+    $ pip install fasva-osmserver
+
+
+After the installation, a configuration file ``osmserver.cfg`` is installed into the ``<venv>/share`` directory. Adapt
+the options to your needs.
+
+Usage
+------
+
+Either specify the ``--config`` flag to explicitly point to a configuration file or
+let the server use the installed configuration file.
+
+.. code-block:: bash
+
+    $ osmserver --config <directory>/osmserver.cfg
+
+
+System service
+----------------
+
+Instead of calling ``osmserver`` directly, you can install it as a system service to automatically
+start it on system startup.
+
+Therefore, a file ``osmserver.service`` can be found in ``<venv>/share/`` next to the configuration
+file. Before installing the service, you may have to adapt the path to osmserver. Then, copy the service
+file to ``/etc/systemd/system`` with
+
+.. code-block:: bash
+
+    $ cp <venv>/share/osmserver.service /etc/systemd/service
+
+and enable the service with
+
+.. code-block:: bash
+
+    $ systemctl enable osmservice.service
+
+
+Authors
+========
+
+``Lars Klitzke``  (HSEL_, GitHub_, XING_, LinkedIn_, PyPI_, `Docker Hub`_)
+
+.. _HSEL: http://oldweb.hs-emden-leer.de/no_cache/hochschule/beschaeftigte.html?tx_wtdirectory_pi1%5Bshow%5D=861&tx_wtdirectory_pi1%5Bfilter%5D%5Blast_name%5D=klitzke&cHash=b51f314fd4d1dbe3cf54bfdc99c1a609
+.. _GitHub: https://github.com/larsklitzke
+.. _XING: https://www.xing.com/profile/Lars_Klitzke
+.. _LinkedIn: https://www.linkedin.com/in/larsklitzke
+.. _Docker Hub: https://hub.docker.com/u/larsklitzke
+.. _PyPI: https://pypi.org/user/LarsKlitzke>
+.. _SSH port-forwarding: https://help.ubuntu.com/community/SSH/OpenSSH/PortForwarding
+
