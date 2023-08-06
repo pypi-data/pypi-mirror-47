@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: EyeSim-Python
+Version: 1.0.1
+Summary: RoBIOS Python library
+Home-page: UNKNOWN
+License: UNKNOWN
+Keywords: robios eyesim eyebot
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+
+#EyePy
+Python library for programming RoBIOS
+
