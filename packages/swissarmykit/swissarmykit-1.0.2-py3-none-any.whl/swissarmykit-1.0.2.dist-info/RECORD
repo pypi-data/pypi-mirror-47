@@ -1,0 +1,13 @@
+swissarmykit/__init__.py,sha256=shI-S6ymO5mKJhriIc68krSBie0IzLA43xZQhs0XJNY,21
+swissarmykit/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissarmykit/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissarmykit/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissarmykit/lib/core.py,sha256=_yZPpEUQAurG8KhlAgx_xNvnq78TlVzI_P5F8lCTUdI,4223
+swissarmykit/lib/inspector.py,sha256=7fjzM5QRolnE3ywyAPFNNFwDKkICXPohoB_RNX89oSc,423
+swissarmykit/office/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissarmykit/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+swissarmykit-1.0.2.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+swissarmykit-1.0.2.dist-info/METADATA,sha256=Sd-DQ-kantdSKzhVK2bjdmQO5FE6En8PkEdNhUuzmHQ,569
+swissarmykit-1.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+swissarmykit-1.0.2.dist-info/top_level.txt,sha256=tRH2FE2y2gz6icI4H8ElPg1pPolwiYgRLq24eTIIElI,13
+swissarmykit-1.0.2.dist-info/RECORD,,
