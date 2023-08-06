@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tmplr
+Version: 0.0.1
+Summary: The holiest cli template system
+Home-page: https://github.com/benknoble/tmplr
+Author: D. Ben Knoble
+Author-email: ben.knoble@gmail.com
+License: MIT
+Description: # tmplr
+        
+        Generate project files from templates on the command-line
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3
+Description-Content-Type: text/markdown
