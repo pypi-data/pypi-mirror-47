@@ -1,0 +1,16 @@
+fran/__init__.py,sha256=0myHRdGDA2wCGf4MSSTczuip6Ex4QSwiCtJgVf_JCXM,87
+fran/__main__.py,sha256=T3Bj3dEjxQ12ndoVbfp0RTVFH-Eefjmmm3HCjOmz3Wo,4908
+fran/common.py,sha256=RO5s5J-OV-yDuk5pZfcwZEDJChDuv7dxvUkg1FEBNgk,2516
+fran/config.toml,sha256=BN0BzSUAdEuobPchG5drD65YMcLE2fowX7T11FF-408,166
+fran/constants.py,sha256=iRN7ajlsmMW1SmhKE0A5ov-OuubwL_wGnwfakzr_XGc,679
+fran/controls.txt,sha256=G2ogqKFN2WQ_f7jiUQ0Q0sotGqH8uyWdR58ID5PNncU,1306
+fran/events.py,sha256=igVUdZ-0uOuu5sBaRo6Be-rkxK0iUV5Yceo46-lIAEE,9970
+fran/frames.py,sha256=0srfqzO6l3KIRnMTLwr6606aLzGf4AoGSNo-jp9N2lc,7129
+fran/gui.py,sha256=olOn_-ytNISQXUBCMkCbXJwqwdTC8wzQlO6CON9wtAU,13944
+fran/rename.py,sha256=xq7XvxTfkrPMpPowhlXOcVPruA-SGqL-y5Ze63RUs4s,2108
+fran-0.7.0.dist-info/LICENSE,sha256=LOpE07oD4VOSdudaWFWpkXO7jbX-x45FqHTcXWBE8S0,1069
+fran-0.7.0.dist-info/METADATA,sha256=ZYIsn-mOotRD2xgJufU8RfanfB5yUzkwsd2g3aSQCN8,7067
+fran-0.7.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fran-0.7.0.dist-info/entry_points.txt,sha256=qW4y4csD_R4hcq1vMI5u1iZAbebekNgXXx_5-zprbBc,113
+fran-0.7.0.dist-info/top_level.txt,sha256=osK_wiJMjvmI8hCnzu5RcTbTHFrmPRVWnlVNvvhE1kE,5
+fran-0.7.0.dist-info/RECORD,,
