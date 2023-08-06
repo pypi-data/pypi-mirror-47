@@ -1,0 +1,37 @@
+kind: pipeline
+name: default
+
+trigger:
+  event:
+    - push
+
+
+steps:
+- image: python:3.7-alpine
+  name: test
+  environment:
+    username:
+      from_secret: username
+    password:
+      from_secret: password
+  commands:
+  - apk add --no-cache build-base git > /dev/null
+  - pip install ./  > /dev/null
+  - pip install pytest pytest-asyncio > /dev/null
+  - pytest -sv
+- name: bump
+  image: xplugins/bump
+  settings:
+    github_token: 
+      from_secret: github_token
+    versionfile: VERSION
+- name: pypi_publish
+  image: plugins/pypi
+  settings:
+    username: xmorse
+    setupfile: setup.py
+    password:
+      from_secret: pypi_password
+    distributions:
+      - sdist
+      - bdist_wheel
