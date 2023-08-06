@@ -1,0 +1,15 @@
+pandas_light/__init__.py,sha256=ZNaMg_43SP3C2xISRWIrBjEJxNWpjdAYOdihEvR-mTo,183
+pandas_light/column.py,sha256=MIHIPSpdBGJxGPYx22X_5SfrDLFnA2TuUYAacO5cjLY,2345
+pandas_light/filter.py,sha256=gmtuQP0BTh5sXqLOwgAFDSasVH4MXhMZ1ND3gfnBPFc,1208
+pandas_light/index.py,sha256=rLJ8b9F_G-OXlHGnsHwNGAjW8FgP6srserKwFwO0yuk,163
+pandas_light/insert.py,sha256=Ks-hq6PYuFCb8smjpv04LXweBGO3565XOwX3q4kZ_cM,1363
+pandas_light/mapping.py,sha256=2r6N562wGifAMqvdJ5MMHbTcuq-29dSaVvNfOMk3KFM,1558
+pandas_light/null.py,sha256=WZSS7m-2t9qKfczIuOfJzq85hveg3nVBYJZnAoFByhg,185
+pandas_light/reshape.py,sha256=HjDJIrvtNftWd6B9U7UwtkFxQexs4ppFlKMmrHr2xo8,1377
+pandas_light/tool.py,sha256=JzFNG1iBi713Sfg9P3FQZInvw9xLnO_MuW_UEkU9vXw,193
+pandas_light/util.py,sha256=aAxN3OdgOremlYS1Arz0mx-6xRNnU0k7M7FR6wwkWrE,3575
+pandas_light-1.0.1.dist-info/LICENSE,sha256=K-ak3MP9JC-bS6gx6X66fdN9p1aXHSwmoQiq1eRI74c,1081
+pandas_light-1.0.1.dist-info/METADATA,sha256=T3VIF5UfqDXjnirQg9VJYtgICzOIK17qDPo4GmuuCEA,460
+pandas_light-1.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pandas_light-1.0.1.dist-info/top_level.txt,sha256=AaawS9P_yH7UIeIWkydDiU0U1K3tBFjR48hJch8QFlY,13
+pandas_light-1.0.1.dist-info/RECORD,,
