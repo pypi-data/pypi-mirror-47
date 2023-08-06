@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyean
+Version: 1.1.0
+Summary: Create standard barcodes with Python. Only EAN13. (optional Pillow support included).
+Home-page: UNKNOWN
+Author: Mrsamkhar
+Author-email: mydevelopmentspace@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: images
