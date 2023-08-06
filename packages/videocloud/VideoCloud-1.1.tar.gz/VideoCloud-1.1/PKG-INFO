@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: VideoCloud
+Version: 1.1
+Summary: A command line tool that generates word clouds from YouTube video captions
+Home-page: https://github.com/paramt/VideoCloud
+Author: Param Thakkar
+Author-email: contact@param.me
+License: MIT
+Description: # YTWC
+        Generate word clouds from YouTube videos
+        
+Platform: UNKNOWN
+Requires-Python: >= 3.6
