@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyppca
+Version: 0.0.4
+Summary: Probabilistic PCA with Missing Values
+Home-page: https://github.com/shergreen/pyppca
+Author: Sheridan Green
+Author-email: sheridan.green@yale.edu
+License: UNKNOWN
+Description: # pyppca
+        Probabilistic PCA which is applicable also on data with missing values. Missing value estimation is typically better than NIPALS but also slower to compute and uses more memory. [A port to Python of the implementation by Jakob Verbeek](http://lear.inrialpes.fr/~verbeek/software.php).
+        
+        Usage:
+        ```
+        from pyppca import ppca
+        C, ss, M, X, Ye = ppca(Y,d,dia)
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
