@@ -1,0 +1,10 @@
+gimmebio.pji-0.1.0-py3.6-nspkg.pth,sha256=pxTb1jWsCspdqoPmV2TGBVot_a6QmHbVwKXbDN4rHTs,549
+gimmebio/pji/__init__.py,sha256=JKey5JdjQ_B4DK5vzjLteG9-U6yrslvY_y9SSrsNCR4,36
+gimmebio/pji/cli.py,sha256=ifvVRcca8_Xk-LzMGfBhJId6wq723G00uTOKD6opGn4,707
+gimmebio/pji/pji.py,sha256=gCfew-nzICI-YDtAfWFOA540vwLK7xJ1yerWDHy9wv0,2129
+gimmebio/pji/utils.py,sha256=JDXr86wpQ8RADC2LggIaRDLYeAxvxbASpYptmdhLxEk,236
+gimmebio.pji-0.1.0.dist-info/METADATA,sha256=9d_LlcnAtjQffIfHdvysGcghjr_-9PT5Sl5aXs7Dy9U,378
+gimmebio.pji-0.1.0.dist-info/RECORD,,
+gimmebio.pji-0.1.0.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+gimmebio.pji-0.1.0.dist-info/namespace_packages.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
+gimmebio.pji-0.1.0.dist-info/top_level.txt,sha256=ZtXh7YhZv8YK6bNlKCHwVooOVbYqdaS6-ibUenEYqgA,9
