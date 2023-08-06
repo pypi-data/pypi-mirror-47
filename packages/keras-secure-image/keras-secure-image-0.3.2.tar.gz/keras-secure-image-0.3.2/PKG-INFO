@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: keras-secure-image
+Version: 0.3.2
+Summary: Add on library for deep learning on encrypted images
+Home-page: https://github.com/akshaybahadur21
+Author: Akshay Bahadur
+Author-email: akshaybahadur21@gmail.com
+License: MIT
+Download-URL: https://github.com/akshaybahadur21/keras-secure-image/archive/v0.3.tar.gz
+Description: 
+        This package is an add on library on top of keras or tensorflow.
+        The aim of this package is to provide privacy of images by enabling the model to be trained on encrypted images.
+        
+        Read the documentation at: https://github.com/akshaybahadur21/keras-secure-image
+        
+        For a detailed code overview on colab, see:
+        https://colab.research.google.com/drive/1D7ziODKrzL0QK-GuI7BH9f9Fk7U3tfUW
+        
+        keras-secure-image is compatible with Python 2.7-3.6
+        and is distributed under the MIT license.
+        
+        
+Keywords: KERAS,SECURITY,PRIVACY,DEEP LEARNING
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
