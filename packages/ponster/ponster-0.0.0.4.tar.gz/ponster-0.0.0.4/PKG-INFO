@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: ponster
+Version: 0.0.0.4
+Summary: White box PON OLT software
+Home-page: https://github.com/shadansari
+Author: Shad Ansari
+Author-email: shad69@gmail.com
+License: Apache License 2.0
+Description: # ponster
+        
+        ponster - A simple controller for  PON Optical Line Terminals (OLTs) that support the VOLTHA project's Openolt api.
+        
+        ## Install
+        ### Install and start Confluent Kafka
+        ### Install ponster
+        ```
+        pip install ponster
+        ```
+        ## Develop
+        ```
+        git clone git@github.com:shadansari/openolt.git
+        cd ponster 
+        pipenv shell
+        pipenv install
+        make protos
+        ```
+        
+        ## Test
+        ### Start ponster
+        ```
+        ponster <olt ip address>
+        ```
+        
+        ### Read openolt indications from kafka
+        ```
+        confluent-kafka/consumer.py localhost:9092 foo openolt.ind-<olt ip address>
+        ```
+        
+Keywords: openolt pon whitebox
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Topic :: System :: Networking
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: Apache Software License
+Description-Content-Type: text/markdown
