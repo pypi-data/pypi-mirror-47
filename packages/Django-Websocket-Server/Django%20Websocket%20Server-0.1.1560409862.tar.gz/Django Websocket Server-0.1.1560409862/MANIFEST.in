@@ -1,0 +1,2 @@
+recursive-include django_websocket_server/templates *
+recursive-include django_websocket_server/static *
