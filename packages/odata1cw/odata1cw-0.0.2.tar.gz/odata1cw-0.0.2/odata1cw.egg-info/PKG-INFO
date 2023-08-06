@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: odata1cw
+Version: 0.0.2
+Summary: 1C-Odata wrapper
+Home-page: https://github.com/belov38/1c-odata
+Author: Ilia Belov
+Author-email: belov.penrose@gmail.com
+License: UNKNOWN
+Description: 1C (v8.1c.ru) OData wrapper.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

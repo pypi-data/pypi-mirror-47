@@ -1,0 +1,13 @@
+README.md
+setup.py
+odata1cw/__init__.py
+odata1cw/catalog.py
+odata1cw/core.py
+odata1cw/document.py
+odata1cw/postingmode.py
+odata1cw/utils.py
+odata1cw.egg-info/PKG-INFO
+odata1cw.egg-info/SOURCES.txt
+odata1cw.egg-info/dependency_links.txt
+odata1cw.egg-info/requires.txt
+odata1cw.egg-info/top_level.txt
