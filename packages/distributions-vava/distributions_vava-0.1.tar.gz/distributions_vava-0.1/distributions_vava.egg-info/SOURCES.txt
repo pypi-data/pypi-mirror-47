@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+distributions_vava/Binomialdistribution.py
+distributions_vava/Gaussiandistribution.py
+distributions_vava/Generaldistribution.py
+distributions_vava/__init__.py
+distributions_vava.egg-info/PKG-INFO
+distributions_vava.egg-info/SOURCES.txt
+distributions_vava.egg-info/dependency_links.txt
+distributions_vava.egg-info/not-zip-safe
+distributions_vava.egg-info/top_level.txt
