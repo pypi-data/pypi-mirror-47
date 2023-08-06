@@ -1,0 +1,37 @@
+/* BOX
+ **  Use it to put content inside a neat little box
+ */
+
+.box
+	+box-card
+	overflow: hidden
+	position: relative
+	word-break: break-word
+
+	+media-xs
+		margin-bottom: 14px
+
+	+media-sm
+		margin-bottom: 14px
+
+	p
+		margin: 15px
+		position: relative
+
+	h1, h2, h3, h4, h5, h6
+		margin-left: 15px
+
+	> ul, > ol
+		margin-bottom: 15px
+		margin-top: 10px
+		padding-left: 35px
+
+		> li
+			padding-right: 15px
+			margin-bottom: 7px
+
+	.bottom
+		width: 100%
+
+	&+.box // When a box is followed immediately by another box
+		margin-top: 20px

@@ -1,0 +1,74 @@
+/* Small button at the bottom of the page to hop to top */
+#hop
+	background: $color-background-light
+	border-radius: 50%
+	box-shadow: 0 0 15px rgba(black, .2)
+	bottom: 25px
+	cursor: pointer
+	height: 32px
+	opacity: 0
+	position: fixed
+	right: 25px
+	transform: scale(0.5)
+	transition: all 250ms ease-in-out
+	visibility: hidden
+	width: 32px
+	z-index: 999
+
+	&:hover
+		transform: scale(1.2)
+		background-color: $color-background-dark
+
+	svg
+		fill: $color-text-dark-secondary
+		max-width: 12px
+		top: 8px
+		position: relative
+		// display: block
+
+	&.active
+		visibility: visible
+		opacity: 1
+		transform: scale(1)
+
+
+/* ADMIN POWERS */
+.whoosh
+	background-color: $color-background-light
+	border-radius: 50%
+	box-shadow: 0 0 15px rgba(black, .2)
+	color: $color-text-dark-secondary !important
+	display: block
+	font-size: 1.2rem
+	opacity: .8
+	padding: 6px 12px
+	position: fixed
+	right: 15px
+	text-shadow: none
+	transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out, top 550ms ease-in-out
+	top: 60px
+	z-index: 99
+
+	&:hover
+		background-color: $color-background-light
+		opacity: 1
+
+	&:active
+		background-color: $color-primary
+		color: white !important
+
+	+media-xs
+		color: $color-text
+		right: 0
+		top: 0
+
+	&.whoosh-page
+		right: 70px
+		transition: background-color 150ms ease-in-out, opacity 150ms ease-in-out, top 400ms ease-in-out
+
+		+media-xs
+			right: 60px
+
+body.navbar-hidden
+	.whoosh
+		top: 10px
