@@ -1,0 +1,65 @@
+simages package
+=============
+
+Subpackages
+-----------
+
+.. toctree::
+
+
+Submodules
+----------
+
+
+simages.main module
+-------------------
+
+.. automodule:: simages.main
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+simages.extractor module
+-----------------------
+
+.. automodule:: simages.extractor
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+simages.models module
+---------------------
+
+.. automodule:: simages.models
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+simages.dataset module
+----------------------
+
+.. automodule:: simages.dataset
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+simages.embedding module
+------------------------
+
+.. automodule:: simages.embeddings
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
+
+Module contents
+---------------
+
+.. automodule:: simages
+    :members:
+    :undoc-members:
+    :show-inheritance:

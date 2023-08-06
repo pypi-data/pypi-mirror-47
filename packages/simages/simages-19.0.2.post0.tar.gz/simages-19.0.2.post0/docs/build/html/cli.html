@@ -1,0 +1,351 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Running simages from the console &mdash; simages 19.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Loading Data" href="loading.html" />
+    <link rel="prev" title="Linkage" href="gallery/plot_linkage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> simages
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                19.0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery/index.html">Examples Gallery</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Command Line</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#Named Arguments">Named Arguments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#web-interface-optional">Web Interface (optional)</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="loading.html">Loading Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build.html">Building Embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing.html">Removing Duplicates</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference to All Attributes and Methods</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to simages</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">simages</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Running simages from the console</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cli.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="running-simages-from-the-console">
+<span id="cli"></span><h1>Running simages from the console<a class="headerlink" href="#running-simages-from-the-console" title="Permalink to this headline">¶</a></h1>
+<p>simages can be run locally in the terminal with <code class="docutils literal notranslate"><span class="pre">simages-show</span></code>.</p>
+<p>Usage:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">simages</span><span class="o">-</span><span class="n">show</span> <span class="o">--</span><span class="n">data</span><span class="o">-</span><span class="nb">dir</span> <span class="o">.</span>
+</pre></div>
+</div>
+<p>See all the options for <code class="docutils literal notranslate"><span class="pre">simages-show</span></code> with <code class="docutils literal notranslate"><span class="pre">simages-show</span> <span class="pre">--help</span></code>:</p>
+<p>Find similar pairs of images in a folder</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="n">usage</span><span class="p">:</span> <span class="n">simages</span><span class="o">-</span><span class="n">show</span> <span class="p">[</span><span class="o">-</span><span class="n">h</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">data</span><span class="o">-</span><span class="nb">dir</span> <span class="n">DATA_DIR</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">show</span><span class="o">-</span><span class="n">train</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">epochs</span> <span class="n">EPOCHS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">num</span><span class="o">-</span><span class="n">channels</span> <span class="n">NUM_CHANNELS</span><span class="p">]</span>
+                    <span class="p">[</span><span class="o">--</span><span class="n">pairs</span> <span class="n">PAIRS</span><span class="p">]</span> <span class="p">[</span><span class="o">--</span><span class="n">zdim</span> <span class="n">ZDIM</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="section" id="Named Arguments">
+<h2>Named Arguments<a class="headerlink" href="#Named Arguments" title="Permalink to this headline">¶</a></h2>
+<table class="docutils option-list" frame="void" rules="none">
+<col class="option" />
+<col class="description" />
+<tbody valign="top">
+<tr><td class="option-group">
+<kbd>--data-dir, -d</kbd></td>
+<td>Folder containing image data</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--show-train, -t</kbd></td>
+</tr>
+<tr><td>&#160;</td><td>Show training of embedding extractor every epoch</td></tr>
+<tr><td class="option-group">
+<kbd>--epochs, -e</kbd></td>
+<td><p class="first">Number of passes of dataset through model for training. More is better but takes more time.</p>
+<p class="last">Default: 2</p>
+</td></tr>
+<tr><td class="option-group" colspan="2">
+<kbd>--num-channels, -c</kbd></td>
+</tr>
+<tr><td>&#160;</td><td><p class="first">Number of channels for data (1 for grayscale, 3 for color)</p>
+<p class="last">Default: 3</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd>--pairs, -p</kbd></td>
+<td><p class="first">Number of pairs of images to show</p>
+<p class="last">Default: 10</p>
+</td></tr>
+<tr><td class="option-group">
+<kbd>--zdim, -z</kbd></td>
+<td><p class="first">Compression bits (bigger generally performs better but takes more time)</p>
+<p class="last">Default: 8</p>
+</td></tr>
+</tbody>
+</table>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">simages-show</span></code> calls <a class="reference internal" href="reference.html#simages.main.find_duplicates" title="simages.main.find_duplicates"><code class="xref py py-func docutils literal notranslate"><span class="pre">find_duplicates()</span></code></a>:</p>
+<dl class="function">
+<dt id="simages.main.find_duplicates">
+<code class="descclassname">simages.main.</code><code class="descname">find_duplicates</code><span class="sig-paren">(</span><em>input: Union[str, numpy.ndarray], n: int = 5, num_epochs: int = 2, num_channels: int = 3, show: bool = False, show_train: bool = False, show_path: bool = True, z_dim: int = 8, db=None, **kwargs</em><span class="sig-paren">)</span> &#x2192; Tuple[numpy.ndarray, numpy.ndarray]<a class="reference internal" href="_modules/simages/main.html#find_duplicates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.main.find_duplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find duplicates in dataset. Either np.ndarray or path to image folder must be specified as <cite>input</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>input</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em> or </em><em>np.ndarray</em>) – folder directory or N x C x H x W array</li>
+<li><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of closest pairs to identify</li>
+<li><strong>num_epochs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – how long to train the autoencoder (more is generally better)</li>
+<li><strong>show</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – display the closest pairs</li>
+<li><strong>show_train</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – show output every</li>
+<li><strong>show_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – show image paths of duplicates instead of index</li>
+<li><strong>z_dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – size of compression (more is generally better, but slower)</li>
+<li><strong>kwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – etc, passed to <cite>EmbeddingExtractor</cite></li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">indices for closest pairs of images
+distances (np.ndarray): distances of each pair to each other</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pairs (np.ndarray)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<div class="section" id="web-interface-optional">
+<h2>Web Interface (optional)<a class="headerlink" href="#web-interface-optional" title="Permalink to this headline">¶</a></h2>
+<p>Alternatively, removing duplicate images in a dataset interactively is easy with <code class="docutils literal notranslate"><span class="pre">simages</span></code>.</p>
+<ul class="simple">
+<li><a class="reference external" href="https://docs.mongodb.com/manual/installation/">Install mongodb</a> on your system.</li>
+<li>Install additional dependencies (Flask and PyMongo) with <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">&quot;simages[all]&quot;</span></code></li>
+<li>Add images to the database via <code class="docutils literal notranslate"><span class="pre">simages</span> <span class="pre">add</span> <span class="pre">{image_folder_path}</span></code>.</li>
+<li>Find duplicates and run the web server with <code class="docutils literal notranslate"><span class="pre">simages</span> <span class="pre">find</span> <span class="pre">{image_folder_path}</span></code>.</li>
+</ul>
+<p>Add your pictures to the database (this will take some time depending on the number of pictures)</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>simages add &lt;images_folder_path&gt;
+</pre></div>
+</div>
+<p>A webpage will come up with all of the similar or duplicate pictures:</p>
+<img alt="https://raw.githubusercontent.com/justinshenk/simages/master/images/screenshot_server.png" src="https://raw.githubusercontent.com/justinshenk/simages/master/images/screenshot_server.png" />
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>simages find &lt;images_folder_path&gt;
+
+
+Usage:
+    simages add &lt;path&gt; ... <span class="o">[</span>--db<span class="o">=</span>&lt;db_path&gt;<span class="o">]</span> <span class="o">[</span>--parallel<span class="o">=</span>&lt;num_processes&gt;<span class="o">]</span>
+    simages remove &lt;path&gt; ... <span class="o">[</span>--db<span class="o">=</span>&lt;db_path&gt;<span class="o">]</span>
+    simages clear <span class="o">[</span>--db<span class="o">=</span>&lt;db_path&gt;<span class="o">]</span>
+    simages show <span class="o">[</span>--db<span class="o">=</span>&lt;db_path&gt;<span class="o">]</span>
+    simages find &lt;path&gt; <span class="o">[</span>--print<span class="o">]</span> <span class="o">[</span>--delete<span class="o">]</span> <span class="o">[</span>--match-time<span class="o">]</span> <span class="o">[</span>--trash<span class="o">=</span>&lt;trash_path&gt;<span class="o">]</span> <span class="o">[</span>--db<span class="o">=</span>&lt;db_path&gt;<span class="o">]</span> <span class="o">[</span>--epochs<span class="o">=</span>&lt;epochs&gt;<span class="o">]</span>
+    simages -h <span class="p">|</span> --help
+Options:
+    -h, --help                Show this screen
+    --db<span class="o">=</span>&lt;db_path&gt;            The location of the database or a MongoDB URI. <span class="o">(</span>default: ./db<span class="o">)</span>
+    --parallel<span class="o">=</span>&lt;num_processes&gt; The number of parallel processes to run to <span class="nb">hash</span> the image
+                               files <span class="o">(</span>default: number of CPUs<span class="o">)</span>.
+    find:
+        --print               Only print duplicate files rather than displaying HTML file
+        --delete              Move all found duplicate pictures to the trash. This option takes priority over --print.
+        --match-time          Adds the extra constraint that duplicate images must have the
+                              same capture <span class="nb">times</span> in order to be considered.
+        --trash<span class="o">=</span>&lt;trash_path&gt;  Where files will be put when they are deleted <span class="o">(</span>default: ./Trash<span class="o">)</span>
+        --epochs<span class="o">=</span>&lt;epochs&gt;     Epochs <span class="k">for</span> training <span class="o">[</span>default: <span class="m">2</span><span class="o">]</span>
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">simages</span></code> calls <a class="reference internal" href="reference.html#simages.main.cli" title="simages.main.cli"><code class="xref py py-func docutils literal notranslate"><span class="pre">cli()</span></code></a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="loading.html" class="btn btn-neutral float-right" title="Loading Data" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="gallery/plot_linkage.html" class="btn btn-neutral float-left" title="Linkage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, simages developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

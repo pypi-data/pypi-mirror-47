@@ -1,0 +1,606 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Building Embeddings &mdash; simages 19.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="_static/gallery.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Removing Duplicates" href="removing.html" />
+    <link rel="prev" title="Loading Data" href="loading.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> simages
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                19.0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gallery/index.html">Examples Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cli.html">Command Line</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="loading.html">Loading Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Building Embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="removing.html">Removing Duplicates</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="reference.html">Reference to All Attributes and Methods</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="contributing.html">Contributing to simages</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">simages</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Building Embeddings</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/build.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="building-embeddings">
+<h1>Building Embeddings<a class="headerlink" href="#building-embeddings" title="Permalink to this headline">¶</a></h1>
+<p>Embeddings are extracted from the images by training a convolutional autoencoder.</p>
+<p>The models available are listed in <a class="reference internal" href="#module-simages.models" title="simages.models"><code class="xref py py-mod docutils literal notranslate"><span class="pre">models</span></code></a>.</p>
+<span class="target" id="module-simages.models"></span><dl class="class">
+<dt id="simages.models.Autoencoder">
+<em class="property">class </em><code class="descclassname">simages.models.</code><code class="descname">Autoencoder</code><span class="sig-paren">(</span><em>num_channels=1</em>, <em>z_dim=32</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#Autoencoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.Autoencoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="simages.models.Autoencoder.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#Autoencoder.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.Autoencoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.models.Autoencoder.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#Autoencoder.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.Autoencoder.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="simages.models.BasicAutoencoder">
+<em class="property">class </em><code class="descclassname">simages.models.</code><code class="descname">BasicAutoencoder</code><span class="sig-paren">(</span><em>num_channels: int = 1</em>, <em>z_dim: int = 8</em>, <em>hw=48</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#BasicAutoencoder"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.BasicAutoencoder" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="simages.models.BasicAutoencoder.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>num_channels: int = 1</em>, <em>z_dim: int = 8</em>, <em>hw=48</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#BasicAutoencoder.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.BasicAutoencoder.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Basic autoencoder - default for simages.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>num_channels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – grayscale = 1, color = 3</li>
+<li><strong>z_dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of embedding units to compress image to</li>
+<li><strong>hw</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – height and width for input/output image</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.models.BasicAutoencoder.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#BasicAutoencoder.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.BasicAutoencoder.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.models.BasicAutoencoder.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#BasicAutoencoder.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.BasicAutoencoder.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="function">
+<dt id="simages.models.set_parameter_requires_grad">
+<code class="descclassname">simages.models.</code><code class="descname">set_parameter_requires_grad</code><span class="sig-paren">(</span><em>model</em>, <em>feature_extracting</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#set_parameter_requires_grad"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.set_parameter_requires_grad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="function">
+<dt id="simages.models.pretrained_resnet">
+<code class="descclassname">simages.models.</code><code class="descname">pretrained_resnet</code><span class="sig-paren">(</span><em>num_channels</em>, <em>hw</em>, <em>zdim</em>, <em>feature_extract=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#pretrained_resnet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.pretrained_resnet" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="class">
+<dt id="simages.models.PretrainedModel">
+<em class="property">class </em><code class="descclassname">simages.models.</code><code class="descname">PretrainedModel</code><span class="sig-paren">(</span><em>hw</em>, <em>num_channels</em>, <em>zdim=8</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#PretrainedModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.PretrainedModel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="simages.models.PretrainedModel.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>input</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#PretrainedModel.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.PretrainedModel.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.models.PretrainedModel.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>embedding</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#PretrainedModel.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.PretrainedModel.decode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="simages.models.Unflatten">
+<em class="property">class </em><code class="descclassname">simages.models.</code><code class="descname">Unflatten</code><span class="sig-paren">(</span><em>hw</em>, <em>num_channels</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#Unflatten"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.Unflatten" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">torch.nn.modules.module.Module</span></code></p>
+<dl class="method">
+<dt id="simages.models.Unflatten.forward">
+<code class="descname">forward</code><span class="sig-paren">(</span><em>input</em>, <em>embedding</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#Unflatten.forward"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.Unflatten.forward" title="Permalink to this definition">¶</a></dt>
+<dd><p>Defines the computation performed at every call.</p>
+<p>Should be overridden by all subclasses.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the recipe for forward pass needs to be defined within
+this function, one should call the <code class="xref py py-class docutils literal notranslate"><span class="pre">Module</span></code> instance afterwards
+instead of this since the former takes care of running the
+registered hooks while the latter silently ignores them.</p>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="simages.models.UnNormalize">
+<em class="property">class </em><code class="descclassname">simages.models.</code><code class="descname">UnNormalize</code><span class="sig-paren">(</span><em>mean</em>, <em>std</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#UnNormalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.UnNormalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dl class="method">
+<dt id="simages.models.UnNormalize.__call__">
+<code class="descname">__call__</code><span class="sig-paren">(</span><em>tensor</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/models.html#UnNormalize.__call__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.models.UnNormalize.__call__" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>tensor</strong> (<em>Tensor</em>) – Tensor image of size (C, H, W) to be normalized.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Normalized image.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">Tensor</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+<p>Extraction is performed by <a class="reference internal" href="loading.html#simages.extractor.EmbeddingExtractor" title="simages.extractor.EmbeddingExtractor"><code class="xref py py-class docutils literal notranslate"><span class="pre">EmbeddingExtractor</span></code></a>:</p>
+<dl class="class">
+<dt id="simages.extractor.EmbeddingExtractor">
+<em class="property">class </em><code class="descclassname">simages.extractor.</code><code class="descname">EmbeddingExtractor</code><span class="sig-paren">(</span><em>input: Union[str, numpy.ndarray], num_channels: int = 3, num_epochs: int = 2, batch_size: int = 32, show: bool = False, show_path: bool = False, show_train: bool = False, z_dim: int = 8, metric: str = 'cosine', model: Optional[torch.nn.modules.module.Module] = None, db: Optional = None, **kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<p>Extract embeddings from data with models and allow visualization.</p>
+<dl class="attribute">
+<dt id="simages.extractor.EmbeddingExtractor.trainloader">
+<code class="descname">trainloader</code><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.trainloader" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">torch loader</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt>
+<code class="descname">evalloader (torch loader</code></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="simages.extractor.EmbeddingExtractor.model">
+<code class="descname">model</code><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.model" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">torch.nn.Module</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="simages.extractor.EmbeddingExtractor.embeddings">
+<code class="descname">embeddings</code><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.embeddings" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Type:</th><td class="field-body">np.ndarray</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>input: Union[str, numpy.ndarray], num_channels: int = 3, num_epochs: int = 2, batch_size: int = 32, show: bool = False, show_path: bool = False, show_train: bool = False, z_dim: int = 8, metric: str = 'cosine', model: Optional[torch.nn.modules.module.Module] = None, db: Optional = None, **kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.__init__"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Inits EmbeddingExtractor with input, either <cite>str</cite> or <cite>np.ndarray</cite>, performs training and validation.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>input</strong> (<em>np.ndarray</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – data</li>
+<li><strong>num_channels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – grayscale = 1, color = 3</li>
+<li><strong>num_epochs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – more is better (generally)</li>
+<li><strong>batch_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of images per batch</li>
+<li><strong>show</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – show closest pairs</li>
+<li><strong>show_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – show path of duplicates</li>
+<li><strong>show_train</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – show intermediate training results</li>
+<li><strong>z_dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – compression size</li>
+<li><strong>metric</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – distance metric for <code class="xref py py-meth docutils literal notranslate"><span class="pre">scipy.spatial.distance.cdist()</span></code> (eg, euclidean, cosine, hamming, etc.)</li>
+<li><strong>model</strong> (<em>torch.nn.Module</em><em>, </em><em>optional</em>) – class implementing same methods as <a class="reference internal" href="reference.html#simages.BasicAutoencoder" title="simages.BasicAutoencoder"><code class="xref py py-class docutils literal notranslate"><span class="pre">BasicAutoencoder</span></code></a></li>
+<li><strong>db_conn_string</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Mongodb connection string</li>
+<li><strong>kwargs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – </li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.get_image">
+<code class="descname">get_image</code><span class="sig-paren">(</span><em>index: int</em><span class="sig-paren">)</span> &#x2192; torch.Tensor<a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.get_image"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.get_image" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.train">
+<code class="descname">train</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.train"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.train" title="Permalink to this definition">¶</a></dt>
+<dd><p>Train autoencoder to build embeddings of dataset. Final embeddings are created in
+<a class="reference internal" href="#simages.extractor.EmbeddingExtractor.eval" title="simages.extractor.EmbeddingExtractor.eval"><code class="xref py py-meth docutils literal notranslate"><span class="pre">eval()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.eval">
+<code class="descname">eval</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.eval"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.eval" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate reconstruction of embeddings built in <cite>train</cite>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.duplicates">
+<code class="descname">duplicates</code><span class="sig-paren">(</span><em>n: int = 10</em>, <em>quantile: float = None</em><span class="sig-paren">)</span> &#x2192; Tuple[numpy.ndarray, numpy.ndarray]<a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.duplicates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.duplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Identify <cite>n</cite> closest pairs of images, or quantile (for example, closest 0.05).</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – number of pairs</li>
+<li><strong>quantile</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – quantile of total combination (suggested range: 0.001 - 0.01)</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="staticmethod">
+<dt id="simages.extractor.EmbeddingExtractor.channels_last">
+<em class="property">static </em><code class="descname">channels_last</code><span class="sig-paren">(</span><em>img: numpy.ndarray</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.channels_last"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.channels_last" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move channels from first to last by swapping axes.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.show">
+<code class="descname">show</code><span class="sig-paren">(</span><em>img: Union[torch.Tensor, numpy.ndarray], title: str = '', block: bool = True, y_labels=None, unnormalize=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.show"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.show" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot <cite>img</cite> with <cite>title</cite>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>img</strong> (<em>torch.Tensor</em><em> or </em><em>np.ndarray</em>) – Image to plot</li>
+<li><strong>title</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – plot title</li>
+<li><strong>block</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – block matplotlib plot until window closed</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.show_images">
+<code class="descname">show_images</code><span class="sig-paren">(</span><em>indices: Union[list, int], title=''</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.show_images"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.show_images" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plot images (from validation data) at <cite>indices</cite> with <cite>title</cite></p>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.image_path">
+<code class="descname">image_path</code><span class="sig-paren">(</span><em>index</em>, <em>short=True</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.image_path"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.image_path" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get path to image at <cite>index</cite> of eval/embedding</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – index of embeddings in dataset</li>
+<li><strong>short</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – truncate filepath to 30 charachters</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.show_duplicates">
+<code class="descname">show_duplicates</code><span class="sig-paren">(</span><em>n=5</em>, <em>path=False) -&gt; (&lt;class 'numpy.ndarray'&gt;</em>, <em>&lt;class 'numpy.ndarray'&gt;</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.show_duplicates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.show_duplicates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show duplicates from comparison of embeddings. Uses <cite>closely</cite> package to get pairs.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – how many closest pairs to identify</li>
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Plot pairs of images with abbreviated paths</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">pairs as indices
+distances (np.ndarray): distances of pairs</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">pairs (np.ndarray)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.unnormalize">
+<code class="descname">unnormalize</code><span class="sig-paren">(</span><em>image: torch.Tensor</em><span class="sig-paren">)</span> &#x2192; torch.Tensor<a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.unnormalize"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.unnormalize" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unnormalize an image.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>image</strong> (<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.Tensor</span></code>) – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">image (<code class="xref py py-class docutils literal notranslate"><span class="pre">torch.Tensor</span></code>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="simages.extractor.EmbeddingExtractor.decode">
+<code class="descname">decode</code><span class="sig-paren">(</span><em>embedding: Optional[numpy.ndarray] = None</em>, <em>index: Optional[int] = None</em>, <em>show: bool = False</em>, <em>astensor: bool = False</em><span class="sig-paren">)</span> &#x2192; numpy.ndarray<a class="reference internal" href="_modules/simages/extractor.html#EmbeddingExtractor.decode"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#simages.extractor.EmbeddingExtractor.decode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decode embeddings at <cite>index</cite> or pass <cite>embedding</cite> directly</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>embedding</strong> (<em>np.ndarray</em><em>, </em><em>optional</em>) – embedding of image</li>
+<li><strong>index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – index (of validation set / embeddings) to decode</li>
+<li><strong>show</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – plot the results</li>
+<li><strong>astensor</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – keep as torch.Tensor</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">reconstructed image from embedding</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">image (np.ndarray or torch.Tensor)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="removing.html" class="btn btn-neutral float-right" title="Removing Duplicates" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="loading.html" class="btn btn-neutral float-left" title="Loading Data" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, simages developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,4 @@
+[console_scripts]
+simages = simages.main:cli
+simages-show = simages.main:main
+
