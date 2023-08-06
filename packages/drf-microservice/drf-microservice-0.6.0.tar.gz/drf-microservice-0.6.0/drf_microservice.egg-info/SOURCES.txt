@@ -1,0 +1,7 @@
+README.md
+setup.py
+drf_microservice.egg-info/PKG-INFO
+drf_microservice.egg-info/SOURCES.txt
+drf_microservice.egg-info/dependency_links.txt
+drf_microservice.egg-info/not-zip-safe
+drf_microservice.egg-info/top_level.txt
