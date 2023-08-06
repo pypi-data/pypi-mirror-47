@@ -1,0 +1,16 @@
+README.md
+setup.py
+jirator/__init__.py
+jirator/assignaction.py
+jirator/constant.py
+jirator/jiraaction.py
+jirator/jirator.py
+jirator/log.py
+jirator/userdata.py
+jirator/workaction.py
+jirator.egg-info/PKG-INFO
+jirator.egg-info/SOURCES.txt
+jirator.egg-info/dependency_links.txt
+jirator.egg-info/entry_points.txt
+jirator.egg-info/requires.txt
+jirator.egg-info/top_level.txt
