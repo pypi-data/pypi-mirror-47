@@ -1,0 +1,7 @@
+arctic_latest
+boto3
+cloudpickle
+coolname
+funtime
+loguru
+s3fs
