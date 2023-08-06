@@ -1,0 +1,17 @@
+monads/__init__.py,sha256=4eAaEjxuE3rDdAoHrseY00zfDgWDtZNKh18M-oVf-Mw,244
+monads/applicative.py,sha256=3qzHzyaQqEbLMhyHL7_5JkR_BPltIM3f6iDDJESYTM8,691
+monads/currying.py,sha256=XmpiOaC-NXiqhgXXfxwxjAt2yxzrtKQmZvYgvGWIATY,5000
+monads/functor.py,sha256=0NNFW5JJEshZa9DhPL-uqLiA5-cfBi1Xbrp7vJGDoVw,295
+monads/future.py,sha256=XFM8fijq1IRCxWDce08-qWs53PZ2Hsxs1L5nANPhYKQ,2031
+monads/list.py,sha256=X0NVYNAOHx9ulpgUaQkLz3hnanLMs1fIYy_6QhnF6Lw,1493
+monads/maybe.py,sha256=6YrJhxGHcCHEMHtliF-GXaWgmnxDkkUzWom5OOYegJI,4247
+monads/monad.py,sha256=iz7O1-qL0DKe9XY96T_nm9dVWO97_wvy7mKtVTKZx88,1134
+monads/monoid.py,sha256=wgyB0BfzSx-q7uWbQa9gPuWBTr2KDszNURJyRZ-dt6M,1918
+monads/py.typed,sha256=8PjyZ1aVoQpRVvt71muvuq5qE-jTFZkK-GLHkhdebmc,26
+monads/reader.py,sha256=jFaXxv484BIlXUwZulaqLEWzzRACP5xbxBxwA7JNWOY,2583
+monads/result.py,sha256=eXGmbM8sdjXLhnX9anTpyxpcepdKLuCf6OrjhKpY0HE,3944
+typesafe_monads-0.8.dist-info/LICENSE,sha256=z8vU3POeQaGqq-aNIGdja9ZfVGuWpfN0ZVTR7lFyUs4,1069
+typesafe_monads-0.8.dist-info/METADATA,sha256=HQ-Ua_HWEyaKZQETiMaIwzXUMXgoEz1KwGQ8v34-pwg,4601
+typesafe_monads-0.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+typesafe_monads-0.8.dist-info/top_level.txt,sha256=R2DeUjfIvNDKrSjJ8KdqWKx85tLqF2EO8BfNfatKkWQ,7
+typesafe_monads-0.8.dist-info/RECORD,,
