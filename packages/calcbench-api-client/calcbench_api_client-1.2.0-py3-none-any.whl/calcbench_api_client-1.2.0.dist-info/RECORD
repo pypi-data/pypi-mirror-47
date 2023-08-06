@@ -1,0 +1,7 @@
+calcbench/__init__.py,sha256=oJs4CbF_HTb1CaZpZ2h2EATMbIkPVJCfewuRwEMb960,1111
+calcbench/api_client.py,sha256=S03w9QQSMyqnQeaKtAt_kIKw-D8Ukzh0OSYjMNEMeMo,32467
+calcbench/listener.py,sha256=Y32aDxuftiS97qT8swHwNxJ8C_AqA_iOeWJiEl362zY,2839
+calcbench_api_client-1.2.0.dist-info/METADATA,sha256=p_miipHEtUenOfbKbiOcPmH3oxuyDme36I8WY1Bgk2M,530
+calcbench_api_client-1.2.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+calcbench_api_client-1.2.0.dist-info/top_level.txt,sha256=CcOBFYt5z17hoG8FIKfqpUlufEi4dTHvU6z2Yw7rioA,10
+calcbench_api_client-1.2.0.dist-info/RECORD,,
