@@ -1,0 +1,10 @@
+pynif
+requests
+click
+
+[dev]
+check-manifest
+
+[test]
+coverage
+pytest

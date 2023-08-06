@@ -1,0 +1,17 @@
+README.rst
+setup.py
+nifconverter/__init__.py
+nifconverter/cli.py
+nifconverter/dbpedia.py
+nifconverter/translator.py
+nifconverter/uriconverter.py
+nifconverter.egg-info/PKG-INFO
+nifconverter.egg-info/SOURCES.txt
+nifconverter.egg-info/dependency_links.txt
+nifconverter.egg-info/entry_points.txt
+nifconverter.egg-info/requires.txt
+nifconverter.egg-info/top_level.txt
+nifconverter/tests/__init__.py
+nifconverter/tests/test_cli.py
+nifconverter/tests/test_dbpedia.py
+nifconverter/tests/test_translator.py
