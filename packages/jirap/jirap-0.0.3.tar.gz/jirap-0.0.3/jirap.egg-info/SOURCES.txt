@@ -1,0 +1,8 @@
+README.md
+setup.py
+jirap/__init__.py
+jirap.egg-info/PKG-INFO
+jirap.egg-info/SOURCES.txt
+jirap.egg-info/dependency_links.txt
+jirap.egg-info/requires.txt
+jirap.egg-info/top_level.txt
