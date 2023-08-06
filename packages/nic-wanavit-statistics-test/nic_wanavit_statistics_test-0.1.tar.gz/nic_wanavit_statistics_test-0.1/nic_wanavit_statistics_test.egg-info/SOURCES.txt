@@ -1,0 +1,10 @@
+setup.py
+nic_wanavit_statistics_test/Binomialdistribution.py
+nic_wanavit_statistics_test/Gaussiandistribution.py
+nic_wanavit_statistics_test/Generaldistribution.py
+nic_wanavit_statistics_test/__init__.py
+nic_wanavit_statistics_test.egg-info/PKG-INFO
+nic_wanavit_statistics_test.egg-info/SOURCES.txt
+nic_wanavit_statistics_test.egg-info/dependency_links.txt
+nic_wanavit_statistics_test.egg-info/not-zip-safe
+nic_wanavit_statistics_test.egg-info/top_level.txt
