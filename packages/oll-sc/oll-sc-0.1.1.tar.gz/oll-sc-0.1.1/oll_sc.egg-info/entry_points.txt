@@ -1,0 +1,3 @@
+[console_scripts]
+oll-sc = oll_sc.cli:oll_sc
+
