@@ -1,0 +1,8 @@
+README.md
+setup.py
+dashen/__init__.py
+dashen/your_func.py
+dashen.egg-info/PKG-INFO
+dashen.egg-info/SOURCES.txt
+dashen.egg-info/dependency_links.txt
+dashen.egg-info/top_level.txt
