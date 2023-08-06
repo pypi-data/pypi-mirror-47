@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+src/com2ann.py
+src/test_com2ann.py
+src/com2ann.egg-info/PKG-INFO
+src/com2ann.egg-info/SOURCES.txt
+src/com2ann.egg-info/dependency_links.txt
+src/com2ann.egg-info/entry_points.txt
+src/com2ann.egg-info/top_level.txt
