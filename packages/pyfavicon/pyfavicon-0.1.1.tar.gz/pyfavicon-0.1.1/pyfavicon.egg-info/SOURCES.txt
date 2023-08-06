@@ -1,0 +1,8 @@
+README.md
+setup.py
+pyfavicon/__init__.py
+pyfavicon.egg-info/PKG-INFO
+pyfavicon.egg-info/SOURCES.txt
+pyfavicon.egg-info/dependency_links.txt
+pyfavicon.egg-info/requires.txt
+pyfavicon.egg-info/top_level.txt
