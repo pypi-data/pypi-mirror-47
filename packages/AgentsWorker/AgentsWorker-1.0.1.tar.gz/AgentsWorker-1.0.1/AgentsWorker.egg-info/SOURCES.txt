@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+AgentsWorker/Manager.py
+AgentsWorker/RequestAgent.py
+AgentsWorker/__init__.py
+AgentsWorker/agent.py
+AgentsWorker/kafkaBase.py
+AgentsWorker/loggs.py
+AgentsWorker/options.py
+AgentsWorker.egg-info/PKG-INFO
+AgentsWorker.egg-info/SOURCES.txt
+AgentsWorker.egg-info/dependency_links.txt
+AgentsWorker.egg-info/requires.txt
+AgentsWorker.egg-info/top_level.txt
