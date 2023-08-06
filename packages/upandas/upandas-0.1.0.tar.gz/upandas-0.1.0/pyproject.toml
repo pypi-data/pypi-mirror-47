@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "upandas"
+version = "0.1.0"
+description = "Handle uncertainties within pandas dataframes and series"
+authors = ["Lincoln Turner <lincoln.turner@monash.edu>"]
+license = "BSD-2-Clause"
+readme = 'README.md'
+repository = "https://bitbucket.org/lincolndturner/upandas"
+homepage = "https://bitbucket.org/lincolndturner/upandas"
+keywords =['pandas', 'uncertainties', 'uarray', 'dataframe', 'errors']
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas= "^0.24"
+uncertainties = "^3.1"
+
+[tool.poetry.dev-dependencies]
+pytest = "^4.6"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
