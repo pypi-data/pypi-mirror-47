@@ -1,0 +1,9 @@
+spindle_detector/__init__.py,sha256=h_twlmf0l-I0JB9Sq1eF7CK6MngF4vEhVtXbkjI5eeg,48
+spindle_detector/core.py,sha256=RvOoe05hlG9SBalGJSFROTni2t41MVt0JWOF-emgUpQ,2416
+spindle_detector/lfp_likelihood.py,sha256=up3Gy-BP0iCegj48BCmplLLwSwFTzSOwR_VlVigfd98,3141
+spindle_detector/simulate_LFP.py,sha256=-uTviUTmog11bej47kPcAXBibDDpUi8TBqVMNg5BZmg,3307
+spindle_detector-0.1.0.dev0.dist-info/LICENSE,sha256=0bEhhbZfyKwa2N48k-suFgDa9VdBUfLtQtthTGhSvr8,1071
+spindle_detector-0.1.0.dev0.dist-info/METADATA,sha256=ruEh6kyTkvdLVZKVs6LgaTIk-Ip-kawcK4VYDNpKyXE,429
+spindle_detector-0.1.0.dev0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+spindle_detector-0.1.0.dev0.dist-info/top_level.txt,sha256=Zs1MHzIguDMjA7AwijlE6rfkxBLTGADCQUxlZu3zh18,17
+spindle_detector-0.1.0.dev0.dist-info/RECORD,,
