@@ -1,0 +1,6 @@
+setup.py
+squidmonitor
+squidmonitor.egg-info/PKG-INFO
+squidmonitor.egg-info/SOURCES.txt
+squidmonitor.egg-info/dependency_links.txt
+squidmonitor.egg-info/top_level.txt
