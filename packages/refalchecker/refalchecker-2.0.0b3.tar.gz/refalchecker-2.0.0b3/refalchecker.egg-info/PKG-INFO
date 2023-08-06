@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: refalchecker
+Version: 2.0.0b3
+Summary: Calculating/Verifying format of functions in Refal-5
+Home-page: https://github.com/runnerpeople/Refal5
+Author: George Ivanov
+Author-email: gosha8352@gmail.com
+License: MIT
+Description: 
+        ## Refalcheck
+        Библиотека вывода и верификации форматов функций в языке РЕФАЛ-5 на языке Python 3. Позволяет проверить корректность вызовов функции и определить для них тип
+        
+        ### Установка
+        Для установки библиотеки необходимо запустить `установщик`:
+        ```bash
+        python setup.py install
+        ```
+        
+        ### Как использовать
+        На вход подается имя файла *.ref, который содержит программу, написанную на РЕФАЛ-5, и файлы *.type, содержащие форматы используемых функций.
+        ```bash
+        refalcheck R05-Parser.ref LibraryEx.type R05-Lexer.type
+        ```
+        Результат программы можно перенаправить в файл (например, Refal.ref):
+        ```bash
+        refalcheck R05-Parser.ref LibraryEx.type R05-Lexer.type R05-Parser.type >Result.ref
+        ```
+        В файле `constants.py` использует константы, конфигурируемые при запуске.
+        
+        ### Тестирование
+        Для проверки работоспособности верификатора необходимо запустить тесты:
+        ```bash
+        python setup.py test
+        ```
+        При успешной работы вывод должен быть таким:
+        ```bash
+        ======================================================================================== test session starts ========================================================================================
+        platform darwin -- Python 3.7.0, pytest-4.5.0, py-1.8.0, pluggy-0.11.0
+        rootdir: /Users/geoiva/Desktop/Учеба/Учеба (8 сем)/Диплом
+        collected 1 item                                                                                                                                                                                    
+        
+        tests/refal_test.py .                                                                                                                                                                         [100%]
+        
+        ===================================================================================== 1 passed in 0.37 seconds ======================================================================================
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
