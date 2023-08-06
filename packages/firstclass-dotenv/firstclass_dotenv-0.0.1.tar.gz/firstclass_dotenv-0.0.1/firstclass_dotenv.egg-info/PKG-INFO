@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: firstclass-dotenv
+Version: 0.0.1
+Summary: Read value of .env(dotenv) into ENV values
+Home-page: https://github.com/hikarine3/firstclass_dotenv
+Author: Hajime Kurita
+Author-email: support@1stclass.co.jp
+License: UNKNOWN
+Description: # firstclass-dotenv
+        dotenv package for python
+        
+        # How to test this module
+        
+        
+        # How to create Python module
+        https://packaging.python.org/tutorials/packaging-projects/
+        python3 setup.py sdist bdist_wheel
+        
+        python -m pip install --index-url https://test.pypi.org/simple/ --no-deps firstclass_dotenv
+        
+        python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+        
+        ## Distrituion to prod pip
+        python setup.py sdist upload
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
