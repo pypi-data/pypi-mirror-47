@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: python-rigidbody
+Version: 0.2
+Summary: UNKNOWN
+Home-page: http://github.com/jdowner/rigidbody
+Author: Joshua Downer
+Author-email: joshua.downer@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: Unix
+Provides-Extra: dev

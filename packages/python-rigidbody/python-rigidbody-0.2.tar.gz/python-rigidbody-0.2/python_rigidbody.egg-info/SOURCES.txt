@@ -1,0 +1,17 @@
+.gitignore
+LICENSE
+Makefile
+README.md
+setup.py
+tox.ini
+python_rigidbody.egg-info/PKG-INFO
+python_rigidbody.egg-info/SOURCES.txt
+python_rigidbody.egg-info/dependency_links.txt
+python_rigidbody.egg-info/requires.txt
+python_rigidbody.egg-info/top_level.txt
+rigidbody/__init__.py
+rigidbody/matrix.py
+rigidbody/solver.py
+rigidbody/transforms.py
+tests/test_matrix.py
+tests/test_solver.py
