@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jatnipy
+Version: 1.0.10
+Summary: Justin's, Andrea's, and Torbjörn's network inference package for Python
+Home-page: https://bitbucket.org/temn/JATNIpy/
+Author: Justin Lin, Andreas Tjärnberg, Torbjörn Nordling
+Author-email: justin.lin@nordlinglab.org,at145@nyu.edu,t@nordlinglab.org
+License: LGPL
+Description: str(object='') -> str
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
