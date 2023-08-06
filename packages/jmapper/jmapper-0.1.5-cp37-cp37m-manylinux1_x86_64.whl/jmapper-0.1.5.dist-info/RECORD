@@ -1,0 +1,12 @@
+jmapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jmapper/cgra-mapper,sha256=R4N0LIqlYkLNcNjdU1o97O8IUqP8yukUN-7XfP4il8g,2880109
+jmapper/libcoreir-cgralib.so,sha256=BNTGcXBFiJIU9JV8MujVSeSoTEq4PiBNiNZJ_OcPAmo,13229924
+jmapper/.libs/libcoreirsim-fc87cf40.so,sha256=gSoQO96epLb8O5C1j1R_e404ubuujVtK-jeeuzD1BsM,16871032
+jmapper/.libs/libcoreir-commonlib-d4cbd40f.so,sha256=V5CASSXwcmKhGoy3U1KcGGSvJ4RyDsP9LjeuBkCHaQ0,15372520
+jmapper/.libs/libcoreir-float-2b5b9856.so,sha256=dPa8KHwrCDY8drsrl9WNWf6KY4t0A74Xgmx0colyVnw,14741832
+jmapper/.libs/libcoreir-cgralib-04d4c671.so,sha256=7oh9IoKnKQfbEMxPjBtK4EJFjFxvwxu06w9Njr8AroI,15861888
+jmapper-0.1.5.data/scripts/mapper,sha256=_YKwAQj45Qj3VvzfAy8XV_wnSUyS6piuID6Na_tF2Fs,322
+jmapper-0.1.5.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+jmapper-0.1.5.dist-info/top_level.txt,sha256=AlZV-HO-z1ux1vi9ySjcnAfrp3JqyAmUUp4KbeLpXpI,8
+jmapper-0.1.5.dist-info/METADATA,sha256=UQqt1gDrKfz8apjqokutwXSVMJGF743M0vfKyEWLik0,222
+jmapper-0.1.5.dist-info/RECORD,,
