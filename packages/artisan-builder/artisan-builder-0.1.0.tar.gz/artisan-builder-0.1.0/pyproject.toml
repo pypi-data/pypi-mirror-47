@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "artisan-builder"
+version = "0.1.0"
+description = "A build system for explainable science"
+license = "MIT"
+authors = ["Mason McGill <mmcgill@caltech.edu>"]
+readme = "readme.rst"
+packages = [
+    { include = "artisan" }
+]
+
+[tool.poetry.dependencies]
+cbor2 = "*"
+falcon = "*"
+gunicorn = "*"
+h5py = "*"
+jsonschema = "*"
+numpy = "*"
+"ruamel.yaml" = "*"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
