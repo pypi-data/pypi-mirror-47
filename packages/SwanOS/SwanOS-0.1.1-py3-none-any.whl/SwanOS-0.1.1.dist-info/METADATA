@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: SwanOS
+Version: 0.1.1
+Summary: A Very Simple Python OS
+Home-page: UNKNOWN
+Author-email: forsbergw82@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+# Purpose
+
+This Project doesn't really have a purpose It's Just a Very Simple OS.
+
+# Config
+
+Open os.py and change the users/passwords and you can add apps via admin.py and user.py
+
