@@ -1,0 +1,17 @@
+aucc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aucc/main.py,sha256=tku7l8RGYGz7iH680XYBebLn8V2_Ma78SacwEdwNnJg,4070
+aucc/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aucc/core/colors.py,sha256=4O_fKg-bTUaGI6i2V7LGjOCDCQrHtB07gYad_Km6kZc,771
+aucc/core/handler.py,sha256=-6aEypSnU0tLxvWv_aCpr1QYYGncsMMNDLW5dFNjg0M,1897
+aucc/core/__pycache__/__init__.cpython-37.pyc,sha256=gzT0xqfWvI71zHhEdmEBGwsvFaRXkeMMJN5rrP8zjCg,160
+aucc/core/__pycache__/colors.cpython-37.pyc,sha256=KNSER3ITjihPOj2aHgh0uGLxX_lTWck-xfsmIKsPwbE,846
+aucc/core/__pycache__/handler.cpython-37.pyc,sha256=3yhmLRpx1nbT3TjGp7I6E5eIfFEJ6-56PgM-YuNB1t8,2675
+aucc/db/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aucc/res/icons/tux.png,sha256=jOI2NI4OGS57uizjHQqYPOSw2m_7YqICTWHMPWdzi9s,4964
+aucc/ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+avell_unofficial_control_center-1.0.1.dist-info/LICENSE,sha256=64ry0CKxXsQJNMNeukFwxPqwNdsSCcbgqqwAbjkLIkE,1070
+avell_unofficial_control_center-1.0.1.dist-info/METADATA,sha256=OVIC_a1e96kOo6ERL-Dfvu9BS7Dj4A-yZn6diGANuMY,2600
+avell_unofficial_control_center-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+avell_unofficial_control_center-1.0.1.dist-info/entry_points.txt,sha256=gsY70FZj836U-C8_m0e-CXsRgydyCMoT0gKRbZKFy94,41
+avell_unofficial_control_center-1.0.1.dist-info/top_level.txt,sha256=4wbf2qQ017_y9XOpqadZ1tnjuQyvGcqooOBPxLlq4w4,5
+avell_unofficial_control_center-1.0.1.dist-info/RECORD,,
