@@ -1,0 +1,9 @@
+README.md
+setup.py
+shears/__init__.py
+shears/shears.py
+shears.egg-info/PKG-INFO
+shears.egg-info/SOURCES.txt
+shears.egg-info/dependency_links.txt
+shears.egg-info/requires.txt
+shears.egg-info/top_level.txt
