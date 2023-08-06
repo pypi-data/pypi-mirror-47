@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: odoo8-addon-connector-woocommerce
+Version: 8.0.1.0.1.99.dev1
+Summary: WooCommerce Connector
+Home-page: http://www.openerp.com
+Author: Tech Receptives
+Author-email: UNKNOWN
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: ~=2.7
+Requires-Dist: odoo8-addon-connector
+Requires-Dist: odoo8-addon-connector-ecommerce
+Requires-Dist: odoo (<9.0a,>=8.0a)
+Requires-Dist: woocommerce
+
+WooCommerce Connector.
+
+
