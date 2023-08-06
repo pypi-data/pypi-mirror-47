@@ -1,0 +1,11 @@
+cupcake/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cupcake/cmake.py,sha256=UXn1DkesR0ol6jLlBb5SUvHah6ZSFmOS_UWB71RZMoU,9487
+cupcake/conan.py,sha256=vYXOWVc5KFtLY9zw_JafXYIOIxUIyxxfmSpfpB3s7GE,1919
+cupcake/filesystem.py,sha256=IBYqqwMOC7_nhSjejFiYJAzBm3ClaKbKFOfuWbxwAkw,289
+cupcake/main.py,sha256=Sl4S_nBMwDwi7nwBStoWyRD4f9pHFx3Bm-xsUI1cMpA,4626
+cupcake/shell.py,sha256=GSezGRh75nI9UUTSneGojV-BYF3Sc4JI_pCJxeSJM2Q,713
+cupcake-0.0.1.dist-info/entry_points.txt,sha256=rNRkg1d5SE9grd9dPNvvr0dsoSBMvQXKPlS8uCdj_9E,45
+cupcake-0.0.1.dist-info/LICENSE,sha256=ObN9RxwjM63J4wFa-pBk66Y6JZGbqPgshdwWN1T_KAs,761
+cupcake-0.0.1.dist-info/WHEEL,sha256=fRZ0jyDPltM3MgdRgnIh981pt0qqbfzrEGV0U1fUdZo,85
+cupcake-0.0.1.dist-info/METADATA,sha256=VISNiEWO5KajBAM_tHZjr7i4KUh_IQ0aRG2bhF8baxQ,6225
+cupcake-0.0.1.dist-info/RECORD,,
