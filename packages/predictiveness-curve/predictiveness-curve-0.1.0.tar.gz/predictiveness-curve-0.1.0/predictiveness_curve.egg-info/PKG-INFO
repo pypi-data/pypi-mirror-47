@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: predictiveness-curve
+Version: 0.1.0
+Summary: Plot predictiveness curve
+Home-page: https://github.com/yamasakih/predictiveness-curve
+Author: Hiroyuki Yamasaki
+Author-email: yamasaki.phone@gmail.com
+License: MIT
+Description: 
+        Predictiveness curve is a method to display two graphs simultaneously. In both
+        figures, the x-axis is risk percentile, the y-axis of one figure is the value
+        of risk, and the y-axis of the other figure is true positive fractions. This
+        makes it possible to visualize whether the model of risk fits in the medical
+        field and which value of risk should be used as the basis for the model.
+        See Am. J. Epidemiol. 2008; 167:362–368 for details.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
