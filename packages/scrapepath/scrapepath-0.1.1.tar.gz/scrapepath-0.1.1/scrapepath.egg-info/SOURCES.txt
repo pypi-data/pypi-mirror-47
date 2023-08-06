@@ -1,0 +1,6 @@
+README.md
+setup.py
+scrapepath.egg-info/PKG-INFO
+scrapepath.egg-info/SOURCES.txt
+scrapepath.egg-info/dependency_links.txt
+scrapepath.egg-info/top_level.txt
