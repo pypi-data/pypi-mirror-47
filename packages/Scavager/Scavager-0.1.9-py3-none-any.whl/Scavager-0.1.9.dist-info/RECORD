@@ -1,0 +1,15 @@
+scavager/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scavager/calcnsaf_ms1.py,sha256=sI7Uok5lxPymvgJ7vgy0PQkQ-hsnCGBp45yfjtyJS2k,6202
+scavager/main.py,sha256=EKXU2lLZJhKc85UAK0yZFJu3uJtbQIPladvH_k5iHTA,7742
+scavager/res2mztab.py,sha256=WUZBLnU1N-RCJDOAiRLo88nLr6hD_lYknjhd5K7nc_k,795
+scavager/scav2diffacto.py,sha256=Tw9Qt8z1QIiDZ362rtmay2U1VEmPElN6ooW6YYHLQRs,5134
+scavager/scav2nsaf.py,sha256=uFdonLYiGxrULHRUdNdO58tt82i90W_47ThIXKBXFe8,6062
+scavager/search.py,sha256=B8efRZbx_QhgftUkZHHzVXwM-98HO3pLemo3RGIKu30,2434
+scavager/utils.py,sha256=_hSuObMNSnDhWgYQxENcjS_yxue4QrdnhvD6EnWS7K4,21717
+scavager/utils_figures.py,sha256=9e7Q2KTiLg7cXX6YhTijYIQtxeo3VNSaucosEzFh5YM,11632
+Scavager-0.1.9.dist-info/LICENSE,sha256=tusqJBBFT1gnNJfmko1JJB-_VJdM-2smDb4-eTmRdSY,9366
+Scavager-0.1.9.dist-info/METADATA,sha256=Dyehfy8gmxI_C1_s5TNh88YU-hulUwR4SAAHgtUpbQ4,2323
+Scavager-0.1.9.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Scavager-0.1.9.dist-info/entry_points.txt,sha256=UOwO_vxTB2G03BRit_G7DYNOwC3BV8D9z-eZelBRkkY,128
+Scavager-0.1.9.dist-info/top_level.txt,sha256=n20Ocbwkdq_OMInTJsB5D9HeW3LcOFTr20M_IvhUUw8,9
+Scavager-0.1.9.dist-info/RECORD,,
