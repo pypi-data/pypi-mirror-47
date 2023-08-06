@@ -1,0 +1,17 @@
+angda/__init__.py,sha256=4A6GZakUFP5xAUc5DzR2k1RiUzu0jaY6-jJVmJXmOE8,319
+angda/__main__.py,sha256=JM4K5XBq4MMcnA0X-rfKelf9a5Z8PPV7JivrEAK0Now,867
+angda/apis.py,sha256=95d738E0LBOjcar6kCgNBjr5AHC7mG71-8tQK-MnJwo,322
+angda/items/__init__.py,sha256=-KgbpxW6B0S7rEsyuBsu-NBhXFHi30LESMzV04Ijzho,121
+angda/items/dice.py,sha256=DFkZhERgQXuEtz6Mtzfcgf0drlSW_Vs8CoOFaKaROfo,1759
+angda/items/roll.py,sha256=XyragkacjBLrRzLbH8oWW0VmzAfD8M_jHixZbs0xX4s,1448
+angda/tools/__init__.py,sha256=uck7TqyboGUhDWnIQK_M9mEk2guCX5ue2Pkv3O1r_8s,141
+angda/tools/clui.py,sha256=2U7JRAZWvILqeNq0gRvKq7iTO2HuB3LKdD26vubQJyM,910
+angda/tools/nota.py,sha256=0kmSLCf0TeDqiXHCkDayQJ6iZCm1-PZnTtmq1VEFtoI,591
+angda/tools/rand.py,sha256=GqkX2B3p6N_I3nI6sFZ-KQfFyieAobtZ-bn3ug2QS90,337
+angda-0.1.0rc1.dist-info/METADATA,sha256=GWG9wr_wp8hwRDWsEoqo2m-meESm2P2wFJ861IAfrCE,2022
+angda-0.1.0rc1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+angda-0.1.0rc1.dist-info/entry_points.txt,sha256=Tkwdcs80Nth24fJqIsixGNFU_mS_veTN6ijDXoTT0iU,47
+angda-0.1.0rc1.dist-info/license.md,sha256=0Da8kmzt2y6GaZrjcZvzOLCM22cAEVUmMos7qco6s0w,1497
+angda-0.1.0rc1.dist-info/top_level.txt,sha256=6Nn9xkjjKUB9dz0Yivp7qh8-j8LrbdtWGMZyn85MWOY,6
+angda-0.1.0rc1.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+angda-0.1.0rc1.dist-info/RECORD,,
