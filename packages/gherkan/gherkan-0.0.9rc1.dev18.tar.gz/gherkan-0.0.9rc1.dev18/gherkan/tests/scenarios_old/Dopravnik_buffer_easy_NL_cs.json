@@ -1,0 +1,7 @@
+{
+    "feature" : "Dopravník",
+    "feature_desc" : " Testování chování linky při přepnění výstupního bufferu. Na konci linky není odebrán výrobek. Dopravník by se v takovéto situaci, i po položení dalšího výrobku na začátek pásu, neměl rozjet. Při rozjetí by došlo k pádu výrobku na zem. Tím by se zničil a hrozilo by poškození dopravníku.",
+    "background" : "Pokud je linka v provozu a vynuť produkt je na konci",
+    "text_raw" : "scénář  Když je produkt na začátku, pak dopravník nezačne a produkt je na konci \n scénář pokud produkt je na začátku, když není produkt na konci, dopravník začne",
+    "language" : "cs"
+}

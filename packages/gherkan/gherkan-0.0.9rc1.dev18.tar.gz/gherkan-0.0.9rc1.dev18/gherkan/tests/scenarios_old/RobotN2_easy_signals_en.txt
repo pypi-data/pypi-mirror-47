@@ -1,0 +1,17 @@
+# language: en
+
+Feature: Robot N2
+    Po dokončení svařováhí je výrobek pomocí robota N2 přemístěn ze stolu na dopravník. Na doravníkový pás se může položit výrobek poze při splěnní násoledujících podmínke. Místo pro umístění výrobku na pás je volné, pás není v pohybu a lakování předchozího výrobku bylo úspoěšně ukončeno tzn. předchozí výrobek odjel z pozice pro lakování. Pás se nesmí rozjet v případě, že robot nedolakoval výrobek. Hrozí poškození robota a jeho lakovacích pistolí a výrobek by nebyl správně nalakován.
+Background:
+  Given lineOn
+
+Scenario: As soon as robot N1 finishes welding parts together and robot N2 finished putting product on belt or robot N2 is inactive, then robot N2 starts to pick up product
+  When (robotN1ProgramNumber == 4 && robotN1ProgramEnded) && ((robotN2ProgramNumber == 1 && robotN2ProgramEnded) || (robotN2ProgramNumber == 4))
+  Then robotN2ProgramNumber == 5 && robotN2ProgramStarted
+Scenario: Given product is not at start and product is not at position and conveyor is stopped and robot N2 finishes picking up product, then robot N2 starts putting product on belt
+  Given (productAtStart != 1) && ((productAtPosition != 1) && ((conveyorbeStop == 1) && (robotN2ProgramNumber == 5 && robotN2ProgramEnded)))
+  Then robotN2ProgramNumber == 1 && robotN2ProgramStarted
+Scenario: Given product is at start or product is at position or conveyor started, as soon as robot N2 finishes to pick up product, then robot does not put product on belt
+  Given (productAtStart == 1) || ((productAtPosition == 1) || (conveyorStart == 1))
+  When robotN2ProgramNumber == 5 && robotN2ProgramEnded
+  Then robotN2ProgramNumber != 1

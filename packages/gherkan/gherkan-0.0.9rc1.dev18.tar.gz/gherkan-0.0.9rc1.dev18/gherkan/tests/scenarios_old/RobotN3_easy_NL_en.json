@@ -1,0 +1,7 @@
+{
+    "feature" : "Robot N3",
+    "feature_desc" : " Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.",
+    "background" : "given line is on",
+    "text_raw" : "scenario  When product is at position, then robot starts to paint part 1a with part 1b \n scenario  As soon as robot N3 finishes to paint part 1a with part 1b, then robot starts to exchange gun 1 for gun 2 \n scenario  as soon as robot finishes to exchange guns, robot starts to paint part 2  \n scenario  when robot N3 finishes to paint part 2, robot starts to exchange gun 2 for gun 1",
+    "language" : "en"
+}

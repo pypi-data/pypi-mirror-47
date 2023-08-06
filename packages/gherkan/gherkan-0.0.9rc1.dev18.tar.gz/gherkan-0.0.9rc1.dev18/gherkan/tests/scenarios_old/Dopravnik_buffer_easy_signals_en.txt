@@ -1,0 +1,14 @@
+# language: en
+
+Feature: Conveyor
+    Testování chování linky při přepnění výstupního bufferu. Na konci linky není odebrán výrobek. Dopravník by se v takovéto situaci, i po položení dalšího výrobku na začátek pásu, neměl rozjet. Při rozjetí by došlo k pádu výrobku na zem. Tím by se zničil a hrozilo by poškození dopravníku.
+Background:
+  Given (lineOn) && (force(productAtEnd, 1))
+
+Scenario: When product is at start, conveyor does not start and product is at end
+  When productAtStart == 1
+  Then (conveyorStart != 1) && (productAtEnd == 1)
+Scenario: Given product is at start, when product is not at the end, the conveyor starts
+  Given productAtStart == 1
+  When productAtEnd != 1
+  Then conveyorStart == 1

@@ -1,0 +1,7 @@
+{
+    "feature" : "Conveyor",
+    "feature_desc" : "  Výrobek je robotem N2 položen na pás. Ten se rozjede a je v pohybu až do té doby, než je výrobek na pozici pro lakování. Zde je robotem N3 nalakován. To jak spodní díl 1A/1B, tak díl 2. Po úspěšném lakování je výrobek pomocí pásu dopraven nakonec linky.",
+    "background" : "given line is on",
+    "text_raw" : "scenario  As soon as product is at start and product is not at the end and Robot N2 does not finish putting product on belt, then conveyor starts \n scenario  Given the conveyor starts, when product is at position, the conveyor stops  \n scenario  Given the product is at position and the product is not at the end, when Robot N3 finishes to paint the product, then conveyor starts \n scenario  Given the conveyor started, as soon as product is at the end, the conveyor stops",
+    "language" : "en"
+}

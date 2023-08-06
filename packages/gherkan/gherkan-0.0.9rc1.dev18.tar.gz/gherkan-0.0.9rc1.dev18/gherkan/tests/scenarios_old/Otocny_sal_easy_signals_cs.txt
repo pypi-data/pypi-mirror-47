@@ -1,0 +1,22 @@
+# language: cs
+
+Požadavek: Otočný stůl
+     Při najíždění linky se stůl po potvrzení bezpečnosti otočí do pozice FWD, kde je   připraven na založení dílu 2. Stůl se po založení dílu 2 a potvrzení bezpečnosti musí otočit do pozice HOME. Po založení dílu 1A, nebo 1B a následném potvrzení bezpečnosti se stůl otočí do pozice FWD. Stůl se po založení dílu nesmí otočil, dokud není robotem N2 odebrán svařený výrobek. Při otočení před odebráním výrobku může dojít k poškození robota N1 a jeho nástrojů.
+Kontext:
+  Pokud lineOn
+
+Scénář: Pokud není díl 1a na stole a díl 1b není na stole a díl 2 není na stole a stůl je v pozici home, když potvrdím bezpečnost, pak se stůl otočí do pozice forward
+  Pokud (part1aOnTable != 1) && ((part1bOnTable != 1) && ((part2OnTable != 1) && (tableAtHOME == 1)))
+  Když light_line_ready == 1
+  Pak tableToFWD == 1
+Scénář: Pokud je stůl v pozici forward, když je díl 2 na stole a potvrdím bezpečnost a robot N1 skončil program nebo robot N1 nezvedne díl 2 a robot N1 nenanese lepidlo na díl 2 a robot N1 nesvaří díly a robot N2 skončil program a robot N2 nezvedne díl, pak se stůl otočí do pozice home
+  Pokud tableAtFWD == 1
+  Když (part2OnTable == 1) && ((light_line_ready == 1) && ((robotN1ProgramEnd == 1) || ((robotN1ProgramNumber != 5) && ((robotN1ProgramNumber != 7) && ((robotN1ProgramNumber != 6) && ((robotN2ProgramEnd == 1) && (robotN2ProgramNumber != 5)))))))
+  Pak tableToHOME == 1
+Scénář: Pokud je stůl v pozici home a robot N1 skončil program nebo robot N1 nezvedne díl 2 a robot N1 nenanese lepidlo na díl 2 a robot N1 nesvaří díly a robot N2 skončil program a robot N2 nezvedne díl, když díl 1a je na stole nebo díl 1b je na stole a potvrdím bezpečnost, pak se stůl otočí do pozice forward
+  Pokud (tableAtHOME == 1) && ((robotN1ProgramEnd == 1) || ((robotN1ProgramNumber != 5) && ((robotN1ProgramNumber != 7) && ((robotN1ProgramNumber != 6) && ((robotN2ProgramEnd == 1) && (robotN2ProgramNumber != 5))))))
+  Když (part1aOnTable == 1) || ((part1bOnTable == 1) && (light_line_ready == 1))
+  Pak tableToFWD == 1
+Scénář: Pokud robot N1 neskončí program a robot N1 zvedne díl 2 nebo robot N1 nanese lepidlo na díl 2 nebo robot N2 svaří díly nebo robot N2 neskončí program a robot N2 zvedne díl a robot N1 není neaktivní a robot N2 není neaktivní a díl 1a je na stole nebo díl 1b je na stole, pak se stůl neotočí do pozice forward a stůl se neotočí do pozice home
+  Pokud (robotN1ProgramEnd != 1) && ((robotN1ProgramNumber == 5) || ((robotN1ProgramNumber == 7) || ((robotN2ProgramNumber == 4) || ((robotN2ProgramEnd != 1) && ((robotN2ProgramNumber == 5) && ((robotN1ProgramNumber != 4) && ((robotN2ProgramNumber != 3) && ((part1aOnTable == 1) || (part1bOnTable == 1)))))))))
+  Pak (tableToFWD != 1) && (tableToHOME != 1)

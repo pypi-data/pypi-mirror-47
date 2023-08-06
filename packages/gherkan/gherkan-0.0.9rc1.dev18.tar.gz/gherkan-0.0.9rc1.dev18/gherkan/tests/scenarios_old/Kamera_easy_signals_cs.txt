@@ -1,0 +1,37 @@
+# language: cs
+
+Požadavek: Kamery
+      Přepínání kamer během testování
+Kontext:
+  Pokud lineOn
+
+Scénář: Když díl 2 je na stole, kamera se přesune na stůl
+  Když part2OnTable == 1
+  Pak cameraChange(Table)
+Scénář: Když robot N1 začne zvednout díl 2, kamera se přesune na robota N1
+  Když robotN1ProgramNumber == 2 && robotN1ProgramStarted
+  Pak cameraChange(RobotN1)
+Scénář: Když robot N1 začne nanášet lepidlo, kamera se přesune na robota N1
+  Když robotN1ProgramNumber == 3 && robotN1ProgramStarted
+  Pak cameraChange(RobotN1)
+Scénář: Když robot N1 začne slepovat díl 1 s dílem 2, kamera se přesune na robota N1
+  Když robotN1ProgramNumber == 1 && robotN1ProgramStarted
+  Pak cameraChange(RobotN1)
+Scénář: Když robot N2 začne zvedat produkt ze stolu, kamera se přesune na robota N3
+  Když robotN2ProgramNumber == 2 && robotN2ProgramStarted
+  Pak cameraChange(RobotN3)
+Scénář: Když dopravník začne, kamera se přesune na dopravník
+  Když conveyorStart == 1
+  Pak cameraChange(Conveyor)
+Scénář: Když robot N3 začne lakovat díl 1, kamera se přesune na robota N3
+  Když robotN3ProgramNumber == 3 && robotN3ProgramStarted
+  Pak cameraChange(RobotN3)
+Scénář: Když robot N3 začne vyměnit lepící pistoli, kamera se přesune na robota N3
+  Když robotN3ProgramNumber == 4 && robotN3ProgramStarted
+  Pak cameraChange(RobotN3)
+Scénář: Když robot N3 začne lakovat produkt 2, kamera se přesune na robota N3
+  Když robotN3ProgramNumber == 2 && robotN3ProgramStarted
+  Pak cameraChange(RobotN3)
+Scénář: Když robot N3 skončí lakovat produkt 2, kamera se přesune na dopravník
+  Když robotN3ProgramNumber == 2 && robotN3ProgramEnded
+  Pak cameraChange(Conveyor)

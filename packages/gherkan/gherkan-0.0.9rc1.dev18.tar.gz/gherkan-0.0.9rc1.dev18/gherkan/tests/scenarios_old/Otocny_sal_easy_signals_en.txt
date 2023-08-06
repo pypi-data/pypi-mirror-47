@@ -1,0 +1,22 @@
+# language: en
+
+Feature: Table
+     Při najíždění linky se stůl po potvrzení bezpečnosti otočí do pozice FWD, kde je   připraven na založení dílu 2. Stůl se po založení dílu 2 a potvrzení bezpečnosti musí otočit do pozice HOME. Po založení dílu 1A, nebo 1B a následném potvrzení bezpečnosti se stůl otočí do pozice FWD. Stůl se po založení dílu nesmí otočil, dokud není robotem N2 odebrán svařený výrobek. Při otočení před odebráním výrobku může dojít k poškození robota N1 a jeho nástrojů.
+Background:
+  Given lineOn
+
+Scenario: Given part 1a is not on table and part 1b is not on table and part 2 is not on table and table is at home position, when safety is confirmed, then table moves to position FWD
+  Given (part1aOnTable != 1) && ((part1bOnTable != 1) && ((part2OnTable != 1) && (tableAtHome == 1)))
+  When light_line_ready == 1
+  Then tableToFWD == 1
+Scenario: Given table is at position FWD, when part 2 is on table and safety is confirmed and robot N1 ends program or robot N1 does not pick up part 2 and robot N1 does not apply glue on part 2 and robot N1 does not weld parts together and robot N2 ended program and robot N2 does not pick up part, then table moves to position home
+  Given tableAtFWD == 1
+  When (part2OnTable == 1) && ((light_line_ready == 1) && ((robotN1ProgramEnd == 1) || ((robotN1ProgramNumber != 1) && ((robotN1ProgramNumber != 6) && ((robotN1ProgramNumber != 4) && ((robotN2ProgramEnd == 1) && (robotN2ProgramNumber != 3)))))))
+  Then tableToHome == 1
+Scenario: Given table is at position home and robot N1 ends program or robot N1 does not pick up part 2 and robot N1 does not apply glue on part 2 and robot N1 does not weld parts together and robot N2 ended program and robot N2 does not pick up part, when part 1a is on table or part 1b is on table and safety confirmed, then table moves to position forward
+  Given (tableAtHome == 1) && ((robotN1ProgramEnd == 1) || ((robotN1ProgramNumber != 1) && ((robotN1ProgramNumber != 6) && ((robotN1ProgramNumber != 4) && ((robotN2ProgramEnd == 1) && (robotN2ProgramNumber != 3))))))
+  When (part1aOnTable == 1) || ((part1bOnTable == 1) && (light_line_ready == 1))
+  Then tableToFWD == 1
+Scenario: Given robot N1 does not end program and robot N1 picks up part 2 or robot N1 applies glue on part 2 or robot N1 welds parts together or robot N2 does not end program and robot N2 picks up part and robot N1 is not inactive and robot N2 is not inactive and part 1a is on table or part 1b is on table then table does not move to position forward and table does not move to position home
+  Given (robotN1ProgramEnd != 1) && ((robotN1ProgramNumber == 1) || ((robotN1ProgramNumber == 6) || ((robotN1ProgramNumber == 4) || ((robotN2ProgramEnd != 1) && ((robotN2ProgramNumber == 3) && ((robotN1ProgramNumber != 5) && ((robotN2ProgramNumber != 4) && ((part1aOnTable == 1) || (part1bOnTable == 1)))))))))
+  Then (tableToFWD != 1) && (tableToHome != 1)

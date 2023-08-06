@@ -1,0 +1,22 @@
+# language: cs
+
+Požadavek: Dopravník
+      Výrobek je robotem N2 položen na pás. Ten se rozjede a je v pohybu až do té doby, než je výrobek na pozici pro lakování. Zde je robotem N3 nalakován. To jak spodní díl 1A/1B, tak díl 2. Po úspěšném lakování je výrobek pomocí pásu dopraven nakonec linky.
+Kontext:
+  Pokud lineOn
+
+Scénář: Když je produkt na začátku a produkt není na konci a robot N2 neskončí položit produkt na pás, pak dopravník začne
+  Když (productAtStart == 1) && ((productAtEnd != 1) && (robotN2ProgramNumber == 1 && robotN2ProgramEnded))
+  Pak conveyorStart == 1
+Scénář: Pokud dopravník začne, když je produkt na pozici, dopravník zastaví
+  Pokud conveyorStart == 1
+  Když productOnPosition == 1
+  Pak conveyorStop == 1
+Scénář: Pokud je produkt na pozici a produkt není na konci, když robot N3 skončí lakovat produkt, dopravník začne
+  Pokud (productOnPosition == 1) && (productAtEnd != 1)
+  Když robotN3ProgramNumber == 1 && robotN3ProgramEnded
+  Pak conveyorStart == 1
+Scénář: Pokud dopravník začal, když je produkt na konci, dopravník zastaví
+  Pokud conveyorStart == 1
+  Když productAtEnd == 1
+  Pak conveyorStop == 1

@@ -1,0 +1,19 @@
+# language: cs
+
+Požadavek: Robot N3
+     Montrac je dopravníkový systém s několika samostatnými vozíčky. Tyto vozíčky přepravují částečně zkompletované výrobky mezi několika stanicemi.
+Kontext:
+  Pokud lineOn
+
+Scénář: Když je produkt na pozici, pak robot začne lakovat díl 1a či díl 1b
+  Když productOnPosition == 1
+  Pak robotN3ProgramNumber == 7 && robotN3ProgramStarted
+Scénář: Jakmile robot N3 skončí lakovat díl 1a či díl 1b, pak robot začne měnit pistoli 1 za pistoli 2
+  Když robotN3ProgramNumber == 7 && robotN3ProgramEnded
+  Pak robotN3ProgramNumber == 6 && robotN3ProgramStarted
+Scénář: Jakmile robot skončí měnit pistoli 1 za pistoli 2, robot začne lakovat díl 2
+  Když robotN3ProgramNumber == 6 && robotN3ProgramEnded
+  Pak robotN3ProgramNumber == 5 && robotN3ProgramStarted
+Scénář: Když robot skončí lakovat díl 2, robot začne měnit pistoli 2 za pistoli 1
+  Když robotN3ProgramNumber == 5 && robotN3ProgramEnded
+  Pak robotN3ProgramNumber == 8 && robotN3ProgramStarted

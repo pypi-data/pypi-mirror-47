@@ -1,0 +1,22 @@
+# language: cs
+
+Požadavek: Dveře
+    Linka je vybavena tlačítkem Total stop, bezpečnostními dveřmi a Sick skenerem. Linka je rozdělena na dvě bezpečnostní zóny. Zóna 1 je otočný stůl, robot N1 (lepení a svařování) a robot N2 (umístění výrobku na pás). Do zóny 2 patří dopravník a robot N3 (lakování). K znovu rojetí linku je zapotřebí potvrdit bezpečnost. K znovu rozjetí linku je zapotřebí potvrdit bezpečnost. Potvrzení musí provést operátor manuálně (na panelu, mechanickým tlačítkem).
+Kontext:
+  Pokud lineOn
+
+Scénář: Jakmile jsou otevřené bezpečnostní dveře, robot N1 zastaví
+  Když safety_door == 1
+  Pak robotN1Stop == 1
+Scénář: Jakmile jsou otevřené bezpečnostní dveře, robot N2 zastaví
+  Když safety_door == 1
+  Pak robotN2Stop == 1
+Scénář: Jakmile jsou otevřené bezpečnostní dveře, robot N3 zastaví
+  Když safety_door == 1
+  Pak robotN3Stop == 1
+Scénář: Jakmile jsou otevřené bezpečnostní dveře, stůl se neotočí do pozice FWD a stůl se neotočí do pozice HOME
+  Když safety_door == 1
+  Pak (tableToFWD != 1) && (tableToHOME != 1)
+Scénář: Jakmile jsou otevřené bezpečnostní dveře, dopravník zastaví a dopravník nezačne
+  Když safety_door == 1
+  Pak (conveyorStop == 1) && (conveyorStart != 1)

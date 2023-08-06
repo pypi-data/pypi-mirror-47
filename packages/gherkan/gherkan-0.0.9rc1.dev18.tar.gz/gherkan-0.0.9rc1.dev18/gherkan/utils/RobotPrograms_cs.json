@@ -1,0 +1,69 @@
+{
+    "robot r1": {
+        "1": "seřadit kostka",
+        "2": "zvednout kostka 1",
+        "3": "vyložit kostka 3x2",
+        "4": "vyložit kostka 4x2",
+        "5": "vyložit kostka 6x2",
+        "6": "položit kostička 1 na vozíček xy na pozice 1",
+        "7": "zvednout kostička 2",
+        "8": "položit kostička 2 na vozíček xy na pozice 2",
+        "9": "zvednout kostička 3",
+        "10": "položit kostička 1 na vozíček y na pozice 1",
+        "11": "vyložit kostka 1",
+        "12": "zvednout kostka",
+        "13": "položit kostička na vozíček na pozice",
+        "14": "vyložit kostka",
+        "15": "položit kostička 1 na vozíček na pozice 1",
+        "16": "položit kostička 1 na vozíček xy na pozice 1",
+        "17": "položit kostička 1 na vozíček xy na pozice 1",
+        "18": "položit kostička 1 na vozíček xy na pozice 1"
+    },
+    "robot r2": {
+        "1": "vyrábět produkt",
+        "2": "vyložit kostka 4x2",
+        "3": "vyložit kostka"
+    },
+    "robot r3": {
+        "1": "vyložit kostka 2x2",
+        "2": "vyložit kostka 2x4"
+    },
+    "robot r4": {
+        "1": "vyložit kostka 3x2",
+        "2": "vyložit kostka 4x2",
+        "3": "vyložit kostka 6x2"
+    },
+    "robot n2": {
+        "1": "položit produkt na linka",
+        "2": "zvednout produkt z stůl",
+        "3": "být -aktivní",
+        "4": "svařit díl",
+        "5": "zvednout díl",
+        "6": "vzít produkt",
+        "7": "zvednout produkt",
+        "8": "být inaktivní"
+    },
+    "robot n3": {
+        "1": "lakovat produkt",
+        "2": "lakovat produkt 2",
+        "3": "lakovat díl 1",
+        "4": "měnit lepící pistol",
+        "5": "lakovat díl 2",
+        "6": "měnit pistol 1 za pistol 2",
+        "7": "lakovat díl 1a či díl 1b",
+        "8": "měnit pistol 2 za pistol 1"
+    },
+    "robot n1": {
+        "1": "slepit díl 1 s dílem 2",
+        "2": "vzít díl 2",
+        "3": "nanášet lepidlo",
+        "4": "být -aktivní",
+        "5": "zvednout díl 2",
+        "6": "svařit díl",
+        "7": "nanést lepidlo na díl 2",
+        "8": "měnit gripper za svářečka",
+        "9": "být inaktivní",
+        "10": "svařit díl 1 s dílem 2",
+        "11": "měnit svářečka za gripper"
+    }
+}
