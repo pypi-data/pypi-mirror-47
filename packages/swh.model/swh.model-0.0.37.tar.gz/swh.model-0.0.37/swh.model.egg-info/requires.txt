@@ -1,0 +1,9 @@
+vcversioner
+Click
+attrs
+hypothesis
+python-dateutil
+swh.core>=0.0.60
+
+[testing]
+pytest
