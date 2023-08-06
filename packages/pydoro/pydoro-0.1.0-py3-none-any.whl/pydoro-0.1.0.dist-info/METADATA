@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: pydoro
+Version: 0.1.0
+Summary: Terminal Pomodoro Timer
+Home-page: https://github.com/JaDogg/pydoro
+Author: Bhathiya Perera
+Author-email: jadogg.coder@gmail.com
+License: MIT
+Keywords: tomato pomodoro pydoro timer work
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Requires-Dist: prompt-toolkit (>=2.0.9)
+Provides-Extra: audio
+
+pydoro 🍅
+============
+*Terminal Pomodoro Timer*
+
+.. image:: https://github.com/JaDogg/pydoro/raw/master/images/logo.png
+
+Installation 🎉
+-----------------
+Install via pipx:
+
+.. code-block::
+
+    $ pipx install pydoro
+
+Done.
+
+On windows you may try the packaged .exe file. See the releases_ page.
+
+Usage 📖
+---------
+* Run :code:`pydoro` to launch.
+
+.. image:: https://github.com/JaDogg/pydoro/raw/master/images/animation.gif
+
+Credits 🙇‍♂️
+------------------
+* playsound.py - For playing audio file, Copyright (c) 2016 Taylor_ Marks
+* prompt-tookit - For creating TUI
+* b15.wav - Dana_ robinson designs, CC0 from 
+
+.. _releases: https://github.com/JaDogg/pydoro/releases
+.. _Taylor: https://github.com/TaylorSMarks/playsound
+.. _Dana: https://freesound.org/s/377639/
+
+
+Why ? 🤔
+------------
+* I wanted to follow `Pomodoro Technique`_.
+* I don't like to use mobile apps or web apps.
+* No user info is stored, tracked or shared.
+* I spend lot of time on my Terminal.
+* Written in Python 🐍.
+
+.. _Pomodoro Technique: https://en.wikipedia.org/wiki/Pomodoro_Technique
+
+
+Copyright ⚖
+----------------
+This software is Copyright (c) 2019 Bhathiya Perera.
+
+See the LICENSE file for more information.
+
+
