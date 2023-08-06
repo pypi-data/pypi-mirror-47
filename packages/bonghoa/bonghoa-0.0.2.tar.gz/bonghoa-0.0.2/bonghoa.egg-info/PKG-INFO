@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bonghoa
+Version: 0.0.2
+Summary: test project
+Home-page: https://github.com/bonghoa15/bong_proj1
+Author: Bong Hoa
+Author-email: nguyendieuhoa15@gmail.com
+License: UNKNOWN
+Description: what is it
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
