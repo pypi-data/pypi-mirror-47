@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+nmea/__init__.py
+nmea/formatter.py
+nmea/server.py
+nmea.egg-info/PKG-INFO
+nmea.egg-info/SOURCES.txt
+nmea.egg-info/dependency_links.txt
+nmea.egg-info/requires.txt
+nmea.egg-info/top_level.txt
