@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: muffin-admin
+Version: 0.6.1
+Summary: Admin interface for Muffin Framework
+Requires-Dist: muffin (>=0.30.2)
+Requires-Dist: muffin-jinja2 (>=0.2)
+Requires-Dist: muffin-babel (>=0.4)
+Requires-Dist: wtforms (==2.1)
+
+Home-page: https://github.com/klen/muffin-admin
+Author: Kirill Klenov
+Author-email: horneds@gmail.com
+License: MIT
+Description: Admin interface for Muffin Framework
+Keywords: asyncion,aiohttp,muffin,admin
+Platform: Any
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: Russian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
