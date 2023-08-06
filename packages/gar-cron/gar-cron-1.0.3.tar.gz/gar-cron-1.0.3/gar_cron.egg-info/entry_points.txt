@@ -1,0 +1,3 @@
+[console_scripts]
+gar-cron = gar_cron.cron:main
+
