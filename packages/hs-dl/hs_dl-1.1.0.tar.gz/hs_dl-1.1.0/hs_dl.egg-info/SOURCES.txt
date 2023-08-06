@@ -1,0 +1,9 @@
+README.rst
+setup.py
+hs_dl/__init__.py
+hs_dl/__main__.py
+hs_dl.egg-info/PKG-INFO
+hs_dl.egg-info/SOURCES.txt
+hs_dl.egg-info/dependency_links.txt
+hs_dl.egg-info/requires.txt
+hs_dl.egg-info/top_level.txt
