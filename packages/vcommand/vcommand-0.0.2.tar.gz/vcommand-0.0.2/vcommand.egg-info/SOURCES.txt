@@ -1,0 +1,7 @@
+README.md
+setup.py
+vcommand/__init__.py
+vcommand.egg-info/PKG-INFO
+vcommand.egg-info/SOURCES.txt
+vcommand.egg-info/dependency_links.txt
+vcommand.egg-info/top_level.txt
