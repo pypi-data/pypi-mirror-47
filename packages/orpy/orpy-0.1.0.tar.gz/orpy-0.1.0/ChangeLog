@@ -1,0 +1,17 @@
+CHANGES
+=======
+
+0.1.0
+-----
+
+* Update README
+* tox: add Python 3.6 and remove 3.4
+* tox: remove duplicated section
+* Handle user agent at version.py
+* Enable HTTP logging
+* Improve exception handling and error display
+* Update README with some instructions
+* Add support to get details about a deployment
+* Add support for listing existing deployments
+* Initial plumbing of client
+* Initial commit from cookiecutter template

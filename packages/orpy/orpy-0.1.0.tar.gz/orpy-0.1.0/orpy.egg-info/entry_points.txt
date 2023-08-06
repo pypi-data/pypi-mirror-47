@@ -1,0 +1,10 @@
+[console_scripts]
+orpy = orpy.shell:main
+
+[orpy.cli]
+dep_list = orpy.cmd.deployments:DeploymentList
+dep_show = orpy.cmd.deployments:DeploymentShow
+deployment_list = orpy.cmd.deployments:DeploymentList
+deployment_show = orpy.cmd.deployments:DeploymentShow
+test = orpy.cmd.test:TestOrchestratorEndpoint
+
