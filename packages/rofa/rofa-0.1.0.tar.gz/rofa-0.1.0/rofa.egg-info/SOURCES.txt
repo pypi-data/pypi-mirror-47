@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+rofa/__init__.py
+rofa/__version__.py
+rofa/exceptions.py
+rofa/plotter.py
+rofa/simulator.py
+rofa/utils.py
+rofa/weight_model.py
+rofa.egg-info/PKG-INFO
+rofa.egg-info/SOURCES.txt
+rofa.egg-info/dependency_links.txt
+rofa.egg-info/requires.txt
+rofa.egg-info/top_level.txt
