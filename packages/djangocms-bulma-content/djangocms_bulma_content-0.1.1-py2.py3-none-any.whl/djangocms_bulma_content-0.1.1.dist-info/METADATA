@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: djangocms-bulma-content
+Version: 0.1.1
+Summary: small plugin with implement content layout
+Home-page: https://github.com/zodman/djangocms-bulma-content
+Author: Andres Vargas - zodman
+Author-email: zodman@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: django-cms
+Requires-Dist: django (<2.2)
+
+
+# djangocms-bulma-content
+Plugin for bulma element content
+
+
