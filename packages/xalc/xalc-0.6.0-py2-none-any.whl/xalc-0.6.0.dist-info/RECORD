@@ -1,0 +1,10 @@
+xalc/__init__.py,sha256=jXWhqPWnBf5AAIJ2A9OlBybyqY_Lqa3Z4KVz3ol_V2c,502
+xalc/formatter.py,sha256=VMKhoowMWPPGC7s8IoyOvyZCnMyHFvAmonXC64mKUB4,2844
+xalc/transformer.py,sha256=L5qnxUVhJqcJJR3H8Ezqt5U3PBkKgb66ir-d1UEuM10,4610
+xalc/xalc.py,sha256=1bkpqCXiJ7RkjxVElqO38KQ4lvTRW_g5xUy_k-cwqMk,867
+xalc-0.6.0.dist-info/LICENSE,sha256=6O9cP22vsXFaMfqpthksPgw4LUg6YUfSaFS68tbruk4,1057
+xalc-0.6.0.dist-info/METADATA,sha256=yjLugzwHc3I_wxXxTZNNJEJnikULNQEWLuJjUdFL6zs,3227
+xalc-0.6.0.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+xalc-0.6.0.dist-info/entry_points.txt,sha256=T1jnPqRV3mMJdg8mAX-P_H4obyeDwnAwD45AXKp4Fg8,41
+xalc-0.6.0.dist-info/top_level.txt,sha256=4mtDOwURGv30VfVTSur8-C3ugiv3OXCTSlSLQRry_34,5
+xalc-0.6.0.dist-info/RECORD,,
