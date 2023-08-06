@@ -1,0 +1,10 @@
+villadewow/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+villadewow/algorithms/ackermann.py,sha256=1SP4QgOx4kucQvB3l8TwStGrGg_d3yAvnI8wfUOQcIc,215
+villadewow/algorithms/factorial.py,sha256=j3YWnQIlGvvtUjs8kPQGkQGV_UHTykellm-6IXeNavQ,279
+villadewow/algorithms/fibonacci.py,sha256=jbUkgsJJiQtomtMyyNQ2Slf6By3HUOMHSnNhLx-fjjE,274
+villadewow/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+villadewow/utils/check_positive_int.py,sha256=1DV3Abj8bfSVLKdxekxNPgKZH5gjCwoSEWKeju2y0RE,393
+villadewow-0.1.1.dist-info/METADATA,sha256=fvyizLpvFQicJ0RBf5PhRrMMUWvJJoBhxhHzZdftLOs,174
+villadewow-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+villadewow-0.1.1.dist-info/top_level.txt,sha256=bGqJ-ZvW5OgWmX34lj7jdYxZ5mCpia8MX3Sq81yJhbY,39
+villadewow-0.1.1.dist-info/RECORD,,
