@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: Django-Websocket-Server
+Version: 0.1.1560344239
+Summary: Websocket BAckground Server for Django
+Home-page: https://github.com/JulianKimmig/django_websocket_server
+Author: Julian Kimmig
+Author-email: julian-kimmig@gmx.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: websockets
+Requires-Dist: FilterDict
+Requires-Dist: PyNaCl
+
+UNKNOWN
+
+
