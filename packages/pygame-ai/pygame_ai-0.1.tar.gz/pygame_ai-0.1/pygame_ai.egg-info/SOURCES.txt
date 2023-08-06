@@ -1,0 +1,11 @@
+README.md
+setup.py
+pygame_ai/__init__.py
+pygame_ai/colors.py
+pygame_ai/gameobject.py
+pygame_ai.egg-info/PKG-INFO
+pygame_ai.egg-info/SOURCES.txt
+pygame_ai.egg-info/dependency_links.txt
+pygame_ai.egg-info/not-zip-safe
+pygame_ai.egg-info/requires.txt
+pygame_ai.egg-info/top_level.txt
