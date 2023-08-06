@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: dvcr
+Version: 0.1
+Summary: Containers to use in tests
+Home-page: http://github.com/TimNooren/dvcr
+Author: Tim Nooren
+Author-email: timnooren@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: docker
+
+UNKNOWN
+
+
