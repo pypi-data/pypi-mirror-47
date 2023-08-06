@@ -1,0 +1,7 @@
+README.md
+setup.py
+cookiecutter_drf_microservice.egg-info/PKG-INFO
+cookiecutter_drf_microservice.egg-info/SOURCES.txt
+cookiecutter_drf_microservice.egg-info/dependency_links.txt
+cookiecutter_drf_microservice.egg-info/not-zip-safe
+cookiecutter_drf_microservice.egg-info/top_level.txt
