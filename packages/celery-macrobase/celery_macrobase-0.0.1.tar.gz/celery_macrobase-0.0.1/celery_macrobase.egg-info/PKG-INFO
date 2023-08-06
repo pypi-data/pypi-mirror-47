@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: celery-macrobase
+Version: 0.0.1
+Summary: Celery driver for macrobase framework
+Home-page: https://github.com/mbcores/celery-macrobase
+Author: Alexey Shagaleev
+Author-email: alexey.shagaleev@yandex.ru
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
