@@ -1,0 +1,8 @@
+README.md
+setup.py
+awscli_sqsall.egg-info/PKG-INFO
+awscli_sqsall.egg-info/SOURCES.txt
+awscli_sqsall.egg-info/dependency_links.txt
+awscli_sqsall.egg-info/requires.txt
+awscli_sqsall.egg-info/top_level.txt
+sqsall/__init__.py
