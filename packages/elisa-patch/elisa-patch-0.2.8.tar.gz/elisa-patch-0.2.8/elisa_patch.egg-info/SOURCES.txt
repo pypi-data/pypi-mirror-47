@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+elisa_patch/__init__.py
+elisa_patch/__main__.py
+elisa_patch/postprocessor.py
+elisa_patch/similarity.py
+elisa_patch/utils.py
+elisa_patch.egg-info/PKG-INFO
+elisa_patch.egg-info/SOURCES.txt
+elisa_patch.egg-info/dependency_links.txt
+elisa_patch.egg-info/requires.txt
+elisa_patch.egg-info/top_level.txt
