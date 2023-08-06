@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: JLDB
+Version: 0.2
+Summary: JSON-like db for python3.
+Home-page: https://github.com/HidekiHrk/JLDB
+Author: HidekiHrk
+Author-email: hidekihiroki123@gmail.com
+License: MIT
+Download-URL: https://github.com/HidekiHrk/JLDB/archive/0.2.tar.gz
+Description: UNKNOWN
+Keywords: python,db,database,better,query,json,dict
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
