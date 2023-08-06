@@ -1,0 +1,9 @@
+README.md
+setup.py
+andriipdf/__init__.py
+andriipdf/pdf2image.py
+andriipdf/pdf2text.py
+andriipdf.egg-info/PKG-INFO
+andriipdf.egg-info/SOURCES.txt
+andriipdf.egg-info/dependency_links.txt
+andriipdf.egg-info/top_level.txt
