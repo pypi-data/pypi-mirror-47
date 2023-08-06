@@ -1,0 +1,6 @@
+pyproj
+shapely
+marshmallow==3.0.0b10
+geojson
+rasterio
+gdal
