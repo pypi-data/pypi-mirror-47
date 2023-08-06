@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: esphomeflasher
+Version: 1.1.0
+Summary: ESP8266/ESP32 firmware flasher for esphomelib
+Home-page: https://github.com/esphome/esphomeflasher
+Author: ESPHome
+Author-email: contact@esphome.io
+License: MIT
+Download-URL: https://github.com/esphome/esphomeflasher/archive/1.1.0.zip
+Keywords: home,automation
+Platform: any
+Requires-Python: >=3.5
+Requires-Dist: wxpython (<5.0,>=4.0)
+Requires-Dist: esptool (==2.6)
+Requires-Dist: requests (<3,>=2.0)
+
+UNKNOWN
+
+
