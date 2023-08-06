@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: ozone
+Version: 0.1.0
+Summary: Python Library wrapping Troposphere and boto3 to manage AWS via CFN
+Home-page: https://github.com/johnpreston/ozone
+Author: John Mille
+Author-email: john@lambda-my-aws.io
+License: Apache Software License 2.0
+Description: =====
+        ozone
+        =====
+        
+        
+        .. image:: https://img.shields.io/pypi/v/ozone.svg
+                :target: https://pypi.python.org/pypi/ozone
+        
+        Python Library to manage Troposphere to manage AWS via CFN
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://ozone.readthedocs.io.
+        
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+Keywords: ozone
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
