@@ -1,0 +1,8 @@
+census_data_downloader/__init__.py,sha256=RKtY1NmPmzphG3yLnOHaYZFIbCmwJXJAZPksRb4JSGI,520
+census_data_downloader/cli.py,sha256=a2JYcnILwHVKIMhuERGVDY2ae8EHTZ3oJdAmuGGhi6c,3488
+census_data_downloader-0.0.8.dist-info/LICENSE,sha256=mfKJqz_wqahch1V5aL_mOTtwvatGwdgYf3_cUuF7bJo,1076
+census_data_downloader-0.0.8.dist-info/METADATA,sha256=872pCBk1Q2RVMvzM9zMJhWYn4bUoXuSC0LqD9gXilE0,615
+census_data_downloader-0.0.8.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+census_data_downloader-0.0.8.dist-info/entry_points.txt,sha256=xIiqEONkx_EfsKjdAb2Cc_bzpUd7_2Kq6nSRehFlN1Y,91
+census_data_downloader-0.0.8.dist-info/top_level.txt,sha256=wKx3aMifcmvmC2-9WTyFD4pjdaLUtNYyoiPRk9KZJsg,23
+census_data_downloader-0.0.8.dist-info/RECORD,,
