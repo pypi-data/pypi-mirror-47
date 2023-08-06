@@ -1,0 +1,7 @@
+numpy
+pandas
+pyserial
+django-bootstrap4
+custom-accounts-django
+django
+django-glrm
