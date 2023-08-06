@@ -1,0 +1,14 @@
+README.md
+build.py
+setup.cfg
+setup.py
+buildmc/__init__.py
+buildmc/cmake.py
+buildmc/compilers.py
+buildmc/mesonbuild.py
+buildmc.egg-info/PKG-INFO
+buildmc.egg-info/SOURCES.txt
+buildmc.egg-info/dependency_links.txt
+buildmc.egg-info/entry_points.txt
+buildmc.egg-info/requires.txt
+buildmc.egg-info/top_level.txt
