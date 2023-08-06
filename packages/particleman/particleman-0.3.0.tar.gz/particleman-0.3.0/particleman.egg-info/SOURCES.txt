@@ -1,0 +1,15 @@
+README.md
+setup.py
+particleman/__init__.py
+particleman/core.py
+particleman/filter.py
+particleman/plotting.py
+particleman/st.py
+particleman.egg-info/PKG-INFO
+particleman.egg-info/SOURCES.txt
+particleman.egg-info/dependency_links.txt
+particleman.egg-info/requires.txt
+particleman.egg-info/top_level.txt
+particleman/src/st.c
+test/test_core.py
+test/test_filter.py
