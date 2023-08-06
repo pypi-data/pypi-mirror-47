@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: wayward
+Version: 0.3.0
+Summary: Wayward is a Python package that helps to identify characteristic terms from single documents or groups of documents.
+Home-page: https://github.com/aolieman/weighwords
+License: LGPL-3.0
+Keywords: natural language processing,language modeling,parsimonious language model,significant words language model,word cloud
+Author: Alex Olieman
+Author-email: alex@olieman.net
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: numpy (>=1.15,<2.0)
+Project-URL: Repository, https://github.com/aolieman/weighwords
