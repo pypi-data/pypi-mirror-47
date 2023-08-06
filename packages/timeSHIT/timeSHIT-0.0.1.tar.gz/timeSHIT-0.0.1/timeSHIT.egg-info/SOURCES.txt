@@ -1,0 +1,11 @@
+README.md
+setup.py
+timeSHIT/TimeSHIT_Filler.py
+timeSHIT/__init__.py
+timeSHIT/__main__.py
+timeSHIT.egg-info/PKG-INFO
+timeSHIT.egg-info/SOURCES.txt
+timeSHIT.egg-info/dependency_links.txt
+timeSHIT.egg-info/entry_points.txt
+timeSHIT.egg-info/requires.txt
+timeSHIT.egg-info/top_level.txt
