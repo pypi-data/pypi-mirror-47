@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: htm
+Version: 0.0.1
+Summary: HTM for Python
+Home-page: https://github.com/jviide/htm.py
+Author: Joachim Viide
+Author-email: jviide@iki.fi
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# htm.py
+
+A Python version of [developit/htm](https://github.com/developit/htm) - JSX-like syntax in plain ~~JavaScript~~ Python.
+
+![](https://user-images.githubusercontent.com/19776768/59381467-1af4af00-8d64-11e9-919d-62cad30a4a2e.png)
+
+## License
+
+This library is licensed under the MIT license. See [./LICENSE](./LICENSE).
+
+
