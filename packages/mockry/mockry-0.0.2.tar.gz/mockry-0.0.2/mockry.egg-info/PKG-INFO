@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: mockry
+Version: 0.0.2
+Summary: mockry - A rich mock server you have searched for
+Home-page: https://github.com/glibin/mockry
+License: LICENSE
+Download-URL: https://github.com/glibin/mockry/tarball/0.0.2
+Description: # mockry
+        
+        A simple but rich mock HTTP server you have searched for. 
+        
+        * **Easy to start.** Get the docker package and start hacking in a minutes.
+        * **Easy to use.** Create a simple JSON with your mock data and pass it as param to mockry.
+        * **Rich.** Parse input CSV, convert it to JSON, send it at some URL and return the combined result? It's just a small things mockry can do for you. No programming required.
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >= 3.7
+Description-Content-Type: text/markdown
