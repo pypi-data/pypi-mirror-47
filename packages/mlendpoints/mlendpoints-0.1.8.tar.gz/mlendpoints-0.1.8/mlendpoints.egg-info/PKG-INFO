@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: mlendpoints
+Version: 0.1.8
+Summary: Python library and CLI for uploading and querying machine learning endpoints
+Home-page: https://github.com/jonahthelion/mlendpoints
+Author: Jonah Philion
+Author-email: jonahphilion@gmail.com
+License: MIT
+Description: 
+        # mlendpoints
+        Python library and CLI for uploading and querying machine learning endpoints
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=2.5.0
+Description-Content-Type: text/markdown

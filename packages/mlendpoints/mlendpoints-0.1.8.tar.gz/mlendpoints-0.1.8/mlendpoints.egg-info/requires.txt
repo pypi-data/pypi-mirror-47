@@ -1,0 +1,4 @@
+tornado
+simplejson
+requests
+Pillow
