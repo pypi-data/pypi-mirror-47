@@ -1,0 +1,73 @@
+Class 04/12/2019
+Soft dev eng rs
+
+PAckaging and dtesting
+
+
+verify and validate:
+-verify (implementation check): code is solving the equations that it is meant to solve correctly
+	use simpler cases to match analytical soln
+
+-validate: is the solution matching the real world
+	validate with experimental results
+
+
+Software testing:
+testing blocks of code, rather than full result
+
+
+external test suite in the same repo
+checking known outputs
+checking behavior (if zero, or negative is entered, or something like that)
+
+test through assertions: for exact answers, or approximate exactness
+-assertions raise assertions errors--good idea to use these for inputs and outputs
+-if the assertion raises an error, maeks that a test has failed, doesn't kill the code necessarilyt.
+
+numpy allclose function for tolerance check with an assert command
+
+
+pytest: any function with test at befinnign or end--live in files that start with test_sample.py 
+
+pytest looks for files with "test"in them, and run the tests
+
+Types of tests:
+interior--the one we did 
+edge test--end or beginning of a range (if function exists from 0 to 100, test the boundaries) (checking a bound condition maybe)
+rule of thumb: test all edges and one interior point
+
+corner cases: two or more edge cases combined--thnk about corner of 2D finite difference
+
+unit test: interrogating an individual function or method
+--need modularized code--breaking into a ton of functions.
+
+integration tests: making sure multiple functions work well together (kind of like verif)
+
+regression test: condirm results are matching prior results (validateiokn)
+
+Test generators: 
+
+one test for each module
+
+setting up a class to run a series of test--maybe need some more details here. He ran a number of tests for single fn
+
+Test driven development: write tests first
+
+
+
+-----------------Packaging--------------------
+-package is a collection of modules in same directory
+modules contain functions
+package dir must contain __init__.py for python to see ut
+need init to import
+
+folder = sub package -- need another init file
+
+
+
+
+
+
+
+
+
