@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: crproj
+Version: 0.0.1
+Summary: A terminal tool to start new projects
+Home-page: https://github.com/bpahuja/proj
+Author: Bhavay Pahuja
+Author-email: bhavay.pahuja@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+
+UNKNOWN
+
+
