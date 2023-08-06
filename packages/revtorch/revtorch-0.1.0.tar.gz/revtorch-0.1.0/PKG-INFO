@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: revtorch
+Version: 0.1.0
+Summary: Framework for creating (partially) reversible neural networks with PyTorch
+Home-page: https://github.com/RobinBruegger/RevTorch
+Author: Robin Brügger
+Author-email: brueggerrobin+revtorch@gmail.com
+License: bsd-3-clause
+Download-URL: https://github.com/RobinBruegger/RevTorch/archive/v0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: reversbile neural network
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
