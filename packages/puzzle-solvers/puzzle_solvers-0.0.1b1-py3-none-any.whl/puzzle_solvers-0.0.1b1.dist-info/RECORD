@@ -1,0 +1,13 @@
+puzzle_solvers/__init__.py,sha256=anjycod1oaR0Zo-Lj9ax6F7wnpd-gXRno8H4VYi4Ook,1587
+puzzle_solvers/elimination.py,sha256=SenpwaZhByfyUaQdVFVD5T257YIybNR3TGUF9oZXDyA,84049
+puzzle_solvers/version.py,sha256=fGhpEMPYkfNbY4yJybpdcK9JosP_ySWEvH_MmV9Mm5k,1709
+puzzle_solvers/demos/__init__.py,sha256=vfVsCTXyBwx-SyFFje5CmOstyflD-yiuV9JCA6g6wVE,1492
+puzzle_solvers/demos/elimination.py,sha256=5DDbzjr28WeI5Ozl38KLxSk4ToPxcb4wOUblPUqKt1A,5265
+puzzle_solvers/demos/elimination_zebra.py,sha256=QCmPZk5Mtf_iElJUlB-hgQN8FV9dcXf0DfTHQB0BEXY,3007
+puzzle_solvers-0.0.1b1.data/data/LICENSE,sha256=W-O_mSDlqDpwY5wT60V5BgR_0nHVROcYZ2OvQCQVZ1U,1078
+puzzle_solvers-0.0.1b1.data/data/README,sha256=dlQ1mEUksFyli3GKRDSx6CG5SkFqi05JrpEXj7xZqXM,142
+puzzle_solvers-0.0.1b1.dist-info/LICENSE,sha256=W-O_mSDlqDpwY5wT60V5BgR_0nHVROcYZ2OvQCQVZ1U,1078
+puzzle_solvers-0.0.1b1.dist-info/METADATA,sha256=rnM4nmR6C_cT278SlpxZQeXnnfQN8ErAq7Jch2ZsxN8,1661
+puzzle_solvers-0.0.1b1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+puzzle_solvers-0.0.1b1.dist-info/top_level.txt,sha256=FuiKuEo-WAMFqhdPoMvZ5kQJAYPshvI4RPsf-h-qvic,15
+puzzle_solvers-0.0.1b1.dist-info/RECORD,,
