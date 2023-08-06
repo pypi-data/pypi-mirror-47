@@ -1,0 +1,9 @@
+dask[complete]
+loguru
+numpy
+pandas
+prometheus-client
+pytest
+scipy
+spaceman
+ta-lib
