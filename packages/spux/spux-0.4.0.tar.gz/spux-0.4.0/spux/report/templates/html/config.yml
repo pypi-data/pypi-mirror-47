@@ -1,0 +1,20 @@
+---
+version: 2
+multicolumn: false
+web-width: %(pixels)dpx
+align: center
+float: h!
+grid:
+  rows: 1
+  columns: 1
+  grid_elements:
+  - path: figures/%(figure)s.svg
+    type: static
+    from:
+    - 1
+    - 1
+    to:
+    - 1
+    - 1
+export-width: '%(export-width)d'
+external-data-url: %(link)s

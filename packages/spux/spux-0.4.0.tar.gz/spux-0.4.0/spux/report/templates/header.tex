@@ -1,0 +1,156 @@
+% user-defined macros
+
+% color coding for modifications
+\usepackage[pdftex,usenames,dvipsnames]{color}
+\newcommand{\todo}[1]{{\color{Red}{[TODO: #1]}}}
+
+% bold math
+\renewcommand{\bf}{\boldmath}
+
+% PDF bookmarks
+\usepackage{hyperref}
+
+% math symbols
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{latexsym}
+\usepackage{mathtools}
+\usepackage{bm}
+
+% listings
+\usepackage{listings}
+
+% operators
+\newcommand{\curl}{\operatorname{curl}}
+\newcommand{\grad}{\operatorname{grad}}
+\newcommand{\pols}{\mathcal{P}}
+\newcommand{\ph}{\phantom{}}
+\newcommand{\Var}{\operatorname{Var}}
+\newcommand{\Cov}{\operatorname{Cov}}
+\newcommand{\Lip}{\operatorname{Lip}}
+\newcommand{\dist}{\operatorname{dist}}
+
+% math fonts
+\newcommand{\IE}{\mathbb{E}}
+\newcommand{\IV}{\mathbb{V}}
+\newcommand{\IR}{\mathbb{R}}
+\newcommand{\IC}{\mathbb{C}}
+\newcommand{\IN}{\mathbb{N}}
+\newcommand{\IP}{\mathbb{P}}
+\newcommand{\IZ}{\mathbb{Z}}
+\newcommand{\cB}{{\mathcal B}}
+\newcommand{\cC}{{\mathcal C}}
+\newcommand{\cD}{{\mathcal D}}
+\newcommand{\cE}{{\mathcal E}}
+\newcommand{\cF}{{\mathcal F}}
+\newcommand{\cG}{{\mathcal G}}
+\newcommand{\cI}{{\mathcal I}}
+\newcommand{\cL}{{\mathcal L}}
+\newcommand{\cM}{{\mathcal M}}
+\newcommand{\cN}{{\mathcal N}}
+\newcommand{\cT}{{\mathcal T}}
+\newcommand{\cU}{{\mathcal U}}
+\newcommand{\cO}{{\mathcal O}}
+\newcommand{\cP}{{\mathcal P}}
+\newcommand{\cQ}{{\mathcal Q}}
+\newcommand{\cR}{{\mathcal R}}
+
+\newcommand{\mM}{{\mathfrak M}}
+
+% greeks
+\newcommand{\om}{\omega}
+\newcommand{\Om}{\Omega}
+\newcommand{\eps}{\varepsilon}
+
+% mesh elements
+\newcommand{\mesh}{\mathcal{M}}
+\newcommand{\facets}{\mathcal{F}}
+\newcommand{\edges}{\mathcal{E}}
+
+% conservation laws
+\newcommand{\bU}{{\bf U}}
+\newcommand{\bF}{{\bf F}}
+\newcommand{\bG}{{\bf G}}
+\newcommand{\bS}{{\bf S}}
+\newcommand{\bB}{{\bf B}}
+\newcommand{\bA}{{\bf A}}
+\newcommand{\bR}{{\bf R}}
+\newcommand{\bQ}{{\bf Q}}
+\newcommand{\bL}{{\bf L}}
+\newcommand{\bH}{{\bf H}}
+\newcommand{\bV}{{\bf V}}
+\newcommand{\bW}{{\bf W}}
+\newcommand{\bD}{{\bf D}}
+\newcommand{\bP}{{\bf P}}
+\newcommand{\bC}{{\bf C}}
+\newcommand{\bI}{{\bf I}}
+
+% vectors
+\newcommand{\bu}{{\bf u}}
+\newcommand{\bc}{{\bf c}}
+\newcommand{\bq}{{\bf q}}
+\newcommand{\bx}{{\bf x}}
+\newcommand{\by}{{\bf y}}
+\newcommand{\bw}{{\bf w}}
+\newcommand{\bt}{{\bf t}}
+
+% formatting
+\newcommand{\n}{\noindent}
+\newcommand{\wh}{\widehat}
+\newcommand{\ov}{\overline}
+\newcommand{\dis}{\displaystyle}
+\newcommand{\ds}{\displaystyle}
+
+% convergence analysis
+\newcommand{\Work}{\text{Work}}
+\newcommand{\Load}{\text{Load}}
+\newcommand{\error}{\text{error}}
+\newcommand{\Dx}{{\Delta x}}
+\newcommand{\Dy}{{\Delta y}}
+\newcommand{\Dt}{{\Delta t}}
+
+% special names and expressions
+\newcommand{\KL}{{Karhunen-Lo\`eve }}
+\newcommand{\IPas}{{\textnormal{$\IP$-a.s.~}}}
+\newcommand{\IPae}{{\textnormal{$\IP$-a.e.~}}}
+\newcommand{\CFL}{\text{CFL}}
+\newcommand{\MLMC}{\textnormal{MLMC}}
+\newcommand{\MC}{\textnormal{MC}}
+\newcommand{\FVM}{\textnormal{FVM}}
+
+\hyphenation{ho-mo-ge-neous}
+
+% additional
+
+\newcommand{\bz}{{\bf z}}
+\newcommand{\br}{{\bf r}}
+\newcommand{\bn}{{\bf n}}
+\newcommand{\cV}{{\mathcal{V}}}
+
+% probability
+\newcommand{\EMLMC}{E^{\text{MLMC}}}
+
+% SPUX
+\newcommand{\Pobs}{P^\textnormal{\footnotesize{obs}}}
+\newcommand{\bth}{\bf{\theta}}
+\newcommand{\bh}{\bf{h}}
+
+% new column alignment types for multi-line left-aligned (L) and right-aligned (R)
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash\hspace{0pt}}p{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash\hspace{0pt}}p{#1}}
+
+%%% SETUP
+
+% format
+% \usepackage[notcite,notref]{showkeys}
+
+% figure file type extension
+\newcommand{\ext}{png}
+
+% report path
+\newcommand{\reppath}{../report}
+
+% figure path
+\newcommand{\figpath}{../fig}
