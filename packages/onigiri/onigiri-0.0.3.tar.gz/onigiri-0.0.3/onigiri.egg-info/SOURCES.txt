@@ -1,0 +1,11 @@
+README.md
+setup.py
+onigiri/__init__.py
+onigiri/cli.py
+onigiri/client.py
+onigiri.egg-info/PKG-INFO
+onigiri.egg-info/SOURCES.txt
+onigiri.egg-info/dependency_links.txt
+onigiri.egg-info/entry_points.txt
+onigiri.egg-info/requires.txt
+onigiri.egg-info/top_level.txt
