@@ -1,0 +1,17 @@
+MANIFEST.in
+README.rst
+setup.py
+allure/__init__.py
+allure/adaptor.py
+allure/common.py
+allure/constants.py
+allure/pytest_plugin.py
+allure/rules.py
+allure/structure.py
+allure/utils.py
+allure_adaptor_nio.egg-info/PKG-INFO
+allure_adaptor_nio.egg-info/SOURCES.txt
+allure_adaptor_nio.egg-info/dependency_links.txt
+allure_adaptor_nio.egg-info/entry_points.txt
+allure_adaptor_nio.egg-info/requires.txt
+allure_adaptor_nio.egg-info/top_level.txt
