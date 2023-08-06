@@ -1,0 +1,11 @@
+notedata/__init__.py,sha256=jOT4vKmnPPmu75cx4goV22ZLaT1GsYfsLx3Ce2fjSsU,163
+notedata/test.py,sha256=JKJbipcAPq-56ASurU54h0bB5ZTThEo-R3jMDPXXhRw,433
+notedata/utils.py,sha256=ySLZFoXMKQe97-we9PaHhz9jZIy0yLjqCo3u499yLn8,1104
+notedata/dataset/ElectronicsData.py,sha256=jL2J_s-Y02EKHSiMnRzTT5JvasoE7jO1LDQc_fst73E,6624
+notedata/dataset/__init__.py,sha256=bQlqGyaiPo4zyDCowN1wfIT30GMr_WHlw5xRNk4n-HE,188
+notedata/dataset/data.py,sha256=FVx07YXs0-cn9MTMCAyYCgnKMXD8PuUOTwpZ9XPrq70,3137
+notedata/dataset/test.py,sha256=4nIMtNhp8dt4pmkVCZDFlJRmPRMubkPkjtjZVyQ8p30,304
+notedata-0.0.10.dist-info/METADATA,sha256=FwS2yXi0tkjc7-f5ZrOVprvqpJ2yNek6INSpoPMgGmk,204
+notedata-0.0.10.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+notedata-0.0.10.dist-info/top_level.txt,sha256=aGEWqmZH23XYm4P1L-SSH-L_P2wv2xESfm_mMRMkjtk,9
+notedata-0.0.10.dist-info/RECORD,,
