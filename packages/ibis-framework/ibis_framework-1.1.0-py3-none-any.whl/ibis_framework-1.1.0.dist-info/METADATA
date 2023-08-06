@@ -1,0 +1,118 @@
+Metadata-Version: 2.1
+Name: ibis-framework
+Version: 1.1.0
+Summary: Productivity-centric Python Big Data Framework
+Home-page: https://github.com/ibis-project/ibis
+Maintainer: Phillip Cloud
+Maintainer-email: phillip.cloud@twosigma.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Requires-Dist: multipledispatch (>=0.6.0)
+Requires-Dist: numpy (>=1.11)
+Requires-Dist: pandas (>=0.21)
+Requires-Dist: pytz
+Requires-Dist: regex
+Requires-Dist: toolz
+Provides-Extra: all
+Requires-Dist: hdfs (>=2.0.16) ; extra == 'all'
+Requires-Dist: sqlalchemy (>=1.1) ; extra == 'all'
+Requires-Dist: requests ; extra == 'all'
+Requires-Dist: impyla (>=0.15.0) ; extra == 'all'
+Requires-Dist: psycopg2 ; extra == 'all'
+Requires-Dist: pymapd (>=0.12.0) ; extra == 'all'
+Requires-Dist: pymysql ; extra == 'all'
+Requires-Dist: requests-kerberos ; extra == 'all'
+Requires-Dist: graphviz ; extra == 'all'
+Requires-Dist: clickhouse-driver (>=0.0.8) ; extra == 'all'
+Requires-Dist: clickhouse-cityhash ; extra == 'all'
+Requires-Dist: google-cloud-bigquery (>=1.0.0) ; extra == 'all'
+Requires-Dist: pydata-google-auth ; extra == 'all'
+Requires-Dist: tables (>=3.0.0) ; extra == 'all'
+Requires-Dist: pyarrow (>=0.12.0) ; extra == 'all'
+Provides-Extra: bigquery
+Requires-Dist: google-cloud-bigquery (>=1.0.0) ; extra == 'bigquery'
+Requires-Dist: pydata-google-auth ; extra == 'bigquery'
+Provides-Extra: clickhouse
+Requires-Dist: clickhouse-driver (>=0.0.8) ; extra == 'clickhouse'
+Requires-Dist: clickhouse-cityhash ; extra == 'clickhouse'
+Provides-Extra: develop
+Requires-Dist: hdfs (>=2.0.16) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: sqlalchemy (>=1.1) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: requests ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: impyla (>=0.15.0) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: psycopg2 ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pymapd (>=0.12.0) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pymysql ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: requests-kerberos ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: graphviz ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: clickhouse-driver (>=0.0.8) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: clickhouse-cityhash ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: google-cloud-bigquery (>=1.0.0) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pydata-google-auth ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: tables (>=3.0.0) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pyarrow (>=0.12.0) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: click ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: flake8 ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: isort ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: mypy ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pre-commit ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: pytest (>=3) ; (python_version == "3.5") and extra == 'develop'
+Requires-Dist: hdfs (>=2.0.16) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: sqlalchemy (>=1.1) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: requests ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: impyla (>=0.15.0) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: psycopg2 ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pymapd (>=0.12.0) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pymysql ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: requests-kerberos ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: graphviz ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: clickhouse-driver (>=0.0.8) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: clickhouse-cityhash ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: google-cloud-bigquery (>=1.0.0) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pydata-google-auth ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: tables (>=3.0.0) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pyarrow (>=0.12.0) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: click ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: flake8 ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: isort ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: mypy ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pre-commit ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: pytest (>=3) ; (python_version > "3.5") and extra == 'develop'
+Requires-Dist: black ; (python_version > "3.5") and extra == 'develop'
+Provides-Extra: hdf5
+Requires-Dist: tables (>=3.0.0) ; extra == 'hdf5'
+Provides-Extra: impala
+Requires-Dist: hdfs (>=2.0.16) ; extra == 'impala'
+Requires-Dist: sqlalchemy (>=1.1) ; extra == 'impala'
+Requires-Dist: requests ; extra == 'impala'
+Requires-Dist: impyla (>=0.15.0) ; extra == 'impala'
+Provides-Extra: kerberos
+Requires-Dist: requests-kerberos ; extra == 'kerberos'
+Provides-Extra: mapd
+Requires-Dist: pymapd (>=0.12.0) ; extra == 'mapd'
+Provides-Extra: mysql
+Requires-Dist: sqlalchemy (>=1.1) ; extra == 'mysql'
+Requires-Dist: pymysql ; extra == 'mysql'
+Provides-Extra: parquet
+Requires-Dist: pyarrow (>=0.12.0) ; extra == 'parquet'
+Provides-Extra: postgres
+Requires-Dist: sqlalchemy (>=1.1) ; extra == 'postgres'
+Requires-Dist: psycopg2 ; extra == 'postgres'
+Provides-Extra: sqlite
+Requires-Dist: sqlalchemy (>=1.1) ; extra == 'sqlite'
+Provides-Extra: visualization
+Requires-Dist: graphviz ; extra == 'visualization'
+
+
+Ibis is a productivity-centric Python big data framework.
+
+See http://docs.ibis-project.org
+
+
