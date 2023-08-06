@@ -1,0 +1,29 @@
+NOTA	import cirq
+NOTA	from cirq.devices import GridQubit
+NOTA	from cirq.ops import X, Y, Z, H, Rx, Ry, Rz
+NOTA	from cirq.ops import CNOT, CZ, SWAP
+NOTA	
+NOTA	
+NOTA	ckt = cirq.Circuit()
+NOTA	rads1 = cirq.Symbol("rads1")
+NOTA	
+|   H   |   |   |   
+|   |   X   |   |   
+|   |   Y   |   |   
+|   |   Z   |   |   
+|   Rx  |   |   |   
+|   Ry  |   |   |   
+|   Rz  |   |   |   
+Rz  |   |   |   |   
+Ry  |   |   |   |   
+Rz  |   |   |   |   
+NOTA	1->0 allowed by c_to_tars
+|   |   |   @---X   
+NOTA	0->1 allowed by c_to_tars
+|   |   |   X---@   
+NOTA	1->2 not allowed by c_to_tars
+NOTA	SIGX  AT  2  IF  1T
+NOTA	not allowed in strict mode
+|   |   @P  |   |   
+|   |   @P--+---@   
+|   |   <---+--->   
