@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: py-proj-init
+Version: 1.0.0a0
+Summary: Python3 project directory initializer
+Home-page: https://github.com/ZhenningLang/py-proj-init
+Author: ZhenningLang
+Author-email: zhenninglang@163.com
+License: UNKNOWN
+Description: # py-proj-init
+        
+        A simple Python3 project directory initializer.
+        
+        ## How to use
+        
+        ```bash
+        # install
+        pip3 install py-proj-init
+        # run
+        py-proj-init YOUR-PROJECT-NAME
+        # or jus
+        py-proj-init
+        ```
+        
+        ## What you will get
+        
+        ```text
+        .
+        └── [project namespace]
+            ├── [project package name]
+            │   ├── data
+            │   │   └── .gitkeep
+            │   │
+            │   ├── __main__.py
+            │   └── __init__.py
+            │
+            ├── tests
+            │   └── test.py
+            │
+            ├── .gitignore
+            ├── LICENSE[DEFAULT MIT]
+            ├── MANIFEST.in
+            ├── README.md
+            ├── requirements.txt
+            └── setup.py
+        ```
+        
+        ## Refs
+        
+        - https://packaging.python.org/tutorials/packaging-projects/
+        - https://setuptools.readthedocs.io/en/latest/setuptools.html
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.2
+Description-Content-Type: text/markdown
