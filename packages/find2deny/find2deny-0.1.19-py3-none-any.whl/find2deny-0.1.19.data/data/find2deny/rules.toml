@@ -1,0 +1,21 @@
+verbosity = "INFO"
+log_files = ["test-data/apache2/access.log.*"]
+log_pattern = '%h %l %u %t "%r" %>s %O "%{Referer}i" "%{User-Agent}i"'
+database_path="./dummy-db.sqlite"
+
+white_list = [
+    "134.96.0.0/16"
+]
+
+[[judgment]]
+    name = "time-based-judgment"
+    [judgment.rules]
+        max_request = 20
+        interval_seconds = 1
+
+
+[[execution]]
+    name = "ufw_cmd_script"
+    [execution.rules]
+        script = "./block-ip.sh"
+
