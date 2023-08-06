@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: falcon-elastic-apm
+Version: 0.1.1
+Summary: Falcon middleware for application performance monitoring.
+Home-page: https://github.com/eunchong/falcon-elastic-apm
+Author: eunchong
+License: MIT
+Keywords: wsgi web api framework rest elastic apm performance monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
+Requires-Dist: falcon (>=1.2.0)
+Requires-Dist: elastic-apm (>=4.2.2)
+
+# falcon-elastic-apm
+
+ [Falcon](https://github.com/falconry/falcon) elastic-apm middleware for application performance monitoring.
+
+## Installation
+
+```
+pip install falcon-elastic-apm
+```
+
+## Usage
+
+Add middleware to your app:
+
+```python
+from falcon_elastic_apm import ElasticApmMiddleware
+...
+app = falcon.API(middleware=[
+    ElasticApmMiddleware(
+        service_name='falcon_apm', 
+        server_url='http://localhost:8200'
+    )
+])
+```
+
+

@@ -1,0 +1,8 @@
+falcon_elastic_apm/__init__.py,sha256=LTvnvXjRvFKtCzIGFJIVpUnH8pp3w8patUJYqpqb5rc,61
+falcon_elastic_apm/middleware.py,sha256=kNLg-k7qDE6qUGJzJfi8DbjbrFJgTtKcmtGM-XyiNZ8,1398
+falcon_elastic_apm/version.py,sha256=t5QQuI-1sqkGxm9wCxIV2yRxPwI_il2cd4OBMg9dmwY,91
+falcon_elastic_apm-0.1.1.dist-info/LICENSE,sha256=KnAd8bvAwojIKSNui7X2Yd-r9ycHUdVG4fTxyBgcb5U,1071
+falcon_elastic_apm-0.1.1.dist-info/METADATA,sha256=HU9ffA0mbW1bwzSafD2rAs1OAnoH4WhT2aQCmVWodds,1591
+falcon_elastic_apm-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+falcon_elastic_apm-0.1.1.dist-info/top_level.txt,sha256=wtbYdf69Ibs6e25kGMQKzpPRa523MC5fswZrvJ-OdBA,19
+falcon_elastic_apm-0.1.1.dist-info/RECORD,,
