@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: tan-up
+Version: 0.0.2b0
+Summary: A tool of opening current folder in terminal
+Home-page: https://github.com/Xarrow/tan
+Author: helixcs
+Author-email: zhangjian12424@gmail.com
+License: MIT
+Keywords: tan,popup window,opening current folder in terminal
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+# tan
+tan
+
+
