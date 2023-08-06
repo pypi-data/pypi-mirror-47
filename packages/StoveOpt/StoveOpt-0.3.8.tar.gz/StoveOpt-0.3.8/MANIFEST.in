@@ -1,0 +1,45 @@
+include docs/ 
+include docs/_build/ *
+include docs/_modules/ *
+include docs/_sources/ *
+include docs/_static/ *
+include StoveOpt/foamfiles/counterFlowFlame2D/0_template/* 
+include StoveOpt/foamfiles/counterFlowFlame2D/case_25/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_25/0/* 
+include StoveOpt/foamfiles/counterFlowFlame2D/case_25/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_50/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_50/0/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_50/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_100/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_100/0/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_100/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_125/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_125/0/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_125/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_150/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_150/0/*
+include StoveOpt/foamfiles/counterFlowFlame2D/case_150/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/constant/polyMesh/*
+include StoveOpt/foamfiles/counterFlowFlame2D/file_templates/blank/*
+include StoveOpt/foamfiles/counterFlowFlame2D/file_templates/replacement/*
+include StoveOpt/foamfiles/counterFlowFlame2D/reset_templates/*
+include StoveOpt/foamfiles/counterFlowFlame2D/reset_templates/blanks/*
+include StoveOpt/foamfiles/counterFlowFlame2D/system/*
+include StoveOpt/foamfiles/counterFlowFlame2D/system/backup/*
+include StoveOpt/foamfiles/counterFlowFlame2D/system/example/*
+include StoveOpt/foamfiles/counterFlowFlame2D/system/Obselete/*
+include StoveOpt/foamfiles/counterFlowFlame2D/system/run/*
+include StoveOpt/foamfiles/counterFlowFlame2D/template_case/0/*
+include StoveOpt/foamfiles/counterFlowFlame2D/template_case/constant/*
+include StoveOpt/foamfiles/counterFlowFlame2D/template_case/constant/polyMesh/*
+include StoveOpt/foamfiles/counterFlowFlame2D/template_case/system/*
+include StoveOpt/reactingFoam/*
+include StoveOpt/reactingFoam/Make/*
+include StoveOpt/reactingFoam/rhoReactingBouyantFoam/*
+include StoveOpt/reactingFoam/rhoReactingBouyantFoam/Make/*
+include StoveOpt/reactingFoam/rhoReactingFoam/*
+include StoveOpt/reactingFoam/rhoReactingFoam/Make/*
+include StoveOpt/inputFiles/*
+include StoveOpt/stovegeom/*
+include StoveOpt/tests/*
