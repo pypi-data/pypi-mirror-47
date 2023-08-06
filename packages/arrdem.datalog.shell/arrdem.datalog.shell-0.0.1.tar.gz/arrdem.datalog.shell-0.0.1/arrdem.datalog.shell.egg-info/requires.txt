@@ -1,0 +1,3 @@
+arrdem.datalog~=1.0.0
+prompt_toolkit==2.0.9
+yaspin==0.14.3
