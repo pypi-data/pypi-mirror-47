@@ -1,0 +1,17 @@
+to do 6-15:
+
+
+--Need to do the usage part -- figure out how to run the software (as module as in Niemeyer's example)
+
+--make sure versions matchup (README says 0.3.3)
+
+--verify in the theory section of README than the paper is linked correctly
+
+--git ignore for proper structure
+
+--packaging isn't complete: the requirements must need some additional packages
+
+--there is a hard coded path in the modules somewhere, so the tests arent working as intended
+
+--xlrd needs to be in the requirements file
+

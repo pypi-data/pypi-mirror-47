@@ -1,0 +1,89 @@
+Updated 05/22:
+
+how to run on Ubuntu: python -m __main__
+
+next post processing = need to extract the flow rates associated with temperatures.... this could be a little tricky.
+	next case setups: 
+		-create the next case files based on the length of the case list
+		-copy and paste the required templates into the case file folders
+		-create functions to edit the required files prior to run
+			-These will closely mimic the previous functions, however will involve a loop over all of the case folders
+		-Do a trial openfoam run on these to ensure the syntax and all is looking good
+
+
+Concerns:
+	-Might need to make some of the earlier scripts able to be integrated in a loop
+		-editing the control, bc, details files etc.
+#1	-Figure out the outside velocity computation
+
+#2	-might need to do a bit of an overhaul on the case editing and setup....
+		-Look into this and see if it is reasonable and/or necessary
+
+	-repeatability is a concern. 
+
+
+
+--See about the need to have a if statement around the intial 25-150 setup, or if it is possible to just have the files overwritten
+
+--End goal, perhaps have a reset option for users to restore directories to their original configuration for a re-run
+
+
+
+
+
+
+details_file_25, details_file_50, details_file_100, details_file_125, details_file_150 
+	These are the files with the velocities (0-folder)
+
+
+-Post processing functionality:
+	-first running a few cases for extracting the geom. running for at least a few minutes (0.0125 seconds)
+	-next, trying to pull geometry and create HDF5 files (backburner for now---look at the HDF5Write github for future work)
+
+Looking pretty good right now!!!
+
+
+running the full program
+
+--fix the directory problems for Linux OS (mainly in the locating and extracting portions)
+
+--Need to figure out how to run the cases without going to the command line... Biggest things
+
+--Need to write some tests. Lots of them
+
+--find unused files and move them to an obselete file location in the folder for backup
+
+-Finish up the addition of files and begin editing. setup.py, __version.py, CHANGELOG, MANIFEST
+
+--Convert the probe file into a HDF5 file for brownie points
+	--delete the text file following
+
+
+
+-probe functions within the controlDict file will specify outputs
+-----working with the case 100 file
+-the probes write to postProcessing\probes\0\ folder within case directories
+-Need to put all of the points I am looking to pull (bottom of stove) (NEXT UP)
+
+What worked? -- running reactingFoam from the Ubuntu command window
+-being in the current directory and typing pyFoamRunner.py reactingFoam
+reactingFoam -case mnt/c/Oregon_State.... < this is the full linux path... having problems communicating with windows-linux
+
+pyFoamRunner<solver, directory, case>
+
+see pyfoamrunner --help for parrallelizing
+
+running the openfoam case:
+-navigate to the directory 
+-enter reactingFoam from Linux command line
+
+--Currently updating the input files for the model I will be running
+
+
+C:\Users\Lee\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\liamcassidy\OpenFOAM\liamcassidy-6\run\cavity
+
+C:\Users\Lee\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\home\liamcassidy\OpenFOAM\liamcassidy-6\run\cavity\system
+
+
+Foam tutorials destination:
+C:\Users\Lee\AppData\Local\Packages\CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState\rootfs\opt\openfoam6\tutorials
