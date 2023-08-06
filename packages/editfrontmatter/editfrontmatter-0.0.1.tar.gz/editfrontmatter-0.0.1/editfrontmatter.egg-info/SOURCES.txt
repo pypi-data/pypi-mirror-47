@@ -1,0 +1,9 @@
+README.md
+setup.py
+editfrontmatter/EditFrontMatter.py
+editfrontmatter/__init__.py
+editfrontmatter.egg-info/PKG-INFO
+editfrontmatter.egg-info/SOURCES.txt
+editfrontmatter.egg-info/dependency_links.txt
+editfrontmatter.egg-info/requires.txt
+editfrontmatter.egg-info/top_level.txt
