@@ -1,0 +1,3 @@
+[console_scripts]
+laforge = laforge:run_laforge
+
