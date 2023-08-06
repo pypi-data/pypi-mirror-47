@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: big-fiubrother-classification
+Version: 0.1.0
+Summary: Big Fiubrother Face Classification application
+Home-page: https://github.com/BigFiuBrother/big-fiubrother-classification
+Author: Eduardo Neira, Gabriel Gayoso
+Author-email: gabriel.gayoso@fi.uba.ar
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+Requires-Dist: pyyaml
+Requires-Dist: pickle
+Requires-Dist: sklearn
+Requires-Dist: tensorflow
+
+UNKNOWN
+
+
