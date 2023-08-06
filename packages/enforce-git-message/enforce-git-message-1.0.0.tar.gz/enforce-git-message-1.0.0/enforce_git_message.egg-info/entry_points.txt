@@ -1,0 +1,3 @@
+[console_scripts]
+enforce-git-message = enforce_git_message.main:main
+
