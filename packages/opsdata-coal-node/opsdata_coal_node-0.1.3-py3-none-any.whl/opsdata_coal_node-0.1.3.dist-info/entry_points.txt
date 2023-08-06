@@ -1,0 +1,3 @@
+[obsplus.datasets]
+coal_node = opsdata_coal_node.core
+
