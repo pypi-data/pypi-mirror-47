@@ -1,0 +1,12 @@
+kubesplit/__init__.py,sha256=ukAO0lZzsC8wW1nWZdkq4NfK_qpFrD9ZjK4xv-LfOtg,172
+kubesplit/__main__.py,sha256=R8a0LPqUp5B3f0J5gBrlI7IsD_WnIvSEhw17huyJMoo,221
+kubesplit/k8s_descriptor.py,sha256=D0y7oYzdNSoPlPXBwlcRlJnPTIOU5yU10_ZZGot4RS8,2590
+kubesplit/kubesplit.py,sha256=hpnZxnUgrn8WT8OK418bqe8aQC-ByBl0WuZE-y_FTn4,11160
+kubesplit/yaml_writer_config.py,sha256=x492EPLm-TGfEPzw35-RDcQSftIpWSKr02OBPZBZUr8,3248
+kubesplit-0.2.0.dist-info/AUTHORS.rst,sha256=4KDdsODhZgj55K0SPUxlvmJU-EHbkAOV5ePItSJpVT4,176
+kubesplit-0.2.0.dist-info/LICENSE,sha256=zgm5H1D9mkQP9DwYkeP7HsXPGwqHJA0zvqpFbhjWezU,591
+kubesplit-0.2.0.dist-info/METADATA,sha256=P7EMyYyNIaZGhIAkvkf_TgD74LaXVG0G0gNJ23axa_Q,3208
+kubesplit-0.2.0.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+kubesplit-0.2.0.dist-info/entry_points.txt,sha256=8PglDVIZNjK7wieIA7Jl1q2hWLt6wikTUFcjkaHNwY4,55
+kubesplit-0.2.0.dist-info/top_level.txt,sha256=fTydn2SvlzZB6eR8n1Rgpnj38C1GXJDnIxJJrv0353g,10
+kubesplit-0.2.0.dist-info/RECORD,,
