@@ -1,0 +1,15 @@
+ffilupa-4.0.0.dev2.dist-info/top_level.txt,sha256=KwqbJuhndCnC5dwOkWSQXIrFBAacyg5u4olb5Dr-xMw,8
+ffilupa-4.0.0.dev2.dist-info/WHEEL,sha256=Ss-dLITiyz_EWlKfPh4naJgYB3Kskb0mNt2ULbP_UAM,108
+ffilupa-4.0.0.dev2.dist-info/RECORD,,
+ffilupa-4.0.0.dev2.dist-info/METADATA,sha256=MgmwrMQiRDpguOfwlsWd-6TP2xQlpzLf_GGqH7JWt0A,7124
+ffilupa/__init__.py,sha256=3OiRkKDPC6fhWfWO-g_otNw7heUk0zUIXN0KYY2F3v8,63692
+ffilupa/_lua.abi3.so,sha256=SQCSmnGuhJE8lPDcgy8LKtahbYKGhO5q8L_5BSZtheM,2032704
+ffilupa/__version__.py,sha256=iKYdZLj7NB_GloM2vOhxyu38ScsE38bSUVIOGHI1FHU,27
+ffilupa/all.py,sha256=y3Se5YdjHkLZZzyXG3UHw6QjdrWsnVdhd1id_i9WLTw,1289
+ffilupa/lualibs/_builder_data.py,sha256=Da9nwassM7UWZJLIbJZL43LFsDvwXxj6jDD9OkZ5Xvg,26398
+ffilupa/lualibs/_pep425tags.py,sha256=4O2SllP_LkKt1EjJ6pdgz9LmvuDQCqI5FkenHPPDPn8,13796
+ffilupa/lualibs/_datadir.py,sha256=JmGPwUWlLmMCRcQV6EkSZ9oLnrEfhzua0yV7RD8rQ3M,1743
+ffilupa/lualibs/__init__.py,sha256=xxdS1mzapG5S3Y5kuDrju6LzmKcqvkM1z_FgN3dMDow,4558
+ffilupa/lualibs/_glibc.py,sha256=BA9HNI2q2sPz-Fp6-JaEBrc2vzqzbifqJKrbSjTNGT0,3055
+ffilupa/lualibs/builder.py,sha256=sQWv_PRkrgvgQafW3HqIJ9qe4IEhSZfF6DKu7HXSDZE,4740
+ffilupa/lualibs/_pkginfo.py,sha256=F2Y73xJLJC02fDzLefGYy9vkpPiNWpIHg4lkmGMELeI,4463
