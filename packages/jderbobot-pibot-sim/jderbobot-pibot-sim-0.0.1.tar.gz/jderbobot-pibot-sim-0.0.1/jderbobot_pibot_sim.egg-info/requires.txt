@@ -1,0 +1,4 @@
+opencv-python
+numpy
+jderobot-config
+jderobot-interfaces-python
