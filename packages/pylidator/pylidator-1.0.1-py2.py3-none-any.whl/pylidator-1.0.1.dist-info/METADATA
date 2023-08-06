@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pylidator
+Version: 1.0.1
+Summary: A practical system for organizing validation rules
+Home-page: https://github.com/mathandpencil/pylidator
+Author: Scott Stafford
+Author-email: scott.stafford+pylidator@gmail.com
+License: MIT
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# pylidator
+
+
