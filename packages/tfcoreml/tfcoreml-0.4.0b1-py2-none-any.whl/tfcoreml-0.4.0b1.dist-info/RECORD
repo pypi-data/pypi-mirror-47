@@ -1,0 +1,17 @@
+tfcoreml/__init__.py,sha256=AeYidtSv1JFQvRGzb0X1OvRDnpyNFGTHvyac7AASviU,104
+tfcoreml/_interpret_shapes.py,sha256=BeH-cS22FWSEsWZ-rPrq0zErVj1fhPzbYpxgo21D_Rs,8952
+tfcoreml/_layers.py,sha256=FXnHC49-y2r86bPE1hB4PyQ3BJUjZr7NPu2H-_XVN7o,61302
+tfcoreml/_layers_common.py,sha256=3_hkLAWuBycIkXqkUsFYcqzWoBSU__dLhZpdX9ZtI_k,4189
+tfcoreml/_ops_to_layers.py,sha256=NxHgM-JpXjcKVK_GfkRUStSV48hBfU4vTP3oMzSis8k,6453
+tfcoreml/_shape_sensitive_layers.py,sha256=yVKYJCO3TiSn8P3HW1m5B1Hgsw3tL1RJqvETDC58hkU,15517
+tfcoreml/_tf_coreml_converter.py,sha256=lLOVpGMALN9uGVCafO9y1QG0mccAlbitW2Qts3nyqlM,25884
+tfcoreml/_tf_graph_transform.py,sha256=LJVC7ng_n4f01S51diFAGlsVW6vJtn7pdp9D_-pHYJk,7083
+tfcoreml/optimizations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tfcoreml/optimizations/_optimize.py,sha256=xkkZGSRfZbfIOj4KJ3rS5JndB_saCAkFP7DxT2StSHs,21027
+tfcoreml/optimizations/_optimize_nn_spec.py,sha256=G_PRu4_MMB_mVluSLZYIWCisjrkdomm8SxIBwvJ2WUU,2595
+tfcoreml-0.4.0b1.dist-info/AUTHORS,sha256=aSD2oQ5_k0RW5irIRTiQ1pPQr7blw037ZEk-OSyEXUg,330
+tfcoreml-0.4.0b1.dist-info/LICENSE,sha256=H65Kkojyi1q9_bBf_iYwJnTepkrr9c5EDtbrKBvUsaE,11380
+tfcoreml-0.4.0b1.dist-info/METADATA,sha256=Gur-PZTWiqE9ikqKsTsO2a4huVJ6S5-Ac5gVxVM42WM,2011
+tfcoreml-0.4.0b1.dist-info/WHEEL,sha256=oAVPkyAEF4ax3tnqlvKYGy8JOdoAihZXbcM6C6xJNOI,92
+tfcoreml-0.4.0b1.dist-info/top_level.txt,sha256=Ffqgw9WjgaXsuMWyUF2rSQmYNuT-7Bj0vwSmMUnOYE8,9
+tfcoreml-0.4.0b1.dist-info/RECORD,,
