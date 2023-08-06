@@ -1,0 +1,14 @@
+1build-1.0.0.data/scripts/1build,sha256=zEurQwSZw5lk0hcbKQCV21PnsJCC42ei10Qj9Erq_hQ,102
+onebuild/__init__.py,sha256=0SuipsmS0KmP4BBh1sK_hulboXVuAygeJ9L4oBPyp8I,106
+onebuild/__main__.py,sha256=Q9JEYs3NUgQCIbA7RQyPzTAzgdiVV-2ukBeIE9FNPN0,106
+onebuild/config_parser.py,sha256=0OXBOXG8Ctj3EP6RNoxZ9zTzloU5ITnwi_epX2m7-1k,1520
+onebuild/executor.py,sha256=ckcj4EDtMh9wjsolKLk5-lp98TvdWNrxvfZ1yqpQtKk,406
+onebuild/input_parser.py,sha256=Bh4WiqW5uxR6z5ZDK3XMGpkupc-1sNF8HwZb2-y8C6A,922
+onebuild/main.py,sha256=NDrM4BOvnxVzFEwQh_OEcgxu4fF5mYfy5C-r94PlAWY,925
+onebuild/project.py,sha256=AqJU8Akx9HxqVyjAE1cRPXwanIPHN-4s5DeGhCsVPbk,1173
+onebuild/utils.py,sha256=DfZWO5e-1qEbARwDbFUjXe_rIhnfLHkHraUSN58ZzMQ,497
+1build-1.0.0.dist-info/LICENSE,sha256=BVkcF8Y3SQlMq4NDxQrkW5MFzv61edqUrGE65pkOTdc,1073
+1build-1.0.0.dist-info/METADATA,sha256=TS-XxkiG-Ii_09rZ_L9qnuwGtXJ0XtqS9RVEYH1KuEw,6310
+1build-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+1build-1.0.0.dist-info/top_level.txt,sha256=WcnOW_D_n3YVt_CwOcDKfOo31V8p0K0bGwVPuFA89vo,9
+1build-1.0.0.dist-info/RECORD,,
