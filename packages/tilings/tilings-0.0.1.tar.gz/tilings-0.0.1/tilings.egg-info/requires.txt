@@ -1,0 +1,4 @@
+comb_spec_searcher
+permuta
+pymongo
+sympy
