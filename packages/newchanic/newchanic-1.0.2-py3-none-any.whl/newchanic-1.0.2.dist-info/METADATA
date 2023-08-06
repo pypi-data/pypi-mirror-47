@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: newchanic
+Version: 1.0.2
+Summary: Simulate a universe powered by Newton's mechanic
+Home-page: https://github.com/Louis-Saglio/newchanic
+Author: Louis Saglio
+Author-email: louis.saglio@ynov.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pygame
+
+# Newchanic
+This package allows you to easily develop simulators based on Newton's mechanic.  
+See [here](http://www.ac-nice.fr/clea/lunap/html/MecaNewton/MecNewEnBref.html) (in french) to better understand it.  
+Define laws, create particles & bind them to the simulator engine : they will evolute in a 2D graphical interface.   
+You can zoom-in using the mouse's scroll and move in the window using arrow keys.
+
