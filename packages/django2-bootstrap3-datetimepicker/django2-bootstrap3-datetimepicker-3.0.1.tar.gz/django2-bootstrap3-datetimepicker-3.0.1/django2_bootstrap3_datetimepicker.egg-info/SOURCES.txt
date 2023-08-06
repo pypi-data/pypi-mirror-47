@@ -1,0 +1,8 @@
+README.rst
+setup.py
+bootstrap3_datetime/__init__.py
+bootstrap3_datetime/widgets.py
+django2_bootstrap3_datetimepicker.egg-info/PKG-INFO
+django2_bootstrap3_datetimepicker.egg-info/SOURCES.txt
+django2_bootstrap3_datetimepicker.egg-info/dependency_links.txt
+django2_bootstrap3_datetimepicker.egg-info/top_level.txt
