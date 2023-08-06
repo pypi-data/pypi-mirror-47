@@ -1,0 +1,10 @@
+README.md
+setup.py
+es_indexer/__init__.py
+es_indexer/main.py
+es_indexer.egg-info/PKG-INFO
+es_indexer.egg-info/SOURCES.txt
+es_indexer.egg-info/dependency_links.txt
+es_indexer.egg-info/entry_points.txt
+es_indexer.egg-info/requires.txt
+es_indexer.egg-info/top_level.txt
