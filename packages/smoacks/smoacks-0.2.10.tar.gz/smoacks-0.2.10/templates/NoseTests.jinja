@@ -1,0 +1,105 @@
+# pylint: disable-msg=C0103,W0603
+# Note about pylint disables - pylint thinks my globals are constants,
+# and they're not, so disabling C0103. It also doesn't like globals,
+# which I don't care much about because I want to use them here in my
+# tests.
+"""test-{{ snakeName }}-api.py - Tests of {{ name }} APIs"""
+import logging
+from smoacks.api_util import call_api
+from {{ app_name }}.{{ name }} import {{ name }}
+{% if foreignKeys|length > 0 %}{% for fkey in foreignKeys -%}
+from {{ app_name }}.{{ fkey.mixedName }} import {{ fkey.mixedName }}
+{% if fkey.rbacControlled %}from {{ app_name }}.{{ fkey.rbacControlled }} import {{ fkey.rbacControlled }} {% endif %}
+{% endfor %}{% endif -%}
+from .TestUtil import mock_login, log_response_error, default_group_ids
+
+LOGGER = logging.getLogger()
+TEST_SESSION = mock_login()
+added_obj = None
+{% if foreignKeys|length > 0 -%}
+{% for fkey in foreignKeys -%}
+added_{{ fkey.snakeName }} = None
+{% endfor %}
+def setUp():
+    {% for fkey in foreignKeys %}
+    global added_{{ fkey.snakeName }}
+    added_{{ fkey.snakeName }} = {{ fkey.mixedName }}(**{{ fkey.createObj }})
+    success, resp = added_{{ fkey.snakeName }}.save_new(TEST_SESSION)
+    assert success
+    {% if fkey.rbacControlled %}
+    create_auth_obj = {
+        '{{ fkey.name }}': added_{{ fkey.snakeName }}.{{ fkey.name }},
+        'role': '{{ smoacks_unit_test_default_role }}',
+        'group_id': default_group_ids['{{ smoacks_unit_test_default_role }}']
+    }
+    auth_obj = {{ fkey.rbacControlled }}(**create_auth_obj)
+    success, auth_resp = auth_obj.save_new(TEST_SESSION)
+    assert success
+    {% endif %}{% endfor %}
+
+def tearDown():
+    {% for fkey in foreignKeys %}
+    global added_{{ fkey.snakeName }}
+    success, resp = added_{{ fkey.snakeName }}.save_delete(TEST_SESSION)
+    assert success {% endfor %}
+{% endif %}
+def test_{{ snakeName }}_create():
+    """{{ name }}APIs: Test create API"""
+    #pylint: disable=W0603
+    global added_obj
+    test_obj = {{ name }}()
+    {% for createAssignment in createAssignments %}{{ createAssignment }}
+    {% endfor %}{% if foreignKeys|length > 0 %}{% for fkey in foreignKeys %}test_obj.{{ fkey.name}} = added_{{ fkey.snakeName }}.{{ fkey.name }}{% endfor %}{% endif %}
+    success, resp = test_obj.save_new(TEST_SESSION)
+    if not success: log_response_error(resp)
+    assert success
+    added_obj = test_obj
+
+def test_{{ snakeName }}_get():
+    """--> get returns details """
+    global added_obj
+    assert added_obj
+    {% if foreignKeys|length > 0 %}{% for fkey in foreignKeys %}global added_{{ fkey.snakeName }}
+    {% endfor %}{% endif %}
+    success, resp = {{ name }}.get(TEST_SESSION, {{ idsString }})
+    if not success: log_response_error(resp)
+    assert success
+    {% for getAssert in getAsserts %}{{ getAssert }}
+    {% endfor %}
+{% if hasSearch -%}
+def test_{{ snakeName }}_search():
+    """--> tests search """
+    {% if foreignKeys|length > 0 %}{% for fkey in foreignKeys %}global added_{{ fkey.snakeName }}
+    {% endfor %}{% endif %}
+    success, resp_list = {{ name }}.search(TEST_SESSION, '')
+    if not success: log_response_error(resp_list)
+    assert success
+    LOGGER.debug('search result: {}'.format(str(resp_list)))
+    assert len(resp_list) == 1
+    resp = resp_list[0]
+    {% for getAssert in getAsserts %}{{ getAssert }}
+    {% endfor %}{% endif %}
+
+def test_{{ snakeName }}_put():
+    """--> put updates object """
+    global added_obj
+    {% if foreignKeys|length > 0 %}{% for fkey in foreignKeys %}global added_{{ fkey.snakeName }}
+    {% endfor %}{% endif %}
+    # Change a value
+    {{ editUnitTestAssignment }}
+    # Save the change a value
+    success, resp = added_obj.save_update(TEST_SESSION)
+    if not success: log_response_error(resp)
+    assert success
+    # Read the object again
+    success, resp = {{ name }}.get(TEST_SESSION, {{ idsString }})
+    if not success: log_response_error(resp)
+    assert success
+    # Confirm the values we read match what we wrote
+    {{ unitTestAssert }}
+
+def test_{{ snakeName }}_delete():
+    """--> delete returns 204"""
+    success, resp = added_obj.save_delete(TEST_SESSION)
+    if not success: log_response_error(resp)
+    assert success

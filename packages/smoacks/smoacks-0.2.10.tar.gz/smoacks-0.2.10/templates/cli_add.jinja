@@ -1,0 +1,36 @@
+# add-{{ snakeName }}.py - Adds a {{ mixedName }}
+import logging
+import sys
+from smoacks.cli_util import get_opts, get_session
+from {{ app_name }}.{{ mixedName }} import {{ mixedName }}
+{% for fkey_import in fkey_imports %}from {{ app_name }}.{{ fkey_import.table }} import {{ fkey_import.table }}{% endfor %}
+
+logging.basicConfig(level=logging.DEBUG)
+LOGGER = logging.getLogger()
+
+{% for fkey_import in fkey_imports %}
+def {{ fkey_import.table }}_lookup(session, search_val):
+    success, res = {{ fkey_import.table }}.search(session, search_val)
+    if success:
+        for item in res:
+            if item.{{ fkey_import.search_field }} == search_val:
+                return item.{{ fkey_import.fkey_field }} {% endfor %}
+
+def add():
+    opts = get_opts('add_{{ snakeName }}', 'Adds {{ mixedName }} to a {{ app_name }}',
+                    { {% for field in write_fields %}'{{ field }}': '{{ field }}',
+                    {% endfor %} })
+
+    session = get_session(opts)
+    if not session:
+        sys.exit('Invalid username/password.')
+
+    {% for fkey_import in fkey_imports %}
+    opts.{{fkey_import.fkey_field}} = {{fkey_import.table}}_lookup(session, vars(opts)['{{ fkey_import.table }}.{{ fkey_import.search_field }}']){% endfor %}
+    add_item = {{ mixedName }}(**vars(opts))
+    success, resp = add_item.save_new(session)
+
+    if success:
+        print('Added {{ mixedName }} with id: {}'.format(','.join(add_item.get_ids())))
+    else:
+        print('Add failed with code {} and message: {}'.format(resp.status_code, resp.text))
