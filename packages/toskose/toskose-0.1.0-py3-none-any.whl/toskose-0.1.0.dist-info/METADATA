@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: toskose
+Version: 0.1.0
+Summary: Toskose - A tool for translating a TOSCA application into docker-compose.
+Home-page: https://github.com/matteobogo/toskose
+Author: Matteo Bogo
+Author-email: matteo.bogo@protonmail.com
+License: MIT
+Keywords: toskose docker docker-compose tosca
+Platform: UNKNOWN
+Requires-Dist: tosca-parser (==1.4.0)
+Requires-Dist: termcolor (==1.1.0)
+Requires-Dist: pyfiglet (==0.8.post1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: setuptools (==41.0.0)
+Requires-Dist: click (==7.0)
+Requires-Dist: docker (==3.7.2)
+Requires-Dist: ruamel.yaml (==0.15.94)
+Requires-Dist: jsonschema (==3.0.1)
+
+UNKNOWN
+
+
