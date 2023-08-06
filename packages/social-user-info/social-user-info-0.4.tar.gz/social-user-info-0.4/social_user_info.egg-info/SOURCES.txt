@@ -1,0 +1,10 @@
+setup.py
+social_user_info/__init__.py
+social_user_info/constants.py
+social_user_info/social_user_info.py
+social_user_info/status_codes.py
+social_user_info.egg-info/PKG-INFO
+social_user_info.egg-info/SOURCES.txt
+social_user_info.egg-info/dependency_links.txt
+social_user_info.egg-info/requires.txt
+social_user_info.egg-info/top_level.txt

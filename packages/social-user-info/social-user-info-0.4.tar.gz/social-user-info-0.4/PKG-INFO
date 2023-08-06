@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: social-user-info
+Version: 0.4
+Summary: A python package that helps getting the user info from social apps
+Home-page: https://github.com/dev-prakhar/social-user-info
+Author: Prakkhar Shrivastava
+Author-email: prakhars1996@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
