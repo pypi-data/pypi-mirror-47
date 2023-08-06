@@ -1,0 +1,11 @@
+pyproject.toml,sha256=gvk3O61vv7yz9U2Q_qaPV8epGWfQ1_2QVlnLyVQcaEI,677
+reading_helper/__init__.py,sha256=NrcjYCcmyvJEtDV4NNUM9pDy55TiN3OD_5Bwc39LPIo,178
+reading_helper/make_paper_page.py,sha256=mwzkj6Q0sCgNC3EZMDJDsLGPXo92dn9kkl7p9pa95Qs,3587
+reading_helper/scripts_api.py,sha256=kDJ-iEGOrKpmNMIs-ZLl08fpkLBWhDO9IegbXCKuaQQ,188
+reading_helper/search_tags.py,sha256=vua3pUP8TWIy5CLO5Xg9F9h5mHloa3Nf4pWxFKUSrZ0,2035
+template.md,sha256=u_bbdCj28h0oSlgkVfPUmPsL46hS5KZg5aV6t0hkpas,379
+reading_helper-0.1.5.dist-info/entry_points.txt,sha256=J0i_nUzB7uy03YuW-doaXiXbtimW3AkTQJX9WM41bYE,78
+reading_helper-0.1.5.dist-info/LICENSE,sha256=gKBMDLJ8PdxWAvSy0WZu-sqHv4-AL9-iDASPh-eLzRA,1072
+reading_helper-0.1.5.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+reading_helper-0.1.5.dist-info/METADATA,sha256=jZTXUI5d9OfC8g00Wo9US24uViVkuR8ggFKD95Qbo0g,539
+reading_helper-0.1.5.dist-info/RECORD,,
