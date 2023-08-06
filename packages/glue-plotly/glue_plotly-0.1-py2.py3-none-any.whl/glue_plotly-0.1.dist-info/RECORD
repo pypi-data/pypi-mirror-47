@@ -1,0 +1,12 @@
+glue_plotly/__init__.py,sha256=U1hT18bmusiFS7BvNElAKO1nItk823CNVvlcw2t6TMQ,634
+glue_plotly/conftest.py,sha256=k4j1jQVF36kGUJClMD51tqZA9AkUXuhhy40JlEBH_dI,76
+glue_plotly/logo.png,sha256=HyTyjcuXIW4FrbY92vy_fdqxYHrZcOshsx5EsKNkOaU,7075
+glue_plotly/html_exporters/__init__.py,sha256=sJVyw6et7-239Svb0bWI2C3O4Kdzz9Oty_ON1eVKWRM,64
+glue_plotly/html_exporters/scatter2d.py,sha256=9FupxWKY7KPeIFAiv1JvLwGaoH7dfKpfHRrQK_-VMf0,5262
+glue_plotly/html_exporters/scatter3d.py,sha256=AAexLSlaad2hnwY6ZGGFvm7_TWsDacvhTUPAJPPiEVI,6451
+glue_plotly-0.1.dist-info/LICENSE,sha256=rtC_5mVTc3FJkI6_4P9Nb3qY1R0oEraMv8bCypyWW7Y,1499
+glue_plotly-0.1.dist-info/METADATA,sha256=FNoM92gPWyXwIZ_HY-2QDqMgSOs6jp7xJ20z99xFX3Y,914
+glue_plotly-0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+glue_plotly-0.1.dist-info/entry_points.txt,sha256=svfODLnaNshxVO2TeR-9cZVE8uVM00zjAehiZncCpTU,48
+glue_plotly-0.1.dist-info/top_level.txt,sha256=38itLE7fvdbAosz9AjRgIp6vJ4FASisba-Pgwk-iBZY,12
+glue_plotly-0.1.dist-info/RECORD,,
