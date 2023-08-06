@@ -1,0 +1,9 @@
+README.md
+setup.py
+xgbert/__init__.py
+xgbert/xgbert.py
+xgbert.egg-info/PKG-INFO
+xgbert.egg-info/SOURCES.txt
+xgbert.egg-info/dependency_links.txt
+xgbert.egg-info/requires.txt
+xgbert.egg-info/top_level.txt
