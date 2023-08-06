@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+larry/__init__.py
+larry/twitter.py
+larry_birdy.egg-info/PKG-INFO
+larry_birdy.egg-info/SOURCES.txt
+larry_birdy.egg-info/dependency_links.txt
+larry_birdy.egg-info/not-zip-safe
+larry_birdy.egg-info/requires.txt
+larry_birdy.egg-info/top_level.txt
