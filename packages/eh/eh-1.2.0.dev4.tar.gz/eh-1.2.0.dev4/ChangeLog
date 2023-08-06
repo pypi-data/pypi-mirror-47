@@ -1,0 +1,76 @@
+CHANGES
+=======
+
+* Added subdirectory support
+* Updated eh.md
+* Updated readme
+* Updated changelog?
+
+1.1.1
+-----
+
+* Added autocomplete and docs for it
+
+1.1.0
+-----
+
+* Python 3 support
+
+1.0.3
+-----
+
+* Updated list to be sorted
+
+1.0.2
+-----
+
+* Markdown description
+
+1.0.1
+-----
+
+* Fixed description
+
+1.0.0
+-----
+
+* set to version 1.0.0
+* Updated readme
+* Updated changelog
+
+0.2.8
+-----
+
+* Fixed pyyaml security issue
+
+v0.2.8
+------
+
+* Updated changelog and tags
+
+v0.2.7
+------
+
+* updated version
+* Removed eh poop
+* Allowed MD comment format for subject header
+* Updated list method and readme
+* Updated cli help for update
+* Updated cli help
+* Updated readme
+* Updated eh help
+* Added subject support from common repo
+* Adding some help for pypi
+* Added find
+* Added grep reminder
+* Fixed the docker and vim subjects
+* Added new vim and docker subjects
+* Removed readme.rst and added readme.md
+* Created help and updated readme
+* Fixed bash subject markdown due to mdv bug
+* Changed the way that subjects are loaded and made
+* Renamed project to eh
+* Set version to 0.1.0
+* Added bash contrib subject
+* Initial commit
+* Initial commit

@@ -1,0 +1,11 @@
+Markdown
+PyYAML
+Pygments
+argparse
+click
+docopt
+gitpython
+mdv
+pbr
+six
+stevedore
