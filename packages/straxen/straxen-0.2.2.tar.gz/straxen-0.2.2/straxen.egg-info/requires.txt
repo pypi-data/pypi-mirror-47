@@ -1,0 +1,12 @@
+strax>
+tensorflow<2
+keras
+scipy
+pymongo
+
+[docs]
+sphinx
+sphinx_rtd_theme
+nbsphinx
+recommonmark
+graphviz
