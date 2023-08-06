@@ -1,0 +1,9 @@
+slave/__init__.py,sha256=JqmBIiZnO_c1ce6zv6JZzf01tRk6jFq-SGGuvkL_r1U,21
+slave/__main__.py,sha256=9NKC6XLezIEnv_Iig-XWPW8AX2XVahUu7vhu3F1VsC4,782
+slave/lib/bots.py,sha256=7NU7_xkZI963Sk7JqAJQ5wcKjfiT_O-S4kBWFY-Bga0,4197
+slave/lib/client.py,sha256=59y-CcoKnNns_SJe2Wic_aXRElIWgP4m1komD4khwbk,5539
+slave_irc-1.0.2.dist-info/LICENSE,sha256=gQHHZ0tNXm6qHeihDonc4lqxlGnGTRA-UAUZiq8tq_Y,1077
+slave_irc-1.0.2.dist-info/METADATA,sha256=UMzXwQOFEobM-d-SC1t63gDE97tpYp7P-wLWiAfxurc,6919
+slave_irc-1.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+slave_irc-1.0.2.dist-info/top_level.txt,sha256=mYfKHcNXx_6FoDikQfsBt-wJPnnm0hZh0ALOtkJREmk,6
+slave_irc-1.0.2.dist-info/RECORD,,
