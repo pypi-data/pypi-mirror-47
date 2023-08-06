@@ -1,0 +1,11 @@
+subwabbit/CHANGELOG.md,sha256=m3vdatBT5vJUjNVy47qXEtRzMuraUQvO-gW7TljdX5g,648
+subwabbit/__init__.py,sha256=Plv-xmvnsa_1wbkZuKXQQQTA-5XtjN8cV8cySywpfuU,291
+subwabbit/base.py,sha256=xZGQgh2BSzQ5mCp7UfsAgLZcMqFAOOvy4cv8pfDByzM,13879
+subwabbit/blocking.py,sha256=n0UCExI9vO-gQuAM4Uf6j3f7lIErtovDy8uI6HWXq40,14722
+subwabbit/nonblocking.py,sha256=kX1Zxra4K9DanarLfId2feLOzkc5HDXFti67c-blB_Y,16197
+subwabbit/version.py,sha256=PN8ElfzZde4_Z3X1maS1zAueV5sW09cIovycIhZ5--o,823
+subwabbit-2.0.0.dist-info/LICENSE,sha256=24xxEYGEWhH2z9kfXWNxPkxgkwjFAWusZmHHHib-XxE,1507
+subwabbit-2.0.0.dist-info/METADATA,sha256=VzP9-A_xNQQqhrBxskTsz1yn-66xmGQ-5jabyz2FBmA,7899
+subwabbit-2.0.0.dist-info/WHEEL,sha256=YO0P_oFqt6DWX0LhbH7jsyzb3BUtoq2kERtqGsXDJHs,92
+subwabbit-2.0.0.dist-info/top_level.txt,sha256=RY2dR82yFMbF44_2Xkp1xVcgiy4SQXe4pSg1Ihgjj9w,10
+subwabbit-2.0.0.dist-info/RECORD,,
