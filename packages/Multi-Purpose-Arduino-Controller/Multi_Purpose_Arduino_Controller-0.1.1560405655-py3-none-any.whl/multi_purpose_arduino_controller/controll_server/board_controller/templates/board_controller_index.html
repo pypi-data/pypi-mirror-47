@@ -1,0 +1,35 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block contend %}
+   Board Controller
+<div class="accordion" id="board_controller_div">
+
+   <div class="card">
+      <div class="card-header" id="headingPortslist">
+         <h5 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#portList" aria-expanded="true" aria-controls="portList">
+               Port List
+            </button>
+         </h5>
+      </div>
+
+      <div id="portList" class="collapse show" aria-labelledby="headingOne" data-parent="#board_controller_div">
+         <div class="card-body">
+         </div>
+      </div>
+   </div>
+
+</div>
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'django_websocket_server/sodium.js'%}" async></script>
+<script src="{% static 'django_websocket_server/django_websocket_server.js'%}"></script>
+<script src="{% static 'board_controller/board_controller.js'%}"></script>
+<script>
+   wscs.RECONNECT_TIME = 500;
+   set_board_controller_div($("#board_controller_div"));
+   set_port_controller_div($("#portList>.card-body"));
+   set_board_controller_div($("#board_controller_div"));
+
+</script>
+{% endblock %}
