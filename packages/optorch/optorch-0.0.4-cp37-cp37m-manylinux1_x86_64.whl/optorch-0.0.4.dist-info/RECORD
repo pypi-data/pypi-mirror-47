@@ -1,0 +1,9 @@
+optorch/__init__.py,sha256=Vp52HBOfHJI19tGeRU0i5HQZssyGEk-HLfsYp9BMeyI,782
+optorch/debug.py,sha256=FuZxqkz3177-Y15pxYTF1rIFa6KDlJueCfalzqon12U,1500
+optorch/main,sha256=0VbgsZaDdqpc9Ej7-5sbGmbydH5BXBCNEg593M5adZ0,10500720
+optorch/problem.py,sha256=kKhD_YarrAk_587uyCy9YmjAq_Ko78BNfXLCxOlHX3k,5817
+optorch-0.0.4.dist-info/LICENSE,sha256=33eKswclcPwvlOZ22IIj_6MgYvHQNSbYBoe0P9Fab9I,1066
+optorch-0.0.4.dist-info/METADATA,sha256=ftZ31ZBSsWsg5GepEBwATZWnyOqx0HVGDidaaXgkRo0,289
+optorch-0.0.4.dist-info/WHEEL,sha256=oHnmHmB7kXq9sEF4t49Zll1U5Cpys3qKSjV2r8hHrng,109
+optorch-0.0.4.dist-info/top_level.txt,sha256=8n-v668Mn7Yv79c94hJhgRdClcJC7sdI5Io9ok2vLc0,20
+optorch-0.0.4.dist-info/RECORD,,
