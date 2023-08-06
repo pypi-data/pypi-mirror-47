@@ -1,0 +1,3 @@
+[console_scripts]
+gluonts-validate-dataset = gluonts.dataset.validate:run
+
