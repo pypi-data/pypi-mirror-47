@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+puflib/VERSION_STAMP
+puflib/__init__.py
+puflib/architectures.py
+puflib/test.py
+puflib/util.py
+puflib/version.py
+puflib.egg-info/PKG-INFO
+puflib.egg-info/SOURCES.txt
+puflib.egg-info/dependency_links.txt
+puflib.egg-info/requires.txt
+puflib.egg-info/top_level.txt

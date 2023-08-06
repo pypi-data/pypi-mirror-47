@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: puflib
+Version: 0.2.14
+Summary: Library for emulating Physically Unclonable Functions.
+Home-page: https://github.com/gregschmit/puflib
+Author: Gregory N. Schmit
+Author-email: schmitgreg@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
