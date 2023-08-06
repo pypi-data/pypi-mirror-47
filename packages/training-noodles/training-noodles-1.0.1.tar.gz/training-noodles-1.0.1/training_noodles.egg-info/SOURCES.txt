@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+training_noodles.egg-info/PKG-INFO
+training_noodles.egg-info/SOURCES.txt
+training_noodles.egg-info/dependency_links.txt
+training_noodles.egg-info/entry_points.txt
+training_noodles.egg-info/requires.txt
+training_noodles.egg-info/top_level.txt
