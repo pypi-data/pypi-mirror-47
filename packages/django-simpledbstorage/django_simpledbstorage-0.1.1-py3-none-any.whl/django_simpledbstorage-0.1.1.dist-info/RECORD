@@ -1,0 +1,12 @@
+simpledbstorage/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simpledbstorage/models.py,sha256=un9g3RxhrANyc7IY6q-Ki3UBbuSQzgoZqEPgUuaQk7A,602
+simpledbstorage/storage.py,sha256=MRa9pxIOnUqDlnuyZfg6rF-7ij9sD9JmyEZ_08H5aSY,1303
+simpledbstorage/urls.py,sha256=YZxNfhsVBramrPE51hDVKFWOpgrfwGpYTK2xb5ILvyI,323
+simpledbstorage/views.py,sha256=HshhStFOCBEf4FuB4y3ezLJhQ0Dh1PHsYMJmpN-Qo7w,514
+simpledbstorage/migrations/0001_initial.py,sha256=02Oi-6KWpxOS3RTbjGYyN_e1tGJuA7F-iFs-UpfvSyY,721
+simpledbstorage/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_simpledbstorage-0.1.1.dist-info/LICENSE,sha256=olQ4KjaOCWCvKY_EKmIQmbGRit14kNiSygfU-25OcmE,1073
+django_simpledbstorage-0.1.1.dist-info/METADATA,sha256=Dyf_LcPFlxWur2ZrSHTF17MOdtRFInWJmA30WgeJBSQ,1782
+django_simpledbstorage-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_simpledbstorage-0.1.1.dist-info/top_level.txt,sha256=qYLAcY979EYNK8m6Za8Cr6MVoxbQ2PTPGPCW5OvRA6s,16
+django_simpledbstorage-0.1.1.dist-info/RECORD,,

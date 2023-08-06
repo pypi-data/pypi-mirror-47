@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: django-simpledbstorage
+Version: 0.1.1
+Summary: A simple Django app to store files in a db.
+Home-page: https://github.com/SearchLightNZ/django-simpledbstorage
+Author: Nathan Ward
+Author-email: nward@serachlight.nz
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Requires-Dist: python-magic
+
+# Django Simple DB Storage
+
+A very simple app implementing the Django storages API, storing files in a database. A very simple view is provided for downloading files.
+
+## Getting Started
+
+1. Install the django-simpledbstorage pip package
+2. Add the app to your project's INSTALLED_APPS, and urls
+3. Set DEFAULT_FILE_STORAGE to 'simpledbstorage.storage.DatabaseStorage'
+4. Set your MEDIA_URL, if relevant to you
+
+## Example
+
+In settings.py:
+```python
+DEFAULT_FILE_STORAGE = 'simpledbstorage.storage.DatabaseStorage'
+INSTALLED_APPS.append('simpledbstorage')
+MEDIA_URL = '/{}{}/'.format(BASE_PATH, 'files/')
+```
+
+In urls.py or wherever your URLconf lives:
+```python
+urlpatterns = [
+  url(r'^files/', include('simpledbstorage.urls'))
+]
+```
+
+## Versioning
+
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/SearchLightNZ/django-simpledbstorage/tags).
+
+
