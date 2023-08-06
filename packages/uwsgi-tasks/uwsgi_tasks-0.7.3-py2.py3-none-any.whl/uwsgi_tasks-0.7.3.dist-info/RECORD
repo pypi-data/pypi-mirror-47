@@ -1,0 +1,10 @@
+uwsgi_tasks/__init__.py,sha256=NqzdlIBz3TKHRayifcjC8oFBOzimPTDVPpCPynomUQQ,294
+uwsgi_tasks/decorators.py,sha256=wg28Kj9zMx-01ggZZx4h4t0cYzrF28mvMocTa5OiUUs,2281
+uwsgi_tasks/tasks.py,sha256=gFTDBnCOj3SIao8ktX0BOmoFSDqukHXCq__uhdQLvHA,18227
+uwsgi_tasks/tests.py,sha256=uAYcNjoka6fy8j84jsIrPw-Hw1680I50f-p1Z62D6-w,9042
+uwsgi_tasks/utils.py,sha256=d25FxvPWw7El9Gy5SWmsGOXSXi3iAhu2vzX-SupsI2E,2189
+uwsgi_tasks-0.7.3.dist-info/LICENSE,sha256=wJKtIQgIacE1p-lKJsUvbgaGB5miYcmPjwiI6nguGF0,1080
+uwsgi_tasks-0.7.3.dist-info/METADATA,sha256=W8gb6HZz9xrGaZpuXzjm6yCLKW090fLDPasqI4-AtGE,13344
+uwsgi_tasks-0.7.3.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+uwsgi_tasks-0.7.3.dist-info/top_level.txt,sha256=wgjZg_q9HJlmpbxnQNno6MFFCpKyF4J_r6l5IzDHHzc,12
+uwsgi_tasks-0.7.3.dist-info/RECORD,,
