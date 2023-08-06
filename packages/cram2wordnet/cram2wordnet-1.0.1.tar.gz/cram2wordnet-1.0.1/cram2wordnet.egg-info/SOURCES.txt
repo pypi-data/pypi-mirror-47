@@ -1,0 +1,8 @@
+README.md
+setup.py
+cram2wordnet/__init__.py
+cram2wordnet/cram2wordnet.py
+cram2wordnet.egg-info/PKG-INFO
+cram2wordnet.egg-info/SOURCES.txt
+cram2wordnet.egg-info/dependency_links.txt
+cram2wordnet.egg-info/top_level.txt
