@@ -1,0 +1,44 @@
+Metadata-Version: 1.1
+Name: djangocms-bulma-column
+Version: 1.9.2
+Summary: Column Plugin for django CMS
+Home-page: https://github.com/divio/djangocms-column
+Author: Divio AG
+Author-email: info@divio.ch
+License: LICENSE.txt
+Description: djangocms-bulma-column
+        ======================
+        
+        A Columns of bulma Plugin for django CMS.
+        
+        based on djangocms-column
+        
+        
+        Installation
+        ------------
+        
+        This plugin requires `django CMS` 3.4.5 or higher to be properly installed.
+        
+        * In your projects virtualenv, run ``pip install djangocms-bulma-column``.
+        * Add ``'djangocms_bulma_column'`` to your ``INSTALLED_APPS`` setting.
+        * Run ``manage.py migrate djangocms_bulma_column``.
+        
+        
+        
+        
+Platform: OS Independent
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content :: Message Boards
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
