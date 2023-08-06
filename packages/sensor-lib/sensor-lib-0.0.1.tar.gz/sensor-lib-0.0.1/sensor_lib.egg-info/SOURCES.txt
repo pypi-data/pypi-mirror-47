@@ -1,0 +1,6 @@
+README.md
+setup.py
+sensor_lib.egg-info/PKG-INFO
+sensor_lib.egg-info/SOURCES.txt
+sensor_lib.egg-info/dependency_links.txt
+sensor_lib.egg-info/top_level.txt
