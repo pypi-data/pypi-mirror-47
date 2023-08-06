@@ -1,0 +1,10 @@
+deceptionlogic/__init__.py,sha256=8NbVzOg-zksg9S3WebbkjSelyWHoFf-BXy8Fw9K-aus,30
+deceptionlogic/aws/__init__.py,sha256=NNF6MwLF53v3pVpVc8neaYzBoPw5R9pCRJGZj3vtpZk,62
+deceptionlogic/aws/ec2.py,sha256=wRE4aw-xkRgWle24fcz2uthKVt926wejrH_CnhASxEM,2270
+deceptionlogic-1.0.0.data/scripts/deception,sha256=68cg7per4VCsw1vb9gh1rZLpHRXSmhJ8XnSjHEUjnJI,3148
+deceptionlogic-1.0.0.dist-info/DESCRIPTION.rst,sha256=Gjy5BYMrI1WM_RHDZVf7jiYKp01RwZWVBb7A76By8XA,949
+deceptionlogic-1.0.0.dist-info/METADATA,sha256=bZh_9zlEsHYfMVhaHyMIaRVebTNLdekuNla_p9mfLPQ,1609
+deceptionlogic-1.0.0.dist-info/RECORD,,
+deceptionlogic-1.0.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+deceptionlogic-1.0.0.dist-info/metadata.json,sha256=tqfjFzdMTK-6NKnBFIwcjN2cSgjqWBkPXJvSNRPiLlI,866
+deceptionlogic-1.0.0.dist-info/top_level.txt,sha256=ldOfAflxJKdSiZus_GfVT4cUWEPIq0rIfKl3AjFMzfQ,15
