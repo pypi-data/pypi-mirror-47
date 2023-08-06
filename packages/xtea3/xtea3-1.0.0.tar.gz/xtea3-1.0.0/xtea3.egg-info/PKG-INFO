@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: xtea3
+Version: 1.0.0
+Summary: Obsolete Python 3 implementation of XTEA.
+Home-page: https://github.com/varbin/xtea3
+Author: Simon Biewald
+Author-email: simon@fam-biewald.de
+License: Public Domain
+Project-URL: Source, https://github.com/Varbin/xtea3
+Project-URL: Tracker, https://github.com/Varbin/xtea3/issues
+Description: ============
+        Python XTEA3
+        ============
+        
+        As the package xtea_ is now compatible with both major Python versions, 2 and 3,
+        two different package versions are not required anymore.
+        
+        All non utility members of the `xtea3` namespace will remain in place,
+        but are internally used from the xtea_ package instead,
+        which will be automatically installed with this updated version.
+        
+        
+        .. _xtea: https://pypi.org/project/xtea
+        
+Keywords: xtea tea encryption cryptography python3
+Platform: UNKNOWN
+Classifier: Development Status :: 7 - Inactive
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Requires-Python: >=3
+Description-Content-Type: text/x-rst
