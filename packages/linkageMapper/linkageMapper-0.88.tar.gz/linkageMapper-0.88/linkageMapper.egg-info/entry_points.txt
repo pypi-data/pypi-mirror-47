@@ -1,0 +1,6 @@
+[console_scripts]
+lmdownload = linkageMapper.fetchDataNCBI:main
+lmpline = linkageMapper.Pipeline:main
+lmprimer = linkageMapper.initializePrimerFile:main
+lmview = linkageMapper.walkChromosomeResult:main
+
