@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: restylinchpin
+Version: 0.1.0
+Summary: REST application for Linchpin project
+Home-page: http://restylinchpin.readthedocs.io/
+Author: Mansi Kulkarni
+Author-email: mankulka@redhat.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: linchpin
+
+UNKNOWN
+
+
