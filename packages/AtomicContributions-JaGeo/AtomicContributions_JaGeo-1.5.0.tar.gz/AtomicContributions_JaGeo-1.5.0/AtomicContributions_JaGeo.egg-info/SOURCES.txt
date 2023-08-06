@@ -1,0 +1,9 @@
+README.md
+setup.py
+AtomicContributions/ContributionsOfAtomsToModes.py
+AtomicContributions/__init__.py
+AtomicContributions_JaGeo.egg-info/PKG-INFO
+AtomicContributions_JaGeo.egg-info/SOURCES.txt
+AtomicContributions_JaGeo.egg-info/dependency_links.txt
+AtomicContributions_JaGeo.egg-info/requires.txt
+AtomicContributions_JaGeo.egg-info/top_level.txt
