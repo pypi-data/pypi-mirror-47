@@ -1,0 +1,227 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1;
+
+vertices
+(
+                                              
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+											 
+);
+
+blocks
+(
+    hex (16 17 39 38 19 18 40 41) (20 20 20) simpleGrading (1 1 1)  // wood
+    hex (0 1 23 22 2 3 25 24) (20 20 20) simpleGrading (1 1 1) // bottom chamber
+    hex (5 4 26 27 6 7 29 28) (20 20 20) simpleGrading (1 1 1) //top chamber
+	hex (2 3 25 24 5 4 26 27) (20 20 20) simpleGrading (1 1 1) // secondary air region
+	hex (6 7 29 28 20 21 43 42) (20 20 20) simpleGrading  (1 1 1) // top b5 chamber
+	hex (7 46 47 29 21 15 37 43) (20 20 20) simpleGrading (1 1 1) // right block
+    hex (44 6 28 45 14 20 42 36) (20 20 20) simpleGrading (1 1 1) // left block mid
+	hex (9 44 45 31 48 14 36 49) (20 20 20) simpleGrading (1 1 1) // bottom left chamber
+    hex (48 14 36 49 10 11 33 32) (20 20 20) simpleGrading (1 1 1) //left channel
+	hex (46 8 30 47 15 50 51 37) (20 20 20) simpleGrading (1 1 1) // bottom right channel
+	hex (15 50 51 37 12 13 35 34) (20 20 20) simpleGrading (1 1 1)
+);
+
+edges
+(
+);
+
+boundary
+(
+    fuel
+    {
+        type patch;
+        faces
+        (
+         	(19 18 40 41)
+			(16 17 39 38)
+			(38 16 19 41)
+			(17 39 40 18)
+        );
+    }
+    primary_air
+    {
+        type patch;
+        faces
+        (
+        	(0 1 23 22)
+        );
+    }
+    Secondary_air_RHS
+    {
+		type patch;
+		faces
+		(
+			(3 25 26 4)			
+		);
+    }
+    Secondary_air_LHS
+    {
+		type patch;
+		faces
+		(
+			(2 24 27 5)
+		);
+    }
+    outlet
+    {
+        type patch;
+        faces
+        (
+        	(12 13 35 34)
+			(10 11 33 32)
+        );
+    }
+
+	stove_body
+    {
+        type patch;
+        faces
+        (
+        	(22 0 2 24) // Chamber bottom LR
+			(1 23 25 3)
+			(5 27 28 6) // Chamber top LR
+			(4 26 29 7)
+			(20 21 43 42) // B5 Top
+			(14 20 42 36) // Block 7 top and bottom
+			(44 6 28 45)
+			(21 15 37 43) // Block 6 top and bottom
+			(7 46 47 29)
+			(14 36 33 11) // Left channel internal wall
+			(48 49 32 10) // Left channel outside wall--upper
+			(9 44 45 31) // Bottom left channel
+			(15 37 34 12) //right channel interior wall
+			(50 51 35 13) // right channel exterior wall
+			(46 8 30 47) // right channel bottom
+			(8 30 51 50)
+			(9 31 49 48)
+        );
+    }
+
+    frontAndBack
+    {
+        type empty;
+        faces
+        (	
+			(16 17 18 19) //Wood FB
+			(38 39 40 41)
+			(0 1 3 2) // Chamber bottom FB
+			(22 23 25 24)
+			(2 3 4 5) // 2nd air FB
+			(24 25 26 27)
+			(5 4 7 6) //Chamber top FB
+			(27 28 29 26)
+			(6 7 21 20) // b5 FB
+			(28 29 43 42)
+			(44 6 20 14) // B7 FB
+			(45 28 42 36)
+			(29 47 37 43) // Added
+			(7 46 15 21) //B6 FB
+			(9 44 14 48) // front bottom left channel
+			(48 14 11 10) // front top left channel
+			(31 45 36 49) // back bottom left channel
+			(49 36 33 32) // back top left channel
+			(46 8 50 15) // front bottom right channel
+			(15 50 13 12) // front top right channel
+			(47 30 51 37) // back bottom right channel
+			(37 51 35 34) // back top right channel
+			
+			
+			//(44 45 36 14)  internal neighbor to left channel
+			//(46 47 37 15)  internal neighbor for left channel
+			//(48 14 36 49)  middle left channel
+			//15 50 51 37) middle right channel
+			//(48 14 36 49)  left channel internal
+			//(15 50 51 37) right channel internal
+        );
+    }
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //
