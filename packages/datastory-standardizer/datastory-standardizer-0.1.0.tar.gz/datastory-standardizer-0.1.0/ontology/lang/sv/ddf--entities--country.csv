@@ -1,0 +1,274 @@
+country,name
+and,Andorra
+are,Förenade Arabemiraten
+afg,Afghanistan
+atg,Antigua och Barbuda
+aia,Anguilla
+alb,Albanien
+arm,Armenien
+ago,Angola
+ata,Antarktis
+arg,Argentina
+asm,Amerikanska Samoa
+aut,Österrike
+aus,Australien
+abw,Aruba
+ala,Åland
+aze,Azerbajdzjan
+bih,Bosnien och Hercegovina
+brb,Barbados
+bgd,Bangladesh
+bel,Belgien
+bfa,Burkina Faso
+bgr,Bulgarien
+bhr,Bahrain
+bdi,Burundi
+ben,Benin
+stbar,Saint-Barthélemy
+bmu,Bermuda
+brn,Brunei
+bol,Bolivia
+bra,Brasilien
+bhs,Bahamas
+btn,Bhutan
+bouisl,Bouvetön
+bwa,Botswana
+blr,Vitryssland
+blz,Belize
+can,Kanada
+cck,Kokosöarna
+cod,Demokratiska republiken Kongo
+caf,Centralafrikanska republiken
+cog,Kongo-Brazzaville
+che,Schweiz
+civ,Elfenbenskusten
+cok,Cooköarna
+chl,Chile
+cmr,Kamerun
+chn,Kina
+col,Colombia
+cri,Costa Rica
+cub,Kuba
+cpv,Kap Verde
+cxr,Julön
+cyp,Cypern
+cze,Tjeckien
+deu,Tyskland
+dji,Djibouti
+dnk,Danmark
+dma,Dominica
+dom,Dominikanska republiken
+dza,Algeriet
+ecu,Ecuador
+est,Estland
+egy,Egypten
+esh,Västsahara
+eri,Eritrea
+esp,Spanien
+eth,Etiopien
+fin,Finland
+fji,Fiji
+flk,Falklandsöarna
+fsm,Mikronesiska federationen
+fro,Färöarna
+fra,Frankrike
+gab,Gabon
+gbr,Storbritannien
+grd,Grenada
+geo,Georgien
+guf,Franska Guyana
+gbg,Guernsey
+gha,Ghana
+gib,Gibraltar
+grl,Grönland
+gmb,Gambia
+gin,Guinea
+glp,Guadeloupe
+gnq,Ekvatorialguinea
+grc,Grekland
+gtm,Guatemala
+gum,Guam
+gnb,Guinea Bissau
+guy,Guyana
+hkg,Hongkong
+heard_a_mcd,Heard- och McDonaldöarna
+hnd,Honduras
+hrv,Kroatien
+hti,Haiti
+hun,Ungern
+idn,Indonesien
+irl,Irland
+isr,Israel
+gbm,Isle of Man
+ind,Indien
+iot,Brittiska territoriet i Indiska Oceanen
+irq,Irak
+irn,Iran
+isl,Island
+ita,Italien
+jey,Jersey
+jam,Jamaica
+jor,Jordanien
+jpn,Japan
+ken,Kenya
+kgz,Kirgizistan
+khm,Kambodja
+kir,Kiribati
+com,Komorerna
+kna,Saint Kitts och Nevis
+prk,Nordkorea
+kor,Sydkorea
+kwt,Kuwait
+kaz,Kazakstan
+lao,Laos
+lbn,Libanon
+lca,Saint Lucia
+lie,Liechtenstein
+lka,Sri Lanka
+lbr,Liberia
+lso,Lesotho
+ltu,Litauen
+lux,Luxemburg
+lva,Lettland
+lby,Libyen
+mar,Marocko
+mco,Monaco
+mda,Moldavien
+mne,Montenegro
+mdg,Madagaskar
+mhl,Marshallöarna
+mkd,Nordmakedonien
+mli,Mali
+mmr,Burma
+mng,Mongoliet
+mac,Macau
+mnp,Nordmarianerna
+mtq,Martinique
+mrt,Mauretanien
+msr,Montserrat
+mlt,Malta
+mus,Mauritius
+mdv,Maldiverna
+mwi,Malawi
+mex,Mexiko
+mys,Malaysia
+moz,Moçambique
+nam,Namibia
+ncl,Nya Kaledonien
+ner,Niger
+nfk,Norfolkön
+nga,Nigeria
+nic,Nicaragua
+nld,Nederländerna
+nor,Norge
+npl,Nepal
+nru,Nauru
+niu,Niue
+nzl,Nya Zeeland
+omn,Oman
+pan,Panama
+per,Peru
+pyf,Franska Polynesien
+png,Papua Nya Guinea
+phl,Filippinerna
+pak,Pakistan
+pol,Polen
+spm,Saint-Pierre och Miquelon
+pcn,Pitcairnöarna
+pri,Puerto Rico
+pse,Palestina
+prt,Portugal
+plw,Palau
+pry,Paraguay
+qat,Qatar
+reu,Réunion
+rou,Rumänien
+srb,Serbien
+rus,Ryssland
+rwa,Rwanda
+sau,Saudiarabien
+slb,Salomonöarna
+syc,Seychellerna
+sdn,Sudan
+swe,Sverige
+sgp,Singapore
+shn,Sankta Helena
+svn,Slovenien
+sjm,Svalbard och Jan Mayen
+svk,Slovakien
+sle,Sierra Leone
+smr,San Marino
+sen,Senegal
+som,Somalia
+sur,Surinam
+ssd,Sydsudan
+stp,São Tomé och Príncipe
+slv,El Salvador
+syr,Syrien
+swz,Swaziland
+tca,Turks- och Caicosöarna
+tcd,Tchad
+tgo,Togo
+tha,Thailand
+tjk,Tadzjikistan
+tkl,Tokelauöarna
+tls,Östtimor
+tkm,Turkmenistan
+tun,Tunisien
+ton,Tonga
+tur,Turkiet
+tto,Trinidad och Tobago
+tuv,Tuvalu
+twn,Taiwan
+tza,Tanzania
+ukr,Ukraina
+uga,Uganda
+usa_minor_out_isl,USA:s yttre öar
+usa,USA
+ury,Uruguay
+uzb,Uzbekistan
+hos,Vatikanstaten
+vct,Saint Vincent och Grenadinerna
+ven,Venezuela
+vgb,Brittiska Jungfruöarna
+vir,Amerikanska Jungfruöarna
+vnm,Vietnam
+vut,Vanuatu
+wlf,Wallis- och Futunaöarna
+wsm,Samoa
+yem,Jemen
+myt,Mayotte
+zaf,Sydafrika
+zmb,Zambia
+zwe,Zimbabwe
+abkh,Abchazien
+akr_a_dhe,Akrotiri och Dhekelia
+chanisl,Kanalöarna
+fra_clipperton,Clippertonön
+cheslo,Tjeckoslovakien
+deu_east,Östtyskland
+eri_a_eth,Eritrea och Etiopien
+fra_antarc,Franska sydterritorierna
+pse_gaza,Gazaremsan
+kos,Kosovo
+ant,Nederländska Antillerna
+ngokar,Nagorno-Karabach
+yem_north,Arabrepubliken Jemen
+cyp_nor,Nordcypern
+scg,Serbien och Montenegro
+scg_ex_kos,Serbien exklusive Kosovo
+som_somland,Somaliland
+sosset,Sydossetien
+yem_south,Sydjemen
+stmar,Saint-Martin
+transn,Transnistrien
+korea_union,
+ussr,Sovjetunionen
+pse_west_bank,Västbanken
+deu_west,Västtyskland
+yug,Jugoslavien
+cym,Caymanöarna
+nld_curacao,Curaçao
+sxm,Sint Maarten
+sgero_a_ssandw,Sydgeorgien och Sydsandwichöarna
+maf,Saint-Martin (franska delen)
