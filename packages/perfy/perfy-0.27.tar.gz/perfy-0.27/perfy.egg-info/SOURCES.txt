@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+perfy/__init__.py
+perfy.egg-info/PKG-INFO
+perfy.egg-info/SOURCES.txt
+perfy.egg-info/dependency_links.txt
+perfy.egg-info/top_level.txt
