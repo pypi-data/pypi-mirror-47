@@ -1,0 +1,12 @@
+clic/__init__.py,sha256=0BkJGgUiFlY1GkODlAO6Aw92Vq5SJ06UwxV131cl9BE,80
+clic/main.py,sha256=A6WkcrZlvw16LIqaoiCIqcGHfWRu2Lp-k7ETiKysWSU,2159
+clic/template/CMakeLists.txt,sha256=MdbSChUrFZT7PQffxsxZCaMXph48C9u3l_AKvebRtFA,441
+clic/template/readme.md,sha256=h9zavA5xk7U4sNAcn7YplGQcPxpHA-7M1qjXHIefeCE,12
+clic/template/solution.h,sha256=gHqe3QsZ9NQiboXHemvPKYBdVaBRBDWeHuMK_qbF_fk,108
+clic/template/test.cpp,sha256=S_-qBdJVcwDBwJ6dxrhxtFSWGIkGRGT-uO41AuPOS9k,163
+clic-0.1.1.dist-info/LICENSE,sha256=xKVibbXlEsDWxGCGCDRG6ueEGkr0umYtZ7rQWSqSR-4,1043
+clic-0.1.1.dist-info/METADATA,sha256=7f-CzqYxxST8KqgUQR-gyEf0bwPQJU3LUneviqtqJvM,1034
+clic-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+clic-0.1.1.dist-info/entry_points.txt,sha256=nzOxqEa3y0wLSlWymcjCVamr99FASf8xnWaA7PeXzeY,41
+clic-0.1.1.dist-info/top_level.txt,sha256=uNf-v9y2LWvkzs1wYTzg__0vbSMhnwpfaDJnoy9MxsA,5
+clic-0.1.1.dist-info/RECORD,,
