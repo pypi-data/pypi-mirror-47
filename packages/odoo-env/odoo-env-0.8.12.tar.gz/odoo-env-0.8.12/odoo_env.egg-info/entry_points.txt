@@ -1,0 +1,4 @@
+[console_scripts]
+oe = scripts.oe:main
+sd = scripts.sd:main
+
