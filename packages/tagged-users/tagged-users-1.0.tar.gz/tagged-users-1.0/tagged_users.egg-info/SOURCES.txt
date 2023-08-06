@@ -1,0 +1,7 @@
+README.md
+setup.py
+tagged-users/tagged-users
+tagged_users.egg-info/PKG-INFO
+tagged_users.egg-info/SOURCES.txt
+tagged_users.egg-info/dependency_links.txt
+tagged_users.egg-info/top_level.txt
