@@ -1,0 +1,8 @@
+agora_community_sdk/__init__.py,sha256=9gmjBRNCvDpmA9QxPsUbKxX6wLw47cZwerhr9fj9DPw,58
+agora_community_sdk/agora.py,sha256=rMgtUGu2Bz8Iauxt1y40iOq3oUhe9yzBNX-Vxq2S0dA,3195
+agora_community_sdk/frontend/.vscode/launch.json,sha256=993X67490opTmOi1RyJTe395kpiBfyF5MihoM9QlT3c,484
+agora_community_sdk/frontend/AgoraRTCSDK-2.6.1.js,sha256=lHdIiaVOusUwZ7wmkTweQWqv6uWA52VP_RjNPn1nMp0,274248
+agora_community_sdk/frontend/index.html,sha256=3ADr5dUwDPl0JZGBlShNqRUJ7Wwetl-SgYlxL3Jb-qA,2480
+agora_community_sdk-0.1.4.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+agora_community_sdk-0.1.4.dist-info/METADATA,sha256=HodO-16LBo83_tQFVgxXoZSt6R6d6Z3t-Hzhbs9YNtE,532
+agora_community_sdk-0.1.4.dist-info/RECORD,,
