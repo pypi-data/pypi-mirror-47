@@ -1,0 +1,16 @@
+super_csv/__init__.py,sha256=AnYVfdEe6xkpf0wW-S0I-c6QxDLErgHqFIRTCd7Sgjk,188
+super_csv/admin.py,sha256=-yrXLDRfFe-pStibgXuVinJOVvdz7vdm0icgrFbit7w,363
+super_csv/apps.py,sha256=XO8gMClHqg9QlWTojM9YVrVRO-iZVIaX23y6_QuLC3Y,321
+super_csv/csv_processor.py,sha256=RkqvRopugdP4JN6JusJ5SHJ79DMRtDNXhiKqavJbgcs,12892
+super_csv/models.py,sha256=qEmQJv9ZVii2CTv5GnI55HbGNXe8_mx3nPOxa8aiacY,2007
+super_csv/tasks.py,sha256=EWJ46h6whXCE8tDJQ3v26_A-q8lYGQRQ7vtRjUzYqoc,672
+super_csv/migrations/0001_initial.py,sha256=k_kyuTHAuMo9u5fFc1v8X5iO3Jj7ghBQ_HTbh5fCAUA,1267
+super_csv/migrations/0002_csvoperation_user.py,sha256=m6GcjoACO9ItlCDIreozN7oJVvXXWOG1xlirtShuen4,650
+super_csv/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+super_csv/templates/super_csv/base.html,sha256=wtjBYqfHmOnyEY5tN3VGOmzYLsOD24MXdEUhTZ7OmwI,662
+super_csv-0.2.dist-info/LICENSE.txt,sha256=oo7U8J5ol7nYAbcDsvx3uWytl-gnOHwQykwubuQHFLE,35119
+super_csv-0.2.dist-info/METADATA,sha256=5zODwGRn9JZTBHbJU77Au6ikpwr1vg_NwPyXgmVynmc,4392
+super_csv-0.2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+super_csv-0.2.dist-info/entry_points.txt,sha256=gl3XgMjWzvyJKOfi2ClRy4pSkMRr4Gp7Pd8LN2biMrw,59
+super_csv-0.2.dist-info/top_level.txt,sha256=lzhuhNz03iM16W94xGbHrH-VeEyMldblKreP-GOHBUc,10
+super_csv-0.2.dist-info/RECORD,,
