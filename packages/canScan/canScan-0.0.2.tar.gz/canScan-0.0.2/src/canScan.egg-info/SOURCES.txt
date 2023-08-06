@@ -1,0 +1,13 @@
+README.md
+setup.py
+src/canScan.egg-info/PKG-INFO
+src/canScan.egg-info/SOURCES.txt
+src/canScan.egg-info/dependency_links.txt
+src/canScan.egg-info/requires.txt
+src/canScan.egg-info/top_level.txt
+src/canScan.egg-info/zip-safe
+src/canscan/__init__.py
+src/canscan/__main__.py
+src/canscan/node.py
+test/test_main.py
+test/test_node.py
