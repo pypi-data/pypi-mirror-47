@@ -1,0 +1,12 @@
+crdf_serializer/__init__.py,sha256=dGWJPPO8faNJzLebcyfJhsimuFHk0dvvwi7GI_TxntA,130
+crdf_serializer/bind_decorator.py,sha256=QCkj1y-ykoCXqpyKCK6hSOEL10CqnOEgLAKfRs3yKmU,480
+crdf_serializer/object_decorator.py,sha256=U0wxXDIK5OM7Io8_44mT8PGqwSyWTV-23Qq_ZclRuew,1351
+tests/__init__.py,sha256=5BgDNUZc1eOkedA7d3bAvNMeDaFI5p145SHzWp2VD00,72
+tests/context.py,sha256=FzI4paKZs5CCGrNha02VqksczoW75uaqeJZIf3G4mmQ,127
+tests/test_example_rdflib.py,sha256=3aibgXMJHVGWLGV0HBSFB2TK0PSoFVvZrXpE-Su2kXw,912
+tests/test_graph_all.py,sha256=An25SxMqCde-BdFD7ByRwHi9J2FrAu-V1TMhQ9LypcM,1111
+crdf_serializer-0.0.1.dist-info/LICENSE,sha256=KHtMrJRLhRfz8qg1IQ0wvilz2Y-8J-KSiVGMvdLjBpo,1069
+crdf_serializer-0.0.1.dist-info/METADATA,sha256=rqcAoPh8_Vq-bWzASex0X931B7KukdIz-IRTEz9Llxk,1271
+crdf_serializer-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+crdf_serializer-0.0.1.dist-info/top_level.txt,sha256=305Qe-umx0S8i3zV_6IJmVJqMb7DnaThQHjsZGbz2Mc,22
+crdf_serializer-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: crdf-serializer
+Version: 0.0.1
+Summary: Some decorators responsible for preparing and serializing RDF files.
+Home-page: https://github.com/vittorduartte/crdf_serializer
+Author: Prof. Sergio Costa
+Author-email: prof.sergio.costa@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Custom RDF Serializer Package - CRDF
+
+## 1. Requirements 
+This module requires the rdflib package installation:
+> $ pip install rdflib
+
+## 2. How to Install
+For install this package execute the command in your environment:
+> $ pip install crdf-serializer
+
+or:
+> $ pip install -i https://test.pypi.org/simple/ crdf-serializer
+
+
+## 3. How to use
+
+```python
+class Person:
+    nick = FOAF.nick
+    name = FOAF.name
+    email = FOAF.mbox
+
+    @ObjectDecorator(FOAF.Person, None) # blank node
+    @BindDecorator("dc", DC)
+    @BindDecorator("foaf", FOAF)
+    def __init__ (self, name, nick, email):
+        self.nick = Literal(nick, lang="foo")
+        self.name = Literal (name)
+        self.email = URIRef(email) 
+
+p = Person ("Donna Fales","donna", "mailto:donna@example.org")
+```
+
+
+
