@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: finex
+Version: 0.0.1
+Summary: Python Ecosystem for Financial Analysis
+Home-page: UNKNOWN
+Author: Mehmet Dogan
+Author-email: m.dogan@mail.com
+License: BSD
+Platform: any
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
