@@ -1,0 +1,14 @@
+vhdeps/__init__.py,sha256=4a6YgR3vdxFwXy0bP7cMg94t684bIYP6jUN6e93r9RY,9091
+vhdeps/__main__.py,sha256=0sBo469m_Q9ESTB9po1bnq2CrimXjNoWYgkgjOswcic,658
+vhdeps/target.py,sha256=nMMPKoFPe6UDuRoXD2o30xSW8vHOv0d2ANrMVlKZwuo,1526
+vhdeps/vhdl.py,sha256=Qnsb7zJStOubswAXB9aMWS4FrdTa9Jtng_j1yvckmL0,20000
+vhdeps/targets/__init__.py,sha256=4W8VliAYUP1KY2gLJ_YDy2TmcXYVm-PY7XikQD_bFwA,2
+vhdeps/targets/dump.py,sha256=SiS5B57-v9QDKUy24rPAdsRGvq4Pn3UPEQ42UxbQ98s,786
+vhdeps/targets/ghdl.py,sha256=_n9Hl6SDXDSu9jx1qtqJ0B0RPeRxs1ncAj4FhXzafZk,7113
+vhdeps/targets/vsim.py,sha256=h8isrhoCdTBjJ-WLEMP_2tzJMnVOJF_LVp0E6F7OpWM,11794
+vhdeps-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+vhdeps-0.0.3.dist-info/METADATA,sha256=DU--6THQ9BZG8zLWSOmle4GiT8bm8-syLO_WdTZZgto,3132
+vhdeps-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+vhdeps-0.0.3.dist-info/entry_points.txt,sha256=bFGIrWuAmImhuE-0hQdvejQhZEDrwYEXU--mRSt37tA,43
+vhdeps-0.0.3.dist-info/top_level.txt,sha256=qGpjA3GtgmFBL4wvrx06dya2lfDfYT86o3_JJY2HzqA,7
+vhdeps-0.0.3.dist-info/RECORD,,
