@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: french-logo
+Version: 0.0.2a0
+Summary: french-logo retourne un substitut de primitives logo     en français, basées sur le module turtle. Elle comporte également une     primitive repete récursive (absente du module turtle)
+Home-page: https://framagit.org/zenjo/timetime/wikis/home
+Author: Robert Sebille
+Author-email: robert@sebille.name
+Maintainer: Robert Sebille
+Maintainer-email: robert@sebille.name
+License: GNU GPL
+Download-URL: https://framagit.org/zenjo/timetime/tree/master
+Keywords: runtime time tracking software development
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# French logo
+
+## Résumé
+
+Cette classe retourne un substitut de primitives logo en français, basées sur le module turtle
+
+Elle comporte également une primitive repete récursive (absente du module turtle)
+
+- Voir le [site du projet](https://framagit.org/zenjo/french-logo)
+- Voir le [wiki du site du projet](https://framagit.org/zenjo/french-logo/wikis/home)
+- Voir la [documentaton Sphinx du projet](https://docs.sebille.name/french-logo/)
+- [French logo sur pypi](https://pypi.org/project/french-logo/).org
+
+
+CHANGES
+
+
+
+0.0.2alpha:
+    modification de la procedure des variables pour repete (voir aide)
+    modification de la méthode de classe au_revoir_ecran (auto, clic)
+    nouvelle methode de classe lis_texte_ecran (textinput)
+    nouvelle methode de classe lis_nombre_ecran (numberinput)
+    nouvelle methode de classe configure_ecran (setup)
+    rendu compatible PEP8
+
+
+0.0.1alpha
+
+
