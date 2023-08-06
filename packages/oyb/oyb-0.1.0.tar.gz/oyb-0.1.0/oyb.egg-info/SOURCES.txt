@@ -1,0 +1,6 @@
+setup.py
+oyb.egg-info/PKG-INFO
+oyb.egg-info/SOURCES.txt
+oyb.egg-info/dependency_links.txt
+oyb.egg-info/requires.txt
+oyb.egg-info/top_level.txt
