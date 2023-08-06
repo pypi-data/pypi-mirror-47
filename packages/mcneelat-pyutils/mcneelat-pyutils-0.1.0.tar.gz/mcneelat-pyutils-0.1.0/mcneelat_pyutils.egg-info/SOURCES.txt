@@ -1,0 +1,14 @@
+README.md
+setup.py
+com/__init__.py
+com/mcneelat/__init__.py
+com/mcneelat/pyutils/__init__.py
+com/mcneelat/pyutils/anomali.py
+com/mcneelat/pyutils/confutils.py
+com/mcneelat/pyutils/dbutils.py
+com/mcneelat/pyutils/kafkautils.py
+mcneelat_pyutils.egg-info/PKG-INFO
+mcneelat_pyutils.egg-info/SOURCES.txt
+mcneelat_pyutils.egg-info/dependency_links.txt
+mcneelat_pyutils.egg-info/requires.txt
+mcneelat_pyutils.egg-info/top_level.txt
