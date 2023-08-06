@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: amf
+Version: 0.0.1
+Summary: Automated Modelling Framework Package
+Home-page: https://github.com/vini-1208/amf.git
+Author: Vinita Phadke
+Author-email: vini.phadke12@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+Automated Modelling Framework
+Makes ML simplier
+
