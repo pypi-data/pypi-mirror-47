@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: cabbage
+Version: 1.0.0
+Summary: asyncio-based AMQP client and server for RPC.
+Home-page: https://github.com/shocking-rodents/cabbage/
+Maintainer: Andrey Zakharov
+Maintainer-email: andrey.v.zakharov@yandex.ru
+License: Apache License (2.0)
+Download-URL: https://pypi.org/project/cabbage/
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aioamqp (~=0.13)
+
+# cabbage: RPC over AMQP
+
+
