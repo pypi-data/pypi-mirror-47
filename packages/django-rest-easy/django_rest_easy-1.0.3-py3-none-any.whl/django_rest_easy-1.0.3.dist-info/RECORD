@@ -1,0 +1,15 @@
+rest_easy/__init__.py,sha256=0JqCtE-g-dVb3nRpfUxUE1WMEd4nF6kvTbFZvn_isI0,5013
+rest_easy/exceptions.py,sha256=RsiUh0TwCmXytxE0fEfWkTOKlzG-_7uPbe0gdv1JOnw,201
+rest_easy/fields.py,sha256=ObzeljBP5Vre282ikXhdIfoIy_opjDyQgwGq7fesmks,953
+rest_easy/models.py,sha256=a-XQHt7Rhjx5m-__8FTqoq4kNXsx4IR45CLJ1RkTgMo,3123
+rest_easy/patterns.py,sha256=h2XT4sbVyoBw3elO2bxYrhDHvsC4yUl3QHaABfdVteY,9566
+rest_easy/registers.py,sha256=v--9nyaud_uXzMhxhF64wtgZuyTaFUGyREufiTqyno0,1724
+rest_easy/runtests.py,sha256=AFDau4ph6jCxrYDdR2HVvVz9GDDLWUYj76xeSsNAHqw,2565
+rest_easy/scopes.py,sha256=aibhfutT52P0JgHCtG1MpLVGK13xHj0bjudbsUh4Bwg,10066
+rest_easy/serializers.py,sha256=y0rn5ViS-W5loQVHqQINMkEMw_-Zd4d1W_NTQ5izm6I,5620
+rest_easy/views.py,sha256=ddL1yXZoiWekDzClvK2MpMHAjGgoh9ODcKPepPR5Ugg,16031
+django_rest_easy-1.0.3.dist-info/LICENSE,sha256=bJq8IBp-O0ClRTargdzC-rAtUqVNKLWCwvSVUodE0DI,1284
+django_rest_easy-1.0.3.dist-info/METADATA,sha256=T0dZ0yx-pY-zXz1DAXWddthxp1auziFe9_z3UefYm2U,1301
+django_rest_easy-1.0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+django_rest_easy-1.0.3.dist-info/top_level.txt,sha256=EA5ZSV8pZ0ZJxxBZKytbYjowG6lPoRnSJwwTQ0BieDg,10
+django_rest_easy-1.0.3.dist-info/RECORD,,
