@@ -1,0 +1,8 @@
+README.md
+setup.py
+filewriter/__init__.py
+filewriter.egg-info/PKG-INFO
+filewriter.egg-info/SOURCES.txt
+filewriter.egg-info/dependency_links.txt
+filewriter.egg-info/not-zip-safe
+filewriter.egg-info/top_level.txt
