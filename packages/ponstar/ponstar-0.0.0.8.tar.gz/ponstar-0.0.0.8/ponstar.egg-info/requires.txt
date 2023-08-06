@@ -1,0 +1,7 @@
+futures
+structlog
+simplejson
+protobuf
+grpcio
+confluent_kafka
+click
