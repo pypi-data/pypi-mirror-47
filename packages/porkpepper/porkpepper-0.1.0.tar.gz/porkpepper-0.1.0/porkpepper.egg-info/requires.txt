@@ -1,0 +1,6 @@
+base58
+aiohttp
+typing
+pytest
+aioredis
+pytest-asyncio
