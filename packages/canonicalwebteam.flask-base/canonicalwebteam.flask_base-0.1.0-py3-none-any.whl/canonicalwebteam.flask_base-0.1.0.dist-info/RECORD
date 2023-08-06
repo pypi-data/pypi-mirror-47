@@ -1,0 +1,8 @@
+canonicalwebteam/__init__.py,sha256=ED6jHcYiuYpr_0vjGz0zx2lrrmJT9sDJCzIljoDfmlM,65
+canonicalwebteam/flask_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canonicalwebteam/flask_base/app.py,sha256=30Ok1H-BE6pgNzXpeWmrAO4IgO7WBfxoseoYX6c-FBc,1165
+canonicalwebteam/flask_base/config.py,sha256=gA-mFfoCprHQ8V8Ux6IMF-ynOh-mRrGv5KFvWpsM8-c,94
+canonicalwebteam/flask_base/converters.py,sha256=60h4mHYfhlx0CF_Afv4lfAtpGkJR7mtrlzaL7bJmVp0,207
+canonicalwebteam.flask_base-0.1.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+canonicalwebteam.flask_base-0.1.0.dist-info/METADATA,sha256=LCRY9lfL3PmpBK64VZV4p9CdR5DMIYCjMULTHZYeUto,558
+canonicalwebteam.flask_base-0.1.0.dist-info/RECORD,,

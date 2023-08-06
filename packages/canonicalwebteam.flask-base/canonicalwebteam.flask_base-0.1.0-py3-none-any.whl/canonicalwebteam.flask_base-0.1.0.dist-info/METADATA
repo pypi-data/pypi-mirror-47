@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: canonicalwebteam.flask-base
+Version: 0.1.0
+Summary: 
+Author: Canonical webteam
+Author-email: webteam@canonical.com
+Requires-Python: >=3,<4
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: canonicalwebteam.yaml-responses[flask] (>=1.1,<2.0)
+Requires-Dist: flask (==1.0.2)
+Requires-Dist: talisker[gunicorn] (==0.14.3)
