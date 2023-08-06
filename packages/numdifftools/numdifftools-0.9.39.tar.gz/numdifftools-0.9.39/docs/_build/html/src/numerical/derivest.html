@@ -1,0 +1,776 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Introduction &mdash; Numdifftools 0.9.39 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.39 documentation" href="../../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.39
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">2. Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">5. Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/src/numerical/derivest.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The general problem of differentiation of a function typically pops up in three ways in Python.</p>
+<ul class="simple">
+<li>The symbolic derivative of a function.</li>
+<li>Compute numerical derivatives of a function defined only by a sequence of data points.</li>
+<li>Compute numerical derivatives of a analytically supplied function.</li>
+</ul>
+<p>Clearly the first member of this list is the domain of the symbolic toolbox SymPy, or some set of symbolic tools. Numerical differentiation of a function defined by data points can be achieved with the function gradient, or perhaps by differentiation of a curve fit to the data, perhaps to an interpolating spline or a least squares spline fit.</p>
+<p>The third class of differentiation problems is where Numdifftools is valuable. This document will describe the methods used in Numdifftools and in particular the Derivative class.</p>
+</div>
+<div class="section" id="numerical-differentiation-of-a-general-function-of-one-variable">
+<h1>Numerical differentiation of a general function of one variable<a class="headerlink" href="#numerical-differentiation-of-a-general-function-of-one-variable" title="Permalink to this headline">¶</a></h1>
+<p>Surely you recall the traditional definition of a derivative, in terms of a limit.</p>
+<div class="math notranslate nohighlight" id="equation-1">
+<span class="eqno">()<a class="headerlink" href="#equation-1" title="Permalink to this equation">¶</a></span>\[f'(x) = \lim_{\delta \to 0}{\frac{f(x+\delta) - f(x)}{\delta}}\]</div>
+<p>For small <span class="math notranslate nohighlight">\(\delta\)</span>, the limit approaches <span class="math notranslate nohighlight">\(f'(x)\)</span>. This is a one-sided approximation for the derivative. For a fixed value of <span class="math notranslate nohighlight">\(\delta\)</span>, this is also known as a finite difference approximation (a forward difference.) Other approximations for the derivative are also available. We will see the origin of these approximations in the Taylor series expansion of a function <span class="math notranslate nohighlight">\(f(x)\)</span> around some point <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-2">
+<span class="eqno">()<a class="headerlink" href="#equation-2" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}f(x_0+\delta) &amp;= f(x_0) + \delta f'(x_0) + \frac{\delta^2}{2} f''(x_0) + \frac{\delta^3}{6} f^{(3)}(x_0) + \\\end{split}\\\begin{split}&amp; \frac{\delta^4}{24} f^{(4)}(x_0) + \frac{\delta^5}{120} f^{(5)}(x_0) + \frac{\delta^6}{720} f^{(6)}(x_0) +...\\\end{split}\end{aligned}\end{align} \]</div>
+<p>Truncate the series in <a class="reference internal" href="#equation-2">()</a> to the first three terms, divide by <span class="math notranslate nohighlight">\(\delta\)</span> and rearrange yields the forward difference approximation <a class="reference internal" href="#equation-1">()</a>:</p>
+<div class="math notranslate nohighlight" id="equation-3">
+<span class="eqno">()<a class="headerlink" href="#equation-3" title="Permalink to this equation">¶</a></span>\[f'(x_0) = \frac{f(x_0+\delta) - f(x_0)}{\delta} - \frac{\delta}{2} f''(x_0) - \frac{\delta^2}{6} f'''(x_0) + ...\]</div>
+<p>When <span class="math notranslate nohighlight">\(\delta\)</span> is small, <span class="math notranslate nohighlight">\(\delta^2\)</span> and any higher powers are vanishingly small. So we tend to ignore those higher powers, and describe the approximation in <a class="reference internal" href="#equation-3">()</a> as a first order approximation since the error in this approximation approaches zero at the same rate as the first power of <span class="math notranslate nohighlight">\(\delta\)</span>.  <a class="footnote-reference" href="#id10" id="id1">[1]</a> The values of <span class="math notranslate nohighlight">\(f''(x_0)\)</span> and <span class="math notranslate nohighlight">\(f'''(x_0)\)</span>, while unknown to us, are fixed constants as <span class="math notranslate nohighlight">\(\delta\)</span> varies.</p>
+<p>Higher order approximations arise in the same fashion. The central difference <a class="reference internal" href="#equation-4">()</a> is a second order approximation.</p>
+<div class="math notranslate nohighlight" id="equation-4">
+<span class="eqno">()<a class="headerlink" href="#equation-4" title="Permalink to this equation">¶</a></span>\[f'(x_0) = \frac{f(x_0+\delta) - f(x_0-\delta)}{2\delta} - \frac{\delta^2}{3} f'''(x_0) + ...\]</div>
+</div>
+<div class="section" id="unequally-spaced-finite-difference-rules">
+<h1>Unequally spaced finite difference rules<a class="headerlink" href="#unequally-spaced-finite-difference-rules" title="Permalink to this headline">¶</a></h1>
+<p>While most finite difference rules used to differentiate a function will use equally spaced points, this fails to be appropriate when one does not know the final spacing. Adaptive quadrature rules can succeed by subdividing each sub-interval as necessary. But an adaptive differentiation scheme must work differently, since differentiation is a point estimate. Derivative generates a sequence of sample points that follow a log spacing away from the point in question, then it uses a single rule (generated on the fly) to estimate the desired derivative. Because the points are log spaced, the same rule applies at any scale, with only a scale factor applied.</p>
+</div>
+<div class="section" id="odd-and-even-transformations-of-a-function">
+<h1>Odd and even transformations of a function<a class="headerlink" href="#odd-and-even-transformations-of-a-function" title="Permalink to this headline">¶</a></h1>
+<p id="index-0">Returning to the Taylor series expansion of <span class="math notranslate nohighlight">\(f(x)\)</span> around some point <span class="math notranslate nohighlight">\(x_0\)</span>, an even function  <a class="footnote-reference" href="#id11" id="id2">[2]</a> around <span class="math notranslate nohighlight">\(x_0\)</span> must have all the odd order derivatives vanish at <span class="math notranslate nohighlight">\(x_0\)</span>. An odd function has all its even derivatives vanish from its expansion. Consider the derived functions <span class="math notranslate nohighlight">\(f_{odd}(x)\)</span> and <span class="math notranslate nohighlight">\(f_{even}(x)\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-5">
+<span class="eqno">()<a class="headerlink" href="#equation-5" title="Permalink to this equation">¶</a></span>\[f_{odd}(x) = \frac{f(x_0 + x) - f(x_0 - x )}{2}\]</div>
+<div class="math notranslate nohighlight" id="equation-6">
+<span class="eqno">()<a class="headerlink" href="#equation-6" title="Permalink to this equation">¶</a></span>\[f_{even}(x) = \frac{f(x_0 + x) - 2f(x_0) + f(x_0 - x)}{2}\]</div>
+<p>The Taylor series expansion of <span class="math notranslate nohighlight">\(f_{odd}(x)\)</span> around zero has the useful property that we have killed off any even order terms, but the odd order terms are identical to <span class="math notranslate nohighlight">\(f(x)\)</span>, as expanded around <span class="math notranslate nohighlight">\(x_0\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f_{odd}(\delta) = \delta f'(x_0) + \frac{\delta^3}{6} f^{(3)}(x_0) + \frac{\delta^5}{120} f^{(5)}(x_0) + \frac{\delta^7}{5040} f^{(7)}(x_0) +...\]</div>
+<p>Likewise, the Taylor series expansion of <span class="math notranslate nohighlight">\(f_{even}(x)\)</span> has no odd order terms or a constant term, but other even order terms that are identical to <span class="math notranslate nohighlight">\(f(x)\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-8">
+<span id="index-1"></span><span class="eqno">()<a class="headerlink" href="#equation-8" title="Permalink to this equation">¶</a></span>\[f_{even}(\delta) = \frac{\delta^2}{2} f^{(2)}(x_0) + \frac{\delta^4}{24} f^{(4)}(x_0) + \frac{\delta^6}{720} f^{(6)}(x_0) + \frac{\delta^8}{40320} f^{(8)}(x_0) + ...\]</div>
+<p>The point of these transformations is we can rather simply generate a higher order approximation for any odd order derivatives of <span class="math notranslate nohighlight">\(f(x)\)</span> by working with <span class="math notranslate nohighlight">\(f_{odd}(x)\)</span>. Even order derivatives of <span class="math notranslate nohighlight">\(f(x)\)</span> are similarly generated from <span class="math notranslate nohighlight">\(f_{even}(x)\)</span>. For example, a second order approximation for <span class="math notranslate nohighlight">\(f'(x_0)\)</span> is trivially written in <a class="reference internal" href="../../reference/generated/numdifftools.core.Hessian.html#equation-9">(5.2)</a> as a function of <span class="math notranslate nohighlight">\(\delta\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f'(x_0; \delta) = \frac{f_{odd}(\delta)}{\delta} - \frac{\delta^2}{6} f^{(3)}(x_0)\]</div>
+<p>We can do better rather simply, so why not? <a class="reference internal" href="../../reference/generated/numdifftools.core.Hessian.html#equation-10">(5.3)</a> shows a fourth order approximation for <span class="math notranslate nohighlight">\(f'(x_0)\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[f'(x_0; \delta) = \frac{8 f_{odd}(\delta)-f_{odd}(2\delta)}{6\delta} + \frac{\delta^4}{30} f^{(5)}(x_0)\]</div>
+<p>Again, the next non-zero term <a class="reference internal" href="#equation-11">()</a> in that expansion has a higher power of <span class="math notranslate nohighlight">\(\delta\)</span> on it, so we would normally ignore it since the lowest order neglected term should dominate the behavior for small <span class="math notranslate nohighlight">\(\delta\)</span>.</p>
+<div class="math notranslate nohighlight" id="equation-11">
+<span class="eqno">()<a class="headerlink" href="#equation-11" title="Permalink to this equation">¶</a></span>\[\frac{\delta^6}{252} f^{(7)}(x_0)\]</div>
+<p>Derivative uses similar approximations for all derivatives of <span class="math notranslate nohighlight">\(f\)</span> up to any order. Of course, it is not always possible for evaluation of a function on both sides of a point, as central difference rules will require. In these cases, you can specify forward or backward difference rules as appropriate. You can also specify to use the complex step derivative, which we will outline in the next section.</p>
+</div>
+<div class="section" id="complex-step-derivative">
+<h1>Complex step derivative<a class="headerlink" href="#complex-step-derivative" title="Permalink to this headline">¶</a></h1>
+<p>The derivation of the complex-step derivative approximation is accomplished by replacing <span class="math notranslate nohighlight">\(\delta\)</span> in <a class="reference internal" href="#equation-2">()</a>
+with a complex step <span class="math notranslate nohighlight">\(i h\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-12a">
+<span class="eqno">()<a class="headerlink" href="#equation-12a" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}f(x_0+ i h) &amp;= f(x_0) + i h f'(x_0) - \frac{h^2}{2} f''(x_0) - \frac{i h^3}{6} f^{(3)}(x_0) + \frac{h^4}{24} f^{(4)}(x_0) + \\\end{split}\\\begin{split}&amp; \frac{i h^5}{120} f^{(5)}(x_0) - \frac{h^6}{720} f^{(6)}(x_0) -...\\\end{split}\end{aligned}\end{align} \]</div>
+<p>Taking only the imaginary parts of both sides gives</p>
+<div class="math notranslate nohighlight" id="equation-12b">
+<span class="eqno">()<a class="headerlink" href="#equation-12b" title="Permalink to this equation">¶</a></span>\[\Im (f(x_0 + i h)) = h f'(x_0)  - \frac{h^3}{6} f^{(3)}(x_0) + \frac{h^5}{120} f^{(5)}(x_0) - ...\]</div>
+<p>Dividing with <span class="math notranslate nohighlight">\(h\)</span> and rearranging yields:</p>
+<div class="math notranslate nohighlight" id="equation-12c">
+<span class="eqno">()<a class="headerlink" href="#equation-12c" title="Permalink to this equation">¶</a></span>\[f'(x_0) = \Im(f(x_0+ i h))/ h   + \frac{h^2}{6} f^{(3)}(x_0) - \frac{h^4}{120} f^{(5)}(x_0) + ...\]</div>
+<p>Terms with order <span class="math notranslate nohighlight">\(h^2\)</span> or higher can safely be ignored since the interval <span class="math notranslate nohighlight">\(h\)</span> can be chosen up to machine precision
+without fear of rounding errors stemming from subtraction (since there are not any). Thus to within second-order the complex-step derivative approximation is given by:</p>
+<div class="math notranslate nohighlight" id="equation-12d">
+<span class="eqno">()<a class="headerlink" href="#equation-12d" title="Permalink to this equation">¶</a></span>\[f'(x_0) = \Im(f(x_0 + i h))/ h\]</div>
+<p>Next, consider replacing the step <span class="math notranslate nohighlight">\(\delta\)</span> in <a class="reference internal" href="#equation-8">()</a> with the complex step <span class="math notranslate nohighlight">\(i^\frac{1}{2}  h\)</span>:</p>
+<div class="math notranslate nohighlight" id="equation-12e">
+<span class="eqno">()<a class="headerlink" href="#equation-12e" title="Permalink to this equation">¶</a></span>\[ \begin{align}\begin{aligned}\begin{split}\quad f_{even}(i^\frac{1}{2} h) &amp;= \frac{i h^2}{2} f^{(2)}(x_0) - \frac{h^4}{24} f^{(4)}(x_0) - \frac{i h^6}{720} f^{(6)}(x_0) + \\\end{split}\\\begin{split}    &amp; \frac{h^8}{40320} f^{(8)}(x_0) + \frac{i h^{10}}{3628800} f^{(10)}(x_0) -...\\\end{split}\end{aligned}\end{align} \]</div>
+<p>Similarly dividing with <span class="math notranslate nohighlight">\(h^2/2\)</span> and taking only the imaginary components yields:</p>
+<div class="math notranslate nohighlight" id="equation-12f">
+<span class="eqno">()<a class="headerlink" href="#equation-12f" title="Permalink to this equation">¶</a></span>\[\quad f^{(2)}(x_0) = \Im\,(2\,f_{even}(i^\frac{1}{2} h)) / h^2 + \frac{h^4}{360} f^{(6)}(x_0) - \frac{h^8}{1814400} f^{(10)}(x_0)...\]</div>
+<p>This approximation is still subject to difference errors, but the error associated with this approximation is proportional to
+<span class="math notranslate nohighlight">\(h^4\)</span>. Neglecting these higher order terms yields:</p>
+<div class="math notranslate nohighlight" id="equation-12g">
+<span class="eqno">()<a class="headerlink" href="#equation-12g" title="Permalink to this equation">¶</a></span>\[\quad f^{(2)}(x_0) = 2 \Im\,(f_{even}(i^\frac{1}{2} h)) / h^2 = \Im(f(x_0 + i^\frac{1}{2} h) + f(x_0-i^\frac{1}{2} h)) / h^2\]</div>
+<p>See <a class="reference internal" href="#laicrassidischeng2005" id="id3">[LaiCrassidisCheng2005]</a> and <a class="reference internal" href="#ridout2009" id="id4">[Ridout2009]</a> for more details.
+The complex-step derivative in numdifftools.Derivative has truncation error
+<span class="math notranslate nohighlight">\(O(\delta^4)\)</span> for both odd and even order derivatives for <span class="math notranslate nohighlight">\(n&gt;1\)</span>. For <span class="math notranslate nohighlight">\(n=1\)</span>
+the truncation error is on the order of <span class="math notranslate nohighlight">\(O(\delta^2)\)</span>, so
+truncation error can be eliminated by choosing steps to be very small.  The first order complex-step derivative avoids the problem of
+round-off error with small steps because there is no subtraction. However,
+the function to differentiate needs to be analytic. This method does not work if it does
+not support complex numbers or involves non-analytic functions such as
+e.g.: abs, max, min. For this reason the <cite>central</cite> method is the default method.</p>
+</div>
+<div class="section" id="high-order-derivative">
+<h1>High order derivative<a class="headerlink" href="#high-order-derivative" title="Permalink to this headline">¶</a></h1>
+<p>So how do we construct these higher order approximation formulas? Here we will deomonstrate the principle by computing the 6’th order central approximation for the first-order derivative. In order to do so we simply set <span class="math notranslate nohighlight">\(f_{odd}(\delta)\)</span> equal to its 3-term Taylor expansion:</p>
+<div class="math notranslate nohighlight" id="equation-12">
+<span class="eqno">()<a class="headerlink" href="#equation-12" title="Permalink to this equation">¶</a></span>\[f_{odd}(\delta) = \sum_{i=0}^{2} \frac{\delta^{2i+1}}{(2i+1)!} f^{(2i+1)}(x_0)\]</div>
+<p>By inserting three different stepsizes into <a class="reference internal" href="#equation-12">()</a>, eg <span class="math notranslate nohighlight">\(\delta, \delta/2, \delta/4\)</span>, we get a set of linear equations:</p>
+<div class="math notranslate nohighlight" id="equation-13">
+<span class="eqno">()<a class="headerlink" href="#equation-13" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{bmatrix}
+    1 &amp; \frac{1}{3!} &amp; \frac{1}{5!} \\
+    \frac{1}{2} &amp; \frac{1}{3! \, 2^3} &amp; \frac{1}{5! \, 2^5} \\
+    \frac{1}{4} &amp; \frac{1}{3! \, 4^3} &amp; \frac{1}{5! \, 4^5}
+\end{bmatrix}
+\begin{bmatrix}
+    \delta f'(x_0) \\
+    \delta^3 f^{(3)}(x_0) \\
+    \delta^5 f^{(5)}(x_0)
+\end{bmatrix} =
+\begin{bmatrix}
+    f_{odd}(\delta) \\
+    f_{odd}(\delta/2) \\
+    f_{odd}(\delta/4)
+\end{bmatrix}\end{split}\]</div>
+<p>The solution of these equations are simply:</p>
+<div class="math notranslate nohighlight" id="equation-14a">
+<span class="eqno">()<a class="headerlink" href="#equation-14a" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{bmatrix}
+    \delta f'(x_0) \\
+    \delta^3 f^{(3)}(x_0) \\
+    \delta^5 f^{(5)}(x_0)
+\end{bmatrix} = \frac{1}{3}
+\begin{bmatrix}
+    \frac{1}{15} &amp; \frac{-8}{3} &amp; \frac{256}{15} \\
+    -8 &amp; 272 &amp; -512 \\
+    512 &amp; -5120 &amp; 8192
+\end{bmatrix}
+\begin{bmatrix}
+    f_{odd}(\delta) \\
+    f_{odd}(\delta/2) \\
+    f_{odd}(\delta/4)
+\end{bmatrix}\end{split}\]</div>
+<p>The first row of <a class="reference internal" href="#equation-14a">()</a> gives the coefficients for 6’th order approximation. Looking at at row two and three, we see also that
+this gives the 6’th order approximation for the 3’rd and 5’th order derivatives as bonus. Thus this is also a general method for obtaining high order differentiation rules. As previously noted these formulas have the additional benefit of beeing applicable to any scale, with only a scale factor applied.</p>
+</div>
+<div class="section" id="richardson-extrapolation-methodology-applied-to-derivative-estimation">
+<h1>Richardson extrapolation methodology applied to derivative estimation<a class="headerlink" href="#richardson-extrapolation-methodology-applied-to-derivative-estimation" title="Permalink to this headline">¶</a></h1>
+<p id="index-2">Some individuals might suggest that the above set of approximations are entirely adequate for any sane person. Can we do better?</p>
+<p>Suppose we were to generate several different estimates of the approximation in <a class="reference internal" href="#equation-3">()</a> for different values of <span class="math notranslate nohighlight">\(\delta\)</span> at a fixed <span class="math notranslate nohighlight">\(x_0\)</span>. Thus, choose a single <span class="math notranslate nohighlight">\(\delta\)</span>, estimate a corresponding resulting approximation to <span class="math notranslate nohighlight">\(f'(x_0)\)</span>, then do the same for <span class="math notranslate nohighlight">\(\delta/2\)</span>. If we assume that the error drops off linearly as <span class="math notranslate nohighlight">\(\delta \to 0\)</span>, then it is a simple matter to extrapolate this process to a zero step size. Our lack of knowledge of <span class="math notranslate nohighlight">\(f''(x_0)\)</span> is irrelevant. All that matters is <span class="math notranslate nohighlight">\(\delta\)</span> is small enough that the linear term dominates so we can ignore the quadratic term, therefore the error is purely linear.</p>
+<div class="math notranslate nohighlight" id="equation-15">
+<span class="eqno">()<a class="headerlink" href="#equation-15" title="Permalink to this equation">¶</a></span>\[f'(x_0) = \frac{f(x_0+\delta) - f(x_0)}{\delta} - \frac{\delta}{2} f''(x_0)\]</div>
+<p>The linear extrapolant for this interval halving scheme as <span class="math notranslate nohighlight">\(\delta \to 0\)</span> is given by:</p>
+<div class="math notranslate nohighlight" id="equation-16">
+<span class="eqno">()<a class="headerlink" href="#equation-16" title="Permalink to this equation">¶</a></span>\[f^{'}_{0} = 2 f^{'}_{\delta/2} - f^{'}_{\delta}\]</div>
+<p>Since I’ve always been a big fan of convincing myself that something will work before I proceed too far, lets try this out in Python. Consider the function <span class="math notranslate nohighlight">\(e^x\)</span>. Generate a pair of approximations to <span class="math notranslate nohighlight">\(f'(0)\)</span>, once at <span class="math notranslate nohighlight">\(\delta\)</span> of 0.1, and the second approximation at <span class="math notranslate nohighlight">\(1/2\)</span> that value. Recall that <span class="math notranslate nohighlight">\(\frac{d(e^x)}{dx} = e^x\)</span>, so at x = 0, the derivative should be exactly 1. How well will we do?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">allclose</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">exp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dx</span> <span class="o">=</span> <span class="mf">0.1</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df1</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">dx</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="n">dx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span> <span class="mf">1.05170918075648</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="mf">1.02542192752048</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">df2</span> <span class="o">-</span> <span class="n">df1</span><span class="p">,</span> <span class="mf">0.999134674284488</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>In fact, this worked very nicely, reducing the error to roughly 1 percent of our initial estimates. Should we be surprised at this reduction? Not if we recall that last term in <a class="reference internal" href="#equation-3">()</a>. We saw there that the next term in the expansion was <span class="math notranslate nohighlight">\(O(\delta^2)\)</span>. Since <span class="math notranslate nohighlight">\(\delta\)</span> was 0.1 in our experiment, that 1 percent number makes perfect sense.</p>
+<p>The Richardson extrapolant in <a class="reference internal" href="#equation-16">()</a> assumed a linear process, with a specific reduction in <span class="math notranslate nohighlight">\(\delta\)</span> by a factor of 2. Assume the two term (linear + quadratic) residual term in <a class="reference internal" href="#equation-3">()</a>, evaluating our approximation there with a third value of <span class="math notranslate nohighlight">\(\delta\)</span>. Again, assume the step size is cut in half again. The three term Richardson extrapolant is given by:</p>
+<div class="math notranslate nohighlight" id="equation-14">
+<span class="eqno">()<a class="headerlink" href="#equation-14" title="Permalink to this equation">¶</a></span>\[f'_0 = \frac{1}{3}f'_\delta - 2f'_{\delta/2} + \frac{8}{3}f'_{\delta/4}\]</div>
+<p>A quick test in Python yields much better results yet.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">allclose</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">exp</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">dx</span> <span class="o">=</span> <span class="mf">0.1</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df1</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">dx</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="n">dx</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df1</span><span class="p">,</span>  <span class="mf">1.05170918075648</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df2</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df2</span><span class="p">,</span> <span class="mf">1.02542192752048</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df3</span> <span class="o">=</span> <span class="p">(</span><span class="n">f</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">))</span><span class="o">/</span><span class="p">(</span><span class="n">dx</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df3</span><span class="p">,</span> <span class="mf">1.01260482097715</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="mf">1.</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">df1</span> <span class="o">-</span> <span class="mi">2</span><span class="o">*</span><span class="n">df2</span> <span class="o">+</span> <span class="mf">8.</span><span class="o">/</span><span class="mi">3</span><span class="o">*</span><span class="n">df3</span><span class="p">,</span> <span class="mf">1.00000539448361</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Again, Derivative uses the appropriate multiple term Richardson extrapolants for all derivatives of <span class="math notranslate nohighlight">\(f\)</span> up to any order <a class="footnote-reference" href="#id12" id="id5">[3]</a>. This, combined with the use of high order approximations for the derivatives, allows the use of quite large step sizes. See <a class="reference internal" href="#lynessmoler1966" id="id6">[LynessMoler1966]</a> and <a class="reference internal" href="#lynessmoler1969" id="id7">[LynessMoler1969]</a>. How to compute the multiple term Richardson extrapolants will be elaborated further in the next section.</p>
+</div>
+<div class="section" id="multiple-term-richardson-extrapolants">
+<h1>Multiple term Richardson extrapolants<a class="headerlink" href="#multiple-term-richardson-extrapolants" title="Permalink to this headline">¶</a></h1>
+<p id="index-3">We shall now indicate how we can calculate the multiple term Richardson extrapolant for <span class="math notranslate nohighlight">\(f_{odd}(\delta)/\delta\)</span> by rearranging <a class="reference internal" href="#equation-12">()</a>:</p>
+<div class="math notranslate nohighlight" id="equation-17">
+<span class="eqno">()<a class="headerlink" href="#equation-17" title="Permalink to this equation">¶</a></span>\[\frac{f_{odd}(\delta)}{\delta} = f'(x_0) + \sum_{i=1}^{\infty} \frac{\delta^{2i}}{(2i+1)!} f^{(2i+1)}(x_0)\]</div>
+<p>This equation has the form</p>
+<div class="math notranslate nohighlight" id="equation-18">
+<span class="eqno">()<a class="headerlink" href="#equation-18" title="Permalink to this equation">¶</a></span>\[\phi(\delta) = L + a_0 \delta^2 + a_1 \delta^4 + a_2 \delta^6 + ...\]</div>
+<p>where L stands for <span class="math notranslate nohighlight">\(f'(x_0)\)</span> and <span class="math notranslate nohighlight">\(\phi(\delta)\)</span> for the numerical differentiation formula <span class="math notranslate nohighlight">\(f_{odd}(\delta)/\delta\)</span>.</p>
+<p>By neglecting higher order terms (<span class="math notranslate nohighlight">\(a_3 \delta^8\)</span>) and inserting three different stepsizes into <a class="reference internal" href="#equation-18">()</a>, eg <span class="math notranslate nohighlight">\(\delta, \delta/2, \delta/4\)</span>, we get a set of linear equations:</p>
+<div class="math notranslate nohighlight" id="equation-19">
+<span class="eqno">()<a class="headerlink" href="#equation-19" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{bmatrix}
+    1 &amp; 1 &amp; 1 \\
+    1 &amp; \frac{1}{2^2} &amp; \frac{1}{2^4} \\
+    1 &amp; \frac{1}{4^2} &amp; \frac{1}{4^4}
+\end{bmatrix}
+\begin{bmatrix}
+    L \\
+    \delta^2 a_0 \\
+    \delta^4 a_1
+\end{bmatrix} =
+\begin{bmatrix}
+    \phi(\delta) \\
+    \phi(\delta/2) \\
+    \phi(\delta/4)
+\end{bmatrix}\end{split}\]</div>
+<p>The solution of these equations are simply:</p>
+<div class="math notranslate nohighlight" id="equation-20">
+<span class="eqno">()<a class="headerlink" href="#equation-20" title="Permalink to this equation">¶</a></span>\[\begin{split}\begin{bmatrix}
+    L \\
+    \delta^2 a_0 \\
+    \delta^4 a_1
+\end{bmatrix} =  \frac{1}{45}
+\begin{bmatrix}
+    1 &amp; -20 &amp; 64 \\
+    -20 &amp; 340 &amp; -320 \\
+    64 &amp; -320 &amp; 256
+\end{bmatrix}
+\begin{bmatrix}
+    \phi(\delta) \\
+    \phi(\delta/2) \\
+    \phi(\delta/4)
+\end{bmatrix}\end{split}\]</div>
+<p>The first row of <a class="reference internal" href="#equation-20">()</a> gives the coefficients for Richardson extrapolation scheme.</p>
+</div>
+<div class="section" id="uncertainty-estimates-for-derivative">
+<h1>Uncertainty estimates for Derivative<a class="headerlink" href="#uncertainty-estimates-for-derivative" title="Permalink to this headline">¶</a></h1>
+<p>We can view the Richardson extrapolation step as a polynomial curve fit in the step size parameter <span class="math notranslate nohighlight">\(\delta\)</span>. Our desired extrapolated value is seen as simply the constant term coefficient in that polynomial model. Remember though, this polynomial model (see <a class="reference internal" href="../../reference/generated/numdifftools.core.Hessian.html#equation-10">(5.3)</a> and <a class="reference internal" href="#equation-11">()</a>) has only a few terms in it with known non-zero coefficients. That is, we will expect a constant term <span class="math notranslate nohighlight">\(a_0\)</span>, a term of the form <span class="math notranslate nohighlight">\(a_1 \delta^4\)</span>, and a third term <span class="math notranslate nohighlight">\(a_2 \delta^6\)</span>.</p>
+<p>A neat trick to compute the statistical uncertainty in the estimate of our desired derivative is to use statistical methodology for that error estimate. While I do appreciate that there is nothing truly statistical or stochastic in this estimate, the approach still works nicely, providing a very reasonable estimate in practice. A three term Richardson-like extrapolant, then evaluated at four distinct values for <span class="math notranslate nohighlight">\(\delta\)</span>, will yield an estimate of the standard error of the constant term, with one spare degree of freedom. The uncertainty is then derived by multiplying that standard error by the appropriate percentile from the Students-t distribution.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">scipy.stats</span> <span class="k">as</span> <span class="nn">ss</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">ss</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">cdf</span><span class="p">(</span><span class="mf">12.7062047361747</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="mf">0.975</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>This critical level will yield a two-sided confidence interval of 95 percent.</p>
+<p>These error estimates are also of value in a different sense. Since they are efficiently generated at all the different scales, the particular spacing which yields the minimum predicted error is chosen as the best derivative estimate. This has been shown to work consistently well. A spacing too large tends to have large errors of approximation due to the finite difference schemes used. But a too small spacing is bad also, in that we see a significant amplification of least significant fit errors in the approximation. A middle value generally seems to yield quite good results. For example, Derivative will estimate the derivative of <span class="math notranslate nohighlight">\(e^x\)</span> automatically. As we see, the final overall spacing used was 0.0078125.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numdifftools</span> <span class="k">as</span> <span class="nn">nd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">exp</span><span class="p">,</span> <span class="n">allclose</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span> <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">val</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="mf">2.71828183</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">error_estimate</span><span class="p">,</span> <span class="mf">6.927791673660977e-14</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">final_step</span><span class="p">,</span> <span class="mf">0.0078125</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>However, if we force the step size to be artificially large, then approximation error takes over.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">val</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="mf">3.19452805</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="o">-</span><span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="mf">0.47624622</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">final_step</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>And if the step size is forced to be too small, then we see noise dominate the problem.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span> <span class="n">step</span><span class="o">=</span><span class="mf">1e-10</span><span class="p">,</span> <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">val</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="mf">2.71828093</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span> <span class="o">-</span> <span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="o">-</span><span class="mf">8.97648138e-07</span><span class="p">)</span>
+<span class="go">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">final_step</span><span class="p">,</span> <span class="mf">1.0000000e-10</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Numdifftools, like Goldilocks in the fairy tale bearing her name, stays comfortably in the middle ground.</p>
+</div>
+<div class="section" id="derivative-in-action">
+<h1>Derivative in action<a class="headerlink" href="#derivative-in-action" title="Permalink to this headline">¶</a></h1>
+<p>How does numdifftools.Derivative work in action? A simple nonlinear function with a well known derivative is <span class="math notranslate nohighlight">\(e^x\)</span>. At <span class="math notranslate nohighlight">\(x = 0\)</span>, the derivative should be 1.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span> <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">val</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">error_estimate</span><span class="p">,</span> <span class="mf">5.28466160e-14</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>A second simple example comes from trig functions. The first four derivatives of the sine function, evaluated at <span class="math notranslate nohighlight">\(x = 0\)</span>, should be respectively <span class="math notranslate nohighlight">\([cos(0), -sin(0), -cos(0), sin(0)]\)</span>, or <span class="math notranslate nohighlight">\([1,0,-1,0]\)</span>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">allclose</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numdifftools</span> <span class="k">as</span> <span class="nn">nd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">1.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">ddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">dddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mf">1.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ddddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">ddddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="gradient-and-hessian-estimation">
+<h1>Gradient and Hessian  estimation<a class="headerlink" href="#gradient-and-hessian-estimation" title="Permalink to this headline">¶</a></h1>
+<p>Estimation of the gradient vector (numdifftools.Gradient) of a function of multiple variables is a simple task, requiring merely repeated calls to numdifftools.Derivative. Likewise, the diagonal elements of the hessian matrix are merely pure second partial derivatives of a function. numdifftools.Hessdiag accomplishes this task, again calling numdifftools.Derivative multiple times. Efficient computation of the off-diagonal (mixed partial derivative) elements of the Hessian matrix uses a scheme much like that of numdifftools.Derivative, then Richardson extrapolation is used to improve a set of second order finite difference estimates of those mixed partials.</p>
+<div class="section" id="multivariate-calculus-examples">
+<h2>Multivariate calculus examples<a class="headerlink" href="#multivariate-calculus-examples" title="Permalink to this headline">¶</a></h2>
+<p>Typical usage of the gradient and Hessian might be in optimization problems, where one might compare
+an analytically derived gradient for correctness, or use the Hessian matrix to compute confidence interval estimates on parameters in a maximum likelihood estimation.</p>
+</div>
+<div class="section" id="gradients-and-hessians">
+<h2>Gradients and Hessians<a class="headerlink" href="#gradients-and-hessians" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">rosen</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">105.</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Gradient of the Rosenbrock function at [1,1], the global minimizer</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The gradient should be zero (within floating point noise)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">grad</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>The Hessian matrix at the minimizer should be positive definite</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The eigenvalues of H should be positive</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">li</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">li</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="go">array([ True,  True], dtype=bool)</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Gradient estimation of a function of 5 variables</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">f</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">grad</span><span class="p">,</span> <span class="p">[</span>  <span class="mf">2.</span><span class="p">,</span>   <span class="mf">4.</span><span class="p">,</span>   <span class="mf">6.</span><span class="p">,</span>   <span class="mf">8.</span><span class="p">,</span>  <span class="mf">10.</span><span class="p">])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd>
+<dt>Simple Hessian matrix of a problem with 3 independent variables</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="n">f</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">18</span><span class="p">]))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd>
+<dt>A semi-definite Hessian matrix</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="k">lambda</span> <span class="n">xy</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">xy</span><span class="p">[</span><span class="mi">1</span><span class="p">]))([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>one of these eigenvalues will be zero (approximately)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">H</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mf">1e-12</span>
+<span class="go">array([ True, False], dtype=bool)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="directional-derivatives">
+<h2>Directional derivatives<a class="headerlink" href="#directional-derivatives" title="Permalink to this headline">¶</a></h2>
+<p>The directional derivative will be the dot product of the gradient with the (unit normalized) vector. This is of course possible to do with numdifftools and you could do it like this for the Rosenbrock function at the solution, x0 = [1,1]:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directional_diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)(</span><span class="n">x0</span><span class="p">),</span> <span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This should be zero.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">directional_diff</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Ok, its a trivial test case, but it easy to compute the directional derivative at other locations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directionaldiff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)(</span><span class="n">x2</span><span class="p">),</span> <span class="n">v2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">directionaldiff</span><span class="p">,</span> <span class="mf">743.87633380824832</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>There is a convenience function <span class="math notranslate nohighlight">\(nd.directionaldiff\)</span> that also takes care of the direction normalization:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directional_diff</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">directionaldiff</span><span class="p">(</span><span class="n">rosen</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">directional_diff</span><span class="p">,</span> <span class="mf">743.87633380824832</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="jacobian-matrix">
+<h2>Jacobian matrix<a class="headerlink" href="#jacobian-matrix" title="Permalink to this headline">¶</a></h2>
+<p>Jacobian matrix of a scalar function is just the gradient</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span><span class="p">,</span> <span class="n">grad</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Jacobian matrix of a linear system will reduce to the design matrix</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fun</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">fun</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This should be essentially zero at any location x</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span> <span class="o">-</span> <span class="n">A</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The jacobian matrix of a nonlinear transformation of variables evaluated at some
+arbitrary location [-2, -3]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fun</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">xy</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">xy</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">fun</span><span class="p">)([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span><span class="p">,</span> <span class="p">[[</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+<span class="gp">... </span>                  <span class="p">[</span><span class="o">-</span><span class="mf">0.84147098</span><span class="p">,</span>  <span class="mf">0.84147098</span><span class="p">]])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h1>Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<p>numdifftools.Derivative is an a adaptive scheme that can compute the derivative of arbitrary (well behaved) functions. It is reasonably fast as an adaptive method. Many options have been provided for the user who wishes the ultimate amount of control over the estimation.</p>
+</div>
+<div class="section" id="acknowledgments">
+<h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h1>
+<p>The numdifftools package was originally a translation of an adaptive numerical differentiation toolbox written in Matlab by John D’Errico <a class="reference internal" href="#derrico2006" id="id8">[DErrico2006]</a>.</p>
+<p>Numdifftools has as of version 0.9 been extended with some of the functionality
+found in the statsmodels.tools.numdiff module written by Josef Perktold <a class="reference internal" href="#perktold2014" id="id9">[Perktold2014]</a>.</p>
+</div>
+<div class="section" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h1>
+<table class="docutils citation" frame="void" id="lynessmoler1966" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id6">[LynessMoler1966]</a></td><td>Lyness, J. M., Moler, C. B. (1966). Vandermonde Systems and Numerical
+Differentiation. <em>Numerische Mathematik</em>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="lynessmoler1969" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id7">[LynessMoler1969]</a></td><td>Lyness, J. M., Moler, C. B. (1969). Generalized Romberg Methods for
+Integrals of Derivatives. <em>Numerische Mathematik</em>.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="derrico2006" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id8">[DErrico2006]</a></td><td>D’Errico, J. R.  (2006), Adaptive Robust Numerical Differentiation
+<a class="reference external" href="http://www.mathworks.com/matlabcentral/fileexchange/13490-adaptive-robust-numerical-differentiation">http://www.mathworks.com/matlabcentral/fileexchange/13490-adaptive-robust-numerical-differentiation</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="perktold2014" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id9">[Perktold2014]</a></td><td>Perktold, J (2014), numdiff package
+<a class="reference external" href="http://statsmodels.sourceforge.net/0.6.0/_modules/statsmodels/tools/numdiff.html">http://statsmodels.sourceforge.net/0.6.0/_modules/statsmodels/tools/numdiff.html</a></td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="laicrassidischeng2005" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[LaiCrassidisCheng2005]</a></td><td>K.-L. Lai, J.L. Crassidis, Y. Cheng, J. Kim (2005), New complex step derivative approximations with                                                                          application to second-order kalman filtering,
+AIAA Guidance, <em>Navigation and Control Conference</em>,
+San Francisco, California, August 2005, AIAA-2005-5944.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="ridout2009" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[Ridout2009]</a></td><td>Ridout, M.S. (2009) Statistical applications of the complex-step method
+of numerical differentiation. <em>The American Statistician</em>, 63, 66-74</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="nag" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[NAG]</td><td><em>NAG Library</em>. NAG Fortran Library Document: D04AAF</td></tr>
+</tbody>
+</table>
+<p class="rubric">Footnotes</p>
+<table class="docutils footnote" frame="void" id="id10" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>We would normally write these additional terms using O() notation,
+where all that matters is that the error term is <span class="math notranslate nohighlight">\(O(\delta)\)</span> or
+perhaps <span class="math notranslate nohighlight">\(O(\delta^2)\)</span>, but explicit understanding of these
+error terms will be useful in the Richardson extrapolation step later
+on.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id11" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[2]</a></td><td>An even function is one which expresses an even symmetry around a
+given point. An even symmetry has the property that
+<span class="math notranslate nohighlight">\(f(x) = f(-x)\)</span>. Likewise, an odd function expresses an odd
+symmetry, wherein <span class="math notranslate nohighlight">\(f(x) = -f(-x)\)</span>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id12" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id5">[3]</a></td><td>For practical purposes the maximum order of the derivative is between 4 and 10
+depending on the function to differentiate and also the method used
+in the approximation.</td></tr>
+</tbody>
+</table>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.9.39',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

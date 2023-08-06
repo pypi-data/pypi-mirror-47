@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>1. Introduction &mdash; Numdifftools 0.9.39 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.39 documentation" href="../index.html"/>
+        <link rel="next" title="2. Tutorials" href="../tutorials/index.html"/>
+        <link rel="prev" title="Welcome to the numdifftools’ documentation!" href="../index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.39
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">1. Introduction</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-numdifftools">1.1. What is numdifftools?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-the-documentation-is-organized">1.2. How the documentation is organized</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">2. Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">5. Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>1. Introduction</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/intro/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-numdifftools">
+<h2>1.1. What is numdifftools?<a class="headerlink" href="#what-is-numdifftools" title="Permalink to this headline">¶</a></h2>
+<p>Numdifftools is a suite of tools written in <a class="reference external" href="http://www.python.org/">_Python</a>
+to solve automatic numerical differentiation problems in one or more variables.
+Finite differences are used in an adaptive manner, coupled with a Richardson
+extrapolation methodology to provide a maximally accurate result.
+The user can configure many options like; changing the order of the method or
+the extrapolation, even allowing the user to specify whether complex-step,
+central, forward or backward differences are used.</p>
+<p>The methods provided are:</p>
+<ul class="simple">
+<li><strong>Derivative</strong>: Compute the derivatives of order 1 through 10 on any scalar function.</li>
+<li><strong>directionaldiff</strong>: Compute directional derivative of a function of n variables</li>
+<li><strong>Gradient</strong>: Compute the gradient vector of a scalar function of one or more variables.</li>
+<li><strong>Jacobian</strong>: Compute the Jacobian matrix of a vector valued function of one or more variables.</li>
+<li><strong>Hessian</strong>: Compute the Hessian matrix of all 2nd partial derivatives of a scalar function of one or more variables.</li>
+<li><strong>Hessdiag</strong>: Compute only the diagonal elements of the Hessian matrix</li>
+</ul>
+<p>All of these methods also produce error estimates on the result.</p>
+<p>Numdifftools also provide an easy to use interface to derivatives calculated
+with in <a class="reference external" href="https://pythonhosted.org/algopy/">_AlgoPy</a>. Algopy stands for Algorithmic
+Differentiation in Python.
+The purpose of AlgoPy is the evaluation of higher-order derivatives in the
+<cite>forward</cite> and <cite>reverse</cite> mode of Algorithmic Differentiation (AD) of functions
+that are implemented as Python programs.</p>
+</div>
+<div class="section" id="how-the-documentation-is-organized">
+<h2>1.2. How the documentation is organized<a class="headerlink" href="#how-the-documentation-is-organized" title="Permalink to this headline">¶</a></h2>
+<p>Numdifftools has a lot of documentation. A high-level overview of how it’s organized
+will help you know where to look for certain things:</p>
+<ul class="simple">
+<li><a class="reference internal" href="../tutorials/index.html"><span class="doc">Tutorials</span></a> take you by the hand through a series of
+steps to load a CDF container and explore its contents or to
+construct a new dataset and validate it. Start here if you’re new to numdifftools.</li>
+<li><a class="reference internal" href="../topics/index.html"><span class="doc">Topic guides</span></a> discuss key topics and concepts at a
+fairly high level and provide useful background information and explanation.</li>
+<li><a class="reference internal" href="../reference/index.html"><span class="doc">Reference guides</span></a> contain technical reference for APIs and
+other aspects of numdifftools’ machinery. They describe how it works and how to
+use it but assume that you have a basic understanding of key concepts.</li>
+<li><a class="reference internal" href="../how-to/index.html"><span class="doc">How-to guides</span></a> are recipes. They guide you through the
+steps involved in addressing key problems and use-cases. They are more
+advanced than tutorials and assume some knowledge of how numdifftools works.</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tutorials/index.html" class="btn btn-neutral float-right" title="2. Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral" title="Welcome to the numdifftools’ documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.9.39',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

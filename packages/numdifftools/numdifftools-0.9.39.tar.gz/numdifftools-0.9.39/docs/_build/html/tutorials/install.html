@@ -1,0 +1,323 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.1. Install guide &mdash; Numdifftools 0.9.39 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.39 documentation" href="../index.html"/>
+        <link rel="up" title="2. Tutorials" href="index.html"/>
+        <link rel="next" title="2.2. Getting started" href="getting_started.html"/>
+        <link rel="prev" title="2. Tutorials" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.39
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Tutorials</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. Install guide</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#install-python">2.1.1. Install Python</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dependencies">2.1.2. Dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#install-numdifftools">2.1.3. Install numdifftools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#verifying-installation">2.1.4. Verifying installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#that-s-it">2.1.5. That’s it!</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">2.2. Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html#conclusion">2.3. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whatsnext.html">2.4. What to read next</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">5. Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">2. Tutorials</a> &raquo;</li>
+        
+      <li>2.1. Install guide</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/install.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="install-guide">
+<span id="install"></span><h1>2.1. Install guide<a class="headerlink" href="#install-guide" title="Permalink to this headline">¶</a></h1>
+<p>Before you can use numdifftools, you’ll need to get it installed. This guide will
+guide you through a simple installation
+that’ll work while you walk through the introduction.</p>
+<div class="section" id="install-python">
+<h2>2.1.1. Install Python<a class="headerlink" href="#install-python" title="Permalink to this headline">¶</a></h2>
+<p>Being a Python library, numdifftools requires Python. Preferably you ned version 3.4 or
+newer, but you get the latest version of Python at
+<a class="reference external" href="https://www.python.org/downloads/">https://www.python.org/downloads/</a>.</p>
+<p>You can verify that Python is installed by typing <code class="docutils literal notranslate"><span class="pre">python</span></code> from the command shell;
+you should see something like:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Python 3.6.3 (64-bit)| (default, Oct 15 2017, 03:27:45)</span>
+<span class="go">[MSC v.1900 64 bit (AMD64)] on win32</span>
+<span class="go">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span>
+<span class="gp">&gt;</span>&gt;&gt;
+</pre></div>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">pip</span></code> is the Python installer. Make sure yours is up-to-date, as earlier versions can be less reliable:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install --upgrade pip
+</pre></div>
+</div>
+</div>
+<div class="section" id="dependencies">
+<h2>2.1.2. Dependencies<a class="headerlink" href="#dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Numdifftools requires numpy 1.9 or newer,
+scipy 0.8 or newer, and Python 2.7 or 3.3 or newer.
+This tutorial assumes you are using Python 3.
+Optionally you may also want to install Algopy 0.4 or newer and statsmodels 0.6 or newer in order
+to be able to use their easy to use interfaces to their derivative functions.</p>
+</div>
+<div class="section" id="install-numdifftools">
+<h2>2.1.3. Install numdifftools<a class="headerlink" href="#install-numdifftools" title="Permalink to this headline">¶</a></h2>
+<p>To install numdifftools simply type in the ‘command’ shell:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$</span> pip install numdifftools
+</pre></div>
+</div>
+<p>to get the lastest stable version. Using pip also has the advantage
+that all requirements are automatically installed.</p>
+</div>
+<div class="section" id="verifying-installation">
+<h2>2.1.4. Verifying installation<a class="headerlink" href="#verifying-installation" title="Permalink to this headline">¶</a></h2>
+<p>To verify that numdifftools can be seen by Python, type <code class="docutils literal notranslate"><span class="pre">python</span></code> from your shell.
+Then at the Python prompt, try to import numdifftools:</p>
+<pre class="literal-block">
+&gt;&gt;&gt; import numdifftools as nd
+&gt;&gt;&gt; print(nd.__version__)
+0.9.39
+</pre>
+<p>To test if the toolbox is working correctly paste the following in an interactive python prompt:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nd</span><span class="o">.</span><span class="n">test</span><span class="p">(</span><span class="s1">&#39;--doctest-module&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the result show no errors, you now have installed a fully functional toolbox.
+Congratulations!</p>
+</div>
+<div class="section" id="that-s-it">
+<h2>2.1.5. That’s it!<a class="headerlink" href="#that-s-it" title="Permalink to this headline">¶</a></h2>
+<p>That’s it – you can now <a class="reference internal" href="getting_started.html"><span class="doc">move onto the getting started tutorial</span></a></p>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="getting_started.html" class="btn btn-neutral float-right" title="2.2. Getting started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="2. Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.9.39',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
