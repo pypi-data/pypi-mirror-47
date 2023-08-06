@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: openml
+Version: 0.9.0
+Summary: Python API for OpenML
+Home-page: http://openml.org/
+Author: Matthias Feurer, Jan van Rijn, Arlind Kadra, Andreas Müller, Pieter Gijsbers and Joaquin Vanschoren
+Author-email: feurerm@informatik.uni-freiburg.de
+Maintainer: Matthias Feurer
+Maintainer-email: feurerm@informatik.uni-freiburg.de
+License: BSD 3-clause
+Project-URL: Documentation, https://openml.github.io/openml-python/
+Project-URL: Source Code, https://github.com/openml/openml-python
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Provides-Extra: examples
