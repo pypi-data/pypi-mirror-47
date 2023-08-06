@@ -1,0 +1,8 @@
+goodtables
+importlib_resources
+requests
+tabulator
+tableschema
+toml
+toolz
+python-stdnum
