@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: giftbit-api
+Version: 0.2
+Summary: A simplistic API client for Giftbit
+Home-page: https://github.com/bequest/giftbit-api
+Author: Bequest Inc.
+Author-email: oss@willing.com
+License: GPLv3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# giftbit-api
+
+## Installation
+
+    pip install giftbit-api
+
+## Usage
+
+    from giftbit import GiftbitClient
+
+    client = GiftbitClient('api_token', testbed=True)
+
+## Documentation
+
+Coming soon!
+
+
