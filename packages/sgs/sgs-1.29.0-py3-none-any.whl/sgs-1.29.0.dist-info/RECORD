@@ -1,0 +1,9 @@
+sgs/__init__.py,sha256=SBtptxw5wPWdu4Jfjordo_X1QwgTv8QCuX4YwnwUeJ0,79
+sgs/__version__.py,sha256=eVlxQqZ7oGpvnt3LTlQf3uAGXW6kYUOGvlYLZn1ordc,23
+sgs/series.py,sha256=8B72DSUYmJcFDtr0yJ5N_Gm73rIUE7zyThwT0ZQcu0E,1318
+sgs/sgs.py,sha256=x27eo_mtL3IIbAURhnsT9WxIkxIyg11_tYyHJTokTZo,4490
+sgs-1.29.0.dist-info/LICENSE,sha256=d8HTg9PDgrkQwJvW-718OXxXB8cpEPkcV3QDICp-Hdk,1071
+sgs-1.29.0.dist-info/METADATA,sha256=okj_PY4e1LGfKVOtm30mt02RgaS0lALzn-NET90XF38,3764
+sgs-1.29.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+sgs-1.29.0.dist-info/top_level.txt,sha256=uQ0Hc6TuCpBaA-yR4RfSlg8Mrx9F7CqVPy-L6X9QdY8,4
+sgs-1.29.0.dist-info/RECORD,,
