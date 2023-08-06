@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyvideostream/__init__.py
+pyvideostream/client.py
+pyvideostream/server.py
+pyvideostream.egg-info/PKG-INFO
+pyvideostream.egg-info/SOURCES.txt
+pyvideostream.egg-info/dependency_links.txt
+pyvideostream.egg-info/not-zip-safe
+pyvideostream.egg-info/requires.txt
+pyvideostream.egg-info/top_level.txt
