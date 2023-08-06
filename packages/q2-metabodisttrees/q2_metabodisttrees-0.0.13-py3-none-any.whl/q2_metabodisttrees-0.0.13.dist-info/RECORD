@@ -1,0 +1,12 @@
+q2_metabodisttrees/__init__.py,sha256=GJXQpyoVRmxX-zZN8vi-vtu7-vDNr_UO-ZM5tdmqtC0,473
+q2_metabodisttrees/_metabodisttrees.py,sha256=bQ4lcFK7Xo8aiObefBFkbQ3dnP_60rrHNGiuC9G7ZQM,7237
+q2_metabodisttrees/citations.bib,sha256=-Iuv4fxpbDkHyKveQKev2PAJ7eUINj6CuFomc-Wl0gk,1870
+q2_metabodisttrees/plugin_setup.py,sha256=aecwDRL3fywkahYmKdWEo9HICPqYnW9nTM3mIbtH0Qk,5003
+q2_metabodisttrees/data/ChemOnt_2_1.obo,sha256=hham7LlsiusgRzmk3gRc0pDquaDhZNDOql2IjQdR_iI,2032131
+q2_metabodisttrees/data/citations.bib,sha256=-Iuv4fxpbDkHyKveQKev2PAJ7eUINj6CuFomc-Wl0gk,1870
+q2_metabodisttrees-0.0.13.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+q2_metabodisttrees-0.0.13.dist-info/METADATA,sha256=P4fHj1VRW3K55m8s1xeSMVwENuTWayg6SP_S6pqv4IU,322
+q2_metabodisttrees-0.0.13.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+q2_metabodisttrees-0.0.13.dist-info/entry_points.txt,sha256=1c_3U4K4XTuWq4fYggVT1I9-VJG2lNa3qqPPFmoVoPg,78
+q2_metabodisttrees-0.0.13.dist-info/top_level.txt,sha256=YWBZKJCFR7MTCLiPr1g03Ho8iy41YnMAk0oEH4KrZSs,19
+q2_metabodisttrees-0.0.13.dist-info/RECORD,,
