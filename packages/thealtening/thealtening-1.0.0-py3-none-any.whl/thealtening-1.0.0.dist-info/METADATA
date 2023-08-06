@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: thealtening
+Version: 1.0.0
+Summary: An unofficial python package for thealtening's API
+Home-page: UNKNOWN
+Author: eZeeWin#7862
+Author-email: kingoftwoaces22@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+An unofficial python package made for https://thealtening.com 
+It supports premium and basic plans
+
+I do not own anything related to the API or their authentication service
+Made by eZeeWin#7862
+
