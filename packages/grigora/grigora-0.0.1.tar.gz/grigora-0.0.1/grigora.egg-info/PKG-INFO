@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: grigora
+Version: 0.0.1
+Summary: Optimised implementation of common deep learning preprocessing utilities.
+Home-page: https://github.com/avsolatorio/grigora
+Author: Aivin V. Solatorio
+Author-email: avsolatorio@gmail.com
+License: MIT
+Description: # Grigora
+        
+        Grigora  is a library containing optimised implementation of common preprocessing utilities from deep learning libraries such as Keras.
+        
+        The goal of this project is to offer ~5-20x speedup over original implementations by porting the original implementations to Cython modules.
+        
+        Grigora is compatible with Python 2.7-3.7.
+Keywords: NLP data mining modelling word2vec preprocessing tokenization skipgrams
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
