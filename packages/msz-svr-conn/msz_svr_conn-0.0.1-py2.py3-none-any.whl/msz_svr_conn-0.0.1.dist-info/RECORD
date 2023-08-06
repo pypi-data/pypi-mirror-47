@@ -1,0 +1,12 @@
+msz_svr_conn/__init__.py,sha256=cvcQQkPIuonisitGVx3X1iyBeYp4eUvNMXPHVV8W-I8,151
+msz_svr_conn/connection.py,sha256=60m15d5hXA4EzG2qVbHl5dJmXhjN99GOhWmrbM1MZl0,17102
+msz_svr_conn/exceptions.py,sha256=WINEMxD2Sgjk_J3Aw5m6oQKsUkKe805LAHDs6svv2w0,2687
+msz_svr_conn/version.py,sha256=iFfLWUaN0pzVVokjzmPDX2DyVbhS3ZnLO5I-pnfrQMM,54
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_api_connection.py,sha256=xJaJABegcReaIHEuABwaQA8wv6QvLUPJSINhWIX6WB0,26557
+tests/test_connection_exceptions.py,sha256=GUgGfANyGzUSP4J6J9fz78GfJv5yPHF7UGXlUXHovZM,594
+msz_svr_conn-0.0.1.dist-info/LICENSE,sha256=Qfb0tiEVdZ7gW8muarnj8xPB99pgjHeAhwm6pB-2vT8,83
+msz_svr_conn-0.0.1.dist-info/METADATA,sha256=H17y0yqCXG12EDBdw-CgkPmJGgXdVHk02lnhGUSTG_A,1372
+msz_svr_conn-0.0.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+msz_svr_conn-0.0.1.dist-info/top_level.txt,sha256=kLHhKCmgPniC0L4UThGC9TShRg8erWozPSX1uTQgIhM,19
+msz_svr_conn-0.0.1.dist-info/RECORD,,
