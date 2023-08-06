@@ -1,0 +1,7 @@
+{
+  "name"  : "name",
+  "title" : "Project Title",
+  "teaser"    : "A short teaser sentence.",
+  "theme"     : ["beige","black","blood","league","moon",
+  				 "night", "serif","simple","sky","solarized","white"]
+}
