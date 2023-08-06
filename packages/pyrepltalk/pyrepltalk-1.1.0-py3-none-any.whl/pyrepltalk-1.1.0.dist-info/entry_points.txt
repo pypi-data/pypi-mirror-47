@@ -1,0 +1,6 @@
+[console_scripts]
+elm_server = repltalk.servers.elm:main
+haskell_server = repltalk.servers.haskell:main
+nvim_adapter = repltalk.adapters.nvim:main
+vim_adapter = repltalk.adapters.vim:main
+
