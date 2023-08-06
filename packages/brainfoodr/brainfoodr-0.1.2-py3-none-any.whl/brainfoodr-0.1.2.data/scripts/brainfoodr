@@ -1,0 +1,323 @@
+#!python
+import click
+import os
+import json
+import subprocess
+import rpy2
+from rpy2.robjects.packages import importr
+
+# R package names
+packnames = ('devtools', 'fs', 'jsonlite')
+
+
+"""
+COMMANDS
+"""
+
+
+@click.command()
+@click.argument('name', required=True)
+def create(name):
+    if name:
+        click.echo("Creating app %s!" % name)
+        _create_directories(name)
+        _json_file(name)
+        _create_package_install_file(name)
+        _import_packages(name)
+        _create_utils_file(name)
+        _create_main_file(name)
+        _create_package_list_file(name)
+        _create_gitignore(name)
+
+        names_to_install = []
+        for x in packnames:
+            if not rpy2.robjects.packages.isinstalled(x):
+                names_to_install.append(x)
+
+        if len(names_to_install) > 0:
+            click.echo("Installing R dependencies!")
+            for dep in names_to_install:
+                click.echo(dep)
+            utils = rpy2.robjects.packages.importr('utils')
+            utils.install_packages(rpy2.robjects.vectors.StrVector(names_to_install))
+            click.echo("R dependencies installed!")
+
+        click.echo("Created %s App!" % name)
+    else:
+        click.echo("option not valid")
+
+
+@click.command()
+def install():
+    click.echo("Installing packages")
+    _install_libraries()
+
+
+"""
+PRIVATE METHODS
+"""
+
+def _json_file(name):
+    filename = "%s/app.json" % name
+    click.echo("creating version file!")
+    if not os.path.isfile(filename):
+        app_data = {
+            "name": name,
+            "BASE_PATH": os.path.dirname(os.path.abspath(filename))
+        }
+        with open(filename, 'w') as json_file:
+            json.dump(app_data, json_file)
+
+
+def _create_directories(name):
+    if not os.path.exists(name):
+        os.makedirs(name)
+        click.echo("Folder '%s' created!" % name)
+
+    libs_path = "%s/Rlibraries" % name
+    if not os.path.exists(libs_path):
+        os.makedirs(libs_path)
+        click.echo("Folder '%s' created!" % libs_path)
+
+    utils_path = "%s/utils" % name
+    if not os.path.exists(utils_path):
+        os.makedirs(utils_path)
+        click.echo("Folder '%s' created!" % utils_path)
+
+    data_path = "%s/data_files" % name
+    if not os.path.exists(data_path):
+        os.makedirs(data_path)
+        click.echo("Folder '%s' created!" % data_path)
+
+
+def _create_utils_file(name):
+    filename = "%s/utils/utils.r" % name
+    click.echo("Creating %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        text = """
+        library('fs')
+        library('jsonlite')
+        
+        GET_BASE_PATH = function(){
+          path_to_file = fs::path_real('app.json')
+          result <- fromJSON(path_to_file)
+          if(!dir.exists(result$BASE_PATH)){
+            app_name = result$name
+            base_path = strsplit(path_to_file, app_name)
+            result$BASE_PATH = paste0(base_path[[1]][1], app_name)
+            write_json(result, path_to_file, auto_unbox = TRUE)
+            path = paste0(path_to_file[[1]][1], app_name)
+            setwd(path)
+            return(path)
+          }
+          setwd(result$BASE_PATH)
+          return(result$BASE_PATH)
+          
+        }
+        
+        BASE_PATH = GET_BASE_PATH()
+        print(paste("Current BASE_PATH", BASE_PATH))
+        """
+        f.write(text)
+        f.close()
+
+
+def _create_package_install_file(name):
+    filename = "%s/install_packages.r" % name
+    click.echo("Creating %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        text = """
+        require(devtools)
+        library('fs')
+        library('jsonlite')
+        
+        print('Installing libraries')
+        
+        path_to_file = fs::path_real('app.json')
+        result <- fromJSON(path_to_file)
+        
+        if(dir.exists(result$BASE_PATH)){
+            BASE_PATH = result$BASE_PATH
+        }else{
+            path_to_file = fs::path_real('app.json')
+            base_path = strsplit(path_to_file, app_name)
+            BASE_PATH = paste0(base_path[[1]][1], app_name)
+        }
+        
+        source(paste0(BASE_PATH,'/utils/utils.r')) 
+        
+        libpath = paste0(BASE_PATH,'/Rlibraries')
+
+        install_packages = function(package, version){
+            install_version(package, version=version, repos="http://cran.us.r-project.org", dependencies=TRUE, lib=libpath)
+        }
+        
+        processFile = function(filepath) {
+          con = file(filepath, "r")
+          while ( TRUE ) {
+            line = readLines(con, n = 1)
+            if ( length(line) == 0 ) {
+              break
+            }
+
+            line = gsub(" ", "", line, fixed = TRUE)
+            pack = strsplit(line, "==")
+            if(length(pack) < 2){
+                stop(paste("debe indicar el nombre y la version del paquete",pack[[1]][1]))
+            }
+            install_packages(pack[[1]][1], pack[[1]][2])
+          }
+        
+          close(con)
+          print('All installed!')
+        }
+        
+        processFile('packages_list.txt')
+        """
+        f.write(text)
+        f.close()
+
+
+def _import_packages(name):
+    filename = "%s/import_packages.r" % name
+    click.echo("Creating %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        f.write("source('utils/utils.r') \n")
+        text = """
+        BASE_PATH = getwd()
+        filepath = paste0(BASE_PATH,'/packages_list.txt')
+        packages_path = paste0(BASE_PATH,'/Rlibraries')
+        get_libraries = function(){
+            list = c()
+            con = file(filepath, "r")
+          while ( TRUE ) {
+            line = readLines(con, n = 1)
+            if ( length(line) == 0 ) {
+              break
+            }
+
+            line = gsub(" ", "", line, fixed = TRUE)
+            pack = strsplit(line, "==")
+            list = c(list, pack[[1]][1])
+          }
+          close(con)
+            return(list)
+        }
+
+        import_installed_packages = function() {
+
+          libraries = get_libraries()
+          for (package in libraries) {
+            print(paste("Importing",package))
+            library(package, character.only = TRUE, lib.loc = packages_path)
+          }
+        }
+
+        import_installed_packages()
+        """
+        f.write(text)
+        f.close()
+
+
+def _create_main_file(name):
+    filename = "%s/main.r" % name
+    click.echo("Creating %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        f.write("############################### \n")
+        f.write("# Base path of project \n")
+        f.write("# Please do not use the absolute path C:/path/to/file.../file")
+        f.write("# For example: please use paste0(BASE_PATH,'/file')")
+        f.write("""
+                library('fs')
+                library('jsonlite')
+                
+                path_to_file = fs::path_real('app.json')
+                result <- fromJSON(path_to_file)
+
+                if (dir.exists(result$BASE_PATH)){
+                    BASE_PATH = result$BASE_PATH
+                } else {
+                    path_to_file = fs::path_real('app.json')
+                    cut_path = strsplit(path_to_file, app_name)
+                    BASE_PATH = paste0(cut_path[[1]][1], app_name)
+                }
+
+                source(paste0(BASE_PATH, '/utils/utils.r'))
+                \n""")
+        f.write("############################### \n")
+        f.write("# IMPORT ALL PACKAGE INSTALLED \n")
+        f.write("source(paste0(BASE_PATH,'/import_packages.r')) \n")
+        f.write("############################### \n\n\n")
+        f.write("############################### \n")
+        f.write("# DELETE THIS COMMENT AND WRITE CODE HERE! \n")
+        f.write("############################### \n")
+        f.close()
+
+
+def _create_package_list_file(name):
+    filename = "%s/packages_list.txt" % name
+    click.echo("creando %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        f.close()
+
+
+def _install_libraries():
+    app_path = os.getcwd()
+    app =_APP()
+    if app["name"] in app_path:
+        app_path = app_path.split(app["name"])[0]
+
+    filename = "%s%s/install_packages.r" % (app_path, str(app["name"]))
+
+    if os.path.isfile(filename):
+        try:
+            subprocess.check_call("Rscript %s" % filename, universal_newlines=True, shell=True)
+        except subprocess.CalledProcessError as e:
+            click.echo("It was not possible to install the packages")
+
+    else:
+        click.echo("To execute this command it must be inside the app directory")
+
+def _create_gitignore(name):
+    filename = "%s/.gitignore" % name
+    click.echo("Creating %s!" % filename)
+    if not os.path.isfile(filename):
+        f = open(filename, "w+")
+        f.write(".idea \n")
+        f.write(".vscode \n")
+        f.write("Rlibraries/ \n")
+        f.write(".idea_modules/ \n")
+        f.write("dist/ \n")
+        f.write(" build/ \n")
+        f.write(".DS_Store \n")
+        f.write("__pycache__ \n")
+        f.write(".Rproj.user \n")
+        f.write("*.Rproj \n")
+        f.close()
+
+def _APP():
+    app_path = "%s/app.json" % os.getcwd()
+    if os.path.isfile(app_path):
+        with open(app_path) as json_file:
+            return json.load(json_file)
+    else:
+        click.echo("To execute this command it must be inside the app directory")
+        return False
+
+
+@click.group()
+@click.version_option(version='0.1', prog_name='brainfoodr')
+def create_commands():
+    pass
+
+
+create_commands.add_command(create)
+create_commands.add_command(install)
+
+if __name__ == '__main__':
+    create_commands()

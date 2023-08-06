@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: brainfoodr
+Version: 0.1.2
+Summary: structure for r projects
+Home-page: UNKNOWN
+Author: bmonsalves
+Author-email: bmonsalves@brainfood.cl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: rpy2
+
+# **brainfoodr**
+
+Permite instalar distintas versiones de packages de R para cada proyecto, creado evitando los conflictos entre los proyectos corriendo en una maquina.
+
+Esta libreria esta optimizada para utilizarla con versiones de python >= 3.
+
+Es posible ver un ejemplo de app [acá](https://bitbucket.org/brain_food/brainfoodr/src/master/example/ "Ejemplo").
+
+
+**Instalacion:**
+
+`pip3 install brainfoodr`
+
+Usuarios de Windows:
+
+Si el comando `brainfoodr` arroja el siguiente error:
+
+`"brainfoodr" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.`
+
+Es por que en windows es un cacho utilizar herramientas de desarrollo, asi que una vez que se instala la librería es necesario ejecutar el siguiente comando (para linux o mac no es necesario)
+
+`where brainfoodr > file && set /p BFR=<file && doskey brainfoodr=python %BFR% $*`
+
+**Uso:**
+
+`brainfoodr <comando>`
+
+**comandos existentes:**
+
+| Comando       | Descripción   | ejemplo    |
+| ------------- | ------------- | ---------- |
+|  create       | Permite crear una nueva aplicación con sus archivos y directorios correspondientes | `brainfoodr create myApp` |
+| install       | Permite instalar los packages definidos en el archivo packages_list.txt. <br><br> Para poder ejecutar el comando es necesario situarse dentro del directorio del proyecto  | `brainfoodr install` |
+
+**Archivos creados:**
+
+Cuando se crea una aplicación con el comando `brainfoodr create myApp` se genera automaticamente el siguiente listado de archivos y directorios:
+
+| Archivo/Directorio       | Descripción   |
+| ------------------------ | ------------- |
+| app.json                 | Guarda información de la aplicación creada, solo se utiliza para la ejecucion de los comandos, por lo que no es necesario hacer modificaciones en este archivo |
+| .gitignore               | Define la lista de archivos que NO se subirán al repositorio de bitbucket  |
+| packages_list.txt        | En este archivo se definen todas las librerias o packages (y su versión) que se utilizarán en el proyecto. <br/><br/> El formato para agregar las librerias con su respectiva versión es el mismo que se utiliza en el archivo requirements.txt de python donde se indica el paquete a instalar seguido de "==" la versión del paquete. <br><br> Ejemplo: dplyr==0.8.1 <br><br> **Siempre debe indicarse el nombre del paquete y la versión**   |
+| Rlibraries               | Directorio donde se guardarán las librerias instaladas para el proyecto  |
+| Install_packages.r       | Este script toma todos los packages definidos en el archivo packages_list.txt y los instala en la carpeta Rlibraries. <br><br> para instalar las librerias existen 2 opciones: <br><br> - Ejecutar el comando `brainfoodr install` dentro del directorio del proyecto. <br><br> - Ejecutar directamente el script con el comando `Rscript install_packages.r` <br><br> En ambos casos instalará las librerias definidas en el packages_list.txt  |
+| main.r                   | En este archivo se debe comenzar a escribir el script, se utiliza como archivo base para la ejecución de todo el proyecto. <br><br> De todos modos cada proyecto puede ser organizado como sea necesario... separando los scripts en varios archivos... en varios directorios... lo importante es que, todos los archivos y directorios generados estén dentro del directorio del app creada y que la ejecucion del codigo parta desde el archivo main. <br><br> Ademas en este archivo se importan automaticamente las librerias definidas en el archivo packages_list.txt <br><br> Se puede ejecutar el proyecto con el comando `Rscript main.r` |
+| import_packages.r        | Lee el archivo packages_list.txt y hace un import automatico de las librerias definidas  |
+
+
+**Notas:**
+- No debería generar problemas al utilizar RStudio o cualquier otro editor de codigo r
+
+
+
