@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: tynt
+Version: 0.0.dev10
+Summary: Color filter approximations in Python
+Home-page: https://github.com/bmorris3/tynt
+Author: Brett M. Morris
+Author-email: morrisbrettm@gmail.com
+License: BSD 3-Clause
+Description-Content-Type: UNKNOWN
+Description: Color filter approximations in Python
+Platform: UNKNOWN
