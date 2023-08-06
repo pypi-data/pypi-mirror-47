@@ -1,0 +1,16 @@
+web/dispatch/resource/__init__.py,sha256=M8Y7ttc48SBzNf-i7ibMAFieorLkF8d4Px9PdHojx-Q,111
+web/dispatch/resource/dispatch.py,sha256=I9ac2ohJzTEBWA1VEKs_x5lIGoaUr6C56wJ7AsOEeDE,2794
+web/dispatch/resource/exc.py,sha256=L1-9kU3vO6REZmx_OHdY5qW-Bi3m9yRf0pV-27GdGVs,177
+web/dispatch/resource/helper.py,sha256=k4ORMPP1XJa7mP3wqglegu_X70GP3KFxQyn9C1Unytw,421
+web/dispatch/resource/release.py,sha256=i4oMCsIL7CJunyNlnPQw8zovITfw4scHYDRRERssX9Y,706
+web/dispatch/resource/__pycache__/__init__.cpython-37.opt-1.pyc,sha256=svAd6Y-nDVSWVKJWE9kkIJemtB5FYtygxuNy3vUxB5s,271
+web/dispatch/resource/__pycache__/dispatch.cpython-37.opt-1.pyc,sha256=OcWwQczyKk3U-K1AouhObCof6u0NmostNgmfKpg8syo,3068
+web/dispatch/resource/__pycache__/exc.cpython-37.opt-1.pyc,sha256=P3qxqJmu8eKBKqEwGq6qy03i0QMfqNPHG96uqqFkOkA,391
+web/dispatch/resource/__pycache__/helper.cpython-37.opt-1.pyc,sha256=QvOFhBoXUojJm0GHCmhclJJuxp5_mJTGN9JMQWMx7CI,953
+web/dispatch/resource/__pycache__/release.cpython-37.opt-1.pyc,sha256=2OcfCC47hqYtCNrcFghNs7I9XI4fCM3LcK2tmhvnKiQ,885
+web.dispatch.resource-3.0.0.dist-info/LICENSE.txt,sha256=lQ0ITV419vjkJMWCFl24U85kvPceTIa1tlKjTVsuu_4,1095
+web.dispatch.resource-3.0.0.dist-info/METADATA,sha256=9njyn6wKJ1u5pcrmGRI5sUshyDa0YzrfpSlyvcqknlc,16440
+web.dispatch.resource-3.0.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+web.dispatch.resource-3.0.0.dist-info/entry_points.txt,sha256=e2qlNngOSQORvElJS2u6_tsQskvuQZPwdvE7JXbcQZk,66
+web.dispatch.resource-3.0.0.dist-info/top_level.txt,sha256=Te2Js_nwNom3AyuSoJHnQuEgXipUJ35SsySY2fzfNkI,4
+web.dispatch.resource-3.0.0.dist-info/RECORD,,
