@@ -1,0 +1,15 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_safety.py,sha256=AK9ruAZdEFnlOMkNzDfYNNvrEcBb7RkyhlmIab5e66Y,2286
+tests/test_tmock.py,sha256=M-pKelU4nvbWVjW7YE6rF8SzqFwQ2M_xdCk5WXGtalI,4937
+tests/test_verify.py,sha256=IbkUoHFI5CILNvRmaAL7ZAsyDlMvgRI8AGx03RehzMM,735
+typemock/__init__.py,sha256=Obxx-mQrvo37iao3AjHxDFmou0pINQE8mZYa85ToqrA,306
+typemock/_mock.py,sha256=eHw3Ga_f4MLVxO1AozG47zfILnNBsQ-CSsWpPTGP9Ys,8907
+typemock/_safety.py,sha256=qqDJ1IKVi1mLD77wjPex-Ecqi8F6gHBmOdUk6Zi1Gjs,1781
+typemock/_utils.py,sha256=NpBXiwAFNtIs5m0nA9a6C_pGEzVYfACVQDmxOenjIxs,553
+typemock/_verify.py,sha256=8_JyEn_mm59QRLrESyrJE9eFSr-F50EnNlPloB1tSHw,874
+typemock/api.py,sha256=4VBuUPV6f8nYYNqIbad2dHhxW8nxj4IBAmBsr60jhkU,1875
+typemock-0.0.1.dist-info/LICENSE,sha256=71QSB7gvKF6tN6Y5Ah8cLFiLV1_f1SpCpQqFj_EWCDw,1074
+typemock-0.0.1.dist-info/METADATA,sha256=FgAetTfWd5UZK4i1ziSa_9JwhsTUtG5uhPEuCSvTg-o,3561
+typemock-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+typemock-0.0.1.dist-info/top_level.txt,sha256=3Q0e2UzCmifiMY_SXPh16ciUEzmnYJRx_LxKJt6b5V4,15
+typemock-0.0.1.dist-info/RECORD,,
