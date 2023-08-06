@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: EvoOpt
+Version: 0.1
+Summary: EvoOpt: Python Implementation of State-of-Art Evolutionary Algorithms
+Home-page: UNKNOWN
+Author: Sin Yong Teng
+Author-email: tsyet12@gmail.com
+License: BSD 2-Clause
+Description: UNKNOWN
+Keywords: Evolutionary,Optimization,Algorithm
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
