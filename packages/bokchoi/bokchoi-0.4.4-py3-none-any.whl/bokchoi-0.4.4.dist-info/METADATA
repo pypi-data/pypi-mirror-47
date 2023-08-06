@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bokchoi
+Version: 0.4.4
+Summary: UNKNOWN
+Home-page: https://github.com/TimNooren/bokchoi
+Author: Tim Nooren
+Author-email: timnooren@gmail.com
+License: MIT
+Requires-Dist: Click
+Requires-Dist: boto3
+Requires-Dist: botocore
+Requires-Dist: paramiko
+Requires-Dist: google-api-python-client
+Requires-Dist: google-auth-httplib2
+Requires-Dist: google-cloud-storage
+
+Bokchoi
+
+
