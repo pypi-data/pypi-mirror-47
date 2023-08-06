@@ -1,0 +1,6 @@
+README.md
+setup.py
+mxmullx_pkg.egg-info/PKG-INFO
+mxmullx_pkg.egg-info/SOURCES.txt
+mxmullx_pkg.egg-info/dependency_links.txt
+mxmullx_pkg.egg-info/top_level.txt
