@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+simple_mock/__init__.py
+simple_mock/simple_mock.py
+simple_mock.egg-info/PKG-INFO
+simple_mock.egg-info/SOURCES.txt
+simple_mock.egg-info/dependency_links.txt
+simple_mock.egg-info/requires.txt
+simple_mock.egg-info/top_level.txt
