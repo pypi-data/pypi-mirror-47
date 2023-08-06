@@ -1,0 +1,48 @@
+
+    [vergeml.cmd]
+    help=vergeml.commands.help:HelpCommand
+    new=vergeml.commands.new:NewCommand
+    list=vergeml.commands.ls:ListCommand
+    download=vergeml.commands.download:DownloadCommand
+    run=vergeml.commands.run:RunCommand
+    plot=vergeml.commands.plot:PlotCommand
+    preprocess=vergeml.commands.preprocess:PreprocessCommand
+
+    [vergeml.download]
+    cats-and-dogs=vergeml.datasets.cats_and_dogs:CatsAndDogsDataset
+    ham10000=vergeml.datasets.ham10000:Ham10KDataset
+    unique-objects=vergeml.datasets.unique_objects:UniqueObjectsDataset
+    dogs=vergeml.datasets.dogs:DogsDataset
+
+    [vergeml.run]
+    tensorboard=vergeml.services.tensorboard:TensorboardService
+    rest=vergeml.services.rest:RestService
+
+    [vergeml.plot]
+    roc=vergeml.plots.roc:ROCPlot
+    confusion-matrix=vergeml.plots.confusion_matrix:ConfusionMatrixPlot
+    pr=vergeml.plots.pr:PRPlot
+
+    [vergeml.operation]
+    augment=vergeml.operations.augment:AugmentOperation
+    resize=vergeml.operations.resize:ResizeOperation[Pillow]
+    grayscale=vergeml.operations.grayscale:GrayscaleOperation[Pillow]
+    rgb=vergeml.operations.rgb:RGBOperation[Pillow]
+    crop=vergeml.operations.crop:CropOperation[Pillow]
+    random-crop=vergeml.operations.random_crop:RandomCropOperation[Pillow]
+    flip-horizontal=vergeml.operations.flip_horizontal:FlipHorizontalOperation[Pillow]
+    flip-vertical=vergeml.operations.flip_vertical:FlipVerticalOperation[Pillow]
+
+    [vergeml.io]
+    image=vergeml.sources.image:ImageSource[Pillow]
+    labeled-image=vergeml.sources.labeled_image:LabeledImageSource[Pillow]
+    labeled-image-features=vergeml.sources.features:LabeledImageFeaturesSource[Pillow]
+    image-features=vergeml.sources.features:ImageFeaturesSource[Pillow]
+    mnist=vergeml.sources.mnist:plugin[Pillow]
+
+    [vergeml.model]
+    imagenet=vergeml.models.imagenet:ImageNetModelPlugin
+
+    [console_scripts]
+    ml = vergeml.__main__:main
+    

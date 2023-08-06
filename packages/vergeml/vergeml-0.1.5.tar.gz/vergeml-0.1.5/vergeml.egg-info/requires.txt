@@ -1,0 +1,8 @@
+numpy
+pyyaml
+lz4
+scikit-learn
+Pillow
+keras
+waitress
+matplotlib
