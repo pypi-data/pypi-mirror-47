@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: sloth-cli
+Version: 1.0.5
+Summary: A library to analyse how slow your code is. This is a quick way to validate what is slow in your code. 
+Home-page: https://github.com/rigogsilva/sloth-cli
+Author: Rodrigo da Silva
+Author-email: dasil021@umn.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
