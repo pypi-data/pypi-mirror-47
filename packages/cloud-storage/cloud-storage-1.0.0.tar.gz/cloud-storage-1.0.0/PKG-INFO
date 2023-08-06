@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: cloud-storage
+Version: 1.0.0
+Summary: Cloud Storage
+Home-page: https://github.com/Gatsby-Lee/cloud-storage
+Author: Henley Kuang
+License: GPL-3.0
+Description: Cloud Storage
+        =============
+        
+        Installation
+        ------------
+        
+        .. code-block:: bash
+        
+            pip install cloud_storage
+        
+        
+        How to use
+        ----------
+        
+        .. code-block:: python
+        
+            from cloud_storage import GoogleCloudStorageHelper
+            google_cloud_storage_helper = GoogleCloudStorageHelper()
+        
+        
+Keywords: cloud storage gcs s3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
