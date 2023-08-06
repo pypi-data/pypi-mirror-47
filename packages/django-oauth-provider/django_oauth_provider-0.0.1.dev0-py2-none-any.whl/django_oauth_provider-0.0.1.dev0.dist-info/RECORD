@@ -1,0 +1,12 @@
+oauth_provider/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+oauth_provider/admin.py,sha256=k-0o56cbSFzH2-DsdiUdm3J-WLmiPJKrCPA3cujDC4g,128
+oauth_provider/apps.py,sha256=8rohC2UXzFky7_oyHMKEuNJWTER1hMQZaMWyMAMOzW0,167
+oauth_provider/models.py,sha256=x0q-IUqgPaHSyjnpciZ01JWwlGcV6ssqJNB79LT2b10,122
+oauth_provider/tests.py,sha256=cDnjC3qaHJHFNgAHvqe_qeX8W_w9g6tn4DlmuGPYKJo,125
+oauth_provider/views.py,sha256=lNXW0Ylr99iPUbHQbvnzpsNT3nUBP1YpzFeKeGIL3hM,128
+oauth_provider/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_oauth_provider-0.0.1.dev0.dist-info/LICENSE,sha256=ughfXzysdiGvJF28IQxBtE5AqSSwlBzoE9C2HoUbyVY,1070
+django_oauth_provider-0.0.1.dev0.dist-info/METADATA,sha256=EGUtJylm4uVtby3HGXzRQ-21fnNf11W-XfoULXUHof0,338
+django_oauth_provider-0.0.1.dev0.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+django_oauth_provider-0.0.1.dev0.dist-info/top_level.txt,sha256=27b6DdbTiYyTdZujfWRTgKoaEs6bpB3MckQYVh3EFPI,15
+django_oauth_provider-0.0.1.dev0.dist-info/RECORD,,

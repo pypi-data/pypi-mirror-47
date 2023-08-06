@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-oauth-provider
+Version: 0.0.1.dev0
+Summary: Be a oauth provider.
+Home-page: http://github.com/lordpeara/django-oauth-provider
+Author: lordpeara
+Author-email: lordpeara@gmail.com
+License: MIT
+Keywords: django oauth oauth2 django-oauth2
+Platform: UNKNOWN
+Requires-Dist: Django (<2.2,>=1.11.21)
+
+UNKNOWN
+
+
