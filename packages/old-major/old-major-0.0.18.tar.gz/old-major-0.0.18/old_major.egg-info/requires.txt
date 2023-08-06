@@ -1,0 +1,4 @@
+websocket_client
+getmac
+requests
+inotify
