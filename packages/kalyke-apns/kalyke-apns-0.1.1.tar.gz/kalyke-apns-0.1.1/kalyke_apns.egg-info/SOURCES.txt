@@ -1,0 +1,15 @@
+README.rst
+setup.cfg
+setup.py
+kalyke/__init__.py
+kalyke/client.py
+kalyke/exceptions.py
+kalyke/payload.py
+kalyke_apns.egg-info/PKG-INFO
+kalyke_apns.egg-info/SOURCES.txt
+kalyke_apns.egg-info/dependency_links.txt
+kalyke_apns.egg-info/not-zip-safe
+kalyke_apns.egg-info/requires.txt
+kalyke_apns.egg-info/top_level.txt
+tests/__init__.py
+tests/test_payload.py
