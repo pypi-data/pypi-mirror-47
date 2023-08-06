@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+bgtask/__init__.py
+bgtask/server.py
+bgtask/task.py
+bgtask.egg-info/PKG-INFO
+bgtask.egg-info/SOURCES.txt
+bgtask.egg-info/dependency_links.txt
+bgtask.egg-info/entry_points.txt
+bgtask.egg-info/requires.txt
+bgtask.egg-info/top_level.txt
+bgtask.egg-info/zip-safe
+test/__init__.py
+test/test_server.py
+test/test_task.py
