@@ -1,0 +1,8 @@
+autobahn
+bitcoinlib==0.4.5
+cryptography
+libnacl
+netifaces
+Twisted
+pyOpenSSL
+six

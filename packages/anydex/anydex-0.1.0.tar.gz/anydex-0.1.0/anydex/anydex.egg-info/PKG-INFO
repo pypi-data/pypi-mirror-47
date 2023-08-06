@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: anydex
+Version: 0.1.0
+Summary: The Universal Decentralized Exchange
+Home-page: https://github.com/Tribler/anydex-core
+Author: Tribler
+License: UNKNOWN
+Description: **Linux**: [![](http://jenkins-ci.tribler.org/job/anydex/job/test_anydex_linux/badge/icon)](http://jenkins-ci.tribler.org/job/anydex/job/test_anydex_linux/)
+        
+        # AnyDex: The Universal Decentralized Exchange
+        
+        AnyDex is a universal decentralized exchange, designed to trade *any* digital asset in a quick and secure manner.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Framework :: Twisted
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Distributed Computing
+Description-Content-Type: text/markdown
