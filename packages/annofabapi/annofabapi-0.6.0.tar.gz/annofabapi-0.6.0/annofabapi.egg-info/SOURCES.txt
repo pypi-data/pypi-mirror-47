@@ -1,0 +1,16 @@
+README.md
+setup.py
+annofabapi/__init__.py
+annofabapi/__version__.py
+annofabapi/api.py
+annofabapi/exceptions.py
+annofabapi/generated_api.py
+annofabapi/resource.py
+annofabapi/typing.py
+annofabapi/utils.py
+annofabapi/wrapper.py
+annofabapi.egg-info/PKG-INFO
+annofabapi.egg-info/SOURCES.txt
+annofabapi.egg-info/dependency_links.txt
+annofabapi.egg-info/requires.txt
+annofabapi.egg-info/top_level.txt
