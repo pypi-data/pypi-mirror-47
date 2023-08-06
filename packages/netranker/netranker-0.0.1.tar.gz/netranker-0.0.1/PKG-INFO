@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: netranker
+Version: 0.0.1
+Summary: Flask APIs for netranker
+Home-page: https://github.com/ouroboros8/netranker
+Author: Daniel Strong
+Author-email: dstrong@glyx.co.uk
+License: UNKNOWN
+Description: # Netranker
+        
+        This python app provides the APIs for netranker, a netrunner card crowd-ranking
+        website.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
