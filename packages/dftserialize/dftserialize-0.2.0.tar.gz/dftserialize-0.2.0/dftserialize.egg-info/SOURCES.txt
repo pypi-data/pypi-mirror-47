@@ -1,0 +1,9 @@
+setup.py
+dftserialize/__init__.py
+dftserialize/deserialize.py
+dftserialize/serialize.py
+dftserialize.egg-info/PKG-INFO
+dftserialize.egg-info/SOURCES.txt
+dftserialize.egg-info/dependency_links.txt
+dftserialize.egg-info/requires.txt
+dftserialize.egg-info/top_level.txt
