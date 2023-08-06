@@ -1,0 +1,10 @@
+README.md
+setup.py
+nbpages/__init__.py
+nbpages/__main__.py
+nbpages/nbcollection.py
+nbpages/nbsetup.py
+nbpages.egg-info/PKG-INFO
+nbpages.egg-info/SOURCES.txt
+nbpages.egg-info/dependency_links.txt
+nbpages.egg-info/top_level.txt
