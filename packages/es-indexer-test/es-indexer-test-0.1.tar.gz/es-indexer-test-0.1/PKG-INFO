@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: es-indexer-test
+Version: 0.1
+Summary: A command line tool written in Python to help quickly populate json data into Elasticsearch.
+Home-page: https://github.com/itsron717/es-indexer-test
+Author: Rounak Vyas
+Author-email: itsron143@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
