@@ -1,0 +1,14 @@
+README.md
+setup.py
+insultgenerator/__init__.py
+insultgenerator/phrases.py
+insultgenerator/tests.py
+insultgenerator/words.py
+insultgenerator.egg-info/PKG-INFO
+insultgenerator.egg-info/SOURCES.txt
+insultgenerator.egg-info/dependency_links.txt
+insultgenerator.egg-info/requires.txt
+insultgenerator.egg-info/top_level.txt
+insultgenerator/wordlists/insulting_adjectives.txt
+insultgenerator/wordlists/nouns.txt
+insultgenerator/wordlists/past_tense_verbs.txt
