@@ -1,0 +1,10 @@
+README.md
+setup.py
+unred_stars.py
+unred/__init__.py
+unred/unred.py
+unred.egg-info/PKG-INFO
+unred.egg-info/SOURCES.txt
+unred.egg-info/dependency_links.txt
+unred.egg-info/requires.txt
+unred.egg-info/top_level.txt
