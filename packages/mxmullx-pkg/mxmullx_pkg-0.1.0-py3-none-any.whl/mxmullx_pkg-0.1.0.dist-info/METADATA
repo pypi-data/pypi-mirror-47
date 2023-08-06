@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: mxmullx-pkg
+Version: 0.1.0
+Summary: An example for teaching how to publish a Python package
+Home-page: http://github.com/pypa/sampleproject
+Author: Xian Lian
+Author-email: xianl828@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+
+#Example Package
+
+This is a simple example package: you can use[Gitub-flavored Markdown](http://guides.github.com/features/mastering-markdown/) to write your content.
+
