@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: dockerma
+Version: 0.4.0
+Summary: DockerMA facilitates building multi-arch containers with minimal fuss
+Home-page: https://bitbucket.org/mortenlj/dockerma
+Author: Morten Lied Johansen
+Author-email: mortenjo@ifi.uio.no
+License: The MIT License
+Keywords: docker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: appdirs (==1.4.3)
+Requires-Dist: six
+Provides-Extra: ci
+Requires-Dist: tox ; extra == 'ci'
+Requires-Dist: twine ; extra == 'ci'
+Provides-Extra: dev
+Requires-Dist: pytest-html (==1.19.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (==2.6.0) ; extra == 'dev'
+Requires-Dist: pytest (==3.8.2) ; extra == 'dev'
+Requires-Dist: mock (==3.0.5) ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+DockerMA - Docker Multi Architecture
+====================================
+
+DockerMA facilitates building multi-arch containers with minimal fuss.
+
+Using the tools from https://github.com/monsonnl/qemu-wrap-build-files
+
+
+Releasing a new version
+-----------------------
+
+1. Tag the new version: ``hg tag v1.2.3``
+2. Push the tag to Bitbucket
+3. Watch the pipeline publish the new version to PyPI
+
+New changes in v0.4.0
+---------------------
+
+* `9856088ca125`_: Pass docker env-variables to test environments
+* `4efb04da3e27`_: Debugging pipeline
+* `f2751c11d2e0`_: Another attempt at enabling docker
+* `bf072f5cb993`_: Enable docker in Pipelines
+* `bf3a38d9f2c5`_: Add integration test for build command
+* `e4455fa9f4e6`_: Add tests for cache
+* `53503c256e33`_: Make cache support 2.7 by not using ucache
+* `a35ebc24a9a4`_: Cache manifests
+* `a2428b2c3a7b`_: Include qemu emulator and some tricks to build on all supported archs
+* `d74f478b90aa`_: Build arch-specific images as long as there is no RUN
+* `6ff1a0e65145`_: Better feedback on build problems
+* `8194b1cd77a8`_: Configure logging
+* `f8aaaf8a686c`_: Use docker-wrapper to call docker
+* `fdf6ff62821d`_: Pull image handling to separate class
+* `5c3cf147a57c`_: Make tox envs use develop properly
+* `f1960a2aebf6`_: Get docker build context from cmd-line
+* `c6fdb967db5b`_: Print help if no command given
+* `88d57e107654`_: Extract arch specific digests from manifests
+* `dc4e9faac172`_: Pass unknown args to docker binary
+* `4603d8686f9b`_: Make sure to exercise setup.py in all tox environments
+* `31a41397b300`_: Include license in package metadata
+* `4d4d9422c1f0`_: Create wheel for py2 for upload.
+* `b58e10beffe4`_: Fix build for python 2.7 (again)
+* `fe0074dc1790`_: Fix build for python 2.7
+* `e43be2a97d0d`_: Fix changelog generation
+
+.. _9856088ca125: https://bitbucket.org/mortenlj/dockerma/commits/9856088ca125
+.. _4efb04da3e27: https://bitbucket.org/mortenlj/dockerma/commits/4efb04da3e27
+.. _f2751c11d2e0: https://bitbucket.org/mortenlj/dockerma/commits/f2751c11d2e0
+.. _bf072f5cb993: https://bitbucket.org/mortenlj/dockerma/commits/bf072f5cb993
+.. _bf3a38d9f2c5: https://bitbucket.org/mortenlj/dockerma/commits/bf3a38d9f2c5
+.. _e4455fa9f4e6: https://bitbucket.org/mortenlj/dockerma/commits/e4455fa9f4e6
+.. _53503c256e33: https://bitbucket.org/mortenlj/dockerma/commits/53503c256e33
+.. _a35ebc24a9a4: https://bitbucket.org/mortenlj/dockerma/commits/a35ebc24a9a4
+.. _a2428b2c3a7b: https://bitbucket.org/mortenlj/dockerma/commits/a2428b2c3a7b
+.. _d74f478b90aa: https://bitbucket.org/mortenlj/dockerma/commits/d74f478b90aa
+.. _6ff1a0e65145: https://bitbucket.org/mortenlj/dockerma/commits/6ff1a0e65145
+.. _8194b1cd77a8: https://bitbucket.org/mortenlj/dockerma/commits/8194b1cd77a8
+.. _f8aaaf8a686c: https://bitbucket.org/mortenlj/dockerma/commits/f8aaaf8a686c
+.. _fdf6ff62821d: https://bitbucket.org/mortenlj/dockerma/commits/fdf6ff62821d
+.. _5c3cf147a57c: https://bitbucket.org/mortenlj/dockerma/commits/5c3cf147a57c
+.. _f1960a2aebf6: https://bitbucket.org/mortenlj/dockerma/commits/f1960a2aebf6
+.. _c6fdb967db5b: https://bitbucket.org/mortenlj/dockerma/commits/c6fdb967db5b
+.. _88d57e107654: https://bitbucket.org/mortenlj/dockerma/commits/88d57e107654
+.. _dc4e9faac172: https://bitbucket.org/mortenlj/dockerma/commits/dc4e9faac172
+.. _4603d8686f9b: https://bitbucket.org/mortenlj/dockerma/commits/4603d8686f9b
+.. _31a41397b300: https://bitbucket.org/mortenlj/dockerma/commits/31a41397b300
+.. _4d4d9422c1f0: https://bitbucket.org/mortenlj/dockerma/commits/4d4d9422c1f0
+.. _b58e10beffe4: https://bitbucket.org/mortenlj/dockerma/commits/b58e10beffe4
+.. _fe0074dc1790: https://bitbucket.org/mortenlj/dockerma/commits/fe0074dc1790
+.. _e43be2a97d0d: https://bitbucket.org/mortenlj/dockerma/commits/e43be2a97d0d
+
