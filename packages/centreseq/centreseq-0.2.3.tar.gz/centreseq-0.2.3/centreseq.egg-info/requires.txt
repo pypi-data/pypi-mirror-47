@@ -1,0 +1,7 @@
+click>=7.0
+pandas>=0.24.0
+dataclasses>=0.6
+xlsxwriter>=1.1.8
+tqdm>=2.2.3
+biopython>=1.70
+scipy>=1.1
