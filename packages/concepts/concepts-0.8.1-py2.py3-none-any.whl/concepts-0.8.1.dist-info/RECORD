@@ -1,0 +1,16 @@
+concepts/__init__.py,sha256=VnKB6JWLLInjqzj3POsJbYCWu3Qq9kGVMiF-X6IfAL8,3287
+concepts/_compat.py,sha256=VaOmAlnlrPjako6gRbvjYNjyZS8K_ccafIGwblylycQ,1632
+concepts/_compat_csv.py,sha256=Ll02LlRagAj-QDXV6fLf6rrjzK1jGRGJLCmDjPMnXHk,1919
+concepts/contexts.py,sha256=8ymT2bOgulCiLrzYI-HanJ_moL2MpK_rgkzx_Gsb8TM,11847
+concepts/definitions.py,sha256=By0RnJ13RL51-xKa4A_HjR_UCJZMkeuFdS-bc0fOKtw,15338
+concepts/formats.py,sha256=p8pTrIEKMUy9VXFBmBTS7S1XTZhvG1mKYyhifzV3OzQ,8942
+concepts/junctors.py,sha256=Ev2vy5kr48av_KUpK-xI5UwmkFGTU_jioe380VA-aWE,6020
+concepts/lattices.py,sha256=qmnuL8AbjOi2xw0S1VCtejrK6FLoixtTGo5pCHmxpE0,19956
+concepts/matrices.py,sha256=KBSAu8goYV1qQyoE_exu8A3vHpf-6V_El1SOt1_gY08,4325
+concepts/tools.py,sha256=7qwlYDjmSS9W4b6BDmXoLLELDlEPx6RpggCzlicijOE,5384
+concepts/visualize.py,sha256=sX80dYAXP5xgS09FVJjsbSCMmcnAnNeWDzhtKVHe1-o,2106
+concepts-0.8.1.dist-info/LICENSE.txt,sha256=Cp8paorgibA0zoH4UIRyKOEit14IYo-qAy4syY_fn9E,1107
+concepts-0.8.1.dist-info/METADATA,sha256=isq1TJ0EvOdxisVLmuY83y0udmGr9NymCZZVBa-tDaQ,7718
+concepts-0.8.1.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+concepts-0.8.1.dist-info/top_level.txt,sha256=MNJj7vKOT1AbSMVaryEBYIwnZUJ9dSuHgmMsXdu2Rm8,9
+concepts-0.8.1.dist-info/RECORD,,
