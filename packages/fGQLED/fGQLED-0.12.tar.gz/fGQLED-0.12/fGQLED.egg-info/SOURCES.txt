@@ -1,0 +1,11 @@
+README.md
+fGQLED
+setup.py
+fGQLED/__init__.py
+fGQLED/colors.py
+fGQLED/figfuncs.py
+fGQLED/reader.py
+fGQLED.egg-info/PKG-INFO
+fGQLED.egg-info/SOURCES.txt
+fGQLED.egg-info/dependency_links.txt
+fGQLED.egg-info/top_level.txt
