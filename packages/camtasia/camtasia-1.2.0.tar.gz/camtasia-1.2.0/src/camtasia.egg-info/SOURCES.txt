@@ -1,0 +1,17 @@
+README.rst
+setup.cfg
+setup.py
+src/camtasia/__init__.py
+src/camtasia/authoring_client.py
+src/camtasia/extras.py
+src/camtasia/frame_stamp.py
+src/camtasia/marker.py
+src/camtasia/media.py
+src/camtasia/project.py
+src/camtasia/track.py
+src/camtasia/version.py
+src/camtasia.egg-info/PKG-INFO
+src/camtasia.egg-info/SOURCES.txt
+src/camtasia.egg-info/dependency_links.txt
+src/camtasia.egg-info/requires.txt
+src/camtasia.egg-info/top_level.txt
