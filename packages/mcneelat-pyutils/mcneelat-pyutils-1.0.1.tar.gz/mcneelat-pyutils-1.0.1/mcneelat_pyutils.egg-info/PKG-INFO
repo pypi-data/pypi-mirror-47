@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mcneelat-pyutils
+Version: 1.0.1
+Summary: A collection of helpful Python utilities to simplify dealing with databases, Kafka, and more.
+Home-page: https://github.com/tommym89/pyutils
+Author: Tommy McNeela
+Author-email: mcneelat@gmail.com
+License: GPLv3
+Description: # pyutils
+        * modules are in package mcneelat.pyutils
+            * anomali
+            * confutils
+            * dbutils
+            * kafkautils
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
