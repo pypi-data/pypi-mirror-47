@@ -1,0 +1,7 @@
+README.md
+amf
+setup.py
+amf.egg-info/PKG-INFO
+amf.egg-info/SOURCES.txt
+amf.egg-info/dependency_links.txt
+amf.egg-info/top_level.txt

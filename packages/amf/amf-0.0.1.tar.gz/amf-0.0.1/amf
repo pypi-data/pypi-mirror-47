@@ -1,0 +1,429 @@
+#!/usr/bin/env python
+from sklearn.ensemble import *
+import multiprocessing as mp
+from joblib import Parallel , delayed
+from sklearn.linear_model import *
+from hyperopt import STATUS_OK, Trials, fmin, hp, tpe
+from scikitplot.metrics import *
+from scikitplot.estimators import plot_feature_importances
+from sklearn.metrics import *
+from sklearn.model_selection import GridSearchCV
+import matplotlib.pyplot as plt
+from matplotlib.backends.backend_pdf import PdfPages
+from xgboost import *
+import pickle
+import time
+import ast
+
+def regression_model_constructor(option):
+    #returns a regression model object with default parameters according to the option number provided
+    if option == '1':
+        print(' \n\nYou selected RandomForestRegressor')
+        return RandomForestRegressor()
+    elif option == '2':
+        print('\n\nYou selected LinearRegression')
+        return LinearRegression()
+    elif option == '3':
+        print('\n\nYou selected GradientBoostingRegressor')
+        return GradientBoostingRegressor()
+    elif option == '4':
+        print('\n\nYou selected Xgboost')
+        #check return xgb.XGBRegressor()
+        return pass
+    else:
+        print('Invalid Option Selected')
+
+def classification_model_constructor(option):
+    #returns a regression model object with default parameters according to the option number provided
+    if option == '1':
+        print('\n\nYou selected RandomForestClassifier')
+        return RandomForestClassifier()
+    elif option == '2':
+        print('\n\nYou selected LogisticRegression')
+        return LogisticRegression()
+    elif option == '3':
+        print('\n\nYou selected GradientBoostingClassifier')
+        return GradientBoostingClassifier()
+    elif option == '4':
+        print('\n\nYou selected Xgboost')
+        return XGBClassifier()
+    else:
+        print('Invalid Option Selected')
+
+
+def get_user_inputted_params_for_model(params,allowed_input_list,param_option):
+    if param_option=='2':
+        #iterates over param set of given model and asks user to input custom params
+        for (key,value) in params.items():
+            if key in allowed_input_list:
+                val = input(key + '(default = '+str(value)+') : ')
+                params[key] = ast.literal_eval(val)
+    else:
+        for (key,value) in params.items():
+            if key in allowed_input_list:
+                param_string = input(key + '(default = '+str(value)+') : ')
+                list_of_options_for_param = param_string.split(',')
+                params[key] = [ast.literal_eval(param) for param in list_of_options_for_param]
+            else:
+                params[key]=[value]
+    return params
+
+
+def save_model(model,path):        
+    #save model using string of params used to train that model along with unix timestamp of when model was trained
+    #model_params = model.get_params()        
+    model_name = str(model).split('(')[0] + '_' + str(int(time.time())) + '.pkl'
+    if (type(model).__name__)=='Booster': 
+        model_name = 'XGBRegressor' +'_booster'+ '_' + str(int(time.time())) + '.pkl'
+        model.save_model(model_name)
+        print('\n\nSaved model XGBRegressor successfully')
+        return model_name
+    else:
+        try:
+            with open(model_name,'wb') as f:
+                pickle.dump(model,f)
+            print('\n\nSaved model '+type(model).__name__+' successfully')
+            return model_name
+        except Exception as e:
+            print('\n\nError saving model. Error details : '+str(e))
+            return model_name
+
+
+def plot_feature_importance(model,feature_names,pdf_obj):       
+    #plot feature importances for given model
+    try:
+        if (type(model).__name__)=='Booster':
+            ##use model object from xgb library
+            y_preds = model.predict(xgb.DMatrix(X))
+            feature_imp_wt=pd.DataFrame(m.get_score(importance_type='weight').items(),columns=['column_name_in_model','weight'])
+            columns_mapping=pd.DataFrame()
+            columns_mapping['feature_name']=feature_names
+            columns_mapping['column_name_in_model']=model.feature_names
+            feature_imp_wt=pd.merge(feature_imp_wt,columns_mapping,on='column_name_in_model',how='inner')
+            ax = feature_imp_wt.plot.bar(x='feature_name', y='weight', rot=0)
+        else:
+            y_preds = model.predict(X) 
+            plot_feature_importances(model,title = 'Feature Importance for '+str(model).split('(')[0],max_num_features = 30,feature_names = feature_names,x_tick_rotation=90,text_fontsize='small')
+        plt.savefig(pdf_obj, format='pdf')
+    except Exception as e:
+        pass
+
+def classification_plot_results(y_true,y_preds,y_pred_labels,model_name,pdf_obj):
+    #generates model results for given classification model
+    y_probas = y_preds
+    plot_confusion_matrix(y_true, y_pred_labels,title = 'Confusion Matrix for ' + model_name)
+    plt.savefig(pdf_obj, format='pdf')
+    plot_roc(y_true,y_probas,title = 'ROC Curve for ' + model_name)
+    plt.savefig(pdf_obj, format='pdf')
+    plot_ks_statistic(y_true,y_probas,title = 'KS Statistic Curve for ' + model_name)
+    plt.savefig(pdf_obj, format='pdf')
+    plot_precision_recall(y_true,y_probas,title = 'Precision Recall for ' + model_name)
+    plt.savefig(pdf_obj, format='pdf')
+    result=[arr[1] for arr in list(precision_recall_fscore_support(y_true, y_pred_labels))]
+    result.append(roc_auc_score(y_true, y_preds[:,1]))
+    result.append(accuracy_score(y_true, y_pred_labels))
+    return result
+
+def rmse(y_true, y_preds):
+    return np.sqrt(((y_true - y_preds) ** 2).mean())
+
+def regression_print_results(y_true,y_preds):
+    try:
+        result=[]
+        #print out numeric results of a regression models predictions
+        rmse1=rmse(y_true,y_preds)
+        result.append(rmse1)
+        print('Root Mean Squared Error:'+str(rmse1))
+        mse1=mean_squared_error(y_true,y_preds)
+        result.append(mse1)
+        print('Mean Squared Error : '+str(mse1))
+        mae1=mean_absolute_error(y_true,y_preds)
+        result.append(mae1)
+        print('Mean Absolute Error : '+str(mae1))
+        exp_var=explained_variance_score(y_true,y_preds)
+        print('Explained Variance : '+str(exp_var))
+        result.append(exp_var)
+        print('Mean Squared Log Error : '+str(mean_squared_log_error(y_true,y_preds)))
+        print('Median Absolute Error : '+str(median_absolute_error(y_true,y_preds)))
+        print('R2 Score : '+str(r2_score(y_true,y_preds)))
+        print('\n\n')
+    except Exception as e:
+        print('\n\nError printing regression results. Error details : '+str(e) + '\n\n')
+        pass
+    finally:
+        return result
+
+def xgb_train(x,y,params):
+    dtrain = xgb.DMatrix(x, label= y)
+    model = xgb.train(params, dtrain)
+    print('Model '+str(type(model).__name__)+' params -'+str(params))
+    return model
+
+def train_model(args):
+    X=args[0]
+    y=args[1]
+    model=args[2]
+    model_dir=args[3]
+    params_option=args[4]
+    user_params=args[5]
+    #accept model parameters from user and set them in user selected model
+    start = datetime.now()
+    #print('check-'+str(type(model).__name__))
+    if params_option == '1':
+        print('\n\nRunning with default parameters.')
+        if type(model).__name__ == 'XGBRegressor':
+            params = model.get_params()
+            params['seed']=0
+            #check params['n_jobs'] = -1
+            del params['nthread']
+            model=xgb_train(X,y,params)
+        else:
+            print('Model '+str(type(model).__name__)+' params -'+str(model.get_params()))
+            model.fit(X,y)
+    elif params_option == '2':
+        #print('\n\nRunning with user defined parameters.')
+        if type(model).__name__ == 'XGBRegressor':
+            user_params['seed']=0
+            del user_params['nthread']
+            user_params['n_jobs'] =-1
+            model=xgb_train(X,y,user_params)
+        else:
+            model.set_params(**user_params)
+            print('Model '+str(type(model).__name__)+' params -'+str(model.get_params()))
+            model.fit(X,y)
+    elif params_option == '3':
+        #print('\n\nRunning with user defined parameter grid.')
+            models = GridSearchCV(model,user_params)
+            models.fit(X,y)
+            model.set_params(**models.best_params_)
+            model.fit(X,y)
+            print('Model '+str(type(model).__name__)+' params -'+str(model.get_params()))
+    print('Model '+str(type(model).__name__)+' trained in'+str(datetime.now()-start))
+    return save_model(model,model_dir)
+
+def get_model_params_dict(model):
+    model_params_dict= {'RandomForestClassifier':['n_estimators','max_depth'],
+     'GradientBoostingClassifier':['n_estimators','learning_rate'],
+    'XGBClassifier':['n_estimators','max_depth','gamma','learning_rate','scale_pos_weight','colsample_bytree'],
+    'RandomForestRegressor':['n_estimators','max_depth'],
+     'GradientBoostingRegressor':['n_estimators','learning_rate'],
+    'XGBRegressor':['n_estimators','max_depth','eta','learning_rate','gamma','scale_pos_weight','subsample','colsample_bytree','min_child_weight']}
+    return model_params_dict[model]
+
+def generate_model(X = None,y = None,hyperparam_tuning = None,model_dir = None):
+    #accepts training data and trains model based on user defined learning type and model type if hyperparam tuning
+    models_trained_in_current_session = []
+    parallel_trained_models=[]
+    training_type = input('\nPlease enter option for training type \n1. Regression \n2. Classification\n')
+    params_option = input('\n\nPlease enter hyperparameter selection option \n1. Default \n2. User Defined \n3. User Defined HyperParam Grid\n')
+    print(params_option)
+    if training_type == '1':
+        regressor_type = input('\nYou selected Regression.\n\nPlease enter the name of model you wish to use \n1. RandomForestRegressor \n2. LinearRegression \n3. GradientBoostingRegressor \n4. XGBRegressor \n5. All of the above\n')
+        if regressor_type != '5':
+            model = regression_model_constructor(regressor_type)
+            if params_option in ['2','3']:
+                #allow user to update few parameters only
+                try:
+                     params_list=get_model_params_dict(type(model).__name__)
+                except KeyError:
+                     params_list=[]               
+                user_params=get_user_inputted_params_for_model(model.get_params(),params_list,params_option)
+            else:
+                user_params= None
+            args=[X,y,model,model_dir,params_option,user_params]
+            models_trained_in_current_session.append(train_model(args))            
+        elif regressor_type == '5':
+            ##run all models parallely (irrespective of any param option chosen-)
+            
+            #if user enters all models:
+            user_params_dict = {}
+            regr_lookup = {'1':'RandomForestRegressor','2':'LinearRegression','3':'GradientBoostingRegressor','4':'XGBRegressor'}
+            for regr_type in sorted(regr_lookup.keys()):
+                #for XGBRegressor- keep model from sklearn as XGBRegressor and not from xgboost 
+                if regr_type== '4' and params_option == '3':
+                    print('You selected XGBRegressor')
+                    model = XGBRegressor()
+                else:
+                    model = regression_model_constructor(regr_type)
+                if params_option in ['2','3']:
+                    #allow user to update few parameters only
+                    try:
+                        params_list=get_model_params_dict(type(model).__name__)
+                    except KeyError:
+                        params_list=[]
+                    user_params=get_user_inputted_params_for_model(model.get_params(),params_list,params_option)
+                    ##store all the model params in a dictionary
+                    user_params_dict[regr_lookup[regr_type]]=user_params
+                else:
+                    user_params=None
+                    user_params_dict[regr_lookup[regr_type]]=None
+            print('Execute parallel model runs-')
+            args = [[X,y,XGBRegressor(),model_dir,params_option,user_params_dict[regr_name]] if regr_type== '4' and params_option == '3' \
+                    else [X,y,regression_model_constructor(regr_type),model_dir,params_option,user_params_dict[regr_name]] for regr_type,regr_name in regr_lookup.items() ]
+            start=datetime.now()
+            for arg in args:
+                models_trained_in_current_session.append(train_model(arg))
+            #pool = mp.Pool()
+            #parallel_trained_models = pool.map(train_model,args)
+            #pool.close()
+            #pool.join()
+            print('Time taken to execute all models-'+str(datetime.now()-start))
+    elif training_type == '2':
+        classifier_type = input('\nYou selected Classification.\n\nPlease enter the name of model you wish to use \n1. RandomForestClassifier \n2. LogisticRegression \n3. GradientBoostingClassifier \n4. XGBClassifier \n5. All of the above\n')
+        if classifier_type != '5':
+            model = classification_model_constructor(classifier_type)
+            if params_option in ['2','3']:
+                #allow user to update few parameters only
+                try:
+                     params_list=get_model_params_dict(type(model).__name__)
+                except KeyError:
+                     params_list=[]               
+                user_params=get_user_inputted_params_for_model(model.get_params(),params_list,params_option)
+            else:
+                user_params= None
+            args=[X,y,model,model_dir,params_option,user_params]
+            models_trained_in_current_session.append(train_model(args))
+        elif classifier_type == '5':
+            ##run all models parallely (irrespective of any param option chosen-)
+            #if user enters all models:
+            user_params_dict = {}
+            classifier_lookup = {'1':'RandomForestClassifier','2':'LogisticRegression','3':'GradientBoostingClassifier','4':'XGBClassifier'}
+            for classifier_type in sorted(classifier_lookup.keys()): 
+                model = classification_model_constructor(classifier_type)
+                if params_option in ['2','3']:
+                    #allow user to update few paramters only
+                    try:
+                        params_list=get_model_params_dict(type(model).__name__)
+                    except KeyError:
+                        params_list=[]
+                    user_params=get_user_inputted_params_for_model(model.get_params(),params_list,params_option)
+                    ##store all the model params in a dictionary
+                    user_params_dict[classifier_lookup[classifier_type]]=user_params
+                else:
+                    user_params_dict[classifier_lookup[classifier_type]]=None
+            ##call train_model function to run models parallely
+            start=datetime.now()
+            print('Execute parallel model runs-')
+            args = [[X,y,classification_model_constructor(classifier_type),model_dir,params_option,user_params_dict[classifier_name]] for classifier_type,classifier_name in classifier_lookup.items() ]           
+            pool = mp.Pool()
+            parallel_trained_models = pool.map(train_model,args)
+            pool.close()
+            pool.join()
+            print('Time taken to execute all models-'+str(datetime.now()-start))
+    return models_trained_in_current_session + parallel_trained_models
+
+def generate_predictions(model_name,X,y,training_type,pdf_obj=None):
+    model_results=[]
+    #load mentioned model and calculate regression metrics on generated predictions
+    print('\n\n'+model_name + '\n')
+    if  'booster' in model_name:
+        model = xgb.Booster()  # init model
+        model.load_model(model_name)
+    else:
+        model = pickle.load(open(model_name, 'rb'))
+    if training_type == 'regression':
+        if (type(model).__name__)=='Booster':
+            ##use model object from Xgbregressor
+            y_preds = model.predict(xgb.DMatrix(X))
+        else:
+            y_preds = model.predict(X)
+        if pdf_obj:
+            #get rmse,mse,mae,etc
+            model_results.append(model_name.split('_')[0])
+            model_results=model_results+ regression_print_results(y,y_preds)
+            plot_feature_importance(model,X.columns,pdf_obj)
+            return model_results,y_preds
+        else:
+            return y_preds
+    elif training_type == 'classification':
+        threshold = 0.5
+        y_preds = model.predict_proba(X)
+        print('Print predictions')
+        print(y_preds[:5])
+        y_pred_labels = np.array([1 if i >= threshold else 0 for i in y_preds[:,1]])
+        if pdf_obj:
+           #get auc,accuracy,precision,recall,fsccore
+           model_results.append(model_name.split('_')[0])
+           model_results=model_results+ classification_plot_results(y,y_preds,y_pred_labels,model_name,pdf_obj)
+           plot_feature_importance(model,X.columns,pdf_obj)
+           return model_results,y_preds,y_pred_labels
+        else:
+           return y_preds,y_pred_labels
+
+def predict(X,models,training_type,y=None):
+    try:
+        #if target is None; create a empty dataframe
+        if not (isinstance(y, pd.DataFrame) or isinstance(y, pd.Series)):
+            if y == None:
+                y=pd.DataFrame()
+        #if target has been specified: generate model performance report
+        if not y.empty:
+            pdf_obj = PdfPages('Model_outputs_'+training_type+'_'+models[0].split('_')[1]+'.pdf')
+            #generate predictions
+            model_results=[generate_predictions(model,X,y,training_type,pdf_obj) for model in models]
+            if training_type =='classification':
+                  model_abbreviations={'RandomForestClassifier':'RF','LogisticRegression':'LR','GradientBoostingClassifier':'GB','XGBClassifier':'XGB'}
+                  results_df=[df[0] for df in model_results]
+                  results_df = pd.DataFrame(results_df, columns=["model_type", "precision", "recall", "fscore",'support','auc','accuracy'])
+                  results_df['Model']=results_df['model_type']
+                  results_df["Model"].replace(model_abbreviations, inplace=True)
+                  ax = results_df.plot.bar(x='Model', y='accuracy', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='auc', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='precision', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='recall', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='fscore', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ##save the predictions##
+                  pred_proba=pd.DataFrame([df[1][:,1] for df in model_results]).T
+                  pred_proba.columns=[m.split('_')[0] +'_probas' for m in models ]
+                  pred_labels=pd.DataFrame([df[2] for df in model_results]).T
+                  pred_labels.columns=[m.split('_')[0] +'_class_label' for m in models ]
+                  preds=pd.concat([pred_proba,pred_labels],axis=1)
+            elif training_type=='regression':
+                  results_df=[df[0] for df in model_results]
+                  model_abbreviations={'RandomForestRegressor':'RF','LinearRegression':'LR','GradientBoostingRegressor':'GB','XGBRegressor':'XGB'}
+                  results_df = pd.DataFrame(results_df, columns=["model_type", "rmse", "mse", "mae",'explained_var'])
+                  results_df['Model']=results_df['model_type']
+                  results_df['Model'].replace(model_abbreviations, inplace=True)
+                  ax = results_df.plot.bar(x='Model', y='rmse', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='mse', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='mae', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ax = results_df.plot.bar(x='Model', y='explained_var', rot=50)
+                  plt.savefig(pdf_obj, format='pdf')
+                  ##save predictions##
+                  preds=pd.DataFrame([df[1] for df in model_results]).T
+                  preds.columns=[m.split('_')[0]  for m in models ]
+            else:
+                print('Invalid training type!')
+            pdf_obj.close()
+            print('Generated model performance report successfully')
+        else:
+            #if no target is passed; just create predictions
+            pdf_obj= None
+            #generate predictions
+            model_results=[generate_predictions(model,X,y,training_type,pdf_obj) for model in models]
+            #create predictions files
+            if training_type == 'classification':
+                ##save the predictions##
+                pred_proba=pd.DataFrame([df[0][:,1] for df in model_results]).T
+                pred_proba.columns=[m.split('_')[0] +'_probas' for m in models ]
+                pred_labels=pd.DataFrame([df[1] for df in model_results]).T
+                pred_labels.columns=[m.split('_')[0] +'_class_label' for m in models ]
+                preds=pd.concat([pred_proba,pred_labels],axis=1)
+            elif training_type == 'regression':
+                ##save predictions##
+                preds=pd.DataFrame([df for df in model_results]).T
+                preds.columns=[m.split('_')[0]  for m in models ]
+        preds.to_csv('Predictions_'+training_type+'_'+models[0].split('_')[1]+'.pdf')
+        print('Generated predictions succesfully')
+        return preds
+    except Exception as e:
+        print('Failed to generate predictions due to:'+str(e))
+        return -1
