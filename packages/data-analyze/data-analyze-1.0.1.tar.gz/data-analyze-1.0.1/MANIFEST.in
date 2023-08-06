@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+include dataanalyze/rules/rules.json
+recursive-include dataanalyze/*
