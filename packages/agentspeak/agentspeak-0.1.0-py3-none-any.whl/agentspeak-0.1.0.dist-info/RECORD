@@ -1,0 +1,14 @@
+agentspeak/__init__.py,sha256=oYylyTlYKJm5J-J3OBDjJfXYDyVvgBxhwU_SMM_jKyQ,29945
+agentspeak/__main__.py,sha256=G2i3F2IBqZ6AVK0H_KAz7auA_z3Km0ltow04Wj9Jg54,860
+agentspeak/ext_stdlib.py,sha256=KerVgiyTgHKKxqgn9RWNbnFrUjUfnM5xxvhxcdEm2Qc,1614
+agentspeak/lexer.py,sha256=jCYYUyH9VORhFNoZj5lF0kU8eqbVkgrMXBRyfULCR3Q,8293
+agentspeak/optimizer.py,sha256=t1SAE0wsfPhrc0yzCFrhfkqw1dgpAp5bwoaG0LFcJog,81024
+agentspeak/parser.py,sha256=5Dp-8ym267ahDrKAnXP1KRrjv9gJgO3b47orBlJcrwY,48765
+agentspeak/runtime.py,sha256=yUvObGa1d1gPV21STItyxRNRQHYZd0pMSCfrnmfwMxQ,32634
+agentspeak/stdlib.py,sha256=jJBlJ-MqrcuzasWOS7ip4e3t6Z_zEEaW3NGa-NH_yx0,14001
+agentspeak/util.py,sha256=GGqlHr6zP_mf5In70q3USQTbTBde0SCfX9GqPG9HDRs,1305
+agentspeak-0.1.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+agentspeak-0.1.0.dist-info/METADATA,sha256=7lVXyaR6I6dbj5d5I2jENWX3Eem7Zz4nEAFk0PLw9dA,2480
+agentspeak-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+agentspeak-0.1.0.dist-info/top_level.txt,sha256=IDGo2PquiEtSPS7b0fhPIZ4rU6whWElpvcesCzTQBZ0,11
+agentspeak-0.1.0.dist-info/RECORD,,
