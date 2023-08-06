@@ -1,0 +1,10 @@
+fgqled/__init__.py,sha256=oBrgi36qe1_HTOSBWZD8MvvMhvboF1UsD8iMDv3DDhs,159
+fgqled/colors.py,sha256=7yvO39uQX8_G_wSYzLxKwdWpSpI24EMMHDDbjUAN7dw,283
+fgqled/figfuncs.py,sha256=vpKFYw2uzu82SZICX8bKYlcqGeSahvGs364ghcDFnOU,2042
+fgqled/plotter.py,sha256=w0DWk3qVQuMFvaGj1zAwymKh-m3RxYhObOZhesjVPSE,5603
+fgqled/reader.py,sha256=piqjYZlJoQRhd49X9-WbV4p1YElmo_0H2EWvgZshxuI,2707
+fGQLED-0.17.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+fGQLED-0.17.dist-info/METADATA,sha256=ydZ9_S5f5TXCoC1fCjiegbJkzIk7_rLcDwkO7MTwTOI,3810
+fGQLED-0.17.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+fGQLED-0.17.dist-info/top_level.txt,sha256=_44UEBvcTKq633ZEom6veg1rVXSJe8bdnabUxvejM2Q,7
+fGQLED-0.17.dist-info/RECORD,,
