@@ -1,0 +1,8 @@
+pyonmttok.cpython-36m-x86_64-linux-gnu.so,sha256=Ed-ZsfU957S3VCgTYO90J6irHpORMjlU7LL_hXMmocE,3103736
+.libspyonmttok/libOpenNMTTokenizer-80fdad62.so,sha256=LF6tR7P8ewYBZB2D7pfbrPS6VNDFbpxZt0zrAj2XMas,581472
+.libspyonmttok/libsentencepiece_train-fa285823.so.0.0.0,sha256=kQUFLeF-bPyoPjEFX7uIdxsNEaD9lf6ozm6eZLVYU-w,1611376
+.libspyonmttok/libsentencepiece-c66ff493.so.0.0.0,sha256=nOpcpFVBzDjcK1xNQZtWmoWqWfeikLRlQAd0Riqpg3w,1211912
+pyonmttok-1.13.0.dist-info/top_level.txt,sha256=wuxOdfXNXj98ECi-4TSLRm_bpRYIccmePnOKlVvxvfY,10
+pyonmttok-1.13.0.dist-info/RECORD,,
+pyonmttok-1.13.0.dist-info/METADATA,sha256=PIw5MZLsrBUmFg1fpf-JbbL8M8NF7pSZOspBn1yKIuE,700
+pyonmttok-1.13.0.dist-info/WHEEL,sha256=d2ILPScH-y2UwGxsW1PeA2TT-KW0Git4AJ6LeOK8sQo,109
