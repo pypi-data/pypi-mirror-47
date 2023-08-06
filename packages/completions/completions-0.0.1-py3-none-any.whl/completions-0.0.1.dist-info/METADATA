@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: completions
+Version: 0.0.1
+Summary: Completion generator for shells.
+Home-page: https://github.com/pwwang/completions
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.4,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pyparam (>=0.1.2,<0.2.0)
+Project-URL: Repository, https://github.com/pwwang/completions
+Description-Content-Type: text/markdown
+
+# completions
+
