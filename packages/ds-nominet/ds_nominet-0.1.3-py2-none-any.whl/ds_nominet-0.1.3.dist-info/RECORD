@@ -1,0 +1,16 @@
+ds_nominet/__init__.py,sha256=vCfb6-QFARuMu8LJFn1dVyQmoxdP1SY3lwcVIBPhMvM,94
+ds_nominet/__main__.py,sha256=5BQtWgCvgqNRA18Xc9TCZF6y0tXL-jUr3D5UYVUE1V8,1640
+ds_nominet/eppclient.py,sha256=CiyrZ9F_mCLDyUSr0greS5l8acTWF8xp3D2Bx-AlzdQ,6200
+ds_nominet/templates/contact_check.xml,sha256=-JEErcQX6JZvENC6UFPtee-cl4rLEIGHsakME5PUxtw,373
+ds_nominet/templates/contact_create.xml,sha256=K_0fcesTdgtAkwBSAwDBkwviRXQRreXQpZhd66M8soY,1444
+ds_nominet/templates/contact_update.xml,sha256=XtKUQoH01irc8m-e58PU-gBhlwNysCL0iRnmKWQvM4Q,1234
+ds_nominet/templates/domain_check.xml,sha256=pG1sDmnTT2lPTjxiCrC6_z-SvGnsvluCblHay3SaMbI,328
+ds_nominet/templates/domain_create.xml,sha256=Qu1PPDUlF0OC6IWsSbQsEvNsfNqqKCFix4wmcITFjhQ,939
+ds_nominet/templates/domain_delete.xml,sha256=QqcVirOmVO5qPEkXnJkQ0iRGcpwEFKGViADqxJhA-J8,377
+ds_nominet/templates/hello.xml,sha256=R1x-_BD08AR0pb0dUxS7nGoGVk_-rrZJUcu86w19M8A,222
+ds_nominet/templates/login.xml,sha256=ZRV8wVK4eg2lGBGvU1w3k_JeQorFXllhvnPY5uPDX6Y,683
+ds_nominet/templates/logout.xml,sha256=0J2GrMVDKywhTNQvJf3jhtTypfAtDAjMhDGDfNAMBZY,274
+ds_nominet-0.1.3.dist-info/METADATA,sha256=ritwOHFctScqWnXepbAXZBHDiIPh-SUC9UZHfO1SkYA,208
+ds_nominet-0.1.3.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+ds_nominet-0.1.3.dist-info/top_level.txt,sha256=zeujuPzYNVJn9ntVfeh0UwdGrscPRwu9LlNMSTK7Aww,11
+ds_nominet-0.1.3.dist-info/RECORD,,
