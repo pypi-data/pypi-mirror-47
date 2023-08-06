@@ -1,0 +1,8 @@
+werkzeug==0.15
+Flask==1.0.*
+Flask-SQLAlchemy==2.4.0
+Flask-ResponseBuilder==2.0.*
+Flask-ErrorsHandler==2.2.*
+sqlalchemy-filters==0.10.0
+colander==1.7.0
+PyYAML==5.1

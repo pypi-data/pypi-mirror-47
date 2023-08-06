@@ -1,0 +1,3 @@
+[console_scripts]
+autocrud = flask_autocrud.scripts.run:main
+
