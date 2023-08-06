@@ -1,0 +1,12 @@
+README.md
+setup.py
+aws_creds.egg-info/PKG-INFO
+aws_creds.egg-info/SOURCES.txt
+aws_creds.egg-info/dependency_links.txt
+aws_creds.egg-info/entry_points.txt
+aws_creds.egg-info/requires.txt
+aws_creds.egg-info/top_level.txt
+creds/__init__.py
+creds/cli.py
+creds/cred.py
+creds/main.py
