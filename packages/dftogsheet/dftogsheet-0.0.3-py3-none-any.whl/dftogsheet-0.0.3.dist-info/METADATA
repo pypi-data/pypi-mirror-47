@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: dftogsheet
+Version: 0.0.3
+Summary: A Python module for writing pandas DataFrame objects directly to Google Spreadsheets
+Home-page: https://github.com/wpbdry/gsheets_pkg
+Author: William Dry
+Author-email: wpbdry@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: cachetools (==3.1.1)
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: google-api-python-client (==1.7.9)
+Requires-Dist: google-auth (==1.6.3)
+Requires-Dist: google-auth-httplib2 (==0.0.3)
+Requires-Dist: google-auth-oauthlib (==0.3.0)
+Requires-Dist: httplib2 (==0.13.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: oauthlib (==3.0.1)
+Requires-Dist: pandas (==0.24.2)
+Requires-Dist: pyasn1 (==0.4.5)
+Requires-Dist: pyasn1-modules (==0.2.5)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytz (==2019.1)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-oauthlib (==1.2.0)
+Requires-Dist: rsa (==4.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: uritemplate (==3.0.0)
+Requires-Dist: urllib3 (==1.25.3)
+
+# df-gsheet
+A Python module for writing pandas DataFrame objects directly to Google Spreadsheets
+
+## Install gsheets
+```shell
+$ pip install df-gsheet
+```
+
+## Setup
+1. Enable the
+[Google Sheets API](https://developers.google.com/sheets/api/quickstart/python)
+for the Google account you'd like to use.
+
+## Simple Usage
+```python
+import pandas as pd
+import dfgsheet
+
+data_frame = pd.DataFrame()
+dfgsheet.write_to_sheet(data_frame, spreadsheet_id, sheet_name)
+```
+
+### Parameters
+There are three mandatory parameters for the above function:
+- `data_frame` is any pandas DataFrame object.
+- `spreadsheet_id` is the part of the Google Spreadsheet URL
+that is between `/d/` and `/edit`.
+- `sheet_name` is the name of the sheet within the Google spreadsheet.
+E.g. `Sheet1`.
+
+## What's new
+- Update dependencies.
+
