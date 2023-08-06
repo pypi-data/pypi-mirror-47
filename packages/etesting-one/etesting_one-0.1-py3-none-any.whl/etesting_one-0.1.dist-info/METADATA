@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: etesting-one
+Version: 0.1
+Summary: A command line tool written in Python to help quickly populate json data into Elasticsearch.
+Home-page: https://github.com/itsron717/etesting
+Author: Rounak Vyas
+Author-email: itsron143@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: elasticsearch
+
+UNKNOWN
+
+
