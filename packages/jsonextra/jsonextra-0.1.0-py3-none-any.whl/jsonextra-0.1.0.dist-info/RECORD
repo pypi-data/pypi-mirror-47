@@ -1,0 +1,10 @@
+jsonextra/__init__.py,sha256=M2KQFTHDv2EwxxHX2rkNSlduiKDRKPWH2EVkR-mK9E8,58
+jsonextra/json_extra.py,sha256=5kCbCe_VEd3k5gxj6lKogU0FqA8Gi3-rLArJhw5iq-8,1472
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_jsonextra.py,sha256=LazA-uif5zXXLCys87RlThYUGHbrii44wp7iR-S9q6M,1739
+jsonextra-0.1.0.dist-info/LICENSE,sha256=x4rHxE0KUNLjqH0WA3bY4m6BEaAHh0CJj727evABvmM,1070
+jsonextra-0.1.0.dist-info/METADATA,sha256=dCDxMbwC3Fm201tEs8HD1jvgrnuRzJJrqP9tNBW91jY,1118
+jsonextra-0.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+jsonextra-0.1.0.dist-info/top_level.txt,sha256=wN5TmKU0Bm3bgbdPBgT6QuFVd3KJtJbkpf9M1at6hXQ,16
+jsonextra-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jsonextra-0.1.0.dist-info/RECORD,,

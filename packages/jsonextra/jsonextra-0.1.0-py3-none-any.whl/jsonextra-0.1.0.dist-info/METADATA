@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: jsonextra
+Version: 0.1.0
+Summary: JSON Extra | JSON that gives you extra datetime and uuid data types
+Home-page: https://github.com/den4uk/jsonextra
+Author: Denis Sazonov
+Author-email: den@saz.lt
+License: Restricted
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil (<3,>=2.8.0)
+
+JSON Extra
+=====
+[![Build Status](https://travis-ci.org/den4uk/jsonextra.svg?branch=master)](https://travis-ci.org/den4uk/jsonextra)
+[![Coverage Status](https://coveralls.io/repos/github/den4uk/jsonextra/badge.svg?branch=master)](https://coveralls.io/github/den4uk/jsonextra?branch=master)
+[![PyPI version](https://badge.fury.io/py/jsonextra.svg)](https://badge.fury.io/py/jsonextra)
+
+## Installation
+
+```
+$ pip install jsonextra
+```
+
+
+## Usage
+
+Use `json` as normal once imported
+
+```
+>>> import jsonextra as json
+```
+
+
+## Extra supported data types
+
+- datetime.date
+- datetime.datetime
+- uuid.UUID
+
+
