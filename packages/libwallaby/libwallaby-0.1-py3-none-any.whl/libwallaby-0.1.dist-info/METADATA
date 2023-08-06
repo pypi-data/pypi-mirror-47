@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: libwallaby
+Version: 0.1
+Summary: Python bindings for libwallaby
+Home-page: https://github.com/tyngsboroughrobotics/libwallaby
+Author: Wilson Gramer
+Author-email: wgramer03@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# libwallaby
+
+Contains Python bindings for the `libwallaby` C library.
+
