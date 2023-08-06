@@ -1,0 +1,9 @@
+kosimpletax/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kosimpletax/y2018/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kosimpletax/y2018/formula.py,sha256=JEx0ra411hewjM7dsN6-PcUEylxQ-AtkItM_TGy-gkw,6328
+kosimpletax/y2018/tax_calculator.py,sha256=clmMHDg9ENVJ-sRz8u8XDWVE1KzWHA7DQqrby6KL6oU,5138
+kosimpletax-1.0.dist-info/LICENSE,sha256=edGzbjbYQ1G5laTzkNZDWyTPPCC3YyAFSvUmvN65XWo,1072
+kosimpletax-1.0.dist-info/METADATA,sha256=oIWwSSYkc11erlPLmrCvwjJLz-pXo7zEtbZHK9BGLU0,567
+kosimpletax-1.0.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+kosimpletax-1.0.dist-info/top_level.txt,sha256=CvoOMZWfwduQroJmtuBDjIRwLer0xHrjxVOX5Q4keVY,12
+kosimpletax-1.0.dist-info/RECORD,,

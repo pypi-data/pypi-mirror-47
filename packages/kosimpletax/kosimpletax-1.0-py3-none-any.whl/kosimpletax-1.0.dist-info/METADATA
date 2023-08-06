@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: kosimpletax
+Version: 1.0
+Summary: simple tax in Korea
+Home-page: https://github.com/ho9science/kosimpletax
+Author: hyeonki.samdasu
+Author-email: noblesswith@gmail.com
+License: UNKNOWN
+Download-URL: https://githur.com/ho9science/kosimpletax/archive/master.zip
+Keywords: kosimpletax,tax,korea
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3
+
+UNKNOWN
+
+
