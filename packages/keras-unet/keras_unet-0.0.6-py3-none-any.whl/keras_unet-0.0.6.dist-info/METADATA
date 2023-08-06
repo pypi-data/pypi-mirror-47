@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: keras-unet
+Version: 0.0.6
+Summary: Helper package with multiple U-Net implementations in Keras as well as useful utility tools helpful when working with image segmentation tasks
+Home-page: http://github.com/karolzak/keras-unet
+Author: Karol Zak
+Author-email: karol.zak@hotmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: keras
+
+UNKNOWN
+
+
