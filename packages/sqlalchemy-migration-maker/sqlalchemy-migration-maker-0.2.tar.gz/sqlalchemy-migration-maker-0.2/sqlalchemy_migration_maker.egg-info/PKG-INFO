@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: sqlalchemy-migration-maker
+Version: 0.2
+Summary: SQLAlachemy migration maker.Generate SQL command to auto migrate
+Home-page: https://github.com/panmpan17/MigrationMaker
+Author: Michael Pan
+Author-email: panmpan@gmail.com
+License: UNKNOWN
+Description: # SQLAlchemy Migration Maker
+        SQLalchemy is a great DB manage python library. <br>
+        But it didn't have the built in migrate functionality. <br>
+        
+        Inspire by django db manager, I write this package to migrate db more easily. <br>
+        
+        Now, with this package can check db's model's version, and migrate to db with ease. <br>
+        Also can write your own migrate tool.
+        
+        ## Intall
+        `pip install sqlalchemy-migration-maker`
+        
+        ## Requiremnt
+        - sqlalchemy
+        
+        ## Testing
+        #### Require psycopg2
+        In my testing, I use postgres database to execute sql language
+        
+        ### Tested Envirment
+        - MacOSX
+        - Python3
+        
+        ### Tested Database
+        - Postgres
+Keywords: sqlalchemy migration database db postgres python python3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
