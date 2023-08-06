@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: cratedigger
+Version: 1.0.0
+Summary: cratedigger is a command line tool for managing your Serato library
+Home-page: https://github.com/adammillerio/cratedigger
+Author: Adam Miller
+Author-email: miller@adammiller.io
+License: MIT
+Download-URL: https://github.com/adammillerio/cratedigger/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: serato,dj,music,library,crate,sync
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Multimedia :: Sound/Audio :: Editors
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
