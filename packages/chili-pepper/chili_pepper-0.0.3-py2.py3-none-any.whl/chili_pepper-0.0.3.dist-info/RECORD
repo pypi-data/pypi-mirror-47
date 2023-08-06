@@ -1,0 +1,16 @@
+chili_pepper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+chili_pepper/app.py,sha256=3eoO6ZjGvtiWQw3JlvQRmMuHIcUR0K3aWP2tdE_SjGo,19610
+chili_pepper/config.py,sha256=7VmRY66l9c0wO3pMlmCe551L-kAS9L9QRY4xNd5HjCc,786
+chili_pepper/deployer.py,sha256=1A7XJ09_TCAw5ZAoUMKfEcSZtUh1A2xEbJxP_IAOHSA,11261
+chili_pepper/exception.py,sha256=xJH8BPHFSUy4TZ4nM4BhDcDSaOXQdEGQltFdqsiTMIo,88
+chili_pepper/main.py,sha256=O8Ky7Uytxw1Tnva0o5JGhc4m5-c0CfdEIL3aggIGVAY,3176
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/unit/conftest.py,sha256=mTZbZf3Vm3ttZP3vekgV8eujWwwRghtyk_d9V4fYm98,401
+tests/unit/test_app.py,sha256=vX0GL6uQwZ8d8xUCagbUJy8iynvIdCz_2rI3mG7fM10,1829
+tests/unit/test_deployer.py,sha256=IOVahJZfNmZ4075D5pbcWRsGiqtOMB3wStMN3qcXlJ0,12647
+chili_pepper-0.0.3.dist-info/METADATA,sha256=BZAWMNn-NFaa7RfZK-l2A3_xUrGj12n98k-wXLCY5T4,7268
+chili_pepper-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+chili_pepper-0.0.3.dist-info/entry_points.txt,sha256=ZVPbb1oYC7dAZlu5zwJaPhHq8uBkGscNqC9BWTFSvkk,50
+chili_pepper-0.0.3.dist-info/top_level.txt,sha256=iteYE_DSO458SS0F1SmqJpu9uRFXwNNpEKIJJB5LHQQ,19
+chili_pepper-0.0.3.dist-info/RECORD,,
