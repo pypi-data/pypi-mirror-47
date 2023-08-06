@@ -1,0 +1,94 @@
+Metadata-Version: 2.1
+Name: visaplan.namespace.pkg_resource
+Version: 1.0.dev2
+Summary: Dummy namespace package, pkg_resource style
+Home-page: https://pypi.org/project/visaplan.PACKAGE
+Author: Tobias Herp
+Author-email: tobias.herp@visaplan.com
+License: GPL version 2
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ===============================
+        visaplan.namespace.pkg_resource
+        ===============================
+        
+        This is a dummy package which does nothing except providing the `visaplan`
+        package and namespace package, "pkg_resource style";
+        it was a workaround for the problem of e.g. `visaplan.tools`_ being installable,
+        but under certain circumstances, the package namespace doesn't work, and the
+        visaplan.tools submodules
+        `couldn't be accessed from the buildout-generated Plone instance`_.
+        
+        Since the problem was solved, the `visaplan.namespace.pkg_resource` package is considered obsolete.
+        
+        
+        Features
+        --------
+        
+        - Provides an empty namespace package `visaplan`.
+        
+        
+        Installation
+        ------------
+        
+        Install the `visaplan` dummy package by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                visaplan.namespace.pkg_resource
+                visaplan.tools
+                ...
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        License
+        -------
+        
+        The project is available under the Apache License 2.0 or the GNU GPL 2.0
+        
+        .. _`visaplan.tools`: https://pypi.org/project/visaplan.tools
+        .. _`couldn't be accessed from the buildout-generated Plone instance`: https://community.plone.org/t/factoring-out-packages-namespace-problem/6842
+        
+        
+        Contributors
+        ============
+        
+        - Tobias Herp, tobias.herp@visaplan.com
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0dev2 (2019-06-14)
+        --------------------
+        
+        - Fixed documentation; this package is now obsolete.
+          [tobiasherp]
+        
+        
+        1.0dev1 (unreleased)
+        --------------------
+        
+        - Initial version.
+          [tobiasherp]
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Description-Content-Type: text/x-rst
