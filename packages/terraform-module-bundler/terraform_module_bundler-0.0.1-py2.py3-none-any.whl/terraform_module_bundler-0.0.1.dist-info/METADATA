@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: terraform-module-bundler
+Version: 0.0.1
+Summary: terraform-module-bundler allows you to create lean packages of terrafom modules source code.
+Home-page: https://github.com/varmarakesh/terraform-module-bundler
+Author: Rakesh V
+Author-email: varma.rakesh@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Requires-Dist: colorlog (==4.0.2)
+
+UNKNOWN
+
+

@@ -1,0 +1,3 @@
+[console_scripts]
+terraform-module-bundler = terraform_module_bundler.main:main
+
