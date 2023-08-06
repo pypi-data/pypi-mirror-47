@@ -1,0 +1,10 @@
+README.md
+setup.py
+SimpleDataTransport/__init__.py
+SimpleDataTransport/local.py
+SimpleDataTransport/remote.py
+SimpleDataTransport.egg-info/PKG-INFO
+SimpleDataTransport.egg-info/SOURCES.txt
+SimpleDataTransport.egg-info/dependency_links.txt
+SimpleDataTransport.egg-info/requires.txt
+SimpleDataTransport.egg-info/top_level.txt
