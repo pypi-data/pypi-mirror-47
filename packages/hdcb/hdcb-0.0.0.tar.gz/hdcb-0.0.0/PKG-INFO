@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: hdcb
+Version: 0.0.0
+Summary: HexDump Coloring Book
+Home-page: UNKNOWN
+Author: v3l0c1r4pt0r
+Author-email: kamil@re-ws.pl
+License: UNKNOWN
+Description: HDCB is an utility to color hexadecimal dumps of
+        binary files. It defines its own pseudo-language as an extension to Python to
+        make defining new formats as easy as possible.
+        
+        Currently the Python port is in design phase. Older version, based on bash is
+        available as a legacy version.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
