@@ -1,0 +1,3 @@
+[console_scripts]
+coldsync = coldsync.main:main
+

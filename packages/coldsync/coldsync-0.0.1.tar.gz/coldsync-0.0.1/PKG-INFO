@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: coldsync
+Version: 0.0.1
+Summary: Used to upload file sto cold storage
+Home-page: UNKNOWN
+Author: Andrei Neagu
+Author-email: it.neagu.andrei@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Topic :: System :: Archiving
+Classifier: Topic :: System :: Archiving :: Backup
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Provides-Extra: testing
