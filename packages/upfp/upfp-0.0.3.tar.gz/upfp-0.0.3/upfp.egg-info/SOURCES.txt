@@ -1,0 +1,15 @@
+README.md
+setup.py
+bin/upfp-fasta-to-csv
+upfp/__init__.py
+upfp/core.py
+upfp/iterator.py
+upfp.egg-info/PKG-INFO
+upfp.egg-info/SOURCES.txt
+upfp.egg-info/dependency_links.txt
+upfp.egg-info/requires.txt
+upfp.egg-info/top_level.txt
+upfp/tests/__init__.py
+upfp/tests/test_core.py
+upfp/tests/test_iterator.py
+upfp/tests/utils.py
