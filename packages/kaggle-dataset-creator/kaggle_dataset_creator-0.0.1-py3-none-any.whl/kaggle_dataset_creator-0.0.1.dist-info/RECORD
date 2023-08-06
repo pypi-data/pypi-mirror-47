@@ -1,0 +1,10 @@
+kaggle_dataset_creator/__init__.py,sha256=HprFYpbkXa1y143OiiTZyA-l_ZkbuJoqlNcc-wCx86I,169
+kaggle_dataset_creator/exceptions.py,sha256=-DbE5z9IgJ6Oy-Zo6F_0R4WjOqUc3QnL2iVlYAQi-GU,464
+kaggle_dataset_creator/kaggle_dataset_creator.py,sha256=hr_sn3EEWqoLm54FvUuKSh74u-YKHCYBYLg1TP8Hs3o,18319
+kaggle_dataset_creator/message.py,sha256=xcOdBllRI1eqr05VuptXL9C_lNQbmydmHxG_SirKssY,904
+kaggle_dataset_creator/random_string.py,sha256=ZJPVUHmBSrGy6ix9C6RjQ8X04iXDggUPzDa2WPqGG6Q,1257
+kaggle_dataset_creator-0.0.1.dist-info/LICENSE,sha256=stsaNYp1Oihp6emmHn8JS61jzLCGHRPjbFG46uSm56I,1075
+kaggle_dataset_creator-0.0.1.dist-info/METADATA,sha256=I-tCCbkbOVar4Rh2QvbYX3Cfhx5pZr9KN-smiXPclPE,7056
+kaggle_dataset_creator-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+kaggle_dataset_creator-0.0.1.dist-info/top_level.txt,sha256=anlTLVrkLTe5u4jQN2OkPAAH26fcz_p3byNN9brxAX8,23
+kaggle_dataset_creator-0.0.1.dist-info/RECORD,,
