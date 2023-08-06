@@ -1,0 +1,10 @@
+README.md
+setup.py
+rjob/__init__.py
+rjob/__main__.py
+rjob/project.py
+rjob.egg-info/PKG-INFO
+rjob.egg-info/SOURCES.txt
+rjob.egg-info/dependency_links.txt
+rjob.egg-info/entry_points.txt
+rjob.egg-info/top_level.txt
