@@ -1,0 +1,8 @@
+numerai_reports/__init__.py,sha256=CzRjVOSOfgqf6HaRaDAPkKatAKZh10wbkj8GIAN1kLM,130
+numerai_reports/data.py,sha256=WHZufaLZRNI5kfI3Uzc25pK8ZSA0YRY88wPpucmrA_k,4748
+numerai_reports/reports.py,sha256=AVeBJ-03rJd2Ij840O4uu8cPCsuQb5J_DIqNqIQzQtI,6912
+numerai_reports/utils.py,sha256=s6KzgLSaJFDelRVPSWH2iEehihdWz0JHY1glimK8hec,150
+numerai_reports-0.1.0.dist-info/METADATA,sha256=zuAj0b5TmS8qAHAKhi6OsNbAhZCXcePtrX1OLdW_UUw,2410
+numerai_reports-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+numerai_reports-0.1.0.dist-info/top_level.txt,sha256=0CVH16-PRl2zMPLf7SIRLyuvSWGEBOKv8DKBDL0alJQ,16
+numerai_reports-0.1.0.dist-info/RECORD,,
