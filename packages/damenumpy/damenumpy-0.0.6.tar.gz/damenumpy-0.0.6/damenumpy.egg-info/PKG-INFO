@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: damenumpy
+Version: 0.0.6
+Summary: Learning Numpy from Tests by David Arroyo Menéndez
+Home-page: http://github.com/davidam/damenumpy
+Author: David Arroyo Menéndez
+Author-email: davidam@gnu.org
+License: GPLv3
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: numpy tests
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
