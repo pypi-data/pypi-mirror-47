@@ -1,0 +1,8 @@
+keras
+numpy
+pyaudio
+requests
+sonopy
+speechpy
+tensorflow
+webrtcvad
