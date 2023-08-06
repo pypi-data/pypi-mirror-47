@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: FireflyAlgorithm
+Version: 0.0.1
+Summary: Firefly algorithm implementation
+Home-page: https://github.com/firefly-cpp/FireflyAlgorithm
+Author: firefly-cpp
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development
