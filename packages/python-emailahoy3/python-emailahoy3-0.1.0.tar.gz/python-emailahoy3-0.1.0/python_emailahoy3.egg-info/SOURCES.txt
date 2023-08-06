@@ -1,0 +1,11 @@
+README.md
+setup.py
+emailahoy3/__init__.py
+emailahoy3/email.py
+emailahoy3/exceptions.py
+emailahoy3/__pycache__/__init__.cpython-37.pyc
+emailahoy3/__pycache__/exceptions.cpython-37.pyc
+python_emailahoy3.egg-info/PKG-INFO
+python_emailahoy3.egg-info/SOURCES.txt
+python_emailahoy3.egg-info/dependency_links.txt
+python_emailahoy3.egg-info/top_level.txt
