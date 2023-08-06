@@ -1,0 +1,6 @@
+README.md
+setup.py
+mikepdf_test_20190607.egg-info/PKG-INFO
+mikepdf_test_20190607.egg-info/SOURCES.txt
+mikepdf_test_20190607.egg-info/dependency_links.txt
+mikepdf_test_20190607.egg-info/top_level.txt
