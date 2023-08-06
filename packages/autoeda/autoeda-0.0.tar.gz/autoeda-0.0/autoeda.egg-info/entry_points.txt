@@ -1,0 +1,3 @@
+[console_scripts]
+autoeda = autoeda.__main__:main
+
