@@ -1,0 +1,3 @@
+[console_scripts]
+gsea_incontext = gsea_incontext.__main__:main
+
