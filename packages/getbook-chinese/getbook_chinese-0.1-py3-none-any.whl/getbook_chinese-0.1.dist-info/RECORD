@@ -1,0 +1,13 @@
+getbook_chinese/__init__.py,sha256=yEpwHHVPMAqJ-hoKj4kBTGd8uLcOxmlHkOm-3OTNWfM,81
+getbook_chinese/dajia.py,sha256=bPC3FnKOQfsakdll-4eIsMhPoGelZnNECfOTfGghbSo,3610
+getbook_chinese/kanunu.py,sha256=oJ6ERtdJlh4kPr50xf7fRW1Zj8svghxf17QhPIU5OO4,3209
+getbook_chinese/marxists.py,sha256=JI9RUNtLP2g-vZ72S0Ce-zzNQ-XEPjT-d0zFoJbsmqQ,1645
+getbook_chinese/piaotian.py,sha256=wQIVcuK2ADO59M7w_PY4W5bOz2FfHgM3PHLiYHd_fSE,1967
+getbook_chinese/qbxs5.py,sha256=8ERa_GUuJIk75Ym5rQN9MF4OtaKxU2WqxgNFcycSmo4,2037
+getbook_chinese/zhaishuyuan.py,sha256=RO7nZ3xz7arfqQ2Gqv-xqGpGdTaLCdl28-fhtihc_VY,1562
+getbook_chinese-0.1.dist-info/LICENSE,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+getbook_chinese-0.1.dist-info/METADATA,sha256=eouEgKfC2BPxQpkiGixFDnglKyLfblAsbuNwfm4j9dI,1270
+getbook_chinese-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+getbook_chinese-0.1.dist-info/entry_points.txt,sha256=wAuK09LlQE_J76g3KCuqDaY499cFbTxWFaeOHBU8t3k,310
+getbook_chinese-0.1.dist-info/top_level.txt,sha256=9yuPB9JDmzGLdQ0j_64VMS-hy0SVHnqxxHaMF2exZmc,16
+getbook_chinese-0.1.dist-info/RECORD,,
