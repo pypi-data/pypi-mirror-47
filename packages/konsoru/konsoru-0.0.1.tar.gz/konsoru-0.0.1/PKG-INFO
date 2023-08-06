@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: konsoru
+Version: 0.0.1
+Summary: A functional programming styled CLI console application framework based on argparse
+Home-page: https://github.com/DonovanWu/konsoru.git
+Author: Wenrui Wu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
