@@ -1,0 +1,3 @@
+[console_scripts]
+alfons_sensor = AlfonsSensor.__main__:main
+

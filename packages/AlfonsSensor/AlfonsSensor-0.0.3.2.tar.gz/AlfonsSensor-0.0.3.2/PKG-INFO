@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: AlfonsSensor
+Version: 0.0.3.2
+Summary: A package for sensors to interact with Alfons
+Home-page: https://github.com/ntoonio/AlfonsSensor.git
+Author: Anton Lindroth
+Author-email: ntoonio@gmail.com
+License: UNKNOWN
+Description: # Alfons Sensor
+        
+        A tool for easily connecting sensors to Alfons
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
