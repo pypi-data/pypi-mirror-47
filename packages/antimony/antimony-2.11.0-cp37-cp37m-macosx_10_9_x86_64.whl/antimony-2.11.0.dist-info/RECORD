@@ -1,0 +1,12 @@
+antimony/__init__.py,sha256=PXNkkgXdnv2nA6kjH2IAyTS7_mo1Lp6Hb-haP2m1gfo,301
+antimony/_antimony.so,sha256=15H8Vxcwb_G7YHBelQ5qRUF2oDg_owkIMfdKMHE71cg,9654676
+antimony/antimony.py,sha256=pzk7hvfvSlnTJCvT4cVRezaDomHreVC0sto242vvww8,107751
+antimony/libannotools.2.dylib,sha256=B-rsHdmCWJaDu_8qE9ZUR4i9Opvviz09BmJRhAL5TW4,42684
+antimony/libcellml.2.dylib,sha256=Uj7ejhgw71uubD3kS3WurnL8qJciRKHUz4GgKTV57-U,2951864
+antimony/libcevas.1.dylib,sha256=BOsunY00oXUrAQcHQgG6Axnz5oogp2Pt9BfJHDByI5I,81308
+antimony/libcuses.1.dylib,sha256=2MEmXNk_7EoaGb3piCkdD5QMy-bofXkWoPToNEw7B5A,135748
+antimony/libtelicems.1.dylib,sha256=-CA72NcqoHRoTao_WVS4LRPljK8zPSNrcRW-DGqGI68,284788
+antimony-2.11.0.dist-info/METADATA,sha256=tu3Tk1IkJo4T3qwf-EDznLssYJssOvt5X4n_dXXRjOs,225
+antimony-2.11.0.dist-info/RECORD,,
+antimony-2.11.0.dist-info/WHEEL,sha256=yrr8gQCXk2jcheATSKmn0lrmW40UYglanbi3EW8eCNo,108
+antimony-2.11.0.dist-info/top_level.txt,sha256=uCflTPdOoQsi-KG4ExQ9UleYlxI_mD_lA4d4rx5OyDA,9
