@@ -1,0 +1,2 @@
+redis>=3
+pypandoc>=1.4
