@@ -1,0 +1,4 @@
+awesome-slugify
+django-ckeditor
+django-hitcount
+django-pure-pagination
