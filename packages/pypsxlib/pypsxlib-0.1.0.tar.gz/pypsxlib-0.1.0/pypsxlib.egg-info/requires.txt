@@ -1,0 +1,7 @@
+dataclasses-json>=0.0.25
+lxml
+Pillow
+xmljson
+
+[:python_version >= "3.6"]
+dataclasses
