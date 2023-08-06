@@ -1,0 +1,6 @@
+README.md
+setup.py
+ashpdf.egg-info/PKG-INFO
+ashpdf.egg-info/SOURCES.txt
+ashpdf.egg-info/dependency_links.txt
+ashpdf.egg-info/top_level.txt
