@@ -1,0 +1,13 @@
+README.md
+setup.py
+crdf_serializer/__init__.py
+crdf_serializer/bind_decorator.py
+crdf_serializer/object_decorator.py
+crdf_serializer.egg-info/PKG-INFO
+crdf_serializer.egg-info/SOURCES.txt
+crdf_serializer.egg-info/dependency_links.txt
+crdf_serializer.egg-info/top_level.txt
+tests/__init__.py
+tests/context.py
+tests/test_example_rdflib.py
+tests/test_graph_all.py
