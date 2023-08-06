@@ -1,0 +1,141 @@
+{
+  "src/lib/components/perspective_dash.react.js": {
+    "description": "ExampleComponent is an example component.\nIt takes a property, `label`, and\ndisplays it.\nIt renders an input with the property `data`\nwhich is editable by the user.",
+    "displayName": "perspective_dash",
+    "methods": [
+      {
+        "name": "renderFromProps",
+        "docblock": null,
+        "modifiers": [],
+        "params": [
+          {
+            "name": "props",
+            "type": null
+          }
+        ],
+        "returns": null
+      }
+    ],
+    "props": {
+      "id": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "The ID used to identify this component in Dash callbacks"
+      },
+      "data": {
+        "type": {
+          "name": "array"
+        },
+        "required": true,
+        "description": "The data displayed in the input"
+      },
+      "view": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Perspective view"
+      },
+      "schema": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Perspective schema"
+      },
+      "columns": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective columns"
+      },
+      "rowpivots": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective rowpivots"
+      },
+      "columnpivots": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective columnpivots"
+      },
+      "aggregates": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective aggregates"
+      },
+      "sort": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective sort"
+      },
+      "index": {
+        "type": {
+          "name": "string"
+        },
+        "required": false,
+        "description": "Perspective index"
+      },
+      "limit": {
+        "type": {
+          "name": "number"
+        },
+        "required": false,
+        "description": "Perspective limit"
+      },
+      "computedcolumns": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective computedcolumns"
+      },
+      "filters": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective filters"
+      },
+      "plugin_config": {
+        "type": {
+          "name": "array"
+        },
+        "required": false,
+        "description": "Perspective plugin_config"
+      },
+      "settings": {
+        "type": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": "Perspective settings"
+      },
+      "transfer_as_arrow": {
+        "type": {
+          "name": "boolean"
+        },
+        "required": false,
+        "description": "Perspective transfer_as_arrow"
+      },
+      "setProps": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Dash-assigned callback that should be called whenever any of the\nproperties change"
+      }
+    }
+  }
+}
