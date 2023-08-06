@@ -1,0 +1,14 @@
+bleach
+html5lib
+
+[textile]
+textile >= 2.1.4
+
+[rst]
+docutils >= 0.7
+
+[markdown]
+Markdown >= 2.0.3
+
+[creole]
+Creoleparser >= 0.7.2

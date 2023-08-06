@@ -1,0 +1,22 @@
+Somé UTF-8°
+
+* One
+* Two
+
+"javascript link":javascript:alert('scary stuff')
+
+notextile. <script>alert('scary js is running1')</script>
+
+###. the == notation below is same as notextile. above
+
+==<script>alert('scary js is running2')</script>==
+
+<script type="text/javascript">alert("All your base are belong to us");</script>
+
+<a href="javascript:alert('scary')">jslink</a>
+
+p{color:red;letter-spacing:0.25em}. This is red spaced text.
+
+p{position:absolute;top:0;right:0;-moz-binding:url(http://www.example.org/xbl/htmlBindings.xml#checkbox);}. Unsafe tricky styles here
+
+p=. Centered paragraph (should be safe)
