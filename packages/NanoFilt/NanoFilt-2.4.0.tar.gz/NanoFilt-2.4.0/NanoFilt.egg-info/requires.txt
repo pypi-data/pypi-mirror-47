@@ -1,0 +1,2 @@
+biopython
+nanoget>=1.8.0
