@@ -1,0 +1,3 @@
+[console_scripts]
+pgdancer = pgdancer.cmdline:main
+
