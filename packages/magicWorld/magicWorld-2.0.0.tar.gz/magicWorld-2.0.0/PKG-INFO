@@ -1,0 +1,36 @@
+Metadata-Version: 1.0
+Name: magicWorld
+Version: 2.0.0
+Summary: my fantasy game
+Home-page: https://testpypi.python.org/pypi/magicworld/
+Author: jinxingw
+Author-email: UNKNOWN
+License: LICENSE.txt
+Description: 
+        Attack of the Orcs
+        ==================
+        
+        Introduction
+        --------------
+        This is a command line fantasy war game!
+        
+        Documentation
+        --------------
+        Documentation cam be found at...
+        
+        Example Usage
+        --------------
+        Here is an Example to import the modules from this package.
+        
+        .. code:: python
+        
+            from wargame.attackoftheorcs import AttackOfTheOrcs
+            game = AttackOfTheOrcs()
+            game.play()
+        
+        LICENSE
+        --------
+        See LICENSE.txt file
+        
+        
+Platform: UNKNOWN
