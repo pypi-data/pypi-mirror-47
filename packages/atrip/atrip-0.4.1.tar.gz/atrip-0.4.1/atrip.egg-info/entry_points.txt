@@ -1,0 +1,43 @@
+[atrip.archivers]
+tar = atrip.archivers.tar
+zip = atrip.archivers.zip
+
+[atrip.compressors]
+Z = atrip.compressors.unix_compress
+bzip = atrip.compressors.bzip
+dcm = atrip.compressors.dcm
+gzip = atrip.compressors.gzip
+lz4 = atrip.compressors.lz4
+lzma = atrip.compressors.lzma
+zlib = atrip.compressors.zlib
+
+[atrip.file_types]
+atari_xex = atrip.file_types.atari_xex
+
+[atrip.filesystems]
+apple_dos33 = atrip.filesystems.apple_dos33
+atari_cas = atrip.filesystems.atari_cas
+atari_dos = atrip.filesystems.atari_dos2
+atari_jumpman = atrip.filesystems.atari_jumpman
+kboot = atrip.filesystems.kboot
+
+[atrip.media_types]
+apple_disks = atrip.media_types.apple_disks
+atari_carts = atrip.media_types.atari_carts
+atari_disks = atrip.media_types.atari_disks
+atari_tapes = atrip.media_types.atari_tapes
+
+[atrip.signatures]
+atari2600_cart = atrip.signatures.atari2600_cart
+atari2600_starpath = atrip.signatures.atari2600_starpath
+atari5200_cart = atrip.signatures.atari5200_cart
+vectrex = atrip.signatures.vectrex
+
+[atrip.stringifiers]
+basic_data = atrip.stringifiers.basic_data
+c_bytes = atrip.stringifiers.c_bytes
+hexify = atrip.stringifiers.hexify
+
+[sawx.loaders]
+00atrip = atrip.omnivore_loader
+
