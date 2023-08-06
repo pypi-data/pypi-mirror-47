@@ -1,0 +1,6 @@
+Sphinx>=2.0.0
+SQLAlchemy
+
+[linter]
+twine
+flake8==3.5.0
