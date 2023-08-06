@@ -1,0 +1,2 @@
+recursive-include libcolgraph *.h
+recursive-include libcolgraph *.cpp
