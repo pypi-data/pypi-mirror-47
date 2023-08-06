@@ -1,0 +1,141 @@
+Metadata-Version: 2.1
+Name: xadix.argparse-tree
+Version: 0.1.5
+Summary: This library makes it easier to work with many nested subcommands
+Home-page: https://gitlab.com/xadix/argparse_tree
+License: UNLICENSED
+Keywords: template
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# `xadix.argparse_tree`
+
+This package provides a class which makes it easier to deal with many
+nested argparse subcommands in python.
+
+Installing:
+
+```bash
+pip3 install --user --upgrade xadix.argparse_tree
+```
+
+Sample code:
+
+```py
+#!/usr/bin/env python3
+# vim: set filetype=python sts=4 ts=4 sw=4 expandtab tw=100 cc=+1:
+
+import sys
+import xadix.argparse_tree as apt
+
+def main():
+    # pylint: disable=unused-variable
+    root = apt.ArgParseNode(options={"add_help": True, "description": "argparse_tree example"},
+        default_options={"add_help": True})
+    root.parser.add_argument("--version",
+        action="version", version="???")
+    root.parser.add_argument("-v", "--verbose",
+        action="count", dest="verbosity",
+        help="increase verbosity level")
+    root.parser.add_argument("-s", "--some",
+        action="store", dest="some", type=str, required=False, default=None,
+        help="???")
+    node_git = root.get("git")
+    node_git.parser.add_argument("-C",
+        action="store", dest="git_path", type=str, required=False, default=None,
+        help="...")
+    node_git_id = root.get("git").get("id")
+    node_git_id.parser.add_argument("--file",
+        action="store", dest="git_ids_file", type=str, required=False,
+        help="...")
+    node_git_id_list = root.get("git").get("id").get("list")
+    node_git_id_set = root.get("git").get("id").get("set")
+    node_git_id_fromlog = root.get("git").get("id").get("fromlog")
+
+    parse_result = root.parser.parse_args(args=sys.argv[1:])
+
+    print("root.get_selected_path(parse_result) = '{}'".
+        format(root.get_selected_path(parse_result)))
+    print("root.get_selected_path_list(parse_result) = '{}'".
+        format(root.get_selected_path_list(parse_result)))
+    print("root.get_selected_node(parse_result) is node_git_id_list  = '{}'".
+        format(root.get_selected_node(parse_result) is node_git_id_list))
+
+
+if __name__ == "__main__":
+    main()
+```
+
+Running sample code:
+
+```
+$ ./sample.py -h
+usage: sample.py [-h] [--version] [-v] [-s SOME] {git} ...
+
+argparse_tree example
+
+positional arguments:
+  {git}
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -v, --verbose         increase verbosity level
+  -s SOME, --some SOME  ???
+
+$ ./sample.py git -h
+usage: sample.py git [-h] [-C GIT_PATH] {id} ...
+
+positional arguments:
+  {id}
+
+optional arguments:
+  -h, --help   show this help message and exit
+  -C GIT_PATH  ...
+
+$ ./sample.py git id list
+root.get_selected_path(parse_result) = 'git/id/list'
+root.get_selected_path_list(parse_result) = '['git', 'id', 'list']'
+root.get_selected_node(parse_result) is node_git_id_list  = 'True'
+```
+
+## Dev guide
+
+```bash
+
+pip3 uninstall xadix.argparse_tree
+pip3 install --user --upgrade --editable .
+python3 -m xadix.argparse_tree.cli -vvvv --version
+```
+
+Run without installing:
+
+```bash
+python3 -m src.xadix.argparse_tree.cli -vvvv --version
+python3 -m src.xadix.argparse_tree.cli -vvvv
+```
+
+```bash
+pip3 install --user --upgrade wheel twine
+
+git tag --message="tag version" 0.1.0
+git push --tags
+
+python3 setup.py clean --all
+rm -rf dist/ *.egg-info
+
+python3 setup.py bdist_wheel
+twine check dist/*
+
+twine upload dist/*
+```
+
+
