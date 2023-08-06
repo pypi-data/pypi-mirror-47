@@ -1,0 +1,11 @@
+arrpc/__init__.py,sha256=527UgX2WEr08Htu40rMf3xrHMJc97lkdTfeVPVntUXM,251
+arrpc/client.py,sha256=jdEzu1--php5RZ4qNvBMGxzv9FAVRNIV4KzUvnx6K98,3376
+arrpc/error.py,sha256=68qf3ConhD0FxKmekUYdoLQZX2p7jrJRA6uyd7rdMcg,87
+arrpc/server.py,sha256=F7FNg3na71qdwhl149j7FMQ88VtSwOsZ7kdT2puVynE,2705
+arrpc/utils.py,sha256=6tmT_o7B3bZIOM4fPHXlvTK080UZ2pKjHfy-RYKr6u4,1145
+arrpc/version.py,sha256=MhSDiPw6q_Rb_4Klqsm1Ie1moVgCJUeMa2HHzAGs6aI,225
+arrpc-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+arrpc-0.1.0.dist-info/METADATA,sha256=Z9J_dDlULuEFr4j-Hisns_qP1Uj-kiZSGGveRHVt5c0,779
+arrpc-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+arrpc-0.1.0.dist-info/top_level.txt,sha256=WaoVpYISI7a6k2kaoUC_ga0CLeWVuUZwCgIswWLVmqY,6
+arrpc-0.1.0.dist-info/RECORD,,
