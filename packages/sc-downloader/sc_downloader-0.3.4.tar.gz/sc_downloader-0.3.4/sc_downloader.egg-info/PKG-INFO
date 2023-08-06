@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: sc-downloader
+Version: 0.3.4
+Summary: Downloads music from Soundcloud.
+Home-page: https://github.com/WORD559/snapchat-downloader
+Author: WORD559
+Author-email: josh.barrass.work@gmail.com
+License: UNKNOWN
+Description: **Soundcloud Downloader**
+        
+        Soundcloud downloader is a package designed to be used from either the command line or as a module. It provides a method of interacting with Soundcloud, primarily to download tracks from the site to play locally.
+        
+        This project is currently in development and incomplete.
+        
+Keywords: soundcloud downloader music archive dump
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
