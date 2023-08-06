@@ -1,0 +1,36 @@
+CHANGES
+=======
+
+1.2.0
+-----
+
+* Add 'additional\_vips' field to driver datamodel
+* Replace git.openstack.org URLs with opendev.org URLs
+* Add project\_id to all of the data model objects
+* Cap sphinx for py2 to match global requirements
+* Add python 3.7 testing
+* OpenDev Migration Patch
+* Remove python3.5 jobs for Train
+* Remove testtools from test-requirements.txt
+* Do not install README.rst and LICENSE
+* Update master for stable/stein
+
+1.1.1
+-----
+
+* Sync data models and import new constants from Octavia
+
+1.1.0
+-----
+
+* Fix some driver library bugs
+* Add FLAVOR as a constant
+* Add missing libraries to requirement files
+
+1.0.0
+-----
+
+* Change openstack-dev to openstack-discuss
+* Initial provider driver library checkin
+* Initial cookie-cutter commit for octavia-lib
+* Added .gitreview
