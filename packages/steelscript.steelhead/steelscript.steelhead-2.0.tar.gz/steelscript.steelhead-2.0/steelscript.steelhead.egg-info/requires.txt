@@ -1,0 +1,17 @@
+ipaddress
+netaddr
+steelscript.cmdline>=2.0
+
+[all]
+
+[dev]
+pytest
+testfixtures
+sphinx
+
+[doc]
+sphinx
+
+[test]
+pytest
+testfixtures
