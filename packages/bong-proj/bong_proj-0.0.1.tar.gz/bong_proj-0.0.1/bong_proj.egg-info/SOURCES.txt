@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bong_proj.egg-info/PKG-INFO
+bong_proj.egg-info/SOURCES.txt
+bong_proj.egg-info/dependency_links.txt
+bong_proj.egg-info/entry_points.txt
+bong_proj.egg-info/requires.txt
+bong_proj.egg-info/top_level.txt
+sample/__init__.py
+test/__init__.py
+test/test_simple.py
