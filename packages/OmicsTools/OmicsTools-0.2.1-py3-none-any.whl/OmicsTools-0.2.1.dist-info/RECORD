@@ -1,0 +1,9 @@
+OmicsTools/__init__.py,sha256=Ikd3MO9sfIliHCVSnDKn2HmJMgGd26Hnj8EsNOgRzZY,87
+OmicsTools/counts.py,sha256=iRemTb_mRMBCWhbFmuebdvl_Osw3vBDLrV03YUQq_WY,1695
+OmicsTools/namespace.py,sha256=ACW-BJwpJ99tPeKH48JW_zhZ7F6jINF203n09vr1CUU,1980
+OmicsTools/enrich/__init__.py,sha256=FbQgSkYssKNsSlbBza54uQ8BUGIEGQmSNREA_4hTEMU,42
+OmicsTools/enrich/go.py,sha256=LmwR0jpBqDGSITqmRcw806kftD6IqyjwGLljaavD6Ig,2865
+OmicsTools-0.2.1.dist-info/METADATA,sha256=vretWwRQNEjmcppfklI9zyBleWVz-L_f4mABqQdtEfs,384
+OmicsTools-0.2.1.dist-info/RECORD,,
+OmicsTools-0.2.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+OmicsTools-0.2.1.dist-info/top_level.txt,sha256=_ynKed5zcw7uxjPZg1ZAgIJcV0aZfIRWNwsz4kiak-0,11
