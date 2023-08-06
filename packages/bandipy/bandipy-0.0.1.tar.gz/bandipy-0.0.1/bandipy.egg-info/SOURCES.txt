@@ -1,0 +1,7 @@
+README.md
+setup.py
+bandipy/__init__.py
+bandipy.egg-info/PKG-INFO
+bandipy.egg-info/SOURCES.txt
+bandipy.egg-info/dependency_links.txt
+bandipy.egg-info/top_level.txt
