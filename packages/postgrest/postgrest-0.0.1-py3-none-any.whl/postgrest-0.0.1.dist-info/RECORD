@@ -1,0 +1,9 @@
+postgrest/__init__.py,sha256=1Mj8woVor1ndcmPa6FVTZGxvadeTBMfwiO5aEgbQQMs,235
+postgrest/client.py,sha256=XYQHmb6A307WrwFqNVepQgcMH-UNofhH7miuxKPVleo,7756
+postgrest/filters.py,sha256=DngkjJT0HAHMtirwX1wcyhoUPTKhLdHJkqjA32AblOE,5781
+postgrest-0.0.1.dist-info/LICENSE,sha256=dsKJou6GA5hoI2VaRWTUD7E_HhVy0PiNt0AfvPrDf0s,11340
+postgrest-0.0.1.dist-info/METADATA,sha256=OOfRdZuMmZOUf9a8cqmHR0rnY4qa7iUDu2hH1S7X0Zc,890
+postgrest-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+postgrest-0.0.1.dist-info/top_level.txt,sha256=MmuL0My5koTQmRGD9WqU7WaeuEd-U_BdfcBH09th2DI,10
+postgrest-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+postgrest-0.0.1.dist-info/RECORD,,
