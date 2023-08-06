@@ -1,0 +1,13 @@
+docria/__init__.py,sha256=LccuWGZC2cPysUN93wdfelLVmplapt8563hOD4v1088,834
+docria/algorithm.py,sha256=fngZiStEbZkmpFsts42yW9qNMgbTrr0sb7V5XwsAFCU,16552
+docria/codec.py,sha256=R_63_ovKCp1YBXcVnUDliuvmGZ23NqfkYz3nVuxLCEo,27901
+docria/index.py,sha256=07iRUseNRVesneJdVY377tiERT8mgcNxhfK6BdxM2fo,1396
+docria/model.py,sha256=rqYCB7Na8rZzkkvXLC5PN0uUzNuio-0jM3y8X9IFrJs,67520
+docria/printout.py,sha256=3wHhPiBbJqU3tWorPNboK5PI2faWS4yPKM2bkS7flt0,13541
+docria/query.py,sha256=9PbLwlu8zu_4E3zHtSSyhVV3G17mgTeOscxhHG0V62c,4230
+docria/storage.py,sha256=gYfxHWpW3CuoYL1lVix_364DnNS-uwOwQ-6Zm4Si8Sc,24645
+docria-0.3.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+docria-0.3.0.dist-info/METADATA,sha256=MXPEaj3ba_qrbIteZnWLFqHzmTugW1RCkd3v63k8gg4,1108
+docria-0.3.0.dist-info/WHEEL,sha256=MYFsq5fFBwF_oyJgrOoFmYYB1K6Sw7MxY-0897ZLbdM,92
+docria-0.3.0.dist-info/top_level.txt,sha256=UWzm616J7okcGcZTCA8L1ujfxDigfu6LWejb9GHd7YM,7
+docria-0.3.0.dist-info/RECORD,,
