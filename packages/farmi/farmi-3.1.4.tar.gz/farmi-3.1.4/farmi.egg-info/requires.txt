@@ -1,0 +1,4 @@
+pyzmq
+msgpack
+msgpack-numpy
+lz4
