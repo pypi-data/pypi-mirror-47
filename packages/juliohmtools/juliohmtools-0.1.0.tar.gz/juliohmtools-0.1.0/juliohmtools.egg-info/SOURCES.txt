@@ -1,0 +1,10 @@
+README.md
+setup.py
+juliohmtools/__init__.py
+juliohmtools/k8scontroller.py
+juliohmtools.egg-info/PKG-INFO
+juliohmtools.egg-info/SOURCES.txt
+juliohmtools.egg-info/dependency_links.txt
+juliohmtools.egg-info/requires.txt
+juliohmtools.egg-info/top_level.txt
+test/test.py
