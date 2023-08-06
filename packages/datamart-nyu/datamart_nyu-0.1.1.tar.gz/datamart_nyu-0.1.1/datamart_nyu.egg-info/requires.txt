@@ -1,0 +1,4 @@
+d3m
+datamart
+requests==2.19.1
+websocket_client
