@@ -1,0 +1,3 @@
+[console_scripts]
+make_paper_page=reading_helper:scripts_api.make_paper_page
+
