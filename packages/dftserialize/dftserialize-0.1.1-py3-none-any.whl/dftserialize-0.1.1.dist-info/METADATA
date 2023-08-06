@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dftserialize
+Version: 0.1.1
+Summary: A next-gen Python object serialization suite using the Discrete Fourier Transform
+Home-page: https://github.com/ThePlasmaRailgun/DFTSerialize
+Author: Finian Blackett
+Author-email: spamsuckersunited@gmail.com
+License: UNKNOWN
+Requires-Dist: numpy
+
+# DFTSerialize™
+
+
