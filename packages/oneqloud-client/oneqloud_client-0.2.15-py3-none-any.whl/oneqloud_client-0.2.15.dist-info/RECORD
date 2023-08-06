@@ -1,0 +1,13 @@
+oneqloud-client/__init__.py,sha256=FRl5GN99rFiKFGUlSGonr2s1kyFJ2kLCDYezYTjn2J4,1182
+oneqloud-client/client.py,sha256=_4xOC67OT03KtzFMpz6WQdx3vbYSpp4a7DsfqRrn5uM,2631
+oneqloud-client/qbit_pb2.py,sha256=8ekiB6ZMUSDiAbFRRA8ZfR-9DIfyEgVrpGULjH9Km88,195334
+oneqloud-client/qbit_pb2_grpc.py,sha256=U_QlEmwczaxyNVv1BYCCLbqi4AlFtHIPvUBQKoJlYlQ,9114
+oneqloud_client/__init__.py,sha256=FRl5GN99rFiKFGUlSGonr2s1kyFJ2kLCDYezYTjn2J4,1182
+oneqloud_client/ca.pem,sha256=lPg_SPNCoA9HrDUuwWvWFEEExjmmUJvTzVIxKtlMZzo,1277
+oneqloud_client/client.py,sha256=j00SlSCX5XD3_jzzhvo_mWrnKk40Kv3pAIpaGDPVti0,2664
+oneqloud_client/qbit_pb2.py,sha256=8ekiB6ZMUSDiAbFRRA8ZfR-9DIfyEgVrpGULjH9Km88,195334
+oneqloud_client/qbit_pb2_grpc.py,sha256=U_QlEmwczaxyNVv1BYCCLbqi4AlFtHIPvUBQKoJlYlQ,9114
+oneqloud_client-0.2.15.dist-info/METADATA,sha256=Phnl0EadzL9NJ_s-u-H8MlYKT1KuERzJ7SHTjVBbObc,360
+oneqloud_client-0.2.15.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+oneqloud_client-0.2.15.dist-info/top_level.txt,sha256=nODwTylm1XspjSSOssoHnUxMnpU447U_dilKtKIOODA,16
+oneqloud_client-0.2.15.dist-info/RECORD,,
