@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fig_html/__init__.py
+fig_html/fig_html_maker.py
+fig_html.egg-info/PKG-INFO
+fig_html.egg-info/SOURCES.txt
+fig_html.egg-info/dependency_links.txt
+fig_html.egg-info/requires.txt
+fig_html.egg-info/top_level.txt
+fig_html/utils/__init__.py
+fig_html/utils/path.py
+fig_html/utils/sample_fig_maker.py
+tests/__init__.py
+tests/test_all.py

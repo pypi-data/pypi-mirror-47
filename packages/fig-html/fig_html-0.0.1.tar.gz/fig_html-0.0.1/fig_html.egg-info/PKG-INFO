@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: fig-html
+Version: 0.0.1
+Summary: html generator following directory structure you saved figures
+Home-page: https://github.com/kazetof/fig_html
+Author: Kazeto Fukasawa
+Author-email: fukasawakaze@gmail.com
+License: MIT
+Description: # Overview
+        fig_html generates minimal html files from directories where figures were saved.
+        
+        # Requirement
+        
+        ```
+        python >= 3.6
+        ```
+        
+        ```
+        numpy
+        pandas
+        matplotlib
+        jinja2 >= 2.10
+        ```
+        The matplotlib is only for making sample figures.
+        
+        # Usage
+        
+        Suppose we saved figures in a directory hierarchicaly.
+        
+        `SampleFiguresMaker` makes sample figures and directory.
+        
+        ```python
+        from fig_html.utils import SampleFiguresMaker
+        
+        root_dir = "./outputs"
+        SampleFiguresMaker().make(root_dir)
+        ```
+        
+        ```
+        └── outputs
+            ├── correlation
+            │   ├── correlation
+            │   │   ├── fig1.png
+            │   │   ├── fig2.png
+            │   │   └── fig3.png
+            │   ├── fig1.png
+            │   ├── fig2.png
+            │   └── fig3.png
+            └── histogram
+                ├── histogram1.png
+                ├── histogram2.png
+                └── histogram3.png
+        ```
+        
+        `HTMLMaker` adds html file in each directory like below.
+        
+        ```python
+        from fig_html import HTMLMaker
+        
+        root_dir = "./outputs"
+        HTMLMaker().make(root_dir)
+        ```
+        
+        ```
+        └── outputs
+            ├── _static
+            │   └── basestyle.css
+            ├── correlation
+            │   ├── correlation
+            │   │   ├── correlation.html
+            │   │   ├── fig1.png
+            │   │   ├── fig2.png
+            │   │   └── fig3.png
+            │   ├── correlation.html
+            │   ├── fig1.png
+            │   ├── fig2.png
+            │   └── fig3.png
+            ├── histogram
+            │   ├── histogram.html
+            │   ├── histogram1.png
+            │   ├── histogram2.png
+            │   └── histogram3.png
+            └── outputs.html
+        ```
+        
+        Now we can check figures easily like this.
+        
+        ![htmldemo](https://raw.github.com/wiki/kazetof/fig_html/img/fig_html_sample.gif)
+        
+        
+        
+Keywords: python data-science data-analysis
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
