@@ -1,0 +1,9 @@
+finmeter/__init__.py,sha256=E4i2aQ1gpggE56nWAsK0gK3TbWroEF9RHB8Zo0mv1yY,272
+finmeter/finmeter.py,sha256=gxhgcjkIm1yRo9X76v6kG-NQRtmwBXr4NesqoZBmY6A,7236
+finmeter/hyphenate.py,sha256=AcJUbzuM3IZ8Qjqna9tFEi4kO2Enwn-07Ke4U5bcrmg,2022
+finmeter/kalevala.py,sha256=fle5hLIEVMIMCuD-HLBhBphP4_f_FtjQK0jqEIy4gFI,6129
+finmeter/meters.json,sha256=5yZ-iceT2UavU0t6LYq2-WeI_IQQ1QGCXEUrSvCfrps,1163
+finmeter-1.0.0.dist-info/METADATA,sha256=Dw1AsRUvLsBy3jwl9MPmLeqp1u4hvzaLuhdEwja4btk,3388
+finmeter-1.0.0.dist-info/RECORD,,
+finmeter-1.0.0.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+finmeter-1.0.0.dist-info/top_level.txt,sha256=2xzUGrkfjk79lGom5GFSwfcF9iG6sRPRWkzxlOjA47k,9
