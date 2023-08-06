@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pykrx
+Version: 0.0.9
+Summary: KRX scraping
+Home-page: https://github.com/sharebook-kr/pykrx
+Author: Brayden Jo, Lukas Yoo
+Author-email: brayden.jo@outlook.com, jonghun.yoo@outlook.com, pystock@outlook.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
