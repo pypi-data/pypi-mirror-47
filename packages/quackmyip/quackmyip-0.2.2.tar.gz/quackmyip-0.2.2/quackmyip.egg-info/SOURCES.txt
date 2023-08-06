@@ -1,0 +1,10 @@
+README.md
+setup.py
+quackmyip/__init__.py
+quackmyip/quackmyip
+quackmyip.egg-info/PKG-INFO
+quackmyip.egg-info/SOURCES.txt
+quackmyip.egg-info/dependency_links.txt
+quackmyip.egg-info/entry_points.txt
+quackmyip.egg-info/requires.txt
+quackmyip.egg-info/top_level.txt

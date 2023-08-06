@@ -1,0 +1,3 @@
+[console_scripts]
+quackmyip = quackmyip.quackmyip:main
+
