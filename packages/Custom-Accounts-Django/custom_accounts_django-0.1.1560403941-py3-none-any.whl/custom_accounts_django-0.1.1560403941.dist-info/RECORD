@@ -1,0 +1,12 @@
+custom-accounts-django/__init__.py,sha256=56Co7DNL58-KT3RWm5I386Tjh5h3gUhf9Q1dPTUqlG4,143
+custom-accounts-django/admin.py,sha256=leaYUhfBTd9VweD2sscRHK0idMI53-lmMq-CLHXOdOY,189
+custom-accounts-django/apps.py,sha256=l7tPoNf9hspzmSh489IDVQjJO2-HS2j232ERt_K3t4o,350
+custom-accounts-django/models.py,sha256=QbvL1Gs-LUlSyswlGlYx0xtZh5HNe5pR3U7QNMNDR3U,751
+custom-accounts-django/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+custom-accounts-django/urls.py,sha256=gxTwnQ-PbrKAK6TCP78gZKAkyctwTpMuPlauK3kCtZw,896
+custom-accounts-django/views.py,sha256=YdhnM_8m5FOpS-F9j_XeglznQY4eRW4cl4sdUbFPBsM,3668
+custom-accounts-django/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_accounts_django-0.1.1560403941.dist-info/METADATA,sha256=SDKAqzS0e4wWfL0AUG8bPQ9T_04QZI2ULvbhmT22ow8,470
+custom_accounts_django-0.1.1560403941.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+custom_accounts_django-0.1.1560403941.dist-info/top_level.txt,sha256=4i5GvqunN14lit94V5sCNLESgx-ym_YIcEA0upktONw,23
+custom_accounts_django-0.1.1560403941.dist-info/RECORD,,
