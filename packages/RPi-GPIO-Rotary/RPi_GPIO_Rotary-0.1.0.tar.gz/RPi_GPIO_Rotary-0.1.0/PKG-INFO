@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: RPi_GPIO_Rotary
+Version: 0.1.0
+Summary: Simple module for getting values from KY040 and similar rotary encoders
+Home-page: https://github.com/AllanGallop/RPi_GPIO_Rotary
+Author: Allan Gallop
+Author-email: allangallop@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/AllanGallop/RPi_GPIO_Rotary/archive/0.1.0.tar.gz
+Description: UNKNOWN
+Keywords: rotary encoder KY040 raspberry pi GPIO
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
