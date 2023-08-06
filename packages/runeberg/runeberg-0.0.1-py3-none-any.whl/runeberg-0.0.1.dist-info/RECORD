@@ -1,0 +1,15 @@
+runeberg/__init__.py,sha256=ouenY-cohBHsuSeRnFeuCFeibxuXssazY8OOmFtjt4g,336
+runeberg/__main__.py,sha256=VLOovccD-AUpouZkFff0REGaDMo5WyQt3aaHKz3BlHI,10964
+runeberg/article.py,sha256=6mSdxVW0aU_Tu59KEzqLgzpZfxKrIwtdfHR5bOdW6Jw,3500
+runeberg/download.py,sha256=4hBBmTPfKboY95eNi-OBCZumIwAUla3MMbQyBq9LUH0,9867
+runeberg/lst_file.py,sha256=x0JA6MAXcyegh1ejrGeIqcIPa-_DSFrAPKL09m2_o9o,2719
+runeberg/page.py,sha256=EnYCjooWRV4rTvkGLJkzLEiQp-wY81ZKxEzcwD180QU,5269
+runeberg/page_range.py,sha256=8WgpEbsxYesDQ_mkQ5rBVLA-hotjoF3wYV4Ch4Pow6A,2152
+runeberg/person.py,sha256=-t7X0eVAdLGs196UktmSSqeUWpq3TjcCGJhsIVYyC80,3231
+runeberg/work.py,sha256=HDYfle8oqLloTGc-PGARGSxR6xuh96Js-vG7Bq6C414,17135
+runeberg-0.0.1.dist-info/LICENSE,sha256=wMP2-t_SRZozPW-OJAKZAvKGC5Go8p6b8_7GzcI7ug8,1067
+runeberg-0.0.1.dist-info/METADATA,sha256=xgZh6fylNgSKWgzjuEWnkHhniMutSnmXKuFPj2LHYWE,4400
+runeberg-0.0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+runeberg-0.0.1.dist-info/entry_points.txt,sha256=j3DzChn06VRt1BPOnt5U5xC26Mezl5UwyJZQXI4K3Po,53
+runeberg-0.0.1.dist-info/top_level.txt,sha256=I2XKuqvP-YfL-rv-jFgNZuIFejdDcpoBD4vDgox9G4Y,9
+runeberg-0.0.1.dist-info/RECORD,,
