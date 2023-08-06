@@ -1,0 +1,12 @@
+fig_html/__init__.py,sha256=MK_bnIUUkV0QudclF90kIu9c4b0iFxDRuSBiS1g4bFg,285
+fig_html/fig_html_maker.py,sha256=orH0YMBnbzbRKMaiZdVC7qMUQTWczg5yNp74jxMaQz8,3462
+fig_html/utils/__init__.py,sha256=91Zb_dlSsJK6qhzQdFGkqIOBF2tINhiuO3nT02T2tIE,49
+fig_html/utils/path.py,sha256=eJlqVsgmanyRSgSPjXcC-I_FyYKxyneYsrunHwmCLDk,5571
+fig_html/utils/sample_fig_maker.py,sha256=3UO5wX06MiGjO3to7DhKCCvgVVusvsX0D_YLY-nIbLY,2748
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_all.py,sha256=TGQVz0aiLf_hRw4-Cu80xOXIwGMlB_YTPaXTJgXY6jo,348
+fig_html-0.0.1.dist-info/LICENSE,sha256=vFXjcaMxe5FFDNYBP1hftQzsg-FASp5PuzLyQZJ3MDA,1078
+fig_html-0.0.1.dist-info/METADATA,sha256=KZJDuQLpcAkQSsqw_d3CNqSvBiJNt44VNMfsnbOkdJU,2693
+fig_html-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fig_html-0.0.1.dist-info/top_level.txt,sha256=HEx7-BTsIZTjaumMLeRwG5wEnxeLnR2LB1JE61ztDnI,15
+fig_html-0.0.1.dist-info/RECORD,,
