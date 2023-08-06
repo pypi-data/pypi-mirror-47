@@ -1,0 +1,3 @@
+[console_scripts]
+backuppc-clone = backuppc_clone:main
+
