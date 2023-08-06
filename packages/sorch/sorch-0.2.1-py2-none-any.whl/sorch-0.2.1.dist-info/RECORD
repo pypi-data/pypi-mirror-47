@@ -1,0 +1,7 @@
+sorch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorch/trainer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sorch/trainer/trainer.py,sha256=89L8oiup8CtAvzbUbrw2j7s8DitCEFnMkzV2Ny5d3LQ,20735
+sorch-0.2.1.dist-info/METADATA,sha256=g7ujLPwbKBSQvhlD1AjezJ5KG03UURPkwdZLrWiGqXo,428
+sorch-0.2.1.dist-info/WHEEL,sha256=_eaHuBxOHdDlLnwQU30U16Q6vfvhsEhxIYEpcPcf8n0,92
+sorch-0.2.1.dist-info/top_level.txt,sha256=zBSDQenitt3uo-fiNWygyRjp27Yvr_KRFVazOc-QdFg,6
+sorch-0.2.1.dist-info/RECORD,,
