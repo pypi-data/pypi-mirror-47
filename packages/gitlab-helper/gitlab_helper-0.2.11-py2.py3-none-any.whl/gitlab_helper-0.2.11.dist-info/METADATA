@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: gitlab-helper
+Version: 0.2.11
+Summary: some useful actions for interacting with gitlab
+Home-page: https://github.com/reedrichards/glb
+Author: Robert Wendt
+Author-email: rwendt1337@gmail.com
+License: MIT license
+Keywords: gitlab_helper
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+Requires-Dist: gitpython
+Requires-Dist: python-gitlab
+Requires-Dist: cookiecutter
+
+=============
+gitlab-helper
+=============
+
+.. image:: https://gitlab.com/reedrichards/gitlab-helper/badges/master/coverage.svg?job=coverage
+        :target: https://gitlab-helper.grimeywebsites.com/coverage/index.html
+        :alt: coverage
+
+.. image:: https://gitlab.com/reedrichards/gitlab-helper/badges/master/pipeline.svg
+        :alt: pipeline
+
+.. image:: https://img.shields.io/pypi/v/gitlab-helper.svg
+        :target: https://pypi.python.org/pypi/gitlab-helper
+        :alt: pypi
+
+.. image:: https://img.shields.io/pypi/l/gitlab-helper.svg
+        :target: https://gitlab.com/reedrichards/gitlab-helper/raw/master/LICENSE
+        :alt: PyPI - License
+
+.. image:: https://img.shields.io/pypi/dm/gitlab-helper.svg
+        :alt: PyPI - Downloads
+
+.. image:: https://img.shields.io/pypi/pyversions/gitlab-helper.svg
+        :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/pypi/status/gitlab-helper.svg
+        :alt: PyPI - Status
+
+
+Documentation: https://gitlab-helper.grimeywebsites.com
+
+    backup: https://reedrichards.gitlab.io/gitlab-helper/index.html
+
+
+Gitlab: https://reedrichards.gitlab.io/gitlab-helper
+
+
+Quickstart
+----------
+
+install ``gitlab_helper`` to your system
+
+.. code-block:: shell
+
+    sudo pip install  gitlab_helper
+
+test the installation
+
+.. code-block:: shell
+
+   glb version
+
+.. code-block:: shell
+
+   0.2.10
+
+print the help text
+
+.. code-block:: shell
+
+   glb --help
+
+.. code-block:: shell
+
+   Usage: glb [OPTIONS] COMMAND [ARGS]...
+
+   Console script for glb.
+
+  Options:
+    --help  Show this message and exit.
+
+  Commands:
+    add      add a git repo to gitlab USAGE: add current directory to a new...
+    clone    attempt to clone all of a groups projects, given a atrribute
+             that...
+    new      make a new project
+    token    set gitlab private token
+    version  print the current version of gitlab-helper
+
+
+configure environment variables
+
+.. code-block:: shell
+
+   # add this to your ~/.profile for this to be permanent
+   export GITLAB_PRIVATE_TOKEN=xxxxxxxxxxxxxxxx
+   export GITLAB_URL=https://gitlab.com
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+

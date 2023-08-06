@@ -1,0 +1,3 @@
+[console_scripts]
+glb = gitlab_helper.cli:main
+
