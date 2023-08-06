@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+matt-daemon.py
+setup.cfg
+setup.py
+matt_daemon.egg-info/PKG-INFO
+matt_daemon.egg-info/SOURCES.txt
+matt_daemon.egg-info/dependency_links.txt
+matt_daemon.egg-info/top_level.txt
