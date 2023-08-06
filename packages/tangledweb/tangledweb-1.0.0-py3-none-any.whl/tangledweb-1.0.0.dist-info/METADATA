@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: tangledweb
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Hapsida @securisec
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# tangledweb
+
+**place holder**
+
