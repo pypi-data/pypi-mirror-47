@@ -1,0 +1,17 @@
+MANIFEST.in
+setup.py
+phonetic_algorithmIPA/__init__.py
+phonetic_algorithmIPA/ipa_distances.py
+phonetic_algorithmIPA.egg-info/PKG-INFO
+phonetic_algorithmIPA.egg-info/SOURCES.txt
+phonetic_algorithmIPA.egg-info/dependency_links.txt
+phonetic_algorithmIPA.egg-info/not-zip-safe
+phonetic_algorithmIPA.egg-info/top_level.txt
+phonetic_algorithmIPA/data/.DS_Store
+phonetic_algorithmIPA/data/cons.json
+phonetic_algorithmIPA/data/diacrit.json
+phonetic_algorithmIPA/data/ftable.json
+phonetic_algorithmIPA/data/index_column.json
+phonetic_algorithmIPA/data/regs.txt
+phonetic_algorithmIPA/data/rows.json
+phonetic_algorithmIPA/data/vows.json
