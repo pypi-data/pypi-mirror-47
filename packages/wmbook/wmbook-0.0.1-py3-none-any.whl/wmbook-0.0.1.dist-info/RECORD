@@ -1,0 +1,10 @@
+wmbook/__init__.py,sha256=w2QAgJ4ZdWplOXY6m-ucxX9UWtP55yU7nCkU6O2I6KQ,878
+wmbook/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wmbook/test/test_aidevlog.py,sha256=IaArqvB_lZ-cE3HidCgWG91m3UBWsa9N9UTIS5k3a4M,75
+wmbook/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wmbook/utils/_show_versions.py,sha256=f1aB3_h4EGkMW9ojQQzhu4B7azy7DcBPISu7nzzkFqY,1617
+wmbook-0.0.1.dist-info/LICENSE,sha256=fyNnH_HnQYUKt4FLxGeh0WCOusHNVOjZ-YQnD8gQHcI,1068
+wmbook-0.0.1.dist-info/METADATA,sha256=m2RkdEtU4NZNfxmUMghFIgq9AV5weZrcDscDnxZkkqA,2932
+wmbook-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+wmbook-0.0.1.dist-info/top_level.txt,sha256=MzcQwtS9QfWgOCjbIMrpruGhaAKFtwYKVIlLSb3srCw,7
+wmbook-0.0.1.dist-info/RECORD,,
