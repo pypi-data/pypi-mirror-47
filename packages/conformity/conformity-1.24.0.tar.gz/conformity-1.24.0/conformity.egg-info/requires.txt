@@ -1,0 +1,20 @@
+attrs<20,>=17.4
+six
+
+[:python_version < "3.5"]
+typing
+
+[country]
+pycountry
+
+[currency]
+currint
+
+[testing]
+pytest
+pytest-cov
+pytest-runner
+freezegun
+pytz
+currint
+pycountry
