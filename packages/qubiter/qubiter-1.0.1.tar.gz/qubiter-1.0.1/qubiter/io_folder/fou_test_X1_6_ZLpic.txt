@@ -1,0 +1,129 @@
+NOTA	--------expansion of SWAP
+|   |   X---@   |   |   
+|   |   @---X   |   |   
+|   |   X---@   |   |   
+NOTA	--------expansion of SWAP
+|   |   X---+---@   |   
+|   |   @---+---X   |   
+|   |   X---+---@   |   
+NOTA	--------expansion of SWAP
+|   |   X---+---+---@   
+|   |   @---+---+---X   
+|   |   X---+---+---@   
+NOTA	--------expansion of SWAP
+|   |   |   X---@   |   
+|   |   |   @---X   |   
+|   |   |   X---@   |   
+NOTA	--------expansion of SWAP
+|   |   |   X---+---@   
+|   |   |   @---+---X   
+|   |   |   X---+---@   
+NOTA	--------expansion of SWAP
+|   |   |   |   X---@   
+|   |   |   |   @---X   
+|   |   |   |   X---@   
+|   |   |   |   |   H   
+NOTA	--------expansion of P1PH
+|   |   |   |   X---@   
+|   |   |   |   R   |   
+|   |   |   |   X---@   
+|   |   |   |   R   |   
+|   |   |   |   |   Rz  
+NOTA	--------expansion of P1PH
+|   |   |   X---+---@   
+|   |   |   R   |   |   
+|   |   |   X---+---@   
+|   |   |   R   |   |   
+|   |   |   |   |   Rz  
+NOTA	--------expansion of P1PH
+|   |   X---+---+---@   
+|   |   R   |   |   |   
+|   |   X---+---+---@   
+|   |   R   |   |   |   
+|   |   |   |   |   Rz  
+|   |   |   |   H   |   
+NOTA	--------expansion of P1PH
+|   |   |   X---@   |   
+|   |   |   R   |   |   
+|   |   |   X---@   |   
+|   |   |   R   |   |   
+|   |   |   |   Rz  |   
+NOTA	--------expansion of P1PH
+|   |   X---+---@   |   
+|   |   R   |   |   |   
+|   |   X---+---@   |   
+|   |   R   |   |   |   
+|   |   |   |   Rz  |   
+|   |   |   H   |   |   
+NOTA	--------expansion of P1PH
+|   |   X---@   |   |   
+|   |   R   |   |   |   
+|   |   X---@   |   |   
+|   |   R   |   |   |   
+|   |   |   Rz  |   |   
+|   |   H   |   |   |   
+NOTA	do h.c. next
+|   |   H   |   |   |   
+NOTA	--------expansion of P1PH
+|   |   X---@   |   |   
+|   |   R   |   |   |   
+|   |   X---@   |   |   
+|   |   R   |   |   |   
+|   |   |   Rz  |   |   
+|   |   |   H   |   |   
+NOTA	--------expansion of P1PH
+|   |   X---+---@   |   
+|   |   R   |   |   |   
+|   |   X---+---@   |   
+|   |   R   |   |   |   
+|   |   |   |   Rz  |   
+NOTA	--------expansion of P1PH
+|   |   |   X---@   |   
+|   |   |   R   |   |   
+|   |   |   X---@   |   
+|   |   |   R   |   |   
+|   |   |   |   Rz  |   
+|   |   |   |   H   |   
+NOTA	--------expansion of P1PH
+|   |   X---+---+---@   
+|   |   R   |   |   |   
+|   |   X---+---+---@   
+|   |   R   |   |   |   
+|   |   |   |   |   Rz  
+NOTA	--------expansion of P1PH
+|   |   |   X---+---@   
+|   |   |   R   |   |   
+|   |   |   X---+---@   
+|   |   |   R   |   |   
+|   |   |   |   |   Rz  
+NOTA	--------expansion of P1PH
+|   |   |   |   X---@   
+|   |   |   |   R   |   
+|   |   |   |   X---@   
+|   |   |   |   R   |   
+|   |   |   |   |   Rz  
+|   |   |   |   |   H   
+NOTA	--------expansion of SWAP
+|   |   |   |   X---@   
+|   |   |   |   @---X   
+|   |   |   |   X---@   
+NOTA	--------expansion of SWAP
+|   |   |   X---+---@   
+|   |   |   @---+---X   
+|   |   |   X---+---@   
+NOTA	--------expansion of SWAP
+|   |   |   X---@   |   
+|   |   |   @---X   |   
+|   |   |   X---@   |   
+NOTA	--------expansion of SWAP
+|   |   X---+---+---@   
+|   |   @---+---+---X   
+|   |   X---+---+---@   
+NOTA	--------expansion of SWAP
+|   |   X---+---@   |   
+|   |   @---+---X   |   
+|   |   X---+---@   |   
+NOTA	--------expansion of SWAP
+|   |   X---@   |   |   
+|   |   @---X   |   |   
+|   |   X---@   |   |   

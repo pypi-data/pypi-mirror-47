@@ -1,0 +1,16 @@
+HAD2  AT  3
+SIGX  AT  2
+SIGY  AT  2
+SIGZ  AT  2
+ROTX  30.0  AT  3
+ROTY  25.0  AT  3
+ROTZ  60.0  AT  3
+ROTN  30.0  45.0  60.0  AT 4
+NOTA  0->1 allowed by c_to_tars
+SIGX  AT  1  IF  0T
+NOTA  1->0 not allowed by c_to_tars
+NOTA SIGX  AT  0  IF  1T
+NOTA    not allowed in strict mode
+P1PH	45.0	AT	2
+P1PH	45.0	AT	2	IF	0T
+SWAP	2	0
