@@ -1,0 +1,15 @@
+mkTranslation/__init__.py,sha256=5bCb7BzsYHucIJ9fCFABeIecI5mEI7R_GTvARKyQx8w,231
+mkTranslation/adapters.py,sha256=AQohPfwsOk-igx8a-J4HyLUPtWZzLpzbuk-R3JHsLa0,561
+mkTranslation/client.py,sha256=_TqdL_8jMNnk0iemsyRwNjHNdmFbB6LHVLi_334usKM,10184
+mkTranslation/compat.py,sha256=HV4uZ2M_R_0On7S_7PdqtlZbhWDw2SegKxRWle2v4wI,217
+mkTranslation/constants.py,sha256=H8lLYO7RKZCDGk3AT7IP6yg-lsindwyPAEpG1kyQysI,2463
+mkTranslation/gtoken.py,sha256=oWludak-hqflae4k-IEqwOU7V6XzjB-9BaRpDIUuG2Y,7221
+mkTranslation/models.py,sha256=zOAZKRGLsW_VQ-iZr3vHBYXsIKz68WN9yh4QUlHV874,1507
+mkTranslation/urls.py,sha256=tKUbbC05UDGqQ8VgM65l1ECLwjolgVD3T5hAWJaqYtM,174
+mkTranslation/utils.py,sha256=2BKDYAtHI-Cyv0izHL3XgPQ1vcruZe3G66MSJn4RXsg,1775
+mkTranslation-1.1.0.data/scripts/translate,sha256=3f4I55gTadXCdCLxdXP3XKV5mNNRMPwQShGj5zCRsyg,913
+mkTranslation-1.1.0.dist-info/LICENSE,sha256=bD2mzDttczz-73LIx0zo1StEigTEfSV50bkz9Ip4fGI,1067
+mkTranslation-1.1.0.dist-info/METADATA,sha256=LIurXtoW56o1wQFlgSe59dyJXYHKyxJFOm142aFX8TM,400
+mkTranslation-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mkTranslation-1.1.0.dist-info/top_level.txt,sha256=tsa7nMK3haCY2xGWx5t1ZkCBb2t8C1AFRAUXk79uqSM,14
+mkTranslation-1.1.0.dist-info/RECORD,,
