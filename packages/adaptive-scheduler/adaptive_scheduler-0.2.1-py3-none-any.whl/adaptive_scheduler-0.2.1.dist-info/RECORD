@@ -1,0 +1,15 @@
+adaptive_scheduler/__init__.py,sha256=_B8s8P3o_brJg6E1jZWlXPH9MsfzLS3B79fVtkYrEWQ,299
+adaptive_scheduler/_scheduler.py,sha256=-x0302NLvjCDNZ4hAzmcsyWki7-utC3WUkXX6cDqw2U,826
+adaptive_scheduler/_static_version.py,sha256=8-ydC0_aZEGLh9-DRehiCqezfhZsnDyzHevpIuOjIvg,60
+adaptive_scheduler/_version.py,sha256=rXIZzVXt4zbVwWUDdccQof7QLwC4z70grKCg9QXmhp4,6082
+adaptive_scheduler/client_support.py,sha256=Y8amZ0lRT5CBXzim3cAl9d4Puk8xHFQoSRFF4lo_txg,4299
+adaptive_scheduler/pbs.py,sha256=l-HaRdK6bont3Sl9rAQW2hKRO1sYQPQULLqhakxApxI,4559
+adaptive_scheduler/server_support.py,sha256=fCOEFdqMYdnafD-B-v1p8h3DquLSs9DJFnU67HFG2sc,21565
+adaptive_scheduler/slurm.py,sha256=KmaG94y_MSN8f3PRZcrery_k9VyxwO2rqb8TGTtj1kA,4632
+adaptive_scheduler/utils.py,sha256=L6MLgtVKBBXQABZ3SJQ8NI8rrQDJ40aZBHMhgxWR9sk,10455
+adaptive_scheduler-0.2.1.dist-info/AUTHORS.md,sha256=dlGN3sFo6xE0wV4hSb0dCk9KI0ppHLwNPkhJ1slXS9A,116
+adaptive_scheduler-0.2.1.dist-info/LICENSE,sha256=OpElD2klJrb_7m7EU74SP0g6C-7Qq6Vpb-lcn9D0pOQ,1519
+adaptive_scheduler-0.2.1.dist-info/METADATA,sha256=4vP-PLTk9NvWOmaYCIRZkCO1QYLV6JsnKI29rNQ5qk0,1092
+adaptive_scheduler-0.2.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+adaptive_scheduler-0.2.1.dist-info/top_level.txt,sha256=mGfx-BzInEHEejak8IyqWfZc2jjfd6crdI9uXs7kEQY,19
+adaptive_scheduler-0.2.1.dist-info/RECORD,,
