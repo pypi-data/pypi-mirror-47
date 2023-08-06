@@ -1,0 +1,10 @@
+README.md
+setup.py
+qip2/__init__.py
+qip2/boost_numpy36-vc142-mt-x64-1_70.dll
+qip2/boost_python36-vc142-mt-x64-1_70.dll
+qip2/qip.pyd
+qip2.egg-info/PKG-INFO
+qip2.egg-info/SOURCES.txt
+qip2.egg-info/dependency_links.txt
+qip2.egg-info/top_level.txt

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: qip2
+Version: 1.0.0.2
+Summary: Integrate kdb+ into python
+Home-page: https://bitbucket.org/kuentang/pykdb/src/master
+Author: Kim Kuen Tang
+Author-email: kimktang@gmail.com
+License: UNKNOWN
+Description: # qip package
+        
+        qip brings kdb+ into python.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Description-Content-Type: text/markdown
