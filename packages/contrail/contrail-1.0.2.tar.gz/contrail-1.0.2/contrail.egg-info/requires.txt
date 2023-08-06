@@ -1,0 +1,6 @@
+boto3
+cachetools
+Django<3
+django-crispy-forms
+infi.clickhouse_orm
+requests
