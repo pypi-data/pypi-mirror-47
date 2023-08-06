@@ -1,0 +1,15 @@
+dvcr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dvcr/network.py,sha256=DjIO5ITMsIrVlkhLc_PB4LoSCIUrbG0wYu2sch72SWE,1660
+dvcr/utils.py,sha256=u4HULywBowoH3K03ngrddEMa6YmBEXZa94LMggwlA_Y,1535
+dvcr/containers/__init__.py,sha256=HmFNicQ9rzT72jUcFr_vE_3Tk-GTYq0OisydImiWVbc,316
+dvcr/containers/airflow.py,sha256=e38FLv111Gjpr-gw4Cmvkq2_9Gy0dmd25G4nLedwTek,3795
+dvcr/containers/base.py,sha256=WiQ8bwtDtTjscx6VkOC71T_QJuZrzPe6zbANjFxyytk,3292
+dvcr/containers/kafka.py,sha256=zu4vG7zaL2Avpdqv5sahoQaWJvrP_TrB6sds2nNHmfc,2704
+dvcr/containers/mysql.py,sha256=xG3xnWsYAuodURnwGxYA6rh1mUxJ_ocdCo82n8C12j4,3398
+dvcr/containers/postgres.py,sha256=wkEGdU2n5yvnSbmIhc0U3uM2e-OojzMkmWpkwyLKF9A,2541
+dvcr/containers/vertica.py,sha256=Abr6eMuj10xwgIhRvdfWkuiIMhQNZew_hjR9m5gZvJM,2059
+dvcr/containers/zookeeper.py,sha256=RWUggiJK92-lvV3aVVizp3hP_dTeHqYJB0dWlEThgtc,852
+dvcr-0.2.0.dist-info/METADATA,sha256=ZuFw3RtYCVbJszvvQhjWKp8i8suEHEcWoKZ9TEE9jO8,269
+dvcr-0.2.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+dvcr-0.2.0.dist-info/top_level.txt,sha256=e-CyFkHw8sOpkIXqlH2oX4OxOqSxd340x2Vue1fTYcM,5
+dvcr-0.2.0.dist-info/RECORD,,
