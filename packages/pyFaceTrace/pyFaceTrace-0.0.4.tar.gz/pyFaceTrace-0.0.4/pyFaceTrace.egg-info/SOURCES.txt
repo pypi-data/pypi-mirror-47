@@ -1,0 +1,16 @@
+MANIFEST.in
+setup.py
+pyFaceTrace/__init__.py
+pyFaceTrace/demo.mp4
+pyFaceTrace/kaiu.ttf
+pyFaceTrace/readme.txt
+pyFaceTrace.egg-info/PKG-INFO
+pyFaceTrace.egg-info/SOURCES.txt
+pyFaceTrace.egg-info/dependency_links.txt
+pyFaceTrace.egg-info/top_level.txt
+pyFaceTrace/train/四葉草/0.jpg
+pyFaceTrace/train/四葉草/1.jpg
+pyFaceTrace/train/四葉草/3.jpg
+pyFaceTrace/train/滴妹/0.jpg
+pyFaceTrace/train/滴妹/1.jpg
+pyFaceTrace/train/阿滴/0.jpg
