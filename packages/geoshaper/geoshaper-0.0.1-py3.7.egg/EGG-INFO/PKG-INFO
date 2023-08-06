@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: geoshaper
+Version: 0.0.1
+Summary: An open source library to convert shape files to GeoJSON/TopoJSON
+Home-page: http://github.com/Datawheel/gepshaper
+Author: Carlos Navarrete
+Author-email: cnavarreteliz@gmail.com
+License: MIT
+Download-URL: http://github.com/Datawheel/gepshaper/archive/0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: geojson,topojson,shapes
+Platform: UNKNOWN
