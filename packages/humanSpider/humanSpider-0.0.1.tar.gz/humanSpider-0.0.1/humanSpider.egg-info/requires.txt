@@ -1,0 +1,5 @@
+beautifulsoup4
+bloom-filter
+bs4
+lxml
+requests

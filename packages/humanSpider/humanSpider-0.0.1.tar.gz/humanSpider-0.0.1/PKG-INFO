@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: humanSpider
+Version: 0.0.1
+Summary: simple python spider util
+Home-page: https://github.com/JYangHE/humanSpider
+Author: JYangHe
+Author-email: jyanghe1023@gmail.com
+License: BSD License
+Description: UNKNOWN
+Platform: all
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
