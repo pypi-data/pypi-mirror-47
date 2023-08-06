@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: edge_st_sdk_package
+Version: 1.0.6
+Summary: IoT edge computing abstraction library package.
+Home-page: https://github.com/STMicroelectronics/EdgeSTSDK_Python
+Author: Davide Aliprandi
+Author-email: davide.aliprandi@gmail.com
+License: BSD 3-clause
+Description: # EdgeST SDK
+        
+        EdgeST SDK is an IoT edge computing abstraction library for Linux gateways. It relies on cloud platforms' edge SDKs to enable local execution of functions on a Linux gateway and synchronization to the cloud.
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Software Development :: Embedded Systems
+Description-Content-Type: text/markdown
