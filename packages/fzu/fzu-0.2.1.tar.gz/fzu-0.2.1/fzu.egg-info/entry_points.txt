@@ -1,0 +1,3 @@
+[console_scripts]
+fzu = fzu.__main__:main
+
