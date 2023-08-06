@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: torch-crypto
+Version: 0.1.1
+Summary: Command-line Cryptanalysis
+Home-page: https://github.com/CameronLonsdale/torch
+Author: Cameron Lonsdale
+Author-email: cameron.lonsdale@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
