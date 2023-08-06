@@ -1,0 +1,18 @@
+# JATNIpy #
+
+Justin's, Andrea's, and Torbjörn's network inference package for Python
+
+[Nordlinglab](https://www.nordlinglab.org/)
+[JATNIpy](https://bitbucket.org/temn/JATNIpy/src/)
+
+## Why JATNIpy? ##
+We re-implemented [GeneSPIDER](https://bitbucket.org/sonnhammergrni/genespider/src/) toolbox and chose Python as our programming language. Python is a popular high-level programming language. It is freely available and widely used by academic and commercial.
+
+
+
+### Results: ###
+We incorporate several free available python packages and refer the package called [scikit-grni](https://pypi.org/project/scikit-grni/) into a new complete package. We finally name the new complete package as JATNIpy. 
+
+Availability and Implementation: Source code freely available for download at https://bitbucket.org/temn/JATNIpy/, reimplemented GeneSPIDER toolbox in Python.
+
+Contact: [Justin](mailto:justin.lin@nordlinglab.org)
