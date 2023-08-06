@@ -1,0 +1,7 @@
+README.md
+setup.py
+bunnylog.egg-info/PKG-INFO
+bunnylog.egg-info/SOURCES.txt
+bunnylog.egg-info/dependency_links.txt
+bunnylog.egg-info/requires.txt
+bunnylog.egg-info/top_level.txt
