@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: gaia-python-sdk-atlas
+Version: 0.2.0
+Summary: 
+Author: Leftshift One
+Author-email: contact@leftshift.one
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: gaia-python-sdk-api (>=0.1.0,<0.2.0)
