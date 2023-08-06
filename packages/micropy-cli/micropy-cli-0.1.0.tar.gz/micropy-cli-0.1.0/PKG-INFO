@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: micropy-cli
+Version: 0.1.0
+Summary: A WIP micropython command line app for initiating projects with VSCode
+Home-page: https://github.com/BradenM/micropy-cli
+Author: Braden Mars
+License: GNU GPLv3
+Description: 
+        # Micropy Cli
+        
+        Command line Application for automating Micropython project creation in Visual Studio Code.
+        
+        ## Installation
+        
+        You can download and install the latest version of this software from the Python package index (PyPI) as follows:
+        
+        `pip install --upgrade micropy-cli`
+        
+        ## Usage
+        
+        ```sh
+        Usage: micropy [OPTIONS] COMMAND [ARGS]...
+        
+        Options:
+          --help  Show this message and exit.
+        
+        Commands:
+          init   Create new Micropython Project
+          stubs  Manage Stubs
+        ```
+        
+        ## Credit
+        
+        ### Micropython-Stubber
+        [Josvel/micropython-stubber](https://github.com/Josverl/micropython-stubber)
+        
+        * Guide on using vscode with micropython stubs
+        * Initial stubs used in application
+        * More
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown

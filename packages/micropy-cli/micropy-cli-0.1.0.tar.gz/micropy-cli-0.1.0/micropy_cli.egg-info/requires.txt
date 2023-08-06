@@ -1,0 +1,7 @@
+click
+questionary
+rshell
+jsonschema
+
+[:platform_system == "Windows"]
+colorama
