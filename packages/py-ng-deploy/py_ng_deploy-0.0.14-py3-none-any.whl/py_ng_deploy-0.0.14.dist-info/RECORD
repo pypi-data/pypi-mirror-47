@@ -1,0 +1,10 @@
+py_ng_deploy/.pyngdeployrc,sha256=XiNcAV927CY9gD3CZgdtjAZCFwci63sMs7uceGr6U98,190
+py_ng_deploy/__init__.py,sha256=OES2E8N7MyTbyBfehgSMA4ziToHam22q0JhGy_iML8c,23
+py_ng_deploy/__main__.py,sha256=IApMEdzlsaDRFpnGUZkgy3OgJ_L2AXTCLpYz7SKArws,5229
+py_ng_deploy/py_ng_build.py,sha256=LGCC1Kkj7b4ooRrcTldYCFzi4V13Znfw2BoDhXzuYgk,1743
+py_ng_deploy/py_ng_upload.py,sha256=4ilByCfvno_wcqST9-l3aNatzWMoOg9aTI-F_kMNudU,4313
+py_ng_deploy-0.0.14.dist-info/METADATA,sha256=pZltXUiBMkBhhJnL4Oc6uWWEmkTsQhVgEp7zyNmMneA,2010
+py_ng_deploy-0.0.14.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+py_ng_deploy-0.0.14.dist-info/entry_points.txt,sha256=B7_1ug9zFxn_tcHoKkRa-fM47N9TFdyKlNuefvOzYp0,59
+py_ng_deploy-0.0.14.dist-info/top_level.txt,sha256=8SdEHLU3JRI0l0Ak-UUhMf1rYQouRhxW2YNv6N5bWbc,13
+py_ng_deploy-0.0.14.dist-info/RECORD,,
