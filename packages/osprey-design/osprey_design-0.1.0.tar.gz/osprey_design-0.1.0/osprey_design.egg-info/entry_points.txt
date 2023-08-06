@@ -1,0 +1,3 @@
+[console_scripts]
+osprey_design = osprey_design.cli:main
+
