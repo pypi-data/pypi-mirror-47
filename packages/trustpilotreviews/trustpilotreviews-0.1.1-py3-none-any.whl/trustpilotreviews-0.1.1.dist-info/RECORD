@@ -1,0 +1,8 @@
+trustpilotreviews/.gitignore,sha256=O6m0gBWIeIQL26Ih5CII_RfrFEZkNso4REfHAwb263c,43
+trustpilotreviews/__init__.py,sha256=cBlh-EqLA6WJaAlrpw9WcrpOVhQx0h33tvpGn21c7w0,345
+trustpilotreviews/example.py,sha256=4st1oNbg_oKtRuBcdYEXM830dSoi2CgXjwKUg1Q3lco,694
+trustpilotreviews/get_reviews.py,sha256=rtuJU841-0h0BW-ZmKKous4RL32MquRtJUc1HBBHbx8,12039
+trustpilotreviews-0.1.1.dist-info/LICENSE,sha256=yllLMOWzBc9NkNIQfppO1jQPBWvgEmponqA7ybNsZII,1079
+trustpilotreviews-0.1.1.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+trustpilotreviews-0.1.1.dist-info/METADATA,sha256=MSdOvJpOKoXuMMtO7kdjqPXozByNcGp8Sdf_x-57JAw,4061
+trustpilotreviews-0.1.1.dist-info/RECORD,,
