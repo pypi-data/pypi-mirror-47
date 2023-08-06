@@ -1,0 +1,11 @@
+gspread_pandas/__init__.py,sha256=m8fA4dVwg_8XJ5GoUvjqnrNM4k8kUDCsoxYMZodDDnM,154
+gspread_pandas/_version.py,sha256=5SuE-m8pGmgpH1-2mK73X7jbKSze_1_al9VFYKZ3eSc,114
+gspread_pandas/client.py,sha256=XtJ-Z6VVAauGVTUrg8JbBc-qVrnqjCSfteUiSLsT-Fw,40457
+gspread_pandas/conf.py,sha256=TcLxSZ4kMlBDe3T46sLkJq_ZLTX2rnpuGCiw7qVGTVg,5744
+gspread_pandas/exceptions.py,sha256=q9iO2dOQHHJPuU30BeBpGu0ENiTKlizEcD_3BWC8dsU,232
+gspread_pandas/util.py,sha256=4shsxVGwA0HiZIZ7LcNPk0BhjThw2ydn8pjwVxYeJy8,15771
+gspread_pandas-2.0.0.dist-info/LICENSE.rst,sha256=5iNTDq8tcsRUDn9zmZhPWyLufkkAGBsYVM3o23pzgoM,1501
+gspread_pandas-2.0.0.dist-info/METADATA,sha256=l0R0_2_Z4EAfr2YxGKI1pg7bZ7EAjTnmaxbi8VvbwjA,9193
+gspread_pandas-2.0.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+gspread_pandas-2.0.0.dist-info/top_level.txt,sha256=xE-0R20oZXKoPLKMVm2v1AO1VIC3lhRZ3Yy0vyUt3D8,15
+gspread_pandas-2.0.0.dist-info/RECORD,,
