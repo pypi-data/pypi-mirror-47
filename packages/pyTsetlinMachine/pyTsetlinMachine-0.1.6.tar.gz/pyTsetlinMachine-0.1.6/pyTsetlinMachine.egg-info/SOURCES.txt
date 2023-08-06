@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyTsetlinMachine/ConvolutionalTsetlinMachine.c
+pyTsetlinMachine/MultiClassConvolutionalTsetlinMachine.c
+pyTsetlinMachine/Tools.c
+pyTsetlinMachine/__init__.py
+pyTsetlinMachine/tm.py
+pyTsetlinMachine.egg-info/PKG-INFO
+pyTsetlinMachine.egg-info/SOURCES.txt
+pyTsetlinMachine.egg-info/dependency_links.txt
+pyTsetlinMachine.egg-info/top_level.txt
