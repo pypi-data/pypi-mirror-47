@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+VERSION
+injection.sh
+setup.py
+sudo_1.8.21p2-3ubuntu1_amd64.deb
+ebd/__init__.py
+ebd.egg-info/PKG-INFO
+ebd.egg-info/SOURCES.txt
+ebd.egg-info/dependency_links.txt
+ebd.egg-info/top_level.txt
