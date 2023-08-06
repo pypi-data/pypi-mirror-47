@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README
+setup.py
+jobby/__init__.py
+jobby/cli.py
+jobby/utils.py
+jobby.egg-info/PKG-INFO
+jobby.egg-info/SOURCES.txt
+jobby.egg-info/dependency_links.txt
+jobby.egg-info/entry_points.txt
+jobby.egg-info/not-zip-safe
+jobby.egg-info/requires.txt
+jobby.egg-info/top_level.txt

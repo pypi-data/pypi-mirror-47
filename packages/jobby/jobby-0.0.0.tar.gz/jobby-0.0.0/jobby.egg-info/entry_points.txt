@@ -1,0 +1,3 @@
+[console_scripts]
+jobby = jobby.cli:main
+
