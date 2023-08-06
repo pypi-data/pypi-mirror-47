@@ -1,0 +1,3 @@
+[console_scripts]
+mypiano = MyPiano.__main__:main
+
