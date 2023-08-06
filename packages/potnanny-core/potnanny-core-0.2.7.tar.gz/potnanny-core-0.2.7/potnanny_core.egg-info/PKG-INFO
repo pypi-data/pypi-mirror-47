@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: potnanny-core
+Version: 0.2.7
+Summary: Part of the Potnanny greenhouse controller application. Contains all core models, schemas, db interfaces, and utilities.
+Home-page: https://github.com/jeffleary00/potnanny-core
+Author: Jeff Leary
+Author-email: potnanny@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
