@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: parallel-executor
+Version: 1.1
+Summary: Tool to run several user tasks in parallel
+Home-page: UNKNOWN
+Author: Dovydas Jančauskas
+Author-email: dovydasjan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+# Parallel Executor
+
+The purpose of this library is to execute bunch of tasks to run independently in parallel
+
+## Version
+
+1.1
+
+## Installation
+
+pip install parallel-executor==1.1
+
+## Basic usage example
+task1 = Task('Task1', lambda: 2+2)
+task2 = Task('Task2', lambda: 2*2)
+tasks = [task1, task2]
+e = Executor(3, 3, tasks)
+e.executeTasks()
+print(task1.getResult())
+print(task2.getResult())
+
+## History
+- 1.1 Not closing thread bug was fixed
+- 1.0 Initial release
+
+## Author
+
+Dovydas Jančauskas
+
+
