@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: imgscrape
+Version: 0.1
+Summary: Want to srape product images from Amazon and flipkart? Here you go.
+Home-page: https://github.com/ans2human/imgscrape
+Author: Anshuman Anand Singh
+Author-email: ans2human@gmail.com
+License: MIT
+Download-URL: https://github.com/ans2human/imgscrape/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: FLIPKART,AMAZON,SCRAPING,SCRAPE,IMAGE,PRODUCTIMAGES
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
