@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: xwmodule
+Version: 1.0.0
+Summary: python module demo
+Home-page: UNKNOWN
+Author: xwann
+Author-email: 1220936030@qq.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: demo
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Utilities
