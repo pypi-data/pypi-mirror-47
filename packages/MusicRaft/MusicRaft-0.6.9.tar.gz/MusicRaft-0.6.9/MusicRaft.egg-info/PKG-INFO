@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: MusicRaft
+Version: 0.6.9
+Summary: GUI for abcplus music notation.
+Home-page: https://gitlab.com/papahippo/MusicRaft
+Author: Larry Myerscough
+Author-email: hippostech@gmail.com
+License: LICENSE.txt
+Description: MusicRaft
+        =========
+        
+        'MusicRaft' is an GUI for the ABC(plus) music notation. Its implementation went through a few incarnations:
+        
+         Musicraft is built around PySide. It is in fact a very lightweight (and very limited!) IDE
+         implemented as 'the raft' on top of which the plugin 'abcraft' is created.
+        
+        ![Alt text](https://gitlab.com/papahippo/MusicRaft/raw/master/screenshots/Musicraft_017.png?raw=true "Editing ABCplus music source while viewing graphical ouput")
+        
+        A separate plugin 'pyraft' supports editing of python3 source files. When a python script writes output with an HTML header,
+        pyraft dsiplays the HTML in a special 'Html' tab within  the display notebook.
+        
+        ![python screenshot](https://gitlab.com/papahippo/MusicRaft/raw/master/screenshots/Musicraft_018.png?raw=true "Editing python progam source while viewing HTML ouput")
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
