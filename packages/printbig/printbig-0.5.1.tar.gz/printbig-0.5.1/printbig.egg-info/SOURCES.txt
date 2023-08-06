@@ -1,0 +1,9 @@
+README.txt
+setup.py
+printbig/__init__.py
+printbig/printbig.py
+printbig.egg-info/PKG-INFO
+printbig.egg-info/SOURCES.txt
+printbig.egg-info/dependency_links.txt
+printbig.egg-info/requires.txt
+printbig.egg-info/top_level.txt
