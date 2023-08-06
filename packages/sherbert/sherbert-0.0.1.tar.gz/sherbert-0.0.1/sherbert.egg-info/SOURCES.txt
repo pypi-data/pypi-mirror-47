@@ -1,0 +1,8 @@
+README.md
+setup.py
+sherbert/__init__.py
+sherbert.egg-info/PKG-INFO
+sherbert.egg-info/SOURCES.txt
+sherbert.egg-info/dependency_links.txt
+sherbert.egg-info/requires.txt
+sherbert.egg-info/top_level.txt
