@@ -1,0 +1,12 @@
+README.md
+setup.py
+glaze/__init__.py
+glaze/__main__.py
+glaze/render.py
+glaze/utils.py
+glaze.egg-info/PKG-INFO
+glaze.egg-info/SOURCES.txt
+glaze.egg-info/dependency_links.txt
+glaze.egg-info/entry_points.txt
+glaze.egg-info/requires.txt
+glaze.egg-info/top_level.txt
