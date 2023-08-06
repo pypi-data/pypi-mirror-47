@@ -1,0 +1,6 @@
+past
+future
+six
+numpy
+sympy
+prettytable
