@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: dfmaps2
+Version: 1.4
+Summary: Trabajo Final de grado Isabela San Jose, representacion de dataframes en mapas
+Home-page: https://github.com/
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: None
+Description: Trabajo Final de grado Isabela San Jose,
+                      representacion de dataframes en mapas
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python
