@@ -1,0 +1,7 @@
+escapeless.py
+setup.py
+escapeless.egg-info/PKG-INFO
+escapeless.egg-info/SOURCES.txt
+escapeless.egg-info/dependency_links.txt
+escapeless.egg-info/requires.txt
+escapeless.egg-info/top_level.txt

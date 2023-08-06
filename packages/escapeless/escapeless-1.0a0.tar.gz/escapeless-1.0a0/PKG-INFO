@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: escapeless
+Version: 1.0a0
+Summary: Efficient binary encoding for large alphabets.
+Home-page: https://github.com/kosarev/escapeless
+Author: Ivan Kosarev
+Author-email: ivan@kosarev.info
+License: MIT
+Description: UNKNOWN
+Keywords: base64 enc binary encoding
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
