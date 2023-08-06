@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: proxypay-py
+Version: 1.0.0
+Summary: A Python client to use with ProxyPay API (www.proxypay.co.ao)
+Home-page: https://github.com/kissonde/proxypay_py
+Author: Timeboxed Lda.
+License: UNKNOWN
+Project-URL: Source, https://github.com/kissonde/proxypay_py
+Project-URL: Bug Reports, https://github.com/kissonde/proxypay_py/issues
+Keywords: multicaixa proxypay api
+Platform: UNKNOWN
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, <4
+Description-Content-Type: text/markdown
+
+# proxypay_py
+ProxyPay API Python Client
+
+
