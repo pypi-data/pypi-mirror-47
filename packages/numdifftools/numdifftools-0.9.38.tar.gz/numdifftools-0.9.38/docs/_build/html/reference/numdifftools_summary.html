@@ -1,0 +1,482 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>5.1. Numdifftools summary &mdash; Numdifftools 0.9.38 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.38 documentation" href="../index.html"/>
+        <link rel="up" title="5. Reference" href="index.html"/>
+        <link rel="next" title="5.1.1.1. numdifftools.core.Derivative" href="generated/numdifftools.core.Derivative.html"/>
+        <link rel="prev" title="5. Reference" href="index.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.38
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">2. Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">5. Reference</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.1. Numdifftools summary</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-core-module">5.1.1. numdifftools.core module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.Derivative.html">5.1.1.1. numdifftools.core.Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.Gradient.html">5.1.1.2. numdifftools.core.Gradient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.Jacobian.html">5.1.1.3. numdifftools.core.Jacobian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.Hessdiag.html">5.1.1.4. numdifftools.core.Hessdiag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.Hessian.html">5.1.1.5. numdifftools.core.Hessian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.core.directionaldiff.html">5.1.1.6. numdifftools.core.directionaldiff</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#step-generators">5.1.2. Step generators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.step_generators.BasicMaxStepGenerator.html">5.1.2.1. numdifftools.step_generators.BasicMaxStepGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.step_generators.BasicMinStepGenerator.html">5.1.2.2. numdifftools.step_generators.BasicMinStepGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.step_generators.MinStepGenerator.html">5.1.2.3. numdifftools.step_generators.MinStepGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.step_generators.MaxStepGenerator.html">5.1.2.4. numdifftools.step_generators.MaxStepGenerator</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-extrapolation-module">5.1.3. numdifftools.extrapolation module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.extrapolation.convolve.html">5.1.3.1. numdifftools.extrapolation.convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.extrapolation.Dea.html">5.1.3.2. numdifftools.extrapolation.Dea</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.extrapolation.dea3.html">5.1.3.3. numdifftools.extrapolation.dea3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.extrapolation.Richardson.html">5.1.3.4. numdifftools.extrapolation.Richardson</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-limits-module">5.1.4. numdifftools.limits module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.limits.CStepGenerator.html">5.1.4.1. numdifftools.limits.CStepGenerator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.limits.Limit.html">5.1.4.2. numdifftools.limits.Limit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.limits.Residue.html">5.1.4.3. numdifftools.limits.Residue</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-multicomplex-module">5.1.5. numdifftools.multicomplex module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.multicomplex.Bicomplex.html">5.1.5.1. numdifftools.multicomplex.Bicomplex</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-nd-algopy-module">5.1.6. numdifftools.nd_algopy module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.Derivative.html">5.1.6.1. numdifftools.nd_algopy.Derivative</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.Gradient.html">5.1.6.2. numdifftools.nd_algopy.Gradient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.Jacobian.html">5.1.6.3. numdifftools.nd_algopy.Jacobian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.Hessdiag.html">5.1.6.4. numdifftools.nd_algopy.Hessdiag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.Hessian.html">5.1.6.5. numdifftools.nd_algopy.Hessian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_algopy.directionaldiff.html">5.1.6.6. numdifftools.nd_algopy.directionaldiff</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-nd-scipy-module">5.1.7. numdifftools.nd_scipy module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_scipy.Gradient.html">5.1.7.1. numdifftools.nd_scipy.Gradient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_scipy.Jacobian.html">5.1.7.2. numdifftools.nd_scipy.Jacobian</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#numdifftools-nd-statsmodels-module">5.1.8. numdifftools.nd_statsmodels module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_statsmodels.Hessian.html">5.1.8.1. numdifftools.nd_statsmodels.Hessian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/numdifftools.nd_statsmodels.Jacobian.html">5.1.8.2. numdifftools.nd_statsmodels.Jacobian</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="numdifftools.html">5.2. Numdifftools package details</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">5. Reference</a> &raquo;</li>
+        
+      <li>5.1. Numdifftools summary</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/reference/numdifftools_summary.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="numdifftools-summary">
+<span id="id1"></span><h1>5.1. Numdifftools summary<a class="headerlink" href="#numdifftools-summary" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="numdifftools-core-module">
+<h2>5.1.1. numdifftools.core module<a class="headerlink" href="#numdifftools-core-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.core.Derivative" title="numdifftools.core.Derivative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Derivative</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;n,&nbsp;…])</td>
+<td>Calculate n-th derivative with finite difference approximation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.core.Gradient" title="numdifftools.core.Gradient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gradient</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;n,&nbsp;…])</td>
+<td>Calculate Gradient with finite difference approximation</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.core.Jacobian" title="numdifftools.core.Jacobian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jacobian</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;n,&nbsp;…])</td>
+<td>Calculate Jacobian with finite difference approximation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.core.Hessdiag" title="numdifftools.core.Hessdiag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hessdiag</span></code></a>(f[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;full_output])</td>
+<td>Calculate Hessian diagonal with finite difference approximation</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.core.Hessian" title="numdifftools.core.Hessian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hessian</span></code></a>(f[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;full_output])</td>
+<td>Calculate Hessian with finite difference approximation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.core.directionaldiff" title="numdifftools.core.directionaldiff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directionaldiff</span></code></a>(f,&nbsp;x0,&nbsp;vec,&nbsp;**options)</td>
+<td>Return directional derivative of a function of n variables</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="step-generators">
+<h2>5.1.2. Step generators<a class="headerlink" href="#step-generators" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/numdifftools.step_generators.BasicMaxStepGenerator.html#numdifftools.step_generators.BasicMaxStepGenerator" title="numdifftools.step_generators.BasicMaxStepGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BasicMaxStepGenerator</span></code></a>(base_step,&nbsp;step_ratio,&nbsp;…)</td>
+<td>Generates a sequence of steps of decreasing magnitude</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/numdifftools.step_generators.BasicMinStepGenerator.html#numdifftools.step_generators.BasicMinStepGenerator" title="numdifftools.step_generators.BasicMinStepGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BasicMinStepGenerator</span></code></a>(base_step,&nbsp;step_ratio,&nbsp;…)</td>
+<td>Generates a sequence of steps of decreasing magnitude</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/numdifftools.step_generators.MinStepGenerator.html#numdifftools.step_generators.MinStepGenerator" title="numdifftools.step_generators.MinStepGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MinStepGenerator</span></code></a>([base_step,&nbsp;step_ratio,&nbsp;…])</td>
+<td>Generates a sequence of steps</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/numdifftools.step_generators.MaxStepGenerator.html#numdifftools.step_generators.MaxStepGenerator" title="numdifftools.step_generators.MaxStepGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">MaxStepGenerator</span></code></a>([base_step,&nbsp;step_ratio,&nbsp;…])</td>
+<td>Generates a sequence of steps</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-extrapolation-module">
+<h2>5.1.3. numdifftools.extrapolation module<a class="headerlink" href="#numdifftools-extrapolation-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.extrapolation.convolve" title="numdifftools.extrapolation.convolve"><code class="xref py py-obj docutils literal notranslate"><span class="pre">convolve</span></code></a>(sequence,&nbsp;rule,&nbsp;**kwds)</td>
+<td>Wrapper around scipy.ndimage.convolve1d that allows complex input.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.extrapolation.Dea" title="numdifftools.extrapolation.Dea"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Dea</span></code></a>([limexp])</td>
+<td>Extrapolate a slowly convergent sequence</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.extrapolation.dea3" title="numdifftools.extrapolation.dea3"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dea3</span></code></a>(v0,&nbsp;v1,&nbsp;v2[,&nbsp;symmetric])</td>
+<td>Extrapolate a slowly convergent sequence</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.extrapolation.Richardson" title="numdifftools.extrapolation.Richardson"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Richardson</span></code></a>([step_ratio,&nbsp;step,&nbsp;order,&nbsp;num_terms])</td>
+<td>Extrapolates as sequence with Richardsons method</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-limits-module">
+<h2>5.1.4. numdifftools.limits module<a class="headerlink" href="#numdifftools-limits-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.limits.CStepGenerator" title="numdifftools.limits.CStepGenerator"><code class="xref py py-obj docutils literal notranslate"><span class="pre">CStepGenerator</span></code></a>([base_step,&nbsp;step_ratio,&nbsp;…])</td>
+<td>Generates a sequence of steps</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.limits.Limit" title="numdifftools.limits.Limit"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Limit</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;full_output])</td>
+<td>Compute limit of a function at a given point</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.limits.Residue" title="numdifftools.limits.Residue"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Residue</span></code></a>(f[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;…])</td>
+<td>Compute residue of a function at a given point</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-multicomplex-module">
+<h2>5.1.5. numdifftools.multicomplex module<a class="headerlink" href="#numdifftools-multicomplex-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/numdifftools.multicomplex.Bicomplex.html#numdifftools.multicomplex.Bicomplex" title="numdifftools.multicomplex.Bicomplex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Bicomplex</span></code></a>(z1,&nbsp;z2)</td>
+<td>Creates an instance of a Bicomplex object.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-nd-algopy-module">
+<h2>5.1.6. numdifftools.nd_algopy module<a class="headerlink" href="#numdifftools-nd-algopy-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.Derivative" title="numdifftools.nd_algopy.Derivative"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Derivative</span></code></a>(fun[,&nbsp;n,&nbsp;method,&nbsp;full_output])</td>
+<td>Calculate n-th derivative with Algorithmic Differentiation method</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.Gradient" title="numdifftools.nd_algopy.Gradient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gradient</span></code></a>(fun[,&nbsp;n,&nbsp;method,&nbsp;full_output])</td>
+<td>Calculate Gradient with Algorithmic Differentiation method</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.Jacobian" title="numdifftools.nd_algopy.Jacobian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jacobian</span></code></a>(fun[,&nbsp;n,&nbsp;method,&nbsp;full_output])</td>
+<td>Calculate Jacobian with Algorithmic Differentiation method</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.Hessdiag" title="numdifftools.nd_algopy.Hessdiag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hessdiag</span></code></a>(f[,&nbsp;method,&nbsp;full_output])</td>
+<td>Calculate Hessian diagonal with Algorithmic Differentiation method</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.Hessian" title="numdifftools.nd_algopy.Hessian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hessian</span></code></a>(f[,&nbsp;method,&nbsp;full_output])</td>
+<td>Calculate Hessian with Algorithmic Differentiation method</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.nd_algopy.directionaldiff" title="numdifftools.nd_algopy.directionaldiff"><code class="xref py py-obj docutils literal notranslate"><span class="pre">directionaldiff</span></code></a>(f,&nbsp;x0,&nbsp;vec,&nbsp;**options)</td>
+<td>Return directional derivative of a function of n variables</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-nd-scipy-module">
+<h2>5.1.7. numdifftools.nd_scipy module<a class="headerlink" href="#numdifftools-nd-scipy-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.nd_scipy.Gradient" title="numdifftools.nd_scipy.Gradient"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Gradient</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;bounds,&nbsp;…])</td>
+<td>Calculate Gradient with finite difference approximation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.nd_scipy.Jacobian" title="numdifftools.nd_scipy.Jacobian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jacobian</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order,&nbsp;bounds,&nbsp;…])</td>
+<td>Calculate Jacobian with finite difference approximation</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="numdifftools-nd-statsmodels-module">
+<h2>5.1.8. numdifftools.nd_statsmodels module<a class="headerlink" href="#numdifftools-nd-statsmodels-module" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="test.html#numdifftools.nd_statsmodels.Hessian" title="numdifftools.nd_statsmodels.Hessian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Hessian</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order])</td>
+<td>Calculate Hessian with finite difference approximation</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="test.html#numdifftools.nd_statsmodels.Jacobian" title="numdifftools.nd_statsmodels.Jacobian"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Jacobian</span></code></a>(fun[,&nbsp;step,&nbsp;method,&nbsp;order])</td>
+<td>Calculate Jacobian with finite difference approximation</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generated/numdifftools.core.Derivative.html" class="btn btn-neutral float-right" title="5.1.1.1. numdifftools.core.Derivative" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="5. Reference" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.9.38',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

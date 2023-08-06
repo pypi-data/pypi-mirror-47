@@ -1,0 +1,455 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>2.2. Getting started &mdash; Numdifftools 0.9.38 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../genindex.html"/>
+        <link rel="search" title="Search" href="../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.38 documentation" href="../index.html"/>
+        <link rel="up" title="2. Tutorials" href="index.html"/>
+        <link rel="next" title="2.4. What to read next" href="whatsnext.html"/>
+        <link rel="prev" title="2.1. Install guide" href="install.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.38
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../intro/index.html">1. Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">2. Tutorials</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="install.html">2.1. Install guide</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. Getting started</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#the-derivative">2.2.1. The derivative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gradient-and-hessian-estimation">2.2.2. Gradient and Hessian  estimation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#multivariate-calculus-examples">2.2.2.1. Multivariate calculus examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#gradients-and-hessians">2.2.2.2. Gradients and Hessians</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#directional-derivatives">2.2.2.3. Directional derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#jacobian-matrix">2.2.2.4. Jacobian matrix</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#conclusion">2.3. Conclusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="whatsnext.html">2.4. What to read next</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reference/index.html">5. Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">2. Tutorials</a> &raquo;</li>
+        
+      <li>2.2. Getting started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="getting-started">
+<span id="id1"></span><h1>2.2. Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="the-derivative">
+<h2>2.2.1. The derivative<a class="headerlink" href="#the-derivative" title="Permalink to this headline">¶</a></h2>
+<p>How does numdifftools.Derivative work in action? A simple nonlinear function with a well known derivative is <span class="math notranslate nohighlight">\(e^x\)</span>. At <span class="math notranslate nohighlight">\(x = 0\)</span>, the derivative should be 1.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numdifftools</span> <span class="k">as</span> <span class="nn">nd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">exp</span><span class="p">,</span> <span class="n">full_output</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">val</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">val</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">info</span><span class="o">.</span><span class="n">error_estimate</span><span class="p">,</span> <span class="mf">5.28466160e-14</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>A second simple example comes from trig functions. The first four derivatives of the sine function, evaluated at <span class="math notranslate nohighlight">\(x = 0\)</span>, should be respectively <span class="math notranslate nohighlight">\([cos(0), -sin(0), -cos(0), sin(0)]\)</span>, or <span class="math notranslate nohighlight">\([1,0,-1,0]\)</span>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">numpy</span> <span class="k">import</span> <span class="n">sin</span><span class="p">,</span> <span class="n">allclose</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numdifftools</span> <span class="k">as</span> <span class="nn">nd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">df</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">1.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">ddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">dddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">dddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="o">-</span><span class="mf">1.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">ddddf</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">sin</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">ddddf</span><span class="p">(</span><span class="mi">0</span><span class="p">),</span> <span class="mf">0.</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Visualize high order derivatives of the tanh function</p>
+<blockquote>
+<div><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+<span class="gp">... </span>   <span class="n">df</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Derivative</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">tanh</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">i</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">y</span> <span class="o">=</span> <span class="n">df</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="gp">... </span>   <span class="n">h</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>plt.show()</p>
+</div></blockquote>
+<a class="reference external image-reference" href="https://github.com/pbrod/numdifftools/blob/master/examples/fun.py"><img alt="https://raw.githubusercontent.com/pbrod/numdifftools/master/examples/fun.png" src="https://raw.githubusercontent.com/pbrod/numdifftools/master/examples/fun.png" /></a>
+</div>
+<div class="section" id="gradient-and-hessian-estimation">
+<h2>2.2.2. Gradient and Hessian  estimation<a class="headerlink" href="#gradient-and-hessian-estimation" title="Permalink to this headline">¶</a></h2>
+<p>Estimation of the gradient vector (numdifftools.Gradient) of a function of multiple variables is a simple task, requiring merely repeated calls to numdifftools.Derivative. Likewise, the diagonal elements of the hessian matrix are merely pure second partial derivatives of a function. numdifftools.Hessdiag accomplishes this task, again calling numdifftools.Derivative multiple times. Efficient computation of the off-diagonal (mixed partial derivative) elements of the Hessian matrix uses a scheme much like that of numdifftools.Derivative, then Richardson extrapolation is used to improve a set of second order finite difference estimates of those mixed partials.</p>
+<div class="section" id="multivariate-calculus-examples">
+<h3>2.2.2.1. Multivariate calculus examples<a class="headerlink" href="#multivariate-calculus-examples" title="Permalink to this headline">¶</a></h3>
+<p>Typical usage of the gradient and Hessian might be in optimization problems, where one might compare
+an analytically derived gradient for correctness, or use the Hessian matrix to compute confidence interval estimates on parameters in a maximum likelihood estimation.</p>
+</div>
+<div class="section" id="gradients-and-hessians">
+<h3>2.2.2.2. Gradients and Hessians<a class="headerlink" href="#gradients-and-hessians" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">def</span> <span class="nf">rosen</span><span class="p">(</span><span class="n">x</span><span class="p">):</span> <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mf">105.</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Gradient of the Rosenbrock function at [1,1], the global minimizer</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The gradient should be zero (within floating point noise)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">grad</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>The Hessian matrix at the minimizer should be positive definite</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>The eigenvalues of H should be positive</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">li</span><span class="p">,</span> <span class="n">U</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">li</span><span class="o">&gt;</span><span class="mi">0</span>
+<span class="go">array([ True,  True], dtype=bool)</span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>Gradient estimation of a function of 5 variables</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">f</span><span class="p">)(</span><span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">grad</span><span class="p">,</span> <span class="p">[</span>  <span class="mf">2.</span><span class="p">,</span>   <span class="mf">4.</span><span class="p">,</span>   <span class="mf">6.</span><span class="p">,</span>   <span class="mf">8.</span><span class="p">,</span>  <span class="mf">10.</span><span class="p">])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd>
+<dt>Simple Hessian matrix of a problem with 3 independent variables</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">f</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">**</span><span class="mi">3</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="n">f</span><span class="p">)([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">H</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">diag</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">18</span><span class="p">]))</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</dd>
+<dt>A semi-definite Hessian matrix</dt>
+<dd><div class="first last highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">H</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Hessian</span><span class="p">(</span><span class="k">lambda</span> <span class="n">xy</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">xy</span><span class="p">[</span><span class="mi">1</span><span class="p">]))([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd>
+</dl>
+<p>one of these eigenvalues will be zero (approximately)</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">eig</span><span class="p">(</span><span class="n">H</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="o">&lt;</span> <span class="mf">1e-12</span>
+<span class="go">array([ True, False], dtype=bool)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="directional-derivatives">
+<h3>2.2.2.3. Directional derivatives<a class="headerlink" href="#directional-derivatives" title="Permalink to this headline">¶</a></h3>
+<p>The directional derivative will be the dot product of the gradient with the (unit normalized) vector. This is of course possible to do with numdifftools and you could do it like this for the Rosenbrock function at the solution, x0 = [1,1]:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directional_diff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)(</span><span class="n">x0</span><span class="p">),</span> <span class="n">v</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This should be zero.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">directional_diff</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Ok, its a trivial test case, but it easy to compute the directional derivative at other locations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">/</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directionaldiff</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)(</span><span class="n">x2</span><span class="p">),</span> <span class="n">v2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">directionaldiff</span><span class="p">,</span> <span class="mf">743.87633380824832</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>There is a convenience function <span class="math notranslate nohighlight">\(nd.directionaldiff\)</span> that also takes care of the direction normalization:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">v</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x0</span> <span class="o">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">directional_diff</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">directionaldiff</span><span class="p">(</span><span class="n">rosen</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">v</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">directional_diff</span><span class="p">,</span> <span class="mf">743.87633380824832</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="jacobian-matrix">
+<h3>2.2.2.4. Jacobian matrix<a class="headerlink" href="#jacobian-matrix" title="Permalink to this headline">¶</a></h3>
+<p>Jacobian matrix of a scalar function is just the gradient</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">grad</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Gradient</span><span class="p">(</span><span class="n">rosen</span><span class="p">)([</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span><span class="p">,</span> <span class="n">grad</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>Jacobian matrix of a linear system will reduce to the design matrix</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fun</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">A</span><span class="o">.</span><span class="n">T</span><span class="p">)</span> <span class="o">-</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">fun</span><span class="p">)(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This should be essentially zero at any location x</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span> <span class="o">-</span> <span class="n">A</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+<p>The jacobian matrix of a nonlinear transformation of variables evaluated at some
+arbitrary location [-2, -3]</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">fun</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">xy</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">r_</span><span class="p">[</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">xy</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">xy</span><span class="p">[</span><span class="mi">1</span><span class="p">])]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">jac</span> <span class="o">=</span> <span class="n">nd</span><span class="o">.</span><span class="n">Jacobian</span><span class="p">(</span><span class="n">fun</span><span class="p">)([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">np</span><span class="o">.</span><span class="n">allclose</span><span class="p">(</span><span class="n">jac</span><span class="p">,</span> <span class="p">[[</span><span class="o">-</span><span class="mf">4.</span><span class="p">,</span>  <span class="mf">0.</span><span class="p">],</span>
+<span class="gp">... </span>                  <span class="p">[</span><span class="o">-</span><span class="mf">0.84147098</span><span class="p">,</span>  <span class="mf">0.84147098</span><span class="p">]])</span>
+<span class="go">True</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="conclusion">
+<h1>2.3. Conclusion<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h1>
+<p>numdifftools.Derivative is an a adaptive scheme that can compute the derivative of arbitrary (well behaved) functions. It is reasonably fast as an adaptive method. Many options have been provided for the user who wishes the ultimate amount of control over the estimation.</p>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="whatsnext.html" class="btn btn-neutral float-right" title="2.4. What to read next" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="2.1. Install guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'0.9.38',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

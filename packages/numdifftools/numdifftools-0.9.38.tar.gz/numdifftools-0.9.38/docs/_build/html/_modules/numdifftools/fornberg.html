@@ -1,0 +1,904 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>numdifftools.fornberg &mdash; Numdifftools 0.9.38 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../genindex.html"/>
+        <link rel="search" title="Search" href="../../search.html"/>
+    <link rel="top" title="Numdifftools 0.9.38 documentation" href="../../index.html"/>
+        <link rel="up" title="Module code" href="../index.html"/> 
+
+  
+  <script src="../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> Numdifftools
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.38
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../intro/index.html">1. Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/index.html">2. Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../how-to/index.html">3. How-to guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../topics/index.html">4. Topics guides</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../reference/index.html">5. Reference</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/authors.html">Contributors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/acknowledgement.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/index.html">Indices and tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../appendix/bibliography.html">Bibliography</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">Numdifftools</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>numdifftools.fornberg</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for numdifftools.fornberg</h1><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">__future__</span> <span class="k">import</span> <span class="n">division</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.special</span> <span class="k">import</span> <span class="n">factorial</span>
+<span class="kn">from</span> <span class="nn">numdifftools.extrapolation</span> <span class="k">import</span> <span class="n">EPS</span><span class="p">,</span> <span class="n">dea3</span>
+<span class="kn">from</span> <span class="nn">numdifftools.limits</span> <span class="k">import</span> <span class="n">_Limit</span>
+<span class="kn">from</span> <span class="nn">collections</span> <span class="k">import</span> <span class="n">namedtuple</span>
+
+<span class="n">_INFO</span> <span class="o">=</span> <span class="n">namedtuple</span><span class="p">(</span><span class="s1">&#39;info&#39;</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;error_estimate&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;degenerate&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;final_radius&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;function_count&#39;</span><span class="p">,</span>
+                            <span class="s1">&#39;iterations&#39;</span><span class="p">,</span> <span class="s1">&#39;failed&#39;</span><span class="p">])</span>
+<span class="n">CENTRAL_WEIGHTS_AND_POINTS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mf">2.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mi">8</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="o">-</span><span class="mi">45</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span><span class="p">,</span> <span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mf">60.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">3.</span><span class="p">,</span> <span class="o">-</span><span class="mi">32</span><span class="p">,</span> <span class="mi">168</span><span class="p">,</span> <span class="o">-</span><span class="mi">672</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">672</span><span class="p">,</span> <span class="o">-</span><span class="mi">168</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="o">/</span> <span class="mf">840.0</span><span class="p">,</span>
+             <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">1.</span><span class="p">,</span> <span class="o">-</span><span class="mf">2.0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">30</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="mf">12.0</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mf">2.</span><span class="p">,</span> <span class="o">-</span><span class="mi">27</span><span class="p">,</span> <span class="mi">270</span><span class="p">,</span> <span class="o">-</span><span class="mi">490</span><span class="p">,</span> <span class="mi">270</span><span class="p">,</span> <span class="o">-</span><span class="mi">27</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span> <span class="o">/</span> <span class="mf">180.0</span><span class="p">,</span>
+             <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)),</span>
+    <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">9</span><span class="p">):</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="o">-</span><span class="mf">9.</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="o">-</span><span class="mi">1008</span><span class="p">,</span> <span class="mi">8064</span><span class="p">,</span> <span class="o">-</span><span class="mi">14350</span><span class="p">,</span>
+                       <span class="mi">8064</span><span class="p">,</span> <span class="o">-</span><span class="mi">1008</span><span class="p">,</span> <span class="mi">128</span><span class="p">,</span> <span class="o">-</span><span class="mi">9</span><span class="p">])</span> <span class="o">/</span> <span class="mf">5040.0</span><span class="p">,</span>
+             <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">))}</span>
+
+
+<span class="k">def</span> <span class="nf">_assert</span><span class="p">(</span><span class="n">cond</span><span class="p">,</span> <span class="n">msg</span><span class="p">):</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">cond</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+
+
+<div class="viewcode-block" id="fd_weights_all"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.fd_weights_all">[docs]</a><span class="k">def</span> <span class="nf">fd_weights_all</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return finite difference weights for derivatives of all orders up to n.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    x : vector, length m</span>
+<span class="sd">        x-coordinates for grid points</span>
+<span class="sd">    x0 : scalar</span>
+<span class="sd">        location where approximations are to be accurate</span>
+<span class="sd">    n : scalar integer</span>
+<span class="sd">        highest derivative that we want to find weights for</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    weights :  array, shape n+1 x m</span>
+<span class="sd">        contains coefficients for the j&#39;th derivative in row j (0 &lt;= j &lt;= n)</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    The x values can be arbitrarily spaced but must be distinct and len(x) &gt; n.</span>
+
+<span class="sd">    The Fornberg algorithm is much more stable numerically than regular</span>
+<span class="sd">    vandermonde systems for large values of n.</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    fd_weights</span>
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    B. Fornberg (1998)</span>
+<span class="sd">    &quot;Calculation of weights_and_points in finite difference formulas&quot;,</span>
+<span class="sd">    SIAM Review 40, pp. 685-691.</span>
+
+<span class="sd">    http://www.scholarpedia.org/article/Finite_difference_method</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">_assert</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="n">m</span><span class="p">,</span> <span class="s1">&#39;len(x) must be larger than n&#39;</span><span class="p">)</span>
+
+    <span class="n">weights</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">m</span><span class="p">,</span> <span class="n">n</span> <span class="o">+</span> <span class="mi">1</span><span class="p">))</span>
+    <span class="n">_fd_weights_all</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">weights</span><span class="o">.</span><span class="n">T</span></div>
+
+
+<span class="c1"># from numba import jit, float64, int64, int32, int8, void</span>
+<span class="c1"># @jit(void(float64[:,:], float64[:], float64, int64))</span>
+<span class="k">def</span> <span class="nf">_fd_weights_all</span><span class="p">(</span><span class="n">weights</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">c1</span><span class="p">,</span> <span class="n">c4</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">x0</span>
+    <span class="n">weights</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">min</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="n">c2</span><span class="p">,</span> <span class="n">c5</span><span class="p">,</span> <span class="n">c4</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">c4</span><span class="p">,</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">x0</span>
+        <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">i</span><span class="p">):</span>
+            <span class="n">c3</span> <span class="o">=</span> <span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">x</span><span class="p">[</span><span class="n">v</span><span class="p">]</span>
+            <span class="n">c2</span><span class="p">,</span> <span class="n">c6</span><span class="p">,</span> <span class="n">c7</span> <span class="o">=</span> <span class="n">c2</span> <span class="o">*</span> <span class="n">c3</span><span class="p">,</span> <span class="n">j</span> <span class="o">*</span> <span class="n">weights</span><span class="p">[</span><span class="n">v</span><span class="p">,</span> <span class="n">j</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">weights</span><span class="p">[</span><span class="n">v</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+            <span class="n">weights</span><span class="p">[</span><span class="n">v</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">c4</span> <span class="o">*</span> <span class="n">c7</span> <span class="o">-</span> <span class="n">c6</span><span class="p">)</span> <span class="o">/</span> <span class="n">c3</span>
+        <span class="n">weights</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">c1</span> <span class="o">*</span> <span class="p">(</span><span class="n">c6</span> <span class="o">-</span> <span class="n">c5</span> <span class="o">*</span> <span class="n">c7</span><span class="p">)</span> <span class="o">/</span> <span class="n">c2</span>
+        <span class="n">c1</span> <span class="o">=</span> <span class="n">c2</span>
+
+
+<div class="viewcode-block" id="fd_weights"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.fd_weights">[docs]</a><span class="k">def</span> <span class="nf">fd_weights</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return finite difference weights for the n&#39;th derivative.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    x : vector</span>
+<span class="sd">        abscissas used for the evaluation for the derivative at x0.</span>
+<span class="sd">    x0 : scalar</span>
+<span class="sd">        location where approximations are to be accurate</span>
+<span class="sd">    n : scalar integer</span>
+<span class="sd">        order of derivative. Note for n=0 this can be used to evaluate the</span>
+<span class="sd">        interpolating polynomial itself.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; import numdifftools.fornberg as ndf</span>
+<span class="sd">    &gt;&gt;&gt; x = np.linspace(-1, 1, 5) * 1e-3</span>
+<span class="sd">    &gt;&gt;&gt; w = ndf.fd_weights(x, x0=0, n=1)</span>
+<span class="sd">    &gt;&gt;&gt; df = np.dot(w, np.exp(x))</span>
+<span class="sd">    &gt;&gt;&gt; np.allclose(df, 1)</span>
+<span class="sd">    True</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    fd_weights_all</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">fd_weights_all</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">n</span><span class="p">)[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span></div>
+
+
+<div class="viewcode-block" id="fd_derivative"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.fd_derivative">[docs]</a><span class="k">def</span> <span class="nf">fd_derivative</span><span class="p">(</span><span class="n">fx</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">m</span><span class="o">=</span><span class="mi">2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return the n&#39;th derivative for all points using Finite Difference method.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fx : vector</span>
+<span class="sd">        function values which are evaluated on x i.e. fx[i] = f(x[i])</span>
+<span class="sd">    x : vector</span>
+<span class="sd">        abscissas on which fx is evaluated.  The x values can be arbitrarily</span>
+<span class="sd">        spaced but must be distinct and len(x) &gt; n.</span>
+<span class="sd">    n : scalar integer</span>
+<span class="sd">        order of derivative.</span>
+<span class="sd">    m : scalar integer</span>
+<span class="sd">        defines the stencil size. The stencil size is of 2 * mm + 1</span>
+<span class="sd">        points in the interior, and 2 * mm + 2 points for each of the 2 * mm</span>
+<span class="sd">        boundary points where mm = n // 2 + m.</span>
+
+<span class="sd">    fd_derivative evaluates an approximation for the n&#39;th derivative of the</span>
+<span class="sd">    vector function f(x) using the Fornberg finite difference method.</span>
+<span class="sd">    Restrictions: 0 &lt; n &lt; len(x) and 2*mm+2 &lt;= len(x)</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; import numdifftools.fornberg as ndf</span>
+<span class="sd">    &gt;&gt;&gt; x = np.linspace(-1, 1, 25)</span>
+<span class="sd">    &gt;&gt;&gt; fx = np.exp(x)</span>
+<span class="sd">    &gt;&gt;&gt; df = ndf.fd_derivative(fx, x, n=1)</span>
+<span class="sd">    &gt;&gt;&gt; np.allclose(df, fx)</span>
+<span class="sd">    True</span>
+
+<span class="sd">    See also</span>
+<span class="sd">    --------</span>
+<span class="sd">    fd_weights</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">num_x</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+    <span class="n">_assert</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="n">num_x</span><span class="p">,</span> <span class="s1">&#39;len(x) must be larger than n&#39;</span><span class="p">)</span>
+    <span class="n">_assert</span><span class="p">(</span><span class="n">num_x</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">fx</span><span class="p">),</span> <span class="s1">&#39;len(x) must be equal len(fx)&#39;</span><span class="p">)</span>
+
+    <span class="n">du</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros_like</span><span class="p">(</span><span class="n">fx</span><span class="p">)</span>
+
+    <span class="n">mm</span> <span class="o">=</span> <span class="n">n</span> <span class="o">//</span> <span class="mi">2</span> <span class="o">+</span> <span class="n">m</span>
+    <span class="n">size</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">mm</span> <span class="o">+</span> <span class="mi">2</span>  <span class="c1"># stencil size at boundary</span>
+    <span class="c1"># 2 * mm boundary points</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mm</span><span class="p">):</span>
+        <span class="n">du</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fd_weights</span><span class="p">(</span><span class="n">x</span><span class="p">[:</span><span class="n">size</span><span class="p">],</span> <span class="n">x0</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">),</span> <span class="n">fx</span><span class="p">[:</span><span class="n">size</span><span class="p">])</span>
+        <span class="n">du</span><span class="p">[</span><span class="o">-</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fd_weights</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="n">size</span><span class="p">:],</span> <span class="n">x0</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="o">-</span><span class="n">i</span> <span class="o">-</span> <span class="mi">1</span><span class="p">],</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">),</span> <span class="n">fx</span><span class="p">[</span><span class="o">-</span><span class="n">size</span><span class="p">:])</span>
+
+    <span class="c1"># interior points</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">mm</span><span class="p">,</span> <span class="n">num_x</span> <span class="o">-</span> <span class="n">mm</span><span class="p">):</span>
+        <span class="n">du</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">fd_weights</span><span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">mm</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">mm</span> <span class="o">+</span> <span class="mi">1</span><span class="p">],</span> <span class="n">x0</span><span class="o">=</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">),</span>
+                       <span class="n">fx</span><span class="p">[</span><span class="n">i</span> <span class="o">-</span> <span class="n">mm</span><span class="p">:</span><span class="n">i</span> <span class="o">+</span> <span class="n">mm</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span>
+
+    <span class="k">return</span> <span class="n">du</span></div>
+
+
+<span class="k">def</span> <span class="nf">_circle</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0</span><span class="p">,</span> <span class="mf">2.0</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">num</span><span class="o">=</span><span class="n">m</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">z</span> <span class="o">+</span> <span class="n">r</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">theta</span> <span class="o">*</span> <span class="mi">1</span><span class="n">j</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_poor_convergence</span><span class="p">(</span><span class="n">z</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">f</span><span class="p">,</span> <span class="n">bn</span><span class="p">,</span> <span class="n">mvec</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Test for poor convergence based on three function evaluations.</span>
+
+<span class="sd">    This test evaluates the function at the three points and returns false if</span>
+<span class="sd">    the relative error is greater than 1e-3.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">check_points</span> <span class="o">=</span> <span class="p">(</span><span class="o">-</span><span class="mf">0.4</span> <span class="o">+</span> <span class="mf">0.3</span><span class="n">j</span><span class="p">,</span> <span class="mf">0.7</span> <span class="o">+</span> <span class="mf">0.2</span><span class="n">j</span><span class="p">,</span> <span class="mf">0.02</span> <span class="o">-</span> <span class="mf">0.06</span><span class="n">j</span><span class="p">)</span>
+    <span class="n">diffs</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">ftests</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">check_point</span> <span class="ow">in</span> <span class="n">check_points</span><span class="p">:</span>
+        <span class="n">rtest</span> <span class="o">=</span> <span class="n">r</span> <span class="o">*</span> <span class="n">check_point</span>
+        <span class="n">ztest</span> <span class="o">=</span> <span class="n">z</span> <span class="o">+</span> <span class="n">rtest</span>
+        <span class="n">ftest</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">ztest</span><span class="p">)</span>
+        <span class="c1"># Evaluate powerseries:</span>
+        <span class="n">comp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">bn</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">check_point</span><span class="p">,</span> <span class="n">mvec</span><span class="p">))</span>
+        <span class="n">ftests</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">ftest</span><span class="p">)</span>
+        <span class="n">diffs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">comp</span> <span class="o">-</span> <span class="n">ftest</span><span class="p">)</span>
+
+    <span class="n">max_abs_error</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">diffs</span><span class="p">))</span>
+    <span class="n">max_f_value</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">ftests</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">max_abs_error</span> <span class="o">&gt;</span> <span class="mf">1e-3</span> <span class="o">*</span> <span class="n">max_f_value</span>
+
+
+<span class="k">def</span> <span class="nf">_get_logn</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">0</span>
+
+    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">int_</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log2</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="mf">1.5849625007211561</span><span class="p">)</span><span class="o">.</span><span class="n">clip</span><span class="p">(</span><span class="nb">min</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+
+<span class="k">def</span> <span class="nf">_num_taylor_coefficients</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return number of taylor coefficients</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    n : scalar integer</span>
+<span class="sd">        Wanted number of taylor coefficients</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    m : scalar integer</span>
+<span class="sd">        Number of taylor coefficients calculated</span>
+<span class="sd">           8 if       n &lt;= 6</span>
+<span class="sd">          16 if   6 &lt; n &lt;= 12</span>
+<span class="sd">          32 if  12 &lt; n &lt;= 25</span>
+<span class="sd">          64 if  25 &lt; n &lt;= 51</span>
+<span class="sd">         128 if  51 &lt; n &lt;= 103</span>
+<span class="sd">         256 if 103 &lt; n &lt;= 192</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">_assert</span><span class="p">(</span><span class="n">n</span> <span class="o">&lt;</span> <span class="mi">193</span><span class="p">,</span> <span class="s1">&#39;Number of derivatives too large.  Must be less than 193&#39;</span><span class="p">)</span>
+    <span class="n">correction</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">7</span><span class="p">])[</span><span class="n">_get_logn</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
+    <span class="n">log2n</span> <span class="o">=</span> <span class="n">_get_logn</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="n">correction</span><span class="p">)</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="n">log2n</span> <span class="o">+</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">m</span>
+
+
+<div class="viewcode-block" id="richardson_parameter"><a class="viewcode-back" href="../../reference/numdifftools.html#numdifftools.fornberg.richardson_parameter">[docs]</a><span class="k">def</span> <span class="nf">richardson_parameter</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">real</span><span class="p">((</span><span class="n">vals</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">vals</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">2</span><span class="p">])</span> <span class="o">/</span> <span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">-</span> <span class="n">vals</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]))</span> <span class="o">-</span> <span class="mf">1.</span>
+    <span class="c1"># The lower bound 0.07 admits the singularity x.^-0.9</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="mf">0.07</span><span class="p">)</span>
+    <span class="k">return</span> <span class="o">-</span><span class="n">c</span></div>
+
+
+<div class="viewcode-block" id="richardson"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.richardson">[docs]</a><span class="k">def</span> <span class="nf">richardson</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="n">k</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Richardson extrapolation with parameter estimation&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">c</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">c</span> <span class="o">=</span> <span class="n">richardson_parameter</span><span class="p">(</span><span class="n">vals</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">vals</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">-</span> <span class="p">(</span><span class="n">vals</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">-</span> <span class="n">vals</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">])</span> <span class="o">/</span> <span class="n">c</span></div>
+
+
+<span class="k">def</span> <span class="nf">_extrapolate</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="c1"># Begin Richardson Extrapolation. Presumably we have bs[i]&#39;s around three</span>
+    <span class="c1"># successive circles and can now extrapolate those coefficients, zeroing</span>
+    <span class="c1"># out higher order error terms.</span>
+
+    <span class="n">nk</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">rs</span><span class="p">)</span>
+    <span class="n">extrap0</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">extrap</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nk</span><span class="p">):</span>
+        <span class="n">extrap0</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">richardson</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span> <span class="n">c</span><span class="o">=</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">rs</span><span class="p">[</span><span class="n">k</span><span class="p">])</span> <span class="o">**</span> <span class="n">m</span><span class="p">))</span>
+
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">nk</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+        <span class="n">extrap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">richardson</span><span class="p">(</span><span class="n">extrap0</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="n">k</span><span class="p">,</span>
+                                 <span class="n">c</span><span class="o">=</span><span class="mf">1.0</span> <span class="o">-</span> <span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="n">k</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="o">/</span> <span class="n">rs</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">])</span> <span class="o">**</span> <span class="n">m</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">extrap</span>
+
+
+<span class="k">def</span> <span class="nf">_get_best_taylor_coefficients</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">m</span><span class="p">):</span>
+    <span class="n">extrap</span> <span class="o">=</span> <span class="n">_extrapolate</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+    <span class="n">mvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">extrap</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">2</span><span class="p">:</span>
+        <span class="n">all_coefs</span><span class="p">,</span> <span class="n">all_errors</span> <span class="o">=</span> <span class="n">dea3</span><span class="p">(</span><span class="n">extrap</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">extrap</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">extrap</span><span class="p">[</span><span class="mi">2</span><span class="p">:])</span>
+        <span class="n">steps</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">atleast_1d</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="mi">4</span><span class="p">:])[:,</span> <span class="kc">None</span><span class="p">]</span> <span class="o">*</span> <span class="n">mvec</span>
+        <span class="n">coefs</span><span class="p">,</span> <span class="n">info</span> <span class="o">=</span> <span class="n">_Limit</span><span class="o">.</span><span class="n">_get_best_estimate</span><span class="p">(</span><span class="n">all_coefs</span><span class="p">,</span> <span class="n">all_errors</span><span class="p">,</span> <span class="n">steps</span><span class="p">,</span> <span class="p">(</span><span class="n">m</span><span class="p">,))</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="n">info</span><span class="o">.</span><span class="n">error_estimate</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">errors</span> <span class="o">=</span> <span class="n">EPS</span> <span class="o">/</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">rs</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="n">mvec</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">maximum</span><span class="p">(</span><span class="n">m1</span><span class="p">,</span> <span class="n">m2</span><span class="p">)</span>
+        <span class="n">coefs</span> <span class="o">=</span> <span class="n">extrap</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">coefs</span><span class="p">,</span> <span class="n">errors</span>
+
+
+<span class="k">def</span> <span class="nf">_check_fft</span><span class="p">(</span><span class="n">bnc</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">check_degenerate</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+    <span class="c1"># If not degenerate, check for geometric progression in the FFT:</span>
+    <span class="n">m1</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">bnc</span><span class="p">[:</span><span class="n">m</span> <span class="o">//</span> <span class="mi">2</span><span class="p">]))</span>
+    <span class="n">m2</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">bnc</span><span class="p">[</span><span class="n">m</span> <span class="o">//</span> <span class="mi">2</span><span class="p">:]))</span>
+    <span class="c1"># If there&#39;s an extreme mismatch, then we can consider the</span>
+    <span class="c1"># geometric progression degenerate, whether one way or the other,</span>
+    <span class="c1"># and just alternate directions instead of trying to target a</span>
+    <span class="c1"># specific error bound (not ideal, but not a good reason to fail</span>
+    <span class="c1"># catastrophically):</span>
+    <span class="c1">#</span>
+    <span class="c1"># Note: only consider it degenerate if we&#39;ve had a chance to steer</span>
+    <span class="c1"># the radius in the direction at least `min_iter` times:</span>
+    <span class="n">degenerate</span> <span class="o">=</span> <span class="n">check_degenerate</span> <span class="ow">and</span> <span class="p">(</span><span class="n">m1</span> <span class="o">&lt;</span> <span class="n">m2</span> <span class="o">*</span> <span class="mf">1e-8</span> <span class="ow">or</span> <span class="n">m2</span> <span class="o">&lt;</span> <span class="n">m1</span> <span class="o">*</span> <span class="mf">1e-8</span><span class="p">)</span>
+    <span class="n">needs_smaller</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span> <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">m2</span><span class="p">)</span> <span class="ow">or</span> <span class="n">m1</span> <span class="o">&lt;</span> <span class="n">m2</span>
+    <span class="k">return</span> <span class="n">degenerate</span><span class="p">,</span> <span class="n">needs_smaller</span>
+
+
+<div class="viewcode-block" id="Taylor"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.Taylor">[docs]</a><span class="k">class</span> <span class="nc">Taylor</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
+
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return Taylor coefficients of complex analytic function using FFT</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fun : callable</span>
+<span class="sd">        function to differentiate</span>
+<span class="sd">    z0 : real or complex scalar at which to evaluate the derivatives</span>
+<span class="sd">    n : scalar integer, default 1</span>
+<span class="sd">        Number of taylor coefficents to compute. Maximum number is 100.</span>
+<span class="sd">    r : real scalar, default 0.0061</span>
+<span class="sd">        Initial radius at which to evaluate. For well-behaved functions,</span>
+<span class="sd">        the computation should be insensitive to the initial radius to within</span>
+<span class="sd">        about four orders of magnitude.</span>
+<span class="sd">    num_extrap : scalar integer, default 3</span>
+<span class="sd">        number of extrapolation steps used in the calculation</span>
+<span class="sd">    step_ratio : real scalar, default 1.6</span>
+<span class="sd">        Initial grow/shrinking factor for finding the best radius.</span>
+<span class="sd">    max_iter : scalar integer, default 30</span>
+<span class="sd">        Maximum number of iterations</span>
+<span class="sd">    min_iter : scalar integer, default max_iter // 2</span>
+<span class="sd">        Minimum number of iterations before the solution may be deemed</span>
+<span class="sd">        degenerate.  A larger number allows the algorithm to correct a bad</span>
+<span class="sd">        initial radius.</span>
+<span class="sd">    full_output : bool, optional</span>
+<span class="sd">        If `full_output` is False, only the coefficents is returned (default).</span>
+<span class="sd">        If `full_output` is True, then (coefs, status) is returned</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    coefs : ndarray</span>
+<span class="sd">       array of taylor coefficents</span>
+<span class="sd">    status: Optional object into which output information is written:</span>
+<span class="sd">        degenerate: True if the algorithm was unable to bound the error</span>
+<span class="sd">        iterations: Number of iterations executed</span>
+<span class="sd">        function_count: Number of function calls</span>
+<span class="sd">        final_radius: Ending radius of the algorithm</span>
+<span class="sd">        failed: True if the maximum number of iterations was reached</span>
+<span class="sd">        error_estimate: approximate bounds of the rounding error.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    This module uses the method of Fornberg to compute the Taylor series</span>
+<span class="sd">    coefficients of a complex analytic function along with error bounds. The</span>
+<span class="sd">    method uses a Fast Fourier Transform to invert function evaluations around</span>
+<span class="sd">    a circle into Taylor series coefficients and uses Richardson Extrapolation</span>
+<span class="sd">    to improve and bound the estimate. Unlike real-valued finite differences,</span>
+<span class="sd">    the method searches for a desirable radius and so is reasonably</span>
+<span class="sd">    insensitive to the initial radius-to within a number of orders of</span>
+<span class="sd">    magnitude at least. For most cases, the default configuration is likely to</span>
+<span class="sd">    succeed.</span>
+
+<span class="sd">    Restrictions</span>
+
+<span class="sd">    The method uses the coefficients themselves to control the truncation</span>
+<span class="sd">    error, so the error will not be properly bounded for functions like</span>
+<span class="sd">    low-order polynomials whose Taylor series coefficients are nearly zero.</span>
+<span class="sd">    If the error cannot be bounded, degenerate flag will be set to true, and</span>
+<span class="sd">    an answer will still be computed and returned but should be used with</span>
+<span class="sd">    caution.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+
+<span class="sd">    Compute the first 6 taylor coefficients 1 / (1 - z) expanded round  z0 = 0:</span>
+<span class="sd">    &gt;&gt;&gt; import numdifftools.fornberg as ndf</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; c, info = ndf.Taylor(lambda x: 1./(1-x), n=6, full_output=True)(z0=0)</span>
+<span class="sd">    &gt;&gt;&gt; np.allclose(c, np.ones(8))</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; np.all(info.error_estimate &lt; 1e-9)</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; (info.function_count, info.iterations, info.failed) == (144, 18, False)</span>
+<span class="sd">    True</span>
+
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    [1] Fornberg, B. (1981).</span>
+<span class="sd">        Numerical Differentiation of Analytic Functions.</span>
+<span class="sd">        ACM Transactions on Mathematical Software (TOMS),</span>
+<span class="sd">        7(4), 512-526. http://doi.org/10.1145/355972.355979</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">fun</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mf">0.0061</span><span class="p">,</span> <span class="n">num_extrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">step_ratio</span><span class="o">=</span><span class="mf">1.6</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">fun</span> <span class="o">=</span> <span class="n">fun</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span> <span class="o">=</span> <span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;max_iter&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">min_iter</span> <span class="o">=</span> <span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;min_iter&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span> <span class="o">//</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">full_output</span> <span class="o">=</span> <span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;full_output&#39;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">n</span> <span class="o">=</span> <span class="n">n</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">r</span> <span class="o">=</span> <span class="n">r</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">num_extrap</span> <span class="o">=</span> <span class="n">num_extrap</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">step_ratio</span> <span class="o">=</span> <span class="n">step_ratio</span>
+
+    <span class="k">def</span> <span class="nf">_initialize</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">_num_taylor_coefficients</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">n</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_step_ratio</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">step_ratio</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_direction_changes</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_previous_direction</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_failed</span> <span class="o">=</span> <span class="kc">False</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_m</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_mvec</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>
+        <span class="c1"># A factor for testing against the targeted geometric progression of</span>
+        <span class="c1"># FFT coefficients:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_crat</span> <span class="o">=</span> <span class="n">m</span> <span class="o">*</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="mf">1e-4</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">m</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)))</span> <span class="o">**</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mvec</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_num_changes</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="k">return</span> <span class="n">m</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mvec</span>
+
+    <span class="k">def</span> <span class="nf">_check_convergence</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">bn</span><span class="p">):</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_direction_changes</span> <span class="o">&gt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_num_changes</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_num_changes</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">num_extrap</span><span class="p">:</span>
+                <span class="k">return</span> <span class="kc">True</span><span class="p">,</span> <span class="n">r</span>
+
+        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span><span class="p">,</span> <span class="n">needs_smaller</span> <span class="o">=</span> <span class="n">_check_fft</span><span class="p">(</span><span class="n">bn</span> <span class="o">/</span> <span class="bp">self</span><span class="o">.</span><span class="n">_crat</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span>
+                                                         <span class="n">check_degenerate</span><span class="o">=</span><span class="n">i</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">min_iter</span><span class="p">)</span>
+            <span class="n">needs_smaller</span> <span class="o">=</span> <span class="n">needs_smaller</span> <span class="ow">or</span> <span class="n">_poor_convergence</span><span class="p">(</span><span class="n">z0</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">fun</span><span class="p">,</span> <span class="n">bn</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_mvec</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span><span class="p">:</span>
+            <span class="n">needs_smaller</span> <span class="o">=</span> <span class="n">i</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_previous_direction</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">needs_smaller</span> <span class="o">!=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_previous_direction</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_direction_changes</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">_direction_changes</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="c1"># Once we&#39;ve started changing directions, we&#39;ve found our range so</span>
+            <span class="c1"># start taking the square root of the growth factor so that</span>
+            <span class="c1"># richardson extrapolation is well-behaved:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_step_ratio</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_step_ratio</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">needs_smaller</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">/=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_step_ratio</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">r</span> <span class="o">*=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_step_ratio</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_previous_direction</span> <span class="o">=</span> <span class="n">needs_smaller</span>
+        <span class="k">return</span> <span class="kc">False</span><span class="p">,</span> <span class="n">r</span>
+
+    <span class="k">def</span> <span class="nf">__call__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+        <span class="n">m</span><span class="p">,</span> <span class="n">mvec</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_initialize</span><span class="p">()</span>
+
+        <span class="c1"># Start iterating. The goal of this loops is to select a circle radius that</span>
+        <span class="c1"># yields a nice geometric progression of the coefficients (which controls</span>
+        <span class="c1"># the error), and then to accumulate *three* successive approximations as a</span>
+        <span class="c1"># function of the circle radius r so that we can perform Richardson</span>
+        <span class="c1"># Extrapolation and zero out error terms, *greatly* improving the quality</span>
+        <span class="c1"># of the approximation.</span>
+
+        <span class="n">rs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">bs</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">r</span>
+        <span class="n">fun</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">fun</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">max_iter</span><span class="p">):</span>
+            <span class="c1"># print(&#39;r = %g&#39; % (r))</span>
+
+            <span class="n">bn</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fft</span><span class="o">.</span><span class="n">fft</span><span class="p">(</span><span class="n">fun</span><span class="p">(</span><span class="n">_circle</span><span class="p">(</span><span class="n">z0</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">m</span><span class="p">)))</span> <span class="o">/</span> <span class="n">m</span>
+            <span class="n">bs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">bn</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">power</span><span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="o">-</span><span class="n">mvec</span><span class="p">))</span>
+            <span class="n">rs</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">r</span><span class="p">)</span>
+
+            <span class="n">converged</span><span class="p">,</span> <span class="n">r</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_check_convergence</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">bn</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">converged</span><span class="p">:</span>
+                <span class="k">break</span>
+
+        <span class="n">failed</span> <span class="o">=</span> <span class="ow">not</span> <span class="n">converged</span>
+        <span class="n">coefs</span><span class="p">,</span> <span class="n">errors</span> <span class="o">=</span> <span class="n">_get_best_taylor_coefficients</span><span class="p">(</span><span class="n">bs</span><span class="p">,</span> <span class="n">rs</span><span class="p">,</span> <span class="n">m</span><span class="p">)</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">full_output</span><span class="p">:</span>
+            <span class="n">info</span> <span class="o">=</span> <span class="n">_INFO</span><span class="p">(</span><span class="n">errors</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_degenerate</span><span class="p">,</span> <span class="n">final_radius</span><span class="o">=</span><span class="n">r</span><span class="p">,</span>
+                         <span class="n">function_count</span><span class="o">=</span><span class="n">i</span> <span class="o">*</span> <span class="n">m</span><span class="p">,</span> <span class="n">iterations</span><span class="o">=</span><span class="n">i</span><span class="p">,</span> <span class="n">failed</span><span class="o">=</span><span class="n">failed</span><span class="p">)</span>
+            <span class="k">return</span> <span class="n">coefs</span><span class="p">,</span> <span class="n">info</span>
+        <span class="k">return</span> <span class="n">coefs</span></div>
+
+
+<div class="viewcode-block" id="taylor"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.taylor">[docs]</a><span class="k">def</span> <span class="nf">taylor</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">z0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="mf">0.0061</span><span class="p">,</span> <span class="n">num_extrap</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">step_ratio</span><span class="o">=</span><span class="mf">1.6</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Return Taylor coefficients of complex analytic function using FFT</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fun : callable</span>
+<span class="sd">        function to differentiate</span>
+<span class="sd">    z0 : real or complex scalar at which to evaluate the derivatives</span>
+<span class="sd">    n : scalar integer, default 1</span>
+<span class="sd">        Number of taylor coefficents to compute. Maximum number is 100.</span>
+<span class="sd">    r : real scalar, default 0.0061</span>
+<span class="sd">        Initial radius at which to evaluate. For well-behaved functions,</span>
+<span class="sd">        the computation should be insensitive to the initial radius to within</span>
+<span class="sd">        about four orders of magnitude.</span>
+<span class="sd">    num_extrap : scalar integer, default 3</span>
+<span class="sd">        number of extrapolation steps used in the calculation</span>
+<span class="sd">    step_ratio : real scalar, default 1.6</span>
+<span class="sd">        Initial grow/shrinking factor for finding the best radius.</span>
+<span class="sd">    max_iter : scalar integer, default 30</span>
+<span class="sd">        Maximum number of iterations</span>
+<span class="sd">    min_iter : scalar integer, default max_iter // 2</span>
+<span class="sd">        Minimum number of iterations before the solution may be deemed</span>
+<span class="sd">        degenerate.  A larger number allows the algorithm to correct a bad</span>
+<span class="sd">        initial radius.</span>
+<span class="sd">    full_output : bool, optional</span>
+<span class="sd">        If `full_output` is False, only the coefficents is returned (default).</span>
+<span class="sd">        If `full_output` is True, then (coefs, status) is returned</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    coefs : ndarray</span>
+<span class="sd">       array of taylor coefficents</span>
+<span class="sd">    status: Optional object into which output information is written:</span>
+<span class="sd">        degenerate: True if the algorithm was unable to bound the error</span>
+<span class="sd">        iterations: Number of iterations executed</span>
+<span class="sd">        function_count: Number of function calls</span>
+<span class="sd">        final_radius: Ending radius of the algorithm</span>
+<span class="sd">        failed: True if the maximum number of iterations was reached</span>
+<span class="sd">        error_estimate: approximate bounds of the rounding error.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    This module uses the method of Fornberg to compute the Taylor series</span>
+<span class="sd">    coefficents of a complex analytic function along with error bounds. The</span>
+<span class="sd">    method uses a Fast Fourier Transform to invert function evaluations around</span>
+<span class="sd">    a circle into Taylor series coefficients and uses Richardson Extrapolation</span>
+<span class="sd">    to improve and bound the estimate. Unlike real-valued finite differences,</span>
+<span class="sd">    the method searches for a desirable radius and so is reasonably</span>
+<span class="sd">    insensitive to the initial radius-to within a number of orders of</span>
+<span class="sd">    magnitude at least. For most cases, the default configuration is likely to</span>
+<span class="sd">    succeed.</span>
+
+<span class="sd">    Restrictions</span>
+
+<span class="sd">    The method uses the coefficients themselves to control the truncation</span>
+<span class="sd">    error, so the error will not be properly bounded for functions like</span>
+<span class="sd">    low-order polynomials whose Taylor series coefficients are nearly zero.</span>
+<span class="sd">    If the error cannot be bounded, degenerate flag will be set to true, and</span>
+<span class="sd">    an answer will still be computed and returned but should be used with</span>
+<span class="sd">    caution.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+
+<span class="sd">    Compute the first 6 taylor coefficients 1 / (1 - z) expanded round  z0 = 0:</span>
+<span class="sd">    &gt;&gt;&gt; import numdifftools.fornberg as ndf</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; c, info = ndf.taylor(lambda x: 1./(1-x), z0=0, n=6, full_output=True)</span>
+<span class="sd">    &gt;&gt;&gt; np.allclose(c, np.ones(8))</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; np.all(info.error_estimate &lt; 1e-9)</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; (info.function_count, info.iterations, info.failed) == (144, 18, False)</span>
+<span class="sd">    True</span>
+
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    [1] Fornberg, B. (1981).</span>
+<span class="sd">        Numerical Differentiation of Analytic Functions.</span>
+<span class="sd">        ACM Transactions on Mathematical Software (TOMS),</span>
+<span class="sd">        7(4), 512-526. http://doi.org/10.1145/355972.355979</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">Taylor</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="n">r</span><span class="o">=</span><span class="n">r</span><span class="p">,</span> <span class="n">num_extrap</span><span class="o">=</span><span class="n">num_extrap</span><span class="p">,</span> <span class="n">step_ratio</span><span class="o">=</span><span class="n">step_ratio</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)(</span><span class="n">z0</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="derivative"><a class="viewcode-back" href="../../reference/test.html#numdifftools.fornberg.derivative">[docs]</a><span class="k">def</span> <span class="nf">derivative</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Calculate n-th derivative of complex analytic function using FFT</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    fun : callable</span>
+<span class="sd">        function to differentiate</span>
+<span class="sd">    z0 : real or complex scalar at which to evaluate the derivatives</span>
+<span class="sd">    n : scalar integer, default 1</span>
+<span class="sd">        Number of derivatives to compute where 0 represents the value of the</span>
+<span class="sd">        function and n represents the nth derivative. Maximum number is 100.</span>
+
+<span class="sd">    r : real scalar, default 0.0061</span>
+<span class="sd">        Initial radius at which to evaluate. For well-behaved functions,</span>
+<span class="sd">        the computation should be insensitive to the initial radius to within</span>
+<span class="sd">        about four orders of magnitude.</span>
+<span class="sd">    max_iter : scalar integer, default 30</span>
+<span class="sd">        Maximum number of iterations</span>
+<span class="sd">    min_iter : scalar integer, default max_iter // 2</span>
+<span class="sd">        Minimum number of iterations before the solution may be deemed</span>
+<span class="sd">        degenerate.  A larger number allows the algorithm to correct a bad</span>
+<span class="sd">        initial radius.</span>
+<span class="sd">    step_ratio : real scalar, default 1.6</span>
+<span class="sd">        Initial grow/shrinking factor for finding the best radius.</span>
+<span class="sd">    num_extrap : scalar integer, default 3</span>
+<span class="sd">        number of extrapolation steps used in the calculation</span>
+<span class="sd">    full_output : bool, optional</span>
+<span class="sd">        If `full_output` is False, only the derivative is returned (default).</span>
+<span class="sd">        If `full_output` is True, then (der, status) is returned `der` is the</span>
+<span class="sd">        derivative, and `status` is a Results object.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    der : ndarray</span>
+<span class="sd">       array of derivatives</span>
+<span class="sd">    status: Optional object into which output information is written. Fields:</span>
+<span class="sd">        degenerate: True if the algorithm was unable to bound the error</span>
+<span class="sd">        iterations: Number of iterations executed</span>
+<span class="sd">        function_count: Number of function calls</span>
+<span class="sd">        final_radius: Ending radius of the algorithm</span>
+<span class="sd">        failed: True if the maximum number of iterations was reached</span>
+<span class="sd">        error_estimate: approximate bounds of the rounding error.</span>
+
+<span class="sd">    This module uses the method of Fornberg to compute the derivatives of a</span>
+<span class="sd">    complex analytic function along with error bounds. The method uses a</span>
+<span class="sd">    Fast Fourier Transform to invert function evaluations around a circle into</span>
+<span class="sd">    Taylor series coefficients, uses Richardson Extrapolation to improve</span>
+<span class="sd">    and bound the estimate, then multiplies by a factorial to compute the</span>
+<span class="sd">    derivatives. Unlike real-valued finite differences, the method searches for</span>
+<span class="sd">    a desirable radius and so is reasonably insensitive to the initial</span>
+<span class="sd">    radius-to within a number of orders of magnitude at least. For most cases,</span>
+<span class="sd">    the default configuration is likely to succeed.</span>
+
+<span class="sd">    Restrictions</span>
+
+<span class="sd">    The method uses the coefficients themselves to control the truncation</span>
+<span class="sd">    error, so the error will not be properly bounded for functions like</span>
+<span class="sd">    low-order polynomials whose Taylor series coefficients are nearly zero.</span>
+<span class="sd">    If the error cannot be bounded, degenerate flag will be set to true, and</span>
+<span class="sd">    an answer will still be computed and returned but should be used with</span>
+<span class="sd">    caution.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+
+<span class="sd">    To compute the first five derivatives of 1 / (1 - z) at z = 0:</span>
+<span class="sd">    Compute the first 6 taylor derivatives of 1 / (1 - z) at z0 = 0:</span>
+<span class="sd">    &gt;&gt;&gt; import numdifftools.fornberg as ndf</span>
+<span class="sd">    &gt;&gt;&gt; import numpy as np</span>
+<span class="sd">    &gt;&gt;&gt; def fun(x):</span>
+<span class="sd">    ...    return 1./(1-x)</span>
+<span class="sd">    &gt;&gt;&gt; c, info = ndf.derivative(fun, z0=0, n=6, full_output=True)</span>
+<span class="sd">    &gt;&gt;&gt; np.allclose(c, [1, 1, 2, 6, 24, 120, 720, 5040])</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; np.all(info.error_estimate &lt; 1e-9*c.real)</span>
+<span class="sd">    True</span>
+<span class="sd">    &gt;&gt;&gt; (info.function_count, info.iterations, info.failed) == (144, 18, False)</span>
+<span class="sd">    True</span>
+
+
+<span class="sd">    References</span>
+<span class="sd">    ----------</span>
+<span class="sd">    [1] Fornberg, B. (1981).</span>
+<span class="sd">        Numerical Differentiation of Analytic Functions.</span>
+<span class="sd">        ACM Transactions on Mathematical Software (TOMS),</span>
+<span class="sd">        7(4), 512-526. http://doi.org/10.1145/355972.355979</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="n">taylor</span><span class="p">(</span><span class="n">fun</span><span class="p">,</span> <span class="n">z0</span><span class="p">,</span> <span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">,</span> <span class="o">**</span><span class="n">kwds</span><span class="p">)</span>
+    <span class="c1"># convert taylor series --&gt; actual derivatives.</span>
+    <span class="n">m</span> <span class="o">=</span> <span class="n">_num_taylor_coefficients</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+    <span class="n">fact</span> <span class="o">=</span> <span class="n">factorial</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">m</span><span class="p">))</span>
+    <span class="k">if</span> <span class="n">kwds</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;full_output&#39;</span><span class="p">):</span>
+        <span class="n">coefs</span><span class="p">,</span> <span class="n">info_</span> <span class="o">=</span> <span class="n">result</span>
+        <span class="n">info</span> <span class="o">=</span> <span class="n">_INFO</span><span class="p">(</span><span class="n">info_</span><span class="o">.</span><span class="n">error_estimate</span> <span class="o">*</span> <span class="n">fact</span><span class="p">,</span> <span class="o">*</span><span class="n">info_</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+        <span class="k">return</span> <span class="n">coefs</span> <span class="o">*</span> <span class="n">fact</span><span class="p">,</span> <span class="n">info</span>
+    <span class="k">return</span> <span class="n">result</span> <span class="o">*</span> <span class="n">fact</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="kn">from</span> <span class="nn">numdifftools.testing</span> <span class="k">import</span> <span class="n">test_docstrings</span>
+    <span class="n">test_docstrings</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2009-2019, Per A Brodtkorb, , John D&#39;Errico.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../',
+            VERSION:'0.9.38',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../_static/doctools.js"></script>
+      <script type="text/javascript" src="../../_static/language_data.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
