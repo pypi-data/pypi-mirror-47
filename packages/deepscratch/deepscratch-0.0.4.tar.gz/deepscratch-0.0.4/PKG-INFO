@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: deepscratch
+Version: 0.0.4
+Summary: Deep Learning From Scratch.
+Home-page: https://github.com/tuguldurio/DeepScratch
+Author: Tuguldur O
+Author-email: thattuguldur@gmail.com
+License: GNU GPLv3
+Description: # Deep Learning From Scratch
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
