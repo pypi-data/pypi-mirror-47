@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: findabuse
+Version: 0.1.2
+Summary: findabuse.email is a simple API for looking up abuse contacts for network spaces
+License: MIT
+Author: Matthew Gall
+Author-email: git@matthewgall.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: bottle (>=0.12.16,<0.13.0)
+Requires-Dist: dnslib (>=0.9.10,<0.10.0)
+Requires-Dist: redis (>=3.2,<4.0)
+Requires-Dist: requests (>=2.22,<3.0)
+Requires-Dist: tornado (>=6.0,<7.0)

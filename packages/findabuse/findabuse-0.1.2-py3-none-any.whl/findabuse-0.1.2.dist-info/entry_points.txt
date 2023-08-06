@@ -1,0 +1,5 @@
+[console_scripts]
+findabuse=findabuse.cli:main
+findabuse-dns=findabuse.dns-server:main
+findabuse-http=findabuse.http-server:main
+
