@@ -1,0 +1,7 @@
+setup.py
+flask_crud_routes/__init__.py
+flask_crud_routes/router.py
+flask_crud_routes.egg-info/PKG-INFO
+flask_crud_routes.egg-info/SOURCES.txt
+flask_crud_routes.egg-info/dependency_links.txt
+flask_crud_routes.egg-info/top_level.txt

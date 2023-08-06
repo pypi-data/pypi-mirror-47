@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: flask-crud-routes
+Version: 0.0.1
+Summary: Flask CRUD Router
+Home-page: https://github.com/kuamrend/flask-crud-routes
+Author: Amrendra Kumar
+Author-email: aks23101@gmail.com
+License: UNKNOWN
+Description: # flask-crud
+        Flask CRUD Routes
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
