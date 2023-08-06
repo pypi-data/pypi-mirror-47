@@ -1,0 +1,6 @@
+pandas
+numpy
+requests
+smart-open
+boto3
+pygsheets
