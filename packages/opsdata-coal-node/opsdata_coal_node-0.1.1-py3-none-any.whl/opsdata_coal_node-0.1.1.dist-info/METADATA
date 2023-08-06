@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: opsdata-coal-node
+Version: 0.1.1
+Summary: A dataset collected over an operating longwall coalmine using a dense network of geophones
+Home-page: https://github.com/d-chambers/coal_node
+Author: Derrick Chambers
+Author-email: djachambeador@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# Obsplus Dataset: coal_node
+
+A dataset collected over an operating longwall coalmine using a dense network of geophones
+
+# More info
+
+Who collected this dataset? Why is it important?
+
+# References
+
+Add any references here
+
+
+
