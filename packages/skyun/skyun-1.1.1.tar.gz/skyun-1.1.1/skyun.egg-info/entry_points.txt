@@ -1,0 +1,5 @@
+
+    [console_scripts]
+    skyserver = skyun.server:main
+    skyclient = skyun.client:main
+    
