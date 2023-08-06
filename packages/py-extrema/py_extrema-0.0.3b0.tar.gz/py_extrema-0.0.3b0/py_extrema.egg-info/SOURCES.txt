@@ -1,0 +1,10 @@
+setup.py
+py_extrema/__init__.py
+py_extrema/extrema.py
+py_extrema/slopping_saddle.py
+py_extrema/utils.py
+py_extrema.egg-info/PKG-INFO
+py_extrema.egg-info/SOURCES.txt
+py_extrema.egg-info/dependency_links.txt
+py_extrema.egg-info/requires.txt
+py_extrema.egg-info/top_level.txt
