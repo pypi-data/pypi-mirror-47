@@ -1,0 +1,10 @@
+pyparadigm/__init__.py,sha256=G5-0WA2N7lzLcVT6_N8hpHthD1QadytJEtitL4sGkK4,730
+pyparadigm/_primitives.py,sha256=pNyuM7QLYCRAviTZysHWtnQqFv7JzuFObD43khwbZs8,199
+pyparadigm/eventlistener.py,sha256=LTnAP7oNzhwAm6SNcfELiwioR0-TaWyYjK8FeYGLpGo,12705
+pyparadigm/extras.py,sha256=MIOBeZE48drYV9paHcRF9iy-xCTwwL3qUG4s1lA22NM,1814
+pyparadigm/misc.py,sha256=nbw9axP5qeu0-Do60SOqJau0uzqbvo3JE7zXj7F_6ow,5895
+pyparadigm/surface_composition.py,sha256=5_32z785fM_QWckEUFbksFXrIdrn1MwvC_ZHLJX7gHc,22258
+pyparadigm-1.0.8.dist-info/LICENSE,sha256=guEJSgnd16KEETANiG5EUR1N2-sZGjZ70E0Cgm7knNM,1102
+pyparadigm-1.0.8.dist-info/WHEEL,sha256=MP1UiX4AXjPa4mWvCuy-oUiZT3GZDnthv7K0OSicOP0,81
+pyparadigm-1.0.8.dist-info/METADATA,sha256=3oZfgQTzikCIt744HQjW8TRATn0Wx0ZfNyB2erkRY-E,2302
+pyparadigm-1.0.8.dist-info/RECORD,,
