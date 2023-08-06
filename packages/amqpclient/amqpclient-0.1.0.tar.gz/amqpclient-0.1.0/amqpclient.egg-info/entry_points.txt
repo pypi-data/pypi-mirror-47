@@ -1,0 +1,4 @@
+[console_scripts]
+amqp-rx = amqpclient.rx:main
+amqp-tx = amqpclient.tx:main
+

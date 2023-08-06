@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+version.py
+amqpclient/rx.py
+amqpclient/tx.py
+amqpclient.egg-info/PKG-INFO
+amqpclient.egg-info/SOURCES.txt
+amqpclient.egg-info/dependency_links.txt
+amqpclient.egg-info/entry_points.txt
+amqpclient.egg-info/requires.txt
+amqpclient.egg-info/top_level.txt
