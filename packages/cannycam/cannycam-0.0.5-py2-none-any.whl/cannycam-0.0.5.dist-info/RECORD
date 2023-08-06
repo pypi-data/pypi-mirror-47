@@ -1,0 +1,16 @@
+cannycam/__init__.py,sha256=QEd8Yb3vJpBJAaySiJTvAQ3buAHcsCwwa79TsWg6hEQ,192
+cannycam/_version.py,sha256=VQS3YFvnLXof06KkXA5GkZOBOBxFUgSPZ4SOPpWTmKs,497
+cannycam/basecam.py,sha256=FbBqA_HjQLFvPD9GFNtBlDh7Sim9H65l9nFu5fCDO5k,579
+cannycam/cannycam.py,sha256=-Ai7H2rGLrgvI6oafRI3u4gAJuZr23JAt9bUnCeiqZU,1980
+cannycam/cannyhaarcam.py,sha256=aajSSL9229NR3OAfLQ8mjrkUr_RK8gP0DOKcb2pKTBM,1202
+cannycam/haarcam.py,sha256=FiHsSi_pgZjM_JAmqsr-8r1M692GuZStAOQDAm_BNF4,2625
+cannycam/util.py,sha256=S_k-ieZZtmTy_z90Dx1N8H2EWfEqwX6PN1Gk9VZJ_bY,537
+cannycam/xmls/haarcascade_frontalface_default.xml,sha256=WTx7lr_t-ATaoKNl1zo1UYUxViiJtA2tFyXVrZ22H_Y,1290445
+cannycam/xmls/haarcascade_fullbody.xml,sha256=zt9mVAn0JdItWj6huqTG4bP12wV3-7IwWsW1ulv2JS8,636650
+cannycam/xmls/haarcascade_lowerbody.xml,sha256=t18HvCMS7uSHBNh2FwGKnjFvYKAl_WUEd0kT50Qnevo,531497
+cannycam/xmls/haarcascade_upperbody.xml,sha256=g9mR-27GUhbSI-sr3-R6plmdWDqSi3aI_xZg11xd25Q,1046387
+cannycam-0.0.5.dist-info/METADATA,sha256=5oquE_KPbd1zxBdJvITMfHGWYMsW61yixBSvm_4TYvo,1880
+cannycam-0.0.5.dist-info/RECORD,,
+cannycam-0.0.5.dist-info/WHEEL,sha256=9xUnOISuCvrSyfu9GlFZT4i2TZ_2OLkwLNqcDvIo3zM,92
+cannycam-0.0.5.dist-info/entry_points.txt,sha256=9ZrNFQMTeFemNe8MVs2eT9r8n9ECL9PHC0nR7vsWSPM,127
+cannycam-0.0.5.dist-info/top_level.txt,sha256=OWRiPlZNMyapxZneDAT3QmLkTlL7I_SrVODH08QkEUQ,9
