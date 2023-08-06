@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: sigmapy
+Version: 0.1
+Summary: A package of algorithms for generating sigma point and       weight sets for Bayesian inference problems.
+Home-page: https://github.com/JacobDowns/sigmapy
+Author: Jacob Downs
+Author-email: jacob.downs@umontana.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+This is a readme.
+
+
