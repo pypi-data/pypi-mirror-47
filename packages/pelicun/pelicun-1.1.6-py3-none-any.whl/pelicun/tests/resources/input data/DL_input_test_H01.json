@@ -1,0 +1,51 @@
+{
+    "GeneralInformation": {
+        "units": {
+            "force": "N",
+            "length": "m",
+            "temperature": "C",
+            "time": "sec"
+        }
+    },
+    "LossModel": {
+        "BuildingDamage": {
+            "ReplacementCost": "300000",
+            "ReplacementTime": "300"
+        },     
+        "BuildingResponse": {
+            "DetectionLimits": {
+                "PID": 0.15
+            }
+        },   
+        "Components": [
+            {
+                "ID": "S-W1-PC-RES1",
+                "structural": true
+            },
+            {
+                "ID": "NSA-PC-RES1",
+                "structural": false
+            },
+            {
+                "ID": "NSD-RES1",
+                "structural": false
+            }
+        ], 
+        "DecisionVariables": {
+            "Injuries": true,
+            "ReconstructionCost": true,
+            "ReconstructionTime": true
+        },       
+        "Inhabitants": {
+            "OccupancyType": "Residential",
+            "PeakPopulation": "10"
+        },
+        "UncertaintyQuantification": {  
+            "AdditionalUncertainty": {
+                "GroundMotion": "0.4",
+                "Modeling": "0.2"
+            },          
+            "Realizations": "10000"
+        }
+    }
+}
