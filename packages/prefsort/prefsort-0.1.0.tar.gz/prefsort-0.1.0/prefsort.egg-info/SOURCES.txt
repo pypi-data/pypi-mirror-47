@@ -1,0 +1,15 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.rst
+requirements_dev.txt
+setup.cfg
+setup.py
+prefsort/__init__.py
+prefsort/core.py
+prefsort.egg-info/PKG-INFO
+prefsort.egg-info/SOURCES.txt
+prefsort.egg-info/dependency_links.txt
+prefsort.egg-info/not-zip-safe
+prefsort.egg-info/top_level.txt
+test/test_prefsort.py
