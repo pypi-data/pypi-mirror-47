@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: protomaps
+Version: 0.0.1
+Summary: Interact with Protomaps API
+Home-page: https://protomaps.com/docs/python
+Author: Protomaps
+Author-email: hi@protomaps.com
+License: UNKNOWN
+Description: # protomaps-python
+        
+        pip install protomaps
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

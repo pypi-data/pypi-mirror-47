@@ -1,0 +1,7 @@
+README.md
+setup.py
+protomaps/__init__.py
+protomaps.egg-info/PKG-INFO
+protomaps.egg-info/SOURCES.txt
+protomaps.egg-info/dependency_links.txt
+protomaps.egg-info/top_level.txt
