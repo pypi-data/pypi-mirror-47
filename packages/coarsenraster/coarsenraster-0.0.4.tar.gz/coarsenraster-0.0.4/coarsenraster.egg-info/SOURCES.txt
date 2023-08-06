@@ -1,0 +1,12 @@
+.hgtags
+LICENSE.txt
+README.rst
+requirements.txt
+setup.py
+coarsenraster.egg-info/PKG-INFO
+coarsenraster.egg-info/SOURCES.txt
+coarsenraster.egg-info/dependency_links.txt
+coarsenraster.egg-info/requires.txt
+coarsenraster.egg-info/top_level.txt
+src/coarsenraster/__init__.py
+src/coarsenraster/__main__.py
