@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import argparse
+import os
+import yaml
+import itertools
+from jinja2 import Template
+
+parser = argparse.ArgumentParser()
+parser.add_argument(
+    '--template',
+    help='Jinja2 template file to use for the parameter sweep.',
+    required=True
+)
+parser.add_argument(
+    '--space',
+    help='Path to YAML file defining the parameter space.',
+    required=True
+)
+parser.add_argument(
+    '--output',
+    help='Path to output directory',
+    default='./sweepj2-output',
+    required=False
+)
+
+args = vars(parser.parse_args())
+
+if not os.path.exists(args['output']):
+    os.makedirs(args['output'])
+ext = os.path.splitext(args['template'])[1]
+if not os.path.isfile(args['template']):
+    print("ERROR: File {} does not exist".format(os.path.join(args['template'])))
+    exit(1)
+
+with open(args['template']) as temp:
+    template = temp.read()
+
+template = Template(template)
+
+with open(args['space']) as f:
+    dataMap = yaml.safe_load(f)
+kw = {}
+params = []
+vals = []
+for k, v in sorted(dataMap.items()):
+    params.append(k)
+    vals.append(v)
+count = 0
+for comb in itertools.product(*vals):
+    count += 1
+    for tup in zip(params, comb):
+        kw[tup[0].strip()] = tup[1]
+    outfile = "{}".format(comb).replace(', ', '-').replace('(', '').replace(')', '')
+    outfile = "{}/{}-{}{}".format(args['output'], str(count).zfill(3), outfile, ext)
+    with open(outfile, 'w') as f:
+        f.write(template.render(**kw))
