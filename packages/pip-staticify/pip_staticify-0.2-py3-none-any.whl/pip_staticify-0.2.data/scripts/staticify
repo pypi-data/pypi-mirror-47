@@ -1,0 +1,31 @@
+#!python
+
+import sys
+import subprocess
+
+
+def run(requirements_location):
+    requirements = subprocess.check_output(["pip", "freeze"]).decode().split("\n")
+
+    static_requirements = []
+    with open(requirements_location, "r") as requirements_file:
+        for line in [line.replace("\n", "") for line in requirements_file.readlines()]:
+            if "=" in line:
+                static_requirements.append(line)
+            else:
+                found = [f for f in requirements if f.startswith(line)]
+                if len(found) > 1:
+                    raise Exception("Multiple same-name requirements found for: {}".format(line))
+                if len(found) == 0:
+                    raise Exception("Requirements not found for: {}".format(line))
+                static_requirements.append(found[0])
+                print("{} => {}".format(line, found[0]))
+
+    with open(requirements_location, "w") as requirements_file:
+        requirements_file.write("\n".join(static_requirements))
+
+
+if __name__ == "__main__":
+    if len(sys.argv) == 1:
+        raise Exception("No location of requirements.txt given")
+    run(sys.argv[1])
