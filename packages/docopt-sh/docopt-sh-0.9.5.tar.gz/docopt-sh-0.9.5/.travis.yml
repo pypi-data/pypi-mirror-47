@@ -1,0 +1,23 @@
+language: python
+
+cache:
+  directories:
+  - tests/bash-versions
+
+addons:
+  apt:
+    packages:
+    - python3-pip
+
+before_script:
+- pip3 install docopt termcolor pytest\>=4.4.2 pytest-xdist pytest-pep8
+
+script:
+- bash --version
+- python3 --version
+- pytest --bash-version 3.2,4.0,4.1,4.2,4.3,4.4
+
+notifications:
+  email:
+    on_success: never
+    on_failure: never
