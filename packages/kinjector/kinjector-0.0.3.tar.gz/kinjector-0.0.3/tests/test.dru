@@ -1,0 +1,37 @@
+settings:
+  '# copper layers': 2
+  blind/buried via allowed: false
+  board thickness: 1600000
+  diff pair dimensions list: []
+  hole to hole spacing: 0
+  netclass assignments:
+    ? ''
+    : Default
+  netclasses:
+    Default:
+      clearance: 200000
+      description: This is the default net class.
+      diff pair gap: 250000
+      diff pair width: 200000
+      track width: 250000
+      uvia diameter: 300000
+      uvia drill: 100000
+      via diameter: 800000
+      via drill: 400000
+  prohibit courtyard overlap: false
+  require courtyards: false
+  solder mask margin: 51000
+  solder mask min width: 250000
+  solder paste margin: 0
+  solder paste margin ratio: 0.0
+  track min width: 200000
+  track width list:
+  - 250000
+  uvia allowed: false
+  uvia min diameter: 200000
+  uvia min drill size: 100000
+  via dimensions list:
+  - diameter: 800000
+    drill: 400000
+  via min diameter: 400000
+  via min drill size: 300000

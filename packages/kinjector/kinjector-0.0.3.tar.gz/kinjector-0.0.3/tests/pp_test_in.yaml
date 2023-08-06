@@ -1,0 +1,21 @@
+positions:
+  D1:
+    angle: 45.1
+    side: top
+    x: 161417001
+    y: 99187001
+  R1:
+    angle: 270.1
+    side: top
+    x: 161417001
+    y: 102137001
+  R2:
+    angle: 315.1
+    side: bottom
+    x: 166187001
+    y: 99187001
+  R3:
+    angle: 90.1
+    side: bottom
+    x: 166187001
+    y: 102137001
