@@ -1,0 +1,12 @@
+clashogram/__init__.py,sha256=TEK6oi2JjdNL85TOr8W5lILPD-h9EMXelSajVnWc8iA,157
+clashogram/_clashogram.py,sha256=xq6J2XQoNX_zzDntvgdKdmsbFYQXT1Qa9pOF0JEOsx4,29097
+clashogram/locales/messages.pot,sha256=7Ncf7WxaoVZss6rgasVBhY9y9tjNpKHFvoAyiocp3ck,2478
+clashogram/locales/fa_IR/LC_MESSAGES/messages.mo,sha256=870IvJ5yIcNo-5PoSYWLiPSNKRecnkNsJqJr_6xMIQI,2940
+clashogram/locales/fa_IR/LC_MESSAGES/messages.po,sha256=gqPvjsjUcklqHpBk5__2w70sp5qjSY5L1tGhePzOEb0,4031
+clashogram/locales/ru/LC_MESSAGES/messages.mo,sha256=XgQmLuEGKQF0ddaCKysDWiWn6LCvBonqfns8mKJnCxA,3294
+clashogram/locales/ru/LC_MESSAGES/messages.po,sha256=082LMmu2DI4GpOn2acCnumyabZOIP1RJyt86ok8E3Lc,4187
+clashogram-0.6.1.dist-info/entry_points.txt,sha256=RSU5ZzOfJdrTLvXEPWRZLTnzJ4G_HrO-Zbm3PWvIkuE,46
+clashogram-0.6.1.dist-info/LICENSE.txt,sha256=JlBuR3la3Dvrc2yqdKuGjsB0ajlLiVEY6DFxGdE4Wuk,1052
+clashogram-0.6.1.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+clashogram-0.6.1.dist-info/METADATA,sha256=JFQhM_TU0JGMdfC1f3NIAbGcphkCa3xhrcNe-5hFQAI,6260
+clashogram-0.6.1.dist-info/RECORD,,
