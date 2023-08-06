@@ -1,0 +1,8 @@
+README.md
+setup.py
+flask_google_signin/__init__.py
+flask_google_signin.egg-info/PKG-INFO
+flask_google_signin.egg-info/SOURCES.txt
+flask_google_signin.egg-info/dependency_links.txt
+flask_google_signin.egg-info/requires.txt
+flask_google_signin.egg-info/top_level.txt
