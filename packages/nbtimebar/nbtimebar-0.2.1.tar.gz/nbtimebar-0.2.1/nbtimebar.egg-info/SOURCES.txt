@@ -1,0 +1,8 @@
+README.md
+setup.py
+nbtimebar/__init__.py
+nbtimebar/main.py
+nbtimebar.egg-info/PKG-INFO
+nbtimebar.egg-info/SOURCES.txt
+nbtimebar.egg-info/dependency_links.txt
+nbtimebar.egg-info/top_level.txt

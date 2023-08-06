@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: nbtimebar
+Version: 0.2.1
+Summary: Widget based progress bar for Jupyter (IPython Notebook)
+Home-page: https://github.com/mrapacz/log-progress
+Author: Maciej Rapacz
+Author-email: parallel.bars@gmail.com
+License: UNKNOWN
+Description: ## Widget based progress bar for Jupyter (IPython Notebook)
+        
+        ### Installation
+        ```bash
+        pip install nbtimebar
+        ```
+        
+        ### Usage
+        ```
+        from nbtimebar import log_progress
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
