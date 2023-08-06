@@ -1,0 +1,9 @@
+cvtorchvision/__init__.py,sha256=yJMfpa6tDwthIpHTHH6wKnwHDld2UBF1I6me2tyTmKQ,38
+cvtorchvision/cvtransforms/__init__.py,sha256=y9IewRkHdHFHiebgMX4Xa7_l2QLy0yR6DNGZgKIv6Rk,27
+cvtorchvision/cvtransforms/cvfunctional.py,sha256=UWnRizYgB8qfWHFRfNKJRUetL14ZQS2reH-s5ywBEAY,33376
+cvtorchvision/cvtransforms/cvtransforms.py,sha256=7x4FPRG051Gyp-dCGHb1QbRsF9vMMY5EjHnuSLUHNg8,49793
+opencv_torchvision_transforms_yuzhiyang-0.0.1.dist-info/LICENSE,sha256=N-lf5sV6AWDZsnZrsZ6JcfppKYWxrVus2U6sMDQ8axk,1088
+opencv_torchvision_transforms_yuzhiyang-0.0.1.dist-info/METADATA,sha256=61gQSwNR1Ewxsp-sY2a2gSJNlW37sFXc1Q5C-4jPw_U,3820
+opencv_torchvision_transforms_yuzhiyang-0.0.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+opencv_torchvision_transforms_yuzhiyang-0.0.1.dist-info/top_level.txt,sha256=99Ki5yGudItx6zYr2m5Ov6SYnv7nNtOSEgG1tzsOkV4,14
+opencv_torchvision_transforms_yuzhiyang-0.0.1.dist-info/RECORD,,
