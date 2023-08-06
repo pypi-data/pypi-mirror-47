@@ -1,0 +1,17 @@
+README.md
+setup.py
+translate
+mkTranslation/__init__.py
+mkTranslation/adapters.py
+mkTranslation/client.py
+mkTranslation/compat.py
+mkTranslation/constants.py
+mkTranslation/gtoken.py
+mkTranslation/models.py
+mkTranslation/urls.py
+mkTranslation/utils.py
+mkTranslation.egg-info/PKG-INFO
+mkTranslation.egg-info/SOURCES.txt
+mkTranslation.egg-info/dependency_links.txt
+mkTranslation.egg-info/requires.txt
+mkTranslation.egg-info/top_level.txt
