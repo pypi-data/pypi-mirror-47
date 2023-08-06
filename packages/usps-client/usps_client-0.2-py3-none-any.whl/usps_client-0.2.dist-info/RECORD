@@ -1,0 +1,12 @@
+usps_client/__init__.py,sha256=uBYJxeLbX4HyjVCkYhG_yaZkoaLbuAs-PY5U3CY64K0,71
+usps_client/base_model.py,sha256=rZZ9Fptfbpmle0-sn9v1VzLqtCBvn9GySGYv0Y68L4g,2226
+usps_client/client.py,sha256=J5PFVxX2ngrqlUgDcjmJgW_xPVbaL7GHW3le3AGasCg,8172
+usps_client/models.py,sha256=RVU6_jYMT1HRK9GnOPFlpU9ioyTKx2xhBve-DDk5ges,5344
+usps_client/shims.py,sha256=O1tgL7ewaEpZH3AWCOoD-DgiUnOqR7flvpyL843VyEI,436
+usps_client/version.py,sha256=CdLCbblpzadc1rQIqbJrTnh9oLb_xrdYs8E0we5QfuM,16
+usps_client-0.2.data/data/requirements/requirements.txt,sha256=fOiTYUi1MI5_kOjwCfDeXr17vCSp5M7yNzOsSud861Y,45
+usps_client-0.2.dist-info/LICENSE.md,sha256=ZtSx5ha_04nWD_G5JqyXUlpvG6nWciIYv_AdTugmIgk,720
+usps_client-0.2.dist-info/METADATA,sha256=TDAWeV49w5EnWuLyX58Pqy1w7VhrVvOF0CZwAdD5rK0,1993
+usps_client-0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+usps_client-0.2.dist-info/top_level.txt,sha256=IY4dSm6q1tm12fZXXs1hoWqpBXTwo50FDjLrjRw_9g0,12
+usps_client-0.2.dist-info/RECORD,,
