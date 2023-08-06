@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: FPE-SRWR
+Version: 0.0.1
+Summary: A supervised network-based random walk method to partition samples and discover biological processes
+Home-page: UNKNOWN
+Author: wuyue
+Author-email: wuyue@stu.xidian.edu.cn
+License: MIT License
+Description: UNKNOWN
+Keywords: Supervised learning,Random Walk
+Platform: any
+Requires-Python: >=2.7
