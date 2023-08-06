@@ -1,0 +1,5 @@
+recursive-include hawkeslib *.pyx
+recursive-exclude hawkeslib *.cpp *.c
+include CHANGELOG
+include LICENSE
+include README.markdown
