@@ -1,0 +1,3 @@
+include gcshelpers/assets/log.conf.example
+include gcshelpers/assets/gcshelpers.conf.jsg
+include gcshelpers/assets/gcshelpers.conf.example

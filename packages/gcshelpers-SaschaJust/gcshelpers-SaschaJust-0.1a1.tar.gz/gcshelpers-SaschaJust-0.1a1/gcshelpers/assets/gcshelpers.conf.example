@@ -1,0 +1,12 @@
+{
+  "contact" : {
+    "name" : "Sascha Just",
+    "email" : "mozintermittent@own-hero.net"
+  },
+
+  "telemetry" : {
+    "project_id" : "mozintermittent",
+    "topic_name" : "TOOL",
+    "proto" : "1.0"
+  }
+}

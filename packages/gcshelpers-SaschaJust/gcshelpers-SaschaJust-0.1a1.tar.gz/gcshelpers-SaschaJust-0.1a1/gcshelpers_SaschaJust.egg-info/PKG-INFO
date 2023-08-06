@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: gcshelpers-SaschaJust
+Version: 0.1a1
+Summary: gcshelpers: a collection of helper classes and functions for the mozintermittent Google Cloud services.
+Home-page: https://gitlab.com/mozintermittent/python-libraries/gcshelpers
+Author: Sascha Just
+Author-email: sascha.just@own-hero.net
+License: MIT
+Description: # About gcshelpers
+        
+        The gcshelpers library provides helper functions and utility classes for the *mozintermittent microservices* to interact with the Google Cloud.
+        
+        ## Contents
+        
+        ### Class: Config
+        
+        `Config` is a wrapper for JSON configuration files. Accessing `CONFIG` the first time leads to a
+        lazy initialization of the configuration object. The name of the configuration file is derived from
+        the calling instance, i.e. the package `gcshelpers` is called from. This means using
+        `gcshelpers.config.CONFIG` from `hgminer` will load the `hgminer.conf` configuration file. The
+        library will first look for a file in the current directory, then the user's home directory, and
+        finally `/etc`.
+        
+        If no configuration file can be found, the library attempts to create one from an example file in
+        the calling project's `asset` directory. Assuming `hgminer` is executed and no configuration file is
+        present, `gcshelpers` attempts to copy `hgminer/assets/hgminer.conf.example` to the user's home
+        directory.
+        
+        The JSON file is converted into an object and can be subscribed to via properties or dictionary
+        access. This means that the following config will yield the below valid accesses:
+        
+        ```json
+        {
+            "contact": {
+                "email": "sascha.just@own-hero.net"
+            }
+        }
+        ```
+        
+        ```python3
+        CONFIG['contact']['email']
+        ```
+        
+        If the local `assets` directory contains a grammar (ANTLR4), the configuration is checked against
+        this grammar during construction, i.e. when the config is initially read during the first access.
+        
+        #### Grammar example
+        
+        The example below requires a configuration that consists of a contact entry having a `name` and
+        `email` set, while the structure of those is defined in the terminal section.
+        
+        ```json
+        doc {
+          contact : {
+            name: NAME,
+            email: EMAIL
+          }
+        }
+        
+        @terminals
+        NAME : [A-Za-z].*;
+        EMAIL : [a-zA-Z0-9_\-\.\+]+ '@' [a-zA-Z0-9_\-\.]+ '.' [a-zA-Z]{2,};
+        ```
+        
+        ### Class: MozLogger
+        
+        This class wraps the standard logger with a default configuration. This also provides means to log
+        to Pub/Sub. It features eager initialization and can directly be used. If no log configuration is
+        present, one is created on the fly.
+        
+        ```python
+        LOGGER.debug('Persisting %s', taskid)
+        ```
+        
+        ### Function: `pkgload`
+        
+        This function lets you load assets from the package. Make sure you specify any assets in the
+        `Manifest.in` to make sure they are installed together with the package.
+        
+        ```python
+        QUERY_INSERT = pkgload(__package__, 'assets/insert_job.sql')
+        ```
+        
+        ### The storage module
+        
+        The module contains methods to interact with Google Cloud Storage.
+        
+        ### The telemetry module
+        
+        The module contains methods to interact with Google Pub/Sub.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: docs
+Provides-Extra: dist
+Provides-Extra: develop
