@@ -1,0 +1,532 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>StoveOpt.import_geometry &#8212; StoveOpt  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <h1>Source code for StoveOpt.import_geometry</h1><div class="highlight"><pre>
+<span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">Created on Mon Apr 22 15:39:27 2019</span>
+
+<span class="sd">@author: Lee</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="kn">import</span> <span class="nn">numpy</span>
+
+<span class="sd">&quot;&quot;&quot;Need to figure out the correct_arguments script&quot;&quot;&quot;</span>
+<div class="viewcode-block" id="correct_arguments"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.correct_arguments">[docs]</a><span class="k">def</span> <span class="nf">correct_arguments</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Goal is to convert the geometry file argument to working syntax: Single quote, back slash</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    args</span>
+<span class="sd">        object contains the contents of the input file specified by the user</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">input_file</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">inputfile</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="n">doc</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;geometry_file_directory&#39;</span><span class="p">]</span> <span class="c1"># pulling path</span>
+        <span class="n">fname</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;geometry_file_name&#39;</span><span class="p">]</span> <span class="c1">#pulling filename</span>
+        <span class="c1"># Figure out type for each input</span>
+        <span class="n">path_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+        <span class="n">fname_type</span> <span class="o">=</span> <span class="nb">type</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">path_type</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">fname_type</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">path_type</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The path type is a string--now going to filter out quotes to yield singles&#39;</span><span class="p">)</span>
+            <span class="n">path_first_character</span> <span class="o">=</span> <span class="n">path</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">path_first_character</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Convert the path to string if needed</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> 
+        
+        <span class="k">if</span> <span class="n">fname_type</span> <span class="o">==</span> <span class="nb">str</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;file name is a string&#39;</span><span class="p">)</span>
+            <span class="n">fname_first_character</span> <span class="o">=</span> <span class="n">fname</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">fname_first_character</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="c1"># Convert fname to a string</span>
+            <span class="n">fname</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is the fname&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">fname</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;This is the path&#39;</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">path</span><span class="p">)</span></div>
+        
+<span class="kn">import</span> <span class="nn">yaml</span>
+<div class="viewcode-block" id="locate_geometry"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.locate_geometry">[docs]</a><span class="k">def</span> <span class="nf">locate_geometry</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Pull file path and name from the input file (command line argument)</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    agrs</span>
+<span class="sd">        Object from argparse that pulls filename and location of the stove geometry</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">input_file</span> <span class="o">=</span> <span class="n">args</span><span class="o">.</span><span class="n">inputfile</span> <span class="c1">#first element of args = input file</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">input_file</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+        <span class="c1"># Pull the filename and path for geometry. return file path and name for future modification</span>
+        <span class="n">doc</span> <span class="o">=</span> <span class="n">yaml</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>
+        <span class="n">path</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;geometry_file_directory&#39;</span><span class="p">]</span> <span class="c1"># pulling path</span>
+        <span class="n">fname</span> <span class="o">=</span> <span class="n">doc</span><span class="p">[</span><span class="s1">&#39;case&#39;</span><span class="p">][</span><span class="s1">&#39;geometry_file_name&#39;</span><span class="p">]</span> <span class="c1">#pulling filename</span>
+        <span class="c1"># if type(path) == str:</span>
+            <span class="c1"># concatenate the string</span>
+        <span class="n">file_path</span> <span class="o">=</span> <span class="n">path</span> <span class="o">+</span> <span class="s1">&#39;</span><span class="se">\\</span><span class="s1">&#39;</span> <span class="o">+</span> <span class="n">fname</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+        <span class="c1">#else:</span>
+        <span class="k">return</span> <span class="n">file_path</span></div>
+       
+<span class="kn">import</span> <span class="nn">xlrd</span>
+<div class="viewcode-block" id="extract_geometry"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.extract_geometry">[docs]</a><span class="k">def</span> <span class="nf">extract_geometry</span><span class="p">(</span><span class="n">file_path</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Pulling Data from excel workbook</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    file_path</span>
+<span class="sd">        Windows format filepath with filename superimposed to the path. Tied to the input file</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">workbook</span> <span class="o">=</span> <span class="n">xlrd</span><span class="o">.</span><span class="n">open_workbook</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
+    <span class="n">worksheet</span> <span class="o">=</span> <span class="n">workbook</span><span class="o">.</span><span class="n">sheet_by_name</span><span class="p">(</span><span class="s1">&#39;Outputs&#39;</span><span class="p">)</span>
+    <span class="n">pt0x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt0z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt0y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt1x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt1z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt1y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt2x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt2z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt2y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt3x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt3z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt3y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt4x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt4z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt4y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt5x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt5z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt5y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt6x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt6z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt6y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">7</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt7x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt7z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt7y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt8x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt8z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt8y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">9</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt9x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt9z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt9y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt10x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt10z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt10y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt11x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt11z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt11y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt12x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt12z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt12y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt13x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt13z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt13y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt14x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt14z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt14y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt15x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt15z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">pt15y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">16</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">U_100x</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="n">U_100z</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">value</span> <span class="c1"># Not really using the other 2-dimensions for now</span>
+    <span class="n">U_100y</span> <span class="o">=</span> <span class="n">worksheet</span><span class="o">.</span><span class="n">cell</span><span class="p">(</span><span class="mi">17</span><span class="p">,</span><span class="mi">4</span><span class="p">)</span><span class="o">.</span><span class="n">value</span>
+    <span class="k">if</span> <span class="n">pt15z</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top point has a 0 height value--error in data import&quot;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">U_100x</span><span class="p">,</span> <span class="n">U_100y</span><span class="p">,</span> <span class="n">U_100z</span><span class="p">,</span> <span class="n">pt1x</span><span class="p">,</span> <span class="n">pt1z</span><span class="p">,</span> <span class="n">pt1y</span><span class="p">,</span> <span class="n">pt2x</span><span class="p">,</span> <span class="n">pt2z</span><span class="p">,</span> <span class="n">pt2y</span><span class="p">,</span> <span class="n">pt3x</span><span class="p">,</span> <span class="n">pt3z</span><span class="p">,</span> <span class="n">pt3y</span><span class="p">,</span> <span class="n">pt4x</span><span class="p">,</span> <span class="n">pt4z</span><span class="p">,</span> <span class="n">pt4y</span><span class="p">,</span> <span class="n">pt5x</span><span class="p">,</span> <span class="n">pt5z</span><span class="p">,</span> <span class="n">pt5y</span><span class="p">,</span> <span class="n">pt6x</span><span class="p">,</span> <span class="n">pt6z</span><span class="p">,</span> <span class="n">pt6y</span><span class="p">,</span> <span class="n">pt7x</span><span class="p">,</span> <span class="n">pt7z</span><span class="p">,</span> <span class="n">pt7y</span><span class="p">,</span> <span class="n">pt8x</span><span class="p">,</span> <span class="n">pt8z</span><span class="p">,</span> <span class="n">pt8y</span><span class="p">,</span> <span class="n">pt9x</span><span class="p">,</span> <span class="n">pt9z</span><span class="p">,</span> <span class="n">pt9y</span><span class="p">,</span> <span class="n">pt10x</span><span class="p">,</span> <span class="n">pt10z</span><span class="p">,</span> <span class="n">pt10y</span><span class="p">,</span> <span class="n">pt11x</span><span class="p">,</span> <span class="n">pt11z</span><span class="p">,</span> <span class="n">pt11y</span><span class="p">,</span> <span class="n">pt12x</span><span class="p">,</span> <span class="n">pt12z</span><span class="p">,</span> <span class="n">pt12y</span><span class="p">,</span> <span class="n">pt13x</span><span class="p">,</span> <span class="n">pt13z</span><span class="p">,</span> <span class="n">pt13y</span><span class="p">,</span>  <span class="n">pt14x</span><span class="p">,</span> <span class="n">pt14z</span><span class="p">,</span> <span class="n">pt14y</span><span class="p">,</span> <span class="n">pt15x</span><span class="p">,</span> <span class="n">pt15z</span><span class="p">,</span> <span class="n">pt15y</span><span class="p">,</span> <span class="n">pt0x</span><span class="p">,</span> <span class="n">pt0z</span><span class="p">,</span> <span class="n">pt0y</span></div>
+
+<span class="c1"># Create additional front face points including wood zone</span>
+<div class="viewcode-block" id="create_fuel_blocks"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.create_fuel_blocks">[docs]</a><span class="k">def</span> <span class="nf">create_fuel_blocks</span><span class="p">(</span><span class="n">pt0x</span><span class="p">,</span> <span class="n">pt1x</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Creates geometry for the fuel block with the following assumptions:  Rectangular fuel source, Centered along the vertical axis of the combustion chamber, Width of fuel block is half the diameter of the combustion chamber, Assumed fuel height of 3 inches (0.0762 m), bottom of the fuel is 3 inches off the ground.</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    pt0x</span>
+<span class="sd">        Type: float.</span>
+<span class="sd">        Bottom west vertice of the cookstove combustion chamber (origin)</span>
+<span class="sd">        </span>
+<span class="sd">    pt1x</span>
+<span class="sd">        Type: float.</span>
+<span class="sd">        Bottom east vertice of cookstove combustion chamber</span>
+<span class="sd">    </span>
+<span class="sd">     </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">fuel_width</span> <span class="o">=</span> <span class="mf">0.5</span><span class="o">*</span><span class="p">(</span><span class="n">pt1x</span> <span class="o">-</span> <span class="n">pt0x</span><span class="p">)</span>
+    <span class="n">fuel_x_center</span> <span class="o">=</span> <span class="n">fuel_width</span>
+    <span class="n">fuel_x_left_coord</span> <span class="o">=</span> <span class="n">fuel_x_center</span> <span class="o">-</span> <span class="p">(</span><span class="n">fuel_width</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="n">fuel_x_right_coord</span> <span class="o">=</span> <span class="n">fuel_x_center</span> <span class="o">+</span> <span class="p">(</span><span class="n">fuel_width</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span>
+    <span class="n">fuel_height</span> <span class="o">=</span> <span class="mf">0.02</span> <span class="c1"># [m]</span>
+    <span class="n">fuel_bottom_coords</span> <span class="o">=</span> <span class="mf">0.02</span>
+    <span class="n">fuel_top_coords</span> <span class="o">=</span> <span class="n">fuel_bottom_coords</span> <span class="o">+</span> <span class="n">fuel_height</span>
+    <span class="n">pt16x</span> <span class="o">=</span> <span class="n">fuel_x_left_coord</span>
+    <span class="n">pt17x</span> <span class="o">=</span> <span class="n">fuel_x_right_coord</span>
+    <span class="n">pt18x</span> <span class="o">=</span> <span class="n">fuel_x_right_coord</span>
+    <span class="n">pt19x</span> <span class="o">=</span> <span class="n">fuel_x_left_coord</span>
+    <span class="n">pt16z</span> <span class="o">=</span> <span class="n">fuel_bottom_coords</span>
+    <span class="n">pt17z</span> <span class="o">=</span> <span class="n">fuel_bottom_coords</span>
+    <span class="n">pt18z</span> <span class="o">=</span> <span class="n">fuel_top_coords</span>
+    <span class="n">pt19z</span> <span class="o">=</span> <span class="n">fuel_top_coords</span>
+    <span class="n">pt16y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">pt17y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">pt18y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">pt19y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">return</span> <span class="n">pt17x</span><span class="p">,</span> <span class="n">pt18x</span><span class="p">,</span> <span class="n">pt19x</span><span class="p">,</span> <span class="n">pt16x</span><span class="p">,</span> <span class="n">pt17z</span><span class="p">,</span> <span class="n">pt18z</span><span class="p">,</span> <span class="n">pt19z</span><span class="p">,</span> <span class="n">pt16z</span><span class="p">,</span> <span class="n">pt17y</span><span class="p">,</span> <span class="n">pt18y</span><span class="p">,</span> <span class="n">pt19y</span><span class="p">,</span> <span class="n">pt16y</span></div>
+
+<span class="c1"># 20 defined by 6x and 14z</span>
+<span class="c1"># 21 defined by 7x and 15z</span>
+<span class="c1"># 44 defined by 14x and 9z</span>
+<span class="c1"># 46 defined by 15x and 8z    </span>
+<div class="viewcode-block" id="create_additional_front_points"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.create_additional_front_points">[docs]</a><span class="k">def</span> <span class="nf">create_additional_front_points</span><span class="p">(</span><span class="n">pt6x</span><span class="p">,</span> <span class="n">pt7x</span><span class="p">,</span> <span class="n">pt14x</span><span class="p">,</span> <span class="n">pt9z</span><span class="p">,</span> <span class="n">pt15x</span><span class="p">,</span> <span class="n">pt8z</span><span class="p">,</span> <span class="n">pt14z</span><span class="p">,</span> <span class="n">pt9x</span><span class="p">,</span> <span class="n">pt8x</span><span class="p">,</span> <span class="n">pt15z</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Create pot surface points to create faces--Naming them 21(L)-22(R) to not collide with current fuel vert numbers</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Left point</span>
+    <span class="n">pt20x</span> <span class="o">=</span> <span class="n">pt6x</span>
+    <span class="n">pt20z</span> <span class="o">=</span> <span class="n">pt14z</span>
+    <span class="n">pt20y</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1"># Right point</span>
+    <span class="n">pt21x</span> <span class="o">=</span> <span class="n">pt7x</span>
+    <span class="n">pt21z</span> <span class="o">=</span> <span class="n">pt15z</span>
+    <span class="n">pt21y</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">pt44x</span> <span class="o">=</span> <span class="n">pt14x</span>
+    <span class="n">pt44z</span> <span class="o">=</span> <span class="n">pt9z</span>
+    <span class="n">pt44y</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">pt46x</span> <span class="o">=</span> <span class="n">pt15x</span>
+    <span class="n">pt46z</span> <span class="o">=</span> <span class="n">pt8z</span>
+    <span class="n">pt46y</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">pt48x</span> <span class="o">=</span> <span class="n">pt9x</span>
+    <span class="n">pt48z</span> <span class="o">=</span> <span class="n">pt14z</span>
+    <span class="n">pt48y</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="n">pt50x</span> <span class="o">=</span>  <span class="n">pt8x</span>
+    <span class="n">pt50z</span> <span class="o">=</span> <span class="n">pt15z</span>
+    <span class="n">pt50y</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    
+    <span class="k">return</span> <span class="n">pt48x</span><span class="p">,</span> <span class="n">pt48z</span><span class="p">,</span> <span class="n">pt48y</span><span class="p">,</span> <span class="n">pt20x</span><span class="p">,</span> <span class="n">pt20z</span><span class="p">,</span> <span class="n">pt20y</span><span class="p">,</span> <span class="n">pt21x</span><span class="p">,</span> <span class="n">pt21z</span><span class="p">,</span> <span class="n">pt21y</span><span class="p">,</span> <span class="n">pt44x</span><span class="p">,</span> <span class="n">pt44z</span><span class="p">,</span> <span class="n">pt44y</span><span class="p">,</span> <span class="n">pt46x</span><span class="p">,</span> <span class="n">pt46z</span><span class="p">,</span> <span class="n">pt46y</span><span class="p">,</span> <span class="n">pt50x</span><span class="p">,</span> <span class="n">pt50z</span><span class="p">,</span> <span class="n">pt50y</span></div>
+
+<span class="c1"># Stove front (0-15), wood front (16-19), additional points front (20,21,44,46)</span>
+<div class="viewcode-block" id="points_to_strings"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.points_to_strings">[docs]</a><span class="k">def</span> <span class="nf">points_to_strings</span><span class="p">(</span><span class="n">pt1x</span><span class="p">,</span> <span class="n">pt1z</span><span class="p">,</span> <span class="n">pt1y</span><span class="p">,</span> <span class="n">pt2x</span><span class="p">,</span> <span class="n">pt2z</span><span class="p">,</span> <span class="n">pt2y</span><span class="p">,</span> <span class="n">pt3x</span><span class="p">,</span> <span class="n">pt3z</span><span class="p">,</span> <span class="n">pt3y</span><span class="p">,</span> <span class="n">pt4x</span><span class="p">,</span> <span class="n">pt4z</span><span class="p">,</span> <span class="n">pt4y</span><span class="p">,</span> <span class="n">pt5x</span><span class="p">,</span> <span class="n">pt5z</span><span class="p">,</span> <span class="n">pt5y</span><span class="p">,</span> <span class="n">pt6x</span><span class="p">,</span> <span class="n">pt6z</span><span class="p">,</span> <span class="n">pt6y</span><span class="p">,</span> <span class="n">pt7x</span><span class="p">,</span> <span class="n">pt7z</span><span class="p">,</span> <span class="n">pt7y</span><span class="p">,</span> <span class="n">pt8x</span><span class="p">,</span> <span class="n">pt8z</span><span class="p">,</span> <span class="n">pt8y</span><span class="p">,</span> <span class="n">pt9x</span><span class="p">,</span> <span class="n">pt9z</span><span class="p">,</span> <span class="n">pt9y</span><span class="p">,</span> <span class="n">pt10x</span><span class="p">,</span> <span class="n">pt10z</span><span class="p">,</span> <span class="n">pt10y</span><span class="p">,</span> <span class="n">pt11x</span><span class="p">,</span> <span class="n">pt11z</span><span class="p">,</span> <span class="n">pt11y</span><span class="p">,</span> <span class="n">pt12x</span><span class="p">,</span> <span class="n">pt12z</span><span class="p">,</span> <span class="n">pt12y</span><span class="p">,</span> <span class="n">pt13x</span><span class="p">,</span> <span class="n">pt13z</span><span class="p">,</span> <span class="n">pt13y</span><span class="p">,</span>  <span class="n">pt14x</span><span class="p">,</span> <span class="n">pt14z</span><span class="p">,</span> <span class="n">pt14y</span><span class="p">,</span> <span class="n">pt15x</span><span class="p">,</span> <span class="n">pt15z</span><span class="p">,</span> <span class="n">pt15y</span><span class="p">,</span> <span class="n">pt0x</span><span class="p">,</span> <span class="n">pt0z</span><span class="p">,</span> <span class="n">pt0y</span><span class="p">,</span> <span class="n">pt17x</span><span class="p">,</span> <span class="n">pt18x</span><span class="p">,</span> <span class="n">pt19x</span><span class="p">,</span> <span class="n">pt16x</span><span class="p">,</span> <span class="n">pt17z</span><span class="p">,</span> <span class="n">pt18z</span><span class="p">,</span> <span class="n">pt19z</span><span class="p">,</span> <span class="n">pt16z</span><span class="p">,</span> <span class="n">pt17y</span><span class="p">,</span> <span class="n">pt18y</span><span class="p">,</span> <span class="n">pt19y</span><span class="p">,</span> <span class="n">pt16y</span><span class="p">,</span> <span class="n">pt20x</span><span class="p">,</span> <span class="n">pt20z</span><span class="p">,</span> <span class="n">pt20y</span><span class="p">,</span> <span class="n">pt21x</span><span class="p">,</span> <span class="n">pt21z</span><span class="p">,</span> <span class="n">pt21y</span><span class="p">,</span> <span class="n">pt44x</span><span class="p">,</span> <span class="n">pt44z</span><span class="p">,</span> <span class="n">pt44y</span><span class="p">,</span> <span class="n">pt46x</span><span class="p">,</span> <span class="n">pt46z</span><span class="p">,</span> <span class="n">pt46y</span><span class="p">,</span> <span class="n">pt48x</span><span class="p">,</span> <span class="n">pt48y</span><span class="p">,</span> <span class="n">pt48z</span><span class="p">,</span> <span class="n">pt50x</span><span class="p">,</span> <span class="n">pt50y</span><span class="p">,</span> <span class="n">pt50z</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Take in the raw vertice information from spreadsheet, and format the floats into strings-&gt;For front vertices</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">pt0xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt0x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt0zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt0z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt0ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt0y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>  
+    <span class="n">pt1xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt1x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt1zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt1z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt1ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt1y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt2xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt2x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt2zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt2z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt2ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt2y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt3xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt3x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt3zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt3z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt3ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt3y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt4xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt4x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt4zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt4z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt4ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt4y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt5xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt5x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt5zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt5z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt5ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt5y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt6xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt6x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt6zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt6z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt6ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt6y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt7xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt7x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt7zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt7z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt7ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt7y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt8xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt8x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt8zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt8z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt8ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt8y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt9xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt9x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt9zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt9z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt9ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt9y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt10xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt10x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt10zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt10z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt10ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt10y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt11xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt11x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt11zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt11z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt11ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt11y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt12xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt12x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt12zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt12z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt12ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt12y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt13xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt13x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt13zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt13z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt13ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt13y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt14xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt14x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt14zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt14z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt14ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt14y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt15xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt15x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt15zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt15z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt15ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt15y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="n">pt16xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt16x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt16zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt16z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt16ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt16y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt17xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt17x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt17zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt17z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt17ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt17y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt18xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt18x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt18zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt18z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt18ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt18y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt19xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt19x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt19zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt19z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt19ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt19y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="n">pt20xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt20x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt20zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt20z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt20ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt20y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt21xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt21x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt21zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt21z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt21ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt21y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt44xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt44x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt44zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt44z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt44ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt44y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt46xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt46x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt46zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt46z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt46ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt46y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="n">pt48xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt48x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt48zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt48z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt48ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt48y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    
+    <span class="n">pt50xstr</span><span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt50x</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt50zstr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt50z</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="n">pt50ystr</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">pt50y</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">pt1xstr</span><span class="p">,</span> <span class="n">pt1zstr</span><span class="p">,</span> <span class="n">pt1ystr</span><span class="p">,</span> <span class="n">pt2xstr</span><span class="p">,</span> <span class="n">pt2zstr</span><span class="p">,</span> <span class="n">pt2ystr</span><span class="p">,</span> <span class="n">pt3xstr</span><span class="p">,</span> <span class="n">pt3zstr</span><span class="p">,</span> <span class="n">pt3ystr</span><span class="p">,</span> <span class="n">pt4xstr</span><span class="p">,</span> <span class="n">pt4zstr</span><span class="p">,</span> <span class="n">pt4ystr</span><span class="p">,</span> <span class="n">pt5xstr</span><span class="p">,</span> <span class="n">pt5zstr</span><span class="p">,</span> <span class="n">pt5ystr</span><span class="p">,</span> <span class="n">pt6xstr</span><span class="p">,</span> <span class="n">pt6zstr</span><span class="p">,</span> <span class="n">pt6ystr</span><span class="p">,</span> <span class="n">pt7xstr</span><span class="p">,</span> <span class="n">pt7zstr</span><span class="p">,</span> <span class="n">pt7ystr</span><span class="p">,</span> <span class="n">pt8xstr</span><span class="p">,</span> <span class="n">pt8zstr</span><span class="p">,</span> <span class="n">pt8ystr</span><span class="p">,</span> <span class="n">pt9xstr</span><span class="p">,</span> <span class="n">pt9zstr</span><span class="p">,</span> <span class="n">pt9ystr</span><span class="p">,</span> <span class="n">pt10xstr</span><span class="p">,</span> <span class="n">pt10zstr</span><span class="p">,</span> <span class="n">pt10ystr</span><span class="p">,</span> <span class="n">pt11xstr</span><span class="p">,</span> <span class="n">pt11zstr</span><span class="p">,</span> <span class="n">pt11ystr</span><span class="p">,</span> <span class="n">pt12xstr</span><span class="p">,</span> <span class="n">pt12zstr</span><span class="p">,</span> <span class="n">pt12ystr</span><span class="p">,</span> <span class="n">pt13xstr</span><span class="p">,</span> <span class="n">pt13zstr</span><span class="p">,</span> <span class="n">pt13ystr</span><span class="p">,</span>  <span class="n">pt14xstr</span><span class="p">,</span> <span class="n">pt14zstr</span><span class="p">,</span> <span class="n">pt14ystr</span><span class="p">,</span> <span class="n">pt15xstr</span><span class="p">,</span> <span class="n">pt15zstr</span><span class="p">,</span> <span class="n">pt15ystr</span><span class="p">,</span> <span class="n">pt0xstr</span><span class="p">,</span> <span class="n">pt0zstr</span><span class="p">,</span> <span class="n">pt0ystr</span><span class="p">,</span> <span class="n">pt16xstr</span><span class="p">,</span> <span class="n">pt16zstr</span><span class="p">,</span> <span class="n">pt16ystr</span><span class="p">,</span> <span class="n">pt17xstr</span><span class="p">,</span> <span class="n">pt17zstr</span><span class="p">,</span> <span class="n">pt17ystr</span><span class="p">,</span> <span class="n">pt18xstr</span><span class="p">,</span> <span class="n">pt18zstr</span><span class="p">,</span> <span class="n">pt18ystr</span><span class="p">,</span> <span class="n">pt19xstr</span><span class="p">,</span> <span class="n">pt19zstr</span><span class="p">,</span> <span class="n">pt19ystr</span><span class="p">,</span> <span class="n">pt20xstr</span><span class="p">,</span> <span class="n">pt20zstr</span><span class="p">,</span> <span class="n">pt20ystr</span><span class="p">,</span> <span class="n">pt21xstr</span><span class="p">,</span> <span class="n">pt21zstr</span><span class="p">,</span> <span class="n">pt21ystr</span><span class="p">,</span> <span class="n">pt44xstr</span><span class="p">,</span> <span class="n">pt44zstr</span><span class="p">,</span> <span class="n">pt44ystr</span><span class="p">,</span> <span class="n">pt46xstr</span><span class="p">,</span> <span class="n">pt46zstr</span><span class="p">,</span> <span class="n">pt46ystr</span><span class="p">,</span> <span class="n">pt48xstr</span><span class="p">,</span> <span class="n">pt48zstr</span><span class="p">,</span> <span class="n">pt48ystr</span><span class="p">,</span> <span class="n">pt50xstr</span><span class="p">,</span> <span class="n">pt50zstr</span><span class="p">,</span> <span class="n">pt50ystr</span></div>
+
+
+<span class="c1"># Stove front (0-15), wood front (16-19), additional points front (20,21,44,46)</span>
+<span class="c1"># x = x1, y = x2, z = x3 coordinates based on OpenFOAM convention</span>
+<div class="viewcode-block" id="vertice_concatenate"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.vertice_concatenate">[docs]</a><span class="k">def</span> <span class="nf">vertice_concatenate</span><span class="p">(</span><span class="n">pt1xstr</span><span class="p">,</span> <span class="n">pt1zstr</span><span class="p">,</span> <span class="n">pt1ystr</span><span class="p">,</span> <span class="n">pt2xstr</span><span class="p">,</span> <span class="n">pt2zstr</span><span class="p">,</span> <span class="n">pt2ystr</span><span class="p">,</span> <span class="n">pt3xstr</span><span class="p">,</span> <span class="n">pt3zstr</span><span class="p">,</span> <span class="n">pt3ystr</span><span class="p">,</span> <span class="n">pt4xstr</span><span class="p">,</span> <span class="n">pt4zstr</span><span class="p">,</span> <span class="n">pt4ystr</span><span class="p">,</span> <span class="n">pt5xstr</span><span class="p">,</span> <span class="n">pt5zstr</span><span class="p">,</span> <span class="n">pt5ystr</span><span class="p">,</span> <span class="n">pt6xstr</span><span class="p">,</span> <span class="n">pt6zstr</span><span class="p">,</span> <span class="n">pt6ystr</span><span class="p">,</span> <span class="n">pt7xstr</span><span class="p">,</span> <span class="n">pt7zstr</span><span class="p">,</span> <span class="n">pt7ystr</span><span class="p">,</span> <span class="n">pt8xstr</span><span class="p">,</span> <span class="n">pt8zstr</span><span class="p">,</span> <span class="n">pt8ystr</span><span class="p">,</span> <span class="n">pt9xstr</span><span class="p">,</span> <span class="n">pt9zstr</span><span class="p">,</span> <span class="n">pt9ystr</span><span class="p">,</span> <span class="n">pt10xstr</span><span class="p">,</span> <span class="n">pt10zstr</span><span class="p">,</span> <span class="n">pt10ystr</span><span class="p">,</span> <span class="n">pt11xstr</span><span class="p">,</span> <span class="n">pt11zstr</span><span class="p">,</span> <span class="n">pt11ystr</span><span class="p">,</span> <span class="n">pt12xstr</span><span class="p">,</span> <span class="n">pt12zstr</span><span class="p">,</span> <span class="n">pt12ystr</span><span class="p">,</span> <span class="n">pt13xstr</span><span class="p">,</span> <span class="n">pt13zstr</span><span class="p">,</span> <span class="n">pt13ystr</span><span class="p">,</span>  <span class="n">pt14xstr</span><span class="p">,</span> <span class="n">pt14zstr</span><span class="p">,</span> <span class="n">pt14ystr</span><span class="p">,</span> <span class="n">pt15xstr</span><span class="p">,</span> <span class="n">pt15zstr</span><span class="p">,</span> <span class="n">pt15ystr</span><span class="p">,</span> <span class="n">pt0xstr</span><span class="p">,</span> <span class="n">pt0zstr</span><span class="p">,</span> <span class="n">pt0ystr</span><span class="p">,</span> <span class="n">pt16xstr</span><span class="p">,</span> <span class="n">pt16zstr</span><span class="p">,</span> <span class="n">pt16ystr</span><span class="p">,</span> <span class="n">pt17xstr</span><span class="p">,</span> <span class="n">pt17zstr</span><span class="p">,</span> <span class="n">pt17ystr</span><span class="p">,</span> <span class="n">pt18xstr</span><span class="p">,</span> <span class="n">pt18zstr</span><span class="p">,</span> <span class="n">pt18ystr</span><span class="p">,</span> <span class="n">pt19xstr</span><span class="p">,</span> <span class="n">pt19zstr</span><span class="p">,</span> <span class="n">pt19ystr</span><span class="p">,</span> <span class="n">pt20xstr</span><span class="p">,</span> <span class="n">pt20zstr</span><span class="p">,</span> <span class="n">pt20ystr</span><span class="p">,</span> <span class="n">pt21xstr</span><span class="p">,</span> <span class="n">pt21zstr</span><span class="p">,</span> <span class="n">pt21ystr</span><span class="p">,</span> <span class="n">pt44xstr</span><span class="p">,</span> <span class="n">pt44zstr</span><span class="p">,</span> <span class="n">pt44ystr</span><span class="p">,</span> <span class="n">pt46xstr</span><span class="p">,</span> <span class="n">pt46zstr</span><span class="p">,</span> <span class="n">pt46ystr</span><span class="p">,</span> <span class="n">pt48xstr</span><span class="p">,</span> <span class="n">pt48zstr</span><span class="p">,</span> <span class="n">pt48ystr</span><span class="p">,</span> <span class="n">pt50xstr</span><span class="p">,</span> <span class="n">pt50zstr</span><span class="p">,</span> <span class="n">pt50ystr</span><span class="p">):</span> 
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Convert the individual vertex strings and concatenate to the format required for blockmeshdict file</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="c1"># Stove Body</span>
+    <span class="n">pt0str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt0ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt0xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt0zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt1str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt1ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt1xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt1zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt2str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt2ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt2xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt2zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt3str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt3ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt3xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt3zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt4str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt4ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt4xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt4zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt5str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt5ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt5xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt5zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt6str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt6ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt6xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt6zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt7str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt7ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt7xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt7zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt8str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt8ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt8xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt8zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt9str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt9ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt9xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt9zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt10str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt10ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt10xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt10zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt11str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt11ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt11xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt11zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt12str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt12ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt12xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt12zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt13str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt13ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt13xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt13zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt14str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt14ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt14xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt14zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt15str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt15ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt15xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt15zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    
+    <span class="c1"># Wood</span>
+    <span class="n">pt16str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt16ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt16xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt16zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt17str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt17ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt17xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt17zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt18str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt18ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt18xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt18zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt19str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt19ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt19xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt19zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>    
+    
+    <span class="c1"># Additional front pts</span>
+    <span class="n">pt20str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt20ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt20xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt20zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt21str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt21ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt21xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt21zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt44str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt44ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt44xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt44zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt46str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt46ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt46xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt46zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt48str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt48ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt48xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt48zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt50str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">pt50ystr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt50xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt50zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    
+    
+    <span class="k">return</span> <span class="n">pt0str</span><span class="p">,</span> <span class="n">pt1str</span><span class="p">,</span> <span class="n">pt2str</span><span class="p">,</span> <span class="n">pt3str</span><span class="p">,</span> <span class="n">pt4str</span><span class="p">,</span> <span class="n">pt5str</span><span class="p">,</span> <span class="n">pt6str</span><span class="p">,</span> <span class="n">pt7str</span><span class="p">,</span> <span class="n">pt8str</span><span class="p">,</span> <span class="n">pt9str</span><span class="p">,</span> <span class="n">pt10str</span><span class="p">,</span> <span class="n">pt11str</span><span class="p">,</span> <span class="n">pt12str</span><span class="p">,</span> <span class="n">pt13str</span><span class="p">,</span> <span class="n">pt14str</span><span class="p">,</span> <span class="n">pt15str</span><span class="p">,</span> <span class="n">pt16str</span><span class="p">,</span> <span class="n">pt17str</span><span class="p">,</span> <span class="n">pt18str</span><span class="p">,</span> <span class="n">pt19str</span><span class="p">,</span> <span class="n">pt20str</span><span class="p">,</span> <span class="n">pt21str</span><span class="p">,</span> <span class="n">pt44str</span><span class="p">,</span> <span class="n">pt46str</span><span class="p">,</span> <span class="n">pt48str</span><span class="p">,</span> <span class="n">pt50str</span></div>
+
+
+<div class="viewcode-block" id="create_back_points"><a class="viewcode-back" href="../../index.html#StoveOpt.import_geometry.create_back_points">[docs]</a><span class="k">def</span> <span class="nf">create_back_points</span><span class="p">(</span><span class="n">shift</span><span class="p">,</span> <span class="n">pt1xstr</span><span class="p">,</span> <span class="n">pt1zstr</span><span class="p">,</span> <span class="n">pt1ystr</span><span class="p">,</span> <span class="n">pt2xstr</span><span class="p">,</span> <span class="n">pt2zstr</span><span class="p">,</span> <span class="n">pt2ystr</span><span class="p">,</span> <span class="n">pt3xstr</span><span class="p">,</span> <span class="n">pt3zstr</span><span class="p">,</span> <span class="n">pt3ystr</span><span class="p">,</span> <span class="n">pt4xstr</span><span class="p">,</span> <span class="n">pt4zstr</span><span class="p">,</span> <span class="n">pt4ystr</span><span class="p">,</span> <span class="n">pt5xstr</span><span class="p">,</span> <span class="n">pt5zstr</span><span class="p">,</span> <span class="n">pt5ystr</span><span class="p">,</span> <span class="n">pt6xstr</span><span class="p">,</span> <span class="n">pt6zstr</span><span class="p">,</span> <span class="n">pt6ystr</span><span class="p">,</span> <span class="n">pt7xstr</span><span class="p">,</span> <span class="n">pt7zstr</span><span class="p">,</span> <span class="n">pt7ystr</span><span class="p">,</span> <span class="n">pt8xstr</span><span class="p">,</span> <span class="n">pt8zstr</span><span class="p">,</span> <span class="n">pt8ystr</span><span class="p">,</span> <span class="n">pt9xstr</span><span class="p">,</span> <span class="n">pt9zstr</span><span class="p">,</span> <span class="n">pt9ystr</span><span class="p">,</span> <span class="n">pt10xstr</span><span class="p">,</span> <span class="n">pt10zstr</span><span class="p">,</span> <span class="n">pt10ystr</span><span class="p">,</span> <span class="n">pt11xstr</span><span class="p">,</span> <span class="n">pt11zstr</span><span class="p">,</span> <span class="n">pt11ystr</span><span class="p">,</span> <span class="n">pt12xstr</span><span class="p">,</span> <span class="n">pt12zstr</span><span class="p">,</span> <span class="n">pt12ystr</span><span class="p">,</span> <span class="n">pt13xstr</span><span class="p">,</span> <span class="n">pt13zstr</span><span class="p">,</span> <span class="n">pt13ystr</span><span class="p">,</span>  <span class="n">pt14xstr</span><span class="p">,</span> <span class="n">pt14zstr</span><span class="p">,</span> <span class="n">pt14ystr</span><span class="p">,</span> <span class="n">pt15xstr</span><span class="p">,</span> <span class="n">pt15zstr</span><span class="p">,</span> <span class="n">pt15ystr</span><span class="p">,</span> <span class="n">pt0xstr</span><span class="p">,</span> <span class="n">pt0zstr</span><span class="p">,</span> <span class="n">pt0ystr</span><span class="p">,</span> <span class="n">pt16xstr</span><span class="p">,</span> <span class="n">pt16zstr</span><span class="p">,</span> <span class="n">pt16ystr</span><span class="p">,</span> <span class="n">pt17xstr</span><span class="p">,</span> <span class="n">pt17zstr</span><span class="p">,</span> <span class="n">pt17ystr</span><span class="p">,</span> <span class="n">pt18xstr</span><span class="p">,</span> <span class="n">pt18zstr</span><span class="p">,</span> <span class="n">pt18ystr</span><span class="p">,</span> <span class="n">pt19xstr</span><span class="p">,</span> <span class="n">pt19zstr</span><span class="p">,</span> <span class="n">pt19ystr</span><span class="p">,</span> <span class="n">pt20xstr</span><span class="p">,</span> <span class="n">pt20zstr</span><span class="p">,</span> <span class="n">pt20ystr</span><span class="p">,</span> <span class="n">pt21xstr</span><span class="p">,</span> <span class="n">pt21zstr</span><span class="p">,</span> <span class="n">pt21ystr</span><span class="p">,</span> <span class="n">pt44xstr</span><span class="p">,</span> <span class="n">pt44zstr</span><span class="p">,</span> <span class="n">pt44ystr</span><span class="p">,</span> <span class="n">pt46xstr</span><span class="p">,</span> <span class="n">pt46zstr</span><span class="p">,</span> <span class="n">pt46ystr</span><span class="p">,</span> <span class="n">pt48xstr</span><span class="p">,</span> <span class="n">pt48zstr</span><span class="p">,</span> <span class="n">pt48ystr</span><span class="p">,</span> <span class="n">pt50xstr</span><span class="p">,</span> <span class="n">pt50ystr</span><span class="p">,</span> <span class="n">pt50zstr</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Back coordinates of the cookstove--simply shifting the x2 (y) coordinate back by a value shift</span>
+<span class="sd">    </span>
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    </span>
+<span class="sd">    </span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">shift</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">shift</span> <span class="o">=</span> <span class="n">shift</span><span class="o">*</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shift multiplied by -1&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">shift</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shift is equal to zero: get ready for some errors&#39;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">shift</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Shift is less than zero naturally&#39;</span><span class="p">)</span>
+    <span class="n">shift_str</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">shift</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span> <span class="c1"># converting to string</span>
+    
+    <span class="c1"># Stove Body--back </span>
+    <span class="n">pt22str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt0xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt0zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt23str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt1xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt1zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt24str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt2xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt2zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt25str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt3xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt3zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt26str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt4xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt4zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt27str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt5xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt5zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt28str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt6xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt6zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt29str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt7xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt7zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt30str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt8xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt8zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt31str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt9xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt9zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt32str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt10xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt10zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt33str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt11xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt11zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt34str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt12xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt12zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt35str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt13xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt13zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt36str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt14xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt14zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt37str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt15xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt15zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    
+    <span class="c1"># Wood</span>
+    <span class="n">pt38str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt16xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt16zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt39str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt17xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt17zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt40str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt18xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt18zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt41str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt19xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt19zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>    
+    
+    <span class="c1"># Additional front pts</span>
+    <span class="n">pt42str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt20xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt20zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt43str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt21xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt21zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt45str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt44xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt44zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt47str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt46xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt46zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt49str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt48xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt48zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    <span class="n">pt51str</span> <span class="o">=</span> <span class="s2">&quot;(&quot;</span> <span class="o">+</span> <span class="n">shift_str</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt50xstr</span> <span class="o">+</span> <span class="s2">&quot; &quot;</span> <span class="o">+</span> <span class="n">pt50zstr</span> <span class="o">+</span> <span class="s2">&quot;)&quot;</span>
+    
+    
+    <span class="k">return</span> <span class="n">pt22str</span><span class="p">,</span> <span class="n">pt23str</span><span class="p">,</span> <span class="n">pt24str</span><span class="p">,</span> <span class="n">pt25str</span><span class="p">,</span> <span class="n">pt26str</span><span class="p">,</span> <span class="n">pt27str</span><span class="p">,</span> <span class="n">pt28str</span><span class="p">,</span> <span class="n">pt29str</span><span class="p">,</span> <span class="n">pt30str</span><span class="p">,</span> <span class="n">pt31str</span><span class="p">,</span> <span class="n">pt32str</span><span class="p">,</span> <span class="n">pt33str</span><span class="p">,</span> <span class="n">pt34str</span><span class="p">,</span> <span class="n">pt35str</span><span class="p">,</span> <span class="n">pt36str</span><span class="p">,</span> <span class="n">pt37str</span><span class="p">,</span> <span class="n">pt38str</span><span class="p">,</span> <span class="n">pt39str</span><span class="p">,</span> <span class="n">pt40str</span><span class="p">,</span> <span class="n">pt41str</span><span class="p">,</span> <span class="n">pt42str</span><span class="p">,</span> <span class="n">pt43str</span><span class="p">,</span> <span class="n">pt45str</span><span class="p">,</span> <span class="n">pt47str</span><span class="p">,</span> <span class="n">pt49str</span><span class="p">,</span> <span class="n">pt51str</span></div>
+    
+    
+    
+</pre></div>
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">StoveOpt</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../index.html">Module code</a><ul>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Liam Cassidy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+    </div>
+
+    
+
+    
+  </body>
+</html>
