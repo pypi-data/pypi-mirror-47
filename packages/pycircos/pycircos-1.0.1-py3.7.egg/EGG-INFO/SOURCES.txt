@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+RELEASE
+install.sh
+setup.py
+pycircos.egg-info/PKG-INFO
+pycircos.egg-info/SOURCES.txt
+pycircos.egg-info/dependency_links.txt
+pycircos.egg-info/requires.txt
+pycircos.egg-info/top_level.txt
+v3/__init__.py
