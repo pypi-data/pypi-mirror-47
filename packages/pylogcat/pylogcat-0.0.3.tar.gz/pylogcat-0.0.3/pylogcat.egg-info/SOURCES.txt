@@ -1,0 +1,10 @@
+README.md
+setup.py
+pylogcat/Level.py
+pylogcat/Log.py
+pylogcat/__init__.py
+pylogcat.egg-info/PKG-INFO
+pylogcat.egg-info/SOURCES.txt
+pylogcat.egg-info/dependency_links.txt
+pylogcat.egg-info/requires.txt
+pylogcat.egg-info/top_level.txt
