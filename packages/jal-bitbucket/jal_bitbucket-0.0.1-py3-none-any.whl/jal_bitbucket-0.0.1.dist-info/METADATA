@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jal-bitbucket
+Version: 0.0.1
+Summary: Retrieve info from BitBucket API
+Home-page: http://github.com/jalgraves/bitbucket
+Author: Jonny Graves
+Author-email: jalgraves@yahoo.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
