@@ -1,0 +1,69 @@
+Metadata-Version: 1.1
+Name: eeve
+Version: 1.6.3
+Summary: A simple, flexible and powerfull event trigger
+Home-page: https://github.com/vMarcelino/eeve
+Author: Victor Marcelino
+Author-email: victor.fmarcelino@gmail.com
+License: MIT
+Description: eeve
+        ====
+        
+        .. image:: https://img.shields.io/pypi/v/eeve.svg
+            :target: https://pypi.python.org/pypi/eeve
+            :alt: Latest PyPI version
+        
+        .. image::  https://travis-ci.org/vMarcelino/eeve.svg?branch=master
+           :target:  https://travis-ci.org/vMarcelino/eeve
+           :alt: Latest Travis CI build status
+        
+        A simple, flexible and powerfull event trigger
+        
+        Usage
+        -----
+        ``python -m eeve``
+        
+        Or from the project folder:
+        
+        ``python run.py``
+        
+        Installation
+        ------------
+        From pip:
+        
+        ``pip install -U eeve``
+        
+        From source:
+        
+        ``pip install -e .`` or ``python setup.py install``
+        
+        Requirements
+        ^^^^^^^^^^^^
+        
+        Compatibility
+        -------------
+        
+        Only tested on windows x64, but should work on any other OS just fine. Actions and triggers, however, have their own compatibility
+        
+        
+        Licence
+        -------
+        MIT Licence
+        
+        Authors
+        -------
+        
+        `eeve` was written by `Victor Marcelino <victor.fmarcelino@gmail.com>`_.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
