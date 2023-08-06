@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+manual_sitemap/__init__.py
+manual_sitemap/__version__.py
+manual_sitemap/core.py
+manual_sitemap/main.py
+manual_sitemap.egg-info/PKG-INFO
+manual_sitemap.egg-info/SOURCES.txt
+manual_sitemap.egg-info/dependency_links.txt
+manual_sitemap.egg-info/entry_points.txt
+manual_sitemap.egg-info/requires.txt
+manual_sitemap.egg-info/top_level.txt

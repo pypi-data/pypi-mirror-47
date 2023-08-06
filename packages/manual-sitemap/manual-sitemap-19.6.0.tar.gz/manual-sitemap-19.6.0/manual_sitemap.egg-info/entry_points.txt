@@ -1,0 +1,3 @@
+[console_scripts]
+manual-sitemap = manual_sitemap.main:create_sitemap
+
