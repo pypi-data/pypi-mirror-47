@@ -1,0 +1,9 @@
+jgo/__init__.py,sha256=BtUf4d4kIUWAkrF0YG2t6945Bdh2J5mw3v4bKNgFw5o,146
+jgo/__main__.py,sha256=2mX1VhkM5Ee4G16zyvRcm-I7s-GcxwtWjnRsslLYXXU,53
+jgo/jgo.py,sha256=tYBCAKSk_TiVWgzC5Z0oVWemKC9blEHjzWi37Oi0X4w,22719
+jgo/util.py,sha256=A9OATB31XW3qZ0gHpTNO-PnEgaXYzMrT2-gHzs_jOmw,3128
+jgo-0.4.0.dist-info/METADATA,sha256=bRfzKjGATrMEXjEC4eZ8oIKK6ke_dQ3Ol_lucz_pOaI,10581
+jgo-0.4.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+jgo-0.4.0.dist-info/entry_points.txt,sha256=fySsn-nClR1stAJXSEHklVK5_UuaHxKjQK3Ax4DLMHM,42
+jgo-0.4.0.dist-info/top_level.txt,sha256=5As7tg1bRL6CnILKn3isOuMiT-ME1HBkOmxzb_b0n5o,4
+jgo-0.4.0.dist-info/RECORD,,
