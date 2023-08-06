@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: mkTranslation
+Version: 1.1.1
+Summary: Free Google Translate API for Python. Translates totally free of charge.
+Home-page: https://github.com/mythkiven/mkTranslate
+Author: MythKiven
+Author-email: mythkiven@qq.com
+License: MIT
+Keywords: google translate translator
+Platform: UNKNOWN
+Requires-Dist: requests
+Provides-Extra: h2
+Requires-Dist: hyper ; extra == 'h2'
+
+UNKNOWN
+
+
