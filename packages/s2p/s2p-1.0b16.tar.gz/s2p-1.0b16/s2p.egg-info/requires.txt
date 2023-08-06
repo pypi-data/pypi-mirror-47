@@ -1,0 +1,10 @@
+numpy
+scipy
+urllib3<1.25
+rasterio[s3,test]>=1.0.14
+utm
+pyproj
+beautifulsoup4[lxml]
+plyfile
+ransac
+requests
