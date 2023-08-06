@@ -1,0 +1,13 @@
+acache/__init__.py,sha256=JRKgFObnCYf1Txi9gvXIf2LZ5O7vaavxMsesq8SVTKY,278
+acache/runners.py,sha256=5B9xM5Iz8ze7n-HHYlzn0uPu2B5EkX0WF_yL22DJUl0,647
+acache/strategy/__init__.py,sha256=prPaPogTdoFjFVpimWgI_SULjn95BmaBklE8G9RLlr8,120
+acache/strategy/base.py,sha256=gMywBpQ3X8gbKXnImFmygGTF8Ib6DwIHTQUzBefmxoc,392
+acache/strategy/basic.py,sha256=GPN8gEIOiP7XWOZp7got7SQETjU6hbHwJ-vhwCzUkXs,496
+acache/strategy/lru.py,sha256=VQ1f2nl1DtWHDpQnbthg2GZqVSJD6o5GMAbNGIz5YAs,274
+acache/strategy/timed.py,sha256=brGdzj_AD4JUflOwehiuol3098vZXCHk-XwQou1U7Uk,832
+acache-0.1.0.dist-info/LICENSE,sha256=uXDrsfknprk4B0-dOyaj87uVqtiN6oC1CxBuaJ8XC2E,1071
+acache-0.1.0.dist-info/METADATA,sha256=Zrh1tL_iu_aUa-ksdYS6Os5nr8oCczYfD7zwCyLBlaw,212
+acache-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+acache-0.1.0.dist-info/top_level.txt,sha256=bluLAT4X1i7UJ1Jb8PwOOKfZUgimST8Fs_VVzxlYWGY,7
+acache-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+acache-0.1.0.dist-info/RECORD,,
