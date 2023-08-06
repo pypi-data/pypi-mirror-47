@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: elisa-patch
+Version: 0.2.9
+Summary: Dictionary incorporation for machine translation
+Home-page: https://github.com/ChenghaoMou/elisa-patch
+Author: chenghaomou
+Author-email: chengham@isi.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
