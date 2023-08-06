@@ -1,0 +1,16 @@
+MANIFEST.in
+README.txt
+setup.cfg
+setup.py
+./templates/sqlserver-template.yml
+./templates/test-template.yml
+bpg/__init__.py
+bpg/bpg.py
+bpg.egg-info/PKG-INFO
+bpg.egg-info/SOURCES.txt
+bpg.egg-info/dependency_links.txt
+bpg.egg-info/requires.txt
+bpg.egg-info/top_level.txt
+tests/__init__.py
+tests/test_template.py
+tests/test_version.py

@@ -1,0 +1,15 @@
+name: test
+version: 0.0.1
+literal: 
+    value: 1234
+formula:
+    value: "{% x*y %}"
+display-name: template using expression for testing 
+derived-formula:
+    value: "{% formula * 2 %}"
+dependent-formula: 
+    value: "{% 2*formula %}"
+templates:
+    section1:
+        a: 
+           value: 42

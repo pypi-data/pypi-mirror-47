@@ -1,0 +1,81 @@
+# ------------------------------------------------------
+# SQL Server Data Files
+# ------------------------------------------------------
+# Defines template for SQL server profile
+# ------------------------------------------------------
+# * a template must have a name 
+# * must have a 'fields' properties 
+#   properties can be grouped. As in this example, 
+#   properties are groupd under 
+#     data_disks, data_files, autogrow
+# 
+#   propety can be referred in JSON Pointer syntax.
+#   For example, a profile generated from following
+#   template will return "/data_disks/count" as 4
+# * property have semantic type -- 
+#   such as storage, count, text etc. (as opposed to language type)
+# 
+# * type of a property defaults to textual value
+# 
+# ----------------------------------------------------------
+name: sqlserver
+display-name: SQL Server Template
+version: 1.0.0
+templates: 
+    data_files: 
+          count: 
+             display-name: Number of data files
+             value: 4
+             description: >
+                  Should be the lowest multiple of Number of data disks. 
+                  (e.g if the number of vCPUs is 5, then number of data files = 8)
+             version: 1.0.1
+          initial_size:  
+                  display-name: Initial size of data files
+                  type: storage
+                  value: "{% database_size *  count %}"
+                  description: >
+                    Initial size of each data file = 
+                    If the size of each data file exceeds 2TB, 
+                    then we add (number of data disks) to it. 
+                  version:  1.0.1.2  
+          max_size: 
+                  value: "{% 2*initial_size %}" 
+                  version : 1.0.1.2
+    data_disks: 
+      count:
+             display-name: Number of data disks
+             value: 4
+             version: 1.0.1
+      size: 
+              type: storage
+              value: "{% 1.2 *  data_files['max_size'] %}"
+              version: 1.0.1.2
+         
+    autogrow:
+          enabled: 
+              display-name: is autogrow Enabled?
+              value: false
+              version: 1.0.1.2
+          increment: 
+             display-name: Autogrow Increment
+             value: 256 
+             version: 1.0.1.2
+          capacity: 
+            display-name:  Autogrow Cap    
+            description: Max size of data files
+            value: 600
+            version: 1.0.1.2
+
+    trace-flag: 
+        display-name: Trace Flag 
+        value: 1117 
+        description: 1117 (All files grow equally) 
+        comment: >
+           ALTER DATABASE - AUTOGROW_ALL_FILES 
+           from SQL Server 2016 onwards)        
+           1117 Set for SQL Server 2016 and above.
+           Not set for SQL Server 2014 and below.
+
+       
+       
