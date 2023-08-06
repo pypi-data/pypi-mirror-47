@@ -1,0 +1,24 @@
+Metadata-Version: 1.2
+Name: coolsignup
+Version: 0.1.0
+Summary: REST-like server to register users by email and handle login, logout, authentication, email changes and password reset.
+Home-page: UNKNOWN
+Author: Benjamin Le Forestier
+Author-email: benjamin@leforestier.org
+License: UNKNOWN
+Description: # coolsignup
+        "REST-like server to register users by email and handle login, logout, authentication, email changes and password reset."
+        
+        Full documentation:
+        https://coolsignup.readthedocs.io/
+        
+Keywords: signup,signin,user,accounts,email,registration
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5.2
