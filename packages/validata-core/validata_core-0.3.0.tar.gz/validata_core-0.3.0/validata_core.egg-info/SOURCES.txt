@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+validata_core/__init__.py
+validata_core/cli.py
+validata_core/csv_helpers.py
+validata_core/loaders.py
+validata_core/messages.py
+validata_core/source_helpers.py
+validata_core/spec.py
+validata_core.egg-info/PKG-INFO
+validata_core.egg-info/SOURCES.txt
+validata_core.egg-info/dependency_links.txt
+validata_core.egg-info/entry_points.txt
+validata_core.egg-info/requires.txt
+validata_core.egg-info/top_level.txt
