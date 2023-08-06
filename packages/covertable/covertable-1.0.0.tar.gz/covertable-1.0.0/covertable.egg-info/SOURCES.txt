@@ -1,0 +1,16 @@
+README.rst
+setup.cfg
+setup.py
+covertable/__init__.py
+covertable/exceptions.py
+covertable/main.py
+covertable/utils.py
+covertable.egg-info/PKG-INFO
+covertable.egg-info/SOURCES.txt
+covertable.egg-info/dependency_links.txt
+covertable.egg-info/top_level.txt
+covertable/sorters/__init__.py
+covertable/sorters/greedy.py
+covertable/sorters/hash.py
+covertable/sorters/random.py
+covertable/sorters/sequential.py
