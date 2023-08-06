@@ -1,0 +1,5 @@
+pycairo
+PyGObject
+pymediainfo
+PySide2
+python-vlc
