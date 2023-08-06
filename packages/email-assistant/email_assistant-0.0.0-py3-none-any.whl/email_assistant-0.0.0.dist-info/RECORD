@@ -1,0 +1,16 @@
+email_assistant/assistant.py,sha256=Gmil8Is_6GjAmaJkAO4Hsk_YccL55GQ_pwl55j6mtuo,8378
+email_assistant/iata.py,sha256=Cgn6LW6JfsYeEKm6bJrG9P4CHmxjNO5qzqIaOK5qofg,273587
+email_assistant/plugin.py,sha256=FRhr1Eu56w2ey9J59UPe9flX1FRBrUfcNa5_EO-Lp9Y,1061
+email_assistant/plugins/__init__.py,sha256=QrLbsE1gaWxBNTBt-QbCO1ZoLL0eOs4qAEDNhuLVx8U,922
+email_assistant/plugins/eventbrite.py,sha256=DmKGns4pULgsh8a6q8TX2x8jYK9seKBeAaAmfNEKNFE,3769
+email_assistant/plugins/general.py,sha256=lwCW6YXOZ921RGhd8V6dcfRaxwMKo-L5zBtqgA2BxNU,2186
+email_assistant/plugins/marriott.py,sha256=-8ku3iogubOib3JsMpkhQ7tU46Ebi9ASOQN1pORmElY,2642
+email_assistant/plugins/united.py,sha256=3UkszPquQu8Kb9oc7kVERyup4KkEO2ESo0q-jNTWunU,4029
+email_assistant-0.0.0.dist-info/AUTHORS,sha256=R06Gf3PzNlYRKQ5sbaCkTrsu62J3fDYm7OekTnc9-xs,32
+email_assistant-0.0.0.dist-info/COPYING,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+email_assistant-0.0.0.dist-info/METADATA,sha256=DHC41pBGvV3o_4s_2we63kBBZSRAVxpzqBJ43DY51iI,3520
+email_assistant-0.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+email_assistant-0.0.0.dist-info/entry_points.txt,sha256=ziq6n6hTKvvh1g4Qi1bXNT8Ou6LIxeKOrN9fPkiChpw,68
+email_assistant-0.0.0.dist-info/pbr.json,sha256=-sH7CihYnYYTjz4KpehE0hXazppAkJ7LUB9XDoX7p70,47
+email_assistant-0.0.0.dist-info/top_level.txt,sha256=D1KtNHbV6xTBbPS-LnlZskB0baCgYQETnY0cK94ssqo,16
+email_assistant-0.0.0.dist-info/RECORD,,

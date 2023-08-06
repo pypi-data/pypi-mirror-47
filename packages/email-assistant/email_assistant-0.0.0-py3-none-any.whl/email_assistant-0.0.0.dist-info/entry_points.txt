@@ -1,0 +1,3 @@
+[console_scripts]
+email-assistant = email_assistant.assistant:main
+
