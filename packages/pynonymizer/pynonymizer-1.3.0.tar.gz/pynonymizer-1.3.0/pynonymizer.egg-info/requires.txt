@@ -1,0 +1,4 @@
+pyyaml>=5
+tqdm>=4
+faker>=1
+python-dotenv>=0.10
