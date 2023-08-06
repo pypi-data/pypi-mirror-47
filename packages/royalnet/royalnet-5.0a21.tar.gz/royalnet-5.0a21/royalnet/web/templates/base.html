@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefano Pigozzi">
+    <meta name="keywords" content="Royal Games,RYG,Gaming,Videogames,Community">
+    <meta name="description" content="Royal Games Community">
+    <meta property="og:site_name" content="Royal Games">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    {% if css %}
+        <link rel="stylesheet" href="{{ url_for("static", filename=css) }}">
+    {% else %}
+        <link rel="stylesheet" href="{{ url_for("static", filename="ryg.css") }}">
+    {% endif %}
+    <link rel="icon" href="{{ url_for("static", filename="logo.png") }}" type="image/png">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <span class="nav-site">
+                <img class="nav-image" alt="" src="{{ url_for("static", filename="logo.svg") }}">
+                <span class="nav-sitename">Royal Games</span>
+            </span>
+            <span class="nav-modules">
+                <a class="no-icon" href="{{ url_for("wikiview.wikiview_index") }}">Wiki</a>
+            </span>
+        </div>
+        <div class="nav-center">
+        </div>
+        <div class="nav-right">
+            <span>
+                {% if session["royal"] %}
+                    <span class="nav-login">
+                        <span class="nav-accountname">{{ session["royal"]["username"] }}</span>
+                        {% if session["royal"]["avatar"] %}
+                            <img class="nav-image" alt="" src="{{ session["royal"]["avatar"] }}">
+                        {% else %}
+                            <img class="nav-image" alt="" src="{{ url_for("static", filename="generic.png") }}">
+                        {% endif %}
+                    </span>
+                {% else %}
+                    <span class="nav-login">
+                        <a class="no-icon" href="/login/telegram">
+                            Login
+                            <img class="nav-image faded" alt="" src="{{ url_for("static", filename="generic.png") }}">
+                        </a>
+                    </span>
+                {% endif %}
+            </span>
+        </div>
+    </nav>
+    <div class="h-container">
+        <div class="main-container">
+            {% block content %}{% endblock %}
+        </div>
+    </div>
+    <div id="foot-scripts">
+        {% block footscripts %}{% endblock %}
+    </div>
+</body>
+</html>
