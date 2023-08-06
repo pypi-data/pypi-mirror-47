@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: dftogsheet
+Version: 0.0.2
+Summary: A Python module for writing pandas DataFrame objects directly to Google Spreadsheets
+Home-page: https://github.com/wpbdry/gsheets_pkg
+Author: William Dry
+Author-email: wpbdry@gmail.com
+License: UNKNOWN
+Description: # df-gsheet
+        A Python module for writing pandas DataFrame objects directly to Google Spreadsheets
+        
+        ## Install gsheets
+        ```shell
+        $ pip install df-gsheet
+        ```
+        
+        ## Setup
+        1. Enable the
+        [Google Sheets API](https://developers.google.com/sheets/api/quickstart/python)
+        for the Google account you'd like to use.
+        
+        ## Simple Usage
+        ```python
+        import pandas as pd
+        import dfgsheet
+        
+        data_frame = pd.DataFrame()
+        dfgsheet.write_to_sheet(data_frame, spreadsheet_id, sheet_name)
+        ```
+        
+        ### Parameters
+        There are three mandatory parameters for the above function:
+        - `data_frame` is any pandas DataFrame object.
+        - `spreadsheet_id` is the part of the Google Spreadsheet URL
+        that is between `/d/` and `/edit`.
+        - `sheet_name` is the name of the sheet within the Google spreadsheet.
+        E.g. `Sheet1`.
+        
+        ## What's new
+        - Update dependencies.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
