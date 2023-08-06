@@ -1,0 +1,5 @@
+setup.py
+mikepdf.egg-info/PKG-INFO
+mikepdf.egg-info/SOURCES.txt
+mikepdf.egg-info/dependency_links.txt
+mikepdf.egg-info/top_level.txt
