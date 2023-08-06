@@ -1,0 +1,8 @@
+deepex/DeepEX.py,sha256=uvTcp1tKniTG6twI1YmeJZoYyArSzfifgoNTPOAC0sw,12547
+deepex/__init__.py,sha256=VRl98qBLqG8ykfjlFvjRsL38OXPyU6EKSE7rCYpPKoo,108
+deepex/model/__init__.py,sha256=EqlLVbpu4A8kaZiSjMy1Ch9TCTwySdSP9SpZgvbV7v8,37
+deepex/model/deepfm.py,sha256=bosD9A5qPwfKTIi9xbMfqds0z8RGHleYvt4oXTAwsno,3223
+deepex-0.0.13.dist-info/METADATA,sha256=4RPB3DuBij5W67VkNo3MAKWeLDWYEk03gNdPKRc28Xs,6783
+deepex-0.0.13.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+deepex-0.0.13.dist-info/top_level.txt,sha256=0JbB9z6oyXZGnkXynwHI69a3S4McEE3vLgUadzeHPm8,7
+deepex-0.0.13.dist-info/RECORD,,
