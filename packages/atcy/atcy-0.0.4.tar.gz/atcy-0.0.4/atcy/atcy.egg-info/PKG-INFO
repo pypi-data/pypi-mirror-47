@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: atcy
+Version: 0.0.4
+Summary: A small example package测试包
+Home-page: https://github.com/pypa/sampleproject
+Author: Tcy
+Author-email: 979442421@qq.com
+License: UNKNOWN
+Description: this is readme file.
+Keywords: atcy,Package_A1
+Platform: UNKNOWN
