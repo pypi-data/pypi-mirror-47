@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: ks33requests
+Version: 0.1.1
+Summary: 适用于金山云对象存储(KS3)的简单 Python3 客户端
+Home-page: https://github.com/tanbro/ks33requests
+Author: liu xue yan
+Author-email: liu_xue_yan@foxmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: lxml
+
+# ks33requests
+
+[![PyPI](https://img.shields.io/pypi/v/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+[![PyPI - License](https://img.shields.io/pypi/l/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+[![PyPI - Format](https://img.shields.io/pypi/format/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+[![PyPI - Status](https://img.shields.io/pypi/status/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+[![PyPI - Implementation](https://img.shields.io/pypi/implementation/ks33requests.svg)](https://pypi.org/project/ks33requests/)
+
+## 概述
+
+一个很简单的、适用于 [金山云][] 对象存储([KS3][])的 [Python][]3 客户端。
+
+[金山云][] 官方提供了 [KS3][] 的 [Python][] SDK，但在我启动这个项目(2019-06-10)时，仅提供 [Python][]2 SDK。
+
+考虑到 [Python][]2 已经接近其生命周期的终点，我制作了这个简单的 [Python]3 [KS3][] 客户端用于相关项目。
+
+## 如何使用
+
+参见 [guide](notebooks/guide.ipynb)
+
+## 说明文档
+
+- [INSTALL](INSTALL.md)
+- [CHANGELOG](CHANGELOG.md)
+- [CONTRIBUTING](CONTRIBUTING.md)
+- [AUTHORS](AUTHORS.md)
+
+[Python]: https://python.org/
+[金山云]: https://www.ksyun.com/
+[KS3]: https://www.ksyun.com/post/product/KS3 "金山对象存储（Kingsoft Standard Storage Service，简称KS3）"
+
+
