@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: coarsenraster
+Version: 0.0.2
+Summary: utility to coarsen rasters
+Home-page: https://bitbucket.org/natcap/coarsenraster
+Maintainer: Rich Sharp
+Maintainer-email: richpsharp@gmail.com
+License: BSD
+Description: # coarsenraster
+        
+        Command line script to coarsen rasters by a given scale and algorithm.
+Keywords: GIS
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: BSD License
