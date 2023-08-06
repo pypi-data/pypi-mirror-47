@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: validata-core
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Christophe Benz
+Author-email: christophe.benz@jailbreak.paris
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Dist: goodtables
+Requires-Dist: importlib-resources
+Requires-Dist: requests
+Requires-Dist: tabulator
+Requires-Dist: tableschema
+Requires-Dist: toml
+Requires-Dist: toolz
+Requires-Dist: python-stdnum
+
+UNKNOWN
+
+
