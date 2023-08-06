@@ -1,0 +1,3 @@
+[console_scripts]
+shouldi = shouldi.cli:ShouldI.main
+
