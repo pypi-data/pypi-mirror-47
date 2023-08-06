@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+co-words/__init__.py
+co-words/sample.py
+co-words/utilities.py
+co-words/wordcount.py
+co_words.egg-info/PKG-INFO
+co_words.egg-info/SOURCES.txt
+co_words.egg-info/dependency_links.txt
+co_words.egg-info/top_level.txt
+tests/__init__.py
+tests/animal_farm.py
+tests/test_utilities.py
+tests/test_wordcount.py
