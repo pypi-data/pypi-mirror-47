@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cond-rnn
+Version: 1.0
+Summary: Conditional RNN
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Description: # Conditional RNN
+        
+        References:
+        
+        - https://adventuresinmachinelearning.com/recurrent-neural-networks-lstm-tutorial-tensorflow/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
