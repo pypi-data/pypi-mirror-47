@@ -1,0 +1,17 @@
+pyatlasobscura/__init__.py,sha256=0-ErloqlTvbIDts5MjuycAdn9R1kmb8bpYXZ9iTGpDY,607
+pyatlasobscura/cache.py,sha256=CTZdsT5JakWI6EL8aSWxkcV2oblpa8yMeTd71FlKCj0,1571
+pyatlasobscura/client/__init__.py,sha256=4c4SdV0dnCTJzgjlh3PVF2bbm9c0n-4Jcp5UNTXH6pA,1539
+pyatlasobscura/client/base.py,sha256=mEuwPwcvsqAroza7uD16Ik_vRdedoD0VL8QwI9CSRdg,907
+pyatlasobscura/client/pandas.py,sha256=xvJamm7lH50B2lBvc9Dyoixabvi-BHAtzJQmXiq6jvI,67
+pyatlasobscura/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyatlasobscura/models/base.py,sha256=5hj3piOLlz8G7lONiJUvJk8JtgEssI8HT_WAQoacCOo,789
+pyatlasobscura/models/destinations.py,sha256=0qftjNgzgn4Cb5nKBc9rlMcUVr7sa_mie0LDtLYe-kI,5608
+pyatlasobscura/models/query.py,sha256=tzYEcl1ZO3vnLCh2RbAkQmCI2cq_fDeCo3fmAUs1RZI,3583
+pyatlasobscura/models/util.py,sha256=hvyEyCygLVoiEg4M3brRuLQOF8FsWkOrZNZ9PPGAbLQ,369
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_client.py,sha256=7R9CdpXGtzIA_iZrPSPD3C1L2dnhdtlf1qrsddAjZA8,1100
+pyatlasobscura-0.1.1.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pyatlasobscura-0.1.1.dist-info/METADATA,sha256=sbCrSrVgl7skPJjbhbu-oszNk5LX3z2TSsvtQJEcWko,398
+pyatlasobscura-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyatlasobscura-0.1.1.dist-info/top_level.txt,sha256=fVLRGnr88LgwQquuUDo4TYH2bz6m70-3pyXBvsXuaWY,20
+pyatlasobscura-0.1.1.dist-info/RECORD,,
