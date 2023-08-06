@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dtool-utils
+Version: 0.1.0
+Summary: Dtool utility functions and classes
+Home-page: UNKNOWN
+Author: Matthew Hartley
+Author-email: matthew.hartley@jic.ac.uk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: dtoolcore (>=3.0.0)
+Requires-Dist: ruamel.yaml
+
+Dtool utils
+===========
+
+Utility functions and classes for dtool.
+
+
