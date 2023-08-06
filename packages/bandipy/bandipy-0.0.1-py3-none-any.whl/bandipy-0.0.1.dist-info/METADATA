@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: bandipy
+Version: 0.0.1
+Summary: Multi-Armed Bandit Algorithms for Advertisement Application
+Home-page: https://github.com/mmalekzadeh/bandipy
+Author: Mohammad Malekzadeh
+Author-email: moh.malekzadeh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Bandipy Package
+
+This is a playground to test multi-armed bandit algorithms for advertisement application.
+
