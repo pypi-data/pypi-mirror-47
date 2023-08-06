@@ -1,0 +1,6 @@
+include tests/*
+include inputFiles/*
+include foamfiles/*
+include stovegeom/*
+include docs/*
+include reactingFoam/*
