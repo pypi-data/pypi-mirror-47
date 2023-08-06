@@ -1,0 +1,15 @@
+antimony/__init__.py,sha256=PXNkkgXdnv2nA6kjH2IAyTS7_mo1Lp6Hb-haP2m1gfo,301
+antimony/_antimony.so,sha256=7Fuw60VgWkUKzw8kSiJue3bk_4SFeiJrVhGtrfHuwL8,13639240
+antimony/antimony.py,sha256=XBAm8kIg7p1JnVo_NsfCgMOaXSM1E_MoiR416tsWKlw,111478
+antimony/libannotools.so,sha256=4dXdEG_vtxx5bKcsuazdAdDFuTxxbh1PixnNQJg4t0M,64156
+antimony/libbz2.so.1,sha256=ciUni5zhNk8PLGuDBSnfmHRkkLrRVng2sMBvnpnavJ0,65528
+antimony/libcellml.so,sha256=S7cnI068M62Z_jv_cBuG8PG7qhv4Bu8z_GAmQKurH44,4662070
+antimony/libcevas.so,sha256=dl-7PD7tZNzdqjhwhMT5FdUmZcjZbwuPh21QqIvtZ6E,90633
+antimony/libcuses.so,sha256=W2Ud_yguYevhQIJSgieYHZG0t3M5XozCHAV4xXBAR-0,151417
+antimony/libtelicems.so,sha256=I7PA1AKGA01BDp3ah9fNRVfa5ZBfFDNxivvge0qCQ1E,266585
+antimony/libxml2.so.2,sha256=jtRC97IXfu51ddt_lO4XwIO8Bn2-6hqHVxwmNBAhU3I,1298872
+antimony/libz.so.1,sha256=oUfcsInmyEri2hSviJOK-1IkAm6ANVquv9k77C1jkow,83280
+antimony-2.11.0.dist-info/METADATA,sha256=tu3Tk1IkJo4T3qwf-EDznLssYJssOvt5X4n_dXXRjOs,225
+antimony-2.11.0.dist-info/RECORD,,
+antimony-2.11.0.dist-info/WHEEL,sha256=oSE2ayFBsjjt_oKgkdQuvhNPQ3-rjMJLj8ZESlwpXXQ,107
+antimony-2.11.0.dist-info/top_level.txt,sha256=uCflTPdOoQsi-KG4ExQ9UleYlxI_mD_lA4d4rx5OyDA,9
