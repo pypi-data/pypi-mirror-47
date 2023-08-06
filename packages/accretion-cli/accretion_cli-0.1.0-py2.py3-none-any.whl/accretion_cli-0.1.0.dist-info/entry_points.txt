@@ -1,0 +1,3 @@
+[console_scripts]
+accretion = accretion_cli._commands:cli
+
