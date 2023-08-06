@@ -1,0 +1,10 @@
+README.md
+setup.py
+pysviacep/__init__.py
+pysviacep/viacep.py
+pysviacep.egg-info/PKG-INFO
+pysviacep.egg-info/SOURCES.txt
+pysviacep.egg-info/dependency_links.txt
+pysviacep.egg-info/not-zip-safe
+pysviacep.egg-info/requires.txt
+pysviacep.egg-info/top_level.txt

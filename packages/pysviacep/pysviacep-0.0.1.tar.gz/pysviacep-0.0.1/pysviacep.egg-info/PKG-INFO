@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pysviacep
+Version: 0.0.1
+Summary: Consulta simplificada de enderecos pelo CEP no webservice VIACEP
+Home-page: https://github.com/rfschubert/pys-viacep
+Author: Raphael Schubert
+Author-email: rfswdp@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python viacep,python3,viacep,schubert
+Platform: UNKNOWN
