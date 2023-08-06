@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: knor
+Version: 0.0.5
+Summary: A fast parallel clustering library for Linux and Mac
+Home-page: https://github.com/flashxio/knor
+Author: Disa Mhembere
+Author-email: disa@cs.jhu.edu
+License: Apache License, Version 2.0
+Description-Content-Type: UNKNOWN
+Description: The k* NUMA Optimized Routine library or knor is a highly optimized and fast library for computing clustering in parallel with accelerations for Non-Uniform Memory Access (NUMA) architectures
+Keywords: Parallel clustering machine-learning
+Platform: UNKNOWN
