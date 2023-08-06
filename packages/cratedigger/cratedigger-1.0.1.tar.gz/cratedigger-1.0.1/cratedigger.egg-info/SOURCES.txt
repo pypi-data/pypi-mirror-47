@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+cratedigger.egg-info/PKG-INFO
+cratedigger.egg-info/SOURCES.txt
+cratedigger.egg-info/dependency_links.txt
+cratedigger.egg-info/entry_points.txt
+cratedigger.egg-info/requires.txt
+cratedigger.egg-info/top_level.txt
