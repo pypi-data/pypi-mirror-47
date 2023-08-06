@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: telero
+Version: 0.1.0
+Summary: A python lib for Telegram Bot API
+Home-page: https://github.com/amirho3inf/telero
+Author: AmirHo3inF
+Author-email: MrAmirho3inf@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: telegram bot api python wrapper
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
