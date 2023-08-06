@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: spaudiopy
+Version: 0.1.1
+Summary: Spatial Audio Python Package
+Home-page: https://github.com/chris-hld/spaudiopy
+Author: Chris Hold
+Author-email: Chris.Hold@mailbox.tu-berlin.de
+License: MIT
+Description: # spaudiopy
+        Spatial Audio Python Package.
+        
+        The focus (so far) is on spatial audio decoders.
+        The package includes e.g. spherical harmonics processing and (binaural renderings of) loudspeaker decoders, such as VBAP and ALLRAD.
+        
+        # Documentation
+        You can find the latest package documentation here:  
+        https://spaudiopy.readthedocs.io/
+        
+        # Quickstart
+        It's easiest to start with something like [Anaconda](https://www.anaconda.com/distribution/) as a Python distribution.
+        You'll need Python >= 3.6 .
+        
+        You can simply install via pip:  
+          `pip install spaudiopy`
+          
+           
+        If you want to go into detail and install from source:
+        
+        1. Create a conda environment:  
+          `conda create --name spaudio python=3.6 anaconda joblib`
+        2. Activate this new environment:  
+          `conda activate spaudio`
+          
+        Install the package and remaining dependencies:  
+          `pip install -e . ` 
+        
+        
+        Licence
+        -------
+        MIT -- see the file LICENSE for details.
+        
+        Contributions
+        -------------
+        This is meant to be an open project and contributions or feature requests are always welcome!
+        
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
