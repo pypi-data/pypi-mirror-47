@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: datawiz
+Version: 0.87
+Summary: DataWiz helps new data learners, hobbyist and industry practitioners write Machine Learning code faster by doing the heavy-lifting such as data cleaning, data transformation, preparation and more! 
+Home-page: UNKNOWN
+Author: Koye Sodipo
+Author-email: koye.sodipo@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: Data Engineering,data preparation,data science,data cleaning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
