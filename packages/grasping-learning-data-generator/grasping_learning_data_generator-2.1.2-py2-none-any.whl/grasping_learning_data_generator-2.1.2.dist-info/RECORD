@@ -1,0 +1,9 @@
+grasping_learning_data_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+grasping_learning_data_generator/orientation.py,sha256=Z7r32Go-UdpZAWViMOZTMQWnjl0khOxpyLvkl10KZnY,5286
+grasping_learning_data_generator/position.py,sha256=bCQtQAGi-JALHluAfJd6OjSXuIfTLzi7C0rz5s1uxNU,7072
+grasping_learning_data_generator/transformations.py,sha256=X5lzqYgxVXxmc0JbxmgMsQMzYajrvAEpbOPebPPgMFM,5033
+grasping_learning_data_generator-2.1.2.dist-info/LICENSE,sha256=z0YQZ4x1JHvc2HDjBMjStryRsanKGogu3E8-c3Ywm9c,1117
+grasping_learning_data_generator-2.1.2.dist-info/METADATA,sha256=qgzkQeGhb2NQgyKHqiiy454qlWi4VPYKxD1SNuAysfA,635
+grasping_learning_data_generator-2.1.2.dist-info/WHEEL,sha256=quTwCBwEhCqvWQayaLINV6u_GggLcWROgOHAbyu7a04,92
+grasping_learning_data_generator-2.1.2.dist-info/top_level.txt,sha256=OOJ6DwZfZonIXNcyZe9vWKHzen_OUoCFlcjg7OTuoRo,33
+grasping_learning_data_generator-2.1.2.dist-info/RECORD,,
