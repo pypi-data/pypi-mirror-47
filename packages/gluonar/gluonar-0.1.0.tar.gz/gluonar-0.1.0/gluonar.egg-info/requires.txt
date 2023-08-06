@@ -1,0 +1,8 @@
+numpy
+tqdm
+requests
+matplotlib
+seaborn
+scipy
+av
+librosa
