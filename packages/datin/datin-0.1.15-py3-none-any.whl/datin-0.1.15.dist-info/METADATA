@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: datin
+Version: 0.1.15
+Summary: Convert data into columnar format
+Home-page: https://github.com/rbutus/datin.git
+Author: Ryan Trigg
+Author-email: rbutustree@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+this is a long description of the module
+
+
