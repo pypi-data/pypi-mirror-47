@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: CBP_SMF
+Version: 0.0.7
+Summary: A NMF-based method to discover biological pattern in multi-view data
+Home-page: UNKNOWN
+Author: wuyue
+Author-email: wuyue@stu.xidian.edu.cn
+License: MIT License
+Description: UNKNOWN
+Keywords: Data integration,multi-view NMF
+Platform: any
+Requires-Python: >=2.7
