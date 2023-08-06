@@ -1,0 +1,9 @@
+README.md
+setup.py
+pytensors/__init__.py
+pytensors/__main__.py
+pytensors.egg-info/PKG-INFO
+pytensors.egg-info/SOURCES.txt
+pytensors.egg-info/dependency_links.txt
+pytensors.egg-info/top_level.txt
+pytensors/libs/__init__.py
