@@ -1,0 +1,14 @@
+README.md
+angreal.json
+setup.py
+angreal_template.egg-info/PKG-INFO
+angreal_template.egg-info/SOURCES.txt
+angreal_template.egg-info/dependency_links.txt
+angreal_template.egg-info/not-zip-safe
+angreal_template.egg-info/top_level.txt
+{{ angreal.name }}/README.md
+{{ angreal.name }}/VERSION
+{{ angreal.name }}/angreal.json
+{{ angreal.name }}/setup.py
+{{ angreal.name }}/.angreal/init.py
+{{ angreal.name }}/.angreal/task_foo.py
