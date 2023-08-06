@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: examsage
+Version: 0.0.1.dev2
+Summary: ExamSage is a Python package for generating math problems in $LaTeX$. The goal of this project is to allow math instructors to create randomizable math problems and assessments without extensive programming knowledge.
+Home-page: https://pypi.org/project/examsage/
+Author: Michael Barnard
+Author-email: mbarnard10@ivytech.edu
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+ExamSage
+========
+
+ExamSage is a Python package for generating math problems in $LaTeX$. The goal of this project is to allow math instructors to create randomizable math problems and assessments without extensive programming knowledge.
+
+Acknowledgments
+---------------
+The name of this package is a tribute to  William Stein's [SageMath](http://www.sagemath.org/) project, which evolved into the [CoCalc](https://cocalc.com/) platform. Without Stein's contributions to the open source community, ExamSage may have never moved beyond a pure $LaTeX$ solution.
+
+ExamSage interfaces with $LaTeX$ via Jelte Fennema's [PyLaTeX](https://jeltef.github.io/PyLaTeX/) library. Many of the classes provided by ExamSage inherit from classes provided by PyLaTeX. Also, much of my documentation design choices are modeled on the PyLaTeX documentation.
+
+Warning
+-------
+This is my first package and is intended as a learning exercise. In other words, expect nothing to work and everything to change.
+
+
+Installation
+------------
+
+ExamSage is begin developed on [CoCalc](https://cocalc.com/) in Python 3.6.7 and it can be installed by running:
+
+    pip install examsage
+
+
+Support
+-------
+
+If you are having issues, please let me know at mbarnard10@ivytech.edu
+
+
+License
+-------
+
+The project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) license.
+
+
