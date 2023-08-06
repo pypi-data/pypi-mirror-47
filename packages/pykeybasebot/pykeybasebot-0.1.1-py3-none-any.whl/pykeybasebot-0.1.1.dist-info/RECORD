@@ -1,0 +1,10 @@
+pykeybasebot/__init__.py,sha256=dB1Qe9yeWC4S4muXoGwvYTXc_H7nH2nAuspgcHs4Mfo,88
+pykeybasebot/bot.py,sha256=8NXf5H0aTohpQNFRvcC0tXCcv-PoV9eBpi2qdbJ0icU,4934
+pykeybasebot/chat_client.py,sha256=rEnhmQxAQtkEjkOUCDGNhvYWgHIiwHY17vwXyjtOUtU,974
+pykeybasebot/cli.py,sha256=vGHzOxJ28WhY-N7_j37KFEYSqxuOx3-kDkqFDisWaqc,2574
+pykeybasebot/kbevent.py,sha256=UKz_Ti_5dxrZD1jYcaf0nmhJNrZm4OwdxavvjOdr3ys,5081
+pykeybasebot-0.1.1.dist-info/LICENSE,sha256=YE25OJY98TqIDiTtNgbEZAkdOopEIQp7quMGbUTdT1o,1472
+pykeybasebot-0.1.1.dist-info/METADATA,sha256=-Sqn1OdUIdiFj_u_Dz7lVEPBSwB5rXAz00HAvdBNt_c,3381
+pykeybasebot-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pykeybasebot-0.1.1.dist-info/top_level.txt,sha256=wNbldKlWgGB0jpfGDzgBeNFka07j610lBVdFB9KShAY,13
+pykeybasebot-0.1.1.dist-info/RECORD,,
