@@ -1,0 +1,11 @@
+abot/__init__.py,sha256=_5Lc6wubncwkV6c0fvrqi_CWp7wATaGadTnLF2nz8NY,122
+abot/bot.py,sha256=nfi7OREaaOOD2aqHzLlhIORVPDPjFqIyA-Hm_nIyXRo,11429
+abot/cli.py,sha256=-6zfkajN9VpbPvYmlSF0Iq41aeFLSFyzZ-QgCTcxJ3c,7465
+abot/dubtrack.py,sha256=31eJ2py4rYbxs3lR_CP_NdSeYG5GdbzjBDESNZsLFJg,80173
+abot/slack.py,sha256=3ceomx2hqzm5tMxpauAHZZxYlXU6vChWntMQASt9MYE,27897
+abot/util.py,sha256=uLlkyYR5hnm9tFz84io2Qo-I6GklGmFN5NCX-SvOSjg,1263
+abot-0.0.1a1.post0.dev32.dist-info/LICENSE.txt,sha256=HI-YZTf_sf5CkLG-i7NwRXamnMwIpKZoXct0XtuWuNM,1075
+abot-0.0.1a1.post0.dev32.dist-info/METADATA,sha256=sRqNGB-wwz3NmxjX2zQ4bOY5dDZEYh9iFEB2PnHL-eE,1312
+abot-0.0.1a1.post0.dev32.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+abot-0.0.1a1.post0.dev32.dist-info/top_level.txt,sha256=vZPR4z3Jp5Bbs873ReGVoroJvPClmymJaozGMijY-zk,5
+abot-0.0.1a1.post0.dev32.dist-info/RECORD,,
