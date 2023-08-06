@@ -1,0 +1,9 @@
+README.txt
+setup.cfg
+setup.py
+galapagos/__init__.py
+galapagos/bs_file.py
+galapagos.egg-info/PKG-INFO
+galapagos.egg-info/SOURCES.txt
+galapagos.egg-info/dependency_links.txt
+galapagos.egg-info/top_level.txt
