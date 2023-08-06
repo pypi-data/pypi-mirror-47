@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: py-hierarchy-2-2d
+Version: 0.1
+Summary: 
+Author: joefromct
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: xmltodict (>=0.12.0,<0.13.0)
