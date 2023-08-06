@@ -1,0 +1,11 @@
+README.md
+setup.py
+SplitMerge/__init__.py
+SplitMerge/clsLog.py
+SplitMerge/clsMergeFiles.py
+SplitMerge/clsSplitFiles.py
+SplitMerge.egg-info/PKG-INFO
+SplitMerge.egg-info/SOURCES.txt
+SplitMerge.egg-info/dependency_links.txt
+SplitMerge.egg-info/requires.txt
+SplitMerge.egg-info/top_level.txt
