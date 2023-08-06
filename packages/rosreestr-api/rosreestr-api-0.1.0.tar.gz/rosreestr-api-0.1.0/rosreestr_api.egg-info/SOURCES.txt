@@ -1,0 +1,13 @@
+README.md
+setup.py
+rosreestr_api/__init__.py
+rosreestr_api/clients.py
+rosreestr_api.egg-info/PKG-INFO
+rosreestr_api.egg-info/SOURCES.txt
+rosreestr_api.egg-info/dependency_links.txt
+rosreestr_api.egg-info/not-zip-safe
+rosreestr_api.egg-info/requires.txt
+rosreestr_api.egg-info/top_level.txt
+rosreestr_api/tests/__init__.py
+rosreestr_api/tests/fixtures.py
+rosreestr_api/tests/test_rosreestr_api_client.py
