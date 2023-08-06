@@ -1,0 +1,10 @@
+tagging_autocomplete_new/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tagging_autocomplete_new/models.py,sha256=JmVSc-CPtYbN1PfqUQO6KxNpdeqijtsBRjpAZ4tzDXU,764
+tagging_autocomplete_new/urls.py,sha256=i_FlBattlyqXquyo9luKSmL79H4Y_K8TZNdlfYhJj50,151
+tagging_autocomplete_new/views.py,sha256=MgWJzgE5gYPyVlt1kCfEO-LtVJuuLbpXQtvpiPO5IsE,1110
+tagging_autocomplete_new/widgets.py,sha256=ZM7UIEsSj9nKvELVksAzsNXoT-SoTHqkaRh-ywdhfnI,2303
+django_tagging_autocomplete_new-0.6.2.dist-info/LICENSE,sha256=giCNmGf6yQLs4S5taT-JSiiGwraGvZc7EJwBL3os01w,1103
+django_tagging_autocomplete_new-0.6.2.dist-info/METADATA,sha256=XnRysFWIPk10XuFiwxM2lT65wwNPLul6lV5cRbvR4y0,3763
+django_tagging_autocomplete_new-0.6.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+django_tagging_autocomplete_new-0.6.2.dist-info/top_level.txt,sha256=2Ww7nZdSIUSRHDOvaIYPvESyciUuTe1ZUGt9y9gMNkw,25
+django_tagging_autocomplete_new-0.6.2.dist-info/RECORD,,
