@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: msz_svr_conn
+Version: 0.0.1
+Summary: Server Connection
+Home-page: https://gitlab.com/mesozi/market-force-360/msz-svr-conn
+Author: Nyamu Kang'alia
+Author-email: kangalia@mesozi.com
+License: UNKNOWN
+Description: Server Connection
+        =================
+        
+        This package provides a python wrapper for connecting to a resource server
+        
+        
+        Sample usage
+        ------------
+        
+        .. code-block:: python
+        
+            from msz_svr_conn import ApiConnection
+        
+            conn = ApiConnection(
+                'localhost:8000',
+                '<your oauth id>',
+                '<your oauth secret'>,
+                '<your user email>',  # or <your user phone number>
+                '<your user password',
+                token_url='<url to token resource on auth_server>'
+            )
+        
+            # call a resource server with base url 'localhost:8000'
+            conn.call_stub('/api/resource/')
+        
+            # call another resource server using the same credentials
+            conn.call('http://domain.com/api/resource/')
+        
+            # after the access token expires, refresh the token
+            conn.refresh('<url to token resource on auth_server>')
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
