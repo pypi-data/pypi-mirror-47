@@ -1,0 +1,9 @@
+setup.py
+libcloud_client/__init__.py
+libcloud_client/config.py
+libcloud_client/session.py
+libcloud_client.egg-info/PKG-INFO
+libcloud_client.egg-info/SOURCES.txt
+libcloud_client.egg-info/dependency_links.txt
+libcloud_client.egg-info/requires.txt
+libcloud_client.egg-info/top_level.txt
