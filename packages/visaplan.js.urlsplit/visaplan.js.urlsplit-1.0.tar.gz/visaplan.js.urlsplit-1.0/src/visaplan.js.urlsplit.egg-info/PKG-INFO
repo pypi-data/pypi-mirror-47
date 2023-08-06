@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: visaplan.js.urlsplit
+Version: 1.0
+Summary: Plone integration of urlSplit.js
+Home-page: https://pypi.org/project/visaplan.js.urlsplit
+Author: Tobias Herp
+Author-email: tobias.herp@visaplan.com
+License: MIT
+Description: .. This README is meant for consumption by humans and pypi. Pypi can render rst files so please do not use Sphinx features.
+           If you want to learn more about writing documentation, please check out: http://docs.plone.org/about/documentation_styleguide.html
+           This text does not appear on pypi or github. It is a comment.
+        
+        ====================
+        visaplan.js.urlsplit
+        ====================
+        
+        This is a simple Zope / Plone integration of the `urlSplit.js`_ Javascript tool.
+        
+        Features
+        --------
+        
+        - Makes available both the comprssed and uncompressed versions of ``urlSplit.js``
+        - Adds the compressed version to the Javascript registry
+        
+        
+        Documentation
+        -------------
+        
+        For the Javascript functonality, please see `urlSplit.js`.
+        
+        
+        Installation
+        ------------
+        
+        Install visaplan.js.urlsplit by adding it to your buildout::
+        
+            [buildout]
+        
+            ...
+        
+            eggs =
+                visaplan.js.urlsplit
+        
+        
+        and then running ``bin/buildout``
+        
+        
+        Contribute
+        ----------
+        
+        For the Javascript functionality, please contribute to `urlSplit.js`_.
+        
+        For the Zope / Plone integration:
+        
+        - Issue Tracker: https://github.com/collective/visaplan.js.urlsplit/issues
+        - Source Code: https://github.com/collective/visaplan.js.urlsplit
+        - Documentation: https://docs.plone.org/foo/bar
+        
+        
+        License
+        -------
+        
+        The project is licensed under the MIT License.
+        
+        .. _`urlSplit.js`: https://github.com/hans-sperling/urlSplit.js
+        
+        
+        Contributors
+        ============
+        
+        - Danny Grübl (urlSplit.js)
+        - Tobias Herp, tobias.herp@visaplan.com (Plone integration)
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0 (2019-06-07)
+        ----------------
+        
+        - Initial release, containing urlSplit.js v2.1.2.
+          [tobiasherp]
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: Framework :: Zope
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Provides-Extra: test
