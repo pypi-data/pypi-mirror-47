@@ -1,0 +1,8 @@
+cloudwatch_metrics_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudwatch_metrics_client/aiocloudwatch.py,sha256=UxecEMzlFfRvZyCsAuomLNv_33O9VeIbvnJfgb80tYg,10452
+cloudwatch_metrics_client/cloudwatch.py,sha256=dvusgZz2Sr1DLE5CBvxZZuNB-fRh6_48N8h21aszV7g,5710
+cloudwatch_metrics_client-0.0.4.dist-info/LICENSE,sha256=GHp03BYYIac8YhcW5l52TUCbhFWfMIFMbJgMBo7WWw4,1070
+cloudwatch_metrics_client-0.0.4.dist-info/METADATA,sha256=N9vUj95ebgn3881X73lUM4QfwQVMpzELCIAjoCQAhV4,4066
+cloudwatch_metrics_client-0.0.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cloudwatch_metrics_client-0.0.4.dist-info/top_level.txt,sha256=zOYJcbxAGglxSiBhmUBi_vZRG_Qyq52KvBZEgqpDRPw,26
+cloudwatch_metrics_client-0.0.4.dist-info/RECORD,,
