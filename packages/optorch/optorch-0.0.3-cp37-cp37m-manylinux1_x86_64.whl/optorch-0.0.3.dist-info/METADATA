@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: optorch
+Version: 0.0.3
+Summary: Nonlinear solver for PyTorch
+Home-page: https://github.com/pronto-ai/optorch
+Author: Pronto AI
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/plain
+Requires-Dist: torch
+
+See: https://github.com/pronto-ai/optorch
+
+
