@@ -1,0 +1,11 @@
+hs_build_tools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hs_build_tools/assert_text_template.py,sha256=xb0U1vtR5vzghBSkguFSPOtOARIDQq-_VNNr4A2dqq8,1303
+hs_build_tools/nose.py,sha256=M5WtmYSL6tEbcdc3d_HCKFTbvIjVltXP9E6QPRFB2H8,1183
+hs_build_tools/pytest.py,sha256=9qq2lpGmiRvAshNUoeqa6iFeYdFkLVPSgZe-pgDFP_w,1164
+hs_build_tools/setup.py,sha256=KJfsGcup5Qus4000cBRorcV8GqMbsPSnKml-Gdy9vko,4355
+hs_build_tools-2019.7.dist-info/LICENSE,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+hs_build_tools-2019.7.dist-info/METADATA,sha256=y_JvAGXKAyJS_COIZwWkw4bHGA-sGHCVAZbOjyPaJKM,1067
+hs_build_tools-2019.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+hs_build_tools-2019.7.dist-info/top_level.txt,sha256=tglNd_dmlEIRtvA5miAmgakM85rhN5V2aaAX6bKyPv0,15
+hs_build_tools-2019.7.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+hs_build_tools-2019.7.dist-info/RECORD,,
