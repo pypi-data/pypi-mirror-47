@@ -1,0 +1,8 @@
+numpy
+ZODB3>=3.10
+six
+psutil
+
+[test]
+pytest
+pygolang>=0.0.0.dev4
