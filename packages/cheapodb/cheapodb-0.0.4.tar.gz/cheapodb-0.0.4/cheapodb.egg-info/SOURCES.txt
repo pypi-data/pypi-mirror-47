@@ -1,0 +1,13 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+cheapodb/__init__.py
+cheapodb/database.py
+cheapodb/schema.py
+cheapodb/table.py
+cheapodb.egg-info/PKG-INFO
+cheapodb.egg-info/SOURCES.txt
+cheapodb.egg-info/dependency_links.txt
+cheapodb.egg-info/requires.txt
+cheapodb.egg-info/top_level.txt
