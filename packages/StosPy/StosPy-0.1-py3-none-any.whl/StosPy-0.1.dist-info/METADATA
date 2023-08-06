@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: StosPy
+Version: 0.1
+Summary: Smart and Transparent Object Swapper for Python
+Home-page: UNKNOWN
+Author: Alex Barcelo
+Author-email: alex.barcelo@bsc.es
+Maintainer: Workflows and Distributed Computing - BSC
+Maintainer-email: distributed_computing@bsc.es
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Requires-Python: >=3.4
+Requires-Dist: psutil
+Requires-Dist: readerwriterlock
+
+===============================================
+Smart and Transparent Object Swapper for Python
+===============================================
+
+Future place of an awesome and meaningful description!
+
+
