@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pythontrie/__init__.py
+pythontrie/trie.py
+pythontrie/trienode.py
+pythontrie.egg-info/PKG-INFO
+pythontrie.egg-info/SOURCES.txt
+pythontrie.egg-info/dependency_links.txt
+pythontrie.egg-info/top_level.txt
