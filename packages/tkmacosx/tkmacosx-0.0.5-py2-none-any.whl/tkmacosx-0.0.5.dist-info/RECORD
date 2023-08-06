@@ -1,0 +1,13 @@
+tkmacosx/__init__.py,sha256=K67NXJzHaOW6wp9DKYYWayhKrKgitR57tW79o8tFT8I,705
+tkmacosx/__main__.py,sha256=3NSz9trFMky7CPkliaYfc9kFlpo31mixj2yMZz3ucV0,9816
+tkmacosx/basewidget.py,sha256=IVlfJ5XEQSf4QbC4Y57FYHbjo9sKzh0SPk6bR1pQIr4,29662
+tkmacosx/colors.py,sha256=swic_f6N8-6tGSIp8nmNfelseLxdVgUHkwCxH8n8tKw,14421
+tkmacosx/variables.py,sha256=tkGOTVVjlAdR73ffhoLjGJHIeXGdBUdpnT82OvKM3xI,4999
+tkmacosx/widget.py,sha256=GSUNPIB2HXuRLM2C3Kwu936Wt1lO2q9SD2o7BUn_YfE,7174
+tkmacosx/images/B1.png,sha256=EyzXfFN_p7L9tvDuUkCvLklQZU4WGabDhk5AXSSA_pM,2191251
+tkmacosx/images/B2.png,sha256=AP5NXFPgUjEyj8FlM0wFz_npjTD8_jhCWD9SCC4zlCg,2271928
+tkmacosx-0.0.5.dist-info/LICENSE,sha256=6BQiv3G-88N6vHgSmNZeIAi3h1dDwdgu3fYpQ-vFSjc,11341
+tkmacosx-0.0.5.dist-info/METADATA,sha256=0IiUmElNuJ27w2HikqN4xskhzjUwvNk7cTUqx-3PST8,5822
+tkmacosx-0.0.5.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+tkmacosx-0.0.5.dist-info/top_level.txt,sha256=5vK9kzOqaALo3CsxPyfvf4UoXs7wpRUbH_RxeRXM9pk,9
+tkmacosx-0.0.5.dist-info/RECORD,,
