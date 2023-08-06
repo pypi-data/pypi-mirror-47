@@ -1,0 +1,3 @@
+[console_scripts]
+timeSHIT = timeSHIT.__main__:main
+
