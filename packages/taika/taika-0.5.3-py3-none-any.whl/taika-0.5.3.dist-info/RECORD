@@ -1,0 +1,16 @@
+taika/__init__.py,sha256=fRHC8U94fAZDHX5Un6QuUJ2-z66CIQOfvn4oRhabIFY,571
+taika/cli.py,sha256=7Zsmc8g4T6f9iiHRlzNNglUiJgL8_T3qmdKrnlEZdNk,1762
+taika/events.py,sha256=ZdeGhsBG30maFj6vlKSh7kn9ey8nLemfZJjJppgb_jc,2378
+taika/ext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taika/ext/collections.py,sha256=VmdPoTF9ISpUqgYC8qWT217jVGx6FPilr8lOU3iNvgM,2394
+taika/ext/excerpt.py,sha256=C2qpydbFNnenVFq9pC-4cuY0jAu2UihnHF-qalOvRbA,2652
+taika/ext/layouts.py,sha256=JOQDP5r97-DNVyKy2XGKqvqT35Cl7z0Iq7aHKUWh_zk,5925
+taika/ext/rst.py,sha256=xZDL_8w41ShRNiZxuLUE2cqakUoykL0lDMwc_KWFQfU,3297
+taika/frontmatter.py,sha256=l4VPgd2d1FFBhpBr6WPxx8g9BntJ7d9RGcP5mIF8ju8,675
+taika/taika.py,sha256=SFMBIaEvHL30Oy8oxdw2axAkjx6vLk7q4GK391vpZUk,6308
+taika/utils.py,sha256=ybgDhbHRy-AqlAh_1fmh7VD-RNA5JPbh-JLRWMZPGLo,332
+taika-0.5.3.dist-info/entry_points.txt,sha256=iTJdB3RQFu5uOIZAaykH9DWUuq4ssDpgDQE15e09J8M,40
+taika-0.5.3.dist-info/LICENSE,sha256=EBpA8q8dkWdjA08YaOtXaS6C_AwioR4NUyJqAUY7vds,1080
+taika-0.5.3.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+taika-0.5.3.dist-info/METADATA,sha256=bn9qAHVIGHUypOaiEEsR1SbIWygqkvOdQY9sFjupZVc,1875
+taika-0.5.3.dist-info/RECORD,,
