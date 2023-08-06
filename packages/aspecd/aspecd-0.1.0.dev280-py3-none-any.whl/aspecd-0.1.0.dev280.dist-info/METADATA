@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: aspecd
+Version: 0.1.0.dev280
+Summary: Framework for handling spectroscopic data.
+Home-page: https://www.aspecd.de
+Author: Till Biskup
+Author-email: till@till-biskup.de
+License: UNKNOWN
+Project-URL: Documentation, https://docs.aspecd.de/
+Project-URL: Source, https://github.com/tillbiskup/aspecd
+Keywords: spectroscopy,data processing and analysis,reproducible science,good scientific practice
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: jinja2
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: oyaml
+Provides-Extra: dev
+Requires-Dist: prospector ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+
+ASpecD
+======
+
+``aspecd`` is a framework for handling spectroscopic data focussing on reproducibility. In short: Each and every processing step applied to your data will be recorded and can be traced back, and additionally, for each representation of your data (e.g., figures, tables) you can easily follow how the data shown have been processed and where they originate from.
+
+
+Features
+--------
+
+A list of features, not all implemented yet but aimed at for the first public release (ASpecD 0.1):
+
+* Framework for writing applications handling spectroscopic data
+
+* Consistent handling of numeric data and corresponding metadata
+
+* History of each processing step, automatically generated, aiming at full reproducibility
+
+* Undo and redo of processing steps
+
+* Import and export of data
+
+* Generic plotting capabilities, easily extendable
+
+* Report generation using pre-defined templates
+
+* Recipe-driven data analysis, allowing tasks to be performed fully unattended in the background
+
+
+And to make it even more convenient for users and future-proof:
+
+* Open source project written in Python (>= 3.5)
+
+* Developed fully test-driven
+
+* Extensive user and API documentation
+
+
+.. warning::
+  The ASpecD framework is currently under active development and still considered in Alpha development state. Therefore, expect frequent changes in features and public APIs that may break your own code. Nevertheless, feedback as well as feature requests are highly welcome.
+
+
+
