@@ -1,0 +1,4 @@
+Django
+ndg-httpsclient
+pyOpenSSL
+requests
