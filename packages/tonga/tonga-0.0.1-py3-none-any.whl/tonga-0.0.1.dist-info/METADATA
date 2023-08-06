@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: tonga
+Version: 0.0.1
+Summary: Client for build event driven app with Apache Kafka distributed stream processing system with asyncio
+Home-page: https://github.com/qotto/tonga
+Author: Qotto
+Author-email: contact@qotto.net
+License: MIT
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Distributed Computing
+Classifier: Topic :: Database
+Classifier: Framework :: AsyncIO
+Classifier: Development Status :: 2 - Pre-Alpha
+Requires-Dist: avro-python3 (==1.9.0)
+Requires-Dist: pyyaml (==5.1)
+Requires-Dist: aiokafka (==0.5.1)
+Requires-Dist: kafka-python (==1.4.6)
+
+UNKNOWN
+
+
