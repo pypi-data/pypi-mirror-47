@@ -1,0 +1,9 @@
+flask
+flask_restful
+flask_sqlalchemy
+werkzeug
+pymysql
+cx_Oracle
+pymongo
+elasticsearch
+ConfigParser
