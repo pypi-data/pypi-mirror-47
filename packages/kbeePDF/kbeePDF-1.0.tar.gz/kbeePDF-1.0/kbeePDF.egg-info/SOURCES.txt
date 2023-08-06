@@ -1,0 +1,9 @@
+README.md
+setup.py
+kbeePDF.egg-info/PKG-INFO
+kbeePDF.egg-info/SOURCES.txt
+kbeePDF.egg-info/dependency_links.txt
+kbeePDF.egg-info/top_level.txt
+kbeepdf/__init__.py
+kbeepdf/pdf2image.py
+kbeepdf/pdf2text.py
