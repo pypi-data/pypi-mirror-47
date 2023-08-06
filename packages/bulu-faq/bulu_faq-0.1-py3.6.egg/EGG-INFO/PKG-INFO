@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: bulu-faq
+Version: 0.1
+Summary: A simple Django app for FAQa
+Home-page: https://bulugroup.com
+Author: Tobin Brown
+Author-email: tobin@bulugroup.com
+License: BSD License
+Description: # Bulu FAQ
+        
+        Stupid simple FAQ app to use with any django project.
+        
+        
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
