@@ -1,0 +1,3 @@
+case:
+        geometry_file_directory: 'C:\Oregon_State\Spring_2019\Soft_dev_eng\StoveOpt\stovegeom'
+        geometry_file_name: 'Stove_Geometry.xlsx'

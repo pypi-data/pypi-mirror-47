@@ -1,0 +1,6 @@
+include StoveOpt/tests/*
+include StoveOpt/inputFiles/*
+include StoveOpt/foamfiles/*
+include StoveOpt/stovegeom/*
+include StoveOpt/docs/*
+include StoveOpt/reactingFoam/*
