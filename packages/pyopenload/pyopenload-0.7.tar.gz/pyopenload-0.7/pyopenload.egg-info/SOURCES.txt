@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+openload/__init__.py
+openload/api_exceptions.py
+openload/openload.py
+pyopenload.egg-info/PKG-INFO
+pyopenload.egg-info/SOURCES.txt
+pyopenload.egg-info/dependency_links.txt
+pyopenload.egg-info/requires.txt
+pyopenload.egg-info/top_level.txt
