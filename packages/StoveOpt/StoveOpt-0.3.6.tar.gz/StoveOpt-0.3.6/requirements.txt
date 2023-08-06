@@ -1,0 +1,19 @@
+#
+###### requirements.txt ######
+#
+###### Requirments without Version Specifiers ######
+pytest
+pytest-cov
+#
+###### Requirements with Version Specifiers ######
+#	See https://www.python.org/dev/peps/pep-0440/#version-specifiers
+python >= 2.7
+numpy
+os
+sys
+argparse
+yaml
+xlrd
+matplotlib
+shutil
+#
