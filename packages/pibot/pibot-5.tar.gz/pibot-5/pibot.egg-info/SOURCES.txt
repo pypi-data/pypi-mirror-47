@@ -1,0 +1,9 @@
+README.md
+setup.py
+pibot/__init__.py
+pibot/display.py
+pibot.egg-info/PKG-INFO
+pibot.egg-info/SOURCES.txt
+pibot.egg-info/dependency_links.txt
+pibot.egg-info/requires.txt
+pibot.egg-info/top_level.txt
