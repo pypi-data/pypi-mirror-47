@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: example-pkg-your-royaso
+Version: 0.0.3
+Summary: A small example package
+Home-page: https://github.com/pypa/sampleproject
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Description: [32m《除夜有怀》[m
+        [33m作者：崔涂[m
+        迢递三巴路，羁危万里身。
+        乱山残雪夜，孤烛异乡人。
+        渐与骨肉远，转于僮仆亲。
+        那堪正漂泊，明日岁华新。
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
