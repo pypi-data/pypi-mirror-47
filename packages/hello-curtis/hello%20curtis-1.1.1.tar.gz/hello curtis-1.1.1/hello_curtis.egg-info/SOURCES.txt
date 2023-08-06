@@ -1,0 +1,7 @@
+README.md
+setup.py
+hello_curtis.egg-info/PKG-INFO
+hello_curtis.egg-info/SOURCES.txt
+hello_curtis.egg-info/dependency_links.txt
+hello_curtis.egg-info/requires.txt
+hello_curtis.egg-info/top_level.txt
