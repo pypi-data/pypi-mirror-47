@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pyvxclient
+Version: 0.1.2
+Summary: vxapi client
+Home-page: http://www.vx.se
+Author: VX FIBER
+Author-email: info@vx.se
+License: Copyright VNEXT AB
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.7
+Requires-Dist: bravado (>=10.2.2)
+Requires-Dist: Click (>=7.0)
+Requires-Dist: python-dateutil (>=2.7.3)
+Requires-Dist: PyYAML (>=3.13)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: swagger-spec-validator (>=2.4.1)
+Requires-Dist: urllib3 (==1.21.1)
+
+vxapi client
+
+
