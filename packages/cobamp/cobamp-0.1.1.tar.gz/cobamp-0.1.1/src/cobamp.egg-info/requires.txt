@@ -1,0 +1,6 @@
+numpy
+scipy
+pandas
+optlang
+matplotlib
+pathos
