@@ -1,0 +1,10 @@
+README.md
+setup.py
+pwnage/__init__.py
+pwnage/pwnage.py
+pwnage.egg-info/PKG-INFO
+pwnage.egg-info/SOURCES.txt
+pwnage.egg-info/dependency_links.txt
+pwnage.egg-info/entry_points.txt
+pwnage.egg-info/requires.txt
+pwnage.egg-info/top_level.txt
