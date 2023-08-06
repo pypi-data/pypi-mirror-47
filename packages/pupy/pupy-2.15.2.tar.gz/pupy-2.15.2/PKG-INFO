@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pupy
+Version: 2.15.2
+Summary: pretty useful python
+Home-page: None
+Author: jessekrubin
+Author-email: jessekrubin@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
