@@ -1,0 +1,41 @@
+---
+documentation:
+  description: 'Calculates the SPI and SPEI drought indices.'
+  authors: ['berg_pe']
+  projects: ['c3s-magic']
+  references: ['acknow_project']
+
+datasets:
+   - dataset: {{constraints['model']}}
+     project: CMIP5
+     exp: {{constraints['experiment']}}
+     ensemble: {{constraints['ensemble']}}
+   - dataset: {{constraints['reference']}}
+     project: OBS
+     type: reanaly
+     version: 1
+     tier: 3
+
+preprocessors:
+  preprocessor:
+    regrid:
+      target_grid: reference_dataset
+      scheme: linear
+
+diagnostics:
+  diagnostic:
+    description: Calculating SPI and SPEI index
+    variables:
+      pr: &var
+        reference_dataset: {{constraints['reference']}}
+        preprocessor: preprocessor
+        start_year: {{start_year}}
+        end_year: {{end_year}}
+        mip: Amon
+      tas: *var
+    scripts:
+      spi:
+        script: droughtindex/diag_spi.r
+        ancestors: [pr]
+      spei:
+        script: droughtindex/diag_spei.r

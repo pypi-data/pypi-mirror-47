@@ -1,0 +1,58 @@
+# ESMValTool
+# recipe_capacity_factor_wp7.yml
+---
+documentation:
+  description: |
+     Diurnal Temperature Variation (DTR) Indicator and Wind Capacity Factor
+
+  authors:
+    - hunt_al
+    - manu_ni
+    - lled_ll
+    - caro_lo
+    - bojo_dr
+    - gonz_nu
+    - pere_nu
+
+  projects:
+    - c3s-magic
+
+datasets:
+  - dataset: {{constraints['model']}}
+    project: CMIP5
+    exp: {{constraints['experiment']}}
+    ensemble: {{constraints['ensemble']}}
+    start_year: {{start_year}} # 1980
+    end_year: {{end_year}} # 2005
+
+preprocessors:
+  preproc:
+    regrid:
+      target_grid: {{constraints['model']}} # IPSL-CM5A-MR
+      scheme: linear
+    mask_fillvalues:
+      threshold_fraction: 0.95
+    extract_region:
+      start_longitude: {{options['start_longitude']}} #200
+      end_longitude: {{options['end_longitude']}} # 300
+      start_latitude: {{options['start_latitude']}} # 27
+      end_latitude: {{options['end_latitude']}} # 70
+    extract_season:
+      season: {{options['season']}} # djf
+
+diagnostics:
+  capacity_factor:
+    description: Calculate the wind power capacity factor.
+    variables:
+      sfcWind:
+        preprocessor: preproc
+        mip: day
+    scripts:
+      main:
+        script: magic_bsc/capacity_factor.r
+        power_curves:
+          - PowerCurves/Enercon_E70_2.3MW.txt
+          - PowerCurves/Gamesa_G80_2.0MW.txt
+          - PowerCurves/Gamesa_G87_2.0MW.txt
+          - PowerCurves/Vestas_V100_2.0MW.txt
+          - PowerCurves/Vestas_V110_2.0MW.txt

@@ -1,0 +1,72 @@
+# ESMValTool
+# recipe_modes_of_variability.yml
+---
+documentation:
+  description: |
+    Tool to compute the RMSE between the observed and modelled patterns of
+    variability obtained through classification and their relative relative
+    bias (percentage) in the frequency of occurrence and the persistence of
+    each mode.
+
+  authors:
+    - torr_ve
+    - fuck_ne
+    - cort_ni
+    - guem_vi
+    - hunt_al
+    - pere_nu
+    - manu_ni
+
+  projects:
+    - c3s-magic
+
+  references:
+    - fuckar
+
+datasets:
+  - dataset: {{constraints['model']}}
+    project: CMIP5
+    exp: historical
+    ensemble: {{constraints['ensemble']}}
+    start_year: {{constraints['start_year_historical']}}
+    end_year: {{constraints['end_year_historical']}}
+  - dataset: {{constraints['model']}}
+    project: CMIP5
+    exp: {{constraints['experiment']}}
+    ensemble: {{constraints['ensemble']}}
+    start_year: {{constraints['start_year_projection']}}
+    end_year: {{constraints['end_year_projection']}}
+
+preprocessors:
+  preproc:
+    mask_fillvalues:
+      threshold_fraction: 0.95
+    extract_region:
+      start_longitude: 0
+      end_longitude: 360
+      start_latitude: 30
+      end_latitude: 90
+
+diagnostics:
+  weather_regime:
+    description: Compute modes of variability.
+    variables:
+      psl:
+        preprocessor: preproc
+        mip: Amon
+        field: T2M
+    scripts:
+      main:
+        script: magic_bsc/weather_regime.r
+        plot_type: {{options['plot_type']}} #North-Atlantic # North-Atlantic or Polar
+
+        start_historical: {{options['start_historical']}} #"1971-01-01"
+        end_historical: {{options['end_historical']}} #"2000-12-31"
+        start_projection: {{options['start_projection']}} #"2020-01-01"
+        end_projection: {{options['end_projection']}} #"2050-12-31"
+
+        ncenters: {{options['ncenters']}} # 3
+        detrend_order: {{options['detrend_order']}} # 2
+        cluster_method: {{options['cluster_method']}} # "kmeans" # select hclust or kmeans
+        EOFS: {{options['eofs']}} 
+        frequency: {{options['frequency']}}  # Select a month (format: JAN, FEB, ...) or should work with season also but not jet format: JJA, SON, MAM, DJF
