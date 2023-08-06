@@ -1,0 +1,276 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API &mdash; GDAPS  documentation</title>
+  
+
+  
+  
+  
+  
+    <link rel="canonical" href="https://gdaps.readthedocs.io/APIs.html"/>
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contributing" href="Contributing.html" />
+    <link rel="prev" title="Usage" href="usage.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GDAPS
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usage.html">Usage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contributing.html">Contributing</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">GDAPS</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/APIs.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <div class="rst-breadcrumbs-buttons" role="navigation" aria-label="breadcrumb navigation">
+      
+        <a href="Contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+  </div>
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-gdaps">
+<span id="api"></span><h1>API<a class="headerlink" href="#module-gdaps" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="gdaps.Interface">
+<em class="property">class </em><code class="sig-prename descclassname">gdaps.</code><code class="sig-name descname">Interface</code><a class="headerlink" href="#gdaps.Interface" title="Permalink to this definition">¶</a></dt>
+<dd><p>Base class for interface definitions.</p>
+<p>Inherit from <em>Interface</em> and eventually add methods to that class:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">IMyInterface</span><span class="p">(</span><span class="n">Interface</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+</pre></div>
+</div>
+<p>You can choose whatever name you want for your interfaces, but we recommend you start the name with a capital “I”.
+Read more about interfaces in the <a class="reference internal" href="usage.html#interfaces"><span class="std std-ref">Interfaces</span></a> section.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="gdaps.implements">
+<code class="sig-prename descclassname">gdaps.</code><code class="sig-name descname">implements</code><a class="headerlink" href="#gdaps.implements" title="Permalink to this definition">¶</a></dt>
+<dd><p>alias of <a class="reference internal" href="#gdaps.Implements" title="gdaps.Implements"><code class="xref py py-class docutils literal notranslate"><span class="pre">gdaps.Implements</span></code></a></p>
+</dd></dl>
+
+<dl class="class">
+<dt id="gdaps.ExtensionPoint">
+<em class="property">class </em><code class="sig-prename descclassname">gdaps.</code><code class="sig-name descname">ExtensionPoint</code><span class="sig-paren">(</span><em class="sig-param">interface: Type[gdaps.Interface]</em><span class="sig-paren">)</span><a class="headerlink" href="#gdaps.ExtensionPoint" title="Permalink to this definition">¶</a></dt>
+<dd><p>Marker class for Extension points in plugins.</p>
+<p>You can iterate over ‘Extensionpoint’s via <code class="docutils literal notranslate"><span class="pre">for..in</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ep</span> <span class="o">=</span> <span class="n">ExtensionPoint</span><span class="p">(</span><span class="n">IMyInterface</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">plugin</span> <span class="ow">in</span> <span class="n">ep</span><span class="p">:</span>
+    <span class="n">plugin</span><span class="o">.</span><span class="n">do_something</span><span class="p">()</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="gdaps.ExtensionPoint.extensions">
+<code class="sig-name descname">extensions</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; set<a class="headerlink" href="#gdaps.ExtensionPoint.extensions" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a set of plugin instances that match the interface of this extension point.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="gdaps.Implements">
+<em class="property">class </em><code class="sig-prename descclassname">gdaps.</code><code class="sig-name descname">Implements</code><span class="sig-paren">(</span><em class="sig-param">*interfaces</em><span class="sig-paren">)</span><a class="headerlink" href="#gdaps.Implements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decorator class for implementing interfaces.</p>
+<p>Just decorate a class:</p>
+<blockquote>
+<div><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@implements</span><span class="p">(</span><span class="n">IMyInterface</span><span class="p">)</span>
+<span class="k">class</span> <span class="nc">PluginA</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="nf">do_something</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Greetings from PluginA&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>You can also implement more than one interface: <em>&#64;implements(InterfaceA, InterfaceB)</em> and implement all their
+methods.</p>
+<p>Read more about implementations in the <a class="reference internal" href="usage.html#implementations"><span class="std std-ref">Implementations</span></a> section.</p>
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Contributing.html" class="btn btn-neutral float-right" title="Contributing" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="usage.html" class="btn btn-neutral float-left" title="Usage" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Christian González
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
