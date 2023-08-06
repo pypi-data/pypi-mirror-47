@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+walrus.py
+python_walrus.egg-info/PKG-INFO
+python_walrus.egg-info/SOURCES.txt
+python_walrus.egg-info/dependency_links.txt
+python_walrus.egg-info/top_level.txt
+python_walrus.egg-info/zip-safe

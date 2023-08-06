@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: python-walrus
+Version: 0.0.0.dev0
+Summary: Backport compiler for Python 3.8 assignment expressions.
+Home-page: https://github.com/JarryShaw/walrus
+Author: Jarry Shaw
+Author-email: jarryshaw@icloud.com
+License: MIT License
+Description: ======
+        walrus
+        ======
+        
+            Write *assignment expressions* in Python 3.8 flavour, and let ``walrus`` worry about backport issues :beer:
+        
+Keywords: walrus operator,assignment expression,backport compiler
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst; charset=UTF-8
