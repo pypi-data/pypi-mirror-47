@@ -1,0 +1,177 @@
+|Logo|
+
+|Build| |Coverage| |Black| |Versions| |License|
+
+Piny
+====
+
+YAML configs loader with environment variables interpolation for Python.
+
+Keep your app's configuration in YAML file with sensitive data marked as environment variables.
+Put sensitive data into environment variables. Then let *piny* interpolate
+the variables on YAML loading.
+
+Rationale
+---------
+
+Piny combines YAML config's readability, versioning, and environment variable's security.
+Read more in the `blog post`_.
+
+
+Installation
+------------
+
+Install using ``pip install -U piny``. For optional extra validation support
+use one of the extra libraries in the square brackets:
+``pip install -U 'piny[pydantic,marshmallow,trafaret]'``
+
+
+Usage
+-----
+
+Set your environment variables, add them to your YAML configuration file:
+
+.. code-block:: yaml
+
+    db:
+      login: user
+      password: ${DB_PASSWORD}
+    mail:
+      login: user
+      password: ${MAIL_PASSWORD:-my_default_password}
+    sentry:
+      dsn: ${VAR_NOT_SET}
+
+Then load your config:
+
+.. code-block:: python
+
+    from piny import YamlLoader
+
+    config = YamlLoader(path="config.yaml").load()
+    print(config)
+    # {'db': {'login': 'user', 'password': 'my_db_password'},
+    # 'mail': {'login': 'user', 'password': 'my_default_password'},
+    # 'sentry': {'dsn': None}}
+
+You may want to discourage Bash-style envs with defaults in your configs.
+In such case, use a ``StrictMatcher``:
+
+.. code-block:: python
+
+    from piny import YamlLoader, StrictMatcher
+
+    config = YamlLoader(path="config.yaml", matcher=StrictMatcher).load()
+
+Both strict and default matchers produce ``None`` value if environment variable
+matched is not set in the system (and no default syntax used in the case of
+default matcher).
+
+
+Validation
+----------
+
+Piny supports *optional* data validation using third-party libraries:
+`Marshmallow`_, `Pydantic`_, `Trafaret`_.
+
+.. code-block:: python
+
+  import marshmallow as ma
+  from piny import MarshmallowValidator, StrictMatcher, YamlLoader
+
+  class DBSchema(ma.Schema):
+      login = ma.fields.String(required=True)
+      password = ma.fields.String()
+
+  class ConfigSchema(ma.Schema):
+      db = ma.fields.Nested(DBSchema)
+
+  config = YamlLoader(
+      path="database.yaml",
+      matcher=StrictMatcher,
+      validator=MarshmallowValidator,
+      schema=ConfigSchema,
+      strict=True
+  ).load(many=False)
+
+
+Exceptions
+----------
+
+``LoadingError`` is thrown when something goes wrong with reading or parsing YAML-file.
+``ValidationError`` is a wrapper for exceptions raised by the libraries for optional data validation.
+Original exception can be accessed by ``origin`` attribute. It comes in handy when you need more than
+just an original exception message (e.g. a dictionary of validation errors).
+
+Both exceptions inherit from the ``ConfigError``.
+
+
+Best practices
+--------------
+
+- Maintain a healthy security/convenience balance for your config
+
+- Mark up entity as an environment variable in your YAML if and only if
+  it really is a *secret* (login/passwords, private API keys, crypto keys,
+  certificates, or maybe DB hostname too? You decide)
+
+- When loading config file, validate your data.
+  Piny supports a few popular data validation tools.
+
+- Store your config files in the version control system along with your app’s code.
+
+- Environment variables are set by whoever is responsible for the deployment.
+  Modern orchestration systems like `Kubernetes`_ make it easier to keep envs secure
+  (see `Kubernetes Secrets`_).
+
+
+Help
+----
+
+Explore `tests`_ directory for more examples of usage. Also take a look at the `source code`_
+and its comments. Documentation is `coming soon`_.
+
+
+Fun facts
+---------
+
+*Piny* is a recursive acronym for *Piny Is Not YAML*.
+Not only it's a library name, but also a name for YAML marked up
+with environment variables.
+
+
+Contributing
+------------
+
+See `CONTRIBUTING.rst`_.
+
+
+.. |Build| image:: https://travis-ci.org/pilosus/piny.svg?branch=master
+   :target: https://travis-ci.org/pilosus/piny
+.. |Coverage| image:: https://img.shields.io/codecov/c/github/pilosus/piny.svg
+   :alt: Codecov
+   :target: https://codecov.io/gh/pilosus/piny
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/python/black
+   :alt: Black Formatter
+.. |Versions| image:: https://img.shields.io/pypi/pyversions/piny.svg
+   :alt: PyPI - Python Version
+   :target: https://pypi.org/project/piny/
+.. |License| image:: https://img.shields.io/github/license/pilosus/piny.svg
+   :alt: MIT License
+   :target: https://github.com/pilosus/piny/blob/master/LICENSE
+.. |Logo| image:: https://github.com/pilosus/piny/blob/master/docs/piny_logo_noborder.png
+   :alt: Piny logo
+   :target: https://pypi.org/project/piny/
+
+.. _blog post: https://blog.pilosus.org/posts/2019/06/07/application-configs-files-or-environment-variables-actually-both/?utm_source=github&utm_medium=link&utm_campaign=rationale
+.. _future releases: https://github.com/pilosus/piny/issues/2
+.. _Kubernetes: https://kubernetes.io/
+.. _Kubernetes Secrets: https://kubernetes.io/docs/concepts/configuration/secret/
+.. _Pydantic: https://pydantic-docs.helpmanual.io/
+.. _Marshmallow: https://marshmallow.readthedocs.io/
+.. _Trafaret: https://trafaret.readthedocs.io/
+.. _tests: https://github.com/pilosus/piny/tree/master/tests
+.. _source code: https://github.com/pilosus/piny/tree/master/piny
+.. _coming soon: https://github.com/pilosus/piny/issues/12
+.. _CONTRIBUTING.rst: https://github.com/pilosus/piny/tree/master/CONTRIBUTING.rst
