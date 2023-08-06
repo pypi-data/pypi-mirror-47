@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: postgresql-deepgeo
+Version: 0.0.1
+Summary: Easy Deep Learning
+Home-page: https://github.com/Sotaneum/PostgreSQL-DeepGeo
+Author: Donggun LEE
+Author-email: gnyotnu39@gmail.com
+License: MIT
+Description: # Postgresql-DeepGeo
+         - Easy Deep Learning
+          - Copyright (c) 2019 [InfoLab](http://infolab.kunsan.ac.kr) ([Donggun LEE](http://duration.digimoon.net))
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
