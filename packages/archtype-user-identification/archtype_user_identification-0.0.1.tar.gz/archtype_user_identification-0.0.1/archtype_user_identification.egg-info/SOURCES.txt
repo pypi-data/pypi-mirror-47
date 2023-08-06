@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+archtype_user_identification/__init__.py
+archtype_user_identification/build_embedding.py
+archtype_user_identification/classify_user.py
+archtype_user_identification/token_extract.py
+archtype_user_identification/twitter_preprocess.py
+archtype_user_identification.egg-info/PKG-INFO
+archtype_user_identification.egg-info/SOURCES.txt
+archtype_user_identification.egg-info/dependency_links.txt
+archtype_user_identification.egg-info/not-zip-safe
+archtype_user_identification.egg-info/requires.txt
+archtype_user_identification.egg-info/top_level.txt
