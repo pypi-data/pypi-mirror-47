@@ -1,0 +1,2 @@
+include multi_purpose_arduino_controller/controll_server/templates/*
+include multi_purpose_arduino_controller/controll_server/static/*
