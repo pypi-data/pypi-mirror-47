@@ -1,0 +1,15 @@
+coreapi<3.0,>=2.3
+django<3.0,>=2.1
+djangorestframework<4.0,>=3.9
+djangorestframework-gis<1.0,>=0.14
+django-filter<3.0,>=2.1.0
+
+[dev]
+black
+coveralls
+mock
+pylint
+pytest
+pytest-cov
+sphinx
+sphinx_rtd_theme
