@@ -1,0 +1,11 @@
+hijri_converter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hijri_converter/convert.py,sha256=YJWc9hDU0dG5lOOYnNPts2M78_gJ_UR1WsJgiD2ky3I,9939
+hijri_converter/ummalqura.py,sha256=XN-69y8UsdyfrklQtEUx1PnlHNeG_kCSFn_ErqtbbZI,22094
+hijri_converter/locales/__init__.py,sha256=OVcQSbNpdUoMvlkMx76khJQfxcl7nMK9aIxl4wT_l0k,43
+hijri_converter/locales/ar.py,sha256=I_FVmmaTuyVw7qKFSD3L7urWM_4z5PFySf6skKX9tt4,932
+hijri_converter/locales/en.py,sha256=2H_JnYAieFt-icG50xDbi6_fxAIkGN_n58BMRPRfnus,800
+hijri_converter-2.1.0.dist-info/LICENSE,sha256=lMueJgKAhM-Lt8ROx1MjyzUw6aWAgnJiw5XAErqqnyY,1074
+hijri_converter-2.1.0.dist-info/METADATA,sha256=Cek1C6Ow9WWpKaei0x9VdQKMuGl9glhLPyY2chlg1u4,7042
+hijri_converter-2.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+hijri_converter-2.1.0.dist-info/top_level.txt,sha256=UyJJaJyCeLVc4VOJDgrH2PILGrZIpvbrKBXu5SGgQ0A,16
+hijri_converter-2.1.0.dist-info/RECORD,,
