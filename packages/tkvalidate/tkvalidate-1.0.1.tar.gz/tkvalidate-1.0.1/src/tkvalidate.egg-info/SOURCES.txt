@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/floatvalidate.py
+src/intvalidate.py
+src/tkvalidate.py
+src/tkvalidate.egg-info/PKG-INFO
+src/tkvalidate.egg-info/SOURCES.txt
+src/tkvalidate.egg-info/dependency_links.txt
+src/tkvalidate.egg-info/top_level.txt
