@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: thealtening
+Version: 1.1.0
+Summary: An unofficial python package for thealtening's API
+Home-page: UNKNOWN
+Author: eZeeWin#7862
+Author-email: kingoftwoaces22@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+An unofficial python package made for https://thealtening.com/
+The API supports basic and premium plans ONLY
+
+class thealtening.API()
+
+parameters:
+
+apikey - REQUIRED - thealtening's API key needed to generate/favorite/private accounts (found here: https://panel.thealtening.com/#account)
+
+password="password" - Optional - the password given to the account's login (12345-12345@alt.com:Password)
+
+verify=True - Optional - Verifies the account's API key by requesting the license from https://api.thealtening.com/v1/license, prints the error if one is given
+
+file=None - Optional - The file your accounts generated (using API.generate()) will be stored in
+
+
+license()
+
+Requests the license affiliated with the API key (defined above)
+
+Returns the account info or an error (if one is given)
+
+generate()
+
+Generates an account using thealtening's API
+
+Returns the account generated
+
+parameters:
+
+repeat=1 - Optional - How many accounts will be generated (if more than one, it returns a list)
+
+login=False - Optional - Logs you into the account to get the UUID and the full username
+
+info=False - Optional - Requests more info from thealtening's API
+
+file=None - Optional - The file your accounts will be stored in (if none, will keep the file same as the one defined in thealtening.API()
+
+
+favorite()
+
+"favorites" the last account generated in the program
+
+Returns nothing or an error (if one is given)
+
+parameter:
+
+atoken=None - Optional - "Favorites" that account instead of the last one generated 
+
+
+private()
+
+"privates" the last account generated in the program
+
+Returns nothing or an error (if one is given)
+
+parameter:
+
+atoken=None - Optional - "Privates" that account instead of the last one generated 
+
+
+alt_login()
+
+logs you into an account and returns the response from https://authserver.thealtening.com/authenticate
+
+parameter:
+
+atoken=None - Optional - Logs you into that account instead of the last one generated 
+
+
+set_API()
+
+Sets your api to the one provided
+
+parameters
+
+apikey - REQUIRED - thealtening's API key needed to generate/favorite/private accounts (found here: https://panel.thealtening.com/#account)
+
+verify=True - Optional - Verifies the account's API key by requesting the license from https://api.thealtening.com/v1/license, prints the error if one is given
+
+
+status()
+
+Returns the status of https://authserver.thealtening.com/ and https://sessionserver.thealtening.com/ 
+
+
+
+
+
+I am not affiliated with thealtening in any way.l
+
