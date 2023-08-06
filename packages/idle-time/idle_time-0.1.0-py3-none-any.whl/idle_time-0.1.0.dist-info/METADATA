@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: idle-time
+Version: 0.1.0
+Summary: Detect user idle time
+Home-page: https://github.com/escaped/idle_time
+License: BSD-3-Clause
+Author: Alexander Frenzel
+Author-email: alex@relatedworks.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: Jeepney (>=0.4.0,<0.5.0)
+Requires-Dist: pywin32 (>=224.0,<225.0); sys_platform == "windows"
+Project-URL: Documentation, https://github.com/escaped/idle_time
+Project-URL: Repository, https://github.com/escaped/idle_time
+Description-Content-Type: text/markdown
+
+# idle-time
+
+[![pypi](https://img.shields.io/pypi/v/idle-time.svg)](https://pypi.python.org/pypi/idle-time) [![Build Status](https://travis-ci.org/escaped/idle-time.png?branch=master)](http://travis-ci.org/escaped/idle-time) [![Coverage](https://coveralls.io/repos/escaped/idle-time/badge.png?branch=master)](https://coveralls.io/r/escaped/idle-time) ![python version](https://img.shields.io/pypi/pyversions/idle-time.svg) ![Project status](https://img.shields.io/pypi/status/idle-time.svg) ![license](https://img.shields.io/pypi/l/idle-time.svg)
+
+Detect user idle time or inactivity on Linux and Windows.
+
+**WARNING** This project is in an alpha status! Though there is already some code to support Windows, it has only been tested on Wayland/Gnome. 
+
+
+## Requirements
+
+* Python 3.6 or later
+
+
+## Installation
+
+Install using `pip install idle-time`
+
+
+## Usage
+
+You can use this module from the command line
+
+    python -m idle-time
+
+or access the current idle time from within your python program
+
+
+    from idle_time import IdleMonitor
+
+    monitor = IdleMonitor.get_monitor()
+    monitor.get_idle_time()
+
