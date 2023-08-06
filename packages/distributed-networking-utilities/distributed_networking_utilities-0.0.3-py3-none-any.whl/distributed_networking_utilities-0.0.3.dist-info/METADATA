@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: distributed-networking-utilities
+Version: 0.0.3
+Summary: Utilities for distributed systems construction.
+Home-page: https://github.com/roj4s/distributed_networking_utilities
+Author: Luis Rojas Aguilera
+Author-email: rojas@icomp.ufam.edu.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (==1.16.4)
+Requires-Dist: pkg-resources (==0.0.0)
+Requires-Dist: pyzmq (==18.0.1)
+Requires-Dist: zmq (==0.0.0)
+
+## Distributed computing patterns and utilities.
+
+DISCLAIMER: This project is under construction (and may always be).
+While trying to construct a distributed and
+highly scalable Face Recognition API I've been strugling with distributed
+computing's perks and endup encapsulating some of the concepts I thought might be
+usefull in other projects.
+
+
