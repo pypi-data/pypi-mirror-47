@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>AgoraRTC</title>
+        <style>
+            #remote>div{
+                height: 480px;
+                width: 640px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="remote"></div>
+        <script src="./AgoraRTCSDK-2.6.1.js"></script>
+        <script>
+            let handleFail = function(err){
+                console.log("Error : ", err);
+            };
+            let remoteContainer= document.getElementById("remote");
+            function addVideoStream(streamId){
+                let streamDiv=document.createElement("div"); 
+                streamDiv.id=streamId;                       
+                streamDiv.style.transform="rotateY(180deg)"; 
+                remoteContainer.appendChild(streamDiv);      
+            }
+            function removeVideoStream (evt) {
+                let stream = evt.stream;
+                stream.stop();
+                let remDiv=document.getElementById(stream.getId());
+                remDiv.parentNode.removeChild(remDiv);
+                console.log("Remote stream is removed " + stream.getId());
+            }
+            function bootstrap(appId,channelId){
+                let client = AgoraRTC.createClient({
+                    mode: 'live',
+                    codec: "vp8"
+                });
+                client.init(appId,() => console.log("AgoraRTC client initialized") ,handleFail);
+                client.join(null,channelId,null, (uid)=>{},handleFail);
+                client.on('stream-added', function (evt) {
+                    client.subscribe(evt.stream, handleFail);
+                });
+                client.on('stream-subscribed',function(evt){
+                    let stream = evt.stream;
+                    addVideoStream(stream.getId());
+                    stream.play(String(stream.getId()));
+                    let vid = document.getElementById('video'+String(stream.getId()))
+
+                    vid.addEventListener('playing',function(){
+                        vid.className='playing';
+                    });
+                });
+                client.on('stream-removed',removeVideoStream);
+                client.on('peer-leave',removeVideoStream);
+                return true;
+            }
+        </script>
+    </body>
+</html>
