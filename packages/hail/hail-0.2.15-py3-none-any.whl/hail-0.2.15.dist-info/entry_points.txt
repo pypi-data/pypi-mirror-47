@@ -1,0 +1,3 @@
+[console_scripts]
+hailctl = hailctl.__main__:main
+
