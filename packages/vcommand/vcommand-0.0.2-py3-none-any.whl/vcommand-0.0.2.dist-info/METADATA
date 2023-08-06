@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: vcommand
+Version: 0.0.2
+Summary: A simple framework for building voice-controlled applications.
+Home-page: https://github.com/zakarh/vcommand
+Author: Zak H.
+Author-email: zhandricken@bridgew.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Other OS
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Topic :: Home Automation
+Description-Content-Type: text/markdown
+
+**vcommand** is a lightweight framework for building voice-controlled applications. It is designed to be easy to create voice commands to automate tasks.
+
+## Installing
+
+Install and update with pip:
+
+```shell
+python -m pip install vcommand
+```
+
+## A Simple Example
+
+```python
+from vcommand import VCommand
+
+app = VCommand()
+
+@app.command("HELLO", "Say 'hello world!'")
+def hello_world():
+    app.speak("Hello world!")
+
+
+if __name__ == "__main__":
+    app.start(debug=0)
+
+```
+
+## License
+
+This project is licensed under the BSD License.
+
+
