@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: radarreader-omarimran2000
+Version: 0.0.6
+Summary: Convert .dat file into a CSV file
+Home-page: https://github.com/omarimran2000/radarreader
+Author: Omar Imran
+Author-email: omarimran@cmail.carleton.ca
+License: UNKNOWN
+Description: # radarreader
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
