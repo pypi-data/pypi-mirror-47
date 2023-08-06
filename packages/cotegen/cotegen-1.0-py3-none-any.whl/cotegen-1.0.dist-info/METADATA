@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: cotegen
+Version: 1.0
+Summary: KAIST CS453 2019 Spring Team 7 Project
+Home-page: https://github.com/kaist-cs453-2019s-team7/cs453-team-project
+Author: Team7
+Author-email: suchan.park@kaist.ac.kr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Coding Test Input Generator
+
+## Usage
+```
+python -m cotegen run random --filename <filename>
+
+python -m cotegen run mutation --filename <filename> --show-survived <true or false>
+
+python -m cotegen run kill --filename <filename> --mutation-fitness <true or false>
+```
+
