@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bitflyer-rt
+Version: 1.0
+Summary: Bitflyer Realtime Feed
+Home-page: UNKNOWN
+Author: Philippe Remy
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: websocket-client (==0.47.0)
+
+# Bitflyer Realtime Feed (python)
+
+- https://lightning.bitflyer.com/docs?lang=en
+
+
+
