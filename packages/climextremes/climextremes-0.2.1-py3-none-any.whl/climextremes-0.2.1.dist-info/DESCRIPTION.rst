@@ -1,0 +1,11 @@
+
+Functions for fitting GEV and POT (via point process fitting)
+models for extremes in climate data, providing return values, return
+probabilities, and return periods for stationary and nonstationary models.
+Also provides differences in return values and differences in log return
+probabilities for contrasts of covariate values. Functions for estimating risk
+ratios for event attribution analyses, including uncertainty. Under the hood,
+many of the functions use functions from 'extRemes', including for fitting the
+statistical models.
+
+
