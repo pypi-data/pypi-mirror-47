@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: IntugineHelper
+Version: 0.8
+Summary: A Helper for Intugine
+Home-page: https://github.com/rishabhdeepsingh/IntugineHelper
+Author: Rishabhdeep Singh
+Author-email: rishabhdeepsingh98@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: datetime
+Requires-Dist: dnspython
+Requires-Dist: pymongo
+
+## Intugien Parser 
+
+to get different database elements like `createdAt`
+
+---
+
+## Itugine Helper
+
+To get database and other trips related things
+
