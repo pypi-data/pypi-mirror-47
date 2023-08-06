@@ -1,0 +1,7 @@
+gensaschema.\_constraint module
+===============================
+
+.. automodule:: gensaschema._constraint
+   :members:
+   :undoc-members:
+   :special-members:

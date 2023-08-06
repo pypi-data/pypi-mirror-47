@@ -1,0 +1,7 @@
+gensaschema.\_config module
+===========================
+
+.. automodule:: gensaschema._config
+   :members:
+   :undoc-members:
+   :special-members:
