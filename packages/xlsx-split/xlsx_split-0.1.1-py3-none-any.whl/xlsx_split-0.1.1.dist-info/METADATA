@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: xlsx-split
+Version: 0.1.1
+Summary: Excel表格分割工具。
+Home-page: https://github.com/appstore-zencore/xlsx-split
+Author: zencore
+Author-email: dobetter@zencore.cn
+License: MIT
+Keywords: openpyxl,xlsx split,excel split
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires: click
+Requires: openpyxl
+Requires: xlsxhelper
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: openpyxl
+Requires-Dist: xlsxhelper
+
+# xlsx-split
+
+Excel表格分割工具。将excel逐行拆分，每行另存为独立文件，支持表头、表尾的复制。
+
+
+## 命令行说明
+
+```
+    E:\xlsx-split>xlsx-split --help
+    Usage: xlsx-split [OPTIONS] WORKBOOK
+
+    Options:
+    -h, --header TEXT            Header row number list.
+    -f, --footer TEXT            Footer row number list.
+    -c, --cols TEXT              Column number list.
+    -r, --rows TEXT              Content row number list.
+    -t, --test TEXT              Conditions that a good row must matchs. Format
+                                like COL_LETTER:REGEX, e.g. A:\d+ means the
+                                value of A column must be an Integer.
+    -s, --sheet TEXT             Sheet name. Default to Current Active Sheet
+    -w, --workspace TEXT         Where new files saved. Default to
+                                "{FILENAME_ROOT}"
+    -p, --filename-pattern TEXT  Default to
+                                "{FILENAME_ROOT}-{ROW}.{FILENAME_EXT}"
+    --help                       Show this message and exit.
+```
+
+## 注意事项
+
+- header/footer/rows 都遵从row列表规则。
+- cols 遵从col列表规则。
+- test 遵从test规则。
+- filename-pattern遵从FILENAME规则。
+
+
+### row列表规则
+
+- 1         == [1]
+- 1,2,3     == [1,2,3]
+- 1-3       == [1,2,3]
+- 1-3,5     == [1,2,3,5]
+- 3-        == [3,4,5,6....] # 从第3行开始，直到最后一行。
+
+### col列表规则
+
+- A         == [1]
+- A,B,C     == [1,2,3]
+- A-C       == [1,2,3]
+- A-C,E     == [1,2,3,5]
+- C-        == [3,4,5,6....] # 第C列表开始，直到最后一列。
+
+### test规则
+
+- 每个test都是由（列名+":"+正则）组成，如（A:\d+）。
+- 可以由多个test组成。
+- 多个test求“与”为最后结果。
+
+
+### FILENAME规则
+
+- filename-pattern提供字符串模板。
+- 字符串模板变量有
+    - FILEPATH          源文件全路径
+    - DIRNAME           源文件所在目录
+    - FILENAME          源文件名
+    - FILENAME_ROOT     源文件名不带后缀
+    - FILENAME_EXT      源文件后缀
+    - ROW               当前数据行索引，如1,2,3...
+    - A..Z,AA...        当前数据行指定列的单元格值（公式计算后的值）
+
+
