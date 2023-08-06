@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: boj2md
+Version: 0.0.2
+Summary: Parse Baekjoon Online Judge Problem to Markdown
+Home-page: https://github.com/kexplo/boj2md
+Author: Chanwoong Kim
+Author-email: me@chanwoong.kim
+License: UNKNOWN
+Description: # boj2md
+        
+        Parse [Baekjoon Online Judge](https://www.acmicpc.net/) Problem to Markdown
+        
+        ```bash
+        # boj2md <problem id>
+        $ boj2md 2447 > 2447.md
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
