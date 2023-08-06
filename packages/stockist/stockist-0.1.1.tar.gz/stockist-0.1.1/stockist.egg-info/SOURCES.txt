@@ -1,0 +1,12 @@
+LICENSE
+setup.cfg
+setup.py
+stockist/__init__.py
+stockist/__stockist__.py
+stockist/request.py
+stockist/response.py
+stockist.egg-info/PKG-INFO
+stockist.egg-info/SOURCES.txt
+stockist.egg-info/dependency_links.txt
+stockist.egg-info/not-zip-safe
+stockist.egg-info/top_level.txt
