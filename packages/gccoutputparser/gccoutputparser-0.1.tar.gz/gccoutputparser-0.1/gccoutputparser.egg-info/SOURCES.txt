@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+gccoutputparser/__init__.py
+gccoutputparser/gccoutputparser.py
+gccoutputparser.egg-info/PKG-INFO
+gccoutputparser.egg-info/SOURCES.txt
+gccoutputparser.egg-info/dependency_links.txt
+gccoutputparser.egg-info/not-zip-safe
+gccoutputparser.egg-info/top_level.txt
