@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: dtrees
+Version: 0.8b0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Description
+        ===========
+        
+        Decision trees library
+        Include implementation of ID3, C4.5 and
+        based on C4.5 algorithm
+Platform: UNKNOWN
