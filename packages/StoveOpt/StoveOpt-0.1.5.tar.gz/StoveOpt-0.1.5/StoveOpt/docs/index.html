@@ -1,0 +1,554 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Welcome to StoveOpt’s documentation! &#8212; StoveOpt  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-post_processor">
+<span id="welcome-to-stoveopt-s-documentation"></span><h1>Welcome to StoveOpt’s documentation!<a class="headerlink" href="#module-post_processor" title="Permalink to this headline">¶</a></h1>
+<p>Created on Sun May 19 18:18:31 2019</p>
+<p>&#64;author: Lee</p>
+<dl class="function">
+<dt id="post_processor.average_pot_temperature">
+<code class="descclassname">post_processor.</code><code class="descname">average_pot_temperature</code><span class="sig-paren">(</span><em>list_temps</em>, <em>length_case_list</em>, <em>list_velocities</em>, <em>case_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#average_pot_temperature"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.average_pot_temperature" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute average temperatures of each of the case temperature arrays previously extracted with data_import()</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>dir_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of directory titles in the ‘foamfiles’ directory that begin with string ‘<a href="#id1"><span class="problematic" id="id2">case_</span></a>’</li>
+<li><strong>case_list</strong> (<em>dir</em>) – Dictionary of case file paths. Appended iteratively with dir_list entries.</li>
+<li><strong>length_case_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of excecuted case files existing in foamfiles directory</li>
+<li><strong>list_temps</strong> (<em>array</em>) – Populated with results from probing the CFD simulation around entire pot geometry</li>
+<li><strong>list_velocities</strong> (<em>array</em>) – Populated with velocity values written to “details” file in individual case files</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Numpy array where column 1 is case title (str), second column is velocites for respective case, and third column is computed average pot temperature for specific case</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">new_recarr (array)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="post_processor.compute_neighboring_velocities">
+<code class="descclassname">post_processor.</code><code class="descname">compute_neighboring_velocities</code><span class="sig-paren">(</span><em>array_sorted</em>, <em>T_max</em>, <em>velocity_max</em>, <em>T_max_index</em>, <em>length_case_list</em>, <em>velocity_column</em>, <em>temperature_column</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#compute_neighboring_velocities"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.compute_neighboring_velocities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Use the maximum data solved for previously to compute 4 new neighboring velocities</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum average pot temperature of all analyzed cases within foamfiles directory</li>
+<li><strong>velocity_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Secondary air flow velocity associated with maximum average pot temperature</li>
+<li><strong>T_max_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Index associated with maximum temperature.</li>
+<li><strong>velocity_column</strong> (<em>array</em>) – Column array with case velocities</li>
+<li><strong>temperature_column</strong> (<em>array</em>) – Column array with average temperatures</li>
+<li><strong>array_sorted</strong> (<em>array</em>) – Numpy array of sorted velocities (column 1), and average pot temperatures (column 2)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Numpy array listing four velocities to be added to the case queue</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">v_cases_total_vector (array)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="post_processor.data_import">
+<code class="descclassname">post_processor.</code><code class="descname">data_import</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#data_import"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.data_import" title="Permalink to this definition">¶</a></dt>
+<dd><p>input a list of filenames to be pulled, put out an array of temperature data. search the foamfiles directory for fnames that start with <a href="#id3"><span class="problematic" id="id4">case_</span></a> and tally the number for looping through the file. loop through each and pull data from the files (3) convert to numpy arrays (4) store.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>None</strong> – </td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Dictionary of directory titles in the ‘foamfiles’ directory that begin with string ‘<a href="#id5"><span class="problematic" id="id6">case_</span></a>’<p>case_list (dir): Dictionary of case file paths. Appended iteratively with dir_list entries.</p>
+<p>length_case_list (int): Number of excecuted case files existing in foamfiles directory</p>
+<p>list_temps (array): Populated with results from probing the CFD simulation around entire pot geometry</p>
+<p>list_velocities (array): Populated with velocity values written to “details” file in individual case files</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">dir_list (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="post_processor.evaluate_optimal">
+<code class="descclassname">post_processor.</code><code class="descname">evaluate_optimal</code><span class="sig-paren">(</span><em>array_sorted</em>, <em>length_case_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#evaluate_optimal"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.evaluate_optimal" title="Permalink to this definition">¶</a></dt>
+<dd><p>The function evaluates the temperature and velocity data, and uses the information to identify where the optimals live within the range analayzed</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>array_sorted</strong> (<em>array</em>) – Numpy array of sorted velocities (column 1), and average pot temperatures (column 2)</li>
+<li><strong>length_case_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of excecuted case files existing in foamfiles directory</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><p>Maximum average pot temperature of all analyzed cases within foamfiles directory</p>
+<p>velocity_max (float): Secondary air flow velocity associated with maximum average pot temperature</p>
+<p>T_max_index (int): Index associated with maximum temperature.</p>
+<p>velocity_column (array): Column array with case velocities</p>
+<p>temperature_column (array): Column array with average temperatures</p>
+</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">T_max (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a>)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="post_processor.parse_and_sort_array">
+<code class="descclassname">post_processor.</code><code class="descname">parse_and_sort_array</code><span class="sig-paren">(</span><em>new_recarr</em>, <em>length_case_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#parse_and_sort_array"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.parse_and_sort_array" title="Permalink to this definition">¶</a></dt>
+<dd><p>Sort new_recarr array based on velocities, return the array with a new name</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>new_recarr</strong> (<em>array</em>) – Numpy array where column 1 is case title (str), second column is velocites for respective case, and third column is computed average pot temperature for specific case</li>
+<li><strong>length_case_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of excecuted case files existing in foamfiles directory</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Numpy array. Same data as new_recarr, but sorted based on velocities (least to greatest along column 2)</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last">array_sorted (array)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="post_processor.plot_variables">
+<code class="descclassname">post_processor.</code><code class="descname">plot_variables</code><span class="sig-paren">(</span><em>array_sorted</em>, <em>T_max</em>, <em>velocity_max</em>, <em>T_max_index</em>, <em>velocity_column</em>, <em>temperature_column</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/post_processor.html#plot_variables"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#post_processor.plot_variables" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>T_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum average pot temperature of all analyzed cases within foamfiles directory</li>
+<li><strong>velocity_max</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Secondary air flow velocity associated with maximum average pot temperature</li>
+<li><strong>T_max_index</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Index associated with maximum temperature.</li>
+<li><strong>velocity_column</strong> (<em>array</em>) – Column array with case velocities</li>
+<li><strong>temperature_column</strong> (<em>array</em>) – Column array with average temperatures</li>
+<li><strong>array_sorted</strong> (<em>array</em>) – Numpy array of sorted velocities (column 1), and average pot temperatures (column 2)</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<span class="target" id="module-new_case_setup"></span><p>Created on Thu May 23 11:06:19 2019</p>
+<p>&#64;author: Lee</p>
+<dl class="function">
+<dt id="new_case_setup.add_templates">
+<code class="descclassname">new_case_setup.</code><code class="descname">add_templates</code><span class="sig-paren">(</span><em>full_case_paths</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/new_case_setup.html#add_templates"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#new_case_setup.add_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the template files to the new case directories</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>full_case_paths</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of full paths for new cases to be added. Compatible with windows os.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of paths leading to initial condition files for each newly added case<p>constant_file_paths (dict): List of paths leading to solver files for each newly added case</p>
+<p>system_file_paths (dict): List of paths leading to mesh, schemes, time step and outfil writing files for each newly added case</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">zero_file_paths (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="new_case_setup.create_case_directories">
+<code class="descclassname">new_case_setup.</code><code class="descname">create_case_directories</code><span class="sig-paren">(</span><em>case_name_list</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/new_case_setup.html#create_case_directories"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#new_case_setup.create_case_directories" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create the directories for next batch of simulations within the foamfiles dir</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>case_name_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of strings each corresponding to a new case file. Named based on velocity values converted to string.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of full paths for new cases to be added. Compatible with windows os.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">full_case_paths (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="new_case_setup.define_new_case_names">
+<code class="descclassname">new_case_setup.</code><code class="descname">define_new_case_names</code><span class="sig-paren">(</span><em>v_cases_total_vector</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/new_case_setup.html#define_new_case_names"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#new_case_setup.define_new_case_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create new <a href="#id7"><span class="problematic" id="id8">case_</span></a> folders in the foamfiles folder. Named based on velocities computed in post_processor</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>v_cases_total_vector</strong> (<em>array</em>) – Numpy array listing four velocities to be added to the case queue</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">List of strings each corresponding to a new case file. Named based on velocity values converted to string.<p>v_cases_total_vector_string (dict): Velocities converted to string dtype</p>
+<p>v_boundary_strings (dict): Velocty data converted to string compatible with boundary condition file</p>
+</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">case_name_list (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="new_case_setup.edit_details_files">
+<code class="descclassname">new_case_setup.</code><code class="descname">edit_details_files</code><span class="sig-paren">(</span><em>zero_file_paths</em>, <em>v_boundary_strings</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/new_case_setup.html#edit_details_files"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#new_case_setup.edit_details_files" title="Permalink to this definition">¶</a></dt>
+<dd><p>Open and edit the newly created 0 case files. Edit the empty details file with the velocity strings</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
+<li><strong>zero_file_paths</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of paths leading to initial condition files for each newly added case</li>
+<li><strong>v_boundary_strings</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Velocity strings to be added to details files for respective case</li>
+</ul>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first last">None</p>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="new_case_setup.edit_iterative_boundary_conditions">
+<code class="descclassname">new_case_setup.</code><code class="descname">edit_iterative_boundary_conditions</code><span class="sig-paren">(</span><em>zero_file_paths</em>, <em>constant_file_paths</em>, <em>system_file_paths</em>, <em>v_boundary_strings</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/new_case_setup.html#edit_iterative_boundary_conditions"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#new_case_setup.edit_iterative_boundary_conditions" title="Permalink to this definition">¶</a></dt>
+<dd><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>zero_file_paths</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of paths leading to initial condition files for each newly added case</li>
+<li><strong>v_boundary_strings</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Velocity strings to be added to details files for respective case</li>
+<li><strong>constant_file_paths</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of paths leading to solver files for each newly added case</li>
+<li><strong>system_file_paths</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – List of paths leading to mesh, schemes, time step and outfil writing files for each newly added case</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<span class="target" id="module-import_geometry"></span><p>Created on Mon Apr 22 15:39:27 2019</p>
+<p>&#64;author: Lee</p>
+<dl class="function">
+<dt id="import_geometry.correct_arguments">
+<code class="descclassname">import_geometry.</code><code class="descname">correct_arguments</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#correct_arguments"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.correct_arguments" title="Permalink to this definition">¶</a></dt>
+<dd><p>Goal is to convert the geometry file argument to working syntax: Single quote, back slash</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>args</strong> (<em>dictionary</em>) – Object contains the contents of the input file specified by the user</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.create_additional_front_points">
+<code class="descclassname">import_geometry.</code><code class="descname">create_additional_front_points</code><span class="sig-paren">(</span><em>pt6x</em>, <em>pt7x</em>, <em>pt14x</em>, <em>pt9z</em>, <em>pt15x</em>, <em>pt8z</em>, <em>pt14z</em>, <em>pt9x</em>, <em>pt8x</em>, <em>pt15z</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#create_additional_front_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.create_additional_front_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create pot surface points to create faces–Naming them 21(L)-22(R) to not collide with current fuel vert numbers</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – cookstove geometry</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">series of points created as the back plane of the stove. Used to create a 2D geometry</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">points (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.create_back_points">
+<code class="descclassname">import_geometry.</code><code class="descname">create_back_points</code><span class="sig-paren">(</span><em>shift</em>, <em>pt1xstr</em>, <em>pt1zstr</em>, <em>pt1ystr</em>, <em>pt2xstr</em>, <em>pt2zstr</em>, <em>pt2ystr</em>, <em>pt3xstr</em>, <em>pt3zstr</em>, <em>pt3ystr</em>, <em>pt4xstr</em>, <em>pt4zstr</em>, <em>pt4ystr</em>, <em>pt5xstr</em>, <em>pt5zstr</em>, <em>pt5ystr</em>, <em>pt6xstr</em>, <em>pt6zstr</em>, <em>pt6ystr</em>, <em>pt7xstr</em>, <em>pt7zstr</em>, <em>pt7ystr</em>, <em>pt8xstr</em>, <em>pt8zstr</em>, <em>pt8ystr</em>, <em>pt9xstr</em>, <em>pt9zstr</em>, <em>pt9ystr</em>, <em>pt10xstr</em>, <em>pt10zstr</em>, <em>pt10ystr</em>, <em>pt11xstr</em>, <em>pt11zstr</em>, <em>pt11ystr</em>, <em>pt12xstr</em>, <em>pt12zstr</em>, <em>pt12ystr</em>, <em>pt13xstr</em>, <em>pt13zstr</em>, <em>pt13ystr</em>, <em>pt14xstr</em>, <em>pt14zstr</em>, <em>pt14ystr</em>, <em>pt15xstr</em>, <em>pt15zstr</em>, <em>pt15ystr</em>, <em>pt0xstr</em>, <em>pt0zstr</em>, <em>pt0ystr</em>, <em>pt16xstr</em>, <em>pt16zstr</em>, <em>pt16ystr</em>, <em>pt17xstr</em>, <em>pt17zstr</em>, <em>pt17ystr</em>, <em>pt18xstr</em>, <em>pt18zstr</em>, <em>pt18ystr</em>, <em>pt19xstr</em>, <em>pt19zstr</em>, <em>pt19ystr</em>, <em>pt20xstr</em>, <em>pt20zstr</em>, <em>pt20ystr</em>, <em>pt21xstr</em>, <em>pt21zstr</em>, <em>pt21ystr</em>, <em>pt44xstr</em>, <em>pt44zstr</em>, <em>pt44ystr</em>, <em>pt46xstr</em>, <em>pt46zstr</em>, <em>pt46ystr</em>, <em>pt48xstr</em>, <em>pt48zstr</em>, <em>pt48ystr</em>, <em>pt50xstr</em>, <em>pt50ystr</em>, <em>pt50zstr</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#create_back_points"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.create_back_points" title="Permalink to this definition">¶</a></dt>
+<dd><p>Back coordinates of the cookstove–simply shifting the x2 (y) coordinate back by a value shift</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>back points</strong> (<em>concatenated</em>) – The x,y,z values of back points concatenated into single vertice location</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.create_fuel_blocks">
+<code class="descclassname">import_geometry.</code><code class="descname">create_fuel_blocks</code><span class="sig-paren">(</span><em>pt0x</em>, <em>pt1x</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#create_fuel_blocks"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.create_fuel_blocks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Creates geometry for the fuel block with the following assumptions:  Rectangular fuel source, Centered along the vertical axis of the combustion chamber, Width of fuel block is half the diameter of the combustion chamber, Assumed fuel height of 3 inches (0.0762 m), bottom of the fuel is 3 inches off the ground.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
+<li><strong>pt0x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – origin x-coordinate of cookstove geometry</li>
+<li><strong>pt1x</strong> – Bottom east vertice of cookstove combustion chamber</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.extract_geometry">
+<code class="descclassname">import_geometry.</code><code class="descname">extract_geometry</code><span class="sig-paren">(</span><em>file_path</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#extract_geometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.extract_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pulling Data from excel workbook</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>file_path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – full file path for input stove geometry defined by user in input yaml file.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A series of points pulled from the user defined geometry</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">pt#i (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.locate_geometry">
+<code class="descclassname">import_geometry.</code><code class="descname">locate_geometry</code><span class="sig-paren">(</span><em>args</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#locate_geometry"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.locate_geometry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pull file path and name from the input file (command line argument)</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>args</strong> (<em>dictionary</em>) – Object contains the contents of the input file specified by the user</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">full file path for input stove geometry defined by user in input yaml file.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">file_path (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)">str</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.points_to_strings">
+<code class="descclassname">import_geometry.</code><code class="descname">points_to_strings</code><span class="sig-paren">(</span><em>pt1x</em>, <em>pt1z</em>, <em>pt1y</em>, <em>pt2x</em>, <em>pt2z</em>, <em>pt2y</em>, <em>pt3x</em>, <em>pt3z</em>, <em>pt3y</em>, <em>pt4x</em>, <em>pt4z</em>, <em>pt4y</em>, <em>pt5x</em>, <em>pt5z</em>, <em>pt5y</em>, <em>pt6x</em>, <em>pt6z</em>, <em>pt6y</em>, <em>pt7x</em>, <em>pt7z</em>, <em>pt7y</em>, <em>pt8x</em>, <em>pt8z</em>, <em>pt8y</em>, <em>pt9x</em>, <em>pt9z</em>, <em>pt9y</em>, <em>pt10x</em>, <em>pt10z</em>, <em>pt10y</em>, <em>pt11x</em>, <em>pt11z</em>, <em>pt11y</em>, <em>pt12x</em>, <em>pt12z</em>, <em>pt12y</em>, <em>pt13x</em>, <em>pt13z</em>, <em>pt13y</em>, <em>pt14x</em>, <em>pt14z</em>, <em>pt14y</em>, <em>pt15x</em>, <em>pt15z</em>, <em>pt15y</em>, <em>pt0x</em>, <em>pt0z</em>, <em>pt0y</em>, <em>pt17x</em>, <em>pt18x</em>, <em>pt19x</em>, <em>pt16x</em>, <em>pt17z</em>, <em>pt18z</em>, <em>pt19z</em>, <em>pt16z</em>, <em>pt17y</em>, <em>pt18y</em>, <em>pt19y</em>, <em>pt16y</em>, <em>pt20x</em>, <em>pt20z</em>, <em>pt20y</em>, <em>pt21x</em>, <em>pt21z</em>, <em>pt21y</em>, <em>pt44x</em>, <em>pt44z</em>, <em>pt44y</em>, <em>pt46x</em>, <em>pt46z</em>, <em>pt46y</em>, <em>pt48x</em>, <em>pt48y</em>, <em>pt48z</em>, <em>pt50x</em>, <em>pt50y</em>, <em>pt50z</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#points_to_strings"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.points_to_strings" title="Permalink to this definition">¶</a></dt>
+<dd><p>Take in the raw vertice information from spreadsheet, and format the floats into strings-&gt;For front vertices</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – all front coordinates</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Coordinates converted to strings compatible with openfoam convention (length 5).</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">points as strings (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)">str</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="function">
+<dt id="import_geometry.vertice_concatenate">
+<code class="descclassname">import_geometry.</code><code class="descname">vertice_concatenate</code><span class="sig-paren">(</span><em>pt1xstr</em>, <em>pt1zstr</em>, <em>pt1ystr</em>, <em>pt2xstr</em>, <em>pt2zstr</em>, <em>pt2ystr</em>, <em>pt3xstr</em>, <em>pt3zstr</em>, <em>pt3ystr</em>, <em>pt4xstr</em>, <em>pt4zstr</em>, <em>pt4ystr</em>, <em>pt5xstr</em>, <em>pt5zstr</em>, <em>pt5ystr</em>, <em>pt6xstr</em>, <em>pt6zstr</em>, <em>pt6ystr</em>, <em>pt7xstr</em>, <em>pt7zstr</em>, <em>pt7ystr</em>, <em>pt8xstr</em>, <em>pt8zstr</em>, <em>pt8ystr</em>, <em>pt9xstr</em>, <em>pt9zstr</em>, <em>pt9ystr</em>, <em>pt10xstr</em>, <em>pt10zstr</em>, <em>pt10ystr</em>, <em>pt11xstr</em>, <em>pt11zstr</em>, <em>pt11ystr</em>, <em>pt12xstr</em>, <em>pt12zstr</em>, <em>pt12ystr</em>, <em>pt13xstr</em>, <em>pt13zstr</em>, <em>pt13ystr</em>, <em>pt14xstr</em>, <em>pt14zstr</em>, <em>pt14ystr</em>, <em>pt15xstr</em>, <em>pt15zstr</em>, <em>pt15ystr</em>, <em>pt0xstr</em>, <em>pt0zstr</em>, <em>pt0ystr</em>, <em>pt16xstr</em>, <em>pt16zstr</em>, <em>pt16ystr</em>, <em>pt17xstr</em>, <em>pt17zstr</em>, <em>pt17ystr</em>, <em>pt18xstr</em>, <em>pt18zstr</em>, <em>pt18ystr</em>, <em>pt19xstr</em>, <em>pt19zstr</em>, <em>pt19ystr</em>, <em>pt20xstr</em>, <em>pt20zstr</em>, <em>pt20ystr</em>, <em>pt21xstr</em>, <em>pt21zstr</em>, <em>pt21ystr</em>, <em>pt44xstr</em>, <em>pt44zstr</em>, <em>pt44ystr</em>, <em>pt46xstr</em>, <em>pt46zstr</em>, <em>pt46ystr</em>, <em>pt48xstr</em>, <em>pt48zstr</em>, <em>pt48ystr</em>, <em>pt50xstr</em>, <em>pt50zstr</em>, <em>pt50ystr</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/import_geometry.html#vertice_concatenate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#import_geometry.vertice_concatenate" title="Permalink to this definition">¶</a></dt>
+<dd><p>Convert the individual vertex strings and concatenate to the format required for blockmeshdict file</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>as strings</strong> (<em>points</em>) – Coordinates converted to strings compatible with openfoam convention (length 5).</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The x,y,z values of front points concatenated into single vertice location</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body">concatenated front points (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)">str</a>)</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<span class="target" id="module-create_blockmeshfile"></span><p>Created on Thu Apr 25 11:26:04 2019</p>
+<p>&#64;author: Lee</p>
+<dl class="function">
+<dt id="create_blockmeshfile.edit_blockmesh_template">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">edit_blockmesh_template</code><span class="sig-paren">(</span><em>saveName</em>, <em>pt0str</em>, <em>pt1str</em>, <em>pt2str</em>, <em>pt3str</em>, <em>pt4str</em>, <em>pt5str</em>, <em>pt6str</em>, <em>pt7str</em>, <em>pt8str</em>, <em>pt9str</em>, <em>pt10str</em>, <em>pt11str</em>, <em>pt12str</em>, <em>pt13str</em>, <em>pt14str</em>, <em>pt15str</em>, <em>pt16str</em>, <em>pt17str</em>, <em>pt18str</em>, <em>pt19str</em>, <em>pt20str</em>, <em>pt21str</em>, <em>pt22str</em>, <em>pt23str</em>, <em>pt24str</em>, <em>pt25str</em>, <em>pt26str</em>, <em>pt27str</em>, <em>pt28str</em>, <em>pt29str</em>, <em>pt30str</em>, <em>pt31str</em>, <em>pt32str</em>, <em>pt33str</em>, <em>pt34str</em>, <em>pt35str</em>, <em>pt36str</em>, <em>pt37str</em>, <em>pt38str</em>, <em>pt39str</em>, <em>pt40str</em>, <em>pt41str</em>, <em>pt42str</em>, <em>pt43str</em>, <em>pt44str</em>, <em>pt45str</em>, <em>pt46str</em>, <em>pt47str</em>, <em>pt48str</em>, <em>pt49str</em>, <em>pt50str</em>, <em>pt51str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#edit_blockmesh_template"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.edit_blockmesh_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>open the blockmeshtemplate for edit, locate the positions needed, and overwrite the vertice lines</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.locate_blockmesh_template">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">locate_blockmesh_template</code><span class="sig-paren">(</span><em>block_mesh_template_fname</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#locate_blockmesh_template"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.locate_blockmesh_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>the function uses the StoveOpt path and blockmesh template name to open the
+template version of the blockMeshDict file for editing in the system folder</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.modify_controlDict">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">modify_controlDict</code><span class="sig-paren">(</span><em>pt10str</em>, <em>pt11str</em>, <em>pt9str</em>, <em>pt48str</em>, <em>pt44str</em>, <em>pt14str</em>, <em>pt20str</em>, <em>pt6str</em>, <em>pt21str</em>, <em>pt7str</em>, <em>pt46str</em>, <em>pt15str</em>, <em>pt8str</em>, <em>pt50str</em>, <em>pt12str</em>, <em>pt13str</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#modify_controlDict"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.modify_controlDict" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add the points to the controlDict file for the temperature data, and emissions data</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.move_bmesh_to_templatecase">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">move_bmesh_to_templatecase</code><span class="sig-paren">(</span><em>saveName</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#move_bmesh_to_templatecase"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.move_bmesh_to_templatecase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Copy the previously edited blockmesh file to the template case system folder</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.rename_blockmesh">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">rename_blockmesh</code><span class="sig-paren">(</span><em>saveName</em>, <em>blockmesh_template</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#rename_blockmesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.rename_blockmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Moving the file and renaming–Need to add an existence check</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.replace_template">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">replace_template</code><span class="sig-paren">(</span><em>path_StoveOpt_master</em>, <em>block_mesh_template_fname</em>, <em>dir_steps</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#replace_template"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.replace_template" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move the template from the backup folder into the system folder for future edits
+Does not excecute if the template file is already there</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="create_blockmeshfile.update_blockmesh">
+<code class="descclassname">create_blockmeshfile.</code><code class="descname">update_blockmesh</code><span class="sig-paren">(</span><em>blockmesh_template</em>, <em>system_folder</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/create_blockmeshfile.html#update_blockmesh"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#create_blockmeshfile.update_blockmesh" title="Permalink to this definition">¶</a></dt>
+<dd><p>Used to create (but not assign) a new name for the blockmesh file saving name to the blockMeshDict required for running–in the system folder</p>
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">StoveOpt</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2019, Liam J. Cassidy.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
