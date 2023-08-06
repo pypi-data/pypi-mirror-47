@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+workaholic/__init__.py
+workaholic.egg-info/PKG-INFO
+workaholic.egg-info/SOURCES.txt
+workaholic.egg-info/dependency_links.txt
+workaholic.egg-info/not-zip-safe
+workaholic.egg-info/top_level.txt
