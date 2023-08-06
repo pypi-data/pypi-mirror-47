@@ -1,0 +1,10 @@
+fraise/__init__.py,sha256=Pq0oDMxTKvLwbd5ZMR1Am-rK7Y9FAXL3SSsCDg5NZvo,65
+fraise/application.py,sha256=AIKT5LM_gegqHlweI9itG-0bWuPziIADSx-Lysgv41w,1332
+fraise/phrases.py,sha256=zZPxHfhZMgj7_bVPBcWjzgE8UGGPhNdLX5YvcSi07sc,481
+fraise/words.py,sha256=Ey07kQCnvajIqQN-wZoktg6V2NI_W5_M9cFwJe3zt04,949779
+fraise-1.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fraise-1.5.0.dist-info/METADATA,sha256=7CZqPlzuXFW2CuKOYKM5W9-GnLmP31wn6ZrlabXqRfQ,2472
+fraise-1.5.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+fraise-1.5.0.dist-info/entry_points.txt,sha256=dPL4MEOhYH9qFjh2Z7-NHlPJaOtsTWEHlmPHVZO-YKg,51
+fraise-1.5.0.dist-info/top_level.txt,sha256=UemZdc7mQEW4UQ248J8T1LLEZT0siSKeeEfCss4yyOw,7
+fraise-1.5.0.dist-info/RECORD,,
