@@ -1,0 +1,8 @@
+README.md
+setup.py
+typed_result.egg-info/PKG-INFO
+typed_result.egg-info/SOURCES.txt
+typed_result.egg-info/dependency_links.txt
+typed_result.egg-info/top_level.txt
+typedresult/__init__.py
+typedresult/result.py
