@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: index.py
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/abersheeran/index.py
+Author: Aber Sheeran
+Author-email: abersheeran@qq.com
+License: Apache 2.0
+Description: 
+        # index.py
+        
+        Although I have never used PHP, I like the fact that a file is a URI design.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
