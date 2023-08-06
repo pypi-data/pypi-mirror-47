@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+dev_requirements.txt
+setup.cfg
+setup.py
+shellquery.py
+ShellQuery.egg-info/PKG-INFO
+ShellQuery.egg-info/SOURCES.txt
+ShellQuery.egg-info/dependency_links.txt
+ShellQuery.egg-info/entry_points.txt
+ShellQuery.egg-info/top_level.txt
