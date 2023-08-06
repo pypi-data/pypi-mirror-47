@@ -1,0 +1,9 @@
+densenet/__init__.py,sha256=l4X5ZIVibiph5jlPWjwnzgmsdCb9jgJFysorfh4xqjQ,37
+densenet/densenet.py,sha256=FP0YqV-WGol2xwNuuplxH76nV_VT8RFi_JTlEN8B-QQ,4890
+densenet-model/__init__.py,sha256=l4X5ZIVibiph5jlPWjwnzgmsdCb9jgJFysorfh4xqjQ,37
+densenet-model/densenet.py,sha256=FP0YqV-WGol2xwNuuplxH76nV_VT8RFi_JTlEN8B-QQ,4890
+densenet-0.1.dist-info/LICENSE,sha256=fI2NqbEd-oSNaAMxCO5VHD9bzZTBKHyY8YA4myHIEYA,1068
+densenet-0.1.dist-info/METADATA,sha256=FmoCyd1eM9kIEZzNpXRjTLq2zLR9sMM_3RfMJCYyt3s,1199
+densenet-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+densenet-0.1.dist-info/top_level.txt,sha256=pGnYSwfxD2nDNK1cB84rS9ZY5Kgt2zlIL0BUKpG6nOY,9
+densenet-0.1.dist-info/RECORD,,
