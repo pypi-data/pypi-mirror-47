@@ -1,0 +1,12 @@
+README.md
+setup.py
+include_pandoc/__init__.py
+include_pandoc/addargs.py
+include_pandoc/createaddargs.py
+include_pandoc/include-pandoc
+include_pandoc/process_includes.py
+include_pandoc.egg-info/PKG-INFO
+include_pandoc.egg-info/SOURCES.txt
+include_pandoc.egg-info/dependency_links.txt
+include_pandoc.egg-info/requires.txt
+include_pandoc.egg-info/top_level.txt
