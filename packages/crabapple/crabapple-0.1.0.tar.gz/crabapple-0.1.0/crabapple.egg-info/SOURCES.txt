@@ -1,0 +1,8 @@
+README.md
+setup.py
+crabapple/__init__.py
+crabapple/crabapplejson.py
+crabapple.egg-info/PKG-INFO
+crabapple.egg-info/SOURCES.txt
+crabapple.egg-info/dependency_links.txt
+crabapple.egg-info/top_level.txt
