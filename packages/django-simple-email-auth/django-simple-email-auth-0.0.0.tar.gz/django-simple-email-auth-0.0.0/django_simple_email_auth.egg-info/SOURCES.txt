@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+django_simple_email_auth.egg-info/PKG-INFO
+django_simple_email_auth.egg-info/SOURCES.txt
+django_simple_email_auth.egg-info/dependency_links.txt
+django_simple_email_auth.egg-info/requires.txt
+django_simple_email_auth.egg-info/top_level.txt
+email_auth/__init__.py
+email_auth/apps.py
