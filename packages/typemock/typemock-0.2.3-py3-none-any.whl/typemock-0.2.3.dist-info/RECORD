@@ -1,0 +1,17 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_match.py,sha256=EZP8qwBNwMhfCNhL-diM9Z4svRZTK3BsP6Ty0B_7UbI,2039
+tests/test_safety.py,sha256=JBCTJbgwfOA1fPxfWb4DU9tVLb5mcZfY_D2go7faCJs,5747
+tests/test_tmock.py,sha256=m8fNZJ2SseBbIsxRKddu47tQB30IOiNMmClRaQ99Igg,5361
+tests/test_verify.py,sha256=XPFSCpA7ygxJi6q_AvoSIpgKwxWss1nR29TJiu6C0AY,2238
+typemock/__init__.py,sha256=Mz1zsqAkhePGVMf-suW9D08zEhwgG05ZZEr4lvqjLBw,75
+typemock/_mock.py,sha256=lI0zEIGHYC1piBwEQ6_RO39lCd44X7JK-QY1_P_yBsk,10575
+typemock/_safety.py,sha256=VAay3T5vVsrqeR8Sm12wOqWz9sREFUV1WkwxDsb_fm4,2084
+typemock/_utils.py,sha256=iYplzDRJFYT5i_2Sa4NFU-_jdjoUT2JMclu3rvQPpzo,1149
+typemock/_verify.py,sha256=kLoONS4XLuxlm52p-0Nu8zHLsy0Wa8JjHPKjMh5sqec,925
+typemock/api.py,sha256=86xdhixc__LGm0J1JM3PxgilG9Rl59AXuhf8DioamDk,2146
+typemock/match.py,sha256=at7QmqFPt61-Zw7lqpfqieHwuNOmsciVGYanGCpE-Jo,580
+typemock-0.2.3.dist-info/LICENSE,sha256=71QSB7gvKF6tN6Y5Ah8cLFiLV1_f1SpCpQqFj_EWCDw,1074
+typemock-0.2.3.dist-info/METADATA,sha256=XdJWHiwiC2dqExzJKsC91udkAhmMJkpMPpVaZu6BxNk,3484
+typemock-0.2.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+typemock-0.2.3.dist-info/top_level.txt,sha256=3Q0e2UzCmifiMY_SXPh16ciUEzmnYJRx_LxKJt6b5V4,15
+typemock-0.2.3.dist-info/RECORD,,
