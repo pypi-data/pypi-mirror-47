@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: waas-client
+Version: 0.0.1
+Summary: WAAS Client
+Home-page: https://github.com/deepdialog/wechaty-as-a-service
+Author: deepdialog
+Author-email: thebotbot@sina.com
+License: Private
+Keywords: Wechaty
+Platform: any
+Requires-Dist: requests
+
+Wechaty-As-A-Service Client
+
+
