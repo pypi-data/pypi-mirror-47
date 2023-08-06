@@ -1,0 +1,53 @@
+Metadata-Version: 1.1
+Name: symbol_please
+Version: 1.0.0
+Summary: Symbol Please is a visual log parsing helper for Project 1999
+Home-page: https://gitlab.com/armills/symbol_please
+Author: Adam Mills
+Author-email: adam@armills.info
+License: Apache Software License 2.0
+Description: =============
+        Symbol Please
+        =============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/symbol_please.svg
+                :target: https://pypi.python.org/pypi/symbol_please
+        
+        
+        Symbol Please is a visual log parsing helper for Project 1999
+        
+        
+        Dependencies
+        ------------
+        
+        * GTK+3
+        
+        Features
+        --------
+        
+        * Built-in buff timers
+        
+        Changelog
+        ---------
+        
+        1.0.0 (June 13, 2019)
+        ~~~~~~~~~~~~~~~~~~~~~
+        - Initial release.
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+Keywords: symbol_please
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
