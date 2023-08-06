@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: SwanOS
+Version: 0.1.5
+Summary: A Very Simple Python OS
+Home-page: UNKNOWN
+Author-email: forsbergw82@gmail.com
+License: UNKNOWN
+Description: # Purpose
+        
+        This Project doesn't really have a purpose It's Just a Very Simple OS.
+        
+        # Config
+        
+        Open os.py and change the users/passwords and you can add apps via admin.py and user.py
+        
+        # Liscence
+        MIT License
+        
+        Copyright (c) 2019 UNREGISTERED COMPANY Codezings
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
