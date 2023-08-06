@@ -1,0 +1,3 @@
+mapnotes
+wm_extra
+gazetteer
