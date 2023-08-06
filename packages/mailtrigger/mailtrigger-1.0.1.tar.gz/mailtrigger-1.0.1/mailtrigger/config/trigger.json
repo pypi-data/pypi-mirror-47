@@ -1,0 +1,14 @@
+{
+  "gerrit": {
+    "host": "localhost",
+    "port": 8080
+  },
+  "jenkins": {
+    "host": "localhost",
+    "port": 8081
+  },
+  "jira": {
+    "host": "localhost",
+    "port": 8082
+  }
+}
