@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cosmospy
+Version: 0.0.0
+Summary: Cosmos utilities
+Home-page: https://github.com/hukkinj1/cosmospy
+Author: hukkinj1
+Author-email: hukkinj1@users.noreply.github.com
+License: UNKNOWN
+Description: # cosmospy
+        
+        <!--- Don't edit the version line below manually. Let bump2version do it for you. -->
+        > Version 0.0.0
+        
+Platform: UNKNOWN
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
