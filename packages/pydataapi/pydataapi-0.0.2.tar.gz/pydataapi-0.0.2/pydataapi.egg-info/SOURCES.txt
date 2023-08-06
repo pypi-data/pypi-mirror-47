@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+pydataapi/__init__.py
+pydataapi/pydataapi.py
+pydataapi.egg-info/PKG-INFO
+pydataapi.egg-info/SOURCES.txt
+pydataapi.egg-info/dependency_links.txt
+pydataapi.egg-info/not-zip-safe
+pydataapi.egg-info/requires.txt
+pydataapi.egg-info/top_level.txt
