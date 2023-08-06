@@ -1,0 +1,9 @@
+README.md
+setup.py
+binhoshell.egg-info/PKG-INFO
+binhoshell.egg-info/SOURCES.txt
+binhoshell.egg-info/dependency_links.txt
+binhoshell.egg-info/not-zip-safe
+binhoshell.egg-info/top_level.txt
+shellpy/__init__.py
+shellpy/shell.py
