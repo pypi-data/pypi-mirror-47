@@ -1,0 +1,5 @@
+[console_scripts]
+eloh-recv = eloh.client:recv_cli
+eloh-send = eloh.client:send_cli
+eloh-server = eloh.server:main
+
