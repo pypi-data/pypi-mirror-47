@@ -1,0 +1,4 @@
+#!python
+
+from ecpb import ecpb
+ecpb.main()
