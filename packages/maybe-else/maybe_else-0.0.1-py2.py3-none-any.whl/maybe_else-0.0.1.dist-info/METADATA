@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: maybe-else
+Version: 0.0.1
+Summary: Provides a Maybe class which can be used instead of common 'var if var is not None else handle_none(var)' structures.
+Home-page: https://github.com/matthewgdv/maybe
+Author: Matt GdV
+Author-email: matthewgdv@gmail.com
+License: BSD
+Download-URL: https://github.com/matthewgdv/maybe/tarball/0.0.1
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: pypi-publisher
+
+Overview
+
+
