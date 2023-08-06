@@ -1,0 +1,9 @@
+README.rst
+setup.py
+soundcloud-dl
+sc_downloader.egg-info/PKG-INFO
+sc_downloader.egg-info/SOURCES.txt
+sc_downloader.egg-info/dependency_links.txt
+sc_downloader.egg-info/requires.txt
+sc_downloader.egg-info/top_level.txt
+soundcloud/__init__.py
