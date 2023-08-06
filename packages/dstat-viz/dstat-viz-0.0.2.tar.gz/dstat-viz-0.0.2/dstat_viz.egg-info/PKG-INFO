@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: dstat-viz
+Version: 0.0.2
+Summary: dstat visualizer
+Home-page: https://github.com/kuenishi/dstat-viz
+Author: @kuenishi
+License: UNKNOWN
+Description: # dstat-viz
+        Simple dstat result visualizer and toolkit
+        
+Keywords: diagnosis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5, <4
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Provides-Extra: dev

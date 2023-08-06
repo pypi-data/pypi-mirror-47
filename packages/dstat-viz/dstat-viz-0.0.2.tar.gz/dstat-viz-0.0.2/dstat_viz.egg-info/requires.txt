@@ -1,0 +1,9 @@
+matplotlib
+pandas
+
+[dev]
+check-manifest
+pytest
+
+[test]
+coverage
