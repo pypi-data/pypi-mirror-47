@@ -1,0 +1,13 @@
+{% load static %}
+
+<link rel="stylesheet" type="text/css" href="{% static 'blog/style.css' %}">
+{% if latest_posts_list %}
+    <ul>
+    {% for post in latest_posts_list %}
+        <li><a href="{% url 'blog:post_info' post.id %}">{{ post.title }}</a>
+        <a>{{post.text}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No posts are available.</p>
+{% endif %}
