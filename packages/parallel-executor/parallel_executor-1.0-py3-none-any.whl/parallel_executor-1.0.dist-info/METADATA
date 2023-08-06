@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: parallel-executor
+Version: 1.0
+Summary: Tool to run several user tasks in parallel
+Home-page: UNKNOWN
+Author: Dovydas Jančauskas
+Author-email: dovydasjan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+
+UNKNOWN
+
+
