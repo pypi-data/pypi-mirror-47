@@ -1,0 +1,8 @@
+click
+questionary
+rshell
+jsonschema
+cookiecutter
+
+[:platform_system == "Windows"]
+colorama
