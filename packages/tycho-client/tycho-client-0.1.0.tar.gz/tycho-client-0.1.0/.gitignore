@@ -1,0 +1,32 @@
+# To make flit happy
+meta_examples/
+test.py
+dist/
+
+# Jupyter Stuff #
+#################
+.ipynb_checkpoints/
+*.ipynb
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Sublime #
+###########
+*.sublime-*
+
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Docker Compose Overrides #
+############################
+docker-compose.override.yml
