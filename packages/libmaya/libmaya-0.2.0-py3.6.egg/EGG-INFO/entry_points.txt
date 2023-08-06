@@ -1,0 +1,3 @@
+[console_scripts]
+maya = maya.exp_runner.maya:parse_args
+
