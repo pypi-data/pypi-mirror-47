@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/aws_cdk.aws_quickstarts.egg-info/PKG-INFO
+src/aws_cdk.aws_quickstarts.egg-info/SOURCES.txt
+src/aws_cdk.aws_quickstarts.egg-info/dependency_links.txt
+src/aws_cdk.aws_quickstarts.egg-info/requires.txt
+src/aws_cdk.aws_quickstarts.egg-info/top_level.txt
+src/aws_cdk/aws_quickstarts/_jsii/__init__.py
+src/aws_cdk/aws_quickstarts/_jsii/aws-quickstarts@0.34.0.jsii.tgz
