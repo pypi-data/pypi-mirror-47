@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: common-utilities
+Version: 0.0.7
+Summary: Common utilities
+Home-page: UNKNOWN
+Author: hacfox
+Author-email: zz.hacfox@gmail.com
+License: UNKNOWN
+Description: # common_utils
+        
+        - 根据业务需要不定期对工具类进行维护
+            > 1. 对项目有新增的方法工具类，增加至 `common_utils/common_utils/`
+            > 2. 与管理员联系进行新包发布
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
