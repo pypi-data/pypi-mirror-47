@@ -1,0 +1,3 @@
+[console_scripts]
+pyflor = flor.__main__:main
+
