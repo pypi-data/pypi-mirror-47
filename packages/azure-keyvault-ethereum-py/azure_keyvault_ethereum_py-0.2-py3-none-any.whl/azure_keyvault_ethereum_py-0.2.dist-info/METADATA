@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: azure-keyvault-ethereum-py
+Version: 0.2
+Summary: Ethereum Keyvault
+Home-page: https://github.com/davidp94/azure-keyvault-ethereum-py
+Author: David Phan
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: eth-keys (==0.2.2)
+Requires-Dist: secp256k1 (==0.13.2)
+Requires-Dist: azure-keyvault (==1.1.0)
+Requires-Dist: eth-account (==0.4.0)
+
+UNKNOWN
+
+
