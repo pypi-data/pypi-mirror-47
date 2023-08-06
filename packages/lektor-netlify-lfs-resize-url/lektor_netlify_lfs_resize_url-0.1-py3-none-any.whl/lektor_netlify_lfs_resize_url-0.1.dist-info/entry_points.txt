@@ -1,0 +1,3 @@
+[lektor.plugins]
+netlify-lfs-resize-url = lektor_netlify_lfs_resize_url:NetlifyLfsResizeUrlPlugin
+
