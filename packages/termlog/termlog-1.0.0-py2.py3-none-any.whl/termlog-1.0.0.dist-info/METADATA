@@ -1,0 +1,198 @@
+Metadata-Version: 2.1
+Name: termlog
+Version: 1.0.0
+Summary: termlog v1.0.0: A terminal logging library
+Home-page: https://github.com/brianbruggeman/termlog
+Author: Brian Bruggeman
+Author-email: brian.m.bruggeman@gmail.com
+Maintainer: Brian Bruggeman
+Maintainer-email: brian.m.bruggeman@gmail.com
+License: MIT
+Project-URL: Bug reports, https://github.com/brianbruggeman/termlog/issues
+Project-URL: Documentation, https://termlog.readthedocs.io/en/latest/
+Project-URL: Travis ci, https://travis-ci.org/brianbruggeman/termlog
+Project-URL: Code coverage, https://codecov.io/gh/brianbruggeman/termlog
+Keywords: terminal,logger,docker
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: System :: Logging
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Description-Content-Type: text/x-rst
+Requires-Dist: pygments
+Provides-Extra: .txt
+Requires-Dist: click ; extra == '.txt'
+Requires-Dist: setuptools ; extra == '.txt'
+Requires-Dist: twine ; extra == '.txt'
+Requires-Dist: wheel ; extra == '.txt'
+Provides-Extra: all
+Requires-Dist: click ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: ipdb ; extra == 'all'
+Requires-Dist: ipython ; extra == 'all'
+Requires-Dist: isort ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: pdbpp ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: pre-commit ; extra == 'all'
+Requires-Dist: pygments ; extra == 'all'
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: pytest-flake8 ; extra == 'all'
+Requires-Dist: pytest-isort ; extra == 'all'
+Requires-Dist: pytest-mypy ; extra == 'all'
+Requires-Dist: pytest-xdist ; extra == 'all'
+Requires-Dist: recommonmark ; extra == 'all'
+Requires-Dist: setuptools ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-autobuild ; extra == 'all'
+Requires-Dist: sphinx-rtd-theme ; extra == 'all'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'all'
+Requires-Dist: sphinxcontrib-openapi ; extra == 'all'
+Requires-Dist: sphinxcontrib-plantuml ; extra == 'all'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'all'
+Requires-Dist: sphinxcontrib-redoc ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: twine ; extra == 'all'
+Requires-Dist: wheel ; extra == 'all'
+Provides-Extra: debug
+Requires-Dist: ipdb ; extra == 'debug'
+Requires-Dist: ipython ; extra == 'debug'
+Requires-Dist: pdbpp ; extra == 'debug'
+Provides-Extra: dev
+Requires-Dist: click ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pdbpp ; extra == 'dev'
+Requires-Dist: pillow ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-flake8 ; extra == 'dev'
+Requires-Dist: pytest-isort ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: pytest-xdist ; extra == 'dev'
+Requires-Dist: recommonmark ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Requires-Dist: sphinx ; extra == 'dev'
+Requires-Dist: sphinx-autobuild ; extra == 'dev'
+Requires-Dist: sphinx-rtd-theme ; extra == 'dev'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'dev'
+Requires-Dist: sphinxcontrib-openapi ; extra == 'dev'
+Requires-Dist: sphinxcontrib-plantuml ; extra == 'dev'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'dev'
+Requires-Dist: sphinxcontrib-redoc ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: coverage ; extra == 'docs'
+Requires-Dist: pillow ; extra == 'docs'
+Requires-Dist: recommonmark ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinx-autobuild ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: sphinxcontrib-napoleon ; extra == 'docs'
+Requires-Dist: sphinxcontrib-openapi ; extra == 'docs'
+Requires-Dist: sphinxcontrib-plantuml ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: sphinxcontrib-redoc ; extra == 'docs'
+Provides-Extra: lint
+Requires-Dist: flake8 ; extra == 'lint'
+Requires-Dist: isort ; extra == 'lint'
+Requires-Dist: mypy ; extra == 'lint'
+Provides-Extra: tests
+Requires-Dist: mypy ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: pytest-flake8 ; extra == 'tests'
+Requires-Dist: pytest-isort ; extra == 'tests'
+Requires-Dist: pytest-mypy ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+Requires-Dist: tox ; extra == 'tests'
+
+======
+Readme
+======
+
+Package
+=======
+
+.. image:: http://img.shields.io/badge/license-MIT-brightgreen.svg
+    :target: http://opensource.org/licenses/MIT
+
+.. image:: https://badge.fury.io/py/termlog.svg
+    :target: https://pypi.python.org/pypi/termlog
+
+.. image:: https://travis-ci.org/brianbruggeman/termlog.svg
+    :target: https://travis-ci.org/brianbruggeman/termlog
+
+.. image:: https://codecov.io/gh/brianbruggeman/termlog/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/brianbruggeman/termlog
+
+Termlog: A terminal logging library for logging data both as lexed text or json
+
+Motivation
+==========
+
+I love f-strings and I wanted a method of displaying
+beautiful f-strings in command-line interfaces.
+However, I needed a way of simultaneously creating a
+developer friendly text log and producing structured
+text that could be interpreted by a log-shipper in a
+clustered environment.
+
+Termlog will...
+
+* wrap print statements with a new method, `echo`
+* `echo` is fully compatible with print and is meant
+  to be a drop-in replacement
+* `echo` can immediately control: color, json,
+  timestamp, time-format outputs on each invocation
+* Alternatively, a `set_config` command can set the
+  library to use a specific configuration for each subsequent call to `echo`
+
+Usage
+=====
+
+.. code-block:: python
+
+     from termlog import blue, echo, red, rgb, set_config
+
+     key = 'abc'
+     value = 123
+
+     set_config(color=True, json=False)
+
+     echo(f'{red(key)}: {blue(value)}')
+     echo(f'{rgb(message=key, red=71, green=61, blue=139)}: {blue(value)}')
+     echo(f'{key}: {blue(value)}', color=True)
+
+Installation
+============
+
+To install termlog, simply run the following.
+
+.. code-block:: bash
+
+    $ pip install termlog
+
+.. include::./CONTRIBUTING.rst
+
+
+
