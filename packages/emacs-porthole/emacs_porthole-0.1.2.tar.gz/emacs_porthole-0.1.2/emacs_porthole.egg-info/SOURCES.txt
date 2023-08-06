@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+emacs_porthole/__init__.py
+emacs_porthole/emacs_porthole.py
+emacs_porthole/exceptions.py
+emacs_porthole/json_rpc.py
+emacs_porthole/test.py
+emacs_porthole.egg-info/PKG-INFO
+emacs_porthole.egg-info/SOURCES.txt
+emacs_porthole.egg-info/dependency_links.txt
+emacs_porthole.egg-info/top_level.txt
