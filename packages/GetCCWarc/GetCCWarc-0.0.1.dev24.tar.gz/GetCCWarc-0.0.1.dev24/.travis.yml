@@ -1,0 +1,21 @@
+dist: xenial
+language: python
+python:
+- '3.6'
+- '3.7'
+install:
+- pip install -r requirements.txt
+script:
+- pytest tests
+deploy:
+  skip_cleanup: true
+  provider: pypi
+  distributions: sdist bdist_wheel
+  on:
+#    tags: true
+    branch:
+    - master
+  user: ohadzad
+  password:
+    secure: W0BKZbCXRtYTVFrmR3ev5xBcqIodU3mMrjHpgXpNDSCuCXxMe5qiRjyspdDMzl6qioeGYJJ7pxDQ8NIkJvKnf+Y9bryqhRzme4QxdKx37+uNO9YKDFcEkt1lKVxHpe8Y6+xwBMQbkTHp6u1i/SdiQXqUaA22dxrsGuzsajxtrMBKppjAgFsn2xeij/HTSVdxmpYbutzqK5kicqv4u+Zv66wcvzRHmC/b9W8wWX4MbomghBITr8i+sXanp5wjaQcpiTXJFUdm2CrmHPjT412CT98IFFR+m3I2XkAMOxW7l+GoHcAgYddw9zJi8YTUk3ldUpk372MwkN1A5HxR3jfBx5u08CSEQ+ANWR+m1wvzETVJF3brutiJBhez8T6AYw7L+2ECWTN7lk92ve60pNgec9aB4gDHZhD8nFZXakbsEiuY2WN2j5bMYBQQr2T/bUaKkNV+IpJBtu+9GKJkojdlj9nCX6UORXrDKx4MayiQqh6kWN3Nu/R419dvfxbgtZTHzTTB2wofIgyvQpjc2kiEeYR8fwtI6sriYt7RPvU+fZRmbfXwF89nBATffZ80iS07D+ln5XbQV8af+2AUn9XsG5sKdlD/UNEeeeEpRrbRqH4pDMDG+6+sCQCz0ABsrJq+waArmumwf/XcBB4ej2FbZo7NT+wpJqxoahy/p8hpuTI=
+
