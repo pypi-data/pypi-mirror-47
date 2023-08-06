@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: nestedDive
+Version: 0.2.4
+Summary: Sorter for nested items
+Home-page: https://github.com/RoelVoordendag/Deepdive
+Author: RoelVoordendag
+Author-email: rvoordendag@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# NestedDive
+Python package to sort nested items
+
+
