@@ -1,0 +1,4 @@
+Django>=2.1
+djangorestframework>=3.9
+django-cors-headers>=3.0
+requests>=2.18
