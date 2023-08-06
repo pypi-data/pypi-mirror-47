@@ -1,0 +1,17 @@
+bs4
+certifi
+chardet
+EasyProcess
+idna
+lxml
+progressbar
+PyVirtualDisplay
+requests
+selenium
+tqdm
+urllib3
+dnspython
+termcolor
+BeautifulSoup4
+requests[security]
+oletools
