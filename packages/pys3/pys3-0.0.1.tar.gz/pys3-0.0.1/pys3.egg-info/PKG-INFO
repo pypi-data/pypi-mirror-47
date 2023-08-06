@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pys3
+Version: 0.0.1
+Summary: Tiny wrapper for basic S3 functions in boto3
+Home-page: https://github.com/pdenboef/pys3.git
+Author: pdboef
+Author-email: p.d.boef@drebble.io
+License: UNKNOWN
+Description: # PyS3
+        
+        Minimal wrapper for S3 functionality in `boto3`.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
