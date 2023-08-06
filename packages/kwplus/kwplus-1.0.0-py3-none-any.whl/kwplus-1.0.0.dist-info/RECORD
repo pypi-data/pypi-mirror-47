@@ -1,0 +1,13 @@
+functoolsplus.py,sha256=sMTCZlwjcMqi6X-MnO7wq5_G9wNLsAg9QPMzz70mtd4,1281
+kwplus.py,sha256=rGYGihSSAb3IBS_hK0JyzALtzeWFH5Vm1JYVP_NIMKQ,5256
+kwrepr.py,sha256=5MUqxJjEQjG_HkLZYFLQ6Ipy8HXm6iwX3rHGosy_kg8,1895
+kwvars.py,sha256=zIW_oFzAexWwSax03wxxCzxVFk0eOfTXDwZWVyWgcLA,682
+kwplus/__init__.py,sha256=NRDSRBkiZ5AYeLvVEEDtOEYhcremAwf60bhLA3TtRQo,3813
+kwplus/functools.py,sha256=LLGuKTkXpL8Oo0CnoZqbhYT2dLrG_4SNjL4JmCp_ukg,2569
+kwplus/repr.py,sha256=5MUqxJjEQjG_HkLZYFLQ6Ipy8HXm6iwX3rHGosy_kg8,1895
+kwplus/variations.py,sha256=JNu2d62AhlM_8QpFo8x-4k_1Pp36C09vSDVdDp1Gh-Q,694
+kwplus-1.0.0.dist-info/LICENSE,sha256=rKh73sPd5XIUj-96hqIRRz66CbH28zFjBziX9cngirM,1069
+kwplus-1.0.0.dist-info/METADATA,sha256=1yzAf37N7YmTqac1EhheItfGOSIl6-E3EpsO8VK0gmI,445
+kwplus-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+kwplus-1.0.0.dist-info/top_level.txt,sha256=npQaqRP00ucrWsYC1VHimEkPnOnEQdOvy9R5l8vsMcw,7
+kwplus-1.0.0.dist-info/RECORD,,
