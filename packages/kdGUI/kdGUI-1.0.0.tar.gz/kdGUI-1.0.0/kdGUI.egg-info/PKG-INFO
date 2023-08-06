@@ -1,0 +1,27 @@
+Metadata-Version: 1.2
+Name: kdGUI
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://github.com/bkdwei/kdGUI
+Author: bkdwei
+Author-email: bkdwei@163.com
+Maintainer: 韦坤东
+Maintainer-email: bkdwei@163.com
+License: MIT
+Description: # kdGUI
+        基于tkinter改良的python UI 库。
+        
+        # 参考资料
+        - [官网](https://docs.python.org/3/library/tkinter.html)
+        - [nmt](https://infohost.nmt.edu/tcc/help/pubs/tkinter/web/index.html)
+Keywords: tkinter,gui
+Platform: any
+Classifier:  Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Topic :: Software Development :: User Interfaces
+Classifier: Programming Language :: Python :: 3
+Classifier:  License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows

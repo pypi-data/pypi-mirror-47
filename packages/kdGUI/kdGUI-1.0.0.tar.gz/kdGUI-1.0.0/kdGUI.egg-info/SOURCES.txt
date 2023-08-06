@@ -1,0 +1,9 @@
+README.md
+setup.py
+kdGUI/__init__.py
+kdGUI.egg-info/PKG-INFO
+kdGUI.egg-info/SOURCES.txt
+kdGUI.egg-info/dependency_links.txt
+kdGUI.egg-info/not-zip-safe
+kdGUI.egg-info/requires.txt
+kdGUI.egg-info/top_level.txt
