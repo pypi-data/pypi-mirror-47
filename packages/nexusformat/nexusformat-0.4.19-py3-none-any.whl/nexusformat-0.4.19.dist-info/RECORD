@@ -1,0 +1,16 @@
+nexusformat/__init__.py,sha256=bB8riu64q9GK2zMLo9L8daE-KHIdCeb7cjBL0bfdLR8,1504
+nexusformat/_version.py,sha256=PsiNSVPt6vpF-3RIkCa3QqISOPPyO6MmsturN3_jnNQ,472
+nexusformat/requires.py,sha256=6Accfr7pNLY8bM7eizBStNmgeanYECoWaCSlYCnRvpQ,501
+nexusformat/nexus/__init__.py,sha256=B1MqScBeRaHyweqII3fwiqDeCYKMVqiulPJXvn8LFT4,2383
+nexusformat/nexus/plot.py,sha256=SlybSp4geXDq__n-7DQjAxoKEzIRniPoE79gGVS97TM,7131
+nexusformat/nexus/remote.py,sha256=yy55AnGj3T9AH22Ud-BFdJmhP32FnUAz81MKEpBcklY,6678
+nexusformat/nexus/tree.py,sha256=sFt1cwJUVT0mKhq6So-WgT8K6zdG0Q9a5TpF7DnQ4fg,193967
+nexusformat/scripts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nexusformat/scripts/nxstack.py,sha256=UMKO-BV7YgfoX04K19Y33UBV-u1tsfhWlhgVbwk5QCg,13549
+nexusformat-0.4.19.dist-info/COPYING,sha256=T6R5zZ8C54oeyYM0b_68NLOQ50n_JWbHrn4TFNXBy7g,2368
+nexusformat-0.4.19.dist-info/METADATA,sha256=XqSJp8jdLfJLZHIjgj5T78emWAZlqQVO93XnMZIc2-E,1582
+nexusformat-0.4.19.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+nexusformat-0.4.19.dist-info/entry_points.txt,sha256=eDBLbsna6k-KOUOFljpQLj83OdFogRsc-Xw8EeEnF_I,62
+nexusformat-0.4.19.dist-info/pbr.json,sha256=FktsykRuaIuwNEHDCnmlZfFwlvGOoWQR4FCNg732Ohg,47
+nexusformat-0.4.19.dist-info/top_level.txt,sha256=YtCgG96s_QN3DxM2wxZdhYPuFCChB7xUQYHdx0NbqZo,12
+nexusformat-0.4.19.dist-info/RECORD,,
