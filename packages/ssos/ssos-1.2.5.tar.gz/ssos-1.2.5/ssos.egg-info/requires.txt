@@ -1,0 +1,7 @@
+astropy
+pandas>=0.23.0
+matplotlib
+numpy
+scipy
+statsmodels>=0.9.0
+tqdm
