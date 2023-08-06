@@ -1,0 +1,6 @@
+include src/tests/*
+include src/inputFiles/*
+include src/foamfiles/*
+include src/stovegeom/*
+include src/docs/*
+include src/reactingFoam/*
