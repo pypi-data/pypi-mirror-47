@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: async-stripe
+Version: 0.1.2
+Summary: An asynchronous wrapper for the Stripe payment API.
+Home-page: https://github.com/cglacet/async-stripe
+Author: Christian Glacet
+Author-email: cglacet@kune.tech
+License: MIT
+Project-URL: Bug Reports, https://github.com/cglacet/async-stripe/issues
+Project-URL: Source, https://github.com/cglacet/async-stripe
+Description: # Asynchronous wrapper for the Stripe payment API
+        
+        
+        ## Documentation
+        
+        The full documentation is at http://async-stripe.rtfd.org.
+Keywords: async-stripe
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
