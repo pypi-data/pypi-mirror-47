@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dtrees
+Version: 0.8b21
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+
+Description
+===========
+
+Decision trees library
+Include implementation of ID3, C4.5 and
+based on C4.5 algorithm
+
