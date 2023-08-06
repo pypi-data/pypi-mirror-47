@@ -1,0 +1,9 @@
+spectralcluster/__init__.py,sha256=FLq5VZpnnm8eZ6TlaC8C7p-N5u8uzQtrdXzFGgSQbCo,278
+spectralcluster/refinement.py,sha256=ZRxYQYV-m6UN32ZNUox4KzX82I-QIvAv6ANT0cpWcZw,2982
+spectralcluster/spectral_clusterer.py,sha256=JLh81BN93xKkKSjj_WTy8QKiBerf-o7daZPbr-pZwFY,4871
+spectralcluster/utils.py,sha256=K7LuRmoUv5P8TBlYQ42J5j1Vz0FOq5APpH7Je5FQobg,2338
+spectralcluster-0.0.8.dist-info/LICENSE,sha256=jVNTUnOkTYm3WtbngdCLErVS3AqxUuyS-loqWDwo3G4,11339
+spectralcluster-0.0.8.dist-info/METADATA,sha256=H33nSYO3e5lDLy7SQUov9G5wGlUN7_4-JTu_ZoyFn7A,3251
+spectralcluster-0.0.8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+spectralcluster-0.0.8.dist-info/top_level.txt,sha256=6S8o7pi6ZXmIv_nmoMA-ZSoPOvZUmO7aOCQHxjrVde0,16
+spectralcluster-0.0.8.dist-info/RECORD,,
