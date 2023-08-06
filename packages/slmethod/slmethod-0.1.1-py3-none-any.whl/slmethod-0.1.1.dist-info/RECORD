@@ -1,0 +1,15 @@
+slm/__init__.py,sha256=DRjvM8MUn8xizj_fa9rOiQ6qHZO1gkKywzeIWQLqnhY,13
+slmethod/__init__.py,sha256=E_5zqZdp6BzVtxhIkAtUuwNhu_l9jpE6ZkVrfzFzIP0,1018
+slmethod/perceptron.py,sha256=EJSgfIiinVrJu_CDP7Ss11JvRmVimWifujLt_ZDGlco,3650
+slmethod/base/__init__.py,sha256=w_6QK3ha49q4BwyNYrk4OlH9syGRLav3Jl9RtUJDZlM,32
+slmethod/base/base.py,sha256=0uiYklXlz-Mo31-s72eyM-H7DGc6bjW63yKJ0FBuBt8,1397
+slmethod/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slmethod/test/test_perceptron.py,sha256=XUsJDlR-51scy2z6tEE0-OoomW68FIz68o_ZecWI2Q0,887
+slmethod/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slmethod/utils/_show_versions.py,sha256=5IFMcdfGeJR42warG8cdtSgHh0xm2SxlXwUml8LlQ-Q,1662
+slmethod/utils/show_versions.py,sha256=SrEMbpqTBoxWn2W253Q_dQvK7lmF5DvnCuBXeLmCmzA,1661
+slmethod-0.1.1.dist-info/LICENSE,sha256=fyNnH_HnQYUKt4FLxGeh0WCOusHNVOjZ-YQnD8gQHcI,1068
+slmethod-0.1.1.dist-info/METADATA,sha256=Vo7tpyOv3aG_bWz5odze1LXyCupU3XahcIjxvFIVwhU,1709
+slmethod-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+slmethod-0.1.1.dist-info/top_level.txt,sha256=bogDcf9r7gU2gtQP_BuGDZxMpdOaHqjpXukqBUr_Ka8,9
+slmethod-0.1.1.dist-info/RECORD,,
