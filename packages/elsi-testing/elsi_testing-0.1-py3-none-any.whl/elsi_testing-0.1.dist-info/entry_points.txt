@@ -1,0 +1,3 @@
+[console_scripts]
+elsi-testing = elsi_test_ing:main
+
