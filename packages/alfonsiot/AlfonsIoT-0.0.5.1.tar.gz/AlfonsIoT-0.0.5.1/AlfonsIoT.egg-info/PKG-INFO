@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: AlfonsIoT
+Version: 0.0.5.1
+Summary: A package for IoTs to interact with Alfons
+Home-page: https://github.com/ntoonio/AlfonsIoT.git
+Author: Anton Lindroth
+Author-email: ntoonio@gmail.com
+License: UNKNOWN
+Description: # Alfons IoT
+        
+        This is a package for IoT's to interact with Alfons.
+        
+        	import AlfonsIoT as iot
+        
+        	def onMessage(client, userdata, msg):
+        		print(msg.topic + " " + str(msg.payload))
+        
+        	iot.connect(on_connect=onConnect, on_message=onMessage)
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
