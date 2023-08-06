@@ -1,0 +1,12 @@
+tsfaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsfaker/main.py,sha256=aHi1KiGdOtF--A1RNdsCHKGpSzGHOWfGQFO81-E7fUg,470
+tsfaker/tstype.py,sha256=_XMkn-YKJvcWHUQ3iAM326vOVBFZ_EDTT8eKMav4iW8,690
+tsfaker/generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsfaker/generator/column.py,sha256=Z26mOimDxUG_1_zGBiWj-eEtTSBz-9ismhJmTDjFfwQ,3781
+tsfaker/generator/table.py,sha256=xYKszhLU6Ip_c1K59BBIH1FEccX9YdxgHCrNO8vq1rg,1178
+tsfaker-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+tsfaker-0.1.2.dist-info/METADATA,sha256=Ban-ClkeKSFkfK7roBhrhSg97g6c7Qa9ED-RgZQenkE,5929
+tsfaker-0.1.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tsfaker-0.1.2.dist-info/entry_points.txt,sha256=O4LJKy9F6DEI2zuJO-klj2_fuP91DMf01jNNnu4aqac,46
+tsfaker-0.1.2.dist-info/top_level.txt,sha256=cH2Exb6lxf8W1eGYZIuQpucShIlsjUyiRSxkxqJPNq4,8
+tsfaker-0.1.2.dist-info/RECORD,,
