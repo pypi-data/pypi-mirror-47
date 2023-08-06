@@ -1,0 +1,8 @@
+README.rst
+setup.py
+customdocs/__init__.py
+customdocs.egg-info/PKG-INFO
+customdocs.egg-info/SOURCES.txt
+customdocs.egg-info/dependency_links.txt
+customdocs.egg-info/requires.txt
+customdocs.egg-info/top_level.txt
