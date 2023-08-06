@@ -1,0 +1,15 @@
+README.md
+setup.py
+data/origin.wav
+otoware/__init__.py
+otoware/api.py
+otoware/convert_wav_and_array.py
+otoware/distortion.py
+otoware/utils.py
+otoware.egg-info/PKG-INFO
+otoware.egg-info/SOURCES.txt
+otoware.egg-info/dependency_links.txt
+otoware.egg-info/entry_points.txt
+otoware.egg-info/not-zip-safe
+otoware.egg-info/requires.txt
+otoware.egg-info/top_level.txt
