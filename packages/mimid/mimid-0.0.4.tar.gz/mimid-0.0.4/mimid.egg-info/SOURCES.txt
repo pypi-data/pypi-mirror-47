@@ -1,0 +1,8 @@
+README.md
+mimid.py
+setup.py
+mimid.egg-info/PKG-INFO
+mimid.egg-info/SOURCES.txt
+mimid.egg-info/dependency_links.txt
+mimid.egg-info/requires.txt
+mimid.egg-info/top_level.txt
