@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+setup.py
+makinyan/__init__.py
+makinyan.egg-info/PKG-INFO
+makinyan.egg-info/SOURCES.txt
+makinyan.egg-info/dependency_links.txt
+makinyan.egg-info/entry_points.txt
+makinyan.egg-info/requires.txt
+makinyan.egg-info/top_level.txt
