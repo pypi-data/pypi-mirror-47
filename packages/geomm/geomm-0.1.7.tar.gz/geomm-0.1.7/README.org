@@ -1,0 +1,179 @@
+* GEOMM
+
+A simple no-nonsense library for computing common geometry on
+macromolecular systems.
+
+This library aims to work completely on numpy arrays and knows nothing
+about molecule or system topologies, atom types, or other "real world"
+properties.
+
+You only need to provide atom coordinates, atom indices (for molecule,
+group, molecule selections etc.), and other parameters for functions.
+
+Thus it aims to be more like numpy or scipy itself than a typical
+macromolecular software library, except that the particular routines
+and functions are usually found in that context.
+
+** Installation
+
+Get it from PyPI:
+
+#+BEGIN_SRC bash
+pip install geomm
+#+END_SRC
+
+Or you can get the latest:
+
+#+BEGIN_SRC bash
+git clone https://github.com/ADicksonLab/geomm.git
+cd geomm
+# install it
+pip install .
+#+END_SRC
+
+
+If you want to install in editable mode rename the pyproject.toml file
+to something else:
+
+#+BEGIN_SRC bash
+mv pyproject.toml pep517.pyproject.toml
+#+END_SRC
+
+
+#+BEGIN_SRC bash
+# you need cython manually in this case though
+pip install cython
+
+pip install -e .
+#+END_SRC
+
+** Community
+
+Discussion takes place on riot.im (#geomm:matrix.org) which is a slack-like app that works
+on the Matrix protocol:
+[[https://riot.im/app/#/room/#geomm:matrix.org]]
+
+
+You can also contact me directly:
+
+samuel.lotz@salotz.info
+
+* Developing
+
+** Dev Environment
+
+Clone and install with all the features:
+
+#+BEGIN_SRC bash
+  git clone https://github.com/ADicksonLab/wepy
+  cd wepy
+  rm pyproject.toml
+  # install in editable mode
+  pip install -r requirements_dev.txt -e .
+#+END_SRC
+
+** Releasing Package
+
+
+*** Test the installation process
+
+
+Functions for doing this:
+
+#+BEGIN_SRC bash
+  geomm_test_build () {
+      package='geomm'
+      build_env="test-${package}-build"
+      conda deactivate
+      conda env remove -y -n "$build_env"
+      conda create -y -n "$build_env" python=3
+      conda activate "$build_env"
+      pip install -r requirements_dev.txt
+      rm -rf dist/*
+      python setup.py build sdist
+      conda deactivate
+      conda env remove -y -n "$build_env"
+
+  }
+
+  geomm_test_install () {
+
+      package='geomm'
+      conda deactivate
+      install_env="test-${package}-install"
+      conda env remove -y -n "$install_env"
+      conda create -y -n "$install_env" python=3
+      conda activate "$install_env"
+      pip install dist/"$package"-*.tar.gz
+      conda deactivate
+      conda env remove -y -n "$install_env"
+
+  }
+#+END_SRC
+
+*** Update versions
+
+
+Before we build the package we need to bump the version in all those
+places it is written down at, which is achieved with the bumpversion
+tool. First commit all changes before you do this.
+
+#+BEGIN_SRC bash
+bumpversion patch # possible: major / minor / patch
+#+END_SRC
+
+
+Make sure to tag in git (I typically use magit in emacs but the
+command is):
+
+#+BEGIN_SRC bash
+git tag -a vX.Y.Z -m "release message"
+git push gitlab vX.Y.Z
+#+END_SRC
+
+*** Deploying
+
+To deploy to PyPI (if you have access)
+#+BEGIN_SRC bash
+conda activate geomm-dev
+rm -rf dist/*
+python setup.py sdist
+twine upload dist/*
+#+END_SRC
+
+
+** Building Docs
+
+Install pandoc for converting org-mode files to rst.
+
+You can follow the instructions on the site or just use anaconda:
+
+#+BEGIN_SRC bash
+conda install pandoc
+#+END_SRC
+
+Then run the build script. This uses the make file and additionally
+runs api-doc, and converts org-mode source files to rst using pandoc.
+
+#+BEGIN_SRC bash
+pushd sphinx
+chmod u+x build.sh
+./build.sh
+popd
+#+END_SRC
+
+This will build the HTML files in the 'sphinx/_build/html' directory
+and if you point your web browser there you can view them.
+
+** Deploying Docs
+
+To run the current deployments of the docs run the deploy script:
+
+#+BEGIN_SRC bash
+pushd sphinx
+chmod u+x deploy.sh
+./deploy.sh
+popd
+#+END_SRC
+
+Currently this only is pushing to the server in our lab.
