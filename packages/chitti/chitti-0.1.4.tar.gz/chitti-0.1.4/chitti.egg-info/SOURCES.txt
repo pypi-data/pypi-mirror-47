@@ -1,0 +1,12 @@
+README.md
+setup.py
+chitti/__init__.py
+chitti/color_text.py
+chitti/list_to_dic.py
+chitti/print.py
+chitti/sklearn_utilities.py
+chitti.egg-info/PKG-INFO
+chitti.egg-info/SOURCES.txt
+chitti.egg-info/dependency_links.txt
+chitti.egg-info/requires.txt
+chitti.egg-info/top_level.txt
