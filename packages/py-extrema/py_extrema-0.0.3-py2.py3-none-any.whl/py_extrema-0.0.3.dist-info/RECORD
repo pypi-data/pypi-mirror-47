@@ -1,0 +1,9 @@
+py_extrema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py_extrema/extrema.py,sha256=_31GqeXNKWGYNeOYf3opmDP9thPO7_6foSV-xlGAmng,15316
+py_extrema/slopping_saddle.py,sha256=HpheywEo3Mg5nDS3anxhV3pH6P-ED-giU7QXyhDcTOY,7134
+py_extrema/utils.py,sha256=EPLtstSV2xOnwKQKmXyoKJY3HaThsy0B2FlFSwEV5Ss,13236
+py_extrema-0.0.3.dist-info/LICENSE.txt,sha256=AU4GLn1rO55oa7jLZCR51syLt3XY7hhZCLZpuNqvXy8,21396
+py_extrema-0.0.3.dist-info/METADATA,sha256=cci7xjGjm7PTeNp0fRIhSZVvlK3XxSfue23pH7Az5e4,1132
+py_extrema-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+py_extrema-0.0.3.dist-info/top_level.txt,sha256=MlEgtxM4Gh_Vu3PIax62e70TmOWTTUAIgVhhk6EdGi8,11
+py_extrema-0.0.3.dist-info/RECORD,,
