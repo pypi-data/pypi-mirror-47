@@ -1,0 +1,7 @@
+setup.py
+src/xwmodule/__init__.py
+src/xwmodule/test.py
+src/xwmodule.egg-info/PKG-INFO
+src/xwmodule.egg-info/SOURCES.txt
+src/xwmodule.egg-info/dependency_links.txt
+src/xwmodule.egg-info/top_level.txt
