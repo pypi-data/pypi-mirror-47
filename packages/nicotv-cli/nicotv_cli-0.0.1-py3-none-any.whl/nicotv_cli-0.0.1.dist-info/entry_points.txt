@@ -1,0 +1,3 @@
+[console_scripts]
+nicotv-cli = nicotv_cli.cli:main
+
