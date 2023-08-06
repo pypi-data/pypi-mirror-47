@@ -1,0 +1,16 @@
+README.md
+setup.py
+jatnipy/Experiment.py
+jatnipy/__init__.py
+jatnipy/dataRunParameters.py
+jatnipy/find.py
+jatnipy/ind.py
+jatnipy/normv.py
+jatnipy/optimalP.py
+jatnipy/stabilize_stabilize_matrix.py
+jatnipy.egg-info/PKG-INFO
+jatnipy.egg-info/SOURCES.txt
+jatnipy.egg-info/dependency_links.txt
+jatnipy.egg-info/not-zip-safe
+jatnipy.egg-info/requires.txt
+jatnipy.egg-info/top_level.txt
