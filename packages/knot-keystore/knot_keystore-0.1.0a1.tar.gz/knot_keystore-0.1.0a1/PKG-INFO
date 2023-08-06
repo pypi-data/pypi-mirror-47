@@ -1,0 +1,57 @@
+Metadata-Version: 2.1
+Name: knot_keystore
+Version: 0.1.0a1
+Summary: A tool for safely archiving knot dnssec key material to azure.
+Home-page: https://github.com/wolcomm/knot-keystore
+Author: Ben Maddison
+Author-email: benm@workonline.africa
+License: MIT
+Download-URL: https://github.com/wolcomm/knot-keystore/0.1.0a1
+Description: [![PyPI](https://img.shields.io/pypi/v/knot-keystore.svg)](https://pypi.python.org/pypi/knot-keystore)
+        [![Build Status](https://travis-ci.com/wolcomm/knot-keystore.svg?branch=master)](https://travis-ci.com/wolcomm/knot-keystore)
+        [![codecov](https://codecov.io/gh/wolcomm/knot-keystore/branch/master/graph/badge.svg)](https://codecov.io/gh/wolcomm/knot-keystore)
+        
+        # knot-keystore
+        
+        A tool to safely backup the knot kasp-db directory.
+        
+        ## overview
+        
+        ```bash
+        usage: knot-keystore [-h] [--socket SOCKET] [--plugin {local,azure}]
+                             [--config-file CONFIG_FILE] [-v]
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          --socket SOCKET, -s SOCKET
+                                path to knotc control socket
+          --plugin {local,azure}, -p {local,azure}
+                                select archival plugin
+          --config-file CONFIG_FILE, -c CONFIG_FILE
+                                path to a configuration file
+          -v                    increase output verbosity
+        ```
+        
+        - tries to find the kasp-db path by reading `knotd` config over the control
+          socket.
+        - plugins create an xz-compressed archive and put it somewhere safe.
+        
+        ## plugins
+        
+        - `local`: create an encrypted copy of the archive and write it to disk along
+          with the encryption key. Mostly useful for testing.
+        - `azure`: write the archive to an Azure storage blob, first encrypting it using
+          "client-side-encryption" with a KEK stored in Azure Key Vault.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: Name Service (DNS)
+Classifier: Topic :: System :: Archiving :: Backup
+Requires-Python: >=3.6, <4.0
+Description-Content-Type: text/markdown

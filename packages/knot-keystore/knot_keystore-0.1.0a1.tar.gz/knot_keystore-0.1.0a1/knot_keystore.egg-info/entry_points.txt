@@ -1,0 +1,3 @@
+[console_scripts]
+knot-keystore = knot_keystore.cli:main
+
