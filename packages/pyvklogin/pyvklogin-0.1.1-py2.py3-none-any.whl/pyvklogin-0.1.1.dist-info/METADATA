@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyvklogin
+Version: 0.1.1
+Summary: An easy login form for vk.com for python.
+Home-page: https://github.com/complynx/pyvklogin
+Author: complynx
+Author-email: complynx@yandex.ru
+License: UNKNOWN
+Requires-Dist: pyvk
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: gui
+Requires-Dist: PyQt5 ; extra == 'gui'
+Requires-Dist: PyQtWebEngine ; extra == 'gui'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+PyVKLogin -- VK.com log-in and autorization app for PyVK
+
+
