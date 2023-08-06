@@ -1,0 +1,9 @@
+README.md
+setup.py
+instagram_image_uploader/__init__.py
+instagram_image_uploader/__main__.py
+instagram_image_uploader.egg-info/PKG-INFO
+instagram_image_uploader.egg-info/SOURCES.txt
+instagram_image_uploader.egg-info/dependency_links.txt
+instagram_image_uploader.egg-info/requires.txt
+instagram_image_uploader.egg-info/top_level.txt
