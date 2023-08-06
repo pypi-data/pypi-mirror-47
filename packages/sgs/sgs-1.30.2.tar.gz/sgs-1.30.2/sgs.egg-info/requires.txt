@@ -1,0 +1,12 @@
+defusedxml>=0.6.0
+jinja2>=2.9.5
+lxml>=4
+pandas>=0.22.0
+requests>=2.18.4
+
+[dev]
+bandit==1.6.0
+pytest==4.6.2
+pytest-cov==2.7.1
+pytest-pep8==1.0.6
+pytest-mypy==0.3.2
