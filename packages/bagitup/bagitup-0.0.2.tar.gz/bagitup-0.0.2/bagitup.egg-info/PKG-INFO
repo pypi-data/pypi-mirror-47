@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: bagitup
+Version: 0.0.2
+Summary: bagitup is a Pythob based module that enables you to automatically backup your files and databases to Git
+Home-page: https://github.com/geetanshjindal/bagitup
+Author: Geetansh Jindal
+Author-email: geetansh@hackreports.com
+License: UNKNOWN
+Description: # BagitUp
+        **BagitUp** is a Pythob based module that enables you to automatically backup your files and databases to Git
+        
+        ## Install
+        pip install BagitUp
+        
+        ## Basic usage
+        set environment variables in .env file
+        
+        ```bash
+        BagitUp -d /folder/to/backup/
+        ```
+        
+        ## License
+        
+        MIT licensed. See the
+        [LICENSE](https://github.com/geetanshjindal/BagitUp/blob/master/LICENSE) file
+        for more details.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

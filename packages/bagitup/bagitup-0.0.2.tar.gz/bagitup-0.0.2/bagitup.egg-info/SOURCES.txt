@@ -1,0 +1,7 @@
+README.md
+setup.py
+bagitup/__init__.py
+bagitup.egg-info/PKG-INFO
+bagitup.egg-info/SOURCES.txt
+bagitup.egg-info/dependency_links.txt
+bagitup.egg-info/top_level.txt
