@@ -1,0 +1,12 @@
+alita_session/__init__.py,sha256=3QjLwjb1peoNaAo0bzBaETeiI2s7iNHjiwE0BXgdzVg,3154
+alita_session/aioredis.py,sha256=8TZSR3fPsBGYWah3qlbedLhYdsPHp8m5Z9o14WCTbtA,577
+alita_session/base.py,sha256=nnEOrAJznKVwTWm51-FWJf5trm1xLBc12dpviCsiQD4,11096
+alita_session/fs.py,sha256=r7DVV1C7nE0x4EYCO0fOFEXcQ9-2TfnbU8RHz0Ch5kw,3163
+alita_session/mongo.py,sha256=0PFe4FomIe5d5253F8BbmMRaCzhYONGeScKtrGBBgS0,2352
+alita_session/mysql.py,sha256=zkx5H0NGgBS2yXSBD5RHHr9LoitJM1wGZlApW2RM22U,4784
+alita_session/redis.py,sha256=HGz-lOFOLkqcoeA7COivpJd_Kv--VTIE0xe_1GKNQJU,1675
+alita_session/utils.py,sha256=kA0Sprc5fNo65NX7YLjrcXBZoSJs-iKOAYkmmUtvUDM,3575
+alita_session-0.1.4.dist-info/METADATA,sha256=dVJb-1x7nhLrmwUdGZmjKVbFkT1qgDJA_w393eeGP0A,1237
+alita_session-0.1.4.dist-info/RECORD,,
+alita_session-0.1.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+alita_session-0.1.4.dist-info/top_level.txt,sha256=uJASI0C1nWVcl2-kztSb29kZUb8O15_zIIWiywoXP6E,14
