@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: import_nbmodule
+Version: 0.0.1
+Summary: import jupyter notebook .ipynb module
+Home-page: https://github.com/yangll0620/import_nbmodule
+Author: Lingling Yang
+Author-email: yll0620@gmail.com
+License: UNKNOWN
+Description: # import_nbmodule
+        
+        # Installation 
+        pip install import_nbmodule
+        
+        
+        # Usage
+        import import_nbmodule
+        import yournbmodule 
+        
+        See the example usage in examples/
+        
+        # Reference
+        Main codes are from the official guidance here:
+        https://nbviewer.jupyter.org/github/jupyter/notebook/blob/master/docs/source/examples/Notebook/Importing%20Notebooks.ipynb
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
