@@ -1,0 +1,10 @@
+rest_framework_mvt/__init__.py,sha256=O6g1d94KA0FZrGJ6CrsyHs5264_YMjDORinly6KEb68,19
+rest_framework_mvt/managers.py,sha256=ItuI0ixzL1Bt5oQptdRf7EEP-Co6KE-r2asdLuQp8BY,5979
+rest_framework_mvt/renderers.py,sha256=arQ7SRoXu6zp3Qt-3wUgnmo19bYPZ3TijL_6i7m5FQ4,338
+rest_framework_mvt/schemas.py,sha256=GGDqJsHqGU4OiMxszH1kcSLK33Ql1yCg6hK01-8c_K0,905
+rest_framework_mvt/views.py,sha256=oukEXyPac8xPJDugIRcImP4oBivMjuzhC5zQpE-B_40,3542
+djangorestframework_mvt-0.2.2.dist-info/LICENSE.txt,sha256=nFAn3LtVcIF2RFf01_URMj88Jhn3r4msdcgSMvG7-qA,1486
+djangorestframework_mvt-0.2.2.dist-info/METADATA,sha256=ugSnhRO2V0Kj1VHkQ1yhJhJx59SD2L8-j9fh2mzLjOM,2591
+djangorestframework_mvt-0.2.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+djangorestframework_mvt-0.2.2.dist-info/top_level.txt,sha256=KjthNg0kK9AtdSvEZDDOaQYqC5Wx_jUxsBK22gVT8LE,19
+djangorestframework_mvt-0.2.2.dist-info/RECORD,,
