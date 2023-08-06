@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+assist/__init__.py
+tf_assist.egg-info/PKG-INFO
+tf_assist.egg-info/SOURCES.txt
+tf_assist.egg-info/dependency_links.txt
+tf_assist.egg-info/not-zip-safe
+tf_assist.egg-info/top_level.txt
