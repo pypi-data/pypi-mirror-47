@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+xtea.c
+xtea/__init__.py
+xtea/counter.py
+xtea.egg-info/PKG-INFO
+xtea.egg-info/SOURCES.txt
+xtea.egg-info/dependency_links.txt
+xtea.egg-info/requires.txt
+xtea.egg-info/top_level.txt
