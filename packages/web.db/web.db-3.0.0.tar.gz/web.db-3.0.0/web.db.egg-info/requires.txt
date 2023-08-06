@@ -1,0 +1,11 @@
+marrow.package~=2.0.0
+WebCore~=3.0.0
+
+[development]
+pytest
+pytest-cov
+pytest-flakes
+pymongo
+mongoengine
+sqlalchemy
+pre-commit
