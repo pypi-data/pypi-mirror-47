@@ -1,0 +1,11 @@
+README.md
+setup.py
+cows/__init__.py
+cows/dictionary.py
+cows/list.py
+cows/set.py
+cows/trie.py
+cows.egg-info/PKG-INFO
+cows.egg-info/SOURCES.txt
+cows.egg-info/dependency_links.txt
+cows.egg-info/top_level.txt
