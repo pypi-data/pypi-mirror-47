@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2019-06-12 08:46+0000\n"
+"PO-Revision-Date: 2019-06-12 10:47+0200\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Last-Translator: Mikel Larreategi <mlarreategi@codesyntax.com>\n"
+"Language-Team: \n"
+"Language: eu\n"
+"X-Generator: Poedit 2.0.6\n"
+
+#: configure.zcml:28
+msgid "Content-types for cs.dxfeatured. Dexterity Featured Element"
+msgstr "Content-types for cs.dxfeatured. Dexterity Featured Element"
+
+#: profiles/default/types/Featured.xml
+msgid "Featured"
+msgstr "Destakatua"
+
+#: profiles/default/types/Featured.xml
+msgid "Featured Element"
+msgstr "Destatatutako elementua"
+
+#: featured.py:34
+msgid "Featured text"
+msgstr "Testua"
+
+#: featured.py:23
+msgid "Lead Image"
+msgstr "Irudia"
+
+#: featured.py:29
+msgid "Link"
+msgstr "Lotura"
+
+#: featured.py:30
+msgid "This link will be for the carousel image link"
+msgstr "Lotura elementu honi egingo zaio"
+
+#: configure.zcml:28
+msgid "cs.dxfeatured: Content-types"
+msgstr "cs.dxfeatured: Content-types"

@@ -1,0 +1,41 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="cs.dxfeatured">
+<body>
+
+<tal:comment tal:condition="nothing">
+    This is a sample view template. It will not be used for rendering the
+    content unless activated by creation of a view class with a matching name.
+</tal:comment>
+
+<metal:main fill-slot="content-core">
+  <metal:content-core define-macro="content-core">
+  <tal:definelink define="link context/link">
+                 <a href="" tal:attributes="href context/link"
+                            tal:define="scales context/@@images;
+                                        handia python: scales.scale('image', width=970, height=970);
+                                        large python: scales.scale('image', width=768, height=768);
+                                        preview480 python: scales.scale('image', width=480, height=480);
+                                        mini320 python: scales.scale('image', width=320, height=320);">
+
+                    <img tal:condition="nocall:handia"
+                          tal:attributes="src handia/url;
+                           title context/Title;
+                           alt context/Title;
+                           srcset string:${mini320/url} 320w,
+                                  ${preview480/url} 480w,
+                                  ${large/url} 768w,
+                                  ${handia/url} 970w"/>
+                 </a>
+               </tal:definelink>
+
+  </metal:content-core>
+</metal:main>
+
+</body>
+</html>
+
