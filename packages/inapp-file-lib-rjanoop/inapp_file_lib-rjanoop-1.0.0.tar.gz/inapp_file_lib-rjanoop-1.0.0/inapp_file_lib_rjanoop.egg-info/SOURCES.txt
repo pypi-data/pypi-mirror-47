@@ -1,0 +1,8 @@
+README.md
+setup.py
+inapp_file_lib/__init__.py
+inapp_file_lib/record.py
+inapp_file_lib_rjanoop.egg-info/PKG-INFO
+inapp_file_lib_rjanoop.egg-info/SOURCES.txt
+inapp_file_lib_rjanoop.egg-info/dependency_links.txt
+inapp_file_lib_rjanoop.egg-info/top_level.txt
