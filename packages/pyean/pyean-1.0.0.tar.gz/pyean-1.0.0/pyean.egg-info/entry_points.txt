@@ -1,0 +1,3 @@
+[console_scripts]
+pyean = barcode.pybarcode:main
+
