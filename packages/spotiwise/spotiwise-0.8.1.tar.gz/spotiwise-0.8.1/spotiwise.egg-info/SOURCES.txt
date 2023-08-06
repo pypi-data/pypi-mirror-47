@@ -1,0 +1,16 @@
+CHANGES.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+spotiwise/__init__.py
+spotiwise/client.py
+spotiwise/oauth2.py
+spotiwise/object_classes.py
+spotiwise/util.py
+spotiwise.egg-info/PKG-INFO
+spotiwise.egg-info/SOURCES.txt
+spotiwise.egg-info/dependency_links.txt
+spotiwise.egg-info/requires.txt
+spotiwise.egg-info/top_level.txt
