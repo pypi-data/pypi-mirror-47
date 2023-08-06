@@ -1,0 +1,14 @@
+camtasia/__init__.py,sha256=O2k_5kcdI9sjS8chN5a6-S0LeD90h4s5_36M96LaPgk,33
+camtasia/authoring_client.py,sha256=IyU2ujdhQvUSAvv_VA4hEJKCSVQr7go1oZ-JG4oKGew,181
+camtasia/extras.py,sha256=HcH0nKOYAva0hH_YrI8qGJ7XI2dFdp1-5h9N8Z-BNqQ,398
+camtasia/frame_stamp.py,sha256=TNsQ7DO9mdV7BZZVP1ClNCHN41k_zDPeSCsOnCsaFW4,2262
+camtasia/marker.py,sha256=Hj9lX8q0T7Mh3xIunO1P9DBjfX9hS6V24jjY2-NwIRs,141
+camtasia/media.py,sha256=uzLXEzo9_XcNATKisuYopWu0Ve6sLuvv_te8FKR8XUc,2755
+camtasia/project.py,sha256=hLVRN5d1a8IymyT8WFrp8ZB32qRGisWyjMA0cW7224U,2142
+camtasia/track.py,sha256=cql8w34PPD7AsosLsZ_XbBQ2lt_vhasLb0pWQTyFjN4,666
+camtasia/version.py,sha256=ZT1pVfjOwvW2OuP8OIadHeVtvxk7r5Zo1qY8yZKxHwk,71
+camtasia-1.2.1.dist-info/LICENSE,sha256=_XN_vt6OgDwyvUJ20tEI50IFTgC8ChEful5U0qN_eVs,1053
+camtasia-1.2.1.dist-info/METADATA,sha256=FyKMdeunL4Ep9WA14keln0kfgeILHn8hKpDliSR4ziM,858
+camtasia-1.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+camtasia-1.2.1.dist-info/top_level.txt,sha256=ijX5Be7XuK5mPBBBZTZQVJd8mhX3batpGIph3K828XQ,9
+camtasia-1.2.1.dist-info/RECORD,,

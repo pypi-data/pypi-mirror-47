@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: camtasia
+Version: 1.2.1
+Summary: Python API for Camtasia projects
+Home-page: https://github.com/sixty-north/python-camtasia
+Author: Sixty North AS
+Author-email: austin@sixty-north.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Provides-Extra: test
+Requires-Dist: hypothesis ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+
+========
+camtasia
+========
+
+A Python API for Camtasia projects.
+
+This is intended to be a simple-to-use API for reading information from Camtasia projects. It may grow into something
+more complex, but for now it's likely to include only the things that we need at Sixty North (though, of course, PRs are
+always welcome!)
+
+
