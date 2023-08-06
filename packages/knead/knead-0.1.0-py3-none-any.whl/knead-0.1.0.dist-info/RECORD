@@ -1,0 +1,16 @@
+knead/__init__.py,sha256=3Q7wbmKSqMyqTL3hjMzylaSwlkZ6uHRULWm0Yv4aBXM,69
+knead/__main__.py,sha256=nBfiIZIJO1f7ygMlF_DxI8gCRiHiDOlzsQOjfnOrHe0,4257
+knead/conversions/__init__.py,sha256=I2ja8CMTCykkGXVOD36X6jUJUYTxr_lYM3RByi6u_Sc,208
+knead/conversions/json_to_pb.py,sha256=Jmt1G_CK_ko0lJJzPUT_xmGAjbQm15YgKkrrVB1qjs0,3323
+knead/conversions/pb_to_npy.py,sha256=Vxln48dar1KJm8FrSuqODH9mqGTrz5sebC2g_sUVMr0,2371
+knead/conversions/ttf_to_ttx.py,sha256=Xa5pBemM8E_GY491ruvkOdKDTWU3HWfOEBwtM0Kv6xg,344
+knead/conversions/ttx_to_json.py,sha256=hedcOtbf6CQ_dbQLYGHpjjygKUPHebVnMrxHa5JQyzU,9011
+knead/utils/__init__.py,sha256=Sm4VahHz-vqKT7MQ9rwFj7aOUImfVm4Hil8xc4qwfXY,276
+knead/utils/glyph_batch_pb2.py,sha256=Myh3SnO_bQFAjYwqQTeX9Jex7s-pPgOsCFMSCO9GsCg,4569
+knead/utils/utils.py,sha256=5364fBXVRat1Np2qYcjfde99W6cPtqJhKLoN42s0D_Q,1236
+knead-0.1.0.dist-info/LICENSE,sha256=WV31ZVK2eOD4Swq7-0OEYgu2OkReualHB4s0MKk4lHU,1072
+knead-0.1.0.dist-info/METADATA,sha256=lQ3-wUyCbzm8HYuA75_6Bl5kJdhBqexjnklf1VP0bI0,3027
+knead-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+knead-0.1.0.dist-info/entry_points.txt,sha256=8SV9s_7bamjhuTWB7LSZi38FtbWmjHn2-TLfQHpAiFs,47
+knead-0.1.0.dist-info/top_level.txt,sha256=CEH8a9diB3EHX3J2xjLeGyYAC_frQLoJY-GPmEywsL8,6
+knead-0.1.0.dist-info/RECORD,,

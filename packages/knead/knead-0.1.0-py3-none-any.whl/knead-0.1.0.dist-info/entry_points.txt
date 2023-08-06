@@ -1,0 +1,3 @@
+[console_scripts]
+knead = knead.__main__:main
+
