@@ -1,0 +1,17 @@
+README.md
+setup.py
+bin/datalog
+src/arrdem.datalog.egg-info/PKG-INFO
+src/arrdem.datalog.egg-info/SOURCES.txt
+src/arrdem.datalog.egg-info/dependency_links.txt
+src/arrdem.datalog.egg-info/requires.txt
+src/arrdem.datalog.egg-info/top_level.txt
+src/datalog/__init__.py
+src/datalog/debris.py
+src/datalog/easy.py
+src/datalog/evaluator.py
+src/datalog/parser.py
+src/datalog/reader.py
+src/datalog/types.py
+test/test_datalog_evaluator.py
+test/test_datalog_reader.py
