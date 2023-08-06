@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: mb-drf-article
+Version: 0.1.0
+Summary: An article model for Django-Rest-Framework.
+Home-page: https://github.com/8area8/drf-articles
+License: MIT
+Keywords: django,django rest framework,article
+Author: mikael briolet
+Author-email: mikaelbriolet.services@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Project-URL: Repository, https://github.com/8area8/drf-articles
+Description-Content-Type: text/markdown
+
+# Mb-drf-article
+
+Mb-drf-article is a simple Django Rest Framework app to add some articles.
+
+## Quick start
+
+### 1. Add "mb-drf-article" to your `INSTALLED_APPS` settings
+
+```python
+# settings.py
+
+INSTALLED_APPS = [
+...
+'mb-drf-article',
+]
+```
+
+### 2. Include the articles URLconf in your project `urls.py`
+
+```python
+# urls.py
+
+urlpatterns = [
+    # ...
+    path('articles/', include('mb-drf-article.urls')),
+]
+```
+
+### 3. Add the models in your Database
+
+Run `python manage.py migrate` in your SHELL.
+
+### 4. Update the Django Rest Framework Settings
+
+Update the Django Rest Framework settings to add a pagination.
+
+```python
+# Django Rest Framework
+# https://www.django-rest-framework.org
+
+REST_FRAMEWORK = {
+    # ...
+    'DEFAULT_PAGINATION_CLASS': ('rest_framework.pagination.'
+                                 'LimitOffsetPagination'),
+    'PAGE_SIZE': 5
+}
+```
+
