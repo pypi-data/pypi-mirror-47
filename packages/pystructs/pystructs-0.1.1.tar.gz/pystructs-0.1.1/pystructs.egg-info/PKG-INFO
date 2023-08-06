@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pystructs
+Version: 0.1.1
+Summary: c-like struct implementation for human
+Home-page: https://github.com/moreal/pystructs
+Author: moreal
+Author-email: dev.moreal@gmail.com
+License: UNKNOWN
+Description: # pystructs
+        
+        [![Build Status](https://travis-ci.com/moreal/pystructs.svg?branch=master)](https://travis-ci.com/moreal/pystructs)
+        [![codecov](https://codecov.io/gh/moreal/pystructs/branch/master/graph/badge.svg)](https://codecov.io/gh/moreal/pystructs)
+        
+        `pystructs` is useful `c-like struct` package for human
+        
+        ## How to install
+        
+        ```bash
+        $ pip install pystructs
+        ```
+        
+        ## Example codes
+        
+        ```python
+        from pystructs import fields
+        
+        class MyStruct(fields.Struct):
+            byte = fields.BytesField(size=2)
+        
+        MyStruct(b'\x00\x01').byte  # b'\x00\x01'
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
