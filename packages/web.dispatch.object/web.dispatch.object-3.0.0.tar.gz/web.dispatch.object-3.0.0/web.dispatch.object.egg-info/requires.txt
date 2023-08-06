@@ -1,0 +1,8 @@
+web.dispatch~=3.0.1
+
+[development]
+pytest
+pytest-cov
+pytest-flakes
+pytest-isort
+pre-commit
