@@ -1,0 +1,3 @@
+[qiime2.plugins]
+q2-metabodisttrees = q2_metabodisttrees.plugin_setup:plugin
+
