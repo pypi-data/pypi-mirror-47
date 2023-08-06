@@ -1,0 +1,32 @@
+Metadata-Version: 1.0
+Name: printbig
+Version: 0.6.2.1
+Summary: An python package that prints bigger than anyone. It prints HUGE
+Home-page: https://github.com/AlexAndrei98/testpackage
+Author: Alex Andrei
+Author-email: alexandrei1998@hotmail.it
+License: MIT
+Description-Content-Type: text
+Description: This package was inspired by the Spring Boot startup logs when you lunch an app. 
+        
+        
+        Installation
+        You can install printbig directly from your python package manager using the following line in the terminale:
+        
+        For now the package has one function called printbig that that takes one argument. 
+        
+        NOTE: It does not support any special characters only the english alphabet. 
+        
+        Let's see an example:
+        
+        from printbig import printbig
+        printbig("ciao")
+        
+        
+        CCCCC  IIIII    A    OOOOO  
+        C        I     A A   O   O  
+        C        I    AAAAA  O   O  
+        C        I    A   A  O   O  
+        CCCCC  IIIII  A   A  OOOOO
+        
+Platform: UNKNOWN
