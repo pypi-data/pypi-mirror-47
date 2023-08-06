@@ -1,0 +1,3 @@
+[console_scripts]
+refalcheck = refal.refalcheck:main
+

@@ -1,0 +1,9 @@
+F {
+    s.Count e.Items A =
+        <F <Add s.Count 1> e.Items>;
+
+    s.Count e.Items s.Other =
+        <F s.Count e.Items>;
+
+    s.Count /* пусть */ = s.Count;
+}
