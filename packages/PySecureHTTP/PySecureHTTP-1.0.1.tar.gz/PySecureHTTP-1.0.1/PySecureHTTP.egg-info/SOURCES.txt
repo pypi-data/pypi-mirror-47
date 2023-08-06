@@ -1,0 +1,11 @@
+README.rst
+SecureHTTP.py
+generate_rsa_keys.sh
+setup.cfg
+setup.py
+PySecureHTTP.egg-info/PKG-INFO
+PySecureHTTP.egg-info/SOURCES.txt
+PySecureHTTP.egg-info/dependency_links.txt
+PySecureHTTP.egg-info/entry_points.txt
+PySecureHTTP.egg-info/requires.txt
+PySecureHTTP.egg-info/top_level.txt
