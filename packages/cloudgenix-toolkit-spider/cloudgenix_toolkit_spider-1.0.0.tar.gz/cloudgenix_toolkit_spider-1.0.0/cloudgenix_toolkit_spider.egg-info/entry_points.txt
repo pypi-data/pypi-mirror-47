@@ -1,0 +1,4 @@
+[console_scripts]
+spider_build_plan = cloudgenix_toolkit_spider:plan
+spider_run_plan = cloudgenix_toolkit_spider:test
+
