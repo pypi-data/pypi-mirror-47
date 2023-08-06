@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: jMathLib
+Version: 5
+Summary: Basic Mathematics Library
+Home-page: https://github.com/user/reponame
+Author: Masterbond7
+Author-email: quintinslough@gmail.com
+License: MIT
+Download-URL: https://github.com/Masterbond7/jMathLib/archive/5.tar.gz
+Description: UNKNOWN
+Keywords: Math,Maths,Mathematics,Basic
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
