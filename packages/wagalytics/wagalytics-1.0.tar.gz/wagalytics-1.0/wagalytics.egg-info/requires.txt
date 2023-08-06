@@ -1,0 +1,5 @@
+wagtail>=0.8.7
+Django>=1.7.1
+oauth2client
+wagtailfontawesome>=1.0.2
+pyexcel-ods==0.5.3
