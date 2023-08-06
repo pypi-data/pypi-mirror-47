@@ -1,0 +1,3 @@
+[plover.meta]
+merge = plover_merge_words.merge:merge
+
