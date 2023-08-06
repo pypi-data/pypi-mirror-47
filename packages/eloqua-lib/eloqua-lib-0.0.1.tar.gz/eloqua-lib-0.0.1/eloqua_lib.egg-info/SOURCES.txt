@@ -1,0 +1,15 @@
+README.md
+setup.py
+eloqua/__init__.py
+eloqua/eloqua.py
+eloqua/errors.py
+eloqua/paths.py
+eloqua_lib.egg-info/PKG-INFO
+eloqua_lib.egg-info/SOURCES.txt
+eloqua_lib.egg-info/dependency_links.txt
+eloqua_lib.egg-info/top_level.txt
+test/__init__.py
+test/creds.py
+test/example_creds.py
+test/test.py
+test/test_data.py
