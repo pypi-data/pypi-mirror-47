@@ -1,0 +1,8 @@
+README.rst
+setup.py
+bixi.egg-info/PKG-INFO
+bixi.egg-info/SOURCES.txt
+bixi.egg-info/dependency_links.txt
+bixi.egg-info/entry_points.txt
+bixi.egg-info/requires.txt
+bixi.egg-info/top_level.txt
