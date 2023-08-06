@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: feedsearch-crawler
+Version: 0.0.5
+Summary: Search sites for RSS, Atom, and JSON feeds
+Home-page: https://github.com/DBeath/feedsearch-crawler
+Author: David Beath
+Author-email: davidgbeath@gmail.com
+License: MIT
+Description: # Feedsearch Crawler
+        Feedsearch Crawler is a Python library for searching websites for RSS, Atom, and JSON feeds.
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
