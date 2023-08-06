@@ -1,0 +1,13 @@
+workstreams/__init__.py,sha256=Yt7-LagsOrmzNd1ei2Df2lTNvP43z0of4up0n9rSZSg,132
+workstreams/__version__.py,sha256=vPaWtLjeSCtguM_s3FVxs1zmRGlr0meqz_61Eqs1Iyk,87
+workstreams/client.py,sha256=h1PMScWErqXGsRfic1PTQJEsWeSxfKpcbLhMSm0drnU,732
+workstreams/exceptions.py,sha256=TEuRJidncZQWpggG_BV9bn14y8BzZX5ZW_E_FJLK_XE,46
+workstreams/utils.py,sha256=VXUpWnsy6Bl6gxIbR0dzKj7PuXiNRkCX98tffhoJUnI,99
+workstreams/resources/__init__.py,sha256=yAnd3xw_yQLi4BHLG6e4MdAC3qTgM5_Ru8IiOaKPlic,60
+workstreams/resources/base.py,sha256=jgmrb7LDKgq_CXmgszRyFeNDMNGOKOohxpa00QpEzSs,851
+workstreams/resources/tasks.py,sha256=Oxo8itjyNPPlySPuoujUxpb7hU6Tw6vLY4DPEpgAV1A,2867
+workstreams-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+workstreams-1.0.0.dist-info/METADATA,sha256=G5vTdzH6eXYOi8skOmMuv1DExnW0tTegvIT_XXqpEhw,2518
+workstreams-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+workstreams-1.0.0.dist-info/top_level.txt,sha256=dqCu3np4VDxNVbXnJXl2iBnmjmgS4XO_wsJ-OwJeVZA,12
+workstreams-1.0.0.dist-info/RECORD,,
