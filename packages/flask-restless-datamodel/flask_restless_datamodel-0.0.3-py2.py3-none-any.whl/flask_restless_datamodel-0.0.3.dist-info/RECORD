@@ -1,0 +1,11 @@
+flask_restless_datamodel/__init__.py,sha256=HuLdVkfJr_riDLJfzNwljg3eIaURnzMjUY33YiJYhzo,41
+flask_restless_datamodel/datamodel.py,sha256=cti2Vhu_lE_N6wnsBIrCHm-6SLW_QlYy-ZCup3TzzwA,6874
+flask_restless_datamodel/helpers.py,sha256=vSQ6lQHI2TvcgOglz0jHjnwCJvcRYmcYSqMza3yidFQ,705
+flask_restless_datamodel/render.py,sha256=k8EvY85bmFTbDgDjCp1euctRyl4nSiSxkZyfIP5CdRQ,8554
+flask_restless_datamodel-0.0.3.dist-info/AUTHORS,sha256=u5vsbcWZPH_CyVqyb_nQd5ZUg7HdNq7B_Ew-486YhzU,39
+flask_restless_datamodel-0.0.3.dist-info/LICENSE,sha256=4LXvKJLhsFD7Zkp26lgkNnK8hM1h86JACMVUapodvYM,1070
+flask_restless_datamodel-0.0.3.dist-info/METADATA,sha256=Ki_iCcfMP78_82nKm7SKg0E0Eb8q-1W_UBGIg4jlqjQ,3443
+flask_restless_datamodel-0.0.3.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+flask_restless_datamodel-0.0.3.dist-info/pbr.json,sha256=Yju6kk90fzwz42bU71qRQLFcWuvQRj_0KFA1_9HoavA,47
+flask_restless_datamodel-0.0.3.dist-info/top_level.txt,sha256=X2tvxSXoVyo2ZGJYCZ9FATPeoSeXy3Y85hEWcqFXIOE,25
+flask_restless_datamodel-0.0.3.dist-info/RECORD,,
