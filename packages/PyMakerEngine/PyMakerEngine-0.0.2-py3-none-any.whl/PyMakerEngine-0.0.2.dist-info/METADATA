@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: PyMakerEngine
+Version: 0.0.2
+Summary: Make games with python
+Home-page: https://discord.gg/9nTu3kW
+Author: iByNiki_
+Author-email: therealpingmc@gmail.com
+License: UNKNOWN
+Keywords: games,python games,game,pygame
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: keyboard (==0.13.3)
+
+Welcome to PyMaker, the tool to make games in python!
+
+Documentation: Soon!
+Check our discord: https://discord.gg/9nTu3kW
+
