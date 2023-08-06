@@ -1,0 +1,6 @@
+pyminitouch
+findit
+fastcap
+pyatool
+loguru
+adbutils
