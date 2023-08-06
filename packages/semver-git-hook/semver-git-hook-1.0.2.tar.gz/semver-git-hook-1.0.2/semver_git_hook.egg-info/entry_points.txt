@@ -1,0 +1,3 @@
+[console_scripts]
+semver-git-hook = semver_git_hook:main
+

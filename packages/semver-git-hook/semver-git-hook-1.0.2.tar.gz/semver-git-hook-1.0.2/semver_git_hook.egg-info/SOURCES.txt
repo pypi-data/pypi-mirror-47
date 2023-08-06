@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+semver_git_hook/__init__.py
+semver_git_hook.egg-info/PKG-INFO
+semver_git_hook.egg-info/SOURCES.txt
+semver_git_hook.egg-info/dependency_links.txt
+semver_git_hook.egg-info/entry_points.txt
+semver_git_hook.egg-info/requires.txt
+semver_git_hook.egg-info/top_level.txt
