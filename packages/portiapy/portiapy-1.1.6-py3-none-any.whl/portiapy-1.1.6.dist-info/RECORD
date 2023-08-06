@@ -1,0 +1,16 @@
+portiapy/__init__.py,sha256=ByFO1FPgn6aIH2ZpAQOXiu-6lNvHfC6Bpqhf8efBeyI,402
+portiapy/axioms.py,sha256=2JpyuesOc_sVjC37h0v-0VSABtlvU2LfSguxWCSTTbQ,3213
+portiapy/describe.py,sha256=UGQjjsJflKQe4xhb3KF26CiapAReuM_-939ZozmG9oo,4888
+portiapy/phases.py,sha256=jp-fSLnou8Sz-3PXBqtY6ZsTi7jrHi-LP5ysQJ316bQ,2540
+portiapy/portia.py,sha256=J4lt3jprYx55o2BVW2pwCthz0CNsnxhyPLqXaTsnW6M,12548
+portiapy/profile.py,sha256=Y7Myjl2SoeZVa299lRfn3VGc-8QOS_Dvu-O8Ht_Oaq4,2994
+portiapy/select.py,sha256=oWjQrwqZrf37oW4T2kpP1jsMUyAH3fjacwwDd1cSxL0,3569
+portiapy/specs.py,sha256=0KLiNjFjlayd0PPtaarwiAD-br5c_MK3owUT62VTGWo,3128
+portiapy/summary.py,sha256=E312z2p_SHiUyyys8jaED267Nz9BL-rrz4gCJJ8RWpM,2937
+portiapy/utils.py,sha256=I2QijXvOZJRNM0surwdOCKq-mz6rDiBpvBsATYAUmFA,19397
+portiapy-1.1.6.dist-info/DESCRIPTION.rst,sha256=2KAh11l5T4Hpcp7DVpqFLn52V4ndoRA3jBb2EgiXLTU,5376
+portiapy-1.1.6.dist-info/METADATA,sha256=SMqLO16GOGGe_QbU1BynY8W2bjmNF2_LqMOOkpSP4vs,6006
+portiapy-1.1.6.dist-info/RECORD,,
+portiapy-1.1.6.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+portiapy-1.1.6.dist-info/metadata.json,sha256=CNyVbKMIPxBiZ0KZ0jjecQPV8ljpj-bBVO7-uLttRRQ,771
+portiapy-1.1.6.dist-info/top_level.txt,sha256=yGsN8ui46MfZdKYFMyUGceEMuHPLlkq0s1hQ9Vf_I30,9
