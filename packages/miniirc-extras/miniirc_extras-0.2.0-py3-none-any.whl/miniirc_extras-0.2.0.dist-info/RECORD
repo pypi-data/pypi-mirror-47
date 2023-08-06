@@ -1,0 +1,15 @@
+miniirc_extras/__init__.py,sha256=0EtrdT2CzZa7wH2CKZ8zpWZc1t9GE3_E_fIkw3BhonA,1428
+miniirc_extras/_classes.py,sha256=NoSyHLrQpXYYh9ewmfkoHvDIPdD-ZP7EkZRtrqGhfcI,6569
+miniirc_extras/_require.py,sha256=ZRaxl2vnyDfxu7lLzKmmzb92UOZtPNmYdMTsgVB6Qws,914
+miniirc_extras/utils.py,sha256=49pskW0jKUm6oTp3yxvuFIbEwmclTRx80PG1Q-zgpbg,8397
+miniirc_extras/features/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+miniirc_extras/features/_json.py,sha256=NmGe_ActpLuC6M7sfsIvKRu6LAc0Z-TR1_x9kMxJfeg,2203
+miniirc_extras/features/chans.py,sha256=K3dNrxXLxmlQKiDFGkFhEZ4WtDYn_FLxQz5zUQh_Vhc,10480
+miniirc_extras/features/ensure_connection.py,sha256=InHNzjRriZUJpcUB0Dy_gD2ev9wLNkMX0Vnri4Ms_As,2447
+miniirc_extras/features/testfeature.py,sha256=qq5bTAWKsNzsfzvOZPYPNH9Wz76vsMvfg-7bGrx1i4g,304
+miniirc_extras/features/users.py,sha256=FNkj6a3WA9JE6KSmLOBpfe20vezr6TeV31o2TGDR8zA,12776
+miniirc_extras-0.2.0.dist-info/LICENSE.md,sha256=hOVmEmR6ni_Zxrj3toFCIf8MHQ1Lq59Eejsj7GGg-5o,1079
+miniirc_extras-0.2.0.dist-info/METADATA,sha256=nvR15C7fJIqDwrBblUKIZGQ_9ytPNTGCUGir6EE7OkA,9299
+miniirc_extras-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+miniirc_extras-0.2.0.dist-info/top_level.txt,sha256=cYo-pMZywhQW3f3Rugz134oZd4Aq5_UyLAEvzvITe94,15
+miniirc_extras-0.2.0.dist-info/RECORD,,
