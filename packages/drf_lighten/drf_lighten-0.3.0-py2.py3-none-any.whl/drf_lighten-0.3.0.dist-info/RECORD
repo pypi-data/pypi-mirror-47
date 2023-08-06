@@ -1,0 +1,7 @@
+drf_lighten/__init__.py,sha256=iJBm4r0mCMvr9Vkr2TTPYKYoHkd35IxoiIeULGQOMm0,79
+drf_lighten/serializers.py,sha256=cxwVUTHR40fDQmeMcf1zkLMedd3b--5kbrOx_yGSd8c,2547
+drf_lighten/views.py,sha256=q1X3nfm1NQcokI1qN0pc9YKSeziG8vWBqKwXqgZWjTM,758
+drf_lighten-0.3.0.dist-info/LICENSE,sha256=kjSG15k8cE17B0qUxhMe6RUyyZ3dBN3qtQxdvN3WPsI,1081
+drf_lighten-0.3.0.dist-info/WHEEL,sha256=RFGpeSWy2MhnOH7MbIZmX9ZR0evWl2eJvsMO-yF-tDc,97
+drf_lighten-0.3.0.dist-info/METADATA,sha256=ccj3C0pxDiE0RJNLxm58Gx_U__NErapHaQA2S1Hb6Xo,2598
+drf_lighten-0.3.0.dist-info/RECORD,,
