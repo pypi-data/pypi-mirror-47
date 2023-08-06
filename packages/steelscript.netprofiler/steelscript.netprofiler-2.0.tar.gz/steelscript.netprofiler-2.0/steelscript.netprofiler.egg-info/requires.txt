@@ -1,0 +1,6 @@
+steelscript>=2.0
+
+[test]
+vcrpy
+mock
+pytest
