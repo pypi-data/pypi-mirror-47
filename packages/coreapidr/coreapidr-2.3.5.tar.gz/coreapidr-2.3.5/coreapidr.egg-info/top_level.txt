@@ -1,0 +1,3 @@
+coreapidr
+coreapidr/codecs
+coreapidr/transports

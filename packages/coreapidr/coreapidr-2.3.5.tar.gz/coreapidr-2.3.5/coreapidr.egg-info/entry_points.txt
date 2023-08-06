@@ -1,0 +1,9 @@
+[coreapidr.codecs]
+corejson = coreapidr.codecs:CoreJSONCodec
+download = coreapidr.codecs:DownloadCodec
+json = coreapidr.codecs:JSONCodec
+text = coreapidr.codecs:TextCodec
+
+[coreapidr.transports]
+http = coreapidr.transports:HTTPTransport
+
