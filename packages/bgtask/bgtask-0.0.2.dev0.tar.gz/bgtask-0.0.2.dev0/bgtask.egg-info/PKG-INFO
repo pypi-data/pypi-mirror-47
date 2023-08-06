@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: bgtask
+Version: 0.0.2.dev0
+Summary: Simple, Fast, Redis based background task manager
+Home-page: https://github.com/ipconfiger/bgtask
+Author: Alexander.Li
+Author-email: superpowerlee@gmail.com
+License: MIT
+Description: Simple, Fast, Redis based background task manager
+Keywords: task,redis,background worker muilti process
+Platform: UNKNOWN
