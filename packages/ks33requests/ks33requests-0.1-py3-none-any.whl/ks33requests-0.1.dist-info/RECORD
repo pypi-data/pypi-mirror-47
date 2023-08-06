@@ -1,0 +1,14 @@
+ks33requests/__init__.py,sha256=rC-EmSiKOhPXZqRntZ-rnUfRMm9y13XhtW6RBYIWrpw,138
+ks33requests/_scm_version.py,sha256=0vNK8EM8sYn27cbGjwWv4fVokHuQx7PIwZxpZqc8gYg,114
+ks33requests/auth.py,sha256=Lz6wr3PC6sDcj5AM2pYW2Ah5THNTENaLZDRD8QOCQDA,1972
+ks33requests/client.py,sha256=4AdtLck3WWz3H7k2xLRjfqqN2eSp2LrqRBPRbMfRvBo,4467
+ks33requests/errors.py,sha256=VdXruLjGNkBeqmAod_gVckPk3bcWe_HOdrci5I_yJTY,1715
+ks33requests/utils.py,sha256=OEEIcB4d4osCvl-4ksKWNX5fkT9f9sgx4rZgwlvFoPY,286
+ks33requests/schemas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ks33requests/schemas/s3_api.py,sha256=bQU2wzUyhc6bArQGqp_-mGTBmup6KjDMpuYGgi2IB3A,442767
+ks33requests/schemas/s3_sub.py,sha256=tB2A29Tud-CQY3pvvvfRmASRNcROQKuOk7gQGEGZ0Pk,30418
+ks33requests-0.1.dist-info/AUTHORS.md,sha256=eBLgZjqZAjy3mBJJF9zoP-TQPXINWXQ1Fo16w5ClG5o,129
+ks33requests-0.1.dist-info/METADATA,sha256=OPgeBaNhOu4BJSOoKNGdRyadoZJe0tQPmMNQ9aEhY6o,2309
+ks33requests-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ks33requests-0.1.dist-info/top_level.txt,sha256=EBynwakCw1pjaDxhXrKal3ca6mUPt_u1OdFm_oCufPU,13
+ks33requests-0.1.dist-info/RECORD,,
