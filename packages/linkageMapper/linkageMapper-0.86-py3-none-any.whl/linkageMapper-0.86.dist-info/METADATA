@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: linkageMapper
+Version: 0.86
+Summary: Genomic similarities per region
+Home-page: https://www.github.com/Gab0/linkageMapper
+Author: Gabriel Araujo
+Author-email: gabriel_scf@hotmail.com
+License: UNKNOWN
+Platform: any
+Requires-Dist: bio (==0.1.0)
+Requires-Dist: numpy (==1.16.2)
+Requires-Dist: Biopython (==1.73)
+Requires-Dist: pycairo (==1.18.0)
+Requires-Dist: pygobject (==3.27.0)
+Requires-Dist: ete3 (==3.1.1)
+Requires-Dist: matplotlib (==3.0.0)
+Requires-Dist: scipy (==1.2.1)
+Requires-Dist: ruffus (==2.8.1)
+Requires-Dist: setuptools (==40.9.0)
+Requires-Dist: reportlab (==3.5.10)
+Requires-Dist: fastcluster (==1.1.25)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: pdfrw (==0.4)
+Requires-Dist: pandas (==0.23.4)
+Requires-Dist: xmltodict (==0.11.0)
+Requires-Dist: Pillow (==6.0.0)
+Requires-Dist: scikit-learn (==0.21.2)
+
+UNKNOWN
+
+
