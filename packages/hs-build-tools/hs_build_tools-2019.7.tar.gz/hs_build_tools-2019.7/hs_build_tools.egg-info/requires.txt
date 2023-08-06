@@ -1,0 +1,10 @@
+
+[dev]
+sniffer
+coverage
+mypy
+twine
+wheel
+nose
+pytest
+pyinotify
