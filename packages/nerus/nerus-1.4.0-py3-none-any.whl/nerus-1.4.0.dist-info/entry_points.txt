@@ -1,0 +1,3 @@
+[console_scripts]
+nerus-ctl = nerus.ctl.__main__:main
+
