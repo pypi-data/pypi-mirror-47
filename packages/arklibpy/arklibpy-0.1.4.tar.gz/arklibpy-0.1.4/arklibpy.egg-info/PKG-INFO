@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: arklibpy
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: https://github.com/fangzhouwang/arklibpy
+Author: Fangzhou Wang
+Author-email: fwangusc@gmail.com
+License: MIT
+Description: # ArkLibPy
+        A python library which contains commonly used code for my projects.
+        
+Keywords: Database
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires: _mysql
+Requires-Python: >=3.6, !=3.5.*, <4
+Description-Content-Type: text/markdown
