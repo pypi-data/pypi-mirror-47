@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+setup.cfg
+setup.py
+sansio_multipart/__init__.py
+sansio_multipart/errors.py
+sansio_multipart/parser.py
+sansio_multipart/utils.py
+sansio_multipart/wsgi_form_parser.py
+sansio_multipart.egg-info/PKG-INFO
+sansio_multipart.egg-info/SOURCES.txt
+sansio_multipart.egg-info/dependency_links.txt
+sansio_multipart.egg-info/top_level.txt
