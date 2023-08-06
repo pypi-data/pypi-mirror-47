@@ -1,0 +1,78 @@
+# Slacktory
+
+A decorator which is called using:
+```python
+@slacktory.watch('the text to watch for')
+``` 
+...that watches a specified Slack channel for the provided text argument in a new Slack post message
+
+Requires **Python 3.7**
+## Installation
+
+
+
+```sh
+pip install slacktory
+```
+For this decorator to work, you must first create a [Slack App](https://api.slack.com/apps)
+ 
+Then create a **local_settings.py** file in your project's root directory with the following content:
+
+```python
+name = '<your slack channel name>'
+channel = '<your slack channel id>'
+token = '<your slack API token>'
+webhook = '<your slack channel webhook>'
+
+```
+
+---------------------------------------------------
+
+All of the above information can be obtained when setting up your [Slack App](https://api.slack.com/apps)
+
+## Usage example
+
+```python
+>>> import slacktory
+>>> @slacktory.watch('do the thing') # the decorator 
+>>> def the_thing():
+
+        # do something here...
+    
+        the_thing()  
+```
+In the above example, the_thing() will be called once the @slacktory.watch decorator has detected the text '_do the thing_' in a new slack message in the slack channel (specified in **local_settings.py**).
+
+**Note** the recursive call to the_thing() inside **def the_thing():** . Currently this must be placed after the action inside the function in order to reset the watch on the Slack channel. 
+I would be grateful for any help to take care of this step inside the decorator!
+
+
+## Release History
+
+
+* 0.0.1
+    * first release
+
+## Meta
+
+James Coleman – jamescoleman@me.com
+
+Distributed under the MIT license. See ``LICENSE`` for more information.
+
+[gitlab.com/jamescoleman/slacktory](https://gitlab.com/j9mes/slacktory)
+
+## Contributing
+
+1. Fork it (<https://gitlab.com/j9mes/slacktory/forks/new>)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[npm-image]: https://img.shields.io/npm/v/datadog-metrics.svg?style=flat-square
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
