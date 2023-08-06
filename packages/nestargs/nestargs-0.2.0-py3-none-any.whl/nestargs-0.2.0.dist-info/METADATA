@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nestargs
+Version: 0.2.0
+Summary: Nested arguments parser
+Home-page: https://github.com/speg03/nestargs
+License: MIT
+Keywords: argparse,arguments,parser,cli,command,line,interface
+Author: Takahiro Yano
+Author-email: speg03@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+# nestargs
+
+Nested arguments parser
+
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/nestargs.svg)](https://pypi.org/project/nestargs/)
+[![Build Status](https://travis-ci.com/speg03/nestargs.svg?branch=master)](https://travis-ci.com/speg03/nestargs)
+[![codecov](https://codecov.io/gh/speg03/nestargs/branch/master/graph/badge.svg)](https://codecov.io/gh/speg03/nestargs)
+
