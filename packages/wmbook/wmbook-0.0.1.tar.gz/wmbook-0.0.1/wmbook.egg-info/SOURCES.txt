@@ -1,0 +1,12 @@
+README.md
+setup.py
+wmbook/__init__.py
+wmbook.egg-info/PKG-INFO
+wmbook.egg-info/SOURCES.txt
+wmbook.egg-info/dependency_links.txt
+wmbook.egg-info/requires.txt
+wmbook.egg-info/top_level.txt
+wmbook/test/__init__.py
+wmbook/test/test_aidevlog.py
+wmbook/utils/__init__.py
+wmbook/utils/_show_versions.py
