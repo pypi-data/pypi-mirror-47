@@ -1,0 +1,74 @@
+Metadata-Version: 2.1
+Name: filelog
+Version: 1.0.1
+Summary: json supported easy debugger for python, in files. can also read.
+Home-page: https://github.com/ebsaral/filelog
+Author: Emin Bugra Saral
+Author-email: eminbugrasaral@me.com
+License: BSD
+Project-URL: Documentation, https://github.com/ebsaral/filelog
+Project-URL: Funding, https://github.com/ebsaral/filelog
+Project-URL: Source, https://github.com/ebsaral/filelog
+Description: # filelog 1.0.1
+        
+        Hello.
+        
+        I am an easy debugger which prints into files. I can also read. In case you need me ever.
+        
+        Simplicity within a certain complexity.
+        
+        # Install
+        
+        `pip install filelog`
+        
+        # Documentation
+        
+        ## param: filename
+        
+        Name of the file. The extension `.log` will be added. 
+        Default: `debug`
+        ENV name: `READABLE_GLOBAL_VARIABLE_NAME`
+        
+        ## param: debug
+        
+        If set True, prints what's going on.
+        Default: True
+        
+        ## param: json
+        
+        If set True, it will enable json conversion
+        Default: True
+        
+        ## param: callback
+        
+        If set (a function), the function gets executed with the path of created file.
+        Default: None
+        
+        
+        ## Example
+        
+        ```code=python
+        from filelog import Writer, Reader
+        
+        Writer() >> {'allah': 'birdir'}
+        # creates a file called debug.log and saves into
+        >>> {"allah": "birdir"}
+        
+        test = Reader() # reads from debug.log
+        print test
+        >>> {'allah': 'birdir'}
+        
+        # delete callback
+        import os
+        Writer(callback: lambda x: os.remove(x)) >> {'test': 'callback'} # deletes the file
+        ```
+        
+Keywords: json supported easy debugger for python debug file writer reader
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
