@@ -1,0 +1,6 @@
+json-rpc
+affinity
+
+[tests]
+nose
+requests
