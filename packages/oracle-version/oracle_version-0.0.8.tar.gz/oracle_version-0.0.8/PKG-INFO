@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: oracle_version
+Version: 0.0.8
+Summary: Oracle is version name generator with version journal this ensures that version names are unique.
+Home-page: https://github.com/Egnod/oracle
+Author: Egnod
+Author-email: egnod@yandex.ru
+License: BSD 4
+Download-URL: https://github.com/Egnod/oracle/archive/master.zip
+Description: UNKNOWN
+Keywords: Versions,Generators,Oracle,Version Generator,Version Name generator
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
