@@ -1,0 +1,10 @@
+wranglertools/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wranglertools/_version.py,sha256=7KjK-ExOyS_fJgv3G7tcLplvvr08UR_00ASP80qjwl4,127
+wranglertools/get_field_info.py,sha256=52lyZVyks3aS-dVF1VXLXp6h9Omj0W0fCcLaSl4XGi8,21688
+wranglertools/import_data.py,sha256=MmBFH2bjcwDIzdyaonlZ0_4RXP6f5M8uYQw0GcVtDzw,67777
+Submit4DN-1.1.5.dist-info/LICENSE.txt,sha256=InLZNyrICvNa9WFkpMN0fTbPaJABkuwpJdkHR4IRI0c,1083
+Submit4DN-1.1.5.dist-info/METADATA,sha256=dVypIvAv9KO0kHzSiXexwPGO9RGXVb7GsSZCrcv4NV0,1036
+Submit4DN-1.1.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Submit4DN-1.1.5.dist-info/entry_points.txt,sha256=2t8eqUWK_pVdgn2Zd4vYF3i2Bq7DW3oCytIlTd-2LpE,148
+Submit4DN-1.1.5.dist-info/top_level.txt,sha256=I7r8zCSTsRBmvqr2HWRxqbVjPm9FzdXRgVQEkiMDSRk,14
+Submit4DN-1.1.5.dist-info/RECORD,,
