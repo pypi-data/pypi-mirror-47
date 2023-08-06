@@ -1,0 +1,10 @@
+worker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+worker/__main__.py,sha256=8D_ILilvhQ0F1XjW8HkP8DktAuitfZG2qYo6mwpWKHI,8531
+worker/action.py,sha256=kuG5R5BrreQOEM4-kAXOfUSRRrxApdZgaT03dWX2wJQ,7056
+worker/api_client.py,sha256=LiUthUsGNrexEQdkiHsiwmfFG-w41n_Q2x2Z6tCsgSY,3976
+worker/tasks.py,sha256=5AKXRoXkXpGCYbwzeaVHSjkzzu7OaYTvXrs6qs4soX4,6939
+njinn_worker-0.4.5.dist-info/METADATA,sha256=uVu0tkwFgfzBo-6kS_tFcqrDHvMKOkPASrOMCe_deus,1257
+njinn_worker-0.4.5.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+njinn_worker-0.4.5.dist-info/entry_points.txt,sha256=ZLTRvdfeYCwJbAl-PuwffS5vABFwmdwGxwIH_ME-haU,55
+njinn_worker-0.4.5.dist-info/top_level.txt,sha256=KrP-SOC-I1V0U33nVzMgkHR8wO-reJYASIvWVyLyFIY,7
+njinn_worker-0.4.5.dist-info/RECORD,,
