@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: torchsummaryX
+Version: 1.2.0
+Summary: Improved visualization tool of torchsummary.
+Home-page: https://github.com/nmhkahn/torchsummaryX
+Author: Namhyuk Ahn
+Author-email: nmhkahn@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: torch
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+UNKNOWN
+
+
