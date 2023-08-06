@@ -1,0 +1,23 @@
+Header 1
+========
+
+Example text.
+
+Javascript hyperlink `test <javascript:alert(1)>`_.
+
+javascript:alert(1)
+
+<script>alert('scary js is running')</script>
+
+`anonymous hyperlink reference`__.
+
+__ javascript:alert(document.cookie)
+
+Header 2
+--------
+
+1. Blah blah ``code`` blah
+
+2. More ``code``, hooray
+
+3. Somé UTF-8°
