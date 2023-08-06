@@ -1,0 +1,8 @@
+README.md
+setup.py
+pcap_splitter/__init__.py
+pcap_splitter/splitter.py
+pcap_splitter.egg-info/PKG-INFO
+pcap_splitter.egg-info/SOURCES.txt
+pcap_splitter.egg-info/dependency_links.txt
+pcap_splitter.egg-info/top_level.txt

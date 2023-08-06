@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pcap_splitter
+Version: 1.0.0
+Summary: Pcap-splitter allows you to split a _.pcap_ file into subsets of _.pcap_ files based on sessions, flows, ip addresses, number of bytes, number of network packets...
+Home-page: https://github.com/shramos/pcap-splitter
+Author: Santiago Hernandez Ramos
+Author-email: shramos@protonmail.com
+License: GNU
+Description: UNKNOWN
+Keywords: pcap,split,network,packet,modification,manipulation,modify,flows,sessions,ip,divide
+Platform: Linux
+Platform: Windows
+Platform: MacOS
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
