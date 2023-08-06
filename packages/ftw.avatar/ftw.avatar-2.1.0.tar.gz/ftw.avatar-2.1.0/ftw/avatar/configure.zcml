@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    i18n_domain="ftw.avatar">
+
+    <include package=".browser" />
+
+    <utility factory=".default.DefaultAvatarGenerator"
+             provides="ftw.avatar.interfaces.IAvatarGenerator" />
+
+    <subscriber
+      for="Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent"
+      handler=".handlers.check_avatar"
+    />
+
+</configure>
