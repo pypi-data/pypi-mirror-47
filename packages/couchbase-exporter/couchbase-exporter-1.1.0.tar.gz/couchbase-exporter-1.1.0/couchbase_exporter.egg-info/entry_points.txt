@@ -1,0 +1,3 @@
+[console_scripts]
+couchbase-exporter = couchbase_exporter.__init__:main
+
