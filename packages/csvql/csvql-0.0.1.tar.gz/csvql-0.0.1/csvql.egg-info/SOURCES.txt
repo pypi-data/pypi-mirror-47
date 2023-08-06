@@ -1,0 +1,10 @@
+README.md
+setup.py
+csvql.egg-info/PKG-INFO
+csvql.egg-info/SOURCES.txt
+csvql.egg-info/dependency_links.txt
+csvql.egg-info/top_level.txt
+src/__init__.py
+src/csvrw.py
+src/db.py
+src/main.py
