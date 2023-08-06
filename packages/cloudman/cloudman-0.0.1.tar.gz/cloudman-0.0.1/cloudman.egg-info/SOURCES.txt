@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+cloudman/__init__.py
+cloudman/_version.py
+cloudman/cli.py
+cloudman.egg-info/PKG-INFO
+cloudman.egg-info/SOURCES.txt
+cloudman.egg-info/dependency_links.txt
+cloudman.egg-info/entry_points.txt
+cloudman.egg-info/top_level.txt
