@@ -1,0 +1,11 @@
+snakebox/__init__.py,sha256=mNXqskQmgnJkS6RZ0mDhhC1Aw8F2Imu4SEwLdqAWh4Q,17
+snakebox/app.py,sha256=SVCLN9lmSSKQREmxZ7fywj6zXl-Gi50nSziyzs2zXlQ,10557
+snakebox/customlogging.py,sha256=R5hdo1c_ug70xZigSSnlLICQv3IgZB24fJ4fWOGZZeY,1749
+snakebox/settings.yml,sha256=Z3BWZ5xiWmsLfWojKSRWbDiM8oD0wKoKOFwXHZTCZUM,162
+snakebox/vmfile.txt,sha256=JYsf-wOeRcmKzew8h_IXLJMVFI6CvwQe4Rr18hG3jVE,48
+snakebox-1.0.8.dist-info/LICENSE.txt,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+snakebox-1.0.8.dist-info/METADATA,sha256=swCD8fVW8_cWUyqQOQRDxJ14D-6H-RyPX8nn-kRScx0,961
+snakebox-1.0.8.dist-info/WHEEL,sha256=53VSps8MltPLN_x9Ib61FU2ZSaJKzgrWQqu9rS-Dkgk,116
+snakebox-1.0.8.dist-info/entry_points.txt,sha256=zaAGMWBNQTZoWFA0HCIZQatWpMyPUhwHOmbOnNpvzqo,47
+snakebox-1.0.8.dist-info/top_level.txt,sha256=-Z710hBTzjIHHkZ6oelBWxyYIg_K3goyVMt7Nbjf9L0,9
+snakebox-1.0.8.dist-info/RECORD,,
