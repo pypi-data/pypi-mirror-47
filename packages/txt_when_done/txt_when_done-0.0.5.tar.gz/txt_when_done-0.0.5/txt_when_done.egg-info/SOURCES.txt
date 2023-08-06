@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+setup.py
+txt_when_done/__init__.py
+txt_when_done/txt_when_done.py
+txt_when_done.egg-info/PKG-INFO
+txt_when_done.egg-info/SOURCES.txt
+txt_when_done.egg-info/dependency_links.txt
+txt_when_done.egg-info/requires.txt
+txt_when_done.egg-info/top_level.txt
