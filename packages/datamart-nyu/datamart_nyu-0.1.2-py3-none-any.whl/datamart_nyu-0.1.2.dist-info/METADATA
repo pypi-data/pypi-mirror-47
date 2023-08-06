@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: datamart-nyu
+Version: 0.1.2
+Summary: Client library for NYU's DataMart
+Home-page: https://gitlab.com/datadrivendiscovery/datamart-api
+Author: Remi Rampin, Fernando Chirigati
+Author-email: remi.rampin@nyu.edu, fchirigati@nyu.edu
+Maintainer: Remi Rampin, Fernando Chirigati
+Maintainer-email: remi.rampin@nyu.edu, fchirigati@nyu.edu
+License: BSD-3-Clause
+Project-URL: Homepage, https://gitlab.com/datadrivendiscovery/datamart-api
+Project-URL: Source, https://gitlab.com/datadrivendiscovery/datamart-api
+Project-URL: Tracker, https://gitlab.com/datadrivendiscovery/datamart-api/issues
+Keywords: datamart
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: d3m
+Requires-Dist: datamart
+Requires-Dist: requests (==2.19.1)
+Requires-Dist: websocket-client
+
+Client library for NYU's DataMart
+
+
