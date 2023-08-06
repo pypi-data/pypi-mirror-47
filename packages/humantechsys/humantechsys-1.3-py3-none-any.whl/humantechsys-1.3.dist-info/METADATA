@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: humantechsys
+Version: 1.3
+Summary: A company that makes technology for humans, 인간을 위한 기술을 만드는 회사
+Home-page: http://humantecsys.co.kr/
+Author: ki-young Lee
+Author-email: supergoongdeng@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/goongdeng/HumanTechSys
+Keywords: humantechsys
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+
+UNKNOWN
+
+
