@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: regions
+Version: 0.4
+Summary: Astropy affilated package for region handling
+Home-page: http://github.com/astropy/regions
+Author: Astropy developers
+Author-email: 
+License: BSD
+Description: 
+        This is an in-development package for region handling based on Astropy.
+        
+        The goal is to merge the functionality from pyregion and photutils apertures
+        and then after some time propose this package for inclusion in the Astropy core.
+        
+        * Code : https://github.com/astropy/regions
+        * Docs : http://astropy-regions.readthedocs.io/en/latest/
+        
+Platform: UNKNOWN
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Provides-Extra: plot
+Provides-Extra: test
