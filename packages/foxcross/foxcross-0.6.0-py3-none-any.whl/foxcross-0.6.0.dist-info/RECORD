@@ -1,0 +1,13 @@
+foxcross/__init__.py,sha256=PZgxzgmRmN48QpuLaWQLJY4juvHVT1hnToLQ6BfCuvI,110
+foxcross/__version__.py,sha256=cID1jLnC_vj48GgMN6Yb1FA3JsQ95zNmCHmRYE8TFhY,22
+foxcross/endpoints.py,sha256=H7GodbS1prlHp5wLHYvqMNOaAOs8BXgOtshczj6P08A,495
+foxcross/enums.py,sha256=lmapqjfHHvZ_S3MRpvARogbLeGlHwuqfXBywpbWrxc8,124
+foxcross/exceptions.py,sha256=qRJ0nhjojpJdamW_GrQYCXTwPGwRgzP3K9tt64pVeuE,307
+foxcross/pandas_serving.py,sha256=FmCCPv17TnbK11u-YGE1rhV8wGuBiFcqN7V0dkcQqVE,3175
+foxcross/runner.py,sha256=tqfpBXjtJl2sGxlh2QaVKnBsNmAuxEvPjPqImWdgwk8,1890
+foxcross/serving.py,sha256=fmCkWj4wRxEe7rLYbT-rMpLaDIpa40tP4zNawIk523M,6593
+foxcross/templates/index.html,sha256=WDXjB2J6gz7J4DYu-2_I86zjeJLGxPFJ0-EG5QGeb9s,490
+foxcross-0.6.0.dist-info/LICENSE.md,sha256=OQv9_vpzynVz4G9DOyAZ-RuWubXM9N5MFpDvKBZS-MA,1517
+foxcross-0.6.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+foxcross-0.6.0.dist-info/METADATA,sha256=w79vhubSC2f5uyvEk4koETO6klKLYacCvr8hbCALZ7o,4047
+foxcross-0.6.0.dist-info/RECORD,,
