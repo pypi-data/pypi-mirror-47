@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+py_ng_deploy/.pyngdeployrc
+py_ng_deploy/__init__.py
+py_ng_deploy/__main__.py
+py_ng_deploy/py_ng_build.py
+py_ng_deploy/py_ng_upload.py
+py_ng_deploy.egg-info/PKG-INFO
+py_ng_deploy.egg-info/SOURCES.txt
+py_ng_deploy.egg-info/dependency_links.txt
+py_ng_deploy.egg-info/entry_points.txt
+py_ng_deploy.egg-info/requires.txt
+py_ng_deploy.egg-info/top_level.txt

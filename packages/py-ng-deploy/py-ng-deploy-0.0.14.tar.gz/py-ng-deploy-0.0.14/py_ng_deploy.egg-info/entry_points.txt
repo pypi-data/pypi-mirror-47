@@ -1,0 +1,3 @@
+[console_scripts]
+pyngDeploy = py_ng_deploy.__main__:main
+
