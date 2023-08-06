@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: protobackend
+Version: 0.2.2
+Summary: Generic backend
+Home-page: https://github.com/datacamp/protobackend
+Author: Michael Chow
+Author-email: michael@datacamp.com
+Maintainer: Jeroen Hermans
+Maintainer-email: content-engineering@datacamp.com
+License: UNKNOWN
+Description: protobackend
+        =============
+        
+        Installation
+        ------------
+        
+        ```
+        pip install protobackend
+        ```
+        
+        Examples
+        --------
+        
+        * [basic dispatcher](example/basic_demo.ipynb)
+        * [full dispatcher](example/full_demo.ipynb)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
