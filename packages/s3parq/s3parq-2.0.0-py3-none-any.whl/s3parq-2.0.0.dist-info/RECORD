@@ -1,0 +1,10 @@
+s3parq/__init__.py,sha256=CgePVF7d7YO5qNEWVq8YzN7kzEwxkqqLX3QGmIko3Vg,194
+s3parq/fetch_parq.py,sha256=zi_r7EVJ-S4d4pNshbjXclO0ojHJuz5MpFWdbyTnvCU,15774
+s3parq/publish_parq.py,sha256=-iHfgvdYwZX_evqf2gzKLBL9xF1aL-0-iSxMnfWJ5Pc,8541
+s3parq/s3_naming_helper.py,sha256=OuALh_jVYS6myksSo3tFq0QK59mSXqQ5QBP1UOz0KpQ,3909
+s3parq/testing_helper.py,sha256=NvFpoCo_pWpWBOyrf91xfOl6yaPHQKPmmo8zrNdxCXg,305
+s3parq-2.0.0.dist-info/LICENSE,sha256=hnPGr6leln18u39ZC5unPbdO1001leFMZ0J0V5cAzm0,1070
+s3parq-2.0.0.dist-info/METADATA,sha256=9Ol4z5nXPrHnJV0mkgoftpTqTpz1vwiMZ-SCXpFItS0,4961
+s3parq-2.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+s3parq-2.0.0.dist-info/top_level.txt,sha256=BEMOHfbm8G9EI-2wlnGymmFHB9c8MwB9qzv0OmAr5GE,7
+s3parq-2.0.0.dist-info/RECORD,,
