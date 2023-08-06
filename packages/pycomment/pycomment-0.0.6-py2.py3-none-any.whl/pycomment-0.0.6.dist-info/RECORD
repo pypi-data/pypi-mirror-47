@@ -1,0 +1,12 @@
+pycomment/__init__.py,sha256=n_hpxbcbJABSpahDfGSyZSMwJgHsYAkr2rEwuyrwU54,200
+pycomment/__main__.py,sha256=A9B6c1sgMtci2sz7uRkegJz4vEj6uILC-foJdWs5pYI,1737
+pycomment/capture.py,sha256=zZ40acgoPMMN3yCx7a9wd9UI1x67v2T5Rwv4Bhuosr4,1147
+pycomment/emit.py,sha256=S6zYmaPmRCthlDnf8_5ANv4lWA3R-T6R5G5DGqoYwbE,1653
+pycomment/langhelpers.py,sha256=t3UNhVZiXtLIkNEWEaCXLRtv6lGrqqFggDEx-pwwHuc,764
+pycomment/parse.py,sha256=hk5IOIWw-_KUyae3MMZEvy_Hw7YEVDRrio_2lqM0Dfo,2123
+pycomment/transform.py,sha256=Ukri5hposJUfPXvGLX6_PVB58ZBs3ZaHRjlglGWeyR4,2320
+pycomment-0.0.6.dist-info/METADATA,sha256=MzvIYuBSWQanMu8U2LxH24Xt0dn0R8rFYyRX-1izSJ4,1790
+pycomment-0.0.6.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pycomment-0.0.6.dist-info/entry_points.txt,sha256=RMbJGsRkSvmX5yew7MLSlSagdT4yDtDFq5eY-4MSVSA,55
+pycomment-0.0.6.dist-info/top_level.txt,sha256=vGIH2o8fl1OA6vuxjgtdigTMgGejjq7dvOvcQom5z_Y,10
+pycomment-0.0.6.dist-info/RECORD,,
