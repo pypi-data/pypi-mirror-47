@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: kubit
+Version: 1.0.0
+Summary: kubit
+Home-page: UNKNOWN
+Author: Kubit AI, Inc.
+Author-email: info@kubit.co
+License: MIT License
+Platform: UNKNOWN
+
+This is a Jupyter Server Extension to retrieve and store a CSV file from a URL in a pandas data frame that can be manipulated in a Jupyter python notebook.
+
+
