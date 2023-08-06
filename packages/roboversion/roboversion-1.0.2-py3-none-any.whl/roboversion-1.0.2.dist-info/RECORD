@@ -1,0 +1,13 @@
+autoversion/__init__.py,sha256=O_CV0vcXAGqvqwourSBIh1yWgwKXuUK2jpN78pw1Jnc,3673
+autoversion/__main__.py,sha256=QqEiZj9RzaBOt4nuJ5fffNJySEdsmxADJO8NDtkHTlM,42
+autoversion/git.py,sha256=xfhlxY3tp6BIsKdwzZ3P2X-_z9KIo7XbhTBc96szj7Y,8825
+autoversion/version.py,sha256=DfXGjV23LSYSCJ2Q_AcX4F9y3d5UzcMo4kIw5rGTy5k,11017
+roboversion/__init__.py,sha256=B4FFvIyyxjwz7nhQLcAHRtdyEbJYPYcGeDZjXa9OOBw,3328
+roboversion/__main__.py,sha256=QqEiZj9RzaBOt4nuJ5fffNJySEdsmxADJO8NDtkHTlM,42
+roboversion/git.py,sha256=J8MrOqpl6Yz6eaM9y6hKcQBn9ZqKGFozNtfiHyv1r9k,7241
+roboversion/version.py,sha256=kXiXPu4AFKOLbVJUzR93R_wIVPXNVVmokldApqEx0EU,9332
+roboversion-1.0.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+roboversion-1.0.2.dist-info/METADATA,sha256=RJxl0ttjyzqPi6yZ5uSLuHUJE4XZ0EVy7_6JR8K7cUQ,1066
+roboversion-1.0.2.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+roboversion-1.0.2.dist-info/top_level.txt,sha256=bw6bG6kersrzxA444E7dMMw4SlPf1jX4vB6NEJMNACc,12
+roboversion-1.0.2.dist-info/RECORD,,
