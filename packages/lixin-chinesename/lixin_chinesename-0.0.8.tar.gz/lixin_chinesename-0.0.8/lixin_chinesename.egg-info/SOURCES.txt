@@ -1,0 +1,6 @@
+README.rst
+setup.py
+lixin_chinesename.egg-info/PKG-INFO
+lixin_chinesename.egg-info/SOURCES.txt
+lixin_chinesename.egg-info/dependency_links.txt
+lixin_chinesename.egg-info/top_level.txt
