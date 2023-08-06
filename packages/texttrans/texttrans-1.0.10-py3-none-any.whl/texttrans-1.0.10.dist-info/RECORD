@@ -1,0 +1,12 @@
+data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+data/en.pki,sha256=91M3N4gNouv80sZ61ISRy27t-SZn1HI5fmdLgTdiut4,8114
+data/load_model.py,sha256=9FcixEmr_pX-WBkoLvHTQALmHN4nsoD_E91YfMUEJW8,240
+data/__pycache__/__init__.cpython-36.pyc,sha256=j9wWb0SNmYQDlLnZk-i5tPooXsY5uLtR6qVkf2Cn1Jg,144
+data/__pycache__/load_model.cpython-36.pyc,sha256=aMryctzJkvIkR_0c_izZToyAXRQ3hgaRXWK9YoaYmAk,452
+texttrans/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+texttrans/texttrans.py,sha256=vJZG4OcizHUeDKgKijGSGkSAxiz_n5VsluMThjvEaEY,5174
+texttrans-1.0.10.dist-info/LICENSE,sha256=-j7GnakFh-Ps6fmNX6BnyGxYMR-GknZGUgcUcoAJma8,1072
+texttrans-1.0.10.dist-info/METADATA,sha256=VpfGoT5I_AT8D1HK7rUkzey-ddnWzxeO2-XAMamVBq4,2253
+texttrans-1.0.10.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+texttrans-1.0.10.dist-info/top_level.txt,sha256=ygXprPw_G4-GCjR37fGg-uFztsF2EHcJgbxtERdlmQw,15
+texttrans-1.0.10.dist-info/RECORD,,
