@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: symmetr
+Version: 0.7.0
+Summary: Package for determining symmetry properties of crystals.
+Home-page: https://bitbucket.org/zeleznyj/linear-response-symmetry
+Author: Jakub Zelezny
+Author-email: jakub.zelezny@gmail.com
+License: UNKNOWN
+Description: test
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: Mozilla Public License 2.0 (MPL 2.0)
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
