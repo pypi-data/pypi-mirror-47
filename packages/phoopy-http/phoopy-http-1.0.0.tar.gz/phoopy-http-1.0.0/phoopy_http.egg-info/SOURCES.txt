@@ -1,0 +1,9 @@
+README.rst
+setup.py
+phoopy/__init__.py
+phoopy/http/__init__.py
+phoopy_http.egg-info/PKG-INFO
+phoopy_http.egg-info/SOURCES.txt
+phoopy_http.egg-info/dependency_links.txt
+phoopy_http.egg-info/requires.txt
+phoopy_http.egg-info/top_level.txt
