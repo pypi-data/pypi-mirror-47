@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+webpack_bundle.py
+django_webpack_bundle.egg-info/PKG-INFO
+django_webpack_bundle.egg-info/SOURCES.txt
+django_webpack_bundle.egg-info/dependency_links.txt
+django_webpack_bundle.egg-info/not-zip-safe
+django_webpack_bundle.egg-info/requires.txt
+django_webpack_bundle.egg-info/top_level.txt
