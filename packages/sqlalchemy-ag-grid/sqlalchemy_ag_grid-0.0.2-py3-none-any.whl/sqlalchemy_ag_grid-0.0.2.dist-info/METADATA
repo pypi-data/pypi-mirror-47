@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sqlalchemy-ag-grid
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/ytkj/sqlalchemy-ag-grid
+Author: ytkj
+Author-email: y.kojima.1989@gmail.com
+License: MIT
+Keywords: Flask SQLAlchemy AgGrid
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: SQLAlchemy
+Requires-Dist: Werkzeug
+Requires-Dist: Flask-SQLAlchemy
+Provides-Extra: test
+Requires-Dist: nose2 ; extra == 'test'
+Requires-Dist: Flask ; extra == 'test'
+
+UNKNOWN
+
+
