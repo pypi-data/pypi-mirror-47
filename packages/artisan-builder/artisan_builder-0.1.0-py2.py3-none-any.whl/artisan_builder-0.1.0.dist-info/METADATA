@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: artisan-builder
+Version: 0.1.0
+Summary: A build system for explainable science
+Home-page: UNKNOWN
+License: MIT
+Author: Mason McGill
+Author-email: mmcgill@caltech.edu
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cbor2
+Requires-Dist: falcon
+Requires-Dist: gunicorn
+Requires-Dist: h5py
+Requires-Dist: jsonschema
+Requires-Dist: numpy
+Requires-Dist: ruamel.yaml
+Description-Content-Type: text/x-rst
+
+Artisan is a build system for explainable science. The full documentation can be
+found `here <https://masonmcgill.github.io/artisan/>`_.
+
