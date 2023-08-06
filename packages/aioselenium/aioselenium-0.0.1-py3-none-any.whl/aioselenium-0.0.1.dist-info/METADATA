@@ -1,0 +1,190 @@
+Metadata-Version: 2.1
+Name: aioselenium
+Version: 0.0.1
+Summary: Very basic asyncio implementation of the Selenium RemoteWebdriver using JSON Wire protocol
+Home-page: https://gitlab.com/alexbode/aioselenium
+Author: Alex Bode
+Author-email: alexvincentbode@gmail.com
+License: MIT
+Keywords: selenium webdriver asyncio aiohttp remote
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+
+## AioSelenium
+
+Simple implementation of the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol#sessionsessionidelementidclick) using aiohttp
+
+[Gitlab](https://gitlab.com/alexbode/aioselenium)
+
+[Pypi](https://pypi.org/project/aioselenium/)
+
+
+### Quickstart
+
+```
+import os
+import asyncio
+import time
+
+import aiohttp
+
+from aioselenium import Remote, Keys
+
+async def scraper(search):
+    capabilities = {
+            "browserName": "firefox",
+        }
+
+    command_executor = os.getenv('SELENIUM_CLUSTER')
+
+    async with aiohttp.ClientSession() as session:
+        remote = await Remote.create(command_executor, capabilities, session)
+        async with remote as driver:
+            await driver.set_window_size(1920, 1080)
+            await driver.get("http://www.youtube.com")
+            print('Loaded:',await driver.get_title())
+            element = await driver.find_element_by_xpath('//input[@id="search"]')
+            await element.send_keys(search, Keys.ENTER)
+            video_titles = await driver.find_elements_by_xpath('//a[@id="video-title"]')
+            for i, video_title in enumerate(video_titles):
+                print(search, 'Search Result', i, await video_title.text())
+
+async def main(search_fields):
+    await asyncio.gather(*[scraper(search) for search in search_fields])
+
+if __name__ == "__main__":
+    s = time.perf_counter()
+
+    search_fields = ["Soccer", "Guatemala", "Guitar", "Computer", "Van Gogh"]
+    asyncio.run(main(search_fields))
+
+    elapsed = time.perf_counter() - s
+    print(f"Executed in {elapsed:0.2f} seconds.")
+```
+
+Output:
+
+```
+Loaded: YouTube
+Loaded: YouTube
+Loaded: YouTube
+Loaded: YouTube
+Loaded: YouTube
+Van Gogh Search Result 0 The Curious Death Of Vincent Van Gogh
+Van Gogh Search Result 1 Vincent Van Gogh Documentary
+Van Gogh Search Result 2 15 Things You Didn't Know About Vincent Van Gogh
+Van Gogh Search Result 3 Vincent van Gogh - The story
+Van Gogh Search Result 4 800 Van Gogh Paintings! 3 Hours! Vincent Van Gogh Silent Slideshow Screensaver!
+Van Gogh Search Result 5 The life story of Vincent van Gogh
+Van Gogh Search Result 6 girassóis de van gogh - baco exu do blues || cover
+Soccer Search Result 0 BEST SOCCER FOOTBALL VINES - GOALS, SKILLS, FAILS #23
+Van Gogh Search Result 7 Loving Vincent - Official Trailer
+Soccer Search Result 1 90 in 90: Australia vs. Brazil | 2019 FIFA Women's World Cup™ Highlights
+Van Gogh Search Result 8 Van Gogh: Techniques and Methods
+Soccer Search Result 2 90 in 90: South Africa vs. China | 2019 FIFA Women's World Cup™ Highlights
+Van Gogh Search Result 9 Vincent van Gogh: The colour and vitality of his works | National Gallery
+Soccer Search Result 3 Italy takes a 1-0 lead on VAR penalty review vs. Jamaica | 2019 FIFA Women’s World Cup™ Highlights
+Van Gogh Search Result 10 AT ETERNITY'S GATE - Official Trailer - HD (Willem Dafoe, Rupert Friend, Mads Mikkelsen)
+Soccer Search Result 4 Women's World Cup 2019: Amy Rodriguez balances motherhood, soccer | Off the Pitch Ep. 6 | NBC Sports
+Van Gogh Search Result 11 The Great Masters: Vincent Van Gogh Museum Tour with John Leighton (1998)
+Soccer Search Result 5 90 in 90: Japan vs. Scotland | 2019 FIFA Women’s World Cup™ Highlights
+Van Gogh Search Result 12 The Eerie Case Of The Watcher
+Soccer Search Result 6 Alex Morgan, Megan Rapinoe defend ‘genuine’ celebrations vs. Thailand | 2019 FIFA Women’s World Cup™
+Van Gogh Search Result 13 The Puzzling Disappearance Of Walter Collins
+Van Gogh Search Result 14 The Horrifying Texarkana Phantom Killer
+Soccer Search Result 7 90 in 90: United States vs. Thailand | 2019 FIFA Women’s World Cup™ Highlights
+Van Gogh Search Result 15 Who Was Vincent Van Gogh?
+Soccer Search Result 8 Gold Cup expectations for US and Mexico | FOX Soccer Tonight™
+Van Gogh Search Result 16 Art With Mati & Dada – VanGogh | Kids Animated Short Stories in English
+Soccer Search Result 9 Who is the most irreplaceable player for the USWNT? | FOX Soccer Tonight™
+Van Gogh Search Result 17 David Hockney on Vincent van Gogh | FULL INTERVIEW
+Soccer Search Result 10 90 in 90: Germany vs. Spain | 2019 FIFA Women's World Cup™ Highlights
+Van Gogh Search Result 18 The Fake Van Gogh's (Counterfeit Art Documentary) | Timeline
+Soccer Search Result 11 United States goal celebrations were 'excessive & unnecessary' — Stu Holden | FOX Soccer Tonight™
+Van Gogh Search Result 19 Jueves | La Oreja de Van Gogh
+Soccer Search Result 12 Scotland's Lana Clelland unleashes late goal vs. Japan | 2019 FIFA Women’s World Cup™ Highlights
+Soccer Search Result 13 BEST SOCCER FOOTBALL VINES - GOALS, SKILLS, FAILS #21
+Van Gogh Search Result 20 Vincent van Gogh The Complete Gallery HD
+Computer Search Result 0 Rowdy Rebel - Computers ft. Bobby Shmurda
+Guatemala Search Result 0 Swae Lee, Slim Jxmmi, Rae Sremmurd - Guatemala
+Guitar Search Result 0 3 Hour Relaxing Guitar Music: Meditation Music, Instrumental Music, Calming Music, Soft Music, ☯2432
+Soccer Search Result 14 90 in 90: Nigeria vs. South Korea | 2019 FIFA Women’s World Cup™ Highlights
+Van Gogh Search Result 21 Vincent van Gogh for Children: Biography for Kids - FreeSchool
+Computer Search Result 1 14 Computer Life Hacks You Wish You Learned Sooner
+Guitar Search Result 1 TOP 30 songs for ACOUSTIC guitar!
+Guatemala Search Result 1 Swae Lee, Slim Jxmmi, Rae Sremmurd - Guatemala (Lyrics)
+Soccer Search Result 15 90 in 90: France vs. Norway | 2019 FIFA Women's World Cup™ Highlights
+Van Gogh Search Result 22 The Life of Van Gogh - The Film
+Guitar Search Result 2 I Just Bought a $100 Guitar...And it's FANTASTIC!
+Computer Search Result 2 What does what in your computer? Computer parts Explained
+Guatemala Search Result 2 Guatemala - 10 Things That Shock Tourists in Guatemala
+Soccer Search Result 16 Funny Soccer Football Vines 2017 ● Goals l Skills l Fails #50
+Guitar Search Result 3 What is the Best Guitar in the Store??
+Computer Search Result 3 10 Tips to Make Your Computer Faster (For Free)
+Guatemala Search Result 3 15 Things You Didn't Know About Guatemala
+Soccer Search Result 17 Italy’s Cristiana Girelli scores 2nd goal with her thigh | 2019 FIFA Women’s World Cup™ Highlights
+Guitar Search Result 4 Relaxing Jazz & Bossa Nova Music Radio - 24/7 Chill Out Piano & Guitar Music - Stress Relief Jazz
+Computer Search Result 4 How to Speed Up Your Windows 10 Performance (best settings)
+Guatemala Search Result 4 AUTHENTIC Guatemalan STREET FOOD + Attractions | Guatemala City, Guatemala
+Guitar Search Result 5 World's Best Guitar Player Unbelievable
+Computer Search Result 5 The easiest way to make an old computer faster!
+Guatemala Search Result 5 Swae Lee, Slim Jxmmi, Rae Sremmurd - Guatemala (Audio)
+Soccer Search Result 18 50 Famous Goals ● Impossible To Forget
+Computer Search Result 6 What are Mainframes?
+Guitar Search Result 6 MY 7 YEAR (7000 HOURS) GUITAR PROGRESS
+Guatemala Search Result 6 HOW MUCH DOES IT COST TO MOVE TO GUATEMALA?
+Soccer Search Result 19 Best 6 year old Soccer player in the U.S
+Computer Search Result 7 3 years of Computer Science in 8 minutes
+Guitar Search Result 7 DUELING BANJOS ~ Guitar & Banjo Song ~ Deliverance
+Soccer Search Result 20 10-Year-Old AMAZING Soccer Skills | Future Barcelona STAR?
+Guatemala Search Result 7 Post Malone, Swae Lee - Sunflower (Spider-Man: Into the Spider-Verse)
+Computer Search Result 8 The FASTEST gaming PC money can buy
+Guitar Search Result 8 Post Malone at Norman's Rare Guitars | 1964 Gibson SG Standard
+Guatemala Search Result 8 Wiz Khalifa - Hopeless Romantic feat. Swae Lee [Official Music Video]
+Computer Search Result 9 UNBOXING A QUANTUM COMPUTER! – Holy $H!T Ep 19
+Guitar Search Result 9 A Few Great Moments at Norman's Rare Guitars
+Guatemala Search Result 9 Rae Sremmurd, Swae Lee, Slim Jxmmi - Powerglide ft. Juicy J (Official Video)
+Computer Search Result 10 Montana of 300 - Computers Freestyle Ft $avage (Official Video)
+Guitar Search Result 10 Most METAL Guitar Ever!
+Guatemala Search Result 10 La crisis migratoria, uno de los retos del futuro presidente de Guatemala
+Guitar Search Result 11 Top 25 BADASS Guitar Riffs | Through The Years
+Computer Search Result 11 Lil Herb - Computers Freestyle (Official Music Video)
+Guatemala Search Result 11 The Guardian Angel of Guatemala: Profiles by VICE
+Guitar Search Result 12 6 Hour Relaxing Music: Nature Sounds, Guitar Instrumental, Acoustic Guitar, Background Music, ✿2432C
+Computer Search Result 12 Computer Love - Zapp
+Guatemala Search Result 12 Dominicans Try Guatemalan Food
+Guitar Search Result 13 Top 50 Guitar Love Songs Instrumental 🎸 Soft Relaxing Romantic Guitar Music
+Computer Search Result 13 KIDS REACT TO OLD COMPUTERS
+Guatemala Search Result 13 How Is This Allowed?? / GUATEMALA
+Guitar Search Result 14 6 Hour Instrumental Guitar Music: Relaxing Music, Meditation Music, Calming Music, Soothing, ☯2332
+Computer Search Result 14 Building my dream computer - Part 1
+Guatemala Search Result 14 Child Marriage in Guatemala
+Computer Search Result 15 I Played Fortnite on a SCHOOL COMPUTER
+Guatemala Search Result 15 Gangs of Guatemala produce children of violence
+Guitar Search Result 15 guitar
+Computer Search Result 16 Assembly and Review - PE6502 Hobby Computer
+Guatemala Search Result 16 Elecciones presidenciales de Guatemala serán este 16 de junio de 2019
+Guitar Search Result 16 Top 10 Easiest Guitar Riffs!
+Computer Search Result 17 Computer program that learns to play classic NES games
+Guitar Search Result 17 Ana Vidovic plays Asturias by Isaac Albéniz on a Jim Redgate classical guitar
+Guatemala Search Result 17 Policía detiene en Guatemala 125 migrantes de Angola, Brasil y Haití que pretendían llegar a México
+Computer Search Result 18 Funny Computer Scare Prank
+Guitar Search Result 18 12-Year-Old Kid Destroys Opponents in Guitar Shred-Off
+Guatemala Search Result 18 ANTIGUA | Beautiful UNESCO city in Guatemala
+Guitar Search Result 19 Steve Vai vs Ralph Macchio Epic Guitar Battle
+Guatemala Search Result 19 Introducing Guatemala
+Guitar Search Result 20 Attempting to learn guitar in 2 hours
+Guatemala Search Result 20 Everything You NEED To Know About Guatemala | Travel Central America on $1000
+Guitar Search Result 21 EPIC GUITAR BUILD FROM A WHISKEY BARREL!!
+Guatemala Search Result 21 Migrantes africanos y sudamericanos fueron detenidos en Guatemala
+Guatemala Search Result 22 This is Guatemala
+Executed in 8.46 seconds.
+```
+
+### To Do:
+
+*   Add all endpoints from json wire protocol
+
+
+
