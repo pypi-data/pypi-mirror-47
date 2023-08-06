@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rainbond-market-client
+Version: 0.0.1.dev0
+Summary: rainbond cloud app market OpenAPI.
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: 576501057@qq.com
+License: UNKNOWN
+Keywords: Swagger,rainbond cloud app market OpenAPI.
+Platform: UNKNOWN
+Requires-Dist: certifi (>=2017.4.17)
+Requires-Dist: python-dateutil (>=2.1)
+Requires-Dist: six (>=1.10)
+Requires-Dist: urllib3 (>=1.23)
+
+the purpose of this application is to provide an application that is using plain go code to define an API  This should demonstrate all the possible comment annotations that are available to turn go code into a fully compliant swagger 2.0 spec  # noqa: E501
+
+
