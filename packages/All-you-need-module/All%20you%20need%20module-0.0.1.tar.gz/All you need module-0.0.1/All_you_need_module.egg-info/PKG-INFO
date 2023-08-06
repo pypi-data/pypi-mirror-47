@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: All-you-need-module
+Version: 0.0.1
+Summary: A python module with all you need
+Home-page: UNKNOWN
+Author: khhs
+Author-email: khhs1671@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Requires: webbrowser
+Requires: tkinter

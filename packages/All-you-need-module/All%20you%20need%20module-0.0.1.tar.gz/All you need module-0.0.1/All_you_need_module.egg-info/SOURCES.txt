@@ -1,0 +1,7 @@
+setup.py
+AYNM/__init__.py
+AYNM/aynm.py
+All_you_need_module.egg-info/PKG-INFO
+All_you_need_module.egg-info/SOURCES.txt
+All_you_need_module.egg-info/dependency_links.txt
+All_you_need_module.egg-info/top_level.txt
