@@ -1,0 +1,8 @@
+keras_attention/__init__.py,sha256=kux14GzNO3_Bu2DS5qjlB5Hkhr-cRJDTFhg1t2Xsbb8,123
+keras_attention/self_attention.py,sha256=J4T7WzBaa2LfoskNbu5FlJrYAjN-ALwlwNovEfVOUv8,1316
+keras_attention/settings.py,sha256=0HmAqvOy0lIFuRgiGqxUXs3Y8dgjLTLpfgaZKJYIohE,780
+keras_attention-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+keras_attention-1.0.0.dist-info/METADATA,sha256=9Tlw1aIHNDfAEBbcXz7En-2KES6IVRCjgEdJlu90Guk,642
+keras_attention-1.0.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+keras_attention-1.0.0.dist-info/top_level.txt,sha256=GT4DTdTStVPHMd-smzbgYBgn6ovoCC3ZCmDxhmBAsNI,16
+keras_attention-1.0.0.dist-info/RECORD,,
