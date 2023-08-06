@@ -1,0 +1,13 @@
+LICENSE
+README.md
+mypy.ini
+setup.py
+docs/index.html
+status/__init__.py
+status/py.typed
+statuses.egg-info/PKG-INFO
+statuses.egg-info/SOURCES.txt
+statuses.egg-info/dependency_links.txt
+statuses.egg-info/not-zip-safe
+statuses.egg-info/top_level.txt
+tests/__init__.py
