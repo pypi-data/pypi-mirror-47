@@ -1,0 +1,3 @@
+[console_scripts]
+av_slice = av_slice.cli:main
+

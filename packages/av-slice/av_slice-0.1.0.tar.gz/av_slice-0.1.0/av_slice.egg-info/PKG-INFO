@@ -1,0 +1,81 @@
+Metadata-Version: 1.1
+Name: av-slice
+Version: 0.1.0
+Summary: Automatic video editing
+Home-page: https://github.com/Hixan/av_slice
+Author: Alex Elias
+Author-email: alex.88.elias@gmail.com
+License: MIT license
+Description: ===============
+        Silence Remover
+        ===============
+        
+        
+        .. image:: https://img.shields.io/pypi/v/silence_remover.svg
+                :target: https://pypi.python.org/pypi/silence_remover
+        
+        .. image:: https://img.shields.io/travis/Hixan/silence_remover.svg
+                :target: https://travis-ci.org/Hixan/silence_remover
+        
+        .. image:: https://readthedocs.org/projects/silence-remover/badge/?version=latest
+                :target: https://silence-remover.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        
+        
+        An automated video editing tool that removes lengths of silence.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://silence-remover.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * Automatically edit audio or video clips to remove silent or quiet sections
+        
+        Credits
+        -------
+        Heavily inspired by Carkyhs Jumpcutter_ library.
+        
+        This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        .. _Jumpcutter: https://github.com/carykh/jumpcutter
+        
+        Todo
+        ----
+        
+        * testing (get a good example video)
+        * GUI interface
+        * PY2EXE implementation
+        * audio command line interface
+        
+        Wishlist
+        --------
+        * automatic detection of appropriate threshold
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-06-08)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: av_slice
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
