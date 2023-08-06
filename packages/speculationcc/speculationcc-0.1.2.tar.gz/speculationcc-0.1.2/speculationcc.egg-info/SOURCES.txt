@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.py
+bin/speculationcc-cmd
+speculationcc/__init__.py
+speculationcc/__main__.py
+speculationcc/sentiment.py
+speculationcc.egg-info/PKG-INFO
+speculationcc.egg-info/SOURCES.txt
+speculationcc.egg-info/dependency_links.txt
+speculationcc.egg-info/entry_points.txt
+speculationcc.egg-info/not-zip-safe
+speculationcc.egg-info/requires.txt
+speculationcc.egg-info/top_level.txt

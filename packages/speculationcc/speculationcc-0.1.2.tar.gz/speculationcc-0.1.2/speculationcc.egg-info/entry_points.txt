@@ -1,0 +1,3 @@
+[console_scripts]
+speculationcc = speculationcc.__main__:main
+

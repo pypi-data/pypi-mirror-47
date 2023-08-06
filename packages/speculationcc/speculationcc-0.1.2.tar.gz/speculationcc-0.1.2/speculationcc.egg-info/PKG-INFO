@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: speculationcc
+Version: 0.1.2
+Summary: sentiment analysis for speculationcc
+Home-page: http://github.com/wilkosz/crypto-profiler
+Author: joshua wilkosz
+Author-email: joshua@wilkosz.com.au
+License: MIT
+Description: UNKNOWN
+Keywords: sentiment analyzer
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
