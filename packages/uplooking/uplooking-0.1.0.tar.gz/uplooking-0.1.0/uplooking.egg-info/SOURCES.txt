@@ -1,0 +1,8 @@
+README.md
+setup.py
+uplooking/__init__.py
+uplooking/uplookingjson.py
+uplooking.egg-info/PKG-INFO
+uplooking.egg-info/SOURCES.txt
+uplooking.egg-info/dependency_links.txt
+uplooking.egg-info/top_level.txt
