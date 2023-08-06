@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: stream-django
+Version: 1.6.0
+Summary: A Django app to build activity, news and notification feeds.
+Home-page: https://getstream.io/
+Author: Tommaso Barbugli
+Author-email: tbarbugli@gmail.com
+License: BSD License
+Description: README.me
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+Provides-Extra: test
