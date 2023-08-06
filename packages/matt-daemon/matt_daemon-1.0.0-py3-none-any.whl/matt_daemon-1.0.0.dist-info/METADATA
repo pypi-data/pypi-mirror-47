@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: matt-daemon
+Version: 1.0.0
+Summary: A lightweight HTTP daemon for serving static files. With Matt Daemon, there are no surprises. He just serves.
+Home-page: https://github.com/k3rn31p4nic/matt-daemon
+Author: k3rn31p4nic
+License: MIT
+Keywords: http daemon matt matt-daemon httpd server
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Internet
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+
+Matt Daemon
+===========================
+
+A lightweight HTTP daemon for serving static files.
+With Matt Daemon, there are no surprises. He just serves.
+
+Installation
+------------
+
+This is a `Python`_ module available through the `PyPI`_.
+
+Before installing, `download and install Python`_. We recommend
+installing version 3.5+ of Python.
+
+Installation is done using the ``pip install`` command:
+
+.. code:: bash
+
+    $ pip install matt-daemon
+
+For more info, see `pip install`_ docs.
+
+Get Started
+-----------
+
+To start the Matt Daemon, all you need to do is run the following command:
+
+.. code:: bash
+
+    $ matt-daemon
+
+
+.. _Python: https://python.org
+.. _PyPI: https://pypi.python.org/
+.. _download and install Python: https://www.python.org/downloads/
+.. _pip install: https://docs.python.org/3/installing/index.html
+
+
