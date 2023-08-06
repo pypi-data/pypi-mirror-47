@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: ISY994v5
+Version: 0.2.3
+Summary: ISY99 Controller Rest and Websocket client v5 firmware
+Home-page: https://github.com/mjcumming/ISY994v5
+Author: Michael Cumming
+Author-email: mike@4831.com
+License: UNKNOWN
+Keywords: INSTEON,ISY994
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: websocket-client
+
+# ISY994v5
+
+Class based interface to the ISY994 device with V5 firmware.
+
+Provides a common interface to all devices, variables, programs, and scenes on an ISY controller. 
+
+Currently supports Insteon dimmers, switches, keypadlincs, fanlincs. 
+
+Designed to be easy to expand support to other device types.
+
+
