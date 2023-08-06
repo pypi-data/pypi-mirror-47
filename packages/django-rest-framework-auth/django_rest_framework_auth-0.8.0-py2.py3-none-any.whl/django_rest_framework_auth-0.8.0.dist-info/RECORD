@@ -1,0 +1,14 @@
+rest_auth/__init__.py,sha256=x_muswVYaQrFbWRxfmxSowywEeKHiSYI8I_Pz7wyz2w,1697
+rest_auth/apps.py,sha256=YRdcsaYoJnPmbIS4ilWg6kxe1_Fk2E0H1ak2A8SvHck,147
+rest_auth/serializers.py,sha256=5FCATrB-GXarx0ttk6nnb-c56goN4ZLIr848fn0Q8xk,11609
+rest_auth/urls.py,sha256=m_PqWnXVj1sb3Zj0RF30h-J0pEAG0uYG8lxDNYgA574,1090
+rest_auth/views.py,sha256=4avSYfwb6R2nT6SyEGqYOdUQRwetwD0XDMRb3NQKQ2I,5854
+rest_auth/contrib/__init__.py,sha256=GNXO1UUJaNFPSDjYL2ngQYi8y3JUCDghRdeJOp-zGj8,106
+rest_auth/contrib/rest_framework/__init__.py,sha256=WugMpjW-83ZyHYt-8aM8oNVls5RkMy8Wfn8prK-Py6M,74
+rest_auth/contrib/rest_framework/decorators.py,sha256=SUm9UOM16sV0CtEsp3Wgipc2iW6wfXpR8z2SzUXCi-M,923
+rest_auth/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_rest_framework_auth-0.8.0.dist-info/LICENSE,sha256=kfkfMT5FPDrqW46aT1XkypFaUkYPJGq95t6r56Y2KY4,1067
+django_rest_framework_auth-0.8.0.dist-info/METADATA,sha256=Y0NKZYmooKW4Wk9MLQ84MojR4UVpUXccYl2UPC2pzjk,509
+django_rest_framework_auth-0.8.0.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_rest_framework_auth-0.8.0.dist-info/top_level.txt,sha256=Gp2iI3Q-z-YAHHZ2cBcKrpztucwXQR6cCEHG769lA_k,10
+django_rest_framework_auth-0.8.0.dist-info/RECORD,,
