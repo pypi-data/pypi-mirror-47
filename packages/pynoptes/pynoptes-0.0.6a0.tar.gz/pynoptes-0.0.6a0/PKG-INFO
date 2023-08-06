@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pynoptes
+Version: 0.0.6a0
+Summary: Python Package for Object Detection and Tracking
+Home-page: https://github.com/fubel/pynoptes
+Author: Fabian Herzog
+Author-email: mail@fabianherzog.me
+License: UNKNOWN
+Description: # PyNoptes
+        
+        PyNoptes is a Python package for person detection, tracking and re-identification 
+        based on numerical methods and deep learning, most of which are build upon PyTorch.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
