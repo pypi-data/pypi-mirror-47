@@ -1,0 +1,7 @@
+pytket/cirq/__init__.py,sha256=yK-IThIu7fAtgQKMmJ0D5rSH_89vO3brGiNe7XPfjp0,785
+pytket/cirq/cirq_convert.py,sha256=gh0wvLAEGt4-c0tZb444Jq4qW-UiNAWCwqd15QY5aSc,7114
+pytket/cirq/qubits.py,sha256=wLaD7gpiC6pQ0xmKFPh0b_JYaRM7eKSgsJsA1562vpo,2650
+pytket_cirq-0.1.dist-info/METADATA,sha256=GvsEa5Qz4Q5vt9s4mVikSPPRDqj8WI2z2rTT5XC--dk,848
+pytket_cirq-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pytket_cirq-0.1.dist-info/top_level.txt,sha256=GsvCQQpJ7P8Vrx4ydtbjs36yufXiD59vSbbQFtFgcQ0,7
+pytket_cirq-0.1.dist-info/RECORD,,
