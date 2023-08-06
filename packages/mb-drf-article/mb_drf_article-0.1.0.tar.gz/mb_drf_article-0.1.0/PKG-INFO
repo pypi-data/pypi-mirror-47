@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: mb-drf-article
+Version: 0.1.0
+Summary: An article model for Django-Rest-Framework.
+Home-page: https://github.com/8area8/drf-articles
+Author: mikael briolet
+Author-email: mikaelbriolet.services@gmail.com
+Keywords: django,django rest framework,article
+Requires-Python: >=3.6,<4.0
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Project-URL: Repository, https://github.com/8area8/drf-articles
