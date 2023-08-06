@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: fastuuid
+Version: 0.1.0
+Summary: Python bindings to Rust's UUID library.
+Author: Omer Katz <omer.drow@gmail.com>
+Author-Email: Omer Katz <omer.drow@gmail.com>
+License: BSD3
