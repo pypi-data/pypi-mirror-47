@@ -1,0 +1,12 @@
+setup.py
+oyb/README.rst
+oyb/__init__.py
+oyb/anomaly.py
+oyb/earth.py
+oyb/plot.py
+oyb/rot.py
+oyb.egg-info/PKG-INFO
+oyb.egg-info/SOURCES.txt
+oyb.egg-info/dependency_links.txt
+oyb.egg-info/requires.txt
+oyb.egg-info/top_level.txt
