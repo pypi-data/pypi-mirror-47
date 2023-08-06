@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: micropy-cli
+Version: 0.2.0
+Summary: Command line Application for automating Micropython project     setup and management in Visual Studio Code.
+Home-page: https://github.com/BradenM/micropy-cli
+Author: Braden Mars
+License: GNU GPLv3
+Description: 
+        # Micropy Cli
+        
+        ![PyPI](https://img.shields.io/pypi/v/micropy-cli.svg?style=popout-square)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/micropy-cli.svg?style=popout-square)
+        ![Travis (.com)](https://img.shields.io/travis/com/BradenM/micropy-cli/master.svg?style=popout-square)
+        
+        
+        Command line Application for automating Micropython project creation in Visual Studio Code.
+        
+        ![micropy_still](.github/img/micropy.svg)
+        
+        ## Installation
+        
+        You can download and install the latest version of this software from the Python package index (PyPI) as follows:
+        
+        `pip install --upgrade micropy-cli`
+        
+        ## Usage
+        
+        ```sh
+        Usage: micropy [OPTIONS] COMMAND [ARGS]...
+        
+        Options:
+          --help  Show this message and exit.
+        
+        Commands:
+          init   Create new Micropython Project
+          stubs  Manage Stubs
+        ```
+        
+        ### Creating a Project
+        
+        ![micropy_project](.github/img/usage.svg)
+        
+        
+        ## Credit
+        
+        ### Micropython-Stubber
+        [Josvel/micropython-stubber](https://github.com/Josverl/micropython-stubber)
+        
+        * Guide on using vscode with micropython stubs
+        * Initial stubs used in application
+        * More
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: MicroPython
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Embedded Systems
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
