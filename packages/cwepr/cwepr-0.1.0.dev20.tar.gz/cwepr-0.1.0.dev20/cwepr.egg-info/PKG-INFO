@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: cwepr
+Version: 0.1.0.dev20
+Summary: Package for handling cw-EPR data.
+Home-page: UNKNOWN
+Author: Pascal Kirchner, Till Biskup
+Author-email: 
+License: UNKNOWN
+Description: cwEPR
+        =====
+        
+        The cwEPR package provides tools for handling experimental data obtained using continuous-wave EPR (cwEPR) spectroscopy and is derived from the `ASpecD framework <https://www.aspecd.de/>`_.
+        
+        
+        Installation
+        ------------
+        
+        Install the package by running::
+        
+            pip install cwepr
+        
+        
+        Contribute
+        ----------
+        
+        - Source Code: https://github.com/tillbiskup/cwepr
+        
+        
+        Support
+        -------
+        
+        If you are having issues, please contact the package authors via GitHub and/or file a bug report there.
+        
+        
+        License
+        -------
+        
+        The project licensed under the BSD license.
+        
+        
+Keywords: EPR spectroscopy
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
