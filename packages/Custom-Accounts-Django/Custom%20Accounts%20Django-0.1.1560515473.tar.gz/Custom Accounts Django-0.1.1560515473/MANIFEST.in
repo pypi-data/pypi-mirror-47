@@ -1,0 +1,2 @@
+recursive-include custom_accounts_django/templates *
+recursive-include custom_accounts_django/static *
