@@ -1,0 +1,3 @@
+stormbot>=2.0b1
+aiohttp
+aiofiles
