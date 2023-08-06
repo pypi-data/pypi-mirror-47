@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vrc-t70
+Version: 0.0.1.4
+Summary: Module to support VRC-T70 hardware
+Home-page: http://github.com/JFF-Bohdan/vrc_t70
+Author: Bohdan Danishevsky
+Author-email: dbn@aminis.com.ua
+License: MIT
+Keywords: VRC-T70,thermo sensors,DS18B20
+Platform: UNKNOWN
+Requires-Dist: terminaltables (==3.1.0)
+Requires-Dist: tqdm (==4.31.1)
+Requires-Dist: crcmod (==1.7)
+Requires-Dist: pyserial (==3.4)
+
+Please read https://github.com/JFF-Bohdan/vrc_t70/blob/master/README.md for information
+
+
