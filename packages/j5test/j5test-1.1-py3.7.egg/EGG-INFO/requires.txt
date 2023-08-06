@@ -1,0 +1,11 @@
+nose
+j5basic
+
+[BrowserDim]
+selenium
+
+[IterativeTester-ThreadCleanup]
+j5.OS
+
+[LoggingTest]
+j5.Logging
