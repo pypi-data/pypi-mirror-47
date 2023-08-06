@@ -1,0 +1,5 @@
+requests==2.22.0
+
+[dev]
+pre-commit==1.16.*
+pytest==4.*
