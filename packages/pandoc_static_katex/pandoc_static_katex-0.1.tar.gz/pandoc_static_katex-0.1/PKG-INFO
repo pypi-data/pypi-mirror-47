@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: pandoc_static_katex
+Version: 0.1
+Summary: A pandoc filter that renders math at build time using KaTeX.
+Home-page: https://github.com/Zaharid/pandoc_static_katex
+Author: Zahari Kassabov
+Author-email: zk261@cam.ac.uk
