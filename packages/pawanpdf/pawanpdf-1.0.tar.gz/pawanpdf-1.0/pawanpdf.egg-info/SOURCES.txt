@@ -1,0 +1,6 @@
+README.md
+setup.py
+pawanpdf.egg-info/PKG-INFO
+pawanpdf.egg-info/SOURCES.txt
+pawanpdf.egg-info/dependency_links.txt
+pawanpdf.egg-info/top_level.txt
