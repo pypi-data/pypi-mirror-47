@@ -1,0 +1,10 @@
+PyYAML>=5.1
+
+[marshmallow]
+marshmallow>=2.19.3
+
+[pydantic]
+pydantic>=0.28
+
+[trafaret]
+trafaret>=1.2.0
