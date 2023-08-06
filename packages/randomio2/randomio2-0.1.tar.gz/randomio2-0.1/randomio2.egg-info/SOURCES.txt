@@ -1,0 +1,9 @@
+README.rst
+randomio.py
+setup.cfg
+setup.py
+randomio2.egg-info/PKG-INFO
+randomio2.egg-info/SOURCES.txt
+randomio2.egg-info/dependency_links.txt
+randomio2.egg-info/not-zip-safe
+randomio2.egg-info/top_level.txt
