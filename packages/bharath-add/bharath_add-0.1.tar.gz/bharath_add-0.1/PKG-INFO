@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: bharath_add
+Version: 0.1
+Summary: Addition of two numbers
+Home-page: https://github.com/ITSMESBK/bharath_add/
+Author: BharathkumarSivakumar
+Author-email: sivabharath70@gmail.com
+License: MIT
+Download-URL: https://github.com/ITSMESBK/bharath_add/archive/master.zip
+Description: UNKNOWN
+Keywords: add,addition,sum
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
