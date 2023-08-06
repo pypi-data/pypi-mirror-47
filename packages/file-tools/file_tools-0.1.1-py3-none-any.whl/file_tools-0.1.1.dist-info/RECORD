@@ -1,0 +1,9 @@
+file_tools/__init__.py,sha256=3ldPEOb7IfeMw3uLSdZ7c6Yfiu6L0NNyv2Lasc7Ol6E,20
+file_tools/file.py,sha256=ElshXuvUWx1d0FBsGGmU9xm2Vo-ufXYaJfsiCKiwZeU,529
+file_tools/json_file.py,sha256=2gMTX9rLXd1cOgfioJSphSh0O5Zu_M-c0xbifYn5ov0,543
+file_tools/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+file_tools/utils/functions.py,sha256=hlGGjvhVqLepnTVq7EuAfAd80uWl2CUSnz0T0nU7-Lo,409
+file_tools-0.1.1.dist-info/METADATA,sha256=ninz3WApfMy_bf2dL78HU9X0xnVNm8WM48IGtgsNrZg,2168
+file_tools-0.1.1.dist-info/RECORD,,
+file_tools-0.1.1.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+file_tools-0.1.1.dist-info/top_level.txt,sha256=KEz5G-wkxZNAvonkpcEQlm9G4EfQUObSuQ2IgbR95HM,11
