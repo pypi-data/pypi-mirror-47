@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: kaldi_spotter
+Version: 0.1
+Summary: wake word spotting with kaldi
+Home-page: https://github.com/JarbasAl/kaldi_spotter
+Author: jarbasAI
+Author-email: jarbasai@mailfence.com
+License: apache2.0
+Description: UNKNOWN
+Platform: UNKNOWN
