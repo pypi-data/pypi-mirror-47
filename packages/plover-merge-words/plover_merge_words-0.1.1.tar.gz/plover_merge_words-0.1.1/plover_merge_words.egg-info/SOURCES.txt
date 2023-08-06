@@ -1,0 +1,17 @@
+.gitignore
+LICENSE.txt
+MANIFEST.in
+README.rst
+requirements-dev.txt
+setup.cfg
+setup.py
+plover_merge_words/__init__.py
+plover_merge_words/merge.py
+plover_merge_words.egg-info/PKG-INFO
+plover_merge_words.egg-info/SOURCES.txt
+plover_merge_words.egg-info/dependency_links.txt
+plover_merge_words.egg-info/entry_points.txt
+plover_merge_words.egg-info/requires.txt
+plover_merge_words.egg-info/top_level.txt
+plover_merge_words.egg-info/zip-safe
+test/test_blackbox.py
