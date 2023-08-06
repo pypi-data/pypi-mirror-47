@@ -1,0 +1,10 @@
+kubernetes_utils/Configuration.py,sha256=ATCE5LuNETRntaQYjwEcfFb7mPNXNTLrEDmjM-aRMD0,1523
+kubernetes_utils/Resources.py,sha256=xdZvd12DCb7PEV11VXWXzMZDQz7Eh7sOij8GHKtDBas,4489
+kubernetes_utils/SpecFactory.py,sha256=plcEz4BB6y2ku5Fbtbu81Y0aoSSfZN5wtmpGoj6AQRA,1766
+kubernetes_utils/__init__.py,sha256=ocStLMZsvTHf-oarucpSDrbUAeGNI-Vw9VqvkvVGcbk,111
+kubernetes_utils-0.0.2.dist-info/LICENSE,sha256=-2BKwM4LkKpams9UJkGLy04aIpamMfPOkrApxV83qFg,1089
+kubernetes_utils-0.0.2.dist-info/METADATA,sha256=nnH4PpljOHgdBPRGxndfSqrPSx0KCpmwcmikc0r-sMg,1184
+kubernetes_utils-0.0.2.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+kubernetes_utils-0.0.2.dist-info/top_level.txt,sha256=tLqkGFg08uNQgi6ltMJoHwtLZIRCWjVVVSkfJhGMSAM,17
+kubernetes_utils-0.0.2.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+kubernetes_utils-0.0.2.dist-info/RECORD,,
