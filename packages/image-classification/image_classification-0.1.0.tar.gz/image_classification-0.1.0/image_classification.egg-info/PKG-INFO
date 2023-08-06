@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: image-classification
+Version: 0.1.0
+Summary: Image classification in pytorch
+Home-page: https://github.com/sanchit2843/image_classification
+Author: Sanchit Tanwar
+Author-email: sanchittanwar75@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/sanchit2843/image_classification/archive/0.1.0.tar.gz
+Description: # Pytorch-image-classification
+        Almost any image classification task in pytorch
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
