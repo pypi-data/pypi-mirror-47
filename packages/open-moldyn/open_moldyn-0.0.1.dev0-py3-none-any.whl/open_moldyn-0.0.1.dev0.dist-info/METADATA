@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: open-moldyn
+Version: 0.0.1.dev0
+Summary: Tools for molecular dynamics simulation and analysis
+Home-page: https://github.com/open-moldyn/moldyn
+License: MIT
+Author: Arthur Luciani, Alexandre Faye-Bedrin
+Requires-Python: >=3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: PyQt5 (>=5.12,<6.0)
+Requires-Dist: datreant (>=1.0,<2.0)
+Requires-Dist: matplotlib (>=3.1,<4.0)
+Requires-Dist: moderngl (>=5.5,<6.0)
+Requires-Dist: numexpr (>=2.6,<3.0)
+Requires-Dist: numpy (>=1.16,<2.0)
+Requires-Dist: scipy (>=1.3,<2.0)
+Project-URL: Documentation, https://open-moldyn.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/open-moldyn/moldyn
