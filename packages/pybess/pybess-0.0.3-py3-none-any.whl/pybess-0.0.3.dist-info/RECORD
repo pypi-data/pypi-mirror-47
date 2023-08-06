@@ -1,0 +1,13 @@
+pybess/Arbitrage.py,sha256=tRuh0aECrl_4U6ymgzUTPm3YoTWfiiJX3yoQEDjXEUI,869
+pybess/Battery.py,sha256=GonyXH9dDnG40Qwagsy9Y_hQQWIRiX3k5UFEvo5Dh_U,1373
+pybess/Combiner.py,sha256=Ivjn2osxwQec5UGbq6UhWVfcQvvpkCEHR9DwlSTmsrQ,5317
+pybess/HistoricalOpt.py,sha256=4HgsbIcVZVi0Jl4kC--zI36BfZMvA565bZ1ZBJT-98s,2899
+pybess/Importer.py,sha256=kgwQ2XSYSHyW1fwQzJIdbV6lIaEU9eQYfHeC0VBoYmc,1816
+pybess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybess/utils.py,sha256=_Yy8AQaB1GY-QoSt1CHwU1mbAUHh8n86MkL6q-Irn6g,1353
+pybess-0.0.3.dist-info/DESCRIPTION.rst,sha256=8hqKaPge7BQy0skAUgIwYyfEHKYzizz7kaiG7mU4N8I,71
+pybess-0.0.3.dist-info/METADATA,sha256=5o3lzJ5lve8zgyMWn-nLZGg9-1lFfoIkqFBrMOo-5T8,498
+pybess-0.0.3.dist-info/RECORD,,
+pybess-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+pybess-0.0.3.dist-info/metadata.json,sha256=7y7GCh1o5BySXLdVlnxZJaSIhbSUUbgyS35UrgLhdbI,549
+pybess-0.0.3.dist-info/top_level.txt,sha256=MLMaDQWq5IgP4XLxd5MEvbMYlXNfScEFhiaZX2p38zM,7
