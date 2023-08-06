@@ -1,0 +1,7 @@
+git_joke_cli-1.0.0.data/scripts/git-joke,sha256=yRNyvPO5oN59s5riGXOg6kT7vJgT0powwS2gMI3o7Vk,406
+gitjoke/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitjoke/extractor.py,sha256=HVmJrVGPjbXdWsA3U13chEFNdnrOxz5H8-_TCsCO9c4,343
+git_joke_cli-1.0.0.dist-info/METADATA,sha256=4wFmH0fBuNU962GUq-2Ep9vrEbVHjCOzYHckOZRSmjM,272
+git_joke_cli-1.0.0.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+git_joke_cli-1.0.0.dist-info/top_level.txt,sha256=J-pltq1MCOcXW85Jbmkrif6uoMzfepUHC_VYYuRpHS0,8
+git_joke_cli-1.0.0.dist-info/RECORD,,
