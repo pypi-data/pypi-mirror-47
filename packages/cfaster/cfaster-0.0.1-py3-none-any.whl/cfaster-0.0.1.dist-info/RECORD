@@ -1,0 +1,13 @@
+cfaster/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfaster/__main__.py,sha256=bfiBc_8nycCcQ9ojduvOfviPwMzeaKZddSpZWFrTxYw,1176
+cfaster/scrapers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfaster/scrapers/codeforces.py,sha256=bBfyKq8gtUp6ICgGiHCgJw2ZdX0LWlVP0EQso73ADw0,1009
+cfaster/scrapers/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cfaster/scrapers/utils/files.py,sha256=7YLWNWc4ZVNg3vYSy9qyA42r9oJqFUc-_neo24aIh3Y,468
+cfaster/scrapers/utils/urls.py,sha256=3Wx3oho4yr2j2dccaSIOFIpgVwCAtg1VtpP2_XaRx6A,417
+cfaster-0.0.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+cfaster-0.0.1.dist-info/METADATA,sha256=VoIQ0tbj-PUVQC0id88kBBcMjJnqE7kq2wWkgyUFIOQ,4517
+cfaster-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+cfaster-0.0.1.dist-info/entry_points.txt,sha256=GrraWCKoERlh9wcPz5XrC3ozE3HlNStiWMbbq9RrqKk,55
+cfaster-0.0.1.dist-info/top_level.txt,sha256=kbsqS8wQKyb4tLGHHVftK8vg7BaYxt4jJ0yAz2sTOI4,8
+cfaster-0.0.1.dist-info/RECORD,,
