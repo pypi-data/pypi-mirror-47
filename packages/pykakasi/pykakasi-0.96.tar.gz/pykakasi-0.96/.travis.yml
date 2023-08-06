@@ -1,0 +1,41 @@
+language: python
+matrix:
+  include:
+    - python: 2.7
+      env: PYTHON_TAG=py2
+    - python: 3.5
+      env: PYTHON_TAG=py35
+    - python: 3.6
+      env: PYTHON_TAG=py3
+    - python: pypy
+      env: PYTHON_TAG=pypy
+
+install:
+  - pip install -r requirements.txt
+  - pip install tox-travis
+
+script:
+  - flake8 bin src tests
+  - tox
+
+after_success:
+  - python setup.py bdist_wheel --python-tag=${PYTHON_TAG}
+  - python setup.py sdist --python-tag=${PYTHON_TAG}
+  # Hack for coveralls to find sources
+  - sed -ie 's/.tox.py.+site-packages/src/g' .coverage
+  - coveralls
+
+deploy:
+  - provider: pypi
+    user: miurahr
+    password:
+      secure: CUY3E7DJMMyC9ARkkC5plAWTAnwmp+wyS+GbRgjOPDL8H4AwzCSCD03D4z/5BHHpGFilF+sAsaNte/9dDjtzEXtvmMCfJwovShnr9GdAm+PU4+TyhEWqVYbeYHiJMiSnLPcsyJMkYZ8JtNMXyp0onPQr6P28OsEq+ohG6Ha9P1Y=
+    file_glob: true
+    file:
+      - dist/*.whl
+      - dist/*.gz
+    skip_cleanup: true
+    skip_existing: true
+    on:
+      repo: miurahr/pykakasi
+      tags: true
