@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: GetCCWarc
+Version: 0.0.1.dev25
+Summary: Easily get a web-page from stored commmoncrawl WARC files on S3
+Home-page: UNKNOWN
+Author: Ohad Zadok
+Author-email: me@ohadzadok.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Education
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Home Automation
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+Requires-Dist: boto3 (==1.9.165)
+Requires-Dist: botocore (==1.12.165)
+Requires-Dist: coverage (==4.5.3)
+Requires-Dist: pytest (==4.6.3)
+Requires-Dist: zipp (==0.5.1)
+Requires-Dist: pbr (==5.2.1)
+
+UNKNOWN
+
+
