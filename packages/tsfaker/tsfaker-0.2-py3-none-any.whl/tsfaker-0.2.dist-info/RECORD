@@ -1,0 +1,15 @@
+tsfaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsfaker/exceptions.py,sha256=EuxEL8_-wPGdlIW6z3f5oAjRoDSgSC0dLF8UdmyBr2E,420
+tsfaker/main.py,sha256=tp_6xSCCfzLSAyhBgWDpwVK1FFUAXKIyJzgKvz_EMGk,1923
+tsfaker/tstype.py,sha256=_XMkn-YKJvcWHUQ3iAM326vOVBFZ_EDTT8eKMav4iW8,690
+tsfaker/generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsfaker/generator/column.py,sha256=Z26mOimDxUG_1_zGBiWj-eEtTSBz-9ismhJmTDjFfwQ,3781
+tsfaker/generator/table.py,sha256=-_YbHZcdT3Gk1eElQ_Zb4ds0Xzw4kGTv6t_flBMnx2c,1402
+tsfaker/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tsfaker/utils/io.py,sha256=sMOyhMDPY2D8MhteMvyBhQvZRGW76ZPdllLu7An9vYA,2834
+tsfaker-0.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+tsfaker-0.2.dist-info/METADATA,sha256=glYK24B6Dn8xApE7sm2L9UCbNQhPiqdE_BuxRAzs5ag,6180
+tsfaker-0.2.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tsfaker-0.2.dist-info/entry_points.txt,sha256=O4LJKy9F6DEI2zuJO-klj2_fuP91DMf01jNNnu4aqac,46
+tsfaker-0.2.dist-info/top_level.txt,sha256=cH2Exb6lxf8W1eGYZIuQpucShIlsjUyiRSxkxqJPNq4,8
+tsfaker-0.2.dist-info/RECORD,,
