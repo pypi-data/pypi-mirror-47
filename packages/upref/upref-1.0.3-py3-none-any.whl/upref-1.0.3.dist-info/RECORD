@@ -1,0 +1,12 @@
+upref/__init__.py,sha256=kQVZuPihxLiHAbFYIrHtImpeF1qYd2TYv9PdN4dPezg,3270
+upref/common.py,sha256=z6P0yRQH9qHiKXfjjMxBiW8EOYWZi9ec-iuY69HOtbM,15590
+upref/default.conf,sha256=LzqR7_LW9j5iT27ryVKTNv0SocddAJYx_1mw9xh0fjM,1068
+upref/example1.conf,sha256=joJl2YIXbUtoMm53POrDrMca1vKazGEFeBe2qJXsHRY,684
+upref/gui.py,sha256=m-Q-lDkh5X73wrlBU-X0VtMBIbswSEYhkJS-ixGuxpo,11075
+upref/test_common.py,sha256=FKtcOypW1FZ3FFYyVcYoAKrY8glhktlYUacJhir0J9Y,6690
+upref/tower.ico,sha256=0dNpdmOrK4iD4mJ1y35DgwSFojYzoI7tmgxXrE1PVaA,195421
+upref/tty.py,sha256=hJM3XZ7Tv99CzLmKs5EJzfeZArsITrhzsReZAg-6wI0,7185
+upref-1.0.3.dist-info/METADATA,sha256=PJ0N_YO-qjBdYFuFR4Q3_nPmsEYbNPrEP07Q2i3KgfE,1733
+upref-1.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+upref-1.0.3.dist-info/top_level.txt,sha256=YVm4r6g1LrISrucp0TvaudP8FwHPyMGT7p4bn1TUE4k,6
+upref-1.0.3.dist-info/RECORD,,
