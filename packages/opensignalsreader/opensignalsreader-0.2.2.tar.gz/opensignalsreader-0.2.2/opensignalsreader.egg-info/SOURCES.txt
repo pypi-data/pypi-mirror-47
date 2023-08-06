@@ -1,0 +1,13 @@
+README.md
+setup.py
+opensignalsreader/__init__.py
+opensignalsreader/__version__.py
+opensignalsreader/opensignalsreader.py
+opensignalsreader.egg-info/PKG-INFO
+opensignalsreader.egg-info/SOURCES.txt
+opensignalsreader.egg-info/dependency_links.txt
+opensignalsreader.egg-info/requires.txt
+opensignalsreader.egg-info/top_level.txt
+opensignalsreader/transfer_functions/__init__.py
+opensignalsreader/transfer_functions/bio.py
+opensignalsreader/transfer_functions/bit.py
