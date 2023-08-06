@@ -1,0 +1,4 @@
+[console_scripts]
+hatano = hatano:handle
+htn = hatano:handle
+
