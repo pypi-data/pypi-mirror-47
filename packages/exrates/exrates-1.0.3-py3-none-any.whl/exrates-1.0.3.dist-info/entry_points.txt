@@ -1,0 +1,3 @@
+[console_scripts]
+exrates = exrates.exrates.exrates:getrates
+
