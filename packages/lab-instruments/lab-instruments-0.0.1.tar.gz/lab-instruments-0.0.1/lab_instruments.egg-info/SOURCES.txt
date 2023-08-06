@@ -1,0 +1,8 @@
+README.md
+setup.py
+lab-instruments/__init__.py
+lab-instruments/serial_instrument.py
+lab_instruments.egg-info/PKG-INFO
+lab_instruments.egg-info/SOURCES.txt
+lab_instruments.egg-info/dependency_links.txt
+lab_instruments.egg-info/top_level.txt
