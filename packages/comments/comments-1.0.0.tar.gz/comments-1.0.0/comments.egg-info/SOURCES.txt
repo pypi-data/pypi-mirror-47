@@ -1,0 +1,10 @@
+README.md
+setup.py
+comments/__init__.py
+comments/errors.py
+comments/etc.py
+comments.egg-info/PKG-INFO
+comments.egg-info/SOURCES.txt
+comments.egg-info/dependency_links.txt
+comments.egg-info/requires.txt
+comments.egg-info/top_level.txt
