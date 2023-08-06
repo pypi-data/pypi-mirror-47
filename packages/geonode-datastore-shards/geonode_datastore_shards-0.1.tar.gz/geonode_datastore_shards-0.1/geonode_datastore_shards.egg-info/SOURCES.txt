@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+geonode_datastore_shards/__init__.py
+geonode_datastore_shards/admin.py
+geonode_datastore_shards/models.py
+geonode_datastore_shards/tests.py
+geonode_datastore_shards/utils.py
+geonode_datastore_shards.egg-info/PKG-INFO
+geonode_datastore_shards.egg-info/SOURCES.txt
+geonode_datastore_shards.egg-info/dependency_links.txt
+geonode_datastore_shards.egg-info/top_level.txt
+geonode_datastore_shards/migrations/0001_initial.py
+geonode_datastore_shards/migrations/__init__.py
