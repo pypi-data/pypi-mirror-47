@@ -1,0 +1,19 @@
+include Readme.md
+include LICENSE
+include imgextract/*.py
+include screenshot.png
+include imgextract/da_icon.png
+
+include imgextract/poppler/bin/*.dll
+include imgextract/poppler/bin/*.exe
+include imgextract/poppler/bin/AUTHORS
+include imgextract/poppler/bin/BINARIES
+include imgextract/poppler/bin/COPYING
+include imgextract/poppler/bin/COPYING3
+include imgextract/poppler/bin/README
+include imgextract/poppler/bin/README-XPDF
+
+include poppler/include/poppler/cpp/*.h
+include poppler/lib/*.a
+include poppler/lib/pkgconfig/*.pc
+include poppler/share/man/man1/*.1
