@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: symdim
+Version: 0.1
+Summary: An algebraic manipulation and dimensional analysis tool using SymPy and Astropy.units
+Home-page: http://github.com/AndrewChap/symdim
+Author: Andrew Chap
+Author-email: andrew@andrewchap.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: num2tex
+Requires-Dist: sympy
+Requires-Dist: astropy
+
+UNKNOWN
+
+
