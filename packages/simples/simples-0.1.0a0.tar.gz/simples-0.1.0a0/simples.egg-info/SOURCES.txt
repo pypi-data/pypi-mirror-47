@@ -1,0 +1,10 @@
+README.md
+setup.py
+simples/__init__.py
+simples/soma.py
+simples.egg-info/PKG-INFO
+simples.egg-info/SOURCES.txt
+simples.egg-info/dependency_links.txt
+simples.egg-info/top_level.txt
+tests/__init__.py
+tests/test_soma.py
