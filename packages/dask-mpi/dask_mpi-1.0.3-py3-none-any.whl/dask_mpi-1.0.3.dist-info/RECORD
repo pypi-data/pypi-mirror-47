@@ -1,0 +1,16 @@
+dask_mpi/__init__.py,sha256=nyMtHrWtq5WykAxO7g7ViwaCBe4E1Zrz67b9xvNB5tQ,122
+dask_mpi/_version.py,sha256=xKdWn_nHym4YgesxQA6dcld0wqben4HXRyzkac6JC_I,497
+dask_mpi/cli.py,sha256=LJeodOLq1zl0nzHY5kVjVzzmA0KH9vzhcV8LyEms3-U,3301
+dask_mpi/common.py,sha256=zB97emSe6P_2atN2oBrRKpC27khgEUkkQzwM8zHJ_Xw,2750
+dask_mpi/core.py,sha256=axm-OQ02KaJF6w-_sJ6vRx2W_1Ta1BaBG-SIc_mxJ8M,2734
+dask_mpi/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dask_mpi/tests/conftest.py,sha256=4I2qVPowgZs-El9CjiQTwwQI5EeYH9MKrkFY6gLUkYA,382
+dask_mpi/tests/core_basic.py,sha256=qVYQc5xbsP2Af-8vOnppwxRGB7OKh_2BlstAA_hULuM,363
+dask_mpi/tests/test_cli.py,sha256=2_Ue_A81A-0segys9k4ciNzzvitdPhRJ5htVXQMBVyk,4075
+dask_mpi/tests/test_core.py,sha256=ghmz6sjCO48JYWqddkyIJ_TVOBdqip6rbT_FUM4Uruc,398
+dask_mpi-1.0.3.dist-info/LICENSE.txt,sha256=NF4Upz1I3LPl0WmGQBhiiDS4KAzA4585sgFSxVHCy38,1480
+dask_mpi-1.0.3.dist-info/METADATA,sha256=Re3bKmkv0I-vsj4JCXqJmcqjA28FAXkfuJG8G3CXMdM,1707
+dask_mpi-1.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+dask_mpi-1.0.3.dist-info/entry_points.txt,sha256=EDOQlaO2arJYT5OMAsD_UN2TVmbCrs3oh-ABtL733xs,80
+dask_mpi-1.0.3.dist-info/top_level.txt,sha256=x9hBtkInwKfRMA2d9BiuzFCZoKxRLGbn8_ytD4Yb1-M,9
+dask_mpi-1.0.3.dist-info/RECORD,,
