@@ -1,0 +1,6 @@
+scikit-learn
+pymongo
+poloniexapi
+finta
+tqdm
+joblib
