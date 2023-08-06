@@ -1,0 +1,15 @@
+Flask
+itsdangerous
+oauth2client
+six
+python-jwt
+jwcrypto
+cachetools
+
+[dev]
+wheel
+twine
+tox
+bumpversion
+nose
+nosy
