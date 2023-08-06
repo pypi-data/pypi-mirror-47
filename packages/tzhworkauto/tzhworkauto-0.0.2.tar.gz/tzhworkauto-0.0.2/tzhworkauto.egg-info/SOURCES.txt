@@ -1,0 +1,6 @@
+README.md
+setup.py
+tzhworkauto.egg-info/PKG-INFO
+tzhworkauto.egg-info/SOURCES.txt
+tzhworkauto.egg-info/dependency_links.txt
+tzhworkauto.egg-info/top_level.txt
