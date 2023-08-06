@@ -1,0 +1,7 @@
+td_pyspark/__init__.py,sha256=ZoBlBztH4VddqRIe5q3HKKmqi5EvwES-hn2QorF6i6M,215
+td_pyspark/td_pyspark.py,sha256=Rb57fwrRg2RYM0NV48IfhdhQuUc2VoOQsaH_982sPVg,2840
+td_pyspark/version.py,sha256=g2tYCgLshy2jDxvX2bf_qOT71fCwUjiwv1qnEsM4FlE,23
+td_pyspark-19.5.0.dist-info/METADATA,sha256=G0Ctjx969xOSE1GJzP_rca90j-2hghJcCyV6ajWCD8Y,2439
+td_pyspark-19.5.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+td_pyspark-19.5.0.dist-info/top_level.txt,sha256=DT6Xgy8n7psxFjH8d_Wzj-25lK_1mr9rEbywjH-QFPE,11
+td_pyspark-19.5.0.dist-info/RECORD,,
