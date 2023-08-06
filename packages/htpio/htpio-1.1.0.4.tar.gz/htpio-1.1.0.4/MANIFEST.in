@@ -1,0 +1,9 @@
+include readme.*
+include license.*
+
+graft demos
+graft tests
+graft docs
+
+global-exclude *.bat
+global-exclude *.py[co]
