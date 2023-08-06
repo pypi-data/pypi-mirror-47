@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dataspyv4
+Version: 0.4
+Summary: First ML Library
+Home-page: UNKNOWN
+Author: GURDIT SINGH
+Author-email: gurdit.singh@bitwiseglobal.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+UNKNOWN
+
+
