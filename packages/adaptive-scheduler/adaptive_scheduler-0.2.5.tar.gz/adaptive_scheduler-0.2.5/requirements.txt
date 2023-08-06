@@ -1,0 +1,10 @@
+adaptive
+dill
+ipyparallel
+mpi4py
+psutil
+pyzmq
+structlog
+tinydb
+toolz
+tqdm
