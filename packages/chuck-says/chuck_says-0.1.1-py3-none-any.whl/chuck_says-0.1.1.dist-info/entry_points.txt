@@ -1,0 +1,3 @@
+[console_scripts]
+chuck=chuck_says.cli:main
+
