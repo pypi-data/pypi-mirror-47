@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+pipip.egg-info/PKG-INFO
+pipip.egg-info/SOURCES.txt
+pipip.egg-info/dependency_links.txt
+pipip.egg-info/entry_points.txt
+pipip.egg-info/requires.txt
+pipip.egg-info/top_level.txt
+pipns/__init__.py
+pipns/__main__.py
+pipns/scripts/package_files.py
