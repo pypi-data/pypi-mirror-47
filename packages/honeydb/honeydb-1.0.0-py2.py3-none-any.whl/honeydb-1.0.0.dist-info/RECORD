@@ -1,0 +1,10 @@
+honeydb/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+honeydb/api/__init__.py,sha256=lmBja_vYR3tX7gtPWg7Lj0518tepFpP19o-sL1aA13I,55
+honeydb/api/client.py,sha256=fy--HQagYX4SYz49dn0vmMv6JBKAreXco8QUZshdUZE,3135
+honeydb-1.0.0.data/scripts/honeydb,sha256=BAdMvKPvpFuwTfCA4gMIz2lfML_E6klqhICQRCecT5w,3333
+honeydb-1.0.0.dist-info/DESCRIPTION.rst,sha256=jFfALhxdVdCHD1TaWXxfh0d8ynsGw_0hrFAJlwbgFUE,1137
+honeydb-1.0.0.dist-info/METADATA,sha256=YNNytBGOabJ-V5syggbNx82MlGMJ3f_wIif6kDscY_o,1764
+honeydb-1.0.0.dist-info/RECORD,,
+honeydb-1.0.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+honeydb-1.0.0.dist-info/metadata.json,sha256=W9rwEdDrHoLBuHD9CncvjlOI7ZcHLE1ERkxpBSGc5P8,827
+honeydb-1.0.0.dist-info/top_level.txt,sha256=esvaaBFMrSaAx4chsEnhlX4Ru0vPjDgZV4ZUmIxING4,8
