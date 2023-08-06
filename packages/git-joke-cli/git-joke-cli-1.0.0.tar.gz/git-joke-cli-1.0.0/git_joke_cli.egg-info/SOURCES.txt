@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+bin/git-joke
+git_joke_cli.egg-info/PKG-INFO
+git_joke_cli.egg-info/SOURCES.txt
+git_joke_cli.egg-info/dependency_links.txt
+git_joke_cli.egg-info/not-zip-safe
+git_joke_cli.egg-info/requires.txt
+git_joke_cli.egg-info/top_level.txt
+gitjoke/__init__.py
+gitjoke/extractor.py
