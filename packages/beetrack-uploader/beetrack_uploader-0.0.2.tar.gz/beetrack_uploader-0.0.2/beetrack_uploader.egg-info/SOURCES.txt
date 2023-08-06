@@ -1,0 +1,8 @@
+README.md
+setup.py
+beetrack_uploader/__init__.py
+beetrack_uploader/beetrack_uploader.py
+beetrack_uploader.egg-info/PKG-INFO
+beetrack_uploader.egg-info/SOURCES.txt
+beetrack_uploader.egg-info/dependency_links.txt
+beetrack_uploader.egg-info/top_level.txt
