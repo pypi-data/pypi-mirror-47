@@ -1,0 +1,3 @@
+django
+django-pmedien-defaults
+django-pmedien-export
