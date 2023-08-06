@@ -1,0 +1,27 @@
+Metadata-Version: 1.1
+Name: python-mercuryapi
+Version: 0.5.0
+Summary: Python wrapper for the ThingMagic Mercury API
+Home-page: https://github.com/gotthardp/python-mercuryapi
+Author: Petr Gotthard
+Author-email: petr.gotthard@centrum.cz
+License: UNKNOWN
+Description: Python wrapper for the ThingMagic Mercury API
+        =============================================
+        
+        The `ThingMagic Mercury API <http://www.thingmagic.com/mercuryapi>`_ is used to discover, provision and control ThingMagic RFID readers.
+        
+        Reading RFID tags is as simple as this::
+        
+          import mercury
+          reader = mercury.Reader("tmr:///dev/ttyUSB0")
+        
+          reader.set_region("EU3")
+          reader.set_read_plan([1], "GEN2")
+          print(reader.read())
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
