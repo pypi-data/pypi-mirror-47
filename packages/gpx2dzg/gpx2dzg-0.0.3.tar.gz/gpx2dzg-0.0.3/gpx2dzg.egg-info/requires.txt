@@ -1,0 +1,4 @@
+gpxpy
+geomag
+pynmea2
+readgssi
