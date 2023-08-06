@@ -1,0 +1,28 @@
+kedro.contrib.io.azure.CSVBlobDataSet
+=====================================
+
+.. currentmodule:: kedro.contrib.io.azure
+
+.. autoclass:: CSVBlobDataSet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      
+      CSVBlobDataSet.__init__
+      CSVBlobDataSet.exists
+      CSVBlobDataSet.from_config
+      CSVBlobDataSet.load
+      CSVBlobDataSet.save
+    
+   

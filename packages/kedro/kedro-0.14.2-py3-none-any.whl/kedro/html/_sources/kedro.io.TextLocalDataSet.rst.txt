@@ -1,0 +1,28 @@
+kedro.io.TextLocalDataSet
+=========================
+
+.. currentmodule:: kedro.io
+
+.. autoclass:: TextLocalDataSet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      
+      TextLocalDataSet.__init__
+      TextLocalDataSet.exists
+      TextLocalDataSet.from_config
+      TextLocalDataSet.load
+      TextLocalDataSet.save
+    
+   

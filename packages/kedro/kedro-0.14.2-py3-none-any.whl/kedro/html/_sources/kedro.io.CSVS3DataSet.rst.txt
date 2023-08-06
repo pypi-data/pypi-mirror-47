@@ -1,0 +1,28 @@
+kedro.io.CSVS3DataSet
+=====================
+
+.. currentmodule:: kedro.io
+
+.. autoclass:: CSVS3DataSet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      
+      CSVS3DataSet.__init__
+      CSVS3DataSet.exists
+      CSVS3DataSet.from_config
+      CSVS3DataSet.load
+      CSVS3DataSet.save
+    
+   

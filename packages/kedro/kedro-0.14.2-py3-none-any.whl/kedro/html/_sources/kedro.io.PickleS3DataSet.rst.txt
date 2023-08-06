@@ -1,0 +1,28 @@
+kedro.io.PickleS3DataSet
+========================
+
+.. currentmodule:: kedro.io
+
+.. autoclass:: PickleS3DataSet
+   :members:
+   :undoc-members:
+   :show-inheritance:
+   :inherited-members:
+
+   
+   
+   
+
+   
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+      
+      PickleS3DataSet.__init__
+      PickleS3DataSet.exists
+      PickleS3DataSet.from_config
+      PickleS3DataSet.load
+      PickleS3DataSet.save
+    
+   
