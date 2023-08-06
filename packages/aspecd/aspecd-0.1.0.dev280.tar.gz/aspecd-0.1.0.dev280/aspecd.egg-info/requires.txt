@@ -1,0 +1,11 @@
+jinja2
+matplotlib
+numpy
+oyaml
+
+[dev]
+prospector
+
+[docs]
+sphinx
+sphinx-rtd-theme
