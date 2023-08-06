@@ -1,0 +1,9 @@
+tsboost/__init__.py,sha256=0FqOJ8PJ06aiL3XZ9uGfw-F7-BugKtr0_VF5odC1GGw,237
+tsboost/ensembles.py,sha256=M43dt-lnNKViTEkXdLQyuk9ds63qHnfGBxyeEI4f4FI,1543
+tsboost/regressors.py,sha256=cDomQwXRnEX-e03oTGlcBqEyytgAMJPq7gv39kz6ZgE,19630
+tsboost-0.1.0.dist-info/DESCRIPTION.rst,sha256=Cu9S6lk-XrzHDLY_eA11ViUWr2wB-MN0eY8-gmir7oA,1412
+tsboost-0.1.0.dist-info/METADATA,sha256=w7gHlFmwhTvtdkUNSmlO0mrmmi_-i5OEuRTZ2npbF80,2299
+tsboost-0.1.0.dist-info/RECORD,,
+tsboost-0.1.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+tsboost-0.1.0.dist-info/metadata.json,sha256=2suE6JWlluLECzwz3P3arx5Q0R0F0TjwZPt908X58j4,1049
+tsboost-0.1.0.dist-info/top_level.txt,sha256=z5rLci16CxCljT5KO9uUI2P9J3bsRnjD70eP3dk6CsA,8
