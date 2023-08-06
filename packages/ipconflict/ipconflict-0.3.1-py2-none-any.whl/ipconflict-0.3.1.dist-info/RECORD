@@ -1,0 +1,11 @@
+ipconflict/__init__.py,sha256=8XZJnTHGzC7Fti-tH9i4i89NgJZ_CWddJKo0UelGiGg,2318
+ipconflict/subnet.py,sha256=A4TRwJ8out5-7ULlZjcpwfWJgNzt70PE2UwSYTXWgzY,1291
+ipconflict-0.3.1.dist-info/DESCRIPTION.rst,sha256=vki6hksvTjNSp5kZs0ocueQlYnsHXk13Dh4-pklbOII,1111
+ipconflict-0.3.1.dist-info/METADATA,sha256=JMCG_zSoWyzowVXRxsvjV5uGxR-f1JT_Se7wTHjYJIY,1777
+ipconflict-0.3.1.dist-info/RECORD,,
+ipconflict-0.3.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+ipconflict-0.3.1.dist-info/entry_points.txt,sha256=nrWYPopbHtsgrYI5_ydw17N8-ZzbtJScs3dQ8Cnc_hg,48
+ipconflict-0.3.1.dist-info/metadata.json,sha256=kjZDAa9vM9f6hxel0G8eqg-nik4eMocZMuAkUBkWYOU,971
+ipconflict-0.3.1.dist-info/top_level.txt,sha256=7Ht4hwE6wC5BRY_mas9LXY9b2F_HyB0SUt9AiuWz_-M,17
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_overlap.py,sha256=Eps0c5su5f__oM1MqNc3qXlg_zM-TUBpF6e3wy49Jro,3178
