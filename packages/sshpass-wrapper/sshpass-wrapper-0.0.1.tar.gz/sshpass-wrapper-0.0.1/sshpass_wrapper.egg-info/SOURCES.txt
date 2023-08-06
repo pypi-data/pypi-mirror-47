@@ -1,0 +1,8 @@
+README.md
+setup.py
+src/__init__.py
+src/spw
+sshpass_wrapper.egg-info/PKG-INFO
+sshpass_wrapper.egg-info/SOURCES.txt
+sshpass_wrapper.egg-info/dependency_links.txt
+sshpass_wrapper.egg-info/top_level.txt
