@@ -1,0 +1,10 @@
+pyssword/__init__.py,sha256=h_1cPxgj72tD3fYFb_TLfDWoJNizvhA81GWMqOPdbi0,1799
+pyssword/util.py,sha256=FmQPcJLuFqr7nxhIvB13G9sHDlMuw2tUNG_muuWAhCE,1166
+pyssword/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyssword/tests/conftest.py,sha256=NMDmkJifiBh87Sth1og58HMd5uFHz6WWgHOgSuT2ZGg,3864
+pyssword/tests/test_pyssword.py,sha256=BREuV1jd5tiSKKO67UIDuKjqz0y5RO6MRXMdD8WUPGI,2200
+pyssword-0.1.6.dist-info/LICENSE,sha256=0wh_OuwdeID1Q0qDjFF7mhAYbynFs4RZuYLzzVNLZA0,1073
+pyssword-0.1.6.dist-info/METADATA,sha256=onAYszB6BX_mN1cqfx4uNqgWqFJMvEiTERHUH_yL1LE,396
+pyssword-0.1.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+pyssword-0.1.6.dist-info/top_level.txt,sha256=D0_IWKaGgK-Q70UX_khr5U2x2tOuCTbTBay_HlTvl4k,9
+pyssword-0.1.6.dist-info/RECORD,,
