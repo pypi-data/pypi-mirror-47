@@ -1,0 +1,9 @@
+README.md
+setup.py
+mig_meow/__init__.py
+mig_meow/mig_meow.py
+mig_meow/pattern.py
+mig_meow.egg-info/PKG-INFO
+mig_meow.egg-info/SOURCES.txt
+mig_meow.egg-info/dependency_links.txt
+mig_meow.egg-info/top_level.txt
