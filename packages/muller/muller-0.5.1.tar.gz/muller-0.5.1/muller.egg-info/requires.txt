@@ -1,0 +1,15 @@
+pandas
+loguru
+scipy
+matplotlib
+graphviz
+pygraphviz
+seaborn
+numpy
+xlrd
+
+[Additional support for parsing files]
+beautifulsoup4
+
+[Show progressbar for large datasets]
+tqdm
