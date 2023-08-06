@@ -1,0 +1,3 @@
+[snippyplugin]
+tldr = snippy_tldr
+
