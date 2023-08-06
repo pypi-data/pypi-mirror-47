@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: infraless
+Version: 0.0.1a0
+Summary: Run your code at scale without worrying about the cloud
+Home-page: https://github.com/ispulkit
+Author: Pulkit Kumar
+Author-email: ispulkitkr@gmail.com
+License: unlicensed
+Description: # InfraLess
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        infraless = infraless.cli_router:main
+    
