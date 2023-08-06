@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: sql-to-mongo
+Version: 0.1
+Summary: A mongo utility to migrate bds
+Home-page: https://github.com/andresfiloso/sql-to-mongo
+Author: Andres Filoso
+Author-email: andresfilosok@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# WebAppODBC
+Gestión de reserva de turnos
+
+## Authors
+
+* **Andrés Filoso** - [andresfiloso](https://github.com/andresfiloso)
+* **Juan Pablo Federico** - [Juanfederico](https://github.com/Juanfederico)
+
+See also the list of [contributors](https://github.com/andresfiloso/WebAppODBC/graphs/contributors) who participated in this project.
+
+
