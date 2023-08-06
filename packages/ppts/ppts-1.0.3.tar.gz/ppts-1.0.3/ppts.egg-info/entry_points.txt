@@ -1,0 +1,3 @@
+[console_scripts]
+ppts = ppts.cli.bin:main
+
