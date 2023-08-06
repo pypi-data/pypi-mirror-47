@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: MikhailP-django-blog
+Version: 0.1
+Summary: A simple Django app to conduct beauty blog.
+Home-page: http://wwww.hotmale.com/
+Author: Mikhail Panov
+Author-email: mihail52sh@mail.ru
+License: MIT License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+
+====
+Blog
+====
+Blog is a simple Django app to conduct web-based beauty blog.
+
+Detailed documentation doesn't exist.
+
+Quick start
+-----------
+1. Add "blog" to your INSTALLED_APPS setting like this::
+INSTALLED_APPS = [
+...
+'blog',
+]
+
+2. Include the blog URLconf in your project urls.py like this::
+path('blog/', include('blog.urls')),
+
+3. Run 'python manage.py migrate' to create the blog models.
+
+4. Start the development server and visit http://127.0.0.1:8000/admin/ to create a post (you'll need the Admin app enabled).
+
+5. Visit http://127.0.0.1:8000/blog/ to read your beauty blog.
+
+
