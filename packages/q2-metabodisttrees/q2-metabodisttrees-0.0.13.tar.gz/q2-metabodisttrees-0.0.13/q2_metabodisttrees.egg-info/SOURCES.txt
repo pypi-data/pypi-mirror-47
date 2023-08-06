@@ -1,0 +1,12 @@
+README.md
+setup.py
+q2_metabodisttrees/__init__.py
+q2_metabodisttrees/_metabodisttrees.py
+q2_metabodisttrees/plugin_setup.py
+q2_metabodisttrees.egg-info/PKG-INFO
+q2_metabodisttrees.egg-info/SOURCES.txt
+q2_metabodisttrees.egg-info/dependency_links.txt
+q2_metabodisttrees.egg-info/entry_points.txt
+q2_metabodisttrees.egg-info/not-zip-safe
+q2_metabodisttrees.egg-info/top_level.txt
+q2_metabodisttrees/data/ChemOnt_2_1.obo
