@@ -1,0 +1,8 @@
+README.rst
+setup.cfg
+setup.py
+niftypet.egg-info/PKG-INFO
+niftypet.egg-info/SOURCES.txt
+niftypet.egg-info/dependency_links.txt
+niftypet.egg-info/requires.txt
+niftypet.egg-info/top_level.txt
