@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+django_simple_json_api.egg-info/PKG-INFO
+django_simple_json_api.egg-info/SOURCES.txt
+django_simple_json_api.egg-info/dependency_links.txt
+django_simple_json_api.egg-info/requires.txt
+django_simple_json_api.egg-info/top_level.txt
+dsjapi/__init__.py
+dsjapi/decorator.py
+dsjapi/exceptions.py
+dsjapi/fields.py
