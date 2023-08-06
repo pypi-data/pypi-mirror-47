@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: snipsnip
+Version: 0.6
+Summary: Remote mac clipboard
+Home-page: http://github.com/AGhost-7/snipsnip
+Author: Jonathan Boudreau
+Author-email: jonathan.boudreau.92@gmail.com
+License: MIT
+Keywords: clipboard
+Platform: UNKNOWN
+Requires-Dist: pyperclip (>=1.7.0)
+Requires-Dist: python-xlib (>=0.25) ; platform_system == "Linux"
+
+UNKNOWN
+
+
