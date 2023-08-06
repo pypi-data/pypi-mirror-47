@@ -1,0 +1,30 @@
+---
+file-contents:
+  releasenotes/notes/initial-version-with-full-functionality-c63da317250d228d.yaml:
+    features:
+    - 'Initial version of the orchestrator API bindings and CLI with full
+
+      functionality. Implements the complete orchestrator REST API.
+
+      '
+    security:
+    - 'Authentication only possible through the usage of an OpenID Connect
+
+      access token.
+
+      '
+  releasenotes/notes/use-objects-bf546c89548f424c.yaml:
+    features:
+    - "This version of orpy stops using bare dictionaries, and relies on objects \n\
+      for each of the REST resources.\n"
+notes:
+- files:
+  - - releasenotes/notes/use-objects-bf546c89548f424c.yaml
+    - !!binary |
+      YmNlY2Y5YzRhMTM3ZDdhMmI2Y2Q2NjZiN2Y3ZmI4ZmMyNGJmOWIxNw==
+  version: 0.3.0
+- files:
+  - - releasenotes/notes/initial-version-with-full-functionality-c63da317250d228d.yaml
+    - !!binary |
+      ZTcwNGQ2M2MxZjAyZGQ0OWU0ZmY1ZDhmMzExZTE2NTYwZGI1Yjc3Yw==
+  version: 0.2.0
