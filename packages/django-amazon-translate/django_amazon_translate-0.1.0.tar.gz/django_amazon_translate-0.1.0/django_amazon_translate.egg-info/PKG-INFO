@@ -1,0 +1,74 @@
+Metadata-Version: 1.1
+Name: django-amazon-translate
+Version: 0.1.0
+Summary: Utils for Django to translate both Models and Django gettext files using Amazon Translate.
+Home-page: https://github.com/leepa/django_amazon_translate
+Author: Lee Packham
+Author-email: leepac@amazon.co.uk
+License: MIT license
+Description: =======================
+        Django Amazon Translate
+        =======================
+        
+        
+        .. image:: https://img.shields.io/pypi/v/django_amazon_translate.svg
+                :target: https://pypi.python.org/pypi/django_amazon_translate
+        
+        .. image:: https://img.shields.io/travis/leepa/django_amazon_translate.svg
+                :target: https://travis-ci.org/leepa/django_amazon_translate
+        
+        .. image:: https://readthedocs.org/projects/django-amazon-translate/badge/?version=latest
+                :target: https://django-amazon-translate.readthedocs.io/en/latest/?badge=latest
+                :alt: Documentation Status
+        
+        
+        Utils for Django to translate both Models and Django gettext files using
+        Amazon Translate.
+        
+        Written because doing translation ends up getting forgotten and increasing
+        accessibility in projects should be easy for everyone.
+        
+        * Free software: MIT license
+        * Documentation: https://django-amazon-translate.readthedocs.io.
+        
+        
+        Quick start
+        -----------
+        
+        Add `django_amazon_translate` to the INSTALLED_APPS of your project.
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        This package was created with Cookiecutter_ and the
+        `audreyr/cookiecutter-pypackage`_ project template.
+        
+        .. _Cookiecutter: https://github.com/audreyr/cookiecutter
+        .. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+        
+        
+        =======
+        History
+        =======
+        
+        0.1.0 (2019-05-23)
+        ------------------
+        
+        * First release on PyPI.
+        
+Keywords: django_amazon_translate
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

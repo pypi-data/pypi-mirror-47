@@ -1,0 +1,4 @@
+django<2.3,>=1.11
+django-modeltranslation<1.0,>=0.13.1
+boto3<=1.10,>=1.9
+polib<2,>=1.1.0
