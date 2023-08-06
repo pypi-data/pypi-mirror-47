@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: osnap
+Version: 0.3.0
+Summary: Turns Python applications into native applications for Windows and OSX/MacOS
+Home-page: http://osnap.abel.co
+Author: James Abel
+Author-email: j@abel.co
+License: UNKNOWN
+Download-URL: https://github.com/jamesabel/osnap/tarball/0.3.0
+Keywords: freeze,application,native
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: jinja2
+Requires-Dist: lxml
+
+UNKNOWN
+
+
