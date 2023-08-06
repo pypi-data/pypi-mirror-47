@@ -1,0 +1,3 @@
+[console_scripts]
+enhydris-cache = enhydris_cache.cli:main
+
