@@ -1,0 +1,11 @@
+franklin/__init__.py,sha256=oWZFTXMkwN6LwrZNydM2De_N0vZN_C_U-VN951YS7io,52
+franklin/article.py,sha256=vf7kLBUnt_Tfcd_KkNu-PaMx2RXwUbnGfezjk4YhmL8,5640
+franklin/exceptions.py,sha256=g0BAvPwI8-beD0NiQeslZVbuO08dnb5hnnt7kWqJ6_s,461
+franklin/fetch_doi.py,sha256=ZQYf0mgZ9w11iTM8rKEW7meJE0BAOQUKBmEb1S9GbJA,6562
+franklin/publishers.py,sha256=0aXEZ4icbQDfSVObhXPKuyvoOOmRnTPpnKw8leIS5k8,3672
+franklin-0.2.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+franklin-0.2.dist-info/METADATA,sha256=8kzJ2GDpO2Jxjnzbaxibk2ZfoR9WWS3EycTcjSRjwp0,1545
+franklin-0.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+franklin-0.2.dist-info/entry_points.txt,sha256=qQRi9j8rVBR5iSL6Mg8X9jSEq0kNUtSok9mahtXCkm8,55
+franklin-0.2.dist-info/top_level.txt,sha256=vHPL804nwadrF1YjwonJqxXDYVmhyUO7iab4oy84Oh0,9
+franklin-0.2.dist-info/RECORD,,
