@@ -1,0 +1,5 @@
+[console_scripts]
+abuse=findabuse.cli:main
+abuse-dns-server=findabuse.dns-server:main
+abuse-http-server=findabuse.http-server:main
+
