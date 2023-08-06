@@ -1,0 +1,11 @@
+include MANIFEST.in
+include COPYING
+include CREDITS
+include README.rst
+include setup.cfg
+include setup.py
+exclude .gitignore
+exclude .travis.yml
+exclude Makefile
+exclude check_readme.bash
+exclude test.bash

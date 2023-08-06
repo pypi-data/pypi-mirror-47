@@ -1,0 +1,4 @@
+[console_scripts]
+yolk = yolk.cli:main
+yolk1977 = yolk.cli:main
+
