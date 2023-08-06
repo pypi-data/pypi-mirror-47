@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cuishuang
+Version: 0.0.1
+Summary: 我的第一个python包
+Home-page: http://www.dashen.tech
+Author: fliter
+Author-email: i@dashen.tech
+License: UNKNOWN
+Description: ### 爽哥的第一个python包
+        
+        <font size="3" color="red">输出"爽哥好帅"</font>
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
