@@ -1,0 +1,3 @@
+[console_scripts]
+fds = filebeat_delegate:main
+
