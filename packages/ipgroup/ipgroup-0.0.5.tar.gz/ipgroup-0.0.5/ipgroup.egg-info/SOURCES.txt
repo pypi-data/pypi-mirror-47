@@ -1,0 +1,7 @@
+README.md
+ipgroup.py
+setup.py
+ipgroup.egg-info/PKG-INFO
+ipgroup.egg-info/SOURCES.txt
+ipgroup.egg-info/dependency_links.txt
+ipgroup.egg-info/top_level.txt
