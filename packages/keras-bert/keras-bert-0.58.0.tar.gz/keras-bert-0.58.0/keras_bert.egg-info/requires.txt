@@ -1,0 +1,4 @@
+numpy
+Keras
+keras-pos-embd
+keras-transformer
