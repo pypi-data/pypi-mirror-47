@@ -1,0 +1,7 @@
+#!python
+
+from app import app
+from torrent.client import delugeclient
+
+if __name__ == '__main__':
+    app.run()

@@ -1,0 +1,10 @@
+app/__init__.py,sha256=rRmtBo44lfnCkknrL0rHbAtx8Swah1TlECGySFxQrrE,209
+app/views.py,sha256=1GTUePMefTQAE86pGDoyB9hvDbs79H2WWs0yGniPSBU,1832
+cloudbreak-0.1.0.data/scripts/run,sha256=fZBZVWT78fnThcsDcFsTEZUj2t2Glo_BhJHIDCR4hZw,112
+torrent/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+torrent/client.py,sha256=zZLpj21BLA4im3JnbyhowEtAjwtuzP9HXYMnL6re3wI,2099
+cloudbreak-0.1.0.dist-info/LICENSE,sha256=CzcseHr-QJu0Ji1Bnw3mUw92TLRKDyxVvQckYFHxxos,1058
+cloudbreak-0.1.0.dist-info/METADATA,sha256=11Avcn0uEV2T5FVoxsJDFZo26HORqlyYq2Q7F9auTKQ,1044
+cloudbreak-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cloudbreak-0.1.0.dist-info/top_level.txt,sha256=Mz1FqFu2RTUezwl1z_d4Kpt-uyPB5g0kasvYwdLtE5I,12
+cloudbreak-0.1.0.dist-info/RECORD,,
