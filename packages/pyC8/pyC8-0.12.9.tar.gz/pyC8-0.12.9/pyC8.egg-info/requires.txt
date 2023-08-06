@@ -1,0 +1,4 @@
+requests
+six
+pulsar-client>=2.3.0
+pandas==0.24.2
