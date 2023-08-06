@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: piripherals
+Version: 0.1a9
+Summary: a collection of classes to interact with peripherals for the RaspberryPi
+Home-page: https://github.com/quantenschaum/piripherals
+Author: quantenschaum
+Author-email: software@louisenhof2.de
+License: GPLv3
+Description: UNKNOWN
+Keywords: peripherals raspberrypi spi i2c sensors buttons gpio
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: System :: Hardware
+Requires-Python: >=3.5
+Provides-Extra: GPIO
+Provides-Extra: I2C
+Provides-Extra: LED
+Provides-Extra: MPD

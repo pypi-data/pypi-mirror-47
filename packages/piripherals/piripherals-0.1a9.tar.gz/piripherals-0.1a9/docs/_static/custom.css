@@ -1,0 +1,19 @@
+.class>dt {
+  background: #eef;
+}
+
+.method>dt {
+  background: #ffe;
+}
+
+.function>dt {
+  background: #efe;
+}
+
+.data>dt, .attribute>dt {
+  background: #eee;
+}
+
+div.note, div.important {
+  background: #FFF59C;
+}

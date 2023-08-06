@@ -1,0 +1,8 @@
+/*
+*.pyc
+__pycache__
+!*.py
+!/piripherals
+!/docs
+/docs/_build
+!/tests/
