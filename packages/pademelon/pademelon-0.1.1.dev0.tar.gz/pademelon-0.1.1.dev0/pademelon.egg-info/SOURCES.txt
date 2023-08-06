@@ -1,0 +1,10 @@
+setup.py
+pademelon/__init__.py
+pademelon/__main__.py
+pademelon.egg-info/PKG-INFO
+pademelon.egg-info/SOURCES.txt
+pademelon.egg-info/dependency_links.txt
+pademelon.egg-info/top_level.txt
+pademelon/demo/__init__.py
+pademelon/demo/__main__.py
+test/test_main.py

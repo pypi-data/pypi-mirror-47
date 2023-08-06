@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: pademelon
+Version: 0.1.1.dev0
+Summary: UNKNOWN
+Home-page: https://github.com/pademelon-dev/pademelon
+Author: Tim Gates
+Author-email: tim.gates@iress.com
+License: GPLv3+
+Description: Execute a python module or function and log all calls and locals to formats that can be compared for execution variations.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
