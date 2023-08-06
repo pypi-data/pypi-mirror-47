@@ -1,0 +1,8 @@
+requests
+sphinx
+jinja2
+lxml
+appdirs
+wheel
+twine
+keyring
