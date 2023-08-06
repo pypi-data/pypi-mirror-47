@@ -1,0 +1,8 @@
+README.md
+setup.py
+symdim/__init__.py
+symdim.egg-info/PKG-INFO
+symdim.egg-info/SOURCES.txt
+symdim.egg-info/dependency_links.txt
+symdim.egg-info/not-zip-safe
+symdim.egg-info/top_level.txt
