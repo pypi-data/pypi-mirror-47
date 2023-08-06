@@ -1,0 +1,4 @@
+include CHANGES.rst
+include LICENSE
+include tox.ini
+include README.rst

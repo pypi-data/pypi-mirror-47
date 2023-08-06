@@ -1,0 +1,11 @@
+glue-core>=0.14
+plotly
+
+[qt]
+PyQt5
+
+[test]
+pytest
+pytest-cov
+mock
+glue-vispy-viewers
