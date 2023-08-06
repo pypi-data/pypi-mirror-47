@@ -1,0 +1,55 @@
+# ESMValTool
+# recipe_diurnal_temperature_index_wp7.yml
+---
+documentation:
+  description: |
+    Tool to compute the  diurnal temperature indicator.
+
+  authors:
+    - hunt_al
+    - pere_nu
+    - manu_ni
+    - caro_lo
+
+  projects:
+    - c3s-magic
+
+
+datasets:
+   - dataset: {{constraints['model']}}
+     project: CMIP5
+     exp: 'historical'
+     ensemble: {{constraints['ensemble']}}
+     start_year: {{constraints['start_year_historical']}}
+     end_year: {{constraints['end_year_historical']}}
+   - dataset: {{constraints['model']}}
+     project: CMIP5
+     exp: {{constraints['experiment']}}
+     ensemble: {{constraints['ensemble']}}
+     start_year: {{constraints['start_year_projection']}}
+     end_year: {{constraints['end_year_projection']}}
+
+
+preprocessors:
+  preproc:
+    mask_fillvalues:
+      threshold_fraction: 0.95
+    extract_region:
+      start_longitude: {{options['start_longitude']}} #  -10
+      end_longitude: {{options['end_longitude']}} #  40
+      start_latitude: {{options['start_latitude']}} #  27
+      end_latitude: {{options['end_latitude']}} #  70
+
+diagnostics:
+  diurnal_temperature_indicator:
+    description: Calculate the diurnal temperature indicator.
+    variables:
+      tasmax:
+        preprocessor: preproc
+        mip: day
+      tasmin:
+        preprocessor: preproc
+        mip: day
+    scripts:
+      main:
+        script: magic_bsc/diurnal_temp_index.r

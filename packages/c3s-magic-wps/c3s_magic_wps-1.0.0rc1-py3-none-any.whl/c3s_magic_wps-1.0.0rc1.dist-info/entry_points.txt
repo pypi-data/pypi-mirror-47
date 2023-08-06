@@ -1,0 +1,4 @@
+[console_scripts]
+c3s_magic_wps = c3s_magic_wps.cli:cli
+canary = c3s_magic_wps.execute:canary
+

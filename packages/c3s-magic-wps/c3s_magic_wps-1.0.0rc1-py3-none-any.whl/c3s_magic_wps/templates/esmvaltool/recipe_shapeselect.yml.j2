@@ -1,0 +1,34 @@
+---
+documentation:
+  description: 'Selects grid points belonging to a provided shapefile.'
+  authors: ['berg_pe']
+  projects: ['c3s-magic']
+  references: ['acknow_project']
+
+datasets:
+- dataset: {{constraints['model']}}
+  project: CMIP5
+  exp: {{constraints['experiment']}}
+  ensemble: {{constraints['ensemble']}}
+  start_year: {{start_year}}
+  end_year: {{end_year}}
+
+diagnostics:
+  diagnostic1:
+    description: Extracting data for user defined shapefile.
+    variables:
+      tas:
+        mip: {{constraints['cmor_table']}}
+      pr:
+        mip: {{constraints['cmor_table']}}
+    scripts:
+      script1:
+        script: shapeselect/diag_shapeselect.py
+        # Example shapefiles can be found in:
+        # esmvaltool/diag_scripts/shapeselect/testdata/
+        # Relative paths are relative to 'auxiliary_data_dir' as configured in
+        # the config-user.yml file.
+        shapefile: '{{options['shape']}}.shp'
+        weighting_method: {{options['weighting_method']}}
+        write_xlsx: true
+        write_netcdf: true
