@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: libinjection-wheel
+Version: 0.1.0
+Summary: Wrapper around libinjection c-code to detect sqli
+Home-page: https://github.com/sqreen/libinjection-build-python
+Author: Nick Galbreath
+Author-email: nickg@client9.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Database
+Classifier: Topic :: Security
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Internet :: Log Analysis
+Classifier: Topic :: Internet :: WWW/HTTP
+
+
+wrapper around libinjection
+
+

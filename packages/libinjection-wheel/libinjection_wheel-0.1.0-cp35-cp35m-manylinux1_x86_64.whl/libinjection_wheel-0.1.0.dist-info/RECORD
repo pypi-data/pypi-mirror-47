@@ -1,0 +1,8 @@
+_libinjection.cpython-35m-x86_64-linux-gnu.so,sha256=rzvch7ALLAkznkU_rnBnGbh8sX6VZ3YhSXx6DTjUfIM,907823
+libinjection_wheel-0.1.0.dist-info/WHEEL,sha256=bn4g_htrNyRXIkzrCcXfbpdVe7VGxkOI1OjU0lrO710,109
+libinjection_wheel-0.1.0.dist-info/top_level.txt,sha256=RQx8fRBa6RWsP131tk0uAI04JDFejgv9UHOxuolpxv4,27
+libinjection_wheel-0.1.0.dist-info/METADATA,sha256=a6--V_eeJo7ZU_eEhQLgCqIEMGAOYFfVTncCIVuYwec,640
+libinjection_wheel-0.1.0.dist-info/RECORD,,
+libinjection/__init__.py,sha256=Hakify4CLf7xBzIQ28j9PPnWERQr83QRQZ2DHOMMrZg,27
+libinjection/sqli_fingerprints.py,sha256=pDpy4FZ-U8cuxiAIIUZLHdumuX7jkUfFU_gSCKmMy1o,37
+libinjection/libinjection.py,sha256=ZATgRv2LMdrx96ohDsOs02WDRA4qtZ76Fi7aRALopok,3333
