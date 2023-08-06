@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.py
+dvalidator/__init__.py
+dvalidator/rules.py
+dvalidator/validator.py
+dvalidator.egg-info/PKG-INFO
+dvalidator.egg-info/SOURCES.txt
+dvalidator.egg-info/dependency_links.txt
+dvalidator.egg-info/requires.txt
+dvalidator.egg-info/top_level.txt
