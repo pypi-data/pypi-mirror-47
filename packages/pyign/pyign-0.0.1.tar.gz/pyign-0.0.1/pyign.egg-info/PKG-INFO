@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: pyign
+Version: 0.0.1
+Summary: A Liquid Rocket Engine python controls package
+Home-page: https://github.com/devonburson/PyIGN
+Author: Devon Burson
+Author-email: devon.burson@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Natural Language :: English
