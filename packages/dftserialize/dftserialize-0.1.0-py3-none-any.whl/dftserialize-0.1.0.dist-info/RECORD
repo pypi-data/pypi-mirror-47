@@ -1,0 +1,8 @@
+dftserialize/__init__.py,sha256=YC1mg5seLIpU79Y8FBmKIQRV9jBk9sn99QFiBA98QkU,52
+dftserialize/deserialize.py,sha256=6LZFsCyh2_CPQP2XZixT5RLuWoaOqp3RMSPMb4ZKCe8,3846
+dftserialize/serialize.py,sha256=iIaykzbWAL3twPI91DqR8QmRPTER9qSceHwd7MHicUk,2026
+dftserialize-0.1.0.dist-info/LICENSE,sha256=LoV48WtuomVBIWbotLHaBF_MEfKNsD1mSQhBASSi8B4,35801
+dftserialize-0.1.0.dist-info/METADATA,sha256=4ng7sKdA_MwXZuNm05jxbAqTNFXpLf6kObrFAwSFr_8,4803
+dftserialize-0.1.0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+dftserialize-0.1.0.dist-info/top_level.txt,sha256=mzY_o73v6yaVHkJbzBESswIlkUi9UkVOODWqfZWpR2Q,13
+dftserialize-0.1.0.dist-info/RECORD,,
