@@ -1,0 +1,10 @@
+setup.py
+kaldi_spotter/__init__.py
+kaldi_spotter/__main__.py
+kaldi_spotter/settings.py
+kaldi_spotter/utils.py
+kaldi_spotter.egg-info/PKG-INFO
+kaldi_spotter.egg-info/SOURCES.txt
+kaldi_spotter.egg-info/dependency_links.txt
+kaldi_spotter.egg-info/requires.txt
+kaldi_spotter.egg-info/top_level.txt
