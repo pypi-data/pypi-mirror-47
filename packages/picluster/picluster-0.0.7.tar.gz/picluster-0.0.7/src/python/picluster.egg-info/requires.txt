@@ -1,0 +1,6 @@
+typing
+rx>=3.0.0b4
+attrs
+marshmallow>=3.0.0b16
+requests
+sqlalchemy
