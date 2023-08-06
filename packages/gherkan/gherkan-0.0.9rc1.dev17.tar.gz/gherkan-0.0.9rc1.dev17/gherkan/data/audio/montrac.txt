@@ -1,0 +1,1 @@
+scénář jakmile stanice z je volná pak vozíček y jede do stanice z  scénář jakmile robot R1 zvedne kostku 1 pak robot R1 položí kostičku 1 na vozíček y na pozici 1  scénář když stanice x je volná a robot R1 skončil vykládání kostičky 1 pak vozíček y jede do stanice X
