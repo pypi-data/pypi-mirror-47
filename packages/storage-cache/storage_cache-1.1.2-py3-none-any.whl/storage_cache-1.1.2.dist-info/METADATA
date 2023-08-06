@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: storage-cache
+Version: 1.1.2
+Summary: Storage Cache
+Home-page: https://github.com/HenleyKuang/storage-cache
+Author: Henley Kuang
+Author-email: hekuang@ucdavis.edu
+License: GPL-3.0
+Requires-Dist: retry-redis
+
+=============
+
+
