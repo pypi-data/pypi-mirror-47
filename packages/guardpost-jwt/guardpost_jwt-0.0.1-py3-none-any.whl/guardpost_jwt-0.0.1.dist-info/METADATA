@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: guardpost-jwt
+Version: 0.0.1
+Summary: Classes to use JWT Bearer authentication with GuardPost.
+Home-page: https://github.com/RobertoPrevato/GuardPost-JWT
+Author: RobertoPrevato
+Author-email: roberto.prevato@gmail.com
+License: MIT
+Keywords: authentication authorization jwt oauth
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: guardpost
+Requires-Dist: pyjwt
+
+# GuardPost-JWT
+GuardPost classes to use JWT Bearer authentication (_under development_).
+
+
