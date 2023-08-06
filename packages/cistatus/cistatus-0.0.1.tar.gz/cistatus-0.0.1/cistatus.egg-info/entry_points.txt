@@ -1,0 +1,3 @@
+[console_scripts]
+cistatus = cistatus.cli:main
+
