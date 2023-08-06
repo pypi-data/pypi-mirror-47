@@ -1,0 +1,3 @@
+[flake8.extension]
+FEN=flake8_file_encoding:EncodingChecker
+
