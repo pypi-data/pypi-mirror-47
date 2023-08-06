@@ -1,0 +1,10 @@
+slipoframes/__init__.py,sha256=fSNL_ztXnWydlR-GovfL0MtWyXpVvQNtVoNePgFFL5k,46
+slipoframes/__version__.py,sha256=laZEf9XgliOr51_V6jJrq1f-GAAdHNkep9GSRZYlHO4,54
+slipoframes/context.py,sha256=V7yHBc_9zu8fmzLrFvyiJ-gML3_C9dlbUgCC0gPdMlg,29013
+slipoframes/model.py,sha256=fpIoAOkFpYs_EqiDPzs0G2AI0o7rxwopUYfWJCs9AjA,7111
+slipoframes/utils.py,sha256=QTu1_UnTXmLZgHmdV4lKwZzFJGobjGJuRG0tLpUofJw,511
+slipoframes-0.1.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+slipoframes-0.1.4.dist-info/METADATA,sha256=8qmo1q8SDjBgqKnOsLiRCecTzUFO535xc7ZnQZeQ0bc,1307
+slipoframes-0.1.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+slipoframes-0.1.4.dist-info/top_level.txt,sha256=ldzpwDKj0meeREwo5NHVIRmlxfeD6mIf4VSVV86c_vk,12
+slipoframes-0.1.4.dist-info/RECORD,,
