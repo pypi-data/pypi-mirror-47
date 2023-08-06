@@ -1,0 +1,6 @@
+
+    [pygments.lexers]
+    bemolle = pybemolle:BemolleLexer
+    [pygments.styles]
+    bemolle = pybemolle:BemolleStyle
+    
