@@ -1,0 +1,8 @@
+README.md
+setup.py
+uf_text/__init__.py
+uf_text/filters.py
+util_func.egg-info/PKG-INFO
+util_func.egg-info/SOURCES.txt
+util_func.egg-info/dependency_links.txt
+util_func.egg-info/top_level.txt
