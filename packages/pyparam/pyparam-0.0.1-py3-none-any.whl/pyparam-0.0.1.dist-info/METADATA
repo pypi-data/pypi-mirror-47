@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyparam
+Version: 0.0.1
+Summary: Powerful parameter processing.
+License: MIT
+Author: pwwang
+Author-email: pwwang@pwwang.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: colorama (>=0.4.1,<0.5.0)
+Requires-Dist: python-simpleconf (>=0.1.3,<0.2.0)
+Description-Content-Type: text/markdown
+
+# pyparam
+Powerful parameter processing
+
+## Installation
+`pip install pyparam`
