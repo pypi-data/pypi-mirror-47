@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: jrfork-kegbot-kegboard
+Version: 0.0.1
+Summary: Johnnyruzdev Fork of the Kegboard support library.
+Home-page: http://kegbot.org/
+Author: johnnyruzdev
+Author-email: johnnyruzdev01@outlook.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: This package contains the Python protocol support for Kegboard.  For more
+        information on Kegboard, see http://kegbot.org/kegboard/
+        
+        Initially Forked from version 1.1.5 of the Kegboard library
+        
+Platform: UNKNOWN
