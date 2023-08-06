@@ -1,0 +1,60 @@
+# :crystal_ball: Oracle :crystal_ball:: Version Name Generator
+Oracle is version name generator with version journal this ensures that version names are unique.
+
+## Requirements
+
+emoji by [carpedm20](https://github.com/carpedm20) - https://github.com/carpedm20/emoji/
+
+## Prestart
+
+```bash
+pip install -r requirements.txt
+```
+
+## Start
+### Universal
+
+    python3 cli.py
+
+### For Windows
+
+	start.bat
+
+### For Linux
+    chmod +x start.sh
+    ./start.sh
+
+## Example Use
+### Help
+```bash
+🔮 Oracle Listen  🔮: help version
+
+GET unique version name
+```
+
+### Get version
+```bash
+🔮 Oracle Listen  🔮: version
+Gladness Apostle
+```
+
+### Get object or property
+```bash
+🔮 Oracle Listen  🔮: object
+Rat
+
+🔮 Oracle Listen  🔮: property
+red
+```
+
+### Clear .version_journal
+```bash
+🔮 Oracle Listen  🔮: clear
+```
+
+### Exit from Oracle
+
+```bash
+🔮 Oracle Listen  🔮: exit
+Bye! Bye!
+```
