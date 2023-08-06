@@ -1,0 +1,10 @@
+sspipe/__init__.py,sha256=nZaTqGkxIen3nFl4frSzLjoQBhTS0oc1qBirEfS7aks,160
+sspipe/compatibility.py,sha256=3lF-CoR3VCybHMdcFkLmKsESjTtxT5MZcBA7z-EpexU,414
+sspipe/facade.py,sha256=Zy-SN-zSn42wB_3v9UYfoeNB-6AOHkNBc72kpt9jckg,1273
+sspipe/patch.py,sha256=NctPs9G4EKPDGbDxnbY74MXDiKnCzVSR9Noq9IpUQRI,815
+sspipe/pipe.py,sha256=9v2n7KJMT_unG6OeKHx-D0DmzRwJu1Mok3P8cK3-kHU,5265
+sspipe/version.py,sha256=YpKDcdV7CqL8n45u267wKtyloM13FSVbOdrqgNZnSLM,22
+sspipe-0.1.7.dist-info/METADATA,sha256=7rp2DxXKB9RAiVgdI6xcrwSyznaYetPxDkNwzClfkRA,6255
+sspipe-0.1.7.dist-info/RECORD,,
+sspipe-0.1.7.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+sspipe-0.1.7.dist-info/top_level.txt,sha256=wBo3-BD1BtaEZjIGycDNdXkvCr6KLhIMVNGM64tfxtI,7
