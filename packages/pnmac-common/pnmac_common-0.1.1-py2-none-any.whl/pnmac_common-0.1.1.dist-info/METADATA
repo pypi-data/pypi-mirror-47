@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pnmac-common
+Version: 0.1.1
+Summary: A set of utilities to use
+Home-page: https://gitlab.pnmac.com/martech/pnmac-common-utilities
+Author: Example Author
+Author-email: none@example.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# PNMAC Common Utilities
+
+A set of utilities to be (re)used
+
+## Installation
+
+`pip install pnmac_common`
+
+## Packaging
+
+`python setup.py bdist_wheel`
+`python -m twine upload dist/*`
+
