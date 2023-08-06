@@ -1,0 +1,12 @@
+setup.py
+snpToolkit
+modules/__init__.py
+modules/annotate_snpToolkit.py
+modules/argsLogger_snpToolkit.py
+modules/calls_snpToolkit.py
+modules/combine_snpToolkit.py
+snpToolkit.egg-info/PKG-INFO
+snpToolkit.egg-info/SOURCES.txt
+snpToolkit.egg-info/dependency_links.txt
+snpToolkit.egg-info/requires.txt
+snpToolkit.egg-info/top_level.txt
