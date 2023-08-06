@@ -1,0 +1,5 @@
+[console_scripts]
+vsutillib-apply2files = vsutillib:scripts.apply2files
+vsutillib-dsf2wv = vsutillib:scripts.dsf2wv
+vsutillib-mkvrun = vsutillib:scripts.mkvrun
+
