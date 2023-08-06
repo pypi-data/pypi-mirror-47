@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pubproxpy
+Version: 0.1.0
+Summary: An easy to use Python wrapper for pubproxy.com
+Home-page: None
+Author: LovecraftianHorror
+Author-email: LovecraftianHorror@pm.me
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.22,<3.0)
