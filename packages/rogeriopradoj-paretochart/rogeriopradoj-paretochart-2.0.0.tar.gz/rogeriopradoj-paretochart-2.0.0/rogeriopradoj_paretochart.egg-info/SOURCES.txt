@@ -1,0 +1,9 @@
+README.md
+setup.py
+paretochart/__init__.py
+paretochart/paretochart.py
+rogeriopradoj_paretochart.egg-info/PKG-INFO
+rogeriopradoj_paretochart.egg-info/SOURCES.txt
+rogeriopradoj_paretochart.egg-info/dependency_links.txt
+rogeriopradoj_paretochart.egg-info/requires.txt
+rogeriopradoj_paretochart.egg-info/top_level.txt
