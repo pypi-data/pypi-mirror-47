@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+configsimple/__init__.py
+configsimple/configargparse.py
+configsimple/configsimple.py
+configsimple.egg-info/PKG-INFO
+configsimple.egg-info/SOURCES.txt
+configsimple.egg-info/dependency_links.txt
+configsimple.egg-info/top_level.txt
