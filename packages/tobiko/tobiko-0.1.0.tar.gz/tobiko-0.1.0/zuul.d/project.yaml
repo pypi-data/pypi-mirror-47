@@ -1,0 +1,30 @@
+- project:
+    templates:
+      - openstack-cover-jobs
+      - openstack-python-jobs
+      - openstack-python35-jobs
+      - openstack-python36-jobs
+      - openstack-python37-jobs
+      - publish-to-pypi
+      - build-openstack-docs-pti
+
+    check:
+      jobs:
+        - build-openstack-releasenotes:
+            vars:
+              sphinx_python: python3
+        - openstack-tox-pylint
+        - tobiko-devstack-functional
+        - tobiko-devstack-scenario-centos-7
+        - tobiko-devstack-scenario-centos-7-queens
+        - tobiko-devstack-scenario-centos-7-rocky
+        - tobiko-devstack-scenario-centos-7-stein
+        - tobiko-devstack-scenario-fedora-28
+        - tobiko-devstack-scenario-ubuntu-bionic
+
+    gate:
+      jobs:
+        - build-openstack-releasenotes:
+            vars:
+              sphinx_python: python3
+        - openstack-tox-pylint
