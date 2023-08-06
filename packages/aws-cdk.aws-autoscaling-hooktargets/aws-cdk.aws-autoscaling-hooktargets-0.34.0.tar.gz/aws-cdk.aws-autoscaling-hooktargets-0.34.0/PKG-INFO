@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: aws-cdk.aws-autoscaling-hooktargets
+Version: 0.34.0
+Summary: Lifecycle hook for AWS AutoScaling
+Home-page: https://github.com/awslabs/aws-cdk
+Author: Amazon Web Services
+License: UNKNOWN
+Project-URL: Source, https://github.com/awslabs/aws-cdk.git
+Description: # Lifecycle Hook for the CDK AWS AutoScaling Library
+        <!--BEGIN STABILITY BANNER-->
+        
+        ---
+        
+        ![Stability: Experimental](https://img.shields.io/badge/stability-Experimental-important.svg?style=for-the-badge)
+        
+        > This API is still under active development and subject to non-backward
+        > compatible changes or removal in any future version. Use of the API is not recommended in production
+        > environments. Experimental APIs are not subject to the Semantic Versioning model.
+        
+        ---
+        <!--END STABILITY BANNER-->
+        
+        See the README of the `@aws-cdk/aws-autoscaling` library.
+        
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
