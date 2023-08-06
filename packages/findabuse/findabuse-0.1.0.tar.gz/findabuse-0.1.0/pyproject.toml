@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "findabuse"
+version = "0.1.0"
+description = "findabuse.email is a simple API for looking up abuse contacts for network spaces"
+authors = ["Matthew Gall <git@matthewgall.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+requests = "^2.22"
+dnslib = "^0.9.10"
+redis = "^3.2"
+bottle = "^0.12.16"
+tornado = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+
+[tool.poetry.scripts]
+abuse-http-server = 'findabuse.http-server:main'
+abuse-dns-server = 'findabuse.dns-server:main'
+abuse = 'findabuse.cli:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
