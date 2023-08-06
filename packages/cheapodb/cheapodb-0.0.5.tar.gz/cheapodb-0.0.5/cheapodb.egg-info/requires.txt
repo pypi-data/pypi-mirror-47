@@ -1,0 +1,5 @@
+boto3==1.9.169
+PyAthena==1.6.1
+
+[pandas]
+pandas>=0.24.0
