@@ -1,0 +1,10 @@
+README.md
+setup.py
+bin/userrecon
+urecon/__init__.py
+urecon.egg-info/PKG-INFO
+urecon.egg-info/SOURCES.txt
+urecon.egg-info/dependency_links.txt
+urecon.egg-info/not-zip-safe
+urecon.egg-info/requires.txt
+urecon.egg-info/top_level.txt

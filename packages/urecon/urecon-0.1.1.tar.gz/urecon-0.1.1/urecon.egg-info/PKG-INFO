@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: urecon
+Version: 0.1.1
+Summary: Find usernames across over 70 social networks
+Home-page: https://github.com/s4w3d0ff/userrecon
+Author: s4w3d0ff
+License: GPL v3
+Description: # urecon v0.1.1 - userrecon in python
+        # Original Author: @linux_choice
+        # https://github.com/thelinuxchoice/userrecon
+        
+        Find usernames across over 70 social networks
+        This is useful if you are running an investigation to determine the usage of the same username on different social networks.
+        
+Keywords: username,socialmedia,social,media,network,account
+Platform: UNKNOWN
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Description-Content-Type: text/markdown
