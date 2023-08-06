@@ -1,0 +1,8 @@
+README.md
+setup.py
+lishiyu/__init__.py
+lishiyu/lishiyu.py
+lishiyu.egg-info/PKG-INFO
+lishiyu.egg-info/SOURCES.txt
+lishiyu.egg-info/dependency_links.txt
+lishiyu.egg-info/top_level.txt
