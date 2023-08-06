@@ -1,0 +1,4 @@
+[console_scripts]
+pdfmerger = ulstools.apps.pdfmerger.pdfmerger:main
+pdfmerger_make_shortcut = ulstools.apps.pdfmerger.pdfmerger:make_my_shortcut
+
