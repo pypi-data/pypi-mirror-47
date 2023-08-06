@@ -1,0 +1,17 @@
+tradukoj/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tradukoj/admin.py,sha256=Q1Uz2RDTz3ne_l0aJCu16Yc4AiXEhvwv-7lLyJFZojA,452
+tradukoj/apps.py,sha256=FgXZntLhCvDkcjlq4JwWmsXQ8azGtXCJlfcuhi61xxU,154
+tradukoj/classviews.py,sha256=pBpmfdpRJtO96gkzfqxhtuh9RQirO5Vq28fHw6bLZ90,6837
+tradukoj/drf_fields.py,sha256=sCxdqJuAuEIStdHcDJq8VifZFHgOOdE_h0QlievLEqg,1655
+tradukoj/fields.py,sha256=5fCSy2m8M11Vmz3iSV8-mR5XFaBQSr5_D6PuAsA9BEQ,2535
+tradukoj/models.py,sha256=rh7nJCDsdNa0y2jIemVVQblHs9ozxtNde1WZrMLjeIY,11379
+tradukoj/serializers.py,sha256=2w5fVirohAsFpdzvBRXsgp6L3GZ_ajCw3fbfTXIpC88,2581
+tradukoj/signals.py,sha256=WbTYlXuswTHoh036TRM0oj47ZnnLDOt8yT2_URt2wd4,287
+tradukoj/tests.py,sha256=qWDvA9ZhVCQ1rPbkoFify7o_fDirXMUdYMxF12q3WIM,26
+tradukoj/urls.py,sha256=ONz0_tzJh-Vxf9NHW7kJrRfSFYvS2-kvRkqMGrCc5tQ,1162
+tradukoj/views.py,sha256=F42JXgnqFqK0fajXeutyJJxwOszRxoLMNkIhfc4Z7KI,26
+django_tradukoj-1.0.dist-info/LICENSE,sha256=lI8v3-e2FpDkbPynhI6aqn1KYNIyl60TKcd-UOsKVvc,1545
+django_tradukoj-1.0.dist-info/METADATA,sha256=haClP4VApIhFJniysiVNGeDnS0GsQL6Dz0OCpb0FjJk,14882
+django_tradukoj-1.0.dist-info/WHEEL,sha256=MlnUWFZCxbgBkC_PfU2CprVf8-ZZlVOAfry_BsXUBxw,92
+django_tradukoj-1.0.dist-info/top_level.txt,sha256=xEQYdDRz6bizzUkaoVKWAZbklJDQsn1GVPuJAroTsjc,9
+django_tradukoj-1.0.dist-info/RECORD,,
