@@ -1,0 +1,8 @@
+snipercorn/__main__.py,sha256=yu7bNeq1kSVUnuOo74NX0agKr3Ft4uC6H9VfM0PQ_HI,67
+snipercorn/cli.py,sha256=barQwLYB86GfayiwlopRAMn4264PSkqRhJ-jm5Ui2zI,7070
+snipercorn/config.py,sha256=LwRH8vjaFNgzbo_nRv5I1UzbOZg8KW6KJLHpZANnWZw,1634
+snipercorn/sni.py,sha256=7EVJbToMc1DnUFEZTz8X6urYo2cVCt91gWsdH6wsUTg,3686
+snipercorn-0.0.1.dist-info/METADATA,sha256=efrwt3M94Pu2_pKqqFvD3XxtgTtghIJR_7Mmlp-k4tU,2191
+snipercorn-0.0.1.dist-info/WHEEL,sha256=Yq-lciQqnM_YvXXhzNSajCmPbwd9ybRmJyCamnBtjPw,90
+snipercorn-0.0.1.dist-info/entry_points.txt,sha256=azJstcCFJuzNr-1ay9wE87D4pDQgmfqqtpA7GSpyHno,57
+snipercorn-0.0.1.dist-info/RECORD,,

@@ -1,0 +1,65 @@
+Metadata-Version: 2.0
+Name: snipercorn
+Version: 0.0.1
+Summary: Hypercorn + Easy https:// with SNI
+Home-Page: https://gitlab.com/dholth/snipercorn/
+Author: Daniel Holth
+Author-email: dholth@gmail.com
+License: MIT
+Keywords: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: hypercorn
+Requires-Dist: appdirs
+Requires-Dist: click
+
+
+Snipercorn
+==========
+
+Hypercorn + SNI (multiple SSL certificates per server) + easy letsencrypt integration
+
+Snipercorn is a layer on top of the Hypercorn web server designed to make it as easy 
+as possible to use https:// with your Python project.  It extends Hypercorn's Config
+class to look for a tree of certificates in a layout compatible with the dehydrated 
+ACME / letsencrypt client (https://dehydrated.io), making it easier for any project
+on the public web to run with a real https certificate.
+
+Usage
+=====
+
+Download dehydrated.io client.
+
+Make config directory ~/etc/dehydrated/config::
+
+    CA="https://acme-v02.api.letsencrypt.org/directory"
+    CHALLENGETYPE="tls-alpn-01"
+
+Snipercorn can serve the tls-alpn-01 challenge type.
+
+~/etc/dehydrated/domains.txt should contain the fqdn of your server and desired alternate names::
+    
+    example.com www.example.com
+
+Start snipercorn::
+
+    authbind python -m snipercorn fileserver.py -b :::443 --sni ~/etc/dehydrated
+
+Run dehydrated to get certificates::
+
+    dehydrated -f ~/etc/dehydrated/config --register --accept-terms # once
+    dehydrated -f ~/etc/dehydrated/config -c    # auto-renews when necessary
+
+Alternate names may not work. If it doesn't work, try just one domain in domains.txt. 
+Remember your domain has to be reachable from the CA (letsencrypt) server on port 443.
+
+Visit your new site.
