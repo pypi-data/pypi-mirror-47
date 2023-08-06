@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+VERSION
+setup.py
+ebd/__init__.py
+ebd.egg-info/PKG-INFO
+ebd.egg-info/SOURCES.txt
+ebd.egg-info/dependency_links.txt
+ebd.egg-info/top_level.txt
