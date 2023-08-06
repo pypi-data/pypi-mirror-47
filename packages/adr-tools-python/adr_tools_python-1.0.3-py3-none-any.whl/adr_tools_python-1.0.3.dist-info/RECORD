@@ -1,0 +1,13 @@
+adr_config.py,sha256=A5_PGVf-_uuEQmljvZVb0D-7Zx2EeYHL7s8DRK_FQZc,382
+adr_init.py,sha256=yDgBjladR_GkWgNDSN4mlYWn5WRZFQujCELs8Tb9V00,1239
+adr_list.py,sha256=HdROE9LxsbFxvbcZYmdypxQrVTTGIBL_sFtu7sdT-Jw,1270
+adr_new.py,sha256=MATjY5l1Djya-LYAcfM6WVpVXMxepluvuZvilK9qGG8,3586
+adr_func/__init__.py,sha256=g4XLht_UvN5A4rayCKkU9E-LlA6EMqSMAoRxx96NVCY,282
+adr_func/adr_util.py,sha256=IuTJDtqzns6cSE-Hr6fwOfYHrL3a4PAg7tfDYZ-KnpA,13183
+adr_func/template.md,sha256=ZMo5VTO3k8Jf1Wktx4c4nMAPlFyjYAYY438vY15dL-g,383
+adr_tools_python-1.0.3.dist-info/LICENSE,sha256=J_CW9uNBQKK9XHABbV6jT9iLTT4kX39TxL4ywp5w6po,1090
+adr_tools_python-1.0.3.dist-info/METADATA,sha256=JnWfpnlXKD0dUZvwUCOE3M9bmnyq-zakdWCw6u9Spes,3532
+adr_tools_python-1.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+adr_tools_python-1.0.3.dist-info/entry_points.txt,sha256=rLKwrv9YnXSgJM0cHyMnK9LYWf2MtQi-YD33Sk9-SaE,121
+adr_tools_python-1.0.3.dist-info/top_level.txt,sha256=QdBg6wpeE-JDfEVy0cKcjAqWqnhftlirlO5c92SUM6o,46
+adr_tools_python-1.0.3.dist-info/RECORD,,

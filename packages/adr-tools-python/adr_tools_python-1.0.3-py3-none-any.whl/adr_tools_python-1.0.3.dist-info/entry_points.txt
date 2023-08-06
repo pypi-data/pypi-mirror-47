@@ -1,0 +1,6 @@
+[console_scripts]
+adr-config = adr_config:main
+adr-init = adr_init:main
+adr-list = adr_list:main
+adr-new = adr_new:main
+
