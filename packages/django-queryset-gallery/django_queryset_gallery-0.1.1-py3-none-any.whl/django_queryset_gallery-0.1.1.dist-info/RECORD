@@ -1,0 +1,9 @@
+queryset_gallery/__init__.py,sha256=py_QKDWuuOKHin8nwsvvE5bCkc1Fo6850iovcYAxEHg,33
+queryset_gallery/filters.py,sha256=EXfdMjpxLp4nvDP-VacWH4tHSQBQ93kTwm-YAXr4Q4o,1313
+queryset_gallery/gallery.py,sha256=VjkgWJqnpSoEPRijFka4d4V8FRsmRyt2KI8i45eR6Jg,1325
+queryset_gallery/paginator.py,sha256=Yfmo5yeT6WARDWD_9EQ2GbpbFRdun7oZpjENM2pol_Y,2877
+django_queryset_gallery-0.1.1.dist-info/LICENSE,sha256=fMHlk5Z96jdbk7rkYuhvwMWufL2sIFoJC4rRkyh0v-0,1064
+django_queryset_gallery-0.1.1.dist-info/METADATA,sha256=4Ag6LncBPu8RhmmHnDYXHk79OY3vCfzCJG0nrBLH_1E,3032
+django_queryset_gallery-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_queryset_gallery-0.1.1.dist-info/top_level.txt,sha256=Iboj5kfGHw-bJrYKabW7ZxDMiAB7G6ZTJenF47CLfhc,17
+django_queryset_gallery-0.1.1.dist-info/RECORD,,
