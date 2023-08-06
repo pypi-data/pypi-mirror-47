@@ -1,0 +1,3 @@
+recursive-include tb-ble-adapter *
+include LICENSE README
+
