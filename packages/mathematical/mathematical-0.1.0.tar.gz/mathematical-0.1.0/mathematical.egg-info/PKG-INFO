@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mathematical
+Version: 0.1.0
+Summary: Mathematical tools for python
+Home-page: https://github.com/domdfcoding/mathematical
+Author: Dominic Davis-Foster
+Author-email: dominic@davis-foster.co.uk
+License: OSI Approved :: GNU General Public License v3 (GPLv3)
+Description: # mathematical
+        Mathematical tools for python
+        
+        Includes tools for calculating mean, median and standard deviation of rows in data frames, detection of outliers, and statistical calculations
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Description-Content-Type: text/markdown
