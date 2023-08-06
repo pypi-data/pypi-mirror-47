@@ -1,0 +1,14 @@
+MANIFEST.in
+setup.py
+conleycon/finctrl/__init__.py
+conleycon/finctrl/com.chase.alertsp.cfg
+conleycon/finctrl/com.citibank.cfg
+conleycon/finctrl/com.coastal24-balance.cfg
+conleycon/finctrl/com.coastal24.cfg
+conleycon/finctrl/email2caldav.py
+conleycon/finctrl/json2caldav.py
+conleycon/finctrl/org.onthecity.cfg
+conleycon_finctrl.egg-info/PKG-INFO
+conleycon_finctrl.egg-info/SOURCES.txt
+conleycon_finctrl.egg-info/dependency_links.txt
+conleycon_finctrl.egg-info/top_level.txt

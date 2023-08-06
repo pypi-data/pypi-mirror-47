@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: conleycon-finctrl
+Version: 0.0.1
+Summary: Tools for parsing financial transaction emails
+Home-page: https://gitlab.com/conleycon/finctrl
+Author: Christopher Covington
+Author-email: UNKNOWN
+License: 0BSD
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Email

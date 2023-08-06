@@ -1,0 +1,5 @@
+include conleycon/finctrl/com.chase.alertsp.cfg
+include conleycon/finctrl/com.citibank.cfg
+include conleycon/finctrl/com.coastal24-balance.cfg
+include conleycon/finctrl/com.coastal24.cfg
+include conleycon/finctrl/org.onthecity.cfg
