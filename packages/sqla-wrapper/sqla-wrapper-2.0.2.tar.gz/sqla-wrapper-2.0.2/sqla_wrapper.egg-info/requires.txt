@@ -1,0 +1,11 @@
+inflection
+sqlalchemy~=1.0
+
+[development]
+pytest-cov
+tox
+sphinx
+
+[testing]
+pytest
+mock
