@@ -1,0 +1,11 @@
+sleuth_automation/__init__.py,sha256=lNffRs5ugsfokcQ-GFhhJkvY9Z6hz6zc8pyk1fr0_uI,17436
+sleuth_automation/controlstats.py,sha256=xSXvO2nNjVqNWwvsTrWRipNsxpj178dvB2_D6uuBvKw,5609
+sleuth_automation-2.0.1.data/data/templates/condor_submit.jinja,sha256=ovM5eooRtX0Csydn8YG0J6KqSnBeUFxqnceto_oebF4,581
+sleuth_automation-2.0.1.data/data/templates/scenario.jinja,sha256=ghWyyIkZUJDQu_Dry8ktHO6I7zqc_gH5qH-XqDtuWrQ,3699
+sleuth_automation-2.0.1.data/scripts/create_sleuth_condor_batch.py,sha256=Dq8zr64jlzjiJ6GdCzkjmXBoBHeTnUWOVbIblT-VXPU,1437
+sleuth_automation-2.0.1.data/scripts/sleuth_run.py,sha256=r9-NnJfJlYRY0mbuewUTN7cIeppG4oXNppnuXdTelHU,1622
+sleuth_automation-2.0.1.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+sleuth_automation-2.0.1.dist-info/METADATA,sha256=0_gLzN-Mzr0jBi-qaYT-ZNCFvboC0n_4ikXTH4MfoVs,3017
+sleuth_automation-2.0.1.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+sleuth_automation-2.0.1.dist-info/top_level.txt,sha256=FzewoyjfIE2LfNqas-gJaco4PJlXi7unv7CDFUh8aOI,18
+sleuth_automation-2.0.1.dist-info/RECORD,,
