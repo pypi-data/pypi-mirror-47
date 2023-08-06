@@ -1,0 +1,9 @@
+PyYAML
+argcomplete
+prettytable
+pyxdg
+
+[testing]
+fixtures
+pytest
+pytest-mock
