@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+afs/__init__.py
+afs/afs.py
+afs.egg-info/PKG-INFO
+afs.egg-info/SOURCES.txt
+afs.egg-info/dependency_links.txt
+afs.egg-info/top_level.txt
