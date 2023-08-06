@@ -1,0 +1,8 @@
+numpy
+scipy<=1.2.1
+autograd
+tensorflow
+torch
+fdm
+plum-dispatch
+backends
