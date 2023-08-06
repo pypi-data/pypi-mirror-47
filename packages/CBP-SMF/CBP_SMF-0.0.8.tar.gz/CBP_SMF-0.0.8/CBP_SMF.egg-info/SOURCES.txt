@@ -1,0 +1,8 @@
+README.rst
+setup.py
+CBP_SMF/CBP_SMF.py
+CBP_SMF/__init__.py
+CBP_SMF.egg-info/PKG-INFO
+CBP_SMF.egg-info/SOURCES.txt
+CBP_SMF.egg-info/dependency_links.txt
+CBP_SMF.egg-info/top_level.txt
