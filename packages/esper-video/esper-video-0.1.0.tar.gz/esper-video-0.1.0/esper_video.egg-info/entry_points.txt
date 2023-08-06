@@ -1,0 +1,3 @@
+[console_scripts]
+esper = esper.configure:main
+
