@@ -1,0 +1,24 @@
+[omnivore.viewers]
+apple2 = omnivore.viewers.apple2
+bitmap = omnivore.viewers.bitmap
+char = omnivore.viewers.char
+disasm = omnivore.viewers.disasm
+emulator = omnivore.viewers.emulator
+hex = omnivore.viewers.hex
+history = omnivore.viewers.history
+info = omnivore.viewers.info
+jumpman = omnivore.viewers.jumpman
+map = omnivore.viewers.map
+memory = omnivore.viewers.memory
+pixelmap = omnivore.viewers.pixelmap
+skeleton = omnivore.viewers.skeleton
+
+[sawx.documents]
+00byte = omnivore.document
+
+[sawx.editors]
+00byte = omnivore.editors.byte_editor
+
+[sawx.remember]
+fonts = omnivore.arch.fonts
+
