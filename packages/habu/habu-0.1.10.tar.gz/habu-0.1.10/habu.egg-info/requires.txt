@@ -1,0 +1,12 @@
+beautifulsoup4
+click
+cryptography
+dnspython
+lxml
+netifaces
+pygments
+regex
+requests
+requests-cache
+scapy
+websockets
