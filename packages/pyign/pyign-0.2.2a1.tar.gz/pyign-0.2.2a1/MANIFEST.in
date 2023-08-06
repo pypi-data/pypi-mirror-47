@@ -1,0 +1,5 @@
+include LICENSE
+include CHANGELOG.md
+include README.md
+include pyign/requirements.txt
+include pyign/raw/*.txt
