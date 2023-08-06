@@ -1,0 +1,11 @@
+autoeda/__init__.py,sha256=UwB0VZKq6Eyp_-zQSTbtjy3Y6RipmT969rUb5mk4JTc,228
+autoeda/__main__.py,sha256=msJhLbuR6fx_cmfHaKkdw7GDvrSghDkRafeuXgJX8Bs,652
+autoeda/_argument_parser.py,sha256=Sb-X3CYupTcmuWt2RMhDrTiW_uZ30hx0500q13mFjpk,1543
+autoeda/_version.py,sha256=sw3RjTnXfWz6vjEAQsneFKLLZzKqsRt0LYcZ9P0Fmhw,21
+autoeda-0.0.dist-info/AUTHORS.md,sha256=4VOGyKU__ShPvHNflyHdjHK1bwVPvz7PGpKw8TONXKA,104
+autoeda-0.0.dist-info/LICENSE,sha256=oSyxELku3NOX4bSKdZc5Y9Wi4L0azQi-2lePnoRZFyI,1074
+autoeda-0.0.dist-info/METADATA,sha256=9j31NZ4vIun-blaY3nTLRtI5lyanhil08cEUdkWmz8k,1656
+autoeda-0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+autoeda-0.0.dist-info/entry_points.txt,sha256=wP2O5S5ociGb4ewYdD25dfD6YOq81inssRdl2oaMXCw,51
+autoeda-0.0.dist-info/top_level.txt,sha256=EfFrzySUywaSnenzd5F1ADiz7WOU28f-8z4hrM7lwO0,8
+autoeda-0.0.dist-info/RECORD,,
