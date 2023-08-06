@@ -1,0 +1,12 @@
+creds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+creds/cli.py,sha256=1KyrIRj2_v2lqCMWev6s69xJAAA3S_YQTcvn3TIPDkw,10600
+creds/cred.py,sha256=4RbNh1bN8DfRZfSJ7gbdV-qjTkPDeTGGmqH5riMflxs,7412
+creds/defaults.py,sha256=8NKciEM3fkaXEnRwJBX55d3WvKEqhgBr4QbMYcTU4XY,1191
+creds/main.py,sha256=TrNFCnqgHXqisw8u69Jd_fYHGPAqisTiJgFu6c8iJYs,804
+creds/util.py,sha256=kZZkYwho-M1MRl0s8gjBBEc-OUladJ5PBAiNdUp5vd0,3113
+aws_creds-1.0.1.dist-info/LICENSE,sha256=V6JYADulMPwpxmbonYtg4mWHAzBue94naUCb9K1AbUs,1069
+aws_creds-1.0.1.dist-info/METADATA,sha256=L9XPpQ83kwYbCNmulxtoxddECqvvbAa4t19GeNHhBeo,3687
+aws_creds-1.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aws_creds-1.0.1.dist-info/entry_points.txt,sha256=cCfn0Hi4pTjfwc0pMDKva5KhOO6nMeBik8qh_BbcoEo,47
+aws_creds-1.0.1.dist-info/top_level.txt,sha256=rFH6NU8PI93Hg-mMIbRr3E3UyEf9PdoHoVWXrr0sKL0,6
+aws_creds-1.0.1.dist-info/RECORD,,
