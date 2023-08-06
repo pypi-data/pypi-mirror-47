@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: napalm-digineo-procurve
+Version: 0.2.0
+Summary: napalm driver for aruba procurve switches
+Home-page: https://github.com/digineo/napalm-digineo-procurve
+Maintainer: Arthur Skowronek
+Maintainer-email: ags@digineo.de
+License: Apache Software License 2.0
+Project-URL: Bug Tracker, https://github.com/digineo/napalm-digineo-procurve/issues
+Project-URL: Source Code, https://github.com/digineo/napalm-digineo-procurve/
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Networking :: Monitoring
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (~=19.1.0)
+Requires-Dist: importlib-resources (~=1.0.2)
+Requires-Dist: napalm (~=2.4.0)
+
+# Napalm Aruba
+
+[![CircleCI](https://circleci.com/gh/digineo/napalm-digineo-procurve.svg?style=svg)](https://circleci.com/gh/digineo/napalm-digineo-procurve)
+
+Napalm driver for aruba procurve switches. Written to be used in combination with netbox.
+
+
+## Tested devices
+
+| Switch Model Name               	| Tested Firmware Version 	|
+|---------------------------------	|-------------------------	|
+| **Aruba 2530 8G PoE+-Switch**     | YA.16.05.0008             |
+
+
+## Motivation and Acknowledgement
+
+There are already [a few](https://github.com/mwallraf/napalm-hp-procurve/) [python packages](https://github.com/ixs/napalm-procurve) that try to provide support for the procurve switches series to [napalm](https://napalm-automation.net/).  These packages come in different levels of quality and supported features though.
+
+The main motivation point for this package is to write a napalm driver for procurve switches that also work well together with [netbox](https://github.com/digitalocean/netbox).  Thus the goal of this package is to provide all functionality of a napalm driver that is used by netbox.
+
+
+## Is it any good?
+
+[Yes.](https://news.ycombinator.com/item?id=3067434)
+
+
