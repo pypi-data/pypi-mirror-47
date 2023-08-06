@@ -1,0 +1,7 @@
+README.md
+setup.py
+issql/__init__.py
+issql.egg-info/PKG-INFO
+issql.egg-info/SOURCES.txt
+issql.egg-info/dependency_links.txt
+issql.egg-info/top_level.txt
