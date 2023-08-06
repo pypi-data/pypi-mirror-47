@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: boj2md
+Version: 0.0.1
+Summary: Parse Baekjoon Online Judge Problem to Markdown
+Home-page: https://github.com/kexplo/boj2md
+Author: Chanwoong Kim
+Author-email: me@chanwoong.kim
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: bs4 (==0.0.1)
+Requires-Dist: certifi (==2019.3.9)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: idna (==2.8)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: soupsieve (==1.9.1)
+Requires-Dist: urllib3 (==1.25.3)
+
+UNKNOWN
+
+
