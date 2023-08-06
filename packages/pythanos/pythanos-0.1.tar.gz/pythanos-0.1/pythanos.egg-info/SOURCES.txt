@@ -1,0 +1,7 @@
+setup.py
+pythanos/__init__.py
+pythanos.egg-info/PKG-INFO
+pythanos.egg-info/SOURCES.txt
+pythanos.egg-info/dependency_links.txt
+pythanos.egg-info/not-zip-safe
+pythanos.egg-info/top_level.txt
