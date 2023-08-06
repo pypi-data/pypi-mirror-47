@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: torchfusion-utils
+Version: 0.1.0
+Summary: A pytorch helper library for Mixed Precision Training, Initialization, Metrics and More Utilities to simplify training of deep learning models
+Home-page: https://github.com/johnolafenwa/TorchFusion-Utils
+Author: John Olafenwa and Moses Olafenwa (DeepQuest AI)
+Author-email: UNKNOWN
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
