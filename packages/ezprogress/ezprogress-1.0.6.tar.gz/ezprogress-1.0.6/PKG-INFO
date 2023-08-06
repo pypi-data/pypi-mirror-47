@@ -1,0 +1,37 @@
+Metadata-Version: 1.2
+Name: ezprogress
+Version: 1.0.6
+Summary: Simple, easy to use progress bar.
+Home-page: https://github.com/Joklost/ezprogress
+Author: Jonas Kloster Jacobsen
+Author-email: joklost@gmail.com
+License: MIT
+Description: 
+        ezprogress
+        ----------
+        Simple, easy to use progress bar for Python 3.6+.
+        
+        Installation
+        ^^^^^^^^^^^^
+        ``$ pip3 install ezprogress``
+        
+        Usage
+        ^^^^^
+        .. code:: python
+        
+            >>> from ezprogress.progressbar import ProgressBar
+            >>> pb = ProgressBar(total=100, title='Progress')
+            >>> pb.start()
+            >>> for i in range(0, 100):
+            >>>     pb.update(i)
+            >>>     do_stuff(i)
+            >>> pb.finished()
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
