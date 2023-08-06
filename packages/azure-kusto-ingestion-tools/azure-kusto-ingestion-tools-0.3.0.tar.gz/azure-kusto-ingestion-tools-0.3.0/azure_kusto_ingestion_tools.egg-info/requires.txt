@@ -1,0 +1,12 @@
+azure-kusto-ingest>=0.0.31
+azure-kusto-data>=0.0.31
+azure-storage
+typing-inspect
+ijson
+dacite
+adal
+click
+maya
+pyarrow
+pytest
+sqlparse
