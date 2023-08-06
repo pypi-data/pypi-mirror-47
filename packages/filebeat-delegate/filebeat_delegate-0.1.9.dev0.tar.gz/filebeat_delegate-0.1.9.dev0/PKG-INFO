@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: filebeat_delegate
+Version: 0.1.9.dev0
+Summary: Watch redis queue from filebeat and delegate data to AWS SNS
+Home-page: https://github.com/ipconfiger/filebeat_delegate
+Author: Alexander.Li
+Author-email: superpowerlee@gmail.com
+License: MIT
+Description: Watch redis queue from filebeat and delegate data to AWS SNS
+Keywords: filebeat,redis,aws,sns
+Platform: UNKNOWN
