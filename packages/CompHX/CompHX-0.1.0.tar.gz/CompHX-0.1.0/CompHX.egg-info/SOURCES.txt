@@ -1,0 +1,7 @@
+README.md
+setup.py
+CompHX.egg-info/PKG-INFO
+CompHX.egg-info/SOURCES.txt
+CompHX.egg-info/dependency_links.txt
+CompHX.egg-info/not-zip-safe
+CompHX.egg-info/top_level.txt
