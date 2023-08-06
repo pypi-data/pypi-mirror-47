@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: fasthaversine
+Version: 0.1.2
+Summary: A fast vectorized version of haversine distance calculation.
+Home-page: https://github.com/qyliu-hkust/fasthaversine
+Author: Qiyu Liu
+Author-email: keiyuk.liu@gmail.com
+Maintainer: Qiyu Liu
+Maintainer-email: keiyuk.liu@gmail.com
+License: ['MIT']
+Download-URL: https://github.com/qyliu-hkust/fasthaversine/archive/0.1.2.tar.gz
+Description: ## Fast Haversine distance evaluation
+        
+        This package is a numpy version of [haversine](https://github.com/mapado/haversine). 
+        Compared with [haversine](https://github.com/mapado/haversine), our implementation is much more efficient when dealing with list-wise distance calculation.
+        
+        ### Usage
+        
+        ```python
+        from fasthaversine import haversine
+        
+        haversine(points1, points2, unit='km')
+        ``` 
+        
+        where `points1` and `points2` are two list of tuples (lat, lon).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.1
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Description-Content-Type: text/markdown

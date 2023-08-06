@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+fasthaversine/__init__.py
+fasthaversine/fasthaversine.py
+fasthaversine.egg-info/PKG-INFO
+fasthaversine.egg-info/SOURCES.txt
+fasthaversine.egg-info/dependency_links.txt
+fasthaversine.egg-info/requires.txt
+fasthaversine.egg-info/top_level.txt
