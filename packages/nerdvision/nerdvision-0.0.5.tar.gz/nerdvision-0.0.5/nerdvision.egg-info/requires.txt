@@ -1,0 +1,4 @@
+netifaces
+grpcio-tools
+nerdvision_grpc_api==0.0.14
+requests
