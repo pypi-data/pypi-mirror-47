@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lixin-chinesename
+Version: 0.0.8
+Summary: get a chinesename by random
+Home-page: https://github.com/lixin0128/test
+Author: lixin
+Author-email: lixinwh@asterfusion.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/x-rst
+
+# Example Package
+
+This is a simple example package. You can use `Github-flavored
+Markdown <https://guides.github.com/features/mastering-markdown/>`__ to
+write your content.
+
+
