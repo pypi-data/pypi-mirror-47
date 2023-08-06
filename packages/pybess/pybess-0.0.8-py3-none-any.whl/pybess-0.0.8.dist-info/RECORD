@@ -1,0 +1,11 @@
+pybess/Arbitrage.py,sha256=tRuh0aECrl_4U6ymgzUTPm3YoTWfiiJX3yoQEDjXEUI,869
+pybess/Battery.py,sha256=GonyXH9dDnG40Qwagsy9Y_hQQWIRiX3k5UFEvo5Dh_U,1373
+pybess/Combiner.py,sha256=Ivjn2osxwQec5UGbq6UhWVfcQvvpkCEHR9DwlSTmsrQ,5317
+pybess/HistoricalOpt.py,sha256=4HgsbIcVZVi0Jl4kC--zI36BfZMvA565bZ1ZBJT-98s,2899
+pybess/Importer.py,sha256=kgwQ2XSYSHyW1fwQzJIdbV6lIaEU9eQYfHeC0VBoYmc,1816
+pybess/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybess/utils.py,sha256=cD1dtx0TVmyc8TMNZUA3xwXwaLk1RNApPRLizdOOINQ,4015
+pybess-0.0.8.dist-info/METADATA,sha256=C6fxwBr03w6YiwOVrKRkQzQOlU720Hrz5SqojCppjJQ,498
+pybess-0.0.8.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pybess-0.0.8.dist-info/top_level.txt,sha256=MLMaDQWq5IgP4XLxd5MEvbMYlXNfScEFhiaZX2p38zM,7
+pybess-0.0.8.dist-info/RECORD,,
