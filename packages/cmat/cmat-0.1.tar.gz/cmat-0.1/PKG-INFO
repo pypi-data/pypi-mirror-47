@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: cmat
+Version: 0.1
+Summary: Utility package for creating, analyzing, and plotting confusion matrices
+Home-page: https://github.com/sherilan/cmat
+Author: sherilan
+Author-email: sherilan@protonmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: confusion matrix,data science,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
