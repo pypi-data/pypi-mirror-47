@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: inapp_file_lib-rjanoop
+Version: 1.0.1
+Summary: Library to read and write raw data file and create dictionary based of definition models
+Home-page: https://github.com/rjanoop/inapp_file_lib
+Author: RJ Anoop
+Author-email: mail.anooprj@gmail.com
+License: UNKNOWN
+Description: #FILE ACCESS LIB
+        
+        This library is intended to read raw input data and create python dictionaries based on definitions provided.
+        The library does also provide function to write data into raw files.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
