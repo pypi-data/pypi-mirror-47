@@ -1,0 +1,4 @@
+numpy
+scipy
+matplotlib
+Click>=6.0
