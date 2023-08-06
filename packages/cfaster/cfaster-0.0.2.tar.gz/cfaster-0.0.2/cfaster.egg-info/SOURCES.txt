@@ -1,0 +1,15 @@
+README.md
+setup.py
+cfaster/__init__.py
+cfaster/__main__.py
+cfaster.egg-info/PKG-INFO
+cfaster.egg-info/SOURCES.txt
+cfaster.egg-info/dependency_links.txt
+cfaster.egg-info/entry_points.txt
+cfaster.egg-info/requires.txt
+cfaster.egg-info/top_level.txt
+cfaster/scrapers/__init__.py
+cfaster/scrapers/codeforces.py
+cfaster/scrapers/utils/__init__.py
+cfaster/scrapers/utils/files.py
+cfaster/scrapers/utils/urls.py
