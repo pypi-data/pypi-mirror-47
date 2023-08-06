@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: touchflown
+Version: 0.0.1
+Summary: My first trial package, no worth, just pleasure
+Home-page: https://github.com/pypa/sampleproject
+Author: Dominik Dabkowski
+Author-email: dematerializedworld.contact@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This is a worthless package. 
+A little game created to practice python as a newbie, and then to practice pip uploading, still as a newbie.
+
+
