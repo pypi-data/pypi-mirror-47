@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: pystitchconnect
+Version: 0.0.1
+Summary: Python SDK for Stitch Connect API.
+Home-page: https://github.com/dwallace0723/pystitch
+Author: David Wallace
+Author-email: dwallace0723@gmail.com
+License: MIT
+Keywords: stitch
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests (>=2.22.0)
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Build Status](https://travis-ci.com/dwallace0723/pystitch.svg?branch=master)](https://travis-ci.com/dwallace0723/pystitch)
+[![Python Versions](https://img.shields.io/badge/python-3.6%20%7C%203.7-blue.svg)](https://pypi.python.org/pypi/ansicolortags/)
+
+# pystitch
+a Python SDK for the Stitch Connect API
+
+
