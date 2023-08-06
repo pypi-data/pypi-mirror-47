@@ -1,0 +1,12 @@
+README.md
+setup.py
+polysecrets/__init__.py
+polysecrets/cli.py
+polysecrets/main.py
+polysecrets/version.py
+polysecrets.egg-info/PKG-INFO
+polysecrets.egg-info/SOURCES.txt
+polysecrets.egg-info/dependency_links.txt
+polysecrets.egg-info/entry_points.txt
+polysecrets.egg-info/requires.txt
+polysecrets.egg-info/top_level.txt
