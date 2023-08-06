@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydggrid
+Version: 0.0.13
+Summary: Python wrapper for DGGRID
+Home-page: https://github.com/am2222/pydggrid
+Author: Majid Hojati
+Author-email: asd56yu@gmail.com
+License: UNKNOWN
+Keywords: GIS,DGGS
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Programming Language :: C++ 
+Classifier: Topic :: Scientific/Engineering :: GIS
+Requires-Dist: pybind11 (>=2.2)
+
+UNKNOWN
+
+
