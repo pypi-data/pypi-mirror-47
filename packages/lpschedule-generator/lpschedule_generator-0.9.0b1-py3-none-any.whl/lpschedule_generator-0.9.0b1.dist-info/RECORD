@@ -1,0 +1,14 @@
+lps_gen.py,sha256=g_yAz4UFBBPJq4gJpMd_n2d8p10qNv6DI_URxcwI_I8,20053
+lpschedule_generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lpschedule_generator/_version.py,sha256=FsOCzwdfdMHX5i8UMDSbBOaM_XPt_uIeB57XP_PNgYY,140
+lpschedule_generator-0.9.0b1.data/data/share/lpschedule-generator/libreplanet-templates/2016/lp-schedule.jinja2,sha256=vfIkKTHfYPs8BnyG3UiGJqkGXmhnaxlg2Vgx0xQ4Mbo,3865
+lpschedule_generator-0.9.0b1.data/data/share/lpschedule-generator/libreplanet-templates/2016/lp-speakers.jinja2,sha256=SUCoXg_o58REk3M-NF1s3-ROIcK9cuwGYKqMu7hqsVU,3916
+lpschedule_generator-0.9.0b1.data/data/share/lpschedule-generator/libreplanet-templates/2017/lp-schedule.jinja2,sha256=JEfc0wCRQW9m7BOSI0Fs9K-oNzYbn_8KKyRoqvO_ot0,3959
+lpschedule_generator-0.9.0b1.data/data/share/lpschedule-generator/libreplanet-templates/2018/lp-schedule.jinja2,sha256=GnUV_14EM65lwPm8z5AuG2bE9MXLm9CWJ3fdNTgVNOA,4590
+lpschedule_generator-0.9.0b1.data/data/share/lpschedule-generator/libreplanet-templates/2019/lp-schedule.jinja2,sha256=rK-JH3ssIzdOyDTBgQcotI8Etp2KMPQyYzVWU6RgriQ,4578
+lpschedule_generator-0.9.0b1.dist-info/COPYING,sha256=comYz2P5UsS38R9jtKWC-wwVjpyYyUypbbnepkNtTFc,7027
+lpschedule_generator-0.9.0b1.dist-info/METADATA,sha256=c-CONkvL9FuMlBraUQ53NUsUf9g6A9VXxm533S4B_9U,1109
+lpschedule_generator-0.9.0b1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+lpschedule_generator-0.9.0b1.dist-info/entry_points.txt,sha256=ydEcg__7yjcbHzdVqlMmlPcVTQ8kjdVUKva2IUfQEtI,42
+lpschedule_generator-0.9.0b1.dist-info/top_level.txt,sha256=M6tI_Bg2RxamrADWKLSnTscfqOWNj3qoQzy_LjqcvAM,29
+lpschedule_generator-0.9.0b1.dist-info/RECORD,,
