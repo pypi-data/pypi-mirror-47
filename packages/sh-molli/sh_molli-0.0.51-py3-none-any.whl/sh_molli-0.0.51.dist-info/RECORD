@@ -1,0 +1,11 @@
+sh_molli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sh_molli/__main__.py,sha256=4_FidVIqMQI1YufPp3v_eX0z9itIkdNb_eoQoc9Tkgw,45
+sh_molli/command_line.py,sha256=ernD02HTE4zdIspyVdndlF3XVqfA-ohDIaRGldCnor8,52
+sh_molli/sh_molli.py,sha256=5lDBLWKN-rgVWKygcMDnnbMaLMZgrqdIt_PhFjrrIyw,6795
+sh_molli/sh_molli_fit.py,sha256=YZVvnZtQAeSx8E_ptv-ymwHTuvldFq5OKrVBBBYMz84,3418
+sh_molli-0.0.51.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+sh_molli-0.0.51.dist-info/METADATA,sha256=hv2hu_cFN10nANJeN2pTJ7E8bJZXXnpXKKZz8o9LsB0,338
+sh_molli-0.0.51.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+sh_molli-0.0.51.dist-info/entry_points.txt,sha256=yy8TAX_V4cGzfH9vGHuRR_lgZ0mth_r_CH5qBOq2q_A,57
+sh_molli-0.0.51.dist-info/top_level.txt,sha256=BXHFXAOOkkn66daW1rKRm9aYYUCYcFPoy6Y-JMhRY2Y,9
+sh_molli-0.0.51.dist-info/RECORD,,

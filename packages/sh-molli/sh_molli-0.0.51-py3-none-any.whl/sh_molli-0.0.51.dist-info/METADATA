@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sh-molli
+Version: 0.0.51
+Summary: Package to process (sh)MOLLI MRI data
+Home-page: UNKNOWN
+Author: Ben George
+Author-email: ben.geroge@oncology.ox.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pydicom
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
