@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: canonicalwebteam.templatefinder
+Version: 0.1.0
+Summary: A module which attempts to load the corresponding templates directly from URLs, without the need to write a view for each URL.
+Home-page: https://github.com/canonical-webteam/templatefinder
+Author: Canonical Webteam
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
