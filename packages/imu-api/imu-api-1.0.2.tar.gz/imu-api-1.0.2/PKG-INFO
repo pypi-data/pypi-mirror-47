@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: imu-api
+Version: 1.0.2
+Summary: Provides a python interface to KE EMu through KE IMu, and allows you to query and extract data
+Home-page: https://github.com/ixc/python-imu-api
+Author: The Interaction Consortium
+Author-email: admins@interaction.net.au
+License: UNKNOWN
+Description: Documentation at https://github.com/ixc/python-imu-api
+Platform: UNKNOWN
