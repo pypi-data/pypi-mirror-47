@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: archtype-user-identification
+Version: 0.0.1
+Summary: Identify user archtype based on twitter post they make. https://gitlab.lftechnology.com/leapfrogai/archetype-identification
+Home-page: UNKNOWN
+Author: Sushil Ghimire
+Author-email: sushil79g@gmail.com, sushilghimire@lftechnology.com
+License: Apache License 2.0
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: archtype-user-identification
+
+UNKNOWN
+
+

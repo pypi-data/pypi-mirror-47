@@ -1,0 +1,11 @@
+archtype_user_identification/__init__.py,sha256=h3QV9OpHr6nCNQw9PQHRk9OEGgj63O4diYuNffLZSYk,68
+archtype_user_identification/build_embedding.py,sha256=_54HTcCayzK2Bu4Xfi9yakCRxuZJJwIujSuIiLmwxWQ,368
+archtype_user_identification/classify_user.py,sha256=tkp1ag482tjXpDmsNR68OwHDPp4Nb-oES0BqDTTAYVE,3575
+archtype_user_identification/token_extract.py,sha256=YQp2XvCRWcJZ2c0YaGBwe5oci3D4SQ8Fc10DZ5zCt6E,1631
+archtype_user_identification/twitter_preprocess.py,sha256=jwAW_gbjSLBFTjd9W0FQt5UAl7JHLanoeiBQchKStgY,4009
+archtype_user_identification-0.0.1.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+archtype_user_identification-0.0.1.dist-info/METADATA,sha256=Gv5NYPTaKIgqxZfFJRdFS89pKoyeYzX4InBDDYdGtT4,448
+archtype_user_identification-0.0.1.dist-info/RECORD,,
+archtype_user_identification-0.0.1.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+archtype_user_identification-0.0.1.dist-info/metadata.json,sha256=0VW11sgXiKBBLXiALx50JZzxQXw6FrktQaTIvx0ReNk,628
+archtype_user_identification-0.0.1.dist-info/top_level.txt,sha256=gzNIobJ_5LP68TfVoTizQKStNNFV4-a0hIkj8Ug0YXU,29
