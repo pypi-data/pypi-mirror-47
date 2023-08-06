@@ -1,0 +1,12 @@
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2-py2.7-nspkg.pth,sha256=yjZbgHQAw5gimz4qZY5xWkpHSWWWy2Wr32eLa0psiH4,370
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2.dist-info/METADATA,sha256=z2qsmmVXGKIIhW5swtyZ1euOz7XbntTf4y2eNPBrSI0,1813
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2.dist-info/RECORD,,
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_web_dom_model_classes-8.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo_addons/web_dom_model_classes/README.rst,sha256=MsQYeELPiGwGQtMKRbl4IfexS9qzz0km4JsClTqoxRs,1321
+odoo_addons/web_dom_model_classes/__init__.py,sha256=Y4srKAvk-SY0v50cwFut0dtaLiiLlOLrOMYKVFtxr4I,985
+odoo_addons/web_dom_model_classes/__openerp__.py,sha256=RlCxNyZfmqUYwhfUOYTlsxMIAJopVBZUsTLRsRWDcBQ,1424
+odoo_addons/web_dom_model_classes/i18n/web_dom_model_classes.pot,sha256=KCc6I3RrqFemiPMhZYF63NV9O40fJb4gusZ6aGnhMGE,343
+odoo_addons/web_dom_model_classes/static/description/icon.png,sha256=23SyLhByvujapAQ9a74i7QIFj7pfpTo3-i5M0kGB2YQ,7939
+odoo_addons/web_dom_model_classes/static/src/xml/web_widget_classes.xml,sha256=bzEFWOI6CNNlypILhFLN8MsrVdfCwVYVjqEr1xPm5jY,351
