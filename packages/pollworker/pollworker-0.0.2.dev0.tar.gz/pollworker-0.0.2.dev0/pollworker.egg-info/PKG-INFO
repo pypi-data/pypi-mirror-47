@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pollworker
+Version: 0.0.2.dev0
+Summary: Polling queue and distribute messages to worker processes and process it with your own function
+Home-page: https://github.com/ipconfiger/pollworker
+Author: Alexander.Li
+Author-email: superpowerlee@gmail.com
+License: MIT
+Description: Polling queue and distribute messages to worker processes and process it with your own function
+Keywords: multiprocess,queue,redis,sqs,rebitmq,zmq
+Platform: UNKNOWN

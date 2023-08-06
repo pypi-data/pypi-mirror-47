@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+pollworker/__init__.py
+pollworker/processes.py
+pollworker.egg-info/PKG-INFO
+pollworker.egg-info/SOURCES.txt
+pollworker.egg-info/dependency_links.txt
+pollworker.egg-info/entry_points.txt
+pollworker.egg-info/not-zip-safe
+pollworker.egg-info/requires.txt
+pollworker.egg-info/top_level.txt
+test/__init__.py
+test/test_start.py
