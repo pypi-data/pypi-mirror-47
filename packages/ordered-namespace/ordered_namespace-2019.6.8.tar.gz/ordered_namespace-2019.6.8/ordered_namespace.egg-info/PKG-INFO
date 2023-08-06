@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: ordered-namespace
+Version: 2019.6.8
+Summary: An easy-to-use Python namespace class derived from OrderedDict, includes tab-completion
+Home-page: https://github.com/who8mylunch/OrderedNamespace
+Author: Pierre V. Villeneuve
+Author-email: pierre.villeneuve@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: namespace,ordereddict,structure,dotdict,tab-completion
+Platform: UNKNOWN
