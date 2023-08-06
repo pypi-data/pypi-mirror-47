@@ -1,0 +1,5 @@
+pygments>=2.4.2
+
+[dev]
+setuptools
+twine

@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: pybemolle
+Version: 0.0.1
+Summary: 
+PyBemolle
+~~~~~~~~~
+
+PyBemolle is a Pygments library plugin made to colorize guitar chords.
+
+Highlights are:
+
+* both Latin and English chords notations
+* flat and sharp chords have different styles
+* major and minor chords have different styles
+* support for alteration part like: Gm6, F7+, F#m7, Cmaj7, Cmaj7/E     alteration part has a separate style
+
+:copyright: Copyright 2019-2020 by the Ihor Nahuliak, see AUTHORS.
+:license: GNU General Public License v3 (GPLv3), see LICENSE for details.
+
+Home-page: https://github.com/ihor-nahuliak/pybemolle
+Author: Ihor Nahuliak
+Author-email: ihor.nahuliak@gmail.com
+License: GPL v.3.0
+Description: UNKNOWN
+Platform: any
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Development Status :: 1 - Planning
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Provides-Extra: dev
