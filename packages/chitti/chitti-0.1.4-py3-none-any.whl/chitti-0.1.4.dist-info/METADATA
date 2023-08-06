@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: chitti
+Version: 0.1.4
+Summary: Python utility packages
+Home-page: https://github.com/raja-1996
+Author: Raja Mohan Reddy
+Author-email: rajamohanrdy@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: colorama
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+
+# Utility Functions for python 
+
+

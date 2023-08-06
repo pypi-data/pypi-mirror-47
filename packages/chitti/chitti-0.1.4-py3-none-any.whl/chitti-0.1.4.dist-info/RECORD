@@ -1,0 +1,10 @@
+chitti/__init__.py,sha256=-p-x5kKzWhTM1PaVeBBc2FrFPQxRY5H4_hwgk_wKyFo,245
+chitti/color_text.py,sha256=hv4tJf6ENZ0xXJPkrIOwGG3J4SUZN_t-y0ehuYg-Mmk,267
+chitti/list_to_dic.py,sha256=1Bo104_bEb3fQmO6Z6LGXCJYThq7BxLWUACj2KrAzKE,455
+chitti/print.py,sha256=cJXUL-hdGY7LIp_UDIjB4hjdOOpNCLzeiOaXmRotHXY,481
+chitti/sklearn_utilities.py,sha256=30D5MwiR2OWXEprCglfOuxN7JHGWaF7xYS3ZdiHEoSg,2335
+chitti-0.1.4.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+chitti-0.1.4.dist-info/METADATA,sha256=cKuo-wDSSKdyvYMQCXcUAgz4M1IwzJmYIXnV7KPZIjY,562
+chitti-0.1.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+chitti-0.1.4.dist-info/top_level.txt,sha256=7aE7hdi_bHxCK5ZWZz5mPwEhIrPQ2dCN5b4eBtt2oRo,7
+chitti-0.1.4.dist-info/RECORD,,
