@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: halfbakery_driver
+Version: 0.1.0
+Summary: Halfbakery communal database controller.
+Home-page: https://github.com/drivernet/halfbakery-driver
+Author: Mindey
+Author-email: mindey@wefindx.com
+License: PUBLIC BENEFIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: test
