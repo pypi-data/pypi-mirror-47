@@ -1,0 +1,8 @@
+setup.py
+jas_calculator/Jascalculator.py
+jas_calculator/__init__.py
+jas_calculator.egg-info/PKG-INFO
+jas_calculator.egg-info/SOURCES.txt
+jas_calculator.egg-info/dependency_links.txt
+jas_calculator.egg-info/not-zip-safe
+jas_calculator.egg-info/top_level.txt
