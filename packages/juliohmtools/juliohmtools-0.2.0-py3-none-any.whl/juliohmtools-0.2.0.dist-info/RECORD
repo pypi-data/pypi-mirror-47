@@ -1,0 +1,9 @@
+juliohmtools/__init__.py,sha256=kR0Gj-K86W5OSDWA90JD5SjcWYmgXmMljzfEAJcSZ-0,22
+juliohmtools/k8scontroller.py,sha256=U51SzEmCEI6O2lcGK-QOdHh1K7csZdpcvPhiPQnU-Kc,5610
+juliohmtools/vcswatch.py,sha256=bS3rCdblBBD1VUZTxYwjHuAqx5EtLWxuRLd8j-v3N-E,4166
+juliohmtools/vcswatchclient.py,sha256=rHh2Oaaw-mVtjh6RMp_fXOE1SeHVCaIgf0GGfeEYl6M,2045
+juliohmtools-0.2.0.dist-info/LICENSE,sha256=vwlCVQwHWPw9afTX0yrgmktIBDuN3vaVcPBofp90dk0,1073
+juliohmtools-0.2.0.dist-info/METADATA,sha256=H6_zwCUa0RWbBFH6YGH23WL7oc35Tu5B8w_mGQlfz3k,579
+juliohmtools-0.2.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+juliohmtools-0.2.0.dist-info/top_level.txt,sha256=Zfqsj34WUEs0sPfZNHQtKjQRnw6JlywRsIGCLCCXJKA,13
+juliohmtools-0.2.0.dist-info/RECORD,,

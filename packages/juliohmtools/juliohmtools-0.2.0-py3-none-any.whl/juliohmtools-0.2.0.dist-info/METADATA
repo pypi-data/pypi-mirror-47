@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: juliohmtools
+Version: 0.2.0
+Summary: A Collection of Python Libraries
+Home-page: https://github.com/juliohm1978/python-juliohmtools
+Author: Julio H Morimoto
+Author-email: jhm@juliohm.com.br
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: kubernetes
+Requires-Dist: svn
+
+
+For details and documentation, refer to https://github.com/juliohm1978/python-juliohmtools
+
+
