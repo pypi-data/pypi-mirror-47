@@ -1,0 +1,121 @@
+skip-check: &skip-check
+  name: Check for [ci skip]
+  command: bash .circleci/early_exit.sh
+
+merge-check: &merge-check
+  name: Check if we need to merge upstream master
+  command: |
+    if [[ -n "${CIRCLE_PR_NUMBER}" ]]; then
+      git fetch origin --tags
+      git fetch origin +refs/pull/$CIRCLE_PR_NUMBER/merge:pr/$CIRCLE_PR_NUMBER/merge
+      git checkout -qf pr/$CIRCLE_PR_NUMBER/merge
+    fi
+apt-run: &apt-install
+  name: Install apt packages
+  command: |
+    apt update
+    apt install -y gfortran swig libfftw3-dev
+tox-install: &tox-install
+  name: Install Tox
+  command: |
+    pip install tox
+image-run: &image-tests
+  name: Run image tests
+  environment:
+    MPLBACKEND: Agg
+  command: |
+    python setup.py test
+version: 2
+jobs:
+  egg-info-36:
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - run: *skip-check
+      - run: *merge-check
+      - run: python setup.py egg_info
+
+  egg-info-37:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - checkout
+      - run: *skip-check
+      - run: *merge-check
+      - run: python setup.py egg_info
+
+  pip-install:
+    docker:
+      - image: quay.io/pypa/manylinux1_x86_64
+    steps:
+      - checkout
+      - run: *skip-check
+      - run: *merge-check
+      # - run: *apt-install
+      - run:
+          name: Update pip
+          command: /opt/python/cp37-cp37m/bin/pip install -U pip
+      - run:
+          name: install numpy
+          command: /opt/python/cp37-cp37m/bin/pip install --user numpy wheel twine | cat
+      - run:
+          name: install dependencies
+          command: /opt/python/cp37-cp37m/bin/pip install --user toml obspy | cat
+      - run:
+          name: create source package
+          command: /opt/python/cp37-cp37m/bin/python setup.py sdist | cat
+
+      - run:
+          name: Build hashwrap
+          command: /opt/python/cp37-cp37m/bin/python setup.py bdist_wheel | cat
+
+      - run:
+          name: bdist
+          command: auditwheel repair dist/*.whl /tmp
+
+      - run:
+          name: init .pypirc
+          command: |
+            echo -e "[pypi]" >> ~/.pypirc
+            echo -e "username = $PYPI_USER" >> ~/.pypirc
+            echo -e "password = $PYPI_PASSWORD" >> ~/.pypirc
+
+      - run:
+          name: upload to pypi
+          command: ~/.local/bin/twine upload tmp/*whl
+
+
+  32bit:
+    docker:
+      - image: i386/ubuntu:latest
+    steps:
+      - checkout
+      - run: *skip-check
+      - run:
+          name: apt dependencies
+          command: |
+            export DEBIAN_FRONTEND="noninteractive"
+            apt-get update
+            apt install -y gfortran swig libfftw3-dev
+      - run:
+          name: Install dependencies one
+          # Cat here to suppress the progress bar
+          command: pip3 install cython obspy toml | cat
+      - run:
+          name: Run tests
+          command: PYTHONHASHSEED=42 python3 setup.py test --parallel=4
+    environment:
+      MPLBACKEND: agg
+      COLUMNS: 180
+
+workflows:
+  version: 2
+
+  pip-install:
+    jobs:
+      - pip-install
+
+  # build-32:
+  #   jobs:
+  #     - 32bit
