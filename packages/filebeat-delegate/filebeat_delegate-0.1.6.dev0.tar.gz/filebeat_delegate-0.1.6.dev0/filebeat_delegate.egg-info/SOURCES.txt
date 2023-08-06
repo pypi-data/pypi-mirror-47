@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+filebeat_delegate/__init__.py
+filebeat_delegate/parser.py
+filebeat_delegate/publisher.py
+filebeat_delegate/server.py
+filebeat_delegate/utilities.py
+filebeat_delegate.egg-info/PKG-INFO
+filebeat_delegate.egg-info/SOURCES.txt
+filebeat_delegate.egg-info/dependency_links.txt
+filebeat_delegate.egg-info/entry_points.txt
+filebeat_delegate.egg-info/not-zip-safe
+filebeat_delegate.egg-info/requires.txt
+filebeat_delegate.egg-info/top_level.txt
+test/__init__.py
+test/test_test.py
