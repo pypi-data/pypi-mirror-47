@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: geophysics_analysis
+Version: 0.0.5
+Summary: A collection of functions for the analysis of geophysical fields
+Home-page: UNKNOWN
+Author: Michael Needham
+Author-email: m.needham@colostate.edu
+License: UNKNOWN
+Description: # geophysics_analysis
+        A collection of functions for the analysis of geophysical fields.
+        
+        Ver 0.0.5
+        
+        ### What's New:
+        * ga.write_netCDF now can account for 3D (surface/TOA) as well as 4D Variables
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
