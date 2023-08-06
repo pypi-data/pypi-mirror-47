@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: githubflow-release
+Version: 0.0.2
+Summary: github flow release
+Home-page: https://github.com/CanalTP/githubflow_release
+Author: Antoine Desbordes
+Author-email: antoine.desbordes@gmail.com
+License: MIT
+Keywords: cli
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Requires-Dist: clingon
+Requires-Dist: GitPython
+Requires-Dist: requests
+Requires-Dist: semver
+
+UNKNOWN
+
+
