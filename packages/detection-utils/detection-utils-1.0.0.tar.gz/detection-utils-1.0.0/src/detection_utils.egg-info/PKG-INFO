@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: detection-utils
+Version: 1.0.0
+Summary: Common functionality for object detection
+Home-page: https://github.com/davidmascharka/detection-utils
+Author: David Mascharka, Ryan Soklaski, Arjun Majumdar
+Author-email: davidmascharka@gmail.com, rsoklaski@gmail.com, arjun.majum@gmail.com
+License: MIT
+Description: 
+        detection-utils provides utilities that are common across many object detection projects.
+        This includes things like:
+        
+        - Box overlap computation (IoU)
+        - Precision and recall calculations
+        - Computing targets for training a detector given a set of ground-truth objects and anchor boxes
+        - Non-maximum suppression
+        - Coordinate transformation utilities
+        - Focal loss
+        
+        All the functions here are well-tested to ensure proper functionality and are used in real projects, so are
+        intended to be enterprise-grade. This repository is meant to ensure that modifications and improvements that
+        are implemented in one object detection project migrate to other projects as appropriate, to reduce code
+         duplication, and to enable a quicker start to working on object detection.
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: pytorch

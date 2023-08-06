@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+versioneer.py
+src/detection_utils/__init__.py
+src/detection_utils/_version.py
+src/detection_utils/boxes.py
+src/detection_utils/metrics.py
+src/detection_utils/pytorch.py
+src/detection_utils.egg-info/PKG-INFO
+src/detection_utils.egg-info/SOURCES.txt
+src/detection_utils.egg-info/dependency_links.txt
+src/detection_utils.egg-info/requires.txt
+src/detection_utils.egg-info/top_level.txt
