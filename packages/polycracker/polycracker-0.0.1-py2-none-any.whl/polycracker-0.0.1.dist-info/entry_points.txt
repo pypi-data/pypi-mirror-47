@@ -1,0 +1,6 @@
+[console_scripts]
+format = polycracker.format:format
+polycracker = polycracker.polycracker:polycracker
+repeats = polycracker.repeats:repeats
+utilities = polycracker.utilities:utilities
+
