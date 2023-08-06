@@ -1,0 +1,10 @@
+DataDriver/DataDriver.py,sha256=QYVxRIza0OwlL3VJ6VmyEYZCw9VJvGylQKeo0fiXAyI,32184
+DataDriver/__init__.py,sha256=V7Q0H7D-mlNbhIKUYvEvP015Lumm3wmY9xLIDV6SAq4,36
+DataDriver/csvreader.py,sha256=zDEdJrmSInvIqmEACNcEybTqTwppM_seNpQuftqLS2c,3621
+DataDriver/pictreader.py,sha256=i3MEEo-S9Hab_HUp78SIzv5itmrZBlBISczDehMHglY,2307
+DataDriver/xlsreader.py,sha256=bynFZnRyOKpCY36a105rQ6JWafKuKGT-YY8j0NOwYsQ,1060
+robotframework_datadriver-0.0.9.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+robotframework_datadriver-0.0.9.dist-info/METADATA,sha256=CARsVAGfrQTkWFi72Z0tHRdxnv5rZjyUvhoOXybfX4s,21383
+robotframework_datadriver-0.0.9.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+robotframework_datadriver-0.0.9.dist-info/top_level.txt,sha256=u9Miru1QZxydgcUUEFAHrpU_n74pKRcEFyKmtK7y51g,11
+robotframework_datadriver-0.0.9.dist-info/RECORD,,
