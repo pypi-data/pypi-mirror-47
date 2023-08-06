@@ -1,0 +1,61 @@
+#!python
+
+from cleo import Application
+from cleo.inputs.argv_input import ArgvInput
+
+
+import logging.config
+
+# Use CLEO ArgvInput to extract some parameters
+# this dependency gets injected into
+# application.run(..) as well
+
+argvInputs = ArgvInput()
+
+# env is used for loading the right config environment
+env = "develop"
+if argvInputs.has_parameter_option('env'):
+    env = argvInputs.get_parameter_option('env')
+
+import strongr.core
+core = strongr.core.Core
+
+from strongr.core.domain.configdomain import ConfigDomain
+ConfigDomain.configService().getCommandBus().handle(ConfigDomain.commandFactory().newLoadConfig(env))
+
+logging.config.dictConfig(core.config().logger.as_dict())
+
+from strongr.cli import DeploySingleCommand, ListDeployedVmsCommand,\
+        DeployManyCommand,\
+        GetFinishedJobsCommand,\
+        RunResourceManager, PrintConfig,\
+        IsValidUserCommand, RunRestServerCommand,\
+        RunWorkerCommand, DestroySingleCommand,\
+        DestroyManyCommand, EnsureMinAmountOfNodesCommand, \
+        MakeDbCommand, RunTestsCommand, TestCommand, CleanupCommand,\
+        GetJobStdOut, GetSecret
+
+
+application = Application()
+
+application.add(DeploySingleCommand())
+application.add(ListDeployedVmsCommand())
+application.add(DeployManyCommand())
+application.add(GetFinishedJobsCommand())
+application.add(RunResourceManager())
+application.add(PrintConfig())
+application.add(IsValidUserCommand())
+application.add(RunRestServerCommand())
+application.add(RunWorkerCommand())
+application.add(DestroySingleCommand())
+application.add(DestroyManyCommand())
+application.add(EnsureMinAmountOfNodesCommand())
+application.add(MakeDbCommand())
+application.add(RunTestsCommand())
+application.add(TestCommand())
+application.add(CleanupCommand())
+application.add(GetJobStdOut())
+application.add(GetSecret())
+
+if __name__ == '__main__':
+    application.run(input_=argvInputs)
