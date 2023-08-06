@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: elisa-dnt
+Version: 0.0.1
+Summary: Do Not Translate for machine translation
+Home-page: https://github.com/ChenghaoMou/elisa-dnt
+Author: chenghaomou
+Author-email: chengham@isi.edu
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
