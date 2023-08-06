@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: angreal-presentation
+Version: 0.5.2
+Summary: An angreal template for sphinx based reveal.js presentations
+Home-page: https://gitlab.com/angreal/angreal-presentation
+Author: dylanbstorey
+Author-email: dylan.storey@gmail.com
+License: GPLv3
+Platform: UNKNOWN
+Requires-Python: >=3
+
+UNKNOWN
+
+

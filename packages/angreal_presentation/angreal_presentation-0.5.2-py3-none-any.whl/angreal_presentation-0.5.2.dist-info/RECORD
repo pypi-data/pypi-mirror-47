@@ -1,0 +1,15 @@
+angreal_presentation-0.5.2.data/data/angreal_presentation/angreal.json,sha256=D-bfuVwPen2MQ8Pv8olGcQV4ZfZgF6VV4y9Pt1phzw8,214
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/.gitignore,sha256=HgdLGU1Mnk55BZUshmwH9tU0VOOkt8Pi_XNQ1HES2UE,2339
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/Makefile,sha256=_ofy4pNXs0GgbrGrGJpSHZ5WufLIvQCkUA9GTIzbiws,585
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/requirements.txt,sha256=nSbKaSLQmL3TxXhJXcLdv70CmaFzQ_Lv6pEEcNLgbnE,91
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/.angreal/init.py,sha256=--9tCKOC9o7mrjY7RWE1x_I_pCBF6S39q3PwUTetuwE,803
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/.angreal/task_build.py,sha256=onIECnOnd9NVKDNGHfeXIzuN7sXGea89RHpQXG3IiBI,877
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/.angreal/task_new_stack.py,sha256=XSKcSTn_JTcP-WXT-2_SdFlqyAlV-LBLmA-03_--8dw,1446
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/source/00_intro.rst,sha256=OcDz0Ar974EpqH7NfvD0-RyrLk5SngW0nKLCv-16K4w,232
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/source/conf.py,sha256=ozk34ihQFswswYajl5zWuvjz6TYLa_ao_Tfgfzsg-jQ,5290
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/source/index.rst,sha256=oyAnKfanPPkVmQxyobwTewnXqRWkxLZpd9TK3cuh_Mc,252
+angreal_presentation-0.5.2.data/data/angreal_presentation/{{angreal.name}}/source/_static/logo.png,sha256=KmC3J-wXH-zidJzputAkcAtjARJyhm7-qzYwJlBhHhM,21437
+angreal_presentation-0.5.2.dist-info/METADATA,sha256=ixSgXQ50OvMhr_TzI9LdWb2cgJhKbzieTLgC2jheiw8,316
+angreal_presentation-0.5.2.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+angreal_presentation-0.5.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+angreal_presentation-0.5.2.dist-info/RECORD,,
