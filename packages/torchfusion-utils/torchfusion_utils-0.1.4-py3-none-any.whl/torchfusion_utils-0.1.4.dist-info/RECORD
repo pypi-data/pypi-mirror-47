@@ -1,0 +1,14 @@
+torchfusion_utils/__init__.py,sha256=AHp4MpsuFI3t-x4XWJVcASQRBLyDoC47q4vO9OTC324,115
+torchfusion_utils/fp16/__init__.py,sha256=2gUQCodqQqRZU6sexbUjScGCZLCjmV1O0mz3vMogfTg,60
+torchfusion_utils/fp16/fp16.py,sha256=iW62564KJQFnC_WSKMKaizEznp81xw4wHH6ztHCbn_E,40026
+torchfusion_utils/initializers/__init__.py,sha256=d9cmWfeepLFw6Y7fnrX4L-xcLoF7B0WZ3yyg700UVxs,221
+torchfusion_utils/initializers/initializers.py,sha256=imAU9vW46dYM0sksj5PwcqHTT4MMAuYbcrsK4UZQCwY,2873
+torchfusion_utils/metrics/__init__.py,sha256=_yapJ4nZFzK7Ie18lVkFI8m46InNet4mV20xLUv2K9g,64
+torchfusion_utils/metrics/metrics.py,sha256=_4Ldp_vfJnCrhP9PA3Jaqq4Pq7XFHe8sEPC7q3-K6bk,3642
+torchfusion_utils/models/__init__.py,sha256=KUo6QHUTppeEww8E-rkQlwWfBQCqPbTbgIayiVb-Vo4,55
+torchfusion_utils/models/models.py,sha256=1r9AmSOEzclNWWxVwjCvyiyPvNKt5DoFWEv3LN9JO-Q,4932
+torchfusion_utils-0.1.4.dist-info/LICENSE,sha256=3XMDzXFU3Vbjc4ksLB5trTmmSv9n_COd3YL_et8c2UU,1070
+torchfusion_utils-0.1.4.dist-info/METADATA,sha256=FrbaUJwVSGXpRP8hWhAI5eBlrnB2UbiHYthvS4vr3_U,540
+torchfusion_utils-0.1.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+torchfusion_utils-0.1.4.dist-info/top_level.txt,sha256=JH4JNWPUPBSr2r6sJczIEjfF0mMfTVpzTfjyxwvOLR0,18
+torchfusion_utils-0.1.4.dist-info/RECORD,,
