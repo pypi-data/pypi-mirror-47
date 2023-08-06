@@ -1,0 +1,3 @@
+[console_scripts]
+ip138 = ip138.command:main
+
