@@ -1,0 +1,8 @@
+README.md
+setup.py
+DemoModule_pkg/DemoModule.py
+DemoModule_pkg/__init__.py
+DemoModule_pkg.egg-info/PKG-INFO
+DemoModule_pkg.egg-info/SOURCES.txt
+DemoModule_pkg.egg-info/dependency_links.txt
+DemoModule_pkg.egg-info/top_level.txt
