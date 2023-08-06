@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: research
+Version: 0.1.1
+Summary: Utility modules used for research and/or learning
+Home-page: https://github.com/jackblandin/research
+Author: Jack Blandin
+Author-email: jackblandin@gmail.com
+License: MIT
+Download-URL: https://github.com/jackblandin/research/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: dqn,reinforcement-learning,machine-learning,research,pomdp,python,deep-learning
+Platform: UNKNOWN
