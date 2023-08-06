@@ -1,0 +1,9 @@
+README.md
+setup.py
+crproj.egg-info/PKG-INFO
+crproj.egg-info/SOURCES.txt
+crproj.egg-info/dependency_links.txt
+crproj.egg-info/entry_points.txt
+crproj.egg-info/top_level.txt
+proj/__init__.py
+proj/main.py
