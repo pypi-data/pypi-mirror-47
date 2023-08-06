@@ -1,0 +1,10 @@
+README.rst
+setup.py
+ciscoconfbot/__init__.py
+ciscoconfbot/__main__.py
+ciscoconfbot.egg-info/PKG-INFO
+ciscoconfbot.egg-info/SOURCES.txt
+ciscoconfbot.egg-info/dependency_links.txt
+ciscoconfbot.egg-info/not-zip-safe
+ciscoconfbot.egg-info/requires.txt
+ciscoconfbot.egg-info/top_level.txt
