@@ -1,0 +1,8 @@
+README.md
+setup.py
+royaso/__init__.py
+royaso/music_playlists.py
+royaso.egg-info/PKG-INFO
+royaso.egg-info/SOURCES.txt
+royaso.egg-info/dependency_links.txt
+royaso.egg-info/top_level.txt
