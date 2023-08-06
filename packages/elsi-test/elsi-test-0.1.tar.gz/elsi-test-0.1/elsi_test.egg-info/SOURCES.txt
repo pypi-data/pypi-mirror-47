@@ -1,0 +1,10 @@
+setup.py
+elsi_test/__init__.py
+elsi_test/elsimain.py
+elsi_test/index.py
+elsi_test.egg-info/PKG-INFO
+elsi_test.egg-info/SOURCES.txt
+elsi_test.egg-info/dependency_links.txt
+elsi_test.egg-info/entry_points.txt
+elsi_test.egg-info/requires.txt
+elsi_test.egg-info/top_level.txt
