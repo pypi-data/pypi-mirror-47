@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: sc-tim
+Version: 0.1.1
+Summary: scTIM is a convenient tool for cell-type indicative marker detection based on single cell RNA-seq data
+Home-page: https://github.com/Frank-Orwell/scTIM
+Author: Zhanying Feng
+Author-email: zyfeng@amss.ac.cn
+License: AMSS
+Description: Introduction:
+        
+        A convenient tool for marker detection based on single cell RNA-seq data.
+        
+        See usage at https://github.com/Frank-Orwell/scTIM
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
