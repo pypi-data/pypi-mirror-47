@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+    <widget name="Form" class="QGroupBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+       <width>500</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+        <property name="title">
+            <string>Properties</string>
+        </property>
+        <property name="alignment">
+            <set>Qt::AlignCenter</set>
+        </property>
+        <layout name="verticalLayout" class="QVBoxLayout">
+            <property name="spacing">
+                <number>10</number>
+            </property>
+            <item>
+                <widget name="scrollArea" class="QScrollArea">
+                    <property name="widgetResizable">
+                        <bool>true</bool>
+                    </property>
+                    <widget name="scrollAreaWidgetContents" class="QWidget">
+                        <property name="geometry">
+                            <rect>
+                                <x>0</x>
+                                <y>0</y>
+                                <width>478</width>
+                                <height>257</height>
+                            </rect>
+                        </property>
+                        <property name="minimumSize">
+                            <size>
+                                <width>0</width>
+                                <height>100</height>
+                            </size>
+                        </property>
+                        <layout name="verticalLayout_2" class="QVBoxLayout">
+                            <property name="spacing">
+                                <number>12</number>
+                            </property>
+                            <item>
+                                <widget name="title_label" class="QLabel">
+                                    <property name="styleSheet">
+                                        <string notr="true">font: 22pt;</string>
+                                    </property>
+                                    <property name="text">
+                                        <string />
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget name="description_label" class="QLabel">
+                                    <property name="text">
+                                        <string />
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <widget name="properties_info_label" class="QLabel">
+                                    <property name="styleSheet">
+                                        <string notr="true">font: 15pt;
+                        </string>
+                                    </property>
+                                    <property name="text">
+                                        <string />
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout name="properties_layout" class="QFormLayout">
+                                    <property name="horizontalSpacing">
+                                        <number>60</number>
+                                    </property>
+                                    <property name="verticalSpacing">
+                                        <number>5</number>
+                                    </property>
+                                </layout>
+                            </item>
+                            <item>
+                                <widget name="other_properties_info_label" class="QLabel">
+                                    <property name="styleSheet">
+                                        <string notr="true">font:15pt;</string>
+                                    </property>
+                                    <property name="text">
+                                        <string />
+                                    </property>
+                                    <property name="wordWrap">
+                                        <bool>true</bool>
+                                    </property>
+                                </widget>
+                            </item>
+                            <item>
+                                <layout name="other_properties_layout" class="QFormLayout">
+                                    <property name="horizontalSpacing">
+                                        <number>60</number>
+                                    </property>
+                                    <property name="verticalSpacing">
+                                        <number>5</number>
+                                    </property>
+                                </layout>
+                            </item>
+                            <item>
+                                <spacer name="verticalSpacer">
+                                    <property name="orientation">
+                                        <enum>Qt::Vertical</enum>
+                                    </property>
+                                    <property name="sizeHint" stdset="0">
+                                        <size>
+                                            <width>20</width>
+                                            <height>40</height>
+                                        </size>
+                                    </property>
+                                </spacer>
+                            </item>
+                        </layout>
+                    </widget>
+                </widget>
+            </item>
+        </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,15 @@
+<RCC>
+    <qresource>
+        <file>icons/Avatar.png</file>
+        <file>icons/VideoFileIcon.png</file>
+        <file>icons/DirectoryIcon.png</file>
+        <file>icons/Play.png</file>
+        <file>icons/Pause.png</file>
+        <file>icons/VolumeOff.png</file>
+        <file>icons/VolumeDown.png</file>
+        <file>icons/FastForward.png</file>
+        <file>icons/FastRewind.png</file>
+        <file>icons/Fullscreen.png</file>
+        <file>icons/Stop.png</file>
+    </qresource>
+</RCC>
