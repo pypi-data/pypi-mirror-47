@@ -1,0 +1,9 @@
+setup.py
+SwanOS.egg-info/PKG-INFO
+SwanOS.egg-info/SOURCES.txt
+SwanOS.egg-info/dependency_links.txt
+SwanOS.egg-info/top_level.txt
+os/Admin.py
+os/User.py
+os/__init__.py
+os/os.py
