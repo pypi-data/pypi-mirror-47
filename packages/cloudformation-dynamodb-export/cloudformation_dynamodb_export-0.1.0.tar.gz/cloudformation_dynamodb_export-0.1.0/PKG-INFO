@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: cloudformation_dynamodb_export
+Version: 0.1.0
+Summary: Export DynamoDB definition in Cloudformation template files as json
+Home-page: https://github.com/tomoya55/cloudformation-dynamodb-export
+Author: tomoya55
+Author-email: hiranotomoya@gmail.com
+License: UNKNOWN
+Description: # Cloudformation-Dynamodb-Export
+        
+        This command can parse Cloudformation templates, collect DynamoDB table properties and export them as JSON.
+        
+        ## Install
+        
+        ```
+        pip install cloudformation-dynamodb-export
+        ```
+        
+        ## Usage
+        
+        from the command line, you can run the command as below
+        
+        ```
+        cloudformation-dynamodb-export <template-file>
+        ```
+        
+        ### Options
+        
+        You can pass `Parameters` with `--param` option, so that we can solve `Fn::Sub` and `Fn::Ref` instrinsic functions.
+        
+        ```
+        cloudformation-dynamodb-export <template-file> --param StageName=prod --param AwsRegion=us-west-2
+        ```
+        
+        ## License
+        
+        MIT
+        
+Keywords: aws cloudformation dynamodb
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
