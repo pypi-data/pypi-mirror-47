@@ -1,0 +1,72 @@
+interactions:
+- request:
+    body: '<?xml version=''1.0''?>
+
+      <methodCall>
+
+      <methodName>sslLogin</methodName>
+
+      <params>
+
+      <param>
+
+      <value><nil/></value></param>
+
+      </params>
+
+      </methodCall>
+
+      '
+    headers:
+      Accept: ['*/*']
+      Accept-Encoding: ['gzip, deflate']
+      Connection: [keep-alive]
+      Content-Length: ['140']
+      Content-Type: [text/xml]
+      User-Agent: [koji/1]
+    method: POST
+    uri: https://koji.fedoraproject.org/kojihub/ssllogin
+  response:
+    body: {string: '<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+
+        <html><head>
+
+        <title>401 Unauthorized</title>
+
+        </head><body>
+
+        <h1>Unauthorized</h1>
+
+        <p>This server could not verify that you
+
+        are authorized to access the document
+
+        requested.  Either you supplied the wrong
+
+        credentials (e.g., bad password), or your
+
+        browser doesn''t understand how to supply
+
+        the credentials required.</p>
+
+        </body></html>
+
+        '}
+    headers:
+      AppServer: [proxy10.phx2.fedoraproject.org]
+      AppTime: [D=4589]
+      Connection: [Keep-Alive]
+      Content-Length: ['381']
+      Content-Type: [text/html; charset=iso-8859-1]
+      Date: ['Wed, 06 Mar 2019 15:27:52 GMT']
+      Keep-Alive: ['timeout=15, max=500']
+      Referrer-Policy: [same-origin]
+      Server: [Apache/2.4.6 (Red Hat Enterprise Linux) OpenSSL/1.0.2k-fips mod_auth_gssapi/1.5.1
+          mod_auth_kerb/5.4 mod_wsgi/3.4 Python/2.7.5]
+      Strict-Transport-Security: [max-age=31536000; includeSubDomains; preload]
+      WWW-Authenticate: [Negotiate]
+      X-Content-Type-Options: [nosniff]
+      X-Frame-Options: [SAMEORIGIN]
+      X-Xss-Protection: [1; mode=block]
+    status: {code: 401, message: Unauthorized}
+version: 1

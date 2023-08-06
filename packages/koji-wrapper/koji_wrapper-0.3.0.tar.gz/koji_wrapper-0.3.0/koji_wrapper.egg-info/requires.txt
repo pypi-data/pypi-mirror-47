@@ -1,0 +1,11 @@
+koji
+toolchest
+
+[docs]
+sphinx
+
+[test]
+pytest
+pytest-datadir
+tox
+flake8
