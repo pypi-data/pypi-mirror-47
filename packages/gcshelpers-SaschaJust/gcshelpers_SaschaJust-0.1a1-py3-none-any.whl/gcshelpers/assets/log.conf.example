@@ -1,0 +1,45 @@
+[loggers]
+keys=root
+
+[handlers]
+keys=handfile,handsyserr
+#,asyncPubsubHandler
+
+[formatters]
+keys=form01,form02
+
+[logger_root]
+level=NOTSET
+handlers=handfile,handsyserr
+#,asyncPubsubHandler
+
+[handler_handfile]
+class=FileHandler
+level=WARNING
+formatter=form01
+args=('gcshelpers.log', 'w')
+
+[handler_handsyserr]
+class=StreamHandler
+level=INFO
+formatter=form02
+args=(sys.stderr,)
+
+# [handler_asyncPubsubHandler]
+# class=pubsub_logging.AsyncPubsubHandler
+# level=WARN
+# formatter=form02
+# # Replace {project-name} and {topic-name} with actual ones.
+# # The second argument indicates number of workers.
+# args=('projects/mozintermittent/topics/gcshelpers', 1)
+
+[formatter_form01]
+format=%(asctime)s [%(levelname)s] %(message)s
+datefmt='%Y-%m-%d %H:%M'
+class=logging.Formatter
+
+[formatter_form02]
+format=%(asctime)s [%(levelname)s] %(message)s
+datefmt=
+class=logging.Formatter
+

@@ -1,0 +1,10 @@
+doc {
+  contact : {
+    name: NAME,
+    email: EMAIL
+  }
+}
+
+@terminals
+NAME : [A-Za-z].*;
+EMAIL : [a-zA-Z0-9_\-\.\+]+ '@' [a-zA-Z0-9_\-\.]+ '.' [a-zA-Z]{2,};
