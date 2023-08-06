@@ -1,0 +1,9 @@
+tensorview/__init__.py,sha256=HzteS3MhCS-HSxh4Zd1jXCs4qbtoMYRkXKQcKdUqzKA,583
+tensorview/train/__init__.py,sha256=UUtaGc1icBNGY0Ugq1FPf7eRRT3vTTGqOlyEcclocXQ,228
+tensorview/train/_general_plot.py,sha256=8OWQOUWRU12hUebQoVL04Yrji2kk7TdfPGKRmKkFGlE,7861
+tensorview/train/_keras_callbacks_PlotMetricsOnBatch.py,sha256=QQGuGNMm1_Im9IIfwatcm0AukEhPSzTSY3bJyS86O6E,5978
+tensorview/train/_keras_callbacks_PlotMetricsOnEpoch.py,sha256=7LJs2jdLkEZ5VmCpevkgmKkEg5Flbm30MfGovn8GE-U,5263
+tensorview-0.1.0.dist-info/METADATA,sha256=dBqbf2hopw5I_1CMpu5g5hSls3cHfuWaKyGldblwA4k,4057
+tensorview-0.1.0.dist-info/RECORD,,
+tensorview-0.1.0.dist-info/WHEEL,sha256=J3CsTk7Mf2JNUyhImI-mjX-fmI4oDjyiXgWT4qgZiCE,110
+tensorview-0.1.0.dist-info/top_level.txt,sha256=xZcI4fzCVgplKn4QEatWABp33C2hgJ5RdOaR_4NlcTU,11
