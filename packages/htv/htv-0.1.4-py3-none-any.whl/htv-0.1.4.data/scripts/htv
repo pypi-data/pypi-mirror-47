@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+
+base_dir=$(pwd)
+
+if [[ "$1" == "" ]];
+    then
+        source ./venv/bin/activate
+        python ${base_dir}/validator.py
+
+elif [[ "$1" == "--install" ]] || [[ "$1" == "-i" ]];
+    then
+        echo "Installation in progress..."
+        cd ${base_dir}/HeatTemplateValidator/
+        sudo ./setup.sh &&
+        echo "Now it is necessary that you do as follows:" &&
+        echo "  - move the Heat files into the ./TemplateLocalStorage directory inside HeatTemplateValidator" &&
+        echo "  - move the open.rc files into ./rc_files directory inside HeatTemplateValidator" &&
+        echo "After this execute: htv [--shadow|-s]"
+
+elif [[ "$1" == "--shadow" ]] || [[ "$1" == "-s" ]];
+    then
+        source ./venv/bin/activate
+        python shadow.py
+
+elif [[ "$1" == "--file" && "$2" == *".sh"* ]] || [[ "$1" == "-f" && "$2" == *".sh"* ]];
+    then
+        source ./venv/bin/activate
+        python ${base_dir}/validator.py $2
+
+fi
