@@ -1,0 +1,7 @@
+README.md
+setup.py
+aray/__init__.py
+aray.egg-info/PKG-INFO
+aray.egg-info/SOURCES.txt
+aray.egg-info/dependency_links.txt
+aray.egg-info/top_level.txt
