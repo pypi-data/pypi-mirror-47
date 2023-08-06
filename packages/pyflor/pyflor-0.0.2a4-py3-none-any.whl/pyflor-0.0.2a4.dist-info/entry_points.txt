@@ -1,0 +1,4 @@
+[console_scripts]
+pyflor = flor.__main__:main
+pyflor_install = flor.__main__:install
+
