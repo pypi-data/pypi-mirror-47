@@ -1,0 +1,2 @@
+fse/models/sentence2vec_inner.cpython-35m-darwin.so
+fse/exp/sif_variants_cy.cpython-35m-darwin.so
