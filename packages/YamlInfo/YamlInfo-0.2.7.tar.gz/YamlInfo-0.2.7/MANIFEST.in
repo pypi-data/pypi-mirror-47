@@ -1,0 +1,5 @@
+include README.md
+include projectinfo.yml
+include LICENSE
+include CODE_OF_CONDUCT.md
+include projectinfo.json
