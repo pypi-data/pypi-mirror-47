@@ -1,0 +1,8 @@
+include COPYING.txt
+include README.rst
+include setup.py
+include httpio/__init__.py
+include httpio/asyncio.py
+include httpio_async/__init__.py
+include tox.ini
+include CHANGELOG.rst

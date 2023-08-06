@@ -1,0 +1,14 @@
+CHANGELOG.rst
+COPYING.txt
+MANIFEST.in
+README.rst
+setup.py
+tox.ini
+httpio/__init__.py
+httpio/asyncio.py
+httpio.egg-info/PKG-INFO
+httpio.egg-info/SOURCES.txt
+httpio.egg-info/dependency_links.txt
+httpio.egg-info/requires.txt
+httpio.egg-info/top_level.txt
+httpio_async/__init__.py
