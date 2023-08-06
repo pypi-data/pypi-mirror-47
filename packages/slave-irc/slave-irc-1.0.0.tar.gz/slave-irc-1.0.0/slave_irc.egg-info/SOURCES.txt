@@ -1,0 +1,11 @@
+README.md
+setup.py
+slave/__init__.py
+slave/__main__.py
+slave/lib/bots.py
+slave/lib/client.py
+slave_irc.egg-info/PKG-INFO
+slave_irc.egg-info/SOURCES.txt
+slave_irc.egg-info/dependency_links.txt
+slave_irc.egg-info/requires.txt
+slave_irc.egg-info/top_level.txt
