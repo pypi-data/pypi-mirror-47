@@ -1,0 +1,9 @@
+ZeBullPDF-1.0.dist-info/DESCRIPTION.rst,sha256=0fv-p9VHnd4HZZFeZLFr9Fdh1MXtBoQnQ92Qhos5SVU,33
+ZeBullPDF-1.0.dist-info/METADATA,sha256=mSh621ASvxNqSlgUP_RhX8NfdQs5D7_lqKYeqNBm2Eg,194
+ZeBullPDF-1.0.dist-info/RECORD,,
+ZeBullPDF-1.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+ZeBullPDF-1.0.dist-info/metadata.json,sha256=x-UkZdeQNJosoc_-3g55m5wmVYWHt7olS7Z9Hy8r2ec,215
+ZeBullPDF-1.0.dist-info/top_level.txt,sha256=OyfusRcr7mzlg0q7gNQOEt_yoZJrQ5DduV5Th08w5Es,8
+pub_pkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pub_pkg/pdf2image.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pub_pkg/pdf2text.py,sha256=B3Q5sZehPCEt1oyQcuTpH8rdx36pxXCwTKUWLNqD1_g,40
