@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: a4e-bmacer
+Version: 0.0.7
+Summary: A package for using AMP for Endpoint API
+Home-page: https://github.com/pypa/a4e
+Author: Brandon Macer
+Author-email: bmacer@cisco.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+This is a Hello World commit.
+
+
