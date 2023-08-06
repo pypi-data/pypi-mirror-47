@@ -1,0 +1,15 @@
+aspecd
+cycler
+jinja2
+kiwisolver
+markupsafe
+matplotlib
+numexpr
+numpy
+pyDOE
+pyparsing
+python-dateutil
+pywt
+oyaml
+scipy
+six

@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: trepr
+Version: 0.1.0.dev57
+Summary: TREPR processing and analysis routines.
+Home-page: https://www.trepr.de/
+Author: Jara Popp, Till Biskup
+Author-email: j.popp@gmx.ch
+License: UNKNOWN
+Project-URL: Documentation, https://docs.trepr.de/
+Project-URL: Source, https://github.com/tillbiskup/trepr
+Description: trepr
+        =====
+        
+        trepr is a package for handling data obtained using time-resolved electron paramagnetic resonance (TREPR) spectroscopy. It is based on the `ASpecD framework <https://www.aspecd.de/>`_. Due to inheriting from the ASpecD superclasses, all data generated with the trepr package are completely reproducible and have a complete history.
+        
+        .. warning::
+            The trepr package is currently under active development and still considered in Alpha development state. Therefore, expect frequent changes in features and public APIs that may break your own code. Nevertheless, feedback as well as feature requests are highly welcome.
+        
+        The easiest way to use the trepr package is to hand over a yaml file to the trepr caller::
+        
+            import trepr
+            trepr.Caller('your_yaml_file.yaml')
+        
+        Features
+        --------
+        
+        - fully reproducible processing of TREPR data
+        - customisable plots
+        - automatically generated reports
+        - recipe-driven usage
+        
+        Installation
+        ------------
+        
+        Install the package by running::
+        
+            pip install trepr
+        
+        Contribute
+        ----------
+        
+        - Source Code: https://github.com/tillbiskup/trepr
+        
+        Support
+        -------
+        
+        If you are having issues, please contact the package authors.
+        
+        License
+        -------
+        
+        The project licensed under the BSD license.
+        
+Keywords: spectroscopy,trepr,data processing and analysis
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.5
+Description-Content-Type: text/x-rst
