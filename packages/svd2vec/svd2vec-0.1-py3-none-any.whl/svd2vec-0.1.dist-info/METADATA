@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: svd2vec
+Version: 0.1
+Summary: A library that converts words to vectors using PMI and SVD
+Home-page: https://git-lium.univ-lemans.fr/vpelloin/svd2vec
+Author: Valentin Pelloin
+Author-email: valentin.pelloin.etu@univ-lemans.fr
+License: MIT
+Platform: UNKNOWN
+
+UNKNOWN
+
+
