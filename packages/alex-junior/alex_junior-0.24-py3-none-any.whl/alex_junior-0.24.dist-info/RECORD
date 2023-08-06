@@ -1,0 +1,10 @@
+alex/__init__.py,sha256=b_Wnjr6E_zcGD8Ejn3YyAQ7pZLX2HzZ9xXwwU2jDsfk,33
+alex/instagram.py,sha256=0yGWaNHLUPer6FIQA6F9MZ9mfA04n_v6VXwhPrBBEy0,9471
+alex/naver_news.py,sha256=tP90zqY709Az1UzKgF--21opxR1pt8zkyvEZHo1Yvw8,6119
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/instagram_test.py,sha256=s8Cof81MbTy6GBAf5bNhWAYbqpM_SlPHeyQ6fd6pWTQ,328
+test/test_naver_news.py,sha256=wcq1LAxaWVqalmqcfzuhaY8U1__QaYJKyp-WTKjoCLE,1936
+alex_junior-0.24.dist-info/METADATA,sha256=9sDJ0Jq5rKdKM3KLTFAe4DbN02Yva-_AFQgm3hcR7gQ,421
+alex_junior-0.24.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+alex_junior-0.24.dist-info/top_level.txt,sha256=wMsZ5xYVvD4rM2yMAgfG8zb0OQYJSI5PAXCJDEAI_ys,10
+alex_junior-0.24.dist-info/RECORD,,
