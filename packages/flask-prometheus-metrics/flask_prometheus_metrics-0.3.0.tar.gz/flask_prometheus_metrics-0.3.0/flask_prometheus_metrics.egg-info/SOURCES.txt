@@ -1,0 +1,16 @@
+.version
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+flask_prometheus_metrics/__init__.py
+flask_prometheus_metrics/example.py
+flask_prometheus_metrics/metrics.py
+flask_prometheus_metrics.egg-info/PKG-INFO
+flask_prometheus_metrics.egg-info/SOURCES.txt
+flask_prometheus_metrics.egg-info/dependency_links.txt
+flask_prometheus_metrics.egg-info/namespace_packages.txt
+flask_prometheus_metrics.egg-info/not-zip-safe
+flask_prometheus_metrics.egg-info/requires.txt
+flask_prometheus_metrics.egg-info/top_level.txt
