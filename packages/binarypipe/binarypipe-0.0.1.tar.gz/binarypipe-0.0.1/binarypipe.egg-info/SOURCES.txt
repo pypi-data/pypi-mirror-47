@@ -1,0 +1,10 @@
+README.md
+setup.py
+binarypipe/__init__.py
+binarypipe/__main__.py
+binarypipe/imagepipe.py
+binarypipe.egg-info/PKG-INFO
+binarypipe.egg-info/SOURCES.txt
+binarypipe.egg-info/dependency_links.txt
+binarypipe.egg-info/requires.txt
+binarypipe.egg-info/top_level.txt

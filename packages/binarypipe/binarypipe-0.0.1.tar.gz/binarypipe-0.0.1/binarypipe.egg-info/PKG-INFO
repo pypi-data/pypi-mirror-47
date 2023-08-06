@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: binarypipe
+Version: 0.0.1
+Summary: Import binary data such as images, audio in ready to feed format for ML models with just one line of code
+Home-page: https://github.com/shivampip/BinaryPipe
+Author: Shivam Agrawal
+Author-email: shivam301296@gmail.com
+License: UNKNOWN
+Description: # BinaryPipe
+        Python lib to import binary data such as image, audio in ready to feed format in ML models. 
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
