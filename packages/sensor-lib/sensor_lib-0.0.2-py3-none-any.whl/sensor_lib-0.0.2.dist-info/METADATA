@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sensor-lib
+Version: 0.0.2
+Summary: Used to collect data taken by Novelda Xethru radar and plot the results
+Home-page: https://github.com/Justgo13/sensor_lib
+Author: Jason Gao
+Author-email: jgao2299@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Radar Sensors
+Used the Novelda X4M300 and X4M200 radar to detect human movements through breathing 
+patterns. The radar was set to record and later plotted an animated graph from the data.
+
+
+
