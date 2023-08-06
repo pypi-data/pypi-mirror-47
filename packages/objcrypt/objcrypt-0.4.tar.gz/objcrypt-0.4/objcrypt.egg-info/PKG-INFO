@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: objcrypt
+Version: 0.4
+Summary: Easily Encrypt and Decrypt Python and JSON Objects
+Home-page: https://github.com/M4cs/objcrypt
+Author: Max Bridgland
+Author-email: mabridgland@protonmail.com
+License: UNKNOWN
+Description: Easily Encrypt and Decrypt Python and JSON Objects
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
