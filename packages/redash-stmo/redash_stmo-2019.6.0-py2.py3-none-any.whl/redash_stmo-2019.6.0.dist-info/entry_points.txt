@@ -1,0 +1,17 @@
+[redash.bundles]
+datasource_link=redash_stmo.data_sources.link
+datasource_version=redash_stmo.data_sources.version
+
+[redash.extensions]
+datasource_health=redash_stmo.data_sources.health:extension
+datasource_link=redash_stmo.data_sources.link:extension
+datasource_validator=redash_stmo.data_sources.validator:extension
+datasource_version=redash_stmo.data_sources.version:extension
+dockerflow=redash_stmo.dockerflow:extension
+handler_queryresults=redash_stmo.handlers.query_results:extension
+handler_remote_user_auth=redash_stmo.handlers.authentication.remote_user_auth:extension
+queryrunner_presto=redash_stmo.query_runner.presto:extension
+
+[redash.periodic_tasks]
+update_health_status=redash_stmo.data_sources.health:periodic_task
+
