@@ -1,0 +1,7 @@
+numpy
+PyQt5
+rpyc
+appdirs
+pyqtgraph
+scipy
+paramiko
