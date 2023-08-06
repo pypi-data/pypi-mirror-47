@@ -1,0 +1,176 @@
+settings:
+  '# copper layers': 4
+  blind/buried via allowed: false
+  board thickness: 456781
+  diff pair dimensions list: []
+  hole to hole spacing: 0
+  layers:
+    enabled:
+    - 0
+    - 1
+    - 2
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+    visible:
+    - 0
+    - 31
+    - 32
+    - 33
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 40
+    - 41
+    - 42
+    - 43
+    - 44
+    - 45
+    - 46
+    - 47
+    - 48
+    - 49
+  netclass assignments:
+    ? ''
+    : Default
+    Net-(D1-Pad1): Default
+    Net-(D1-Pad2): new_new_class
+    Net-(R1-Pad2): new_new_class
+    Net-(R2-Pad1): Default
+  netclasses:
+    Default:
+      clearance: 200000
+      description: ''
+      diff pair gap: 250000
+      diff pair width: 200000
+      track width: 250000
+      uvia diameter: 300000
+      uvia drill: 100000
+      via diameter: 800000
+      via drill: 400000
+    new_new_class:
+      clearance: 200000
+      description: ''
+      diff pair gap: 250000
+      diff pair width: 200000
+      track width: 250000
+      uvia diameter: 300000
+      uvia drill: 100000
+      via diameter: 800000
+      via drill: 400000
+  plot:
+    autoscale: false
+    color: null
+    coordinate format: 6
+    default line width: 100000
+    do not tent vias: false
+    drill marks: 1
+    exclude pcb edge: true
+    force a4 output: false
+    format: 1
+    generate gerber job file: false
+    hpgl pen num: 1
+    hpgl pen size: 15.0
+    hpgl pen speed: 20
+    include netlist attributes: false
+    layers:
+    - 0
+    - 1
+    - 2
+    - 3
+    - 4
+    - 5
+    - 6
+    - 7
+    - 8
+    - 9
+    - 10
+    - 11
+    - 12
+    - 13
+    - 14
+    - 15
+    - 16
+    - 17
+    - 18
+    - 19
+    - 20
+    - 21
+    - 22
+    - 23
+    - 24
+    - 25
+    - 26
+    - 27
+    - 28
+    - 29
+    - 30
+    - 31
+    - 34
+    - 35
+    - 36
+    - 37
+    - 38
+    - 39
+    - 44
+    mirrored plot: false
+    negative plot: false
+    output directory: ''
+    plot border: false
+    plot footprint refs: true
+    plot footprint values: true
+    plot in outline mode: true
+    plot invisible text: false
+    plot mode: 1
+    plot pads on silk: false
+    scale: 1.0
+    scaling: 1
+    skip npth pads: false
+    subtract soldermask from silk: false
+    text mode: 3
+    track width correction: 0
+    use aux axis as origin: false
+    use protel filename extensions: false
+    use x2 format: false
+    x scale factor: 1.0
+    y scale factor: 1.0
+  prohibit courtyard overlap: false
+  require courtyards: false
+  solder mask margin: 51001
+  solder mask min width: 250001
+  solder paste margin: 10
+  solder paste margin ratio: 0.1
+  track min width: 123451
+  track width list:
+  - 250001
+  - 650001
+  - 1000001
+  uvia allowed: false
+  uvia min diameter: 678901
+  uvia min drill size: 456781
+  via dimensions list:
+  - diameter: 800001
+    drill: 400001
+  - diameter: 400001
+    drill: 200001
+  via min diameter: 789011
+  via min drill size: 567891
