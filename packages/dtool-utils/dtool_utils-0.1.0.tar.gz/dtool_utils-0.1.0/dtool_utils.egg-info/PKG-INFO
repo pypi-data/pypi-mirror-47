@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: dtool-utils
+Version: 0.1.0
+Summary: Dtool utility functions and classes
+Home-page: UNKNOWN
+Author: Matthew Hartley
+Author-email: matthew.hartley@jic.ac.uk
+License: MIT
+Description: Dtool utils
+        ===========
+        
+        Utility functions and classes for dtool.
+        
+Platform: UNKNOWN
