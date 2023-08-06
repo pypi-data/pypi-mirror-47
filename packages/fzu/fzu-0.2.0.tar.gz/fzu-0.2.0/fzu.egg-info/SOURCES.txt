@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+Makefile
+README.md
+setup.py
+fzu/__init__.py
+fzu/__main__.py
+fzu/symbols.py
+fzu.egg-info/PKG-INFO
+fzu.egg-info/SOURCES.txt
+fzu.egg-info/dependency_links.txt
+fzu.egg-info/entry_points.txt
+fzu.egg-info/not-zip-safe
+fzu.egg-info/top_level.txt
