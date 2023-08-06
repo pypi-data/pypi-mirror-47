@@ -1,0 +1,8 @@
+{
+    "feature" : "Robot N2",
+    "feature_desc" : "Po dokončení svařováhí je výrobek pomocí robota N2 přemístěn ze stolu na dopravník. Na doravníkový pás se může položit výrobek poze při splěnní násoledujících podmínke. Místo pro umístění výrobku na pás je volné, pás není v pohybu a lakování předchozího výrobku bylo úspoěšně ukončeno tzn. předchozí výrobek odjel z pozice pro lakování. Pás se nesmí rozjet v případě, že robot nedolakoval výrobek. Hrozí poškození robota a jeho lakovacích pistolí a výrobek by nebyl správně nalakován.",
+    "background" : "pokud linka je v provozu",
+    "text_raw" : "scénář  Jakmile robot N1 skončí svařit díl 1 s dílem 2 a robot N2 skončí položit produkt na pás a robot N2 je inaktivní, pak robot N2 začne zvedat produkt \n scénář  Pokud produkt není na začátku a produkt není na pozici a dopravník zastaví a robot N2 skončí zvedat produkt, pak robot N2 začne položit produkt na pás \n scénář  Pokud je produkt na začátku nebo je produkt na pozici nebo dopravník začne, jakmile robot N2 skončí zvedat produkt, pak robot nepoloží produkt na pás",
+    "language" : "cs"
+}
+

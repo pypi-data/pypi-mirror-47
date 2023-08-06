@@ -1,0 +1,16 @@
+# language: en
+
+Feature: Robot
+    Bezpečnostní skener je umístěn před otočným stolem a zajišťuje zabezpečení tohoto hlídaného prostoru. Je nutné aby na narušení prostoru došlo k zastavení zařízení v zóně 1 (stůl, robot N1 a N2). Zařízení v zóně 2 naopak nesmí na narušení hlídaného prostoru zastavit. Pro bezpečnost pracovníka, při zakládání dílu do stolu, nepředstavují zařízení v zóně 2 žádné riziko. Důsledkem zastavení těchto zařízení je pouze prodloužení výrobní doby.
+Background:
+  Given lineOn
+
+Scenario: When space is invaded, then robot N1 stops
+  When sick == 1
+  Then robotN1Stop == 1
+Scenario: When space is invaded, robot N2 stops
+  When sick == 1
+  Then robotN2Stop == 1
+Scenario: As soon as space is invaded, table does not move to position forward and table does not move to position home
+  When sick == 1
+  Then (tableToFWD != 1) && (tableToHome != 1)

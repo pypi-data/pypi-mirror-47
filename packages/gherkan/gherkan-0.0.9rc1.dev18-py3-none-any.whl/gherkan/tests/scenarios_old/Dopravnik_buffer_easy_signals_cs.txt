@@ -1,0 +1,14 @@
+# language: cs
+
+Požadavek: Dopravník
+    Testování chování linky při přepnění výstupního bufferu. Na konci linky není odebrán výrobek. Dopravník by se v takovéto situaci, i po položení dalšího výrobku na začátek pásu, neměl rozjet. Při rozjetí by došlo k pádu výrobku na zem. Tím by se zničil a hrozilo by poškození dopravníku.
+Kontext:
+  Pokud (lineOn) && (force(productAtEnd, 1))
+
+Scénář: Když je produkt na začátku, pak dopravník nezačne a produkt je na konci
+  Když productAtStart == 1
+  Pak (conveyorStart != 1) && (productAtEnd == 1)
+Scénář: pokud produkt je na začátku, když není produkt na konci, dopravník začne
+  Pokud productAtStart == 1
+  Když productAtEnd != 1
+  Pak conveyorStart == 1

@@ -1,0 +1,37 @@
+# language: en
+
+Feature: Cameras
+      Přepínání kamer během testování
+Background:
+  Given lineOn
+
+Scenario: When part 2 is on table, then camera changes to table
+  When part2OnTable == 1
+  Then cameraChange(Table)
+Scenario: When robot N1 starts to pick up part 2, then camera changes to Robot N1
+  When robotN1ProgramNumber == 1 && robotN1ProgramStarted
+  Then cameraChange(RobotN1)
+Scenario: When robot N1 starts to apply glue, then camera changes to Robot N1
+  When robotN1ProgramNumber == 2 && robotN1ProgramStarted
+  Then cameraChange(RobotN1)
+Scenario: When robot N1 starts to glue part 1 with part 2 together, then camera changes to Robot N1
+  When robotN1ProgramNumber == 3 && robotN1ProgramStarted
+  Then cameraChange(RobotN1)
+Scenario: When robot N2 starts to pick up product from table, camera changes to Robot N2
+  When robotN2ProgramNumber == 2 && robotN2ProgramStarted
+  Then cameraChange(RobotN2)
+Scenario: When conveyor starts, camera changes to conveyor
+  When conveyorStart == 1
+  Then cameraChange(Conveyor)
+Scenario: As soon as robot N3 starts to paint part 1, then camera changes to robot N3
+  When robotN3ProgramNumber == 4 && robotN3ProgramStarted
+  Then cameraChange(RobotN3)
+Scenario: As soon as robot N3 starts to change painting gun, camera changes to robot N3
+  When robotN3ProgramNumber == 2 && robotN3ProgramStarted
+  Then cameraChange(RobotN3)
+Scenario: As soon as robot N3 starts to paint product 2, camera changes to robot N3
+  When robotN3ProgramNumber == 3 && robotN3ProgramStarted
+  Then cameraChange(RobotN3)
+Scenario: As soon as robot N3 finishes painting product 2, camera changes to conveyor
+  When robotN3ProgramNumber == 3 && robotN3ProgramEnded
+  Then cameraChange(Conveyor)

@@ -1,0 +1,7 @@
+{
+    "feature" : "Door",
+    "feature_desc" : "Linka je vybavena tlačítkem Total stop, bezpečnostními dveřmi a Sick skenerem. Linka je rozdělena na dvě bezpečnostní zóny. Zóna 1 je otočný stůl, robot N1 (lepení a svařování) a robot N2 (umístění výrobku na pás). Do zóny 2 patří dopravník a robot N3 (lakování). K znovu rojetí linku je zapotřebí potvrdit bezpečnost. K znovu rozjetí linku je zapotřebí potvrdit bezpečnost. Potvrzení musí provést operátor manuálně (na panelu, mechanickým tlačítkem).",
+    "background" : "given line is on",
+    "text_raw" : "scenario As soon as safety door is open, robot N1 stops the program  \n scenario  As soon as safety door is open, robot N2 stops the program \n scenario  As soon as safety door is open, robot N3 stops the program  \n scenario  As soon as safety door is open, the table does not move to position FWD and table does not move to position HOME \n scenario  As soon as safety door is open, the conveyor stops and the conveyor does not start",
+    "language" : "en"
+}

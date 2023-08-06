@@ -1,0 +1,7 @@
+{
+    "feature" : "Kamery",
+    "feature_desc" : "  Přepínání kamer během testování",
+    "background" : "pokud linka je v provozu",
+    "text_raw" : "scénář  Když díl 2 je na stole, kamera se přesune na stůl \n scénář  Když robot N1 začne zvednout díl 2, kamera se přesune na robota N1 \n scénář  Když robot N1 začne nanášet lepidlo, kamera se přesune na robota N1  \n scénář  Když robot N1 začne slepovat díl 1 s dílem 2, kamera se přesune na robota N1  \n scénář  Když robot N2 začne zvedat produkt ze stolu, kamera se přesune na robota N3 \n scénář  Když dopravník začne, kamera se přesune na dopravník \n scénář  Když robot N3 začne lakovat díl 1, kamera se přesune na robota N3  \n scénář  Když robot N3 začne vyměnit lepící pistoli, kamera se přesune na robota N3  \n scénář  Když robot N3 začne lakovat produkt 2, kamera se přesune na robota N3 \n scénář  Když robot N3 skončí lakovat produkt 2, kamera se přesune na dopravník",
+    "language" : "cs"
+}

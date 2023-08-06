@@ -1,0 +1,7 @@
+{
+    "feature" : "Cameras",
+    "feature_desc" : "  Přepínání kamer během testování",
+    "background" : "given line is on",
+    "text_raw" : "scenario  When part 2 is on table, then camera changes to table \n scenario  When robot N1 starts to pick up part 2, then camera changes to Robot N1 \n scenario  When robot N1 starts to apply glue, then camera changes to Robot N1\n scenario  When robot N1 starts to glue part 1 with part 2 together, then camera changes to Robot N1  \n scenario  When robot N2 starts to pick up product from table, camera changes to Robot N2  \n scenario  When conveyor starts, camera changes to conveyor \n scenario  As soon as robot N3 starts to paint part 1, then camera changes to robot N3 \n scenario  As soon as robot N3 starts to change painting gun, camera changes to robot N3   \n scenario  As soon as robot N3 starts to paint product 2, camera changes to robot N3  \n scenario  As soon as robot N3 finishes painting product 2, camera changes to conveyor",
+    "language" : "en"
+}

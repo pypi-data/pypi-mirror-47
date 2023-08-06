@@ -1,0 +1,27 @@
+# language: en
+
+Feature: Robot N1
+      Díl 2 je uchopen robotem N1 a na díl je naneseno lepidlo. V okmžiíku, kdy je připraven díl 1A nebo 1B je díl 2 přilepen k dílu 1. Robot odpojí gripper a připojí svářečku. Následně k sobě svaří díly 2 a 1A/B. Po dokončení svařování robot odpojí svářečku.
+Background:
+  Given lineOn
+
+Scenario: Given part 2 is on table and robot N1 is inactive or robot N1 picks up part 2 or robot N1 ended program, when table is at position home, then robot N1 starts to pick up part 2
+  Given (part2OnTable == 1) && ((robotN1ProgramNumber == 5) || ((robotN1ProgramNumber == 1) || (robotN1ProgramEnd == 1)))
+  When tableAtHome == 1
+  Then robotN1ProgramNumber == 1 && robotN1ProgramStarted
+Scenario: As soon as robot N1 finishes to pick up part 2, robot starts to apply glue on part 2
+  When robotN1ProgramNumber == 1 && robotN1ProgramEnded
+  Then robotN1ProgramNumber == 6 && robotN1ProgramStarted
+Scenario: Given part 1A is on table and part 1B is on table, as soon as table is at position forward and robot finished to apply glue on part 2, then robot starts to glue part 1 with part 2 together
+  Given (part1aOnTable == 1) && (part1bOnTable == 1)
+  When (tableAtFWD == 1) && (robotN1ProgramNumber == 6 && robotN1ProgramEnded)
+  Then robotN1ProgramNumber == 3 && robotN1ProgramStarted
+Scenario: when robot finished to glue part 1 with part 2 together, then robot starts to exchange gripper for welder
+  When robotN1ProgramNumber == 3 && robotN1ProgramEnded
+  Then robotN1ProgramNumber == 8 && robotN1ProgramStarted
+Scenario: As soon as robot finishes to exchange gripper for welder, robot starts to weld part 1 with part 2 together
+  When robotN1ProgramNumber == 8 && robotN1ProgramEnded
+  Then robotN1ProgramNumber == 9 && robotN1ProgramStarted
+Scenario: As soon as robot finished to weld part 1 with part 2 together, robot starts to exchange welder for gripper
+  When robotN1ProgramNumber == 9 && robotN1ProgramEnded
+  Then robotN1ProgramNumber == 7 && robotN1ProgramStarted

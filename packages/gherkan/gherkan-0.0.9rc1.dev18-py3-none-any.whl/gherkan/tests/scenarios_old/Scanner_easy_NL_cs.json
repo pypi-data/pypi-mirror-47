@@ -1,0 +1,7 @@
+{
+    "feature" : "Robot",
+    "feature_desc" : "Bezpečnostní skener je umístěn před otočným stolem a zajišťuje zabezpečení tohoto hlídaného prostoru. Je nutné aby na narušení prostoru došlo k zastavení zařízení v zóně 1 (stůl, robot N1 a N2). Zařízení v zóně 2 naopak nesmí na narušení hlídaného prostoru zastavit. Pro bezpečnost pracovníka, při zakládání dílu do stolu, nepředstavují zařízení v zóně 2 žádné riziko. Důsledkem zastavení těchto zařízení je pouze prodloužení výrobní doby.",
+    "background" : "pokud linka je v provozu",
+    "text_raw" : "scénář  Když je narušen prostor, robot N1 zastaví scénář  Když je narušen prostor, robot N2 zastaví scénář  Když je narušen prostor, stůl se neotočí do pozice forward a stůl se neotočí do pozice home",
+    "language" : "cs"
+}

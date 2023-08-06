@@ -1,0 +1,7 @@
+{
+    "feature" : "Robot N1",
+    "feature_desc" : "Díl 2 je uchopen robotem N1 a na díl je naneseno lepidlo. V okmžiíku, kdy je připraven díl 1a nebo 1B je díl 2 přilepen k dílu 1. Robot odpojí gripper a připojí svářečku. Následně k sobě svaří díly 2 a 1A/B. Po dokončení svařování robot odpojí svářečku.",
+    "background" : "pokud linka je v provozu",
+    "text_raw" : "scénář  Pokud je díl 2 na stole a robot N1 je inaktivní nebo robot N1 zvedne díl 2 nebo robot skončí program, když je stůl v pozici home, pak robot N1 začne zvedat díl 2  \n scénář  Jakmile robot N1 skončí zvedat dílu 2, robot začne nanést lepidlo na díl 2 \n scénář  Pokud je díl 1a na stole a díl 1B je na stole, jakmile je stůl v pozici forward a robot skončil nanést lepidlo na díl 2, pak robot začne slepit díl 1 s dílem 2 \n scénář   Když robot N1 skončil slepit díl 1 s dílem 2, pak robot začne vyměnit gripper za svářečku  \n scénář  Když robot skončí vyměnit gripper za svářečku, robot začne svařit díl 1 s dílem 2 \n scénář  Když robot skončí svařit díl 1 s dílem 2, robot začne vyměnit svářečku za gripper",
+    "language" : "cs"
+}

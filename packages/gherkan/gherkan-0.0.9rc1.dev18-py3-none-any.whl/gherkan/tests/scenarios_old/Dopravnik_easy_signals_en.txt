@@ -1,0 +1,22 @@
+# language: en
+
+Feature: Conveyor
+      Výrobek je robotem N2 položen na pás. Ten se rozjede a je v pohybu až do té doby, než je výrobek na pozici pro lakování. Zde je robotem N3 nalakován. To jak spodní díl 1A/1B, tak díl 2. Po úspěšném lakování je výrobek pomocí pásu dopraven nakonec linky.
+Background:
+  Given lineOn
+
+Scenario: As soon as product is at start and product is not at the end and Robot N2 does not finish putting product on belt, then conveyor starts
+  When (productAtStart == 1) && ((productAtEnd != 1) && (robotN2ProgramNumber == 1 && robotN2ProgramEnded))
+  Then conveyorStart == 1
+Scenario: Given the conveyor starts, when product is at position, the conveyor stops
+  Given conveyorStart == 1
+  When productAtPosition == 1
+  Then conveyorStop == 1
+Scenario: Given the product is at position and the product is not at the end, when Robot N3 finishes to paint the product, then conveyor starts
+  Given (productAtPosition == 1) && (productAtEnd != 1)
+  When robotN3ProgramNumber == 1 && robotN3ProgramEnded
+  Then conveyorStart == 1
+Scenario: Given the conveyor started, as soon as product is at the end, the conveyor stops
+  Given conveyorStart == 1
+  When productAtEnd == 1
+  Then conveyorStop == 1

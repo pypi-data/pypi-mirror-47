@@ -1,0 +1,7 @@
+{
+    "feature" : "Conveyor",
+    "feature_desc" : " Testování chování linky při přepnění výstupního bufferu. Na konci linky není odebrán výrobek. Dopravník by se v takovéto situaci, i po položení dalšího výrobku na začátek pásu, neměl rozjet. Při rozjetí by došlo k pádu výrobku na zem. Tím by se zničil a hrozilo by poškození dopravníku.",
+    "background" : "given line is on and force product is at end",
+    "text_raw" : "scenario When product is at start, conveyor does not start and product is at end \n scenario Given product is at start, when product is not at the end, the conveyor starts",
+    "language" : "en"
+}
