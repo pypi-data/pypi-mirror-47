@@ -1,0 +1,3 @@
+[console_scripts]
+that_is_me_on_github = that_is_me_on_github.main:that_is_me_on_github
+
