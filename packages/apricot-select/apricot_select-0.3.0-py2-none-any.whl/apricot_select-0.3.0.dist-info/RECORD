@@ -1,0 +1,9 @@
+apricot/__init__.py,sha256=NiJpJH2o1XWUASMlE4ahgCAnXN160j6qPmLuVe6DAq8,193
+apricot/base.py,sha256=9HOuMiT5OEY1j14vEmOwKTSlMlPTU1DukTAHAtV3xOQ,8764
+apricot/facilityLocation.py,sha256=pdgoTXk0Juvn6H4vaHFyQEVxFi520yNhI_wGRga9VGI,9382
+apricot/featureBased.py,sha256=ctayYorIwGB8vnbNYwUsNG9EaZ4rStDD75KpKH8Ko3E,8794
+apricot/utils.py,sha256=exKhnTMUVskrchQ5u93nNHUZifgS8lT_1VN0lsoSd_k,3408
+apricot_select-0.3.0.dist-info/METADATA,sha256=sB_yPNiFpbAkugtAU2TCmxbVMTKrWx-Ka-eSQwFvcOY,466
+apricot_select-0.3.0.dist-info/RECORD,,
+apricot_select-0.3.0.dist-info/WHEEL,sha256=_V8uWu5F_h-lvAz5Mbq4oZqV_uCfL4cHgm4IIlDevzU,92
+apricot_select-0.3.0.dist-info/top_level.txt,sha256=7LsdIWG4I5SQ1abYl9O1l9o1dgnYc1bR79_hopl1joA,8
