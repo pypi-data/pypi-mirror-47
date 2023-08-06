@@ -1,0 +1,3 @@
+[console_scripts]
+awsls = aws_ls.lib:foo
+
