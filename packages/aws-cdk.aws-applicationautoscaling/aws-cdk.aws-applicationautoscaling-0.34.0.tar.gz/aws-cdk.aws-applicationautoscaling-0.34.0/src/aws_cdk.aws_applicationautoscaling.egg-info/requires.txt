@@ -1,0 +1,6 @@
+jsii~=0.11.2
+publication>=0.0.3
+aws-cdk.aws-autoscaling-common~=0.34.0
+aws-cdk.aws-cloudwatch~=0.34.0
+aws-cdk.aws-iam~=0.34.0
+aws-cdk.cdk~=0.34.0
