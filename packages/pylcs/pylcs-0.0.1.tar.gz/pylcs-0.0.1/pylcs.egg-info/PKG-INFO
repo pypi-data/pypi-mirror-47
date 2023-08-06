@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pylcs
+Version: 0.0.1
+Summary: super fast cpp implementation of longest common subsequence
+Home-page: https://github.com/Meteorix/pylcs
+Author: Meteorix
+Author-email: lxhustauto@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
