@@ -1,0 +1,14 @@
+annofabapi/__init__.py,sha256=fhGxt4OGObrU2zcs0ECazcdgv7RXgz8YtfQB3ahqNgI,181
+annofabapi/__version__.py,sha256=CBY3jsC-9HCm7eZ6CKD-sYLCejqOJ1pYWPQM4LGIXcI,22
+annofabapi/api.py,sha256=SMVGEfR-ULdGp3EOqtC2yhqqX-g5FLr_v0w3-ifFdII,8009
+annofabapi/exceptions.py,sha256=h0oWa_8Ued4DX7_mprtaSXiO82CPEfwTDPy68uF5QBQ,162
+annofabapi/generated_api.py,sha256=RfGG2G2TSny5yT9Wo5N60p4meEcQgPOjvjcNIiSuMbw,110885
+annofabapi/resource.py,sha256=EG02gJDUdTq2YydB94sOkeYfHYUlHtcnXqN4_CH7oLA,1781
+annofabapi/typing.py,sha256=ZIYPkJVNKiwdY4mZ8MuaJErqqI91q1vWaqounjbdowo,443
+annofabapi/utils.py,sha256=9tl9G6Q8g6zrtTbDSLhg6iY2vur0Ff9qWFXsTu5Vv28,1532
+annofabapi/wrapper.py,sha256=Yxl1QpHFwDFAlT7ktvB3UqxbHNzfOccbMm49RvJL_XI,30956
+annofabapi-0.6.0.dist-info/LICENSE,sha256=pcqWYfxFtxBzhvKp3x9MXNM4xciGb2eFewaRhXUNHlo,1081
+annofabapi-0.6.0.dist-info/METADATA,sha256=1bZnrLLqVEWYTWva3AL3BvbOtv1aQGF5mfeNSrAyoqw,5156
+annofabapi-0.6.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+annofabapi-0.6.0.dist-info/top_level.txt,sha256=UOA9WAhl-ABJA4Kk6USFm3phkhvdrlkasfipQrhg2mc,11
+annofabapi-0.6.0.dist-info/RECORD,,
