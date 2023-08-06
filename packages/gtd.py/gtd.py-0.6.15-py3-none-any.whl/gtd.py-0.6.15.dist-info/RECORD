@@ -1,0 +1,15 @@
+gtd.py,sha256=NGOa_kenITgXFwNiX_l89OjejDgTTRbUphNJWEP1vjE,26547
+todo/__init__.py,sha256=jOd44h1ebIOKfaA2FltCz2v6ZC0L13p1kkHucekcRhI,59
+todo/click_repl.py,sha256=DtK6ydE7TJOp8qzr_Vu9ja0JhU-yUZ3ZpVaejqIC9H4,7603
+todo/configuration.py,sha256=0K8GoM2jPvCCFhEwIxveqmnwNXV2aK5vERXCMBlnAyk,5069
+todo/connection.py,sha256=FrK_4M6pu7Tyb38JZVGMFFtpbT79dGnaZreE6n0EGbo,2050
+todo/display.py,sha256=xiLsDy1GhxXp9WKnHLI-KGkBsQ38OS0enGejOiJVPrg,9690
+todo/exceptions.py,sha256=Ll5xfrcphNgXRwPea7eJUJ_5MOnv_p-KY3HcI5_DDPU,242
+todo/input.py,sha256=tMEA6QJzU2RJUxHjBvx7FUtKMF4HmkkEEYuQbJOCbzs,20912
+todo/misc.py,sha256=UikkO9cD14OiIK43HZ1BwKsZVZ6IvWHNB1_q2seId4c,4500
+gtd.py-0.6.15.dist-info/LICENSE,sha256=yjvlBrfy6y3FHxEXaQxvjScKv0M3xver46ps_saBb7E,1520
+gtd.py-0.6.15.dist-info/METADATA,sha256=ywLHiFjNLOb_cLSyORoC2lOUQINFo1KfKwiBEmCtf3k,26611
+gtd.py-0.6.15.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+gtd.py-0.6.15.dist-info/entry_points.txt,sha256=m96BR7vGo1oqeaOxx2BkcCNx8PjvXallko6pmssLk0k,34
+gtd.py-0.6.15.dist-info/top_level.txt,sha256=UOIeTsJNSL5laO1fv5aeU_fNyl37q2SRLZpPIKVm2QE,9
+gtd.py-0.6.15.dist-info/RECORD,,
