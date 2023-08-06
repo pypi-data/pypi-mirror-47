@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: py_func_lib
+Version: 0.0.1
+Summary: Functional Library for Python.
+Home-page: https://github.com/jcuffney/py-func-lib
+Author: Joe Cuffney
+Author-email: josephcuffney@gmail.com
+License: UNKNOWN
+Description: # Python Functional Library
+        
+        Functional Library for Python. 
+        
+        ## Requirements
+        
+        - `setuptools` (`pip install setuptools`)
+        - `wheel` (`pip install wheel`)
+        - `twine` `pip install twine`)
+        
+        ## Credits
+        
+        This project is heavily influenced by RambdaJS.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
