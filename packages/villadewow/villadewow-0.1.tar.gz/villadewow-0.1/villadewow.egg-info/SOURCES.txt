@@ -1,0 +1,6 @@
+README.md
+setup.py
+villadewow.egg-info/PKG-INFO
+villadewow.egg-info/SOURCES.txt
+villadewow.egg-info/dependency_links.txt
+villadewow.egg-info/top_level.txt
