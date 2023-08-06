@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: pypalo
+Version: 0.0.8
+Summary: A Package to interact with the Palo Alto Networks API
+Home-page: https://github.com/dstogsdill/pypalo
+Author: Donald Stogsdill
+Author-email: donny.stogsdill@gmail.com
+License: UNKNOWN
+Description: # pypalo #
+        
+        A Python module for interacting with Palo Alto Firewalls & Panorama
+        
+        [![Latest Version](https://img.shields.io/pypi/v/pypalo.svg)](https://pypi.org/project/pypalo/)
+        
+        **Warning:** This module is in its infancy with very few functions 
+        
+        Provides support for:
+        
+        - Shared Context
+            - Create Address Objects
+            - Create Address Groups
+            - Create Tags
+        
+        - Firewalls
+            - No support as of today
+         
+        
+        ## Documentation
+        
+        
+        ## Requirements
+        [![Versions](https://img.shields.io/pypi/pyversions/pypalo.svg)](pypi.python.org/pypi/pypalo)
+        
+        Uses [pan-python](https://pypi.org/project/pan-python/) to make api calls
+        
+        ## Install 
+        `pip install pypalo`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
