@@ -1,0 +1,12 @@
+curtains/__init__.py,sha256=IPrUmyT9W8jZJoCON-VrnBweX1qI1IjmW_mBeWMg9k8,62
+curtains/basic_auth.py,sha256=VpXB8HlmaoKQhHOaKVzLLkZwGmCGgX4Rl34iLLsf0eg,806
+curtains/ip_networks.py,sha256=HSye7jtxvAZwqd8OU3uOwVf_yQz6PkbkQqGmfot0OO0,889
+curtains/ip_range.py,sha256=6Vbdm0Uz8DqEVpexQ9SEATGA1ePYSF23lRwuoPXPmtY,468
+curtains/middleware.py,sha256=SoX5ZK9Clsi9DDyIXHFLnI8TPP3Jozl_zNiTC2BxlbM,173
+curtains/only_staff.py,sha256=_0iiC5UKT1Hr_McTi6hq44s4NoH-Cj91Zn1eP77OBQk,1659
+django_curtains-0.4.1.dist-info/DESCRIPTION.rst,sha256=RnYiqZ7PKy80zQgIZlMxLDvd5Dva140Xt29EEkZPtqQ,1011
+django_curtains-0.4.1.dist-info/METADATA,sha256=fm4eZtxjelw9C2vCq28kZRTydXMsYPaiTHqE7OrPQRA,1832
+django_curtains-0.4.1.dist-info/RECORD,,
+django_curtains-0.4.1.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_curtains-0.4.1.dist-info/metadata.json,sha256=9Kh__fGO8cQa9L3RWZ3uXPtbh0zAq46UCu9y3ggUsPc,948
+django_curtains-0.4.1.dist-info/top_level.txt,sha256=dLQZDCl8T-aYV5P-2kvED74utxokxhOHV4Z-7p6WMws,9
