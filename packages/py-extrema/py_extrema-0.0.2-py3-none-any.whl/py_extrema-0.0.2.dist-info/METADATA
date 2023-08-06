@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: py-extrema
+Version: 0.0.2
+Summary: Find extrema using python.
+Home-page: UNKNOWN
+Author: Corentin Cadiou
+Author-email: contact@cphyc.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: CEA CNRS Inria Logiciel Libre License, version 2.1 (CeCILL-2.1)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Requires-Dist: numpy
+Requires-Dist: numba
+Requires-Dist: unyt
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: pyfftw
+Requires-Dist: tqdm
+Requires-Dist: numexpr
+
+UNKNOWN
+
+
