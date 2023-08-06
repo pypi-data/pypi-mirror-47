@@ -1,0 +1,6 @@
+keras
+matplotlib
+numpy
+seaborn
+sklearn
+pylint
