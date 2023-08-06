@@ -1,0 +1,21 @@
+
+{{ '\033[1m' }}YOUR INVENTORY{{ '\033[0m' }}
+{{ '\033[1m' }}=============={{ '\033[0m' }}
+
+Hello, {{ name }}!
+
+Here is a listing of your inventory, as you requested:
+
+GOLD:   {{ gold }}
+DUST:   {{ dust }}
+
+PACKS:
+{%- for name, pack_list in packs.items() %}
+{{ name }} ({{ pack_list|length }})
+{%- endfor %}
+
+REWARDS:
+{%- for name, reward_list in rewards.items() %}
+{{ name }} ({{ reward_list|length }})
+{%- endfor %}
+
