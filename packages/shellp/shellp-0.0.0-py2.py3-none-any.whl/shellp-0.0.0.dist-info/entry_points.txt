@@ -1,0 +1,3 @@
+[console_scripts]
+shellp = shellp.__main__:run
+
