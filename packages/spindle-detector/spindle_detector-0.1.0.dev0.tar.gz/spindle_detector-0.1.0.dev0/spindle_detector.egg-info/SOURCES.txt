@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+spindle_detector/__init__.py
+spindle_detector/core.py
+spindle_detector/lfp_likelihood.py
+spindle_detector/simulate_LFP.py
+spindle_detector.egg-info/PKG-INFO
+spindle_detector.egg-info/SOURCES.txt
+spindle_detector.egg-info/dependency_links.txt
+spindle_detector.egg-info/requires.txt
+spindle_detector.egg-info/top_level.txt
