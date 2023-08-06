@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: QCGPilotManager
+Version: 0.4.1
+Summary: Manage many jobs inside one allocation
+Home-page: http://github.com/vecma-project/QCG-PilotJob
+Author: Piotr Kopta
+Author-email: pkopta@man.poznan.pl
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
