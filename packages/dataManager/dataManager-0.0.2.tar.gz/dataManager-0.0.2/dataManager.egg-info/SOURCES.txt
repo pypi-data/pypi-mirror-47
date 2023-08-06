@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+dataManager/__init__.py
+dataManager.egg-info/PKG-INFO
+dataManager.egg-info/SOURCES.txt
+dataManager.egg-info/dependency_links.txt
+dataManager.egg-info/requires.txt
+dataManager.egg-info/top_level.txt
