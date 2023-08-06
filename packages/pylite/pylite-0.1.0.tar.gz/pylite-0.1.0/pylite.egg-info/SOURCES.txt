@@ -1,0 +1,8 @@
+README.md
+setup.py
+pylite/__init__.py
+pylite/simplite.py
+pylite.egg-info/PKG-INFO
+pylite.egg-info/SOURCES.txt
+pylite.egg-info/dependency_links.txt
+pylite.egg-info/top_level.txt
