@@ -1,0 +1,5 @@
+requests
+docopt
+
+[dev]
+twine
