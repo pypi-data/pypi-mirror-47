@@ -1,0 +1,12 @@
+buntstrap/__init__.py,sha256=3AKuwH0CqW88D1jmLLlWiuHtsc0ptzvEvjkx1aIr4NU,26733
+buntstrap/__main__.py,sha256=w_zA9dmymweQRKPUylE3v7IgP0IDvMWPwQysrJv3RrM,2468
+buntstrap/chroot.py,sha256=BekFmVxM0s1TIVRh58h2xlS-AWuPwm-zNf-SGGFRNsQ,6407
+buntstrap/config.py,sha256=cF_8we6JYnYQuJPKL0TxhpP32j4lxAtEgtaLxq0EqNw,16133
+buntstrap/freeze.py,sha256=0s3FRJwr3caV6y4f-CtELtR3Ne6M4OQTJ3Lk0stXciI,3018
+buntstrap/size_report.py,sha256=ASp4b1fM3oWFjG1U1FIX43f2GGT3q99dsCpHjunBtjY,2642
+buntstrap/util.py,sha256=ylUCz3DZYDkCgJJTO85Qyp5TsketFW3ycnizf964VAI,3087
+buntstrap-0.1.5.dist-info/METADATA,sha256=et0HKPZZXuCu8bHuMA-etn7qo8wQFjp0CP-SPooOOCc,15000
+buntstrap-0.1.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+buntstrap-0.1.5.dist-info/entry_points.txt,sha256=3zGoziP8P8OWnF2UuNY5nMAA-u6grmJZnKakvtBunUg,147
+buntstrap-0.1.5.dist-info/top_level.txt,sha256=QuHY9KhH13DQR9ojU8T22nVxSBiZ9WS5mdqbxHE5KaU,10
+buntstrap-0.1.5.dist-info/RECORD,,
