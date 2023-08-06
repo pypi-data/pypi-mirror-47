@@ -1,0 +1,3 @@
+[console_scripts]
+xhb2beancount = xhb2beancount.main:main
+
