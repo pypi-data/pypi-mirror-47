@@ -1,0 +1,12 @@
+pyontutils>=0.1.2
+
+[dev]
+pytest-cov
+wheel
+
+[notebook]
+jupyter
+
+[test]
+pytest
+pytest-runner
