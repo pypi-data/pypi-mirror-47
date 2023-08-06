@@ -1,0 +1,8 @@
+README.md
+setup.py
+critical_path.egg-info/PKG-INFO
+critical_path.egg-info/SOURCES.txt
+critical_path.egg-info/dependency_links.txt
+critical_path.egg-info/not-zip-safe
+critical_path.egg-info/requires.txt
+critical_path.egg-info/top_level.txt
