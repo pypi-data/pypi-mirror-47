@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: aray
+Version: 0.0.0
+Summary: Public personal python package
+Home-page: https://github.com/machinaut/aray
+Author: A Ray
+Author-email: a@machinaut.com
+License: UNKNOWN
+Description: # aray
+        Public personal python package
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
