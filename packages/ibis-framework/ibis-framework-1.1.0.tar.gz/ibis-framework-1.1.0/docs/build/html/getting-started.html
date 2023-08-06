@@ -1,0 +1,393 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Installation and Getting Started &mdash; Ibis v0.11.2+65.g922b763 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Ibis v0.11.2+65.g922b763 documentation" href="index.html"/>
+        <link rel="next" title="Configuring Ibis" href="configuration.html"/>
+        <link rel="prev" title="Ibis: Python Data Analysis Productivity Framework" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ibis
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.11.2+65.g922b763
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Installation and Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#system-dependencies">System dependencies</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#installing-the-python-package">Installing the Python package</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#ibis-impala-quickstart">Ibis Impala Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ibis-sqlite-quickstart">Ibis SQLite Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ibis-postgresql-quickstart">Ibis PostgreSQL Quickstart</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-client">Creating a client</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#learning-resources">Learning resources</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-ibis-with-the-cloudera-quickstart-vm">Using Ibis with the Cloudera Quickstart VM</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tl-dr">TL;DR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#single-steps">Single Steps</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vm-setup">VM setup</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuring Ibis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Expression tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impala.html">Using Ibis with Impala</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">Ibis for SQL Programmers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Developing and Contributing to Ibis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-system.html">Ibis design internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">Legal</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ibis</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Installation and Getting Started</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/getting-started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="installation-and-getting-started">
+<span id="install"></span><h1>Installation and Getting Started<a class="headerlink" href="#installation-and-getting-started" title="Permalink to this headline">¶</a></h1>
+<p>Getting up and running with Ibis involves installing the Python package and
+connecting to HDFS and Impala. If you don’t have a Hadoop cluster available
+with Impala, see <a class="reference internal" href="#install-quickstart"><span class="std std-ref">Using Ibis with the Cloudera Quickstart VM</span></a> below for instructions to use a VM
+to get up and running quickly.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="system-dependencies">
+<h3>System dependencies<a class="headerlink" href="#system-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>Ibis requires a working Python 2.7 or &gt;= 3.4 installation. We recommend
+<a class="reference external" href="http://continuum.io/downloads">Anaconda</a>.</p>
+</div>
+<div class="section" id="installing-the-python-package">
+<h3>Installing the Python package<a class="headerlink" href="#installing-the-python-package" title="Permalink to this headline">¶</a></h3>
+<p>Install ibis using <code class="docutils literal"><span class="pre">pip</span></code> or <code class="docutils literal"><span class="pre">conda</span></code>:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ibis</span><span class="o">-</span><span class="n">framework</span>
+</pre></div>
+</div>
+<p>This installs the <code class="docutils literal"><span class="pre">ibis</span></code> library to your configured Python environment.</p>
+<p>Ibis can also be installed with Kerberos support for its HDFS functionality:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ibis</span><span class="o">-</span><span class="n">framework</span><span class="p">[</span><span class="n">kerberos</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Some platforms will require that you have Kerberos installed to build properly.</p>
+<ul class="simple">
+<li>Redhat / CentOS: <code class="docutils literal"><span class="pre">yum</span> <span class="pre">install</span> <span class="pre">krb5-devel</span></code></li>
+<li>Ubuntu / Debian: <code class="docutils literal"><span class="pre">apt-get</span> <span class="pre">install</span> <span class="pre">libkrb5-dev</span></code></li>
+<li>Arch Linux     : <code class="docutils literal"><span class="pre">pacman</span> <span class="pre">-S</span> <span class="pre">krb5</span></code></li>
+</ul>
+</div>
+</div>
+<div class="section" id="ibis-impala-quickstart">
+<span id="install-impala"></span><h2>Ibis Impala Quickstart<a class="headerlink" href="#ibis-impala-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>To install dependencies for Ibis’s Impala dialect:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ibis</span><span class="o">-</span><span class="n">framework</span><span class="p">[</span><span class="n">impala</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ibis-sqlite-quickstart">
+<span id="install-sqlite"></span><h2>Ibis SQLite Quickstart<a class="headerlink" href="#ibis-sqlite-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>To install dependencies for Ibis’s SQLite dialect:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ibis</span><span class="o">-</span><span class="n">framework</span><span class="p">[</span><span class="n">sqlite</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>See <a class="reference external" href="http://blog.ibis-project.org/sqlite-crunchbase-quickstart/">http://blog.ibis-project.org/sqlite-crunchbase-quickstart/</a> for a quickstart
+using SQLite. Otherwise read on to try out Ibis on Impala.</p>
+</div>
+<div class="section" id="ibis-postgresql-quickstart">
+<span id="install-postgres"></span><h2>Ibis PostgreSQL Quickstart<a class="headerlink" href="#ibis-postgresql-quickstart" title="Permalink to this headline">¶</a></h2>
+<p>To install dependencies for Ibis’s PostgreSQL dialect:</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ibis</span><span class="o">-</span><span class="n">framework</span><span class="p">[</span><span class="n">postgres</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="creating-a-client">
+<h2>Creating a client<a class="headerlink" href="#creating-a-client" title="Permalink to this headline">¶</a></h2>
+<p>To create an Ibis “client”, you must first connect your services and assemble
+the client using <code class="docutils literal"><span class="pre">ibis.impala.connect</span></code>:</p>
+<div class="highlight-python"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">ibis</span>
+
+<span class="n">hdfs</span> <span class="o">=</span> <span class="n">ibis</span><span class="o">.</span><span class="n">hdfs_connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">webhdfs_host</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">webhdfs_port</span><span class="p">)</span>
+<span class="n">con</span> <span class="o">=</span> <span class="n">ibis</span><span class="o">.</span><span class="n">impala</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">host</span><span class="o">=</span><span class="n">impala_host</span><span class="p">,</span> <span class="n">port</span><span class="o">=</span><span class="n">impala_port</span><span class="p">,</span>
+                          <span class="n">hdfs_client</span><span class="o">=</span><span class="n">hdfs</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Both method calls can take <code class="docutils literal"><span class="pre">auth_mechanism='GSSAPI'</span></code> or
+<code class="docutils literal"><span class="pre">auth_mechanism='LDAP'</span></code> to connect to Kerberos clusters.  Depending on your
+cluster setup, this may also include SSL. See the <a class="reference internal" href="api.html#api-client"><span class="std std-ref">API reference</span></a> for more, along with the Impala shell reference, as the
+connection semantics are identical.</p>
+</div>
+<div class="section" id="learning-resources">
+<h2>Learning resources<a class="headerlink" href="#learning-resources" title="Permalink to this headline">¶</a></h2>
+<p>We are collecting IPython notebooks for learning here:
+<a class="reference external" href="http://github.com/cloudera/ibis-notebooks">http://github.com/cloudera/ibis-notebooks</a>. Some of these notebooks will be
+reproduced as part of the documentation.</p>
+</div>
+<div class="section" id="using-ibis-with-the-cloudera-quickstart-vm">
+<span id="install-quickstart"></span><h2>Using Ibis with the Cloudera Quickstart VM<a class="headerlink" href="#using-ibis-with-the-cloudera-quickstart-vm" title="Permalink to this headline">¶</a></h2>
+<p>Using Ibis with Impala requires a running Impala cluster, so we have provided a
+lean VirtualBox image to simplify the process for those looking to try out Ibis
+(without setting up a cluster) or start contributing code to the project.</p>
+<p>What follows are streamlined setup instructions for the VM. If you wish to
+download it directly and setup from the <code class="docutils literal"><span class="pre">ova</span></code> file, use this <a class="reference external" href="http://archive.cloudera.com/cloudera-ibis/ibis-demo.ova">download link</a>.</p>
+<p>The VM was built with Oracle VirtualBox 4.3.28.</p>
+<div class="section" id="tl-dr">
+<h3>TL;DR<a class="headerlink" href="#tl-dr" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">curl</span> <span class="o">-</span><span class="n">s</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">raw</span><span class="o">.</span><span class="n">githubusercontent</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">cloudera</span><span class="o">/</span><span class="n">ibis</span><span class="o">-</span><span class="n">notebooks</span><span class="o">/</span><span class="n">master</span><span class="o">/</span><span class="n">setup</span><span class="o">/</span><span class="n">bootstrap</span><span class="o">.</span><span class="n">sh</span> <span class="o">|</span> <span class="n">bash</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="single-steps">
+<h3>Single Steps<a class="headerlink" href="#single-steps" title="Permalink to this headline">¶</a></h3>
+<p>To use Ibis with the special Cloudera Quickstart VM follow the below
+instructions:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Make sure Anaconda is installed. You can get it from
+<a class="reference external" href="http://continuum.io/downloads">http://continuum.io/downloads</a>. Now prepend the Anaconda Python
+to your path like this <code class="docutils literal"><span class="pre">export</span> <span class="pre">PATH=$ANACONDA_HOME/bin:$PATH</span></code></li>
+<li><code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">ibis-framework</span></code></li>
+<li><code class="docutils literal"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">https://github.com/cloudera/ibis-notebooks.git</span></code></li>
+<li><code class="docutils literal"><span class="pre">cd</span> <span class="pre">ibis-notebooks</span></code></li>
+<li><code class="docutils literal"><span class="pre">./setup/setup-ibis-demo-vm.sh</span></code></li>
+<li><code class="docutils literal"><span class="pre">source</span> <span class="pre">setup/ibis-env.sh</span></code></li>
+<li><code class="docutils literal"><span class="pre">ipython</span> <span class="pre">notebook</span></code></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="vm-setup">
+<h3>VM setup<a class="headerlink" href="#vm-setup" title="Permalink to this headline">¶</a></h3>
+<p>The setup script will download a VirtualBox appliance image and import it in
+VirtualBox. In addition, it will create a new host only network adapter with
+DHCP. After the VM is started, it will extract the current IP address and add a
+new /etc/hosts entry pointing from the IP of the VM to the hostname
+<code class="docutils literal"><span class="pre">quickstart.cloudera</span></code>. The reason for this entry is that Hadoop and HDFS
+require a working reverse name mapping. If you don’t want to run the automated
+steps make sure to check the individual steps in the file
+<code class="docutils literal"><span class="pre">setup/setup-ibis-demo-vm.sh</span></code>.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="configuration.html" class="btn btn-neutral float-right" title="Configuring Ibis" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="Ibis: Python Data Analysis Productivity Framework" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cloudera, Inc..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.11.2+65.g922b763',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65303298-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

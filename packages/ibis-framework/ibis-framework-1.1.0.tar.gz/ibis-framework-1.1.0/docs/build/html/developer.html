@@ -1,0 +1,405 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Developing and Contributing to Ibis &mdash; Ibis v0.11.2+65.g922b763 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Ibis v0.11.2+65.g922b763 documentation" href="index.html"/>
+        <link rel="next" title="Ibis design internals" href="type-system.html"/>
+        <link rel="prev" title="Release Notes" href="release.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ibis
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.11.2+65.g922b763
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuring Ibis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Expression tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impala.html">Using Ibis with Impala</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">API Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">Ibis for SQL Programmers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Developing and Contributing to Ibis</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#linux-test-environment-setup">Linux Test Environment Setup</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#conda-environment-setup">Conda Environment Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setting-up-test-databases">Setting Up Test Databases</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#impala-with-udfs">Impala (with UDFs)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clickhouse">Clickhouse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#postgresql">PostgreSQL</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sqlite">SQLite</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#running-tests">Running Tests</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#contribution-ideas">Contribution Ideas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="type-system.html">Ibis design internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">Legal</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ibis</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Developing and Contributing to Ibis</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/developer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="developing-and-contributing-to-ibis">
+<span id="develop"></span><h1>Developing and Contributing to Ibis<a class="headerlink" href="#developing-and-contributing-to-ibis" title="Permalink to this headline">¶</a></h1>
+<p>For a primer on general open source contributions, see the <a class="reference external" href="http://pandas.pydata.org/pandas-docs/stable/contributing.html">pandas contribution
+guide</a>. The
+project will be run much like pandas has been.</p>
+<div class="section" id="linux-test-environment-setup">
+<h2>Linux Test Environment Setup<a class="headerlink" href="#linux-test-environment-setup" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="conda-environment-setup">
+<h3>Conda Environment Setup<a class="headerlink" href="#conda-environment-setup" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic">
+<li><p class="first"><strong>Install the latest version of miniconda</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span># Download the miniconda bash installer
+curl -Ls -o $HOME/miniconda.sh \
+    https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
+# Run the installer
+bash $HOME/miniconda.sh -b -p $HOME/miniconda
+
+# Put the conda command on your PATH
+export PATH=&quot;$HOME/miniconda/bin:$PATH&quot;
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Install the development environment of your choice (Python 3.6 in this
+example), activate and install ibis in development mode</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Create a conda environment ready for ibis development</span>
+<span class="n">conda</span> <span class="n">env</span> <span class="n">create</span> <span class="o">--</span><span class="n">name</span> <span class="n">ibis36</span> <span class="o">--</span><span class="n">file</span><span class="o">=</span><span class="n">ci</span><span class="o">/</span><span class="n">requirements_dev</span><span class="o">-</span><span class="mf">3.6</span><span class="o">.</span><span class="n">yml</span>
+
+<span class="c1"># Activate the conda environment</span>
+<span class="n">source</span> <span class="n">activate</span> <span class="n">ibis36</span>
+
+<span class="c1"># Install ibis</span>
+<span class="n">python</span> <span class="n">setup</span><span class="o">.</span><span class="n">py</span> <span class="n">develop</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><a class="reference external" href="https://docs.docker.com/engine/installation/">Install docker</a></p>
+</li>
+<li><p class="first"><strong>Download the test data</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span>DATA_DIR=$PWD
+ci/datamgr.py download --directory=$DATA_DIR
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="setting-up-test-databases">
+<h3>Setting Up Test Databases<a class="headerlink" href="#setting-up-test-databases" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="impala-with-udfs">
+<h4>Impala (with UDFs)<a class="headerlink" href="#impala-with-udfs" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>Start the Impala docker image in another terminal</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Keeping this running as long as you want to test ibis</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">tty</span> <span class="o">--</span><span class="n">rm</span> <span class="o">--</span><span class="n">hostname</span> <span class="n">impala</span> <span class="n">cpcloud86</span><span class="o">/</span><span class="n">impala</span><span class="p">:</span><span class="n">java8</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Load data and UDFs into impala</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span>test_data_admin.py load --data --data-dir=$DATA_DIR
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="clickhouse">
+<h4>Clickhouse<a class="headerlink" href="#clickhouse" title="Permalink to this headline">¶</a></h4>
+<ol class="arabic">
+<li><p class="first"><strong>Start the Clickhouse Server docker image in another terminal</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Keeping this running as long as you want to test ibis</span>
+<span class="n">docker</span> <span class="n">run</span> <span class="o">--</span><span class="n">rm</span> <span class="o">-</span><span class="n">p</span> <span class="mi">9000</span><span class="p">:</span><span class="mi">9000</span> <span class="o">--</span><span class="n">tty</span> <span class="n">yandex</span><span class="o">/</span><span class="n">clickhouse</span><span class="o">-</span><span class="n">server</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first"><strong>Load data</strong>:</p>
+<div class="code sh highlight-default"><div class="highlight"><pre><span></span>ci/datamgr.py clickhouse \
+    --database $IBIS_TEST_CLICKHOUSE_DB \
+    --data-directory $DATA_DIR/ibis-testing-data \
+    --script ci/clickhouse_load.sql \
+    functional_alltypes batting diamonds awards_players
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="postgresql">
+<h4>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h4>
+<p>PostgreSQL can be used from either the installation that resides on the Impala
+docker image or from your machine directly.</p>
+<p>Here’s how to load test data into PostgreSQL:</p>
+<blockquote>
+<div><div class="code sh highlight-default"><div class="highlight"><pre><span></span>ci/datamgr.py postgres \
+    --database $IBIS_TEST_POSTGRES_DB \
+    --data-directory $DATA_DIR/ibis-testing-data \
+    --script ci/postgresql_load.sql \
+    functional_alltypes batting diamonds awards_players
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="sqlite">
+<h4>SQLite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h4>
+<p>SQLite comes already installed on many systems. If you used the conda setup
+instructions above, then SQLite will be available in the conda environment.</p>
+<blockquote>
+<div><div class="code sh highlight-default"><div class="highlight"><pre><span></span>ci/datamgr.py sqlite \
+    --database $IBIS_TEST_SQLITE_DB_PATH \
+    --data-directory $DATA_DIR/ibis-testing-data \
+    --script ci/sqlite_load.sql \
+    functional_alltypes batting diamonds awards_players
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="running-tests">
+<h3>Running Tests<a class="headerlink" href="#running-tests" title="Permalink to this headline">¶</a></h3>
+<p>You are now ready to run the full ibis test suite:</p>
+<blockquote>
+<div><div class="code sh highlight-default"><div class="highlight"><pre><span></span><span class="n">pytest</span> <span class="n">ibis</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="contribution-ideas">
+<h2>Contribution Ideas<a class="headerlink" href="#contribution-ideas" title="Permalink to this headline">¶</a></h2>
+<p>Here’s a few ideas to think about outside of participating in the primary
+development roadmap:</p>
+<ul class="simple">
+<li>Documentation</li>
+<li>Use cases and IPython notebooks</li>
+<li>Other SQL-based backends (Presto, Hive, Spark SQL)</li>
+<li>S3 filesytem support</li>
+<li>Integration with MLLib via PySpark</li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="type-system.html" class="btn btn-neutral float-right" title="Ibis design internals" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="release.html" class="btn btn-neutral" title="Release Notes" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cloudera, Inc..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.11.2+65.g922b763',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65303298-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

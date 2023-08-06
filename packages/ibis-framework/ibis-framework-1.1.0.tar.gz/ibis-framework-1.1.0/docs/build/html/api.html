@@ -1,0 +1,1628 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>API Reference &mdash; Ibis v0.11.2+65.g922b763 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="Ibis v0.11.2+65.g922b763 documentation" href="index.html"/>
+        <link rel="next" title="ibis.hdfs_connect" href="generated/ibis.hdfs_connect.html"/>
+        <link rel="prev" title="ibis.impala.api.ImpalaClient.set_compression_codec" href="generated/ibis.impala.api.ImpalaClient.set_compression_codec.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Ibis
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                v0.11.2+65.g922b763
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Installation and Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">Configuring Ibis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Expression tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="impala.html">Using Ibis with Impala</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">API Reference</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-connections">Creating connections</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.hdfs_connect.html">ibis.hdfs_connect</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#impala-client">Impala client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.impala.api.connect.html">ibis.impala.api.connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.close.html">ibis.impala.api.ImpalaClient.close</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.database.html">ibis.impala.api.ImpalaClient.database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#database-methods">Database methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_database.html">ibis.impala.api.ImpalaClient.set_database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_database.html">ibis.impala.api.ImpalaClient.create_database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_database.html">ibis.impala.api.ImpalaClient.drop_database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.list_databases.html">ibis.impala.api.ImpalaClient.list_databases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.exists_database.html">ibis.impala.api.ImpalaClient.exists_database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.create_table.html">ibis.impala.api.ImpalaDatabase.create_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.drop.html">ibis.impala.api.ImpalaDatabase.drop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.namespace.html">ibis.impala.api.ImpalaDatabase.namespace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.table.html">ibis.impala.api.ImpalaDatabase.table</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#table-methods">Table methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.database.html">ibis.impala.api.ImpalaClient.database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.table.html">ibis.impala.api.ImpalaClient.table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.sql.html">ibis.impala.api.ImpalaClient.sql</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.raw_sql.html">ibis.impala.api.ImpalaClient.raw_sql</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.list_tables.html">ibis.impala.api.ImpalaClient.list_tables</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.exists_table.html">ibis.impala.api.ImpalaClient.exists_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_table.html">ibis.impala.api.ImpalaClient.drop_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_table.html">ibis.impala.api.ImpalaClient.create_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.insert.html">ibis.impala.api.ImpalaClient.insert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.truncate_table.html">ibis.impala.api.ImpalaClient.truncate_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.get_schema.html">ibis.impala.api.ImpalaClient.get_schema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.cache_table.html">ibis.impala.api.ImpalaClient.cache_table</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.load_data.html">ibis.impala.api.ImpalaClient.load_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.get_options.html">ibis.impala.api.ImpalaClient.get_options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_options.html">ibis.impala.api.ImpalaClient.set_options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_compression_codec.html">ibis.impala.api.ImpalaClient.set_compression_codec</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.add_partition.html">ibis.impala.api.ImpalaTable.add_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.alter.html">ibis.impala.api.ImpalaTable.alter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.alter_partition.html">ibis.impala.api.ImpalaTable.alter_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.column_stats.html">ibis.impala.api.ImpalaTable.column_stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.compute_stats.html">ibis.impala.api.ImpalaTable.compute_stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.describe_formatted.html">ibis.impala.api.ImpalaTable.describe_formatted</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.drop.html">ibis.impala.api.ImpalaTable.drop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.drop_partition.html">ibis.impala.api.ImpalaTable.drop_partition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.files.html">ibis.impala.api.ImpalaTable.files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.insert.html">ibis.impala.api.ImpalaTable.insert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.invalidate_metadata.html">ibis.impala.api.ImpalaTable.invalidate_metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.load_data.html">ibis.impala.api.ImpalaTable.load_data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.metadata.html">ibis.impala.api.ImpalaTable.metadata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.partition_schema.html">ibis.impala.api.ImpalaTable.partition_schema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.partitions.html">ibis.impala.api.ImpalaTable.partitions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.refresh.html">ibis.impala.api.ImpalaTable.refresh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.rename.html">ibis.impala.api.ImpalaTable.rename</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.stats.html">ibis.impala.api.ImpalaTable.stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_view.html">ibis.impala.api.ImpalaClient.create_view</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_view.html">ibis.impala.api.ImpalaClient.drop_view</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_table_or_view.html">ibis.impala.api.ImpalaClient.drop_table_or_view</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#accessing-data-formats-in-hdfs">Accessing data formats in HDFS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.avro_file.html">ibis.impala.api.ImpalaClient.avro_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.delimited_file.html">ibis.impala.api.ImpalaClient.delimited_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.parquet_file.html">ibis.impala.api.ImpalaClient.parquet_file</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#executing-expressions">Executing expressions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.execute.html">ibis.impala.api.ImpalaClient.execute</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.disable_codegen.html">ibis.impala.api.ImpalaClient.disable_codegen</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#postgresql-client">PostgreSQL client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.postgres.api.connect.html">ibis.sql.postgres.api.connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.database.html">ibis.sql.postgres.api.PostgreSQLClient.database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.list_tables.html">ibis.sql.postgres.api.PostgreSQLClient.list_tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.list_databases.html">ibis.sql.postgres.api.PostgreSQLClient.list_databases</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.table.html">ibis.sql.postgres.api.PostgreSQLClient.table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#sqlite-client">SQLite client</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.sqlite.api.connect.html">ibis.sql.sqlite.api.connect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.attach.html">ibis.sql.sqlite.api.SQLiteClient.attach</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.database.html">ibis.sql.sqlite.api.SQLiteClient.database</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.list_tables.html">ibis.sql.sqlite.api.SQLiteClient.list_tables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.table.html">ibis.sql.sqlite.api.SQLiteClient.table</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hdfs">HDFS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.ls.html">ibis.HDFS.ls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.chmod.html">ibis.HDFS.chmod</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.chown.html">ibis.HDFS.chown</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.get.html">ibis.HDFS.get</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.head.html">ibis.HDFS.head</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.put.html">ibis.HDFS.put</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.put_tarfile.html">ibis.HDFS.put_tarfile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.rm.html">ibis.HDFS.rm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.rmdir.html">ibis.HDFS.rmdir</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.size.html">ibis.HDFS.size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.HDFS.status.html">ibis.HDFS.status</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#top-level-expression-apis">Top-level expression APIs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.case.html">ibis.case</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.literal.html">ibis.literal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.schema.html">ibis.schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.table.html">ibis.table</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.timestamp.html">ibis.timestamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.where.html">ibis.where</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.ifelse.html">ibis.ifelse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.coalesce.html">ibis.coalesce</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.greatest.html">ibis.greatest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.least.html">ibis.least</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.negate.html">ibis.negate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.desc.html">ibis.desc</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.now.html">ibis.now</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.NA.html">ibis.NA</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.null.html">ibis.null</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr_list.html">ibis.expr_list</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.row_number.html">ibis.row_number</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.window.html">ibis.window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.trailing_window.html">ibis.trailing_window</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.cumulative_window.html">ibis.cumulative_window</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-expression-methods">General expression methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.Expr.compile.html">ibis.expr.api.Expr.compile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.Expr.equals.html">ibis.expr.api.Expr.equals</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.Expr.execute.html">ibis.expr.api.Expr.execute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.Expr.pipe.html">ibis.expr.api.Expr.pipe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.Expr.verify.html">ibis.expr.api.Expr.verify</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#api-table">Table methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.add_column.html">ibis.expr.api.TableExpr.add_column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.aggregate.html">ibis.expr.api.TableExpr.aggregate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.count.html">ibis.expr.api.TableExpr.count</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.distinct.html">ibis.expr.api.TableExpr.distinct</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.info.html">ibis.expr.api.TableExpr.info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.filter.html">ibis.expr.api.TableExpr.filter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.get_column.html">ibis.expr.api.TableExpr.get_column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.get_columns.html">ibis.expr.api.TableExpr.get_columns</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.group_by.html">ibis.expr.api.TableExpr.group_by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.groupby.html">ibis.expr.api.TableExpr.groupby</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.limit.html">ibis.expr.api.TableExpr.limit</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.mutate.html">ibis.expr.api.TableExpr.mutate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.projection.html">ibis.expr.api.TableExpr.projection</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.relabel.html">ibis.expr.api.TableExpr.relabel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.schema.html">ibis.expr.api.TableExpr.schema</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.set_column.html">ibis.expr.api.TableExpr.set_column</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.sort_by.html">ibis.expr.api.TableExpr.sort_by</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.union.html">ibis.expr.api.TableExpr.union</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.view.html">ibis.expr.api.TableExpr.view</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.join.html">ibis.expr.api.TableExpr.join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.cross_join.html">ibis.expr.api.TableExpr.cross_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.inner_join.html">ibis.expr.api.TableExpr.inner_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.left_join.html">ibis.expr.api.TableExpr.left_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.outer_join.html">ibis.expr.api.TableExpr.outer_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.semi_join.html">ibis.expr.api.TableExpr.semi_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TableExpr.anti_join.html">ibis.expr.api.TableExpr.anti_join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#grouped-table-methods">Grouped table methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.aggregate.html">ibis.expr.api.GroupedTableExpr.aggregate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.count.html">ibis.expr.api.GroupedTableExpr.count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.having.html">ibis.expr.api.GroupedTableExpr.having</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.mutate.html">ibis.expr.api.GroupedTableExpr.mutate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.order_by.html">ibis.expr.api.GroupedTableExpr.order_by</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.over.html">ibis.expr.api.GroupedTableExpr.over</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.projection.html">ibis.expr.api.GroupedTableExpr.projection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.size.html">ibis.expr.api.GroupedTableExpr.size</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#generic-value-methods">Generic value methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#scalar-or-column-methods">Scalar or column methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.between.html">ibis.expr.api.ValueExpr.between</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.cast.html">ibis.expr.api.ValueExpr.cast</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.coalesce.html">ibis.expr.api.ValueExpr.coalesce</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.fillna.html">ibis.expr.api.ValueExpr.fillna</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.isin.html">ibis.expr.api.ValueExpr.isin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.notin.html">ibis.expr.api.ValueExpr.notin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.nullif.html">ibis.expr.api.ValueExpr.nullif</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.hash.html">ibis.expr.api.ValueExpr.hash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.isnull.html">ibis.expr.api.ValueExpr.isnull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.notnull.html">ibis.expr.api.ValueExpr.notnull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.over.html">ibis.expr.api.ValueExpr.over</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.typeof.html">ibis.expr.api.ValueExpr.typeof</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.case.html">ibis.expr.api.ValueExpr.case</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.cases.html">ibis.expr.api.ValueExpr.cases</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.substitute.html">ibis.expr.api.ValueExpr.substitute</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#column-methods">Column methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.distinct.html">ibis.expr.api.ColumnExpr.distinct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.count.html">ibis.expr.api.ColumnExpr.count</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.min.html">ibis.expr.api.ColumnExpr.min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.max.html">ibis.expr.api.ColumnExpr.max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.approx_median.html">ibis.expr.api.ColumnExpr.approx_median</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.approx_nunique.html">ibis.expr.api.ColumnExpr.approx_nunique</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.group_concat.html">ibis.expr.api.ColumnExpr.group_concat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.nunique.html">ibis.expr.api.ColumnExpr.nunique</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.summary.html">ibis.expr.api.ColumnExpr.summary</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.value_counts.html">ibis.expr.api.ColumnExpr.value_counts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.first.html">ibis.expr.api.ColumnExpr.first</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.last.html">ibis.expr.api.ColumnExpr.last</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.dense_rank.html">ibis.expr.api.ColumnExpr.dense_rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.rank.html">ibis.expr.api.ColumnExpr.rank</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.lag.html">ibis.expr.api.ColumnExpr.lag</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.lead.html">ibis.expr.api.ColumnExpr.lead</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.cummin.html">ibis.expr.api.ColumnExpr.cummin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.cummax.html">ibis.expr.api.ColumnExpr.cummax</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#general-numeric-methods">General numeric methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Scalar or column methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.abs.html">ibis.expr.api.NumericValue.abs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.ceil.html">ibis.expr.api.NumericValue.ceil</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.floor.html">ibis.expr.api.NumericValue.floor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sign.html">ibis.expr.api.NumericValue.sign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.exp.html">ibis.expr.api.NumericValue.exp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sqrt.html">ibis.expr.api.NumericValue.sqrt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log.html">ibis.expr.api.NumericValue.log</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.ln.html">ibis.expr.api.NumericValue.ln</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log2.html">ibis.expr.api.NumericValue.log2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log10.html">ibis.expr.api.NumericValue.log10</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.round.html">ibis.expr.api.NumericValue.round</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.nullifzero.html">ibis.expr.api.NumericValue.nullifzero</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.zeroifnull.html">ibis.expr.api.NumericValue.zeroifnull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.add.html">ibis.expr.api.NumericValue.add</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sub.html">ibis.expr.api.NumericValue.sub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.mul.html">ibis.expr.api.NumericValue.mul</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.div.html">ibis.expr.api.NumericValue.div</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.pow.html">ibis.expr.api.NumericValue.pow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.rdiv.html">ibis.expr.api.NumericValue.rdiv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericValue.rsub.html">ibis.expr.api.NumericValue.rsub</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Column methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.sum.html">ibis.expr.api.NumericColumn.sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.mean.html">ibis.expr.api.NumericColumn.mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.std.html">ibis.expr.api.NumericColumn.std</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.var.html">ibis.expr.api.NumericColumn.var</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.cumsum.html">ibis.expr.api.NumericColumn.cumsum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.cummean.html">ibis.expr.api.NumericColumn.cummean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.bottomk.html">ibis.expr.api.NumericColumn.bottomk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.topk.html">ibis.expr.api.NumericColumn.topk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.bucket.html">ibis.expr.api.NumericColumn.bucket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.histogram.html">ibis.expr.api.NumericColumn.histogram</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#integer-methods">Integer methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Scalar or column methods</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.IntegerValue.convert_base.html">ibis.expr.api.IntegerValue.convert_base</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/ibis.expr.api.IntegerValue.to_timestamp.html">ibis.expr.api.IntegerValue.to_timestamp</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#string-methods">String methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.convert_base.html">ibis.expr.api.StringValue.convert_base</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.length.html">ibis.expr.api.StringValue.length</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.lower.html">ibis.expr.api.StringValue.lower</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.upper.html">ibis.expr.api.StringValue.upper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.reverse.html">ibis.expr.api.StringValue.reverse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.ascii_str.html">ibis.expr.api.StringValue.ascii_str</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.strip.html">ibis.expr.api.StringValue.strip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.lstrip.html">ibis.expr.api.StringValue.lstrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.rstrip.html">ibis.expr.api.StringValue.rstrip</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.capitalize.html">ibis.expr.api.StringValue.capitalize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.contains.html">ibis.expr.api.StringValue.contains</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.like.html">ibis.expr.api.StringValue.like</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.parse_url.html">ibis.expr.api.StringValue.parse_url</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.substr.html">ibis.expr.api.StringValue.substr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.left.html">ibis.expr.api.StringValue.left</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.right.html">ibis.expr.api.StringValue.right</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.repeat.html">ibis.expr.api.StringValue.repeat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.find.html">ibis.expr.api.StringValue.find</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.translate.html">ibis.expr.api.StringValue.translate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.find_in_set.html">ibis.expr.api.StringValue.find_in_set</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.join.html">ibis.expr.api.StringValue.join</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.replace.html">ibis.expr.api.StringValue.replace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.lpad.html">ibis.expr.api.StringValue.lpad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.rpad.html">ibis.expr.api.StringValue.rpad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.rlike.html">ibis.expr.api.StringValue.rlike</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_search.html">ibis.expr.api.StringValue.re_search</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_extract.html">ibis.expr.api.StringValue.re_extract</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_replace.html">ibis.expr.api.StringValue.re_replace</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#timestamp-methods">Timestamp methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.truncate.html">ibis.expr.api.TimestampValue.truncate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.year.html">ibis.expr.api.TimestampValue.year</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.month.html">ibis.expr.api.TimestampValue.month</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.day.html">ibis.expr.api.TimestampValue.day</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.hour.html">ibis.expr.api.TimestampValue.hour</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.minute.html">ibis.expr.api.TimestampValue.minute</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.second.html">ibis.expr.api.TimestampValue.second</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.millisecond.html">ibis.expr.api.TimestampValue.millisecond</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#boolean-methods">Boolean methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.BooleanValue.ifelse.html">ibis.expr.api.BooleanValue.ifelse</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.any.html">ibis.expr.api.BooleanColumn.any</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.all.html">ibis.expr.api.BooleanColumn.all</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.cumany.html">ibis.expr.api.BooleanColumn.cumany</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.cumall.html">ibis.expr.api.BooleanColumn.cumall</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#category-methods">Category methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.CategoryValue.label.html">ibis.expr.api.CategoryValue.label</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#decimal-methods">Decimal methods</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.DecimalValue.precision.html">ibis.expr.api.DecimalValue.precision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/ibis.expr.api.DecimalValue.scale.html">ibis.expr.api.DecimalValue.scale</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="sql.html">Ibis for SQL Programmers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="release.html">Release Notes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer.html">Developing and Contributing to Ibis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="type-system.html">Ibis design internals</a></li>
+<li class="toctree-l1"><a class="reference internal" href="legal.html">Legal</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Ibis</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>API Reference</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-reference">
+<span id="api"></span><h1>API Reference<a class="headerlink" href="#api-reference" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="creating-connections">
+<span id="api-client"></span><h2>Creating connections<a class="headerlink" href="#creating-connections" title="Permalink to this headline">¶</a></h2>
+<p>These methods are in the <code class="docutils literal"><span class="pre">ibis</span></code> module namespace, and your main point of
+entry to using Ibis.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.hdfs_connect.html#ibis.hdfs_connect" title="ibis.hdfs_connect"><code class="xref py py-obj docutils literal"><span class="pre">hdfs_connect</span></code></a>([host,&nbsp;port,&nbsp;protocol,&nbsp;…])</td>
+<td>Connect to HDFS</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="impala-client">
+<h2>Impala client<a class="headerlink" href="#impala-client" title="Permalink to this headline">¶</a></h2>
+<p>These methods are available on the Impala client object after connecting to
+your HDFS cluster (<code class="docutils literal"><span class="pre">ibis.hdfs_connect</span></code>) and connecting to Impala with
+<code class="docutils literal"><span class="pre">ibis.impala.connect</span></code>.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.connect.html#ibis.impala.api.connect" title="ibis.impala.api.connect"><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></a>([host,&nbsp;port,&nbsp;database,&nbsp;timeout,&nbsp;…])</td>
+<td>Create an ImpalaClient for use with Ibis.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.close.html#ibis.impala.api.ImpalaClient.close" title="ibis.impala.api.ImpalaClient.close"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.close</span></code></a>()</td>
+<td>Close Impala connection and drop any temporary objects</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.database.html#ibis.impala.api.ImpalaClient.database" title="ibis.impala.api.ImpalaClient.database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.database</span></code></a>([name])</td>
+<td>Create a Database object for a given database name that can be used for</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="database-methods">
+<h3>Database methods<a class="headerlink" href="#database-methods" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_database.html#ibis.impala.api.ImpalaClient.set_database" title="ibis.impala.api.ImpalaClient.set_database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.set_database</span></code></a>(name)</td>
+<td>Set the default database scope for client</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_database.html#ibis.impala.api.ImpalaClient.create_database" title="ibis.impala.api.ImpalaClient.create_database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.create_database</span></code></a>(name[,&nbsp;path,&nbsp;force])</td>
+<td>Create a new Impala database</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_database.html#ibis.impala.api.ImpalaClient.drop_database" title="ibis.impala.api.ImpalaClient.drop_database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.drop_database</span></code></a>(name[,&nbsp;force])</td>
+<td>Drop an Impala database</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.list_databases.html#ibis.impala.api.ImpalaClient.list_databases" title="ibis.impala.api.ImpalaClient.list_databases"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.list_databases</span></code></a>([like])</td>
+<td>List databases in the Impala cluster.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.exists_database.html#ibis.impala.api.ImpalaClient.exists_database" title="ibis.impala.api.ImpalaClient.exists_database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.exists_database</span></code></a>(name)</td>
+<td>Checks if a given database exists</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.create_table.html#ibis.impala.api.ImpalaDatabase.create_table" title="ibis.impala.api.ImpalaDatabase.create_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaDatabase.create_table</span></code></a>(table_name[,&nbsp;obj])</td>
+<td>Dispatch to ImpalaClient.create_table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.drop.html#ibis.impala.api.ImpalaDatabase.drop" title="ibis.impala.api.ImpalaDatabase.drop"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaDatabase.drop</span></code></a>([force])</td>
+<td>Drop the database</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.namespace.html#ibis.impala.api.ImpalaDatabase.namespace" title="ibis.impala.api.ImpalaDatabase.namespace"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaDatabase.namespace</span></code></a>(ns)</td>
+<td>Creates a derived Database instance for collections of objects having a common prefix.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaDatabase.table.html#ibis.impala.api.ImpalaDatabase.table" title="ibis.impala.api.ImpalaDatabase.table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaDatabase.table</span></code></a>(name)</td>
+<td>Return a table expression referencing a table in this database</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="table-methods">
+<h3>Table methods<a class="headerlink" href="#table-methods" title="Permalink to this headline">¶</a></h3>
+<p>The <code class="docutils literal"><span class="pre">ImpalaClient</span></code> object itself has many helper utility methods. You’ll find
+the most methods on <code class="docutils literal"><span class="pre">ImpalaTable</span></code>.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.database.html#ibis.impala.api.ImpalaClient.database" title="ibis.impala.api.ImpalaClient.database"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.database</span></code></a>([name])</td>
+<td>Create a Database object for a given database name that can be used for</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.table.html#ibis.impala.api.ImpalaClient.table" title="ibis.impala.api.ImpalaClient.table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.table</span></code></a>(name[,&nbsp;database])</td>
+<td>Create a table expression that references a particular table in the</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.sql.html#ibis.impala.api.ImpalaClient.sql" title="ibis.impala.api.ImpalaClient.sql"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.sql</span></code></a>(query)</td>
+<td>Convert a SQL query to an Ibis table expression</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.raw_sql.html#ibis.impala.api.ImpalaClient.raw_sql" title="ibis.impala.api.ImpalaClient.raw_sql"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.raw_sql</span></code></a>(query[,&nbsp;results])</td>
+<td>Execute a given query string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.list_tables.html#ibis.impala.api.ImpalaClient.list_tables" title="ibis.impala.api.ImpalaClient.list_tables"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.list_tables</span></code></a>([like,&nbsp;database])</td>
+<td>List tables in the current (or indicated) database.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.exists_table.html#ibis.impala.api.ImpalaClient.exists_table" title="ibis.impala.api.ImpalaClient.exists_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.exists_table</span></code></a>(name[,&nbsp;database])</td>
+<td>Determine if the indicated table or view exists</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_table.html#ibis.impala.api.ImpalaClient.drop_table" title="ibis.impala.api.ImpalaClient.drop_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.drop_table</span></code></a>(table_name[,&nbsp;…])</td>
+<td>Drop an Impala table</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_table.html#ibis.impala.api.ImpalaClient.create_table" title="ibis.impala.api.ImpalaClient.create_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.create_table</span></code></a>(table_name[,&nbsp;obj,&nbsp;…])</td>
+<td>Create a new table in Impala using an Ibis table expression.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.insert.html#ibis.impala.api.ImpalaClient.insert" title="ibis.impala.api.ImpalaClient.insert"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.insert</span></code></a>(table_name[,&nbsp;obj,&nbsp;…])</td>
+<td>Insert into existing table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.truncate_table.html#ibis.impala.api.ImpalaClient.truncate_table" title="ibis.impala.api.ImpalaClient.truncate_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.truncate_table</span></code></a>(table_name[,&nbsp;…])</td>
+<td>Delete all rows from, but do not drop, an existing table</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.get_schema.html#ibis.impala.api.ImpalaClient.get_schema" title="ibis.impala.api.ImpalaClient.get_schema"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.get_schema</span></code></a>(table_name[,&nbsp;database])</td>
+<td>Return a Schema object for the indicated table and database</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.cache_table.html#ibis.impala.api.ImpalaClient.cache_table" title="ibis.impala.api.ImpalaClient.cache_table"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.cache_table</span></code></a>(table_name[,&nbsp;…])</td>
+<td>Caches a table in cluster memory in the given pool.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.load_data.html#ibis.impala.api.ImpalaClient.load_data" title="ibis.impala.api.ImpalaClient.load_data"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.load_data</span></code></a>(table_name,&nbsp;path[,&nbsp;…])</td>
+<td>Wraps the LOAD DATA DDL statement.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.get_options.html#ibis.impala.api.ImpalaClient.get_options" title="ibis.impala.api.ImpalaClient.get_options"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.get_options</span></code></a>()</td>
+<td>Return current query options for the Impala session</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_options.html#ibis.impala.api.ImpalaClient.set_options" title="ibis.impala.api.ImpalaClient.set_options"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.set_options</span></code></a>(options)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.set_compression_codec.html#ibis.impala.api.ImpalaClient.set_compression_codec" title="ibis.impala.api.ImpalaClient.set_compression_codec"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.set_compression_codec</span></code></a>(codec)</td>
+<td>Parameters</td>
+</tr>
+</tbody>
+</table>
+<p>The best way to interact with a single table is through the <code class="docutils literal"><span class="pre">ImpalaTable</span></code>
+object you get back from <code class="docutils literal"><span class="pre">ImpalaClient.table</span></code>.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.add_partition.html#ibis.impala.api.ImpalaTable.add_partition" title="ibis.impala.api.ImpalaTable.add_partition"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.add_partition</span></code></a>(spec[,&nbsp;location])</td>
+<td>Add a new table partition, creating any new directories in HDFS if necessary.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.alter.html#ibis.impala.api.ImpalaTable.alter" title="ibis.impala.api.ImpalaTable.alter"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.alter</span></code></a>([location,&nbsp;format,&nbsp;…])</td>
+<td>Change setting and parameters of the table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.alter_partition.html#ibis.impala.api.ImpalaTable.alter_partition" title="ibis.impala.api.ImpalaTable.alter_partition"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.alter_partition</span></code></a>(spec[,&nbsp;…])</td>
+<td>Change setting and parameters of an existing partition</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.column_stats.html#ibis.impala.api.ImpalaTable.column_stats" title="ibis.impala.api.ImpalaTable.column_stats"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.column_stats</span></code></a>()</td>
+<td>Return results of SHOW COLUMN STATS as a pandas DataFrame</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.compute_stats.html#ibis.impala.api.ImpalaTable.compute_stats" title="ibis.impala.api.ImpalaTable.compute_stats"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.compute_stats</span></code></a>([incremental,&nbsp;async])</td>
+<td>Invoke Impala COMPUTE STATS command to compute column, table, and partition statistics.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.describe_formatted.html#ibis.impala.api.ImpalaTable.describe_formatted" title="ibis.impala.api.ImpalaTable.describe_formatted"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.describe_formatted</span></code></a>()</td>
+<td>Return parsed results of DESCRIBE FORMATTED statement</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.drop.html#ibis.impala.api.ImpalaTable.drop" title="ibis.impala.api.ImpalaTable.drop"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.drop</span></code></a>()</td>
+<td>Drop the table from the database</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.drop_partition.html#ibis.impala.api.ImpalaTable.drop_partition" title="ibis.impala.api.ImpalaTable.drop_partition"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.drop_partition</span></code></a>(spec)</td>
+<td>Drop an existing table partition</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.files.html#ibis.impala.api.ImpalaTable.files" title="ibis.impala.api.ImpalaTable.files"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.files</span></code></a>()</td>
+<td>Return results of SHOW FILES statement</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.insert.html#ibis.impala.api.ImpalaTable.insert" title="ibis.impala.api.ImpalaTable.insert"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.insert</span></code></a>([obj,&nbsp;overwrite,&nbsp;…])</td>
+<td>Insert into Impala table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.invalidate_metadata.html#ibis.impala.api.ImpalaTable.invalidate_metadata" title="ibis.impala.api.ImpalaTable.invalidate_metadata"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.invalidate_metadata</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.load_data.html#ibis.impala.api.ImpalaTable.load_data" title="ibis.impala.api.ImpalaTable.load_data"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.load_data</span></code></a>(path[,&nbsp;overwrite,&nbsp;…])</td>
+<td>Wraps the LOAD DATA DDL statement.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.metadata.html#ibis.impala.api.ImpalaTable.metadata" title="ibis.impala.api.ImpalaTable.metadata"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.metadata</span></code></a>()</td>
+<td>Return parsed results of DESCRIBE FORMATTED statement</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.partition_schema.html#ibis.impala.api.ImpalaTable.partition_schema" title="ibis.impala.api.ImpalaTable.partition_schema"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.partition_schema</span></code></a>()</td>
+<td>For partitioned tables, return the schema (names and types) for the</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.partitions.html#ibis.impala.api.ImpalaTable.partitions" title="ibis.impala.api.ImpalaTable.partitions"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.partitions</span></code></a>()</td>
+<td>Return a pandas.DataFrame giving information about this table’s partitions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.refresh.html#ibis.impala.api.ImpalaTable.refresh" title="ibis.impala.api.ImpalaTable.refresh"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.refresh</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.rename.html#ibis.impala.api.ImpalaTable.rename" title="ibis.impala.api.ImpalaTable.rename"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.rename</span></code></a>(new_name[,&nbsp;database])</td>
+<td>Rename table inside Impala.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaTable.stats.html#ibis.impala.api.ImpalaTable.stats" title="ibis.impala.api.ImpalaTable.stats"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaTable.stats</span></code></a>()</td>
+<td>Return results of SHOW TABLE STATS as a DataFrame.</td>
+</tr>
+</tbody>
+</table>
+<p>Creating views is also possible:</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.create_view.html#ibis.impala.api.ImpalaClient.create_view" title="ibis.impala.api.ImpalaClient.create_view"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.create_view</span></code></a>(name,&nbsp;expr[,&nbsp;database])</td>
+<td>Create an Impala view from a table expression</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_view.html#ibis.impala.api.ImpalaClient.drop_view" title="ibis.impala.api.ImpalaClient.drop_view"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.drop_view</span></code></a>(name[,&nbsp;database,&nbsp;force])</td>
+<td>Drop an Impala view</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.drop_table_or_view.html#ibis.impala.api.ImpalaClient.drop_table_or_view" title="ibis.impala.api.ImpalaClient.drop_table_or_view"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.drop_table_or_view</span></code></a>(name[,&nbsp;…])</td>
+<td>Attempt to drop a relation that may be a view or table</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="accessing-data-formats-in-hdfs">
+<h3>Accessing data formats in HDFS<a class="headerlink" href="#accessing-data-formats-in-hdfs" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.avro_file.html#ibis.impala.api.ImpalaClient.avro_file" title="ibis.impala.api.ImpalaClient.avro_file"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.avro_file</span></code></a>(hdfs_dir,&nbsp;avro_schema)</td>
+<td>Create a (possibly temporary) table to read a collection of Avro data.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.delimited_file.html#ibis.impala.api.ImpalaClient.delimited_file" title="ibis.impala.api.ImpalaClient.delimited_file"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.delimited_file</span></code></a>(hdfs_dir,&nbsp;schema)</td>
+<td>Interpret delimited text files (CSV / TSV / etc.) as an Ibis table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.parquet_file.html#ibis.impala.api.ImpalaClient.parquet_file" title="ibis.impala.api.ImpalaClient.parquet_file"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.parquet_file</span></code></a>(hdfs_dir[,&nbsp;…])</td>
+<td>Make indicated parquet file in HDFS available as an Ibis table.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="executing-expressions">
+<h3>Executing expressions<a class="headerlink" href="#executing-expressions" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.execute.html#ibis.impala.api.ImpalaClient.execute" title="ibis.impala.api.ImpalaClient.execute"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.execute</span></code></a>(expr[,&nbsp;params,&nbsp;limit,&nbsp;…])</td>
+<td>Compile and execute Ibis expression using this backend client</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.impala.api.ImpalaClient.disable_codegen.html#ibis.impala.api.ImpalaClient.disable_codegen" title="ibis.impala.api.ImpalaClient.disable_codegen"><code class="xref py py-obj docutils literal"><span class="pre">ImpalaClient.disable_codegen</span></code></a>([disabled])</td>
+<td>Turn off or on LLVM codegen in Impala query execution</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="postgresql-client">
+<span id="api-postgres"></span><h2>PostgreSQL client<a class="headerlink" href="#postgresql-client" title="Permalink to this headline">¶</a></h2>
+<p>The PostgreSQL client is accessible through the <code class="docutils literal"><span class="pre">ibis.postgres</span></code> namespace.</p>
+<p>Use <code class="docutils literal"><span class="pre">ibis.postgres.connect</span></code> with a SQLAlchemy-compatible connection string to
+create a client.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.postgres.api.connect.html#ibis.sql.postgres.api.connect" title="ibis.sql.postgres.api.connect"><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></a>([host,&nbsp;user,&nbsp;password,&nbsp;port,&nbsp;…])</td>
+<td>Create an Ibis client located at <cite>user</cite>:<cite>password`&#64;`host</cite>:<cite>port</cite> connected to a PostgreSQL database named <cite>database</cite>.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.database.html#ibis.sql.postgres.api.PostgreSQLClient.database" title="ibis.sql.postgres.api.PostgreSQLClient.database"><code class="xref py py-obj docutils literal"><span class="pre">PostgreSQLClient.database</span></code></a>([name])</td>
+<td>Connect to a database called <cite>name</cite>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.list_tables.html#ibis.sql.postgres.api.PostgreSQLClient.list_tables" title="ibis.sql.postgres.api.PostgreSQLClient.list_tables"><code class="xref py py-obj docutils literal"><span class="pre">PostgreSQLClient.list_tables</span></code></a>([like,&nbsp;…])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.list_databases.html#ibis.sql.postgres.api.PostgreSQLClient.list_databases" title="ibis.sql.postgres.api.PostgreSQLClient.list_databases"><code class="xref py py-obj docutils literal"><span class="pre">PostgreSQLClient.list_databases</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.postgres.api.PostgreSQLClient.table.html#ibis.sql.postgres.api.PostgreSQLClient.table" title="ibis.sql.postgres.api.PostgreSQLClient.table"><code class="xref py py-obj docutils literal"><span class="pre">PostgreSQLClient.table</span></code></a>(name[,&nbsp;database,&nbsp;schema])</td>
+<td>Create a table expression that references a particular a table called <cite>name</cite> in a PostgreSQL database called <cite>database</cite>.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="sqlite-client">
+<span id="api-sqlite"></span><h2>SQLite client<a class="headerlink" href="#sqlite-client" title="Permalink to this headline">¶</a></h2>
+<p>The SQLite client is accessible through the <code class="docutils literal"><span class="pre">ibis.sqlite</span></code> namespace.</p>
+<p>Use <code class="docutils literal"><span class="pre">ibis.sqlite.connect</span></code> to create a SQLite client.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.sqlite.api.connect.html#ibis.sql.sqlite.api.connect" title="ibis.sql.sqlite.api.connect"><code class="xref py py-obj docutils literal"><span class="pre">connect</span></code></a>([path,&nbsp;create])</td>
+<td>Create an Ibis client connected to a SQLite database.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.attach.html#ibis.sql.sqlite.api.SQLiteClient.attach" title="ibis.sql.sqlite.api.SQLiteClient.attach"><code class="xref py py-obj docutils literal"><span class="pre">SQLiteClient.attach</span></code></a>(name,&nbsp;path[,&nbsp;create])</td>
+<td>Connect another SQLite database file</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.database.html#ibis.sql.sqlite.api.SQLiteClient.database" title="ibis.sql.sqlite.api.SQLiteClient.database"><code class="xref py py-obj docutils literal"><span class="pre">SQLiteClient.database</span></code></a>([name])</td>
+<td>Create a Database object for a given database name that can be used for</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.list_tables.html#ibis.sql.sqlite.api.SQLiteClient.list_tables" title="ibis.sql.sqlite.api.SQLiteClient.list_tables"><code class="xref py py-obj docutils literal"><span class="pre">SQLiteClient.list_tables</span></code></a>([like,&nbsp;database,&nbsp;…])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.sql.sqlite.api.SQLiteClient.table.html#ibis.sql.sqlite.api.SQLiteClient.table" title="ibis.sql.sqlite.api.SQLiteClient.table"><code class="xref py py-obj docutils literal"><span class="pre">SQLiteClient.table</span></code></a>(name[,&nbsp;database])</td>
+<td>Create a table expression that references a particular table in the</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hdfs">
+<span id="api-hdfs"></span><h2>HDFS<a class="headerlink" href="#hdfs" title="Permalink to this headline">¶</a></h2>
+<p>Client objects have an <code class="docutils literal"><span class="pre">hdfs</span></code> attribute you can use to interact directly with
+HDFS.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.ls.html#ibis.HDFS.ls" title="ibis.HDFS.ls"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.ls</span></code></a>(hdfs_path[,&nbsp;status])</td>
+<td>Return contents of directory</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.HDFS.chmod.html#ibis.HDFS.chmod" title="ibis.HDFS.chmod"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.chmod</span></code></a>(hdfs_path,&nbsp;permissions)</td>
+<td>Change permissions of a file of directory</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.chown.html#ibis.HDFS.chown" title="ibis.HDFS.chown"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.chown</span></code></a>(hdfs_path[,&nbsp;owner,&nbsp;group])</td>
+<td>Change owner (and/or group) of a file or directory</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.HDFS.get.html#ibis.HDFS.get" title="ibis.HDFS.get"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.get</span></code></a>(hdfs_path[,&nbsp;local_path,&nbsp;overwrite])</td>
+<td>Download remote file or directory to the local filesystem</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.head.html#ibis.HDFS.head" title="ibis.HDFS.head"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.head</span></code></a>(hdfs_path[,&nbsp;nbytes,&nbsp;offset])</td>
+<td>Retrieve the requested number of bytes from a file</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.HDFS.put.html#ibis.HDFS.put" title="ibis.HDFS.put"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.put</span></code></a>(hdfs_path,&nbsp;resource[,&nbsp;overwrite,&nbsp;…])</td>
+<td>Write file or directory to HDFS</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.put_tarfile.html#ibis.HDFS.put_tarfile" title="ibis.HDFS.put_tarfile"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.put_tarfile</span></code></a>(hdfs_path,&nbsp;local_path[,&nbsp;…])</td>
+<td>Write contents of tar archive to HDFS directly without having to</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.HDFS.rm.html#ibis.HDFS.rm" title="ibis.HDFS.rm"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.rm</span></code></a>(path)</td>
+<td>Delete a single file</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.rmdir.html#ibis.HDFS.rmdir" title="ibis.HDFS.rmdir"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.rmdir</span></code></a>(path)</td>
+<td>Delete a directory and all its contents</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.HDFS.size.html#ibis.HDFS.size" title="ibis.HDFS.size"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.size</span></code></a>(hdfs_path)</td>
+<td>Return total size of file or directory</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.HDFS.status.html#ibis.HDFS.status" title="ibis.HDFS.status"><code class="xref py py-obj docutils literal"><span class="pre">HDFS.status</span></code></a>(path)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="top-level-expression-apis">
+<h2>Top-level expression APIs<a class="headerlink" href="#top-level-expression-apis" title="Permalink to this headline">¶</a></h2>
+<p>These methods are available directly in the <code class="docutils literal"><span class="pre">ibis</span></code> module namespace.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.case.html#ibis.case" title="ibis.case"><code class="xref py py-obj docutils literal"><span class="pre">case</span></code></a>()</td>
+<td>Similar to the .case method on array expressions, create a case builder</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.literal.html#ibis.literal" title="ibis.literal"><code class="xref py py-obj docutils literal"><span class="pre">literal</span></code></a>(value[,&nbsp;type])</td>
+<td>Create a scalar expression from a Python value.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.schema.html#ibis.schema" title="ibis.schema"><code class="xref py py-obj docutils literal"><span class="pre">schema</span></code></a>([pairs,&nbsp;names,&nbsp;types])</td>
+<td>Validate and return an Ibis Schema object</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.table.html#ibis.table" title="ibis.table"><code class="xref py py-obj docutils literal"><span class="pre">table</span></code></a>(schema[,&nbsp;name])</td>
+<td>Create an unbound Ibis table for creating expressions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.timestamp.html#ibis.timestamp" title="ibis.timestamp"><code class="xref py py-obj docutils literal"><span class="pre">timestamp</span></code></a>(value)</td>
+<td>Returns a timestamp literal if value is likely coercible to a timestamp</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.where.html#ibis.where" title="ibis.where"><code class="xref py py-obj docutils literal"><span class="pre">where</span></code></a>(boolean_expr,&nbsp;true_expr,&nbsp;false_null_expr)</td>
+<td>Equivalent to the ternary expression: if X then Y else Z</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.ifelse.html#ibis.ifelse" title="ibis.ifelse"><code class="xref py py-obj docutils literal"><span class="pre">ifelse</span></code></a>(arg,&nbsp;true_expr,&nbsp;false_expr)</td>
+<td>Shorthand for implementing ternary expressions</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.coalesce.html#ibis.coalesce" title="ibis.coalesce"><code class="xref py py-obj docutils literal"><span class="pre">coalesce</span></code></a>(*args)</td>
+<td>Compute the first non-null value(s) from the passed arguments in left-to-right order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.greatest.html#ibis.greatest" title="ibis.greatest"><code class="xref py py-obj docutils literal"><span class="pre">greatest</span></code></a>(*args)</td>
+<td>Compute the largest value (row-wise, if any arrays are present) among the supplied arguments.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.least.html#ibis.least" title="ibis.least"><code class="xref py py-obj docutils literal"><span class="pre">least</span></code></a>(*args)</td>
+<td>Compute the smallest value (row-wise, if any arrays are present) among the supplied arguments.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.negate.html#ibis.negate" title="ibis.negate"><code class="xref py py-obj docutils literal"><span class="pre">negate</span></code></a>(arg)</td>
+<td>Negate a numeric expression</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.desc.html#ibis.desc" title="ibis.desc"><code class="xref py py-obj docutils literal"><span class="pre">desc</span></code></a>(expr)</td>
+<td>Create a sort key (when used in sort_by) by the passed array expression or column name.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.now.html#ibis.now" title="ibis.now"><code class="xref py py-obj docutils literal"><span class="pre">now</span></code></a>()</td>
+<td>Compute the current timestamp</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.NA.html#ibis.NA" title="ibis.NA"><code class="xref py py-obj docutils literal"><span class="pre">NA</span></code></a></td>
+<td>A scalar value expression representing NULL</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.null.html#ibis.null" title="ibis.null"><code class="xref py py-obj docutils literal"><span class="pre">null</span></code></a>()</td>
+<td>Create a NULL/NA scalar</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr_list.html#ibis.expr_list" title="ibis.expr_list"><code class="xref py py-obj docutils literal"><span class="pre">expr_list</span></code></a>(exprs)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.row_number.html#ibis.row_number" title="ibis.row_number"><code class="xref py py-obj docutils literal"><span class="pre">row_number</span></code></a>()</td>
+<td>Analytic function for the current row number, starting at 0</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.window.html#ibis.window" title="ibis.window"><code class="xref py py-obj docutils literal"><span class="pre">window</span></code></a>([preceding,&nbsp;following,&nbsp;group_by,&nbsp;…])</td>
+<td>Create a window clause for use with window (analytic and aggregate) functions.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.trailing_window.html#ibis.trailing_window" title="ibis.trailing_window"><code class="xref py py-obj docutils literal"><span class="pre">trailing_window</span></code></a>(periods[,&nbsp;group_by,&nbsp;order_by])</td>
+<td>Create a trailing window for use with aggregate window functions.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.cumulative_window.html#ibis.cumulative_window" title="ibis.cumulative_window"><code class="xref py py-obj docutils literal"><span class="pre">cumulative_window</span></code></a>([group_by,&nbsp;order_by])</td>
+<td>Create a cumulative window clause for use with aggregate window functions.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="general-expression-methods">
+<span id="api-expr"></span><h2>General expression methods<a class="headerlink" href="#general-expression-methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.Expr.compile.html#ibis.expr.api.Expr.compile" title="ibis.expr.api.Expr.compile"><code class="xref py py-obj docutils literal"><span class="pre">Expr.compile</span></code></a>([limit,&nbsp;params])</td>
+<td>Compile expression to whatever execution target, to verify</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.Expr.equals.html#ibis.expr.api.Expr.equals" title="ibis.expr.api.Expr.equals"><code class="xref py py-obj docutils literal"><span class="pre">Expr.equals</span></code></a>(other[,&nbsp;cache])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.Expr.execute.html#ibis.expr.api.Expr.execute" title="ibis.expr.api.Expr.execute"><code class="xref py py-obj docutils literal"><span class="pre">Expr.execute</span></code></a>([limit,&nbsp;async,&nbsp;params])</td>
+<td>If this expression is based on physical tables in a database backend, execute it against that backend.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.Expr.pipe.html#ibis.expr.api.Expr.pipe" title="ibis.expr.api.Expr.pipe"><code class="xref py py-obj docutils literal"><span class="pre">Expr.pipe</span></code></a>(f,&nbsp;*args,&nbsp;**kwargs)</td>
+<td>Generic composition function to enable expression pipelining.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.Expr.verify.html#ibis.expr.api.Expr.verify" title="ibis.expr.api.Expr.verify"><code class="xref py py-obj docutils literal"><span class="pre">Expr.verify</span></code></a>()</td>
+<td>Returns True if expression can be compiled to its attached client</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="api-table">
+<span id="id1"></span><h2>Table methods<a class="headerlink" href="#api-table" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.add_column.html#ibis.expr.api.TableExpr.add_column" title="ibis.expr.api.TableExpr.add_column"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.add_column</span></code></a>(expr[,&nbsp;name])</td>
+<td>Add indicated column expression to table, producing a new table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.aggregate.html#ibis.expr.api.TableExpr.aggregate" title="ibis.expr.api.TableExpr.aggregate"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.aggregate</span></code></a>(table[,&nbsp;metrics,&nbsp;by,&nbsp;having])</td>
+<td>Aggregate a table with a given set of reductions, with grouping expressions, and post-aggregation filters.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.count.html#ibis.expr.api.TableExpr.count" title="ibis.expr.api.TableExpr.count"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.count</span></code></a>()</td>
+<td>Returns the computed number of rows in the table expression</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.distinct.html#ibis.expr.api.TableExpr.distinct" title="ibis.expr.api.TableExpr.distinct"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.distinct</span></code></a>()</td>
+<td>Compute set of unique rows/tuples occurring in this table</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.info.html#ibis.expr.api.TableExpr.info" title="ibis.expr.api.TableExpr.info"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.info</span></code></a>([buf])</td>
+<td>Similar to pandas DataFrame.info.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.filter.html#ibis.expr.api.TableExpr.filter" title="ibis.expr.api.TableExpr.filter"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.filter</span></code></a>(table,&nbsp;predicates)</td>
+<td>Select rows from table based on boolean expressions</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.get_column.html#ibis.expr.api.TableExpr.get_column" title="ibis.expr.api.TableExpr.get_column"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.get_column</span></code></a>(name)</td>
+<td>Get a reference to a single column from the table</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.get_columns.html#ibis.expr.api.TableExpr.get_columns" title="ibis.expr.api.TableExpr.get_columns"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.get_columns</span></code></a>(iterable)</td>
+<td>Get multiple columns from the table</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.group_by.html#ibis.expr.api.TableExpr.group_by" title="ibis.expr.api.TableExpr.group_by"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.group_by</span></code></a>([by])</td>
+<td>Create an intermediate grouped table expression, pending some group operation to be applied with it.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.groupby.html#ibis.expr.api.TableExpr.groupby" title="ibis.expr.api.TableExpr.groupby"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.groupby</span></code></a>([by])</td>
+<td>Create an intermediate grouped table expression, pending some group operation to be applied with it.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.limit.html#ibis.expr.api.TableExpr.limit" title="ibis.expr.api.TableExpr.limit"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.limit</span></code></a>(table,&nbsp;n[,&nbsp;offset])</td>
+<td>Select the first n rows at beginning of table (may not be deterministic depending on implementation and presence of a sorting).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.mutate.html#ibis.expr.api.TableExpr.mutate" title="ibis.expr.api.TableExpr.mutate"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.mutate</span></code></a>(table[,&nbsp;exprs])</td>
+<td>Convenience function for table projections involving adding columns</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.projection.html#ibis.expr.api.TableExpr.projection" title="ibis.expr.api.TableExpr.projection"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.projection</span></code></a>(table,&nbsp;exprs)</td>
+<td>Compute new table expression with the indicated column expressions from this table.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.relabel.html#ibis.expr.api.TableExpr.relabel" title="ibis.expr.api.TableExpr.relabel"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.relabel</span></code></a>(table,&nbsp;substitutions[,&nbsp;…])</td>
+<td>Change table column names, otherwise leaving table unaltered</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.schema.html#ibis.expr.api.TableExpr.schema" title="ibis.expr.api.TableExpr.schema"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.schema</span></code></a>()</td>
+<td>Get the schema for this table (if one is known)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.set_column.html#ibis.expr.api.TableExpr.set_column" title="ibis.expr.api.TableExpr.set_column"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.set_column</span></code></a>(table,&nbsp;name,&nbsp;expr)</td>
+<td>Replace an existing column with a new expression</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.sort_by.html#ibis.expr.api.TableExpr.sort_by" title="ibis.expr.api.TableExpr.sort_by"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.sort_by</span></code></a>(table,&nbsp;sort_exprs)</td>
+<td>Sort table by the indicated column expressions and sort orders</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.union.html#ibis.expr.api.TableExpr.union" title="ibis.expr.api.TableExpr.union"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.union</span></code></a>(left,&nbsp;right[,&nbsp;distinct])</td>
+<td>Form the table set union of two table expressions having identical schemas.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.view.html#ibis.expr.api.TableExpr.view" title="ibis.expr.api.TableExpr.view"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.view</span></code></a>()</td>
+<td>Create a new table expression that is semantically equivalent to the current one, but is considered a distinct relation for evaluation purposes (e.g.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.join.html#ibis.expr.api.TableExpr.join" title="ibis.expr.api.TableExpr.join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.join</span></code></a>(left,&nbsp;right[,&nbsp;predicates,&nbsp;how])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.cross_join.html#ibis.expr.api.TableExpr.cross_join" title="ibis.expr.api.TableExpr.cross_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.cross_join</span></code></a>(*tables,&nbsp;**kwargs)</td>
+<td>Perform a cross join (cartesian product) amongst a list of tables, with</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.inner_join.html#ibis.expr.api.TableExpr.inner_join" title="ibis.expr.api.TableExpr.inner_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.inner_join</span></code></a>(other[,&nbsp;predicates])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.left_join.html#ibis.expr.api.TableExpr.left_join" title="ibis.expr.api.TableExpr.left_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.left_join</span></code></a>(other[,&nbsp;predicates])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.outer_join.html#ibis.expr.api.TableExpr.outer_join" title="ibis.expr.api.TableExpr.outer_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.outer_join</span></code></a>(other[,&nbsp;predicates])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.semi_join.html#ibis.expr.api.TableExpr.semi_join" title="ibis.expr.api.TableExpr.semi_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.semi_join</span></code></a>(other[,&nbsp;predicates])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TableExpr.anti_join.html#ibis.expr.api.TableExpr.anti_join" title="ibis.expr.api.TableExpr.anti_join"><code class="xref py py-obj docutils literal"><span class="pre">TableExpr.anti_join</span></code></a>(other[,&nbsp;predicates])</td>
+<td>Perform a relational join between two tables.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="grouped-table-methods">
+<h3>Grouped table methods<a class="headerlink" href="#grouped-table-methods" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.aggregate.html#ibis.expr.api.GroupedTableExpr.aggregate" title="ibis.expr.api.GroupedTableExpr.aggregate"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.aggregate</span></code></a>([metrics])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.count.html#ibis.expr.api.GroupedTableExpr.count" title="ibis.expr.api.GroupedTableExpr.count"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.count</span></code></a>([metric_name])</td>
+<td>Convenience function for computing the group sizes (number of rows per group) given a grouped table.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.having.html#ibis.expr.api.GroupedTableExpr.having" title="ibis.expr.api.GroupedTableExpr.having"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.having</span></code></a>(expr)</td>
+<td>Add a post-aggregation result filter (like the having argument in</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.mutate.html#ibis.expr.api.GroupedTableExpr.mutate" title="ibis.expr.api.GroupedTableExpr.mutate"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.mutate</span></code></a>([exprs])</td>
+<td>Returns a table projection with analytic / window functions applied.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.order_by.html#ibis.expr.api.GroupedTableExpr.order_by" title="ibis.expr.api.GroupedTableExpr.order_by"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.order_by</span></code></a>(expr)</td>
+<td>Expressions to use for ordering data for a window function computation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.over.html#ibis.expr.api.GroupedTableExpr.over" title="ibis.expr.api.GroupedTableExpr.over"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.over</span></code></a>(window)</td>
+<td>Add a window clause to be applied to downstream analytic expressions</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.projection.html#ibis.expr.api.GroupedTableExpr.projection" title="ibis.expr.api.GroupedTableExpr.projection"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.projection</span></code></a>(exprs)</td>
+<td>Like mutate, but do not include existing table columns</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.GroupedTableExpr.size.html#ibis.expr.api.GroupedTableExpr.size" title="ibis.expr.api.GroupedTableExpr.size"><code class="xref py py-obj docutils literal"><span class="pre">GroupedTableExpr.size</span></code></a>([metric_name])</td>
+<td>Convenience function for computing the group sizes (number of rows per group) given a grouped table.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="generic-value-methods">
+<h2>Generic value methods<a class="headerlink" href="#generic-value-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="scalar-or-column-methods">
+<span id="api-functions"></span><h3>Scalar or column methods<a class="headerlink" href="#scalar-or-column-methods" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.between.html#ibis.expr.api.ValueExpr.between" title="ibis.expr.api.ValueExpr.between"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.between</span></code></a>(arg,&nbsp;lower,&nbsp;upper)</td>
+<td>Check if the input expr falls between the lower/upper bounds passed.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.cast.html#ibis.expr.api.ValueExpr.cast" title="ibis.expr.api.ValueExpr.cast"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.cast</span></code></a>(arg,&nbsp;target_type)</td>
+<td>Cast value(s) to indicated data type.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.coalesce.html#ibis.expr.api.ValueExpr.coalesce" title="ibis.expr.api.ValueExpr.coalesce"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.coalesce</span></code></a>(*args)</td>
+<td>Compute the first non-null value(s) from the passed arguments in left-to-right order.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.fillna.html#ibis.expr.api.ValueExpr.fillna" title="ibis.expr.api.ValueExpr.fillna"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.fillna</span></code></a>(arg,&nbsp;fill_value)</td>
+<td>Replace any null values with the indicated fill value</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.isin.html#ibis.expr.api.ValueExpr.isin" title="ibis.expr.api.ValueExpr.isin"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.isin</span></code></a>(arg,&nbsp;values)</td>
+<td>Check whether the value expression is contained within the indicated list of values.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.notin.html#ibis.expr.api.ValueExpr.notin" title="ibis.expr.api.ValueExpr.notin"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.notin</span></code></a>(arg,&nbsp;values)</td>
+<td>Like isin, but checks whether this expression’s value(s) are not contained in the passed values.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.nullif.html#ibis.expr.api.ValueExpr.nullif" title="ibis.expr.api.ValueExpr.nullif"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.nullif</span></code></a>(value,&nbsp;null_if_expr)</td>
+<td>Set values to null if they match/equal a particular expression (scalar or array-valued).</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.hash.html#ibis.expr.api.ValueExpr.hash" title="ibis.expr.api.ValueExpr.hash"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.hash</span></code></a>(arg[,&nbsp;how])</td>
+<td>Compute an integer hash value for the indicated value expression.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.isnull.html#ibis.expr.api.ValueExpr.isnull" title="ibis.expr.api.ValueExpr.isnull"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.isnull</span></code></a>(arg)</td>
+<td>Returns true if values are null</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.notnull.html#ibis.expr.api.ValueExpr.notnull" title="ibis.expr.api.ValueExpr.notnull"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.notnull</span></code></a>(arg)</td>
+<td>Returns true if values are not null</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.over.html#ibis.expr.api.ValueExpr.over" title="ibis.expr.api.ValueExpr.over"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.over</span></code></a>(expr,&nbsp;window)</td>
+<td>Turn an aggregation or full-sample analytic operation into a windowed operation.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.typeof.html#ibis.expr.api.ValueExpr.typeof" title="ibis.expr.api.ValueExpr.typeof"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.typeof</span></code></a>(arg)</td>
+<td>Return the data type of the argument according to the current backend</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.case.html#ibis.expr.api.ValueExpr.case" title="ibis.expr.api.ValueExpr.case"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.case</span></code></a>(arg)</td>
+<td>Create a new SimpleCaseBuilder to chain multiple if-else statements.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.cases.html#ibis.expr.api.ValueExpr.cases" title="ibis.expr.api.ValueExpr.cases"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.cases</span></code></a>(arg,&nbsp;case_result_pairs[,&nbsp;…])</td>
+<td>Create a case expression in one shot.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ValueExpr.substitute.html#ibis.expr.api.ValueExpr.substitute" title="ibis.expr.api.ValueExpr.substitute"><code class="xref py py-obj docutils literal"><span class="pre">ValueExpr.substitute</span></code></a>(arg,&nbsp;value[,&nbsp;…])</td>
+<td>Substitute (replace) one or more values in a value expression</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="column-methods">
+<h3>Column methods<a class="headerlink" href="#column-methods" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.distinct.html#ibis.expr.api.ColumnExpr.distinct" title="ibis.expr.api.ColumnExpr.distinct"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.distinct</span></code></a>(arg)</td>
+<td>Compute set of unique values occurring in this array.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.count.html#ibis.expr.api.ColumnExpr.count" title="ibis.expr.api.ColumnExpr.count"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.count</span></code></a>(expr[,&nbsp;where])</td>
+<td>Compute cardinality / sequence size of expression.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.min.html#ibis.expr.api.ColumnExpr.min" title="ibis.expr.api.ColumnExpr.min"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.min</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.max.html#ibis.expr.api.ColumnExpr.max" title="ibis.expr.api.ColumnExpr.max"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.max</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.approx_median.html#ibis.expr.api.ColumnExpr.approx_median" title="ibis.expr.api.ColumnExpr.approx_median"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.approx_median</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.approx_nunique.html#ibis.expr.api.ColumnExpr.approx_nunique" title="ibis.expr.api.ColumnExpr.approx_nunique"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.approx_nunique</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.group_concat.html#ibis.expr.api.ColumnExpr.group_concat" title="ibis.expr.api.ColumnExpr.group_concat"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.group_concat</span></code></a>(arg[,&nbsp;sep])</td>
+<td>Concatenate values using the indicated separator (comma by default) to</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.nunique.html#ibis.expr.api.ColumnExpr.nunique" title="ibis.expr.api.ColumnExpr.nunique"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.nunique</span></code></a>(arg)</td>
+<td>Shorthand for foo.distinct().count(); computing the number of unique values in an array.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.summary.html#ibis.expr.api.ColumnExpr.summary" title="ibis.expr.api.ColumnExpr.summary"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.summary</span></code></a>(arg[,&nbsp;exact_nunique,&nbsp;prefix])</td>
+<td>Compute a set of summary metrics from the input value expression</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.value_counts.html#ibis.expr.api.ColumnExpr.value_counts" title="ibis.expr.api.ColumnExpr.value_counts"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.value_counts</span></code></a>(arg[,&nbsp;metric_name])</td>
+<td>Compute a frequency table for this value expression</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.first.html#ibis.expr.api.ColumnExpr.first" title="ibis.expr.api.ColumnExpr.first"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.first</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.last.html#ibis.expr.api.ColumnExpr.last" title="ibis.expr.api.ColumnExpr.last"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.last</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.dense_rank.html#ibis.expr.api.ColumnExpr.dense_rank" title="ibis.expr.api.ColumnExpr.dense_rank"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.dense_rank</span></code></a>(arg)</td>
+<td>Compute position of first element within each equal-value group in sorted order, ignoring duplicate values.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.rank.html#ibis.expr.api.ColumnExpr.rank" title="ibis.expr.api.ColumnExpr.rank"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.rank</span></code></a>(arg)</td>
+<td>Compute position of first element within each equal-value group in sorted order.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.lag.html#ibis.expr.api.ColumnExpr.lag" title="ibis.expr.api.ColumnExpr.lag"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.lag</span></code></a>(arg[,&nbsp;offset,&nbsp;default])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.lead.html#ibis.expr.api.ColumnExpr.lead" title="ibis.expr.api.ColumnExpr.lead"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.lead</span></code></a>(arg[,&nbsp;offset,&nbsp;default])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.cummin.html#ibis.expr.api.ColumnExpr.cummin" title="ibis.expr.api.ColumnExpr.cummin"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.cummin</span></code></a>(arg)</td>
+<td>Cumulative min.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.ColumnExpr.cummax.html#ibis.expr.api.ColumnExpr.cummax" title="ibis.expr.api.ColumnExpr.cummax"><code class="xref py py-obj docutils literal"><span class="pre">ColumnExpr.cummax</span></code></a>(arg)</td>
+<td>Cumulative max.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="general-numeric-methods">
+<h2>General numeric methods<a class="headerlink" href="#general-numeric-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Scalar or column methods<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.abs.html#ibis.expr.api.NumericValue.abs" title="ibis.expr.api.NumericValue.abs"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.abs</span></code></a>(arg)</td>
+<td>Absolute value</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.ceil.html#ibis.expr.api.NumericValue.ceil" title="ibis.expr.api.NumericValue.ceil"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.ceil</span></code></a>(arg)</td>
+<td>Round up to the nearest integer value greater than or equal to this value</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.floor.html#ibis.expr.api.NumericValue.floor" title="ibis.expr.api.NumericValue.floor"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.floor</span></code></a>(arg)</td>
+<td>Round down to the nearest integer value less than or equal to this value</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sign.html#ibis.expr.api.NumericValue.sign" title="ibis.expr.api.NumericValue.sign"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.sign</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.exp.html#ibis.expr.api.NumericValue.exp" title="ibis.expr.api.NumericValue.exp"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.exp</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sqrt.html#ibis.expr.api.NumericValue.sqrt" title="ibis.expr.api.NumericValue.sqrt"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.sqrt</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log.html#ibis.expr.api.NumericValue.log" title="ibis.expr.api.NumericValue.log"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.log</span></code></a>(arg[,&nbsp;base])</td>
+<td>Perform the logarithm using a specified base</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.ln.html#ibis.expr.api.NumericValue.ln" title="ibis.expr.api.NumericValue.ln"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.ln</span></code></a>(arg)</td>
+<td>Natural logarithm</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log2.html#ibis.expr.api.NumericValue.log2" title="ibis.expr.api.NumericValue.log2"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.log2</span></code></a>(arg)</td>
+<td>Logarithm base 2</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.log10.html#ibis.expr.api.NumericValue.log10" title="ibis.expr.api.NumericValue.log10"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.log10</span></code></a>(arg)</td>
+<td>Logarithm base 10</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.round.html#ibis.expr.api.NumericValue.round" title="ibis.expr.api.NumericValue.round"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.round</span></code></a>(arg[,&nbsp;digits])</td>
+<td>Round values either to integer or indicated number of decimal places.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.nullifzero.html#ibis.expr.api.NumericValue.nullifzero" title="ibis.expr.api.NumericValue.nullifzero"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.nullifzero</span></code></a>(arg)</td>
+<td>Set values to NULL if they equal to zero.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.zeroifnull.html#ibis.expr.api.NumericValue.zeroifnull" title="ibis.expr.api.NumericValue.zeroifnull"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.zeroifnull</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.add.html#ibis.expr.api.NumericValue.add" title="ibis.expr.api.NumericValue.add"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.add</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.sub.html#ibis.expr.api.NumericValue.sub" title="ibis.expr.api.NumericValue.sub"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.sub</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.mul.html#ibis.expr.api.NumericValue.mul" title="ibis.expr.api.NumericValue.mul"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.mul</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.div.html#ibis.expr.api.NumericValue.div" title="ibis.expr.api.NumericValue.div"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.div</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.pow.html#ibis.expr.api.NumericValue.pow" title="ibis.expr.api.NumericValue.pow"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.pow</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.rdiv.html#ibis.expr.api.NumericValue.rdiv" title="ibis.expr.api.NumericValue.rdiv"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.rdiv</span></code></a>(other)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericValue.rsub.html#ibis.expr.api.NumericValue.rsub" title="ibis.expr.api.NumericValue.rsub"><code class="xref py py-obj docutils literal"><span class="pre">NumericValue.rsub</span></code></a>(other)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h3>Column methods<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.sum.html#ibis.expr.api.NumericColumn.sum" title="ibis.expr.api.NumericColumn.sum"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.sum</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.mean.html#ibis.expr.api.NumericColumn.mean" title="ibis.expr.api.NumericColumn.mean"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.mean</span></code></a>([where])</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.std.html#ibis.expr.api.NumericColumn.std" title="ibis.expr.api.NumericColumn.std"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.std</span></code></a>(arg[,&nbsp;where,&nbsp;how])</td>
+<td>Compute standard deviation of numeric array</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.var.html#ibis.expr.api.NumericColumn.var" title="ibis.expr.api.NumericColumn.var"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.var</span></code></a>(arg[,&nbsp;where,&nbsp;how])</td>
+<td>Compute standard deviation of numeric array</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.cumsum.html#ibis.expr.api.NumericColumn.cumsum" title="ibis.expr.api.NumericColumn.cumsum"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.cumsum</span></code></a>(arg)</td>
+<td>Cumulative sum.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.cummean.html#ibis.expr.api.NumericColumn.cummean" title="ibis.expr.api.NumericColumn.cummean"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.cummean</span></code></a>(arg)</td>
+<td>Cumulative mean.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.bottomk.html#ibis.expr.api.NumericColumn.bottomk" title="ibis.expr.api.NumericColumn.bottomk"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.bottomk</span></code></a>(arg,&nbsp;k[,&nbsp;by])</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.topk.html#ibis.expr.api.NumericColumn.topk" title="ibis.expr.api.NumericColumn.topk"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.topk</span></code></a>(arg,&nbsp;k[,&nbsp;by])</td>
+<td>Produces</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.bucket.html#ibis.expr.api.NumericColumn.bucket" title="ibis.expr.api.NumericColumn.bucket"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.bucket</span></code></a>(arg,&nbsp;buckets[,&nbsp;closed,&nbsp;…])</td>
+<td>Compute a discrete binning of a numeric array</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.NumericColumn.histogram.html#ibis.expr.api.NumericColumn.histogram" title="ibis.expr.api.NumericColumn.histogram"><code class="xref py py-obj docutils literal"><span class="pre">NumericColumn.histogram</span></code></a>(arg[,&nbsp;nbins,&nbsp;…])</td>
+<td>Compute a histogram with fixed width bins</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="integer-methods">
+<h2>Integer methods<a class="headerlink" href="#integer-methods" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>Scalar or column methods<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.IntegerValue.convert_base.html#ibis.expr.api.IntegerValue.convert_base" title="ibis.expr.api.IntegerValue.convert_base"><code class="xref py py-obj docutils literal"><span class="pre">IntegerValue.convert_base</span></code></a>(arg,&nbsp;from_base,&nbsp;…)</td>
+<td>Convert number (as integer or string) from one base to another</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.IntegerValue.to_timestamp.html#ibis.expr.api.IntegerValue.to_timestamp" title="ibis.expr.api.IntegerValue.to_timestamp"><code class="xref py py-obj docutils literal"><span class="pre">IntegerValue.to_timestamp</span></code></a>(arg[,&nbsp;unit])</td>
+<td>Convert integer UNIX timestamp (at some resolution) to a timestamp type</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="string-methods">
+<span id="api-string"></span><h2>String methods<a class="headerlink" href="#string-methods" title="Permalink to this headline">¶</a></h2>
+<p>All string operations are valid either on scalar or array values</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.convert_base.html#ibis.expr.api.StringValue.convert_base" title="ibis.expr.api.StringValue.convert_base"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.convert_base</span></code></a>(arg,&nbsp;from_base,&nbsp;to_base)</td>
+<td>Convert number (as integer or string) from one base to another</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.length.html#ibis.expr.api.StringValue.length" title="ibis.expr.api.StringValue.length"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.length</span></code></a>(arg)</td>
+<td>Compute length of strings</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.lower.html#ibis.expr.api.StringValue.lower" title="ibis.expr.api.StringValue.lower"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.lower</span></code></a>(arg)</td>
+<td>Convert string to all lowercase</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.upper.html#ibis.expr.api.StringValue.upper" title="ibis.expr.api.StringValue.upper"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.upper</span></code></a>(arg)</td>
+<td>Convert string to all uppercase</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.reverse.html#ibis.expr.api.StringValue.reverse" title="ibis.expr.api.StringValue.reverse"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.reverse</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.ascii_str.html#ibis.expr.api.StringValue.ascii_str" title="ibis.expr.api.StringValue.ascii_str"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.ascii_str</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.strip.html#ibis.expr.api.StringValue.strip" title="ibis.expr.api.StringValue.strip"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.strip</span></code></a>(arg)</td>
+<td>Remove whitespace from left and right sides of string</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.lstrip.html#ibis.expr.api.StringValue.lstrip" title="ibis.expr.api.StringValue.lstrip"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.lstrip</span></code></a>(arg)</td>
+<td>Remove whitespace from left side of string</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.rstrip.html#ibis.expr.api.StringValue.rstrip" title="ibis.expr.api.StringValue.rstrip"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.rstrip</span></code></a>(arg)</td>
+<td>Remove whitespace from right side of string</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.capitalize.html#ibis.expr.api.StringValue.capitalize" title="ibis.expr.api.StringValue.capitalize"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.capitalize</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.contains.html#ibis.expr.api.StringValue.contains" title="ibis.expr.api.StringValue.contains"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.contains</span></code></a>(arg,&nbsp;substr)</td>
+<td>Determine if indicated string is exactly contained in the calling string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.like.html#ibis.expr.api.StringValue.like" title="ibis.expr.api.StringValue.like"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.like</span></code></a>(patterns)</td>
+<td>Wildcard fuzzy matching function equivalent to the SQL LIKE directive.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.parse_url.html#ibis.expr.api.StringValue.parse_url" title="ibis.expr.api.StringValue.parse_url"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.parse_url</span></code></a>(arg,&nbsp;extract[,&nbsp;key])</td>
+<td>Returns the portion of a URL corresponding to a part specified</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.substr.html#ibis.expr.api.StringValue.substr" title="ibis.expr.api.StringValue.substr"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.substr</span></code></a>(start[,&nbsp;length])</td>
+<td>Pull substrings out of each string value by position and maximum length.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.left.html#ibis.expr.api.StringValue.left" title="ibis.expr.api.StringValue.left"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.left</span></code></a>(nchars)</td>
+<td>Return left-most up to N characters from each string.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.right.html#ibis.expr.api.StringValue.right" title="ibis.expr.api.StringValue.right"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.right</span></code></a>(nchars)</td>
+<td>Split up to nchars starting from end of each string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.repeat.html#ibis.expr.api.StringValue.repeat" title="ibis.expr.api.StringValue.repeat"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.repeat</span></code></a>(n)</td>
+<td>Returns the argument string repeated n times</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.find.html#ibis.expr.api.StringValue.find" title="ibis.expr.api.StringValue.find"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.find</span></code></a>(substr[,&nbsp;start,&nbsp;end])</td>
+<td>Returns position (0 indexed) of first occurence of substring,</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.translate.html#ibis.expr.api.StringValue.translate" title="ibis.expr.api.StringValue.translate"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.translate</span></code></a>(from_str,&nbsp;to_str)</td>
+<td>Returns string with set of ‘from’ characters replaced by set of ‘to’ characters.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.find_in_set.html#ibis.expr.api.StringValue.find_in_set" title="ibis.expr.api.StringValue.find_in_set"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.find_in_set</span></code></a>(str_list)</td>
+<td>Returns postion (0 indexed) of first occurence of argument within a list of strings.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.join.html#ibis.expr.api.StringValue.join" title="ibis.expr.api.StringValue.join"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.join</span></code></a>(strings)</td>
+<td>Joins a list of strings together using the calling string as a separator</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.replace.html#ibis.expr.api.StringValue.replace" title="ibis.expr.api.StringValue.replace"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.replace</span></code></a>(arg,&nbsp;pattern,&nbsp;replacement)</td>
+<td>Replaces each exactly occurrence of pattern with given replacement string.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.lpad.html#ibis.expr.api.StringValue.lpad" title="ibis.expr.api.StringValue.lpad"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.lpad</span></code></a>(length[,&nbsp;pad])</td>
+<td>Returns string of given length by truncating (on right)</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.rpad.html#ibis.expr.api.StringValue.rpad" title="ibis.expr.api.StringValue.rpad"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.rpad</span></code></a>(length[,&nbsp;pad])</td>
+<td>Returns string of given length by truncating (on right)</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.rlike.html#ibis.expr.api.StringValue.rlike" title="ibis.expr.api.StringValue.rlike"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.rlike</span></code></a>(arg,&nbsp;pattern)</td>
+<td>Search string values using a regular expression.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_search.html#ibis.expr.api.StringValue.re_search" title="ibis.expr.api.StringValue.re_search"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.re_search</span></code></a>(arg,&nbsp;pattern)</td>
+<td>Search string values using a regular expression.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_extract.html#ibis.expr.api.StringValue.re_extract" title="ibis.expr.api.StringValue.re_extract"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.re_extract</span></code></a>(arg,&nbsp;pattern,&nbsp;index)</td>
+<td>Returns specified index, 0 indexed, from string based on regex pattern</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.StringValue.re_replace.html#ibis.expr.api.StringValue.re_replace" title="ibis.expr.api.StringValue.re_replace"><code class="xref py py-obj docutils literal"><span class="pre">StringValue.re_replace</span></code></a>(arg,&nbsp;pattern,&nbsp;replacement)</td>
+<td>Replaces match found by regex with replacement string.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="timestamp-methods">
+<span id="api-timestamp"></span><h2>Timestamp methods<a class="headerlink" href="#timestamp-methods" title="Permalink to this headline">¶</a></h2>
+<p>All timestamp operations are valid either on scalar or array values</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.truncate.html#ibis.expr.api.TimestampValue.truncate" title="ibis.expr.api.TimestampValue.truncate"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.truncate</span></code></a>(arg,&nbsp;unit)</td>
+<td>Zero out smaller-size units beyond indicated unit.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.year.html#ibis.expr.api.TimestampValue.year" title="ibis.expr.api.TimestampValue.year"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.year</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.month.html#ibis.expr.api.TimestampValue.month" title="ibis.expr.api.TimestampValue.month"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.month</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.day.html#ibis.expr.api.TimestampValue.day" title="ibis.expr.api.TimestampValue.day"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.day</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.hour.html#ibis.expr.api.TimestampValue.hour" title="ibis.expr.api.TimestampValue.hour"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.hour</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.minute.html#ibis.expr.api.TimestampValue.minute" title="ibis.expr.api.TimestampValue.minute"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.minute</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.second.html#ibis.expr.api.TimestampValue.second" title="ibis.expr.api.TimestampValue.second"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.second</span></code></a>()</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.TimestampValue.millisecond.html#ibis.expr.api.TimestampValue.millisecond" title="ibis.expr.api.TimestampValue.millisecond"><code class="xref py py-obj docutils literal"><span class="pre">TimestampValue.millisecond</span></code></a>()</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="boolean-methods">
+<h2>Boolean methods<a class="headerlink" href="#boolean-methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.BooleanValue.ifelse.html#ibis.expr.api.BooleanValue.ifelse" title="ibis.expr.api.BooleanValue.ifelse"><code class="xref py py-obj docutils literal"><span class="pre">BooleanValue.ifelse</span></code></a>(arg,&nbsp;true_expr,&nbsp;false_expr)</td>
+<td>Shorthand for implementing ternary expressions</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.any.html#ibis.expr.api.BooleanColumn.any" title="ibis.expr.api.BooleanColumn.any"><code class="xref py py-obj docutils literal"><span class="pre">BooleanColumn.any</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.all.html#ibis.expr.api.BooleanColumn.all" title="ibis.expr.api.BooleanColumn.all"><code class="xref py py-obj docutils literal"><span class="pre">BooleanColumn.all</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.cumany.html#ibis.expr.api.BooleanColumn.cumany" title="ibis.expr.api.BooleanColumn.cumany"><code class="xref py py-obj docutils literal"><span class="pre">BooleanColumn.cumany</span></code></a>(arg)</td>
+<td>Cumulative any</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.BooleanColumn.cumall.html#ibis.expr.api.BooleanColumn.cumall" title="ibis.expr.api.BooleanColumn.cumall"><code class="xref py py-obj docutils literal"><span class="pre">BooleanColumn.cumall</span></code></a>(arg)</td>
+<td>Cumulative all</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="category-methods">
+<h2>Category methods<a class="headerlink" href="#category-methods" title="Permalink to this headline">¶</a></h2>
+<p>Category is a logical type with either a known or unknown cardinality. Values
+are represented semantically as integers starting at 0.</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.CategoryValue.label.html#ibis.expr.api.CategoryValue.label" title="ibis.expr.api.CategoryValue.label"><code class="xref py py-obj docutils literal"><span class="pre">CategoryValue.label</span></code></a>(arg,&nbsp;labels[,&nbsp;nulls])</td>
+<td>Format a known number of categories as strings</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="decimal-methods">
+<h2>Decimal methods<a class="headerlink" href="#decimal-methods" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="generated/ibis.expr.api.DecimalValue.precision.html#ibis.expr.api.DecimalValue.precision" title="ibis.expr.api.DecimalValue.precision"><code class="xref py py-obj docutils literal"><span class="pre">DecimalValue.precision</span></code></a>(arg)</td>
+<td></td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="generated/ibis.expr.api.DecimalValue.scale.html#ibis.expr.api.DecimalValue.scale" title="ibis.expr.api.DecimalValue.scale"><code class="xref py py-obj docutils literal"><span class="pre">DecimalValue.scale</span></code></a>(arg)</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="generated/ibis.hdfs_connect.html" class="btn btn-neutral float-right" title="ibis.hdfs_connect" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="generated/ibis.impala.api.ImpalaClient.set_compression_codec.html" class="btn btn-neutral" title="ibis.impala.api.ImpalaClient.set_compression_codec" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2015, Cloudera, Inc..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.11.2+65.g922b763',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-65303298-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
