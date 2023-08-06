@@ -1,0 +1,9 @@
+README
+setup.py
+collins_client/__init__.py
+collins_client/client.py
+collins_client.egg-info/PKG-INFO
+collins_client.egg-info/SOURCES.txt
+collins_client.egg-info/dependency_links.txt
+collins_client.egg-info/requires.txt
+collins_client.egg-info/top_level.txt
