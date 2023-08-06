@@ -1,0 +1,7 @@
+pandas
+astropy
+numpy
+requests
+scipy==1.2.1
+tqdm
+sncosmo
