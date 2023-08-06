@@ -1,0 +1,3 @@
+[gui_scripts]
+checksum-gui = sumtool.__main__:main
+
