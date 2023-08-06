@@ -1,0 +1,14 @@
+Metadata-Version: 2.0
+Name: threadsafe
+Version: 1.0.0
+Summary: Thread-safe data structures
+Home-page: https://github.com/KingAkeem/threadsafe
+Author: Akeem King
+Author-email: akeemtlking@gmail.com
+License: GNU GPLv3
+Platform: UNKNOWN
+
+# threadsafe
+Thread safe data structures for Python
+
+
