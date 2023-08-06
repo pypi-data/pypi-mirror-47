@@ -1,0 +1,7 @@
+include README.rst
+include requirements.txt
+include LICENSE
+include text.log
+recursive-include atcy *
+
+
