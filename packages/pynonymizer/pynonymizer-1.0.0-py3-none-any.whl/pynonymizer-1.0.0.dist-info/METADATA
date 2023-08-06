@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pynonymizer
+Version: 1.0.0
+Summary: An anonymization tool for production databases
+Home-page: UNKNOWN
+Author: Jerome Twell
+Author-email: jerome@examtrack.co.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pyyaml (>=5)
+Requires-Dist: tqdm (>=4)
+Requires-Dist: faker (>=1)
+Requires-Dist: python-dotenv (>=0.10)
+
+UNKNOWN
+
+
