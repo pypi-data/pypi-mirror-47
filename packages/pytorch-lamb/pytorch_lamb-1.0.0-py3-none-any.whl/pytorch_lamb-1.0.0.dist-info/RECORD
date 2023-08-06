@@ -1,0 +1,7 @@
+pytorch_lamb/__init__.py,sha256=j_dsmv3ttq71YGv33_QNOqEICta4UYIli7tZNEXo8jQ,35
+pytorch_lamb/lamb.py,sha256=MMBkg1tH88KciH0nZBVbyIBFWqilNdLXUW9X-XqNWLA,4898
+pytorch_lamb-1.0.0.dist-info/LICENSE,sha256=At17hJl2bfqVpJRi-uiC-okVDDuVo0snyjO-a1OgMEU,1068
+pytorch_lamb-1.0.0.dist-info/METADATA,sha256=6mkRd2-QBT3HkSEcbqbiDmToloM30592tfnoJiupNwM,1037
+pytorch_lamb-1.0.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pytorch_lamb-1.0.0.dist-info/top_level.txt,sha256=iZ3fjSWRhdkf978Bum8wSAOy8eyjR9K26bccW1B4B-o,13
+pytorch_lamb-1.0.0.dist-info/RECORD,,
