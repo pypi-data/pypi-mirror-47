@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: jatnipy
+Version: 1.0.3
+Summary: Justin's, Andrea's, and Torbjörn's network inference package for Python
+Home-page: https://bitbucket.org/temn/JATNIpy/
+Author: Justin Lin, Andreas Tjärnberg, Torbjörn Nordling
+Author-email: justin.lin@nordlinglab.org,at145@nyu.edu,t@nordlinglab.org
+License: LGPL
+Description: Justin's, Andrea's, and Torbjörn's network inference package for Python. We re-implemented GeneSPIDER toolbox in Python. Source code and documentation freely available at https://bitbucket.org/temn/JATNIpy/
+Platform: UNKNOWN
+Requires-Python: >=3
