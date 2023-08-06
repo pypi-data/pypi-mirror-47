@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: social_scrape
+Version: 0.1
+Summary: Scrapes social platforms using bs4
+Home-page: https://github.com/ghandic/social_scrape
+Author: Andy Challis
+Author-email: andrewchallis@hotmail.co.uk
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
