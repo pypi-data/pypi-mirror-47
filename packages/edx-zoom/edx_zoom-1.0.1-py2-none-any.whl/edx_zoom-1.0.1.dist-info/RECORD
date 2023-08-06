@@ -1,0 +1,16 @@
+edx_zoom/__init__.py,sha256=USgrQD5EQuy041DrBgZOtNQh0GlhgERGxgNKYA4BZoQ,96
+edx_zoom/admin.py,sha256=iv_F-I26g6EyMtmMdd4rq8fSy9GNwBH9axujQepnA1c,162
+edx_zoom/apps.py,sha256=3_3clXcf9y7lKhC25EaBLYNR9PPrU43jlxAFR-0OoQg,350
+edx_zoom/models.py,sha256=gn59IElj3UaAj8lkMEHPkc21pUTeOAAoNLIqc7y4Exo,410
+edx_zoom/tabs.py,sha256=-G-WuhEwmUZgf3Lv7DEEZWdOklaf0AjKqKfvAj34cJU,403
+edx_zoom/zoom_consumer.py,sha256=rIrswzHS1Wb8WegU5rDQ9o0KXLzIyxe_rhW00KzpBcw,3555
+edx_zoom/static/css/student.css,sha256=-YNFOmvaS9Bx0JzkFAS1gw3mrLv1AtozhAnKlIKYWc8,2246
+edx_zoom/templates/lti_iframe.html,sha256=n476cYBqHdUMbSXWo2RBxEMQY9Z0LXTzca7qmbRdSR8,364
+edx_zoom/templates/student.html,sha256=nOdYa6h1g1KcaW67iyxGAUBqaFUEuEMcK8AZSfpCr_U,2916
+edx_zoom-1.0.1.dist-info/LICENSE,sha256=V8j_M8nAz8PvAOZQocyRDX7keai8UJ9skgmnwqETmdY,34520
+edx_zoom-1.0.1.dist-info/METADATA,sha256=HukyQOssFex9CCbcXItcUE6vWuLAoNS4x3GkJt9Nw7k,322
+edx_zoom-1.0.1.dist-info/NOTICE,sha256=ab3K37BA90ICvTrvGHNweXsghhwj_o4wY6s_EdqFagE,658
+edx_zoom-1.0.1.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+edx_zoom-1.0.1.dist-info/entry_points.txt,sha256=XYhL18gPZQGrr4Atafrwqhh-WV_HM_e1SJ9Scn2B53Q,156
+edx_zoom-1.0.1.dist-info/top_level.txt,sha256=JtKQTyq4oIxKvaqpWLhl6DQygLSDsRhFsIBmGAmgoAI,9
+edx_zoom-1.0.1.dist-info/RECORD,,
