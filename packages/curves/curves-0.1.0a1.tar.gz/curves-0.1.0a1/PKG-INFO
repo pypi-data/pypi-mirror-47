@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: curves
+Version: 0.1.0a1
+Summary: Tools for building commodity forward, swaps, and futures curves.
+Home-page: UNKNOWN
+Author: Jake Fowler
+Author-email: jake@cmdty.co.uk
+License: UNKNOWN
+Description: 
+        Tools for building commodity forward/swaps/futures curves
+        
+        ### Installing
+        Whilst the curves project is on TestPyPI the two PyPI dependencies, pandas and pythonnet, will need to be installed manually as well as installing curves. Hence run the three commands below:
+        ```
+        > pip install -i https://test.pypi.org/simple/ curves
+        > pip install pandas
+        > pip install pythonnet
+        ```
+Keywords: commodities trading curves oil gas power quantitative finance
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: C#
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
