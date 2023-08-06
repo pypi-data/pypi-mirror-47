@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+funmotd/__init__.py
+funmotd/config.json
+funmotd/quotes_db.py
+funmotd.egg-info/PKG-INFO
+funmotd.egg-info/SOURCES.txt
+funmotd.egg-info/dependency_links.txt
+funmotd.egg-info/entry_points.txt
+funmotd.egg-info/not-zip-safe
+funmotd.egg-info/top_level.txt
