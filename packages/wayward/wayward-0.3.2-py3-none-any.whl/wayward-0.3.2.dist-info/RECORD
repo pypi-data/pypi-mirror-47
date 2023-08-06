@@ -1,0 +1,10 @@
+wayward/__init__.py,sha256=0JvIrpUWX9qKqoe6Gxdxirt814TY3Tky3rJC8lDfDCQ,91
+wayward/logsum.py,sha256=6VrbCbZSWM1LcGlJ3hwREkVY-e36Gi1kbWGOcmf9ZUA,747
+wayward/parsimonious.py,sha256=7GCP7Rdf7paPLD6gRtjwBCzYglJzlLg_w3RjPFYgZD4,7489
+wayward/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+wayward/significant_words.py,sha256=wPWkaDAcE4BrA9gtv03OsOLpQ_kIigiSg9A8rllRfCk,13090
+wayward/specific_term_estimators.py,sha256=dFALGvGHMXwXNaoSGWn9XIbcQWLvZxrNrZn6gVKmXYo,3235
+wayward-0.3.2.dist-info/LICENSE,sha256=WZBybZAlDyv9nPOqWC3VkXH27OVIGK7AnoYYUdaoQCw,831
+wayward-0.3.2.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+wayward-0.3.2.dist-info/METADATA,sha256=L9qHkA6gQ3hApghfOE7oJ9N6pvcYPOdcxdYS5t6o4F8,6522
+wayward-0.3.2.dist-info/RECORD,,
