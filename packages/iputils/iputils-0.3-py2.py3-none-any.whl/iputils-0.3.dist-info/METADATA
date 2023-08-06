@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: iputils
+Version: 0.3
+Summary: wrapper of ipaddress.py, easy to use
+Home-page: https://github.com/hezhiming/iputils
+Author: he.zhiming
+Author-email: he.zhiming@foxmail.com
+License: GPL
+
+# iputils
+
+
