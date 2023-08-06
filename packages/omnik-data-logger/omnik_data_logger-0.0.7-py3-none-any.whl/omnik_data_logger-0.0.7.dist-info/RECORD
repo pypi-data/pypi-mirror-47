@@ -1,0 +1,12 @@
+omnik/__init__.py,sha256=S1iXMVnwUeVGO7TrZGiMUrfIufh3AgJ5CD3AzrGq1-8,869
+omnik/client.py,sha256=au8MXsVRQ2pf93dC5xctuwiHrQlt9OXRxrpQwGLClsc,1581
+omnik/datalogger.py,sha256=1GbvlJS6q11O8lXngnLP7K4J61pA4oy2ymKGwhGV0uY,1738
+omnik/plugins/__init__.py,sha256=pj3dX1DQqYPMYMFPKHkT5okaBn7AxtEs8_8MASCyLZY,492
+omnik/plugins/influxdb.py,sha256=A_fw4qoufjQu3_-KbrIZmYU3GiH1YhUGCziUnF-wAG8,131
+omnik/plugins/pvoutput.py,sha256=PKMp_pi7CJxLi3umzfh3TqG89CaROqFJECaRKEKqQUE,2451
+omnik_data_logger-0.0.7.data/scripts/omnik-logger,sha256=nRz7bBMcXGLwjVWU8qonTO9pzjAMEhzuAitU4lZcdsQ,1535
+omnik_data_logger-0.0.7.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+omnik_data_logger-0.0.7.dist-info/METADATA,sha256=1qlaSootnWU0UFr1v5fwQvCtfr2JldYvfYyXh1Vvwn4,2368
+omnik_data_logger-0.0.7.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+omnik_data_logger-0.0.7.dist-info/top_level.txt,sha256=ndQDLnAcqljX-ZfI61ZsJf3I2fCdwtPwKkoPIgNOIQY,6
+omnik_data_logger-0.0.7.dist-info/RECORD,,
