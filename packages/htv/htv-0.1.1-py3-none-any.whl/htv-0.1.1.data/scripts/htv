@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+if [ "$1" == "" ];
+    then
+        echo $1
+        #python validator.py
+
+elif [ "$1" == "--install" ];
+    then
+        echo $1
+        #echo "Installation in progress..."
+        #git clone git@github.com:ko2-srls/HeatTemplateValidator.git &&
+        #cd HeatTemplateValidator/ &&
+        #sudo ./setup.sh &&
+        echo "Now it is necessary that you do as follows:" &&
+        echo "  - move the Heat files into the ./TemplateLocalStorage directory inside HeatTemplateValidator" &&
+        echo "  - move the open.rc files into ./rc_files directory inside HeatTemplateValidator" &&
+        echo "After this execute: htv --shadow"
+
+elif [ "$1" == "--shadow" ];
+    then
+        echo $1
+        #python shadow.py
+fi
