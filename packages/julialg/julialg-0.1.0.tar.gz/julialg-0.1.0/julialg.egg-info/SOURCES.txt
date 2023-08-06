@@ -1,0 +1,11 @@
+README.md
+setup.py
+julialg/__init__.py
+julialg/array.py
+julialg/core.py
+julialg/formatting.py
+julialg.egg-info/PKG-INFO
+julialg.egg-info/SOURCES.txt
+julialg.egg-info/dependency_links.txt
+julialg.egg-info/not-zip-safe
+julialg.egg-info/top_level.txt
