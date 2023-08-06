@@ -1,0 +1,46 @@
+Metadata-Version: 2.0
+Name: mimesniff
+Version: 1.0.1
+Summary: Pure python mimesniff implementation of https://mimesniff.spec.whatwg.org
+Home-page: https://github.com/corona10/mimesniff
+Author: Dong-hee Na
+Author-email: donghee.na92@gmail.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.4
+
+mimesniff
+=========
+
+Pure python mimesniff implementation of
+`https://mimesniff.spec.whatwg.org`_
+
+API interface is same with `API of python standard library`_
+
+Install
+-------
+
+.. code:: bash
+
+   pip install mimesniff
+
+Usage
+-----
+
+.. code:: python
+
+   import mimesniff
+
+   res = mimesniff.what('sample.mp3')
+   print(res)
+   # audio/mpeg
+
+.. _`https://mimesniff.spec.whatwg.org`: https://mimesniff.spec.whatwg.org
+.. _API of python standard library: https://docs.python.org/3/library/sndhdr.html
+
