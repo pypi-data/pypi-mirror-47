@@ -1,0 +1,9 @@
+pyreadstat/__init__.py,sha256=zr0jpKNexFunf_-0xoZSmgSCRCB2zrFi9AZhdnQyWlc,983
+pyreadstat/_readstat_parser.cp35-win_amd64.pyd,sha256=ON2AXh8cTX4VGCAhGhXiLTXp46lgGEa0w0O-Dgpbizg,287744
+pyreadstat/pyreadstat.cp35-win_amd64.pyd,sha256=n0E59yDV6Y-GYUxYmYNauakCpA2XBHa5YAEFl46YeDE,274944
+pyreadstat-0.2.6.data/data/libiconv-2.dll,sha256=g71dkmc36LbaZW5piSGCX63dwqeTzBUKTkNoHJsguJY,1055010
+pyreadstat-0.2.6.data/data/zlib1.dll,sha256=TneWElPPGuCYHX8zhPUnjad8r6PXdlUNgQwcQ_c7ztQ,93830
+pyreadstat-0.2.6.dist-info/METADATA,sha256=edRj7en0PCwKvnYuMY1SukZdXTYOf-qfax8L5p2qxBA,965
+pyreadstat-0.2.6.dist-info/RECORD,,
+pyreadstat-0.2.6.dist-info/WHEEL,sha256=5t140dZF8EIt8zPJ1QBOWmhybl_bZudh5t7xSibKWHU,106
+pyreadstat-0.2.6.dist-info/top_level.txt,sha256=7LlluhR4SADp00dJTEVpKMet_Jki7JHA6abJ-wu831E,11
