@@ -1,0 +1,3 @@
+[console_scripts]
+nbpages = nbpages.__main__:main
+
