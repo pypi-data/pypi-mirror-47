@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: txtoflow
+Version: 0.0.1
+Summary: Library to generate flowcharts from pseudo code
+Home-page: https://github.com/KrishKasula/txtoflow
+Author: Krishna
+Author-email: krishna.vijay4444@gmail.com
+License: UNKNOWN
+Description: # txtoflow (Translate To Flowchart)
+        
+        To generate flow charts from simple pseudo-codes
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

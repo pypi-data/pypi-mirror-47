@@ -1,0 +1,7 @@
+README.md
+setup.py
+txtoflow/__init__.py
+txtoflow.egg-info/PKG-INFO
+txtoflow.egg-info/SOURCES.txt
+txtoflow.egg-info/dependency_links.txt
+txtoflow.egg-info/top_level.txt
