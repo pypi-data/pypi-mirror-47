@@ -1,0 +1,9 @@
+numpy
+matplotlib
+statsmodels
+pysam
+pyfaidx
+biopython
+scipy
+click
+progressbar2
