@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+rule/__init__.py
+rule/op.py
+rule.egg-info/PKG-INFO
+rule.egg-info/SOURCES.txt
+rule.egg-info/dependency_links.txt
+rule.egg-info/entry_points.txt
+rule.egg-info/not-zip-safe
+rule.egg-info/requires.txt
+rule.egg-info/top_level.txt
