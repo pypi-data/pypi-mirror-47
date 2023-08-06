@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+qvalidation/__init__.py
+qvalidation/rule.py
+qvalidation/validation.py
+qvalidation.egg-info/PKG-INFO
+qvalidation.egg-info/SOURCES.txt
+qvalidation.egg-info/dependency_links.txt
+qvalidation.egg-info/not-zip-safe
+qvalidation.egg-info/top_level.txt
+test/test_rule.py
+test/test_validation.py
