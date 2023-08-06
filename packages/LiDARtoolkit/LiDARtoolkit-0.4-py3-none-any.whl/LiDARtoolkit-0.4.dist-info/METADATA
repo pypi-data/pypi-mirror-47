@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: LiDARtoolkit
+Version: 0.4
+Summary: A toolkit to handle LIDAR point cloud data.
+Home-page: https://github.com/Ekan5h/LIDARtoolkit
+Author: Ekan5h
+Author-email: ekanshmahendru@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# LIDARtoolkit
+Simplifying LIDAR point cloud processing and rapid prototyping
+
+
