@@ -1,0 +1,3 @@
+[console_scripts]
+substream = substream.main:cli_main
+

@@ -1,0 +1,14 @@
+README.md
+setup.py
+substream/__init__.py
+substream/__main__.py
+substream/main.py
+substream/speech_utils.py
+substream/srt_utils.py
+substream.egg-info/PKG-INFO
+substream.egg-info/SOURCES.txt
+substream.egg-info/dependency_links.txt
+substream.egg-info/entry_points.txt
+substream.egg-info/requires.txt
+substream.egg-info/top_level.txt
+substream/tempbucket/__init__.py
