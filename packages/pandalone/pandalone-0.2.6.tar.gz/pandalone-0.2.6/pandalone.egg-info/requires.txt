@@ -1,0 +1,45 @@
+future>=0.15.0
+toolz
+jsonschema<3,>=2.5
+numpy
+asteval>=0.9.7
+
+[:python_version == "2.7"]
+mock
+
+[dev]
+nose
+coverage
+coveralls
+docopt
+pandas
+easygui!=0.98
+xlrd
+sphinx>=1.2
+wheel
+twine
+pylint
+black
+doc8
+sphinx-autobuild
+
+[dev:sys_platform == "win32"]
+xlwings>=0.9.2
+
+[excel]
+easygui!=0.98
+
+[excel:sys_platform == "win32"]
+xlwings>=0.9.2
+
+[pandas]
+pandas
+
+[test]
+nose
+coverage
+coveralls
+docopt
+
+[xlrd]
+xlrd
