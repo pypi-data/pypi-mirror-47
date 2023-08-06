@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+picea/__init__.py
+picea/tree.py
+picea.egg-info/PKG-INFO
+picea.egg-info/SOURCES.txt
+picea.egg-info/dependency_links.txt
+picea.egg-info/top_level.txt
