@@ -1,0 +1,14 @@
+---
+subnets:
+  client: ec2
+  action: describe_subnets
+  context: Subnets
+  prefix: Subnets
+  resource_id: SubnetId
+  identifiers:
+    id:
+      key: subnet-id
+      type: filter
+    name:
+      key: tag:Name
+      type: filter

@@ -1,0 +1,17 @@
+---
+security_groups:
+  client: ec2
+  action: describe_security_groups
+  context: Security Groups
+  prefix: SecurityGroups
+  resource_id: GroupId
+  identifiers:
+    id:
+      key: group-id
+      type: filter
+    name:
+      key: tag:Name
+      type: filter
+    group_name:
+      key: group-name
+      type: filter

@@ -1,0 +1,14 @@
+---
+route_tables:
+  client: ec2
+  action: describe_route_tables
+  context: Route tables
+  prefix: RouteTables
+  resource_id: RouteTableId
+  identifiers:
+    id:
+      key: route-table-id
+      type: filter
+    name:
+      key: tag:Name
+      type: filter
