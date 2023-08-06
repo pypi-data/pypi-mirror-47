@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: qz7.shell
+Version: 0.0.4
+Summary: Construct and execute shell command lists locally or remotely via ssh.
+Home-page: http://github.com/parantapa/qz7.shell
+Author: Parantapa Bhattacharya
+Author-email: pb+pypi@parantapa.net
+License: UNKNOWN
+Description: # qz7.shell
+        
+        Construct and execute shell command lists locally or remotely via ssh.
+        
+        qz7.shell is library for easily creating and executing command lists.
+        A command list is a list of simple commands that are executed
+        by an underlying shell.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
