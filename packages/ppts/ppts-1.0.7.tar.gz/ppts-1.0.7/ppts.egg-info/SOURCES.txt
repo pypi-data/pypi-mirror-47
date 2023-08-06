@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+cli/__init__.py
+cli/bin.py
+cli/parse.py
+ppts.egg-info/PKG-INFO
+ppts.egg-info/SOURCES.txt
+ppts.egg-info/dependency_links.txt
+ppts.egg-info/entry_points.txt
+ppts.egg-info/top_level.txt
