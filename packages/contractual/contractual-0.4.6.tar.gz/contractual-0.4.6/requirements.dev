@@ -1,0 +1,6 @@
+black >= 19.3b0
+pytest >= 3.0
+pytest-cov >= 2.7
+setuptools_scm >= 3.3.3
+twine >= 1.13
+wheel
