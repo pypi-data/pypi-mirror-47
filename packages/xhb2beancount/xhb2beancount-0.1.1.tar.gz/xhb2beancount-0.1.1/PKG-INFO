@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: xhb2beancount
+Version: 0.1.1
+Summary: Convert Homebank files to Beancount format.
+Home-page: https://github.com/kevinzg/xhb2beancount
+Author: Kevin Zúñiga
+Author-email: kevin.zun@gmail.com
+License: MIT
+Description: 
+        # xhb2beancount
+        
+        Homebank to Beancount converter.
+        
+        ## Install
+        
+        I recommend using [pipx](https://pipxproject.github.io/pipx/).
+        
+        ```sh
+        pipx install xhb2beancount
+        ```
+        
+        Or just create a virtualenv and run `pip install xhb2beancount`.
+        
+        ## Usage
+        
+        ```sh
+        xhb2beancount file.xhb > file.beancount
+        ```
+        
+        You can configurate the conversion passing a config file as an argument.
+        
+        ```sh
+        xhb2beancount --config config.py file.xhb
+        ```
+        
+        Copy the [default config file](https://github.com/kevinzg/xhb2beancount/blob/master/xhb2beancount/config.py) and edit it to suit your needs.
+        
+        If you have beancount installed you can format it with bean-format.
+        
+        ```sh
+        xhb2beancount file.xhb | bean-format -c 78 > file.beancount
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
