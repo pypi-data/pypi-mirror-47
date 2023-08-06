@@ -1,0 +1,12 @@
+attrs
+hyperlink
+incremental
+six
+Tubes
+Twisted>=15.5
+typing
+Werkzeug
+zope.interface
+
+[:python_version < "3.4"]
+enum34
