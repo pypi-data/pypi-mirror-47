@@ -1,0 +1,80 @@
+.\"	$OpenBSD$
+.\"
+.\" Copyright (c) 2019 Ian Darwin <ian@darwinsys.com>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.\" The following requests are required for all man pages.
+.\"
+.Dd $Mdocdate$
+.Dt UPT 1
+.Os
+.Sh NAME
+.Nm upt
+.Nd universal packaging tool
+.Sh SYNOPSIS
+.Nm program
+.Op Fl b backend
+.Op Fl f frontend
+.Op Fl h
+.Op command
+.Ar
+.Sh DESCRIPTION
+.Nm
+reads source packages in several standard formats
+and outputs them as ports/packages for various operating system
+packaging mechanisms.
+.Pp
+.Fl b
+backend
+Specifies which back-end to use when generating a package.
+.Pp
+.Fl f
+frontend
+Specifies which font-end to use when gathering information about a package.
+.Pp
+.Fl h
+Prints the help information.
+.Pp
+.Fl command
+is one of
+list-backends,
+list-frontends
+or 
+package.
+.Pp
+.Nm
+is not complete; it requires a front end to read the information about
+a package and a backend for your particular operating system.
+You can install these using your system's packaging tools,
+and get a list of those installed using one of the list commands.
+.Sh SEE ALSO
+.Xr upt-cpan 1,
+.Xr upt-pypi 1,
+.Xr upt-rubygems
+\- front ends
+.Pp
+.Xr upt-openbsd
+\- back end for OpenBSD operating system.
+.Pp
+Your operating system's packaging mechanism.
+.Pp
+https://framagit.org/upt/upt - home page.
+.Sh EXAMPLES
+To package the hypothetical foofoo package from the cpan repository:
+.Ds
+upt package --frontend cpan --backend openbsd foofoo
+.\" .Sh HISTORY
+.\" .Sh AUTHORS
+.Sh CAVEATS
+There will never be enough front ends and back ends.
