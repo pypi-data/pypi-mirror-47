@@ -1,0 +1,16 @@
+giftbit/__init__.py,sha256=MtPQF6F6AtaHr7hmrzfN0NPmT0obZFX7dtPp7NkTiAM,172
+giftbit/exceptions.py,sha256=nEojh2B-Vb8QiJToAjzsNYQV2IkJ0NxNv2aVx5FjIZU,47
+giftbit/api/__init__.py,sha256=G8LQFM7twGGwPl_Yr9SP513FX-dFN_3Wtx4wu0yVTxk,252
+giftbit/api/base.py,sha256=vjWITxbNzQ5p2bQo7dlk8C_CH1JOAxE9Hv2-R6jZuBs,1214
+giftbit/api/brands.py,sha256=dMhvuvl537tEtXG6ILsHAhruZf2zGUM1HIAGmZ75nCQ,931
+giftbit/api/campaign.py,sha256=yk281eiErG-8dHScGzfejhVpMjDY_7thKBSEZp18txQ,1030
+giftbit/api/embedded.py,sha256=gOFuyqYIJiiYq4ViTYuptsQ9lEF1rAn8BmUTPsaJsZE,413
+giftbit/api/funds.py,sha256=BDLvETvMqvZTHSVEufgQllJWEY7aBCptdndBW2osd3c,442
+giftbit/api/gifts.py,sha256=JBjWeQU6eUpDx8oPqGcfi4j2a2myg0G4r5_Z66i3Hl4,421
+giftbit/api/ping.py,sha256=qNmtwE8sy5Fqv8BUBgXmDbUFpz-Drmbn8uoiEW_ROgU,157
+giftbit/api/regions.py,sha256=8GV0C5a2UMxpPpVP9iZh1m452iqvi35FFD-e8DRUKmc,169
+giftbit_api-0.2.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+giftbit_api-0.2.1.dist-info/METADATA,sha256=NjbAaS5JNkz2CcaWeOjMMB9jHvWR1IP96_y06rFGxZc,473
+giftbit_api-0.2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+giftbit_api-0.2.1.dist-info/top_level.txt,sha256=5PKrl3Q2LEMM69KSznac_d52R-uDZAILToklOeoTkOk,8
+giftbit_api-0.2.1.dist-info/RECORD,,
