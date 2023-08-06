@@ -1,0 +1,13 @@
+README.md
+setup.py
+kaggle_dataset_creator/__init__.py
+kaggle_dataset_creator/exceptions.py
+kaggle_dataset_creator/kaggle_dataset_creator.py
+kaggle_dataset_creator/message.py
+kaggle_dataset_creator/random_string.py
+kaggle_dataset_creator.egg-info/PKG-INFO
+kaggle_dataset_creator.egg-info/SOURCES.txt
+kaggle_dataset_creator.egg-info/dependency_links.txt
+kaggle_dataset_creator.egg-info/not-zip-safe
+kaggle_dataset_creator.egg-info/requires.txt
+kaggle_dataset_creator.egg-info/top_level.txt
