@@ -1,0 +1,12 @@
+
+[docs]
+sphinx
+sphinx-gallery
+sphinx_rtd_theme
+numpydoc
+matplotlib
+download
+
+[tests]
+pytest
+pytest-cov
