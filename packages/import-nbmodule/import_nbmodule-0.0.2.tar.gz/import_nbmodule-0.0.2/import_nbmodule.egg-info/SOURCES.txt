@@ -1,0 +1,8 @@
+README.md
+setup.py
+import_nbmodule/__init__.py
+import_nbmodule/import_nbmodule.py
+import_nbmodule.egg-info/PKG-INFO
+import_nbmodule.egg-info/SOURCES.txt
+import_nbmodule.egg-info/dependency_links.txt
+import_nbmodule.egg-info/top_level.txt
