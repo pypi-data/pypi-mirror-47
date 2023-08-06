@@ -1,0 +1,10 @@
+README.md
+setup.py
+TEfy/TEfy.py
+TEfy/__init__.py
+TEfy.egg-info/PKG-INFO
+TEfy.egg-info/SOURCES.txt
+TEfy.egg-info/dependency_links.txt
+TEfy.egg-info/top_level.txt
+tests/__init__.py
+tests/test_TEfy.py
