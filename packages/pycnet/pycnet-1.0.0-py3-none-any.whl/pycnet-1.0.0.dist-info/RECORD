@@ -1,0 +1,11 @@
+pycnet/__init__.py,sha256=tLQToBZPNf528r49aN9rRWkclYDVgNnLEqnOXidnSgw,130
+pycnet/calendar.py,sha256=ygSCcc5vKug1Vm7-hK7uND6o_5mSYDBJ2eUdC0Qzs_0,1518
+pycnet/query.py,sha256=ypWe6IX5quz3AiHg3jIhVHakjRM754N0kTuiLrOrs88,1402
+pycnet/staff.py,sha256=bOeWE6omLtTwJ9fuoysrnvNrEX0ms1PpTJVvP-WD0sg,826
+pycnet/student.py,sha256=GR8dxPhKM4nrVWeVKWdMaLVOLqyXiIVFVI1V5jcubHY,1716
+pycnet/subject.py,sha256=gYn9cdTCRKlZhx1N2evB_sLrdiWLKvmUI8lG2S5AMqs,614
+pycnet-1.0.0.dist-info/LICENSE,sha256=K-ak3MP9JC-bS6gx6X66fdN9p1aXHSwmoQiq1eRI74c,1081
+pycnet-1.0.0.dist-info/METADATA,sha256=6iGGu_8oGQyyM5vOu1kg4GhxLKJfxzlaQK-iIzWQ0-8,474
+pycnet-1.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pycnet-1.0.0.dist-info/top_level.txt,sha256=buUPa3httOW_bgKKfoKhg3JQNtXPsG3XgqEzhnE9_x8,7
+pycnet-1.0.0.dist-info/RECORD,,
