@@ -1,0 +1,14 @@
+alephmarcreader/__init__.py,sha256=GiYuinLJ8_nIw-X-RubZ0NYpNd9RvbPjTvQZ2IvDEeo,138
+alephmarcreader/abstractalephmarcreader.py,sha256=TIp5B9LUr3XzyODjgUCEHIL8mc2aR09YFP6x8BQB9eo,16597
+alephmarcreader/alephmarc21reader.py,sha256=XjXfcskuicxgj8iZCI8bDsVsQ0sSKTncJJtkbZvSFkk,2587
+alephmarcreader/alephmarcxmlreader.py,sha256=dB-Gj3dL7l3SPmw_0O64Y2egrfpjkoArFFK0kAuE8RE,2178
+alephmarcreader/alephxreader.py,sha256=4IaSzOQRcZHa8Cb2B-ELHkR4gzJY-S0cXmUc3nlLNmo,2011
+alephmarcreader/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+alephmarcreader/tests/test_Marc21Reader.py,sha256=X5EEMIx5C7dTlYOsdgAx8FvkNEHVlwdgwNntrNR5Cvo,9983
+alephmarcreader/tests/test_MarcXMLReader.py,sha256=9FzR0qimsvhpvoSXuNNMUWbusYm9zPOqcieOKidHAPs,10036
+alephmarcreader/tests/test_XReader.py,sha256=qFxNYRnj4XLq3f7uA9b9cGiq-ILz_a1GX7mfRdvbiMs,9797
+alephmarcreader-0.0.1.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+alephmarcreader-0.0.1.dist-info/METADATA,sha256=dIuM6kd4pBRFGF96x4ST93Rzx1JXH3fNHPAMdnVodbQ,1618
+alephmarcreader-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+alephmarcreader-0.0.1.dist-info/top_level.txt,sha256=xR5-Wwgr2j7xmkqhCp_2v4HKQ4kt5S3sfyiL-gvHuXw,16
+alephmarcreader-0.0.1.dist-info/RECORD,,
