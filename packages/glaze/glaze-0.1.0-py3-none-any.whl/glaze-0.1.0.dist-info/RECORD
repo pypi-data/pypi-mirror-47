@@ -1,0 +1,10 @@
+glaze/__init__.py,sha256=ZJJQwkifYThJYCr48zhviIk6jQYkUyCoMzGriNLEJdk,92
+glaze/__main__.py,sha256=-h86vR85JAz1vg34ykMw8ozrUpVhTeXj-NKRRSHnmVI,2481
+glaze/render.py,sha256=XdShLg7CYF1VBHcJQ9r7vee--RWjYn5wlH_HBtuHakI,2239
+glaze/utils.py,sha256=MsZjBtBmbiTNo0grI4qtKwjG1URaLOi5fmhBsMtFPb4,2084
+glaze-0.1.0.dist-info/LICENSE,sha256=WV31ZVK2eOD4Swq7-0OEYgu2OkReualHB4s0MKk4lHU,1072
+glaze-0.1.0.dist-info/METADATA,sha256=s3w6Cm9Q1hAXlt_1ROe4RAATtHxPMZLlv7WkJo62Hlc,3084
+glaze-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+glaze-0.1.0.dist-info/entry_points.txt,sha256=x2te5j8SWFqvkMxvCFDDsMweGY3FLH753WcGT_X3Bsc,47
+glaze-0.1.0.dist-info/top_level.txt,sha256=BKys96kPHaH6CY-qECkmWnpnwIhrYDVd2OLShaJDuyY,6
+glaze-0.1.0.dist-info/RECORD,,

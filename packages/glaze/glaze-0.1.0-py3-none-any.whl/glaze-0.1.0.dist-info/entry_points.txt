@@ -1,0 +1,3 @@
+[console_scripts]
+glaze = glaze.__main__:main
+
