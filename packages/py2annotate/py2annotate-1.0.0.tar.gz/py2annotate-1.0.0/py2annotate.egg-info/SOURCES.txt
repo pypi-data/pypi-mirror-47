@@ -1,0 +1,9 @@
+README.rst
+setup.py
+py2annotate/__init__.py
+py2annotate.egg-info/PKG-INFO
+py2annotate.egg-info/SOURCES.txt
+py2annotate.egg-info/dependency_links.txt
+py2annotate.egg-info/not-zip-safe
+py2annotate.egg-info/requires.txt
+py2annotate.egg-info/top_level.txt
