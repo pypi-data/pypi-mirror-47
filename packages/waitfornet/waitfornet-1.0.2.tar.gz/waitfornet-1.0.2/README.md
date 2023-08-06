@@ -1,0 +1,34 @@
+![pypi](https://img.shields.io/pypi/v/waitfornet.svg)
+![python](https://img.shields.io/pypi/pyversions/waitfornet.svg)
+![implementation](https://img.shields.io/pypi/implementation/waitfornet.svg)
+<!-- https://img.shields.io/travis/prahladyeri/waitfornet/master.svg -->
+![docs](https://readthedocs.org/projects/waitfornet/badge/?version=latest)
+![license](https://img.shields.io/github/license/prahladyeri/waitfornet.svg)
+![last-commit](https://img.shields.io/github/last-commit/prahladyeri/waitfornet.svg)
+<!--![commit-activity](https://img.shields.io/github/commit-activity/w/prahladyeri/waitfornet.svg)-->
+[![donate](https://img.shields.io/badge/-Donate-blue.svg?logo=paypal)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=JM8FUXNFUK6EU)
+[![follow](https://img.shields.io/twitter/follow/prahladyeri.svg?style=social)](https://twitter.com/prahladyeri)
+# waitfornet
+A stupid simple python module to check whether you are online or not
+
+# Synopsis
+
+`waitfornet` is a stupid simple script, all it does is check whether you are online or not, and optionally wait until you go online.
+
+On production servers, you don't need such a script because you are always online. But on home PCs or laptops, we plebeians aren't always online! We sometimes have to fiddle with our WiFi connections, we may have a wireless router but we forget to switch them on sometimes. What if I have a scheduled cron job to run at that moment such as this:
+
+    $> task1 && task2 && task3
+	
+The above won't work properly if the tasks are dependent on an internet connection. With `waitfornet`, you can do something like this:
+
+    $> waitfornet -w && task1 && task2 && task3
+
+The first command will wait until you go online and once you do, it will exit and then your other crons can run!
+
+# Installation
+
+	pip install waitfornet
+
+# Usage
+	  -h, --help  show this help message and exit
+	  -w, --wait  Wait until online, keep trying

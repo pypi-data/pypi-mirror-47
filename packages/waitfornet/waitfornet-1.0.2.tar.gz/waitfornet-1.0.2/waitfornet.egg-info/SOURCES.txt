@@ -1,0 +1,10 @@
+README.md
+setup.py
+waitfornet/__init__.py
+waitfornet/waitfornet.py
+waitfornet.egg-info/PKG-INFO
+waitfornet.egg-info/SOURCES.txt
+waitfornet.egg-info/dependency_links.txt
+waitfornet.egg-info/entry_points.txt
+waitfornet.egg-info/requires.txt
+waitfornet.egg-info/top_level.txt
