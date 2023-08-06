@@ -1,0 +1,14 @@
+classifier/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+classifier/classifier.py,sha256=bOckSe2AN4J-CSrx-8GGUWvvgso3TSx-vlLTQECkeeA,7371
+classifier/misc.py,sha256=QwBHVTIX9Uvq3-_lL6qcp-JjqbFefYc2cXvaJeDB1E4,18586
+classifier/semanticmodule.py,sha256=fbfWFd-A89UBj1MI08NONtE3uGxTYNBx9l5-eWGEvIM,14731
+classifier/syntacticmodule.py,sha256=lPhnFnyuLnJx-MiGdhsXytsCYga8An2NmudskuwXi5U,7925
+classifier/models/README.md,sha256=PmimZnfJHvYe3klS118IAVLNfsm-eZi5HTJRimP8ypc,1482
+classifier/models/cso.csv,sha256=VRDK6heb2vetHEzV9pNou3CYWaIobTVWSE9iNoeN3h4,8061077
+classifier/models/cso.p,sha256=OmSFuGqmTXS7249wZkwFRo5zNZbRrC9SvjI0laacoNY,4538269
+classifier/models/token-to-cso-combined.json,sha256=moVBQSnJUMgKBlLB3RjX2nVt5IuzNZJY589zStsra4k,66705297
+cso_classifier-2.1.dist-info/LICENSE,sha256=6PSt_MEkL8aNHQez0B5PlQjWYEI_LfAFvLtCa-Wxy_Q,11385
+cso_classifier-2.1.dist-info/METADATA,sha256=gzxYgIXydUiw0y2pZXyDGiHQId5IUjEx1a-_bRo8mxU,21533
+cso_classifier-2.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+cso_classifier-2.1.dist-info/top_level.txt,sha256=cQNKiHRnjvZTRfRfPSvlGt1b_Sllbu_BTX4I6wE4dkI,11
+cso_classifier-2.1.dist-info/RECORD,,
