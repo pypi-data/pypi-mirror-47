@@ -1,0 +1,12 @@
+featuretoolsOnSpark/__init__.py,sha256=u-hoE5iyMBIqEfa_EuLbKUcCKrTMYRZ9gzu6JQDKFU4,470
+featuretoolsOnSpark/column_types.py,sha256=yIz8RZsI9gDBfB0eyHR8UpBeAYpAt9jS8vF_US2iKjk,5757
+featuretoolsOnSpark/dfs.py,sha256=zPmLT31BJusur97ZUFauhOJvdkmQQ84V-FID3BKz2oY,13362
+featuretoolsOnSpark/relationship.py,sha256=Ni0s1dD5MGylDBXAtbpSOSMvqvUQB-4_bpCuvlkDmFI,2314
+featuretoolsOnSpark/table.py,sha256=D8wc8TZ-gBs8BA45pkITZQgPHxU8OlAiOJf7Dqnzufw,11723
+featuretoolsOnSpark/tableset.py,sha256=E4-J6Zyn8DgmSG85AwTDge_wSyYHS1Rsbgn186KeaQs,10650
+featuretoolsOnSpark/version.py,sha256=L6zbQIZKsAP-Knhm6fBcQFPoVdIDuejxze60qX23jiw,21
+featuretoolsOnSpark-0.1.0.dist-info/LICENSE,sha256=0tVwyQYlkfmevqL5gXdnNkQeVgi2op4LUzvca1wt06A,1091
+featuretoolsOnSpark-0.1.0.dist-info/METADATA,sha256=18-OZbLFZeEmgdlxg5U6_m5tj9J5KqSP2bef07WQzoA,1193
+featuretoolsOnSpark-0.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+featuretoolsOnSpark-0.1.0.dist-info/top_level.txt,sha256=RtSrvnd9oOy2-RsTfw7gRbs96_xZaEW3uHa4zu9-lC4,20
+featuretoolsOnSpark-0.1.0.dist-info/RECORD,,
