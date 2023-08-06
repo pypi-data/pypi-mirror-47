@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Routes and HTTP Methods</h1>
+<ul>
+    <li><a href="/">Home</a></li>
+    {% for route in routes %}
+        <li>
+            <a href=".{{ route.path }}">{{ route.path }}</a>
+            <ul>
+                {% for method in route.methods %}
+                    <li>{{ method }}</li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
