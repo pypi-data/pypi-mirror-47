@@ -1,0 +1,13 @@
+README.md
+setup.py
+dataspyv4/__init__.py
+dataspyv4/categoryfucntion.py
+dataspyv4/centraltendency.py
+dataspyv4/charts.py
+dataspyv4/dataspyv4.py
+dataspyv4/utils.py
+dataspyv4.egg-info/PKG-INFO
+dataspyv4.egg-info/SOURCES.txt
+dataspyv4.egg-info/dependency_links.txt
+dataspyv4.egg-info/requires.txt
+dataspyv4.egg-info/top_level.txt
