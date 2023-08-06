@@ -1,0 +1,8 @@
+README.md
+setup.py
+adampdf/__init__.py
+adampdf/test.py
+adampdf2.egg-info/PKG-INFO
+adampdf2.egg-info/SOURCES.txt
+adampdf2.egg-info/dependency_links.txt
+adampdf2.egg-info/top_level.txt
