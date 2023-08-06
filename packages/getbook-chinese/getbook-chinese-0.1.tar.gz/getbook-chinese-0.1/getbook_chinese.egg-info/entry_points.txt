@@ -1,0 +1,8 @@
+[getbook.parsers]
+dajia = getbook_chinese.dajia:DajiaParser
+kanunu = getbook_chinese.kanunu:KanunuParser
+marxists = getbook_chinese.marxists:MarxistsParser
+piaotian = getbook_chinese.piaotian:PiaotianParser
+qbxs5 = getbook_chinese.qbxs5:Qbxs5Parser
+zhaishuyuan = getbook_chinese.zhaishuyuan:ZhaishuyuanParser
+

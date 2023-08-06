@@ -1,0 +1,48 @@
+Metadata-Version: 1.1
+Name: getbook-chinese
+Version: 0.1
+Summary: Extra parsers of Chinese websites for getbook.
+Home-page: https://github.com/lepture/getbook-chinese
+Author: Hsiaoming Yang
+Author-email: me@lepture.com
+License: GNU AGPLv3+
+Description: Getbook
+        =======
+        
+        Chinese websites parsers for getbook_.
+        
+        .. _getbook: https://github.com/lepture/getbook
+        
+        .. image:: https://img.shields.io/badge/donate-lepture-ff69b4.svg
+           :target: https://lepture.com/donate
+           :alt: Donate lepture
+        
+        Installation
+        ------------
+        
+        Install with pip::
+        
+            $ pip install getbook-chinese
+        
+        Usage
+        -----
+        
+        Create EPUB book::
+        
+            $ getbook -u https://www.kanunu8.com/wuxia/201102/1606.html
+        
+        Create MOBI book::
+        
+            $ getbook --mobi -u https://www.kanunu8.com/wuxia/201102/1606.html
+        
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
