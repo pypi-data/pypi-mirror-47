@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: quickmock
+Version: 0.3.0
+Summary: Python 3.6+ implementation deploying quick mocks of HTTP server.
+Home-page: https://github.com/febrezo/quickmock
+Author: Félix Brezo (@febrezo)
+Author-email: UNKNOWN
+License: GNU GPLv3+
+Description: UNKNOWN
+Platform: UNKNOWN
