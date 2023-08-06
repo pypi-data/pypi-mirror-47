@@ -1,0 +1,9 @@
+README.rst
+setup.py
+check_version/__init__.py
+check_version/check_version.py
+check_version.egg-info/PKG-INFO
+check_version.egg-info/SOURCES.txt
+check_version.egg-info/dependency_links.txt
+check_version.egg-info/not-zip-safe
+check_version.egg-info/top_level.txt
