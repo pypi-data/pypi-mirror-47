@@ -1,0 +1,11 @@
+polyswarmartifact/__init__.py,sha256=Y1XlR1CkEGHxLnRYYiyNtnbYRNehYUo1irpW6lXNhXE,498
+polyswarmartifact/schema/__init__.py,sha256=uOvgMczPAMO_xta1FlZk9XWBjjRYK7qUnAycjJ9Zj68,1561
+polyswarmartifact/schema/assertion.json,sha256=cjolVFZDxhpmwlKrvqM0051NUJgS_Ed_G92VVVMZ28Q,202
+polyswarmartifact/schema/assertion.py,sha256=f-Um_kiSsOCUvn3oLC-3g2AyEM_bqSF6KCQLlk1L02Q,1471
+polyswarmartifact/schema/verdict.json,sha256=7v7GYMlvaQZeQYB3UHnYHD8X5m0vsSl0UaAgi7J-zd8,1937
+polyswarmartifact/schema/verdict.py,sha256=XvsmMZtAZxEbUnuonO5_JnBAxdoGt8ocM0DJgUS_MfI,4130
+polyswarm_artifact-1.1.0.dist-info/LICENSE,sha256=1D549ZrsLqnDluRf8nWd4Y0s64RuRJBJTmndYIbYYz8,1064
+polyswarm_artifact-1.1.0.dist-info/METADATA,sha256=ze5SDIgJCUmrREErNJUIVliTA7DM1mj8yWWdXkgg03w,1824
+polyswarm_artifact-1.1.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+polyswarm_artifact-1.1.0.dist-info/top_level.txt,sha256=S1DOfg_Z2SIQ6fX47awzx8PG83wqs6hOclDfTmzzn64,18
+polyswarm_artifact-1.1.0.dist-info/RECORD,,
