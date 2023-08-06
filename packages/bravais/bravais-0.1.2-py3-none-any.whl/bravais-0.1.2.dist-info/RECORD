@@ -1,0 +1,10 @@
+bravais/__init__.py,sha256=qQ_hKPoTP00sXtHnPGbqNwpfua6FroxiorN9mlaJEv4,72
+bravais/_version.py,sha256=mdp2CftfqYbdKtP-eWv1z7rAUycYv6X1ntXSMUf8Kss,22
+bravais/bravais.py,sha256=weyxnn8EgueRIpXDmnaiZz8KYSMziEuswIqAB64cafA,16615
+bravais/valid_parameters.yml,sha256=bhmY0y276IUJ9DUh2yPEN3A1xV5nFMnFvsd5p9-wTfQ,1481
+bravais/validator.py,sha256=8iZtnRR1ovKLV9X8hJgM9MjpSOlHKsipRt4B4KW9mCQ,10080
+bravais-0.1.2.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+bravais-0.1.2.dist-info/METADATA,sha256=SZUfORpKwcgFikYMBBHwgFGc7FV_bvW_ydCEr37aD_Y,2172
+bravais-0.1.2.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+bravais-0.1.2.dist-info/top_level.txt,sha256=VXfadUZkH1daKger4dtpMN6jpNKYKhColV0OtQ596mg,8
+bravais-0.1.2.dist-info/RECORD,,
