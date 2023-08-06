@@ -1,0 +1,6 @@
+MANIFEST.in
+setup.py
+accretion.egg-info/PKG-INFO
+accretion.egg-info/SOURCES.txt
+accretion.egg-info/dependency_links.txt
+accretion.egg-info/top_level.txt
