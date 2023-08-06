@@ -1,0 +1,3 @@
+recursive-include ixnetwork_restpy *.py
+recursive-include ixnetwork_restpy/docs *.*
+recursive-exclude ixnetwork_restpy/pytest_tests *.*
