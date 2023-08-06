@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+finex/__init__.py
+finex/financials.py
+finex/ratios.py
+finex.egg-info/PKG-INFO
+finex.egg-info/SOURCES.txt
+finex.egg-info/dependency_links.txt
+finex.egg-info/entry_points.txt
+finex.egg-info/not-zip-safe
+finex.egg-info/top_level.txt
