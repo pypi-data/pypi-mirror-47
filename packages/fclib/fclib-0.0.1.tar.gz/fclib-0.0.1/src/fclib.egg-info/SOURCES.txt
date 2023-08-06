@@ -1,0 +1,11 @@
+setup.py
+src/main.py
+src/fclib/__init__.py
+src/fclib/compound.py
+src/fclib.egg-info/PKG-INFO
+src/fclib.egg-info/SOURCES.txt
+src/fclib.egg-info/dependency_links.txt
+src/fclib.egg-info/requires.txt
+src/fclib.egg-info/top_level.txt
+src/fclib.egg-info/zip-safe
+test/test_compound.py
