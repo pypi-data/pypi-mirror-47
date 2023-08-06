@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+wordvecpy/__init__.py
+wordvecpy/elmo embedding.py
+wordvecpy/wordvecpy.py
+wordvecpy.egg-info/PKG-INFO
+wordvecpy.egg-info/SOURCES.txt
+wordvecpy.egg-info/dependency_links.txt
+wordvecpy.egg-info/requires.txt
+wordvecpy.egg-info/top_level.txt
