@@ -1,0 +1,13 @@
+zlshenpi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zlshenpi/sheng/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zlshenpi/sheng/guangdong.py,sha256=HgRnc55f1N6q9nP88kSw5a2Zvc3pzb_VsPeuhnN9Cng,3597
+zlshenpi/util/__init__.py,sha256=0p6x4g5bm8KrefLeCmkpQN_ZSjU1Y_48Z3Dp0n7-WEo,53
+zlshenpi/util/conf.py,sha256=mLBPd2T0xc917Afl9NTbAPC7Zpq6NwODoBI8JPtTiRM,2627
+zlshenpi/util/data.py,sha256=5wcTByfvobtjCSfWhpSqwF3bRTPaaErolSkN57DHIyg,5792
+zlshenpi/util/etl.py,sha256=b9y64-lHxQTpe1SnJ8nDD5ftxtkCR0oroqXZQsE-Fz8,16260
+zlshenpi/util/fake_useragent.py,sha256=Ub6YHXv13n70gfygexo3wraA27lSQYa_auY_oodITx8,2857
+zlshenpi/util/test.py,sha256=LHRRz0NdT99ACSfPusz6gTOJePtT7xRhFiNXTfKXl8g,23
+zlshenpi-1.0.1.dist-info/METADATA,sha256=jQqRLnwozID7kvWhe3IctrlQXNYtxoLaT4IzVdAss5g,1170
+zlshenpi-1.0.1.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+zlshenpi-1.0.1.dist-info/top_level.txt,sha256=fGECKKDgFRI-_PWwshponU1O9sofz0K4641ujjAuMAk,9
+zlshenpi-1.0.1.dist-info/RECORD,,
