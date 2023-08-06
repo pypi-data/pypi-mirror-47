@@ -1,0 +1,13 @@
+upfp/__init__.py,sha256=GXn61lRHWv4cblQs8qht4tQq0kt9aFE3OyTQpcS8xss,131
+upfp/core.py,sha256=cmGunQmvskvLYPHn9Wm3UAwtqQOSbya1S0JlkVfYv-w,1975
+upfp/iterator.py,sha256=q7J7kD1G9gTaVEknbmnlCOhYS_gmJfPJXS2yBly7OWw,516
+upfp/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upfp/tests/test_core.py,sha256=yI6o20v_vSC7mBYuHErR2Cc4x1dw51lZ5oJJPqvAQeQ,4845
+upfp/tests/test_iterator.py,sha256=2z4u1QpL0L4Dum9YADIAVMl0UyhZfPeMbI2xirm9aCc,649
+upfp/tests/utils.py,sha256=g_V6Oh4Zua9xuz5y7Xpwj13a-W_H9sMlf-we9bhu7Tw,1679
+upfp-0.0.3.data/scripts/upfp-fasta-to-csv,sha256=3_JMhYsNq2YVK9dJjnyEduS46Rzj6hvRal6mmRGMhFI,1430
+upfp-0.0.3.dist-info/LICENSE,sha256=NB_XrjbhZZZTsXpuINNAAecxd1iK2didvnxql3mL-4s,1070
+upfp-0.0.3.dist-info/METADATA,sha256=2rknVfmZfvmH13F2p01JQkAn3vzb5I0xBtt6Gkrsqow,2265
+upfp-0.0.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+upfp-0.0.3.dist-info/top_level.txt,sha256=de5Jpq71TDgyq88FXG19lYDbn-DjW11yL-T9RL45Avk,5
+upfp-0.0.3.dist-info/RECORD,,
