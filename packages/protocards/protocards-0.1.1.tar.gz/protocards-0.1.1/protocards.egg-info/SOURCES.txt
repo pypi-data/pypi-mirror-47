@@ -1,0 +1,6 @@
+README.md
+setup.py
+protocards.egg-info/PKG-INFO
+protocards.egg-info/SOURCES.txt
+protocards.egg-info/dependency_links.txt
+protocards.egg-info/top_level.txt
