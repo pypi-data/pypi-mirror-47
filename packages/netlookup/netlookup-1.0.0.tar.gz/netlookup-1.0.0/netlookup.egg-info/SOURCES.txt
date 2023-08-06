@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+netlookup.egg-info/PKG-INFO
+netlookup.egg-info/SOURCES.txt
+netlookup.egg-info/dependency_links.txt
+netlookup.egg-info/entry_points.txt
+netlookup.egg-info/requires.txt
+netlookup.egg-info/top_level.txt
