@@ -1,0 +1,461 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>simages.main &mdash; simages 19.0.2 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/gallery.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> simages
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                19.0.2
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../install.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gallery/index.html">Examples Gallery</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../cli.html">Command Line</a></li>
+</ul>
+<p class="caption"><span class="caption-text">User Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../loading.html">Loading Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build.html">Building Embeddings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../removing.html">Removing Duplicates</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Reference Guide</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../reference.html">Reference to All Attributes and Methods</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Developer</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../contributing.html">Contributing to simages</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">simages</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="../index.html">Module code</a> &raquo;</li>
+        
+      <li>simages.main</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <h1>Source code for simages.main</h1><div class="highlight"><pre>
+<span></span><span class="ch">#!/usr/bin/env python3</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">A tool to find and remove duplicate pictures (CLI and webserver modified with permission from</span>
+<span class="sd">@philipbl&#39;s https://github.com/philipbl/duplicate_images).</span>
+
+<span class="sd">.. module:: main</span>
+<span class="sd">   :synopsis: Main point of entry for simages</span>
+
+<span class="sd">.. moduleauthor:: Justin Shenk &lt;shenkjustin@gmail.com&gt;, except for `cli` function.</span>
+
+
+<span class="sd">Command line::</span>
+
+<span class="sd">    Usage:</span>
+<span class="sd">        simages add &lt;path&gt; ... [--db=&lt;db_path&gt;] [--parallel=&lt;num_processes&gt;]</span>
+<span class="sd">        simages remove &lt;path&gt; ... [--db=&lt;db_path&gt;]</span>
+<span class="sd">        simages clear [--db=&lt;db_path&gt;]</span>
+<span class="sd">        simages show [--db=&lt;db_path&gt;]</span>
+<span class="sd">        simages find &lt;path&gt; [--print] [--delete] [--match-time] [--trash=&lt;trash_path&gt;] [--db=&lt;db_path&gt;] [--epochs=&lt;epochs&gt;]</span>
+<span class="sd">        simages -h | --help</span>
+<span class="sd">    Options:</span>
+
+<span class="sd">        -h, --help                Show this screen</span>
+<span class="sd">        --db=&lt;db_path&gt;            The location of the database or a MongoDB URI. (default: ./db)</span>
+<span class="sd">        --parallel=&lt;num_processes&gt; The number of parallel processes to run to hash the image</span>
+<span class="sd">                                   files (default: number of CPUs).</span>
+<span class="sd">        find:</span>
+<span class="sd">            --print               Only print duplicate files rather than displaying HTML file</span>
+<span class="sd">            --delete              Move all found duplicate pictures to the trash. This option takes priority over --print.</span>
+<span class="sd">            --match-time          Adds the extra constraint that duplicate images must have the</span>
+<span class="sd">                                  same capture times in order to be considered.</span>
+<span class="sd">            --trash=&lt;trash_path&gt;  Where files will be put when they are deleted (default: ./Trash)</span>
+<span class="sd">            --epochs=&lt;epochs&gt;     Epochs for training [default: 2]</span>
+
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">import</span> <span class="nn">argparse</span>
+<span class="kn">import</span> <span class="nn">logging</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Union</span><span class="p">,</span> <span class="n">Tuple</span>
+
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+
+<span class="kn">from</span> <span class="nn">.extractor</span> <span class="kn">import</span> <span class="n">EmbeddingExtractor</span>
+
+
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;LOGLEVEL&quot;</span><span class="p">,</span> <span class="s2">&quot;INFO&quot;</span><span class="p">))</span>
+
+
+<div class="viewcode-block" id="build_parser"><a class="viewcode-back" href="../../reference.html#simages.main.build_parser">[docs]</a><span class="k">def</span> <span class="nf">build_parser</span><span class="p">():</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">argparse</span><span class="o">.</span><span class="n">ArgumentParser</span><span class="p">(</span>
+        <span class="n">description</span><span class="o">=</span><span class="s2">&quot;Find similar pairs of images in a folder&quot;</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--data-dir&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-d&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Folder containing image data&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--show-train&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-t&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store_true&quot;</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Show training of embedding extractor every epoch&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--epochs&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-e&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Number of passes of dataset through model for training. More is better but takes more time.&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--num-channels&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-c&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Number of channels for data (1 for grayscale, 3 for color)&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--pairs&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-p&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Number of pairs of images to show&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">parser</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span>
+        <span class="s2">&quot;--zdim&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;-z&quot;</span><span class="p">,</span>
+        <span class="n">action</span><span class="o">=</span><span class="s2">&quot;store&quot;</span><span class="p">,</span>
+        <span class="nb">type</span><span class="o">=</span><span class="nb">int</span><span class="p">,</span>
+        <span class="n">default</span><span class="o">=</span><span class="mi">8</span><span class="p">,</span>
+        <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Compression bits (bigger generally performs better but takes more time)&quot;</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="k">return</span> <span class="n">parser</span></div>
+
+
+<div class="viewcode-block" id="parse_arguments"><a class="viewcode-back" href="../../reference.html#simages.main.parse_arguments">[docs]</a><span class="k">def</span> <span class="nf">parse_arguments</span><span class="p">(</span><span class="n">args</span><span class="p">):</span>
+    <span class="n">parser</span> <span class="o">=</span> <span class="n">build_parser</span><span class="p">()</span>
+    <span class="n">args</span><span class="p">,</span> <span class="n">unknown</span> <span class="o">=</span> <span class="n">parser</span><span class="o">.</span><span class="n">parse_known_args</span><span class="p">(</span><span class="n">args</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">args</span></div>
+
+
+<div class="viewcode-block" id="find_duplicates"><a class="viewcode-back" href="../../reference.html#simages.main.find_duplicates">[docs]</a><span class="k">def</span> <span class="nf">find_duplicates</span><span class="p">(</span>
+    <span class="nb">input</span><span class="p">:</span> <span class="n">Union</span><span class="p">[</span><span class="nb">str</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">],</span>
+    <span class="n">n</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">5</span><span class="p">,</span>
+    <span class="n">num_epochs</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span>
+    <span class="n">num_channels</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">3</span><span class="p">,</span>
+    <span class="n">show</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+    <span class="n">show_train</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">False</span><span class="p">,</span>
+    <span class="n">show_path</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="bp">True</span><span class="p">,</span>
+    <span class="n">z_dim</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="mi">8</span><span class="p">,</span>
+    <span class="n">db</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span>
+    <span class="o">**</span><span class="n">kwargs</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="n">Tuple</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">]:</span>
+    <span class="sd">&quot;&quot;&quot;Find duplicates in dataset. Either np.ndarray or path to image folder must be specified as `input`.</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        input (str or np.ndarray): folder directory or N x C x H x W array</span>
+<span class="sd">        n (int): number of closest pairs to identify</span>
+<span class="sd">        num_epochs (int): how long to train the autoencoder (more is generally better)</span>
+<span class="sd">        show (bool): display the closest pairs</span>
+<span class="sd">        show_train (bool): show output every</span>
+<span class="sd">        show_path (bool): show image paths of duplicates instead of index</span>
+<span class="sd">        z_dim (int): size of compression (more is generally better, but slower)</span>
+<span class="sd">        kwargs (dict): etc, passed to `EmbeddingExtractor`</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        pairs (np.ndarray): indices for closest pairs of images</span>
+<span class="sd">        distances (np.ndarray): distances of each pair to each other</span>
+
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+        <span class="n">extractor</span> <span class="o">=</span> <span class="n">EmbeddingExtractor</span><span class="p">(</span>
+            <span class="nb">input</span><span class="o">=</span><span class="nb">input</span><span class="p">,</span>
+            <span class="n">num_epochs</span><span class="o">=</span><span class="n">num_epochs</span><span class="p">,</span>
+            <span class="n">num_channels</span><span class="o">=</span><span class="n">num_channels</span><span class="p">,</span>
+            <span class="n">show</span><span class="o">=</span><span class="n">show</span><span class="p">,</span>
+            <span class="n">show_train</span><span class="o">=</span><span class="n">show_train</span><span class="p">,</span>
+            <span class="n">z_dim</span><span class="o">=</span><span class="n">z_dim</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+    <span class="k">elif</span> <span class="nb">isinstance</span><span class="p">(</span><span class="nb">input</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="n">extractor</span> <span class="o">=</span> <span class="n">EmbeddingExtractor</span><span class="p">(</span>
+            <span class="nb">input</span><span class="o">=</span><span class="nb">input</span><span class="p">,</span>
+            <span class="n">num_epochs</span><span class="o">=</span><span class="n">num_epochs</span><span class="p">,</span>
+            <span class="n">num_channels</span><span class="o">=</span><span class="n">num_channels</span><span class="p">,</span>
+            <span class="n">show</span><span class="o">=</span><span class="n">show</span><span class="p">,</span>
+            <span class="n">show_train</span><span class="o">=</span><span class="n">show_train</span><span class="p">,</span>
+            <span class="n">show_path</span><span class="o">=</span><span class="n">show_path</span><span class="p">,</span>
+            <span class="n">z_dim</span><span class="o">=</span><span class="n">z_dim</span><span class="p">,</span>
+            <span class="o">**</span><span class="n">kwargs</span>
+        <span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">show</span><span class="p">:</span>
+        <span class="n">pairs</span><span class="p">,</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">show_duplicates</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">pairs</span><span class="p">,</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">duplicates</span><span class="p">(</span><span class="n">n</span><span class="o">=</span><span class="n">n</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">pairs</span><span class="p">,</span> <span class="n">distances</span></div>
+
+
+<div class="viewcode-block" id="main"><a class="viewcode-back" href="../../reference.html#simages.main.main">[docs]</a><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+    <span class="sd">&quot;&quot;&quot;Main entry point for `simages-show` via command line.&quot;&quot;&quot;</span>
+    <span class="n">args</span> <span class="o">=</span> <span class="n">parse_arguments</span><span class="p">(</span><span class="n">sys</span><span class="o">.</span><span class="n">argv</span><span class="p">[</span><span class="mi">1</span><span class="p">:])</span>
+
+    <span class="n">find_duplicates</span><span class="p">(</span>
+        <span class="nb">input</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">data_dir</span><span class="p">,</span>
+        <span class="n">n</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">pairs</span><span class="p">,</span>
+        <span class="n">num_epochs</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">epochs</span><span class="p">,</span>
+        <span class="n">num_channels</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">num_channels</span><span class="p">,</span>
+        <span class="n">show</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="n">show_train</span><span class="o">=</span><span class="n">args</span><span class="o">.</span><span class="n">show_train</span><span class="p">,</span>
+        <span class="n">show_path</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="n">metric</span><span class="o">=</span><span class="s2">&quot;cosine&quot;</span><span class="p">,</span>
+    <span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="find_similar"><a class="viewcode-back" href="../../reference.html#simages.main.find_similar">[docs]</a><span class="k">def</span> <span class="nf">find_similar</span><span class="p">(</span><span class="n">db</span><span class="p">):</span>
+    <span class="n">extractor</span> <span class="o">=</span> <span class="n">EmbeddingExtractor</span><span class="p">()</span>
+    <span class="n">pairs</span><span class="p">,</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">extractor</span><span class="o">.</span><span class="n">duplicates</span><span class="p">()</span>
+    <span class="n">indices</span> <span class="o">=</span> <span class="n">pairs</span><span class="o">.</span><span class="n">flatten</span><span class="p">()</span>
+    <span class="kn">import</span> <span class="nn">simages</span>
+
+    <span class="n">paths</span> <span class="o">=</span> <span class="p">[</span><span class="n">extractor</span><span class="o">.</span><span class="n">image_path</span><span class="p">(</span><span class="n">ind</span><span class="p">)</span> <span class="k">for</span> <span class="n">ind</span> <span class="ow">in</span> <span class="n">indices</span><span class="p">]</span>
+    <span class="n">sims</span> <span class="o">=</span> <span class="n">simages</span><span class="o">.</span><span class="n">duplicate_images</span><span class="o">.</span><span class="n">duplicate_finder</span><span class="o">.</span><span class="n">query_paths</span><span class="p">(</span><span class="n">paths</span><span class="p">,</span> <span class="n">db</span><span class="p">)</span></div>
+
+
+<div class="viewcode-block" id="cli"><a class="viewcode-back" href="../../reference.html#simages.main.cli">[docs]</a><span class="k">def</span> <span class="nf">cli</span><span class="p">():</span>
+    <span class="kn">from</span> <span class="nn">docopt</span> <span class="kn">import</span> <span class="n">docopt</span>
+    <span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>
+    <span class="kn">from</span> <span class="nn">simages.duplicate_images.duplicate_finder</span> <span class="kn">import</span> <span class="p">(</span>
+        <span class="n">connect_to_db</span><span class="p">,</span>
+        <span class="n">add</span><span class="p">,</span>
+        <span class="n">remove</span><span class="p">,</span>
+        <span class="n">clear</span><span class="p">,</span>
+        <span class="n">show</span><span class="p">,</span>
+        <span class="n">find</span><span class="p">,</span>
+        <span class="n">delete_duplicates</span><span class="p">,</span>
+        <span class="n">display_duplicates</span><span class="p">,</span>
+        <span class="n">find_pairs</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="n">args</span> <span class="o">=</span> <span class="n">docopt</span><span class="p">(</span><span class="vm">__doc__</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--trash&quot;</span><span class="p">]:</span>
+        <span class="n">TRASH</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--trash&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">TRASH</span> <span class="o">=</span> <span class="s2">&quot;./Trash/&quot;</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--db&quot;</span><span class="p">]:</span>
+        <span class="n">DB_PATH</span> <span class="o">=</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--db&quot;</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">DB_PATH</span> <span class="o">=</span> <span class="s2">&quot;./db&quot;</span>
+
+    <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--parallel&quot;</span><span class="p">]:</span>
+        <span class="n">NUM_PROCESSES</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;--parallel&quot;</span><span class="p">])</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">NUM_PROCESSES</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">with</span> <span class="n">connect_to_db</span><span class="p">(</span><span class="n">db_conn_string</span><span class="o">=</span><span class="n">DB_PATH</span><span class="p">)</span> <span class="k">as</span> <span class="n">db</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;add&quot;</span><span class="p">]:</span>
+            <span class="n">add</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">],</span> <span class="n">db</span><span class="p">,</span> <span class="n">NUM_PROCESSES</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;remove&quot;</span><span class="p">]:</span>
+            <span class="n">remove</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">],</span> <span class="n">db</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;clear&quot;</span><span class="p">]:</span>
+            <span class="n">clear</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;show&quot;</span><span class="p">]:</span>
+            <span class="n">show</span><span class="p">(</span><span class="n">db</span><span class="p">)</span>
+        <span class="k">elif</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;find&quot;</span><span class="p">]:</span>
+            <span class="c1"># dups = find(db, match_time=args[&quot;--match-time&quot;])</span>
+            <span class="n">dups</span> <span class="o">=</span> <span class="n">find_pairs</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;&lt;path&gt;&quot;</span><span class="p">],</span> <span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">,</span> <span class="n">epochs</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">args</span><span class="p">[</span><span class="s2">&quot;--epochs&quot;</span><span class="p">]))</span>
+            <span class="c1"># Add similar images</span>
+            <span class="c1"># sims = find_similar(db)</span>
+            <span class="k">if</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--delete&quot;</span><span class="p">]:</span>
+                <span class="n">delete_duplicates</span><span class="p">(</span><span class="n">dups</span><span class="p">,</span> <span class="n">db</span><span class="p">)</span>
+            <span class="k">elif</span> <span class="n">args</span><span class="p">[</span><span class="s2">&quot;--print&quot;</span><span class="p">]:</span>
+                <span class="n">pprint</span><span class="p">(</span><span class="n">dups</span><span class="p">)</span>
+                <span class="k">print</span><span class="p">(</span><span class="s2">&quot;Number of duplicates: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">dups</span><span class="p">)))</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">display_duplicates</span><span class="p">(</span><span class="n">dups</span><span class="p">,</span> <span class="n">db</span><span class="o">=</span><span class="n">db</span><span class="p">)</span></div>
+
+
+<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
+    <span class="n">main</span><span class="p">()</span>
+</pre></div>
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, simages developers
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
