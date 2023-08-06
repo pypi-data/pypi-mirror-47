@@ -1,0 +1,11 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+keybow/__init__.py
+keybow.egg-info/PKG-INFO
+keybow.egg-info/SOURCES.txt
+keybow.egg-info/dependency_links.txt
+keybow.egg-info/top_level.txt
