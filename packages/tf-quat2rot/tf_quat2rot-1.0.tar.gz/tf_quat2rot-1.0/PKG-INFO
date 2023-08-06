@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: tf_quat2rot
+Version: 1.0
+Summary: Convert between quaternion and rotation matrices in tensorflow.
+Home-page: http://github.com/risteon/tf_quat2rot
+Author: Christoph Rist
+Author-email: c.rist@posteo.de
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5
