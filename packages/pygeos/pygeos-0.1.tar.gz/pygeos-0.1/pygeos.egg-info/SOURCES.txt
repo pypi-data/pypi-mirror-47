@@ -1,0 +1,10 @@
+README.rst
+setup.py
+pygeos/__init__.py
+pygeos/test.py
+pygeos.egg-info/PKG-INFO
+pygeos.egg-info/SOURCES.txt
+pygeos.egg-info/dependency_links.txt
+pygeos.egg-info/requires.txt
+pygeos.egg-info/top_level.txt
+src/geos_ufuncs.c
