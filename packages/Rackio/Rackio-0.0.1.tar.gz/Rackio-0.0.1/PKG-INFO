@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: Rackio
+Version: 0.0.1
+Summary: A modern Python Framework for microboard automation and control applications development
+Home-page: https://github.com/rackio-framework
+Author: Nelson Carrasquel
+Author-email: rackio.framework@outlook.com
+License: UNKNOWN
+Description: # Rackio Package
+        
+        This is the README File for the Rackio Framework
+        [Github-Rackio Framework](https://github.com/rackio-framework)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
