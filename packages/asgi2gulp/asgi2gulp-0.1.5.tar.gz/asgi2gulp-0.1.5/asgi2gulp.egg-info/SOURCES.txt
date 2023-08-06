@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+asgi2gulp.py
+setup.py
+asgi2gulp.egg-info/PKG-INFO
+asgi2gulp.egg-info/SOURCES.txt
+asgi2gulp.egg-info/dependency_links.txt
+asgi2gulp.egg-info/top_level.txt
