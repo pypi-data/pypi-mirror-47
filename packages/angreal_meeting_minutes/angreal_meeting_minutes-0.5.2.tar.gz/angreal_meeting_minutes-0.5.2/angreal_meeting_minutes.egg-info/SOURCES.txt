@@ -1,0 +1,10 @@
+README.md
+angreal.json
+setup.py
+angreal_meeting_minutes.egg-info/PKG-INFO
+angreal_meeting_minutes.egg-info/SOURCES.txt
+angreal_meeting_minutes.egg-info/dependency_links.txt
+angreal_meeting_minutes.egg-info/not-zip-safe
+angreal_meeting_minutes.egg-info/top_level.txt
+{{angreal.name}}/.angreal/init.py
+{{angreal.name}}/.angreal/task_take_minutes.py
