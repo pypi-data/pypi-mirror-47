@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+blogger_to_hugo.py
+setup.cfg
+setup.py
+blogger_to_hugo.egg-info/PKG-INFO
+blogger_to_hugo.egg-info/SOURCES.txt
+blogger_to_hugo.egg-info/dependency_links.txt
+blogger_to_hugo.egg-info/entry_points.txt
+blogger_to_hugo.egg-info/requires.txt
+blogger_to_hugo.egg-info/top_level.txt
