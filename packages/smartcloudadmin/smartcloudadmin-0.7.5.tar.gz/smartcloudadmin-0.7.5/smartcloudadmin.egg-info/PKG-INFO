@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: smartcloudadmin
+Version: 0.7.5
+Summary: A package that provides functions to help interacting with companies, subscriptions and subscribers on IBM Smartcloud
+Home-page: https://github.com/cathaldi/smartcloud-administrator
+Author: Cathal A. Dinneen
+Author-email: cathal.a.dinneen@gmail.com
+License: apache2
+Download-URL: https://github.com/cathaldi/smartcloud-administrator/releases/download/0.7.5/smartcloudadmin-0.7.5.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
