@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pliers
+Version: 0.3.0
+Summary: Multimodal feature extraction in Python
+Home-page: http://github.com/tyarkoni/pliers
+Maintainer: Tal Yarkoni
+Maintainer-email: tyarkoni@gmail.com
+License: MIT
+Download-URL: https://github.com/tyarkoni/pliers/archive/0.3.0.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
