@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: channel_access.server
+Version: 0.1.0
+Summary: Channel Access server library
+Home-page: UNKNOWN
+Author: André Althaus
+Author-email: andre.althaus@tu-dortmund.de
+License: MIT
+Description: Channel access server bindings
+Keywords: epics ca cas channel_access
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >= 3.5
+Provides-Extra: doc
+Provides-Extra: dev
+Provides-Extra: test

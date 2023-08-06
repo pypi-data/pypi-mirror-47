@@ -1,0 +1,12 @@
+channel_access.common
+
+[dev]
+tox
+sphinx
+pytest
+
+[doc]
+sphinx
+
+[test]
+pytest
