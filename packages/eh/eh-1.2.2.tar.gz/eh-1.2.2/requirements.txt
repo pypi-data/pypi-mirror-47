@@ -1,0 +1,12 @@
+gitpython
+Markdown
+PyYAML
+Pygments
+argparse
+click
+docopt
+pbr
+six
+stevedore
+mdv
+prettytable
