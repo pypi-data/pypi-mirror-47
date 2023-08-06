@@ -1,0 +1,5 @@
+pyQt5
+pyDSA_core==1.2.1
+IMTreatment==1.2.1
+numpy
+matplotlib>=2.2.0
