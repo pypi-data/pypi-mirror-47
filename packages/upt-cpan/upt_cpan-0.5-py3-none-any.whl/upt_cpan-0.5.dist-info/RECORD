@@ -1,0 +1,10 @@
+upt_cpan/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_cpan/upt_cpan.py,sha256=YiwEhRWlwJY7gznZxgjY8HnG2dJ_qEWbtahQ5YXX-EE,4648
+upt_cpan/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+upt_cpan/tests/test_upt_cpan.py,sha256=hYOorxGBPM1cxtGVzXaPs5jbcQkV0p182MxylaH0xfE,6484
+upt_cpan-0.5.dist-info/LICENSE,sha256=WKoK5u2_uNTIGKHEBRVSRAQmkMNt8-GsI43qTlbIisU,1464
+upt_cpan-0.5.dist-info/METADATA,sha256=Qu1hhQOFVnIyPr_1fnfKMZSXrVPnwNmCy_zsSrSwYVo,774
+upt_cpan-0.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+upt_cpan-0.5.dist-info/entry_points.txt,sha256=XC1X2CKYoznDPUVXkN5dH6wE23ElLjj3TPZhBoswM88,55
+upt_cpan-0.5.dist-info/top_level.txt,sha256=uEu39RrKOaYZ6gcyofDk2bg798yXAUVgkFTkOBF69G0,9
+upt_cpan-0.5.dist-info/RECORD,,
