@@ -1,0 +1,18 @@
+Metadata-Version: 1.0
+Name: jrfork-kegberry
+Version: 0.0.5
+Summary: Johnnyruzdev fork of the Kegberry Package
+Home-page: http://kegberry.kegbot.org/
+Author: johnnyruzdev
+Author-email: johnnyruzdev01@outlook.com
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: Kegberry turns a Raspberry Pi into a keg monitor and digital taplist.
+        
+        Kegberry is based on Kegbot, and makes it easy to install and run a
+        full keg monitoring solution on Raspberry Pi.  For more information, see the
+        project home page at kegberry.com.
+        
+        Originally forked from version 2.1.1
+        
+Platform: UNKNOWN
