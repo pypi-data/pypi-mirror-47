@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: variations
+Version: 0.0.2
+Summary: A simple interface that allows to process images.
+Home-page: https://github.com/dldevinc/variations
+Author: Mihail Mishakin
+Author-email: x896321475@gmail.com
+License: BSD
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow (>=5.2.0)
+Requires-Dist: pilkit (>=1.1.6)
+Requires-Dist: face-recognition (>=1.0.0)
+
+
+# variations
+A simple interface that allows to process images.
+
+## Compatibility
+* `python` >= 3.4
+
+## Installation
+1. Install [Pillow](http://pypi.python.org/pypi/Pillow)
+2. Install [pilkit](https://github.com/matthewwithanm/pilkit)
+
+    ``pip install pilkit``
+3. Run ``pip install variations``
+
+
