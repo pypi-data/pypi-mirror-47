@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: fuel-agent
+Version: 10.0.0
+Summary: Fuel agent
+Home-page: UNKNOWN
+Author: Mirantis
+Author-email: fuel-dev@lists.launchpad.net
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Dist: Babel (!=2.3.2,>=1.3,!=2.3.1,!=2.3.3,!=2.3.0)
+Requires-Dist: Jinja2 (>=2.6)
+Requires-Dist: PyYAML (>=3.1.0)
+Requires-Dist: eventlet (>=0.17.4)
+Requires-Dist: iso8601 (>=0.1.9)
+Requires-Dist: jsonschema (<3.0.0,>=2.0.0,!=2.5.0)
+Requires-Dist: oslo.config (>=2.3.0)
+Requires-Dist: oslo.log (>=1.14.0)
+Requires-Dist: oslo.serialization (>=1.4.0)
+Requires-Dist: pbr (>=1.6)
+Requires-Dist: requests (!=2.13.0,!=2.12.2,>=2.10.0)
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: stevedore (>=1.5.0)
+Requires-Dist: urllib3 (>=1.8.3)
+
+False
+
+

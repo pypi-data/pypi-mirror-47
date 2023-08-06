@@ -1,0 +1,17 @@
+[console_scripts]
+fa_bootloader = fuel_agent.cmd.agent:bootloader
+fa_build_image = fuel_agent.cmd.agent:build_image
+fa_configdrive = fuel_agent.cmd.agent:configdrive
+fa_copyimage = fuel_agent.cmd.agent:copyimage
+fa_ironic_callback = fuel_agent.cmd.ironic_callback:main
+fa_mkbootstrap = fuel_agent.cmd.agent:mkbootstrap
+fa_partition = fuel_agent.cmd.agent:partition
+provision = fuel_agent.cmd.agent:provision
+
+[fuel_agent.drivers]
+bootstrap_build_image = fuel_agent.drivers.bootstrap:BootstrapBuildImage
+ironic = fuel_agent.drivers.nailgun:Ironic
+nailgun = fuel_agent.drivers.nailgun:Nailgun
+nailgun_build_image = fuel_agent.drivers.nailgun:NailgunBuildImage
+nailgun_simple = fuel_agent.drivers.simple:NailgunSimpleDriver
+
