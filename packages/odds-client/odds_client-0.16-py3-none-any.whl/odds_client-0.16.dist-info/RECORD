@@ -1,0 +1,11 @@
+odds_client/__init__.py,sha256=K-FtqQ97JvYMyaaSiU5EglfmyT4vsytIC2MSZzmyFDY,205
+odds_client/default_http_client.py,sha256=q06IAriX1bi9Kz2uAXneTzywlDx2lUGR8Zwh0cuDXfg,505
+odds_client/generic_sports_dataio_client.py,sha256=_x73SpjnS_dnnUV7EBmNifHdPG5Rzhd_rZRLja9iY-s,5119
+odds_client/manual_tests.py,sha256=R_4CjxrogbItMScDUMa63TXmf8ra67wgA3PLzF18tmg,627
+odds_client/sports_client_factory.py,sha256=17YTzyvMLRPxMqz_WiCguwY-6ojj3iTuuCmRl4TOAY8,491
+odds_client/sports_client_nba.py,sha256=kWSzVx8tpik_UPfcmyWEHXBhjTCvE92V0XwaW-fYEwU,963
+odds_client-0.16.dist-info/LICENSE,sha256=N0P3pKtRMvfb64jmgJdlerg3TnS0a2QC776AzPsbZIg,35128
+odds_client-0.16.dist-info/METADATA,sha256=spGQSxqiXkJog521xprbMf5B7gFkLkL-b6_jjVj_zrY,735
+odds_client-0.16.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+odds_client-0.16.dist-info/top_level.txt,sha256=TGdsjOYvegrmWhpih99hshVmIs-ol_y-sAr3UxO3NGg,12
+odds_client-0.16.dist-info/RECORD,,
