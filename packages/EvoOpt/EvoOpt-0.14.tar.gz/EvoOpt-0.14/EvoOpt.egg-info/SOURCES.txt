@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+EvoOpt/__init__.py
+EvoOpt.egg-info/PKG-INFO
+EvoOpt.egg-info/SOURCES.txt
+EvoOpt.egg-info/dependency_links.txt
+EvoOpt.egg-info/top_level.txt
+EvoOpt/solvers/DuelistAlgorithm.py
+EvoOpt/solvers/FireflyAlgorithm.py
+EvoOpt/solvers/GeneticAlgorithm.py
+EvoOpt/solvers/GravitationalSearchAlgorithm.py
+EvoOpt/solvers/GreyWolfOptimizer.py
+EvoOpt/solvers/MultiVerseOptimizer.py
+EvoOpt/solvers/ParticleSwarmOptimization.py
+EvoOpt/solvers/SimulatedAnnealing.py
+EvoOpt/solvers/__init__.py
