@@ -1,0 +1,4 @@
+/dist
+/.coverage
+/.tox
+/.pytest_cache
