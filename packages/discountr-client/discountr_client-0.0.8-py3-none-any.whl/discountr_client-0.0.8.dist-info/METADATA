@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: discountr-client
+Version: 0.0.8
+Summary: Discountr API Client
+Home-page: https://gitlab.com/discountr_info/api-client
+Author: Turkalp Burak KAYRANCIOGLU
+Author-email: bkayranci@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+# Discountr Api Client
+
+### INSTALLATION
+```
+pip install discountr-client
+```
+
+
+### BUILD
+```
+python setup.py sdist bdist_wheel
+```
+
+
