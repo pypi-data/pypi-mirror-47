@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vkmsg
+Version: 0.0.5
+Summary: Simple but yet functional library for building VK bots
+Home-page: https://github.com/AppVelox/vkmsg
+Author: Appvelox LLC
+Author-email: team@appvelox.ru
+License: UNKNOWN
+Description: # vkmsg
+        [![PyPI version](https://badge.fury.io/py/vkmsg.svg)](https://badge.fury.io/py/vkmsg)
+        
+        Simple but yet functional library for building VK bots
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
