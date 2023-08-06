@@ -1,0 +1,9 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+MaintenanceDB.egg-info/PKG-INFO
+MaintenanceDB.egg-info/SOURCES.txt
+MaintenanceDB.egg-info/dependency_links.txt
+MaintenanceDB.egg-info/requires.txt
+MaintenanceDB.egg-info/top_level.txt

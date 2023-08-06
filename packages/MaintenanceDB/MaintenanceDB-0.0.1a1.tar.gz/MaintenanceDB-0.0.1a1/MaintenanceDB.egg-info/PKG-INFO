@@ -1,0 +1,29 @@
+Metadata-Version: 1.1
+Name: MaintenanceDB
+Version: 0.0.1a1
+Summary: Manage providers maintenance notifications and fire alarms or invoke hooks
+Home-page: https://github.com/mirceaulinic/maintenance
+Author: Mircea Ulinic
+Author-email: ping@mirceaulinic.net
+License: Apache License 2.0
+Description: MaintenanceDB
+        =============
+        
+        Manage providers maintenance notifications and fire alarms or invoke hooks
+        
+Keywords: networking,maintenance,webhooks,alerts,metrics
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Topic :: Utilities
+Classifier: Topic :: System :: Networking
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Classifier: Intended Audience :: Developers
