@@ -1,0 +1,12 @@
+osprey_design/__init__.py,sha256=7l7nnvKZw8q5lCyCBK4rqIsZYlR501WVtEHAznQaGMc,152
+osprey_design/cli.py,sha256=7G8LpWDnzUxqWe95JkIZ6z6zTB6-CcY-jsuyydsZNWM,1549
+osprey_design/globals.py,sha256=7r0l3okTjmAGXt7hseAsJx0HnuUp5S0dfEZdNV6ZBgM,482
+osprey_design/navigation.py,sha256=XDMuU-YkSJtAPXELpuBXwt8d0mAqv7sd1YOoWSnewTo,2015
+osprey_design/osprey_design.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+osprey_design-0.1.1.dist-info/AUTHORS.rst,sha256=4pst_TrKNqKUAhILMi0R-ToRRgcVclRdzmdosuvh-O4,152
+osprey_design-0.1.1.dist-info/LICENSE,sha256=9y6perDIF1CwLH2Zt9WSQuGPldDkRr9DmFE9m_fkFCQ,1580
+osprey_design-0.1.1.dist-info/METADATA,sha256=4Ba1E34f6ZDghRusi2m5aj2MV0Fui2VGliC_x2G6tjI,2192
+osprey_design-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+osprey_design-0.1.1.dist-info/entry_points.txt,sha256=mLaR0HN4-Buh3lWMIg23Q8Xqb5jCwp-YGERoFhTyS2g,58
+osprey_design-0.1.1.dist-info/top_level.txt,sha256=pMG1SjBX88n_yFNyjFA8jWCJBvUlvgngnhqToZfGmkk,14
+osprey_design-0.1.1.dist-info/RECORD,,
