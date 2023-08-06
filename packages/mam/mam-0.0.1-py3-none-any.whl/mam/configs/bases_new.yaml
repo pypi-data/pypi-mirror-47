@@ -1,0 +1,244 @@
+_mutations:
+  _mutations:
+    '**': '@mam.config:mutations.mutations'
+  _reduce: '@mam.config:mutations.zip_update'
+  _post_process: '@mam.config:mutations.extend'
+  $global:
+    $: '@mam.config:mutations.defer'
+    '*': '@mam.config:mutations.update'
+    exclusions: '@mam.config:mutations.extend'
+    src:
+      $: '@mam.config:mutations.defer'
+      '*': '@mam.config:mutations.update'
+  base: '@mam.config:mutations.update'
+  tasks:
+    $: '@mam.config:mutations.tasks'
+    '*':
+      $: '@mam.config:mutations.defer'
+      '*': '@mam.config:mutations.child'
+      extensions: '@mam.config:mutations.extend'
+      config: '@mam.config:mutations.update'
+      args:
+        $: '@mam.config:mutations.defer'
+        $base: '@mam.config:mutations.update'
+        '*': '@mam.config:mutations.update'
+  files: '@mam.config:mutations.child'
+  mutations: '@mam.config:mutations.child'
+  output: '@mam.config:mutations.child'
+_reduce:
+  - ['base']
+  -
+_post_process:
+  - '@mam.config:post_processing.expand_extensions'
+  - '@mam.config:post_processing.expand_arguments'
+  - '@mam.config:post_processing.expand_format'
+  - '@mam.config:post_processing.ensure_config_exists'
+  - '@mam.config:post_processing.reduce_arguments'
+  - '@mam.config:post_processing.remove_internals'
+  - '@mam.config:post_processing.remove_base'
+$global:
+  exclusions:
+    - '.idea'
+    - '.mam'
+    - '.mypy_cache'
+    - 'venv'
+  src:
+    all:
+      directory: '.'
+      glob: './**/*'
+    python:
+      directory: '{$^.all.directory}'
+      glob: '{$^.all.glob}.py'
+    yaml:
+      directory: '{$^.all.directory}'
+      glob: '{$^.all.glob}.yaml'
+base:
+  name: 'undefined'
+  config:
+    name: '{$^.name}.ini'
+    dir: './configs'
+    path: '{$.dir}/{$.name}'
+  args:
+    $base:
+      sep: '='
+      join: ','
+      flag: '--???'
+      value: ''
+      arg: '{$.flag}{$.sep}{$.value}'
+    config:
+      flag: '--config'
+      value: '{$^^.config.path}'
+    src:
+      sep: ''
+      flag: ''
+      value: '{$#.$global.src.all.directory}'
+tasks:
+  - name: 'mypy'
+    deps:
+      - 'mypy'
+    command: 'mypy'
+    converter: '@mam.tasks:converters.mypy'
+    args:
+      config:
+        flag: '--config-file'
+  - name: 'flake8'
+    deps:
+      - 'flake8'
+    command: 'flake8'
+    converter: '@mam.tasks:converters.pycodestyle'
+    extends:
+      - 'pyflakes'
+      - 'pycodestyle'
+  - name: 'pycodestyle'
+    deps:
+      - 'pycodestyle'
+    command: 'pycodestyle'
+    converter: '@mam.tasks:converters.pycodestyle'
+  - name: 'pyflakes'
+    deps:
+      - 'pyflakes'
+    command: 'pyflakes'
+    converter: '@mam.tasks:converters.pyflakes'
+    config_path:
+    config_arg:
+  - name: 'pydocstyle'
+    deps:
+      - 'pydocstyle'
+    command: 'pydocstyle'
+    converter: '@mam.tasks:converters.pydocstyle'
+  - name: 'pylint'
+    deps:
+      - 'pylint'
+    command: 'pylint'
+    converter: '@mam.tasks:converters.pylint'
+    config:
+      flag: '--rcfile'
+  - name: 'vulture'
+    deps:
+      - 'vulture'
+    command: 'vulture'
+    converter: '@mam.tasks:converters.vulture'
+    config_path:
+    config_arg:
+  - name: 'frosted'
+    deps:
+      - 'frosted'
+    command: 'frosted -r'
+    converter: '@mam.tasks:converters.pyflakes'
+  - name: 'bandit'
+    deps:
+      - 'bandit'
+    command: 'r!bandit -r --format custom --msg-template "{relpath}:{line}:{test_id}:{severity}:{msg}:{confidence}:{range}"'
+    converter: '@mam.tasks:converters.bandit_mam_custom'
+    config:
+      flag: '--configfile'
+      sep: ' '
+  - name: 'prospector'
+    deps:
+      - 'prospector'
+    command: 'prospector --without-tool pyflakes --strictness veryhigh --no-autodetect --output-format json'
+    converter: '@mam.tasks:converters.prospector_json'
+  - name: 'pylama'
+    deps:
+      - 'pylama'
+      - 'pylama_pylint'
+    command: 'pylama'
+    converter: '@mam.tasks:converters.pylama'
+  - name: 'jedi'
+    deps:
+      - 'jedi'
+    command: 'python -m jedi linter'
+    converter: '@mam.tasks:converters.jedi'
+  - name: 'pydiatra'
+    deps:
+      - 'pydiatra'
+    command: 'python -m pydiatra'
+    converter: '@mam.tasks:converters.pydiatra'
+  - name: 'detect-secrets'
+    deps:
+      - 'detect-secrets'
+    command: 'detect-secrets scan --all-files'
+    converter: '@mam.tasks:converters.detect_secrets'
+  - name: 'coala'
+    deps:
+      - 'coala-bears'
+    command: 'coala --json --files'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'pychecker'
+    deps:
+      - 'PyChecker'
+    command: 'pychecker'
+    converter: '@mam.tasks:converters.echo'
+    python: '2.7'
+  - name: 'bellybutton'
+    deps:
+      - 'bellybutton'
+    command: 'bellybutton lint'
+    converter: '@mam.tasks:converters.echo'
+    args:
+      src:
+  - name: 'clonedigger'
+    deps:
+      - 'clonedigger'
+    command: 'clonedigger'
+    converter: '@mam.tasks:converters.echo'
+    python: '2.7'
+  - name: 'py-find-injection'
+    deps:
+      - 'py-find-injection'
+    command: 'py-find-injection'
+    converter: '@mam.tasks:converters.echo'
+    python: '2.7'
+  - name: 'twistedchecker'
+    deps:
+      - 'twistedchecker'
+    command: 'twistedchecker --confidence=INFERENCE --pep8=y'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'python-taint'
+    deps:
+      - 'python-taint'
+    command: 'pyt'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'pyre'
+    deps:
+      - 'pyre-check'
+    command: 'pyre check --source-directory'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'pytype'
+    deps:
+      - 'pytype'
+    command: 'pytype'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'dodgy'
+    deps:
+      - 'dodgy'
+    command: 'python .mam/{$.name}/Scripts/dodgy'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'pyroma'
+    deps:
+      - 'pyroma'
+    command: 'pyroma'
+    converter: '@mam.tasks:converters.pyroma'
+    args:
+      src:
+        value: '.'
+  - name: 'radon'
+    deps:
+      - 'radon'
+    command: 'radon cc -nc'
+    converter: '@mam.tasks:converters.radon'
+  - name: 'radon-raw'
+    deps:
+      - 'radon'
+    command: 'radon raw'
+    converter: '@mam.tasks:converters.echo'
+  - name: 'radon-mi'
+    deps:
+      - 'radon'
+    command: 'radon mi -nb'
+    converter: '@mam.tasks:converters.radon_mi'
+  - name: 'radon-hal'
+    deps:
+      - 'radon'
+    command: 'radon hal'
+    converter: '@mam.tasks:converters.echo'

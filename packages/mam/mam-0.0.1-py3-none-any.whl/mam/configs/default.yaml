@@ -1,0 +1,8 @@
+bases: '@mam/configs/bases.yaml'
+mutations:
+  - '@mam.mutations.sort_location'
+output: '@mam.output.default'
+base:
+  python: 3.7
+tasks:
+  - base: 'flake8'
