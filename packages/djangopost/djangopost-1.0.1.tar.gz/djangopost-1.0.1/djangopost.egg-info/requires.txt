@@ -1,0 +1,4 @@
+Django
+django-tinymce4-lite
+djangorestframework
+Pillow
