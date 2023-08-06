@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: timedata
+Version: 0.3
+Summary: control all the things
+Home-page: http://github.com/timedata-org/timedata
+Author: Tom Ritchford
+Author-email: tom@swirly.com
+License: MIT
+Download-URL: http://github.com/timedata-org/timedata/archive/0.3.tar.gz
+Description: UNKNOWN
+Keywords: projects,objects,timedata
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
