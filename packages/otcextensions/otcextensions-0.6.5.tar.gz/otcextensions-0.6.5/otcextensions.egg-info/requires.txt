@@ -1,0 +1,2 @@
+openstacksdk>=0.29.0
+oslo_i18n
