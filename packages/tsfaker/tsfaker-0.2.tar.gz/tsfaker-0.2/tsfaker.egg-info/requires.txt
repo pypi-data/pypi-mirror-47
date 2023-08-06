@@ -1,0 +1,11 @@
+click
+numpy
+pandas
+rstr
+tableschema
+dsfaker
+
+[dev]
+sphinx
+pytest
+goodtables
