@@ -1,0 +1,9 @@
+README.md
+inspect2.py
+setup.cfg
+setup.py
+inspect2.egg-info/PKG-INFO
+inspect2.egg-info/SOURCES.txt
+inspect2.egg-info/dependency_links.txt
+inspect2.egg-info/top_level.txt
+test/test_inspect2.py
