@@ -1,0 +1,16 @@
+tjpy_click_util/__init__.py,sha256=JCV7YGTVJ_E06gISrDI5GOyO3j2YpmF8fjLLTeUHcQs,83
+tjpy_click_util/assert_help_command.py,sha256=4Clnwb0iitRPFAWhpxPuC8N6Ek3ocRxiFK9WIVqhO7k,470
+tjpy_click_util/autocomplete_mode_detection.py,sha256=x4uCZSpiQf0bxZQulZZ6R8GtpqCMOWw6MMcF3bI0svE,565
+tjpy_click_util/choices.py,sha256=EVcm8jsvxO8auK69LomIeDK9lMxNgIL7zrwnPlDhaBg,1391
+tjpy_click_util/custom_autocompletion_per_argument_type.py,sha256=OJIGC7yGb_q9Q443Ml9gXw_pO4ZQJ3ZtmtNfejXtsd8,1146
+tjpy_click_util/enum_choice.py,sha256=7SAxXeC-DzONj1_Undhg64tdaT6Jd66cuhqI3rxJOko,567
+tjpy_click_util/initialization_to_bash_completion.py,sha256=bNhFjsaXoY7pRHZPGnZMQzcCGjvJPWZRCgYI4UUpQr0,741
+tjpy_click_util/interactive_check.py,sha256=0vbQdoqx5s8rvfxQVZ8BahKwqwUsCvwqTXuB4UXb3-E,239
+tjpy_click_util/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tjpy_click_util/terminal_formatting.py,sha256=IzViIxV-rbhrz6c9vEgjN-KDDY92jUy8O8d0bcsI2fg,881
+tjpy_click_util/test_cli_invoke.py,sha256=xhLm8nUyGLHdrFx1RiQEER2ojs4Czjf3sWL_OzaiVtc,701
+tjpy_click_util-0.1.1.dist-info/LICENSE,sha256=ecRdAqOxYyM0Pp4klJOuyyNwB4LtlTBhavxT6jNJi2c,1072
+tjpy_click_util-0.1.1.dist-info/METADATA,sha256=_8IveROpfNbpOYLp8GWBw-5AjW99uxBZ66iX5HNFo5Q,2408
+tjpy_click_util-0.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+tjpy_click_util-0.1.1.dist-info/top_level.txt,sha256=E_4Wao4v4inIlLM5B70sqLpZ5qrHBv11MmVwtQboXVk,16
+tjpy_click_util-0.1.1.dist-info/RECORD,,
