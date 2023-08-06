@@ -1,0 +1,8 @@
+clipboard_formatter-1.0.dist-info/METADATA,sha256=e0FYS0YDqEjA-ZROZ8cUFxGFW4gdc6OSQZhGm05D49E,543
+clipboard_formatter-1.0.dist-info/RECORD,,
+clipboard_formatter-1.0.dist-info/WHEEL,sha256=cScVKDQXc_cp1jHmxFDq9fIOIg17a2BsmfS6J39H6Eo,97
+clipboard_formatter-1.0.dist-info/entry_points.txt,sha256=TB93JX_48UEHaLxepblFBq3wWw86xeu_07UojoCHzUM,57
+clipboard_formatter-1.0.dist-info/top_level.txt,sha256=M1sgcOXJ8pfBpZViv4KFUyqThQlX_s-JgUC2l-YX64E,9
+clipform/__init__.py,sha256=ZiU10TINV3Io44i7F-vNhg6Nx5DJe9OuZnCi0SXU2jg,45
+clipform/clipform.py,sha256=QrIXLz0htxIDRnA4KmWRktWz484VmMVgvNug3WtW9hw,1182
+clipform/command_line.py,sha256=4586zp-q3ENPx9BUeKldsB4f9yxPjHBPBPE280zyZvs,169
