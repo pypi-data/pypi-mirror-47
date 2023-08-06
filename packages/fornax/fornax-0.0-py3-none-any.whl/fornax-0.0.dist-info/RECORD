@@ -1,0 +1,17 @@
+fornax/__init__.py,sha256=NdLUcL7FxkqGxE92p_R8mwKeJfBi43G-Mjf8s7s4fIo,82
+fornax/api.py,sha256=iEFipfxaJDYo_KG5t8onfMiE2e_3Gdfr7v7pB4PLZss,34549
+fornax/model.py,sha256=-811DQ_UknwGz7cLTWm6Xkb9MpbC_1Wn8svoz8m4N9k,4300
+fornax/opt.py,sha256=kCpj8wu9WJHrE7jsMjwHE-HNg9Bh38I0t3Czjs__HbM,19974
+fornax/select.py,sha256=1CWnkoU0MOVjq6CklW1gRuqafMNY9T_hFUhXifYsmFQ,3735
+fornax/version.py,sha256=B5gaXa_iv3KKAmR9gppWSb7F1Iaba-sVO-73URL8e70,20
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_api.py,sha256=Xpcl89SnmJqZw5d3y0ABgqRh23znmvbQFHETBjf60hI,24792
+test/test_base.py,sha256=_6EBpDXQNBmAeTH42FekBQxEBrCxmso7m8mGDaUTaCc,1447
+test/test_model.py,sha256=A8eqgSI6QbgRaituTyOQ0bU2M5RLK79PwMJ_wjCgVhc,5568
+test/test_opt.py,sha256=_eLA3_bwJJYPKgYLKtyPCUW_DWz9SGMSPvwc78Cs4N8,5611
+test/test_select.py,sha256=OvNcM03ufcYnlqYAlNXgbv8jnP63zvfpNtqYvZCa0bE,9221
+fornax-0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fornax-0.0.dist-info/METADATA,sha256=fM9EJyhwuYCgB_EwX8lXP9k8-xiu9ryIDHdG_Q35JYw,3200
+fornax-0.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+fornax-0.0.dist-info/top_level.txt,sha256=x8lt9SGPbfaqv0eZTfPInp2CZ14qZHvwc4DhgQslAhE,12
+fornax-0.0.dist-info/RECORD,,
