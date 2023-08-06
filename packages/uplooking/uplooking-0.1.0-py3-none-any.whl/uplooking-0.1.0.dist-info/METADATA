@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: uplooking
+Version: 0.1.0
+Summary: Json algorithm based on groupby
+Home-page: https://github.com/soukon9/crabapple
+Author: uplooking
+Author-email: 417993072@qq.com
+License: MIT Licence
+Keywords: pip,crabapple,Crabapple,CrabappleJson
+Platform: any
+
+Json algorithm based on groupby
+
+
