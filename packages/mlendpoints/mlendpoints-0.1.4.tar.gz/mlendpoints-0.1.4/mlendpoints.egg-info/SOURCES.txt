@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+mlendpoints/__init__.py
+mlendpoints/__version__.py
+mlendpoints/client.py
+mlendpoints/communication.py
+mlendpoints/server.py
+mlendpoints.egg-info/PKG-INFO
+mlendpoints.egg-info/SOURCES.txt
+mlendpoints.egg-info/dependency_links.txt
+mlendpoints.egg-info/requires.txt
+mlendpoints.egg-info/top_level.txt
