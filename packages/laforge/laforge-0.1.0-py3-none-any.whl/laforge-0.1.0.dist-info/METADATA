@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: laforge
+Version: 0.1.0
+Summary: A low-key build system for working with data.
+Home-page: https://git.sr.ht/~matvan/laforge
+Author: Matt VanEseltine
+Author-email: matvan@umich.edu
+License: AGPL-3.0-or-later
+Keywords: data build SQL database
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: SQL
+Classifier: Topic :: Database
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Build Tools
+Description-Content-Type: text/x-rst
+Requires-Dist: Click (>=7.0)
+Requires-Dist: pandas (>=0.22)
+Requires-Dist: pyparsing (>=2.3)
+Requires-Dist: SQLAlchemy (>=1.3)
+Provides-Extra: all
+Requires-Dist: pymysql (>=0.9) ; extra == 'all'
+Requires-Dist: psycopg2 (>=2.8) ; extra == 'all'
+Requires-Dist: pyodbc (>=4.0) ; extra == 'all'
+Provides-Extra: mssql
+Requires-Dist: pyodbc (>=4.0) ; extra == 'mssql'
+Provides-Extra: mysql
+Requires-Dist: pymysql (>=0.9) ; extra == 'mysql'
+Provides-Extra: postgresql
+Requires-Dist: psycopg2 (>=2.8) ; extra == 'postgresql'
+
+A low-key build system for working with data.
+
+
+
