@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: jedhy
+Version: 1
+Summary: Autocompletion and introspection tools for Hy.
+Home-page: https://github.com/ekaschalk/jedhy
+Author: Eric Kaschalk
+Author-email: ekaschalk@gmail.com
+Maintainer: Eric Kaschalk
+Maintainer-email: ekaschalk@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: python hy completion introspection refactoring emacs vim
+Platform: UNKNOWN
