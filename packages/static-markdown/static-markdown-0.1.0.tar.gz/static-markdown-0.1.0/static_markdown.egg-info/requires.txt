@@ -1,0 +1,11 @@
+markdown<3.0
+py-gfm
+python-slugify
+
+[dev]
+tox
+pytest
+requests
+black
+isort
+flake8
