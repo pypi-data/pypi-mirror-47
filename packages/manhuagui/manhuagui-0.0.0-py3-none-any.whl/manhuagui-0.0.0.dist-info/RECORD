@@ -1,0 +1,16 @@
+manhuagui/__init__.py,sha256=YjJw-eP5ylMRD7wWzwqHZeiy3F8_RIFu4LoF9-SZNAI,85
+manhuagui/cartoonmad.py,sha256=of4EFg_A8sk40X7SUIIiCHCoIDRjegeA8Kb9LcRqNbc,5622
+manhuagui/cmdline.py,sha256=HEr_-O_Fv-8AlXWun3l5Oa1JpQJX6t5FG0yDIIZ48Eo,2113
+manhuagui/comic.py,sha256=aqClYIOKorq9BNs_1zkrmXHhM_UZQVy6Iprgv8Bpdvo,2363
+manhuagui/command.py,sha256=wvbLAovPIzBssDyEdJA4t4sxNLoPdwyf0tA5FeA9qX8,2394
+manhuagui/constant.py,sha256=HD9lwwTk_BbyWYcShoI3ew9iUtDwOhSyuzRTvt3KMus,659
+manhuagui/downloader.py,sha256=PO1GrBuD99UYUdXg_V4d9AeWevmxEmoVO6LpvxGEfts,5258
+manhuagui/logger.py,sha256=wQaqZ9UtLqb6l4DPrEOiTqn6bdidX_objqQZx-5_Nn4,5788
+manhuagui/parser.py,sha256=lyG_Pq4ON7jFg7LGeb8uWlbQWMhjf_0cmgurUuMjgTc,3182
+manhuagui/utils.py,sha256=mCotZH-KLob24NC0espfr3NlA_6XoKdyWP0tJhEkRZQ,6353
+manhuagui-0.0.0.dist-info/LICENSE,sha256=1EPTOth_6yCk6am20e_Et6Pdk0mPQen353CMM6l5zDQ,1064
+manhuagui-0.0.0.dist-info/METADATA,sha256=qq4EQVYbH-7Sc9CnSgwKXvsB_GVhjgMAq7uiW9qc96k,964
+manhuagui-0.0.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+manhuagui-0.0.0.dist-info/entry_points.txt,sha256=usBenb5eoki3iqgUIJeZOh631cLJ5ZvFV7f5g57Cv5o,54
+manhuagui-0.0.0.dist-info/top_level.txt,sha256=pYL1q-u4Zg-k-RG4syi-4wwQJPGNeGYeGXxoVqFnwXs,10
+manhuagui-0.0.0.dist-info/RECORD,,
