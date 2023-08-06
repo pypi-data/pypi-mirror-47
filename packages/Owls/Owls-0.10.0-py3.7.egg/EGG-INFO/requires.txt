@@ -1,0 +1,6 @@
+future
+numpy
+pandas
+functional
+Salvia
+fmpl
