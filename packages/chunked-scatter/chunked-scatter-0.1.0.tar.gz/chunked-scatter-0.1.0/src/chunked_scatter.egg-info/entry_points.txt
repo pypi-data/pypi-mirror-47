@@ -1,0 +1,3 @@
+[console_scripts]
+chunked-scatter = chunked_scatter.chunked_scatter:main
+
