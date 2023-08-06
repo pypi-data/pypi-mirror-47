@@ -1,0 +1,5 @@
+setup.py
+hirez.py.egg-info/PKG-INFO
+hirez.py.egg-info/SOURCES.txt
+hirez.py.egg-info/dependency_links.txt
+hirez.py.egg-info/top_level.txt
