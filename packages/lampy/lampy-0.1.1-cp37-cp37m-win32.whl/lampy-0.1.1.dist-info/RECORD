@@ -1,0 +1,17 @@
+lampy/Simulation.py,sha256=2BkOYvznvFZYgKcvvP36hYg0rZlk9fMvo5EHh0ydSaY,6460
+lampy/__init__.py,sha256=yWGcSE7qdbUv6-fdLu3s5QJWK79xZ_j1Zcd5ElJ5ldI,428
+lampy/compiled_cython/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lampy/compiled_cython/read_field.cp37-win32.pyd,sha256=HjwSJAYmeu6l3GxFxV2ZJFoRDOgCq3TzKwXUZpNkSag,140288
+lampy/compiled_cython/read_phase_space.cp37-win32.pyd,sha256=TZqJujGYI_xg503f5DrHYaZErQkrK-5nQmtkoED7gOs,130048
+lampy/datas/Field.py,sha256=JpBmH7TzbWZLvga_VvbKswdB5bJLmxM9kyhcG7TRbkM,18097
+lampy/datas/Parts.py,sha256=QExjoI1kt_ptHo08MesxHhyV6-XrOlbgXnLHmx5GUJ4,23824
+lampy/datas/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lampy/fastread/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lampy/fastread/parameter_read.py,sha256=JDJliMr5BL3zvCj90cYkDcVq-uIzHmy86mv-UzZNEVg,3789
+lampy/utilities/Utility.py,sha256=ELdK7cuhJoHXld_WvIGMiC-76OAst6QzOFB26JQ1OGI,8734
+lampy/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lampy-0.1.1.dist-info/LICENSE.txt,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+lampy-0.1.1.dist-info/METADATA,sha256=ipBxpcVWlZCnIlUrbu619w_rPPnLw_IZKpbN-U1_8yk,1569
+lampy-0.1.1.dist-info/WHEEL,sha256=lZrZVSunAsdph2A7GL0UUoLJct7efkntCUJ_-xF1QuQ,102
+lampy-0.1.1.dist-info/top_level.txt,sha256=rAiI9enKkh7JbUX5B4PFBD38kaXgthsQKvAQW_KxXHM,34
+lampy-0.1.1.dist-info/RECORD,,
