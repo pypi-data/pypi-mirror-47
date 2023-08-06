@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: better_packaging
+Version: 0.0.3
+Summary: Automatically discover and install pip packages for local dev
+Home-page: UNKNOWN
+Author: Alexander Miasoiedov
+Author-email: github@myasoedv.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: pip,pip install,local,locals,autoinstall,requirements.txt
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
