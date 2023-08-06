@@ -1,0 +1,8 @@
+README.md
+lektor_netlify_lfs_resize_url.py
+setup.py
+lektor_netlify_lfs_resize_url.egg-info/PKG-INFO
+lektor_netlify_lfs_resize_url.egg-info/SOURCES.txt
+lektor_netlify_lfs_resize_url.egg-info/dependency_links.txt
+lektor_netlify_lfs_resize_url.egg-info/entry_points.txt
+lektor_netlify_lfs_resize_url.egg-info/top_level.txt
