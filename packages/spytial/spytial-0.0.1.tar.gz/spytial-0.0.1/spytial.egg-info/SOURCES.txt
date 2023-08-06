@@ -1,0 +1,6 @@
+README.md
+setup.py
+spytial.egg-info/PKG-INFO
+spytial.egg-info/SOURCES.txt
+spytial.egg-info/dependency_links.txt
+spytial.egg-info/top_level.txt
