@@ -1,0 +1,8 @@
+README.md
+logo.py
+logo_demo.py
+setup.py
+french_logo.egg-info/PKG-INFO
+french_logo.egg-info/SOURCES.txt
+french_logo.egg-info/dependency_links.txt
+french_logo.egg-info/top_level.txt
