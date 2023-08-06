@@ -1,0 +1,14 @@
+imatlab/__init__.py,sha256=WIc7NrCiLZ8-lhIXq6FulwzouWPfkBJiUn0uvAbWuXw,341
+imatlab/__main__.py,sha256=2ruOyPicGkbNoSsiPS0IdwzbYdypUqnExDZXJcxNz9w,173
+imatlab/_exporter.py,sha256=MbUpGo-CO2PAFLp03dlswWwz4kN-sAwhjbs-s-7i2-Q,564
+imatlab/_kernel.py,sha256=oVOeUOc_2VrUfu3xTLUoGqdj4fXDb6EmYS97IxtY8XY,16931
+imatlab/_redirection.py,sha256=1Ov6-6MyIVZHPldeNJVrSUtdPv4idyOEwt9XqPtcLws,886
+imatlab/_version.py,sha256=179oi6XKXIekZnGqsYBa_uaye0p-kjnmVjx21MjjsjI,114
+imatlab/data/imatlab_export_fig.m,sha256=GMeSrp4rBoFkVLrA-htp7yMn_RWUj0YrNVvspv6F3GU,3419
+imatlab/data/matlab.tpl,sha256=antRAiJiPj8Xcmf-yCyL1vI4pqksoEDyNg9E1uduWps,482
+imatlab-0.4.dist-info/LICENSE.txt,sha256=fXQj8ja4ujAllXjfTw0_QfaNARDAfE2V-38bSbGFpuo,1054
+imatlab-0.4.dist-info/METADATA,sha256=3OMp60ZzIsy9xhD70WTeE0UXsQpmecWZp1I-glptJXg,7542
+imatlab-0.4.dist-info/RECORD,,
+imatlab-0.4.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+imatlab-0.4.dist-info/entry_points.txt,sha256=E9v72iqKsd-U61uOdTx-TfDVceH4v9T4_3N7J3y-auw,65
+imatlab-0.4.dist-info/top_level.txt,sha256=J_4ZlHYoOM862cqZImPHrgmjIguEypx6BaSL9Pm8NYg,8
