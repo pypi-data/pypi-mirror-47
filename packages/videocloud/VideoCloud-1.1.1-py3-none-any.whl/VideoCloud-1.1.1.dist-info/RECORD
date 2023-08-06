@@ -1,0 +1,17 @@
+VideoCloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+VideoCloud/__main__.py,sha256=kjJhfaX_ZWC-mi-kg5cWiQCSOL9DjICYoFbm9UxPlHQ,948
+VideoCloud/constants.py,sha256=r002V8IqjpIufKAP6Z64jXczPPNCQjVjaTRAIl4oXI0,121
+VideoCloud/main.py,sha256=-cALBy7wusK7aaz5zQb89Uo-PkfCW9aiuwIjbIhJ3dI,378
+VideoCloud/utilities.py,sha256=iOZS3-uk9r2pKvugLf59XKiGz7Y2VrP-2OKaH7pkeEg,849
+VideoCloud-1.1.1.data/scripts/build,sha256=aHkKIJKQaEvlDUTa509fY4zNlOBUDNRpSFWgb3co790,114
+VideoCloud-1.1.1.data/scripts/run,sha256=ewi0RpihEA75iysi3AmEC8tm7pIa4Y0oVAzU0f4pLvk,110
+VideoCloud-1.1.1.data/scripts/videocloud,sha256=4QthxYpNsYZGqgzH9G1GcH4nloeii8N_guNRcxVW1j4,112
+src/VideoCloud/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/VideoCloud/constants.py,sha256=r002V8IqjpIufKAP6Z64jXczPPNCQjVjaTRAIl4oXI0,121
+src/VideoCloud/main.py,sha256=-cALBy7wusK7aaz5zQb89Uo-PkfCW9aiuwIjbIhJ3dI,378
+src/VideoCloud/utilities.py,sha256=7IVuZe1ncj5rOd_trg4RQoAnvbfxSeskG0p90RFuXUs,842
+VideoCloud-1.1.1.dist-info/LICENSE,sha256=YrPZRCEZWh4dbJOZZkzp8IJyUNpR3Rm1c3S5JvkgEv8,1091
+VideoCloud-1.1.1.dist-info/METADATA,sha256=3gsXiC4mLGA0td54ezGSIRZ5iDJcBaJbMvhgXCEyTCs,526
+VideoCloud-1.1.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+VideoCloud-1.1.1.dist-info/top_level.txt,sha256=J9lDAUYWFW1oNGQK6VJe6oL2lXi-sBt18jz7xmvgqgg,11
+VideoCloud-1.1.1.dist-info/RECORD,,
