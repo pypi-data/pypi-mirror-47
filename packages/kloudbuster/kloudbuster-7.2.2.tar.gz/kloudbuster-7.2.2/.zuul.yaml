@@ -1,0 +1,14 @@
+
+- project:
+    templates:
+      - docs-on-readthedocs
+    vars:
+      rtd_webhook_id: '83817'
+    check:
+      jobs:
+        - tox-pep8
+        - tox-py27
+    gate:
+      jobs:
+        - tox-pep8
+        - tox-py27
