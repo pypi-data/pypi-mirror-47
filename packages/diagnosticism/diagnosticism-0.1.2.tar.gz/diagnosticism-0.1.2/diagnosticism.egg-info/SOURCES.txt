@@ -1,0 +1,10 @@
+README.md
+setup.py
+diagnosticism/__init__.py
+diagnosticism/trace.py
+diagnosticism.egg-info/PKG-INFO
+diagnosticism.egg-info/SOURCES.txt
+diagnosticism.egg-info/dependency_links.txt
+diagnosticism.egg-info/top_level.txt
+examples/tracing.py
+tests/stub.py
