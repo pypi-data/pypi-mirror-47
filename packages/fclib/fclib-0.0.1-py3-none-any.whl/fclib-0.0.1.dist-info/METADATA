@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: fclib
+Version: 0.0.1
+Summary: A financial computation library
+Home-page: https://github.com/amgs/fclib
+Author: André Sabino
+Author-email: andre.sabino@gmail.com
+License: BSD 3-Clause License
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/plain
+Requires-Dist: scipy
+
+#+TITLE:	FClib: a financial computation library
+#+AUTHOR:	André Sabino
+
+* Description
+
+* Features
+** Compouding with contributions
+** Interest rate curve bootstraping
+
+* Install
+
+* Development Tasks [0/2]
+	- [-] Rate solver for compouding with contributions [1/2]
+		- [X] Proof of concept
+  	- [ ] Refactor code into reusable classes
+	- [ ] Interest rate curve bootstraping
+
+

@@ -1,0 +1,11 @@
+main.py,sha256=BE34NiUM_23EUSvUEc-8eKpXWxzbwPYe9QAkBxd-0lE,83
+fclib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fclib/compound.py,sha256=IHt0irecX1dXxZUP2s8kWqlswIA3XaDrFbHK8MGWZ6c,3773
+test/__init__.py,sha256=nAaVIewFDKQ7i9HOJk0p5ABleIj4iFud9J0pvtObTe4,39
+test/test_compound.py,sha256=-hYzf9ZfI0C7JWbmfIkZUQjiattg4Ye3wk3m0G6Jd4w,1158
+fclib-0.0.1.dist-info/LICENSE,sha256=jAxhprbc8mWFmCt_P9sEyWBu2ZV2EUpayg-EHMj0YLU,1478
+fclib-0.0.1.dist-info/METADATA,sha256=9K5vAOY2ZVXIi8W465RwmF1JrVF48xILyaClEQjQzMo,820
+fclib-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fclib-0.0.1.dist-info/top_level.txt,sha256=eglpyHkTyAz68lATJRJJdyeUEvPWOkhFcMHMU0L5iCA,11
+fclib-0.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+fclib-0.0.1.dist-info/RECORD,,
