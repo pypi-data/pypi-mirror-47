@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+pandasgui.egg-info/PKG-INFO
+pandasgui.egg-info/SOURCES.txt
+pandasgui.egg-info/dependency_links.txt
+pandasgui.egg-info/requires.txt
+pandasgui.egg-info/top_level.txt
