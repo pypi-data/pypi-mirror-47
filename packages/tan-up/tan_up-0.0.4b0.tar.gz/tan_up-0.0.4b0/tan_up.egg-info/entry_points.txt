@@ -1,0 +1,5 @@
+[console_scripts]
+tan = tan:tan_cli
+tancp = tan:tancp_cli
+tanls = tan:tanls_cli
+
