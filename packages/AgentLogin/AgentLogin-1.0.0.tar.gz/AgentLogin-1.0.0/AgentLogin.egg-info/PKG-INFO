@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: AgentLogin
+Version: 1.0.0
+Summary: A project for Third party login
+Home-page: https://github.com/zhengquantao/ProxyLogin
+Author: taozhengquan
+Author-email: 1483906080@qq.com
+License: UNKNOWN
+Description: A project for Third party login
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
