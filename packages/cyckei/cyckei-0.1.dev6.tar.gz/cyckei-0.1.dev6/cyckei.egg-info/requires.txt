@@ -1,0 +1,3 @@
+zmq
+pyvisa
+PySide2
