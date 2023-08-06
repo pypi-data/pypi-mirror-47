@@ -1,0 +1,8 @@
+README.md
+setup.py
+nestedDive/__init__.py
+nestedDive/testingExt.py
+nestedDive.egg-info/PKG-INFO
+nestedDive.egg-info/SOURCES.txt
+nestedDive.egg-info/dependency_links.txt
+nestedDive.egg-info/top_level.txt
