@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: geecrack
+Version: 1.0.0
+Summary: Crack the Geetest verification code
+Home-page: https://github.com/CrazyBunQnQ/GeetestCrack
+Author: CrazyBunQnQ
+Author-email: crazybunqnq@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: geetest
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
