@@ -1,0 +1,10 @@
+coverage
+flake8
+isort
+mkdocs
+mkdocs-material
+mock
+pbr
+pygments
+pytest
+pytest-cov
