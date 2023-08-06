@@ -1,0 +1,8 @@
+README.md
+setup.py
+hatano.egg-info/PKG-INFO
+hatano.egg-info/SOURCES.txt
+hatano.egg-info/dependency_links.txt
+hatano.egg-info/entry_points.txt
+hatano.egg-info/requires.txt
+hatano.egg-info/top_level.txt
