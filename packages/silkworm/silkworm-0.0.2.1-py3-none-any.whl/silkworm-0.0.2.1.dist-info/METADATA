@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: silkworm
+Version: 0.0.2.1
+Summary: General python utilities made by SIL at IUB that we have found to be useful.
+Home-page: https://github.com/emchow/SILKWORM
+Author: SIL
+Author-email: emchow@iu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Eclipse Public License 2.0 (EPL-2.0)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+SILKWORM is the SIL Integrated Libraries and Knowledgebase
+for Work, Ongoing Research, and Managment by faculty at SIL. We have elected
+to make this set of very general utilities open source.
+
