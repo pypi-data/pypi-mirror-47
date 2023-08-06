@@ -1,0 +1,11 @@
+matplotlib
+numpy
+pandas
+scipy
+bokeh
+zipfile
+docopt
+tqdm
+folium
+colorama
+pyodbc
