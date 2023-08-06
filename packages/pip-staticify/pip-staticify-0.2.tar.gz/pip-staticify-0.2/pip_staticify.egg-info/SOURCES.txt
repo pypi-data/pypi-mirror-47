@@ -1,0 +1,7 @@
+README.md
+setup.py
+staticify
+pip_staticify.egg-info/PKG-INFO
+pip_staticify.egg-info/SOURCES.txt
+pip_staticify.egg-info/dependency_links.txt
+pip_staticify.egg-info/top_level.txt
