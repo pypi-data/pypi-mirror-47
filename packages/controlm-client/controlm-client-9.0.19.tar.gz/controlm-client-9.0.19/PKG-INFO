@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: controlm-client
+Version: 9.0.19
+Summary: Control-M Services
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: support@bmc.com
+License: UNKNOWN
+Description:     Provides access to BMC Control-M Services  # noqa: E501
+            
+Keywords: Swagger,Control-M Services
+Platform: UNKNOWN
