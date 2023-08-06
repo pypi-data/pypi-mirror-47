@@ -1,0 +1,10 @@
+README.md
+setup.py
+twbotlib/__init__.py
+twbotlib.egg-info/PKG-INFO
+twbotlib.egg-info/SOURCES.txt
+twbotlib.egg-info/dependency_links.txt
+twbotlib.egg-info/top_level.txt
+twbotlib/base/exceptions.py
+twbotlib/base/main.py
+twbotlib/base/struct.py
