@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: chaotic-maps
+Version: 0.1
+Summary: Easily create cobweb plots and bifurcations diagrams for one-dimensional maps.
+Home-page: http://github.com/eowagner/chaotic_maps
+Author: Elliott Wagner
+Author-email: e.o.wagner@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
