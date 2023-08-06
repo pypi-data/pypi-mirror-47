@@ -1,0 +1,4 @@
+setuptools==41.0.1
+pynput==1.4.2
+pyaudio==0.2.11
+typing==3.6.6
