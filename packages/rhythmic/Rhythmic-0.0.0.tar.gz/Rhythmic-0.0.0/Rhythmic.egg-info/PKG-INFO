@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: Rhythmic
+Version: 0.0.0
+Summary: Python Bicycle Patterns
+Home-page: https://github.com/PycT/RhythmicPy
+Author: PycT
+License: UNKNOWN
+Description: Yet another python-bicycle patterns package :P [Just in case - licenced under Apache2 Licence]
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown

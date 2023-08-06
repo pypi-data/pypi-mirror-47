@@ -1,0 +1,1 @@
+Yet another python-bicycle patterns package :P [Just in case - licenced under Apache2 Licence]

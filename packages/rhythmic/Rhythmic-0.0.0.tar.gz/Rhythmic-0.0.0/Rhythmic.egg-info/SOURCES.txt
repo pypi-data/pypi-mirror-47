@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+rhythmic.py
+setup.cfg
+setup.py
+Rhythmic.egg-info/PKG-INFO
+Rhythmic.egg-info/SOURCES.txt
+Rhythmic.egg-info/dependency_links.txt
+Rhythmic.egg-info/top_level.txt
