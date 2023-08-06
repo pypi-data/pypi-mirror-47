@@ -1,0 +1,13 @@
+README.md
+setup.py
+pandas_light/__init__.py
+pandas_light/column.py
+pandas_light/insert.py
+pandas_light/mapping.py
+pandas_light/reshape.py
+pandas_light/util.py
+pandas_light.egg-info/PKG-INFO
+pandas_light.egg-info/SOURCES.txt
+pandas_light.egg-info/dependency_links.txt
+pandas_light.egg-info/requires.txt
+pandas_light.egg-info/top_level.txt

@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pandas_light
+Version: 0.0.1
+Summary: Some pandas extensions.
+Home-page: https://github.com
+Author: d_mok
+Author-email: unknown@gmail.com
+License: MIT
+Description: Some pandas extensions.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
