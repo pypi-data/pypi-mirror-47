@@ -1,0 +1,18 @@
+[console_scripts]
+storyboard-api = storyboard.api.app:start
+storyboard-cron = storyboard.plugin.cron:main
+storyboard-db-manage = storyboard.db.migration.cli:main
+storyboard-migrate = storyboard.migrate.cli:main
+storyboard-subscriber = storyboard.notifications.subscriber:subscribe
+storyboard-worker-daemon = storyboard.plugin.event_worker:run_daemon
+
+[storyboard.plugin.scheduler]
+token-cleaner = storyboard.plugin.token_cleaner.cleaner:TokenCleaner
+
+[storyboard.plugin.user_preferences]
+email = storyboard.plugin.email.preferences:EmailPreferences
+
+[storyboard.plugin.worker]
+subscription = storyboard.plugin.subscription.base:Subscription
+subscription-email = storyboard.plugin.email.workers:SubscriptionEmailWorker
+
