@@ -1,0 +1,3 @@
+[console_scripts]
+metlinkpid-http = metlinkpid_http:main
+
