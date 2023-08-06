@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+
+echo "package for sslcommerz payment gateway integration"
+
