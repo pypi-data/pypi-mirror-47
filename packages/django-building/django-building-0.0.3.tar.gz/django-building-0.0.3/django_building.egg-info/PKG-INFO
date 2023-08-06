@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: django-building
+Version: 0.0.3
+Summary: django-building实现了快捷查询、序列化、分页、自动化文档等功能。
+Home-page: UNKNOWN
+Author: aglseven
+Author-email: 1006027855@qq.com
+License: BSD License
+Description: 文档参照:https://github.com/AGL1994/django-building
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.0
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
