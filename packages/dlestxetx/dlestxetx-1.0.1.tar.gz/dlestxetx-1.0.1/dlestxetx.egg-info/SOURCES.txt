@@ -1,0 +1,10 @@
+LICENSE
+README.rst
+dlestxetx.py
+setup.cfg
+setup.py
+test_dlestxetx.py
+dlestxetx.egg-info/PKG-INFO
+dlestxetx.egg-info/SOURCES.txt
+dlestxetx.egg-info/dependency_links.txt
+dlestxetx.egg-info/top_level.txt
