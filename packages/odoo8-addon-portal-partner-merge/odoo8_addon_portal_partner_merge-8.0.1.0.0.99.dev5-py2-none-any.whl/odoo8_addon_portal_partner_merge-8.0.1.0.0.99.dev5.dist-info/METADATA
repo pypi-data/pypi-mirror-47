@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: odoo8-addon-portal-partner-merge
+Version: 8.0.1.0.0.99.dev5
+Summary: Portal Partner Merge
+Home-page: http://www.camptocamp.com/
+Author: Camptocamp,Odoo Community Association (OCA)
+Author-email: support@odoo-community.org
+License: AGPL-3
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Requires-Python: ~=2.7
+Requires-Dist: odoo8-addon-base-partner-merge
+Requires-Dist: odoo (<9.0a,>=8.0a)
+
+Link module for base_partner_merge which extract portal dependency
+
+
