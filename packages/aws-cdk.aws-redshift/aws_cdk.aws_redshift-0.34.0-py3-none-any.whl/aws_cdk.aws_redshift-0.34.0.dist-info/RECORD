@@ -1,0 +1,8 @@
+aws_cdk/aws_redshift/__init__.py,sha256=ywxPBdfprX7-QV5whh7hjdabuR27KAZqoxyf9B1VjNM,40070
+aws_cdk/aws_redshift/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_redshift/_jsii/__init__.py,sha256=_oi6tJSuqxenrmLBLzS3lO-4ETzbihhnfTpetDCii6Q,199
+aws_cdk/aws_redshift/_jsii/aws-redshift@0.34.0.jsii.tgz,sha256=Pk_ihqU9RB2BT301j8cbcqNgdnfSbzOS2NFOmbFIee0,27470
+aws_cdk.aws_redshift-0.34.0.dist-info/METADATA,sha256=zficcrAphaGeHw6-KU_9bgGXK1xDRPy3g9kSfmXALR0,1042
+aws_cdk.aws_redshift-0.34.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aws_cdk.aws_redshift-0.34.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_redshift-0.34.0.dist-info/RECORD,,
