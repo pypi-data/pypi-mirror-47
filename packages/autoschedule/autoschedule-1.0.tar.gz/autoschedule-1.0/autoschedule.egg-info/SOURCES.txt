@@ -1,0 +1,13 @@
+README.md
+ScheduleShortcode.plugin
+ScheduleShortcode.py
+__init__.py
+setup.py
+./ScheduleShortcode.plugin
+./ScheduleShortcode.py
+./__init__.py
+autoschedule.egg-info/PKG-INFO
+autoschedule.egg-info/SOURCES.txt
+autoschedule.egg-info/dependency_links.txt
+autoschedule.egg-info/requires.txt
+autoschedule.egg-info/top_level.txt
