@@ -1,0 +1,26 @@
+CHANGES
+=======
+
+* fixing travis CI/CD to pypi
+* removed "on tags" condition from travis build
+* removed python 3.5 from build
+* temp README.md version
+* Trying to fix travis build and pypi
+* removed unnecessary versions from build
+* removed unnecessary versions from build
+* using pbr and travis to deploy to pypi
+* using pbr
+* packaging
+* packaging
+* Added build badge
+* Added License file
+* Added python 3.7 and removed 3.2
+* commented out python 2.x
+* working on travis-ci
+* Added travis-ci configurations
+* added requirements file
+* changed README filename
+* changed README filename
+* added .idea to .gitignore
+* added README and .gitignore
+* added first functionality and test

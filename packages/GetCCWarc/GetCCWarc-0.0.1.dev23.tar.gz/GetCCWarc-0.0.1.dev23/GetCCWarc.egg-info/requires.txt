@@ -1,0 +1,6 @@
+boto3==1.9.165
+botocore==1.12.165
+coverage==4.5.3
+pytest==4.6.3
+zipp==0.5.1
+pbr==5.2.1
