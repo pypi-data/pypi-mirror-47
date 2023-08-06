@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+angreal.json
+setup.py
+angreal_presentation.egg-info/PKG-INFO
+angreal_presentation.egg-info/SOURCES.txt
+angreal_presentation.egg-info/dependency_links.txt
+angreal_presentation.egg-info/not-zip-safe
+angreal_presentation.egg-info/top_level.txt
