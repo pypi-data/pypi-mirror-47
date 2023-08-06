@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: tb-ble-adapter
+Version: 1.8.2
+Summary: BLE adapter demo, that connects to available devices and sends data from them to ThingsBoard server
+Home-page: https://github.com/thingsboard/tb-ble-adapter
+Author: ThingsBoard
+Author-email: support@thingsboard.io
+License: Apache
+Download-URL: https://github.com/thingsboard/tb-ble-adapter
+Description: UNKNOWN
+Keywords: tb-ble-adapter,demo,bluetooth low energy,thingsboard
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
