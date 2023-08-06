@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: angda
+Version: 0.1.0
+Summary: A neat generic dice API.
+Home-page: https://angda.org
+Author: Stephen Malone
+Author-email: mail@angda.org
+License: UNKNOWN
+Project-URL: Repository, https://bitbucket.org/angda/angda
+Project-URL: Bug Tracker, https://bitbucket.org/angda/angda/issues?status=new&status=open
+Description: Angda
+        =====
+        
+        **Angda** (*A Neat Generic Dice API*) is a dice-rolling API created in [Python][py] by [Stephen Malone][sm].
+        
+        - See [changes.md][ch] for a complete changelog.
+        - See [license.md][li] for licensing information.
+        
+        Installation
+        ------------
+        
+        1. Install [Python 3.7][py] or higher.
+        1. Run `pip install angda`.
+        
+        Usage
+        -----
+        
+        Angda can be used on the command-line or imported as a Python library.
+        
+        ### Command-Line
+        
+        Run `angda --help` to see all available options.
+        
+        ~~~text
+        $ angda 2d6+1
+        #1: 2d6+1 = 7.
+        
+        $ angda 2d6+1 --quiet
+        7
+        
+        $ angda 2d6+1 --details
+        Dice #1:
+        - String: 2d6+1.
+        - Fields: Dice=2, Size=6, Plus=1.
+        - Result: [4, 2] + 1 = 7.
+        ~~~
+        
+        ### Python Library
+        
+        Use `angda.roll` for simple rolls, or the `Dice` class for more complex cases.
+        
+        ~~~python
+        >>> import angda
+        
+        >>> angda.roll('2d6+1')
+        7
+        
+        >>> angda.roll('2d6+1', objects=True)
+        {'dice': Dice(2, 6, 1), 'roll': Roll(7, 1, [4, 2])}
+        
+        >>> dice = angda.Dice(dice=4, size=6, plus=0)
+        >>> dice.roll()
+        Roll(7, 1, [4, 2])
+        ~~~
+        
+        Credits
+        -------
+        
+        Angda uses the following third-party libraries:
+        
+        - [PyTest](http://pytest.org).
+        
+        [ch]: https://bitbucket.org/angda/angda/src/default/changes.md
+        [li]: https://bitbucket.org/angda/angda/src/default/license.md
+        [py]: https://python.org
+        [sm]: https://anime-a-day.com
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Games/Entertainment
+Description-Content-Type: text/markdown
