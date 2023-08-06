@@ -1,0 +1,13 @@
+honeybee/__init__.py,sha256=7Ah3sRVF4eyImiXXtnh4Z5kA2OBPO-QpYH2YMAOJEpw,538
+honeybee/boundarycondition.py,sha256=poy_Mkb_rqAHGj1Mxnb3JpiGsLUhL4fH5hvyBBORp6Y,3816
+honeybee/face.py,sha256=RkFcorsDF7JYo0eMnqk8_rA8PQA8WMXXcMLX34vV0Dc,4856
+honeybee/facetype.py,sha256=iNnhHk-jiqn8WzaHxc1ixO_bAQbCm0gFZkk2ZlzMT0g,2078
+honeybee/properties.py,sha256=3TXkQVk_G11ajPz52L_majaB63XJXhm8y5o98uaJ2mE,2592
+honeybee/writer.py,sha256=KlWmJzcl0PIsH-ZX_ESVJmshI0QrWaATWs_vMeJz9lA,117
+honeybee_core-1.1.4.dist-info/DESCRIPTION.rst,sha256=OXYuqYP_DukqC7qB_Tx9EYW2RsR8CeGgdrKyLEmLAFM,969
+honeybee_core-1.1.4.dist-info/LICENSE.txt,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+honeybee_core-1.1.4.dist-info/METADATA,sha256=IknrZoFU-J4LBmBphGDWMepoDbKgU8gBxRJQ1081I2E,1745
+honeybee_core-1.1.4.dist-info/RECORD,,
+honeybee_core-1.1.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+honeybee_core-1.1.4.dist-info/metadata.json,sha256=Q9LdVr2dsDDbmR26dyoGaGdJTIzXidQ6Q3-vsZ2vwK0,967
+honeybee_core-1.1.4.dist-info/top_level.txt,sha256=8ve7puCRLUA9XDEGc1Mcs-UX9sFjpPV8MeTaIMwQ_Tg,9
