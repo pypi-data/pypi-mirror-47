@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: echidna-obj
+Version: 1.1.1
+Summary: A Parser for 3D .obj data models (.obj file format) - working with ADENITA and SAMSON
+Home-page: https://gitlab.com/chris_h_/echidna
+Author: Christiane Huetter
+Author-email: christianevrhuetter@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
