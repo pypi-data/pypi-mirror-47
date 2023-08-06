@@ -1,0 +1,12 @@
+setup.py
+awkward/__init__.py
+awkward/cpp/__init__.py
+awkward/cpp/array/__init__.py
+awkward/cpp/array/_jagged.cpp
+awkward/cpp/array/base.py
+awkward/cpp/array/jagged.py
+awkward_cpp.egg-info/PKG-INFO
+awkward_cpp.egg-info/SOURCES.txt
+awkward_cpp.egg-info/dependency_links.txt
+awkward_cpp.egg-info/requires.txt
+awkward_cpp.egg-info/top_level.txt
