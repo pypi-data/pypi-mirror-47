@@ -1,0 +1,8 @@
+setup.py
+irrmc/__init__.py
+irrmc/irrmontecarlo.py
+irrmontecarlo.egg-info/PKG-INFO
+irrmontecarlo.egg-info/SOURCES.txt
+irrmontecarlo.egg-info/dependency_links.txt
+irrmontecarlo.egg-info/requires.txt
+irrmontecarlo.egg-info/top_level.txt

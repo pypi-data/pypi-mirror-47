@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: irrmontecarlo
+Version: 0.0.1
+Summary: Framework for simulating IRR of a portfolio via FOREX Monte Carlo
+Home-page: https://github.com/jftreanor/IRRMonteCarlo
+Author: Jack Treanor
+Author-email: jftreanor@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
