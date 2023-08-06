@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: storage-cache
+Version: 1.1.1
+Summary: Storage Cache
+Home-page: https://github.com/HenleyKuang/storage-cache
+Author: Henley Kuang
+Author-email: hekuang@ucdavis.edu
+License: GPL-3.0
+Description: Storage Cache
+        
+Keywords: storage cache redis
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Utilities
+Requires-Python: >=3.6
