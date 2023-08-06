@@ -1,0 +1,17 @@
+punppci/__init__.py,sha256=DcIs_n0OIppx2htskmJOtU4GNAumORky_QFrzc9LbCQ,90
+punppci/benchmark.py,sha256=WXRi0QEpHhh3kGfPSbHGNAMjCEOcAZ7Iz7DqwFQgQAw,10583
+punppci/dataset.py,sha256=KPS5QwP3OF58BfGG5JeUmYmNKe-MDwviYpjtzmfH6X8,8954
+punppci/example.py,sha256=sK2ijAxM6rZDnEjJxEVSoYcG0w8itiwxbVn2LjGJQuU,1852
+punppci/model.py,sha256=LMzG4HmgwcOGu5V3ofABUAJ54nch8QnnLn-oayq-kuA,22717
+punppci/networks.py,sha256=uvn2xk1rZ88mwSaTiTxKWV1u4W3XiPICp3jRGalSGZI,5154
+punppci/optimizer.py,sha256=ZWKz0DnajqDSYBeG1WxjuE04ez_6bkZNeUCJshB3kiI,2999
+punppci/plot.py,sha256=mY5hKi8OJdDjIBxerulF9b5winlQeUbenLRD_LNT7SA,1168
+punppci/models/__init__.py,sha256=3FzO3Yj9UEhDwxXjslxmCAMJ4MxtR8_T5UdXFW1GZ2U,71
+punppci/models/chain_ladder.py,sha256=FkbvSIeP3PQ-ZmVzSlXv85D9r6Ihtx8jGQNbHE7-S4w,3723
+punppci/models/ppci.py,sha256=NNNYGdALRGW7r6nMuWbBcT_FKMSKqwcCjUkQWBaGcS8,4032
+punppci/models/punppci.py,sha256=wZ29jWW5RJmbNR5Cbk8wlvY0KypH5Mx5bLlRyuMeApI,34189
+punppci-0.0.3.dist-info/LICENSE,sha256=UoQ6vunEhnA04lykkggVgi_TuxGMRL3Ab4aV2QzOhWA,34507
+punppci-0.0.3.dist-info/METADATA,sha256=ozt0peP75gP1x7HbdakdUCj9dH_uuNvSrNHLi47Y1FE,1500
+punppci-0.0.3.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+punppci-0.0.3.dist-info/top_level.txt,sha256=6MLHhQqTLQVODFJezs3QKMwukzFFHSe0zMgjVC0S5Fc,8
+punppci-0.0.3.dist-info/RECORD,,
