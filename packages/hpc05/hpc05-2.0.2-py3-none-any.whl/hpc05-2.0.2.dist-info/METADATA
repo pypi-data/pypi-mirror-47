@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: hpc05
+Version: 2.0.2
+Summary: Client package for PBS and SLURM clusters with a headnode.
+Home-page: https://github.com/basnijholt/hpc05
+Author: Bas Nijholt
+Author-email: basnijholt@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: ipyparallel
+Requires-Dist: pexpect
+Requires-Dist: pyzmq
+Requires-Dist: paramiko
+Requires-Dist: tornado
+Requires-Dist: psutil
+
+# hpc05
+[![PyPI](https://img.shields.io/pypi/v/hpc05.svg)](https://pypi.python.org/pypi/hpc05)
+[![Conda](https://anaconda.org/conda-forge/hpc05/badges/installer/conda.svg)](https://anaconda.org/conda-forge/hpc05)
+[![Downloads](https://anaconda.org/conda-forge/hpc05/badges/downloads.svg)](https://anaconda.org/conda-forge/hpc05)
+
+🖥 `ipyparallel.Client` package for a PBS or SLURM cluster with a headnode.
+
+Script that connects to PBS or SLURM cluster with headnode over ssh. Since `ipyparallel` doesn't cull enginges when inactive and people are lazy (because they forget to `qdel` their jobs), it automatically kills the `ipengines` after the set timeout (default=15 min). Note that this package doesn't only work for the `hpc05` cluster on the TU Delft but also other clusters.
+
