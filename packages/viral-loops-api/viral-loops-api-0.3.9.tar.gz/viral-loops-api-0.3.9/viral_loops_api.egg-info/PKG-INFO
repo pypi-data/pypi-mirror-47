@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: viral-loops-api
+Version: 0.3.9
+Summary: A simplistic API wrapper for viral-loops
+Home-page: https://github.com/bequest/viral-loops-api
+Author: Bequest Inc.
+Author-email: oss@willing.com
+License: GPLv3
+Description: # viral-loops-api
+        
+        ## Installation
+        
+            pip install viral-loops-api
+        
+        ## Documentation
+        
+        Available on [ReadTheDocs](https://viral-loops-api.readthedocs.io/en/latest/)
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
