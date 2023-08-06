@@ -1,0 +1,8 @@
+README.md
+setup.py
+httprealm.egg-info/PKG-INFO
+httprealm.egg-info/SOURCES.txt
+httprealm.egg-info/dependency_links.txt
+httprealm.egg-info/entry_points.txt
+httprealm.egg-info/requires.txt
+httprealm.egg-info/top_level.txt
