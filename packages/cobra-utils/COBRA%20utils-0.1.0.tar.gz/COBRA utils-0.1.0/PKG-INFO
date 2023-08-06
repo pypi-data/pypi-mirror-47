@@ -1,0 +1,47 @@
+Metadata-Version: 1.2
+Name: COBRA utils
+Version: 0.1.0
+Summary: TBD
+Home-page: UNKNOWN
+Author: COBRA utils development team
+Author-email: earmingol@eng.ucsd.edu
+Maintainer: COBRA utils development team
+Maintainer-email: earmingol@eng.ucsd.edu
+License: BSD-3-Clause
+Description: # COBRA utils
+        
+        This is a series of utilities to use together with [COBRApy](https://github.com/opencobra/cobrapy).
+        The goal of this tool is to make easier the usage of COBRApy.
+        
+        ## Installation
+        
+        To install this package from a Unix OS, run:
+        
+        ```
+        pip install cobra_utils
+        ```
+        
+        To install this package from Windows, run:
+        ```
+        python -m pip install cobra_utils
+        ```
+        
+        In case you downloaded the source code, run:
+        
+        ```
+        pip install -e .
+        ```
+        
+        ## Examples
+        * [Loading a model and retrieving reactions information](./Example_Rxn_Information.ipynb)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: MacOS :: MacOS X

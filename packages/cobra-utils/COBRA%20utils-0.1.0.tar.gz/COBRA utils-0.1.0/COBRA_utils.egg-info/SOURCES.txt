@@ -1,0 +1,13 @@
+README.md
+setup.py
+COBRA_utils.egg-info/PKG-INFO
+COBRA_utils.egg-info/SOURCES.txt
+COBRA_utils.egg-info/dependency_links.txt
+COBRA_utils.egg-info/not-zip-safe
+COBRA_utils.egg-info/requires.txt
+COBRA_utils.egg-info/top_level.txt
+cobra_utils/__init__.py
+cobra_utils/io/__init__.py
+cobra_utils/io/load_data.py
+cobra_utils/query/__init__.py
+cobra_utils/query/rxn_info.py
