@@ -1,0 +1,10 @@
+fs_ossfs/__init__.py,sha256=_bEK9hbe5WSpdiGAY-6K9qZ02eI0mdT1VBcoQc0MAJM,74
+fs_ossfs/opener.py,sha256=UiEfBOEYvlkxzCDkVeUSFK7Yi2eyJSYQMTnYlCZVCOU,1387
+fs_ossfs/ossfs.py,sha256=82DLqC3OFpaDNAEAAmSX6CbeJ6cY4oPAn8QSSaKFtII,28911
+fs_ossfs/version.py,sha256=q8_5C0f-8mHWNb6mMw02zlYPnEGXBqvOmP3z0CEwZKM,22
+fs_ossfs-1.1.1.dist-info/LICENSE,sha256=l19sSKIIAqX04EEKC1Wbt_B9z0Kh7jGBUpgbEw_0FA8,1069
+fs_ossfs-1.1.1.dist-info/METADATA,sha256=3rJIa4ztkEyDayF3SC-CBsr_x59ITWWNkhWhPtUPquo,4095
+fs_ossfs-1.1.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+fs_ossfs-1.1.1.dist-info/entry_points.txt,sha256=Q2m7UEQdgEtwjcXWT6i0uO4_szt0QnaBeclKXP5ZPX0,47
+fs_ossfs-1.1.1.dist-info/top_level.txt,sha256=Vgbh-22VflIrLburSwfEzWQhQkod3NEcZ3IswEMtBaI,9
+fs_ossfs-1.1.1.dist-info/RECORD,,

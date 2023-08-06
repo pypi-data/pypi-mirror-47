@@ -1,0 +1,3 @@
+[fs.opener]
+oss = fs_ossfs.opener:OSSFSOpener
+
