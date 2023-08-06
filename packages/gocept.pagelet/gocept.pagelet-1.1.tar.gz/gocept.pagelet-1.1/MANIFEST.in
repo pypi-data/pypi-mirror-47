@@ -1,0 +1,13 @@
+include *.rst
+include *.txt
+include .coveragerc
+include buildout.cfg
+include pytest.ini
+include tox.ini
+
+include bitbucket-pipelines.yml
+exclude bitbucket-pipelines.yml
+
+recursive-include src *.pt
+recursive-include src *.rst
+recursive-include src *.zcml
