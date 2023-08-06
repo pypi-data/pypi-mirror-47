@@ -1,0 +1,12 @@
+django_privacy_killer-0.2.0.dist-info/DESCRIPTION.rst,sha256=Z5JOhJPUfYM2n9v-G_ncGtc0a0l1ahPLV7fngT4ctI0,1621
+django_privacy_killer-0.2.0.dist-info/METADATA,sha256=qUaa8dzD0ja3BBdrLaFpwwGTo2TMIKL5oHRQWgv9zaI,2395
+django_privacy_killer-0.2.0.dist-info/RECORD,,
+django_privacy_killer-0.2.0.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+django_privacy_killer-0.2.0.dist-info/metadata.json,sha256=V7mL7z1LitRUDfckUfTq_ULknxH2-OPV3bPNflDf7ls,910
+django_privacy_killer-0.2.0.dist-info/top_level.txt,sha256=mghRRMVsNucz6uAnp93EY8skvg9_-CRCIhL8DE6-pVA,15
+privacy_killer/__init__.py,sha256=0_HAS5h71ta6KxWGV1sNutwDzqWp8jSvCq1pEidJ_dM,62
+privacy_killer/templates/privacy_killer/google_analytics_head.html,sha256=_KgKbhDrW3VoP6UXUXNCzIEg0WzFUo2gtjbYhJaGe4o,336
+privacy_killer/templates/privacy_killer/google_tag_manager_body.html,sha256=x-g7txCoqO723wOCs1ztzYR8Hm9TBfWqigi-ZT3z2Uw,240
+privacy_killer/templates/privacy_killer/google_tag_manager_head.html,sha256=Yj3-iSumj56Z5rYZljLdFpC5kxGaliiUsamIAG7f96g,416
+privacy_killer/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+privacy_killer/templatetags/privacy_killer.py,sha256=BkQzXm97l0WjCBF94XPnEGa4lqoNJGnkSfNE9l0nXiQ,960
