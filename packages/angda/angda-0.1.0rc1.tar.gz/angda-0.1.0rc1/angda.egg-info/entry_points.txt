@@ -1,0 +1,3 @@
+[console_scripts]
+angda = angda.__main__:main
+

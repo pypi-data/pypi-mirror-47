@@ -1,0 +1,17 @@
+setup.py
+angda/__init__.py
+angda/__main__.py
+angda/apis.py
+angda.egg-info/PKG-INFO
+angda.egg-info/SOURCES.txt
+angda.egg-info/dependency_links.txt
+angda.egg-info/entry_points.txt
+angda.egg-info/top_level.txt
+angda.egg-info/zip-safe
+angda/items/__init__.py
+angda/items/dice.py
+angda/items/roll.py
+angda/tools/__init__.py
+angda/tools/clui.py
+angda/tools/nota.py
+angda/tools/rand.py
