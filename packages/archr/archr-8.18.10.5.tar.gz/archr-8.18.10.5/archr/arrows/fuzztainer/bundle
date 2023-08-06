@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cp yourlib.so $1/

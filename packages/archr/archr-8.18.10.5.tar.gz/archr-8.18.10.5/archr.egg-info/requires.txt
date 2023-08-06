@@ -1,0 +1,5 @@
+shellphish_qemu
+pygdbmi
+angr
+docker
+nclib==0.8.4rc2
