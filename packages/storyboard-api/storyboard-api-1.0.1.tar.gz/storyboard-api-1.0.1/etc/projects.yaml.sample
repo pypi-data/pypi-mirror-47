@@ -1,0 +1,12 @@
+- project: Test-Project
+  description: First project
+  use-storyboard: true
+  groups:
+    - Group-1
+    - Group-2
+- project: Test-Project-Two
+  description: Second project
+  use-storyboard: true
+  groups:
+    - Group-1
+    - Group-3
