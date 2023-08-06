@@ -1,0 +1,5 @@
+django-cms>=3.2
+django-mptt==0.9.0
+django-filer
+easy-thumbnails
+djangocms-text-ckeditor
