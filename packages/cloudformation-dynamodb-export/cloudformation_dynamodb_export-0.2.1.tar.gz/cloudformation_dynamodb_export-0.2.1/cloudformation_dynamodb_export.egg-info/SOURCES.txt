@@ -1,0 +1,11 @@
+README.md
+setup.py
+cloudformation_dynamodb_export/__init__.py
+cloudformation_dynamodb_export/cfn2ddb.py
+cloudformation_dynamodb_export/cfn_parser.py
+cloudformation_dynamodb_export.egg-info/PKG-INFO
+cloudformation_dynamodb_export.egg-info/SOURCES.txt
+cloudformation_dynamodb_export.egg-info/dependency_links.txt
+cloudformation_dynamodb_export.egg-info/entry_points.txt
+cloudformation_dynamodb_export.egg-info/requires.txt
+cloudformation_dynamodb_export.egg-info/top_level.txt
