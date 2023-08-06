@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+newchanic/__init__.py
+newchanic/graphical_engine.py
+newchanic/physics.py
+newchanic/utils.py
+newchanic.egg-info/PKG-INFO
+newchanic.egg-info/SOURCES.txt
+newchanic.egg-info/dependency_links.txt
+newchanic.egg-info/requires.txt
+newchanic.egg-info/top_level.txt
