@@ -1,0 +1,3 @@
+[console_scripts]
+tree-html = tree_html.run:main
+

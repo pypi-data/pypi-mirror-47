@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: tree-html
+Version: 1.1.0
+Summary: Renders an interactive directory structure in html from a local path on disk
+Home-page: http://ghe-rss.roche.com/todtd/interactive-directory-structure.git
+Author: todtd
+Author-email: davis.todt@roche.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: MacOS
+Requires-Dist: click
+Requires-Dist: jinja2
+
+# Tree HTML
+
+Tree HTML renders an interactive directory structure in html from a local path on disk. 
+It can be run as a standalone python tool or it can be fed JSON output produced by running `tree` separately somewhere else.
+This tool was built on top of the CodyHouse [HTML/CSS codebase](https://github.com/CodyHouse/multi-level-accordion-menu) for displaying files and directories neatly.
+
+See the example output from running `tree-html` on this repo:
+
+![screenshot](tree-html-screenshot.png)
+
+## General usage
+
+In the most common case, `tree-html` can be run as a standalone tool on the current working directory as follows:
+```
+tree-html 
+```
+
+A second use case involves supplying `tree-html` with the output json file obtained from running `tree -J` separately. This may be useful, for example, 
+in cases where you are working on a different file system to the target path. This can be achieved using the `-i` flag, for example:
+```
+tree-html -i output-file-from-tree.json
+```
+
+The output from `tree-html` is a directory called `tree-html-output/` which is generated in the current working directory. This directory contains a file called `rendered-tree-diagram.html`, which can be opened in any browser for display. Note that this directory also contains some static assets that should always accompany the html file if the folder is to be moved or shared.
+
+## Usage options
+
+To execute the tool from a different location to the current working directory:
+```
+tree-html /path/to/different/cool-location
+```
+
+In the above case, it also might be desirable to specify a different top-level directory name to use in the output, rather than the full path. This can be achieved as follows:
+```
+tree-html /path/to/different/cool-location -n cooler-location
+```
+
+To limit the output to only contain a given depth below the top-level directory, the `-l` flag can be used:
+```
+tree -l 3  # limits the output to three levels below the parent and ignores anything deeper
+```
+
+Additional options can be given to customise the content and styling of the output file, such as using custom headings, text descriptions, different colored themes and url links.
+Run `tree-html --help` for the complete set of available options.
+
+## Installation
+
+Install with pip as follows:
+```
+pip install git+http://ghe-rss.roche.com/todtd/interactive-directory-structure#egg=tree_html
+```
+
+Or if you prefer to use pipenv to automatically install it into an isolated virtual env:
+```
+pipenv install .
+```
+
+If you wish to develop this tool further then you should also install the development dependencies:
+```
+pipenv install --dev
+```
+
+If you would like to contribute, please create either a new branch or fork and submit a pull request.
+
+
