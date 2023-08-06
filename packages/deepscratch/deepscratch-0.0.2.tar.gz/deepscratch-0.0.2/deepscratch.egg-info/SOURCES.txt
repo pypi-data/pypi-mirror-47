@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+deepscratch/__init__.py
+deepscratch/activations.py
+deepscratch/losses.py
+deepscratch/optimizer.py
+deepscratch/sequential.py
+deepscratch.egg-info/PKG-INFO
+deepscratch.egg-info/SOURCES.txt
+deepscratch.egg-info/dependency_links.txt
+deepscratch.egg-info/top_level.txt
+deepscratch/layers/__init__.py
+deepscratch/layers/activation_layers.py
+deepscratch/layers/layers.py
