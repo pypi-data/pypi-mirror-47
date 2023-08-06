@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: LyricsPy
+Version: 0.1.1
+Summary: search lyrics on letras.mus
+Home-page: https://github.com/amanoteam/LyricsPy
+Author: AmanoTeam
+Author-email: contact@amanoteam.ml
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+Requires-Dist: google
+Requires-Dist: markdownify
+
+No description for now
+
+
