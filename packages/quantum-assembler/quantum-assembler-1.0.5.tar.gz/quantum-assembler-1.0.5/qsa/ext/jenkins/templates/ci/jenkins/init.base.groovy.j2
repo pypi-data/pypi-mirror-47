@@ -1,0 +1,74 @@
+///////////////////////////////////////////////////////////////////////
+//
+//  {{ quantum.project.name|upper }} JENKINS INIT SCRIPT
+//
+//  Configures folders, jobs, secrets and other items for the
+//  {{ quantum.project.name|upper }} project.
+//
+///////////////////////////////////////////////////////////////////////
+import com.cloudbees.hudson.plugins.folder.Folder
+import hudson.triggers.TimerTrigger
+import hudson.triggers.Trigger
+import jenkins.model.Jenkins
+import org.jenkinsci.plugins.envinject.EnvInjectJobProperty
+import org.jenkinsci.plugins.envinject.EnvInjectJobPropertyInfo
+import org.jenkinsci.plugins.workflow.flow.FlowDefinition
+import org.jenkinsci.plugins.workflow.job.WorkflowJob
+import org.jenkinsci.plugins.workflow.multibranch.WorkflowMultiBranchProject
+{%- block project_imports %}{% endblock %}
+
+
+def flow = null
+Jenkins jenkins = Jenkins.instance
+def job = null
+Map opts = [
+  basePath: '{{ quantum.jenkins.folder or '' }}',
+  name: '{{ quantum.project.name }}',
+  displayName: '{{ DISPLAY_NAME }}',
+  projectName: '{{ DISPLAY_NAME }}',
+  projectFolder: null,
+  {%- if quantum.ci.origin.remote %}
+  remote: '{{ quantum.ci.origin.remote }}',
+  {%- else %}
+  remote: null,
+  {%- endif %}
+  {%- if quantum.ci.origin.poll %}
+  pollInterval: '{{ quantum.ci.origin.poll }}',
+  {%- else %}
+  pollInterval: null,
+  {%- endif %}
+  {%- if quantum.ci.origin.webhook %}
+  webhook: '{{ quantum.ci.origin.webhook }}',
+  {%- else %}
+  webhook: null,
+  {%- endif %}
+  {%- if quantum.ci.origin.credentials not in ('noop', None) %}
+  credentialsId: '{{ quantum.ci.origin.credentials }}',
+  {%- elif quantum.ci.origin.credentials == 'noop' %}
+  credentialsId: null,
+  {%- else %}
+  credentialsId: '{{ quantum.project.name }}.secrets.origin',
+  {%- endif %}
+  sentinel: null
+]
+
+
+// Ensure that the folder structure for this project
+// exists and is up-to-date.
+def baseFolder = jenkins.getItemByFullName(opts.basePath)
+def parent = null
+if (!baseFolder && !!opts.basePath) {
+  for (String folderName: opts.basePath.split('/')) {
+    parent = (!!parent) ? parent : jenkins
+    folder = parent.getItem(folderName)
+    if (!folder) {
+      folder = parent.createProject(Folder.class, folderName)
+    }
+    parent = folder
+  }
+  baseFolder = jenkins.getItemByFullName(opts.basePath)
+  assert baseFolder : "Base folder should exist at this point."
+}
+parent = (!!opts.basePath) ? baseFolder : jenkins
+
+{% block configure_jenkins_job %}{% endblock %}

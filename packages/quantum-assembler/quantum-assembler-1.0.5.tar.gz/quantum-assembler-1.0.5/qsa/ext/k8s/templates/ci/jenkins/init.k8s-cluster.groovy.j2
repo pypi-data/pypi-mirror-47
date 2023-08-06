@@ -1,0 +1,28 @@
+{% extends "ci/jenkins/init.base.groovy.j2" %}
+
+{% block project_imports %}
+
+import hudson.util.PersistedList
+import jenkins.plugins.git.GitSCMSource
+import jenkins.branch.BranchSource
+{% endblock %}
+
+
+{% block configure_jenkins_job %}
+
+// Configure a multibranch job that tracks all branches. Ansible
+// or Terraform projects may deploy branches to arbitrary deployment
+// environments.
+BranchSource source = new BranchSource(
+  new GitSCMSource(null, opts.remote, opts.credentialsId, "*", "", false))
+job = parent.getItem(opts.name)
+if (!job) {
+  job = parent.createProject(WorkflowMultiBranchProject, opts.name)
+}
+job.setDisplayName(opts.displayName)
+PersistedList sources = job.getSourcesList()
+sources.clear()
+sources.add(source)
+job.save()
+{% endblock %}
+
