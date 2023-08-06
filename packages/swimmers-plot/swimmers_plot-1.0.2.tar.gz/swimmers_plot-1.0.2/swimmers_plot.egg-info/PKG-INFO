@@ -1,0 +1,26 @@
+Metadata-Version: 1.0
+Name: swimmers-plot
+Version: 1.0.2
+Summary: Create a swimmer's plot of treatments for a cohort
+Home-page: https://github.com/broadinstitute/swimmers_plot
+Author: Justin Cha
+Author-email: jcha@broadinstitute.org
+License: MIT
+Description: # swimmers_plot
+        Create a swimmer's plot of treatments for a cohort
+        
+        To install:
+        
+        `pip install swimmers-plot`
+        
+        To use:
+        
+        ```
+        import swimmers_plot
+        cohort = swimmers_plot.Cohort()
+        cohort.load_samples('sample_inp.tsv')
+        cohort.load_treatments('treatment_inp.tsv')
+        cohort.make_swimmers_plot()
+        ```
+        
+Platform: UNKNOWN
