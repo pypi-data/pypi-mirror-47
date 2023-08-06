@@ -1,0 +1,10 @@
+aidevlog/__init__.py,sha256=jwFUx7Q5ayb3W9WHUohtl9-difQbPchRBZRXxUOY6tM,886
+aidevlog/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aidevlog/test/test_aidevlog.py,sha256=B-gky2qrx7T1vlA82oGjBLJPUm--VYrU5MCiGkjBLPc,83
+aidevlog/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aidevlog/utils/_show_versions.py,sha256=TBqjXHDhQk8LPHQMa_R9YyunYGSu265OmM0r6CC8OVQ,1619
+aidevlog-0.0.1.dist-info/LICENSE,sha256=fyNnH_HnQYUKt4FLxGeh0WCOusHNVOjZ-YQnD8gQHcI,1068
+aidevlog-0.0.1.dist-info/METADATA,sha256=egKh4VJmYGMD_3OKqaQqChwXVpafG0rfN11NnhoniTM,3231
+aidevlog-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aidevlog-0.0.1.dist-info/top_level.txt,sha256=NYlB83jDGeH2I7ndvH1AqicPgNoTHm6b11u2moFWNwo,9
+aidevlog-0.0.1.dist-info/RECORD,,
