@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cranial-common
+Version: 0.3.0
+Summary: Low-level utilities shared by various Cranial packages.
+Home-page: https://github.com/tribune/cranial-common
+License: GPL-3.0+
+Author: Matt Chapman, et al.
+Author-email: Matt@NinjitsuWeb.com
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://github.com/tribune/cranial-common
