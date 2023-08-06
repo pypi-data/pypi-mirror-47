@@ -1,0 +1,13 @@
+cloudman/__init__.py,sha256=d3f4CeD9WjGgkUXaTnPLqSPnxs7EPcWLh9QERUvk2G8,42
+cloudman/_version.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+cloudman/cli.py,sha256=rlmgf-PY22-gsi04N7ulrNiwHTGV8UbCDyk6YPwCh0Q,466
+cloudman/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cloudman/utils/gcloud.py,sha256=I7QdHYr25pq7uI27x-trDzrS0wCkW1eW5n5y_jnS9iE,3019
+cloudman/utils/logger.py,sha256=0CaG1tLg9yZKQ77pc9tDeGMh6DhL1TqXcwNpP4Z_zjU,338
+cloudman/utils/misc.py,sha256=TYRqFBoxAszTSGnJVd4mIr4ohTLDCZeTMWueaT4hVTY,502
+cloudman-0.0.2.dist-info/LICENSE,sha256=K0DPeqxDNNNhR3m04FfGj2U8xPqcWYFjwKi6rCdoJIc,1067
+cloudman-0.0.2.dist-info/METADATA,sha256=fHTQEAdbr9cjcgJBvDA1hOMBX7a-5UPUs6M3QraavYk,560
+cloudman-0.0.2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+cloudman-0.0.2.dist-info/entry_points.txt,sha256=UpeDSiTwPQHyyy6FoU1da3-SToF_A4KcxTirzU0OLZo,48
+cloudman-0.0.2.dist-info/top_level.txt,sha256=g5UiaccGdWLQxBU8RVho_YUS2B2zN0c5YGqWA5aL3sU,9
+cloudman-0.0.2.dist-info/RECORD,,
