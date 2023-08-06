@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: tetumnlp
+Version: 0.1.6
+Summary: Tetum tokenizer and translater
+Home-page: https://github.com/maunrhys/tetumnlp
+Author: Maun Rhys
+Author-email: maun.rhys@gmail.com
+License: GNU
+Download-URL: https://github.com/maunrhys/tetumnlp/archive/v0.1.6.tar.gz
+Description: UNKNOWN
+Keywords: NLP,MINORITY LANGUAGE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
