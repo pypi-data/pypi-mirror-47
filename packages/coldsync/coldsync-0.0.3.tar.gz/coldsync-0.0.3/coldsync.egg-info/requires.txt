@@ -1,0 +1,9 @@
+google==2.0.2
+google-cloud-storage==1.16.1
+Click==7.0
+
+[testing]
+pytest
+pytest-cov<2.6
+pytest-runner
+python-coveralls

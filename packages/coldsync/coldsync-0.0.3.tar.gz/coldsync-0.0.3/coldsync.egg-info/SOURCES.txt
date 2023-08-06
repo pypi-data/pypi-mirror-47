@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+coldsync/__init__.py
+coldsync/google_storage_wrapper.py
+coldsync/main.py
+coldsync/utils.py
+coldsync.egg-info/PKG-INFO
+coldsync.egg-info/SOURCES.txt
+coldsync.egg-info/dependency_links.txt
+coldsync.egg-info/entry_points.txt
+coldsync.egg-info/requires.txt
+coldsync.egg-info/top_level.txt
