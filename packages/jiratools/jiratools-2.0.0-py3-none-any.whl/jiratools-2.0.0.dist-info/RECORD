@@ -1,0 +1,9 @@
+jiratools/__init__.py,sha256=zAcmC8DTZ1FN_LvzIWIBEBKFDTUZLX8Xyk7XDD-ERzY,12394
+jiratools/error_logger.py,sha256=emIOg9R-nThETTKstjGBSfZqgT2ph4Zqm4b6yOJQldc,2806
+jiratools/formatting.py,sha256=pTepC3EZHbw3pBYGKu7KRdz8PVs92-_oPjYUgJ3aQ2g,1449
+jiratools/jira.config.example,sha256=YDQDml2SmOw4l1L0M5OgVopRDdaEIu0YefHOzcLP_FI,651
+jiratools-2.0.0.dist-info/entry_points.txt,sha256=0k_yf2UjMfmo1Lb8niUQfuI2igFVQBBNEvIemCi3TWI,308
+jiratools-2.0.0.dist-info/LICENSE,sha256=-u0f7asyo_orJj-7og2cu8uViEgDsfFYSGIvmhsTCmQ,1070
+jiratools-2.0.0.dist-info/WHEEL,sha256=C90Mwr_Jk4_IPKbEQeJHH_TSkLAVFEZOMPO9_4HdXQI,85
+jiratools-2.0.0.dist-info/METADATA,sha256=XFn0FWGY98eh3YdhIMSj9lfpXH6QyJsYLGM7x7L5Kpw,453
+jiratools-2.0.0.dist-info/RECORD,,
