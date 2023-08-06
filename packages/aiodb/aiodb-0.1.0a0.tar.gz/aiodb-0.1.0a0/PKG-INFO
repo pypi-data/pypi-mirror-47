@@ -1,0 +1,35 @@
+Metadata-Version: 1.1
+Name: aiodb
+Version: 0.1.0a0
+Summary: Async database toolkit.
+Home-page: UNKNOWN
+Author: Jorge E. Cardona <jorgeecardona@gmail.com>
+Author-email: jorgeecardona@gmail.com
+License: Apache 2
+Description: =======================
+        Async database toolkit.
+        =======================
+        
+        
+        Roadmap
+        =======
+        
+        
+        
+        Key features
+        ============
+        
+        - Support asyncio from scratch.
+        - Data mapper pattern.
+        - Supports PostgreSQL.
+        - Built-in migrations.
+        
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
