@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+distroverify/__init__.py
+distroverify/main.py
+distroverify.egg-info/PKG-INFO
+distroverify.egg-info/SOURCES.txt
+distroverify.egg-info/dependency_links.txt
+distroverify.egg-info/entry_points.txt
+distroverify.egg-info/requires.txt
+distroverify.egg-info/top_level.txt

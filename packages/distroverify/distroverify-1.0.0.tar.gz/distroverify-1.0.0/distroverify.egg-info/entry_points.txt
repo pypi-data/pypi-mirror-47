@@ -1,0 +1,3 @@
+[distroverify]
+distroverify = distroverify.main:main
+
