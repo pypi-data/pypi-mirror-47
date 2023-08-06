@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+mockry/__init__.py
+mockry/__main__.py
+mockry/app.py
+mockry/options.py
+mockry/version.py
+mockry.egg-info/PKG-INFO
+mockry.egg-info/SOURCES.txt
+mockry.egg-info/dependency_links.txt
+mockry.egg-info/requires.txt
+mockry.egg-info/top_level.txt
+mockry/test/__init__.py
+mockry/test/__main__.py
+mockry/test/import_test.py
+mockry/test/runtests.py

@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: mockry
+Version: 0.0.1
+Summary: mockry - A rich mock server you have searched for
+Home-page: https://github.com/glibin/mockry
+License: UNKNOWN
+Download-URL: https://github.com/glibin/mockry/tarball/0.0.1
+Description: # mockry
+        A rich mock server you have searched for
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >= 3.7
+Description-Content-Type: text/markdown
