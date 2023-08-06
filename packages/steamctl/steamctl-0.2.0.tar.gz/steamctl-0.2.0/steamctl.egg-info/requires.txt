@@ -1,0 +1,5 @@
+steam<1.0.0,>=0.9.0
+appdirs
+argcomplete
+tqdm
+arrow
