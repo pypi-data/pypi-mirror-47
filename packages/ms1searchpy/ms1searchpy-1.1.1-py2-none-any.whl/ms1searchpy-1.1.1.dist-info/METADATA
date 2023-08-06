@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ms1searchpy
+Version: 1.1.1
+Summary: A proteomics search engine for LC-MS1 spectra.
+Home-page: UNKNOWN
+Author: Mark Ivanov
+Author-email: pyteomics@googlegroups.com
+License: License :: OSI Approved :: Apache Software License
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Dist: pyteomics[xml]
+Requires-Dist: scipy
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
