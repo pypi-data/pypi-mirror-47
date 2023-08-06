@@ -1,0 +1,50 @@
+include docs/ 
+include docs/_build/ *
+include docs/_modules/ *
+include docs/_sources/ *
+include docs/_static/ *
+include StoveOpt/foamfiles/counterFlowFlame2D/0_template/* 
+include StoveOpt/foamfiles/counterFlowFlame2D/case_25/constant/*
+include foamfiles/counterFlowFlame2D/case_25/constant/combustionProperties.*
+include foamfiles/counterFlowFlame2D/case_25/constant/reactions
+include foamfiles/counterFlowFlame2D/case_25/constant/thermo.compressibleGas
+include foamfiles/counterFlowFlame2D/case_25/constant/thermophysicalProperties
+include foamfiles/counterFlowFlame2D/case_25/constant/turbulenceProperties
+include foamfiles/counterFlowFlame2D/case_25/0/ 
+include foamfiles/counterFlowFlame2D/case_25/system/ *
+include foamfiles/counterFlowFlame2D/case_50/constant/ *
+include foamfiles/counterFlowFlame2D/case_50/0/ *
+include foamfiles/counterFlowFlame2D/case_50/system/ *
+include foamfiles/counterFlowFlame2D/case_100/constant/ *
+include foamfiles/counterFlowFlame2D/case_100/0/ *
+include foamfiles/counterFlowFlame2D/case_100/system/ *
+include foamfiles/counterFlowFlame2D/case_125/constant/ *
+include foamfiles/counterFlowFlame2D/case_125/0/ *
+include foamfiles/counterFlowFlame2D/case_125/system/ *
+include foamfiles/counterFlowFlame2D/case_150/constant/ *
+include foamfiles/counterFlowFlame2D/case_150/0/ *
+include foamfiles/counterFlowFlame2D/case_150/system/ *
+include foamfiles/counterFlowFlame2D/constant/ *
+include foamfiles/counterFlowFlame2D/constant/polyMesh/ *
+include foamfiles/counterFlowFlame2D/file_templates/blank/ *
+include foamfiles/counterFlowFlame2D/file_templates/replacement/ *
+include foamfiles/counterFlowFlame2D/reset_templates/ *
+include foamfiles/counterFlowFlame2D/reset_templates/blanks *
+include foamfiles/counterFlowFlame2D/system/ *
+include foamfiles/counterFlowFlame2D/system/backup/ *
+include foamfiles/counterFlowFlame2D/system/example/ *
+include foamfiles/counterFlowFlame2D/system/Obselete/ *
+include foamfiles/counterFlowFlame2D/system/run/ *
+include foamfiles/counterFlowFlame2D/template_case/0/ *
+include foamfiles/counterFlowFlame2D/template_case/constant/ *
+include foamfiles/counterFlowFlame2D/template_case/constant/polyMesh/ *
+include foamfiles/counterFlowFlame2D/template_case/system/ *
+include reactingFoam/ *
+include reactingFoam/Make/ *
+include reactingFoam/rhoReactingBouyantFoam *
+include reactingFoam/rhoReactingBouyantFoam/Make/ *
+include reactingFoam/rhoReactingFoam/ *
+include reactingFoam/rhoReactingFoam/Make/ *
+include inputFiles/ *
+include stovegeom/ *
+include tests/ *
