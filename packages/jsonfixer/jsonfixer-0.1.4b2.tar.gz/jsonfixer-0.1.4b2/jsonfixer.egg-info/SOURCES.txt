@@ -1,0 +1,12 @@
+README.md
+README.rst
+setup.py
+half_json/__init__.py
+half_json/core.py
+half_json/json_util.py
+half_json/main.py
+jsonfixer.egg-info/PKG-INFO
+jsonfixer.egg-info/SOURCES.txt
+jsonfixer.egg-info/dependency_links.txt
+jsonfixer.egg-info/entry_points.txt
+jsonfixer.egg-info/top_level.txt
