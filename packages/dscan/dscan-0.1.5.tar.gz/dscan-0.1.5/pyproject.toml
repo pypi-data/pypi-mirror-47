@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "dscan"
+version = "0.1.5"
+description = "dscan makes scanning a list of domains for DNS records easy!"
+
+license = "MIT"
+
+authors = [
+    "Matthew Gall <me@matthewgall.com>"
+]
+
+readme = 'README.md'  # Markdown files are supported
+
+repository = "https://codedin.wales/matthew/dscan"
+homepage = "https://codedin.wales/matthew/dscan"
+
+keywords = ['dns', 'scanning', 'osint', 'dscan']
+
+[tool.poetry.dependencies]
+python = "~2.7 || ^3.7"  # Compatible python versions must be declared here
+toml = "^0.9"
+requests = "^2.22"
+dnslib = "^0.9.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+pytest-cov = "^2.4"
+
+[tool.poetry.scripts]
+dscan = 'dscan.cli:main'
