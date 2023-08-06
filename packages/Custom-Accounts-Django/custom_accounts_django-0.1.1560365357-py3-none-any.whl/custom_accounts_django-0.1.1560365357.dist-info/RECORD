@@ -1,0 +1,12 @@
+django_accounts/__init__.py,sha256=qBGuYemA8k6qOKkXXSm_dah_3822BA2sMTZP8YP5qh4,220
+django_accounts/admin.py,sha256=leaYUhfBTd9VweD2sscRHK0idMI53-lmMq-CLHXOdOY,189
+django_accounts/apps.py,sha256=4Joo6mUnr2gCSPgFSMe-vn3MpK0btdeICseoT36pk8E,383
+django_accounts/models.py,sha256=QbvL1Gs-LUlSyswlGlYx0xtZh5HNe5pR3U7QNMNDR3U,751
+django_accounts/tests.py,sha256=2uDafv3Ns6f7Vy1ekUtgYxCZEi1KRyesZDTAFhYcX-E,63
+django_accounts/urls.py,sha256=gxTwnQ-PbrKAK6TCP78gZKAkyctwTpMuPlauK3kCtZw,896
+django_accounts/views.py,sha256=YdhnM_8m5FOpS-F9j_XeglznQY4eRW4cl4sdUbFPBsM,3668
+django_accounts/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+custom_accounts_django-0.1.1560365357.dist-info/METADATA,sha256=EefNQZ1QZimtlcAH5bs74TdmbglZm7kCV4JIZiW-3XI,470
+custom_accounts_django-0.1.1560365357.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+custom_accounts_django-0.1.1560365357.dist-info/top_level.txt,sha256=NrHQ1k8HfnGSkvwvW9RknvwgfkMMKvnuT8CHEJrnvZY,16
+custom_accounts_django-0.1.1560365357.dist-info/RECORD,,
