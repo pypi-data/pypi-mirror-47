@@ -1,0 +1,10 @@
+setup.py
+lazo_index/__init__.py
+lazo_index/client.py
+lazo_index/lazo_index_pb2.py
+lazo_index/lazo_index_pb2_grpc.py
+lazo_index.egg-info/PKG-INFO
+lazo_index.egg-info/SOURCES.txt
+lazo_index.egg-info/dependency_links.txt
+lazo_index.egg-info/requires.txt
+lazo_index.egg-info/top_level.txt
