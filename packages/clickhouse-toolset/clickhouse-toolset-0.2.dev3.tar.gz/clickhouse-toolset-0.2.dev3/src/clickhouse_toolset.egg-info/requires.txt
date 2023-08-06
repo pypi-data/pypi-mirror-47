@@ -1,0 +1,7 @@
+toposort==1.5
+
+[build]
+wheel
+
+[test]
+pytest
