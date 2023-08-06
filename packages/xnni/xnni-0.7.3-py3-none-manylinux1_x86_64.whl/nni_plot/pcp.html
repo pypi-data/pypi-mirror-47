@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>XNNI Parallel Coordinates Plot</title>
+            <script type="text/javascript" src="js/echarts.min.js"></script>
+<style>
+  table.dataframe  {
+       font-size: 14px;
+       border-top: 1px solid #ccc;
+       border-left: 1px solid #ccc;
+       table-layout: fixed;
+       text-align: left;
+       border-collapse: collapse;
+   }    
+   .dataframe thead {
+       background-color: #f7f9fc;
+   }    
+   .dataframe th {
+       /* color: #696c6e; */
+       font-weight: bold;
+       text-align: left;
+   }    
+   .dataframe tr {
+       height: 50px;
+       background-color: #f7f9fc;
+   }    
+   .dataframe tbody tr:nth-child(odd) {
+       background-color: #fff;
+   }    
+   .dataframe th,
+   .dataframe td {
+       padding: 10px;
+       border-right: 1px solid #ccc;
+       border-bottom: 1px solid #ccc;
+       overflow: hidden;
+       white-space: nowrap;
+       text-overflow: ellipsis;
+   }
+</style>
+</head>
+<body>
+    <div id="pcp" style="width:1200px; height:400px;"></div>
+    <script>
+        var chart = echarts.init(
+            document.getElementById('pcp'), 'white', {renderer: 'canvas'});
+        option = {
+   tooltip: {
+       trigger: 'item'
+   },
+   parallel: {
+        left: 120,
+        parallelAxisDefault: {
+           tooltip: {
+               show: true
+           },
+           axisLabel: {
+               show: true,
+               interval: 0,
+               formatter: function (value) {
+                   const length = value.length;
+                   if (length > 16) {
+                       const temp = value.split('');
+                       for (let i = 16; i < temp.length; i += 17) {
+                           temp[i] += '\n';
+                       }
+                       return temp.join('');
+                   } else {
+                       return value;
+                   }
+               }
+           },
+           boundaryGap: true,
+           axisLine: {
+               lineStyle: {
+                   type: "dotted",
+                   width: 1
+               }
+           },
+           axisTick: {
+               show: true,
+               interval: 0,
+               alignWithLabel: true
+           },
+       }
+   },
+   visualMap: {
+       bottom: '50px',
+       type: 'continuous',
+       precision: 3,
+
+       min: {barColorMin}, // 左侧渐变组件的最小值，需修改
+       max: {barColorMax}, // 左侧渐变组件的最大值，需修改
+       color: ['#CA0000', '#FFC400', '#90EE90'],
+       // dimension: 2, // 使用series 中 data的维度，默认为最后一项，需修改
+       calculable: true
+   },
+   series: [{
+       name: "top 20%",
+       type: 'parallel',
+       smooth: true,
+       lineStyle: {
+           width: 2
+       },
+       data: {data_list}
+   }],
+   parallelAxis: {parallel_axis_list},
+   title: [
+        {
+            "text": "XNNI Parallel Coordinates Plot"
+        }
+    ]
+};
+
+//         var option = {
+//     "color": [
+//         "#c23531",
+//         "#2f4554",
+//         "#61a0a8",
+//         "#d48265",
+//         "#749f83",
+//         "#ca8622",
+//         "#bda29a",
+//         "#6e7074",
+//         "#546570",
+//         "#c4ccd3",
+//         "#f05b72",
+//         "#ef5b9c",
+//         "#f47920",
+//         "#905a3d",
+//         "#fab27b",
+//         "#2a5caa",
+//         "#444693",
+//         "#726930",
+//         "#b2d235",
+//         "#6d8346",
+//         "#ac6767",
+//         "#1d953f",
+//         "#6950a1",
+//         "#918597"
+//     ],
+//     "series": [
+//         {
+//             "type": "parallel",
+//             "coordinateSystem": "parallel",
+//             "lineStyle": {
+//                 "width": 1,
+//                 "opacity": 1,
+//                 "curveness": 0,
+//                 "type": "solid"
+//             },
+//             "name": "top 20%",
+//             "data": [
+//                 [
+//                     0.8617702892877612,
+//                     "7",
+//                     "1024",
+//                     "16",
+//                     "0.01"
+//                 ]
+//             ]
+//         },
+//         {
+//             "type": "parallel",
+//             "coordinateSystem": "parallel",
+//             "lineStyle": {
+//                 "width": 1,
+//                 "opacity": 1,
+//                 "curveness": 0,
+//                 "type": "solid"
+//             },
+//             "name": "others",
+//             "data": [
+//                 [
+//                     0.7188983456199358,
+//                     "7",
+//                     "124",
+//                     "4",
+//                     "0.01"
+//                 ]
+//             ]
+//         }
+//     ],
+//     "legend": [
+//         {
+//             "data": [
+//                 "top 20%",
+//                 "others"
+//             ],
+//             "selected": {
+//                 "top 20%": true,
+//                 "others": true
+//             },
+//             "show": true
+//         }
+//     ],
+//     "tooltip": {
+//         "show": true,
+//         "trigger": "item",
+//         "triggerOn": "mousemove|click",
+//         "axisPointer": {
+//             "type": "line"
+//         },
+//         "textStyle": {
+//             "fontSize": 14
+//         },
+//         "borderWidth": 0
+//     },
+//     "parallel": {
+//         "left": "5%",
+//         "right": "13%",
+//         "bottom": "10%",
+//         "top": "20%"
+//     },
+//     "parallelAxis": [
+//         {
+//             "dim": 0,
+//             "name": "dropout_rate",
+//             "type": "value",
+//             "min": "0.5",
+//             "max": "0.9",
+//             "scale": false
+//         },
+//         {
+//             "dim": 1,
+//             "name": "conv_size",
+//             "data": [
+//                 "2",
+//                 "3",
+//                 "5",
+//                 "7"
+//             ],
+//             "type": "category",
+//             "scale": false
+//         },
+//         {
+//             "dim": 2,
+//             "name": "hidden_size",
+//             "data": [
+//                 "124",
+//                 "512",
+//                 "1024"
+//             ],
+//             "type": "category",
+//             "scale": false
+//         },
+//         {
+//             "dim": 3,
+//             "name": "batch_size",
+//             "data": [
+//                 "1",
+//                 "4",
+//                 "8",
+//                 "16",
+//                 "32"
+//             ],
+//             "type": "category",
+//             "scale": false
+//         },
+//         {
+//             "dim": 4,
+//             "name": "learning_rate",
+//             "data": [
+//                 "0.0001",
+//                 "0.001",
+//                 "0.01",
+//                 "0.1"
+//             ],
+//             "type": "category",
+//             "scale": false
+//         }
+//     ],
+//     "title": [
+//         {
+//             "text": "XNNI Parallel Coordinates Plot"
+//         }
+//     ]
+// };
+        chart.setOption(option);
+    </script>
+
+
+    {table}
+
+</body>
+</html>

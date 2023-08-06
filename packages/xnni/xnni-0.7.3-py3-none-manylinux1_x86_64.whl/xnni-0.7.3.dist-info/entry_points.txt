@@ -1,0 +1,4 @@
+[console_scripts]
+nnictl = nni_cmd.nnictl:parse_args
+nniplot = nni_plot.xnni_plot:load_json_to_plot
+
