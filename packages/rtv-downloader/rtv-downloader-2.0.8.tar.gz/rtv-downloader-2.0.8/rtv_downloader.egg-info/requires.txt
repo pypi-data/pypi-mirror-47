@@ -1,0 +1,8 @@
+beautifulsoup4
+dateparser
+Js2Py
+lxml
+requests
+tldextract
+validators
+youtube_dl
