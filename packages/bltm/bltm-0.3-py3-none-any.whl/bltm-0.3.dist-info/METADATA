@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: bltm
+Version: 0.3
+Summary: bltm
+Home-page: https://pypi.org/user/gsmomo/
+Author: gs
+Author-email: UNKNOWN
+License: BSD License
+Platform: all
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: Cython
+Requires-Dist: Werkzeug
+Requires-Dist: redis (>=3.1.0)
+Requires-Dist: scipy (<=1.2.1)
+
+UNKNOWN
+
+
