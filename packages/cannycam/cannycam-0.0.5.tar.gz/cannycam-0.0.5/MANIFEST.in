@@ -1,0 +1,4 @@
+include versioneer.py
+include requirements.txt
+include cannycam/_version.py
+include cannycam/xmls/*
