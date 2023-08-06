@@ -1,0 +1,10 @@
+itk/HigherOrderAccurateGradientPython.py,sha256=hPKIZu-zuJuUhRRqjlOWXtTKEH1dz8Nr2l2Y8fMuNTg,3378
+itk/_HigherOrderAccurateGradientPython.so,sha256=PlfyjTS0LAJkHa9F9d5f8rI-yB9J-be9Ew-X_4ySKrE,2280176
+itk/itkHigherOrderAccurateDerivativeImageFilterPython.py,sha256=Ho0stB7uhFMsx63HnJ8UWi1ex0QCgpmGxpa2pkN3R_Q,24473
+itk/itkHigherOrderAccurateGradientmageFilterPython.py,sha256=S_HL1ZT-a00HM4rVIH9Onw0AnSdQQjKr_7sbAL4Yi_U,24184
+itk/Configuration/HigherOrderAccurateGradientConfig.py,sha256=QHCmTO0Pdde0VuC2QgxlfChIxawk3d1reHVh51SI5So,1021
+itk_higherorderaccurategradient-1.0.6.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+itk_higherorderaccurategradient-1.0.6.dist-info/METADATA,sha256=JXfZUMKQX_QheGdHWU_vWGqA0RKb7KKSFEXmFSwLktc,1613
+itk_higherorderaccurategradient-1.0.6.dist-info/WHEEL,sha256=dVaE8boSvAsaWuT-mIwHIolzKRGVN47MyEuSepi3C9Q,103
+itk_higherorderaccurategradient-1.0.6.dist-info/top_level.txt,sha256=K3Bo2NX2FvAd7ExrYg0rKrdBucaB6n6elW5QBc_g8FA,4
+itk_higherorderaccurategradient-1.0.6.dist-info/RECORD,,
