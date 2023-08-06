@@ -1,0 +1,207 @@
+Metadata-Version: 2.1
+Name: lfudacache
+Version: 0.0.2
+Summary: Less Frequently Used with Dynamic Aging
+Home-page: https://gitlab.com/ergoithz/lfudacache
+Author: Felipe A. Hernandez
+Author-email: ergoithz@gmail.com
+License: MIT
+Description: # lfudacache
+        
+        Python implementation Less Frequently Used with Dynamic Aging (LFUDA),
+        implementing an ordered dict-like interface, providing efficient cache with
+        reduced cache pollution.
+        
+        ## Installation
+        
+        ```sh
+        pip install lfudacache
+        ```
+        
+        ## Usage
+        
+        ```python
+        import lfudacache
+        
+        cache = lfudacache.LFUDACache(1000)  # cache the top 1000 most frequently accessed items
+        cache['key1'] = 1
+        cache.get('key1')  # 1
+        list(cache.items())  # [('key1', 1)]
+        cache['key2'] = 2
+        list(cache.items())  # [('key1', 1), ('key2', 2)]
+        cache.get('key2')  # 2
+        list(cache.items())  # [('key2', 2), ('key1', 1)]
+        cache.peek('key1')  # 1
+        list(cache.items())  # [('key2', 2), ('key1', 1)]
+        cache.get('key3')  # None
+        list(cache.items())  # [('key2', 2), ('key1', 1)]
+        cache['key3'] = 3
+        list(cache.items())  # [('key3', 3), ('key2', 2), ('key1', 1)]
+        ```
+        
+        A function memoization decorator is also available. Please note that,
+        unhashable arguments will raise `TypeError` just like python's standard
+        `functools.lru_cache`.
+        
+        ```python
+        import lfudacache
+        
+        @lfudacache.memoize(1000)  # cache the top 1000 most frequent call results
+        def my_cached_function(param_1, param_2):
+            result = my_very_expensive_logic(param_1, param_2)
+            return result
+        ```
+        
+        ## Documentation
+        
+        **LFUDACache** objects implement the `MutableMapping` interface, behaving like any
+        other python `dict` (actually, more like an `OrderedDict` as it's ordered).
+        but expiring long **unused** items when new ones are inserted.
+        
+        An item is considered **unused** when cache **ages** above item **hits**.
+        
+        Cache **ages** when asked for a missing **key** .
+        
+        Inserting an item when cache is not enough **aged** will result on the item
+        not being stored, reducing cache pollution.
+        
+        **LFUDACache** iteration will start from most to less frequently used items.
+        
+        ### `LFUDACache`
+        
+        ```
+        Less Frequently Used with Dynamic Aging cache, implementing the entire
+        :class:`collections.abc.MutableMapping' interface.
+        
+        Implementation notes:
+            * Most methods are self-optimizing into closures when referenced.
+            * Cache behaves as as dict, all operations (except iteration or peek)
+              count as cache MISS or HIT, affecting key ordering or insertion
+              permeability.
+        
+        How it works:
+            * Every cache hit increases item HIT counter
+              (except :method:`LFUDACache.peek`).
+            * Every cache miss increases MISSES counter by 1, up to top HITS.
+            * When full, a new cache item will only be accepted if MISSES counter
+              reaches the less frequently used item HIT counter, which is evicted.
+            * When a new item is cached, its HIT counter is set equal to MISSES
+              itself.
+            * When an existing item is updated, its HIT counter is incremented
+              by 1 to at least MISSES + 1.
+        ```
+        
+        #### `LFUDACache.__init__(maxsize)`
+        
+        ```
+        :param maxsize: number of items to keep on cache
+        :type maxsize: int
+        ```
+        
+        #### `LFUDACache.peek(key [, default])`
+        
+        ```
+        Get value of key from cache, without updating HIT nor MISSES counters.
+        
+        If key is not found, and default is not given, KeyError is raised.
+        
+        :param key: cache item key
+        :param default: optional default parameter
+        :returns: cache item value
+        :raises KeyError: if no default is given and key is not found
+        
+        Usage
+        -----
+        value = lfudacache.peek(key, 'default_value')
+        ```
+        
+        ### `memoize(maxsize, fnc=None, key_fnc=make_key)`
+        
+        ```
+        Memoization decorator using Less Frequenty Used with Dynamic Aging cache
+        eviction algorithm.
+        
+        The LFUDACache instance is available on the decorated function, as `cache`
+        property.
+        
+        :param maxsize: maximum cache size
+        :type maxsize: int
+        :param fnc: optional function to memoize (non-decorating behavior)
+        :type fnc: callable or None
+        :param key_fnc: optional custom cache key function, receiving argument
+                        list and keyword argument dict
+        :type key_fnc: callable
+        :returns: decorator if fnc is not given, wrapped function otherwise
+        :rtype: callable
+        ```
+        
+        ### `make_key(args, kwargs)`
+        
+        ```
+        Hash function for function arguments.
+        
+        :param args: argument iterable
+        :type args: iterable
+        :param kwargs: keyword argument dict-like object
+        :type kwargs: dict
+        :returns: hash of arg and kwargs
+        :rtype: int
+        ```
+        
+        ## Rationale
+        
+        There is a lot of LFU and LRU cache implementations for Python, but not so
+        many LFUDA ones, and some of them were a bit too slow due to python attribute
+        lookup overhead (thats why python's standard lru_cache implementation is
+        purely functional).
+        
+        This module addresses this performance concerns by making extensive use
+        of python closures, while providing an object-oriented interface, via a
+        self-optimizing implementation.
+        
+        ### Why Less Frequently Used with Dynamic Aging (LFUDA)
+        
+        LFUDA only evicts less used items when they become too old, rejecting new cache
+        items until then.
+        
+        In our implementation, an item become too old when its cache hit count lags
+        behind the entire cache misses.
+        
+        This approach prevents eviction of very used items in favor of potentially less
+        used items.
+        
+        ### Why not Less Recently Used (LRU)
+        
+        LRU is a very simple approach to caching, evicting older unused items.
+        
+        This approach is optimal when the most relevant items are accessed frequently,
+        but this is not always the case.
+        
+        The drawback is that very used items will be evicted when a lot of new items
+        are added to cache, even if they will never be accesed again, causing cache
+        pollution.
+        
+        This problem is usually minimized increasing the cache size until potentially
+        irrelevant cache items become only a tiny fraction of the entire cache but
+        this is not always possible or memory efficient.
+        
+        ### Why not Less Frequenty Used (LFU)
+        
+        LFU is our base algorithm, which evicts less used items.
+        
+        This approach has one major drawback when cache is full: a new saved item
+        could cause the eviction of an item more frequently used than the new one,
+        causing cache pollution.
+        
+        To minimize this problem, two different item storage tiers can be implemented
+        with different eviction policies. But while this method reduces said cache
+        pollution issue, it does not fix it.
+        
+Keywords: cache,memoize
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
