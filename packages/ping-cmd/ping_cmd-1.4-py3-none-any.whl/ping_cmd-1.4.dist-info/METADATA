@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: ping-cmd
+Version: 1.4
+Summary: Ping website or server using ping.exe just to check is the host reachable or not.
+Home-page: UNKNOWN
+Author: Dragan Matesic
+Author-email: dragan.matesic@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+Description:
+Ping website or server using ping.exe just to check is the host reachable or not.
+
+Usage:
+```python
+from ping_cmd import host
+r = host.ping("127.0.0.1")
+```
+If r == 1 then host is reachable.
+
