@@ -1,0 +1,5 @@
+[console_scripts]
+kirby = kirby.cli:cli
+kirby-adduser = kirby.cli:adduser
+kirby-web = kirby.cli:web
+
