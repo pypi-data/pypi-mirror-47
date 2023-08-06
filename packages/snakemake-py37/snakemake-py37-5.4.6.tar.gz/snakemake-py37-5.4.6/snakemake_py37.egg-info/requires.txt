@@ -1,0 +1,14 @@
+appdirs
+configargparse
+datrie-2019
+docutils
+gitpython
+jsonschema
+pyyaml
+ratelimiter
+requests
+wrapt
+
+[reports]
+jinja2
+networkx
