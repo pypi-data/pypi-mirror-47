@@ -1,0 +1,8 @@
+setup.py
+aws_ls.egg-info/PKG-INFO
+aws_ls.egg-info/SOURCES.txt
+aws_ls.egg-info/dependency_links.txt
+aws_ls.egg-info/requires.txt
+aws_ls.egg-info/top_level.txt
+elon/__init__.py
+elon/elonlib.py
