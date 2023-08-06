@@ -1,0 +1,18 @@
+Metadata-Version: 2.0
+Name: nxquickplot
+Version: 0.0.1
+Summary: Convenience package for drawing NetworkX graphs
+Home-page: https://github.com/amoe/nxquickplot
+Author: David Banks
+Author-email: amoebae@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+
+# nxquickplot
+
+Convenient plotting for graphs in NetworkX.
+
+
