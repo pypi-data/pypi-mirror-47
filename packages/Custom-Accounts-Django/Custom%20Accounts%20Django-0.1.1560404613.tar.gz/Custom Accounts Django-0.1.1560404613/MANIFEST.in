@@ -1,0 +1,2 @@
+include custom_accounts_django/templates/*
+include custom_accounts_django/static/*
