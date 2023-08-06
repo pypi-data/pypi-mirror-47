@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: pipelinewise-target-snowflake
+Version: 1.0.2
+Summary: Singer.io target for loading data to Snowflake - PipelineWise compatible
+Home-page: https://github.com/transferwise/pipelinewise-target-snowflake
+Author: TransferWise
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
