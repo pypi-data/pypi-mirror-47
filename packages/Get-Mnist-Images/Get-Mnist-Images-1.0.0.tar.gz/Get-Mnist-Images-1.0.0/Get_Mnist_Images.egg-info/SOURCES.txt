@@ -1,0 +1,6 @@
+setup.py
+Get_Mnist_Images.egg-info/PKG-INFO
+Get_Mnist_Images.egg-info/SOURCES.txt
+Get_Mnist_Images.egg-info/dependency_links.txt
+Get_Mnist_Images.egg-info/requires.txt
+Get_Mnist_Images.egg-info/top_level.txt

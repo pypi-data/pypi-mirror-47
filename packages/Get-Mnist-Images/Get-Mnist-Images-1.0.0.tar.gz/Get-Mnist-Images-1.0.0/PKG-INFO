@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: Get-Mnist-Images
+Version: 1.0.0
+Summary: 将Mnist中的数据保存成本地PNG格式的图片
+Home-page: UNKNOWN
+Author: Luskyle
+Author-email: 844804539@qq.com
+License: MIT Licence
+Description: 将Mnist中的数据保存成本地PNG格式的图片
+Keywords: pip,Mnist,Images
+Platform: any
