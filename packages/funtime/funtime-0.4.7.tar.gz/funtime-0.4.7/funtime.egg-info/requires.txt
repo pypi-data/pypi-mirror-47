@@ -1,0 +1,13 @@
+scipy
+numpy
+pandas
+click
+arctic
+toolz
+dask
+cloudpickle
+dask[complete]
+dask[dataframe]
+python-decouple
+maya
+crayons
