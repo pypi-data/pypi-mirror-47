@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: devops-spt
+Version: 0.3.2
+Summary: Devops support functions in a Python package
+Home-page: https://github.com/dksmiffs/devops-spt
+Author: Dave Smith
+Author-email: dave.k.smith@gmail.com
+License: MIT
+Keywords: devops
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+[![image](https://img.shields.io/github/license/dksmiffs/devops-spt.svg)](https://github.com/dksmiffs/devops-spt)
+[![image](https://img.shields.io/github/release/dksmiffs/devops-spt.svg)](https://github.com/dksmiffs/devops-spt/releases)
+[![image](https://img.shields.io/travis/dksmiffs/devops-spt.svg)](https://travis-ci.org/dksmiffs/devops-spt)
+[![image](https://img.shields.io/codecov/c/github/dksmiffs/devops-spt.svg)](https://codecov.io/gh/dksmiffs/devops-spt)
+[![image](https://img.shields.io/codacy/grade/bfac5bbcdddd4e88b4e33381996bb2dc.svg)](https://app.codacy.com/project/dksmiffs/devops-spt/dashboard)
+
+A Python package that automates useful devops tasks.
+
+## Publish, Test _devops-spt_
+This project follows the [import-ready][1] approach.
+
+[1]: https://gitlab.com/dave.k.smith/import-ready
+
+
