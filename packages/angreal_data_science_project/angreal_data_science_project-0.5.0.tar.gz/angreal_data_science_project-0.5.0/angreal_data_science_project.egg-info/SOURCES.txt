@@ -1,0 +1,8 @@
+README.rst
+angreal.json
+setup.py
+angreal_data_science_project.egg-info/PKG-INFO
+angreal_data_science_project.egg-info/SOURCES.txt
+angreal_data_science_project.egg-info/dependency_links.txt
+angreal_data_science_project.egg-info/not-zip-safe
+angreal_data_science_project.egg-info/top_level.txt
