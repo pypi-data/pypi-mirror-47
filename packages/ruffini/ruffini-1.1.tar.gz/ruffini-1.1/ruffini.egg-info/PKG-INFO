@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: ruffini
+Version: 1.1
+Summary: Monomials, Polynomials and lot more!
+Home-page: https://github.com/gianluparri03/ruffini
+Author: Gianluca Parri
+Author-email: gianlucaparri03@gmail.com
+License: MIT
+Description: 
+        # Ruffini
+        
+        To see the documentation, please [click here](https://gianluparri03.github.io/ruffini).
+        You can find the documentation for this project in
+        [Read The Docs website](https://ruffini.readthedocs.io/en/stable/).
+        
+        Instead, if you want to see the source, [click here](https://github.com/gianluparri03/ruffini).
+        If you want to see the source, [click here](https://github.com/gianluparri03/ruffini).
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
