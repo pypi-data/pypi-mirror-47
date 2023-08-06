@@ -1,0 +1,4 @@
+clingon
+GitPython
+requests
+semver
