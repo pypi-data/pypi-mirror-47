@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyfrazao/__init__.py
+pyfrazao/main.py
+pyfrazao.egg-info/PKG-INFO
+pyfrazao.egg-info/SOURCES.txt
+pyfrazao.egg-info/dependency_links.txt
+pyfrazao.egg-info/not-zip-safe
+pyfrazao.egg-info/top_level.txt

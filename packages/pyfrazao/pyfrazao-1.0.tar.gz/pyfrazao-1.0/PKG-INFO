@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: pyfrazao
+Version: 1.0
+Summary: This package was made with pip-boilerplate
+Home-page: https://github.com/victorcmoura/pip-boilerplate
+Author: Victor Moura
+Author-email: victor_cmoura@hotmail.com
+License: GPL-3.0
+Description: # Pyfrazao
+        
+        Este pacote contém as seguintes funcionalidades:
+        - soma:
+        ```python
+        import pyfrazao.main as pf
+        
+        result = pf.soma(1, 1)
+        print(result) # 2
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
