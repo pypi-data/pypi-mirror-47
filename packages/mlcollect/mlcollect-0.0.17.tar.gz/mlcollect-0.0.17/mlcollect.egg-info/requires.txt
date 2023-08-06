@@ -1,0 +1,4 @@
+tensorflow
+matplotlib
+sklearn
+h5py
