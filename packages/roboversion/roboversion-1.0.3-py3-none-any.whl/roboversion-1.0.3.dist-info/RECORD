@@ -1,0 +1,13 @@
+autoversion/__init__.py,sha256=O_CV0vcXAGqvqwourSBIh1yWgwKXuUK2jpN78pw1Jnc,3673
+autoversion/__main__.py,sha256=QqEiZj9RzaBOt4nuJ5fffNJySEdsmxADJO8NDtkHTlM,42
+autoversion/git.py,sha256=xfhlxY3tp6BIsKdwzZ3P2X-_z9KIo7XbhTBc96szj7Y,8825
+autoversion/version.py,sha256=DfXGjV23LSYSCJ2Q_AcX4F9y3d5UzcMo4kIw5rGTy5k,11017
+roboversion/__init__.py,sha256=Fu6Lz_0oogLf0yleQ7XVzAAgD-XP61-jSWqnOJbCsmw,3329
+roboversion/__main__.py,sha256=QqEiZj9RzaBOt4nuJ5fffNJySEdsmxADJO8NDtkHTlM,42
+roboversion/git.py,sha256=eM5gRlJLV8TDhYOcTaN22jp7uEazS5ke0RFT7SMeXCU,7249
+roboversion/version.py,sha256=VCKhd0vSVDPRRPdaAXvPLd9oSSBvAhsN6wLqT9ZMCpY,9339
+roboversion-1.0.3.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+roboversion-1.0.3.dist-info/METADATA,sha256=5--ZPsqAMkFujV3fU0IQ5HhWfXpAeRklsN_JKnd1W-c,1066
+roboversion-1.0.3.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+roboversion-1.0.3.dist-info/top_level.txt,sha256=bw6bG6kersrzxA444E7dMMw4SlPf1jX4vB6NEJMNACc,12
+roboversion-1.0.3.dist-info/RECORD,,
