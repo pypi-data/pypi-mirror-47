@@ -1,0 +1,14 @@
+pyldpc/__init__.py,sha256=t468zqFqYOBhYNA2-J7TP4SazwYClVFf-yeuwKr9WLI,662
+pyldpc/_version.py,sha256=wu65dmVM9fKR1rBHH263ls8Ca2FZzb0ejYcrP_Ld0iY,22
+pyldpc/code.py,sha256=12gXjS4Sd_kajdkxMYibeZrzWbFNdEXlWJuLo2V7SpU,7684
+pyldpc/decoder.py,sha256=fBhaPPRfBNsr8_2APO5FhQTCdO0q8QdMflK8lA8lQao,11822
+pyldpc/encoder.py,sha256=OjHSJ1OFJQhN9Zus1xX621cfUqt44nY2sqtcWq25Gxw,2545
+pyldpc/ldpc_audio.py,sha256=2yKYOXogAOAv1z8ad_Dwa4oei1ZKOI0JcP_koUO18i8,4974
+pyldpc/ldpc_images.py,sha256=GNzNRw6nDs-lgSTAL_0Cn5mFJK7t_EcIlbnQ23Hj1ws,10893
+pyldpc/utils.py,sha256=Z3aIWq6iyZi4b7PJUaxF_6cH4GPiVCaXxCupOu-vQJk,5874
+pyldpc/utils_audio.py,sha256=Jkub5qFRx19ROH6fp8JpmMK6OV4vlNTey4zM6v003LU,1441
+pyldpc/utils_img.py,sha256=1xA0MHMAfq8RvIJA2iVzFwhh6fvMDKujebx_TPfFjW4,4857
+pyldpc-0.7.6.dist-info/METADATA,sha256=YTW5xQpgh3RJB63XROFWJzYmDHwvdvdmh-6IJpVCtVA,3240
+pyldpc-0.7.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyldpc-0.7.6.dist-info/top_level.txt,sha256=cMAICe8W7zz9g9j0tqJncY4Xu0LB4fus9QVx3lCADXE,7
+pyldpc-0.7.6.dist-info/RECORD,,
