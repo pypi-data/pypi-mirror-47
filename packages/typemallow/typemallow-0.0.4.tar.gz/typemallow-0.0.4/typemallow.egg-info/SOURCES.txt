@@ -1,0 +1,10 @@
+README.md
+setup.py
+typemallow/__init__.py
+typemallow/mappings.py
+typemallow.egg-info/PKG-INFO
+typemallow.egg-info/SOURCES.txt
+typemallow.egg-info/dependency_links.txt
+typemallow.egg-info/not-zip-safe
+typemallow.egg-info/requires.txt
+typemallow.egg-info/top_level.txt
