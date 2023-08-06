@@ -1,0 +1,8 @@
+_libinjection.cpython-37m-darwin.so,sha256=qqhlsZlUwz27EdYU_132_Nh4bFJRwYpIq5Xq2M63Dz8,580868
+libinjection/__init__.py,sha256=Hakify4CLf7xBzIQ28j9PPnWERQr83QRQZ2DHOMMrZg,27
+libinjection/libinjection.py,sha256=ZATgRv2LMdrx96ohDsOs02WDRA4qtZ76Fi7aRALopok,3333
+libinjection/sqli_fingerprints.py,sha256=pDpy4FZ-U8cuxiAIIUZLHdumuX7jkUfFU_gSCKmMy1o,37
+libinjection_wheel-0.1.1.dist-info/METADATA,sha256=O0ZM6zet4KWsftr_TD_FZ8BGa-Xba_zpamkgKgOa7MM,640
+libinjection_wheel-0.1.1.dist-info/WHEEL,sha256=ubEovDPFTN5rTkBHLrZ2UHPZuj6eRdINU2td2X4r6I4,109
+libinjection_wheel-0.1.1.dist-info/top_level.txt,sha256=RQx8fRBa6RWsP131tk0uAI04JDFejgv9UHOxuolpxv4,27
+libinjection_wheel-0.1.1.dist-info/RECORD,,
