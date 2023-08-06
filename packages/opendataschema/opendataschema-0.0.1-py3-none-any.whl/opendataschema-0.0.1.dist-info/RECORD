@@ -1,0 +1,10 @@
+opendataschema/__init__.py,sha256=EnqBm5bDveGOKfBbfkLwH51K_R2y2hJ0_sV85UAwGjQ,5444
+opendataschema/cli.py,sha256=2gBaxlz0otB8Oj1LvbmtEX5oVyOOYP_nUJ11vtOAU7w,1624
+opendataschema/github_api.py,sha256=kbLGnky8WDiAhJBAzwsceWjbpKPNkCvNkpNaE-S2oEc,898
+opendataschema/gitlab_api.py,sha256=c0oxzdGm0qRpPqOl1-i1Rhb7JFguOHhLSFhPCdmV6Ig,550
+opendataschema-0.0.1.dist-info/LICENSE,sha256=xm0YJTFkkjBloiPQea9vuzFXvUlH_v2akejSjHvYHsQ,1075
+opendataschema-0.0.1.dist-info/METADATA,sha256=tOaGkLtW6v-8TamLk0c3nOs6Y6CCSaHfOAXHYaCKps0,2040
+opendataschema-0.0.1.dist-info/WHEEL,sha256=t_MpApv386-8PVts2R6wsTifdIn0vbUDTVv61IbqFC8,92
+opendataschema-0.0.1.dist-info/entry_points.txt,sha256=0XkLbBQhxloUH2W7vZqH8-9mpXiDYQw92NB63rGImVo,59
+opendataschema-0.0.1.dist-info/top_level.txt,sha256=tZNRra0OZwC28dKINCrvgdQ-48MOPmV2bCAwG18eKjI,15
+opendataschema-0.0.1.dist-info/RECORD,,
