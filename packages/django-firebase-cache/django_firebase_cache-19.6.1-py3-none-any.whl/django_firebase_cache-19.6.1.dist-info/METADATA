@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: django-firebase-cache
+Version: 19.6.1
+Summary: Firebase cache for Django
+Home-page: http://github.com/christippett/django-firebase-cache/
+Author: Chris Tippett
+Author-email: c.tippett@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Description-Content-Type: text/markdown
+Requires-Dist: google-cloud-firestore
+Requires-Dist: firebase-admin
+
+# Django Firebase Cache
+[![PyPI version](https://img.shields.io/pypi/v/django-firebase-cache.svg)](https://pypi.python.org/pypi/django-firebase-cache)
+[![Build status](https://img.shields.io/travis/christippett/django-firebase-cache.svg)](https://travis-ci.org/christippett/django-firebase-cache)
+[![Coverage](https://img.shields.io/coveralls/github/christippett/django-firebase-cache.svg)](https://coveralls.io/github/christippett/django-firebase-cache?branch=master)
+[![Python versions](https://img.shields.io/pypi/pyversions/django-firebase-cache.svg)](https://pypi.python.org/pypi/django-firebase-cache)
+[![Github license](https://img.shields.io/github/license/christippett/django-firebase-cache.svg)](https://github.com/christippett/django-firebase-cache)
+
+## Description
+TBC
+

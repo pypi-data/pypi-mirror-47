@@ -1,0 +1,8 @@
+django_firebase_cache/__init__.py,sha256=n8biJEcLJBSUaN8wuItPYcFMcsTXX-S6-3nCWgM23Wo,133
+django_firebase_cache/firestore.py,sha256=0RsSzVK-xxE9NEzk-N9WPT-_xXDYBwJpowctYILGUNE,4738
+django_firebase_cache/realtime_database.py,sha256=mBIiH08g0rxdH9VMDYA8Was2lwSzPcRqxCV29NHykdo,4343
+django_firebase_cache-19.6.1.dist-info/LICENSE,sha256=QEWQt95pP-cNt1uulKNJZkVCm0fFUYmFSdeJ1pOX_CE,1070
+django_firebase_cache-19.6.1.dist-info/METADATA,sha256=QmzA6o9ONxV61SCd96AkBFvHLCtAMxflN1z3qQ_pzvQ,1703
+django_firebase_cache-19.6.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+django_firebase_cache-19.6.1.dist-info/top_level.txt,sha256=FSSQDijK_RIIx6OBqXcQcvte56aFW_CR8BNxCsgom4I,22
+django_firebase_cache-19.6.1.dist-info/RECORD,,
