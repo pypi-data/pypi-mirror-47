@@ -1,0 +1,6 @@
+README.md
+setup.py
+lipo2pol.egg-info/PKG-INFO
+lipo2pol.egg-info/SOURCES.txt
+lipo2pol.egg-info/dependency_links.txt
+lipo2pol.egg-info/top_level.txt
