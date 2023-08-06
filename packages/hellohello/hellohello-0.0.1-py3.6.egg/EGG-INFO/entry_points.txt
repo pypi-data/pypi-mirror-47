@@ -1,0 +1,3 @@
+[console_scripts]
+realpython = hellohello.__main__:main
+

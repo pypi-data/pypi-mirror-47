@@ -1,0 +1,11 @@
+README.md
+setup.py
+hellohello/__init__.py
+hellohello/__main__.py
+hellohello/func.py
+hellohello.egg-info/PKG-INFO
+hellohello.egg-info/SOURCES.txt
+hellohello.egg-info/dependency_links.txt
+hellohello.egg-info/entry_points.txt
+hellohello.egg-info/requires.txt
+hellohello.egg-info/top_level.txt
