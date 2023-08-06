@@ -1,0 +1,34 @@
+Metadata-Version: 2.0
+Name: mautil
+Version: 0.1.16
+Summary: An deep leaning util based on tensorflow
+Home-page: https://github.com/amxineohp/mautil
+Author: tom
+Author-email: 8tom147@gmail.com
+License: Apache License 2.0
+Description-Content-Type: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: nltk
+
+# mautil
+An deep learning util based on tensroflow 
+
+# Tested on tensorflow 1.11
+
+# Install
+`pip install mautil`
+
+# Demo
+## There are two text style transfer models. CA is an implementation of the  paper  [Style Transfer from Non-Parallel Text byCross-Alignment](https://papers.nips.cc/paper/7259-style-transfer-from-non-parallel-text-by-cross-alignment.pdf). CAR model just use reinforcement learning to bypass gumbel softmax
+## run the text style transfer model in debug mode
+`python train.py -m CAR -dataset yelp -d`
+
+
