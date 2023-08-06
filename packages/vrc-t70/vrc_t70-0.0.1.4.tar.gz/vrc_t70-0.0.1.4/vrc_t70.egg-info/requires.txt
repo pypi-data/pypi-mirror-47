@@ -1,0 +1,4 @@
+terminaltables==3.1.0
+tqdm==4.31.1
+crcmod==1.7
+pyserial==3.4
