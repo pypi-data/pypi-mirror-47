@@ -1,0 +1,30 @@
+Metadata-Version: 1.2
+Name: snps
+Version: 0.0.0
+Summary: tools for reading, writing, merging, and remapping SNPs
+Home-page: https://github.com/apriha/snps
+Author: Andrew Riha
+Author-email: apriha@gmail.com
+License: BSD 3-Clause License
+Description: snps
+        ====
+        tools for reading, writing, merging, and remapping SNPs
+        
+Keywords: snps dna chromosomes bioinformatics
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Healthcare Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5

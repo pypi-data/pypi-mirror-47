@@ -1,0 +1,9 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+snps/__init__.py
+snps.egg-info/PKG-INFO
+snps.egg-info/SOURCES.txt
+snps.egg-info/dependency_links.txt
+snps.egg-info/top_level.txt
