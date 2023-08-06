@@ -1,0 +1,11 @@
+pachypy/__init__.py,sha256=feJTeY8oS3_TYPOtJZr8hzQmBgFUe9j-IoMDPmi68gA,227
+pachypy/adapter.py,sha256=UWYgUtTa-V9nppYddTmsRGtnfOVgc1NlDgzEOj-7piw,31444
+pachypy/client.py,sha256=lHnwY51fpzutFZ7oMB85dqYt_MIcRnA7-SwRV2MYo7w,47030
+pachypy/pretty.py,sha256=wrf2iswdqrzwnBlaPyuXRe2Dc5fOFQsBn46G5NrBP7g,19363
+pachypy/registry.py,sha256=uJw_3Ky9O9KOVDYk_ZDe_sV41mECVFnoJmMffaJIX0M,4542
+pachypy/utils.py,sha256=f21TFXt347IUNSVbBVRQ5SccYQLzjjWPBF-EJYDHsXM,1548
+pachypy-0.1.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pachypy-0.1.5.dist-info/METADATA,sha256=5l_rrlcYgt3nWoOxV8aWRqBKcfXGpg6sv8iVL1xCwsE,3618
+pachypy-0.1.5.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+pachypy-0.1.5.dist-info/top_level.txt,sha256=sWgECX24Yap6wM_8lEDfigVR12gb4pTZZGZm0N8FzRA,8
+pachypy-0.1.5.dist-info/RECORD,,
