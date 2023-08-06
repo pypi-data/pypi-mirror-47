@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+tests.py
+unix_ar.py
+unix_ar.egg-info/PKG-INFO
+unix_ar.egg-info/SOURCES.txt
+unix_ar.egg-info/dependency_links.txt
+unix_ar.egg-info/top_level.txt
