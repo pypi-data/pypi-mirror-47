@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: LIMEaid
+Version: 1.0
+Summary: LIMEaid is a tabular version of LIME
+Home-page: http://github.com/pking70/LIMEaid
+Author: sumanbh@uw.edu;javiers@uw.edu;pking70@uw.edu
+Author-email: sumanbh@uw.edu
+Maintainer: sumanbh@uw.edu;javiers@uw.edu;pking70@uw.edu
+Maintainer-email: sumanbh@uw.edu
+License: MIT
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Requires: numpy
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+
+
+LIMEaid
+========
+LIMEaid is a project for DATA515 class project.
+To get started using these components in your own software, please go to the
+repository README_.
+.. _README: https://github.com/pking70/LIMEaid/blob/master/README.md
+License
+=======
+``LIMEaid`` is licensed under the terms of the MIT license. See the file
+"LICENSE" for information on the history of this software, terms & conditions
+for usage, and a DISCLAIMER OF ALL WARRANTIES.
+All trademarks referenced herein are property of their respective holders.
+Copyright (c) 2019--, Suman Bhagavathula, Javier Salido, Patrick King,
+The University of Washington
+eScience Institute.
+
+
