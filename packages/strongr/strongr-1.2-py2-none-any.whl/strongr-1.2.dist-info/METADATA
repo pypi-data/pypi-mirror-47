@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: strongr
+Version: 1.2
+Summary: An elastic cloud command runner
+Home-page: UNKNOWN
+Author: Thomas Phil
+Author-email: thomas@tphil.nl
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: salt (==2018.3.1)
+Requires-Dist: jsonpickle (==0.9.5)
+Requires-Dist: cleo (==0.6.1)
+Requires-Dist: Flask (==0.12.2)
+Requires-Dist: dependency-injector (==3.14.6)
+Requires-Dist: filelock (==2.0.12)
+Requires-Dist: flask-restplus (==0.10.1)
+Requires-Dist: Flask-OAuthlib (==0.9.4)
+Requires-Dist: cmndr (==1.0.5)
+Requires-Dist: gunicorn (==19.7.1)
+Requires-Dist: SQLAlchemy (==1.1.14)
+Requires-Dist: PyYAML (==3.12)
+Requires-Dist: psutil (==5.4.3)
+Requires-Dist: celery (==4.1.0)
+Requires-Dist: redis (==2.10.6)
+Requires-Dist: statsd (==3.2.2)
+Requires-Dist: enum34 (==1.1.6)
+Requires-Dist: schedule
+Requires-Dist: authlib (==0.4.1)
+Requires-Dist: mysqlclient
+Requires-Dist: tornado (==4.5.2)
+
+UNKNOWN
+
+
