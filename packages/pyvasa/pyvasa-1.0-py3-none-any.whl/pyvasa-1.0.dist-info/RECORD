@@ -1,0 +1,15 @@
+pyvasa/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyvasa/appliance_management.py,sha256=wdMAJcAd1S6c8Uqi_GzUB8SbyiMi0dyyn0PtIUSsKio,14071
+pyvasa/datastore.py,sha256=U-sJwS1quGUPL34QZkxrFu1AeUz1nOyMVwRTnLr-MQI,6391
+pyvasa/extension_management.py,sha256=tD1iM-K1bqKiFQoG3ZoHG0iM0SCk6omY34VlCf7kbSs,2171
+pyvasa/product_capability.py,sha256=u-XSyiv0yTIl4AZ87Bz-CKia9MPc6OEL7nWl-VaZqf8,2880
+pyvasa/reports.py,sha256=4CAYXGvn1KfmthLTn4psb_IcPtGatX6WIBr7_-hdiHU,1539
+pyvasa/storage_capability_profile.py,sha256=jtRWBpHZWMfYQ_Q7kZXiWGVUV-5_YNzQP6MOiJiklV0,6840
+pyvasa/storage_systems.py,sha256=L5QVO_TO59EhYoToPR63TbIXYMJ_qRc5xo_CTRVKdqI,5064
+pyvasa/task.py,sha256=BzssHdbwrNa2Uf-p0WTspfJuk6rVFjKxUPwtECZhT1Q,1121
+pyvasa/user_authentication.py,sha256=GgUjlfcOMjHmsmVmDOFcbUu7IcKSQXcQVO7HJ7FU3Hc,1780
+pyvasa-1.0.dist-info/LICENSE,sha256=dM1GrNJ-TrfnrQrsoB7bLsfwpGWeCM-5k1WTOgrVJ2Q,11338
+pyvasa-1.0.dist-info/METADATA,sha256=Xgpc9MFXT_syFdu4pxPxQPAzi2f6CtJ0UiRi3zGAPMM,399
+pyvasa-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyvasa-1.0.dist-info/top_level.txt,sha256=i8REahLNeC0f5lhRQC5w0t6KTTX2kc2ehMP59yGMjl0,7
+pyvasa-1.0.dist-info/RECORD,,

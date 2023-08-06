@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyvasa
+Version: 1.0
+Summary: Python package for NetApp VASA Appliance
+Home-page: https://github.com/sapcc/vasa/pyvasa
+Author: Hannes Ebelt
+Author-email: hannes.ebelt@sap.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: packaging (>=16.8)
+Requires-Dist: requests (>=2.18.1)
+Requires-Dist: urllib3 (>=1.21.1)
+
+UNKNOWN
+
+
