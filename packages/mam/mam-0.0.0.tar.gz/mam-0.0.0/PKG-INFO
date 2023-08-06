@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: mam
+Version: 0.0.0
+Summary: Runs linters and outputs them all together.
+Home-page: UNKNOWN
+Author: Peilonrayz
+Author-email: peilonrayz@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: linter
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
