@@ -1,0 +1,49 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "taika"
+version = "0.5.3"
+description = "Another Static Site Generator"
+license = "MIT"
+authors = [
+    "Hector Martinez <hector.martinez.ub@gmail.com>"
+]
+readme = "README.rst"
+repository = "https://gitlab.com/hectormartinez/taika"
+homepage = "https://gitlab.com/hectormartinez/taika"
+documentation = "https://taika.readthedocs.io/en/latest/"
+keywords = ["static site generator"]
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3.6",
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+"ruamel.yaml" = "*"
+docutils = "*"
+jinja2 = "*"
+beautifulsoup4 = "*"
+
+[tool.poetry.dev-dependencies]
+bump2version = "*"
+wheel = "*"
+flake8 = "*"
+isort = "*"
+watchdog = "*"
+twine = "*"
+tox = "*"
+coverage = "*"
+pytest = "*"
+pytest-cov = "*"
+black = { version = "*", allows-prereleases = true }
+pre-commit = "*"
+beautifulsoup4 = "*"
+
+[tool.poetry.scripts]
+taika = "taika.cli:main"

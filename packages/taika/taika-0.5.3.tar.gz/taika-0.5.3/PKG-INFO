@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: taika
+Version: 0.5.3
+Summary: Another Static Site Generator
+Home-page: https://gitlab.com/hectormartinez/taika
+License: MIT
+Keywords: static site generator
+Author: Hector Martinez
+Author-email: hector.martinez.ub@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: beautifulsoup4
+Requires-Dist: docutils
+Requires-Dist: jinja2
+Requires-Dist: ruamel.yaml
+Project-URL: Documentation, https://taika.readthedocs.io/en/latest/
+Project-URL: Repository, https://gitlab.com/hectormartinez/taika
+Description-Content-Type: text/x-rst
+
+Taika
+=====
+
+.. image:: https://img.shields.io/pypi/v/taika.svg
+    :target: https://pypi.python.org/pypi/taika
+
+.. image:: https://readthedocs.org/projects/taika/badge/?version=latest
+    :target: https://taika.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. image:: https://gitlab.com/hectormartinez/taika/badges/master/pipeline.svg
+    :target: https://gitlab.com/hectormartinez/taika/commits/master
+    :alt: Pipeline Status
+
+.. image:: https://gitlab.com/hectormartinez/taika/badges/master/coverage.svg
+    :target: https://gitlab.com/hectormartinez/taika/commits/master
+    :alt: Coverage Report
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/ambv/black
+   :alt: Code style: black
+
+
+Taika in another Static Site Generator which I created as a learning activity.
+Today I use it to build my personal page.
+
+Features
+--------
+
+* YAML configuration
+* Jinja2 templates
+
+License
+-------
+
+`MIT <./LICENSE>`__
+
+
