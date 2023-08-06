@@ -1,0 +1,3 @@
+[console_scripts]
+elsi-test-one = elsi_test:elsimain
+
