@@ -1,0 +1,10 @@
+README.md
+setup.py
+fixnames/__init__.py
+fixnames/fixnames.py
+fixnames.egg-info/PKG-INFO
+fixnames.egg-info/SOURCES.txt
+fixnames.egg-info/dependency_links.txt
+fixnames.egg-info/entry_points.txt
+fixnames.egg-info/requires.txt
+fixnames.egg-info/top_level.txt
