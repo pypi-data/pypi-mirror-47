@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+posuer.py
+setup.cfg
+setup.py
+poseur.egg-info/PKG-INFO
+poseur.egg-info/SOURCES.txt
+poseur.egg-info/dependency_links.txt
+poseur.egg-info/top_level.txt
+poseur.egg-info/zip-safe
