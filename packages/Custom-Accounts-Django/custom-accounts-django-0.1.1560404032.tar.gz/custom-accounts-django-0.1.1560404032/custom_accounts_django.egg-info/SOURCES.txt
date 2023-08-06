@@ -1,0 +1,15 @@
+README.md
+setup.py
+upload_to_pypi.py
+custom-accounts-django/__init__.py
+custom-accounts-django/admin.py
+custom-accounts-django/apps.py
+custom-accounts-django/models.py
+custom-accounts-django/tests.py
+custom-accounts-django/urls.py
+custom-accounts-django/views.py
+custom-accounts-django/migrations/__init__.py
+custom_accounts_django.egg-info/PKG-INFO
+custom_accounts_django.egg-info/SOURCES.txt
+custom_accounts_django.egg-info/dependency_links.txt
+custom_accounts_django.egg-info/top_level.txt
