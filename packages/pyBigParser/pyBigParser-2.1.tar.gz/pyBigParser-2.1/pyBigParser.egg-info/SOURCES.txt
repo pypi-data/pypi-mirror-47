@@ -1,0 +1,8 @@
+README.txt
+setup.py
+pyBigParser.egg-info/PKG-INFO
+pyBigParser.egg-info/SOURCES.txt
+pyBigParser.egg-info/dependency_links.txt
+pyBigParser.egg-info/top_level.txt
+pybigparser/__init__.py
+pybigparser/evaluator.py

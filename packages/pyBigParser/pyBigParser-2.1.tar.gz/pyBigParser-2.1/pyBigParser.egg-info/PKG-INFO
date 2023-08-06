@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: pyBigParser
+Version: 2.1
+Summary: Math parser for simple and compound strings math expressions evaluations
+Home-page: UNKNOWN
+Author: Nelson Carrasquel
+Author-email: carrasquel@outlook.com
+License: BSD License
+Description: # pyBigParser
+        
+        pyBigParser provides a class for parsing long and compound math 
+        expresions. You might find it most useful for tasks involving 
+        evaluating from single functions to compounds functions.
+        
+        ## Installation
+        
+        ```
+        pip install pyBigParser
+        ```
+        
+        ## Example
+        
+        Typical usage often looks like this::
+        ```python
+        #!/usr/bin/env python
+        
+        from pybigparser import evaluator
+            
+        parser = evaluator.MathParser()
+        parser.set_function("x**2+2*y")
+        parser.add_sub("x", "24+6*c")
+        parser.add_sub("y", "25 / d")
+        parser.add_sub("c", "1")
+        parser.add_sub("d", "4")
+            
+        parser.evaluate()
+        
+        print(parser.value)
+        print(parser.get_sub_value("x"))
+        print(parser.get_sub_value("y"))
+        ```
+        
+        ## Supported Functions and Constants
+        
+        pyBigParser comes with support for evaluating the following functions and constants.
+        
+        *  ```cos```
+        *  ```sin```
+        *  ```abs```
+        *  ```log10```
+        *  ```log```
+        *  ```exp``` 
+        *  ```tan```
+        *  ```pi```
+        *  ```e```
+         
+        ## Versions
+        
+        *  1.3 - It saves the values for each sub-function.
+        *  1.5 - Fixed OverFlow Error with Exp function.
+        *  2.0 - Python 3 support.
+         
+        ## Warnings
+        
+         * The variables ```e``` and ```pi``` are reserved for the evaluator.
+         * Exceptions for iterative variables are not supported.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
