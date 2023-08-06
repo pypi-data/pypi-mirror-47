@@ -1,0 +1,10 @@
+creds/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+creds/cli.py,sha256=Hh4F0y9BnWHMB7YrxJo5_ijHJiEudt674PT1zs9-gq0,9266
+creds/cred.py,sha256=BDJ4lNJ6aaFuilFSnVhkBlHhnqGqilPMf4s4xxcZJZs,6833
+creds/main.py,sha256=JRI6az35O3Dtlui0IYxNWmD6a4KHyrCHdc302VJmGCs,562
+aws_creds-0.9.0.dist-info/LICENSE,sha256=V6JYADulMPwpxmbonYtg4mWHAzBue94naUCb9K1AbUs,1069
+aws_creds-0.9.0.dist-info/METADATA,sha256=j-yYlBXscrqeCYAbTAbyNazwttvSXeCFX9Kfx5PFwZk,3302
+aws_creds-0.9.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+aws_creds-0.9.0.dist-info/entry_points.txt,sha256=cCfn0Hi4pTjfwc0pMDKva5KhOO6nMeBik8qh_BbcoEo,47
+aws_creds-0.9.0.dist-info/top_level.txt,sha256=rFH6NU8PI93Hg-mMIbRr3E3UyEf9PdoHoVWXrr0sKL0,6
+aws_creds-0.9.0.dist-info/RECORD,,
