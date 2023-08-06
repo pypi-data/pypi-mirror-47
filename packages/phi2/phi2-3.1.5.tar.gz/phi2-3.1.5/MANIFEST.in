@@ -1,0 +1,5 @@
+include LICENSE
+recursive-include ejemplos *.*
+recursive-include documentos *.*
+recursive-include modulo_arduino *.*
+

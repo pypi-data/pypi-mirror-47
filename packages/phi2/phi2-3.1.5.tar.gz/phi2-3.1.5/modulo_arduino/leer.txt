@@ -1,0 +1,1 @@
+Cargar el scrip phi2.ino en una placa arduino nano o uno 
