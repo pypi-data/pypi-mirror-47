@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: pytket-qiskit
+Version: 0.1.2
+Summary: Extension for pytket, providing translation to and from the Qiskit framework
+Home-page: https://github.com/CQCL/pytket
+Author: Will Simmons
+Author-email: will.simmons@cambridgequantum.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Requires-Dist: pytket (>=0.2.0)
+Requires-Dist: qiskit (~=0.10.1)
+Requires-Dist: qiskit-chemistry (~=0.5)
+Requires-Dist: matplotlib (~=2.2)
+
+UNKNOWN
+
+
