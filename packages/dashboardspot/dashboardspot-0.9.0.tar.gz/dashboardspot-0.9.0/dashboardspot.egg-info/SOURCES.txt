@@ -1,0 +1,8 @@
+README.md
+setup.py
+dashboardspot/__init__.py
+dashboardspot.egg-info/PKG-INFO
+dashboardspot.egg-info/SOURCES.txt
+dashboardspot.egg-info/dependency_links.txt
+dashboardspot.egg-info/requires.txt
+dashboardspot.egg-info/top_level.txt
