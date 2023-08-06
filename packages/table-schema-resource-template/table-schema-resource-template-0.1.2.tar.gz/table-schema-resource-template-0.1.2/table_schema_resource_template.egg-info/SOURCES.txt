@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+table_schema_resource_template/cli.py
+table_schema_resource_template.egg-info/PKG-INFO
+table_schema_resource_template.egg-info/SOURCES.txt
+table_schema_resource_template.egg-info/dependency_links.txt
+table_schema_resource_template.egg-info/entry_points.txt
+table_schema_resource_template.egg-info/requires.txt
+table_schema_resource_template.egg-info/top_level.txt

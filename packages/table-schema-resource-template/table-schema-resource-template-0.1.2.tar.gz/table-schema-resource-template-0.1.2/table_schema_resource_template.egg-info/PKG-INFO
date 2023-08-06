@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: table-schema-resource-template
+Version: 0.1.2
+Summary: Generate a resource file template from a Table Schema JSON file.
+Home-page: UNKNOWN
+Author: Christophe Benz
+Author-email: christophe.benz@jailbreak.paris
+License: UNKNOWN
+Description: # Table Schema resource template
+        
+        Generate an empty resource file template from a [Table Schema](https://frictionlessdata.io/specs/table-schema/) JSON file.
+        
+        Supported output formats:
+        
+        - Microsoft Excel XLSX
+        
+        ## Install
+        
+        ```bash
+        pip install table-schema-resource-template
+        ```
+        
+        ## Usage
+        
+        Table Schema JSON can be given as file or URL:
+        
+        ```bash
+        table-schema-resource-template --format xlsx schema.json template.xlsx
+        table-schema-resource-template --format xlsx https://git.opendatafrance.net/scdl/subventions/raw/master/schema.json template.xlsx
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
