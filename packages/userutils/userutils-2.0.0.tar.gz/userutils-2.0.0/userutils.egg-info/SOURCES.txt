@@ -1,0 +1,10 @@
+README.md
+setup.py
+userutils/__init__.py
+userutils/examples.py
+userutils/main.py
+userutils/menu.py
+userutils.egg-info/PKG-INFO
+userutils.egg-info/SOURCES.txt
+userutils.egg-info/dependency_links.txt
+userutils.egg-info/top_level.txt
