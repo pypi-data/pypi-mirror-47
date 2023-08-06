@@ -1,0 +1,23 @@
+#!/usr/bin/env python3
+
+import argparse
+import os
+import tasker.task
+
+if __name__ == '__main__':
+    parser = argparse.ArgumentParser(
+        description='Run a task with dependencies.')
+    parser.add_argument('task_to_run', type=str, nargs=1,
+        help='The task to run')
+    parser.add_argument('task_spec', type=str, nargs='+',
+        help='Task specification files')
+    args = parser.parse_args()
+    tasks = []
+    for spec_file in args.task_spec:
+        with open(spec_file, 'r') as spec:
+            tasks.append(tasker.task.parse(spec.read()))
+    tasks_by_name = tasker.task.by_name(tasks)
+    todo = tasker.task.todo(tasks_by_name, args.task_to_run[0])
+    commands = [tasks_by_name[task][1] for task in todo]
+    for command in commands:
+        os.system(command)
