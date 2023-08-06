@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: pypdfplot
+Version: 0.3.4
+Summary: Saves plots as PDF with embedded generating script
+Home-page: UNKNOWN
+Author: Dirk van den Bekerom
+Author-email: dcmvdbekerom@gmail.com
+License: MIT
+Project-URL: GitHub, https://github.com/dcmvdbekerom/pypdfplot
+Project-URL: Documentation, https://pypdfplot.readthedocs.io/
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Topic :: Multimedia :: Graphics
+Classifier: Topic :: Scientific/Engineering :: Visualization
