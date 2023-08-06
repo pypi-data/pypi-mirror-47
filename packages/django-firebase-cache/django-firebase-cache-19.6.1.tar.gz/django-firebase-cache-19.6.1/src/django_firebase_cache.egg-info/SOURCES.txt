@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+src/django_firebase_cache/__init__.py
+src/django_firebase_cache/firestore.py
+src/django_firebase_cache/realtime_database.py
+src/django_firebase_cache.egg-info/PKG-INFO
+src/django_firebase_cache.egg-info/SOURCES.txt
+src/django_firebase_cache.egg-info/dependency_links.txt
+src/django_firebase_cache.egg-info/requires.txt
+src/django_firebase_cache.egg-info/top_level.txt
