@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+EyeSim_Python.egg-info/PKG-INFO
+EyeSim_Python.egg-info/SOURCES.txt
+EyeSim_Python.egg-info/dependency_links.txt
+EyeSim_Python.egg-info/top_level.txt
+eye/__init__.py
