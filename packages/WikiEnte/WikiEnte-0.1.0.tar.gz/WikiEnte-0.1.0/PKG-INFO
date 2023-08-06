@@ -1,0 +1,32 @@
+Metadata-Version: 1.1
+Name: WikiEnte
+Version: 0.1.0
+Summary: Entity extraction using DBPedia through spotlight
+Home-page: https://github.com/proycon/wikiente
+Author: Maarten van Gompel
+Author-email: proycon@anaproy.nl
+License: GPL
+Description: WikiEnte
+        ===============
+        
+        Named entity recogniser and linker using [DBPedia Spotlight](https://www.dbpedia-spotlight.org/), with support for the
+        [FoLiA](https://proycon.github.io/folia) format.
+        
+        Installation
+        ---------------
+        
+        ``pip install wikiente``
+        
+        Usage
+        --------
+        
+        ``wikiente --help``
+        
+Keywords: nlp computational_linguistics entities wikipedia dbpedia linguistics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
