@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: mmodes
+Version: 0.2.3
+Summary: Metabolic Models based Ordinary Differential Equations Simulation
+Home-page: UNKNOWN
+Author: Jorge Carrasco Muriel
+Author-email: jorge.cmuriel@alumnos.upm.es
+License: MIT
+Keywords: python metabolic-models bioinformatics systems-biology
+Platform: UNKNOWN
+Requires-Dist: cobra (>=0.14.1)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: dill
+
+UNKNOWN
+
+

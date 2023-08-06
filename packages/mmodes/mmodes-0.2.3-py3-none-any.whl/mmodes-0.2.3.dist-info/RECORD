@@ -1,0 +1,15 @@
+mmodes/Experiment.py,sha256=NAk_0aP0-d5QA3-YUEdCe0UKGAGQOHLR6qZR2psln7U,15997
+mmodes/__init__.py,sha256=Ugwk6lgsgiIpw6x7BCXF-StTz9bBH_GV6AJKS6Vkc94,323
+mmodes/_fsolvers.py,sha256=VLoZETl97NrNRQK2eoV4h4k22PMViqeJpe0UsHV8nyo,1339
+mmodes/core.py,sha256=fbeRl13gRjFB-NXMArULlY1SvUCzw9dffnLC1lc6Xco,25692
+mmodes/mmodes.py,sha256=asz4V_lAWITKF6a34jyqdlXWvG0eYHKPak32Jb8spZY,25681
+mmodes/io/__init__.py,sha256=r6kkQHYWlfTTUquyNLKp8tL2XNQWyK27vy0JFS-rEfU,386
+mmodes/io/io.py,sha256=qr7K95iCVidDW458M2YV8cB_zxEIC9jhMnHRYEjeX5I,20872
+mmodes/io/models_in.py,sha256=xBvyg1owmHiwtzINj_9akwA6yQFRjQ6SjokZyYxuU8M,15626
+mmodes/vis/__init__.py,sha256=Tnfdp6CtJXdBqk7LoIj6_dnMW4ddU4SITI1OtSkG2sI,87
+mmodes/vis/vis.py,sha256=20QWg-4H1AVZizkrW58nx-e4a-eT--fkeC9ejN--A4A,7101
+mmodes-0.2.3.dist-info/LICENSE.txt,sha256=6mVQ3FsvNUoaODYMkxcB_PKNtVSCFL-zr1IfXMZXUcY,1078
+mmodes-0.2.3.dist-info/METADATA,sha256=D9FWHpHCFclgiHo4UHN_uTiZMe5an3OqY_65DvXMKJU,466
+mmodes-0.2.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+mmodes-0.2.3.dist-info/top_level.txt,sha256=iZMa7Q6XI7gPMSH3j-dIYq359ReUB_l8_y6B2ZISmv0,7
+mmodes-0.2.3.dist-info/RECORD,,
