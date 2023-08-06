@@ -1,0 +1,3 @@
+[console_scripts]
+autoGame = gameHook_1_50:autoGame
+

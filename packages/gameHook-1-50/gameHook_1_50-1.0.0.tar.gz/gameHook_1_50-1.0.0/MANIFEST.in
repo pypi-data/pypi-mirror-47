@@ -1,0 +1,2 @@
+# Include the data files
+recursive-include gameHook_1_50 *.png
