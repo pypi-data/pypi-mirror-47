@@ -1,0 +1,9 @@
+kappy/__init__.py,sha256=CFYw7YKlNcgWTKpGPE0bHg22m71O18qnteuMxX9Ojhc,209
+kappy/kappa_common.py,sha256=0_uidQhezsMHuXWZHYk2wLxuDsRJnmWpUURKKazdS-I,15485
+kappy/kappa_rest.py,sha256=DJik5oc23inWZ9sQRNo7ESUy7OhucCEKnPuRdQJUeuc,9072
+kappy/kappa_std.py,sha256=FlMhztzxtg58-GseYXK2PADj0FyOiiEFgkwLOaq5gSo,11835
+kappy-4.0.93.data/data/python/README.rst,sha256=KvHNxnbcUa3vJ35RHtvJttqXboes8YE5xjsewPx0MRM,1129
+kappy-4.0.93.dist-info/METADATA,sha256=bGYYXsIMpMlk9K5RMdalB4pL-PHmLpqlD2eX3n6Dwsc,1609
+kappy-4.0.93.dist-info/RECORD,,
+kappy-4.0.93.dist-info/WHEEL,sha256=CTh2E6mCxEx9ZlqUOZVJtYBKxTlr7zOwLtikkFWqEZU,104
+kappy-4.0.93.dist-info/top_level.txt,sha256=BnE8yYSftS6cs45KLC2xdA2DUvk92U-lhzfgjaKVjZ4,6
