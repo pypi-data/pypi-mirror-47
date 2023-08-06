@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: lowbox
+Version: 0.0.1
+Summary: A simple alternative in python to busybox and toybox
+Home-page: https://github.com/wallacesilva/lowbox
+Author: Wallace Silva
+Author-email: contato@wallacesilva.com
+License: UNKNOWN
+Description: # lowbox
+        Alternative on Python to BusyBox or Toybox
+        
+        # Install 
+        
+        `pip install lowbox` (comming soon)
+        
+        # Usage
+        
+        You can be use with the comand below: 
+        
+        `lowbox [command] [params]`
+        
+        # License
+        
+        MIT License
+        
+        # Contributing
+        
+        Open a issue please.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
