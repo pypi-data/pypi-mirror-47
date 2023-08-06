@@ -1,0 +1,4 @@
+pandas
+numerapi
+tqdm
+joblib
