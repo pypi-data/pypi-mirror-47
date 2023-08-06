@@ -1,0 +1,13 @@
+neterraproxy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+neterraproxy/__main__.py,sha256=JvPfAHppRrHWESkY3eADCd51zzI4kitu07HgotAC2Nw,370
+neterraproxy/channels.json,sha256=g_6gto_jRSmKLB_4Kwldz2tBbjJPJwqef48HNneEgg8,12742
+neterraproxy/downloadepg.py,sha256=8JPgQekiQfgVUr3KeFFTyhm5DkICDPhbQORknGyhMzA,1393
+neterraproxy/login_test.py,sha256=xWrTQSxS0MVqH3tHL1LI9nFI0sHx-njD50uhUc_tKvg,5041
+neterraproxy/neterra.py,sha256=MexxIMf4lf0z9IpeyxCsjC9_ZM1Nnbr6AD7ypiINhrI,4288
+neterraproxy/startnetman.py,sha256=C-q7VqOv-n6jZpf3Zy5dp4BCiQtv1LjeOMKLUGc9gBw,353
+neterraproxy/wsrv.py,sha256=_bIjINMDovNFoYtpOw3a2SzbPAE9QQQVeJIwooovsB4,6134
+neterraproxy-0.0.4.dist-info/LICENSE,sha256=8YYSlQ0tbiZRlfYc5_f1EGtjR86A3tcGD1hKbstcNMM,3219
+neterraproxy-0.0.4.dist-info/METADATA,sha256=11YnC95BTcdm8exJaRSz1XhMPmEAXrtmXqLklu1pbEk,3525
+neterraproxy-0.0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+neterraproxy-0.0.4.dist-info/top_level.txt,sha256=8JmK3H_ivIww_3_Ve4qs91Rsuv1hGcbOzEj-MrWcP3w,13
+neterraproxy-0.0.4.dist-info/RECORD,,
