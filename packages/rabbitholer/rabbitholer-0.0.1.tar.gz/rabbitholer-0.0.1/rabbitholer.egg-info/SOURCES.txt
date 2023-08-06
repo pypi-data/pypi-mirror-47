@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+rabbitholer/__init__.py
+rabbitholer/logger.py
+rabbitholer/main.py
+rabbitholer/rabbit_dumper.py
+rabbitholer/version.py
+rabbitholer.egg-info/PKG-INFO
+rabbitholer.egg-info/SOURCES.txt
+rabbitholer.egg-info/dependency_links.txt
+rabbitholer.egg-info/entry_points.txt
+rabbitholer.egg-info/top_level.txt
+tests/__init__.py
+tests/test_args.py
+tests/test_main_functions.py

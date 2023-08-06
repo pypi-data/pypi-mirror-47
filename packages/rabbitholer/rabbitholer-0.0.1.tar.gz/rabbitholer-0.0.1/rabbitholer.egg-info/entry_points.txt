@@ -1,0 +1,3 @@
+[console_scripts]
+rabbitholer = rabbitholer.main:main
+
