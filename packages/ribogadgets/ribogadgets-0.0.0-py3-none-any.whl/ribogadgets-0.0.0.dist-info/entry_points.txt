@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        ribog=ribogadgets.cli.main:cli
+    

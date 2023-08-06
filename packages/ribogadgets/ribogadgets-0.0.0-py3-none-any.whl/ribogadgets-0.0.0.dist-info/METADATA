@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ribogadgets
+Version: 0.0.0
+Summary: Hierarchichal data format based on hdf5 for ribosome profiling data
+Home-page: UNKNOWN
+Author: Hakan Ozadam
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16.1)
+Requires-Dist: pandas (>=0.24.1)
+Requires-Dist: click (==7.0)
+Requires-Dist: h5py (>=2.9.0)
+Requires-Dist: matplotlib (>=3.0.2)
+Requires-Dist: multiprocess (>=0.70.7)
+Requires-Dist: pysam (>=0.15.0)
+Requires-Dist: pyyaml (==5.1)
+
+## ribogadgets_alpha
+
+This repository is a predecessor of ribogadgets.
+Once we have the basic functionalities, we will move this project to beta phase.
+
+
+# ribogadgets
+
+ribogadgets is a set of tools to create, process, dump, analyze and visualize .ribo files. It provides a CLI (Command L:ine Interface) and Application Programming Interface (API).
+
+# Installation
+
+### NOTE
+
+This is a temporary way of installing ribogadgets. Soon, we plan to have pip and / or conda repositories for ribogadgets.
+
+For now, you can install using.
+Although pip resolves dependencies and install required packages, it is highly recommended that you install the dependencies using conda prior to issuing the pip installation command.
+
+`pip install git+https://github.com/hakanozadam/ribogadgets_alpha.git`
+
+To create a conda environment "ribogadgets" and install dependencies using oconda: 
+
+`conda env create -f environment environment.yml`
+
+After the above command you can install ribogadgets via pip, as described above.
+
+
