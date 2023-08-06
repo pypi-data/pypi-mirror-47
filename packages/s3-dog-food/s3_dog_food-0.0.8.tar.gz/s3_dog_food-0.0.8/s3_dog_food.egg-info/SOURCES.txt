@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+docs/test.txt
+resources/.DS_Store
+resources/s3_policy.json
+s3_dog_food.egg-info/PKG-INFO
+s3_dog_food.egg-info/SOURCES.txt
+s3_dog_food.egg-info/dependency_links.txt
+s3_dog_food.egg-info/requires.txt
+s3_dog_food.egg-info/top_level.txt
+services/__init__.py
+services/s3_service.py
