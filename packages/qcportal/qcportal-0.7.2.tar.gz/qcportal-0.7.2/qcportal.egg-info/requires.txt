@@ -1,0 +1,8 @@
+numpy>=1.7
+pandas
+requests
+pyyaml
+pydantic>=0.20
+qcelemental>=0.4.0
+plotly
+py3dmol
