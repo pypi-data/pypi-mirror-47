@@ -1,0 +1,7 @@
+README.md
+setup.py
+royaso/__init__.py
+royaso_163_playlists.egg-info/PKG-INFO
+royaso_163_playlists.egg-info/SOURCES.txt
+royaso_163_playlists.egg-info/dependency_links.txt
+royaso_163_playlists.egg-info/top_level.txt
