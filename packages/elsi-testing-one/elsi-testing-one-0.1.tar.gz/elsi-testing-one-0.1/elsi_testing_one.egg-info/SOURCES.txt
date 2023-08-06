@@ -1,0 +1,8 @@
+setup.py
+elsi_test_ing/main.py
+elsi_testing_one.egg-info/PKG-INFO
+elsi_testing_one.egg-info/SOURCES.txt
+elsi_testing_one.egg-info/dependency_links.txt
+elsi_testing_one.egg-info/entry_points.txt
+elsi_testing_one.egg-info/requires.txt
+elsi_testing_one.egg-info/top_level.txt
