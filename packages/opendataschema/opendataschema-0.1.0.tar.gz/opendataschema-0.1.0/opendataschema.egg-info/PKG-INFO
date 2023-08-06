@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: opendataschema
+Version: 0.1.0
+Summary: Open Data Schema Python client
+Home-page: UNKNOWN
+Author: Pierre Dittgen
+Author-email: pierre.dittgen@jailbreak.paris
+License: UNKNOWN
+Description: # Open Data Schema Python client
+        
+        ## Install
+        
+        ```bash
+        pip install opendataschema
+        ```
+        
+        ## Usage
+        
+        Note: the `schema.json` file can be given as a file path or an URL.
+        
+        ```bash
+        opendataschema schema.json list
+        opendataschema schema.json show
+        opendataschema schema.json show --name <schema_name>
+        opendataschema schema.json show --versions
+        ```
+        
+        ## Python API
+        
+        TODO
+        Example:
+        
+        ```python
+        tsc = SchemaCatalog("https://opendataschema.frama.io/catalog/schema-catalog.json")
+        for tsr in tsc.get_schema_references():
+            if tsr.has_git_nature():
+                version_list =
+                for ver in tsr.get_git_versions():
+                    url = tsr.get_schema_url(version)
+                    ts = TableSchema(url)
+                    print(ts.get_properties())
+            else:
+                url = tsr.get_schema_url()
+                ts = TableSchema(url)
+                print(ts.get_properties())
+        
+        ```
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
