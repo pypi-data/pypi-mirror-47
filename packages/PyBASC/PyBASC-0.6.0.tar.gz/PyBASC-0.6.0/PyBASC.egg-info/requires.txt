@@ -1,0 +1,14 @@
+nilearn
+scikit-learn
+nibabel
+nipype
+scipy
+scipy
+numpy
+pyyaml
+
+[test]
+pytest-cov
+codecov
+pytest-env
+pytest-xdist
