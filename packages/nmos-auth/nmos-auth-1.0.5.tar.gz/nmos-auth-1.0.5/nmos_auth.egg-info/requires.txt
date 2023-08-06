@@ -1,0 +1,11 @@
+six
+flask
+sqlalchemy
+flask-sqlalchemy
+flask-cors
+requests
+gevent
+nmoscommon
+pyopenssl
+authlib>=0.11
+werkzeug>=0.13
