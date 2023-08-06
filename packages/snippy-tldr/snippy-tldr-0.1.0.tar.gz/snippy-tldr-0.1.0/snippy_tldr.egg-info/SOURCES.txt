@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+snippy_tldr.py
+snippy_tldr.egg-info/PKG-INFO
+snippy_tldr.egg-info/SOURCES.txt
+snippy_tldr.egg-info/dependency_links.txt
+snippy_tldr.egg-info/entry_points.txt
+snippy_tldr.egg-info/not-zip-safe
+snippy_tldr.egg-info/requires.txt
+snippy_tldr.egg-info/top_level.txt
