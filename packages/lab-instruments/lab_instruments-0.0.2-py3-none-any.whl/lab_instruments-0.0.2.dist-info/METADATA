@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: lab-instruments
+Version: 0.0.2
+Summary: Python package for use Lab instruments in a simple way
+Home-page: https://github.com/edavidfs/lab-instruments
+Author: David Farina
+Author-email: edavidfs@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+
+# lab-instruments
+
+![image](https://img.shields.io/pypi/v/lab-instruments.svg)
+
+
+Python package for use Lab instruments in a simple way
+
+## Usage
+
+
+## Installation
+
+
+### Requirements
+
+
+## Compatibility
+
+
+## Licence
+
+
+## Authors
+
+`lab-instruments` was written by `David Farina <edavidfs@gmail.com>`.
+
+
