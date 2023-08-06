@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: freactor
+Version: 0.0.3
+Summary: lightweight flow-control framework
+Home-page: https://github.com/Pro-YY/freactor
+Author: Brooke Yang
+Author-email: brookeyang@vip.qq.com
+License: UNKNOWN
+Description: # Freactor Package
+        
+        This is an application library/framework for general task control-flow management.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Description-Content-Type: text/markdown
