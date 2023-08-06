@@ -1,0 +1,17 @@
+openstack_virtual_baremetal/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openstack_virtual_baremetal/auth.py,sha256=LDWs9pr17B2X040d--SilSeY9OhE_d84_Q2jyqc0TUQ,2491
+openstack_virtual_baremetal/build_nodes_json.py,sha256=h70uxgWN1gMFQV7nFdjdq8NUkXT-gJB65e1q3PGTKuM,11374
+openstack_virtual_baremetal/deploy.py,sha256=yyLQS2j_hkNC_-khNnQ3Q1BRFSZEr-SUSjJo2CZZ-ec,16477
+openstack_virtual_baremetal/openstackbmc.py,sha256=y_taVbcmMfHsBmqdULC8yw_X4pHAX0TvDeMuYqmCJG0,8981
+openstack_virtual_baremetal/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+openstack_virtual_baremetal/tests/test_auth.py,sha256=sZlGgReC9HwWDfhoZjQFLkvWZAPkMRuurGhnV64OdF4,7733
+openstack_virtual_baremetal/tests/test_build_nodes_json.py,sha256=DEJfk8omSTuGrtruoNXpU3XfQFwWudpjVyxHP95jCxQ,22642
+openstack_virtual_baremetal/tests/test_deploy.py,sha256=993kPmt_cM-lrkQgfcdBP5ZPNG6R0RmKeRUMbbECXGY,19279
+openstack_virtual_baremetal/tests/test_openstackbmc.py,sha256=cNgAVUAdihyD97O5bDYF9FZhZeungK1ieYgDvy-DuTA,14871
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/AUTHORS,sha256=bduX4YZaLNO60d9G8Hr4zM4oLeA19_Haoauwdfkb12I,481
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/METADATA,sha256=H4KWMUvy3_uyP9dYJhy2Pq4Y44ODf7-vqqhFaDcdUOs,1320
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/entry_points.txt,sha256=hb1tby9HzqjfUzVLuN6mplR5ds6VKc8UIg2DDJdr01M,145
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/pbr.json,sha256=ppf5x6KO1whmbkVtWFhGJSWEYn94YkrbLuWXCvzpjKM,47
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/top_level.txt,sha256=LXN5cZIzgf-tqLdTM-i5gGFKZxt5ETrgx9lzOc2WUoc,28
+openstack_virtual_baremetal-1.0.2.dev28.dist-info/RECORD,,
