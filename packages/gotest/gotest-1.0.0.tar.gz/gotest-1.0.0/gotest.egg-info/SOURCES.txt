@@ -1,0 +1,6 @@
+README.md
+setup.py
+gotest.egg-info/PKG-INFO
+gotest.egg-info/SOURCES.txt
+gotest.egg-info/dependency_links.txt
+gotest.egg-info/top_level.txt
