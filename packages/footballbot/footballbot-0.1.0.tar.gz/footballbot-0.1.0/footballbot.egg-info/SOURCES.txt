@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+version
+bin/footballbot
+footballbot/__init__.py
+footballbot.egg-info/PKG-INFO
+footballbot.egg-info/SOURCES.txt
+footballbot.egg-info/dependency_links.txt
+footballbot.egg-info/not-zip-safe
+footballbot.egg-info/requires.txt
+footballbot.egg-info/top_level.txt
