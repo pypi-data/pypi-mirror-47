@@ -1,0 +1,14 @@
+pywebaudioplayer.py,sha256=WCrKB4jUBrnu4yHdAPPgtxu0m-zGxGP-DzZ-3QaWVSU,15233
+pywebaudioplayer/__init__.py,sha256=Zpu1n4MLZtQNpcDJkYTRFin5DxLB9OV1-OJnAoLPKAM,35
+pywebaudioplayer/core.py,sha256=uejrlHXlafNaruh5R2cFhkML6JVmzr0lJVKpJvBFE1U,14962
+pywebaudioplayer/jupyter.py,sha256=ZX2_nx3lzVulJ_zI6GzjtxCga-LUmgTpXv8FIIZCac0,4208
+pywebaudioplayer/trackswitch.js/css/trackswitch.css,sha256=dwh4SRZUy61xO_sE3KINKY3bSuKZ1TXSL6BDwrYaDrw,10714
+pywebaudioplayer/trackswitch.js/js/trackswitch.js,sha256=_XjZeLRN5mPFu4ceLb9kH4W6SJJA9J7dVRUDrlKvKbs,32361
+pywebaudioplayer/waveform-playlist/dist/waveform-playlist/css/main.css,sha256=Qc9PQP1NTsc9BQ1k0bDoYNwkU3MI9CXqGhTf_ilgAiQ,5555
+pywebaudioplayer/waveform-playlist/dist/waveform-playlist/js/waveform-playlist.var.js,sha256=AaaOfZ1mdnI5Z8w45Jh3lSt66SiKnOk5hCmbPQ9CQrw,247648
+pywebaudioplayer/wavesurfer.js/src/wavesurfer.js,sha256=g71W0eIYfPhs61_CYqWIXxSg8Yc54g1X2udrGqrSvzc,45873
+pywebaudioplayer-0.0.3.dist-info/LICENSE,sha256=DkpX4jJMWFkw2bKUXuqYZGm-TcWd58rLJOyOhXaml0w,1070
+pywebaudioplayer-0.0.3.dist-info/METADATA,sha256=jVw7YQxc2qjE2mD2WO5IZU5WBS8u1vlpdYc4Mrsgllw,863
+pywebaudioplayer-0.0.3.dist-info/WHEEL,sha256=HX-v9-noUkyUoxyZ1PMSuS7auUxDAR4VBdoYLqD0xws,110
+pywebaudioplayer-0.0.3.dist-info/top_level.txt,sha256=RtMtlecKwHRTivUvtAQW4aZzcmXlKO0alWBvELeKWnA,17
+pywebaudioplayer-0.0.3.dist-info/RECORD,,

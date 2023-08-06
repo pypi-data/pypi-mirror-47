@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pywebaudioplayer
+Version: 0.0.3
+Summary: Create HTML+JS code snippets for the waversurfer.js, waveform-playlist and trackswitch.js audio players from Python
+Home-page: https://github.com/jpauwels/pywebaudioplayer
+Author: Johan Pauwels
+Author-email: johan.pauwels@gmail.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/jpauwels/pywebaudioplayer/issues
+Project-URL: Source, https://github.com/jpauwels/pywebaudioplayer/
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Multimedia :: Sound/Audio :: Players
+Description-Content-Type: text/markdown
+Requires-Dist: Pillow
+
+# pywebaudioplayer
+
+
