@@ -1,0 +1,7 @@
+colorlog
+humanfriendly
+paho-mqtt
+plac
+pyaudio
+python-daemon
+webrtcvad
