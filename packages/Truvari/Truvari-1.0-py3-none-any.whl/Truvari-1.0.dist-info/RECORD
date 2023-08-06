@@ -1,0 +1,10 @@
+Truvari-1.0.data/scripts/consistency_report,sha256=uKJurbSkomWRPJhJJDZ4NzFhrqlrm8nRASB60oK7YXk,4502
+Truvari-1.0.data/scripts/truvari,sha256=5HzY7xeqUtfliEkzYzJTHjQDt17PQWyxI2azEmWL5ZY,40850
+truvari/benchmark_pipe.py,sha256=uD3iBFJlPNFf7Xj-3sypa1Bz_qaIhLvcbUqymlOrnTw,8157
+truvari/giab_summary.py,sha256=d44exA8dCZRdTGpTcoUINTQs-J3WHSdeu0Ei-8SL3Dc,4559
+truvari/vcf_sizebin.py,sha256=htzMKciFaZMk3jJAHQBL-HDHWmjWE_GDI-JjafakyuI,1220
+Truvari-1.0.dist-info/LICENSE,sha256=F60d7UIstUKnDrAOWOa1X3ulebns-opsT0SHyRUS5oo,1054
+Truvari-1.0.dist-info/METADATA,sha256=QjGbLPXMzkvfZkBy2DkRRftAmx39yek7E5D-rB8l7xQ,11006
+Truvari-1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Truvari-1.0.dist-info/top_level.txt,sha256=HRS50Ad-Q7hqoPEfuKPcTDkYZL1J_xVQ1bnSWiJOmZw,8
+Truvari-1.0.dist-info/RECORD,,
