@@ -1,0 +1,127 @@
+Functionality edits:
+
+NEED TO IRON OUT THE CONTROL DICT STUFF. ALL THESE TEMPLATES NEED TO BE COMING FROM ONE SPECIFIC PLACE--> CURRENT CONTROLDICT EDIT IS FROM FILE_TEMPLATES. MOVE TO CASE_TEMP
+-have the end time, write interval, delta_T be user inputs
+---also have a function look at computing stability
+-Write end time, write interval, deltaT to the control dict in the template case
+
+
+The reset functionality should simply copy a blank template case to the template case directory
+--files should be empty such that the file writing functionality works over and over again
+-------------------------------------------------------------------------------------------------
+
+
+
+5277
+
+47222
+
+50-neighbors
+
+
+Presentation prep:
+
+Trying a batch of simulations for a better validation effort: aiming to have a AF closer to the AF volumn = 9-10 roughly
+-running:25, 50, 100, 125, 150. 333333, 41666,  
+1e-3
+3 cells per block
+5 sec total
+write interval 0.5 seconds
+---------------------------------------------------------------------------------------------------
+
+
+Packaging:
+-sphinx is setup (Go through all the modules and prep the docstrings google style (see import_geometry)
+	Done: import_geometry, post_processor, new_case_setup
+	When doing others, need to add modules to the index.rst file
+
+-tests are passing
+-Need more tests
+-Need to have PyPI ready to rock
+-probably need to edit some of the stuff from the setup and packaging installation files
+
+-----------------------------------------------------------------------------------------------
+
+
+Post processor edits:
+___________________________________________________
+Big time!!!!! Next: 
+-the runner is able to excecute from the Ubuntu command line
+---> this might be an issue. Might need to translate the code from windows to linux to actually incorporate the automated runner
+________________________________________________________
+
+
+
+For presentation // sort of validation:
+___________________________________________________________________________________________
+	(1) Running for some sample data:
+		0.5 seconds at a 1e-5 time step (for now...) run every 0.05 seconds (10 total files)
+		2 data points between
+		2 data points to right
+		1 data point to left
+
+		Keeping track: 
+			-100 (1:20 start time) more or less for all three
+			-25 ran
+			-150 ran
+			-case 50 ran
+			- case 125 ran
+			
+			-Running main (5/31 12:38)
+				-
+
+_____________________________________________________________________________________________
+	(2) Automated runner:
+		Algorithm:
+			FN 1:
+			(1) navigate to case directories
+			(2) identify the length of the case list
+			(3) Identify how many processors are available in CPU 
+			(4) divide solve for how many max processors for 3 jobs at once
+			(5) export the processors per case
+
+			FN 2:
+			(1) loop through the cases to run cases in batches of 3:
+				-Find which cases have been previously run if any!!! skip these
+				-create three directories
+				-export the path, solver, and case (?) to the runner function
+				-initiate the runner 
+				-WAIT until the runs are complete (??????)
+
+				FN 3:
+				(1) take in required runner arguments
+				(2) processes and perhaps return a status (if possible???)
+				(3) return to the outer case loop
+
+
+
+
+
+
+
+
+	(3) Need to have some clearing "reset" functionality:
+		-delete control Dict file
+			-OR better yet, delete all cases, and have a more robust case setup where the input velocity is the only value needed (100%)
+	
+	
+
+packaging:
+	(1) walk through slides and see what you have to do:
+		(A) On lab computer currently
+
+
+grading:
+	(1) Memo 1
+	(2) Believe Memo 2 is due as well
+
+
+research // admin:
+
+	(1) fill out the graduate paperwork by next tuesday--email a reminder to Dr. Mac that I am looking to conduct my review next week
+	(2) 
+
+
+
+software development further:
+	(1)
