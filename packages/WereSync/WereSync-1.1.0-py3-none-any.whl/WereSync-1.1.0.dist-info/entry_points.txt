@@ -1,0 +1,7 @@
+[console_scripts]
+weresync = weresync.interface.cli:main
+weresync-daemon = weresync.daemon.daemon:run
+
+[gui_scripts]
+weresync-gui = weresync.interface.gui:start_gui
+
