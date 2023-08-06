@@ -1,0 +1,6 @@
+rethinkdb>=2.4
+inflection
+six
+
+[dev]
+pytest
