@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: django-createsuperuserwithpassword
+Version: 1.0.0
+Summary: Django management command to create usable super users, programatically
+Home-page: https://github.com/hartwork/django-createsuperuserwithpassword
+Author: Adam Charnock, Sebastian Pipping
+Author-email: sebastian@pipping.org
+License: MIT
+Description: Django management command to create usable super users, programatically
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
