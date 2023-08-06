@@ -1,0 +1,31 @@
+common:
+  adapter: parsl
+  tasks_per_worker: 1
+  cores_per_worker: 6
+  memory_per_worker: 64
+  max_workers: 5
+  scratch_directory: "$TMPDIR"
+
+server:
+  fractal_uri: localhost:7777
+  username: Foo
+  password: b4R
+  verify: False
+
+manager:
+  manager_name: "PBS_Parsl_MyPIGroupAccount_Manger"
+
+cluster:
+  node_exclusivity: False
+  scheduler: pbs
+  scheduler_options:
+    - "-A MyPIsGroupAccount"
+  task_startup_commands:
+    - conda activate qca
+    - cd $WORK
+  walltime: "06:00:00"
+
+parsl:
+  provider:
+    partition: normal_q
+    cmd_timeout: 30
