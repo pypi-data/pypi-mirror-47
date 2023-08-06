@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: snpToolkit
+Version: 2.0.1
+Summary: SNPs filtering, annotation and combining
+Home-page: https://github.com/Amine-Namouchi/snpToolkit
+Author: Amine Namouchi
+Author-email: amine.namouchi@gmail.com
+License: GPLv3+
+Description: SNPs annotation, filtering and combining from vcf files
+Keywords: SNPs filtering annotation variants calling
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
