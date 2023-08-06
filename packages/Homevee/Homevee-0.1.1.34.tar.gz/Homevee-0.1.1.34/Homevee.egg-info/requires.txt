@@ -1,0 +1,10 @@
+Pillow
+azure-iothub-device-client
+flask
+numpy
+packaging
+paho-mqtt
+passlib
+pyOpenSSL
+pymax
+python-dateutil
