@@ -1,0 +1,11 @@
+{
+  "name"         : "project_name",
+  "_cleaned_name" :"{{ angreal.name|lower|replace(' ', '-') }}", 
+  "author"       : "joesmith", 
+  "_cleaned_author" :"{{ angreal.author|replace(' ', '-') }}", 
+  "author_email" : "joesmit@email.com",
+  "ubuntu_version" : ["16.04", "18.04"],
+  "python_version" : ["3.7","3.6"],
+  "tensorflow_version" : ["1.13.1","2.0.0a", "None" ],
+  "_tensorflow_string"  : "{{ '-tf'~angreal.tensorflow_version if angreal.tensorflow_version != 'None' else '' }}"
+}
