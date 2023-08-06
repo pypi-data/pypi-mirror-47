@@ -1,0 +1,8 @@
+pbr
+BeautifulSoup4
+geopy
+timezonefinder
+caldav
+python-dateutil
+inscriptis
+vobject

@@ -1,0 +1,103 @@
+Metadata-Version: 1.2
+Name: email_assistant
+Version: 0.0.0
+Summary: Add entries to caldav servers based on email contents
+Home-page: UNKNOWN
+Author: James E. Blair
+Author-email: corvus@gnu.org
+License: UNKNOWN
+Description: Email-assistant
+        ===============
+        
+        Email-assistant reads email messages over IMAP and creates entries on
+        a CalDAV server for events that it finds.
+        
+        It is designed to operate locally so that you remain in control of
+        your data.
+        
+        It scans newly received emails to see if they match sources that it
+        knows how to parse, and if so, extracts the schedule information from
+        them and creates events.  It will avoid creating duplicate events,
+        even if an email is seen multiple times.
+        
+        It currently understands emails from the following senders:
+        
+        * United Airlines
+        * Marriott hotels (when booked directly)
+        * Eventbrite
+        
+        It is simple to add support for more types of emails, and additions
+        are welcome.
+        
+        Configuration
+        -------------
+        
+        Create the file ``~/.config/email-assistant/config`` with the
+        following contents:
+        
+        .. code-block::
+        
+           [mailbox example_mail]
+           type = IMAP
+           host = mail.example.com
+           username = USERNAME
+           password = PASSWORD
+           folders = INBOX
+        
+           [calendar example_cal]
+           type = caldav
+           url = https://cloud.example.org/remote.php/dav/
+           username = USERNAME
+           password = PASSWORD
+           calendar = Personal
+        
+           [pair]
+           mailbox = example_mail
+           calendar = example_cal
+        
+           [general]
+           geocode = nominatim
+        
+        Change the ``username``, ``password``, ``host``, and ``url`` fields as
+        appropriate, and optionally the ``folders`` field if you want to read
+        from a folder other than your ``INBOX``.  You can also name the
+        ``mailbox`` and ``calendar`` sections as you wish.  Their names are
+        used in the ``pair`` section.  Multiple mailboxes, calendars, and
+        pairs are supported.
+        
+        A ``pair`` section must have exactly one ``mailbox`` and ``calendar``
+        entry.  It tells Email-assistant to read new messages from the
+        specified mailbox and write events to the specified calendar.
+        
+        In some cases, emails do not contain the timezone information needed
+        to make an ideal calendar event.  To add this data, Email-assistant
+        can optionally use the OpenStreetMap Nominatim web service to
+        determine the location of some events and add the appropriate
+        timezone.  If you wish to enable this, include the ``general`` section
+        above.  If you omit it, Email-assistant will simply schedule such
+        events without a timezone.  This is used very rarely (currently, only
+        for single-day events from Eventbrite).
+        
+        Usage
+        -----
+        
+        Once the configuration file is in place, run::
+        
+          email-assistant
+        
+        It will output information about actions it takes.  To get more debug
+        information, run with the ``-v`` option.  To only output errors (for
+        example, if you want to run it in a cron job) use the ``-q`` option.
+        
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Office/Business :: Scheduling
+Requires-Python: >=3.5
