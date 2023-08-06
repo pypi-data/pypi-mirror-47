@@ -1,0 +1,12 @@
+noggin/__init__.py,sha256=iDfoBCu4NnoIfMaIXrMrdmgVb3sozuFzDzFJC7UHPWM,393
+noggin/_version.py,sha256=mUhk9Q8pu7R4NcXZ5uaPgmLiFV3CZTXNzfr-Jsidnvw,518
+noggin/logger.py,sha256=gNOujFuKhmOejVcjOTEZAVPexz2HjIGf2vM0cPDaX6o,19200
+noggin/plotter.py,sha256=H5fYapwYyIxnFwkI-Di5eOLIaqX068fG73Gt8mzxOy8,27062
+noggin/typing.py,sha256=WSfRV9XtrZq8r98-kw-l5XoVgf9XzTZgn9R9dHLB400,427
+noggin/utils.py,sha256=T29n4GhsKCPFfXdFXSqru1Q4NJsdIwXF_PMrvOIqyEA,8097
+noggin/xarray.py,sha256=Z9lIyPMC7mHj2Xw6t1k3OCOMJwzVpkTi-2AC2BHhz4E,4311
+noggin-0.9.1.dist-info/LICENSE.txt,sha256=qsv7EtYCxHEwTrvPvdANnUai6oN-RMHCu5lRg_D619U,1089
+noggin-0.9.1.dist-info/METADATA,sha256=7K3WNlrIoddCw1_KBs4eIzbk3B-SOOth_mBAZzXw2po,1582
+noggin-0.9.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+noggin-0.9.1.dist-info/top_level.txt,sha256=s7cHH4UiBkyg3IGr1B_mbR3dKq98ETfXBsK2QTxS-4o,7
+noggin-0.9.1.dist-info/RECORD,,
