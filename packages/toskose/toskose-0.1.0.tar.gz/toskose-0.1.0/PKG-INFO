@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: toskose
+Version: 0.1.0
+Summary: Toskose - A tool for translating a TOSCA application into docker-compose.
+Home-page: https://github.com/matteobogo/toskose
+Author: Matteo Bogo
+Author-email: matteo.bogo@protonmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: toskose docker docker-compose tosca
+Platform: UNKNOWN
