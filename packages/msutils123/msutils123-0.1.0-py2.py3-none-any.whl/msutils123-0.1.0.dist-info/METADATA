@@ -1,0 +1,72 @@
+Metadata-Version: 2.1
+Name: msutils123
+Version: 0.1.0
+Summary: Utils tools for musesoft
+Home-page: https://github.com/mtvu/utils_tools_for_musesoft
+Author: Tuan Vu
+Author-email: tuanmanh@gmail.com
+License: MIT license
+Keywords: utils_tools_for_musesoft
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Click (>=6.0)
+
+========================
+Utils tools for Musesoft
+========================
+
+
+.. image:: https://img.shields.io/pypi/v/utils_tools_for_musesoft.svg
+        :target: https://pypi.python.org/pypi/utils_tools_for_musesoft
+
+.. image:: https://img.shields.io/travis/mtvu/utils_tools_for_musesoft.svg
+        :target: https://travis-ci.org/mtvu/utils_tools_for_musesoft
+
+.. image:: https://readthedocs.org/projects/utils-tools-for-musesoft/badge/?version=latest
+        :target: https://utils-tools-for-musesoft.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+
+
+Utils tools for musesoft
+
+
+* Free software: MIT license
+* Documentation: https://utils-tools-for-musesoft.readthedocs.io.
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-06-17)
+------------------
+
+* First release on PyPI.
+
+

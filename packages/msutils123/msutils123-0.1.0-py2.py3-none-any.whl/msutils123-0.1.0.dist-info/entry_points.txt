@@ -1,0 +1,3 @@
+[console_scripts]
+utils_tools_for_musesoft = utils_tools_for_musesoft.cli:main
+
