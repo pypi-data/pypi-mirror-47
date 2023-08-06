@@ -1,0 +1,8 @@
+mlendpoints/__init__.py,sha256=_V6bOapfGXFqgR_nA3TuJkv0zjj15bmH1b2mgagUjKg,92
+mlendpoints/__version__.py,sha256=hADnZNgUsrba4tNuQmCnyh4Hifbh2bINMYUNy8aYnj8,352
+mlendpoints/client.py,sha256=kZ27Vl4enmfHyMF2nhRRDzhd_hQsgFoNgXOw9PyUPzY,1994
+mlendpoints/server.py,sha256=rljqAMM8jw5roT9cu49q4h8PbYbuCNEsNVBSrB-tO0k,2732
+mlendpoints-0.1.0.dist-info/METADATA,sha256=UIPQIYm2a_FQlQZ388wS1vsuZEqsrQPtmzYIiEk2jIY,849
+mlendpoints-0.1.0.dist-info/RECORD,,
+mlendpoints-0.1.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+mlendpoints-0.1.0.dist-info/top_level.txt,sha256=Er-sLxDh56RymBR9W889hLGMGqwUNW0ZWiJSC8Ti9HA,12
