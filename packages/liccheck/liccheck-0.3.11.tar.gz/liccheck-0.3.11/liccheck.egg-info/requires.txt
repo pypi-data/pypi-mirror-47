@@ -1,0 +1,10 @@
+pip>=9.0.1
+semantic_version
+
+[:python_version < "3.4"]
+ConfigParser
+enum34
+enum34
+
+[:python_version >= "3.4"]
+configparser
