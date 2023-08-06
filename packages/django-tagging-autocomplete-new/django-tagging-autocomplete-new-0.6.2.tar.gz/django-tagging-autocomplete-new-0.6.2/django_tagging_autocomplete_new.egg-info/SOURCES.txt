@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_tagging_autocomplete_new.egg-info/PKG-INFO
+django_tagging_autocomplete_new.egg-info/SOURCES.txt
+django_tagging_autocomplete_new.egg-info/dependency_links.txt
+django_tagging_autocomplete_new.egg-info/top_level.txt
+tagging_autocomplete_new/__init__.py
+tagging_autocomplete_new/models.py
+tagging_autocomplete_new/urls.py
+tagging_autocomplete_new/views.py
+tagging_autocomplete_new/widgets.py
