@@ -1,0 +1,6 @@
+6du.tv.apk
+setup.py
+6du.tv.egg-info/PKG-INFO
+6du.tv.egg-info/SOURCES.txt
+6du.tv.egg-info/dependency_links.txt
+6du.tv.egg-info/top_level.txt
