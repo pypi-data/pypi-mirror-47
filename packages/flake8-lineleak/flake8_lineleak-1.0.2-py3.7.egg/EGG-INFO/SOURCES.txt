@@ -1,0 +1,11 @@
+README.rst
+lineleak.py
+setup.cfg
+setup.py
+flake8_lineleak.egg-info/PKG-INFO
+flake8_lineleak.egg-info/SOURCES.txt
+flake8_lineleak.egg-info/dependency_links.txt
+flake8_lineleak.egg-info/entry_points.txt
+flake8_lineleak.egg-info/not-zip-safe
+flake8_lineleak.egg-info/requires.txt
+flake8_lineleak.egg-info/top_level.txt
