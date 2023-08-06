@@ -1,0 +1,15 @@
+afs/__init__.py,sha256=Ir_xMNlzvDujspJ4fZ91u8xnBRB5Tx-Ekhjwxdw23WY,433
+afs/client.py,sha256=Oqd2so49BG1QL_mq3kGGHHPg4DR0zgiZrQlQnFTzW3k,9557
+afs/get_env.py,sha256=AVYtq6mCRGp2LbrVEucYCShaQXSAaX-O2mcEyJwIBU8,2181
+afs/models.py,sha256=giqLAZA6ibCCzUFliWADE91DGsfKXGNyxXToOXaFdWc,15576
+afs/utils.py,sha256=GzMJBMBf9j1BNmG1tmc6TEFNwe1TqPQk4R-nJChX2Ws,982
+afs/cli/__init__.py,sha256=elHGIvutGjaBCzUogL1aafnlt0gQeZekR9q54nuVxmM,1761
+tests/v2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/v2/conftest.py,sha256=jnHnf_YZMA1W9N3TPwT0Cj4n1yHPWbtneNaH2ovwvxg,1651
+tests/v2/test_models.py,sha256=WUU6nLDo9Hgq3IC4PjgV1-zz8MFMQ5H6ouNepPYZR7I,3696
+afs2_model-2.1.18.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+afs2_model-2.1.18.dist-info/METADATA,sha256=suIILi6agXcxf7HEnK65qquSqzaM64nXK3YbEbGfTD4,1371
+afs2_model-2.1.18.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+afs2_model-2.1.18.dist-info/entry_points.txt,sha256=bmhEKYSpKySas-YkEI7SKShSmWeOSWheaX67N07owao,62
+afs2_model-2.1.18.dist-info/top_level.txt,sha256=OEHej6jOWT7zaBpJB0tjED8j1ypCwM12thT5pSlDpPA,10
+afs2_model-2.1.18.dist-info/RECORD,,
