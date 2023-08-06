@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: cram2wordnet
+Version: 1.0.1
+Summary: Maps CRAMs object types to WordNet instances
+Home-page: https://github.com/code-iai/cram2wordnet
+Author: Sebastian Koralewski
+Author-email: seba@cs.uni-bremen.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# cram2wordnet
+
+
