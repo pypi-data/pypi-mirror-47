@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+functionalmf/__init__.py
+functionalmf/elliptical_slice.py
+functionalmf/factor.py
+functionalmf/fast_mvn.py
+functionalmf/gass.py
+functionalmf/genlasso.py
+functionalmf/pgds.py
+functionalmf/utils.py
+functionalmf.egg-info/PKG-INFO
+functionalmf.egg-info/SOURCES.txt
+functionalmf.egg-info/dependency_links.txt
+functionalmf.egg-info/requires.txt
+functionalmf.egg-info/top_level.txt

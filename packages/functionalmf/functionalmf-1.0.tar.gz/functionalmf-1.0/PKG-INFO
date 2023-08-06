@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: functionalmf
+Version: 1.0
+Summary: Bayesian factorization of matrices where every entry is a curve or function rather than a scalar.
+Home-page: http://www.github.com/tansey/functionalmf
+Author: Wesley Tansey
+Author-email: wes.tansey@gmail.com
+License: GNU GPLv3
+Description: UNKNOWN
+Keywords: monte-carlo,lasso,trend-filtering,smoothing,tensor-factorization,matrix-factorization
+Platform: ALL
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
