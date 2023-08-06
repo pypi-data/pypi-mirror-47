@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+src/pycompose/__init__.py
+src/pycompose.egg-info/PKG-INFO
+src/pycompose.egg-info/SOURCES.txt
+src/pycompose.egg-info/dependency_links.txt
+src/pycompose.egg-info/not-zip-safe
+src/pycompose.egg-info/top_level.txt
