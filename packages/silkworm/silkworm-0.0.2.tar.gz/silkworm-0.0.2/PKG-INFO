@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: silkworm
+Version: 0.0.2
+Summary: Utilities library for doing research with Prof. Roth
+Home-page: https://github.iu.edu/emchow/SILKWORM
+Author: Drason "Emmy" Chow
+Author-email: emchow@iu.edu
+License: MIT License
+Description: SILKWORM is a set of Standard Integrated Libraries, Key for Working On Research at MESH. It is a collaborative project between undergraduates and graduates at IUB working for Prof. Roth that creates utiltities and shortcuts to make work more productive.
+Keywords: silk worm silkworm roth utiltities util
+Platform: UNKNOWN
