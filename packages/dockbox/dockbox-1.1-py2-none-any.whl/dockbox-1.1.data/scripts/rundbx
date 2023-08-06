@@ -1,0 +1,5 @@
+#!python
+from dockbox import rundbx as dbx
+
+if __name__ == '__main__':
+    dbx.Docking().run()
